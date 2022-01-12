@@ -1,0 +1,16 @@
+name: "SE Asia"
+
+navbar:
+  title: "SE Asia"
+  left:
+    - icon: fa-home
+      href: index.html
+    - text: "Thailand"
+      href: thailand.html
+    - text: "Malaysia"
+      href: malaysia.html
+
+output:
+  html_document:
+    theme: cosmo
+    css: "style.css"
