@@ -9,6 +9,8 @@ navbar:
       href: thailand.html
     - text: "Malaysia"
       href: malaysia.html
+    - icon: fab fa-github
+      href: https://github.com/JGCRI/seasia
 
 output:
   html_document:
