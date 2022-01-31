@@ -391,7 +391,7 @@ data.frame(
 #### Recent Trends
 Thailand's National Statistical Office (NSO) has reported annual population both nationally and by province for the period from 2011 to 2020. The plot below shows national population, revealing a consistent increasing trend from 2011 to 2019, followed by a slight population decline from 2019 to 2020.
 ```{r recent national trends pop, results = "hide", echo=FALSE, out.width="70%", fig.align='center'}
-pop_inputs <- read.csv("data/thailand_bangkok_nonthaburi_samutprakan_pop.csv")
+pop_inputs <- read.csv("data/inputs/socioeconomics/thailand_bangkok_nonthaburi_samutprakan_pop.csv")
 pop_inputs$region <- factor(pop_inputs$region, levels = c("Thailand", "Bangkok", "Samut Prakan", "Nonthaburi", "Rest of Thailand"),
                             labels = c("Thailand", "Bangkok", "Samut Prakan", "Nonthaburi", "Rest of Thailand"))
 
@@ -454,39 +454,57 @@ pop_all$chart_region_absolute +
 
 <!-------------------------->
 <!-------------------------->
-### GDP
+### GDP (USD2005)
 <!-------------------------->
 <!-------------------------->
 
 #### Recent Trends
 
-Thailand's National Statistical Office (NSO) has reported annual GDP both nationally and by province for the period from 2010 to 2019. The plot below shows national GDP in this period.
+Thailand's National Statistical Office (NSO) has reported annual GDP both nationally and by province for the period from 2010 to 2019. The plots below shows national GDP and GDP growth rate during this period.
 
-```{r recent national trends gdp, results = "hide", echo=FALSE, out.width="70%", fig.align='center'}
-gdp_inputs <- read.csv("data/thailand_bangkok_nonthaburi_samutprakan_gdp.csv")
+```{r recent national trends gdp usd2005, results = "hide", echo=FALSE, out.width="70%", fig.align='center'}
+gdp_inputs_usd2005 <- read.csv("data/inputs/socioeconomics/thailand_bangkok_nonthaburi_samutprakan_gdp.csv")
+gdp_growth_usd2005 <- read.csv("data/inputs/socioeconomics/gdp_growth.csv")
 gdp_inputs$region <- factor(gdp_inputs$region, 
                             levels = c("Thailand", "Bangkok", "Samut Prakan",
                                        "Nonthaburi", "Rest of Thailand"))
 
-gdp_recent_chart_national <- rchart::chart(
+# plot gdp
+gdp_recent_chart_national_usd2005 <- rchart::chart(
   dplyr::mutate(
-    dplyr::filter(gdp_inputs, 
+    dplyr::filter(gdp_inputs_usd2005, 
                   year >= 2010, year <= 2019,
                   region == "Thailand"),
       value = value/1000000000),
   save = F, break_interval = 2, aspect_ratio = 0.5)
 
-gdp_recent_chart_national$chart_param +
+gdp_recent_chart_national_usd2005$chart_param +
     ggplot2::ylab("GDP (billions $USD)") +
     ggplot2::theme(legend.position = "none",
                    strip.text = ggplot2::element_blank())
 
+# plot gdp growth
+gdp_growth_recent_chart_national_usd2005 <- rchart::chart(
+  dplyr::mutate(
+    dplyr::filter(gdp_growth_usd2005, 
+                  year >= 2010, year <= 2019,
+                  region == "Thailand")),
+  save = F, break_interval = 2, aspect_ratio = 0.5)
+
+gdp_growth_recent_chart_national_usd2005$chart_param +
+  ggplot2::ylab("GDP Growth Rate (%)") +
+  ggplot2::theme(legend.position = "none",
+                 strip.text = ggplot2::element_blank())
+
 ```
 
-```{r recent MEA province trends gdp, results = "hide", echo=FALSE, out.width="70%", out.extra='style="float:right; padding:10px"'}
+
+```{r recent MEA province trends gdp usd2005, results = "hide", echo=FALSE, out.width="70%", out.extra='style="float:right; padding:10px"'}
+
+# plot gdp
 gdp_recent_chart_mea <- rchart::chart(
   dplyr::mutate(
-    dplyr::filter(gdp_inputs, 
+    dplyr::filter(gdp_inputs_usd2005, 
                   year >= 2010, year <= 2019,
                   !(region %in% c("Thailand", "Rest of Thailand"))), 
       value = value/1000000000),
@@ -499,19 +517,53 @@ gdp_recent_chart_mea$chart_region_absolute +
     ggplot2::ylab("GDP (billions $USD)") +
     ggplot2::theme(legend.position = "none")
 ```
+
 Of the three MEA provinces, Bangkok had the highest GDP in 2019, reaching just over \$140 billion USD. Samut Prakan had the next highest GDP of nearly \$19.5 billion, while Nonthaburi's GDP was approximately \$8.5 billion. Bangkok and Nonthaburi experienced relatively consistent GDP growth in the period from 2010 to 2019, while Samut Prakan's GDP fluctuated, reaching its highest level in 2012 and lowest in 2016.
 
 <p align="center"> <img src="images/blank_space.jpg"></p>
 
+The plot below shows the GDP growth rates of all three provinces during the same period.
+
+```{r recent MEA province growth gdp usd2005, results = "hide", echo=FALSE, out.width="70%", fig.align = "center"}
+# plot gdp growth
+gdp_growth_recent_chart_mea_usd2005 <- rchart::chart(
+  dplyr::mutate(
+    dplyr::filter(gdp_growth_usd2005, 
+                  year >= 2010, year <= 2020,
+                  region %in% c("Bangkok", "Nonthaburi", "Samut Prakan"))),
+  save = F, break_interval = 2, aspect_ratio = 0.5)
+
+gdp_growth_recent_chart_mea_usd2005$chart_region_absolute +
+  ggplot2::ylab("GDP Growth Rate (%)") +
+  ggplot2::theme(strip.text = ggplot2::element_blank())
+```
+
 
 #### Historical Trends and Future Projections
 
-To estimate pre-2011 historical GDP Thailand and the three MEA provinces, we applied GDP growth rates derived from historical World Bank Thailand national data to the NSO data. To project future GDP, we used the annual projected GDP growth rates from 2020 to 2037 reported in Thailand's 2018 Power Development Plan, and kept the growth rate constant at the 2037 rate (3.6) from 2037 to 2100. As with population, we assumed that historical and future GDP growth rates for each MEA province would be consistent with the national growth rates. The following plots show the estimated GDP from 1970 to 2100 for each region. Values within the shaded regions were reported by NSO, while all other values were estimated using the method described above.
+To estimate pre-2011 historical GDP Thailand and the three MEA provinces, we applied GDP growth rates derived from historical World Bank Thailand national data to the NSO data. To project future GDP, we used the annual projected GDP growth rates from 2020 to 2037 reported in Thailand's 2018 Power Development Plan, and kept the growth rate constant at the 2037 rate (3.6) from 2037 to 2100. As with population, we assumed that historical and future GDP growth rates for each MEA province would be consistent with the national growth rates. The plot below shows the GDP growth rates for the entire period, 1970 to 2100.
 
-```{r historical & future trends gdp, results = "hide", echo=FALSE}
+```{r historical & future growth gdp usd2005, results = "hide", echo=FALSE}
+# plot gdp growth
+gdp_growth_chart_all_usd2005 <- rchart::chart(
+  dplyr::mutate(
+    dplyr::filter(gdp_growth_usd2005, 
+                  region != "Rest of Thailand")),
+  save = F, break_interval = 20, aspect_ratio = 0.5)
+
+gdp_growth_chart_all_usd2005$chart_region_absolute +
+  ggplot2::ylab("GDP Growth Rate (%)") +
+  ggplot2::theme(strip.text = ggplot2::element_blank())
+```
+
+The following plots show the estimated GDP from 1970 to 2100 for each region. Values within the shaded regions were reported by NSO, while all other values were estimated using the growth rates shown above.
+
+```{r historical & future trends gdp usd2005, results = "hide", echo=FALSE}
+
+# plot gdp
 gdp_all <- rchart::chart(
   dplyr::mutate(
-    dplyr::filter(gdp_inputs, region != "Rest of Thailand"),
+    dplyr::filter(gdp_inputs_usd2005, region != "Rest of Thailand"),
     value = value/1000000000),
   save = F, break_interval = 20, aspect_ratio = 0.4
 )
@@ -526,75 +578,333 @@ gdp_all$chart_region_absolute +
 ```
 
 
-<!-------------------------->
-<!-------------------------->
-# GCAM Results {.tabset}
-<!-------------------------->
-<!-------------------------->
 
 <!-------------------------->
 <!-------------------------->
-## Energy  {.tabset .tabset-pills}
+### Per Capita GDP (USD2005)
 <!-------------------------->
 <!-------------------------->
 
-<!-------------------------->
-<!-------------------------->
-### By Fuel
-<!-------------------------->
-<!-------------------------->
+#### Recent Trends
+
+The plots below shows national per capita GDP growth rate during the recent period from 2011 to 2019.
+
+```{r recent national trends pcgdp usd2005, results = "hide", echo=FALSE, out.width="70%", fig.align='center'}
+pcgdp_inputs_usd2005 <- read.csv("data/inputs/socioeconomics/thailand_bangkok_nonthaburi_samutprakan_pcgdp.csv")
+pcgdp_inputs_usd2005$region <- factor(gdp_inputs$region, 
+                            levels = c("Thailand", "Bangkok", "Samut Prakan",
+                                       "Nonthaburi", "Rest of Thailand"))
+
+# plot gdp
+pcgdp_recent_chart_national_usd2005 <- rchart::chart(
+  dplyr::mutate(
+    dplyr::filter(pcgdp_inputs_usd2005, 
+                  year >= 2011, year <= 2019,
+                  region == "Thailand"),
+      value = value/1000),
+  save = F, break_interval = 2, aspect_ratio = 0.5)
+
+pcgdp_recent_chart_national_usd2005$chart_param +
+    ggplot2::ylab("Per Capita GDP (Thousands $USD)") +
+    ggplot2::theme(legend.position = "none",
+                   strip.text = ggplot2::element_blank())
+
+
+```
+
+```{r recent MEA province trends pcgdp usd2005, results = "hide", echo=FALSE, out.width="70%", out.extra='style="float:right; padding:10px"'}
+
+# plot gdp
+pcgdp_recent_chart_mea_usd2005 <- rchart::chart(
+  dplyr::mutate(
+    dplyr::filter(pcgdp_inputs_usd2005, 
+                  year >= 2011, year <= 2019,
+                  !(region %in% c("Thailand", "Rest of Thailand"))), 
+      value = value/1000),
+  save = F, break_interval = 2,
+  aspect_ratio = 0.4)
+
+pcgdp_recent_chart_mea_usd2005$chart_region_absolute +
+    ggplot2::facet_wrap(~region, nrow = 3,
+                        scales = "free_y", strip.position = "right") +
+    ggplot2::ylab("Per Capita GDP (thousands $USD)") +
+    ggplot2::theme(legend.position = "none")
+```
+These plots show per capita GDP in the three MEA provinces during the same period.
+
+<p align="center"> <img src="images/blank_space.jpg"></p>
+
+
+#### Historical Trends and Future Projections
+
+The plot below shows per capita GDP from 1970 to 2100 for each region.
+
+```{r historical & future trends pcgdp usd2005, results = "hide", echo=FALSE}
+
+# plot gdp
+pcgdp_all_usd2005 <- rchart::chart(
+  dplyr::mutate(
+    dplyr::filter(pcgdp_inputs_usd2005, region != "Rest of Thailand"),
+    value = value/1000),
+  save = F, break_interval = 20, aspect_ratio = 0.4
+)
+
+pcgdp_all_usd2005$chart_region_absolute +
+    ggplot2::annotate("rect", xmin=41, xmax=51, ymin=-Inf, ymax=Inf,
+                       alpha = 0.2, color = NA) +
+    ggplot2::facet_wrap(~region, nrow = 2, 
+                        scales = "free_y") +
+    ggplot2::ylab("Per Capita GDP (Thousands $USD)") +
+    ggplot2::theme(legend.position = "none")
+```
+
+
 
 <!-------------------------->
 <!-------------------------->
-### By Sector
+### GDP (THB)
 <!-------------------------->
 <!-------------------------->
 
-<!-------------------------->
-<!-------------------------->
-## Electricity  {.tabset .tabset-pills}
-<!-------------------------->
-<!-------------------------->
+#### Recent Trends
+
+Thailand's National Statistical Office (NSO) has reported annual GDP both nationally and by province for the period from 2010 to 2019. The plots below shows national GDP and GDP growth rate during this period.
+
+```{r recent national trends gdp, results = "hide", echo=FALSE, out.width="70%", fig.align='center'}
+gdp_inputs_baht <- read.csv("data/inputs/socioeconomics/baht_thailand_bangkok_nonthaburi_samutprakan_gdp.csv")
+gdp_growth_baht <- read.csv("data/inputs/socioeconomics/baht_gdp_growth.csv")
+gdp_inputs$region <- factor(gdp_inputs$region, 
+                            levels = c("Thailand", "Bangkok", "Samut Prakan",
+                                       "Nonthaburi", "Rest of Thailand"))
+
+# plot gdp
+gdp_recent_chart_national_baht <- rchart::chart(
+  dplyr::mutate(
+    dplyr::filter(gdp_inputs_baht, 
+                  year >= 2010, year <= 2019,
+                  region == "Thailand"),
+      value = value/1000000),
+  save = F, break_interval = 2, aspect_ratio = 0.5)
+
+gdp_recent_chart_national_baht$chart_param +
+    ggplot2::ylab("GDP (Trillions Baht)") +
+    ggplot2::theme(legend.position = "none",
+                   strip.text = ggplot2::element_blank())
+
+# plot gdp growth
+gdp_growth_recent_chart_national_baht <- rchart::chart(
+  dplyr::mutate(
+    dplyr::filter(gdp_growth_baht, 
+                  year >= 2010, year <= 2019,
+                  region == "Thailand")),
+  save = F, break_interval = 2, aspect_ratio = 0.5)
+
+gdp_growth_recent_chart_national_baht$chart_param +
+  ggplot2::ylab("GDP Growth Rate (%)") +
+  ggplot2::theme(legend.position = "none",
+                 strip.text = ggplot2::element_blank())
+
+```
+
+```{r recent MEA province trends gdp baht, results = "hide", echo=FALSE, out.width="70%", out.extra='style="float:right; padding:10px"'}
+
+# plot gdp
+gdp_recent_chart_mea_baht <- rchart::chart(
+  dplyr::mutate(
+    dplyr::filter(gdp_inputs_baht, 
+                  year >= 2010, year <= 2019,
+                  !(region %in% c("Thailand", "Rest of Thailand"))), 
+      value = value/1000000),
+  save = F, break_interval = 2,
+  aspect_ratio = 0.4)
+
+gdp_recent_chart_mea_baht$chart_region_absolute +
+    ggplot2::facet_wrap(~region, nrow = 3,
+                        scales = "free_y", strip.position = "right") +
+    ggplot2::ylab("GDP (Trillions Baht)") +
+    ggplot2::theme(legend.position = "none")
+```
+
+Of the three MEA provinces, Bangkok had the highest GDP in 2019, reaching over 6 billion Baht. Samut Prakan had the next highest GDP of just over 770 million Baht, while Nonthaburi's GDP was nearly 350 million Baht. All three provinces experienced relatively consistent GDP growth in the period from 2010 to 2019.
+
+<p align="center"> <img src="images/blank_space.jpg"></p>
+
+The plot below shows the GDP growth rates of all three provinces during the same period.
+
+```{r recent MEA province growth gdp baht, results = "hide", echo=FALSE, out.width="70%", fig.align = "center"}
+# plot gdp growth
+gdp_growth_recent_chart_mea_baht <- rchart::chart(
+  dplyr::mutate(
+    dplyr::filter(gdp_growth_baht, 
+                  year >= 2010, year <= 2019,
+                  region %in% c("Bangkok", "Nonthaburi", "Samut Prakan"))),
+  save = F, break_interval = 2, aspect_ratio = 0.5)
+
+gdp_growth_recent_chart_mea_baht$chart_region_absolute +
+  ggplot2::ylab("GDP Growth Rate (%)") +
+  ggplot2::theme(strip.text = ggplot2::element_blank())
+```
+
+
+#### Historical Trends and Future Projections
+
+To estimate pre-2011 historical GDP Thailand and the three MEA provinces, we applied GDP growth rates derived from historical World Bank Thailand national data to the NSO data. To project future GDP, we used the annual projected GDP growth rates from 2020 to 2037 reported in Thailand's 2018 Power Development Plan, and kept the growth rate constant at the 2037 rate (3.6) from 2037 to 2100. As with population, we assumed that historical and future GDP growth rates for each MEA province would be consistent with the national growth rates. The plot below shows the GDP growth rates for the entire period, 1970 to 2100.
+
+```{r historical & future growth gdp baht, results = "hide", echo=FALSE}
+# plot gdp growth
+gdp_growth_chart_all_baht <- rchart::chart(
+  dplyr::mutate(
+    dplyr::filter(gdp_growth_baht, 
+                  region != "Rest of Thailand")),
+  save = F, break_interval = 20, aspect_ratio = 0.5)
+
+gdp_growth_chart_all_baht$chart_region_absolute +
+  ggplot2::ylab("GDP Growth Rate (%)") +
+  ggplot2::theme(strip.text = ggplot2::element_blank())
+```
+
+The following plots show the estimated GDP from 1970 to 2100 for each region. Values within the shaded regions were reported by NSO, while all other values were estimated using the growth rates shown above.
+
+```{r historical & future trends gdp baht, results = "hide", echo=FALSE}
+# plot gdp
+gdp_all_baht <- rchart::chart(
+  dplyr::mutate(
+    dplyr::filter(gdp_inputs_baht, region != "Rest of Thailand"),
+    value = value/1000000),
+  save = F, break_interval = 20, aspect_ratio = 0.4
+)
+
+gdp_all_baht$chart_region_absolute +
+    ggplot2::annotate("rect", xmin=41, xmax=51, ymin=-Inf, ymax=Inf,
+                       alpha = 0.2, color = NA) +
+    ggplot2::facet_wrap(~region, nrow = 2, 
+                        scales = "free_y") +
+    ggplot2::ylab("GDP (Trillions Baht)") +
+    ggplot2::theme(legend.position = "none")
+```
+
+
 
 <!-------------------------->
 <!-------------------------->
-### By Fuel
+### Per Capita GDP (THB)
 <!-------------------------->
 <!-------------------------->
 
-<!-------------------------->
-<!-------------------------->
-### By Sector
-<!-------------------------->
-<!-------------------------->
+#### Recent Trends
+
+The plots below shows national per capita GDP growth rate during the recent period of 2011 to 2019.
+
+```{r recent national trends pcgdp baht, results = "hide", echo=FALSE, out.width="70%", fig.align='center'}
+pcgdp_inputs_baht <- read.csv("data/inputs/socioeconomics/baht_thailand_bangkok_nonthaburi_samutprakan_pcgdp.csv")
+pcgdp_inputs_baht$region <- factor(gdp_inputs$region, 
+                            levels = c("Thailand", "Bangkok", "Samut Prakan",
+                                       "Nonthaburi", "Rest of Thailand"))
+
+# plot gdp
+pcgdp_recent_chart_national_baht <- rchart::chart(
+  dplyr::mutate(
+    dplyr::filter(pcgdp_inputs_baht, 
+                  year >= 2011, year <= 2019,
+                  region == "Thailand"),
+      value = value*1000),
+  save = F, break_interval = 2, aspect_ratio = 0.5)
+
+pcgdp_recent_chart_national_baht$chart_param +
+    ggplot2::ylab("Per Capita GDP (Thousands Baht)") +
+    ggplot2::theme(legend.position = "none",
+                   strip.text = ggplot2::element_blank())
+
+
+```
+
+```{r recent MEA province trends pcgdp baht, results = "hide", echo=FALSE, out.width="70%", out.extra='style="float:right; padding:10px"'}
+
+# plot gdp
+pcgdp_recent_chart_mea_baht <- rchart::chart(
+  dplyr::mutate(
+    dplyr::filter(pcgdp_inputs_baht, 
+                  year >= 2011, year <= 2019,
+                  !(region %in% c("Thailand", "Rest of Thailand"))), 
+      value = value*1000),
+  save = F, break_interval = 2,
+  aspect_ratio = 0.4)
+
+pcgdp_recent_chart_mea_baht$chart_region_absolute +
+    ggplot2::facet_wrap(~region, nrow = 3,
+                        scales = "free_y", strip.position = "right") +
+    ggplot2::ylab("Per Capita GDP (thousands Baht)") +
+    ggplot2::theme(legend.position = "none")
+```
+These plots show per capita GDP in the three MEA provinces during the same period.
+
+<p align="center"> <img src="images/blank_space.jpg"></p>
+
+
+#### Historical Trends and Future Projections
+
+The plot below shows per capita GDP from 1970 to 2100 for each region.
+
+```{r historical & future trends pcgdp baht, results = "hide", echo=FALSE}
+
+# plot gdp
+pcgdp_all_baht <- rchart::chart(
+  dplyr::mutate(
+    dplyr::filter(pcgdp_inputs_baht, region != "Rest of Thailand"),
+    value = value),
+  save = F, break_interval = 20, aspect_ratio = 0.4
+)
+
+pcgdp_all_baht$chart_region_absolute +
+    ggplot2::annotate("rect", xmin=41, xmax=51, ymin=-Inf, ymax=Inf,
+                       alpha = 0.2, color = NA) +
+    ggplot2::facet_wrap(~region, nrow = 2, 
+                        scales = "free_y") +
+    ggplot2::ylab("Per Capita GDP (Millions Baht)") +
+    ggplot2::theme(legend.position = "none")
+```
 
 <!-------------------------->
 <!-------------------------->
-## Emissions  {.tabset .tabset-pills}
+# GCAM Initial Diagnostics {.tabset}
 <!-------------------------->
 <!-------------------------->
 
-<!-------------------------->
-<!-------------------------->
-### CO2 by Sector
-<!-------------------------->
-<!-------------------------->
 
 <!-------------------------->
 <!-------------------------->
-### GHG by Fuel
+## Energy {.tabset .tabset-pills}
 <!-------------------------->
 <!-------------------------->
 
-<!-------------------------->
-<!-------------------------->
-### GHG by Sector
-<!-------------------------->
-<!-------------------------->
+```{r data prep, echo = FALSE}
+gcam_final_energy_consump <- tidyr::pivot_longer(
+  dplyr::select(
+    read.csv("data/outputs/initial_diagnostics/queryoutall_final_energy_consump_fuel_sector.csv", skip = 1, check.names = F),
+    !c(scenario, Units)),
+                    !c(region, sector, input),
+                    names_to = "year", values_to = "value")
+
+
+
+```
+
 
 <!-------------------------->
 <!-------------------------->
-## Others (Buildings/Transport?)
+### National
 <!-------------------------->
 <!-------------------------->
+
+```{r national energy consumption}
+
+```
+
+
+<!-------------------------->
+<!-------------------------->
+### By Province
+<!-------------------------->
+<!-------------------------->
+
 
