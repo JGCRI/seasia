@@ -911,24 +911,75 @@ div.tocify {
 <!-------------------------->
 <!-------------------------->
 <!-------------------------->
-<!-------------------------->
-<div id="energy" class="section level2 tabset tabset-pills">
-<h2 class="tabset tabset-pills">Energy</h2>
-<!-------------------------->
-<!-------------------------->
-<!-------------------------->
+<div id="electricity" class="section level2 tabset tabset-pills">
+<h2 class="tabset tabset-pills">Electricity</h2>
 <!-------------------------->
 <div id="national" class="section level3">
 <h3>National</h3>
-<!-------------------------->
-<!-------------------------->
-<!-------------------------->
+<p>The figures below show the national total electricity consumption as reported by MEA, PEA, and EGAT from 2011 to 2020 (red) and as calculated by GCAM from 2005 to 2100 (blue). The plot on the right shows only data from 2011 to 2020, the period during which local data are available.</p>
+<p><img src="thailand_files/figure-html/national%20consumption%20total%20charts-1.png" width="85%" style="display: block; margin: auto;" /></p>
+<p>The figure below shows national electricity consumption by sector as reported by MEA, PEA, and EGAT (left) and as calculated by GCAM (right) for 2015 and 2020.</p>
+<p><img src="thailand_files/figure-html/national%20consumption%20by%20sector%201-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>The figure below shows the GCAM output for national electricity consumption by sector through 2100.</p>
+<p><img src="thailand_files/figure-html/national%20consumption%20by%20sector%202-1.png" width="100%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="mea-service-area" class="section level3">
+<h3>MEA service area</h3>
+<p>The figures below show the total electricity consumption within the MEA service area (Bangkok, Nonthaburi, and Samut Prakan) as reported by MEA from 2011 to 2020 (red) and as calculated by GCAM from 2005 to 2100 (blue). The plot on the right shows only data from 2011 to 2020, the period during which local data are available.</p>
+<p><img src="thailand_files/figure-html/consumption%20MEA%20area%20total%20charts-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>The figure below shows electricity consumption by sector in the MEA service area as reported by MEA (left) and as calculated by GCAM (right) for 2015 and 2020.</p>
+<p><img src="thailand_files/figure-html/consumption%20by%20sector%20MEA%20area%20chart%201-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>The figure below shows the GCAM output for electricity consumption by sector in the MEA service area through 2100.</p>
+<p><img src="thailand_files/figure-html/consumption%20by%20sector%20MEA%20area%20chart%202-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <!-------------------------->
 </div>
-<div id="by-province" class="section level3">
-<h3>By Province</h3>
+</div>
+<div id="energy" class="section level2 tabset tabset-pills">
+<h2 class="tabset tabset-pills">Energy</h2>
 <!-------------------------->
+<div id="national-1" class="section level3">
+<h3>National</h3>
+<p><img src="thailand_files/figure-html/national%20final%20energy%20total%20charts-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="thailand_files/figure-html/national%20final%20energy%20consumption%20by%20fuel%20charts-1.png" width="100%" style="display: block; margin: auto;" /><img src="thailand_files/figure-html/national%20final%20energy%20consumption%20by%20fuel%20charts-2.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="thailand_files/figure-html/national%20final%20energy%20consumption%20by%20sector%20charts-1.png" width="100%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="mea-service-area-1" class="section level3">
+<h3>MEA service area</h3>
 <!-------------------------->
+</div>
+</div>
+<div id="emissions" class="section level2 tabset tabset-pills">
+<h2 class="tabset tabset-pills">Emissions</h2>
+<!-------------------------->
+<div id="national-2" class="section level3">
+<h3>National</h3>
+<p><img src="thailand_files/figure-html/national%20co2%20emissions%20total%20plots-1.png" width="70%" style="display: block; margin: auto;" /></p>
+<p><img src="thailand_files/figure-html/national%20co2%20emissions%20by%20sector%20plots-1.png" width="70%" style="display: block; margin: auto;" /><img src="thailand_files/figure-html/national%20co2%20emissions%20by%20sector%20plots-2.png" width="70%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="mea-service-area-2" class="section level3">
+<h3>MEA service area</h3>
+<!-- <!-------------------------->
+<p>–&gt; <!-- ## Transportation {.tabset .tabset-pills} --> <!-- <!--------------------------> –&gt;</p>
+<!-- ### National -->
+<!-- ```{r transportation groups, echo = F} -->
+<!-- road_group <- c("2W and 3W", "Car", "Large Car and Truck", "Medium truck", "road", "4W", "Cycle", "Mini Car", "Bus", "Heavy truck", "Light truck", "LDV") -->
+<!-- rail_group <- c("HSR", "Freight Rail", "Passenger Rail") -->
+<!-- ship_group <- c("Domestic Ship", "International Ship") -->
+<!-- air_group <- c("International Aviation", "Domestic Aviation") -->
+<!-- ``` -->
+<!-- ```{r transportation data prep, echo = F} -->
+<!-- # read in local data -->
+<!-- local_national_transport_output <- read.csv( -->
+<!--   "data/Thailand/outputs/initial_diagnostics/local_national_transport_output.csv", -->
+<!--   check.names = F -->
+<!-- ) -->
+<!-- # read in and process gcam data -->
+<!-- gcam_transport_output_subsector <- process_gcam_data( -->
+<!--   read.csv("data/Thailand/outputs/initial_diagnostics/queryoutall_transport_output_tech.csv", skip = 1, check.names = F), -->
+<!--   subsector, sector, technology -->
+<!-- ) -->
+<!-- # aggregate GCAM data -->
+<!-- ``` -->
 </div>
 </div>
 </div>
