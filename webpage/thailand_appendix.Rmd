@@ -17,6 +17,33 @@ source("thailand_aggregate_groups.R")
 knitr::opts_chunk$set(results = "hide", echo=FALSE, out.width = "75%", fig.align='center', message = F, warning = F, error = F, eval = T)
 ```
 
+
+
+<!-- Allow href to tabsets --> 
+
+```{js}
+window.onload = function() {
+  document.querySelector('a[href="' + window.location.href.match("#.*$") + '"]').click();
+}
+
+function goToTab() {
+  var hash = String(window.location.href.match("#.*$"));
+  var target = document.querySelector("a[role = 'tab'][href='" + hash + "']");
+  if (target !== null) {
+    var greatgrandparent = target.parentElement.parentElement.parentElement;
+    if (greatgrandparent.getAttribute("role") == "tabpanel") {
+      document.querySelector("a[role = 'tab'][href='#" + greatgrandparent.getAttribute("id") + "']").click();
+    }
+    target.click();
+    target.scrollIntoView();
+  }
+}
+window.onload = function() {
+  setTimeout(goToTab, 100);
+}
+window.onhashchange = goToTab;
+```
+
 # Appendix (Thailand) {-}
 
 <!-------------------------->
