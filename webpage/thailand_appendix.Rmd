@@ -1,0 +1,294 @@
+---
+pagetitle: Appendix
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    toc_collapsed: true
+    toc_depth: 1
+    number_sections: true
+    theme: cosmo
+    #inverse: true
+---
+
+```{r setup, echo = FALSE}
+source("thailand_data_functions.R")
+source("thailand_aggregate_groups.R")
+knitr::opts_chunk$set(results = "hide", echo=FALSE, out.width = "75%", fig.align='center', message = F, warning = F, error = F, eval = T)
+```
+
+# Appendix (Thailand) {-}
+
+<!-------------------------->
+# Inputs {.tabset}
+<!-------------------------->
+
+The plots below show GDP and per capita GDP in terms of constant 2005 $USD. This is the format used as input to GCAM, allowing for consistency between countries in the global model.
+
+## GDP (USD2005)
+
+### Recent Trends {-}
+
+
+```{r recent national trends gdp usd2005, fig.dim=c(8,4),fig.cap="**Thailand national GDP from 2010 to 2019 in constant units of 2005 $USD. Source: [National Statistical Office](http://statbbi.nso.go.th/staticreport/page/sector/en/10.aspx)**"}
+
+gdp_inputs_usd2005 <- read.csv("data/Thailand/inputs/socioeconomics/thailand_bangkok_nonthaburi_samutprakan_gdp.csv")
+gdp_growth_usd2005 <- read.csv("data/Thailand/inputs/socioeconomics/gdp_growth.csv")
+gdp_inputs_usd2005$region <- factor(gdp_inputs_usd2005$region, 
+                            levels = c("Thailand", "Bangkok", "Samut Prakan",
+                                       "Nonthaburi", "Rest of Thailand"))
+
+# plot gdp
+gdp_recent_chart_national_usd2005 <- rchart::chart(
+  dplyr::mutate(
+    dplyr::filter(gdp_inputs_usd2005, 
+                  year >= 2010, year <= 2019,
+                  region == "Thailand"),
+      value = value/1000000000),
+  save = F, aspect_ratio = 0.5)
+
+gdp_recent_chart_national_usd2005$chart_param +
+    ggplot2::ylab("GDP (billions $USD)") +
+    ggplot2::theme(legend.position = "none",
+                   strip.text = ggplot2::element_blank())
+```
+
+<br>
+
+``` {r recent national trends gdp growth usd2005, fig.dim=c(8,4),fig.cap="**Thailand national GDP growth rate from 2010 to 2019 based on constant units of 2005 $USD. Source: [National Statistical Office](http://statbbi.nso.go.th/staticreport/page/sector/en/10.aspx)**"}
+# plot gdp growth
+gdp_growth_recent_chart_national_usd2005 <- rchart::chart(
+  dplyr::mutate(
+    dplyr::filter(gdp_growth_usd2005, 
+                  year >= 2010, year <= 2019,
+                  region == "Thailand")),
+  save = F, aspect_ratio = 0.5)
+
+gdp_growth_recent_chart_national_usd2005$chart_param +
+  ggplot2::ylab("GDP Growth Rate (%)") +
+  ggplot2::theme(legend.position = "none",
+                 strip.text = ggplot2::element_blank())
+
+```
+
+<br>
+<br>
+
+```{r recent MEA province trends gdp usd2005, fig.dim=c(10,3), fig.cap="**GDP from 2010 to 2019 in the MEA service area in constant units of 2005 $USD. Source: [National Statistical Office](http://statbbi.nso.go.th/staticreport/page/sector/en/10.aspx)**"}
+
+# plot gdp
+gdp_recent_chart_mea <- rchart::chart(
+  dplyr::mutate(
+    dplyr::filter(gdp_inputs_usd2005, 
+                  year >= 2010, year <= 2019,
+                  !(region %in% c("Thailand", "Rest of Thailand"))), 
+      value = value/1000000000),
+  save = F)
+
+gdp_recent_chart_mea$chart_region_absolute +
+    ggplot2::facet_wrap(~region, nrow = 1,
+                        scales = "free_y") +
+    ggplot2::ylab("GDP (billions $USD)") +
+    ggplot2::theme(legend.position = "none",
+                   axis.title.y = ggplot2::element_text(size = 12))
+```
+
+
+
+<p align="center"> <img src="images/blank_space.jpg"></p>
+
+The plot below shows the GDP growth rates of all three provinces during the same period.
+
+```{r recent MEA province growth gdp usd2005, fig.dim=c(8,4), fig.cap="**GDP growth rate in the MEA service area from 2010 to 2019 based on constant 2005 $USD. Source: [National Statistical Office](http://statbbi.nso.go.th/staticreport/page/sector/en/10.aspx)**"}
+# plot gdp growth
+gdp_growth_recent_chart_mea_usd2005 <- rchart::chart(
+  dplyr::mutate(
+    dplyr::filter(gdp_growth_usd2005, 
+                  year >= 2010, year <= 2020,
+                  region %in% c("Bangkok", "Nonthaburi", "Samut Prakan"))),
+  save = F, aspect_ratio = 0.5)
+
+gdp_growth_recent_chart_mea_usd2005$chart_region_absolute +
+  ggplot2::ylab("GDP Growth Rate (%)") +
+  ggplot2::theme(strip.text = ggplot2::element_blank())
+```
+
+<br>
+<br>
+
+### Historical Trends and Future Projections {-}
+
+
+```{r historical & future growth gdp usd2005, fig.dim=c(8,4), fig.cap="**Historical and projected future GDP growth rates in Thailand and MEA area based on constant 2005 $USD. Sources: [National Statistical Office](http://statbbi.nso.go.th/staticreport/page/sector/en/10.aspx) (2010-2019), [World Bank](https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=TH) (Pre-2010) and [PDP2018](https://www.thaienergy.org/assets/files/pdp2018-pdf.pdf) (Post-2020)**"}
+# plot gdp growth
+gdp_growth_chart_all_usd2005 <- rchart::chart(
+  dplyr::mutate(
+    dplyr::filter(gdp_growth_usd2005, 
+                  region != "Rest of Thailand")),
+  save = F, aspect_ratio = 0.5)
+
+gdp_growth_chart_all_usd2005$chart_region_absolute +
+  ggplot2::ylab("GDP Growth Rate (%)") +
+  ggplot2::theme(strip.text = ggplot2::element_blank()) +
+  ggplot2::theme(strip.text.y = ggplot2::element_blank())
+```
+
+<br>
+<br>
+
+```{r historical & future trends gdp usd2005, fig.dim=c(8,4), fig.cap="**Historical and projected future GDP in Thailand and MEA area in constant units of 2005 $USD. Sources: [National Statistical Office](http://statbbi.nso.go.th/staticreport/page/sector/en/10.aspx) (2010-2019), [World Bank](https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=TH) (Pre-2010) and [PDP2018](https://www.thaienergy.org/assets/files/pdp2018-pdf.pdf) (Post-2020)**"}
+
+# plot gdp
+gdp_all <- rchart::chart(
+  dplyr::mutate(
+    dplyr::filter(gdp_inputs_usd2005, region != "Rest of Thailand"),
+    value = value/1000000000),
+  save = F, aspect_ratio = 0.4
+)
+
+gdp_all$chart_region_absolute +
+  # 41 to 51 for non-numeric
+  # 2010 to 2019 for numeric
+    ggplot2::annotate("rect", xmin=2010, xmax=2019, ymin=-Inf, ymax=Inf,
+                       alpha = 0.2, color = NA) +
+    ggplot2::facet_wrap(~region, nrow = 2, 
+                        scales = "free_y") +
+    ggplot2::ylab("GDP (billions $USD)") +
+    ggplot2::theme(legend.position = "none")
+```
+
+<br>
+<br>
+
+<!-------------------------->
+<!-------------------------->
+## Per Capita GDP (USD2005)
+<!-------------------------->
+<!-------------------------->
+
+### Recent Trends {-}
+
+```{r recent national trends pcgdp usd2005, fig.dim=c(8,4), fig.cap="**Growth rate of national per capita GDP from 2011 to 2019 based on constant 2005 $USD**"}
+pcgdp_inputs_usd2005 <- read.csv("data/Thailand/inputs/socioeconomics/thailand_bangkok_nonthaburi_samutprakan_pcgdp.csv")
+pcgdp_inputs_usd2005$region <- factor(pcgdp_inputs_usd2005$region, 
+                            levels = c("Thailand", "Bangkok", "Samut Prakan",
+                                       "Nonthaburi", "Rest of Thailand"))
+
+# plot gdp
+pcgdp_recent_chart_national_usd2005 <- rchart::chart(
+  dplyr::mutate(
+    dplyr::filter(pcgdp_inputs_usd2005, 
+                  year >= 2011, year <= 2019,
+                  region == "Thailand"),
+      value = value/1000),
+  save = F, aspect_ratio = 0.5)
+
+pcgdp_recent_chart_national_usd2005$chart_param +
+    ggplot2::ylab("Per Capita GDP (Thousands $USD)") +
+    ggplot2::theme(legend.position = "none",
+                   strip.text = ggplot2::element_blank())
+
+
+```
+
+<br>
+<br>
+
+```{r recent MEA province trends pcgdp usd2005, fig.dim=c(10,3), fig.cap="**GDP from 2010 to 2019 in the MEA service area in constant 2005 $USD. Source: [National Statistical Office](http://statbbi.nso.go.th/staticreport/page/sector/en/10.aspx)**"}
+
+# plot gdp
+pcgdp_recent_chart_mea_usd2005 <- rchart::chart(
+  dplyr::mutate(
+    dplyr::filter(pcgdp_inputs_usd2005, 
+                  year >= 2011, year <= 2019,
+                  !(region %in% c("Thailand", "Rest of Thailand"))), 
+      value = value/1000),
+  save = F)
+
+pcgdp_recent_chart_mea_usd2005$chart_region_absolute +
+    ggplot2::facet_wrap(~region, nrow = 1,
+                        scales = "free_y") +
+    ggplot2::ylab("Per Capita GDP (thousands $USD)") +
+    ggplot2::theme(legend.position = "none",
+                   axis.title.y = ggplot2::element_text(size = 12))
+```
+
+
+<br>
+<br>
+
+### Historical Trends and Future Projections {-}
+
+The plot below shows per capita GDP from 1970 to 2100 for each region.
+
+```{r historical & future trends pcgdp usd2005, fig.dim=c(8,4), fig.cap="**Per capita GDP through 2100 in each region in units of constant 2005 $USD**"}
+
+# plot gdp
+pcgdp_all_usd2005 <- rchart::chart(
+  dplyr::mutate(
+    dplyr::filter(pcgdp_inputs_usd2005, region != "Rest of Thailand"),
+    value = value/1000),
+  save = F, aspect_ratio = 0.4
+)
+
+pcgdp_all_usd2005$chart_region_absolute +
+  # 42 to 51 for non-numeric
+  # 2011 to 2019 for numeric
+    ggplot2::annotate("rect", xmin=2011, xmax=2019, ymin=-Inf, ymax=Inf,
+                       alpha = 0.2, color = NA) +
+    ggplot2::facet_wrap(~region, nrow = 2, 
+                        scales = "free_y") +
+    ggplot2::ylab("Per Capita GDP (Thousands $USD)") +
+    ggplot2::theme(legend.position = "none")
+```
+
+<br>
+<br>
+
+<!-------------------------->
+# Initial Diagnostics {.tabset}
+<!-------------------------->
+
+## Transportation
+
+The plots below compare GCAM output with local data for the transportation output of roads and railways in Thailand. More information is needed to determine which subsectors are included in the local data.
+
+```{r national transport output by sector plots, fig.dim=c(9,4), fig.cap="**National road (left) and rail (right) output from GCAM (blue) and local data (red) from 20017 to 2020. Local data source: [Ministry of Transport](https://datagov.mot.go.th/dataset/)**"}
+
+national_transport_sector_plot_local_rail <- rchart::chart( dplyr::filter(
+  all_national_transport_sector, year >= 2007, year <= 2020, 
+  class == "rail"),
+  save = F, include_points = T
+)
+
+p1 <- national_transport_sector_plot_local_rail$chart_param_Thailand +
+  ggplot2::ggtitle("Rail") + ggplot2::ylab("") 
+
+national_transport_sector_plot_local_road <- rchart::chart( dplyr::filter(
+  all_national_transport_sector, year >= 2007, year <= 2020,
+  class == "road"),
+  save = F, include_points = T
+)
+
+p2 <- national_transport_sector_plot_local_road$chart_param_Thailand +
+  ggplot2::ggtitle("Road") + ggplot2::ylab("Output (million pass-km)")  +
+  ggplot2::theme(axis.title.y = ggplot2::element_text(size = 12))
+
+
+ggpubr::ggarrange(p2, p1, common.legend = T, legend = "bottom") +
+  ggplot2::theme(plot.margin = ggplot2::unit(c(0,0,0.5,0), "cm"))
+
+```
+
+```{r transportation output plots}
+# 2007 to 2020
+national_transport_sector_plot_local <- rchart::chart( dplyr::filter(
+  all_national_transport_sector, year >= 2007, year <= 2020, year %% 5 == 0),
+  save = F
+)
+
+national_transport_sector_plot_local$chart_class_Thailand +
+  ggplot2::ggtitle("") + ggplot2::ylab("Output (million pass-km)") 
+```
+
+

@@ -2,6 +2,11 @@
 pagetitle: SEAsia
 ---
 
+```{r setup, echo = F}
+knitr::opts_chunk$set(echo=FALSE, out.width="100%", results = "show")
+```
+
+
 <div class="header_logo">
 <img src="images/logo_us_state_department.png" style="float:right;height:40px;">
 <img src="images/logo_pnnl_white.png" style="float:right;height:40px;">
@@ -21,21 +26,21 @@ The US-ASEAN Smart Cities Partnership (USASCP) uses innovative approaches across
 <div class="container_map_outer">
 <div class="container_map">
   <a href = "thailand.html">
-```{r, echo=FALSE, out.width="100%"}
+```{r thailand}
 knitr::include_graphics('images/thailand.jpg')
 ```
 </a>
 </div>
 <div class="container_map">
   <a href = "malaysia.html">
-```{r, echo=FALSE, out.width="100%"}
+```{r malaysia}
 knitr::include_graphics('images/malaysia.jpg')
 ```
 </a>
 </div>
 <div class="container_map">
   <a href = "index.html">
-```{r, echo=FALSE, out.width="100%"}
+```{r vietnam}
 knitr::include_graphics('images/vietnam.jpg')
 ```
 </a>

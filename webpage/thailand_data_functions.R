@@ -54,8 +54,13 @@ recode_regions <- function(data){
 # Perform the three functions above to process query output data
 # and optionally reduce data down to a single class (class_name),
 # agreggating across other classes (...) for use in rchart
-process_gcam_data <- function(data, class_name = NULL, ...){
-  processed_data <- recode_regions(shorten_scenarios(elongate_year(data)))
+process_gcam_data <- function(data, processed = F, class_name = NULL, ...){
+  if(processed){
+    processed_data <- data
+  }
+  else{
+    processed_data <- recode_regions(shorten_scenarios(elongate_year(data)))
+  }
   extra_classes <- dplyr::quos(...)
   class_name <- dplyr::enquo(class_name)
   if(!is.null(class_name)){
@@ -70,7 +75,7 @@ process_gcam_data <- function(data, class_name = NULL, ...){
       data_agg, class = !!class_name
     )
   }
-  return(processed_data)
+  return(dplyr::ungroup(processed_data))
 }
 
 
@@ -86,6 +91,25 @@ aggregate_rows <- function(data, filter_var, var_name, filter_group){
     value = sum(value), !!filter_var_name := !!var_name
   )
   return(data_agg)
+}
+
+conv_ghg_co2e <- function (data) {
+  require(dplyr)
+  require(tidyr)
+
+  # GHG emission conversion
+  F_GASES <- c("C2F6", "CF4", "HFC125", "HFC134a", "HFC245fa", "SF6", "HFC143a", "HFC152a", "HFC227ea", "HFC23", "HFC236fa", "HFC32", "HFC365mfc", "HFC43")
+  GHG_gases <- c("CH4", "N2O", F_GASES, "CO2", "CO2LUC")
+
+  GWP_adjuster <- read.csv( "ghg_GWP.csv", skip = 1, na = "")
+
+  data %>%
+    #separate(GHG, into = c("variable", "sector"), sep = "_", fill = "right") %>%
+    filter(GHG %in% GHG_gases) %>%
+    left_join(GWP_adjuster, by = c("GHG" = "GHG_gases")) %>%
+    mutate(value = value * GWP, Units = "CO2e") %>%
+    select(-GWP) %>%
+    return()
 }
 
 
