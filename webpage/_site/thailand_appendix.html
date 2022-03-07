@@ -11,7 +11,7 @@
 
 
 
-<title>Appendix</title>
+<title>Appendix (Thailand)</title>
 
 <script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -377,12 +377,32 @@ window.onload = function() {
 }
 window.onhashchange = goToTab;
 </script>
+<!-- Set table styles -->
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+</style>
+<!-- Header logos -->
+<div class="header_logo">
+<p><img src="images/logo_us_state_department.png" style="float:right;height:40px;"> <img src="images/logo_pnnl_white.png" style="float:right;height:40px;"></p>
+</div>
 <div id="appendix-thailand" class="section level1 unnumbered">
 <h1 class="unnumbered">Appendix (Thailand)</h1>
+<!-------------------------->
 <!-------------------------->
 </div>
 <div id="inputs" class="section level1 tabset" number="1">
 <h1 class="tabset" number="1"><span class="header-section-number">1</span> Inputs</h1>
+<!-------------------------->
 <!-------------------------->
 <p>The plots below show GDP and per capita GDP in terms of constant 2005 $USD. This is the format used as input to GCAM, allowing for consistency between countries in the global model.</p>
 <div id="gdp-usd2005" class="section level2" number="1.1">
@@ -473,22 +493,372 @@ window.onhashchange = goToTab;
 </div>
 <p><br> <br></p>
 <!-------------------------->
-</div>
-</div>
-</div>
-<div id="initial-diagnostics" class="section level1 tabset" number="2">
-<h1 class="tabset" number="2"><span class="header-section-number">2</span> Initial Diagnostics</h1>
 <!-------------------------->
-<div id="transportation" class="section level2" number="2.1">
-<h2 number="2.1"><span class="header-section-number">2.1</span> Transportation</h2>
-<p>The plots below compare GCAM output with local data for the transportation output of roads and railways in Thailand. More information is needed to determine which subsectors are included in the local data.</p>
+</div>
+</div>
+</div>
+<div id="scenarios" class="section level1 tabset" number="2">
+<h1 class="tabset" number="2"><span class="header-section-number">2</span> Scenarios</h1>
+<!-------------------------->
+<!-------------------------->
+<!-------------------------->
+<div id="national-policies" class="section level2" number="2.1">
+<h2 number="2.1"><span class="header-section-number">2.1</span> National Policies</h2>
+<!-------------------------->
+<p>The National Policies scenario integrates all of Thailand’s national power development plans, as well as standards, regulations, and measures to promote energy efficiency, renewable energy expansion, and reduction of greenhouse gas emissions. These include stated plans and policies in the power, transportation, buildings, and industry sectors. The table below describes the policies included in the National Policies scenario, along with a description of their implementation in GCAM.</p>
+<table>
+<tr>
+<th>
+Sector
+</th>
+<th style="width:45%">
+Policy
+</th>
+<th style="width:45%">
+GCAM implementation
+</th>
+</tr>
+<tr>
+<td rowspan="2">
+Power
+</td>
+<td>
+PDP2018 (Figure A2.1.1)
+</td>
+<td rowspan="2">
+Assign yearly planned power capacity technology shares through 2037
+</td>
+</tr>
+<tr>
+<td>
+AEDP2018
+</td>
+</tr>
+<tr>
+<td rowspan="5">
+Transportation
+</td>
+<td>
+Vehicle emissions standards
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+Emissions-based excise tax structure
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+Transportation System Development Plan
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+EV and eco-driving promotion; energy efficiency equipment labeling
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+Voluntary Minimum and High Efficiency Performance Standards
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td rowspan="3">
+Buildings
+</td>
+<td>
+Building energy codes
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+Energy management systems
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+Energy efficiency labeling
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td rowspan="2">
+Industry
+</td>
+<td>
+Energy conservation standards
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+Energy efficiency labeling
+</td>
+<td>
+</td>
+</tr>
+</table>
+<p><br> <br></p>
 <div class="figure" style="text-align: center">
-<img src="thailand_appendix_files/figure-html/national%20transport%20output%20by%20sector%20plots-1.png" alt="**National road (left) and rail (right) output from GCAM (blue) and local data (red) from 20017 to 2020. Local data source: [Ministry of Transport](https://datagov.mot.go.th/dataset/)**" width="75%" />
+<img src="thailand_appendix_files/figure-html/PDP%20elec%20capacity%20plot-1.png" alt="Figure A2.1.1. Thailand's planned power generation capacity mix through 2037 according to the [2018 Power Development Plan](https://www.thaienergy.org/assets/files/pdp2018-pdf.pdf)" width="75%" />
 <p class="caption">
-<strong>National road (left) and rail (right) output from GCAM (blue) and local data (red) from 20017 to 2020. Local data source: <a href="https://datagov.mot.go.th/dataset/">Ministry of Transport</a></strong>
+Figure A2.1.1. Thailand’s planned power generation capacity mix through 2037 according to the <a href="https://www.thaienergy.org/assets/files/pdp2018-pdf.pdf">2018 Power Development Plan</a>
 </p>
 </div>
-<p><img src="thailand_appendix_files/figure-html/transportation%20output%20plots-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<!-- ```{r PDP elec gen plot, fig.dim=c(8,4), fig.cap="Figure A2.1.2. Thailand's electricity generation mix through 2037 according to the capacity mix from [PDP2018](https://www.thaienergy.org/assets/files/pdp2018-pdf.pdf)(Figure A2.1.1) and capacity factors estimated by [IRENA](https://www.irena.org/-/media/files/irena/agency/publication/2017/nov/irena_outlook_thailand_2017.pdf)"} -->
+<!-- capacity_factors <- read.csv("../data/Thailand/scenario_inputs/1_National_policies/capacity_factors.csv", fileEncoding="UTF-8-BOM")  -->
+<!-- elec_gen <- dplyr::full_join(capacity, capacity_factors) %>%  -->
+<!--   mutate(generation = value*capacity_factor*8760*MWh_to_EJ, -->
+<!--          units = "EJ") %>%  -->
+<!--   select(!c(value, capacity_factor)) %>% rename(value = generation) -->
+<!-- elec_gen_plot <- rchart::chart(elec_gen, save = F, aspect_ratio = 0.6)  -->
+<!-- elec_gen_plot$chart_class + -->
+<!--   ylab("Generation capacity (MW)") -->
+<!-- ``` -->
+<p><br> <br></p>
+<!-------------------------->
+</div>
+<div id="extended-national-policies" class="section level2" number="2.2">
+<h2 number="2.2"><span class="header-section-number">2.2</span> Extended National Policies</h2>
+<!-------------------------->
+<p>The Extended National Policies scenario includes all of the stated plans and policies included in the National Policies scenario, and also integrates additional sustainable development measures that have been implemented in other countries and regions. The table below lists these additional measures and describes their implementation in GCAM.</p>
+<table>
+<tr>
+<th>
+Sector
+</th>
+<th style="width:45%">
+Policy
+</th>
+<th style="width:45%">
+GCAM implementation
+</th>
+</tr>
+<tr>
+<td rowspan="2">
+Power
+</td>
+<td>
+Increase RE and CCS penetration
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+Coal and gas development constraints
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td rowspan="3">
+Transportation
+</td>
+<td>
+Enhanced vehicle emissions standards
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+Electric vehicle subsidies
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+Fuel Economy Standards
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td rowspan="2">
+Buildings
+</td>
+<td>
+Enhanced building energy codes
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+Enhanced Minimum energy performance standards
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td rowspan="2">
+Industry
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td>
+</td>
+</tr>
+</table>
+<p><br> <br></p>
+<!-------------------------->
+</div>
+<div id="bangkok-smart-energy" class="section level2" number="2.3">
+<h2 number="2.3"><span class="header-section-number">2.3</span> Bangkok Smart Energy</h2>
+<!-------------------------->
+<p>The Bangkok Smart Energy scenario includes the plans and policies in the National Policies scenario, and also integrates MEA’s plans for grid modernization and digitalization in the Bangkok metropolitan area. The table below lists these plans and describes how they will be implemented in GCAM.</p>
+<table>
+<tr>
+<th>
+Sector
+</th>
+<th style="width:45%">
+Policy
+</th>
+<th style="width:45%">
+GCAM implementation
+</th>
+</tr>
+<tr>
+<td rowspan="4">
+Power
+</td>
+<td>
+Microgrid
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+Energy storage system
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+Smart grid distribution technology
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+Smart Energy Data Analytics Center to manage smart meter data from customers with solar PV
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+Transportation
+</td>
+<td>
+EV charging system improvements
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td rowspan="3">
+Buildings
+</td>
+<td>
+Building energy codes
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+Building energy management systems
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+Smart Meters
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+Industry
+</td>
+<td>
+Smart Meters
+</td>
+<td>
+</td>
+</tr>
+</table>
+<p><br> <br></p>
+<!-------------------------->
+</div>
+<div id="carbon-neutral-and-net-zero-thailand" class="section level2" number="2.4">
+<h2 number="2.4"><span class="header-section-number">2.4</span> Carbon Neutral and Net Zero Thailand</h2>
+<!-------------------------->
+<p>Carbon Neutral and Net Zero Thailand are scenarios providing trajectories to national carbon neutrality by 2050 and net-zero national CO2 emissions by 2065, respectively. These scenarios will include the policies and plans in both the National Policies scenario and the Bangkok Smart Energy scenario, and will use GCAM’s solving abilities to find and describe the most economically efficient pathways to reach the carbon neural and net-zero goals.</p>
+<p><br> <br></p>
+<!-- <!-------------------------->
+<p>–&gt; <!-- # Initial Diagnostics {.tabset} --> <!-- <!--------------------------> –&gt;</p>
+<!-- ## Transportation -->
+<!-- The plots below compare GCAM output with local data for the transportation output of roads and railways in Thailand. More information is needed to determine which subsectors are included in the local data. -->
+<!-- ```{r national transport output by sector plots, fig.dim=c(9,4), fig.cap="**National road (left) and rail (right) output from GCAM (blue) and local data (red) from 20017 to 2020. Local data source: [Ministry of Transport](https://datagov.mot.go.th/dataset/)**"} -->
+<!-- national_transport_sector_plot_local_rail <- rchart::chart( dplyr::filter( -->
+<!--   all_national_transport_sector, year >= 2007, year <= 2020,  -->
+<!--   class == "rail"), -->
+<!--   save = F, include_points = T -->
+<!-- ) -->
+<!-- p1 <- national_transport_sector_plot_local_rail$chart_param_Thailand + -->
+<!--   ggplot2::ggtitle("Rail") + ggplot2::ylab("")  -->
+<!-- national_transport_sector_plot_local_road <- rchart::chart( dplyr::filter( -->
+<!--   all_national_transport_sector, year >= 2007, year <= 2020, -->
+<!--   class == "road"), -->
+<!--   save = F, include_points = T -->
+<!-- ) -->
+<!-- p2 <- national_transport_sector_plot_local_road$chart_param_Thailand + -->
+<!--   ggplot2::ggtitle("Road") + ggplot2::ylab("Output (million pass-km)")  + -->
+<!--   ggplot2::theme(axis.title.y = ggplot2::element_text(size = 12)) -->
+<!-- ggpubr::ggarrange(p2, p1, common.legend = T, legend = "bottom") + -->
+<!--   ggplot2::theme(plot.margin = ggplot2::unit(c(0,0,0.5,0), "cm")) -->
+<!-- ``` -->
+<!-- ```{r transportation output plots} -->
+<!-- # 2007 to 2020 -->
+<!-- national_transport_sector_plot_local <- rchart::chart( dplyr::filter( -->
+<!--   all_national_transport_sector, year >= 2007, year <= 2020, year %% 5 == 0), -->
+<!--   save = F -->
+<!-- ) -->
+<!-- national_transport_sector_plot_local$chart_class_Thailand + -->
+<!--   ggplot2::ggtitle("") + ggplot2::ylab("Output (million pass-km)")  -->
+<!-- ``` -->
 </div>
 </div>
 

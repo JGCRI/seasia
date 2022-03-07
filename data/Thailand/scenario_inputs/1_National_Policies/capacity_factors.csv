@@ -1,0 +1,14 @@
+﻿class,capacity_factor
+hydro,0.56
+wind,0.28
+solar,0.18
+biomass,0.7
+biogas,0.7
+coal,0.7
+gas,0.6
+geothermal,0.1
+transmission line,1
+conservation,1
+diesel,0.7
+waste,0.7
+oil,0.7
