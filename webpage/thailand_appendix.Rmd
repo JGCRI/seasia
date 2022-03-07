@@ -1,5 +1,5 @@
 ---
-pagetitle: Appendix
+pagetitle: Appendix (Thailand)
 output: 
   html_document:
     toc: true
@@ -14,9 +14,10 @@ output:
 ```{r setup, echo = FALSE}
 source("thailand_data_functions.R")
 source("thailand_aggregate_groups.R")
+source("conversions.R")
 knitr::opts_chunk$set(results = "hide", echo=FALSE, out.width = "75%", fig.align='center', message = F, warning = F, error = F, eval = T)
+library(tidyverse)
 ```
-
 
 
 <!-- Allow href to tabsets --> 
@@ -44,11 +45,39 @@ window.onload = function() {
 window.onhashchange = goToTab;
 ```
 
+<!-- Set table styles -->
+
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+</style>
+
+
+<!-- Header logos -->
+
+<div class="header_logo">
+<img src="images/logo_us_state_department.png" style="float:right;height:40px;">
+<img src="images/logo_pnnl_white.png" style="float:right;height:40px;">
+</div>
+
+
 # Appendix (Thailand) {-}
 
 <!-------------------------->
+<!-------------------------->
 # Inputs {.tabset}
 <!-------------------------->
+<!-------------------------->
+
 
 The plots below show GDP and per capita GDP in terms of constant 2005 $USD. This is the format used as input to GCAM, allowing for consistency between countries in the global model.
 
@@ -59,8 +88,8 @@ The plots below show GDP and per capita GDP in terms of constant 2005 $USD. This
 
 ```{r recent national trends gdp usd2005, fig.dim=c(8,4),fig.cap="**Thailand national GDP from 2010 to 2019 in constant units of 2005 $USD. Source: [National Statistical Office](http://statbbi.nso.go.th/staticreport/page/sector/en/10.aspx)**"}
 
-gdp_inputs_usd2005 <- read.csv("data/Thailand/inputs/socioeconomics/thailand_bangkok_nonthaburi_samutprakan_gdp.csv")
-gdp_growth_usd2005 <- read.csv("data/Thailand/inputs/socioeconomics/gdp_growth.csv")
+gdp_inputs_usd2005 <- read.csv("../data/Thailand/socioeconomic_inputs/thailand_bangkok_nonthaburi_samutprakan_gdp.csv")
+gdp_growth_usd2005 <- read.csv("../data/Thailand/socioeconomic_inputs/gdp_growth.csv")
 gdp_inputs_usd2005$region <- factor(gdp_inputs_usd2005$region, 
                             levels = c("Thailand", "Bangkok", "Samut Prakan",
                                        "Nonthaburi", "Rest of Thailand"))
@@ -196,7 +225,7 @@ gdp_all$chart_region_absolute +
 ### Recent Trends {-}
 
 ```{r recent national trends pcgdp usd2005, fig.dim=c(8,4), fig.cap="**Growth rate of national per capita GDP from 2011 to 2019 based on constant 2005 $USD**"}
-pcgdp_inputs_usd2005 <- read.csv("data/Thailand/inputs/socioeconomics/thailand_bangkok_nonthaburi_samutprakan_pcgdp.csv")
+pcgdp_inputs_usd2005 <- read.csv("../data/Thailand/socioeconomic_inputs/thailand_bangkok_nonthaburi_samutprakan_pcgdp.csv")
 pcgdp_inputs_usd2005$region <- factor(pcgdp_inputs_usd2005$region, 
                             levels = c("Thailand", "Bangkok", "Samut Prakan",
                                        "Nonthaburi", "Rest of Thailand"))
@@ -273,49 +302,287 @@ pcgdp_all_usd2005$chart_region_absolute +
 <br>
 
 <!-------------------------->
-# Initial Diagnostics {.tabset}
+<!-------------------------->
+# Scenarios {.tabset}
+<!-------------------------->
 <!-------------------------->
 
-## Transportation
+<!-------------------------->
+## National Policies 
+<!-------------------------->
 
-The plots below compare GCAM output with local data for the transportation output of roads and railways in Thailand. More information is needed to determine which subsectors are included in the local data.
+The National Policies scenario integrates all of Thailand's national power development plans, as well as standards, regulations, and measures to promote energy efficiency, renewable energy expansion, and reduction of greenhouse gas emissions. These include stated plans and policies in the power, transportation, buildings, and industry sectors. The table below describes the policies included in the National Policies scenario, along with a description of their implementation in GCAM. 
 
-```{r national transport output by sector plots, fig.dim=c(9,4), fig.cap="**National road (left) and rail (right) output from GCAM (blue) and local data (red) from 20017 to 2020. Local data source: [Ministry of Transport](https://datagov.mot.go.th/dataset/)**"}
+<table>
+  <tr>
+    <th>Sector</th>
+    <th style="width:45%">Policy</th>
+    <th style="width:45%">GCAM implementation</th>
+  </tr>
+  <tr>
+    <td rowspan="2">Power</td>
+    <td>PDP2018 (Figure A2.1.1)</td>
+    <td rowspan="2">Assign yearly planned power capacity technology shares through 2037</td>
+  </tr>
+  <tr>
+    <td>AEDP2018</td>
+  </tr>
+  <tr>
+  	<td rowspan="5">Transportation</td>
+    <td>Vehicle emissions standards</td>
+    <td> </td>
+  </tr>
+  <tr>
+  	<td>Emissions-based excise tax structure</td>
+    <td> </td>
+  </tr>
+  <tr>
+  	<td>Transportation System Development Plan</td>
+    <td> </td>
+  </tr>
+  <tr>
+  	<td>EV and eco-driving promotion; energy efficiency equipment labeling</td>
+    <td> </td>
+  </tr>
+   <tr>
+  	<td>Voluntary Minimum and High Efficiency Performance Standards</td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td rowspan="3">Buildings</td>
+    <td>Building energy codes</td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>Energy management systems</td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>Energy efficiency labeling</td>
+    <td> </td>
+  </tr>
+  <tr>
+  <td rowspan="2">Industry</td>
+  <td>Energy conservation standards</td>
+  <td> </td>
+  </tr>
+  <tr>
+  <td>Energy efficiency labeling</td>
+  <td> </td>
+  </tr>
+  
+</table>
 
-national_transport_sector_plot_local_rail <- rchart::chart( dplyr::filter(
-  all_national_transport_sector, year >= 2007, year <= 2020, 
-  class == "rail"),
-  save = F, include_points = T
-)
+<br>
+<br>
 
-p1 <- national_transport_sector_plot_local_rail$chart_param_Thailand +
-  ggplot2::ggtitle("Rail") + ggplot2::ylab("") 
+```{r PDP elec capacity plot, fig.dim=c(8,4), fig.cap="Figure A2.1.1. Thailand's planned power generation capacity mix through 2037 according to the [2018 Power Development Plan](https://www.thaienergy.org/assets/files/pdp2018-pdf.pdf)"}
 
-national_transport_sector_plot_local_road <- rchart::chart( dplyr::filter(
-  all_national_transport_sector, year >= 2007, year <= 2020,
-  class == "road"),
-  save = F, include_points = T
-)
+capacity <- read.csv("../data/Thailand/scenario_inputs/1_National_policies/power_gen_capacity_2018_to_2037.csv") %>% dplyr::rename(value = capacity, class=fuel_type) %>% 
+  mutate(region = "Thailand")
 
-p2 <- national_transport_sector_plot_local_road$chart_param_Thailand +
-  ggplot2::ggtitle("Road") + ggplot2::ylab("Output (million pass-km)")  +
-  ggplot2::theme(axis.title.y = ggplot2::element_text(size = 12))
+capacity_plot <- rchart::chart(capacity, save = F, aspect_ratio = 0.6) 
 
-
-ggpubr::ggarrange(p2, p1, common.legend = T, legend = "bottom") +
-  ggplot2::theme(plot.margin = ggplot2::unit(c(0,0,0.5,0), "cm"))
+capacity_plot$chart_class +
+  ylab("Generation capacity (MW)")
 
 ```
 
-```{r transportation output plots}
-# 2007 to 2020
-national_transport_sector_plot_local <- rchart::chart( dplyr::filter(
-  all_national_transport_sector, year >= 2007, year <= 2020, year %% 5 == 0),
-  save = F
-)
+<!-- ```{r PDP elec gen plot, fig.dim=c(8,4), fig.cap="Figure A2.1.2. Thailand's electricity generation mix through 2037 according to the capacity mix from [PDP2018](https://www.thaienergy.org/assets/files/pdp2018-pdf.pdf)(Figure A2.1.1) and capacity factors estimated by [IRENA](https://www.irena.org/-/media/files/irena/agency/publication/2017/nov/irena_outlook_thailand_2017.pdf)"} -->
 
-national_transport_sector_plot_local$chart_class_Thailand +
-  ggplot2::ggtitle("") + ggplot2::ylab("Output (million pass-km)") 
-```
+<!-- capacity_factors <- read.csv("../data/Thailand/scenario_inputs/1_National_policies/capacity_factors.csv", fileEncoding="UTF-8-BOM")  -->
+
+<!-- elec_gen <- dplyr::full_join(capacity, capacity_factors) %>%  -->
+<!--   mutate(generation = value*capacity_factor*8760*MWh_to_EJ, -->
+<!--          units = "EJ") %>%  -->
+<!--   select(!c(value, capacity_factor)) %>% rename(value = generation) -->
+
+<!-- elec_gen_plot <- rchart::chart(elec_gen, save = F, aspect_ratio = 0.6)  -->
+
+<!-- elec_gen_plot$chart_class + -->
+<!--   ylab("Generation capacity (MW)") -->
+
+<!-- ``` -->
+
+<br>
+<br>
+
+<!-------------------------->
+## Extended National Policies 
+<!-------------------------->
+
+The Extended National Policies scenario includes all of the stated plans and policies included in the National Policies scenario, and also integrates additional sustainable development measures that have been implemented in other countries and regions. The table below lists these additional measures and describes their implementation in GCAM.
+
+<table>
+  <tr>
+    <th>Sector</th>
+    <th style="width:45%">Policy</th>
+    <th style="width:45%">GCAM implementation</th>
+  </tr>
+  
+  <tr>
+    <td rowspan="2">Power</td>
+    <td>Increase RE and CCS penetration</td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>Coal and gas development constraints</td>
+    <td> </td>
+  </tr>
+  
+  <tr>
+  	<td rowspan="3">Transportation</td>
+    <td>Enhanced vehicle emissions standards</td>
+    <td> </td>
+  </tr>
+  <tr>
+  	<td>Electric vehicle subsidies</td>
+    <td> </td>
+  </tr>
+  <tr>
+  	<td>Fuel Economy Standards</td>
+    <td> </td>
+  </tr>
+  
+  <tr>
+    <td rowspan="2">Buildings</td>
+    <td>Enhanced building energy codes</td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>Enhanced Minimum energy performance standards</td>
+    <td> </td>
+  </tr>
+  
+  <tr>
+  <td rowspan="2">Industry</td>
+  <td> </td>
+  <td> </td>
+  </tr>
+  <tr>
+  <td> </td>
+  <td> </td>
+  </tr>
+  
+</table>
+
+
+<br>
+<br>
+
+
+<!-------------------------->
+## Bangkok Smart Energy
+<!-------------------------->
+
+The Bangkok Smart Energy scenario includes the plans and policies in the National Policies scenario, and also integrates MEA's plans for grid modernization and digitalization in the Bangkok metropolitan area. The table below lists these plans and describes how they will be implemented in GCAM.
+
+<table>
+  <tr>
+    <th>Sector</th>
+    <th style="width:45%">Policy</th>
+    <th style="width:45%">GCAM implementation</th>
+  </tr>
+  <tr>
+    <td rowspan="4">Power</td>
+    <td>Microgrid</td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>Energy storage system</td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>Smart grid distribution technology</td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>Smart Energy Data Analytics Center to manage smart meter data from customers with solar PV</td>
+    <td> </td>
+  </tr>
+  <tr>
+  	<td>Transportation</td>
+    <td>EV charging system improvements</td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td rowspan="3">Buildings</td>
+    <td>Building energy codes</td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>Building energy management systems</td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>Smart Meters</td>
+    <td> </td>
+  </tr>
+  <tr>
+  <td>Industry</td>
+  <td>Smart Meters</td>
+  <td> </td>
+  </tr>
+  
+</table>
+
+<br>
+<br>
+
+<!-------------------------->
+## Carbon Neutral and Net Zero Thailand 
+<!-------------------------->
+
+Carbon Neutral and Net Zero Thailand are scenarios providing trajectories to national carbon neutrality by 2050 and net-zero national CO2 emissions by 2065, respectively. These scenarios will include the policies and plans in both the National Policies scenario and the Bangkok Smart Energy scenario, and will use GCAM's solving abilities to find and describe the most economically efficient pathways to reach the carbon neural and net-zero goals.
+
+<br>
+<br>
+
+<!-- <!--------------------------> -->
+<!-- # Initial Diagnostics {.tabset} -->
+<!-- <!--------------------------> -->
+
+<!-- ## Transportation -->
+
+<!-- The plots below compare GCAM output with local data for the transportation output of roads and railways in Thailand. More information is needed to determine which subsectors are included in the local data. -->
+
+<!-- ```{r national transport output by sector plots, fig.dim=c(9,4), fig.cap="**National road (left) and rail (right) output from GCAM (blue) and local data (red) from 20017 to 2020. Local data source: [Ministry of Transport](https://datagov.mot.go.th/dataset/)**"} -->
+
+<!-- national_transport_sector_plot_local_rail <- rchart::chart( dplyr::filter( -->
+<!--   all_national_transport_sector, year >= 2007, year <= 2020,  -->
+<!--   class == "rail"), -->
+<!--   save = F, include_points = T -->
+<!-- ) -->
+
+<!-- p1 <- national_transport_sector_plot_local_rail$chart_param_Thailand + -->
+<!--   ggplot2::ggtitle("Rail") + ggplot2::ylab("")  -->
+
+<!-- national_transport_sector_plot_local_road <- rchart::chart( dplyr::filter( -->
+<!--   all_national_transport_sector, year >= 2007, year <= 2020, -->
+<!--   class == "road"), -->
+<!--   save = F, include_points = T -->
+<!-- ) -->
+
+<!-- p2 <- national_transport_sector_plot_local_road$chart_param_Thailand + -->
+<!--   ggplot2::ggtitle("Road") + ggplot2::ylab("Output (million pass-km)")  + -->
+<!--   ggplot2::theme(axis.title.y = ggplot2::element_text(size = 12)) -->
+
+
+<!-- ggpubr::ggarrange(p2, p1, common.legend = T, legend = "bottom") + -->
+<!--   ggplot2::theme(plot.margin = ggplot2::unit(c(0,0,0.5,0), "cm")) -->
+
+<!-- ``` -->
+
+<!-- ```{r transportation output plots} -->
+<!-- # 2007 to 2020 -->
+<!-- national_transport_sector_plot_local <- rchart::chart( dplyr::filter( -->
+<!--   all_national_transport_sector, year >= 2007, year <= 2020, year %% 5 == 0), -->
+<!--   save = F -->
+<!-- ) -->
+
+<!-- national_transport_sector_plot_local$chart_class_Thailand + -->
+<!--   ggplot2::ggtitle("") + ggplot2::ylab("Output (million pass-km)")  -->
+<!-- ``` -->
+
 
 

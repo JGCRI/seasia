@@ -14,6 +14,7 @@ output:
 ```{r setup, echo = FALSE}
 source("thailand_data_functions.R")
 source("thailand_aggregate_groups.R")
+source("conversions.R")
 knitr::opts_chunk$set(results = "hide", echo=FALSE, out.width = "75%", fig.align='center', message = F, warning = F, error = F, eval = T)
 ```
 
@@ -46,8 +47,10 @@ window.onhashchange = goToTab;
 
 
 <div class="header_logo">
+<img src="images/logo_us_state_department.png" style="float:right;height:40px;">
 <img src="images/logo_pnnl_white.png" style="float:right;height:40px;">
 </div>
+
 
 <!-------------------------->
 <!-------------------------->
@@ -378,7 +381,7 @@ knitr::include_graphics("images/timeline2.png")
 Thailand's National Statistical Office (NSO) has reported annual population both nationally and by province for the period from 2011 to 2020. The plot below shows national population, revealing a consistent increasing trend from 2011 to 2019, followed by a slight population decline from 2019 to 2020.
 
 ```{r recent national trends pop, fig.dim=c(8,4), fig.cap="**Figure 9.1.1.1 Thailand National Population from 2011 to 2020. Source: [National Statistical Office](http://statbbi.nso.go.th/staticreport/page/sector/en/01.aspx)**"}
-pop_inputs <- read.csv("data/Thailand/inputs/socioeconomics/thailand_bangkok_nonthaburi_samutprakan_pop.csv")
+pop_inputs <- read.csv("../data/Thailand/socioeconomic_inputs/thailand_bangkok_nonthaburi_samutprakan_pop.csv")
 pop_inputs$region <- factor(pop_inputs$region, levels = c("Thailand", "Bangkok", "Samut Prakan", "Nonthaburi", "Rest of Thailand"),
                             labels = c("Thailand", "Bangkok", "Samut Prakan", "Nonthaburi", "Rest of Thailand"))
 
@@ -470,8 +473,8 @@ The plots below show GDP in units of Thai Baht at current prices for each year. 
 Thailand's National Statistical Office (NSO) has reported annual GDP both nationally and by province for the period from 2010 to 2019. The plots below shows national GDP and GDP growth rate during this period.
 
 ```{r recent national trends gdp, fig.dim=c(9,4), fig.cap="**Figure 9.1.2.1. Thailand national GDP and GDP growth rate from 2010 to 2019. Source: [National Statistical Office](http://statbbi.nso.go.th/staticreport/page/sector/en/10.aspx)**"}
-gdp_inputs_baht <- read.csv("data/Thailand/inputs/socioeconomics/baht_thailand_bangkok_nonthaburi_samutprakan_gdp.csv")
-gdp_growth_baht <- read.csv("data/Thailand/inputs/socioeconomics/baht_gdp_growth.csv")
+gdp_inputs_baht <- read.csv("../data/Thailand/socioeconomic_inputs/baht_thailand_bangkok_nonthaburi_samutprakan_gdp.csv")
+gdp_growth_baht <- read.csv("../data/Thailand/socioeconomic_inputs/baht_gdp_growth.csv")
 gdp_inputs_baht$region <- factor(gdp_inputs_baht$region, 
                             levels = c("Thailand", "Bangkok", "Samut Prakan",
                                        "Nonthaburi", "Rest of Thailand"))
@@ -621,7 +624,7 @@ gdp_all_baht$chart_region_absolute +
 The plots below shows national per capita GDP growth rate during the recent period of 2011 to 2019.
 
 ```{r recent national trends pcgdp baht, fig.dim=c(8,4), fig.cap="Figure 9.1.3.1. **Growth rate of national per capita GDP from 2011 to 2019**"}
-pcgdp_inputs_baht <- read.csv("data/Thailand/inputs/socioeconomics/baht_thailand_bangkok_nonthaburi_samutprakan_pcgdp.csv")
+pcgdp_inputs_baht <- read.csv("../data/Thailand/socioeconomic_inputs/baht_thailand_bangkok_nonthaburi_samutprakan_pcgdp.csv")
 pcgdp_inputs_baht$region <- factor(pcgdp_inputs_baht$region, 
                             levels = c("Thailand", "Bangkok", "Samut Prakan",
                                        "Nonthaburi", "Rest of Thailand"))
@@ -719,12 +722,12 @@ pcgdp_all_baht$chart_region_absolute +
 ```{r national electricity consumption data prep}
 # read in local data
 local_national_elec_consump <- read.csv(
-  "data/Thailand/outputs/initial_diagnostics/local_national_elec_consump.csv"
+  "../data/Thailand/scenario_outputs/initial_diagnostics/local_national_elec_consump.csv"
 )
 
 # read in and process gcam data
 gcam_elec_consump_sector <- process_gcam_data(
-  read.csv("data/Thailand/outputs/initial_diagnostics/queryoutall_elec_consump_sector.csv", 
+  read.csv("../data/Thailand/scenario_outputs/initial_diagnostics/queryoutall_elec_consump_sector.csv", 
            skip = 1, check.names = F),
   processed = F, sector, input)
 
@@ -830,7 +833,7 @@ elec_consump_sector_national_chart_gcam$chart_class_Thailand +
 ```{r total consumption MEA area data prep}
 # read in local data
 local_mea_elec_consump <- tidyr::drop_na(read.csv(
-  "data/Thailand/outputs/initial_diagnostics/local_mea_area_elec_consump.csv"
+  "../data/Thailand/scenario_outputs/initial_diagnostics/local_mea_area_elec_consump.csv"
 ))
 
 # aggregate local sectors
@@ -936,14 +939,14 @@ elec_consump_sector_gcam_chart$`chart_class_MEA area` +
 
 # read in and process gcam data
 gcam_final_energy_fuel <- process_gcam_data(
-  read.csv("data/Thailand/outputs/initial_diagnostics/queryoutall_final_energy_consump_fuel_sector.csv", skip = 1, check.names = F),
+  read.csv("../data/Thailand/scenario_outputs/initial_diagnostics/queryoutall_final_energy_consump_fuel_sector.csv", skip = 1, check.names = F),
   processed = F, input, sector
 )
 
 
 # read in local data
 local_national_final_energy_fuel <- read.csv(
-  "data/Thailand/outputs/initial_diagnostics/local_national_final_energy_fuel.csv",
+  "../data/Thailand/scenario_outputs/initial_diagnostics/local_national_final_energy_fuel.csv",
   check.names = F
 )
 
@@ -969,7 +972,7 @@ all_national_final_energy_fuel <- dplyr::bind_rows(
 ######### by sector ##########
 # read in and process gcam data
 gcam_final_energy_sector <- process_gcam_data(
-   read.csv("data/Thailand/outputs/initial_diagnostics/queryoutall_final_energy_consump_fuel_sector.csv", skip = 1, check.names = F),
+   read.csv("../data/Thailand/scenario_outputs/initial_diagnostics/queryoutall_final_energy_consump_fuel_sector.csv", skip = 1, check.names = F),
   processed = F, sector, input
 )
 
@@ -1120,7 +1123,7 @@ C_to_CO2 <- 44/12
 # read in and process gcam data
 gcam_co2_emissions_sector <- dplyr::mutate(
   process_gcam_data(
-  read.csv("data/Thailand/outputs/initial_diagnostics/queryoutall_co2_emissions_sector.csv", skip = 1, check.names = F),
+  read.csv("../data/Thailand/scenario_outputs/initial_diagnostics/queryoutall_co2_emissions_sector.csv", skip = 1, check.names = F),
   processed = F, sector), value = value * C_to_CO2, Units = "MTCO2"
 )
 
@@ -1136,7 +1139,7 @@ gcam_co2_emissions_agg_sector <- dplyr::bind_rows(
 # read in local data 
 local_national_co2_emissions_sector <- dplyr::mutate(
   read.csv(
-  "data/Thailand/outputs/initial_diagnostics/local_national_co2_emissions_sector.csv",
+  "../data/Thailand/scenario_outputs/initial_diagnostics/local_national_co2_emissions_sector.csv",
   check.names = F)
 )
 
@@ -1256,23 +1259,23 @@ mea_co2_emissions_sector_plot_gcam$`chart_class_MEA area` +
 ```{r transportation data prep}
 # read in local data
 local_national_transport_output <- read.csv(
-  "data/Thailand/outputs/initial_diagnostics/local_national_transport_output.csv",
+  "../data/Thailand/scenario_outputs/initial_diagnostics/local_national_transport_output.csv",
   check.names = F
 )
 
 local_national_transport_ghg <- read.csv(
-  "data/Thailand/outputs/initial_diagnostics/local_transport_ghg_emissions_mode.csv",
+  "../data/Thailand/scenario_outputs/initial_diagnostics/local_transport_ghg_emissions_mode.csv",
   check.names = F, skip = 1
 )
 
 # read in and process gcam data
 gcam_transport_output_subsector <- process_gcam_data(
-  read.csv("data/Thailand/outputs/initial_diagnostics/queryoutall_transport_output_tech.csv", skip = 1, check.names = F),
+  read.csv("../data/Thailand/scenario_outputs/initial_diagnostics/queryoutall_transport_output_tech.csv", skip = 1, check.names = F),
   processed = F, subsector, sector, technology
 )
 
 gcam_ghg_subsector <- process_gcam_data(conv_ghg_co2e(process_gcam_data(
-  read.csv("data/Thailand/outputs/initial_diagnostics/queryoutall_non_co2_emissions_subsector.csv", skip = 1, check.names = F))),
+  read.csv("../data/Thailand/scenario_outputs/initial_diagnostics/queryoutall_non_co2_emissions_subsector.csv", skip = 1, check.names = F))),
   processed = T, subsector, sector, GHG)
 
 # gcam_ghg_subsector_raw <- process_gcam_data(
@@ -1409,12 +1412,12 @@ We have not identified local data regarding buildings energy consumption. Below 
 
 # read in and process gcam data
 gcam_buildings_final_energy_fuel <- process_gcam_data(
-  read.csv("data/Thailand/outputs/initial_diagnostics/queryoutall_building_final_energy_service_fuel.csv", skip = 1, check.names = F),
+  read.csv("../data/Thailand/scenario_outputs/initial_diagnostics/queryoutall_building_final_energy_service_fuel.csv", skip = 1, check.names = F),
   processed = F, input, sector
 )
 
 gcam_buildings_final_energy_sector <- process_gcam_data(
-  read.csv("data/Thailand/outputs/initial_diagnostics/queryoutall_building_final_energy_service_fuel.csv", skip = 1, check.names = F),
+  read.csv("../data/Thailand/scenario_outputs/initial_diagnostics/queryoutall_building_final_energy_service_fuel.csv", skip = 1, check.names = F),
   processed = F, sector, input
 )
 
