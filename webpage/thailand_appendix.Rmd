@@ -116,7 +116,7 @@ gdp_recent_chart_national_usd2005$chart_param +
 gdp_growth_recent_chart_national_usd2005 <- rchart::chart(
   dplyr::mutate(
     dplyr::filter(gdp_growth_usd2005, 
-                  year >= 2010, year <= 2019,
+                  year >= 2011, year <= 2019,
                   region == "Thailand")),
   save = F, aspect_ratio = 0.5)
 
@@ -129,6 +129,7 @@ gdp_growth_recent_chart_national_usd2005$chart_param +
 
 <br>
 <br>
+
 
 ```{r recent MEA province trends gdp usd2005, fig.dim=c(10,3), fig.cap="**GDP from 2010 to 2019 in the MEA service area in constant units of 2005 $USD. Source: [National Statistical Office](http://statbbi.nso.go.th/staticreport/page/sector/en/10.aspx)**"}
 
@@ -153,14 +154,13 @@ gdp_recent_chart_mea$chart_region_absolute +
 
 <p align="center"> <img src="images/blank_space.jpg"></p>
 
-The plot below shows the GDP growth rates of all three provinces during the same period.
 
 ```{r recent MEA province growth gdp usd2005, fig.dim=c(8,4), fig.cap="**GDP growth rate in the MEA service area from 2010 to 2019 based on constant 2005 $USD. Source: [National Statistical Office](http://statbbi.nso.go.th/staticreport/page/sector/en/10.aspx)**"}
 # plot gdp growth
 gdp_growth_recent_chart_mea_usd2005 <- rchart::chart(
   dplyr::mutate(
     dplyr::filter(gdp_growth_usd2005, 
-                  year >= 2010, year <= 2020,
+                  year >= 2011, year <= 2020,
                   region %in% c("Bangkok", "Nonthaburi", "Samut Prakan"))),
   save = F, aspect_ratio = 0.5)
 
@@ -388,21 +388,16 @@ capacity_plot$chart_class +
 
 ```
 
-<!-- ```{r PDP elec gen plot, fig.dim=c(8,4), fig.cap="Figure A2.1.2. Thailand's electricity generation mix through 2037 according to the capacity mix from [PDP2018](https://www.thaienergy.org/assets/files/pdp2018-pdf.pdf)(Figure A2.1.1) and capacity factors estimated by [IRENA](https://www.irena.org/-/media/files/irena/agency/publication/2017/nov/irena_outlook_thailand_2017.pdf)"} -->
+```{r PDP elec gen plot, fig.dim=c(8,4), fig.cap="Figure A2.1.2. Thailand's electricity generation mix through 2037 according to the capacity mix from [PDP2018](https://www.thaienergy.org/assets/files/pdp2018-pdf.pdf)(Figure A2.1.1) and capacity factors estimated by [IRENA](https://www.irena.org/-/media/files/irena/agency/publication/2017/nov/irena_outlook_thailand_2017.pdf)"}
 
-<!-- capacity_factors <- read.csv("../data/Thailand/scenario_inputs/1_National_policies/capacity_factors.csv", fileEncoding="UTF-8-BOM")  -->
+elec_gen <- read.csv("../data/Thailand/scenario_inputs/1_National_policies/electricity_generation_2018_to_2037.csv")
 
-<!-- elec_gen <- dplyr::full_join(capacity, capacity_factors) %>%  -->
-<!--   mutate(generation = value*capacity_factor*8760*MWh_to_EJ, -->
-<!--          units = "EJ") %>%  -->
-<!--   select(!c(value, capacity_factor)) %>% rename(value = generation) -->
+elec_gen_plot <- rchart::chart(elec_gen, save = F, aspect_ratio = 0.6)
 
-<!-- elec_gen_plot <- rchart::chart(elec_gen, save = F, aspect_ratio = 0.6)  -->
+elec_gen_plot$chart_class +
+  ylab("Electricity Generation (EJ)")
 
-<!-- elec_gen_plot$chart_class + -->
-<!--   ylab("Generation capacity (MW)") -->
-
-<!-- ``` -->
+```
 
 <br>
 <br>

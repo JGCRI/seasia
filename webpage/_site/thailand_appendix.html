@@ -432,7 +432,6 @@ td, th {
 <p align="center">
 <img src="images/blank_space.jpg">
 </p>
-<p>The plot below shows the GDP growth rates of all three provinces during the same period.</p>
 <div class="figure" style="text-align: center">
 <img src="thailand_appendix_files/figure-html/recent%20MEA%20province%20growth%20gdp%20usd2005-1.png" alt="**GDP growth rate in the MEA service area from 2010 to 2019 based on constant 2005 $USD. Source: [National Statistical Office](http://statbbi.nso.go.th/staticreport/page/sector/en/10.aspx)**" width="75%" />
 <p class="caption">
@@ -621,16 +620,12 @@ Energy efficiency labeling
 Figure A2.1.1. Thailand’s planned power generation capacity mix through 2037 according to the <a href="https://www.thaienergy.org/assets/files/pdp2018-pdf.pdf">2018 Power Development Plan</a>
 </p>
 </div>
-<!-- ```{r PDP elec gen plot, fig.dim=c(8,4), fig.cap="Figure A2.1.2. Thailand's electricity generation mix through 2037 according to the capacity mix from [PDP2018](https://www.thaienergy.org/assets/files/pdp2018-pdf.pdf)(Figure A2.1.1) and capacity factors estimated by [IRENA](https://www.irena.org/-/media/files/irena/agency/publication/2017/nov/irena_outlook_thailand_2017.pdf)"} -->
-<!-- capacity_factors <- read.csv("../data/Thailand/scenario_inputs/1_National_policies/capacity_factors.csv", fileEncoding="UTF-8-BOM")  -->
-<!-- elec_gen <- dplyr::full_join(capacity, capacity_factors) %>%  -->
-<!--   mutate(generation = value*capacity_factor*8760*MWh_to_EJ, -->
-<!--          units = "EJ") %>%  -->
-<!--   select(!c(value, capacity_factor)) %>% rename(value = generation) -->
-<!-- elec_gen_plot <- rchart::chart(elec_gen, save = F, aspect_ratio = 0.6)  -->
-<!-- elec_gen_plot$chart_class + -->
-<!--   ylab("Generation capacity (MW)") -->
-<!-- ``` -->
+<div class="figure" style="text-align: center">
+<img src="thailand_appendix_files/figure-html/PDP%20elec%20gen%20plot-1.png" alt="Figure A2.1.2. Thailand's electricity generation mix through 2037 according to the capacity mix from [PDP2018](https://www.thaienergy.org/assets/files/pdp2018-pdf.pdf)(Figure A2.1.1) and capacity factors estimated by [IRENA](https://www.irena.org/-/media/files/irena/agency/publication/2017/nov/irena_outlook_thailand_2017.pdf)" width="75%" />
+<p class="caption">
+Figure A2.1.2. Thailand’s electricity generation mix through 2037 according to the capacity mix from <a href="https://www.thaienergy.org/assets/files/pdp2018-pdf.pdf">PDP2018</a>(Figure A2.1.1) and capacity factors estimated by <a href="https://www.irena.org/-/media/files/irena/agency/publication/2017/nov/irena_outlook_thailand_2017.pdf">IRENA</a>
+</p>
+</div>
 <p><br> <br></p>
 <!-------------------------->
 </div>

@@ -46,6 +46,23 @@ window.onhashchange = goToTab;
 ```
 
 
+<!-- Set table styles -->
+
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+</style>
+
+
 <div class="header_logo">
 <img src="images/logo_us_state_department.png" style="float:right;height:40px;">
 <img src="images/logo_pnnl_white.png" style="float:right;height:40px;">
@@ -138,41 +155,41 @@ knitr::include_graphics("images/GCAM_diagram.png")
 
 PNNL, in consultation with Thammasat University and MEA, will develop a set of scenarios for GCAM modeling based on Thailand’s national energy policies and plans as well as MEA’s Smart Grid plans for Bangkok. The impacts of policies and technologies will be assessed in GCAM through associated changes to markets, efficiency assumptions, energy generation shares, and other multi-sector factors. GCAM will predict future outcomes under each scenario; these outcomes may include greenhouse gas emissions, energy supply and demand, market penetration of different technologies, electricity prices, and other relevant indicators of policy impacts. The scenarios will include the following:
 
-* **Mandatory National Policies:** Scenario integrating existing national energy development plans & enforced mandatory energy regulation measures.
-* **Extended National Policies:** Scenario including additional planned power development and energy efficiency and decarbonization policies along with the plans and regulations in the Mandatory National Policies scenario.
-* **Bangkok Smart Energy:** Scenario integrating MEA's plans for Bangkok grid modernization and digitalization along with all national energy policies. 
+* **National Policies:** Scenario integrating existing national energy development plans and energy and emissions reduction policies.
+* **Extended National Policies:** Scenario additionally including extended sustainable development measures implemented in other countries.
+* **Bangkok Smart Energy:** Scenario integrating MEA's plans for Bangkok grid modernization and digitalization along with national policies. 
 * **Carbon Neutral Thailand:** Scenario using most efficient pathway to national carbon neutrality by 2050.
 * **Net-Zero Thailand:** Scenario using most efficient pathway to net-zero national CO2 emissions by 2065
 
 <!-------------------------->
-## Mandatory
+## National Policies
 <!-------------------------->
 
-**Mandatory National Policies Scenario:** The Mandatory National Policies scenario incorporates Thailand’s existing national energy development plans. These include the power plant capacity that is either already installed or bound under government contracts within the Power Development Plan 2018-2037 (PDP2018) and the Renewable and Alternative Energy Development Plan 2018-2037 (AEDP2018). The scenario also incorporates the country’s mandatory energy regulation measures that will be enforced as specified by the “mandatory strategy” of the Energy Efficiency Plan 2018-2037 (EEP2018). These include energy consumption and efficiency regulations within the transportation, buildings, and industry sectors. The table below summarizes the policies incorporated in the Mandatory National Policies scenario.
+**National Policies Scenario:** This scenario integrates all of Thailand's national power development plans, as well as standards, regulations, and measures to promote energy efficiency, renewable energy expansion, and reduction of greenhouse gas emissions. These include the future power plant capacity changes reported in the Power Development Plan 2018-2037 (PDP2018) and the Renewable and Alternative Energy Development Plan 2018-2037 (AEDP2018). The scenario also incorporates the country’s planned energy conservation measures included the Energy Efficiency Plan 2018-2037 (EEP2018), the Transportation System Development Plan 2018-2037, and other policy documents. Policies and measures in this scenario span the power, transportation, buildings, and industry sectors. The table below summarizes the policies incorporated in the Mandatory National Policies scenario.
 
-```{r mandatory national policy table, results = 'show'}
+```{r national policy table, results = 'show'}
 library(pander)
 myTable = data.frame(
     Sector     = c("Energy Supply",
                   "Transportation",
                   "Buildings",
                   "Industry"),
-    Policies = c("* Power Development Plan 2018-2037 (bound capacity)\
-                 \n * Renewable and Alternative Energy Development Plan 2018-2037 (bound capacity)",
+    Policies = c("* Power Development Plan 2018-2037\
+                 \n * Renewable and Alternative Energy Development Plan 2018-2037",
                  "* Vehicle emissions standards\
                  \n * Emissions-based excise tax structure",
                  "* Building Energy Codes enforcement",
                  "* Energy Efficiency Resource Standards")
     ) 
-pander::pander(myTable, keep.line.breaks = TRUE, style = "grid", justify = 'left', split.tables=Inf, caption = "Table 5.1.1. Policies included in the Mandatory National Policies scenario.")
+pander::pander(myTable, keep.line.breaks = TRUE, style = "grid", justify = 'left', split.tables=Inf, caption = "Table 5.1.1. Policies included in the National Policies scenario.")
 ```
 
 
 <!-------------------------->
-## Extended
+## Extended National Policies
 <!-------------------------->
 
-**Extended National Policies Scenario:** The extended national policies scenario includes additional planned power development and national energy efficiency and decarbonization policies along with the plans and regulations in the Mandatory National Policies scenario. Additional power development plans include the target power plant capacity identified by PDP2018 and AEDP2018 beyond the existing and bound capacity. Extended efficiency and decarbonization policies include the measures for supporting and incentivizing energy efficiency in the “promotion strategy” of EEP2018, as well as additional transportation sector targets. The table below summarizes the additional policies incorporated in the extended national policies scenario. Note that this scenario also incorporates the national policies included in the Mandatory National Policies scenario.
+**Extended National Policies Scenario:** This scenario includes additional sustainable development measures that have been implemented in other countries and regions along vwith the plans and policies in the National Policies scenario. These include more aggresive power transitions, enhanced energy and emissions regulations, and economic incentives. The table below summarizes the additional policies incorporated in the Extended National Policies scenario. Note that this scenario also incorporates the national policies included in the Mandatory National Policies scenario.
 
 ```{r extended national policy table, results = 'show'}
 library(pander)
@@ -197,7 +214,7 @@ pander::pander(myTable, keep.line.breaks = TRUE, style = "grid", justify = 'left
 ## Smart Energy
 <!-------------------------->
 
-**Bangkok Smart Energy Scenario:** The Bangkok Smart Energy scenario incorporates the national-level policies included in the extended national policies scenario and MEA’s grid modernization and digitalization plans for Bangkok. These plans include Smart Grid distribution system technologies, as well as improved data management and integration of microgrids and energy storage systems into the grid. There are also transport sector plans, including EV charging system development, as well as measures for energy management and demand response in other sectors. The table below summarizes several components of MEA’s grid modernization and digitalization plans, as well as the capabilities of GCAM integrated assessment modeling for each component.
+**Bangkok Smart Energy Scenario:** This scenario incorporates the national-level policies included in the National Policies scenario as well as MEA’s grid modernization and digitalization plans for Bangkok. These plans include Smart Grid distribution system technologies, improved data management, and integration of microgrids and energy storage systems into the grid. Also included are transport sector plans, including EV charging system development, as well as measures for energy management and demand response in other sectors. The table below summarizes several components of MEA’s grid modernization and digitalization plans, along with the capabilities of GCAM integrated assessment modeling for each component.
 
 ```{r smart energy table, results = 'show'}
 library(pander)
@@ -368,10 +385,49 @@ knitr::include_graphics("images/timeline2.png")
 <!-------------------------->
 <!-------------------------->
 
-
 <!-------------------------->
 ## Socioeconomics  {.tabset .tabset-pills}
 <!-------------------------->
+
+This section describes the socioeconomic (population and GDP) inputs used to define Thailand's subregions (Bangkok, Nonthaburi, Samut Prakan, and Rest of Thailand) in GCAM. Historical data and future projections were available were available at the national and regional scales for some time periods; however, we calculated socioeconomic data for the remaining time periods using the set of simplifying assumptions shown below. 
+
+<table>
+
+<tr>
+<th>Variable</th>
+<th style="width:40%">Assumptions</th>
+<th style="width:50%">Data Sources</th>
+</tr>
+
+<tr>
+<td>Population</td>
+<td>Pre-2010 and post-2019 population growth rates are consistent between all regions</td>
+<td>
+<span>- All regions 2010-2019: [National Statistical Office](http://statbbi.nso.go.th/staticreport/page/sector/en/01.aspx)</span><br/>
+<span>- Pre-2010 & post-2020 growth rates: [United Nations](https://population.un.org/wpp/Graphs/1_Demographic%20Profiles/Thailand.pdf)</span>
+</td>
+</tr>
+
+
+<tr>
+<td rowspan="3">GDP</td>
+<td>Pre-2011 and post-2020 GDP growth rates are consistent between all regions</td>
+<td rowspan="2"> 
+<span>- All regions 2011-2020: [National Statistical Office](http://statbbi.nso.go.th/staticreport/page/sector/en/10.aspx)</span> <br/>
+<span>- Pre-2011 growth rates:[World Bank](https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=TH)</span><br/>
+<span>- 2021-2037 growth rates: [PDP2018](https://www.thaienergy.org/assets/files/pdp2018-pdf.pdf)</span><br/>
+<span>- USD-THB exchange rates: [FRED](https://fred.stlouisfed.org/series/DEXTHUS#0)</span>
+</td>
+</tr>
+
+<tr>
+<td>Post-2037 GDP growth rate is constant</td>
+</tr>
+
+</table>
+
+<br>
+<br>
 
 ### Population
 
@@ -499,7 +555,7 @@ p1 <- gdp_recent_chart_national_baht$chart_param +
 gdp_growth_recent_chart_national_baht <- rchart::chart(
   dplyr::mutate(
     dplyr::filter(gdp_growth_baht, 
-                  year >= 2010, year <= 2019,
+                  year >= 2011, year <= 2019,
                   region == "Thailand")),
   save = F, aspect_ratio = 0.75)
 
@@ -553,7 +609,7 @@ The plot below shows the GDP growth rates of all three provinces during the same
 gdp_growth_recent_chart_mea_baht <- rchart::chart(
   dplyr::mutate(
     dplyr::filter(gdp_growth_baht, 
-                  year >= 2010, year <= 2019,
+                  year >= 2011, year <= 2019,
                   region %in% c("Bangkok", "Nonthaburi", "Samut Prakan"))),
   save = F, aspect_ratio = 0.5)
 
@@ -621,9 +677,9 @@ gdp_all_baht$chart_region_absolute +
 
 #### Recent Trends {-}
 
-The plots below shows national per capita GDP growth rate during the recent period of 2011 to 2019.
+The plots below shows national per capita GDP during the recent period of 2011 to 2019.
 
-```{r recent national trends pcgdp baht, fig.dim=c(8,4), fig.cap="Figure 9.1.3.1. **Growth rate of national per capita GDP from 2011 to 2019**"}
+```{r recent national trends pcgdp baht, fig.dim=c(8,4), fig.cap="Figure 9.1.3.1. **National per capita GDP from 2011 to 2019**"}
 pcgdp_inputs_baht <- read.csv("../data/Thailand/socioeconomic_inputs/baht_thailand_bangkok_nonthaburi_samutprakan_pcgdp.csv")
 pcgdp_inputs_baht$region <- factor(pcgdp_inputs_baht$region, 
                             levels = c("Thailand", "Bangkok", "Samut Prakan",
