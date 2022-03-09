@@ -377,6 +377,20 @@ window.onload = function() {
 }
 window.onhashchange = goToTab;
 </script>
+<!-- Set table styles -->
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+</style>
 <div class="header_logo">
 <p><img src="images/logo_us_state_department.png" style="float:right;height:40px;"> <img src="images/logo_pnnl_white.png" style="float:right;height:40px;"></p>
 </div>
@@ -474,19 +488,19 @@ window.onhashchange = goToTab;
 </p>
 <p>PNNL, in consultation with Thammasat University and MEA, will develop a set of scenarios for GCAM modeling based on Thailand’s national energy policies and plans as well as MEA’s Smart Grid plans for Bangkok. The impacts of policies and technologies will be assessed in GCAM through associated changes to markets, efficiency assumptions, energy generation shares, and other multi-sector factors. GCAM will predict future outcomes under each scenario; these outcomes may include greenhouse gas emissions, energy supply and demand, market penetration of different technologies, electricity prices, and other relevant indicators of policy impacts. The scenarios will include the following:</p>
 <ul>
-<li><strong>Mandatory National Policies:</strong> Scenario integrating existing national energy development plans &amp; enforced mandatory energy regulation measures.</li>
-<li><strong>Extended National Policies:</strong> Scenario including additional planned power development and energy efficiency and decarbonization policies along with the plans and regulations in the Mandatory National Policies scenario.</li>
-<li><strong>Bangkok Smart Energy:</strong> Scenario integrating MEA’s plans for Bangkok grid modernization and digitalization along with all national energy policies.</li>
+<li><strong>National Policies:</strong> Scenario integrating existing national energy development plans and energy and emissions reduction policies.</li>
+<li><strong>Extended National Policies:</strong> Scenario additionally including extended sustainable development measures implemented in other countries.</li>
+<li><strong>Bangkok Smart Energy:</strong> Scenario integrating MEA’s plans for Bangkok grid modernization and digitalization along with national policies.</li>
 <li><strong>Carbon Neutral Thailand:</strong> Scenario using most efficient pathway to national carbon neutrality by 2050.</li>
 <li><strong>Net-Zero Thailand:</strong> Scenario using most efficient pathway to net-zero national CO2 emissions by 2065</li>
 </ul>
 <!-------------------------->
-<div id="mandatory" class="section level2" number="5.1">
-<h2 number="5.1"><span class="header-section-number">5.1</span> Mandatory</h2>
+<div id="national-policies" class="section level2" number="5.1">
+<h2 number="5.1"><span class="header-section-number">5.1</span> National Policies</h2>
 <!-------------------------->
-<p><strong>Mandatory National Policies Scenario:</strong> The Mandatory National Policies scenario incorporates Thailand’s existing national energy development plans. These include the power plant capacity that is either already installed or bound under government contracts within the Power Development Plan 2018-2037 (PDP2018) and the Renewable and Alternative Energy Development Plan 2018-2037 (AEDP2018). The scenario also incorporates the country’s mandatory energy regulation measures that will be enforced as specified by the “mandatory strategy” of the Energy Efficiency Plan 2018-2037 (EEP2018). These include energy consumption and efficiency regulations within the transportation, buildings, and industry sectors. The table below summarizes the policies incorporated in the Mandatory National Policies scenario.</p>
+<p><strong>National Policies Scenario:</strong> This scenario integrates all of Thailand’s national power development plans, as well as standards, regulations, and measures to promote energy efficiency, renewable energy expansion, and reduction of greenhouse gas emissions. These include the future power plant capacity changes reported in the Power Development Plan 2018-2037 (PDP2018) and the Renewable and Alternative Energy Development Plan 2018-2037 (AEDP2018). The scenario also incorporates the country’s planned energy conservation measures included the Energy Efficiency Plan 2018-2037 (EEP2018), the Transportation System Development Plan 2018-2037, and other policy documents. Policies and measures in this scenario span the power, transportation, buildings, and industry sectors. The table below summarizes the policies incorporated in the Mandatory National Policies scenario.</p>
 <table style="width:68%;">
-<caption>Table 5.1.1. Policies included in the Mandatory National Policies scenario.</caption>
+<caption>Table 5.1.1. Policies included in the National Policies scenario.</caption>
 <colgroup>
 <col width="23%" />
 <col width="44%" />
@@ -501,8 +515,8 @@ window.onhashchange = goToTab;
 <tr class="odd">
 <td>Energy Supply</td>
 <td><ul>
-<li>Power Development Plan 2018-2037 (bound capacity)</li>
-<li>Renewable and Alternative Energy Development Plan 2018-2037 (bound capacity)</li>
+<li>Power Development Plan 2018-2037</li>
+<li>Renewable and Alternative Energy Development Plan 2018-2037</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -528,10 +542,10 @@ window.onhashchange = goToTab;
 </table>
 <!-------------------------->
 </div>
-<div id="extended" class="section level2" number="5.2">
-<h2 number="5.2"><span class="header-section-number">5.2</span> Extended</h2>
+<div id="extended-national-policies" class="section level2" number="5.2">
+<h2 number="5.2"><span class="header-section-number">5.2</span> Extended National Policies</h2>
 <!-------------------------->
-<p><strong>Extended National Policies Scenario:</strong> The extended national policies scenario includes additional planned power development and national energy efficiency and decarbonization policies along with the plans and regulations in the Mandatory National Policies scenario. Additional power development plans include the target power plant capacity identified by PDP2018 and AEDP2018 beyond the existing and bound capacity. Extended efficiency and decarbonization policies include the measures for supporting and incentivizing energy efficiency in the “promotion strategy” of EEP2018, as well as additional transportation sector targets. The table below summarizes the additional policies incorporated in the extended national policies scenario. Note that this scenario also incorporates the national policies included in the Mandatory National Policies scenario.</p>
+<p><strong>Extended National Policies Scenario:</strong> This scenario includes additional sustainable development measures that have been implemented in other countries and regions along vwith the plans and policies in the National Policies scenario. These include more aggresive power transitions, enhanced energy and emissions regulations, and economic incentives. The table below summarizes the additional policies incorporated in the Extended National Policies scenario. Note that this scenario also incorporates the national policies included in the Mandatory National Policies scenario.</p>
 <table style="width:76%;">
 <caption>Table 5.2.1. Policies included in the Extended National Policies scenario.</caption>
 <colgroup>
@@ -574,7 +588,7 @@ window.onhashchange = goToTab;
 <div id="smart-energy" class="section level2" number="5.3">
 <h2 number="5.3"><span class="header-section-number">5.3</span> Smart Energy</h2>
 <!-------------------------->
-<p><strong>Bangkok Smart Energy Scenario:</strong> The Bangkok Smart Energy scenario incorporates the national-level policies included in the extended national policies scenario and MEA’s grid modernization and digitalization plans for Bangkok. These plans include Smart Grid distribution system technologies, as well as improved data management and integration of microgrids and energy storage systems into the grid. There are also transport sector plans, including EV charging system development, as well as measures for energy management and demand response in other sectors. The table below summarizes several components of MEA’s grid modernization and digitalization plans, as well as the capabilities of GCAM integrated assessment modeling for each component.</p>
+<p><strong>Bangkok Smart Energy Scenario:</strong> This scenario incorporates the national-level policies included in the National Policies scenario as well as MEA’s grid modernization and digitalization plans for Bangkok. These plans include Smart Grid distribution system technologies, improved data management, and integration of microgrids and energy storage systems into the grid. Also included are transport sector plans, including EV charging system development, as well as measures for energy management and demand response in other sectors. The table below summarizes several components of MEA’s grid modernization and digitalization plans, along with the capabilities of GCAM integrated assessment modeling for each component.</p>
 <table>
 <caption>Table 5.3.1. Policies and technologies included in the Bangkok Smart Energy scenario.</caption>
 <colgroup>
@@ -815,6 +829,48 @@ window.onhashchange = goToTab;
 <div id="socioeconomics" class="section level2 tabset tabset-pills" number="9.1">
 <h2 class="tabset tabset-pills" number="9.1"><span class="header-section-number">9.1</span> Socioeconomics</h2>
 <!-------------------------->
+<p>This section describes the socioeconomic (population and GDP) inputs used to define Thailand’s subregions (Bangkok, Nonthaburi, Samut Prakan, and Rest of Thailand) in GCAM. Historical data and future projections were available were available at the national and regional scales for some time periods; however, we calculated socioeconomic data for the remaining time periods using the set of simplifying assumptions shown below.</p>
+<table>
+<tr>
+<th>
+Variable
+</th>
+<th style="width:40%">
+Assumptions
+</th>
+<th style="width:50%">
+Data Sources
+</th>
+</tr>
+<tr>
+<td>
+Population
+</td>
+<td>
+Pre-2010 and post-2019 population growth rates are consistent between all regions
+</td>
+<td>
+<span>- All regions 2010-2019: <a href="http://statbbi.nso.go.th/staticreport/page/sector/en/01.aspx">National Statistical Office</a></span><br/> <span>- Pre-2010 &amp; post-2020 growth rates: <a href="https://population.un.org/wpp/Graphs/1_Demographic%20Profiles/Thailand.pdf">United Nations</a></span>
+</td>
+</tr>
+<tr>
+<td rowspan="3">
+GDP
+</td>
+<td>
+Pre-2011 and post-2020 GDP growth rates are consistent between all regions
+</td>
+<td rowspan="2">
+<span>- All regions 2011-2020: <a href="http://statbbi.nso.go.th/staticreport/page/sector/en/10.aspx">National Statistical Office</a></span> <br/> <span>- Pre-2011 growth rates:<a href="https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=TH">World Bank</a></span><br/> <span>- 2021-2037 growth rates: <a href="https://www.thaienergy.org/assets/files/pdp2018-pdf.pdf">PDP2018</a></span><br/> <span>- USD-THB exchange rates: <a href="https://fred.stlouisfed.org/series/DEXTHUS#0">FRED</a></span>
+</td>
+</tr>
+<tr>
+<td>
+Post-2037 GDP growth rate is constant
+</td>
+</tr>
+</table>
+<p><br> <br></p>
 <div id="population" class="section level3" number="9.1.1">
 <h3 number="9.1.1"><span class="header-section-number">9.1.1</span> Population</h3>
 <div id="recent-trends" class="section level4 unnumbered">
@@ -911,11 +967,11 @@ Figure 9.1.2.5. <strong>Historical and projected future GDP in Thailand and MEA 
 <!-------------------------->
 <div id="recent-trends-2" class="section level4 unnumbered">
 <h4 class="unnumbered">Recent Trends</h4>
-<p>The plots below shows national per capita GDP growth rate during the recent period of 2011 to 2019.</p>
+<p>The plots below shows national per capita GDP during the recent period of 2011 to 2019.</p>
 <div class="figure" style="text-align: center">
-<img src="thailand_files/figure-html/recent%20national%20trends%20pcgdp%20baht-1.png" alt="Figure 9.1.3.1. **Growth rate of national per capita GDP from 2011 to 2019**" width="75%" />
+<img src="thailand_files/figure-html/recent%20national%20trends%20pcgdp%20baht-1.png" alt="Figure 9.1.3.1. **National per capita GDP from 2011 to 2019**" width="75%" />
 <p class="caption">
-Figure 9.1.3.1. <strong>Growth rate of national per capita GDP from 2011 to 2019</strong>
+Figure 9.1.3.1. <strong>National per capita GDP from 2011 to 2019</strong>
 </p>
 </div>
 <p><br> <br></p>
