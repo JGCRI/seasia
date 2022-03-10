@@ -32,7 +32,7 @@ knitr::include_graphics('images/thailand.jpg')
 </a>
 </div>
 <div class="container_map">
-  <a href = "malaysia.html">
+  <a href = "index.html">
 ```{r malaysia}
 knitr::include_graphics('images/malaysia.jpg')
 ```
