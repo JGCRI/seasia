@@ -7,8 +7,6 @@ navbar:
       href: index.html
     - text: "Thailand"
       href: thailand.html
-    - text: "Malaysia"
-      href: malaysia.html
     - icon: fab fa-github
       href: https://github.com/JGCRI/seasia
 
