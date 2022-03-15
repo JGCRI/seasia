@@ -11,7 +11,7 @@ output:
     #inverse: true
 ---
 
-```{r setup, echo = FALSE}
+```{r setup, echo = FALSE, message=FALSE, warning=FALSE}
 source("thailand_data_functions.R")
 source("thailand_aggregate_groups.R")
 source("conversions.R")
@@ -533,9 +533,9 @@ Carbon Neutral and Net Zero Thailand are scenarios providing trajectories to nat
 <br>
 <br>
 
-<!-- <!--------------------------> -->
+<!-- <!--------------------------> 
 <!-- # Initial Diagnostics {.tabset} -->
-<!-- <!--------------------------> -->
+<!-- <!--------------------------> 
 
 <!-- ## Transportation -->
 
