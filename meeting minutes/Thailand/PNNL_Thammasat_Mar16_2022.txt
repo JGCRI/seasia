@@ -1,0 +1,22 @@
+PNNL-Thammasat Monthly Project Meeting
+
+March 16 10:00 Pm (ET)/ March 17 9:00 AM (BKK)
+
+
+-- Briefly reviewed team members
+-- Reviewed subcontract timeline and deliverables
+   -- GCAM trainings are just with PNNL and Thammasat; Thammasat's only obligation is to attend them
+   -- Current plan is to have 5 payments, but Thammasat team can write to contract specialist to request changing this if needed
+-- Involving EGAT, BMA, and EPPO
+   -- EGAT is mostly production side, but demand side issues are still important for generation planning; we will invite them to the workshops
+   -- BMA may not have time/ capability to be very involved throughout the project, but we will also invite them to the workshops
+   -- Still waiting for EPPO to review the information and decide if/ how they will be involved
+-- Reviewed planning sheet and webpage
+   -- PNNL is leading model/ scenario development, but Thammasat team will have opportunity to replicate analyses and add to scenarios if desired
+   -- We will provide github version of the model later
+   -- Thammasat has feedback/ ideas for improving socioeconomic input data
+-- Discussed future meeting schedule
+   -- Thammasat team would prefer meeting every 6 weeks rather than monthly; we will follow up to schedule this
+-- Next steps
+   -- Once the subcontract is signed and the Thammasat team sends the first deliverable (team members memo), we can get the first payment out
+   -- PNNL will keep adding details to the scenarios section in the appendix as we continue to develop the first scenario
