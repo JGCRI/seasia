@@ -91,18 +91,22 @@ knitr::include_graphics("images/GCAM_diagram.png")
 <!-------------------------->
 <p align="center"> <img src="images/divider.png"></p>
 
-PNNL, in consultation with MEA, will develop a set of scenarios for GCAM modeling based on Thailand’s national energy policies and plans as well as MEA’s Smart Grid plans for Bangkok. The impacts of policies and technologies will be assessed in GCAM through associated changes to markets, efficiency assumptions, energy generation shares, and other multi-sector factors. GCAM will predict future outcomes under each scenario; these outcomes may include greenhouse gas emissions, energy supply and demand, market penetration of different technologies, electricity prices, and other relevant indicators of policy impacts. The scenarios will include the following:
+//PNNL, in consultation with MEA, will develop a set of scenarios for GCAM modeling based on Thailand’s national energy policies and plans as well as MEA’s Smart Grid plans for Bangkok. The impacts of policies and technologies will be assessed in GCAM through associated changes to markets, efficiency assumptions, energy generation shares, and other multi-sector factors. GCAM will predict future outcomes under each scenario; these outcomes may include greenhouse gas emissions, energy supply and demand, market penetration of different technologies, electricity prices, and other relevant indicators of policy impacts. The scenarios will include the following:
 
-* **Mandatory National Policies:** Scenario integrating existing national energy development plans & enforced mandatory energy regulation measures.
-* **Extended National Policies:** Scenario including additional planned power development and energy efficiency and decarbonization policies along with the plans and regulations in the Mandatory National Policies scenario.
-* **Bangkok Smart Energy:** Scenario integrating MEA's plans for Bangkok grid modernization and digitalization along with all national energy policies. 
-* **Net Zero Thailand:** Scenario using most efficient pathway to net zero national CO2 emissions by 2060.
+* **Council-Led:** Scenario driven by strategies and actions that are ambitious and achievable within the authority of KLCH, including the implementation of all National policies.
+* **Integrated Approach:** Scenario relying on an integrated approach with KLCH, the Federal government, and other agencies, highlighting the potential emissions reductions that could occur should all parties align.
+* **Net Zero Kuala Lumpur:** Scenario using the most efficient pathway to net zero CO~2~ emissions by 2050 at the city levels.
+* **Net Zero Malaysia:** Scenario using the most efficient pathway to net zero national CO~2~ emissions by 2050.
 
 <!-------------------------->
-## Mandatory
+## Council-Led
 <!-------------------------->
 
-**Mandatory National Policies Scenario:** The Mandatory National Policies scenario incorporates Thailand’s existing national energy development plans. These include the power plant capacity that is either already installed or bound under government contracts within the Power Development Plan 2018-2037 (PDP2018) and the Renewable and Alternative Energy Development Plan 2018-2037 (AEDP2018). The scenario also incorporates the country’s mandatory energy regulation measures that will be enforced as specified by the “mandatory strategy” of the Energy Efficiency Plan 2018-2037 (EEP2018). These include energy consumption and efficiency regulations within the transportation, buildings, and industry sectors. The table below summarizes the policies incorporated in the Mandatory National Policies scenario.
+**Council-Led Scenario:** In this scenario, KLCH has the authority to implement measures to achieve carbon emissions reductions. The scenario will largely be achieved through existing actions outlined in the KLLCSBP2030 and Federal policies and plans, including the National Renewable Energy Policy and Action Plan, the National Energy Efficiency Action Plan, the National Transport Policy, and publicly declared renewable energy targets. 
+
+Note that this scenario _does not_ meet Kuala Lumpur's benchmark targets for 2030 or 2050; this is due to the lack of power and capacity for KLCH to implement more ambitious actions. Key remaining emissions will come from the following sectors: residential, commercial and institutional buildings, industrial energy, and on-road transportation.
+
+The table below summarizes the policies encompassed by the Council-Led scenario. **UPDATE**
 
 ```{r, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
 library(pander)
@@ -124,11 +128,15 @@ pander::pander(myTable, keep.line.breaks = TRUE, style = "grid", justify = 'left
 
 <!-------------------------->
 <!-------------------------->
-## Extended
+## Integrated Approach
 <!-------------------------->
 <!-------------------------->
 
-**Extended National Policies Scenario:** The extended national policies scenario includes additional planned power development and national energy efficiency and decarbonization policies along with the plans and regulations in the Mandatory National Policies scenario. Additional power development plans include the target power plant capacity identified by PDP2018 and AEDP2018 beyond the existing and bound capacity. Extended efficiency and decarbonization policies include the measures for supporting and incentivizing energy efficiency in the “promotion strategy” of EEP2018, as well as additional transportation sector targets. The table below summarizes the additional policies incorporated in the extended national policies scenario. Note that this scenario also incorporates the national policies included in the Mandatory National Policies scenario.
+**Integrated Approach Scenario:** This scenario explores the potential carbon emissions reductions that could occur with strong collaboration across different stakeholders. Kuala Lumpur could be an advocate for such solutions, but the measures outlined in this scenario involve policy shifts at the Federal level.
+
+Even if all scenario targets are met, Kuala Lumpur would still have residual emissions in situations where no mitigation technology exists or where a low-emissions alternative is technically or economically non-viable in the near-term. Top sources include: solid waste, commercial and institutional buildings, and on-road transportation.
+
+The table below summarizes the policies encompassed by the Integrated Approach scenario. **UPDATE**
 
 ```{r, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
 library(pander)
@@ -149,58 +157,14 @@ pander::pander(myTable, keep.line.breaks = TRUE, style = "grid", justify = 'left
 
 ```
 
-<!-------------------------->
-<!-------------------------->
-## Smart Energy
-<!-------------------------->
-<!-------------------------->
-
-**Bangkok Smart Energy Scenario:** The Bangkok Smart Energy scenario incorporates the national-level policies included in the extended national policies scenario and MEA’s grid modernization and digitalization plans for Bangkok. These plans include Smart Grid distribution system technologies, as well as improved data management and integration of microgrids and energy storage systems into the grid. There are also transport sector plans, including EV charging system development, as well as measures for energy management and demand response in other sectors. The table below summarizes several components of MEA’s grid modernization and digitalization plans, as well as the capabilities of GCAM integrated assessment modeling for each component.
-
-```{r, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
-library(pander)
-myTable = data.frame(
-    'Sector'     = c("Monitoring & Control",
-                  "Data Analytics",
-                  "Supply Reliability",
-                  "DER Integration",
-                  "Green Energy",
-                  "Customer Engagement"),
-    'Policies & Technologies' = c("* Network analysis and load forecasting\
-                 \n * Increased transmission control\
-                 \n * Communication systems for identifying and addressing faults",
-                 "* Advanced Metering Infrastructure\
-                 \n * Outage management & data communication technology\
-                 \n * Smart Energy Data Analytics Center",
-                 "* Support increasing electricity demand & fully cover service area",
-                 "* Microgrid system\
-                 \n * Energy storage system\
-                 \n * Building & Factory Energy Management Systems",
-                 "* Electricity purchase from waste-to-energy plants\
-                 \n * Household solar & community power plant project\
-                 \n * EV promotion & smart charging",
-                 "* Customer management systems & information access"),
-    'GCAM Capabilities' = c("* Access long-term impacts of increased transmisison efficiency on the energy sector",
-                "* Analyze how advanced metering can affect electricity demand & load management",
-                "* Examine changes in future electricity demand in response to policy & technology changes",
-                "* Project RE shares under microgrid & energy storage scenarios\
-                \n * Assess how energy management systems will impact energy use by each sector",
-                "* Assess how contributions from green energy sources impact generation mix in the long-term\
-                \n * Reveal impacts of EV initiatives on transport sector and emissions",
-                "* Integrate demand response impacts into energy conservation planning"), 
-    check.names = FALSE
-    ) 
-pander::pander(myTable, keep.line.breaks = TRUE, style = "grid", justify = 'left', split.tables=Inf, caption = "Table 3. Policies and technologies included in the Bangkok Smart Energy scenario.")
-
-```
 
 <!-------------------------->
 <!-------------------------->
-## Net Zero
+## Net Zero Kuala Lumpur and Malaysia
 <!-------------------------->
 <!-------------------------->
 
-**Net Zero Thailand Scenario:** At the 2021 United Nations climate change conference (COP26), Thailand’s prime minister announced the country’s goal to reach carbon neutrality by 2050 and net zero CO2 emissions by 2065. The net zero Thailand scenario represents the most economically efficient pathway for Thailand to reach net zero CO2 emissions by 2065 given the energy policies included in the extended national policies scenario. This pathway will be found using GCAM’s solving capabilities. The outcomes of this scenario will provide insight into the role that Bangkok will need play in Thailand’s decarbonization and highlight additional measures that may be needed in order for Bangkok to play this role.
+**Net Zero Kuala Lumpur and Malaysia Scenario:** 
 
 <br>
 
@@ -221,7 +185,9 @@ pander::pander(myTable, keep.line.breaks = TRUE, style = "grid", justify = 'left
 knitr::include_graphics("images/MEA_BMA_boundaries_map.png")
 ```
 
-PNNL’s assessment will encompass outcomes both on the national level and the city level, with the city level analysis including the three provinces served by MEA within the Bangkok metropolitan area. The map to the right shows these provinces (Figure 2): the green region includes Bangkok as well as the two other provinces served by MEA (Nonthaburi and Samut Prakan), while the shaded region includes only Bangkok itself, which is the area governed under the Bangkok Metropolitan Administration (BMA). For the city level analysis, results will be reported for each province individually as well as for the aggregated MEA service area.
+PNNL will assess outcomes at the city level. The Council-Led scenario encompasses only policies that can be implemented by KLCH, although the Integrated Approach scenario requires additional action at the national level. Therefore, PNNL will perform some country level analysis, with the primary focus remaining on Kuala Lumpur. 
+
+The map to the right shows Kuala Lumpur's location within Malaysia.
 
 
 <!-------------------------->
@@ -230,7 +196,7 @@ PNNL’s assessment will encompass outcomes both on the national level and the c
 <!-------------------------->
 <!-------------------------->
 
-Scenarios will be assessed up from the year 2015 to the year 2100, with the GCAM analysis conducted at five-year intervals within this range.
+Scenarios will be assessed up from the year 2015 to the year 2050, with the GCAM analysis conducted at five-year intervals within this range.
 
 
 <br>
