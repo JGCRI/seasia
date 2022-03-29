@@ -95,8 +95,8 @@ knitr::include_graphics("images/GCAM_diagram.png")
 
 * **Council-Led:** Scenario driven by strategies and actions that are ambitious and achievable within the authority of KLCH, including the implementation of all National policies.
 * **Integrated Approach:** Scenario relying on an integrated approach with KLCH, the Federal government, and other agencies, highlighting the potential emissions reductions that could occur should all parties align.
-* **Net Zero Kuala Lumpur:** Scenario using the most efficient pathway to net zero CO~2~ emissions by 2050 at the city levels.
-* **Net Zero Malaysia:** Scenario using the most efficient pathway to net zero national CO~2~ emissions by 2050.
+* **Carbon Neutral Malaysia and Kuala Lumpur:** Scenario using the most efficient pathway to net zero CO~2~ emissions by 2050 at the national and city levels.
+
 
 <!-------------------------->
 ## Council-Led
@@ -160,12 +160,11 @@ pander::pander(myTable, keep.line.breaks = TRUE, style = "grid", justify = 'left
 
 <!-------------------------->
 <!-------------------------->
-## Net Zero Kuala Lumpur and Malaysia
+## Carbon Neutral Malaysia and Kuala Lumpur
 <!-------------------------->
 <!-------------------------->
 
-**Net Zero Kuala Lumpur and Malaysia Scenario:** 
-
+**Carbon Neutral Malaysia and Kuala Lumpur:** Prior to COP26, Malaysia pledged to achieve carbon neutrality as early as 2050. Later in 2021, Kuala Lumpur committed to becoming a climate-neutral city by 2050. The Carbon Neutral Malaysia and Kuala Lumpur scenario represents the most economically efficient pathway to reach carbon neutrality by 2050 given the policies outlined in the scenarios described above. This pathway will be found using GCAM’s solving capabilities. The outcomes of this scenario will provide insight into the role that that KLCH can play in achieving carbon neutrality and additional measures that may need to be taken.
 <br>
 
 <!-------------------------->
