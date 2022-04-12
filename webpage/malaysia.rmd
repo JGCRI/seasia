@@ -388,3 +388,11 @@ data.frame(
 
 ## Others (Buildings/Transport?)
 
+<!-------------------------->
+<!-------------------------->
+# Data needs and/or questions
+<!-------------------------->
+<!-------------------------->
+<p align="center"> <img src="images/divider.png"></p>
+
+
