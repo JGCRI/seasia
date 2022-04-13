@@ -286,7 +286,7 @@ PNNL, in collaboration with MEA, will summarize and interpret the GCAM results f
 Below is the proposed timeline for GCAM analysis, reports, and stakeholder engagement. 
 
 ```{r, echo=FALSE, out.width="100%", fig.align='center', fig.cap="**Figure 3: Proposed timeline.**"}
-knitr::include_graphics("images/MEA_timeline.png")
+knitr::include_graphics("images/KL_timeline.png")
 ```
 
 
