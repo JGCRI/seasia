@@ -330,6 +330,9 @@ div.tocify {
   <a href="thailand.html">Thailand</a>
 </li>
 <li>
+  <a href="malaysia.html">Malaysia</a>
+</li>
+<li>
   <a href="https://github.com/JGCRI/seasia">
     <span class="fab fa-github"></span>
      
@@ -351,13 +354,36 @@ div.tocify {
 </div>
 
 
+<!-- Allow href to tabsets -->
+<script type="text/javascript">
+window.onload = function() {
+  document.querySelector('a[href="' + window.location.href.match("#.*$") + '"]').click();
+}
+
+function goToTab() {
+  var hash = String(window.location.href.match("#.*$"));
+  var target = document.querySelector("a[role = 'tab'][href='" + hash + "']");
+  if (target !== null) {
+    var greatgrandparent = target.parentElement.parentElement.parentElement;
+    if (greatgrandparent.getAttribute("role") == "tabpanel") {
+      document.querySelector("a[role = 'tab'][href='#" + greatgrandparent.getAttribute("id") + "']").click();
+    }
+    target.click();
+    target.scrollIntoView();
+  }
+}
+window.onload = function() {
+  setTimeout(goToTab, 100);
+}
+window.onhashchange = goToTab;
+</script>
 <div class="header_logo">
 <p><img src="images/logo_us_state_department.png" style="float:right;height:40px;"> <img src="images/logo_pnnl_white.png" style="float:right;height:40px;"></p>
 </div>
 <!-------------------------->
 <!-------------------------->
-<div id="executive-summary" class="section level1">
-<h1>Executive Summary</h1>
+<div id="executive-summary" class="section level1" number="1">
+<h1 number="1"><span class="header-section-number">1</span> Executive Summary</h1>
 <!-------------------------->
 <!-------------------------->
 <p align="center">
@@ -373,8 +399,8 @@ div.tocify {
 <!-------------------------->
 <!-------------------------->
 </div>
-<div id="introduction-motivation" class="section level1">
-<h1>Introduction &amp; Motivation</h1>
+<div id="introduction-motivation" class="section level1" number="2">
+<h1 number="2"><span class="header-section-number">2</span> Introduction &amp; Motivation</h1>
 <!-------------------------->
 <!-------------------------->
 <p align="center">
@@ -386,8 +412,8 @@ div.tocify {
 <!-------------------------->
 <!-------------------------->
 </div>
-<div id="objectives" class="section level1">
-<h1>Objectives</h1>
+<div id="objectives" class="section level1" number="3">
+<h1 number="3"><span class="header-section-number">3</span> Objectives</h1>
 <!-------------------------->
 <!-------------------------->
 <p align="center">
@@ -414,8 +440,8 @@ div.tocify {
 <!-------------------------->
 <!-------------------------->
 </div>
-<div id="approach" class="section level1">
-<h1>Approach</h1>
+<div id="approach" class="section level1" number="4">
+<h1 number="4"><span class="header-section-number">4</span> Approach</h1>
 <!-------------------------->
 <!-------------------------->
 <p align="center">
@@ -432,8 +458,8 @@ div.tocify {
 <!-------------------------->
 <!-------------------------->
 </div>
-<div id="scenarios" class="section level1 tabset">
-<h1 class="tabset">Scenarios</h1>
+<div id="scenarios" class="section level1 tabset" number="5">
+<h1 class="tabset" number="5"><span class="header-section-number">5</span> Scenarios</h1>
 <!-------------------------->
 <!-------------------------->
 <p align="center">
@@ -447,8 +473,8 @@ div.tocify {
 <li><strong>Carbon Neutral Malaysia and Kuala Lumpur:</strong> Scenario using the most efficient pathway to net zero CO<sub>2</sub> emissions by 2050 at the national and city levels.</li>
 </ul>
 <!-------------------------->
-<div id="council-led" class="section level2">
-<h2>Council-Led</h2>
+<div id="council-led" class="section level2" number="5.1">
+<h2 number="5.1"><span class="header-section-number">5.1</span> Council-Led</h2>
 <!-------------------------->
 <p><strong>Council-Led Scenario:</strong> In this scenario, KLCH has the authority to implement measures to achieve carbon emissions reductions. The scenario will largely be achieved through existing actions outlined in the KLLCSBP2030 and Federal policies and plans, including the National Renewable Energy Policy and Action Plan, the National Energy Efficiency Action Plan, the National Transport Policy, and publicly declared renewable energy targets.</p>
 <p>Note that this scenario <em>does not</em> meet Kuala Lumpur’s benchmark targets for 2030 or 2050; this is due to the lack of power and capacity for KLCH to implement more ambitious actions. Key remaining emissions will come from the following sectors: residential, commercial and institutional buildings, industrial energy, and on-road transportation.</p>
@@ -497,8 +523,8 @@ div.tocify {
 <!-------------------------->
 <!-------------------------->
 </div>
-<div id="integrated-approach" class="section level2">
-<h2>Integrated Approach</h2>
+<div id="integrated-approach" class="section level2" number="5.2">
+<h2 number="5.2"><span class="header-section-number">5.2</span> Integrated Approach</h2>
 <!-------------------------->
 <!-------------------------->
 <p><strong>Integrated Approach Scenario:</strong> This scenario explores the potential carbon emissions reductions that could occur with strong collaboration across different stakeholders. Kuala Lumpur could be an advocate for such solutions, but the measures outlined in this scenario involve policy shifts at the Federal level.</p>
@@ -544,8 +570,8 @@ div.tocify {
 <!-------------------------->
 <!-------------------------->
 </div>
-<div id="carbon-neutral-malaysia-and-kuala-lumpur" class="section level2">
-<h2>Carbon Neutral Malaysia and Kuala Lumpur</h2>
+<div id="carbon-neutral-malaysia-and-kuala-lumpur" class="section level2" number="5.3">
+<h2 number="5.3"><span class="header-section-number">5.3</span> Carbon Neutral Malaysia and Kuala Lumpur</h2>
 <!-------------------------->
 <!-------------------------->
 <p><strong>Carbon Neutral Malaysia and Kuala Lumpur:</strong> Prior to COP26, Malaysia pledged to achieve carbon neutrality as early as 2050. Later in 2021, Kuala Lumpur committed to becoming a carbon-neutral city by 2050. The Carbon Neutral Malaysia and Kuala Lumpur scenario represents the most economically efficient pathway to reach carbon neutrality by 2050 given the policies outlined in the scenarios described above. This pathway will be found using GCAM’s solving capabilities. The outcomes of this scenario will provide insight into the role that that KLCH can play in achieving carbon neutrality and additional measures that may need to be taken. <br></p>
@@ -553,8 +579,8 @@ div.tocify {
 <!-------------------------->
 </div>
 </div>
-<div id="scope" class="section level1 tabset">
-<h1 class="tabset">Scope</h1>
+<div id="scope" class="section level1 tabset" number="6">
+<h1 class="tabset" number="6"><span class="header-section-number">6</span> Scope</h1>
 <!-------------------------->
 <!-------------------------->
 <p align="center">
@@ -562,8 +588,8 @@ div.tocify {
 </p>
 <!-------------------------->
 <!-------------------------->
-<div id="spatial" class="section level2">
-<h2>Spatial</h2>
+<div id="spatial" class="section level2" number="6.1">
+<h2 number="6.1"><span class="header-section-number">6.1</span> Spatial</h2>
 <!-------------------------->
 <!-------------------------->
 <p><img src="images/MY_KL_map.png" width="70%" style="float:right; padding:10px" /></p>
@@ -572,8 +598,8 @@ div.tocify {
 <!-------------------------->
 <!-------------------------->
 </div>
-<div id="temporal" class="section level2">
-<h2>Temporal</h2>
+<div id="temporal" class="section level2" number="6.2">
+<h2 number="6.2"><span class="header-section-number">6.2</span> Temporal</h2>
 <!-------------------------->
 <!-------------------------->
 <p>Scenarios will be assessed up from the year 2015 to the year 2050, with the GCAM analysis conducted at five-year intervals within this range.</p>
@@ -582,8 +608,8 @@ div.tocify {
 <!-------------------------->
 </div>
 </div>
-<div id="expected-outcomes" class="section level1 tabset">
-<h1 class="tabset">Expected Outcomes</h1>
+<div id="expected-outcomes" class="section level1 tabset" number="7">
+<h1 class="tabset" number="7"><span class="header-section-number">7</span> Expected Outcomes</h1>
 <!-------------------------->
 <!-------------------------->
 <p align="center">
@@ -599,8 +625,8 @@ div.tocify {
 <p>These capabilities will enrich MEA’s current capacity for grid planning and analyzing Smart City pathways.</p>
 <!-------------------------->
 <!-------------------------->
-<div id="key-indicators" class="section level2">
-<h2>Key Indicators</h2>
+<div id="key-indicators" class="section level2" number="7.1">
+<h2 number="7.1"><span class="header-section-number">7.1</span> Key Indicators</h2>
 <!-------------------------->
 <!-------------------------->
 <p>The GCAM output for each scenario will include the following indicators calculated at 5-year timesteps through the year 2100 in the study region, as specified in the Spatial and Temporal Scope section.</p>
@@ -659,16 +685,16 @@ div.tocify {
 <!-------------------------->
 <!-------------------------->
 </div>
-<div id="model-results" class="section level2">
-<h2>Model Results</h2>
+<div id="model-results" class="section level2" number="7.2">
+<h2 number="7.2"><span class="header-section-number">7.2</span> Model Results</h2>
 <!-------------------------->
 <!-------------------------->
 <p>PNNL will present GCAM results showing relevant outcomes of the modeled scenarios up to the year 2100. These results could include greenhouse gas emissions, energy supply and demand, electricity price, and technology penetration, among other indicators. PNNL will work with MEA to determine which indicators are the most important to consider when assessing the impact of Smart Grid policies and technologies.</p>
 <!-------------------------->
 <!-------------------------->
 </div>
-<div id="analysis-and-recommendations" class="section level2">
-<h2>Analysis and Recommendations</h2>
+<div id="analysis-and-recommendations" class="section level2" number="7.3">
+<h2 number="7.3"><span class="header-section-number">7.3</span> Analysis and Recommendations</h2>
 <!-------------------------->
 <!-------------------------->
 <p>PNNL, in collaboration with MEA, will summarize and interpret the GCAM results for each policy pathway and impact indicator. This will include a discussion of how these results relate to MEA’s smart grid efforts and Bangkok’s current Smart City roadmaps and potential additional roadmaps. Based on the GCAM results, PNNL will provide recommendations for policy pathways that best meet the goals of MEA’s Smart Grid development while making the desired contributions to Thailand’s holistic Smart City and power development objectives. The process of analysis and recommendations will involve engagement and feedback from MEA as PNNL works to provide information that best addresses MEA’s planning needs.</p>
@@ -677,8 +703,8 @@ div.tocify {
 <!-------------------------->
 </div>
 </div>
-<div id="timeline" class="section level1">
-<h1>Timeline</h1>
+<div id="timeline" class="section level1" number="8">
+<h1 number="8"><span class="header-section-number">8</span> Timeline</h1>
 <!-------------------------->
 <!-------------------------->
 <p align="center">
@@ -696,79 +722,79 @@ div.tocify {
 <!-------------------------->
 <!-------------------------->
 </div>
-<div id="inputs" class="section level1 tabset">
-<h1 class="tabset">Inputs</h1>
+<div id="inputs" class="section level1 tabset" number="9">
+<h1 class="tabset" number="9"><span class="header-section-number">9</span> Inputs</h1>
 <!-------------------------->
 <!-------------------------->
 <p align="center">
 <img src="images/divider.png">
 </p>
-<div id="socioeconomics" class="section level2 tabset tabset-pills">
-<h2 class="tabset tabset-pills">Socioeconomics</h2>
-<div id="population" class="section level3">
-<h3>Population</h3>
+<div id="socioeconomics" class="section level2 tabset tabset-pills" number="9.1">
+<h2 class="tabset tabset-pills" number="9.1"><span class="header-section-number">9.1</span> Socioeconomics</h2>
+<div id="population" class="section level3" number="9.1.1">
+<h3 number="9.1.1"><span class="header-section-number">9.1.1</span> Population</h3>
 </div>
-<div id="gdp" class="section level3">
-<h3>GDP</h3>
+<div id="gdp" class="section level3" number="9.1.2">
+<h3 number="9.1.2"><span class="header-section-number">9.1.2</span> GDP</h3>
 <!-------------------------->
 <!-------------------------->
 </div>
 </div>
 </div>
-<div id="results" class="section level1 tabset">
-<h1 class="tabset">Results</h1>
+<div id="results" class="section level1 tabset" number="10">
+<h1 class="tabset" number="10"><span class="header-section-number">10</span> Results</h1>
 <!-------------------------->
 <!-------------------------->
 <p align="center">
 <img src="images/divider.png">
 </p>
-<div id="socioeconomics-1" class="section level2 tabset tabset-pills">
-<h2 class="tabset tabset-pills">Socioeconomics</h2>
-<div id="population-1" class="section level3">
-<h3>Population</h3>
+<div id="socioeconomics-1" class="section level2 tabset tabset-pills" number="10.1">
+<h2 class="tabset tabset-pills" number="10.1"><span class="header-section-number">10.1</span> Socioeconomics</h2>
+<div id="population-1" class="section level3" number="10.1.1">
+<h3 number="10.1.1"><span class="header-section-number">10.1.1</span> Population</h3>
 </div>
-<div id="gdp-1" class="section level3">
-<h3>GDP</h3>
-</div>
-</div>
-<div id="energy" class="section level2 tabset tabset-pills">
-<h2 class="tabset tabset-pills">Energy</h2>
-<div id="by-fuel" class="section level3">
-<h3>By Fuel</h3>
-</div>
-<div id="by-sector" class="section level3">
-<h3>By Sector</h3>
+<div id="gdp-1" class="section level3" number="10.1.2">
+<h3 number="10.1.2"><span class="header-section-number">10.1.2</span> GDP</h3>
 </div>
 </div>
-<div id="electricity" class="section level2 tabset tabset-pills">
-<h2 class="tabset tabset-pills">Electricity</h2>
-<div id="by-fuel-1" class="section level3">
-<h3>By Fuel</h3>
+<div id="energy" class="section level2 tabset tabset-pills" number="10.2">
+<h2 class="tabset tabset-pills" number="10.2"><span class="header-section-number">10.2</span> Energy</h2>
+<div id="by-fuel" class="section level3" number="10.2.1">
+<h3 number="10.2.1"><span class="header-section-number">10.2.1</span> By Fuel</h3>
 </div>
-<div id="by-sector-1" class="section level3">
-<h3>By Sector</h3>
-</div>
-</div>
-<div id="emissions" class="section level2 tabset tabset-pills">
-<h2 class="tabset tabset-pills">Emissions</h2>
-<div id="co2-by-sector" class="section level3">
-<h3>CO2 by Sector</h3>
-</div>
-<div id="ghg-by-fuel" class="section level3">
-<h3>GHG by Fuel</h3>
-</div>
-<div id="ghg-by-sector" class="section level3">
-<h3>GHG by Sector</h3>
+<div id="by-sector" class="section level3" number="10.2.2">
+<h3 number="10.2.2"><span class="header-section-number">10.2.2</span> By Sector</h3>
 </div>
 </div>
-<div id="others-buildingstransport" class="section level2">
-<h2>Others (Buildings/Transport?)</h2>
+<div id="electricity" class="section level2 tabset tabset-pills" number="10.3">
+<h2 class="tabset tabset-pills" number="10.3"><span class="header-section-number">10.3</span> Electricity</h2>
+<div id="by-fuel-1" class="section level3" number="10.3.1">
+<h3 number="10.3.1"><span class="header-section-number">10.3.1</span> By Fuel</h3>
+</div>
+<div id="by-sector-1" class="section level3" number="10.3.2">
+<h3 number="10.3.2"><span class="header-section-number">10.3.2</span> By Sector</h3>
+</div>
+</div>
+<div id="emissions" class="section level2 tabset tabset-pills" number="10.4">
+<h2 class="tabset tabset-pills" number="10.4"><span class="header-section-number">10.4</span> Emissions</h2>
+<div id="co2-by-sector" class="section level3" number="10.4.1">
+<h3 number="10.4.1"><span class="header-section-number">10.4.1</span> CO2 by Sector</h3>
+</div>
+<div id="ghg-by-fuel" class="section level3" number="10.4.2">
+<h3 number="10.4.2"><span class="header-section-number">10.4.2</span> GHG by Fuel</h3>
+</div>
+<div id="ghg-by-sector" class="section level3" number="10.4.3">
+<h3 number="10.4.3"><span class="header-section-number">10.4.3</span> GHG by Sector</h3>
+</div>
+</div>
+<div id="others-buildingstransport" class="section level2" number="10.5">
+<h2 number="10.5"><span class="header-section-number">10.5</span> Others (Buildings/Transport?)</h2>
 <!-------------------------->
 <!-------------------------->
 </div>
 </div>
-<div id="data-needs-andor-questions" class="section level1">
-<h1>Data needs and/or questions</h1>
+<div id="data-needs-andor-questions" class="section level1" number="11">
+<h1 number="11"><span class="header-section-number">11</span> Data needs and/or questions</h1>
 <!-------------------------->
 <!-------------------------->
 <p align="center">

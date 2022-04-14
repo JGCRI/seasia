@@ -5,11 +5,42 @@ output:
     toc: true
     toc_float: true
     toc_collapsed: true
-    #toc_depth: 3
-    #number_sections: false
+    toc_depth: 3
+    number_sections: true
     theme: cosmo
     #inverse: true
 ---
+
+``` {r setup, echo = FALSE, message = FALSE, warning = FALSE}
+library(pander)
+```
+
+<!-- Allow href to tabsets --> 
+
+```{js, echo = FALSE}
+window.onload = function() {
+  document.querySelector('a[href="' + window.location.href.match("#.*$") + '"]').click();
+}
+
+function goToTab() {
+  var hash = String(window.location.href.match("#.*$"));
+  var target = document.querySelector("a[role = 'tab'][href='" + hash + "']");
+  if (target !== null) {
+    var greatgrandparent = target.parentElement.parentElement.parentElement;
+    if (greatgrandparent.getAttribute("role") == "tabpanel") {
+      document.querySelector("a[role = 'tab'][href='#" + greatgrandparent.getAttribute("id") + "']").click();
+    }
+    target.click();
+    target.scrollIntoView();
+  }
+}
+window.onload = function() {
+  setTimeout(goToTab, 100);
+}
+window.onhashchange = goToTab;
+```
+
+
 
 <div class="header_logo">
 <img src="images/logo_us_state_department.png" style="float:right;height:40px;">
@@ -83,7 +114,7 @@ PNNL and UTM will continue to support Kuala Lumpur on its journey to carbon neut
 
 Integrated Assessment Models (IAMs) are computational models that use links and feedbacks between socioeconomic and environmental systems to assess the implications of technology and policy choices in the context of global climate change. IAMs can provide a holistic approach to energy sector planning by considering multi-sector dynamics and global processes. GCAM, an IAM developed at PNNL, incorporates socioeconomics, energy, land use, water, and climate system (Figure 1). The model is global but can also be used to assess specific regions and fine scale processes; PNNL has developed both Thailand and Bangkok regions within the model for national and city level analyses. GCAM utilizes the most up to date data on population, GDP, technology characteristics, policies, resource availabilities, and other inputs. It has the detailed representation of energy technologies in different sectors, including electricity, buildings, transportation, industry, hydrogen production, and other energy supply sectors. The model produces both historical and projected future outputs based on this information. These outputs include greenhouse gas emissions, electricity prices, energy supply and demand, and other indicators at five-year time steps from a historical baseline year to the desired end year. PNNL will use GCAM to assess the implications of MEA’s Smart Grid plans for Bangkok through the year 2100.
 
-```{r, echo=FALSE, out.width="70%", fig.align='center', fig.cap="**Figure 1: Conceptual diagram of GCAM.**"}
+```{r gcam-diagram, echo = FALSE, out.width = "70%", fig.align = 'center', fig.cap = "**Figure 1: Conceptual diagram of GCAM.**"}
 knitr::include_graphics("images/GCAM_diagram.png")
 ```
 
@@ -116,8 +147,7 @@ Note that this scenario _does not_ meet Kuala Lumpur's benchmark targets for 203
 
 The table below summarizes the policies encompassed by the Council-Led scenario. **UPDATE**
 
-```{r, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
-library(pander)
+```{r council-led, results = 'show', echo = FALSE, warning = FALSE, error = FALSE, message = FALSE}
 myTable = data.frame(
     Sector     = c("Energy Supply",
                   "Transportation",
@@ -146,8 +176,7 @@ Even if all scenario targets are met, Kuala Lumpur would still have residual emi
 
 The table below summarizes the policies encompassed by the Integrated Approach scenario. **UPDATE**
 
-```{r, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
-library(pander)
+```{r integrated-approach, results = 'show', echo = FALSE, warning = FALSE, error = FALSE, message = FALSE}
 myTable = data.frame(
     Sector     = c("Energy Supply",
                   "Transportation",
@@ -188,7 +217,7 @@ pander::pander(myTable, keep.line.breaks = TRUE, style = "grid", justify = 'left
 <!-------------------------->
 <!-------------------------->
 
-```{r, echo=FALSE, out.width="70%", out.extra='style="float:right; padding:10px"'}
+```{r KL-map, echo = FALSE, out.width = "70%", out.extra='style="float:right; padding:10px"'}
 knitr::include_graphics("images/MY_KL_map.png")
 ```
 
@@ -232,8 +261,7 @@ These capabilities will enrich MEA's current capacity for grid planning and anal
 
 The GCAM output for each scenario will include the following indicators calculated at 5-year timesteps through the year 2100 in the study region, as specified in the Spatial and Temporal Scope section.
 
-```{r, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
-library(pander)
+```{r key-indicators, results = 'show', echo = FALSE, warning = FALSE, error = FALSE, message = FALSE}
 myTable = data.frame(
     Indicator = c("Electricity generation", 
                   "Installed power capacity",
@@ -289,13 +317,13 @@ PNNL, in collaboration with MEA, will summarize and interpret the GCAM results f
 
 Below is the proposed timeline for GCAM analysis, reports, and stakeholder engagement. 
 
-```{r, echo=FALSE, out.width="100%", fig.align='center', fig.cap="**Figure 3: Proposed timeline.**"}
+```{r timeline, echo = FALSE, out.width = "100%", fig.align = 'center', fig.cap = "**Figure 3: Proposed timeline.**"}
 knitr::include_graphics("images/KL_timeline.png")
 ```
 
 
 <!-- example alternative table style -->
-```{r, eval=FALSE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
+```{r, eval = FALSE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE}
 library(kableExtra)
 data.frame(
     Model     = c("WRF",
