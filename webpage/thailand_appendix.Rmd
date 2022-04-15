@@ -338,11 +338,11 @@ The National Policies scenario integrates all of Thailand's national power devel
   </tr>
   <tr>
   	<td>Transportation System Development Plan</td>
-    <td> </td>
+    <td> Adjust transportation mode shareweights to reflect expansion of public transit and freight ship and rail </td>
   </tr>
   <tr>
-  	<td>EV and eco-driving promotion; energy efficiency equipment labeling</td>
-    <td> </td>
+  	<td>EV promotion</td>
+    <td> Simulate cost parity for EVs by 2050 (?) for passenger and 2060 (?) for freight </td>
   </tr>
    <tr>
   	<td>Voluntary Minimum and High Efficiency Performance Standards</td>
@@ -363,13 +363,10 @@ The National Policies scenario integrates all of Thailand's national power devel
   </tr>
   <tr>
   <td rowspan="2">Industry</td>
-  <td>Energy conservation standards</td>
-  <td> </td>
+  <td>Energy conservation standards & energy efficiency labeling</td>
+  <td> Use Autonomous Energy Efficiency Index (aeei) to reflect decrease in industrial energy consumption </td>
   </tr>
-  <tr>
-  <td>Energy efficiency labeling</td>
-  <td> </td>
-  </tr>
+
   
 </table>
 
@@ -401,6 +398,54 @@ elec_gen_plot$chart_class +
 
 <br>
 <br>
+
+```{r EV pass cost parity plot, fig.dim=c(8,4), fig.cap="Figure A2.1.3. Passenger road service output by technology in the 2050 cost parity scenario (left) and reference scenario (right)" }
+
+gcam_ev_parity <- read.csv("../data/Thailand/scenario_outputs/1_National_Policies/trn_ev_cost_parity/queryoutall_transport_output_tech.csv",
+                           skip = 1, check.names = F)
+
+
+ev_parity_pass <- process_gcam_data(
+  process_gcam_data(gcam_ev_parity) %>% 
+    filter(sector %in% c("trn_pass_road_LDV", "trn_pass_road_LDV_4W"),
+           year >= 2020, year <= 2070),
+  processed = T, class_name = technology, sector, subsector) %>% 
+  filter(region == "Thailand", class != "4W")
+
+ev_parity_pass$scenario <- factor(ev_parity_pass$scenario,
+                               levels = c("Ref", "ev_cost_parity"),
+                               labels = c("Ref", "EV Cost Parity (2050)"))
+
+ev_parity_pass_charts <- rchart::chart(ev_parity_pass, save = F, aspect_ratio = 0.6)
+
+ev_parity_pass_charts$chart_class +
+  ylab("Passenger ouput (pass-km)") 
+
+
+
+```
+
+<br>
+<br>
+
+```{r EV freight cost parity plot, fig.dim=c(8,4), fig.cap="Figure A2.1.3. Freight road service output by technology in the 2060 cost parity scenario (left) and the reference scenario (right)" }
+
+ev_parity_freight <- process_gcam_data(
+  process_gcam_data(gcam_ev_parity) %>% 
+    filter(subsector %in% c("Heavy truck", "Light truck", "Medium truck"),
+           year >= 2020, year <= 2070),
+  processed = T, class_name = technology, sector, subsector) %>% 
+  filter(region == "Thailand")
+
+ev_parity_freight$scenario <- factor(ev_parity_freight$scenario,
+                               levels = c("Ref", "ev_cost_parity"),
+                               labels = c("Ref", "EV Cost Parity (2060)"))
+
+ev_parity_freight_charts <- rchart::chart(ev_parity_freight, save = F, aspect_ratio = 0.6)
+
+ev_parity_freight_charts$chart_class +
+  ylab("Freight ouput (million tonne-km)") 
+```
 
 <!-------------------------->
 ## Extended National Policies 
