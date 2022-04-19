@@ -610,19 +610,25 @@ Use Autonomous Energy Efficiency Index (aeei) to reflect decrease in industrial 
 </tr>
 </table>
 <p><br> <br></p>
+<p>The figure below shows Thailand’s planned power generation capacity by technology through 2037 according to PDP2018. These capacity shares, along with average capacity factors from the literature, were used to calculate the floors for electricity generation by technology used in GCAM.</p>
 <div class="figure" style="text-align: center">
 <img src="thailand_appendix_files/figure-html/PDP%20elec%20capacity%20plot-1.png" alt="Figure A2.1.1. Thailand's planned power generation capacity mix through 2037 according to the [2018 Power Development Plan](https://www.thaienergy.org/assets/files/pdp2018-pdf.pdf)" width="75%" />
 <p class="caption">
 Figure A2.1.1. Thailand’s planned power generation capacity mix through 2037 according to the <a href="https://www.thaienergy.org/assets/files/pdp2018-pdf.pdf">2018 Power Development Plan</a>
 </p>
 </div>
-<div class="figure" style="text-align: center">
-<img src="thailand_appendix_files/figure-html/PDP%20elec%20gen%20plot-1.png" alt="Figure A2.1.2. Thailand's electricity generation mix through 2037 according to the capacity mix from [PDP2018](https://www.thaienergy.org/assets/files/pdp2018-pdf.pdf)(Figure A2.1.1) and capacity factors estimated by [IRENA](https://www.irena.org/-/media/files/irena/agency/publication/2017/nov/irena_outlook_thailand_2017.pdf)" width="75%" />
-<p class="caption">
-Figure A2.1.2. Thailand’s electricity generation mix through 2037 according to the capacity mix from <a href="https://www.thaienergy.org/assets/files/pdp2018-pdf.pdf">PDP2018</a>(Figure A2.1.1) and capacity factors estimated by <a href="https://www.irena.org/-/media/files/irena/agency/publication/2017/nov/irena_outlook_thailand_2017.pdf">IRENA</a>
-</p>
-</div>
+<!-- # ```{r PDP elec gen plot, fig.dim=c(8,4), fig.cap="Figure A2.1.2. Thailand's electricity generation mix through 2037 according to the capacity mix from [PDP2018](https://www.thaienergy.org/assets/files/pdp2018-pdf.pdf)(Figure A2.1.1) and capacity factors estimated by [IRENA](https://www.irena.org/-/media/files/irena/agency/publication/2017/nov/irena_outlook_thailand_2017.pdf)"} -->
+<!-- #  -->
+<!-- # elec_gen <- read.csv("../data/Thailand/scenario_inputs/1_National_policies/electricity_generation_2018_to_2037.csv") -->
+<!-- #  -->
+<!-- # elec_gen_plot <- rchart::chart(elec_gen, save = F, aspect_ratio = 0.6) -->
+<!-- #  -->
+<!-- # elec_gen_plot$chart_class + -->
+<!-- #   ylab("Electricity Generation (EJ)") -->
+<!-- #  -->
+<!-- # ``` -->
 <p><br> <br></p>
+<p>The figures below show an example of the GCAM output of passenger (top) and freight (bottom) road service output by technology using EV cost parity policies. In this example, input costs of electric vehicles (BEV) and hybrid vehicles (Hybrid Liquids) were assumed to be equal to input costs of non-electric (Liquids) vehicles by 2050 for passenger transport and 2060 for freight transport. These cost parity years can be adjusted as needed to best reflect realistic EV penetration through 2075.</p>
 <div class="figure" style="text-align: center">
 <img src="thailand_appendix_files/figure-html/EV%20pass%20cost%20parity%20plot-1.png" alt="Figure A2.1.3. Passenger road service output by technology in the 2050 cost parity scenario (left) and reference scenario (right)" width="75%" />
 <p class="caption">
@@ -634,6 +640,14 @@ Figure A2.1.3. Passenger road service output by technology in the 2050 cost pari
 <img src="thailand_appendix_files/figure-html/EV%20freight%20cost%20parity%20plot-1.png" alt="Figure A2.1.3. Freight road service output by technology in the 2060 cost parity scenario (left) and the reference scenario (right)" width="75%" />
 <p class="caption">
 Figure A2.1.3. Freight road service output by technology in the 2060 cost parity scenario (left) and the reference scenario (right)
+</p>
+</div>
+<p><br> <br></p>
+<p>The following plot shows examples of how the Autonomous Energy Efficiency Increase (AEEI) value is used to simulate energy efficiency increases in industry, decreasing the total final industrial energy consumption. The AEEI value can be adjusted as needed to match industrial energy savings goals.</p>
+<div class="figure" style="text-align: center">
+<img src="thailand_appendix_files/figure-html/AEEI%20total%20final%20energy%20plot-1.png" alt="Figure A2.1.4. Total final industrial energy consumption in the reference scenario and with three different AEEI values" width="75%" />
+<p class="caption">
+Figure A2.1.4. Total final industrial energy consumption in the reference scenario and with three different AEEI values
 </p>
 </div>
 <!-------------------------->
