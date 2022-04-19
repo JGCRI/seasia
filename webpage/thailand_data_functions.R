@@ -5,6 +5,8 @@ elongate_year <- function(data){
   # remove all-na column
   not_all_na <- function(x) {!all(is.na(x))}
   data <- dplyr::select_if(data, not_all_na)
+  # remove rows with na and rows with scenario "scenario"
+  data <- dplyr::filter(tidyr::drop_na(data), scenario != "scenario")
   # convert to long format
   data_long <- tidyr::pivot_longer(data,
                         cols = tidyr::starts_with(c("1", "2")),
