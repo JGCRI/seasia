@@ -244,14 +244,6 @@ Scenarios will be assessed up from the year 2015 to the year 2050, with the GCAM
 <!-------------------------->
 <p align="center"> <img src="images/divider.png"></p>
 
-As illustrated above, GCAM will offer capacity for planning and decision-making in addition to MEA’s current capabilities. Benefits of GCAM and the integrated modeling approach include the following:
-
-* **Climate change context:** Since GCAM integrates water and climate systems, it will provide a more nuanced analysis of Smart Grid pathways in the context of ongoing climate change. GCAM considers the bi-directional relationship between climate and energy: climate change impacts electricity demand and power system stability and reliability, while power generation contributes to climate change.
-* **Long-term assessment:** GCAM will offer long-term projections of the impacts of Smart Grid technologies and policies, beyond the time frame already proposed in Thailand’s Smart Grid plan.
-* **Technology analysis:** Using GCAM’s technology scenario capabilities, PNNL will be able to assess the impacts of specific technology implementations on electricity demand, generation, emissions, and prices far into the future.
-* **Holistic approach:** GCAM analyzes the multi-sector impacts of policies and technologies, supporting the integration of MEA's Smart Grid development into the Smart City initiative. GCAM's holistic approach will provide insight into how MEA's Smart Grid plans fit within Thailand's broader goals for socioeconomic development and reduction of environmental impact.
-
-These capabilities will enrich MEA's current capacity for grid planning and analyzing Smart City pathways.
 
 <!-------------------------->
 <!-------------------------->
@@ -259,7 +251,7 @@ These capabilities will enrich MEA's current capacity for grid planning and anal
 <!-------------------------->
 <!-------------------------->
 
-The GCAM output for each scenario will include the following indicators calculated at 5-year timesteps through the year 2100 in the study region, as specified in the Spatial and Temporal Scope section.
+The GCAM output for each scenario will include the following indicators calculated at 5-year timesteps through the year 2050 in the study region, as specified in the Spatial and Temporal Scope section.
 
 ```{r key-indicators, results = 'show', echo = FALSE, warning = FALSE, error = FALSE, message = FALSE}
 myTable = data.frame(
@@ -295,7 +287,7 @@ pander::pander(myTable, keep.line.breaks = TRUE, style = "grid", justify = 'left
 <!-------------------------->
 <!-------------------------->
 
-PNNL will present GCAM results showing relevant outcomes of the modeled scenarios up to the year 2100. These results could include greenhouse gas emissions, energy supply and demand, electricity price, and technology penetration, among other indicators. PNNL will work with MEA to determine which indicators are the most important to consider when assessing the impact of Smart Grid policies and technologies. 
+
 
 <!-------------------------->
 <!-------------------------->
@@ -303,7 +295,7 @@ PNNL will present GCAM results showing relevant outcomes of the modeled scenario
 <!-------------------------->
 <!-------------------------->
 
-PNNL, in collaboration with MEA, will summarize and interpret the GCAM results for each policy pathway and impact indicator. This will include a discussion of how these results relate to MEA’s smart grid efforts and Bangkok’s current Smart City roadmaps and potential additional roadmaps. Based on the GCAM results, PNNL will provide recommendations for policy pathways that best meet the goals of MEA’s Smart Grid development while making the desired contributions to Thailand’s holistic Smart City and power development objectives. The process of analysis and recommendations will involve engagement and feedback from MEA as PNNL works to provide information that best addresses MEA’s planning needs.
+
 
 
 <br>
