@@ -56,7 +56,7 @@ window.onhashchange = goToTab;
 
 * **Motivation:** Growth across the Association of Southeast Asian Nations (ASEAN) in the past few decades has been driven by urban centers. Rapid urbanization can bring about negative societal impacts, although technological and digital solutions can be used to resolve these issues and enhance quality and accessibility of services. Smart city development projects, including carbon neutrality plans, are one such example. Furthermore, the region is at a high risk for climate hazards, and moving towards carbon neutrality allows for increased mitigation and adaptation efforts to combat these risks.  
 
-* **Objectives:** The Pacific Northwest National Laboratory (PNNL) will collaborate with Kuala Lumpur on implementing low-carbon strategies to achieve carbon neutrality by 2050 and will support smart city development through capacity building. Using the Global Change Analysis Model (GCAM), PNNL will analyze possible policy pathways and trajectories for Kuala Lumpur by applying quantitative modeling techniques.  
+* **Objectives:** The Pacific Northwest National Laboratory (PNNL) will collaborate with stakeholders in Kuala Lumpur on implementing low-carbon strategies to achieve carbon neutrality by 2050 and will support smart city development through capacity building. Using the Global Change Analysis Model (GCAM), PNNL will analyze possible policy pathways and trajectories for Kuala Lumpur by applying quantitative modeling techniques.  
 
 * **Approach:** The integrated assessment model GCAM is a modeling tool that represents the behavior of and interactions between five systems: energy, water, agriculture and land use, the climate, and the economy. GCAM will be used to analyze Kuala Lumpur’s existing carbon neutrality plans in a comprehensive manner by modeling inter-sectoral dynamics across several driving sectors, namely energy, buildings, transportation, and industry. PNNL will model different policy scenarios encompassing various socioeconomic, technical, and political factors to better understand the pathways to carbon neutrality in Kuala Lumpur.  
 
@@ -112,7 +112,7 @@ PNNL and UTM will continue to support Kuala Lumpur on its journey to carbon neut
 <!-------------------------->
 <p align="center"> <img src="images/divider.png"></p>
 
-Integrated Assessment Models (IAMs) are computational models that use links and feedbacks between socioeconomic and environmental systems to assess the implications of technology and policy choices in the context of global climate change. IAMs can provide a holistic approach to energy sector planning by considering multi-sector dynamics and global processes. GCAM, an IAM developed at PNNL, incorporates socioeconomics, energy, land use, water, and climate system (Figure 1). The model is global but can also be used to assess specific regions and fine scale processes; PNNL has developed both Thailand and Bangkok regions within the model for national and city level analyses. GCAM utilizes the most up to date data on population, GDP, technology characteristics, policies, resource availabilities, and other inputs. It has the detailed representation of energy technologies in different sectors, including electricity, buildings, transportation, industry, hydrogen production, and other energy supply sectors. The model produces both historical and projected future outputs based on this information. These outputs include greenhouse gas emissions, electricity prices, energy supply and demand, and other indicators at five-year time steps from a historical baseline year to the desired end year. PNNL will use GCAM to assess the implications of MEA’s Smart Grid plans for Bangkok through the year 2100.
+Integrated Assessment Models (IAMs) are computational models that use links and feedbacks between socioeconomic and environmental systems to assess the implications of technology and policy choices in the context of global climate change. IAMs can provide a holistic approach to energy sector planning by considering multi-sector dynamics and global processes. GCAM, an IAM developed at PNNL, incorporates socioeconomics, energy, land use, water, and climate system (Figure 1). The model is global but can also be used to assess specific regions and fine scale processes; PNNL has developed both Malaysia and Kuala Lumpur regions within the model for national and city level analyses. GCAM utilizes the most up to date data on population, GDP, technology characteristics, policies, resource availability, and other inputs. It has the detailed representation of energy technologies in different sectors, including electricity, buildings, transportation, industry, hydrogen production, and other energy supply sectors. The model produces both historical and projected future outputs based on this information. These outputs include greenhouse gas emissions, electricity prices, energy supply and demand, and other indicators at five-year time steps from a historical baseline year to the desired end year. PNNL will use GCAM to assess the implications of Kuala Lumpur's various climate-focused plans.
 
 ```{r gcam-diagram, echo = FALSE, out.width = "70%", fig.align = 'center', fig.cap = "**Figure 1: Conceptual diagram of GCAM.**"}
 knitr::include_graphics("images/GCAM_diagram.png")
@@ -244,14 +244,6 @@ Scenarios will be assessed up from the year 2015 to the year 2050, with the GCAM
 <!-------------------------->
 <p align="center"> <img src="images/divider.png"></p>
 
-As illustrated above, GCAM will offer capacity for planning and decision-making in addition to MEA’s current capabilities. Benefits of GCAM and the integrated modeling approach include the following:
-
-* **Climate change context:** Since GCAM integrates water and climate systems, it will provide a more nuanced analysis of Smart Grid pathways in the context of ongoing climate change. GCAM considers the bi-directional relationship between climate and energy: climate change impacts electricity demand and power system stability and reliability, while power generation contributes to climate change.
-* **Long-term assessment:** GCAM will offer long-term projections of the impacts of Smart Grid technologies and policies, beyond the time frame already proposed in Thailand’s Smart Grid plan.
-* **Technology analysis:** Using GCAM’s technology scenario capabilities, PNNL will be able to assess the impacts of specific technology implementations on electricity demand, generation, emissions, and prices far into the future.
-* **Holistic approach:** GCAM analyzes the multi-sector impacts of policies and technologies, supporting the integration of MEA's Smart Grid development into the Smart City initiative. GCAM's holistic approach will provide insight into how MEA's Smart Grid plans fit within Thailand's broader goals for socioeconomic development and reduction of environmental impact.
-
-These capabilities will enrich MEA's current capacity for grid planning and analyzing Smart City pathways.
 
 <!-------------------------->
 <!-------------------------->
@@ -259,7 +251,7 @@ These capabilities will enrich MEA's current capacity for grid planning and anal
 <!-------------------------->
 <!-------------------------->
 
-The GCAM output for each scenario will include the following indicators calculated at 5-year timesteps through the year 2100 in the study region, as specified in the Spatial and Temporal Scope section.
+The GCAM output for each scenario will include the following indicators calculated at 5-year timesteps through the year 2050 in the study region, as specified in the Spatial and Temporal Scope section.
 
 ```{r key-indicators, results = 'show', echo = FALSE, warning = FALSE, error = FALSE, message = FALSE}
 myTable = data.frame(
@@ -295,7 +287,7 @@ pander::pander(myTable, keep.line.breaks = TRUE, style = "grid", justify = 'left
 <!-------------------------->
 <!-------------------------->
 
-PNNL will present GCAM results showing relevant outcomes of the modeled scenarios up to the year 2100. These results could include greenhouse gas emissions, energy supply and demand, electricity price, and technology penetration, among other indicators. PNNL will work with MEA to determine which indicators are the most important to consider when assessing the impact of Smart Grid policies and technologies. 
+
 
 <!-------------------------->
 <!-------------------------->
@@ -303,7 +295,7 @@ PNNL will present GCAM results showing relevant outcomes of the modeled scenario
 <!-------------------------->
 <!-------------------------->
 
-PNNL, in collaboration with MEA, will summarize and interpret the GCAM results for each policy pathway and impact indicator. This will include a discussion of how these results relate to MEA’s smart grid efforts and Bangkok’s current Smart City roadmaps and potential additional roadmaps. Based on the GCAM results, PNNL will provide recommendations for policy pathways that best meet the goals of MEA’s Smart Grid development while making the desired contributions to Thailand’s holistic Smart City and power development objectives. The process of analysis and recommendations will involve engagement and feedback from MEA as PNNL works to provide information that best addresses MEA’s planning needs.
+
 
 
 <br>
@@ -431,7 +423,7 @@ data.frame(
 <!-------------------------->
 <p align="center"> <img src="images/divider.png"></p>
 
-* 
+* Sectoral emissions for each scenario: After review of the KLCAP2050, the team noted some discrepancies in the data presented. A primary data need is emissions for at least the key years (2030, 2050) broken down by sector for each scenario (BAU, Council Led, and Integrated Approach). A detailed breakdown of the discrepancies can be provided upon request. 
 
 
 
