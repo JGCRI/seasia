@@ -149,18 +149,10 @@ The table below summarizes the policies encompassed by the Council-Led scenario.
 
 ```{r council-led, results = 'show', echo = FALSE, warning = FALSE, error = FALSE, message = FALSE}
 myTable = data.frame(
-    Sector     = c("Energy Supply",
-                  "Transportation",
-                  "Buildings",
-                  "Industry"),
-    Policies = c("* Power Development Plan 2018-2037 (bound capacity)\
-                 \n * Renewable and Alternative Energy Development Plan 2018-2037 (bound capacity)",
-                 "* Vehicle emissions standards\
-                 \n * Emissions-based excise tax structure",
-                 "* Building Energy Codes enforcement",
-                 "* Energy Efficiency Resource Standards")
+    Sector     = c(),
+    Policies = c()
     ) 
-pander::pander(myTable, keep.line.breaks = TRUE, style = "grid", justify = 'left', split.tables=Inf, caption = "Table 1. Policies included in the Mandatory National Policies scenario.")
+#pander::pander(myTable, keep.line.breaks = TRUE, style = "grid", justify = 'left', split.tables=Inf, caption = "")
 ```
 
 
@@ -178,19 +170,10 @@ The table below summarizes the policies encompassed by the Integrated Approach s
 
 ```{r integrated-approach, results = 'show', echo = FALSE, warning = FALSE, error = FALSE, message = FALSE}
 myTable = data.frame(
-    Sector     = c("Energy Supply",
-                  "Transportation",
-                  "Buildings & Industry"),
-    Policies = c("* Power Development Plan 2018-2037 (bound capacity + target capacity)\
-                 \n * Renewable and Alternative Energy Development Plan 2018-2037 (bound capacity + target capacity)",
-                 "* Measures to promote EV use\
-                 \n * Eco-driving promotion\
-                 \n * Public transit expansion\
-                 \n Electric Vehicle Roadmap to increase electric proportion of vehicles in manufacturing",
-                 "* Voluntary energy efficiency labeling\
-                 \n * Subsidies for equipment upgrades")
+    Sector     = c(),
+    Policies = c()
     ) 
-pander::pander(myTable, keep.line.breaks = TRUE, style = "grid", justify = 'left', split.tables=Inf, caption = "Table 2. Policies included in the Extended National Policies scenario.")
+#pander::pander(myTable, keep.line.breaks = TRUE, style = "grid", justify = 'left', split.tables=Inf, caption = "")
 
 ```
 
@@ -255,29 +238,11 @@ The GCAM output for each scenario will include the following indicators calculat
 
 ```{r key-indicators, results = 'show', echo = FALSE, warning = FALSE, error = FALSE, message = FALSE}
 myTable = data.frame(
-    Indicator = c("Electricity generation", 
-                  "Installed power capacity",
-                  "Energy demand",
-                  "Final energy consumption",
-                  "CO2 emissions",
-                  "Electricity price",
-                  "Transport service output"),
-    Description = c("Amount of electricity generated (total & by generation technology",
-                    "Power capacity of power plants (total & by generation technology",
-                    "Amount of energy demanded (total & by sector",
-                    "Amount of energy consumed (total & by sector",
-                    "Amount of CO2 emitted (total & by sector",
-                    "Price of electricity for consumer by sector",
-                    "Output of each type of transportation"),
-    Units = c("terawatt-hours (TWh)",
-              "TWh",
-              "Exajoules (EJ)",
-              "EJ",
-              "metric tons CO2 equivalent (MT CO2)",
-              "US dollars ($USD)",
-              "passenger-kilometers (pass-km)")
+    Indicator = c(),
+    Description = c(),
+    Units = c()
     ) 
-pander::pander(myTable, keep.line.breaks = TRUE, style = "grid", justify = 'left', split.tables=Inf, caption = "Table 4. Key indicators reported for each scenario.")
+#pander::pander(myTable, keep.line.breaks = TRUE, style = "grid", justify = 'left', split.tables=Inf, caption = "")
 
 ```
 
