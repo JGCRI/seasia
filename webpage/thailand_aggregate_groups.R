@@ -29,6 +29,13 @@ rail_group <- c("HSR", "Freight Rail", "Passenger Rail")
 ship_group <- c("Domestic Ship", "International Ship")
 air_group <- c("International Aviation", "Domestic Aviation")
 
+# fuels
+biomass_group <- c("biomass", "traditional biomass")
+coal_group <- c("coal")
+liquids_group <- c("refined liquids")
+gas_group <- c("gas")
+elec_fuel_group <- c("electricity")
+
 
 #######################################################
 ################### Local groups ######################
