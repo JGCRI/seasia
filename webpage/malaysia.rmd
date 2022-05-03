@@ -218,7 +218,7 @@ pander::pander(myTable, keep.line.breaks = TRUE, style = "grid", justify = 'left
 <!-------------------------->
 
 ```{r KL-map, echo = FALSE, out.width = "70%", out.extra='style="float:right; padding:10px"'}
-knitr::include_graphics("images/MY_KL_map.png")
+knitr::include_graphics("./images/MY_KL_map.png")
 ```
 
 PNNL will assess outcomes at the city level. The Council-Led scenario encompasses only policies that can be implemented by KLCH, although the Integrated Approach scenario requires additional action at the national level. Therefore, PNNL will perform some country level analysis, with the primary focus remaining on Kuala Lumpur. 
