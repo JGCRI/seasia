@@ -89,6 +89,21 @@ aggregate_rows <- function(data, filter_var, var_name, filter_group){
   data_filtered <- dplyr::filter(data, !!filter_var %in% filter_group)
   # create aggregate data
   data_agg <- dplyr::summarize(
+    dplyr::group_by(data_filtered, dplyr::across(!c(!!filter_var, value))),
+    value = sum(value)
+  )
+  data_final <- dplyr::mutate(data_agg, !!filter_var_name := !!var_name)
+  return(data_final)
+}
+
+# combine subsectors into new aggregated sectors
+aggregate_rows_old <- function(data, filter_var, var_name, filter_group){
+  filter_var <- dplyr::enquo(filter_var)
+  filter_var_name <- dplyr::quo_name(filter_var)
+  # filter data with var_name in filter_group
+  data_filtered <- dplyr::filter(data, !!filter_var %in% filter_group)
+  # create aggregate data
+  data_agg <- dplyr::summarize(
     dplyr::group_by(data_filtered, dplyr::across(!(!!filter_var))),
     value = sum(value), !!filter_var_name := !!var_name
   )

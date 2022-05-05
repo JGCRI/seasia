@@ -401,9 +401,38 @@ capacity_plot$chart_class +
 <br>
 <br>
 
+The plot below shows freight service output by mode in the reference scenario and with shareweights adjusted so that the proportion of freight transport by rail and ship in 2040 matches the Transportation System Development Plan's goals (10% and 19%, respectively.)
+
+```{r freight shareweights plot, fig.dim=c(9,4), fig.cap="Figure A2.1.3. Freight service output by mode in the adjusted shareweights scenario (left) and reference scenario (right)."}
+gcam_freight_shares <- read.csv("../data/Thailand/scenario_outputs/1_National_Policies/trn_freight_shareweights/queryoutall_transport_output_tech.csv",
+                                skip = 1, check.names = F)
+
+freight_shares <- process_gcam_data(
+  process_gcam_data(gcam_freight_shares) %>% 
+    filter(sector %in% c("trn_freight", "trn_freight_road"),
+           year >= 2015, year <= 2070),
+  processed = T, class_name = subsector, sector, technology) %>% 
+  filter(region == "Thailand", !class %in% c("Heavy truck", "Light truck", "Medium truck"),
+         scenario %in% c("Ref", "road_55_rail_0034"))
+
+freight_shares$scenario <- factor(freight_shares$scenario,
+                                  levels = c("Ref", "road_55_rail_0034"),
+                                  labels = c("Ref", "Adjusted Shareweights"))
+
+freight_shares_charts <- rchart::chart(freight_shares, save = F)
+
+freight_shares_charts$chart_class +
+  ylab("Freight output (tonne-km)")
+
+```
+
+
+<br>
+<br>
+
 The figures below show an example of the GCAM output of passenger (top) and freight (bottom) road service output by technology using EV cost parity policies. In this example, input costs of electric vehicles (BEV) and hybrid vehicles (Hybrid Liquids) were assumed to be equal to input costs of non-electric (Liquids) vehicles by 2050 for passenger transport and 2060 for freight transport. These cost parity years can be adjusted as needed to best reflect realistic EV penetration through 2075.
 
-```{r EV pass cost parity plot, fig.dim=c(9,4), fig.cap="Figure A2.1.3. Passenger road service output by technology in the 2050 cost parity scenario (left) and reference scenario (right)" }
+```{r EV pass cost parity plot, fig.dim=c(9,4), fig.cap="Figure A2.1.4. Passenger road service output by technology in the 2050 cost parity scenario (left) and reference scenario (right)" }
 
 gcam_ev_parity <- read.csv("../data/Thailand/scenario_outputs/1_National_Policies/trn_ev_cost_parity/queryoutall_transport_output_tech.csv",
                            skip = 1, check.names = F)
@@ -432,7 +461,7 @@ ev_parity_pass_charts$chart_class +
 <br>
 <br>
 
-```{r EV freight cost parity plot, fig.dim=c(9,4), fig.cap="Figure A2.1.3. Freight road service output by technology in the 2060 cost parity scenario (left) and the reference scenario (right)" }
+```{r EV freight cost parity plot, fig.dim=c(9,4), fig.cap="Figure A2.1.5. Freight road service output by technology in the 2060 cost parity scenario (left) and the reference scenario (right)" }
 
 ev_parity_freight <- process_gcam_data(
   process_gcam_data(gcam_ev_parity) %>% 
@@ -454,9 +483,9 @@ ev_parity_freight_charts$chart_class +
 <br>
 <br>
 
-The following plot shows examples of how the Autonomous Energy Efficiency Increase (AEEI) value is used to simulate energy efficiency increases in industry, decreasing the total final industrial energy consumption. The AEEI value can be adjusted as needed to match industrial energy savings goals.
+The following plot shows industrial energy consumption in the reference case and with an Autonomous Energy Efficiency Increase (AEEI) value of 0.0013. AEEI is used to simulate energy efficiency increases in industry, decreasing the total final industrial energy consumption. The AEEI value has been adjusted so that the total industrial energy savings from 2020 to 2040 approximately matches the goal stated in the Energy Efficiency Plan (0.885 EJ).
 
-```{r AEEI total final energy plot, fig.dim=c(6,4), fig.cap="Figure A2.1.4. Total final industrial energy consumption in the reference scenario and with three different AEEI values"}
+```{r AEEI total final energy plot, fig.dim=c(6,4), fig.cap="Figure A2.1.6. Total final industrial energy consumption in the reference scenario and with an AEEI value of 0.013"}
 
 aeei_tf_energy_sector <- read.csv( "../data/Thailand/scenario_outputs/1_National_Policies/industry_aeei/queryoutall_tf_energy_sector.csv",
                                   skip = 1, check.names = F)
@@ -464,12 +493,12 @@ aeei_tf_energy_sector <- read.csv( "../data/Thailand/scenario_outputs/1_National
 aeei_tf_energy_industry <- filter(process_gcam_data(aeei_tf_energy_sector,
                                            class_name = sector),
                                 class == "industrial energy use",
-                                region == "Thailand", year <= 2070)
+                                region == "Thailand", year <= 2070,
+                                scenario %in% c("Ref", "aeei_0013"))
 
 aeei_tf_energy_industry$scenario <- 
-  factor(aeei_tf_energy_industry$scenario, levels = c("Ref", "aeei_001",
-                                                      "aeei_005", "aeei_01"),
-         labels = c("0 (Ref)", "0.001", "0.005", "0.01"))
+  factor(aeei_tf_energy_industry$scenario, levels = c("Ref", "aeei_0013"),
+         labels = c("0 (Ref)", "0.0013"))
 
 aeei_plots <- rchart::chart(aeei_tf_energy_industry, save = F, aspect_ratio = 0.7)
 
