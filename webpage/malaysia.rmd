@@ -13,6 +13,9 @@ output:
 
 ``` {r setup, echo = FALSE, message = FALSE, warning = FALSE}
 library(pander)
+library(dplyr)
+library(ggplot2)
+library(data.table)
 ```
 
 <!-- Allow href to tabsets --> 
@@ -340,10 +343,123 @@ data.frame(
 <p align="center"> <img src="images/divider.png"></p>
 
 ## Socioeconomics  {.tabset .tabset-pills}
+This section describes the socioeconomic (population and GDP) inputs used to define Thailand's subregions (Bangkok, Nonthaburi, Samut Prakan, and Rest of Thailand) in GCAM. Historical data and future projections were available were available at the national and regional scales for some time periods; however, we calculated socioeconomic data for the remaining time periods using the set of simplifying assumptions shown below. 
+
+```{r socioe, results = 'show', echo = FALSE}
+myTable = data.frame(
+    Variable = c("Population",
+                 "GDP"),
+    Assumptions = c("Assumption 1",
+                    "Assumption 2"),
+    "Data Sources" = c("Source 1",
+              "Source 2")
+    ) 
+pander::pander(myTable, keep.line.breaks = TRUE, style = "grid", justify = 'left', split.tables=Inf, caption = "Table 7.1.1. Key indicators reported for each scenario.")
+
+```
 
 ### Population
 
+#### Historical Trends and Future Projections {-}
+
+``` {r pop-plot, echo = FALSE, fig.dim = c(8,4), fig.cap="Figure 9.1.1.1. **Historical and future projected population in Malaysia and Kuala Lumpur**"}
+# Population
+socio_data <- fread("../data/Malaysia/socioeconomic_inputs/kl_my_socioeconomics.csv") %>% as_tibble()
+pop <- fread("../data/Malaysia/socioeconomic_inputs/gcam_pop_mykl.csv") %>% as_tibble()
+
+kl_pop <- socio_data %>%
+  filter(metric == "population",
+         region != "Rest of Malaysia") %>%
+  mutate(source = "KL") %>%
+  select(-metric)
+
+gcam_pop <- pop %>%
+  mutate(value = value / 1000,
+         units = "million",
+         source = "GCAM") %>%
+  select(-scenario)
+
+pop_plot <- bind_rows(kl_pop, gcam_pop)
+
+## PLOT
+population_plot <- pop_plot %>%
+  ggplot(aes(year, value, color = source, group = source)) +
+  geom_line() +
+  facet_wrap(~region, scales = "free") +
+  scale_color_viridis_d(end = 0.8) +
+  labs(x = "Year",
+       y = "Population (millions)",
+       title = "Population in Malaysia and Kuala Lumpur") +
+  theme_light() ; population_plot
+
+
+```
+
 ### GDP
+
+``` {r gdp, echo = FALSE, fig.dim = c(8,4)}
+# GDP
+gdp <- fread("../data/Malaysia/socioeconomic_inputs/gcam_gdp_mykl.csv") %>% as_tibble()
+
+kl_gdp <- socio_data %>%
+  filter(metric == "gdp",
+         region != "Rest of Malaysia") %>%
+  mutate(source = "KL") %>%
+  select(-metric)
+
+gcam_gdp <- gdp %>%
+  mutate(value = (value * 1.49) / 1000, # convert 1990 USD to 2005 USD, million to billion
+         units = "billion (2005 USD)",
+         source = "GCAM") %>%
+  select(-c(scenario, Units))
+
+gdp_plot_data <- bind_rows(kl_gdp, gcam_gdp)
+
+## PLOT
+gdp_plot <- gdp_plot_data %>%
+  ggplot(aes(year, value, color = source, group = source)) +
+  geom_line() +
+  facet_wrap(~region, scales = "free") +
+  scale_color_viridis_d(end = 0.8) +
+  labs(x = "Year",
+       y = "Billion (2005 USD)",
+       title = "GDP in Malaysia and Kuala Lumpur") +
+  theme_light() ; gdp_plot
+
+```
+
+### Per capita GDP
+
+``` {r gdp_pc, echo = FALSE, fig.dim = c(8,4)}
+gdp_pc <- fread("../data/Malaysia/socioeconomic_inputs/gcam_gdp_pc_mykl.csv") %>% as_tibble()
+
+kl_gdp_pc <- socio_data %>%
+  filter(metric == "gdp per capita",
+         region != "Rest of Malaysia") %>%
+  mutate(source = "KL") %>%
+  select(-metric)
+
+gcam_gdp_pc <- gdp_pc %>%
+  mutate(value = (value * 1.49), # convert 1990 USD to 2005 USD
+         units = "thousand (2005 USD)",
+         source = "GCAM") %>%
+  select(-scenario)
+
+gdp_pc_plot_data <- bind_rows(kl_gdp_pc, gcam_gdp_pc)
+
+## PLOT
+gdp_pc_plot <- gdp_pc_plot_data %>%
+  ggplot(aes(year, value, color = source, group = source)) +
+  geom_line() +
+  facet_wrap(~region, scales = "free") +
+  scale_color_viridis_d(end = 0.8) +
+  labs(x = "Year",
+       y = "Thousand (2005 USD) per person",
+       title = "GDP per capita in Malaysia and Kuala Lumpur") +
+  theme_light() ; gdp_pc_plot
+
+
+```
 
 
 <!-------------------------->
