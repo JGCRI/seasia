@@ -1,0 +1,244 @@
+year,metric,units,value,region
+1971,population,million,11.062,Malaysia
+1975,population,million,12.162,Malaysia
+1980,population,million,13.798,Malaysia
+1985,population,million,15.599,Malaysia
+1990,population,million,18.03,Malaysia
+1995,population,million,20.488,Malaysia
+2000,population,million,23.194,Malaysia
+2005,population,million,25.691,Malaysia
+2010,population,million,28.208,Malaysia
+2015,population,million,30.271,Malaysia
+2020,population,million,32.366,Malaysia
+2025,population,million,34.35,Malaysia
+2030,population,million,36.095,Malaysia
+2035,population,million,37.566,Malaysia
+2040,population,million,38.755,Malaysia
+2045,population,million,39.73,Malaysia
+2050,population,million,40.55,Malaysia
+2055,population,million,41.231,Malaysia
+2060,population,million,41.732,Malaysia
+2065,population,million,42.013,Malaysia
+2070,population,million,42.062,Malaysia
+2075,population,million,41.912,Malaysia
+2080,population,million,41.625,Malaysia
+2085,population,million,41.268,Malaysia
+2090,population,million,40.887,Malaysia
+2095,population,million,40.493,Malaysia
+2100,population,million,40.078,Malaysia
+1971,population,million,0.724,KualaLumpur
+1975,population,million,0.785,KualaLumpur
+1980,population,million,0.868,KualaLumpur
+1985,population,million,0.96,KualaLumpur
+1990,population,million,1.062,KualaLumpur
+1995,population,million,1.175,KualaLumpur
+2000,population,million,1.3,KualaLumpur
+2005,population,million,1.445,KualaLumpur
+2010,population,million,1.589,KualaLumpur
+2015,population,million,1.7,KualaLumpur
+2020,population,million,1.8,KualaLumpur
+2025,population,million,1.963,KualaLumpur
+2030,population,million,2.12,KualaLumpur
+2035,population,million,2.255,KualaLumpur
+2040,population,million,2.375,KualaLumpur
+2045,population,million,2.468,KualaLumpur
+2050,population,million,2.546,KualaLumpur
+2055,population,million,2.601,KualaLumpur
+2060,population,million,2.646,KualaLumpur
+2065,population,million,2.667,KualaLumpur
+2070,population,million,2.678,KualaLumpur
+2075,population,million,2.668,KualaLumpur
+2080,population,million,2.651,KualaLumpur
+2085,population,million,2.619,KualaLumpur
+2090,population,million,2.582,KualaLumpur
+2095,population,million,2.534,KualaLumpur
+2100,population,million,2.483,KualaLumpur
+1971,population,million,10.339,Rest of Malaysia
+1975,population,million,11.378,Rest of Malaysia
+1980,population,million,12.93,Rest of Malaysia
+1985,population,million,14.639,Rest of Malaysia
+1990,population,million,16.968,Rest of Malaysia
+1995,population,million,19.313,Rest of Malaysia
+2000,population,million,21.894,Rest of Malaysia
+2005,population,million,24.246,Rest of Malaysia
+2010,population,million,26.619,Rest of Malaysia
+2015,population,million,28.571,Rest of Malaysia
+2020,population,million,30.566,Rest of Malaysia
+2025,population,million,32.387,Rest of Malaysia
+2030,population,million,33.976,Rest of Malaysia
+2035,population,million,35.311,Rest of Malaysia
+2040,population,million,36.38,Rest of Malaysia
+2045,population,million,37.262,Rest of Malaysia
+2050,population,million,38.005,Rest of Malaysia
+2055,population,million,38.63,Rest of Malaysia
+2060,population,million,39.086,Rest of Malaysia
+2065,population,million,39.346,Rest of Malaysia
+2070,population,million,39.384,Rest of Malaysia
+2075,population,million,39.244,Rest of Malaysia
+2080,population,million,38.974,Rest of Malaysia
+2085,population,million,38.649,Rest of Malaysia
+2090,population,million,38.305,Rest of Malaysia
+2095,population,million,37.959,Rest of Malaysia
+2100,population,million,37.595,Rest of Malaysia
+1971,gdp ,Billion (2005USD),4.961,Malaysia
+1975,gdp ,Billion (2005USD),8.553,Malaysia
+1980,gdp ,Billion (2005USD),20.415,Malaysia
+1985,gdp ,Billion (2005USD),29.669,Malaysia
+1990,gdp ,Billion (2005USD),45.605,Malaysia
+1995,gdp ,Billion (2005USD),85.201,Malaysia
+2000,gdp ,Billion (2005USD),136.492,Malaysia
+2005,gdp ,Billion (2005USD),208.175,Malaysia
+2010,gdp ,Billion (2005USD),314.586,Malaysia
+2015,gdp ,Billion (2005USD),377.352,Malaysia
+2020,gdp ,Billion (2005USD),438.187,Malaysia
+2025,gdp ,Billion (2005USD),512.215,Malaysia
+2030,gdp ,Billion (2005USD),603.493,Malaysia
+2035,gdp ,Billion (2005USD),709.686,Malaysia
+2040,gdp ,Billion (2005USD),824.039,Malaysia
+2045,gdp ,Billion (2005USD),938.243,Malaysia
+2050,gdp ,Billion (2005USD),1046.857,Malaysia
+2055,gdp ,Billion (2005USD),1146.933,Malaysia
+2060,gdp ,Billion (2005USD),1238.406,Malaysia
+2065,gdp ,Billion (2005USD),1322.141,Malaysia
+2070,gdp ,Billion (2005USD),1399.254,Malaysia
+2075,gdp ,Billion (2005USD),1472.646,Malaysia
+2080,gdp ,Billion (2005USD),1548.532,Malaysia
+2085,gdp ,Billion (2005USD),1630.675,Malaysia
+2090,gdp ,Billion (2005USD),1719.04,Malaysia
+2095,gdp ,Billion (2005USD),1812.044,Malaysia
+2100,gdp ,Billion (2005USD),1908.565,Malaysia
+1971,gdp ,Billion (2005USD),0.792,KualaLumpur
+1975,gdp ,Billion (2005USD),1.365,KualaLumpur
+1980,gdp ,Billion (2005USD),3.259,KualaLumpur
+1985,gdp ,Billion (2005USD),4.735,KualaLumpur
+1990,gdp ,Billion (2005USD),7.279,KualaLumpur
+1995,gdp ,Billion (2005USD),13.599,KualaLumpur
+2000,gdp ,Billion (2005USD),21.786,KualaLumpur
+2005,gdp ,Billion (2005USD),33.227,KualaLumpur
+2010,gdp ,Billion (2005USD),50.211,KualaLumpur
+2015,gdp ,Billion (2005USD),60.23,KualaLumpur
+2020,gdp ,Billion (2005USD),69.94,KualaLumpur
+2025,gdp ,Billion (2005USD),87.618,KualaLumpur
+2030,gdp ,Billion (2005USD),110.139,KualaLumpur
+2035,gdp ,Billion (2005USD),137.133,KualaLumpur
+2040,gdp ,Billion (2005USD),168.07,KualaLumpur
+2045,gdp ,Billion (2005USD),200.564,KualaLumpur
+2050,gdp ,Billion (2005USD),234.047,KualaLumpur
+2055,gdp ,Billion (2005USD),266.525,KualaLumpur
+2060,gdp ,Billion (2005USD),298.69,KualaLumpur
+2065,gdp ,Billion (2005USD),329.229,KualaLumpur
+2070,gdp ,Billion (2005USD),359.378,KualaLumpur
+2075,gdp ,Billion (2005USD),388.391,KualaLumpur
+2080,gdp ,Billion (2005USD),419.093,KualaLumpur
+2085,gdp ,Billion (2005USD),451.222,KualaLumpur
+2090,gdp ,Billion (2005USD),486.108,KualaLumpur
+2095,gdp ,Billion (2005USD),522.075,KualaLumpur
+2100,gdp ,Billion (2005USD),560.066,KualaLumpur
+1971,gdp ,Billion (2005USD),4.17,Rest of Malaysia
+1975,gdp ,Billion (2005USD),7.187,Rest of Malaysia
+1980,gdp ,Billion (2005USD),17.157,Rest of Malaysia
+1985,gdp ,Billion (2005USD),24.933,Rest of Malaysia
+1990,gdp ,Billion (2005USD),38.326,Rest of Malaysia
+1995,gdp ,Billion (2005USD),71.602,Rest of Malaysia
+2000,gdp ,Billion (2005USD),114.706,Rest of Malaysia
+2005,gdp ,Billion (2005USD),174.948,Rest of Malaysia
+2010,gdp ,Billion (2005USD),264.375,Rest of Malaysia
+2015,gdp ,Billion (2005USD),317.122,Rest of Malaysia
+2020,gdp ,Billion (2005USD),368.248,Rest of Malaysia
+2025,gdp ,Billion (2005USD),424.597,Rest of Malaysia
+2030,gdp ,Billion (2005USD),493.353,Rest of Malaysia
+2035,gdp ,Billion (2005USD),572.553,Rest of Malaysia
+2040,gdp ,Billion (2005USD),655.969,Rest of Malaysia
+2045,gdp ,Billion (2005USD),737.68,Rest of Malaysia
+2050,gdp ,Billion (2005USD),812.81,Rest of Malaysia
+2055,gdp ,Billion (2005USD),880.408,Rest of Malaysia
+2060,gdp ,Billion (2005USD),939.716,Rest of Malaysia
+2065,gdp ,Billion (2005USD),992.912,Rest of Malaysia
+2070,gdp ,Billion (2005USD),1039.876,Rest of Malaysia
+2075,gdp ,Billion (2005USD),1084.255,Rest of Malaysia
+2080,gdp ,Billion (2005USD),1129.439,Rest of Malaysia
+2085,gdp ,Billion (2005USD),1179.453,Rest of Malaysia
+2090,gdp ,Billion (2005USD),1232.932,Rest of Malaysia
+2095,gdp ,Billion (2005USD),1289.969,Rest of Malaysia
+2100,gdp ,Billion (2005USD),1348.499,Rest of Malaysia
+1971,gdp per capita,1000 USD2005/pp,0.448,Malaysia
+1975,gdp per capita,1000 USD2005/pp,0.703,Malaysia
+1980,gdp per capita,1000 USD2005/pp,1.48,Malaysia
+1985,gdp per capita,1000 USD2005/pp,1.902,Malaysia
+1990,gdp per capita,1000 USD2005/pp,2.529,Malaysia
+1995,gdp per capita,1000 USD2005/pp,4.159,Malaysia
+2000,gdp per capita,1000 USD2005/pp,5.885,Malaysia
+2005,gdp per capita,1000 USD2005/pp,8.103,Malaysia
+2010,gdp per capita,1000 USD2005/pp,11.152,Malaysia
+2015,gdp per capita,1000 USD2005/pp,12.466,Malaysia
+2020,gdp per capita,1000 USD2005/pp,13.539,Malaysia
+2025,gdp per capita,1000 USD2005/pp,14.912,Malaysia
+2030,gdp per capita,1000 USD2005/pp,16.72,Malaysia
+2035,gdp per capita,1000 USD2005/pp,18.892,Malaysia
+2040,gdp per capita,1000 USD2005/pp,21.263,Malaysia
+2045,gdp per capita,1000 USD2005/pp,23.616,Malaysia
+2050,gdp per capita,1000 USD2005/pp,25.816,Malaysia
+2055,gdp per capita,1000 USD2005/pp,27.817,Malaysia
+2060,gdp per capita,1000 USD2005/pp,29.675,Malaysia
+2065,gdp per capita,1000 USD2005/pp,31.47,Malaysia
+2070,gdp per capita,1000 USD2005/pp,33.267,Malaysia
+2075,gdp per capita,1000 USD2005/pp,35.136,Malaysia
+2080,gdp per capita,1000 USD2005/pp,37.202,Malaysia
+2085,gdp per capita,1000 USD2005/pp,39.514,Malaysia
+2090,gdp per capita,1000 USD2005/pp,42.044,Malaysia
+2095,gdp per capita,1000 USD2005/pp,44.75,Malaysia
+2100,gdp per capita,1000 USD2005/pp,47.621,Malaysia
+1971,gdp per capita,1000 USD2005/pp,1.094,KualaLumpur
+1975,gdp per capita,1000 USD2005/pp,1.74,KualaLumpur
+1980,gdp per capita,1000 USD2005/pp,3.755,KualaLumpur
+1985,gdp per capita,1000 USD2005/pp,4.932,KualaLumpur
+1990,gdp per capita,1000 USD2005/pp,6.853,KualaLumpur
+1995,gdp per capita,1000 USD2005/pp,11.573,KualaLumpur
+2000,gdp per capita,1000 USD2005/pp,16.758,KualaLumpur
+2005,gdp per capita,1000 USD2005/pp,23.002,KualaLumpur
+2010,gdp per capita,1000 USD2005/pp,31.599,KualaLumpur
+2015,gdp per capita,1000 USD2005/pp,35.429,KualaLumpur
+2020,gdp per capita,1000 USD2005/pp,38.855,KualaLumpur
+2025,gdp per capita,1000 USD2005/pp,44.626,KualaLumpur
+2030,gdp per capita,1000 USD2005/pp,51.964,KualaLumpur
+2035,gdp per capita,1000 USD2005/pp,60.811,KualaLumpur
+2040,gdp per capita,1000 USD2005/pp,70.764,KualaLumpur
+2045,gdp per capita,1000 USD2005/pp,81.275,KualaLumpur
+2050,gdp per capita,1000 USD2005/pp,91.937,KualaLumpur
+2055,gdp per capita,1000 USD2005/pp,102.484,KualaLumpur
+2060,gdp per capita,1000 USD2005/pp,112.886,KualaLumpur
+2065,gdp per capita,1000 USD2005/pp,123.428,KualaLumpur
+2070,gdp per capita,1000 USD2005/pp,134.205,KualaLumpur
+2075,gdp per capita,1000 USD2005/pp,145.562,KualaLumpur
+2080,gdp per capita,1000 USD2005/pp,158.092,KualaLumpur
+2085,gdp per capita,1000 USD2005/pp,172.298,KualaLumpur
+2090,gdp per capita,1000 USD2005/pp,188.293,KualaLumpur
+2095,gdp per capita,1000 USD2005/pp,206.03,KualaLumpur
+2100,gdp per capita,1000 USD2005/pp,225.534,KualaLumpur
+1971,gdp per capita,1000 USD2005/pp,0.403,Rest of Malaysia
+1975,gdp per capita,1000 USD2005/pp,0.632,Rest of Malaysia
+1980,gdp per capita,1000 USD2005/pp,1.327,Rest of Malaysia
+1985,gdp per capita,1000 USD2005/pp,1.703,Rest of Malaysia
+1990,gdp per capita,1000 USD2005/pp,2.259,Rest of Malaysia
+1995,gdp per capita,1000 USD2005/pp,3.708,Rest of Malaysia
+2000,gdp per capita,1000 USD2005/pp,5.239,Rest of Malaysia
+2005,gdp per capita,1000 USD2005/pp,7.216,Rest of Malaysia
+2010,gdp per capita,1000 USD2005/pp,9.932,Rest of Malaysia
+2015,gdp per capita,1000 USD2005/pp,11.099,Rest of Malaysia
+2020,gdp per capita,1000 USD2005/pp,12.048,Rest of Malaysia
+2025,gdp per capita,1000 USD2005/pp,13.11,Rest of Malaysia
+2030,gdp per capita,1000 USD2005/pp,14.521,Rest of Malaysia
+2035,gdp per capita,1000 USD2005/pp,16.215,Rest of Malaysia
+2040,gdp per capita,1000 USD2005/pp,18.031,Rest of Malaysia
+2045,gdp per capita,1000 USD2005/pp,19.797,Rest of Malaysia
+2050,gdp per capita,1000 USD2005/pp,21.387,Rest of Malaysia
+2055,gdp per capita,1000 USD2005/pp,22.791,Rest of Malaysia
+2060,gdp per capita,1000 USD2005/pp,24.042,Rest of Malaysia
+2065,gdp per capita,1000 USD2005/pp,25.235,Rest of Malaysia
+2070,gdp per capita,1000 USD2005/pp,26.403,Rest of Malaysia
+2075,gdp per capita,1000 USD2005/pp,27.628,Rest of Malaysia
+2080,gdp per capita,1000 USD2005/pp,28.979,Rest of Malaysia
+2085,gdp per capita,1000 USD2005/pp,30.517,Rest of Malaysia
+2090,gdp per capita,1000 USD2005/pp,32.187,Rest of Malaysia
+2095,gdp per capita,1000 USD2005/pp,33.983,Rest of Malaysia
+2100,gdp per capita,1000 USD2005/pp,35.869,Rest of Malaysia
