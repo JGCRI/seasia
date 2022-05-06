@@ -43,7 +43,21 @@ window.onload = function() {
 window.onhashchange = goToTab;
 ```
 
+<!-- Set table styles -->
 
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+</style>
 
 <div class="header_logo">
 <img src="images/logo_us_state_department.png" style="float:right;height:40px;">
@@ -342,25 +356,53 @@ data.frame(
 <!-------------------------->
 <p align="center"> <img src="images/divider.png"></p>
 
+<!-------------------------->
 ## Socioeconomics  {.tabset .tabset-pills}
-This section describes the socioeconomic (population and GDP) inputs used to define Thailand's subregions (Bangkok, Nonthaburi, Samut Prakan, and Rest of Thailand) in GCAM. Historical data and future projections were available were available at the national and regional scales for some time periods; however, we calculated socioeconomic data for the remaining time periods using the set of simplifying assumptions shown below. 
+<!-------------------------->
+This section details the socioeconomic inputs used to define Malaysia and Kuala Lumpur in GCAM. These metrics include population, GDP, and GDP per capita. Historical and projection data was used when available, otherwise data was calculated using the assumptions described below.
 
-```{r socioe, results = 'show', echo = FALSE}
-myTable = data.frame(
-    Variable = c("Population",
-                 "GDP"),
-    Assumptions = c("Assumption 1",
-                    "Assumption 2"),
-    "Data Sources" = c("Source 1",
-              "Source 2")
-    ) 
-pander::pander(myTable, keep.line.breaks = TRUE, style = "grid", justify = 'left', split.tables=Inf, caption = "Table 7.1.1. Key indicators reported for each scenario.")
+<table>
 
-```
+<tr>
+<th>Variable</th>
+<th style="width:40%">Assumptions</th>
+<th style="width:50%">Data Sources</th>
+</tr>
+
+<tr>
+<td>Population</td>
+<td>
+<span>- Malaysia population for the medium variant projection</span><br/>
+<span>- Growth rates for Bangkok were used for Kuala Lumpur</span>
+</td>
+<td>
+<span>- Malaysia: [United Nations](https://population.un.org/wpp/)</span><br/>
+<span>- Kuala Lumpur 1971-2017: [United Nations]()</span><br/>
+<span>- Kuala Lumpur 2017-2021: [Department of Statistics Malaysia](https://www.dosm.gov.my/v1/index.php?r=column/cone&menu_id=bjRlZXVGdnBueDJKY1BPWEFPRlhIdz09)</span>
+</td>
+</tr>
+
+
+<tr>
+<td rowspan="3">GDP</td>
+<td>Pre-2011 and post-2020 GDP growth rates are consistent between all regions</td>
+<td rowspan="2"> 
+<span>- Malaysia: [Department of Statistics Malaysia](https://www.dosm.gov.my/v1/index.php?r=column/ctimeseries&menu_id=NHJlaGc2Rlg4ZXlGTjh1SU1kaWY5UT09)</span><br/>
+<span>- Kuala Lumpur: [need link]()</span>
+</td>
+</tr>
+
+</table>
+
+<br>
+<br>
+
 
 ### Population
 
 #### Historical Trends and Future Projections {-}
+
+The plot below shows historical and future projected populations in Malaysia and Kuala Lumpur comparing the data sources above to the GCAM reference scenario. As mentioned above, population growth rates in Kuala Lumpur were assumed to be on par with Bangkok, Thailand. Please reference the <a href=thailand.html#9_Inputs> data sources for Thailand </a> for more details.  
 
 ``` {r pop-plot, echo = FALSE, fig.dim = c(8,4), fig.cap="Figure 9.1.1.1. **Historical and future projected population in Malaysia and Kuala Lumpur**"}
 # Population
@@ -397,6 +439,8 @@ population_plot <- pop_plot %>%
 
 ### GDP
 
+The following graphs show GDP in 2005 USD for Malaysia and Kuala Lumpur. **TODO update units**
+
 ``` {r gdp, echo = FALSE, fig.dim = c(8,4)}
 # GDP
 gdp <- fread("../data/Malaysia/socioeconomic_inputs/gcam_gdp_mykl.csv") %>% as_tibble()
@@ -429,6 +473,8 @@ gdp_plot <- gdp_plot_data %>%
 ```
 
 ### Per capita GDP
+
+GDP per capita, in units of 2005 USD, is shown below for Malaysia and Kuala Lumpur. **TODO update units**
 
 ``` {r gdp_pc, echo = FALSE, fig.dim = c(8,4)}
 gdp_pc <- fread("../data/Malaysia/socioeconomic_inputs/gcam_gdp_pc_mykl.csv") %>% as_tibble()
