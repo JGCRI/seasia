@@ -1,0 +1,536 @@
+year,region,value
+1995,Bangkok,65663355929
+1996,Bangkok,67506140985
+1997,Bangkok,61554357665
+1998,Bangkok,55715454053
+1999,Bangkok,57208343060
+2000,Bangkok,61282062517
+2001,Bangkok,64562105055
+2002,Bangkok,67053401781
+2003,Bangkok,70519136645
+2004,Bangkok,75465243658
+2005,Bangkok,79329661957
+2006,Bangkok,81656540389
+2007,Bangkok,83639808357
+2008,Bangkok,83799433003
+2009,Bangkok,82605638377
+2010,Bangkok,86828245219
+2011,Bangkok,91070903711
+2012,Bangkok,97411442539
+2013,Bangkok,1.04E+11
+2014,Bangkok,1.07E+11
+2015,Bangkok,1.12E+11
+2016,Bangkok,1.17E+11
+2017,Bangkok,1.22E+11
+2018,Bangkok,1.28E+11
+2019,Bangkok,1.34E+11
+2020,Bangkok,1.24E+11
+2021,Bangkok,1.26E+11
+2022,Bangkok,1.32E+11
+2023,Bangkok,1.35E+11
+2024,Bangkok,1.38E+11
+2025,Bangkok,1.41E+11
+2026,Bangkok,1.44E+11
+2027,Bangkok,1.47E+11
+2028,Bangkok,1.50E+11
+2029,Bangkok,1.53E+11
+2030,Bangkok,1.56E+11
+2031,Bangkok,1.59E+11
+2032,Bangkok,1.62E+11
+2033,Bangkok,1.64E+11
+2034,Bangkok,1.67E+11
+2035,Bangkok,1.69E+11
+2036,Bangkok,1.72E+11
+2037,Bangkok,1.74E+11
+2038,Bangkok,1.77E+11
+2039,Bangkok,1.79E+11
+2040,Bangkok,1.81E+11
+2041,Bangkok,1.83E+11
+2042,Bangkok,1.85E+11
+2043,Bangkok,1.87E+11
+2044,Bangkok,1.89E+11
+2045,Bangkok,1.91E+11
+2046,Bangkok,1.93E+11
+2047,Bangkok,1.95E+11
+2048,Bangkok,1.96E+11
+2049,Bangkok,1.98E+11
+2050,Bangkok,1.99E+11
+2051,Bangkok,2.01E+11
+2052,Bangkok,2.02E+11
+2053,Bangkok,2.04E+11
+2054,Bangkok,2.05E+11
+2055,Bangkok,2.07E+11
+2056,Bangkok,2.08E+11
+2057,Bangkok,2.09E+11
+2058,Bangkok,2.11E+11
+2059,Bangkok,2.12E+11
+2060,Bangkok,2.13E+11
+2061,Bangkok,2.15E+11
+2062,Bangkok,2.16E+11
+2063,Bangkok,2.17E+11
+2064,Bangkok,2.19E+11
+2065,Bangkok,2.20E+11
+2066,Bangkok,2.21E+11
+2067,Bangkok,2.22E+11
+2068,Bangkok,2.23E+11
+2069,Bangkok,2.25E+11
+2070,Bangkok,2.26E+11
+2071,Bangkok,2.27E+11
+2072,Bangkok,2.28E+11
+2073,Bangkok,2.29E+11
+2074,Bangkok,2.30E+11
+2075,Bangkok,2.31E+11
+2076,Bangkok,2.32E+11
+2077,Bangkok,2.33E+11
+2078,Bangkok,2.34E+11
+2079,Bangkok,2.35E+11
+2080,Bangkok,2.36E+11
+2081,Bangkok,2.37E+11
+2082,Bangkok,2.38E+11
+2083,Bangkok,2.39E+11
+2084,Bangkok,2.39E+11
+2085,Bangkok,2.40E+11
+2086,Bangkok,2.41E+11
+2087,Bangkok,2.42E+11
+2088,Bangkok,2.43E+11
+2089,Bangkok,2.43E+11
+2090,Bangkok,2.44E+11
+2091,Bangkok,2.45E+11
+2092,Bangkok,2.46E+11
+2093,Bangkok,2.46E+11
+2094,Bangkok,2.47E+11
+2095,Bangkok,2.47E+11
+2096,Bangkok,2.48E+11
+2097,Bangkok,2.49E+11
+2098,Bangkok,2.49E+11
+2099,Bangkok,2.50E+11
+2100,Bangkok,2.50E+11
+1995,Nonthaburi,2481399041
+1996,Nonthaburi,2497400287
+1997,Nonthaburi,2446933650
+1998,Nonthaburi,2544758621
+1999,Nonthaburi,2455113066
+2000,Nonthaburi,2538486425
+2001,Nonthaburi,2669678810
+2002,Nonthaburi,2840449594
+2003,Nonthaburi,3030170153
+2004,Nonthaburi,3289847492
+2005,Nonthaburi,3695294403
+2006,Nonthaburi,4030618482
+2007,Nonthaburi,4265842674
+2008,Nonthaburi,4388457469
+2009,Nonthaburi,4621123894
+2010,Nonthaburi,4950607894
+2011,Nonthaburi,4816592500
+2012,Nonthaburi,5290461240
+2013,Nonthaburi,5759807616
+2014,Nonthaburi,6397404529
+2015,Nonthaburi,6790934078
+2016,Nonthaburi,7070800822
+2017,Nonthaburi,7650058422
+2018,Nonthaburi,7758465403
+2019,Nonthaburi,8248618014
+2020,Nonthaburi,8146768013
+2021,Nonthaburi,8277116302
+2022,Nonthaburi,8608200954
+2023,Nonthaburi,8926704389
+2024,Nonthaburi,9230212338
+2025,Nonthaburi,9534809345
+2026,Nonthaburi,9849458054
+2027,Nonthaburi,10174490169
+2028,Nonthaburi,10499056406
+2029,Nonthaburi,10818227721
+2030,Nonthaburi,11147101843
+2031,Nonthaburi,11483744319
+2032,Nonthaburi,11829405023
+2033,Nonthaburi,12186653055
+2034,Nonthaburi,12549815316
+2035,Nonthaburi,12923799812
+2036,Nonthaburi,13552758070
+2037,Nonthaburi,14194255285
+2038,Nonthaburi,14847191028
+2039,Nonthaburi,15510365561
+2040,Nonthaburi,16182481402
+2041,Nonthaburi,16862145620
+2042,Nonthaburi,17547872876
+2043,Nonthaburi,18238089209
+2044,Nonthaburi,18931136599
+2045,Nonthaburi,19625278274
+2046,Nonthaburi,20318704773
+2047,Nonthaburi,21009540735
+2048,Nonthaburi,21695852399
+2049,Nonthaburi,22375655774
+2050,Nonthaburi,23046925448
+2051,Nonthaburi,23726809748
+2052,Nonthaburi,24414887231
+2053,Nonthaburi,25110711517
+2054,Nonthaburi,25813811440
+2055,Nonthaburi,26523691254
+2056,Nonthaburi,27239830918
+2057,Nonthaburi,27961686437
+2058,Nonthaburi,28688690285
+2059,Nonthaburi,29420251887
+2060,Nonthaburi,30155758184
+2061,Nonthaburi,30894574260
+2062,Nonthaburi,31636044042
+2063,Nonthaburi,32379491077
+2064,Nonthaburi,33124219372
+2065,Nonthaburi,33869514308
+2066,Nonthaburi,34614643622
+2067,Nonthaburi,35358858460
+2068,Nonthaburi,36101394488
+2069,Nonthaburi,36841473075
+2070,Nonthaburi,37578302536
+2071,Nonthaburi,38317342486
+2072,Nonthaburi,39058144441
+2073,Nonthaburi,39800249185
+2074,Nonthaburi,40543187170
+2075,Nonthaburi,41286478935
+2076,Nonthaburi,42029635556
+2077,Nonthaburi,42772159117
+2078,Nonthaburi,43513543209
+2079,Nonthaburi,44253273443
+2080,Nonthaburi,44990828001
+2081,Nonthaburi,45725678191
+2082,Nonthaburi,46457289042
+2083,Nonthaburi,47185119904
+2084,Nonthaburi,47908625076
+2085,Nonthaburi,48627254452
+2086,Nonthaburi,49340454184
+2087,Nonthaburi,50047667361
+2088,Nonthaburi,50748334704
+2089,Nonthaburi,51441895278
+2090,Nonthaburi,52127787215
+2091,Nonthaburi,52805448449
+2092,Nonthaburi,53474317462
+2093,Nonthaburi,54133834045
+2094,Nonthaburi,54783440053
+2095,Nonthaburi,55422580187
+2096,Nonthaburi,56050702762
+2097,Nonthaburi,56667260493
+2098,Nonthaburi,57271711271
+2099,Nonthaburi,57863518955
+2100,Nonthaburi,58442154144
+1995,Samut Prakan,8171541051
+1996,Samut Prakan,8468811680
+1997,Samut Prakan,8306169153
+1998,Samut Prakan,9015986627
+1999,Samut Prakan,9869899490
+2000,Samut Prakan,10393813753
+2001,Samut Prakan,11082260329
+2002,Samut Prakan,11998640153
+2003,Samut Prakan,12104601824
+2004,Samut Prakan,12607880705
+2005,Samut Prakan,12910484010
+2006,Samut Prakan,13796948584
+2007,Samut Prakan,17288393527
+2008,Samut Prakan,16993201782
+2009,Samut Prakan,15346752700
+2010,Samut Prakan,18956408965
+2011,Samut Prakan,16913634839
+2012,Samut Prakan,19528194802
+2013,Samut Prakan,18261580072
+2014,Samut Prakan,18129837883
+2015,Samut Prakan,18531280826
+2016,Samut Prakan,18615758932
+2017,Samut Prakan,19290919654
+2018,Samut Prakan,20812177804
+2019,Samut Prakan,20431474991
+2020,Samut Prakan,17132999978
+2021,Samut Prakan,17407127978
+2022,Samut Prakan,18103413097
+2023,Samut Prakan,18773239381
+2024,Samut Prakan,19411529520
+2025,Samut Prakan,20052109995
+2026,Samut Prakan,20713829624
+2027,Samut Prakan,21397386002
+2028,Samut Prakan,22079962615
+2029,Samut Prakan,22751193479
+2030,Samut Prakan,23442829761
+2031,Samut Prakan,24150803219
+2032,Samut Prakan,24877742396
+2033,Samut Prakan,25629050217
+2034,Samut Prakan,26392795913
+2035,Samut Prakan,27179301231
+2036,Samut Prakan,27849723995
+2037,Samut Prakan,28527400612
+2038,Samut Prakan,29212058227
+2039,Samut Prakan,29903410272
+2040,Samut Prakan,30601156511
+2041,Samut Prakan,31304983111
+2042,Samut Prakan,32014562728
+2043,Samut Prakan,32729554629
+2044,Samut Prakan,33449604831
+2045,Samut Prakan,34174346269
+2046,Samut Prakan,34903398990
+2047,Samut Prakan,35636370368
+2048,Samut Prakan,36372855356
+2049,Samut Prakan,37112436748
+2050,Samut Prakan,37854685483
+2051,Samut Prakan,38602315521
+2052,Samut Prakan,39355060674
+2053,Samut Prakan,40112645592
+2054,Samut Prakan,40874785858
+2055,Samut Prakan,41641188093
+2056,Samut Prakan,42411550073
+2057,Samut Prakan,43185560862
+2058,Samut Prakan,43962900957
+2059,Samut Prakan,44743242449
+2060,Samut Prakan,45526249192
+2061,Samut Prakan,46311576991
+2062,Samut Prakan,47098873799
+2063,Samut Prakan,47887779936
+2064,Samut Prakan,48677928305
+2065,Samut Prakan,49468944640
+2066,Samut Prakan,50260447754
+2067,Samut Prakan,51052049806
+2068,Samut Prakan,51843356578
+2069,Samut Prakan,52633967766
+2070,Samut Prakan,53423477282
+2071,Samut Prakan,54207021616
+2072,Samut Prakan,54983988925
+2073,Samut Prakan,55753764770
+2074,Samut Prakan,56515732889
+2075,Samut Prakan,57269275994
+2076,Samut Prakan,58013776582
+2077,Samut Prakan,58748617752
+2078,Samut Prakan,59473184038
+2079,Samut Prakan,60186862246
+2080,Samut Prakan,60889042306
+2081,Samut Prakan,61579118118
+2082,Samut Prakan,62256488418
+2083,Samut Prakan,62920557628
+2084,Samut Prakan,63570736723
+2085,Samut Prakan,64206444090
+2086,Samut Prakan,64827106383
+2087,Samut Prakan,65432159376
+2088,Samut Prakan,66021048810
+2089,Samut Prakan,66593231233
+2090,Samut Prakan,67148174827
+2091,Samut Prakan,67685360226
+2092,Samut Prakan,68204281321
+2093,Samut Prakan,68704446050
+2094,Samut Prakan,69185377173
+2095,Samut Prakan,69646613021
+2096,Samut Prakan,70087708236
+2097,Samut Prakan,70508234486
+2098,Samut Prakan,70907781148
+2099,Samut Prakan,71285955981
+2100,Samut Prakan,71642385761
+1995,Rest of Thailand,99719911525
+1996,Rest of Thailand,1.08E+11
+1997,Rest of Thailand,1.09E+11
+1998,Rest of Thailand,99781002585
+1999,Rest of Thailand,1.05E+11
+2000,Rest of Thailand,1.08E+11
+2001,Rest of Thailand,1.10E+11
+2002,Rest of Thailand,1.18E+11
+2003,Rest of Thailand,1.29E+11
+2004,Rest of Thailand,1.37E+11
+2005,Rest of Thailand,1.42E+11
+2006,Rest of Thailand,1.50E+11
+2007,Rest of Thailand,1.58E+11
+2008,Rest of Thailand,1.63E+11
+2009,Rest of Thailand,1.63E+11
+2010,Rest of Thailand,1.75E+11
+2011,Rest of Thailand,1.76E+11
+2012,Rest of Thailand,1.87E+11
+2013,Rest of Thailand,1.90E+11
+2014,Rest of Thailand,1.89E+11
+2015,Rest of Thailand,1.93E+11
+2016,Rest of Thailand,1.99E+11
+2017,Rest of Thailand,2.07E+11
+2018,Rest of Thailand,2.14E+11
+2019,Rest of Thailand,2.17E+11
+2020,Rest of Thailand,2.06E+11
+2021,Rest of Thailand,2.09E+11
+2022,Rest of Thailand,2.18E+11
+2023,Rest of Thailand,2.28E+11
+2024,Rest of Thailand,2.37E+11
+2025,Rest of Thailand,2.46E+11
+2026,Rest of Thailand,2.56E+11
+2027,Rest of Thailand,2.66E+11
+2028,Rest of Thailand,2.76E+11
+2029,Rest of Thailand,2.86E+11
+2030,Rest of Thailand,2.96E+11
+2031,Rest of Thailand,3.07E+11
+2032,Rest of Thailand,3.18E+11
+2033,Rest of Thailand,3.30E+11
+2034,Rest of Thailand,3.42E+11
+2035,Rest of Thailand,3.55E+11
+2036,Rest of Thailand,3.67E+11
+2037,Rest of Thailand,3.79E+11
+2038,Rest of Thailand,3.91E+11
+2039,Rest of Thailand,4.04E+11
+2040,Rest of Thailand,4.17E+11
+2041,Rest of Thailand,4.31E+11
+2042,Rest of Thailand,4.46E+11
+2043,Rest of Thailand,4.61E+11
+2044,Rest of Thailand,4.76E+11
+2045,Rest of Thailand,4.93E+11
+2046,Rest of Thailand,5.09E+11
+2047,Rest of Thailand,5.27E+11
+2048,Rest of Thailand,5.45E+11
+2049,Rest of Thailand,5.63E+11
+2050,Rest of Thailand,5.83E+11
+2051,Rest of Thailand,6.03E+11
+2052,Rest of Thailand,6.23E+11
+2053,Rest of Thailand,6.44E+11
+2054,Rest of Thailand,6.65E+11
+2055,Rest of Thailand,6.87E+11
+2056,Rest of Thailand,7.09E+11
+2057,Rest of Thailand,7.32E+11
+2058,Rest of Thailand,7.55E+11
+2059,Rest of Thailand,7.79E+11
+2060,Rest of Thailand,8.03E+11
+2061,Rest of Thailand,8.27E+11
+2062,Rest of Thailand,8.52E+11
+2063,Rest of Thailand,8.78E+11
+2064,Rest of Thailand,9.04E+11
+2065,Rest of Thailand,9.30E+11
+2066,Rest of Thailand,9.57E+11
+2067,Rest of Thailand,9.84E+11
+2068,Rest of Thailand,1.01E+12
+2069,Rest of Thailand,1.04E+12
+2070,Rest of Thailand,1.07E+12
+2071,Rest of Thailand,1.10E+12
+2072,Rest of Thailand,1.13E+12
+2073,Rest of Thailand,1.16E+12
+2074,Rest of Thailand,1.19E+12
+2075,Rest of Thailand,1.22E+12
+2076,Rest of Thailand,1.25E+12
+2077,Rest of Thailand,1.28E+12
+2078,Rest of Thailand,1.32E+12
+2079,Rest of Thailand,1.35E+12
+2080,Rest of Thailand,1.38E+12
+2081,Rest of Thailand,1.42E+12
+2082,Rest of Thailand,1.45E+12
+2083,Rest of Thailand,1.49E+12
+2084,Rest of Thailand,1.52E+12
+2085,Rest of Thailand,1.56E+12
+2086,Rest of Thailand,1.59E+12
+2087,Rest of Thailand,1.63E+12
+2088,Rest of Thailand,1.66E+12
+2089,Rest of Thailand,1.69E+12
+2090,Rest of Thailand,1.72E+12
+2091,Rest of Thailand,1.75E+12
+2092,Rest of Thailand,1.77E+12
+2093,Rest of Thailand,1.79E+12
+2094,Rest of Thailand,1.81E+12
+2095,Rest of Thailand,1.83E+12
+2096,Rest of Thailand,1.84E+12
+2097,Rest of Thailand,1.86E+12
+2098,Rest of Thailand,1.86E+12
+2099,Rest of Thailand,1.87E+12
+2100,Rest of Thailand,1.87E+12
+1990,Thailand,1.17157E+11
+1991,Thailand,1.27001E+11
+1992,Thailand,1.38723E+11
+1993,Thailand,1.50759E+11
+1994,Thailand,1.62815E+11
+1995,Thailand,1.76036E+11
+1996,Thailand,1.85986E+11
+1997,Thailand,1.80864E+11
+1998,Thailand,1.67057E+11
+1999,Thailand,1.74696E+11
+2000,Thailand,1.82479E+11
+2001,Thailand,1.88764E+11
+2002,Thailand,2.00371E+11
+2003,Thailand,2.14776E+11
+2004,Thailand,2.28284E+11
+2005,Thailand,2.37844E+11
+2006,Thailand,2.49659E+11
+2007,Thailand,2.63229E+11
+2008,Thailand,2.67771E+11
+2009,Thailand,2.65922E+11
+2010,Thailand,2.85902E+11
+2011,Thailand,2.88304E+11
+2012,Thailand,3.09185E+11
+2013,Thailand,3.17494E+11
+2014,Thailand,3.2062E+11
+2015,Thailand,3.30668E+11
+2016,Thailand,3.42027E+11
+2017,Thailand,3.56316E+11
+2018,Thailand,3.71363E+11
+2019,Thailand,3.79353E+11
+2020,Thailand,3.5585E+11
+2021,Thailand,3.61544E+11
+2022,Thailand,3.76006E+11
+2023,Thailand,3.89918E+11
+2024,Thailand,4.03175E+11
+2025,Thailand,4.1648E+11
+2026,Thailand,4.30224E+11
+2027,Thailand,4.44421E+11
+2028,Thailand,4.58598E+11
+2029,Thailand,4.7254E+11
+2030,Thailand,4.86905E+11
+2031,Thailand,5.01609E+11
+2032,Thailand,5.16708E+11
+2033,Thailand,5.32312E+11
+2034,Thailand,5.48175E+11
+2035,Thailand,5.64511E+11
+2036,Thailand,5.79809E+11
+2037,Thailand,5.95522E+11
+2038,Thailand,6.11661E+11
+2039,Thailand,6.28237E+11
+2040,Thailand,6.45262E+11
+2041,Thailand,6.62748E+11
+2042,Thailand,6.80709E+11
+2043,Thailand,6.99156E+11
+2044,Thailand,7.18103E+11
+2045,Thailand,7.37564E+11
+2046,Thailand,7.57552E+11
+2047,Thailand,7.78081E+11
+2048,Thailand,7.99167E+11
+2049,Thailand,8.20825E+11
+2050,Thailand,8.43069E+11
+2051,Thailand,8.65916E+11
+2052,Thailand,8.89207E+11
+2053,Thailand,9.12944E+11
+2054,Thailand,9.37129E+11
+2055,Thailand,9.61765E+11
+2056,Thailand,9.86853E+11
+2057,Thailand,1.0124E+12
+2058,Thailand,1.03839E+12
+2059,Thailand,1.06485E+12
+2060,Thailand,1.09176E+12
+2061,Thailand,1.11913E+12
+2062,Thailand,1.14697E+12
+2063,Thailand,1.17526E+12
+2064,Thailand,1.20401E+12
+2065,Thailand,1.23322E+12
+2066,Thailand,1.26288E+12
+2067,Thailand,1.29301E+12
+2068,Thailand,1.32359E+12
+2069,Thailand,1.35463E+12
+2070,Thailand,1.38612E+12
+2071,Thailand,1.41806E+12
+2072,Thailand,1.45044E+12
+2073,Thailand,1.48328E+12
+2074,Thailand,1.51655E+12
+2075,Thailand,1.55027E+12
+2076,Thailand,1.58442E+12
+2077,Thailand,1.619E+12
+2078,Thailand,1.65401E+12
+2079,Thailand,1.68944E+12
+2080,Thailand,1.72528E+12
+2081,Thailand,1.76154E+12
+2082,Thailand,1.7982E+12
+2083,Thailand,1.83526E+12
+2084,Thailand,1.87271E+12
+2085,Thailand,1.91054E+12
+2086,Thailand,1.94875E+12
+2087,Thailand,1.98526E+12
+2088,Thailand,2.01993E+12
+2089,Thailand,2.05266E+12
+2090,Thailand,2.08331E+12
+2091,Thailand,2.11178E+12
+2092,Thailand,2.13797E+12
+2093,Thailand,2.16177E+12
+2094,Thailand,2.1831E+12
+2095,Thailand,2.20187E+12
+2096,Thailand,2.21802E+12
+2097,Thailand,2.23148E+12
+2098,Thailand,2.24219E+12
+2099,Thailand,2.25011E+12
+2100,Thailand,2.25521E+12
