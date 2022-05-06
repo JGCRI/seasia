@@ -1,0 +1,536 @@
+year,region,value
+1995,Bangkok,11787.18
+1996,Bangkok,12087.12
+1997,Bangkok,10982.49
+1998,Bangkok,9864.99
+1999,Bangkok,10103.02
+2000,Bangkok,10788.37
+2001,Bangkok,11274.85
+2002,Bangkok,11596.6
+2003,Bangkok,12065.65
+2004,Bangkok,13400.98
+2005,Bangkok,14018.43
+2006,Bangkok,14335.87
+2007,Bangkok,14631.94
+2008,Bangkok,14673.64
+2009,Bangkok,14485.62
+2010,Bangkok,15229.3
+2011,Bangkok,16048.18
+2012,Bangkok,17169.37
+2013,Bangkok,18222.13
+2014,Bangkok,18871.16
+2015,Bangkok,19705.09
+2016,Bangkok,20606.05
+2017,Bangkok,21493.71
+2018,Bangkok,22613.68
+2019,Bangkok,23588.48
+2020,Bangkok,22273.22
+2021,Bangkok,22876.14
+2022,Bangkok,23710.23
+2023,Bangkok,24218.79
+2024,Bangkok,24736.62
+2025,Bangkok,25262.65
+2026,Bangkok,25796.6
+2027,Bangkok,26337.84
+2028,Bangkok,26885.65
+2029,Bangkok,27439.13
+2030,Bangkok,27997.24
+2031,Bangkok,28558.85
+2032,Bangkok,29122.79
+2033,Bangkok,29687.96
+2034,Bangkok,30253.39
+2035,Bangkok,30818.34
+2036,Bangkok,31390.72
+2037,Bangkok,31970.87
+2038,Bangkok,32559.36
+2039,Bangkok,33156.94
+2040,Bangkok,33764.4
+2041,Bangkok,34315.81
+2042,Bangkok,34859
+2043,Bangkok,35393.28
+2044,Bangkok,35917.98
+2045,Bangkok,36438.56
+2046,Bangkok,36957.86
+2047,Bangkok,37475.43
+2048,Bangkok,37990.71
+2049,Bangkok,38503.1
+2050,Bangkok,39011.94
+2051,Bangkok,39531.29
+2052,Bangkok,40061.02
+2053,Bangkok,40600.84
+2054,Bangkok,41150.4
+2055,Bangkok,41709.29
+2056,Bangkok,42277.24
+2057,Bangkok,42853.88
+2058,Bangkok,43438.48
+2059,Bangkok,44030.2
+2060,Bangkok,44628.23
+2061,Bangkok,45231.94
+2062,Bangkok,45840.86
+2063,Bangkok,46454.35
+2064,Bangkok,47071.82
+2065,Bangkok,47692.67
+2066,Bangkok,48316.35
+2067,Bangkok,48942.27
+2068,Bangkok,49569.77
+2069,Bangkok,50198.11
+2070,Bangkok,50826.65
+2071,Bangkok,51456.16
+2072,Bangkok,52086.38
+2073,Bangkok,52717.27
+2074,Bangkok,53349
+2075,Bangkok,53981.75
+2076,Bangkok,54615.35
+2077,Bangkok,55249.72
+2078,Bangkok,55885.17
+2079,Bangkok,56522.26
+2080,Bangkok,57161.38
+2081,Bangkok,57802.63
+2082,Bangkok,58445.95
+2083,Bangkok,59091.47
+2084,Bangkok,59739.28
+2085,Bangkok,60389.39
+2086,Bangkok,61041.72
+2087,Bangkok,61696.04
+2088,Bangkok,62352.12
+2089,Bangkok,63009.6
+2090,Bangkok,63668.02
+2091,Bangkok,64326.87
+2092,Bangkok,64985.5
+2093,Bangkok,65643.14
+2094,Bangkok,66298.92
+2095,Bangkok,66951.85
+2096,Bangkok,67600.72
+2097,Bangkok,68244.29
+2098,Bangkok,68881.05
+2099,Bangkok,69509.4
+2100,Bangkok,70127.51
+1995,Nonthaburi,3288.25
+1996,Nonthaburi,3187.15
+1997,Nonthaburi,3055.96
+1998,Nonthaburi,3079.09
+1999,Nonthaburi,2926.14
+2000,Nonthaburi,2953.08
+2001,Nonthaburi,3019.74
+2002,Nonthaburi,3137.94
+2003,Nonthaburi,3276.13
+2004,Nonthaburi,3491.25
+2005,Nonthaburi,3800.65
+2006,Nonthaburi,4034.42
+2007,Nonthaburi,4165.09
+2008,Nonthaburi,4169.19
+2009,Nonthaburi,4286.47
+2010,Nonthaburi,4493.43
+2011,Nonthaburi,4290.47
+2012,Nonthaburi,4633.95
+2013,Nonthaburi,4981.36
+2014,Nonthaburi,5449.84
+2015,Nonthaburi,5688.93
+2016,Nonthaburi,5834.36
+2017,Nonthaburi,6220.9
+2018,Nonthaburi,6225.22
+2019,Nonthaburi,6518.65
+2020,Nonthaburi,6380.89
+2021,Nonthaburi,6423.16
+2022,Nonthaburi,6566.28
+2023,Nonthaburi,6696.99
+2024,Nonthaburi,6814.36
+2025,Nonthaburi,6930.97
+2026,Nonthaburi,7053.52
+2027,Nonthaburi,7182.19
+2028,Nonthaburi,7309.41
+2029,Nonthaburi,7432.09
+2030,Nonthaburi,7560.92
+2031,Nonthaburi,7694.66
+2032,Nonthaburi,7834.27
+2033,Nonthaburi,7981.57
+2034,Nonthaburi,8132.99
+2035,Nonthaburi,8291.93
+2036,Nonthaburi,8613.72
+2037,Nonthaburi,8941.71
+2038,Nonthaburi,9275.7
+2039,Nonthaburi,9615.44
+2040,Nonthaburi,9960.69
+2041,Nonthaburi,10423.46
+2042,Nonthaburi,10893.78
+2043,Nonthaburi,11370.72
+2044,Nonthaburi,11853.32
+2045,Nonthaburi,12342.62
+2046,Nonthaburi,12838.87
+2047,Nonthaburi,13341.23
+2048,Nonthaburi,13848.76
+2049,Nonthaburi,14360.44
+2050,Nonthaburi,14875.16
+2051,Nonthaburi,15404.25
+2052,Nonthaburi,15947.75
+2053,Nonthaburi,16505.68
+2054,Nonthaburi,17077.96
+2055,Nonthaburi,17664.49
+2056,Nonthaburi,18265.17
+2057,Nonthaburi,18879.85
+2058,Nonthaburi,19508.17
+2059,Nonthaburi,20149.69
+2060,Nonthaburi,20803.93
+2061,Nonthaburi,21470.45
+2062,Nonthaburi,22148.82
+2063,Nonthaburi,22838.52
+2064,Nonthaburi,23539.01
+2065,Nonthaburi,24249.68
+2066,Nonthaburi,24969.93
+2067,Nonthaburi,25699.09
+2068,Nonthaburi,26436.39
+2069,Nonthaburi,27181.01
+2070,Nonthaburi,27932.11
+2071,Nonthaburi,28693.6
+2072,Nonthaburi,29465.13
+2073,Nonthaburi,30246.48
+2074,Nonthaburi,31037.54
+2075,Nonthaburi,31838.15
+2076,Nonthaburi,32648.01
+2077,Nonthaburi,33466.8
+2078,Nonthaburi,34294.45
+2079,Nonthaburi,35131.01
+2080,Nonthaburi,35976.48
+2081,Nonthaburi,36830.65
+2082,Nonthaburi,37693.18
+2083,Nonthaburi,38563.84
+2084,Nonthaburi,39442.42
+2085,Nonthaburi,40328.57
+2086,Nonthaburi,41221.92
+2087,Nonthaburi,42121.97
+2088,Nonthaburi,43028.18
+2089,Nonthaburi,43939.94
+2090,Nonthaburi,44856.51
+2091,Nonthaburi,45777.11
+2092,Nonthaburi,46700.83
+2093,Nonthaburi,47626.65
+2094,Nonthaburi,48553.43
+2095,Nonthaburi,49479.93
+2096,Nonthaburi,50404.71
+2097,Nonthaburi,51326.25
+2098,Nonthaburi,52242.81
+2099,Nonthaburi,53152.53
+2100,Nonthaburi,54053.33
+1995,Samut Prakan,8823.51
+1996,Samut Prakan,8931.15
+1997,Samut Prakan,8686.06
+1998,Samut Prakan,9301.34
+1999,Samut Prakan,10098.24
+2000,Samut Prakan,10437.25
+2001,Samut Prakan,10954.18
+2002,Samut Prakan,11675.02
+2003,Samut Prakan,11573.89
+2004,Samut Prakan,12014.73
+2005,Samut Prakan,11981.63
+2006,Samut Prakan,12456.32
+2007,Samut Prakan,15341.01
+2008,Samut Prakan,14812.45
+2009,Samut Prakan,13183.31
+2010,Samut Prakan,15994.54
+2011,Samut Prakan,14056.94
+2012,Samut Prakan,15963.51
+2013,Samut Prakan,14707.98
+2014,Samut Prakan,14371.31
+2015,Samut Prakan,14485.37
+2016,Samut Prakan,14391.18
+2017,Samut Prakan,14717.29
+2018,Samut Prakan,15688.26
+2019,Samut Prakan,15192.1
+2020,Samut Prakan,12677.22
+2021,Samut Prakan,12832.87
+2022,Samut Prakan,13117.94
+2023,Samut Prakan,13378.05
+2024,Samut Prakan,13611.4
+2025,Samut Prakan,13843.09
+2026,Samut Prakan,14086.49
+2027,Samut Prakan,14342.01
+2028,Samut Prakan,14594.5
+2029,Samut Prakan,14837.81
+2030,Samut Prakan,15093.28
+2031,Samut Prakan,15358.44
+2032,Samut Prakan,15635.22
+2033,Samut Prakan,15927.23
+2034,Samut Prakan,16227.38
+2035,Samut Prakan,16542.43
+2036,Samut Prakan,16789.01
+2037,Samut Prakan,17043.43
+2038,Samut Prakan,17306.01
+2039,Samut Prakan,17577.07
+2040,Samut Prakan,17856.95
+2041,Samut Prakan,18345.84
+2042,Samut Prakan,18841.98
+2043,Samut Prakan,19345.23
+2044,Samut Prakan,19855.44
+2045,Samut Prakan,20375.9
+2046,Samut Prakan,20908.53
+2047,Samut Prakan,21453.48
+2048,Samut Prakan,22010.84
+2049,Samut Prakan,22580.65
+2050,Samut Prakan,23162.93
+2051,Samut Prakan,23759.62
+2052,Samut Prakan,24370.83
+2053,Samut Prakan,24996.59
+2054,Samut Prakan,25636.84
+2055,Samut Prakan,26291.5
+2056,Samut Prakan,26960.54
+2057,Samut Prakan,27643.87
+2058,Samut Prakan,28341.13
+2059,Samut Prakan,29051.9
+2060,Samut Prakan,29775.71
+2061,Samut Prakan,30512.19
+2062,Samut Prakan,31261.08
+2063,Samut Prakan,32021.94
+2064,Samut Prakan,32794.39
+2065,Samut Prakan,33578
+2066,Samut Prakan,34372.32
+2067,Samut Prakan,35176.91
+2068,Samut Prakan,35991.19
+2069,Samut Prakan,36814.57
+2070,Samut Prakan,37646.43
+2071,Samut Prakan,38483.12
+2072,Samut Prakan,39324.04
+2073,Samut Prakan,40168.75
+2074,Samut Prakan,41016.99
+2075,Samut Prakan,41868.44
+2076,Samut Prakan,42722.57
+2077,Samut Prakan,43578.84
+2078,Samut Prakan,44437.09
+2079,Samut Prakan,45297.27
+2080,Samut Prakan,46159.27
+2081,Samut Prakan,47022.72
+2082,Samut Prakan,47887.1
+2083,Samut Prakan,48752.05
+2084,Samut Prakan,49617.18
+2085,Samut Prakan,50482.02
+2086,Samut Prakan,51346.02
+2087,Samut Prakan,52208.49
+2088,Samut Prakan,53068.73
+2089,Samut Prakan,53925.93
+2090,Samut Prakan,54779.17
+2091,Samut Prakan,55627.49
+2092,Samut Prakan,56469.78
+2093,Samut Prakan,57304.82
+2094,Samut Prakan,58131.29
+2095,Samut Prakan,58947.77
+2096,Samut Prakan,59752.62
+2097,Samut Prakan,60544.15
+2098,Samut Prakan,61320.44
+2099,Samut Prakan,62079.48
+2100,Samut Prakan,62819.05
+1995,Rest of Thailand,1910.02
+1996,Rest of Thailand,2036.26
+1997,Rest of Thailand,2030.83
+1998,Rest of Thailand,1847.02
+1999,Rest of Thailand,1940.88
+2000,Rest of Thailand,1992.24
+2001,Rest of Thailand,2019.67
+2002,Rest of Thailand,2150.83
+2003,Rest of Thailand,2336.44
+2004,Rest of Thailand,2519.22
+2005,Rest of Thailand,2593.86
+2006,Rest of Thailand,2729.16
+2007,Rest of Thailand,2864.46
+2008,Rest of Thailand,2930.66
+2009,Rest of Thailand,2938.96
+2010,Rest of Thailand,3134.13
+2011,Rest of Thailand,3129.76
+2012,Rest of Thailand,3313.73
+2013,Rest of Thailand,3348.34
+2014,Rest of Thailand,3310.22
+2015,Rest of Thailand,3354.74
+2016,Rest of Thailand,3449.31
+2017,Rest of Thailand,3575.2
+2018,Rest of Thailand,3686.48
+2019,Rest of Thailand,3723.5
+2020,Rest of Thailand,3555.32
+2021,Rest of Thailand,3610.46
+2022,Rest of Thailand,3749.05
+2023,Rest of Thailand,3908.56
+2024,Rest of Thailand,4058.3
+2025,Rest of Thailand,4209.77
+2026,Rest of Thailand,4369.46
+2027,Rest of Thailand,4537.92
+2028,Rest of Thailand,4709.56
+2029,Rest of Thailand,4879.72
+2030,Rest of Thailand,5059.2
+2031,Rest of Thailand,5246.95
+2032,Rest of Thailand,5444.23
+2033,Rest of Thailand,5653.51
+2034,Rest of Thailand,5870.98
+2035,Rest of Thailand,6100.41
+2036,Rest of Thailand,6313.72
+2037,Rest of Thailand,6538.21
+2038,Rest of Thailand,6780.33
+2039,Rest of Thailand,7035.24
+2040,Rest of Thailand,7303.91
+2041,Rest of Thailand,7579.96
+2042,Rest of Thailand,7867.54
+2043,Rest of Thailand,8167.11
+2044,Rest of Thailand,8479.12
+2045,Rest of Thailand,8805.54
+2046,Rest of Thailand,9147.82
+2047,Rest of Thailand,9506.7
+2048,Rest of Thailand,9882.93
+2049,Rest of Thailand,10277.27
+2050,Rest of Thailand,10690.51
+2051,Rest of Thailand,11121.67
+2052,Rest of Thailand,11568.22
+2053,Rest of Thailand,12030.57
+2054,Rest of Thailand,12509.08
+2055,Rest of Thailand,13004.13
+2056,Rest of Thailand,13516.09
+2057,Rest of Thailand,14045.35
+2058,Rest of Thailand,14592.14
+2059,Rest of Thailand,15156.67
+2060,Rest of Thailand,15739.1
+2061,Rest of Thailand,16339.69
+2062,Rest of Thailand,16958.69
+2063,Rest of Thailand,17596.32
+2064,Rest of Thailand,18252.77
+2065,Rest of Thailand,18928.25
+2066,Rest of Thailand,19622.92
+2067,Rest of Thailand,20336.97
+2068,Rest of Thailand,21070.5
+2069,Rest of Thailand,21823.57
+2070,Rest of Thailand,22596.25
+2071,Rest of Thailand,23388.51
+2072,Rest of Thailand,24200.52
+2073,Rest of Thailand,25032.55
+2074,Rest of Thailand,25884.99
+2075,Rest of Thailand,26758.22
+2076,Rest of Thailand,27652.46
+2077,Rest of Thailand,28567.96
+2078,Rest of Thailand,29505.18
+2079,Rest of Thailand,30464.73
+2080,Rest of Thailand,31447.13
+2081,Rest of Thailand,32452.79
+2082,Rest of Thailand,33482.01
+2083,Rest of Thailand,34535.18
+2084,Rest of Thailand,35612.71
+2085,Rest of Thailand,36714.93
+2086,Rest of Thailand,37842.14
+2087,Rest of Thailand,38944.92
+2088,Rest of Thailand,40019.52
+2089,Rest of Thailand,41062.05
+2090,Rest of Thailand,42068.6
+2091,Rest of Thailand,43035.25
+2092,Rest of Thailand,43958.05
+2093,Rest of Thailand,44833.02
+2094,Rest of Thailand,45656.22
+2095,Rest of Thailand,46423.75
+2096,Rest of Thailand,47131.68
+2097,Rest of Thailand,47776.25
+2098,Rest of Thailand,48353.69
+2099,Rest of Thailand,48860.4
+2100,Rest of Thailand,49292.88
+1990,Thailand,2070.541
+1991,Thailand,2219.295
+1992,Thailand,2401.656
+1993,Thailand,2584.317
+1994,Thailand,2755.122
+1995,Thailand,2960.563
+1996,Thailand,3093.771
+1997,Thailand,2973.949
+1998,Thailand,2717.872
+1999,Thailand,2833.129
+2000,Thailand,2948.972
+2001,Thailand,3029.482
+2002,Thailand,3190.624
+2003,Thailand,3404.831
+2004,Thailand,3683.567
+2005,Thailand,3810.495
+2006,Thailand,3973.649
+2007,Thailand,4175.697
+2008,Thailand,4224.204
+2009,Thailand,4186.094
+2010,Thailand,4475.726
+2011,Thailand,4499.399
+2012,Thailand,4796.784
+2013,Thailand,4900.662
+2014,Thailand,4923.167
+2015,Thailand,5030.773
+2016,Thailand,5187.61
+2017,Thailand,5383.351
+2018,Thailand,5591.634
+2019,Thailand,5699.508
+2020,Thailand,5376.462
+2021,Thailand,5463.747
+2022,Thailand,5669.02
+2023,Thailand,5862.782
+2024,Thailand,6047.219
+2025,Thailand,6233.146
+2026,Thailand,6426.642
+2027,Thailand,6628.232
+2028,Thailand,6833.151
+2029,Thailand,7036.457
+2030,Thailand,7248.273
+2031,Thailand,7467.547
+2032,Thailand,7695.427
+2033,Thailand,7934.29
+2034,Thailand,8180.407
+2035,Thailand,8437.282
+2036,Thailand,8682.758
+2037,Thailand,8938.849
+2038,Thailand,9212.989
+2039,Thailand,9499.195
+2040,Thailand,9798.391
+2041,Thailand,10107
+2042,Thailand,10425.329
+2043,Thailand,10753.683
+2044,Thailand,11092.38
+2045,Thailand,11443.673
+2046,Thailand,11809.119
+2047,Thailand,12189.3
+2048,Thailand,12584.803
+2049,Thailand,12996.215
+2050,Thailand,13424.137
+2051,Thailand,13869.202
+2052,Thailand,14329.205
+2053,Thailand,14804.471
+2054,Thailand,15295.292
+2055,Thailand,15801.942
+2056,Thailand,16324.743
+2057,Thailand,16863.973
+2058,Thailand,17419.771
+2059,Thailand,17992.216
+2060,Thailand,18581.373
+2061,Thailand,19187.377
+2062,Thailand,19810.404
+2063,Thailand,20450.556
+2064,Thailand,21107.94
+2065,Thailand,21782.648
+2066,Thailand,22474.77
+2067,Thailand,23184.373
+2068,Thailand,23911.462
+2069,Thailand,24655.997
+2070,Thailand,25417.953
+2071,Thailand,26197.357
+2072,Thailand,26994.317
+2073,Thailand,27809.051
+2074,Thailand,28641.9
+2075,Thailand,29493.19
+2076,Thailand,30363.085
+2077,Thailand,31251.766
+2078,Thailand,32159.665
+2079,Thailand,33087.337
+2080,Thailand,34035.282
+2081,Thailand,35003.837
+2082,Thailand,35993.231
+2083,Thailand,37003.809
+2084,Thailand,38035.918
+2085,Thailand,39089.823
+2086,Thailand,40165.751
+2087,Thailand,41220.769
+2088,Thailand,42251.556
+2089,Thailand,43254.69
+2090,Thailand,44226.686
+2091,Thailand,45164.065
+2092,Thailand,46063.282
+2093,Thailand,46920.773
+2094,Thailand,47732.983
+2095,Thailand,48496.375
+2096,Thailand,49207.371
+2097,Thailand,49862.52
+2098,Thailand,50458.327
+2099,Thailand,50991.453
+2100,Thailand,51458.589

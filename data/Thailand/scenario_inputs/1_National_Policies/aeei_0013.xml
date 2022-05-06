@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario>
+   <world>
+      <region name="Bangkok">
+         <energy-final-demand name="industry">
+            <final-energy-consumer>
+               <aeei year="2015">0</aeei>
+               <aeei year="2020">0.0013</aeei>
+               <aeei year="2025">0.0013</aeei>
+               <aeei year="2030">0.0013</aeei>
+               <aeei year="2035">0.0013</aeei>
+               <aeei year="2040">0.0013</aeei>
+            </final-energy-consumer>
+         </energy-final-demand>
+      </region>
+
+      <region name="Nonthaburi">
+         <energy-final-demand name="industry">
+            <final-energy-consumer>
+               <aeei year="2015">0</aeei>
+               <aeei year="2020">0.0013</aeei>
+               <aeei year="2025">0.0013</aeei>
+               <aeei year="2030">0.0013</aeei>
+               <aeei year="2035">0.0013</aeei>
+               <aeei year="2040">0.0013</aeei>
+            </final-energy-consumer>
+         </energy-final-demand>
+      </region>
+
+      <region name="SamutPrakan">
+         <energy-final-demand name="industry">
+            <final-energy-consumer>
+               <aeei year="2015">0</aeei>
+               <aeei year="2020">0.0013</aeei>
+               <aeei year="2025">0.0013</aeei>
+               <aeei year="2030">0.0013</aeei>
+               <aeei year="2035">0.0013</aeei>
+               <aeei year="2040">0.0013</aeei>
+            </final-energy-consumer>
+         </energy-final-demand>
+      </region>
+
+      <region name="Rest of Thailand">
+         <energy-final-demand name="industry">
+            <final-energy-consumer>
+               <aeei year="2015">0</aeei>
+               <aeei year="2020">0.0013</aeei>
+               <aeei year="2025">0.0013</aeei>
+               <aeei year="2030">0.0013</aeei>
+               <aeei year="2035">0.0013</aeei>
+               <aeei year="2040">0.0013</aeei>
+            </final-energy-consumer>
+         </energy-final-demand>
+      </region>
+
+   </world>
+</scenario>
