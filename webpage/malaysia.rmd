@@ -365,20 +365,19 @@ This section details the socioeconomic inputs used to define Malaysia and Kuala 
 
 <tr>
 <th>Variable</th>
-<th style="width:40%">Assumptions</th>
-<th style="width:50%">Data Sources</th>
+<th style="width:50%">Assumptions</th>
+<th style="width:40%">Data Sources</th>
 </tr>
 
 <tr>
 <td>Population</td>
 <td>
-<span>- Malaysia population for the medium variant projection</span><br/>
-<span>- Growth rates for Bangkok were used for Kuala Lumpur</span>
+<span>- Malaysia population used the medium variant projection and historical data from the UN</span><br/>
+<span>- KL census data gives a value for 2010. All other values were extrapolated and calculated using the growth rates for Malaysia in total</span>
 </td>
 <td>
 <span>- Malaysia: [United Nations](https://population.un.org/wpp/)</span><br/>
-<span>- Kuala Lumpur 1971-2017: [United Nations]()</span><br/>
-<span>- Kuala Lumpur 2017-2021: [Department of Statistics Malaysia](https://www.dosm.gov.my/v1/index.php?r=column/cone&menu_id=bjRlZXVGdnBueDJKY1BPWEFPRlhIdz09)</span>
+<span>- Kuala Lumpur 2010: [United Nations](http://data.un.org/Data.aspx?q=kuala+lumpur&d=POP&f=tableCode%3a240%3bareaCode%3a0%3bsexCode%3a0%3bvarCode3%3a028690%3bvarCode4%3a000002)</span><br/>
 </td>
 </tr>
 
@@ -402,7 +401,7 @@ This section details the socioeconomic inputs used to define Malaysia and Kuala 
 
 #### Historical Trends and Future Projections {-}
 
-The plot below shows historical and future projected populations in Malaysia and Kuala Lumpur comparing the data sources above to the GCAM reference scenario. As mentioned above, population growth rates in Kuala Lumpur were assumed to be on par with Bangkok, Thailand. Please reference the <a href=thailand.html#9_Inputs> data sources for Thailand </a> for more details.  
+The plot below shows historical and future projected populations in Malaysia and Kuala Lumpur comparing the data sources above to the GCAM reference scenario. As mentioned above, population growth rates in Kuala Lumpur were assumed to be on par with those of the entire country. 
 
 ``` {r pop-plot, echo = FALSE, fig.dim = c(8,4), fig.cap="Figure 9.1.1.1. **Historical and future projected population in Malaysia and Kuala Lumpur**"}
 # Population
