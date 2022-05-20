@@ -197,14 +197,13 @@ myTable = data.frame(
     Sector     = c("Energy Supply",
                   "Transportation",
                   "Buildings & Industry"),
-    Policies = c("* Power Development Plan 2018-2037 (bound capacity + target capacity)\
-                 \n * Renewable and Alternative Energy Development Plan 2018-2037 (bound capacity + target capacity)",
-                 "* Measures to promote EV use\
-                 \n * Eco-driving promotion\
-                 \n * Public transit expansion\
-                 \n Electric Vehicle Roadmap to increase electric proportion of vehicles in manufacturing",
-                 "* Voluntary energy efficiency labeling\
-                 \n * Subsidies for equipment upgrades")
+    Policies = c("* Increased RE and CCS\
+                 \n * Coal and gas development constraints",
+                 "* Enhanced vehicle emissions standards\
+                 \n * Electric vehicle subsidies\
+                 \n * Fuel Economy Standards",
+                 "* Enhanced Building Energy Codes\
+                 \n * Enhanced Minimum Energy Performance Standards")
     ) 
 pander::pander(myTable, keep.line.breaks = TRUE, style = "grid", justify = 'left', split.tables=Inf, caption = "Table 5.2.1. Policies included in the Extended National Policies scenario.")
 
@@ -548,13 +547,14 @@ knitr::include_graphics("images/half_blank_space.jpg")
 
 #### Future Projections {-}
 
-To project future GDP and GPP, we used a combination of NESDB projections and other assumptions. For GDP, NESDB has provided a projection through 2050 in Thailand's Long Term Plan (LTP). Beyond 2050, we made an assumption that per capita GDP would reach 52,000 USD (at the 2005 price) by 2100 based on historical trajectories of several developed countries. We assumed that GPP future trajectories would vary between provinces, with Bangkok's per capita GDP reaching around 70,000 USD (at the 2005 price) by 2100, consistent with income ranges of some high income cities at present. The plots below show estimated GDP and GPP from 1990 to 2100 based on these assumptions.
+To project future GDP and GPP, we used a combination of NESDB projections and other assumptions. For GDP, NESDB has provided a projection through 2050 in Thailand's Long Term Plan (LTP). Beyond 2050, we made an assumption that per capita GDP would reach 52,000 USD (at the 2005 price) by 2100 based on historical trajectories of several developed countries. We assumed that GPP future trajectories would vary between provinces, with Bangkok's per capita GDP reaching around 70,000 USD (at the 2005 price) by 2100, consistent with income ranges of some high income cities at present. The plots below show estimated GDP and GPP in THB from 2021 to 2100 based on these assumptions, as well as GDP/GPP growth rates during this period.
 
-```{r historical & future trends gdp baht, fig.dim=c(8,4), fig.cap="Figure 9.1.2.3. **Historical and projected future GDP in Thailand and GPP in the MEA provinces.**"}
+```{r historical & future trends gdp baht, fig.dim=c(8,4), fig.cap="Figure 9.1.2.3. **Projected future GDP in Thailand and GPP in the MEA provinces.**"}
 # plot gdp
 gdp_all_baht <- rchart::chart(
   dplyr::mutate(
-    dplyr::filter(gdp_baht, region != "Rest of Thailand"),
+    dplyr::filter(gdp_baht, region != "Rest of Thailand",
+                  year > 2020),
     value = value/1000000),
   save = F, aspect_ratio = 0.4
 )
@@ -567,7 +567,33 @@ gdp_all_baht$chart_region_absolute +
                    plot.margin = ggplot2::unit(c(0,0,0.5,0), "cm"))
 ```
 
+<br>
+<br>
 
+```{r historical & future trends gdp growth rate baht, fig.dim=c(8,4), fig.cap="Figure 9.1.2.4. **Projected future growth rates of GDP in Thailand and GPP in the MEA provinces.**"}
+
+# calculate growth rates
+gdp_growth_baht <- dplyr::mutate(
+  dplyr::arrange(dplyr::group_by(gdp_baht, region),
+      year, .by_group = T), 
+  value = (value-dplyr::lag(value))/lag(value)*100
+)
+
+# plot gdp growth rate
+gdp_growth_charts <- rchart::chart(
+  dplyr::mutate(
+    dplyr::filter(gdp_growth_baht, region != "Rest of Thailand",
+                  year > 2021)),
+  save = F, aspect_ratio = 0.4
+)
+
+gdp_growth_charts$chart_region_absolute +
+    ggplot2::facet_wrap(~region, nrow = 2, 
+                        scales = "free_y") +
+    ggplot2::ylab("GDP growth rate (%)") +
+    ggplot2::theme(legend.position = "none",
+                   plot.margin = ggplot2::unit(c(0,0,0.5,0), "cm"))
+```
 
 <!-------------------------->
 <!-------------------------->
@@ -588,7 +614,7 @@ pcgdp_baht$region <- factor(pcgdp_baht$region,
 # plot gdp
 pcgdp_historical_chart_national_baht <- rchart::chart(
   dplyr::mutate(
-    dplyr::filter(pcgdp_inputs_baht, 
+    dplyr::filter(pcgdp_baht, 
                   year <= 2020,
                   region == "Thailand"),
       value = value*1000),
@@ -610,7 +636,7 @@ pcgdp_historical_chart_national_baht$chart_param +
 
 pcgdp_historical_chart_mea_baht <- rchart::chart(
   dplyr::mutate(
-    dplyr::filter(pcgdp_inputs_baht, 
+    dplyr::filter(pcgdp_baht, 
                   year <= 2020,
                   !(region %in% c("Thailand", "Rest of Thailand"))), 
       value = value*1000),
@@ -634,14 +660,15 @@ knitr::include_graphics("images/half_blank_space.jpg")
 
 #### Future Projections {-}
 
-The plot below shows per capita GDP/GPP from 1990 to 2100 for each region.
+The plot below shows per capita GDP/GPP (THB) and growth rates from 1990 to 2100 for each region.
 
-```{r historical & future trends pcgdp baht, fig.dim=c(8,4), fig.cap="**Figure 9.1.3.3. Per capita GDP/GPP through 2100 in each region**"}
+```{r future  pcgdp baht, fig.dim=c(8,4), fig.cap="**Figure 9.1.3.3. Per capita GDP/GPP through 2100 in each region**"}
 
 # plot gdp
 pcgdp_all_baht <- rchart::chart(
   dplyr::mutate(
-    dplyr::filter(pcgdp_inputs_baht, region != "Rest of Thailand"),
+    dplyr::filter(pcgdp_baht, region != "Rest of Thailand",
+                  year > 2020),
     value = value),
   save = F, aspect_ratio = 0.4
 )
@@ -654,6 +681,33 @@ pcgdp_all_baht$chart_region_absolute +
                    plot.margin = ggplot2::unit(c(0,0,0.5,0), "cm"))
 ```
 
+<br>
+<br>
+
+```{r future pcgdp growth rate baht, fig.dim=c(8,4), fig.cap="Figure 9.1.3.4. **Projected future growth rates of per capita GDP in Thailand and per capita GPP in the MEA provinces.**"}
+
+# calculate growth rates
+pcgdp_growth_baht <- dplyr::mutate(
+  dplyr::arrange(dplyr::group_by(pcgdp_baht, region),
+      year, .by_group = T), 
+  value = (value-dplyr::lag(value))/lag(value)*100
+)
+
+# plot gdp growth rate
+pcgdp_growth_charts <- rchart::chart(
+  dplyr::mutate(
+    dplyr::filter(pcgdp_growth_baht, region != "Rest of Thailand",
+                  year > 2021)),
+  save = F, aspect_ratio = 0.4
+)
+
+pcgdp_growth_charts$chart_region_absolute +
+    ggplot2::facet_wrap(~region, nrow = 2, 
+                        scales = "free_y") +
+    ggplot2::ylab("Per capita GDP growth rate (%)") +
+    ggplot2::theme(legend.position = "none",
+                   plot.margin = ggplot2::unit(c(0,0,0.5,0), "cm"))
+```
 
 
 <!-------------------------->
