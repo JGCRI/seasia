@@ -359,7 +359,7 @@ data.frame(
 <!-------------------------->
 ## Socioeconomics  {.tabset .tabset-pills}
 <!-------------------------->
-This section details the socioeconomic inputs used to define Malaysia and Kuala Lumpur in GCAM. These metrics include population, GDP, and GDP per capita. Historical and projection data was used when available, otherwise data was calculated using the assumptions described below.
+This section details the socioeconomic inputs used to define Malaysia and its subregions, Kuala Lumpur and "Rest of Malaysia" in GCAM. These metrics include population, GDP, and GDP per capita. Historical and projection data were used when available, otherwise data was calculated using the assumptions described below.
 
 <table>
 
@@ -373,7 +373,8 @@ This section details the socioeconomic inputs used to define Malaysia and Kuala 
 <td>Population</td>
 <td>
 <span>- Malaysia population used the medium variant projection and historical data from the UN</span><br/>
-<span>- KL census data gives a value for 2010. All other values were extrapolated and calculated using the growth rates for Malaysia in total</span>
+<span>- KL census data gives a value for 2010. All other values were extrapolated and calculated using the growth rates for Malaysia in total</span><br/>
+<span>- "Rest of Malaysia" values found by subtracting KL numbers from Malaysia</span><br/>
 </td>
 <td>
 <span>- Malaysia: [United Nations](https://population.un.org/wpp/)</span><br/>
@@ -384,10 +385,14 @@ This section details the socioeconomic inputs used to define Malaysia and Kuala 
 
 <tr>
 <td rowspan="3">GDP</td>
-<td>Pre-2011 and post-2020 GDP growth rates are consistent between all regions</td>
+<td>
+<span>- Malaysia annual growth rates are applied to KL's 2020 GDP value to extrapolate historical and future values</span><br/>
+<span>- "Rest of Malaysia" values found by subtracting KL numbers from Malaysia</span>
+</td>
 <td rowspan="2"> 
-<span>- Malaysia: [Department of Statistics Malaysia](https://www.dosm.gov.my/v1/index.php?r=column/ctimeseries&menu_id=NHJlaGc2Rlg4ZXlGTjh1SU1kaWY5UT09)</span><br/>
-<span>- Kuala Lumpur: [need link]()</span>
+<span>- Malaysia, historical: [USDA ERS](https://www.ers.usda.gov/data-products/international-macroeconomic-data-set/)</span><br/>
+<span>- Malaysia, future: [SSP database](https://tntcat.iiasa.ac.at/SspDb/dsd?Action=htmlpage&page=welcome)</span><br/>
+<span>- Kuala Lumpur 2020: [Department of Statistics Malaysia](https://www.dosm.gov.my/v1/index.php?r=column/cthemeByCat&cat=102&bul_id=anVobldYUFZLNE5WVlRVRExkSWEyZz09&menu_id=TE5CRUZCblh4ZTZMODZIbmk2aWRRQT09)</span><br/>
 </td>
 </tr>
 
@@ -401,33 +406,24 @@ This section details the socioeconomic inputs used to define Malaysia and Kuala 
 
 #### Historical Trends and Future Projections {-}
 
-The plot below shows historical and future projected populations in Malaysia and Kuala Lumpur comparing the data sources above to the GCAM reference scenario. As mentioned above, population growth rates in Kuala Lumpur were assumed to be on par with those of the entire country. 
+To estimate population values, we begin with annual data from the UN for Malaysia's population; we use historical data and the medium population projection scenario. For KL, we use 2010 census data as our base year. We then calculate annual growth rates using the complete Malaysia dataset and apply these growth rates to extrapolate KL population values. To find "Rest of Malaysia" values, we subtract KL population from Malaysia values.
+
+The plot below shows historical and future projected populations in Malaysia and Kuala Lumpur from the GCAM reference scenario from 1975 to 2100.  
 
 ``` {r pop-plot, echo = FALSE, fig.dim = c(8,4), fig.cap="Figure 9.1.1.1. **Historical and future projected population in Malaysia and Kuala Lumpur**"}
 # Population
-socio_data <- fread("../data/Malaysia/socioeconomic_inputs/kl_my_socioeconomics.csv") %>% as_tibble()
-pop <- fread("../data/Malaysia/socioeconomic_inputs/gcam_pop_mykl.csv") %>% as_tibble()
-
-kl_pop <- socio_data %>%
-  filter(metric == "population",
-         region != "Rest of Malaysia") %>%
-  mutate(source = "KL") %>%
-  select(-metric)
+pop <- fread("../data/Malaysia/socioeconomic_inputs/gcam_malaysia_pop.csv") %>% as_tibble()
 
 gcam_pop <- pop %>%
   mutate(value = value / 1000,
-         units = "million",
-         source = "GCAM") %>%
-  select(-scenario)
-
-pop_plot <- bind_rows(kl_pop, gcam_pop)
+         Units = "million")
 
 ## PLOT
-population_plot <- pop_plot %>%
-  ggplot(aes(year, value, color = source, group = source)) +
+population_plot <- gcam_pop %>%
+  ggplot(aes(year, value)) +
   geom_line() +
   facet_wrap(~region, scales = "free") +
-  scale_color_viridis_d(end = 0.8) +
+  scale_color_viridis_d() +
   labs(x = "Year",
        y = "Population (millions)",
        title = "Population in Malaysia and Kuala Lumpur") +
@@ -438,32 +434,27 @@ population_plot <- pop_plot %>%
 
 ### GDP
 
-The following graphs show GDP in 2005 USD for Malaysia and Kuala Lumpur. **TODO update units**
+#### Historical Trends and Future Projections {-}
+
+To find GDP values, we begin with historical data of GDP MER in Malaysia from the U.S. Department of Agriculture's Economic Research Service. We use future projections data from the SSP2 database. In a similar process to the population, we then calculate annual growth rates, which are applied to a base year for KL. We use the 2020 GDP found in the KL State Socioeconomic Report 2020. We find "Rest of Malaysia" values by subtracting KL values from Malaysia.
+
+The following graphs show GDP in billion 2005 USD for Malaysia and Kuala Lumpur.
 
 ``` {r gdp, echo = FALSE, fig.dim = c(8,4)}
 # GDP
-gdp <- fread("../data/Malaysia/socioeconomic_inputs/gcam_gdp_mykl.csv") %>% as_tibble()
-
-kl_gdp <- socio_data %>%
-  filter(metric == "gdp",
-         region != "Rest of Malaysia") %>%
-  mutate(source = "KL") %>%
-  select(-metric)
+gdp <- fread("../data/Malaysia/socioeconomic_inputs/gcam_malaysia_gdp.csv") %>% as_tibble()
 
 gcam_gdp <- gdp %>%
   mutate(value = (value * 1.49) / 1000, # convert 1990 USD to 2005 USD, million to billion
-         units = "billion (2005 USD)",
-         source = "GCAM") %>%
-  select(-c(scenario, Units))
-
-gdp_plot_data <- bind_rows(kl_gdp, gcam_gdp)
+         Units = "billion (2005 USD)") %>%
+  select(-scenario)
 
 ## PLOT
-gdp_plot <- gdp_plot_data %>%
-  ggplot(aes(year, value, color = source, group = source)) +
+gdp_plot <- gcam_gdp %>%
+  ggplot(aes(year, value)) +
   geom_line() +
   facet_wrap(~region, scales = "free") +
-  scale_color_viridis_d(end = 0.8) +
+  scale_color_viridis_d() +
   labs(x = "Year",
        y = "Billion (2005 USD)",
        title = "GDP in Malaysia and Kuala Lumpur") +
@@ -473,31 +464,26 @@ gdp_plot <- gdp_plot_data %>%
 
 ### Per capita GDP
 
-GDP per capita, in units of 2005 USD, is shown below for Malaysia and Kuala Lumpur. **TODO update units**
+#### Historical Trends and Future Projections {-}
+
+To find GDP per capita, we divide the above GDP values by the above population values. 
+
+GDP per capita, in units of thousand 2005 USD, is shown below for Malaysia and Kuala Lumpur. 
 
 ``` {r gdp_pc, echo = FALSE, fig.dim = c(8,4)}
-gdp_pc <- fread("../data/Malaysia/socioeconomic_inputs/gcam_gdp_pc_mykl.csv") %>% as_tibble()
-
-kl_gdp_pc <- socio_data %>%
-  filter(metric == "gdp per capita",
-         region != "Rest of Malaysia") %>%
-  mutate(source = "KL") %>%
-  select(-metric)
+gdp_pc <- fread("../data/Malaysia/socioeconomic_inputs/gcam_malaysia_pcgdp.csv") %>% as_tibble()
 
 gcam_gdp_pc <- gdp_pc %>%
   mutate(value = (value * 1.49), # convert 1990 USD to 2005 USD
-         units = "thousand (2005 USD)",
-         source = "GCAM") %>%
+         units = "thousand (2005 USD)") %>%
   select(-scenario)
 
-gdp_pc_plot_data <- bind_rows(kl_gdp_pc, gcam_gdp_pc)
-
 ## PLOT
-gdp_pc_plot <- gdp_pc_plot_data %>%
-  ggplot(aes(year, value, color = source, group = source)) +
+gdp_pc_plot <- gcam_gdp_pc %>%
+  ggplot(aes(year, value)) +
   geom_line() +
   facet_wrap(~region, scales = "free") +
-  scale_color_viridis_d(end = 0.8) +
+  scale_color_viridis_d() +
   labs(x = "Year",
        y = "Thousand (2005 USD) per person",
        title = "GDP per capita in Malaysia and Kuala Lumpur") +

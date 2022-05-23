@@ -607,7 +607,7 @@ td, th {
 <div id="socioeconomics" class="section level2 tabset tabset-pills" number="9.1">
 <h2 class="tabset tabset-pills" number="9.1"><span class="header-section-number">9.1</span> Socioeconomics</h2>
 <!-------------------------->
-<p>This section details the socioeconomic inputs used to define Malaysia and Kuala Lumpur in GCAM. These metrics include population, GDP, and GDP per capita. Historical and projection data was used when available, otherwise data was calculated using the assumptions described below.</p>
+<p>This section details the socioeconomic inputs used to define Malaysia and its subregions, Kuala Lumpur and “Rest of Malaysia” in GCAM. These metrics include population, GDP, and GDP per capita. Historical and projection data were used when available, otherwise data was calculated using the assumptions described below.</p>
 <table>
 <tr>
 <th>
@@ -625,7 +625,7 @@ Data Sources
 Population
 </td>
 <td>
-<span>- Malaysia population used the medium variant projection and historical data from the UN</span><br/> <span>- KL census data gives a value for 2010. All other values were extrapolated and calculated using the growth rates for Malaysia in total</span>
+<span>- Malaysia population used the medium variant projection and historical data from the UN</span><br/> <span>- KL census data gives a value for 2010. All other values were extrapolated and calculated using the growth rates for Malaysia in total</span><br/> <span>- “Rest of Malaysia” values found by subtracting KL numbers from Malaysia</span><br/>
 </td>
 <td>
 <span>- Malaysia: <a href="https://population.un.org/wpp/">United Nations</a></span><br/> <span>- Kuala Lumpur 2010: <a href="http://data.un.org/Data.aspx?q=kuala+lumpur&amp;d=POP&amp;f=tableCode%3a240%3bareaCode%3a0%3bsexCode%3a0%3bvarCode3%3a028690%3bvarCode4%3a000002">United Nations</a></span><br/>
@@ -636,10 +636,10 @@ Population
 GDP
 </td>
 <td>
-Pre-2011 and post-2020 GDP growth rates are consistent between all regions
+<span>- Malaysia annual growth rates are applied to KL’s 2020 GDP value to extrapolate historical and future values</span><br/> <span>- “Rest of Malaysia” values found by subtracting KL numbers from Malaysia</span>
 </td>
 <td rowspan="2">
-<span>- Malaysia: <a href="https://www.dosm.gov.my/v1/index.php?r=column/ctimeseries&amp;menu_id=NHJlaGc2Rlg4ZXlGTjh1SU1kaWY5UT09">Department of Statistics Malaysia</a></span><br/> <span>- Kuala Lumpur: <a href="">need link</a></span>
+<span>- Malaysia, historical: <a href="https://www.ers.usda.gov/data-products/international-macroeconomic-data-set/">USDA ERS</a></span><br/> <span>- Malaysia, future: <a href="https://tntcat.iiasa.ac.at/SspDb/dsd?Action=htmlpage&amp;page=welcome">SSP database</a></span><br/> <span>- Kuala Lumpur 2020: <a href="https://www.dosm.gov.my/v1/index.php?r=column/cthemeByCat&amp;cat=102&amp;bul_id=anVobldYUFZLNE5WVlRVRExkSWEyZz09&amp;menu_id=TE5CRUZCblh4ZTZMODZIbmk2aWRRQT09">Department of Statistics Malaysia</a></span><br/>
 </td>
 </tr>
 </table>
@@ -648,7 +648,8 @@ Pre-2011 and post-2020 GDP growth rates are consistent between all regions
 <h3 number="9.1.1"><span class="header-section-number">9.1.1</span> Population</h3>
 <div id="historical-trends-and-future-projections" class="section level4 unnumbered">
 <h4 class="unnumbered">Historical Trends and Future Projections</h4>
-<p>The plot below shows historical and future projected populations in Malaysia and Kuala Lumpur comparing the data sources above to the GCAM reference scenario. As mentioned above, population growth rates in Kuala Lumpur were assumed to be on par with those of the entire country.</p>
+<p>To estimate population values, we begin with annual data from the UN for Malaysia’s population; we use historical data and the medium population projection scenario. For KL, we use 2010 census data as our base year. We then calculate annual growth rates using the complete Malaysia dataset and apply these growth rates to extrapolate KL population values. To find “Rest of Malaysia” values, we subtract KL population from Malaysia values.</p>
+<p>The plot below shows historical and future projected populations in Malaysia and Kuala Lumpur from the GCAM reference scenario from 1975 to 2100.</p>
 <div class="figure">
 <img src="malaysia_files/figure-html/pop-plot-1.png" alt="Figure 9.1.1.1. **Historical and future projected population in Malaysia and Kuala Lumpur**" width="768" />
 <p class="caption">
@@ -659,15 +660,23 @@ Figure 9.1.1.1. <strong>Historical and future projected population in Malaysia a
 </div>
 <div id="gdp" class="section level3" number="9.1.2">
 <h3 number="9.1.2"><span class="header-section-number">9.1.2</span> GDP</h3>
-<p>The following graphs show GDP in 2005 USD for Malaysia and Kuala Lumpur. <strong>TODO update units</strong></p>
+<div id="historical-trends-and-future-projections-1" class="section level4 unnumbered">
+<h4 class="unnumbered">Historical Trends and Future Projections</h4>
+<p>To find GDP values, we begin with historical data of GDP MER in Malaysia from the U.S. Department of Agriculture’s Economic Research Service. We use future projections data from the SSP2 database. In a similar process to the population, we then calculate annual growth rates, which are applied to a base year for KL. We use the 2020 GDP found in the KL State Socioeconomic Report 2020. We find “Rest of Malaysia” values by subtracting KL values from Malaysia.</p>
+<p>The following graphs show GDP in billion 2005 USD for Malaysia and Kuala Lumpur.</p>
 <p><img src="malaysia_files/figure-html/gdp-1.png" width="768" /></p>
+</div>
 </div>
 <div id="per-capita-gdp" class="section level3" number="9.1.3">
 <h3 number="9.1.3"><span class="header-section-number">9.1.3</span> Per capita GDP</h3>
-<p>GDP per capita, in units of 2005 USD, is shown below for Malaysia and Kuala Lumpur. <strong>TODO update units</strong></p>
+<div id="historical-trends-and-future-projections-2" class="section level4 unnumbered">
+<h4 class="unnumbered">Historical Trends and Future Projections</h4>
+<p>To find GDP per capita, we divide the above GDP values by the above population values.</p>
+<p>GDP per capita, in units of thousand 2005 USD, is shown below for Malaysia and Kuala Lumpur.</p>
 <p><img src="malaysia_files/figure-html/gdp_pc-1.png" width="768" /></p>
 <!-------------------------->
 <!-------------------------->
+</div>
 </div>
 </div>
 </div>
