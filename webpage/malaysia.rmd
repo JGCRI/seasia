@@ -170,16 +170,11 @@ myTable = data.frame(
                    "Transportation",
                    "Buildings"),
     Policies = c("Electricity tariff",
-                 "* By 2030, KLCH will replace all municipal conventional vehicles with EV\
-                 \n * Gradual phaseout of conventional diesel engine buses by 2030",
-                 "* By 2030, at least 60% of buildings will install solar PV systems\
-                 \n * All new, non-residential buildings must use high efficiency AC systems\
-                 \n * For existing buildings, 30% of commercial and 60% of residential buildings will be converted to a high efficiency AC system\
-                 \n * All new buildings must use energy efficient lighting such as LED and CFL bulbs\
-                 \n * All existing buildings will have energy efficient lighting by 2030\
-                 \n * Government buildings will decrease lighting energy usage by up to 75% by 2030\
-                 \n * New government buildings will have at least a 60% reduction in GHG emissions through reduced energy consumption\
-                 \n * All new schools should have at least 5-15% of electricity supplied by renewable energy by 2030"),
+                 "Introduce electric vehicles",
+                 "* Install solar PV systems\
+                 \n * Institute energy efficiency standards and requirements in buildings\
+                 \n * Decrease energy consumption\
+                 \n * Increase use of renewable energy"),
     Source = c("KLLCSBP2030")
     ) 
 pander::pander(myTable, keep.line.breaks = TRUE, style = "grid", justify = 'left', split.tables=Inf, caption = "")
