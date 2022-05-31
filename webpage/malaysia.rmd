@@ -146,13 +146,14 @@ knitr::include_graphics("images/GCAM_diagram.png")
 <!-------------------------->
 <p align="center"> <img src="images/divider.png"></p>
 
-PNNL, with input from DBKL, will develop a set of GCAM scenarios based on the KLCAP2050 and other relevant policies and plans. These scenarios will outline possible outcomes of various policies. Key indicators may include greenhouse gas emissions, energy demand, and final energy consumption; for more details, please reference 7.1 below.
+PNNL, with input from KLCH, will develop a set of GCAM scenarios based on the KLCAP2050 and other relevant policies and plans. These scenarios will outline possible outcomes of various policies. Key indicators may include greenhouse gas emissions, energy demand, and final energy consumption; for more details, please reference 7.1 below.
 
 * **BAU:** Baseline scenario based on existing policies only, with no additional actions. This will serve as a comparison for the remaining scenarios to assess the magnitude of outcomes.
 * **Council-Led:** Scenario driven by strategies and actions that are ambitious and achievable within the authority of KLCH, including the implementation of all National policies.
 * **Integrated Approach:** Scenario relying on an integrated approach with KLCH, the Federal government, and other agencies, highlighting the potential emissions reductions that could occur should all parties align.
 * **Carbon Neutral Malaysia and Kuala Lumpur:** Scenario using the most efficient pathway to net zero CO~2~ emissions by 2050 at the national and city levels.
 
+<br>
 
 <!-------------------------->
 ## Council-Led
@@ -163,6 +164,7 @@ PNNL, with input from DBKL, will develop a set of GCAM scenarios based on the KL
 Note that this scenario _does not_ meet Kuala Lumpur's benchmark targets for 2030 or 2050; this is due to the lack of power and capacity for KLCH to implement more ambitious actions. Key remaining emissions will come from the following sectors: residential, commercial and institutional buildings, industrial energy, and on-road transportation.
 
 The table below summarizes some of the policies encompassed by the Council-Led scenario. For additional policies, please reference the Appendix.
+<br>
 
 ```{r council-led, results = 'show', echo = FALSE, warning = FALSE, error = FALSE, message = FALSE}
 myTable = data.frame(
@@ -255,7 +257,7 @@ Scenarios will be assessed up from the year 2015 to the year 2050, with the GCAM
 The GCAM model will be used to assist in planning and scenario development as outlined above. Some of the benefits of using GCAM and the integrated modeling approach in general include the following:
 
 * **Climate change context:** With its water and climate systems, GCAM can provide a nuanced analysis of Kuala Lumpur and Malaysia's policies in the context of climate change. GCAM considers the symbiotic relationship between the climate and other systems, allowing for a more comprehensive review of future policy implications.
-* **Long-term assessment:** With the ability to model pathways out to the year 2100, GCAM will offer long-term projections of Kuala Lumpur's policies and plans. 
+* **Long-term assessment:** With the ability to model pathways out to the year 2100, GCAM can offer long-term projections of Kuala Lumpur's policies and plans. 
 * **Technology analysis:** Using GCAM’s technology scenario capabilities, PNNL will be able to assess the impacts of specific technology implementations on electricity demand, generation, emissions, and prices.
 * **Holistic approach:** GCAM's holistic approach will provide insight into how Kuala Lumpur's policies and plans align with broader goals for socioeconomic development and mitigating environmental impacts. Other key socioeconomic indicators gleaned from model results include employment data, further contributing to GCAM's comprehensive projections.
 
@@ -329,58 +331,6 @@ Below is the proposed timeline for GCAM analysis, reports, and stakeholder engag
 knitr::include_graphics("images/KL_timeline.png")
 ```
 
-
-<!-- example alternative table style -->
-```{r, eval = FALSE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE}
-library(kableExtra)
-data.frame(
-    Model     = c("WRF",
-                  "GCAM",
-                  "Xanthos",
-                  "Helios",
-                  "GGCMI",
-                  "rpackageutils",
-                  "im3components",
-                  "gcamextractor"),
-    Version = c("-",
-                "gcam v5.3 (branch gcam-usa-im3)",
-                "xanthos v2.4.1",
-                "helios v1.0.0",
-                "ggcmi v1.0.0",
-                "rpackageutils v1.0.0",
-                "im3components v1.0.0",
-                "gcamextractor"),
-    Description = c("Climate simulation model",
-                    "Global Change Analysis Model. Human-earth systems dynamic model.",
-                    "Water runoff emulator at 0.5 degree grids and monthly timesteps.",
-                    "Gridded Heating and cooling degree day calculator at multiple spatial and temporal resolution.",
-                    "Emulators to model agricultural yield impacts in response to climate",
-                    "Utility functions to process, aggregate and reformat data.",
-                    "Functions to process data between different IM3 models.",
-                    "Model to extract and process data from GCAM output databases."),
-    Language = c("-",
-                  "C++/R",
-                  "Python",
-                  "R",
-                  "?",
-                  "R",
-                  "R/Python",
-                  "R"),
-    Link = c("https://www.mmm.ucar.edu/weather-research-and-forecasting-model",
-             "https://stash.pnnl.gov/projects/JGCRI/repos/gcam-core/browse?at=refs%2Fheads%2Fzk%2Ffeature%2Fgcam-usa-im3",
-            "https://github.com/JGCRI/xanthos",
-            "Helios",
-            "GGCMI",
-            "https://github.com/JGCRI/rpackageutils",
-            "https://github.com/IMMM-SFA/im3components",
-            "https://github.com/JGCRI/gcamextractor")
-    ) %>% 
-  kbl() %>%
-  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
-
-```
-
-
 <br>
 
 <!-------------------------->
@@ -446,14 +396,10 @@ The plot below shows historical and future projected populations in Malaysia and
 
 ``` {r pop-plot, echo = FALSE, fig.dim = c(8,4), fig.cap="Figure 9.1.1.1. **Historical and future projected population in Malaysia and Kuala Lumpur**"}
 # Population
-pop <- fread("../data/Malaysia/socioeconomic_inputs/gcam_malaysia_pop.csv") %>% as_tibble()
-
-gcam_pop <- pop %>%
-  mutate(value = value / 1000,
-         Units = "million")
+pop <- fread("../data/Malaysia/socioeconomic_inputs/gcam_query_pop.csv") %>% as_tibble()
 
 ## PLOT
-population_plot <- gcam_pop %>%
+population_plot <- pop %>%
   ggplot(aes(year, value)) +
   geom_line() +
   facet_wrap(~region, scales = "free") +
@@ -474,17 +420,12 @@ To find GDP values, we begin with historical data of GDP MER in Malaysia from th
 
 The following graphs show GDP in billion 2005 USD for Malaysia and Kuala Lumpur.
 
-``` {r gdp, echo = FALSE, fig.dim = c(8,4)}
+``` {r gdp, echo = FALSE, fig.dim = c(8,4), fig.cap="Figure 9.1.2.1. **Historical and future projected GDP in Malaysia and Kuala Lumpur**"}
 # GDP
-gdp <- fread("../data/Malaysia/socioeconomic_inputs/gcam_malaysia_gdp.csv") %>% as_tibble()
-
-gcam_gdp <- gdp %>%
-  mutate(value = (value * 1.49) / 1000, # convert 1990 USD to 2005 USD, million to billion
-         Units = "billion (2005 USD)") %>%
-  select(-scenario)
+gdp <- fread("../data/Malaysia/socioeconomic_inputs/gcam_query_gdp.csv") %>% as_tibble()
 
 ## PLOT
-gdp_plot <- gcam_gdp %>%
+gdp_plot <- gdp %>%
   ggplot(aes(year, value)) +
   geom_line() +
   facet_wrap(~region, scales = "free") +
@@ -504,16 +445,11 @@ To find GDP per capita, we divide the above GDP values by the above population v
 
 GDP per capita, in units of thousand 2005 USD, is shown below for Malaysia and Kuala Lumpur. 
 
-``` {r gdp_pc, echo = FALSE, fig.dim = c(8,4)}
-gdp_pc <- fread("../data/Malaysia/socioeconomic_inputs/gcam_malaysia_pcgdp.csv") %>% as_tibble()
-
-gcam_gdp_pc <- gdp_pc %>%
-  mutate(value = (value * 1.49), # convert 1990 USD to 2005 USD
-         units = "thousand (2005 USD)") %>%
-  select(-scenario)
+``` {r gdp_pc, echo = FALSE, fig.dim = c(8,4), fig.cap="Figure 9.1.3.1. **Historical and future projected GDP per capita in Malaysia and Kuala Lumpur**"}
+gdp_pc <- fread("../data/Malaysia/socioeconomic_inputs/gcam_query_pcgdp.csv") %>% as_tibble()
 
 ## PLOT
-gdp_pc_plot <- gcam_gdp_pc %>%
+gdp_pc_plot <- gdp_pc %>%
   ggplot(aes(year, value)) +
   geom_line() +
   facet_wrap(~region, scales = "free") +
@@ -574,3 +510,53 @@ gdp_pc_plot <- gcam_gdp_pc %>%
 
 
 <br>
+
+<!-- example alternative table style -->
+```{r, eval = FALSE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE}
+library(kableExtra)
+data.frame(
+    Model     = c("WRF",
+                  "GCAM",
+                  "Xanthos",
+                  "Helios",
+                  "GGCMI",
+                  "rpackageutils",
+                  "im3components",
+                  "gcamextractor"),
+    Version = c("-",
+                "gcam v5.3 (branch gcam-usa-im3)",
+                "xanthos v2.4.1",
+                "helios v1.0.0",
+                "ggcmi v1.0.0",
+                "rpackageutils v1.0.0",
+                "im3components v1.0.0",
+                "gcamextractor"),
+    Description = c("Climate simulation model",
+                    "Global Change Analysis Model. Human-earth systems dynamic model.",
+                    "Water runoff emulator at 0.5 degree grids and monthly timesteps.",
+                    "Gridded Heating and cooling degree day calculator at multiple spatial and temporal resolution.",
+                    "Emulators to model agricultural yield impacts in response to climate",
+                    "Utility functions to process, aggregate and reformat data.",
+                    "Functions to process data between different IM3 models.",
+                    "Model to extract and process data from GCAM output databases."),
+    Language = c("-",
+                  "C++/R",
+                  "Python",
+                  "R",
+                  "?",
+                  "R",
+                  "R/Python",
+                  "R"),
+    Link = c("https://www.mmm.ucar.edu/weather-research-and-forecasting-model",
+             "https://stash.pnnl.gov/projects/JGCRI/repos/gcam-core/browse?at=refs%2Fheads%2Fzk%2Ffeature%2Fgcam-usa-im3",
+            "https://github.com/JGCRI/xanthos",
+            "Helios",
+            "GGCMI",
+            "https://github.com/JGCRI/rpackageutils",
+            "https://github.com/IMMM-SFA/im3components",
+            "https://github.com/JGCRI/gcamextractor")
+    ) %>% 
+  kbl() %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
+
+```
