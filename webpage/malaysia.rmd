@@ -163,7 +163,7 @@ PNNL, with input from KLCH, will develop a set of GCAM scenarios based on the KL
 
 Note that this scenario _does not_ meet Kuala Lumpur's benchmark targets for 2030 or 2050; this is due to the lack of power and capacity for KLCH to implement more ambitious actions. Key remaining emissions will come from the following sectors: residential, commercial and institutional buildings, industrial energy, and on-road transportation.
 
-The table below summarizes some of the policies encompassed by the Council-Led scenario. For additional policies, please reference the Appendix.
+The table below summarizes some of the policies encompassed by the Council-Led scenario. For additional policies, please reference the <a href = "malaysia_appendix.html"> Appendix </a>.
 <br>
 
 ```{r council-led, results = 'show', echo = FALSE, warning = FALSE, error = FALSE, message = FALSE}
@@ -498,18 +498,32 @@ gdp_pc_plot <- gdp_pc %>%
 
 ## Others (Buildings/Transport?)
 
+<br>
+
+<p align="center"> <img src="images/divider.png"></p>
+
 <!-------------------------->
 <!-------------------------->
 # Data needs and/or questions
 <!-------------------------->
 <!-------------------------->
-<p align="center"> <img src="images/divider.png"></p>
 
 * Sectoral emissions for each scenario: After review of the KLCAP2050, the team noted some discrepancies in the data presented. A primary data need is emissions for at least the key years (2030, 2050) broken down by sector for each scenario (BAU, Council Led, and Integrated Approach). A detailed breakdown of the discrepancies can be provided upon request. 
 
+<br>
 
+<p align="center"> <img src="images/divider.png"></p>
+
+<!-------------------------->
+<!-------------------------->
+# Appendix
+<!-------------------------->
+<!-------------------------->
+
+See <a href = "malaysia_appendix.html"> Appendix </a> for supplementary information.
 
 <br>
+
 
 <!-- example alternative table style -->
 ```{r, eval = FALSE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE}
