@@ -1,0 +1,98 @@
+---
+pagetitle: Appendix (Malaysia)
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    toc_collapsed: true
+    toc_depth: 1
+    number_sections: true
+    theme: cosmo
+    #inverse: true
+---
+
+```{r setup, echo = FALSE, message=FALSE, warning=FALSE}
+knitr::opts_chunk$set(results = "hide", echo=FALSE, out.width = "75%", fig.align='center', message = F, warning = F, error = F, eval = T)
+```
+
+
+<!-- Allow href to tabsets --> 
+
+```{js}
+window.onload = function() {
+  document.querySelector('a[href="' + window.location.href.match("#.*$") + '"]').click();
+}
+
+function goToTab() {
+  var hash = String(window.location.href.match("#.*$"));
+  var target = document.querySelector("a[role = 'tab'][href='" + hash + "']");
+  if (target !== null) {
+    var greatgrandparent = target.parentElement.parentElement.parentElement;
+    if (greatgrandparent.getAttribute("role") == "tabpanel") {
+      document.querySelector("a[role = 'tab'][href='#" + greatgrandparent.getAttribute("id") + "']").click();
+    }
+    target.click();
+    target.scrollIntoView();
+  }
+}
+window.onload = function() {
+  setTimeout(goToTab, 100);
+}
+window.onhashchange = goToTab;
+```
+
+<!-- Set table styles -->
+
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+</style>
+
+
+<!-- Header logos -->
+
+<div class="header_logo">
+<img src="images/logo_us_state_department.png" style="float:right;height:40px;">
+<img src="images/logo_pnnl_white.png" style="float:right;height:40px;">
+</div>
+
+
+# Appendix (Malaysia) {-}
+
+<!-------------------------->
+<!-------------------------->
+# Scenarios {.tabset}
+<!-------------------------->
+<!-------------------------->
+
+Below are more details on the policies to be implemented across the different scenarios.
+
+```{r council-led-extra, results = 'show', echo = FALSE, warning = FALSE, error = FALSE, message = FALSE}
+myTable = data.frame(
+    Sector     = c("Energy supply",
+                   "Transportation",
+                   "Buildings"),
+    Policies = c("Electricity tariff",
+                 "* By 2030, KLCH will replace all municipal conventional vehicles with EV\
+                 \n * Gradual phaseout of conventional diesel engine buses by 2030",
+                 "* By 2030, at least 60% of buildings will install solar PV systems\
+                 \n * All new, non-residential buildings must use high efficiency AC systems\
+                 \n * For existing buildings, 30% of commercial and 60% of residential buildings will be converted to a high efficiency AC system\
+                 \n * All new buildings must use energy efficient lighting such as LED and CFL bulbs\
+                 \n * All existing buildings will have energy efficient lighting by 2030\
+                 \n * Government buildings will decrease lighting energy usage by up to 75% by 2030\
+                 \n * New government buildings will have at least a 60% reduction in GHG emissions through reduced energy consumption\
+                 \n * All new schools should have at least 5-15% of electricity supplied by renewable energy by 2030"),
+    Source = c("KLLCSBP2030")
+    ) 
+pander::pander(myTable, keep.line.breaks = TRUE, style = "grid", justify = 'left', split.tables=Inf, caption = "Additional Council Led policies")
+```
