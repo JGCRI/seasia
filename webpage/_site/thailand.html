@@ -392,7 +392,7 @@ td, th {
 }
 </style>
 <div class="header_logo">
-<p><img src="images/logo_us_state_department.png" style="float:right;height:40px;"> <img src="images/logo_pnnl_white.png" style="float:right;height:40px;"></p>
+<p><img src="images/logo_us_state_department.png" style="float:right;height:40px;"> <img src="images/logo_pnnl_white.png" style="float:right;height:40px;"> <img src="images/DoNotCite.png" style="float:right;height:32px;margin-top:8px;margin-right:380px"></p>
 </div>
 <!-------------------------->
 <!-------------------------->
@@ -546,11 +546,11 @@ td, th {
 <h2 number="5.2"><span class="header-section-number">5.2</span> Extended National Policies</h2>
 <!-------------------------->
 <p><strong>Extended National Policies Scenario:</strong> This scenario includes additional sustainable development measures that have been implemented in other countries and regions along vwith the plans and policies in the National Policies scenario. These include more aggresive power transitions, enhanced energy and emissions regulations, and economic incentives. The table below summarizes the additional policies incorporated in the Extended National Policies scenario. Note that this scenario also incorporates the national policies included in the Mandatory National Policies scenario.</p>
-<table style="width:76%;">
+<table style="width:75%;">
 <caption>Table 5.2.1. Policies included in the Extended National Policies scenario.</caption>
 <colgroup>
 <col width="31%" />
-<col width="44%" />
+<col width="43%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -562,23 +562,23 @@ td, th {
 <tr class="odd">
 <td>Energy Supply</td>
 <td><ul>
-<li>Power Development Plan 2018-2037 (bound capacity + target capacity)</li>
-<li>Renewable and Alternative Energy Development Plan 2018-2037 (bound capacity + target capacity)</li>
+<li>Increased RE and CCS</li>
+<li>Coal and gas development constraints</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Transportation</td>
 <td><ul>
-<li>Measures to promote EV use</li>
-<li>Eco-driving promotion</li>
-<li>Public transit expansion Electric Vehicle Roadmap to increase electric proportion of vehicles in manufacturing</li>
+<li>Enhanced vehicle emissions standards</li>
+<li>Electric vehicle subsidies</li>
+<li>Fuel Economy Standards</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Buildings &amp; Industry</td>
 <td><ul>
-<li>Voluntary energy efficiency labeling</li>
-<li>Subsidies for equipment upgrades</li>
+<li>Enhanced Building Energy Codes</li>
+<li>Enhanced Minimum Energy Performance Standards</li>
 </ul></td>
 </tr>
 </tbody>
@@ -829,77 +829,36 @@ td, th {
 <div id="socioeconomics" class="section level2 tabset tabset-pills" number="9.1">
 <h2 class="tabset tabset-pills" number="9.1"><span class="header-section-number">9.1</span> Socioeconomics</h2>
 <!-------------------------->
-<p>This section describes the socioeconomic (population and GDP) inputs used to define Thailand’s subregions (Bangkok, Nonthaburi, Samut Prakan, and Rest of Thailand) in GCAM. Historical data and future projections were available were available at the national and regional scales for some time periods; however, we calculated socioeconomic data for the remaining time periods using the set of simplifying assumptions shown below.</p>
-<table>
-<tr>
-<th>
-Variable
-</th>
-<th style="width:40%">
-Assumptions
-</th>
-<th style="width:50%">
-Data Sources
-</th>
-</tr>
-<tr>
-<td>
-Population
-</td>
-<td>
-Pre-2010 and post-2019 population growth rates are consistent between all regions
-</td>
-<td>
-<span>- All regions 2010-2019: <a href="http://statbbi.nso.go.th/staticreport/page/sector/en/01.aspx">National Statistical Office</a></span><br/> <span>- Pre-2010 &amp; post-2020 growth rates: <a href="https://population.un.org/wpp/Graphs/1_Demographic%20Profiles/Thailand.pdf">United Nations</a></span>
-</td>
-</tr>
-<tr>
-<td rowspan="3">
-GDP
-</td>
-<td>
-Pre-2011 and post-2020 GDP growth rates are consistent between all regions
-</td>
-<td rowspan="2">
-<span>- All regions 2011-2020: <a href="http://statbbi.nso.go.th/staticreport/page/sector/en/10.aspx">National Statistical Office</a></span> <br/> <span>- Pre-2011 growth rates:<a href="https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=TH">World Bank</a></span><br/> <span>- 2021-2037 growth rates: <a href="https://www.thaienergy.org/assets/files/pdp2018-pdf.pdf">PDP2018</a></span><br/> <span>- USD-THB exchange rates: <a href="https://fred.stlouisfed.org/series/DEXTHUS#0">FRED</a></span>
-</td>
-</tr>
-<tr>
-<td>
-Post-2037 GDP growth rate is constant
-</td>
-</tr>
-</table>
-<p><br> <br></p>
+<p>This section describes the socioeconomic (population and GDP) inputs used to define Thailand’s subregions (Bangkok, Nonthaburi, Samut Prakan, and Rest of Thailand) in GCAM. Historical data were available from 1990 to 2020 for all regions, and projections published by local agencies were available for some future periods. See the <a href = "thailand_appendix.html#122_Revised_Data"> Appendix </a> for a full list of data sources and assumptions used to infer socioeconomic trends for the remaining future periods.</p>
 <div id="population" class="section level3" number="9.1.1">
 <h3 number="9.1.1"><span class="header-section-number">9.1.1</span> Population</h3>
-<div id="recent-trends" class="section level4 unnumbered">
-<h4 class="unnumbered">Recent Trends</h4>
-<p>Thailand’s National Statistical Office (NSO) has reported annual population both nationally and by province for the period from 2011 to 2020. The plot below shows national population, revealing a consistent increasing trend from 2011 to 2019, followed by a slight population decline from 2019 to 2020.</p>
+<div id="historical-trends" class="section level4 unnumbered">
+<h4 class="unnumbered">Historical Trends</h4>
+<p>Thailand’s National Economic and Social Development Board (NESDB) and Department of Provincial Administration (DOPA) have reported annual population both nationally and by province from 1990 to 2020. The plot below shows national population, revealing a consistent upward trend.</p>
 <div class="figure" style="text-align: center">
-<img src="thailand_files/figure-html/recent%20national%20trends%20pop-1.png" alt="**Figure 9.1.1.1 Thailand National Population from 2011 to 2020. Source: [National Statistical Office](http://statbbi.nso.go.th/staticreport/page/sector/en/01.aspx)**" width="75%" />
+<img src="thailand_files/figure-html/recent%20national%20trends%20pop-1.png" alt="**Figure 9.1.1.1 Thailand National Population from 2011 to 2020. Source: [NESDB](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fwww.nesdc.go.th%2Fewt_dl_link.php%3Fnid%3D3507%26filename%3Dsocial&amp;wdOrigin=BROWSELINK)**" width="75%" />
 <p class="caption">
-<strong>Figure 9.1.1.1 Thailand National Population from 2011 to 2020. Source: <a href="http://statbbi.nso.go.th/staticreport/page/sector/en/01.aspx">National Statistical Office</a></strong>
+<strong>Figure 9.1.1.1 Thailand National Population from 2011 to 2020. Source: <a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fwww.nesdc.go.th%2Fewt_dl_link.php%3Fnid%3D3507%26filename%3Dsocial&amp;wdOrigin=BROWSELINK">NESDB</a></strong>
 </p>
 </div>
 <p><br> <br></p>
 <p><img src="thailand_files/figure-html/recent%20MEA%20province%20trends%20pop-1.png" width="75%" style="float:right; padding:10px" style="display: block; margin: auto 0 auto auto;" /></p>
-<p>Of the three provinces in MEA’s service area (Bangkok, Nonthaburi, and Samut Prakan), Bangkok has the highest population, followed by Samut Prakan and Nonthaburi. The population of Bangkok stayed relatively consistent between 2011 and 2019 but decreased in 2020. In the other two provinces, population increased consistently from 2011 to 2020, reaching approximately 1.35 million and 1.28 million in 2020 in Samut Prakan and Nonthaburi, respectively.</p>
+<p>Of the three provinces in MEA’s service area (Bangkok, Nonthaburi, and Samut Prakan), Bangkok has the highest population. Between 1990 and 2020, population increased steadily in Nonthaburi and Samut Prakan, reaching nearly 1.3 million in Nonthaburi and 1.35 million in Samut Prakan. Meanwhile, Bangkok’s population showed much more variation, reaching its peak at almost 5.85 million in 2003 and declining to under 5.6 million in 2020.</p>
 <div class="figure" style="text-align: right">
-<img src="images/half_blank_space.jpg" alt="**Figure 9.1.1.2. Population from 2011 to 2020 in the MEA service area. Source: [National Statistical Office](http://statbbi.nso.go.th/staticreport/page/sector/en/01.aspx)**" width="75%" />
+<img src="images/half_blank_space.jpg" alt="**Figure 9.1.1.2. Population from 1990 to 2020 in the MEA service area. Source: [DOPA](https://stat.bora.dopa.go.th/new_stat/webPage/statByYear.php)**" width="75%" />
 <p class="caption">
-<strong>Figure 9.1.1.2. Population from 2011 to 2020 in the MEA service area. Source: <a href="http://statbbi.nso.go.th/staticreport/page/sector/en/01.aspx">National Statistical Office</a></strong>
+<strong>Figure 9.1.1.2. Population from 1990 to 2020 in the MEA service area. Source: <a href="https://stat.bora.dopa.go.th/new_stat/webPage/statByYear.php">DOPA</a></strong>
 </p>
 </div>
 <p><br> <br></p>
 </div>
-<div id="historical-trends-and-future-projections" class="section level4 unnumbered">
-<h4 class="unnumbered">Historical Trends and Future Projections</h4>
-<p>To estimate pre-2011 historical population and projected future population for Thailand and the three MEA provinces, we applied population growth rates derived from the UN Thailand Demographic Profile to the NSO data. We made the simplifying assumption that historical and future population growth rates for each MEA province would be consistent with the national growth rates. The following plots show the estimated population from 1970 to 2100 for each region. Values within the shaded regions were reported by NSO, while all other values were estimated using the method described above.</p>
+<div id="future-projections" class="section level4 unnumbered">
+<h4 class="unnumbered">Future Projections</h4>
+<p>NESDB publishes populations projections for the whole country as well as by province for the period from 2021 to 2040. At the national level, the United Nations (UN) provides population projections through 2100; provincial populations after 2040 were estimated by applying the provinces’ shares of national population in 2040 to the UN projected national population through 2100. The charts below show estimated population in Thailand and the three MEA provinces from 1990 to 2100. The shaded regions represent future population projections reported by NESDB.</p>
 <div class="figure" style="text-align: center">
-<img src="thailand_files/figure-html/historical%20&%20future%20trends%20pop-1.png" alt="**Figure 9.1.1.3. Historical and projected future population in Thailand and MEA area. Sources: [National Statistical Office](http://statbbi.nso.go.th/staticreport/page/sector/en/01.aspx)(2011-2020) and [United Nations](https://population.un.org/wpp/Graphs/1_Demographic%20Profiles/Thailand.pdf) (Pre-2011 and post-2020)**" width="75%" />
+<img src="thailand_files/figure-html/historical%20&%20future%20trends%20pop-1.png" alt="**Figure 9.1.1.3. Historical and projected future population in Thailand and MEA area. Sources: [NESDB](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fwww.nesdc.go.th%2Fewt_dl_link.php%3Fnid%3D3507%26filename%3Dsocial&amp;wdOrigin=BROWSELINK) and [DOPA](https://stat.bora.dopa.go.th/new_stat/webPage/statByYear.php) (1990-2020), [NESDB](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fwww.nesdc.go.th%2Fewt_dl_link.php%3Fnid%3D3507%26filename%3Dsocial&amp;wdOrigin=BROWSELINK) (2021-2040) and [United Nations](https://population.un.org/wpp/Download/Standard/Population/) (Post-2040)**" width="75%" />
 <p class="caption">
-<strong>Figure 9.1.1.3. Historical and projected future population in Thailand and MEA area. Sources: <a href="http://statbbi.nso.go.th/staticreport/page/sector/en/01.aspx">National Statistical Office</a>(2011-2020) and <a href="https://population.un.org/wpp/Graphs/1_Demographic%20Profiles/Thailand.pdf">United Nations</a> (Pre-2011 and post-2020)</strong>
+<strong>Figure 9.1.1.3. Historical and projected future population in Thailand and MEA area. Sources: <a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fwww.nesdc.go.th%2Fewt_dl_link.php%3Fnid%3D3507%26filename%3Dsocial&amp;wdOrigin=BROWSELINK">NESDB</a> and <a href="https://stat.bora.dopa.go.th/new_stat/webPage/statByYear.php">DOPA</a> (1990-2020), <a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fwww.nesdc.go.th%2Fewt_dl_link.php%3Fnid%3D3507%26filename%3Dsocial&amp;wdOrigin=BROWSELINK">NESDB</a> (2021-2040) and <a href="https://population.un.org/wpp/Download/Standard/Population/">United Nations</a> (Post-2040)</strong>
 </p>
 </div>
 <p><br> <br></p>
@@ -911,50 +870,41 @@ Post-2037 GDP growth rate is constant
 <h3 number="9.1.2"><span class="header-section-number">9.1.2</span> GDP (THB)</h3>
 <!-------------------------->
 <!-------------------------->
-<p>The plots below show GDP in units of Thai Baht at current prices for each year. See <a href=thailand_appendix.html> appendix </a> for plots showing GDP and per capita GDP at constant prices (2005 $USD), which is how GDP is input to GCAM.</p>
-<div id="recent-trends-1" class="section level4 unnumbered">
-<h4 class="unnumbered">Recent Trends</h4>
-<p>Thailand’s National Statistical Office (NSO) has reported annual GDP both nationally and by province for the period from 2010 to 2019. The plots below shows national GDP and GDP growth rate during this period.</p>
+<p>The plots below show GDP and Gross Provincial Product (GPP; analagous to GDP at the provincial scale) in units of Thai Baht at current prices for each year. See <a href=thailand_appendix.html#11_GCAM_GDP_Units> appendix </a> for plots showing GDP and per capita GDP at constant prices (2005 $USD), which are the untis accepted by GCAM.</p>
+<div id="historical-trends-1" class="section level4 unnumbered">
+<h4 class="unnumbered">Historical Trends</h4>
+<p>Thailand’s National Economic and Social Development Board (NESDB) has reported both annual GDP from 1990 to 2020 and annual GPP from 1995 to 2020. The plots below show GDP and GPP at current market prices during these periods.</p>
 <div class="figure" style="text-align: center">
-<img src="thailand_files/figure-html/recent%20national%20trends%20gdp-1.png" alt="**Figure 9.1.2.1. Thailand national GDP and GDP growth rate from 2010 to 2019. Source: [National Statistical Office](http://statbbi.nso.go.th/staticreport/page/sector/en/10.aspx)**" width="75%" />
+<img src="thailand_files/figure-html/historical%20national%20trends%20gdp-1.png" alt="**Figure 9.1.2.1. Thailand national GDP from 1990 to 2020 at current market prices. Source: [NESDB](https://www.nesdc.go.th/main.php?filename=ni_page)**" width="75%" />
 <p class="caption">
-<strong>Figure 9.1.2.1. Thailand national GDP and GDP growth rate from 2010 to 2019. Source: <a href="http://statbbi.nso.go.th/staticreport/page/sector/en/10.aspx">National Statistical Office</a></strong>
+<strong>Figure 9.1.2.1. Thailand national GDP from 1990 to 2020 at current market prices. Source: <a href="https://www.nesdc.go.th/main.php?filename=ni_page">NESDB</a></strong>
 </p>
 </div>
 <p><br> <br></p>
 <p><img src="thailand_files/figure-html/recent%20MEA%20province%20trends%20gdp%20baht-1.png" width="70%" style="float:right; padding:10px" style="display: block; margin: auto;" /></p>
-<p>Of the three MEA provinces, Bangkok had the highest GDP in 2019, reaching over 6 billion Baht. Samut Prakan had the next highest GDP of just over 770 million Baht, while Nonthaburi’s GDP was nearly 350 million Baht. All three provinces experienced relatively consistent GDP growth in the period from 2010 to 2019.</p>
+<p>Of the three MEA provinces, Bangkok had the highest GDP in 2020, reaching over 5 trillion Baht. Samut Prakan had the next highest GDP of about 650 million Baht, while Nonthaburi’s GDP was about 350 million Baht. All three provinces experienced relatively consistent GDP growth in the period from 2010 to 2019.</p>
 <div class="figure" style="text-align: right">
-<img src="images/half_blank_space.jpg" alt="**Figure 9.1.2.2. GDP from 2010 to 2019 in the MEA service area. Source: [National Statistical Office](http://statbbi.nso.go.th/staticreport/page/sector/en/10.aspx)**" width="75%" />
+<img src="images/half_blank_space.jpg" alt="**Figure 9.1.2.2. GPP from 1995 to 2020 in the MEA service area at current market prices. Source: [NESDB](https://www.nesdc.go.th/main.php?filename=gross_regional)**" width="75%" />
 <p class="caption">
-<strong>Figure 9.1.2.2. GDP from 2010 to 2019 in the MEA service area. Source: <a href="http://statbbi.nso.go.th/staticreport/page/sector/en/10.aspx">National Statistical Office</a></strong>
-</p>
-</div>
-<p><br> <br></p>
-<p>The plot below shows the GDP growth rates of all three provinces during the same period.</p>
-<div class="figure" style="text-align: center">
-<img src="thailand_files/figure-html/recent%20MEA%20province%20growth%20gdp%20baht-1.png" alt="Figure 9.1.2.3. **GDP growth rate in the MEA service area from 2010 to 2019. Source: [National Statistical Office](http://statbbi.nso.go.th/staticreport/page/sector/en/10.aspx)**" width="75%" />
-<p class="caption">
-Figure 9.1.2.3. <strong>GDP growth rate in the MEA service area from 2010 to 2019. Source: <a href="http://statbbi.nso.go.th/staticreport/page/sector/en/10.aspx">National Statistical Office</a></strong>
+<strong>Figure 9.1.2.2. GPP from 1995 to 2020 in the MEA service area at current market prices. Source: <a href="https://www.nesdc.go.th/main.php?filename=gross_regional">NESDB</a></strong>
 </p>
 </div>
 <p><br> <br></p>
 </div>
-<div id="historical-trends-and-future-projections-1" class="section level4 unnumbered">
-<h4 class="unnumbered">Historical Trends and Future Projections</h4>
-<p>To estimate pre-2011 historical GDP Thailand and the three MEA provinces, we applied GDP growth rates derived from historical World Bank Thailand national data to the NSO data. To project future GDP, we used the annual projected GDP growth rates from 2020 to 2037 reported in Thailand’s 2018 Power Development Plan, and kept the growth rate constant at the 2037 rate (3.6) from 2037 to 2100. As with population, we assumed that historical and future GDP growth rates for each MEA province would be consistent with the national growth rates. The plot below shows the GDP growth rates for the entire period, 1970 to 2100.</p>
+<div id="future-projections-1" class="section level4 unnumbered">
+<h4 class="unnumbered">Future Projections</h4>
+<p>To project future GDP and GPP, we used a combination of NESDB projections and other assumptions. For GDP, NESDB has provided a projection through 2050 in Thailand’s Long Term Plan (LTP). Beyond 2050, we made an assumption that per capita GDP would reach 52,000 USD (at the 2005 price) by 2100 based on historical trajectories of several developed countries. We assumed that GPP future trajectories would vary between provinces, with Bangkok’s per capita GDP reaching around 70,000 USD (at the 2005 price) by 2100, consistent with income ranges of some high income cities at present. The plots below show estimated GDP and GPP in THB from 2021 to 2100 based on these assumptions, as well as GDP/GPP growth rates during this period.</p>
 <div class="figure" style="text-align: center">
-<img src="thailand_files/figure-html/historical%20&%20future%20growth%20gdp%20baht-1.png" alt="**Figure 9.1.2.4. Historical and projected future GDP growth rates in Thailand and MEA area. Sources: [National Statistical Office](http://statbbi.nso.go.th/staticreport/page/sector/en/10.aspx) (2010-2019), [World Bank](https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=TH) (Pre-2010) and [PDP2018](https://www.thaienergy.org/assets/files/pdp2018-pdf.pdf) (Post-2020)**" width="75%" />
+<img src="thailand_files/figure-html/historical%20&%20future%20trends%20gdp%20baht-1.png" alt="Figure 9.1.2.3. **Projected future GDP in Thailand and GPP in the MEA provinces.**" width="75%" />
 <p class="caption">
-<strong>Figure 9.1.2.4. Historical and projected future GDP growth rates in Thailand and MEA area. Sources: <a href="http://statbbi.nso.go.th/staticreport/page/sector/en/10.aspx">National Statistical Office</a> (2010-2019), <a href="https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=TH">World Bank</a> (Pre-2010) and <a href="https://www.thaienergy.org/assets/files/pdp2018-pdf.pdf">PDP2018</a> (Post-2020)</strong>
+Figure 9.1.2.3. <strong>Projected future GDP in Thailand and GPP in the MEA provinces.</strong>
 </p>
 </div>
 <p><br> <br></p>
-<p>The following plots show the estimated GDP from 1970 to 2100 for each region. Values within the shaded regions were reported by NSO, while all other values were estimated using the growth rates shown above.</p>
 <div class="figure" style="text-align: center">
-<img src="thailand_files/figure-html/historical%20&%20future%20trends%20gdp%20baht-1.png" alt="Figure 9.1.2.5. **Historical and projected future GDP in Thailand and MEA area. Sources: [National Statistical Office](http://statbbi.nso.go.th/staticreport/page/sector/en/10.aspx) (2010-2019), [World Bank](https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=TH) (Pre-2010) and [PDP2018](https://www.thaienergy.org/assets/files/pdp2018-pdf.pdf) (Post-2020)**" width="75%" />
+<img src="thailand_files/figure-html/historical%20&%20future%20trends%20gdp%20growth%20rate%20baht-1.png" alt="Figure 9.1.2.4. **Projected future growth rates of GDP in Thailand and GPP in the MEA provinces.**" width="75%" />
 <p class="caption">
-Figure 9.1.2.5. <strong>Historical and projected future GDP in Thailand and MEA area. Sources: <a href="http://statbbi.nso.go.th/staticreport/page/sector/en/10.aspx">National Statistical Office</a> (2010-2019), <a href="https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=TH">World Bank</a> (Pre-2010) and <a href="https://www.thaienergy.org/assets/files/pdp2018-pdf.pdf">PDP2018</a> (Post-2020)</strong>
+Figure 9.1.2.4. <strong>Projected future growth rates of GDP in Thailand and GPP in the MEA provinces.</strong>
 </p>
 </div>
 <!-------------------------->
@@ -965,32 +915,39 @@ Figure 9.1.2.5. <strong>Historical and projected future GDP in Thailand and MEA 
 <h3 number="9.1.3"><span class="header-section-number">9.1.3</span> Per Capita GDP (THB)</h3>
 <!-------------------------->
 <!-------------------------->
-<div id="recent-trends-2" class="section level4 unnumbered">
-<h4 class="unnumbered">Recent Trends</h4>
-<p>The plots below shows national per capita GDP during the recent period of 2011 to 2019.</p>
+<div id="historical-trends-2" class="section level4 unnumbered">
+<h4 class="unnumbered">Historical Trends</h4>
+<p>The plots below shows Thailand’s historical per capita GDP from 1990 to 2020.</p>
 <div class="figure" style="text-align: center">
-<img src="thailand_files/figure-html/recent%20national%20trends%20pcgdp%20baht-1.png" alt="Figure 9.1.3.1. **National per capita GDP from 2011 to 2019**" width="75%" />
+<img src="thailand_files/figure-html/historical%20national%20pcgdp%20baht-1.png" alt="Figure 9.1.3.1. **Per capita GDP from 1990 to 2019 at current market prices.**" width="75%" />
 <p class="caption">
-Figure 9.1.3.1. <strong>National per capita GDP from 2011 to 2019</strong>
+Figure 9.1.3.1. <strong>Per capita GDP from 1990 to 2019 at current market prices.</strong>
 </p>
 </div>
 <p><br> <br></p>
-<p><img src="thailand_files/figure-html/recent%20MEA%20province%20trends%20pcgdp%20baht-1.png" width="70%" style="float:right; padding:10px" style="display: block; margin: auto;" /> These plots show per capita GDP in the three MEA provinces during the same period.</p>
+<p><img src="thailand_files/figure-html/historical%20MEA%20province%20trends%20pcgdp%20baht-1.png" width="70%" style="float:right; padding:10px" style="display: block; margin: auto;" /> These plots show per capita GDP in the three MEA provinces during the same period.</p>
 <div class="figure" style="text-align: right">
-<img src="images/half_blank_space.jpg" alt="**Figure 9.1.3.2. GDP from 2010 to 2019 in the MEA service area. Source: [National Statistical Office](http://statbbi.nso.go.th/staticreport/page/sector/en/10.aspx)**" width="75%" />
+<img src="images/half_blank_space.jpg" alt="**Figure 9.1.3.2. GPP from 1995 to 2020 in the MEA service area provinces at current market prices.**" width="75%" />
 <p class="caption">
-<strong>Figure 9.1.3.2. GDP from 2010 to 2019 in the MEA service area. Source: <a href="http://statbbi.nso.go.th/staticreport/page/sector/en/10.aspx">National Statistical Office</a></strong>
+<strong>Figure 9.1.3.2. GPP from 1995 to 2020 in the MEA service area provinces at current market prices.</strong>
 </p>
 </div>
 <p><br> <br></p>
 </div>
-<div id="historical-trends-and-future-projections-2" class="section level4 unnumbered">
-<h4 class="unnumbered">Historical Trends and Future Projections</h4>
-<p>The plot below shows per capita GDP from 1970 to 2100 for each region.</p>
+<div id="future-projections-2" class="section level4 unnumbered">
+<h4 class="unnumbered">Future Projections</h4>
+<p>The plot below shows per capita GDP/GPP (THB) and growth rates from 1990 to 2100 for each region.</p>
 <div class="figure" style="text-align: center">
-<img src="thailand_files/figure-html/historical%20&%20future%20trends%20pcgdp%20baht-1.png" alt="**Figure 9.1.3.3. Per capita GDP through 2100 in each region**" width="75%" />
+<img src="thailand_files/figure-html/future%20%20pcgdp%20baht-1.png" alt="**Figure 9.1.3.3. Per capita GDP/GPP through 2100 in each region**" width="75%" />
 <p class="caption">
-<strong>Figure 9.1.3.3. Per capita GDP through 2100 in each region</strong>
+<strong>Figure 9.1.3.3. Per capita GDP/GPP through 2100 in each region</strong>
+</p>
+</div>
+<p><br> <br></p>
+<div class="figure" style="text-align: center">
+<img src="thailand_files/figure-html/future%20pcgdp%20growth%20rate%20baht-1.png" alt="Figure 9.1.3.4. **Projected future growth rates of per capita GDP in Thailand and per capita GPP in the MEA provinces.**" width="75%" />
+<p class="caption">
+Figure 9.1.3.4. <strong>Projected future growth rates of per capita GDP in Thailand and per capita GPP in the MEA provinces.</strong>
 </p>
 </div>
 <!-------------------------->
@@ -1278,20 +1235,51 @@ Figure 10.2.1.1. <strong>National total final energy from 1986 to 2100 (left) an
 <!-------------------------->
 </div>
 </div>
-<div id="references" class="section level1 tabset" number="11">
-<h1 class="tabset" number="11"><span class="header-section-number">11</span> References</h1>
+<div id="summary-figures" class="section level1 tabset" number="11">
+<h1 class="tabset" number="11"><span class="header-section-number">11</span> Summary Figures</h1>
 <!-------------------------->
 <!-------------------------->
 <!-------------------------->
-<div id="local-data" class="section level2" number="11.1">
-<h2 number="11.1"><span class="header-section-number">11.1</span> Local Data</h2>
+<div id="overall-indicators" class="section level2 tabset" number="11.1">
+<h2 class="tabset" number="11.1"><span class="header-section-number">11.1</span> Overall Indicators</h2>
+<!-------------------------->
+<div id="national-4" class="section level3" number="11.1.1">
+<h3 number="11.1.1"><span class="header-section-number">11.1.1</span> National</h3>
+</div>
+<div id="mea-area" class="section level3" number="11.1.2">
+<h3 number="11.1.2"><span class="header-section-number">11.1.2</span> MEA area</h3>
+<!-------------------------->
+</div>
+</div>
+<div id="sectoral-indicators" class="section level2 tabset" number="11.2">
+<h2 class="tabset" number="11.2"><span class="header-section-number">11.2</span> Sectoral Indicators</h2>
+<!-------------------------->
+<div id="national-5" class="section level3" number="11.2.1">
+<h3 number="11.2.1"><span class="header-section-number">11.2.1</span> National</h3>
+</div>
+<div id="mea-area-1" class="section level3" number="11.2.2">
+<h3 number="11.2.2"><span class="header-section-number">11.2.2</span> MEA area</h3>
+<!-------------------------->
+<!-------------------------->
+</div>
+</div>
+</div>
+<div id="references" class="section level1 tabset" number="12">
+<h1 class="tabset" number="12"><span class="header-section-number">12</span> References</h1>
+<!-------------------------->
+<!-------------------------->
+<!-------------------------->
+<div id="local-data" class="section level2" number="12.1">
+<h2 number="12.1"><span class="header-section-number">12.1</span> Local Data</h2>
 <!-------------------------->
 <div id="socioeconomics-1" class="section level3 unnumbered">
 <h3 class="unnumbered">Socioeconomics</h3>
 <ul>
-<li>Historical Population (2011-2020): <a href="http://statbbi.nso.go.th/staticreport/page/sector/en/01.aspx">National Statistical Office</a></li>
-<li>Historical Population (1970-2019) and population projection: <a href="https://population.un.org/wpp/Graphs/1_Demographic%20Profiles/Thailand.pdf">United Nations</a></li>
-<li>Historical GDP (2010-2019): <a href="http://statbbi.nso.go.th/staticreport/page/sector/en/10.aspx">National Statistical Office</a></li>
+<li>Historical national population (1990-2020): <a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fwww.nesdc.go.th%2Fewt_dl_link.php%3Fnid%3D3507%26filename%3Dsocial&amp;wdOrigin=BROWSELINK">National Economic and Social Development Board (NESDB)</a></li>
+<li>Historical provincial population (1990-2020): <a href="https://stat.bora.dopa.go.th/new_stat/webPage/statByYear.php">Department of Provincial Administration</a></li>
+<li>National and provincial population projection (2021-2040) <a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fwww.nesdc.go.th%2Fewt_dl_link.php%3Fnid%3D3507%26filename%3Dsocial&amp;wdOrigin=BROWSELINK">NESDB</a></li>
+<li>National population Projection (2041-2100): <a href="https://population.un.org/wpp/Download/Standard/Population/">United Nations</a></li>
+<li>Historical GDP and GPP (1990-2019): <a href="https://www.nesdc.go.th/main.php?filename=gross_regional">NESDB</a></li>
 </ul>
 </div>
 <div id="electricity-1" class="section level3 unnumbered">
@@ -1326,8 +1314,8 @@ Figure 10.2.1.1. <strong>National total final energy from 1986 to 2100 (left) an
 </div>
 </div>
 </div>
-<div id="appendix" class="section level1" number="12">
-<h1 number="12"><span class="header-section-number">12</span> Appendix</h1>
+<div id="appendix" class="section level1" number="13">
+<h1 number="13"><span class="header-section-number">13</span> Appendix</h1>
 <!-------------------------->
 <!-------------------------->
 <p>See <a href = "thailand_appendix.html"> Appendix </a> for supplementary information.</p>
@@ -1382,7 +1370,7 @@ $(document).ready(function ()  {
 
     // establish options
     var options = {
-      selectors: "h1",
+      selectors: "h1,h2",
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {

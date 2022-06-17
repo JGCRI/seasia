@@ -1,0 +1,536 @@
+"year","region","value"
+2021,"Bangkok",1.26e+11
+2022,"Bangkok",1.32e+11
+2023,"Bangkok",1.35e+11
+2024,"Bangkok",1.38e+11
+2025,"Bangkok",1.41e+11
+2026,"Bangkok",1.44e+11
+2027,"Bangkok",1.47e+11
+2028,"Bangkok",1.5e+11
+2029,"Bangkok",1.53e+11
+2030,"Bangkok",1.56e+11
+2031,"Bangkok",1.59e+11
+2032,"Bangkok",1.62e+11
+2033,"Bangkok",1.64e+11
+2034,"Bangkok",1.67e+11
+2035,"Bangkok",1.69e+11
+2036,"Bangkok",1.72e+11
+2037,"Bangkok",1.74e+11
+2038,"Bangkok",1.77e+11
+2039,"Bangkok",1.79e+11
+2040,"Bangkok",1.81e+11
+2041,"Bangkok",1.83e+11
+2042,"Bangkok",1.85e+11
+2043,"Bangkok",1.87e+11
+2044,"Bangkok",1.89e+11
+2045,"Bangkok",1.91e+11
+2046,"Bangkok",1.93e+11
+2047,"Bangkok",1.95e+11
+2048,"Bangkok",1.96e+11
+2049,"Bangkok",1.98e+11
+2050,"Bangkok",1.99e+11
+2051,"Bangkok",2.01e+11
+2052,"Bangkok",2.02e+11
+2053,"Bangkok",2.04e+11
+2054,"Bangkok",2.05e+11
+2055,"Bangkok",2.07e+11
+2056,"Bangkok",2.08e+11
+2057,"Bangkok",2.09e+11
+2058,"Bangkok",2.11e+11
+2059,"Bangkok",2.12e+11
+2060,"Bangkok",2.13e+11
+2061,"Bangkok",2.15e+11
+2062,"Bangkok",2.16e+11
+2063,"Bangkok",2.17e+11
+2064,"Bangkok",2.19e+11
+2065,"Bangkok",2.2e+11
+2066,"Bangkok",2.21e+11
+2067,"Bangkok",2.22e+11
+2068,"Bangkok",2.23e+11
+2069,"Bangkok",2.25e+11
+2070,"Bangkok",2.26e+11
+2071,"Bangkok",2.27e+11
+2072,"Bangkok",2.28e+11
+2073,"Bangkok",2.29e+11
+2074,"Bangkok",2.3e+11
+2075,"Bangkok",2.31e+11
+2076,"Bangkok",2.32e+11
+2077,"Bangkok",2.33e+11
+2078,"Bangkok",2.34e+11
+2079,"Bangkok",2.35e+11
+2080,"Bangkok",2.36e+11
+2081,"Bangkok",2.37e+11
+2082,"Bangkok",2.38e+11
+2083,"Bangkok",2.39e+11
+2084,"Bangkok",2.39e+11
+2085,"Bangkok",2.4e+11
+2086,"Bangkok",2.41e+11
+2087,"Bangkok",2.42e+11
+2088,"Bangkok",2.43e+11
+2089,"Bangkok",2.43e+11
+2090,"Bangkok",2.44e+11
+2091,"Bangkok",2.45e+11
+2092,"Bangkok",2.46e+11
+2093,"Bangkok",2.46e+11
+2094,"Bangkok",2.47e+11
+2095,"Bangkok",2.47e+11
+2096,"Bangkok",2.48e+11
+2097,"Bangkok",2.49e+11
+2098,"Bangkok",2.49e+11
+2099,"Bangkok",2.5e+11
+2100,"Bangkok",2.5e+11
+2021,"Nonthaburi",8277116302
+2022,"Nonthaburi",8608200954
+2023,"Nonthaburi",8926704389
+2024,"Nonthaburi",9230212338
+2025,"Nonthaburi",9534809345
+2026,"Nonthaburi",9849458054
+2027,"Nonthaburi",10174490169
+2028,"Nonthaburi",10499056406
+2029,"Nonthaburi",10818227721
+2030,"Nonthaburi",11147101843
+2031,"Nonthaburi",11483744319
+2032,"Nonthaburi",11829405023
+2033,"Nonthaburi",12186653055
+2034,"Nonthaburi",12549815316
+2035,"Nonthaburi",12923799812
+2036,"Nonthaburi",13552758070
+2037,"Nonthaburi",14194255285
+2038,"Nonthaburi",14847191028
+2039,"Nonthaburi",15510365561
+2040,"Nonthaburi",16182481402
+2041,"Nonthaburi",16862145620
+2042,"Nonthaburi",17547872876
+2043,"Nonthaburi",18238089209
+2044,"Nonthaburi",18931136599
+2045,"Nonthaburi",19625278274
+2046,"Nonthaburi",20318704773
+2047,"Nonthaburi",21009540735
+2048,"Nonthaburi",21695852399
+2049,"Nonthaburi",22375655774
+2050,"Nonthaburi",23046925448
+2051,"Nonthaburi",23726809748
+2052,"Nonthaburi",24414887231
+2053,"Nonthaburi",25110711517
+2054,"Nonthaburi",25813811440
+2055,"Nonthaburi",26523691254
+2056,"Nonthaburi",27239830918
+2057,"Nonthaburi",27961686437
+2058,"Nonthaburi",28688690285
+2059,"Nonthaburi",29420251887
+2060,"Nonthaburi",30155758184
+2061,"Nonthaburi",30894574260
+2062,"Nonthaburi",31636044042
+2063,"Nonthaburi",32379491077
+2064,"Nonthaburi",33124219372
+2065,"Nonthaburi",33869514308
+2066,"Nonthaburi",34614643622
+2067,"Nonthaburi",35358858460
+2068,"Nonthaburi",36101394488
+2069,"Nonthaburi",36841473075
+2070,"Nonthaburi",37578302536
+2071,"Nonthaburi",38317342486
+2072,"Nonthaburi",39058144441
+2073,"Nonthaburi",39800249185
+2074,"Nonthaburi",40543187170
+2075,"Nonthaburi",41286478935
+2076,"Nonthaburi",42029635556
+2077,"Nonthaburi",42772159117
+2078,"Nonthaburi",43513543209
+2079,"Nonthaburi",44253273443
+2080,"Nonthaburi",44990828001
+2081,"Nonthaburi",45725678191
+2082,"Nonthaburi",46457289042
+2083,"Nonthaburi",47185119904
+2084,"Nonthaburi",47908625076
+2085,"Nonthaburi",48627254452
+2086,"Nonthaburi",49340454184
+2087,"Nonthaburi",50047667361
+2088,"Nonthaburi",50748334704
+2089,"Nonthaburi",51441895278
+2090,"Nonthaburi",52127787215
+2091,"Nonthaburi",52805448449
+2092,"Nonthaburi",53474317462
+2093,"Nonthaburi",54133834045
+2094,"Nonthaburi",54783440053
+2095,"Nonthaburi",55422580187
+2096,"Nonthaburi",56050702762
+2097,"Nonthaburi",56667260493
+2098,"Nonthaburi",57271711271
+2099,"Nonthaburi",57863518955
+2100,"Nonthaburi",58442154144
+2021,"Samut Prakan",17407127978
+2022,"Samut Prakan",18103413097
+2023,"Samut Prakan",18773239381
+2024,"Samut Prakan",19411529520
+2025,"Samut Prakan",20052109995
+2026,"Samut Prakan",20713829624
+2027,"Samut Prakan",21397386002
+2028,"Samut Prakan",22079962615
+2029,"Samut Prakan",22751193479
+2030,"Samut Prakan",23442829761
+2031,"Samut Prakan",24150803219
+2032,"Samut Prakan",24877742396
+2033,"Samut Prakan",25629050217
+2034,"Samut Prakan",26392795913
+2035,"Samut Prakan",27179301231
+2036,"Samut Prakan",27849723995
+2037,"Samut Prakan",28527400612
+2038,"Samut Prakan",29212058227
+2039,"Samut Prakan",29903410272
+2040,"Samut Prakan",30601156511
+2041,"Samut Prakan",31304983111
+2042,"Samut Prakan",32014562728
+2043,"Samut Prakan",32729554629
+2044,"Samut Prakan",33449604831
+2045,"Samut Prakan",34174346269
+2046,"Samut Prakan",34903398990
+2047,"Samut Prakan",35636370368
+2048,"Samut Prakan",36372855356
+2049,"Samut Prakan",37112436748
+2050,"Samut Prakan",37854685483
+2051,"Samut Prakan",38602315521
+2052,"Samut Prakan",39355060674
+2053,"Samut Prakan",40112645592
+2054,"Samut Prakan",40874785858
+2055,"Samut Prakan",41641188093
+2056,"Samut Prakan",42411550073
+2057,"Samut Prakan",43185560862
+2058,"Samut Prakan",43962900957
+2059,"Samut Prakan",44743242449
+2060,"Samut Prakan",45526249192
+2061,"Samut Prakan",46311576991
+2062,"Samut Prakan",47098873799
+2063,"Samut Prakan",47887779936
+2064,"Samut Prakan",48677928305
+2065,"Samut Prakan",49468944640
+2066,"Samut Prakan",50260447754
+2067,"Samut Prakan",51052049806
+2068,"Samut Prakan",51843356578
+2069,"Samut Prakan",52633967766
+2070,"Samut Prakan",53423477282
+2071,"Samut Prakan",54207021616
+2072,"Samut Prakan",54983988925
+2073,"Samut Prakan",55753764770
+2074,"Samut Prakan",56515732889
+2075,"Samut Prakan",57269275994
+2076,"Samut Prakan",58013776582
+2077,"Samut Prakan",58748617752
+2078,"Samut Prakan",59473184038
+2079,"Samut Prakan",60186862246
+2080,"Samut Prakan",60889042306
+2081,"Samut Prakan",61579118118
+2082,"Samut Prakan",62256488418
+2083,"Samut Prakan",62920557628
+2084,"Samut Prakan",63570736723
+2085,"Samut Prakan",64206444090
+2086,"Samut Prakan",64827106383
+2087,"Samut Prakan",65432159376
+2088,"Samut Prakan",66021048810
+2089,"Samut Prakan",66593231233
+2090,"Samut Prakan",67148174827
+2091,"Samut Prakan",67685360226
+2092,"Samut Prakan",68204281321
+2093,"Samut Prakan",68704446050
+2094,"Samut Prakan",69185377173
+2095,"Samut Prakan",69646613021
+2096,"Samut Prakan",70087708236
+2097,"Samut Prakan",70508234486
+2098,"Samut Prakan",70907781148
+2099,"Samut Prakan",71285955981
+2100,"Samut Prakan",71642385761
+2021,"Rest of Thailand",2.09e+11
+2022,"Rest of Thailand",2.18e+11
+2023,"Rest of Thailand",2.28e+11
+2024,"Rest of Thailand",2.37e+11
+2025,"Rest of Thailand",2.46e+11
+2026,"Rest of Thailand",2.56e+11
+2027,"Rest of Thailand",2.66e+11
+2028,"Rest of Thailand",2.76e+11
+2029,"Rest of Thailand",2.86e+11
+2030,"Rest of Thailand",2.96e+11
+2031,"Rest of Thailand",3.07e+11
+2032,"Rest of Thailand",3.18e+11
+2033,"Rest of Thailand",3.3e+11
+2034,"Rest of Thailand",3.42e+11
+2035,"Rest of Thailand",3.55e+11
+2036,"Rest of Thailand",3.67e+11
+2037,"Rest of Thailand",3.79e+11
+2038,"Rest of Thailand",3.91e+11
+2039,"Rest of Thailand",4.04e+11
+2040,"Rest of Thailand",4.17e+11
+2041,"Rest of Thailand",4.31e+11
+2042,"Rest of Thailand",4.46e+11
+2043,"Rest of Thailand",4.61e+11
+2044,"Rest of Thailand",4.76e+11
+2045,"Rest of Thailand",4.93e+11
+2046,"Rest of Thailand",5.09e+11
+2047,"Rest of Thailand",5.27e+11
+2048,"Rest of Thailand",5.45e+11
+2049,"Rest of Thailand",5.63e+11
+2050,"Rest of Thailand",5.83e+11
+2051,"Rest of Thailand",6.03e+11
+2052,"Rest of Thailand",6.23e+11
+2053,"Rest of Thailand",6.44e+11
+2054,"Rest of Thailand",6.65e+11
+2055,"Rest of Thailand",6.87e+11
+2056,"Rest of Thailand",7.09e+11
+2057,"Rest of Thailand",7.32e+11
+2058,"Rest of Thailand",7.55e+11
+2059,"Rest of Thailand",7.79e+11
+2060,"Rest of Thailand",8.03e+11
+2061,"Rest of Thailand",8.27e+11
+2062,"Rest of Thailand",8.52e+11
+2063,"Rest of Thailand",8.78e+11
+2064,"Rest of Thailand",9.04e+11
+2065,"Rest of Thailand",9.3e+11
+2066,"Rest of Thailand",9.57e+11
+2067,"Rest of Thailand",9.84e+11
+2068,"Rest of Thailand",1.01e+12
+2069,"Rest of Thailand",1.04e+12
+2070,"Rest of Thailand",1.07e+12
+2071,"Rest of Thailand",1.1e+12
+2072,"Rest of Thailand",1.13e+12
+2073,"Rest of Thailand",1.16e+12
+2074,"Rest of Thailand",1.19e+12
+2075,"Rest of Thailand",1.22e+12
+2076,"Rest of Thailand",1.25e+12
+2077,"Rest of Thailand",1.28e+12
+2078,"Rest of Thailand",1.32e+12
+2079,"Rest of Thailand",1.35e+12
+2080,"Rest of Thailand",1.38e+12
+2081,"Rest of Thailand",1.42e+12
+2082,"Rest of Thailand",1.45e+12
+2083,"Rest of Thailand",1.49e+12
+2084,"Rest of Thailand",1.52e+12
+2085,"Rest of Thailand",1.56e+12
+2086,"Rest of Thailand",1.59e+12
+2087,"Rest of Thailand",1.63e+12
+2088,"Rest of Thailand",1.66e+12
+2089,"Rest of Thailand",1.69e+12
+2090,"Rest of Thailand",1.72e+12
+2091,"Rest of Thailand",1.75e+12
+2092,"Rest of Thailand",1.77e+12
+2093,"Rest of Thailand",1.79e+12
+2094,"Rest of Thailand",1.81e+12
+2095,"Rest of Thailand",1.83e+12
+2096,"Rest of Thailand",1.84e+12
+2097,"Rest of Thailand",1.86e+12
+2098,"Rest of Thailand",1.86e+12
+2099,"Rest of Thailand",1.87e+12
+2100,"Rest of Thailand",1.87e+12
+2021,"Thailand",3.61544e+11
+2022,"Thailand",3.76006e+11
+2023,"Thailand",3.89918e+11
+2024,"Thailand",4.03175e+11
+2025,"Thailand",4.1648e+11
+2026,"Thailand",4.30224e+11
+2027,"Thailand",4.44421e+11
+2028,"Thailand",4.58598e+11
+2029,"Thailand",4.7254e+11
+2030,"Thailand",4.86905e+11
+2031,"Thailand",5.01609e+11
+2032,"Thailand",5.16708e+11
+2033,"Thailand",5.32312e+11
+2034,"Thailand",5.48175e+11
+2035,"Thailand",5.64511e+11
+2036,"Thailand",5.79809e+11
+2037,"Thailand",5.95522e+11
+2038,"Thailand",6.11661e+11
+2039,"Thailand",6.28237e+11
+2040,"Thailand",6.45262e+11
+2041,"Thailand",6.62748e+11
+2042,"Thailand",6.80709e+11
+2043,"Thailand",6.99156e+11
+2044,"Thailand",7.18103e+11
+2045,"Thailand",7.37564e+11
+2046,"Thailand",7.57552e+11
+2047,"Thailand",7.78081e+11
+2048,"Thailand",7.99167e+11
+2049,"Thailand",8.20825e+11
+2050,"Thailand",8.43069e+11
+2051,"Thailand",8.65916e+11
+2052,"Thailand",8.89207e+11
+2053,"Thailand",9.12944e+11
+2054,"Thailand",9.37129e+11
+2055,"Thailand",9.61765e+11
+2056,"Thailand",9.86853e+11
+2057,"Thailand",1.0124e+12
+2058,"Thailand",1.03839e+12
+2059,"Thailand",1.06485e+12
+2060,"Thailand",1.09176e+12
+2061,"Thailand",1.11913e+12
+2062,"Thailand",1.14697e+12
+2063,"Thailand",1.17526e+12
+2064,"Thailand",1.20401e+12
+2065,"Thailand",1.23322e+12
+2066,"Thailand",1.26288e+12
+2067,"Thailand",1.29301e+12
+2068,"Thailand",1.32359e+12
+2069,"Thailand",1.35463e+12
+2070,"Thailand",1.38612e+12
+2071,"Thailand",1.41806e+12
+2072,"Thailand",1.45044e+12
+2073,"Thailand",1.48328e+12
+2074,"Thailand",1.51655e+12
+2075,"Thailand",1.55027e+12
+2076,"Thailand",1.58442e+12
+2077,"Thailand",1.619e+12
+2078,"Thailand",1.65401e+12
+2079,"Thailand",1.68944e+12
+2080,"Thailand",1.72528e+12
+2081,"Thailand",1.76154e+12
+2082,"Thailand",1.7982e+12
+2083,"Thailand",1.83526e+12
+2084,"Thailand",1.87271e+12
+2085,"Thailand",1.91054e+12
+2086,"Thailand",1.94875e+12
+2087,"Thailand",1.98526e+12
+2088,"Thailand",2.01993e+12
+2089,"Thailand",2.05266e+12
+2090,"Thailand",2.08331e+12
+2091,"Thailand",2.11178e+12
+2092,"Thailand",2.13797e+12
+2093,"Thailand",2.16177e+12
+2094,"Thailand",2.1831e+12
+2095,"Thailand",2.20187e+12
+2096,"Thailand",2.21802e+12
+2097,"Thailand",2.23148e+12
+2098,"Thailand",2.24219e+12
+2099,"Thailand",2.25011e+12
+2100,"Thailand",2.25521e+12
+1995,"Bangkok",77421299726
+1996,"Bangkok",80796062295
+1997,"Bangkok",62362982986
+1998,"Bangkok",44971025476
+1999,"Bangkok",50039642000
+2000,"Bangkok",49869757895
+2001,"Bangkok",47386736852
+2002,"Bangkok",50330329848
+2003,"Bangkok",54467984098
+2004,"Bangkok",59905336906
+2005,"Bangkok",63095330372
+2006,"Bangkok",69080315860
+2007,"Bangkok",82547234823
+2008,"Bangkok",82348868981
+2009,"Bangkok",78399395513
+2010,"Bangkok",89091381945
+2011,"Bangkok",98096617447
+2012,"Bangkok",1.03131e+11
+2013,"Bangkok",1.10832e+11
+2014,"Bangkok",1.09336e+11
+2015,"Bangkok",1.09058e+11
+2016,"Bangkok",1.12199e+11
+2017,"Bangkok",1.21453e+11
+2018,"Bangkok",1.3281e+11
+2019,"Bangkok",1.4322e+11
+2020,"Bangkok",1.2962e+11
+1995,"Nonthaburi",2945040764
+1996,"Nonthaburi",3014895690
+1997,"Nonthaburi",2486459872
+1998,"Nonthaburi",2028843514
+1999,"Nonthaburi",2137020630
+2000,"Nonthaburi",2066546856
+2001,"Nonthaburi",1938423390
+2002,"Nonthaburi",2123438389
+2003,"Nonthaburi",2331974624
+2004,"Nonthaburi",2626384440
+2005,"Nonthaburi",2939063292
+2006,"Nonthaburi",3390728562
+2007,"Nonthaburi",4183009569
+2008,"Nonthaburi",4295749323
+2009,"Nonthaburi",4398561538
+2010,"Nonthaburi",5092565711
+2011,"Nonthaburi",5167558708
+2012,"Nonthaburi",5607485211
+2013,"Nonthaburi",6215111422
+2014,"Nonthaburi",6588251428
+2015,"Nonthaburi",6647691102
+2016,"Nonthaburi",6793244535
+2017,"Nonthaburi",7596352373
+2018,"Nonthaburi",8014926758
+2019,"Nonthaburi",8786550319
+2020,"Nonthaburi",8484399137
+1995,"Samut Prakan",9755856960
+1996,"Samut Prakan",10041269987
+1997,"Samut Prakan",8198856242
+1998,"Samut Prakan",7252372837
+1999,"Samut Prakan",8412223768
+2000,"Samut Prakan",8396800415
+2001,"Samut Prakan",7988580083
+2002,"Samut Prakan",8921950758
+2003,"Samut Prakan",9192777305
+2004,"Samut Prakan",9957754345
+2005,"Samut Prakan",10268436534
+2006,"Samut Prakan",11580970386
+2007,"Samut Prakan",16804279992
+2008,"Samut Prakan",16620063730
+2009,"Samut Prakan",14405808374
+2010,"Samut Prakan",19009579623
+2011,"Samut Prakan",17621939380
+2012,"Samut Prakan",19760914714
+2013,"Samut Prakan",18374449394
+2014,"Samut Prakan",17320061957
+2015,"Samut Prakan",16781138538
+2016,"Samut Prakan",16494815426
+2017,"Samut Prakan",17475070801
+2018,"Samut Prakan",19517756785
+2019,"Samut Prakan",19419214549
+2020,"Samut Prakan",15780035043
+1995,"Rest of Thailand",1.16064e+11
+1996,"Rest of Thailand",1.24997e+11
+1997,"Rest of Thailand",1.05246e+11
+1998,"Rest of Thailand",78270408316
+1999,"Rest of Thailand",84406638970
+2000,"Rest of Thailand",81068663507
+2001,"Rest of Thailand",74328223612
+2002,"Rest of Thailand",83463158471
+2003,"Rest of Thailand",95003398440
+2004,"Rest of Thailand",1.05613e+11
+2005,"Rest of Thailand",1.12868e+11
+2006,"Rest of Thailand",1.31101e+11
+2007,"Rest of Thailand",1.62681e+11
+2008,"Rest of Thailand",1.69653e+11
+2009,"Rest of Thailand",1.62027e+11
+2010,"Rest of Thailand",1.9705e+11
+2011,"Rest of Thailand",2.09985e+11
+2012,"Rest of Thailand",2.19699e+11
+2013,"Rest of Thailand",2.26407e+11
+2014,"Rest of Thailand",2.10822e+11
+2015,"Rest of Thailand",2.0299e+11
+2016,"Rest of Thailand",2.06909e+11
+2017,"Rest of Thailand",2.24383e+11
+2018,"Rest of Thailand",2.41686e+11
+2019,"Rest of Thailand",2.52622e+11
+2020,"Rest of Thailand",2.30685e+11
+1990,"Thailand",1.21545e+11
+1991,"Thailand",1.34547e+11
+1992,"Thailand",1.50248e+11
+1993,"Thailand",1.63662e+11
+1994,"Thailand",1.8238e+11
+1995,"Thailand",2.06186e+11
+1996,"Thailand",2.18849e+11
+1997,"Thailand",1.78295e+11
+1998,"Thailand",1.32523e+11
+1999,"Thailand",1.44996e+11
+2000,"Thailand",1.41402e+11
+2001,"Thailand",1.31642e+11
+2002,"Thailand",1.44839e+11
+2003,"Thailand",1.60996e+11
+2004,"Thailand",1.78103e+11
+2005,"Thailand",1.8917e+11
+2006,"Thailand",2.15153e+11
+2007,"Thailand",2.66215e+11
+2008,"Thailand",2.72918e+11
+2009,"Thailand",2.5923e+11
+2010,"Thailand",3.10243e+11
+2011,"Thailand",3.30871e+11
+2012,"Thailand",3.48199e+11
+2013,"Thailand",3.61829e+11
+2014,"Thailand",3.44067e+11
+2015,"Thailand",3.35477e+11
+2016,"Thailand",3.42396e+11
+2017,"Thailand",3.70907e+11
+2018,"Thailand",4.02029e+11
+2019,"Thailand",4.24048e+11
+2020,"Thailand",3.8457e+11

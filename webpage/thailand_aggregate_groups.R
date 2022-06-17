@@ -5,7 +5,11 @@
 #######################################################
 
 # enduse sectors
-building_group <- c("comm cooling", "comm heating", "comm others", "resid cooling", "resid heating", "resid others")
+building_group <- c("comm cooling", "comm heating", "comm others", "resid cooling", "resid heating", "resid others",
+                    "resid urban cooking", "resid rural cooking", "resid urban lighting", "resid rural lighting", "resid urban water heaters", "resid rural water heaters",
+                    "resid urban ventilation", "resid rural ventilation", "resid urban televisions", "resid rural televisions", "resid urban refrigerators", "resid rural refrigerators",
+                    "resid urban air conditioners", "resid rural air conditioners", "resid urban other appliances", "resid rural other appliances",
+                    "comm hvac", "comm lighting")
 transport_group <- c("trn_aviation_intl", "trn_freight", "trn_freight_road", "trn_pass", "trn_pass_road", "trn_pass_road_LDV", "trn_pass_road_LDV_4W", "trn_shipping_intl", "H2 forecourt production")
 industry_group <- c("industry", "industrial energy use", "industrial feedstocks", "cement", "process heat cement", "N fertilizer", "H2 central production", "refining",   "industrial processes",  "gas processing", "unconventional oil production", "iron and steel", "alumina", "aluminum", "chemical", "chemical energy use", "chemical feedstocks", "construction", "construction energy use", "construction feedstocks", "mining energy use", "agricultural energy use")
 industry_group2 <- c("industrial energy use")
