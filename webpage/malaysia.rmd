@@ -13,6 +13,9 @@ output:
 
 ``` {r setup, echo = FALSE, message = FALSE, warning = FALSE}
 library(pander)
+library(dplyr)
+library(ggplot2)
+library(data.table)
 ```
 
 <!-- Allow href to tabsets --> 
@@ -40,7 +43,21 @@ window.onload = function() {
 window.onhashchange = goToTab;
 ```
 
+<!-- Set table styles -->
 
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+</style>
 
 <div class="header_logo">
 <img src="images/logo_us_state_department.png" style="float:right;height:40px;">
@@ -74,7 +91,7 @@ window.onhashchange = goToTab;
 
 Southeast Asia as a whole is experiencing a period of rapid growth and urbanization, which can present challenges for decarbonization efforts. The region also faces a heightened risk for climate impacts; in particular, Kuala Lumpur is vulnerable to the effects of high heat as well as increased flooding and droughts. Kuala Lumpur’s vision for approaching these issues is to transform the city into one that is sustainable and livable through its primary climate policies and plans: the Kuala Lumpur Low Carbon Society Blueprint 2030 (KLLCSBP2030), the draft Kuala Lumpur Structure Plan 2040 (KLSP2040), and the Kuala Lumpur Climate Action Plan 2050 (KLCAP2050). The most recent plan was developed to address and fulfill a carbon neutral target by 2050, increase resilience to climate hazards by 2050, incorporate a more inclusive approach to climate planning, and establish a governance structure that will collaborate with all stakeholders to reach climate action goals. Kuala Lumpur developed two scenarios under this plan, a Council-Led scenario aligned with targets from the KLLCSBP2030 and an Integrated Approach scenario highlighting the importance of collaboration across Kuala Lumpur, the Federal government, and other agencies in reaching emissions targets.  
 
-The US-ASEAN Smart Cities Partnership (USASCP) uses innovative approaches across sectors to address the challenges and opportunities of energy development and urbanization in ASEAN Member States. In support of the USASCP, the U.S. Department of State, Bureau of Energy Resources’ (ENR’s) Power Sector Program (PSP) is partnering with Kuala Lumpur to support existing plans to achieve carbon neutrality. The U.S. Department of Energy’s (DOE’s) Pacific Northwest National Laboratory (PNNL) will implement the program by collaborating with local partners, including the Kuala Lumpur City Hall (DBKL) and the Universiti Teknologi Malaysia (UTM). PNNL will use its Global Change Analysis Model (GCAM) to model various policy trajectories towards net zero by 2050 and corresponding economic, environmental, and social impacts.
+The US-ASEAN Smart Cities Partnership (USASCP) uses innovative approaches across sectors to address the challenges and opportunities of energy development and urbanization in ASEAN Member States. In support of the USASCP, the U.S. Department of State, Bureau of Energy Resources’ (ENR’s) Power Sector Program (PSP) is partnering with Kuala Lumpur to support existing plans to achieve carbon neutrality. The U.S. Department of Energy’s (DOE’s) Pacific Northwest National Laboratory (PNNL) will implement the program by collaborating with local partners, including the Kuala Lumpur City Hall (DBKL or KLCH) and the Universiti Teknologi Malaysia (UTM). PNNL will use its Global Change Analysis Model (GCAM) to model various policy trajectories towards net zero by 2050 and corresponding economic, environmental, and social impacts.
 
 
 <br>
@@ -130,32 +147,43 @@ knitr::include_graphics("images/GCAM_diagram.png")
 <!-------------------------->
 <p align="center"> <img src="images/divider.png"></p>
 
-PNNL, with input from DBKL, will develop a set of GCAM scenarios based on the KLCAP2050 and other relevant policies and plans. These scenarios will outline possible outcomes of various policies. Key indicators may include greenhouse gas emissions, _________________. *TODO* 
+PNNL, with input from KLCH, will develop a set of GCAM scenarios based on the KLCAP2050 and other relevant policies and plans. These scenarios will outline possible outcomes of various policies. Key indicators may include greenhouse gas emissions, energy demand, and final energy consumption; for more details, please reference 7.1 below.
 
 * **BAU:** Baseline scenario based on existing policies only, with no additional actions. This will serve as a comparison for the remaining scenarios to assess the magnitude of outcomes.
 * **Council-Led:** Scenario driven by strategies and actions that are ambitious and achievable within the authority of KLCH, including the implementation of all National policies.
 * **Integrated Approach:** Scenario relying on an integrated approach with KLCH, the Federal government, and other agencies, highlighting the potential emissions reductions that could occur should all parties align.
 * **Carbon Neutral Malaysia and Kuala Lumpur:** Scenario using the most efficient pathway to net zero CO~2~ emissions by 2050 at the national and city levels.
 
+<br>
 
 <!-------------------------->
 ## Council-Led
 <!-------------------------->
 
-**Council-Led Scenario:** In this scenario, KLCH has the authority to implement measures to achieve carbon emissions reductions. The scenario will largely be achieved through existing actions outlined in the KLLCSBP2030 and Federal policies and plans, including the National Renewable Energy Policy and Action Plan, the National Energy Efficiency Action Plan, the National Transport Policy, and publicly declared renewable energy targets. 
+**Council-Led Scenario:** In this scenario, KLCH has the authority to implement measures to achieve carbon emissions reductions. The scenario will largely be achieved through existing actions outlined in the KLLCSBP2030, Federal policies and plans, and publicly declared renewable energy targets. 
 
 Note that this scenario _does not_ meet Kuala Lumpur's benchmark targets for 2030 or 2050; this is due to the lack of power and capacity for KLCH to implement more ambitious actions. Key remaining emissions will come from the following sectors: residential, commercial and institutional buildings, industrial energy, and on-road transportation.
 
-The table below summarizes the policies encompassed by the Council-Led scenario. **UPDATE**
+The table below summarizes some of the policies encompassed by the Council-Led scenario. For additional policies, please reference the <a href = "malaysia_appendix.html"> Appendix </a>.
+<br>
 
 ```{r council-led, results = 'show', echo = FALSE, warning = FALSE, error = FALSE, message = FALSE}
 myTable = data.frame(
-    Sector     = c(),
-    Policies = c()
+    Sector     = c("Energy supply",
+                   "Transportation",
+                   "Buildings"),
+    Policies = c("Electricity tariff",
+                 "Introduce electric vehicles",
+                 "* Install solar PV systems\
+                 \n * Institute energy efficiency standards and requirements in buildings\
+                 \n * Decrease energy consumption\
+                 \n * Increase use of renewable energy"),
+    Source = c("KLLCSBP2030")
     ) 
-#pander::pander(myTable, keep.line.breaks = TRUE, style = "grid", justify = 'left', split.tables=Inf, caption = "")
+pander::pander(myTable, keep.line.breaks = TRUE, style = "grid", justify = 'left', split.tables=Inf, caption = "")
 ```
 
+<br>
 
 <!-------------------------->
 <!-------------------------->
@@ -163,11 +191,9 @@ myTable = data.frame(
 <!-------------------------->
 <!-------------------------->
 
-**Integrated Approach Scenario:** This scenario explores the potential carbon emissions reductions that could occur with strong collaboration across different stakeholders. Kuala Lumpur could be an advocate for such solutions, but the measures outlined in this scenario involve policy shifts at the Federal level.
+**Integrated Approach Scenario:** This scenario explores the potential carbon emissions reductions that could occur with strong collaboration between different stakeholders. Kuala Lumpur could be an advocate for such solutions, but the measures outlined in this scenario involve policy shifts at the Federal level.
 
-Even if all scenario targets are met, Kuala Lumpur would still have residual emissions in situations where no mitigation technology exists or where a low-emissions alternative is technically or economically non-viable in the near-term. Top sources include: solid waste, commercial and institutional buildings, and on-road transportation.
-
-The table below summarizes the policies encompassed by the Integrated Approach scenario. **UPDATE**
+Even if all scenario targets are met, Kuala Lumpur would still have residual emissions in situations where no mitigation technology exists or where a low-emissions alternative is technically or economically non-viable in the near-term. Top sources include solid waste, commercial and institutional buildings, and on-road transportation.
 
 ```{r integrated-approach, results = 'show', echo = FALSE, warning = FALSE, error = FALSE, message = FALSE}
 myTable = data.frame(
@@ -178,6 +204,7 @@ myTable = data.frame(
 
 ```
 
+<br>
 
 <!-------------------------->
 <!-------------------------->
@@ -186,6 +213,7 @@ myTable = data.frame(
 <!-------------------------->
 
 **Carbon Neutral Malaysia and Kuala Lumpur:** Prior to COP26, Malaysia pledged to achieve carbon neutrality as early as 2050. Later in 2021, Kuala Lumpur committed to becoming a carbon-neutral city by 2050. The Carbon Neutral Malaysia and Kuala Lumpur scenario represents the most economically efficient pathway to reach carbon neutrality by 2050 given the policies outlined in the scenarios described above. This pathway will be found using GCAM’s solving capabilities. The outcomes of this scenario will provide insight into the role that that KLCH can play in achieving carbon neutrality and additional measures that may need to be taken.
+
 <br>
 
 <!-------------------------->
@@ -205,10 +233,12 @@ myTable = data.frame(
 knitr::include_graphics("./images/MY_KL_map.png")
 ```
 
-PNNL will assess outcomes at the city level. The Council-Led scenario encompasses only policies that can be implemented by KLCH, although the Integrated Approach scenario requires additional action at the national level. Therefore, PNNL will perform some country level analysis, with the primary focus remaining on Kuala Lumpur. 
+PNNL will assess outcomes at both the national and city level. The Council-Led scenario encompasses only policies that can be implemented by KLCH, although the Integrated Approach scenario requires additional action at the national level. Therefore, PNNL will perform some country level analysis, with the primary focus remaining on Kuala Lumpur. 
 
 The map to the right shows Kuala Lumpur's location within Malaysia.
 
+<br>
+<br>
 
 <!-------------------------->
 <!-------------------------->
@@ -216,8 +246,7 @@ The map to the right shows Kuala Lumpur's location within Malaysia.
 <!-------------------------->
 <!-------------------------->
 
-Scenarios will be assessed up from the year 2015 to the year 2050, with the GCAM analysis conducted at five-year intervals within this range.
-
+Scenarios will be assessed up from the year 2015 to the year 2100, with the GCAM analysis conducted at five-year intervals within this range.
 
 <br>
 
@@ -228,6 +257,14 @@ Scenarios will be assessed up from the year 2015 to the year 2050, with the GCAM
 <!-------------------------->
 <p align="center"> <img src="images/divider.png"></p>
 
+The GCAM model will be used to assist in planning and scenario development as outlined above. Some of the benefits of using GCAM and the integrated modeling approach in general include the following:
+
+* **Climate change context:** With its water and climate systems, GCAM can provide a nuanced analysis of Kuala Lumpur and Malaysia's policies in the context of climate change. GCAM considers the symbiotic relationship between the climate and other systems, allowing for a more comprehensive review of future policy implications.
+* **Long-term assessment:** With the ability to model pathways out to the year 2100, GCAM can offer long-term projections of Kuala Lumpur's policies and plans. 
+* **Technology analysis:** Using GCAM’s technology scenario capabilities, PNNL will be able to assess the impacts of specific technology implementations on electricity demand, generation, emissions, and prices.
+* **Holistic approach:** GCAM's holistic approach will provide insight into how Kuala Lumpur's policies and plans align with broader goals for socioeconomic development and mitigating environmental impacts. Other key socioeconomic indicators gleaned from model results include employment data, further contributing to GCAM's comprehensive projections.
+
+<br>
 
 <!-------------------------->
 <!-------------------------->
@@ -235,17 +272,38 @@ Scenarios will be assessed up from the year 2015 to the year 2050, with the GCAM
 <!-------------------------->
 <!-------------------------->
 
-The GCAM output for each scenario will include the following indicators calculated at 5-year timesteps through the year 2050 in the study region, as specified in the Spatial and Temporal Scope section.
+The GCAM output for each scenario will include the following indicators calculated at 5-year timesteps through the year 2050 in the study region, as specified in the Spatial and Temporal Scope section. 
+<br>
 
 ```{r key-indicators, results = 'show', echo = FALSE, warning = FALSE, error = FALSE, message = FALSE}
 myTable = data.frame(
-    Indicator = c(),
-    Description = c(),
-    Units = c()
+    Indicator = c("Electricity generation", 
+                  "Installed power capacity",
+                  "Energy demand",
+                  "Final energy consumption",
+                  "CO2 emissions",
+                  "Electricity price",
+                  "Transport service output"),
+    Description = c("Amount of electricity generated (total & by generation technology",
+                    "Power capacity of power plants (total & by generation technology",
+                    "Amount of energy demanded (total & by sector",
+                    "Amount of energy consumed (total & by sector",
+                    "Amount of CO2 emitted (total & by sector",
+                    "Price of electricity for consumer by sector",
+                    "Output of each type of transportation"),
+    Units = c("terawatt-hours (TWh)",
+              "TWh",
+              "Exajoules (EJ)",
+              "EJ",
+              "metric tons CO2 equivalent (MT CO2)",
+              "US dollars ($USD)",
+              "passenger-kilometers (pass-km)")
     ) 
-#pander::pander(myTable, keep.line.breaks = TRUE, style = "grid", justify = 'left', split.tables=Inf, caption = "")
+pander::pander(myTable, keep.line.breaks = TRUE, style = "grid", justify = 'left', split.tables=Inf, caption = "Table 7.1.1. Key indicators reported for each scenario.")
 
 ```
+
+<br>
 
 <!-------------------------->
 <!-------------------------->
@@ -253,7 +311,9 @@ myTable = data.frame(
 <!-------------------------->
 <!-------------------------->
 
+PNNL will present GCAM results showing relevant outcomes of the modeled scenarios up to the year 2100. These results could include greenhouse gas emissions, energy supply and demand, electricity prices, and employment impacts, among other indicators. PNNL will work with UTM to determine which indicators are the most important to consider when assessing the impact of city policies.
 
+<br>
 
 <!-------------------------->
 <!-------------------------->
@@ -261,8 +321,7 @@ myTable = data.frame(
 <!-------------------------->
 <!-------------------------->
 
-
-
+PNNL, in collaboration with UTM, will summarize and interpret the GCAM results for each policy pathway and impact indicator. Based on the GCAM results, PNNL and UTM will provide recommendations for policy pathways that best support Kuala Lumpur's development goals while meeting desired targets outlined in city policies and plans. Engagement with and feedback from stakeholders in Kuala Lumpur will be crucial in guiding the discussions to better focus in on Kuala Lumpur's needs. The final results will be summarized in both a report and a peer-reviewed paper.
 
 <br>
 
@@ -278,6 +337,201 @@ Below is the proposed timeline for GCAM analysis, reports, and stakeholder engag
 ```{r timeline, echo = FALSE, out.width = "100%", fig.align = 'center', fig.cap = "**Figure 3: Proposed timeline.**"}
 knitr::include_graphics("images/KL_timeline.png")
 ```
+
+<br>
+
+<!-------------------------->
+<!-------------------------->
+# Inputs {.tabset}
+<!-------------------------->
+<!-------------------------->
+<p align="center"> <img src="images/divider.png"></p>
+
+<!-------------------------->
+## Socioeconomics  {.tabset .tabset-pills}
+<!-------------------------->
+This section details the socioeconomic inputs used to define Malaysia and its subregions, Kuala Lumpur and "Rest of Malaysia," in GCAM. These metrics include population, GDP, and GDP per capita. Historical and projection data were used when available, otherwise data was calculated using the assumptions described below.
+
+<table>
+
+<tr>
+<th>Variable</th>
+<th style="width:50%">Assumptions</th>
+<th style="width:40%">Data Sources</th>
+</tr>
+
+<tr>
+<td>Population</td>
+<td>
+<span>- Malaysia population used the medium variant projection and historical data from the UN</span><br/>
+<span>- KL census data gives a value for 2010. All other values were extrapolated and calculated using the growth rates for Malaysia in total</span><br/>
+<span>- "Rest of Malaysia" values found by subtracting KL numbers from Malaysia</span><br/>
+</td>
+<td>
+<span>- Malaysia: [United Nations](https://population.un.org/wpp/)</span><br/>
+<span>- Kuala Lumpur 2010: [United Nations](http://data.un.org/Data.aspx?q=kuala+lumpur&d=POP&f=tableCode%3a240%3bareaCode%3a0%3bsexCode%3a0%3bvarCode3%3a028690%3bvarCode4%3a000002)</span><br/>
+</td>
+</tr>
+
+
+<tr>
+<td rowspan="3">GDP</td>
+<td>
+<span>- Malaysia annual growth rates are applied to KL's 2020 GDP value to extrapolate historical and future values</span><br/>
+<span>- "Rest of Malaysia" values found by subtracting KL numbers from Malaysia</span>
+</td>
+<td rowspan="2"> 
+<span>- Malaysia, historical: [USDA ERS](https://www.ers.usda.gov/data-products/international-macroeconomic-data-set/)</span><br/>
+<span>- Malaysia, future: [SSP database](https://tntcat.iiasa.ac.at/SspDb/dsd?Action=htmlpage&page=welcome)</span><br/>
+<span>- Kuala Lumpur 2020: [Department of Statistics Malaysia](https://www.dosm.gov.my/v1/index.php?r=column/cthemeByCat&cat=102&bul_id=anVobldYUFZLNE5WVlRVRExkSWEyZz09&menu_id=TE5CRUZCblh4ZTZMODZIbmk2aWRRQT09)</span><br/>
+</td>
+</tr>
+
+</table>
+
+<br>
+<br>
+
+### Population
+
+#### Historical Trends and Future Projections {-}
+
+To estimate population values, we begin with annual data from the UN for Malaysia's population; we use historical data and a medium population projection scenario. For Kuala Lumpur, we use 2010 census data as our base year. We then calculate annual growth rates using the complete Malaysia dataset and apply these growth rates to extrapolate Kuala Lumpur population values. To find "Rest of Malaysia" values, we subtract Kuala Lumpur population from Malaysia values.
+
+The plot below shows historical and future projected populations in Malaysia and Kuala Lumpur from the GCAM reference scenario from 1975 to 2100.  
+
+``` {r pop-plot, echo = FALSE, fig.dim = c(8,4), fig.cap="Figure 9.1.1.1. **Historical and future projected population in Malaysia and Kuala Lumpur**"}
+# Population
+pop <- fread("../data/Malaysia/socioeconomic_inputs/gcam_query_pop.csv") %>% as_tibble()
+
+## PLOT
+population_plot <- pop %>%
+  ggplot(aes(year, value)) +
+  geom_line() +
+  facet_wrap(~region, scales = "free") +
+  scale_color_viridis_d() +
+  labs(x = "Year",
+       y = "Population (millions)",
+       title = "Population in Malaysia and Kuala Lumpur") +
+  theme_light() ; population_plot
+
+
+```
+
+<br>
+
+### GDP
+
+#### Historical Trends and Future Projections {-}
+
+To find GDP values, we begin with historical data of GDP MER in Malaysia from the U.S. Department of Agriculture's Economic Research Service. We use future projections data from the SSP2 database. In a similar process to the population, we then calculate annual growth rates, which are applied to a base year for Kuala Lumpur. We use the 2020 GDP found in the Kuala Lumpur State Socioeconomic Report 2020. We find "Rest of Malaysia" values by subtracting Kuala Lumpur values from Malaysia.
+
+The following graphs show GDP in billion 2005 USD for Malaysia and Kuala Lumpur.
+
+``` {r gdp, echo = FALSE, fig.dim = c(8,4), fig.cap="Figure 9.1.2.1. **Historical and future projected GDP in Malaysia and Kuala Lumpur**"}
+# GDP
+gdp <- fread("../data/Malaysia/socioeconomic_inputs/gcam_query_gdp.csv") %>% as_tibble()
+
+## PLOT
+gdp_plot <- gdp %>%
+  ggplot(aes(year, value)) +
+  geom_line() +
+  facet_wrap(~region, scales = "free") +
+  scale_color_viridis_d() +
+  labs(x = "Year",
+       y = "Billion (2005 USD)",
+       title = "GDP in Malaysia and Kuala Lumpur") +
+  theme_light() ; gdp_plot
+
+```
+
+<br>
+
+### Per capita GDP
+
+#### Historical Trends and Future Projections {-}
+
+To find GDP per capita, we divide the above GDP values by the above population values. 
+
+GDP per capita, in units of thousand 2005 USD, is shown below for Malaysia and Kuala Lumpur. 
+
+``` {r gdp_pc, echo = FALSE, fig.dim = c(8,4), fig.cap="Figure 9.1.3.1. **Historical and future projected GDP per capita in Malaysia and Kuala Lumpur**"}
+gdp_pc <- fread("../data/Malaysia/socioeconomic_inputs/gcam_query_pcgdp.csv") %>% as_tibble()
+
+## PLOT
+gdp_pc_plot <- gdp_pc %>%
+  ggplot(aes(year, value)) +
+  geom_line() +
+  facet_wrap(~region, scales = "free") +
+  scale_color_viridis_d() +
+  labs(x = "Year",
+       y = "Thousand (2005 USD) per person",
+       title = "GDP per capita in Malaysia and Kuala Lumpur") +
+  theme_light() ; gdp_pc_plot
+
+
+```
+
+<br>
+
+<!-------------------------->
+<!-------------------------->
+# Results {.tabset}
+<!-------------------------->
+<!-------------------------->
+<p align="center"> <img src="images/divider.png"></p>
+
+## Socioeconomics  {.tabset .tabset-pills}
+
+### Population
+
+### GDP
+
+## Energy  {.tabset .tabset-pills}
+
+### By Fuel
+
+### By Sector
+
+## Electricity  {.tabset .tabset-pills}
+
+### By Fuel
+
+### By Sector
+
+## Emissions  {.tabset .tabset-pills}
+
+### CO2 by Sector
+
+### GHG by Fuel
+
+### GHG by Sector
+
+## Others (Buildings/Transport?)
+
+<br>
+
+<!-------------------------->
+<!-------------------------->
+# Data needs and/or questions
+<!-------------------------->
+<!-------------------------->
+<p align="center"> <img src="images/divider.png"></p>
+
+* Sectoral emissions for each scenario: After review of the KLCAP2050, the team noted some discrepancies in the data presented. A primary data need is emissions for at least the key years (2030, 2050) broken down by sector for each scenario (BAU, Council Led, and Integrated Approach). A detailed breakdown of the discrepancies can be provided upon request. 
+
+<br>
+
+<!-------------------------->
+<!-------------------------->
+# Appendix
+<!-------------------------->
+<!-------------------------->
+<p align="center"> <img src="images/divider.png"></p>
+
+See <a href = "malaysia_appendix.html"> Appendix </a> for supplementary information.
+
+<br>
 
 
 <!-- example alternative table style -->
@@ -329,68 +583,3 @@ data.frame(
   kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
 
 ```
-
-
-<br>
-
-<!-------------------------->
-<!-------------------------->
-# Inputs {.tabset}
-<!-------------------------->
-<!-------------------------->
-<p align="center"> <img src="images/divider.png"></p>
-
-## Socioeconomics  {.tabset .tabset-pills}
-
-### Population
-
-### GDP
-
-
-<!-------------------------->
-<!-------------------------->
-# Results {.tabset}
-<!-------------------------->
-<!-------------------------->
-<p align="center"> <img src="images/divider.png"></p>
-
-## Socioeconomics  {.tabset .tabset-pills}
-
-### Population
-
-### GDP
-
-## Energy  {.tabset .tabset-pills}
-
-### By Fuel
-
-### By Sector
-
-## Electricity  {.tabset .tabset-pills}
-
-### By Fuel
-
-### By Sector
-
-## Emissions  {.tabset .tabset-pills}
-
-### CO2 by Sector
-
-### GHG by Fuel
-
-### GHG by Sector
-
-## Others (Buildings/Transport?)
-
-<!-------------------------->
-<!-------------------------->
-# Data needs and/or questions
-<!-------------------------->
-<!-------------------------->
-<p align="center"> <img src="images/divider.png"></p>
-
-* Sectoral emissions for each scenario: After review of the KLCAP2050, the team noted some discrepancies in the data presented. A primary data need is emissions for at least the key years (2030, 2050) broken down by sector for each scenario (BAU, Council Led, and Integrated Approach). A detailed breakdown of the discrepancies can be provided upon request. 
-
-
-
-<br>
