@@ -16,6 +16,8 @@ library(pander)
 library(dplyr)
 library(ggplot2)
 library(data.table)
+library(tidyr)
+theme_set(theme_light())
 ```
 
 <!-- Allow href to tabsets --> 
@@ -412,8 +414,7 @@ population_plot <- pop %>%
   scale_color_viridis_d() +
   labs(x = "Year",
        y = "Population (millions)",
-       title = "Population in Malaysia and Kuala Lumpur") +
-  theme_light() ; population_plot
+       title = "Population in Malaysia and Kuala Lumpur") ; population_plot
 
 
 ```
@@ -440,8 +441,7 @@ gdp_plot <- gdp %>%
   scale_color_viridis_d() +
   labs(x = "Year",
        y = "Billion (2005 USD)",
-       title = "GDP in Malaysia and Kuala Lumpur") +
-  theme_light() ; gdp_plot
+       title = "GDP in Malaysia and Kuala Lumpur") ; gdp_plot
 
 ```
 
@@ -466,8 +466,7 @@ gdp_pc_plot <- gdp_pc %>%
   scale_color_viridis_d() +
   labs(x = "Year",
        y = "Thousand (2005 USD) per person",
-       title = "GDP per capita in Malaysia and Kuala Lumpur") +
-  theme_light() ; gdp_pc_plot
+       title = "GDP per capita in Malaysia and Kuala Lumpur") ; gdp_pc_plot
 
 
 ```
@@ -476,38 +475,413 @@ gdp_pc_plot <- gdp_pc %>%
 
 <!-------------------------->
 <!-------------------------->
-# Results {.tabset}
+# GCAM Initial Diagnostics {.tabset}
 <!-------------------------->
 <!-------------------------->
 <p align="center"> <img src="images/divider.png"></p>
 
-## Socioeconomics  {.tabset .tabset-pills}
+<!-------------------------->
+## Energy {.tabset .tabset-pills}
+<!-------------------------->
 
-### Population
+### Final consumption
+``` {r final-energy, echo = FALSE, message = FALSE, fig.dim = c(9,4), fig.cap = "**Figure 10.1.1.1**"}
+final_energy <- fread("../data/Malaysia/gcam_diagnostics/gcam_query_energy.csv") %>% as_tibble()
 
-### GDP
+energy <- final_energy %>%
+  filter(region != "Malaysia") %>%
+  group_by(year, region) %>%
+  summarize(Units, scenario, region, value = sum(value)) %>%
+  distinct(year, .keep_all = TRUE)
 
-## Energy  {.tabset .tabset-pills}
+energy_my <-  energy %>%
+  group_by(year) %>%
+  mutate(value = sum(value)) %>%
+  filter(region == "KualaLumpur") %>%
+  select(year, scenario, value) %>%
+  mutate(region = "Malaysia",
+         Units = "MtCO2")
 
-### By Fuel
+energy_plot_data <- bind_rows(energy, energy_my)
 
-### By Sector
+energy_plot <- energy_plot_data %>%
+  filter(region != "Rest of Malaysia") %>%
+  ggplot(aes(year, value)) +
+  geom_line() +
+  facet_wrap(~region, scales = "free") +
+  labs(x = "Year",
+       y = "EJ",
+       title = "Final energy consumption in Malaysia and KL",
+       subtitle = "Source: GCAM Ref"); energy_plot
 
-## Electricity  {.tabset .tabset-pills}
+```
 
-### By Fuel
+<!-------------------------->
+## Electricity {.tabset .tabset-pills}
+<!-------------------------->
 
-### By Sector
+### Final consumption
+``` {r final-electricity, echo = FALSE, message = FALSE, fig.dim = c(9,4), fig.cap = "**Figure 10.2.1.1**"}
+elec <- fread("../data/Malaysia/gcam_diagnostics/gcam_query_electricity.csv")
 
-## Emissions  {.tabset .tabset-pills}
+total_consumption <- elec %>%
+  filter(region != "Malaysia") %>%
+  group_by(year, region) %>%
+  summarize(Units, scenario, region, value = sum(value)) %>%
+  distinct(year, .keep_all = TRUE)
+
+consumption_my <- total_consumption %>%
+  group_by(year) %>%
+  mutate(value = sum(value)) %>%
+  filter(region == "KualaLumpur") %>%
+  select(year, scenario, value) %>%
+  mutate(region = "Malaysia",
+         Units = "MtCO2")
+
+elec_plot_data <- bind_rows(total_consumption, consumption_my)
+
+elec_consumption_plot <- elec_plot_data %>%
+  filter(region != "Rest of Malaysia") %>%
+  ggplot(aes(year, value)) +
+  geom_line() +
+  facet_wrap(~region, scales = "free") +
+  labs(x = "Year",
+       y = "EJ",
+       title = "Total electricity consumption in Malaysia and KL",
+       subtitle = "Source: GCAM Ref"); elec_consumption_plot
+```
+
+<!-------------------------->
+## Emissions {.tabset .tabset-pills}
+<!-------------------------->
 
 ### CO2 by Sector
+``` {r co2-emissions, echo = FALSE, message = FALSE, fig.dim = c(9,4), fig.cap = "**Figure 10.3.1.1**"}
+co2_sector <- fread("../data/Malaysia/gcam_diagnostics/gcam_query_co2_sector.csv")
 
-### GHG by Fuel
+co2_sector_to_year <- co2_sector %>%
+  filter(region != "Malaysia") %>%
+  group_by(scenario, year, Units, region) %>%
+  summarize(value = sum(value, na.rm = T)) %>%
+  # convert from MtC to MtCO2
+  mutate(value = value * 3.67,
+         Units = "MtCO2") %>%
+  rename("units" = "Units") %>%
+  filter(region != "Malaysia")
 
-### GHG by Sector
+co2_my <- co2_sector_to_year  %>%
+  group_by(year) %>%
+  mutate(value = sum(value)) %>%
+  filter(region == "KualaLumpur") %>%
+  select(year, scenario, value) %>%
+  mutate(region = "Malaysia",
+         Units = "MtCO2")
 
-## Others (Buildings/Transport?)
+co2_plot_data <- bind_rows(co2_sector_to_year, co2_my)
+
+# Total emissions in Malaysia and KL over time
+co2_plot <- co2_plot_data %>%
+  filter(region != "Rest of Malaysia") %>%
+  ggplot(aes(year, value)) +
+  geom_line() +
+  facet_wrap(~region, scales = "free") +
+  labs(x = "Year",
+       y = "MtCO2",
+       title = "Total CO2 emissions over time in Malaysia and KL",
+       subtitle = "Source: GCAM Ref") ; co2_plot
+
+```
+
+<!-------------------------->
+## Buildings {.tabset .tabset-pills}
+<!-------------------------->
+
+### CO2 emissions
+``` {r building-co2, echo = FALSE, message = FALSE, fig.dim = c(9,4), fig.cap = "**Figure 10.4.1.1**"}
+
+co2_buildings <- fread("../data/Malaysia/gcam_diagnostics/gcam_query_co2_buildings.csv")
+  
+co2_buildings_total <- co2_buildings %>%
+  filter(region != "Malaysia") %>%
+  group_by(year, region) %>%
+  summarize(scenario, region, value = sum(value)) %>%
+  distinct(year, .keep_all = TRUE) %>%
+  mutate(value = value * 3.67,
+         units = "MtCO2")
+
+co2_buildings_my <- co2_buildings_total %>%
+  group_by(year) %>%
+  mutate(my_value = sum(value)) %>%
+  filter(region == "KualaLumpur") %>%
+  select(year, scenario,
+         value = my_value) %>%
+  mutate(region = "Malaysia",
+         Units = "MtCO2")
+
+co2_buildings_plot_data <- bind_rows(co2_buildings_total, co2_buildings_my)
+
+co2_buildings_plot <- co2_buildings_plot_data %>%
+  filter(region != "Rest of Malaysia") %>%
+  ggplot(aes(year, value)) +
+  geom_line() +
+  facet_wrap(~region, scales = "free") +
+  labs(x = "Year",
+       y = "MtCO2",
+       title = "Building CO2 emissions in Malaysia and KL",
+       subtitle = "Source: GCAM Ref") ; co2_buildings_plot
+
+```
+
+### Energy consumption
+``` {r building-energy, echo = FALSE, message = FALSE, fig.dim = c(9,4), fig.cap = "**Figure 10.4.2.1**"}
+
+building_energy <- fread("../data/Malaysia/gcam_diagnostics/gcam_query_building_energy.csv")
+
+building_final_energy <- building_energy %>%
+  group_by(year, region) %>%
+  summarize(Units, scenario, region, value = sum(value)) %>%
+  distinct(year, .keep_all = TRUE)
+
+building_fe_my <- building_final_energy %>%
+  group_by(year) %>%
+  mutate(my_value = sum(value)) %>%
+  filter(region == "KualaLumpur") %>%
+  select(year, scenario,
+         value = my_value) %>%
+  mutate(region = "Malaysia",
+         Units = "MtCO2")
+
+building_fe_plot_data <- bind_rows(building_final_energy, building_fe_my) %>%
+  filter(region != "Rest of Malaysia")
+
+building_final_energy_plot <- building_fe_plot_data %>%
+  ggplot(aes(year, value)) +
+  geom_line() +
+  facet_wrap(~region, scales = "free") +
+  labs(x = "Year",
+       y = "EJ",
+       title = "Building final energy consumption in Malaysia and KL",
+       subtitle = "Source: GCAM Ref") ; building_final_energy_plot
+
+```
+
+### Energy consumption by sector
+``` {r building-energy-sector, echo = FALSE, message = FALSE, fig.dim = c(9,4), fig.cap = "**Figure 10.4.3.1**"}
+
+building_energy_sector <- fread("../data/Malaysia/gcam_diagnostics/gcam_query_building_energy_sector.csv")
+
+be_sector <- building_energy_sector %>%
+  group_by(year, region, sector) %>%
+  summarize(Units, scenario, region, value = sum(value)) %>%
+  distinct(year, .keep_all = TRUE)
+
+be_sector_my <- be_sector %>%
+  group_by(year, sector) %>%
+  mutate(my_value = sum(value)) %>%
+  filter(region == "KualaLumpur") %>%
+  select(year, sector, scenario,
+         value = my_value) %>%
+  mutate(region = "Malaysia",
+         Units = "MtCO2")
+
+be_sector_plot_data <- bind_rows(be_sector, be_sector_my) %>%
+  filter(region != "Rest of Malaysia")
+be_sector_plot_data$sector <- be_sector_plot_data$sector %>% factor(levels = rev(c("comm others", "resid others", "comm cooling", "resid cooling")))
+
+be_sector_plot <- be_sector_plot_data %>%
+  ggplot(aes(year, value, fill = sector)) +
+  geom_col() +
+  scale_fill_manual(breaks = c("resid cooling", "comm cooling", "resid others", "comm others"),
+                       labels = c("Residential cooling", "Commerical cooling", "Residential - other", "Commerical - other"),
+                       values = c("#6865C1", "#342DFC", "#D4C592", "#BD8A25")) +
+  facet_wrap(~region, scales = "free") +
+  labs(x = "Year",
+       y = "EJ",
+       title = "Building final energy consumption by sector in Malaysia and KL",
+       subtitle = "Source: GCAM Ref",
+       fill = "Sector") ; be_sector_plot
+
+```
+
+<!-------------------------->
+## Transportation {.tabset .tabset-pills}
+<!-------------------------->
+
+### CO2 emissions
+``` {r transport-co2, echo = FALSE, message = FALSE, fig.dim = c(9,4), fig.cap = "**Figure 10.5.1.1**"}
+
+co2_subsector <- fread("../data/Malaysia/gcam_diagnostics/gcam_query_co2_subsector.csv")
+
+trn_emis_subsector <- co2_subsector %>%
+  filter(grepl("trn", sector))
+
+total_te <- trn_emis_subsector %>%
+  filter(region != "Malaysia") %>%
+  group_by(year, region) %>%
+  summarize(Units, scenario, region, value = sum(value)) %>%
+  distinct(year, .keep_all = TRUE) %>%
+  # convert from MtC to MtCO2
+  mutate(value = value * 3.67)
+
+te_my <- total_te %>%
+  group_by(year) %>%
+  mutate(value = sum(value)) %>%
+  filter(region == "KualaLumpur") %>%
+  select(year, scenario, value) %>%
+  mutate(region = "Malaysia",
+         Units = "MtCO2")
+
+te_plot_data <- bind_rows(total_te, te_my)
+
+total_te_plot <- te_plot_data %>%
+  filter(region != "Rest of Malaysia") %>%
+  ggplot(aes(year, value)) +
+  geom_line() +
+  facet_wrap(~region, scales = "free") +
+  labs(x = "Year",
+       y = "MtCO2",
+       title = "Total transportation emissions in Malaysia and KL",
+       subtitle = "Source: GCAM Ref"); total_te_plot
+
+```
+
+### CO2 emissions by mode
+``` {r transport-co2-mode, echo = FALSE, message = FALSE, fig.dim = c(9,4), fig.cap = "**Figure 10.5.2.1**"}
+tesub_rail <- trn_emis_subsector %>%
+  filter(subsector %in% c("Passenger Rail", "Freight Rail")) %>%
+  group_by(year, region) %>%
+  summarize(Units, scenario, region, rail = sum(value)) %>%
+  distinct(year, .keep_all = TRUE) %>%
+  pivot_longer(rail, names_to = "sector") %>%
+  # convert from MtC to MtCO2
+  mutate(value = value * 3.67)
+
+tesub_onroad <- trn_emis_subsector %>%
+  filter(subsector %in% c("Heavy truck", "Light truck", "Medium truck", "Large Car and Truck",
+                          "2W and 3W", "Mini car", "Car", "Bus")) %>%
+  group_by(year, region) %>%
+  summarize(Units, scenario, region, road = sum(value)) %>%
+  distinct(year, .keep_all = TRUE) %>%
+  pivot_longer(road, names_to = "sector") %>%
+  # convert from MtC to MtCO2
+  mutate(value = value * 3.67)
+
+tesub_ship <- trn_emis_subsector %>%
+  filter(subsector %in% c("Domestic Ship", "International Ship")) %>%
+  group_by(year, region) %>%
+  summarize(Units, scenario, region, ship = sum(value)) %>%
+  distinct(year, .keep_all = TRUE) %>%
+  pivot_longer(ship, names_to = "sector") %>%
+  # convert from MtC to MtCO2
+  mutate(value = value * 3.67)
+
+tesub_air <- trn_emis_subsector %>%
+  filter(subsector %in% c("International Aviation", "Domestic Aviation")) %>%
+  group_by(year, region) %>%
+  summarize(Units, scenario, region, air = sum(value)) %>%
+  distinct(year, .keep_all = TRUE) %>%
+  pivot_longer(air, names_to = "sector") %>%
+  # convert from MtC to MtCO2
+  mutate(value = value * 3.67)
+
+te_all_sectors <- bind_rows(tesub_onroad, tesub_rail, tesub_air, tesub_ship) %>%
+  filter(region != "Malaysia")
+
+te_all_my <- te_all_sectors %>%
+  group_by(year, sector) %>%
+  mutate(value = sum(value)) %>%
+  filter(region == "KualaLumpur") %>%
+  select(year, sector, scenario, value) %>%
+  mutate(region = "Malaysia",
+         Units = "MtCO2")
+
+te_all_plot_data <- bind_rows(te_all_sectors, te_all_my)
+te_all_plot_data$sector <- te_all_plot_data$sector %>% factor(levels = rev(c("air", "road", "ship", "rail")))
+
+## PLOT
+te_mode_plot <- te_all_plot_data %>%
+  filter(region != "Rest of Malaysia") %>%
+  ggplot(aes(year, value, fill = sector)) +
+  geom_col() +
+  facet_wrap(~region, scales = "free") +
+  scale_fill_manual(breaks = c("rail", "ship", "road", "air"),
+                       labels = c("Rail", "Ship", "Road", "Air"),
+                       values = c("#58A989", "#2f4e79", "grey60", "cadetblue3")) +
+  labs(x = "Year",
+       y = "MtCO2",
+       title = "Transportation emissions by mode in Malaysia and KL",
+       subtitle = "Source: GCAM Ref",
+       fill = "Sector"); te_mode_plot
+
+```
+
+### CO2 emissions by class - road
+``` {r transport-co2-class-road, echo = FALSE, message = FALSE, fig.dim = c(9,4), fig.cap = "**Figure 10.5.3.1**"}
+
+tesub_truck <- trn_emis_subsector %>%
+  filter(subsector %in% c("Heavy truck", "Light truck", "Medium truck",
+                          "Large Car and Truck")) %>%
+  group_by(year, region) %>%
+  summarize(Units, scenario, region, truck = sum(value)) %>%
+  distinct(year, .keep_all = TRUE) %>%
+  pivot_longer(truck, names_to = "sector") %>%
+  # convert from MtC to MtCO2
+  mutate(value = value * 3.67)
+
+tesub_car <- trn_emis_subsector %>%
+  filter(subsector %in% c("Car", "Mini car")) %>%
+  group_by(year, region) %>%
+  summarize(Units, scenario, region, car = sum(value)) %>%
+  distinct(year, .keep_all = TRUE) %>%
+  pivot_longer(car, names_to = "sector") %>%
+  # convert from MtC to MtCO2
+  mutate(value = value * 3.67)
+
+tesub_bus <- trn_emis_subsector %>%
+  filter(subsector == "Bus") %>%
+  mutate(value = value * 3.67) %>%
+  select(!sector) %>%
+  rename(sector = subsector)
+
+tesub_motorc <- trn_emis_subsector %>%
+  filter(subsector == "2W and 3W") %>%
+  mutate(value = value * 3.67,
+         subsector = "motorcycle") %>%
+  select(!sector) %>%
+  rename(sector = subsector)
+
+te_class <- bind_rows(tesub_truck, tesub_bus, tesub_car, tesub_motorc) %>%
+  mutate(Units = "MtCO2") %>%
+  filter(region != "Malaysia")
+
+# Need to manually compute Malaysia values
+te_my <- te_class %>%
+  group_by(year, sector) %>%
+  mutate(my_value = sum(value)) %>%
+  filter(region == "KualaLumpur") %>%
+  select(year, sector, scenario,
+         value = my_value) %>%
+  mutate(region = "Malaysia",
+         Units = "MtCO2")
+
+te_class_plot_data <- bind_rows(te_class, te_my)
+te_class_plot_data$sector <- te_class_plot_data$sector %>% factor(levels = rev(c("truck", "motorcycle", "Bus", "car")))
+
+te_class_plot <- te_class_plot_data %>%
+  filter(region != "Rest of Malaysia") %>%
+  ggplot(aes(year, value, fill = sector)) +
+  geom_col() +
+  scale_fill_manual(breaks = c("car", "Bus", "motorcycle", "truck"),
+                  labels = c("Car", "Bus", "Motorcycle", "Truck"),
+                  values = c("red", "yellowgreen", "#5E85D2", "#792f2f")) +
+  facet_wrap(~region, scales = "free") +
+  labs(x = "Year",
+       y = "MtCO2",
+       title = "Transportation CO2 emissions by class in Malaysia and KL",
+       subtitle = "Source: GCAM Ref",
+       fill = "Sector"); te_class_plot
+
+```
 
 <br>
 

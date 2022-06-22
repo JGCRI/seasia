@@ -1,0 +1,1613 @@
+Units,scenario,region,sector,subsector,year,value
+MTC,Ref_cities,KualaLumpur,comm others,gas,1990,0.000455813
+MTC,Ref_cities,KualaLumpur,comm others,gas,2005,0.00218538
+MTC,Ref_cities,KualaLumpur,comm others,gas,2010,0.00284568
+MTC,Ref_cities,KualaLumpur,comm others,gas,2015,0.00228336
+MTC,Ref_cities,KualaLumpur,comm others,gas,2020,0.00231551
+MTC,Ref_cities,KualaLumpur,comm others,gas,2025,0.00258554
+MTC,Ref_cities,KualaLumpur,comm others,gas,2030,0.00277788
+MTC,Ref_cities,KualaLumpur,comm others,gas,2035,0.00286234
+MTC,Ref_cities,KualaLumpur,comm others,gas,2040,0.00290539
+MTC,Ref_cities,KualaLumpur,comm others,gas,2045,0.00295979
+MTC,Ref_cities,KualaLumpur,comm others,gas,2050,0.00307628
+MTC,Ref_cities,KualaLumpur,comm others,gas,2055,0.0031845
+MTC,Ref_cities,KualaLumpur,comm others,gas,2060,0.00317829
+MTC,Ref_cities,KualaLumpur,comm others,gas,2065,0.00316435
+MTC,Ref_cities,KualaLumpur,comm others,gas,2070,0.00299173
+MTC,Ref_cities,KualaLumpur,comm others,gas,2075,0.00290929
+MTC,Ref_cities,KualaLumpur,comm others,gas,2080,0.00307851
+MTC,Ref_cities,KualaLumpur,comm others,gas,2085,0.00311606
+MTC,Ref_cities,KualaLumpur,comm others,gas,2090,0.00300946
+MTC,Ref_cities,KualaLumpur,comm others,gas,2095,0.00279684
+MTC,Ref_cities,KualaLumpur,comm others,gas,2100,0.00254066
+MTC,Ref_cities,KualaLumpur,comm others,refined liquids,1990,0.0314575
+MTC,Ref_cities,KualaLumpur,comm others,refined liquids,2005,0.0991484
+MTC,Ref_cities,KualaLumpur,comm others,refined liquids,2010,0.163164
+MTC,Ref_cities,KualaLumpur,comm others,refined liquids,2015,0.102677
+MTC,Ref_cities,KualaLumpur,comm others,refined liquids,2020,0.0825856
+MTC,Ref_cities,KualaLumpur,comm others,refined liquids,2025,0.0847706
+MTC,Ref_cities,KualaLumpur,comm others,refined liquids,2030,0.0802455
+MTC,Ref_cities,KualaLumpur,comm others,refined liquids,2035,0.0742992
+MTC,Ref_cities,KualaLumpur,comm others,refined liquids,2040,0.0689352
+MTC,Ref_cities,KualaLumpur,comm others,refined liquids,2045,0.063644
+MTC,Ref_cities,KualaLumpur,comm others,refined liquids,2050,0.0615555
+MTC,Ref_cities,KualaLumpur,comm others,refined liquids,2055,0.0584499
+MTC,Ref_cities,KualaLumpur,comm others,refined liquids,2060,0.0527882
+MTC,Ref_cities,KualaLumpur,comm others,refined liquids,2065,0.0482662
+MTC,Ref_cities,KualaLumpur,comm others,refined liquids,2070,0.0418371
+MTC,Ref_cities,KualaLumpur,comm others,refined liquids,2075,0.0372623
+MTC,Ref_cities,KualaLumpur,comm others,refined liquids,2080,0.0364217
+MTC,Ref_cities,KualaLumpur,comm others,refined liquids,2085,0.034518
+MTC,Ref_cities,KualaLumpur,comm others,refined liquids,2090,0.0317824
+MTC,Ref_cities,KualaLumpur,comm others,refined liquids,2095,0.0282296
+MTC,Ref_cities,KualaLumpur,comm others,refined liquids,2100,0.0245941
+MTC,Ref_cities,KualaLumpur,industrial energy use,biomass,1975,0.0693547
+MTC,Ref_cities,KualaLumpur,industrial energy use,biomass,1990,0.109326
+MTC,Ref_cities,KualaLumpur,industrial energy use,biomass,2005,0.125598
+MTC,Ref_cities,KualaLumpur,industrial energy use,biomass,2010,0.0430445
+MTC,Ref_cities,KualaLumpur,industrial energy use,biomass,2015,0.0010971
+MTC,Ref_cities,KualaLumpur,industrial energy use,biomass,2020,0.00120178
+MTC,Ref_cities,KualaLumpur,industrial energy use,biomass,2025,0.00129807
+MTC,Ref_cities,KualaLumpur,industrial energy use,biomass,2030,0.00133993
+MTC,Ref_cities,KualaLumpur,industrial energy use,biomass,2035,0.00136079
+MTC,Ref_cities,KualaLumpur,industrial energy use,biomass,2040,0.00134137
+MTC,Ref_cities,KualaLumpur,industrial energy use,biomass,2045,0.0013329
+MTC,Ref_cities,KualaLumpur,industrial energy use,biomass,2050,0.00137192
+MTC,Ref_cities,KualaLumpur,industrial energy use,biomass,2055,0.00139978
+MTC,Ref_cities,KualaLumpur,industrial energy use,biomass,2060,0.00139678
+MTC,Ref_cities,KualaLumpur,industrial energy use,biomass,2065,0.00140139
+MTC,Ref_cities,KualaLumpur,industrial energy use,biomass,2070,0.00137586
+MTC,Ref_cities,KualaLumpur,industrial energy use,biomass,2075,0.00135903
+MTC,Ref_cities,KualaLumpur,industrial energy use,biomass,2080,0.00139534
+MTC,Ref_cities,KualaLumpur,industrial energy use,biomass,2085,0.00142483
+MTC,Ref_cities,KualaLumpur,industrial energy use,biomass,2090,0.00145299
+MTC,Ref_cities,KualaLumpur,industrial energy use,biomass,2095,0.00147189
+MTC,Ref_cities,KualaLumpur,industrial energy use,biomass,2100,0.00148941
+MTC,Ref_cities,KualaLumpur,industrial energy use,coal,1990,0.00914003
+MTC,Ref_cities,KualaLumpur,industrial energy use,coal,2005,0.0075266
+MTC,Ref_cities,KualaLumpur,industrial energy use,coal,2010,0.0804885
+MTC,Ref_cities,KualaLumpur,industrial energy use,coal,2015,0.0719246
+MTC,Ref_cities,KualaLumpur,industrial energy use,coal,2020,0.0742927
+MTC,Ref_cities,KualaLumpur,industrial energy use,coal,2025,0.0792529
+MTC,Ref_cities,KualaLumpur,industrial energy use,coal,2030,0.0798063
+MTC,Ref_cities,KualaLumpur,industrial energy use,coal,2035,0.080541
+MTC,Ref_cities,KualaLumpur,industrial energy use,coal,2040,0.0821765
+MTC,Ref_cities,KualaLumpur,industrial energy use,coal,2045,0.0842078
+MTC,Ref_cities,KualaLumpur,industrial energy use,coal,2050,0.0891749
+MTC,Ref_cities,KualaLumpur,industrial energy use,coal,2055,0.092913
+MTC,Ref_cities,KualaLumpur,industrial energy use,coal,2060,0.0935765
+MTC,Ref_cities,KualaLumpur,industrial energy use,coal,2065,0.0943341
+MTC,Ref_cities,KualaLumpur,industrial energy use,coal,2070,0.092631
+MTC,Ref_cities,KualaLumpur,industrial energy use,coal,2075,0.0916715
+MTC,Ref_cities,KualaLumpur,industrial energy use,coal,2080,0.0952003
+MTC,Ref_cities,KualaLumpur,industrial energy use,coal,2085,0.0977945
+MTC,Ref_cities,KualaLumpur,industrial energy use,coal,2090,0.100225
+MTC,Ref_cities,KualaLumpur,industrial energy use,coal,2095,0.101486
+MTC,Ref_cities,KualaLumpur,industrial energy use,coal,2100,0.102786
+MTC,Ref_cities,KualaLumpur,industrial energy use,gas,1990,0.122891
+MTC,Ref_cities,KualaLumpur,industrial energy use,gas,2005,1.3416
+MTC,Ref_cities,KualaLumpur,industrial energy use,gas,2010,0.784199
+MTC,Ref_cities,KualaLumpur,industrial energy use,gas,2015,1.1957
+MTC,Ref_cities,KualaLumpur,industrial energy use,gas,2020,1.26934
+MTC,Ref_cities,KualaLumpur,industrial energy use,gas,2025,1.34508
+MTC,Ref_cities,KualaLumpur,industrial energy use,gas,2030,1.40764
+MTC,Ref_cities,KualaLumpur,industrial energy use,gas,2035,1.43758
+MTC,Ref_cities,KualaLumpur,industrial energy use,gas,2040,1.44796
+MTC,Ref_cities,KualaLumpur,industrial energy use,gas,2045,1.47203
+MTC,Ref_cities,KualaLumpur,industrial energy use,gas,2050,1.50597
+MTC,Ref_cities,KualaLumpur,industrial energy use,gas,2055,1.54514
+MTC,Ref_cities,KualaLumpur,industrial energy use,gas,2060,1.56681
+MTC,Ref_cities,KualaLumpur,industrial energy use,gas,2065,1.58328
+MTC,Ref_cities,KualaLumpur,industrial energy use,gas,2070,1.56017
+MTC,Ref_cities,KualaLumpur,industrial energy use,gas,2075,1.5568
+MTC,Ref_cities,KualaLumpur,industrial energy use,gas,2080,1.61107
+MTC,Ref_cities,KualaLumpur,industrial energy use,gas,2085,1.62418
+MTC,Ref_cities,KualaLumpur,industrial energy use,gas,2090,1.59492
+MTC,Ref_cities,KualaLumpur,industrial energy use,gas,2095,1.54179
+MTC,Ref_cities,KualaLumpur,industrial energy use,gas,2100,1.47828
+MTC,Ref_cities,KualaLumpur,industrial energy use,refined liquids,1975,0.209339
+MTC,Ref_cities,KualaLumpur,industrial energy use,refined liquids,1990,0.435567
+MTC,Ref_cities,KualaLumpur,industrial energy use,refined liquids,2005,0.721975
+MTC,Ref_cities,KualaLumpur,industrial energy use,refined liquids,2010,0.676754
+MTC,Ref_cities,KualaLumpur,industrial energy use,refined liquids,2015,0.543194
+MTC,Ref_cities,KualaLumpur,industrial energy use,refined liquids,2020,0.503773
+MTC,Ref_cities,KualaLumpur,industrial energy use,refined liquids,2025,0.564403
+MTC,Ref_cities,KualaLumpur,industrial energy use,refined liquids,2030,0.605123
+MTC,Ref_cities,KualaLumpur,industrial energy use,refined liquids,2035,0.649859
+MTC,Ref_cities,KualaLumpur,industrial energy use,refined liquids,2040,0.69753
+MTC,Ref_cities,KualaLumpur,industrial energy use,refined liquids,2045,0.739389
+MTC,Ref_cities,KualaLumpur,industrial energy use,refined liquids,2050,0.799356
+MTC,Ref_cities,KualaLumpur,industrial energy use,refined liquids,2055,0.841537
+MTC,Ref_cities,KualaLumpur,industrial energy use,refined liquids,2060,0.85168
+MTC,Ref_cities,KualaLumpur,industrial energy use,refined liquids,2065,0.866295
+MTC,Ref_cities,KualaLumpur,industrial energy use,refined liquids,2070,0.853446
+MTC,Ref_cities,KualaLumpur,industrial energy use,refined liquids,2075,0.848094
+MTC,Ref_cities,KualaLumpur,industrial energy use,refined liquids,2080,0.882548
+MTC,Ref_cities,KualaLumpur,industrial energy use,refined liquids,2085,0.911904
+MTC,Ref_cities,KualaLumpur,industrial energy use,refined liquids,2090,0.939491
+MTC,Ref_cities,KualaLumpur,industrial energy use,refined liquids,2095,0.956573
+MTC,Ref_cities,KualaLumpur,industrial energy use,refined liquids,2100,0.970586
+MTC,Ref_cities,KualaLumpur,industrial feedstocks,gas,1990,0.0409966
+MTC,Ref_cities,KualaLumpur,industrial feedstocks,gas,2005,0.124044
+MTC,Ref_cities,KualaLumpur,industrial feedstocks,gas,2010,0.129927
+MTC,Ref_cities,KualaLumpur,industrial feedstocks,gas,2015,0.402835
+MTC,Ref_cities,KualaLumpur,industrial feedstocks,gas,2020,0.462077
+MTC,Ref_cities,KualaLumpur,industrial feedstocks,gas,2025,0.519411
+MTC,Ref_cities,KualaLumpur,industrial feedstocks,gas,2030,0.584212
+MTC,Ref_cities,KualaLumpur,industrial feedstocks,gas,2035,0.646964
+MTC,Ref_cities,KualaLumpur,industrial feedstocks,gas,2040,0.70398
+MTC,Ref_cities,KualaLumpur,industrial feedstocks,gas,2045,0.759894
+MTC,Ref_cities,KualaLumpur,industrial feedstocks,gas,2050,0.808072
+MTC,Ref_cities,KualaLumpur,industrial feedstocks,gas,2055,0.85746
+MTC,Ref_cities,KualaLumpur,industrial feedstocks,gas,2060,0.907804
+MTC,Ref_cities,KualaLumpur,industrial feedstocks,gas,2065,0.95215
+MTC,Ref_cities,KualaLumpur,industrial feedstocks,gas,2070,0.992885
+MTC,Ref_cities,KualaLumpur,industrial feedstocks,gas,2075,1.03115
+MTC,Ref_cities,KualaLumpur,industrial feedstocks,gas,2080,1.0634
+MTC,Ref_cities,KualaLumpur,industrial feedstocks,gas,2085,1.09052
+MTC,Ref_cities,KualaLumpur,industrial feedstocks,gas,2090,1.11086
+MTC,Ref_cities,KualaLumpur,industrial feedstocks,gas,2095,1.13031
+MTC,Ref_cities,KualaLumpur,industrial feedstocks,gas,2100,1.14696
+MTC,Ref_cities,KualaLumpur,resid others,biomass,1990,0.0414941
+MTC,Ref_cities,KualaLumpur,resid others,biomass,2005,0.0329337
+MTC,Ref_cities,KualaLumpur,resid others,biomass,2010,0.0222825
+MTC,Ref_cities,KualaLumpur,resid others,biomass,2015,0.000154101
+MTC,Ref_cities,KualaLumpur,resid others,biomass,2020,0.000166704
+MTC,Ref_cities,KualaLumpur,resid others,biomass,2025,0.00017462
+MTC,Ref_cities,KualaLumpur,resid others,biomass,2030,0.000169369
+MTC,Ref_cities,KualaLumpur,resid others,biomass,2035,0.00015545
+MTC,Ref_cities,KualaLumpur,resid others,biomass,2040,0.00013444
+MTC,Ref_cities,KualaLumpur,resid others,biomass,2045,0.00011725
+MTC,Ref_cities,KualaLumpur,resid others,biomass,2050,0.000108016
+MTC,Ref_cities,KualaLumpur,resid others,biomass,2055,9.94159e-05
+MTC,Ref_cities,KualaLumpur,resid others,biomass,2060,8.88312e-05
+MTC,Ref_cities,KualaLumpur,resid others,biomass,2065,8.0378e-05
+MTC,Ref_cities,KualaLumpur,resid others,biomass,2070,6.99445e-05
+MTC,Ref_cities,KualaLumpur,resid others,biomass,2075,6.22545e-05
+MTC,Ref_cities,KualaLumpur,resid others,biomass,2080,6.0142e-05
+MTC,Ref_cities,KualaLumpur,resid others,biomass,2085,5.65328e-05
+MTC,Ref_cities,KualaLumpur,resid others,biomass,2090,5.17281e-05
+MTC,Ref_cities,KualaLumpur,resid others,biomass,2095,4.59384e-05
+MTC,Ref_cities,KualaLumpur,resid others,biomass,2100,4.00199e-05
+MTC,Ref_cities,KualaLumpur,resid others,gas,1990,0.000274059
+MTC,Ref_cities,KualaLumpur,resid others,gas,2005,0.000475701
+MTC,Ref_cities,KualaLumpur,resid others,gas,2010,0.000569422
+MTC,Ref_cities,KualaLumpur,resid others,gas,2015,9.51405e-05
+MTC,Ref_cities,KualaLumpur,resid others,gas,2020,0.000107321
+MTC,Ref_cities,KualaLumpur,resid others,gas,2025,0.000127282
+MTC,Ref_cities,KualaLumpur,resid others,gas,2030,0.000145388
+MTC,Ref_cities,KualaLumpur,resid others,gas,2035,0.000157385
+MTC,Ref_cities,KualaLumpur,resid others,gas,2040,0.000165669
+MTC,Ref_cities,KualaLumpur,resid others,gas,2045,0.000173393
+MTC,Ref_cities,KualaLumpur,resid others,gas,2050,0.000183348
+MTC,Ref_cities,KualaLumpur,resid others,gas,2055,0.000192522
+MTC,Ref_cities,KualaLumpur,resid others,gas,2060,0.000194754
+MTC,Ref_cities,KualaLumpur,resid others,gas,2065,0.000195907
+MTC,Ref_cities,KualaLumpur,resid others,gas,2070,0.000187127
+MTC,Ref_cities,KualaLumpur,resid others,gas,2075,0.000183406
+MTC,Ref_cities,KualaLumpur,resid others,gas,2080,0.000194977
+MTC,Ref_cities,KualaLumpur,resid others,gas,2085,0.000198314
+MTC,Ref_cities,KualaLumpur,resid others,gas,2090,0.000192443
+MTC,Ref_cities,KualaLumpur,resid others,gas,2095,0.00017971
+MTC,Ref_cities,KualaLumpur,resid others,gas,2100,0.000163973
+MTC,Ref_cities,KualaLumpur,resid others,refined liquids,1990,0.0602737
+MTC,Ref_cities,KualaLumpur,resid others,refined liquids,2005,0.10282
+MTC,Ref_cities,KualaLumpur,resid others,refined liquids,2010,0.0932376
+MTC,Ref_cities,KualaLumpur,resid others,refined liquids,2015,0.0884965
+MTC,Ref_cities,KualaLumpur,resid others,refined liquids,2020,0.0791366
+MTC,Ref_cities,KualaLumpur,resid others,refined liquids,2025,0.0862519
+MTC,Ref_cities,KualaLumpur,resid others,refined liquids,2030,0.0867471
+MTC,Ref_cities,KualaLumpur,resid others,refined liquids,2035,0.0843373
+MTC,Ref_cities,KualaLumpur,resid others,refined liquids,2040,0.0811245
+MTC,Ref_cities,KualaLumpur,resid others,refined liquids,2045,0.0769258
+MTC,Ref_cities,KualaLumpur,resid others,refined liquids,2050,0.0756881
+MTC,Ref_cities,KualaLumpur,resid others,refined liquids,2055,0.0728888
+MTC,Ref_cities,KualaLumpur,resid others,refined liquids,2060,0.0666987
+MTC,Ref_cities,KualaLumpur,resid others,refined liquids,2065,0.0615977
+MTC,Ref_cities,KualaLumpur,resid others,refined liquids,2070,0.053927
+MTC,Ref_cities,KualaLumpur,resid others,refined liquids,2075,0.0483907
+MTC,Ref_cities,KualaLumpur,resid others,refined liquids,2080,0.0475036
+MTC,Ref_cities,KualaLumpur,resid others,refined liquids,2085,0.0452333
+MTC,Ref_cities,KualaLumpur,resid others,refined liquids,2090,0.0418512
+MTC,Ref_cities,KualaLumpur,resid others,refined liquids,2095,0.0373579
+MTC,Ref_cities,KualaLumpur,resid others,refined liquids,2100,0.0327014
+MTC,Ref_cities,KualaLumpur,trn_aviation_intl,International Aviation,1975,0.0108745
+MTC,Ref_cities,KualaLumpur,trn_aviation_intl,International Aviation,1990,0.0274386
+MTC,Ref_cities,KualaLumpur,trn_aviation_intl,International Aviation,2005,0.0874091
+MTC,Ref_cities,KualaLumpur,trn_aviation_intl,International Aviation,2010,0.103488
+MTC,Ref_cities,KualaLumpur,trn_aviation_intl,International Aviation,2015,0.136311
+MTC,Ref_cities,KualaLumpur,trn_aviation_intl,International Aviation,2020,0.146644
+MTC,Ref_cities,KualaLumpur,trn_aviation_intl,International Aviation,2025,0.164804
+MTC,Ref_cities,KualaLumpur,trn_aviation_intl,International Aviation,2030,0.18326
+MTC,Ref_cities,KualaLumpur,trn_aviation_intl,International Aviation,2035,0.200312
+MTC,Ref_cities,KualaLumpur,trn_aviation_intl,International Aviation,2040,0.216667
+MTC,Ref_cities,KualaLumpur,trn_aviation_intl,International Aviation,2045,0.229717
+MTC,Ref_cities,KualaLumpur,trn_aviation_intl,International Aviation,2050,0.239519
+MTC,Ref_cities,KualaLumpur,trn_aviation_intl,International Aviation,2055,0.253157
+MTC,Ref_cities,KualaLumpur,trn_aviation_intl,International Aviation,2060,0.264459
+MTC,Ref_cities,KualaLumpur,trn_aviation_intl,International Aviation,2065,0.273713
+MTC,Ref_cities,KualaLumpur,trn_aviation_intl,International Aviation,2070,0.28067
+MTC,Ref_cities,KualaLumpur,trn_aviation_intl,International Aviation,2075,0.286063
+MTC,Ref_cities,KualaLumpur,trn_aviation_intl,International Aviation,2080,0.290337
+MTC,Ref_cities,KualaLumpur,trn_aviation_intl,International Aviation,2085,0.294025
+MTC,Ref_cities,KualaLumpur,trn_aviation_intl,International Aviation,2090,0.297228
+MTC,Ref_cities,KualaLumpur,trn_aviation_intl,International Aviation,2095,0.300098
+MTC,Ref_cities,KualaLumpur,trn_aviation_intl,International Aviation,2100,0.302459
+MTC,Ref_cities,KualaLumpur,trn_freight,Domestic Ship,1990,0.00189533
+MTC,Ref_cities,KualaLumpur,trn_freight,Domestic Ship,2005,0.000184231
+MTC,Ref_cities,KualaLumpur,trn_freight,Domestic Ship,2010,0.000554701
+MTC,Ref_cities,KualaLumpur,trn_freight,Domestic Ship,2015,0.00799443
+MTC,Ref_cities,KualaLumpur,trn_freight,Domestic Ship,2020,0.00835397
+MTC,Ref_cities,KualaLumpur,trn_freight,Domestic Ship,2025,0.00977586
+MTC,Ref_cities,KualaLumpur,trn_freight,Domestic Ship,2030,0.0115826
+MTC,Ref_cities,KualaLumpur,trn_freight,Domestic Ship,2035,0.0136655
+MTC,Ref_cities,KualaLumpur,trn_freight,Domestic Ship,2040,0.0158906
+MTC,Ref_cities,KualaLumpur,trn_freight,Domestic Ship,2045,0.0183616
+MTC,Ref_cities,KualaLumpur,trn_freight,Domestic Ship,2050,0.0207568
+MTC,Ref_cities,KualaLumpur,trn_freight,Domestic Ship,2055,0.022922
+MTC,Ref_cities,KualaLumpur,trn_freight,Domestic Ship,2060,0.0248977
+MTC,Ref_cities,KualaLumpur,trn_freight,Domestic Ship,2065,0.0268325
+MTC,Ref_cities,KualaLumpur,trn_freight,Domestic Ship,2070,0.0286199
+MTC,Ref_cities,KualaLumpur,trn_freight,Domestic Ship,2075,0.0304704
+MTC,Ref_cities,KualaLumpur,trn_freight,Domestic Ship,2080,0.0324821
+MTC,Ref_cities,KualaLumpur,trn_freight,Domestic Ship,2085,0.0346859
+MTC,Ref_cities,KualaLumpur,trn_freight,Domestic Ship,2090,0.0370243
+MTC,Ref_cities,KualaLumpur,trn_freight,Domestic Ship,2095,0.0395224
+MTC,Ref_cities,KualaLumpur,trn_freight,Domestic Ship,2100,0.0420582
+MTC,Ref_cities,KualaLumpur,trn_freight,Freight Rail,1975,0.000411319
+MTC,Ref_cities,KualaLumpur,trn_freight,Freight Rail,1990,0.00112309
+MTC,Ref_cities,KualaLumpur,trn_freight,Freight Rail,2005,0.00313977
+MTC,Ref_cities,KualaLumpur,trn_freight,Freight Rail,2010,0.00337721
+MTC,Ref_cities,KualaLumpur,trn_freight,Freight Rail,2015,0.00476648
+MTC,Ref_cities,KualaLumpur,trn_freight,Freight Rail,2020,0.00516035
+MTC,Ref_cities,KualaLumpur,trn_freight,Freight Rail,2025,0.00600898
+MTC,Ref_cities,KualaLumpur,trn_freight,Freight Rail,2030,0.00710827
+MTC,Ref_cities,KualaLumpur,trn_freight,Freight Rail,2035,0.00835928
+MTC,Ref_cities,KualaLumpur,trn_freight,Freight Rail,2040,0.00967628
+MTC,Ref_cities,KualaLumpur,trn_freight,Freight Rail,2045,0.0111315
+MTC,Ref_cities,KualaLumpur,trn_freight,Freight Rail,2050,0.0124892
+MTC,Ref_cities,KualaLumpur,trn_freight,Freight Rail,2055,0.013733
+MTC,Ref_cities,KualaLumpur,trn_freight,Freight Rail,2060,0.0149194
+MTC,Ref_cities,KualaLumpur,trn_freight,Freight Rail,2065,0.0160512
+MTC,Ref_cities,KualaLumpur,trn_freight,Freight Rail,2070,0.0171666
+MTC,Ref_cities,KualaLumpur,trn_freight,Freight Rail,2075,0.0182617
+MTC,Ref_cities,KualaLumpur,trn_freight,Freight Rail,2080,0.0192775
+MTC,Ref_cities,KualaLumpur,trn_freight,Freight Rail,2085,0.0204281
+MTC,Ref_cities,KualaLumpur,trn_freight,Freight Rail,2090,0.0216873
+MTC,Ref_cities,KualaLumpur,trn_freight,Freight Rail,2095,0.0230883
+MTC,Ref_cities,KualaLumpur,trn_freight,Freight Rail,2100,0.024633
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Heavy truck,1975,0.00539594
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Heavy truck,1990,0.0147166
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Heavy truck,2005,0.0411149
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Heavy truck,2010,0.0442271
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Heavy truck,2015,0.0624249
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Heavy truck,2020,0.068576572
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Heavy truck,2025,0.076661696
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Heavy truck,2030,0.08364857
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Heavy truck,2035,0.089195133
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Heavy truck,2040,0.09706925
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Heavy truck,2045,0.104844148
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Heavy truck,2050,0.112958414
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Heavy truck,2055,0.121799824
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Heavy truck,2060,0.1309362
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Heavy truck,2065,0.13986494
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Heavy truck,2070,0.14832706
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Heavy truck,2075,0.15658048
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Heavy truck,2080,0.16513125
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Heavy truck,2085,0.17441213
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Heavy truck,2090,0.18449024
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Heavy truck,2095,0.19535838
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Heavy truck,2100,0.20700724
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Light truck,1975,0.0023797
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Light truck,1990,0.00649108
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Light truck,2005,0.0181352
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Light truck,2010,0.0195069
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Light truck,2015,0.0275341
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Light truck,2020,0.029583154
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Light truck,2025,0.032569526
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Light truck,2030,0.0351318939
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Light truck,2035,0.0365491124
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Light truck,2040,0.03906816
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Light truck,2045,0.041509157
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Light truck,2050,0.044064807
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Light truck,2055,0.047163176
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Light truck,2060,0.050593887
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Light truck,2065,0.054033811
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Light truck,2070,0.057324487
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Light truck,2075,0.060540634
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Light truck,2080,0.063934494
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Light truck,2085,0.067640288
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Light truck,2090,0.07166293
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Light truck,2095,0.07596933
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Light truck,2100,0.08053556
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Medium truck,1975,0.0231056
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Medium truck,1990,0.0630078
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Medium truck,2005,0.176026
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Medium truck,2010,0.189354
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Medium truck,2015,0.267259
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Medium truck,2020,0.29279451
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Medium truck,2025,0.32564642
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Medium truck,2030,0.35331363
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Medium truck,2035,0.373006082
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Medium truck,2040,0.40278273
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Medium truck,2045,0.43236309
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Medium truck,2050,0.46349237
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Medium truck,2055,0.49849309
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Medium truck,2060,0.53550708
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Medium truck,2065,0.57198466
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Medium truck,2070,0.60674415
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Medium truck,2075,0.64065829
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Medium truck,2080,0.67575661
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Medium truck,2085,0.7137911
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Medium truck,2090,0.7550762
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Medium truck,2095,0.7995996
+MTC,Ref_cities,KualaLumpur,trn_freight_road,Medium truck,2100,0.8473266
+MTC,Ref_cities,KualaLumpur,trn_pass,Domestic Aviation,1975,0.000676299
+MTC,Ref_cities,KualaLumpur,trn_pass,Domestic Aviation,1990,0.00170319
+MTC,Ref_cities,KualaLumpur,trn_pass,Domestic Aviation,2005,0.00543109
+MTC,Ref_cities,KualaLumpur,trn_pass,Domestic Aviation,2010,0.00643266
+MTC,Ref_cities,KualaLumpur,trn_pass,Domestic Aviation,2015,0.00847104
+MTC,Ref_cities,KualaLumpur,trn_pass,Domestic Aviation,2020,0.00957067
+MTC,Ref_cities,KualaLumpur,trn_pass,Domestic Aviation,2025,0.0113939
+MTC,Ref_cities,KualaLumpur,trn_pass,Domestic Aviation,2030,0.0133601
+MTC,Ref_cities,KualaLumpur,trn_pass,Domestic Aviation,2035,0.0152837
+MTC,Ref_cities,KualaLumpur,trn_pass,Domestic Aviation,2040,0.0169382
+MTC,Ref_cities,KualaLumpur,trn_pass,Domestic Aviation,2045,0.0182287
+MTC,Ref_cities,KualaLumpur,trn_pass,Domestic Aviation,2050,0.0191854
+MTC,Ref_cities,KualaLumpur,trn_pass,Domestic Aviation,2055,0.0202872
+MTC,Ref_cities,KualaLumpur,trn_pass,Domestic Aviation,2060,0.0211311
+MTC,Ref_cities,KualaLumpur,trn_pass,Domestic Aviation,2065,0.0217931
+MTC,Ref_cities,KualaLumpur,trn_pass,Domestic Aviation,2070,0.0222998
+MTC,Ref_cities,KualaLumpur,trn_pass,Domestic Aviation,2075,0.022662
+MTC,Ref_cities,KualaLumpur,trn_pass,Domestic Aviation,2080,0.022912
+MTC,Ref_cities,KualaLumpur,trn_pass,Domestic Aviation,2085,0.023085
+MTC,Ref_cities,KualaLumpur,trn_pass,Domestic Aviation,2090,0.0231855
+MTC,Ref_cities,KualaLumpur,trn_pass,Domestic Aviation,2095,0.0232294
+MTC,Ref_cities,KualaLumpur,trn_pass,Domestic Aviation,2100,0.0232078
+MTC,Ref_cities,KualaLumpur,trn_pass,Passenger Rail,1975,0.000492032
+MTC,Ref_cities,KualaLumpur,trn_pass,Passenger Rail,1990,0.00134256
+MTC,Ref_cities,KualaLumpur,trn_pass,Passenger Rail,2005,0.00375139
+MTC,Ref_cities,KualaLumpur,trn_pass,Passenger Rail,2010,0.0040356
+MTC,Ref_cities,KualaLumpur,trn_pass,Passenger Rail,2015,0.0056957
+MTC,Ref_cities,KualaLumpur,trn_pass,Passenger Rail,2020,0.00593498
+MTC,Ref_cities,KualaLumpur,trn_pass,Passenger Rail,2025,0.00611361
+MTC,Ref_cities,KualaLumpur,trn_pass,Passenger Rail,2030,0.00620019
+MTC,Ref_cities,KualaLumpur,trn_pass,Passenger Rail,2035,0.00621966
+MTC,Ref_cities,KualaLumpur,trn_pass,Passenger Rail,2040,0.00618721
+MTC,Ref_cities,KualaLumpur,trn_pass,Passenger Rail,2045,0.00612368
+MTC,Ref_cities,KualaLumpur,trn_pass,Passenger Rail,2050,0.00605873
+MTC,Ref_cities,KualaLumpur,trn_pass,Passenger Rail,2055,0.00598544
+MTC,Ref_cities,KualaLumpur,trn_pass,Passenger Rail,2060,0.00588945
+MTC,Ref_cities,KualaLumpur,trn_pass,Passenger Rail,2065,0.0057804
+MTC,Ref_cities,KualaLumpur,trn_pass,Passenger Rail,2070,0.00565796
+MTC,Ref_cities,KualaLumpur,trn_pass,Passenger Rail,2075,0.00552074
+MTC,Ref_cities,KualaLumpur,trn_pass,Passenger Rail,2080,0.00537431
+MTC,Ref_cities,KualaLumpur,trn_pass,Passenger Rail,2085,0.00521603
+MTC,Ref_cities,KualaLumpur,trn_pass,Passenger Rail,2090,0.00505214
+MTC,Ref_cities,KualaLumpur,trn_pass,Passenger Rail,2095,0.00488889
+MTC,Ref_cities,KualaLumpur,trn_pass,Passenger Rail,2100,0.00473223
+MTC,Ref_cities,KualaLumpur,trn_pass_road,Bus,1975,0.00980639
+MTC,Ref_cities,KualaLumpur,trn_pass_road,Bus,1990,0.0267188
+MTC,Ref_cities,KualaLumpur,trn_pass_road,Bus,2005,0.07624231
+MTC,Ref_cities,KualaLumpur,trn_pass_road,Bus,2010,0.08443203
+MTC,Ref_cities,KualaLumpur,trn_pass_road,Bus,2015,0.11776381
+MTC,Ref_cities,KualaLumpur,trn_pass_road,Bus,2020,0.15192816
+MTC,Ref_cities,KualaLumpur,trn_pass_road,Bus,2025,0.16001625
+MTC,Ref_cities,KualaLumpur,trn_pass_road,Bus,2030,0.12727909
+MTC,Ref_cities,KualaLumpur,trn_pass_road,Bus,2035,0.11234467
+MTC,Ref_cities,KualaLumpur,trn_pass_road,Bus,2040,0.10631989
+MTC,Ref_cities,KualaLumpur,trn_pass_road,Bus,2045,0.1041654
+MTC,Ref_cities,KualaLumpur,trn_pass_road,Bus,2050,0.10351737
+MTC,Ref_cities,KualaLumpur,trn_pass_road,Bus,2055,0.10449621
+MTC,Ref_cities,KualaLumpur,trn_pass_road,Bus,2060,0.10611864
+MTC,Ref_cities,KualaLumpur,trn_pass_road,Bus,2065,0.10733557
+MTC,Ref_cities,KualaLumpur,trn_pass_road,Bus,2070,0.10636606
+MTC,Ref_cities,KualaLumpur,trn_pass_road,Bus,2075,0.10442196
+MTC,Ref_cities,KualaLumpur,trn_pass_road,Bus,2080,0.10200885
+MTC,Ref_cities,KualaLumpur,trn_pass_road,Bus,2085,0.09954947
+MTC,Ref_cities,KualaLumpur,trn_pass_road,Bus,2090,0.09691652
+MTC,Ref_cities,KualaLumpur,trn_pass_road,Bus,2095,0.09420733
+MTC,Ref_cities,KualaLumpur,trn_pass_road,Bus,2100,0.09149885
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV,2W and 3W,1975,0.0194296
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV,2W and 3W,1990,0.0529429
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV,2W and 3W,2005,0.148072344
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV,2W and 3W,2010,0.159506397
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV,2W and 3W,2015,0.225013375
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV,2W and 3W,2020,0.16198738
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV,2W and 3W,2025,0.12915897
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV,2W and 3W,2030,0.13107742
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV,2W and 3W,2035,0.11964015
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV,2W and 3W,2040,0.10538625
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV,2W and 3W,2045,0.09501293
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV,2W and 3W,2050,0.0858552
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV,2W and 3W,2055,0.0810137
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV,2W and 3W,2060,0.0756506
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV,2W and 3W,2065,0.070489
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV,2W and 3W,2070,0.0663834
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV,2W and 3W,2075,0.0629614
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV,2W and 3W,2080,0.0603465
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV,2W and 3W,2085,0.0571674
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV,2W and 3W,2090,0.0537656
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV,2W and 3W,2095,0.0506253
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV,2W and 3W,2100,0.0489068
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Car,1975,0.0118853
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Car,1990,0.0323845
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Car,2005,0.091382318
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Car,2010,0.09966674
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Car,2015,0.13988238
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Car,2020,0.10882738
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Car,2025,0.090828192
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Car,2030,0.077381368
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Car,2035,0.063896439
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Car,2040,0.050487742
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Car,2045,0.0472319126
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Car,2050,0.0425788384
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Car,2055,0.0391075623
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Car,2060,0.0366821876
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Car,2065,0.0349090731
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Car,2070,0.0339411215
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Car,2075,0.0334636148
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Car,2080,0.0329690954
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Car,2085,0.0322676546
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Car,2090,0.0315426316
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Car,2095,0.0308249432
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Car,2100,0.0300379845
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Large Car and Truck,1975,0.00365339
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Large Car and Truck,1990,0.00995618
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Large Car and Truck,2005,0.028093444
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Large Car and Truck,2010,0.030639198
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Large Car and Truck,2015,0.043002885
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Large Car and Truck,2020,0.033957937
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Large Car and Truck,2025,0.029131637
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Large Car and Truck,2030,0.028315437
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Large Car and Truck,2035,0.0274368165
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Large Car and Truck,2040,0.0272739821
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Large Car and Truck,2045,0.0286874367
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Large Car and Truck,2050,0.0307636755
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Large Car and Truck,2055,0.03272599
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Large Car and Truck,2060,0.0335609884
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Large Car and Truck,2065,0.0337312001
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Large Car and Truck,2070,0.033929541
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Large Car and Truck,2075,0.034271868
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Large Car and Truck,2080,0.034559826
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Large Car and Truck,2085,0.034600429
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Large Car and Truck,2090,0.034617213
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Large Car and Truck,2095,0.034655436
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Large Car and Truck,2100,0.034614752
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Mini Car,1975,0.00340447
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Mini Car,1990,0.00927624
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Mini Car,2005,0.026174188
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Mini Car,2010,0.028547028
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Mini Car,2015,0.040065856
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Mini Car,2020,0.031170886
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Mini Car,2025,0.0284976818
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Mini Car,2030,0.0317248106
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Mini Car,2035,0.032582336
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Mini Car,2040,0.0328732302
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Mini Car,2045,0.0340964002
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Mini Car,2050,0.0359220925
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Mini Car,2055,0.0371604496
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Mini Car,2060,0.0371185768
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Mini Car,2065,0.0362832972
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Mini Car,2070,0.0354713825
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Mini Car,2075,0.0347718867
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Mini Car,2080,0.0340600467
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Mini Car,2085,0.0331368779
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Mini Car,2090,0.032193874
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Mini Car,2095,0.0312660437
+MTC,Ref_cities,KualaLumpur,trn_pass_road_LDV_4W,Mini Car,2100,0.0302853536
+MTC,Ref_cities,KualaLumpur,trn_shipping_intl,International Ship,1975,0.0032349
+MTC,Ref_cities,KualaLumpur,trn_shipping_intl,International Ship,1990,0.00424242
+MTC,Ref_cities,KualaLumpur,trn_shipping_intl,International Ship,2005,0.00540815
+MTC,Ref_cities,KualaLumpur,trn_shipping_intl,International Ship,2010,0.112771
+MTC,Ref_cities,KualaLumpur,trn_shipping_intl,International Ship,2015,0.0160345
+MTC,Ref_cities,KualaLumpur,trn_shipping_intl,International Ship,2020,0.016622
+MTC,Ref_cities,KualaLumpur,trn_shipping_intl,International Ship,2025,0.0180376
+MTC,Ref_cities,KualaLumpur,trn_shipping_intl,International Ship,2030,0.0196543
+MTC,Ref_cities,KualaLumpur,trn_shipping_intl,International Ship,2035,0.0214066
+MTC,Ref_cities,KualaLumpur,trn_shipping_intl,International Ship,2040,0.0231485
+MTC,Ref_cities,KualaLumpur,trn_shipping_intl,International Ship,2045,0.0247538
+MTC,Ref_cities,KualaLumpur,trn_shipping_intl,International Ship,2050,0.0262023
+MTC,Ref_cities,KualaLumpur,trn_shipping_intl,International Ship,2055,0.0274648
+MTC,Ref_cities,KualaLumpur,trn_shipping_intl,International Ship,2060,0.0285612
+MTC,Ref_cities,KualaLumpur,trn_shipping_intl,International Ship,2065,0.0295674
+MTC,Ref_cities,KualaLumpur,trn_shipping_intl,International Ship,2070,0.0304549
+MTC,Ref_cities,KualaLumpur,trn_shipping_intl,International Ship,2075,0.0313156
+MTC,Ref_cities,KualaLumpur,trn_shipping_intl,International Ship,2080,0.0322003
+MTC,Ref_cities,KualaLumpur,trn_shipping_intl,International Ship,2085,0.033139
+MTC,Ref_cities,KualaLumpur,trn_shipping_intl,International Ship,2090,0.0341107
+MTC,Ref_cities,KualaLumpur,trn_shipping_intl,International Ship,2095,0.0351188
+MTC,Ref_cities,KualaLumpur,trn_shipping_intl,International Ship,2100,0.0362647
+MTC,Ref_cities,Malaysia,backup_electricity,gas,2020,1.14334e-10
+MTC,Ref_cities,Malaysia,backup_electricity,gas,2025,6.21354e-10
+MTC,Ref_cities,Malaysia,backup_electricity,gas,2030,1.89173e-07
+MTC,Ref_cities,Malaysia,backup_electricity,gas,2035,0.000375851
+MTC,Ref_cities,Malaysia,backup_electricity,gas,2040,0.00624417
+MTC,Ref_cities,Malaysia,backup_electricity,gas,2045,0.0121689
+MTC,Ref_cities,Malaysia,backup_electricity,gas,2050,0.0234427
+MTC,Ref_cities,Malaysia,backup_electricity,gas,2055,0.0356255
+MTC,Ref_cities,Malaysia,backup_electricity,gas,2060,0.0375042
+MTC,Ref_cities,Malaysia,backup_electricity,gas,2065,0.0421114
+MTC,Ref_cities,Malaysia,backup_electricity,gas,2070,0.0332534
+MTC,Ref_cities,Malaysia,backup_electricity,gas,2075,0.0327051
+MTC,Ref_cities,Malaysia,backup_electricity,gas,2080,0.0565922
+MTC,Ref_cities,Malaysia,backup_electricity,gas,2085,0.0846991
+MTC,Ref_cities,Malaysia,backup_electricity,gas,2090,0.0944865
+MTC,Ref_cities,Malaysia,backup_electricity,gas,2095,0.0768431
+MTC,Ref_cities,Malaysia,backup_electricity,gas,2100,0.0619789
+MTC,Ref_cities,Malaysia,cement,cement,1975,0.197
+MTC,Ref_cities,Malaysia,cement,cement,1990,0.8
+MTC,Ref_cities,Malaysia,cement,cement,2005,2.429
+MTC,Ref_cities,Malaysia,cement,cement,2010,2.516
+MTC,Ref_cities,Malaysia,cement,cement,2015,2.516
+MTC,Ref_cities,Malaysia,cement,cement,2020,2.62731
+MTC,Ref_cities,Malaysia,cement,cement,2025,2.78807
+MTC,Ref_cities,Malaysia,cement,cement,2030,2.95034
+MTC,Ref_cities,Malaysia,cement,cement,2035,3.10314
+MTC,Ref_cities,Malaysia,cement,cement,2040,3.23394
+MTC,Ref_cities,Malaysia,cement,cement,2045,3.34356
+MTC,Ref_cities,Malaysia,cement,cement,2050,3.43068
+MTC,Ref_cities,Malaysia,cement,cement,2055,3.50294
+MTC,Ref_cities,Malaysia,cement,cement,2060,3.56673
+MTC,Ref_cities,Malaysia,cement,cement,2065,3.61279
+MTC,Ref_cities,Malaysia,cement,cement,2070,3.65365
+MTC,Ref_cities,Malaysia,cement,cement,2075,3.67625
+MTC,Ref_cities,Malaysia,cement,cement,2080,3.67028
+MTC,Ref_cities,Malaysia,cement,cement,2085,3.65158
+MTC,Ref_cities,Malaysia,cement,cement,2090,3.62149
+MTC,Ref_cities,Malaysia,cement,cement,2095,3.58672
+MTC,Ref_cities,Malaysia,cement,cement,2100,3.54854
+MTC,Ref_cities,Malaysia,elec_biomass (conv),biomass (conv),2010,0.3331217
+MTC,Ref_cities,Malaysia,elec_biomass (conv),biomass (conv),2015,0.22721626
+MTC,Ref_cities,Malaysia,elec_biomass (conv),biomass (conv),2020,0.32046124
+MTC,Ref_cities,Malaysia,elec_biomass (conv),biomass (conv),2025,0.35571577
+MTC,Ref_cities,Malaysia,elec_biomass (conv),biomass (conv),2030,0.42892089
+MTC,Ref_cities,Malaysia,elec_biomass (conv),biomass (conv),2035,0.48891606
+MTC,Ref_cities,Malaysia,elec_biomass (conv),biomass (conv),2040,0.53224809
+MTC,Ref_cities,Malaysia,elec_biomass (conv),biomass (conv),2045,0.54904491
+MTC,Ref_cities,Malaysia,elec_biomass (conv),biomass (conv),2050,0.57458324
+MTC,Ref_cities,Malaysia,elec_biomass (conv),biomass (conv),2055,0.601752674
+MTC,Ref_cities,Malaysia,elec_biomass (conv),biomass (conv),2060,0.632864837
+MTC,Ref_cities,Malaysia,elec_biomass (conv),biomass (conv),2065,0.738807882
+MTC,Ref_cities,Malaysia,elec_biomass (conv),biomass (conv),2070,0.7828409268
+MTC,Ref_cities,Malaysia,elec_biomass (conv),biomass (conv),2075,0.847977208
+MTC,Ref_cities,Malaysia,elec_biomass (conv),biomass (conv),2080,1.032924875
+MTC,Ref_cities,Malaysia,elec_biomass (conv),biomass (conv),2085,1.21643691
+MTC,Ref_cities,Malaysia,elec_biomass (conv),biomass (conv),2090,1.38866989
+MTC,Ref_cities,Malaysia,elec_biomass (conv),biomass (conv),2095,1.49799165
+MTC,Ref_cities,Malaysia,elec_biomass (conv),biomass (conv),2100,1.59244477
+MTC,Ref_cities,Malaysia,elec_biomass (IGCC),biomass (IGCC),2025,0.036466794
+MTC,Ref_cities,Malaysia,elec_biomass (IGCC),biomass (IGCC),2030,0.084260037
+MTC,Ref_cities,Malaysia,elec_biomass (IGCC),biomass (IGCC),2035,0.139095299
+MTC,Ref_cities,Malaysia,elec_biomass (IGCC),biomass (IGCC),2040,0.202677421
+MTC,Ref_cities,Malaysia,elec_biomass (IGCC),biomass (IGCC),2045,0.256051564
+MTC,Ref_cities,Malaysia,elec_biomass (IGCC),biomass (IGCC),2050,0.298068761
+MTC,Ref_cities,Malaysia,elec_biomass (IGCC),biomass (IGCC),2055,0.335843803
+MTC,Ref_cities,Malaysia,elec_biomass (IGCC),biomass (IGCC),2060,0.382148853
+MTC,Ref_cities,Malaysia,elec_biomass (IGCC),biomass (IGCC),2065,0.471533839
+MTC,Ref_cities,Malaysia,elec_biomass (IGCC),biomass (IGCC),2070,0.549210535
+MTC,Ref_cities,Malaysia,elec_biomass (IGCC),biomass (IGCC),2075,0.63321994
+MTC,Ref_cities,Malaysia,elec_biomass (IGCC),biomass (IGCC),2080,0.786498234
+MTC,Ref_cities,Malaysia,elec_biomass (IGCC),biomass (IGCC),2085,0.921620813
+MTC,Ref_cities,Malaysia,elec_biomass (IGCC),biomass (IGCC),2090,1.066049453
+MTC,Ref_cities,Malaysia,elec_biomass (IGCC),biomass (IGCC),2095,1.187847674
+MTC,Ref_cities,Malaysia,elec_biomass (IGCC),biomass (IGCC),2100,1.311186553
+MTC,Ref_cities,Malaysia,elec_coal (conv pul),coal (conv pul),1990,0.9290788
+MTC,Ref_cities,Malaysia,elec_coal (conv pul),coal (conv pul),2005,6.332131
+MTC,Ref_cities,Malaysia,elec_coal (conv pul),coal (conv pul),2010,14.800114
+MTC,Ref_cities,Malaysia,elec_coal (conv pul),coal (conv pul),2015,17.858228
+MTC,Ref_cities,Malaysia,elec_coal (conv pul),coal (conv pul),2020,22.4679717
+MTC,Ref_cities,Malaysia,elec_coal (conv pul),coal (conv pul),2025,23.6321686
+MTC,Ref_cities,Malaysia,elec_coal (conv pul),coal (conv pul),2030,24.3102107
+MTC,Ref_cities,Malaysia,elec_coal (conv pul),coal (conv pul),2035,24.3523879
+MTC,Ref_cities,Malaysia,elec_coal (conv pul),coal (conv pul),2040,23.9764018
+MTC,Ref_cities,Malaysia,elec_coal (conv pul),coal (conv pul),2045,23.0000423
+MTC,Ref_cities,Malaysia,elec_coal (conv pul),coal (conv pul),2050,21.5705755
+MTC,Ref_cities,Malaysia,elec_coal (conv pul),coal (conv pul),2055,20.17398572
+MTC,Ref_cities,Malaysia,elec_coal (conv pul),coal (conv pul),2060,19.22543607
+MTC,Ref_cities,Malaysia,elec_coal (conv pul),coal (conv pul),2065,18.94392841
+MTC,Ref_cities,Malaysia,elec_coal (conv pul),coal (conv pul),2070,18.98760636
+MTC,Ref_cities,Malaysia,elec_coal (conv pul),coal (conv pul),2075,18.36756318
+MTC,Ref_cities,Malaysia,elec_coal (conv pul),coal (conv pul),2080,13.20985052
+MTC,Ref_cities,Malaysia,elec_coal (conv pul),coal (conv pul),2085,12.10122291
+MTC,Ref_cities,Malaysia,elec_coal (conv pul),coal (conv pul),2090,11.23538852
+MTC,Ref_cities,Malaysia,elec_coal (conv pul),coal (conv pul),2095,10.53516228
+MTC,Ref_cities,Malaysia,elec_coal (conv pul),coal (conv pul),2100,9.92743238
+MTC,Ref_cities,Malaysia,elec_coal (IGCC),coal (IGCC),2025,0.9129542
+MTC,Ref_cities,Malaysia,elec_coal (IGCC),coal (IGCC),2030,1.8437637
+MTC,Ref_cities,Malaysia,elec_coal (IGCC),coal (IGCC),2035,2.7227518
+MTC,Ref_cities,Malaysia,elec_coal (IGCC),coal (IGCC),2040,3.6365922
+MTC,Ref_cities,Malaysia,elec_coal (IGCC),coal (IGCC),2045,4.37993285
+MTC,Ref_cities,Malaysia,elec_coal (IGCC),coal (IGCC),2050,4.85871928
+MTC,Ref_cities,Malaysia,elec_coal (IGCC),coal (IGCC),2055,5.21196279
+MTC,Ref_cities,Malaysia,elec_coal (IGCC),coal (IGCC),2060,5.61253719
+MTC,Ref_cities,Malaysia,elec_coal (IGCC),coal (IGCC),2065,6.19297077
+MTC,Ref_cities,Malaysia,elec_coal (IGCC),coal (IGCC),2070,6.76418641
+MTC,Ref_cities,Malaysia,elec_coal (IGCC),coal (IGCC),2075,7.27561284
+MTC,Ref_cities,Malaysia,elec_coal (IGCC),coal (IGCC),2080,7.83910129
+MTC,Ref_cities,Malaysia,elec_coal (IGCC),coal (IGCC),2085,7.51370549
+MTC,Ref_cities,Malaysia,elec_coal (IGCC),coal (IGCC),2090,7.24702077
+MTC,Ref_cities,Malaysia,elec_coal (IGCC),coal (IGCC),2095,6.99764881
+MTC,Ref_cities,Malaysia,elec_coal (IGCC),coal (IGCC),2100,6.75477294
+MTC,Ref_cities,Malaysia,elec_gas (CC),gas (CC),1990,0.27004268
+MTC,Ref_cities,Malaysia,elec_gas (CC),gas (CC),2005,1.4011154
+MTC,Ref_cities,Malaysia,elec_gas (CC),gas (CC),2020,0.94565
+MTC,Ref_cities,Malaysia,elec_gas (CC),gas (CC),2025,1.7994751
+MTC,Ref_cities,Malaysia,elec_gas (CC),gas (CC),2030,3.2090088
+MTC,Ref_cities,Malaysia,elec_gas (CC),gas (CC),2035,5.0472046
+MTC,Ref_cities,Malaysia,elec_gas (CC),gas (CC),2040,7.3309549
+MTC,Ref_cities,Malaysia,elec_gas (CC),gas (CC),2045,9.3585689
+MTC,Ref_cities,Malaysia,elec_gas (CC),gas (CC),2050,10.660022
+MTC,Ref_cities,Malaysia,elec_gas (CC),gas (CC),2055,11.6461204
+MTC,Ref_cities,Malaysia,elec_gas (CC),gas (CC),2060,12.7799912
+MTC,Ref_cities,Malaysia,elec_gas (CC),gas (CC),2065,13.5933028
+MTC,Ref_cities,Malaysia,elec_gas (CC),gas (CC),2070,14.3069663
+MTC,Ref_cities,Malaysia,elec_gas (CC),gas (CC),2075,14.4252894
+MTC,Ref_cities,Malaysia,elec_gas (CC),gas (CC),2080,14.4341634
+MTC,Ref_cities,Malaysia,elec_gas (CC),gas (CC),2085,13.8098363
+MTC,Ref_cities,Malaysia,elec_gas (CC),gas (CC),2090,13.3934972
+MTC,Ref_cities,Malaysia,elec_gas (CC),gas (CC),2095,13.4188225
+MTC,Ref_cities,Malaysia,elec_gas (CC),gas (CC),2100,13.6935417
+MTC,Ref_cities,Malaysia,elec_gas (steam/CT),gas (steam/CT),1990,0.5389526
+MTC,Ref_cities,Malaysia,elec_gas (steam/CT),gas (steam/CT),2005,6.441562
+MTC,Ref_cities,Malaysia,elec_gas (steam/CT),gas (steam/CT),2010,10.718443
+MTC,Ref_cities,Malaysia,elec_gas (steam/CT),gas (steam/CT),2015,10.109768
+MTC,Ref_cities,Malaysia,elec_gas (steam/CT),gas (steam/CT),2020,10.1718548
+MTC,Ref_cities,Malaysia,elec_gas (steam/CT),gas (steam/CT),2025,10.3020953
+MTC,Ref_cities,Malaysia,elec_gas (steam/CT),gas (steam/CT),2030,10.1636368
+MTC,Ref_cities,Malaysia,elec_gas (steam/CT),gas (steam/CT),2035,9.2323819
+MTC,Ref_cities,Malaysia,elec_gas (steam/CT),gas (steam/CT),2040,8.0444333
+MTC,Ref_cities,Malaysia,elec_gas (steam/CT),gas (steam/CT),2045,7.1190111
+MTC,Ref_cities,Malaysia,elec_gas (steam/CT),gas (steam/CT),2050,6.57136956
+MTC,Ref_cities,Malaysia,elec_gas (steam/CT),gas (steam/CT),2055,6.26643381
+MTC,Ref_cities,Malaysia,elec_gas (steam/CT),gas (steam/CT),2060,5.54170209
+MTC,Ref_cities,Malaysia,elec_gas (steam/CT),gas (steam/CT),2065,3.66748657
+MTC,Ref_cities,Malaysia,elec_gas (steam/CT),gas (steam/CT),2070,2.57758944
+MTC,Ref_cities,Malaysia,elec_gas (steam/CT),gas (steam/CT),2075,1.77981447
+MTC,Ref_cities,Malaysia,elec_gas (steam/CT),gas (steam/CT),2080,1.33824507
+MTC,Ref_cities,Malaysia,elec_gas (steam/CT),gas (steam/CT),2085,0.89784932
+MTC,Ref_cities,Malaysia,elec_gas (steam/CT),gas (steam/CT),2090,0.64298502
+MTC,Ref_cities,Malaysia,elec_gas (steam/CT),gas (steam/CT),2095,0.54056972
+MTC,Ref_cities,Malaysia,elec_gas (steam/CT),gas (steam/CT),2100,0.486896981
+MTC,Ref_cities,Malaysia,elec_refined liquids (CC),refined liquids (CC),2020,0.04224819
+MTC,Ref_cities,Malaysia,elec_refined liquids (CC),refined liquids (CC),2025,0.044328115
+MTC,Ref_cities,Malaysia,elec_refined liquids (CC),refined liquids (CC),2030,0.0688715212
+MTC,Ref_cities,Malaysia,elec_refined liquids (CC),refined liquids (CC),2035,0.0917071931
+MTC,Ref_cities,Malaysia,elec_refined liquids (CC),refined liquids (CC),2040,0.1205206678
+MTC,Ref_cities,Malaysia,elec_refined liquids (CC),refined liquids (CC),2045,0.122890535
+MTC,Ref_cities,Malaysia,elec_refined liquids (CC),refined liquids (CC),2050,0.1105274661
+MTC,Ref_cities,Malaysia,elec_refined liquids (CC),refined liquids (CC),2055,0.1088239543
+MTC,Ref_cities,Malaysia,elec_refined liquids (CC),refined liquids (CC),2060,0.1187497755
+MTC,Ref_cities,Malaysia,elec_refined liquids (CC),refined liquids (CC),2065,0.1470054473
+MTC,Ref_cities,Malaysia,elec_refined liquids (CC),refined liquids (CC),2070,0.142061158
+MTC,Ref_cities,Malaysia,elec_refined liquids (CC),refined liquids (CC),2075,0.135693304
+MTC,Ref_cities,Malaysia,elec_refined liquids (CC),refined liquids (CC),2080,0.165313675
+MTC,Ref_cities,Malaysia,elec_refined liquids (CC),refined liquids (CC),2085,0.184896885
+MTC,Ref_cities,Malaysia,elec_refined liquids (CC),refined liquids (CC),2090,0.205835136
+MTC,Ref_cities,Malaysia,elec_refined liquids (CC),refined liquids (CC),2095,0.210862686
+MTC,Ref_cities,Malaysia,elec_refined liquids (CC),refined liquids (CC),2100,0.220415143
+MTC,Ref_cities,Malaysia,elec_refined liquids (steam/CT),refined liquids (steam/CT),1990,2.4523451
+MTC,Ref_cities,Malaysia,elec_refined liquids (steam/CT),refined liquids (steam/CT),2005,0.4709424
+MTC,Ref_cities,Malaysia,elec_refined liquids (steam/CT),refined liquids (steam/CT),2010,0.6079577
+MTC,Ref_cities,Malaysia,elec_refined liquids (steam/CT),refined liquids (steam/CT),2015,0.3536166
+MTC,Ref_cities,Malaysia,elec_refined liquids (steam/CT),refined liquids (steam/CT),2020,0.16847122
+MTC,Ref_cities,Malaysia,elec_refined liquids (steam/CT),refined liquids (steam/CT),2025,0.139809005
+MTC,Ref_cities,Malaysia,elec_refined liquids (steam/CT),refined liquids (steam/CT),2030,0.125367829
+MTC,Ref_cities,Malaysia,elec_refined liquids (steam/CT),refined liquids (steam/CT),2035,0.105548182
+MTC,Ref_cities,Malaysia,elec_refined liquids (steam/CT),refined liquids (steam/CT),2040,0.092374322
+MTC,Ref_cities,Malaysia,elec_refined liquids (steam/CT),refined liquids (steam/CT),2045,0.079780543
+MTC,Ref_cities,Malaysia,elec_refined liquids (steam/CT),refined liquids (steam/CT),2050,0.0799803552
+MTC,Ref_cities,Malaysia,elec_refined liquids (steam/CT),refined liquids (steam/CT),2055,0.0805373913
+MTC,Ref_cities,Malaysia,elec_refined liquids (steam/CT),refined liquids (steam/CT),2060,0.0696833732
+MTC,Ref_cities,Malaysia,elec_refined liquids (steam/CT),refined liquids (steam/CT),2065,0.0505094427
+MTC,Ref_cities,Malaysia,elec_refined liquids (steam/CT),refined liquids (steam/CT),2070,0.0353934065
+MTC,Ref_cities,Malaysia,elec_refined liquids (steam/CT),refined liquids (steam/CT),2075,0.0254964991
+MTC,Ref_cities,Malaysia,elec_refined liquids (steam/CT),refined liquids (steam/CT),2080,0.023092469
+MTC,Ref_cities,Malaysia,elec_refined liquids (steam/CT),refined liquids (steam/CT),2085,0.0183989428
+MTC,Ref_cities,Malaysia,elec_refined liquids (steam/CT),refined liquids (steam/CT),2090,0.0155637307
+MTC,Ref_cities,Malaysia,elec_refined liquids (steam/CT),refined liquids (steam/CT),2095,0.0143424749
+MTC,Ref_cities,Malaysia,elec_refined liquids (steam/CT),refined liquids (steam/CT),2100,0.0142878559
+MTC,Ref_cities,Malaysia,gas pipeline,gas pipeline,1990,2.02992
+MTC,Ref_cities,Malaysia,gas pipeline,gas pipeline,2005,0.582524
+MTC,Ref_cities,Malaysia,gas pipeline,gas pipeline,2010,0.855358
+MTC,Ref_cities,Malaysia,gas pipeline,gas pipeline,2015,1.25956
+MTC,Ref_cities,Malaysia,gas pipeline,gas pipeline,2020,1.38157
+MTC,Ref_cities,Malaysia,gas pipeline,gas pipeline,2025,1.49452
+MTC,Ref_cities,Malaysia,gas pipeline,gas pipeline,2030,1.62564
+MTC,Ref_cities,Malaysia,gas pipeline,gas pipeline,2035,1.72441
+MTC,Ref_cities,Malaysia,gas pipeline,gas pipeline,2040,1.82365
+MTC,Ref_cities,Malaysia,gas pipeline,gas pipeline,2045,1.93137
+MTC,Ref_cities,Malaysia,gas pipeline,gas pipeline,2050,2.01971
+MTC,Ref_cities,Malaysia,gas pipeline,gas pipeline,2055,2.10344
+MTC,Ref_cities,Malaysia,gas pipeline,gas pipeline,2060,2.16337
+MTC,Ref_cities,Malaysia,gas pipeline,gas pipeline,2065,2.12879
+MTC,Ref_cities,Malaysia,gas pipeline,gas pipeline,2070,2.1185
+MTC,Ref_cities,Malaysia,gas pipeline,gas pipeline,2075,2.0961
+MTC,Ref_cities,Malaysia,gas pipeline,gas pipeline,2080,2.10824
+MTC,Ref_cities,Malaysia,gas pipeline,gas pipeline,2085,2.06519
+MTC,Ref_cities,Malaysia,gas pipeline,gas pipeline,2090,2.02693
+MTC,Ref_cities,Malaysia,gas pipeline,gas pipeline,2095,2.01379
+MTC,Ref_cities,Malaysia,gas pipeline,gas pipeline,2100,2.0139
+MTC,Ref_cities,Malaysia,gas processing,biomass gasification,2010,0.000699269
+MTC,Ref_cities,Malaysia,gas processing,biomass gasification,2015,0.0125751
+MTC,Ref_cities,Malaysia,gas processing,biomass gasification,2020,0.0161897
+MTC,Ref_cities,Malaysia,gas processing,biomass gasification,2025,0.0213037
+MTC,Ref_cities,Malaysia,gas processing,biomass gasification,2030,0.0231719
+MTC,Ref_cities,Malaysia,gas processing,biomass gasification,2035,0.0256939
+MTC,Ref_cities,Malaysia,gas processing,biomass gasification,2040,0.0290379
+MTC,Ref_cities,Malaysia,gas processing,biomass gasification,2045,0.0320244
+MTC,Ref_cities,Malaysia,gas processing,biomass gasification,2050,0.0383482
+MTC,Ref_cities,Malaysia,gas processing,biomass gasification,2055,0.0425854
+MTC,Ref_cities,Malaysia,gas processing,biomass gasification,2060,0.043013
+MTC,Ref_cities,Malaysia,gas processing,biomass gasification,2065,0.0421531
+MTC,Ref_cities,Malaysia,gas processing,biomass gasification,2070,0.041082
+MTC,Ref_cities,Malaysia,gas processing,biomass gasification,2075,0.0379912
+MTC,Ref_cities,Malaysia,gas processing,biomass gasification,2080,0.0359933
+MTC,Ref_cities,Malaysia,gas processing,biomass gasification,2085,0.0354944
+MTC,Ref_cities,Malaysia,gas processing,biomass gasification,2090,0.0382894
+MTC,Ref_cities,Malaysia,gas processing,biomass gasification,2095,0.0422086
+MTC,Ref_cities,Malaysia,gas processing,biomass gasification,2100,0.0469135
+MTC,Ref_cities,Malaysia,gas processing,coal gasification,2020,0.00618593
+MTC,Ref_cities,Malaysia,gas processing,coal gasification,2025,0.0170358
+MTC,Ref_cities,Malaysia,gas processing,coal gasification,2030,0.0285784
+MTC,Ref_cities,Malaysia,gas processing,coal gasification,2035,0.044593
+MTC,Ref_cities,Malaysia,gas processing,coal gasification,2040,0.0704921
+MTC,Ref_cities,Malaysia,gas processing,coal gasification,2045,0.103893
+MTC,Ref_cities,Malaysia,gas processing,coal gasification,2050,0.161503
+MTC,Ref_cities,Malaysia,gas processing,coal gasification,2055,0.225695
+MTC,Ref_cities,Malaysia,gas processing,coal gasification,2060,0.277761
+MTC,Ref_cities,Malaysia,gas processing,coal gasification,2065,0.326181
+MTC,Ref_cities,Malaysia,gas processing,coal gasification,2070,0.376011
+MTC,Ref_cities,Malaysia,gas processing,coal gasification,2075,0.411373
+MTC,Ref_cities,Malaysia,gas processing,coal gasification,2080,0.467345
+MTC,Ref_cities,Malaysia,gas processing,coal gasification,2085,0.547208
+MTC,Ref_cities,Malaysia,gas processing,coal gasification,2090,0.700038
+MTC,Ref_cities,Malaysia,gas processing,coal gasification,2095,0.910725
+MTC,Ref_cities,Malaysia,gas processing,coal gasification,2100,1.20061
+MTC,Ref_cities,Malaysia,H2 central production,biomass,2020,0.0022384
+MTC,Ref_cities,Malaysia,H2 central production,biomass,2025,0.00504895
+MTC,Ref_cities,Malaysia,H2 central production,biomass,2030,0.00802189
+MTC,Ref_cities,Malaysia,H2 central production,biomass,2035,0.01121
+MTC,Ref_cities,Malaysia,H2 central production,biomass,2040,0.0142099
+MTC,Ref_cities,Malaysia,H2 central production,biomass,2045,0.0174302
+MTC,Ref_cities,Malaysia,H2 central production,biomass,2050,0.0218441
+MTC,Ref_cities,Malaysia,H2 central production,biomass,2055,0.0225689
+MTC,Ref_cities,Malaysia,H2 central production,biomass,2060,0.0224552
+MTC,Ref_cities,Malaysia,H2 central production,biomass,2065,0.022315
+MTC,Ref_cities,Malaysia,H2 central production,biomass,2070,0.0225918
+MTC,Ref_cities,Malaysia,H2 central production,biomass,2075,0.0229356
+MTC,Ref_cities,Malaysia,H2 central production,biomass,2080,0.024371
+MTC,Ref_cities,Malaysia,H2 central production,biomass,2085,0.0259007
+MTC,Ref_cities,Malaysia,H2 central production,biomass,2090,0.0278733
+MTC,Ref_cities,Malaysia,H2 central production,biomass,2095,0.0297209
+MTC,Ref_cities,Malaysia,H2 central production,biomass,2100,0.0304375
+MTC,Ref_cities,Malaysia,H2 central production,coal,2020,0.0100391
+MTC,Ref_cities,Malaysia,H2 central production,coal,2025,0.0227023
+MTC,Ref_cities,Malaysia,H2 central production,coal,2030,0.0356743
+MTC,Ref_cities,Malaysia,H2 central production,coal,2035,0.0504519
+MTC,Ref_cities,Malaysia,H2 central production,coal,2040,0.068454
+MTC,Ref_cities,Malaysia,H2 central production,coal,2045,0.0895051
+MTC,Ref_cities,Malaysia,H2 central production,coal,2050,0.119396
+MTC,Ref_cities,Malaysia,H2 central production,coal,2055,0.1297
+MTC,Ref_cities,Malaysia,H2 central production,coal,2060,0.133778
+MTC,Ref_cities,Malaysia,H2 central production,coal,2065,0.13684
+MTC,Ref_cities,Malaysia,H2 central production,coal,2070,0.141377
+MTC,Ref_cities,Malaysia,H2 central production,coal,2075,0.147413
+MTC,Ref_cities,Malaysia,H2 central production,coal,2080,0.162944
+MTC,Ref_cities,Malaysia,H2 central production,coal,2085,0.178862
+MTC,Ref_cities,Malaysia,H2 central production,coal,2090,0.198155
+MTC,Ref_cities,Malaysia,H2 central production,coal,2095,0.216368
+MTC,Ref_cities,Malaysia,H2 central production,coal,2100,0.221808
+MTC,Ref_cities,Malaysia,H2 central production,gas,2020,0.00579439
+MTC,Ref_cities,Malaysia,H2 central production,gas,2025,0.0123992
+MTC,Ref_cities,Malaysia,H2 central production,gas,2030,0.0199064
+MTC,Ref_cities,Malaysia,H2 central production,gas,2035,0.027554
+MTC,Ref_cities,Malaysia,H2 central production,gas,2040,0.0351936
+MTC,Ref_cities,Malaysia,H2 central production,gas,2045,0.0436706
+MTC,Ref_cities,Malaysia,H2 central production,gas,2050,0.0526494
+MTC,Ref_cities,Malaysia,H2 central production,gas,2055,0.0534974
+MTC,Ref_cities,Malaysia,H2 central production,gas,2060,0.0536789
+MTC,Ref_cities,Malaysia,H2 central production,gas,2065,0.0528379
+MTC,Ref_cities,Malaysia,H2 central production,gas,2070,0.0533297
+MTC,Ref_cities,Malaysia,H2 central production,gas,2075,0.0547334
+MTC,Ref_cities,Malaysia,H2 central production,gas,2080,0.0584296
+MTC,Ref_cities,Malaysia,H2 central production,gas,2085,0.0603523
+MTC,Ref_cities,Malaysia,H2 central production,gas,2090,0.0601968
+MTC,Ref_cities,Malaysia,H2 central production,gas,2095,0.0589098
+MTC,Ref_cities,Malaysia,H2 central production,gas,2100,0.0552685
+MTC,Ref_cities,Malaysia,H2 forecourt production,gas,2020,0.00623409
+MTC,Ref_cities,Malaysia,H2 forecourt production,gas,2025,0.0139169
+MTC,Ref_cities,Malaysia,H2 forecourt production,gas,2030,0.0224939
+MTC,Ref_cities,Malaysia,H2 forecourt production,gas,2035,0.0318193
+MTC,Ref_cities,Malaysia,H2 forecourt production,gas,2040,0.0419156
+MTC,Ref_cities,Malaysia,H2 forecourt production,gas,2045,0.0539164
+MTC,Ref_cities,Malaysia,H2 forecourt production,gas,2050,0.0691549
+MTC,Ref_cities,Malaysia,H2 forecourt production,gas,2055,0.0753856
+MTC,Ref_cities,Malaysia,H2 forecourt production,gas,2060,0.0806227
+MTC,Ref_cities,Malaysia,H2 forecourt production,gas,2065,0.0860889
+MTC,Ref_cities,Malaysia,H2 forecourt production,gas,2070,0.0859309
+MTC,Ref_cities,Malaysia,H2 forecourt production,gas,2075,0.0873702
+MTC,Ref_cities,Malaysia,H2 forecourt production,gas,2080,0.0938313
+MTC,Ref_cities,Malaysia,H2 forecourt production,gas,2085,0.0979705
+MTC,Ref_cities,Malaysia,H2 forecourt production,gas,2090,0.0999702
+MTC,Ref_cities,Malaysia,H2 forecourt production,gas,2095,0.0994678
+MTC,Ref_cities,Malaysia,H2 forecourt production,gas,2100,0.0948279
+MTC,Ref_cities,Malaysia,N fertilizer,gas,1990,0.165456
+MTC,Ref_cities,Malaysia,N fertilizer,gas,2005,0.244578
+MTC,Ref_cities,Malaysia,N fertilizer,gas,2010,0.302749
+MTC,Ref_cities,Malaysia,N fertilizer,gas,2015,0.244316
+MTC,Ref_cities,Malaysia,N fertilizer,gas,2020,0.2505131
+MTC,Ref_cities,Malaysia,N fertilizer,gas,2025,0.2556415
+MTC,Ref_cities,Malaysia,N fertilizer,gas,2030,0.2560804
+MTC,Ref_cities,Malaysia,N fertilizer,gas,2035,0.2579747
+MTC,Ref_cities,Malaysia,N fertilizer,gas,2040,0.258308
+MTC,Ref_cities,Malaysia,N fertilizer,gas,2045,0.2610577
+MTC,Ref_cities,Malaysia,N fertilizer,gas,2050,0.2654869
+MTC,Ref_cities,Malaysia,N fertilizer,gas,2055,0.26219583
+MTC,Ref_cities,Malaysia,N fertilizer,gas,2060,0.26408686
+MTC,Ref_cities,Malaysia,N fertilizer,gas,2065,0.26474176
+MTC,Ref_cities,Malaysia,N fertilizer,gas,2070,0.26330657
+MTC,Ref_cities,Malaysia,N fertilizer,gas,2075,0.26143797
+MTC,Ref_cities,Malaysia,N fertilizer,gas,2080,0.25979951
+MTC,Ref_cities,Malaysia,N fertilizer,gas,2085,0.25775394
+MTC,Ref_cities,Malaysia,N fertilizer,gas,2090,0.25541228
+MTC,Ref_cities,Malaysia,N fertilizer,gas,2095,0.25250111
+MTC,Ref_cities,Malaysia,N fertilizer,gas,2100,0.24930659
+MTC,Ref_cities,Malaysia,N fertilizer,refined liquids,1975,0.0417791
+MTC,Ref_cities,Malaysia,process heat cement,biomass,1975,0.129446
+MTC,Ref_cities,Malaysia,process heat cement,biomass,1990,0.00541194
+MTC,Ref_cities,Malaysia,process heat cement,biomass,2005,0.0152973
+MTC,Ref_cities,Malaysia,process heat cement,biomass,2010,0.0162585
+MTC,Ref_cities,Malaysia,process heat cement,biomass,2015,0.0162585
+MTC,Ref_cities,Malaysia,process heat cement,biomass,2020,0.0216009
+MTC,Ref_cities,Malaysia,process heat cement,biomass,2025,0.0229756
+MTC,Ref_cities,Malaysia,process heat cement,biomass,2030,0.0245825
+MTC,Ref_cities,Malaysia,process heat cement,biomass,2035,0.0254751
+MTC,Ref_cities,Malaysia,process heat cement,biomass,2040,0.0247337
+MTC,Ref_cities,Malaysia,process heat cement,biomass,2045,0.024007
+MTC,Ref_cities,Malaysia,process heat cement,biomass,2050,0.0232975
+MTC,Ref_cities,Malaysia,process heat cement,biomass,2055,0.0227501
+MTC,Ref_cities,Malaysia,process heat cement,biomass,2060,0.0225015
+MTC,Ref_cities,Malaysia,process heat cement,biomass,2065,0.0222723
+MTC,Ref_cities,Malaysia,process heat cement,biomass,2070,0.0221391
+MTC,Ref_cities,Malaysia,process heat cement,biomass,2075,0.0217658
+MTC,Ref_cities,Malaysia,process heat cement,biomass,2080,0.0209399
+MTC,Ref_cities,Malaysia,process heat cement,biomass,2085,0.0202727
+MTC,Ref_cities,Malaysia,process heat cement,biomass,2090,0.0196612
+MTC,Ref_cities,Malaysia,process heat cement,biomass,2095,0.0191886
+MTC,Ref_cities,Malaysia,process heat cement,biomass,2100,0.0187221
+MTC,Ref_cities,Malaysia,process heat cement,coal,1975,0.0102839
+MTC,Ref_cities,Malaysia,process heat cement,coal,1990,0.526651
+MTC,Ref_cities,Malaysia,process heat cement,coal,2005,1.48881
+MTC,Ref_cities,Malaysia,process heat cement,coal,2010,1.5824
+MTC,Ref_cities,Malaysia,process heat cement,coal,2015,1.5824
+MTC,Ref_cities,Malaysia,process heat cement,coal,2020,1.91999
+MTC,Ref_cities,Malaysia,process heat cement,coal,2025,1.99938
+MTC,Ref_cities,Malaysia,process heat cement,coal,2030,2.05952
+MTC,Ref_cities,Malaysia,process heat cement,coal,2035,2.11663
+MTC,Ref_cities,Malaysia,process heat cement,coal,2040,2.16578
+MTC,Ref_cities,Malaysia,process heat cement,coal,2045,2.20003
+MTC,Ref_cities,Malaysia,process heat cement,coal,2050,2.22856
+MTC,Ref_cities,Malaysia,process heat cement,coal,2055,2.24246
+MTC,Ref_cities,Malaysia,process heat cement,coal,2060,2.24416
+MTC,Ref_cities,Malaysia,process heat cement,coal,2065,2.23376
+MTC,Ref_cities,Malaysia,process heat cement,coal,2070,2.22129
+MTC,Ref_cities,Malaysia,process heat cement,coal,2075,2.19655
+MTC,Ref_cities,Malaysia,process heat cement,coal,2080,2.16003
+MTC,Ref_cities,Malaysia,process heat cement,coal,2085,2.11801
+MTC,Ref_cities,Malaysia,process heat cement,coal,2090,2.07459
+MTC,Ref_cities,Malaysia,process heat cement,coal,2095,2.02812
+MTC,Ref_cities,Malaysia,process heat cement,coal,2100,1.97953
+MTC,Ref_cities,Malaysia,process heat cement,gas,1990,0.026726
+MTC,Ref_cities,Malaysia,process heat cement,gas,2005,0.0755512
+MTC,Ref_cities,Malaysia,process heat cement,gas,2010,0.0803
+MTC,Ref_cities,Malaysia,process heat cement,gas,2015,0.0803
+MTC,Ref_cities,Malaysia,process heat cement,gas,2020,0.101552
+MTC,Ref_cities,Malaysia,process heat cement,gas,2025,0.104737
+MTC,Ref_cities,Malaysia,process heat cement,gas,2030,0.114343
+MTC,Ref_cities,Malaysia,process heat cement,gas,2035,0.119303
+MTC,Ref_cities,Malaysia,process heat cement,gas,2040,0.119294
+MTC,Ref_cities,Malaysia,process heat cement,gas,2045,0.119395
+MTC,Ref_cities,Malaysia,process heat cement,gas,2050,0.114422
+MTC,Ref_cities,Malaysia,process heat cement,gas,2055,0.112255
+MTC,Ref_cities,Malaysia,process heat cement,gas,2060,0.113409
+MTC,Ref_cities,Malaysia,process heat cement,gas,2065,0.113158
+MTC,Ref_cities,Malaysia,process heat cement,gas,2070,0.112859
+MTC,Ref_cities,Malaysia,process heat cement,gas,2075,0.112627
+MTC,Ref_cities,Malaysia,process heat cement,gas,2080,0.10943
+MTC,Ref_cities,Malaysia,process heat cement,gas,2085,0.103679
+MTC,Ref_cities,Malaysia,process heat cement,gas,2090,0.094705
+MTC,Ref_cities,Malaysia,process heat cement,gas,2095,0.085926
+MTC,Ref_cities,Malaysia,process heat cement,gas,2100,0.0772893
+MTC,Ref_cities,Malaysia,process heat cement,refined liquids,1975,0.0116404
+MTC,Ref_cities,Malaysia,process heat cement,refined liquids,1990,0.0414994
+MTC,Ref_cities,Malaysia,process heat cement,refined liquids,2005,0.117318
+MTC,Ref_cities,Malaysia,process heat cement,refined liquids,2010,0.124692
+MTC,Ref_cities,Malaysia,process heat cement,refined liquids,2015,0.124692
+MTC,Ref_cities,Malaysia,process heat cement,refined liquids,2020,0.131799
+MTC,Ref_cities,Malaysia,process heat cement,refined liquids,2025,0.146032
+MTC,Ref_cities,Malaysia,process heat cement,refined liquids,2030,0.163079
+MTC,Ref_cities,Malaysia,process heat cement,refined liquids,2035,0.180569
+MTC,Ref_cities,Malaysia,process heat cement,refined liquids,2040,0.196136
+MTC,Ref_cities,Malaysia,process heat cement,refined liquids,2045,0.207308
+MTC,Ref_cities,Malaysia,process heat cement,refined liquids,2050,0.214585
+MTC,Ref_cities,Malaysia,process heat cement,refined liquids,2055,0.218209
+MTC,Ref_cities,Malaysia,process heat cement,refined liquids,2060,0.219686
+MTC,Ref_cities,Malaysia,process heat cement,refined liquids,2065,0.220857
+MTC,Ref_cities,Malaysia,process heat cement,refined liquids,2070,0.219774
+MTC,Ref_cities,Malaysia,process heat cement,refined liquids,2075,0.217154
+MTC,Ref_cities,Malaysia,process heat cement,refined liquids,2080,0.21196
+MTC,Ref_cities,Malaysia,process heat cement,refined liquids,2085,0.207698
+MTC,Ref_cities,Malaysia,process heat cement,refined liquids,2090,0.203328
+MTC,Ref_cities,Malaysia,process heat cement,refined liquids,2095,0.199029
+MTC,Ref_cities,Malaysia,process heat cement,refined liquids,2100,0.194951
+MTC,Ref_cities,Malaysia,refining,biomass liquids,2010,0.000238453
+MTC,Ref_cities,Malaysia,refining,biomass liquids,2015,0.0231352
+MTC,Ref_cities,Malaysia,refining,biomass liquids,2020,0.0226213
+MTC,Ref_cities,Malaysia,refining,biomass liquids,2025,0.09527113
+MTC,Ref_cities,Malaysia,refining,biomass liquids,2030,0.20683239
+MTC,Ref_cities,Malaysia,refining,biomass liquids,2035,0.38634716
+MTC,Ref_cities,Malaysia,refining,biomass liquids,2040,0.72047885
+MTC,Ref_cities,Malaysia,refining,biomass liquids,2045,1.17524565
+MTC,Ref_cities,Malaysia,refining,biomass liquids,2050,1.60423623
+MTC,Ref_cities,Malaysia,refining,biomass liquids,2055,1.88727592
+MTC,Ref_cities,Malaysia,refining,biomass liquids,2060,2.012484604
+MTC,Ref_cities,Malaysia,refining,biomass liquids,2065,2.083127931
+MTC,Ref_cities,Malaysia,refining,biomass liquids,2070,2.056646818
+MTC,Ref_cities,Malaysia,refining,biomass liquids,2075,2.035527028
+MTC,Ref_cities,Malaysia,refining,biomass liquids,2080,2.04700245
+MTC,Ref_cities,Malaysia,refining,biomass liquids,2085,2.06926399
+MTC,Ref_cities,Malaysia,refining,biomass liquids,2090,2.10224631
+MTC,Ref_cities,Malaysia,refining,biomass liquids,2095,2.136852141
+MTC,Ref_cities,Malaysia,refining,biomass liquids,2100,2.174019256
+MTC,Ref_cities,Malaysia,refining,coal to liquids,2025,0.00562975
+MTC,Ref_cities,Malaysia,refining,coal to liquids,2030,0.02307874
+MTC,Ref_cities,Malaysia,refining,coal to liquids,2035,0.06576193
+MTC,Ref_cities,Malaysia,refining,coal to liquids,2040,0.18181469
+MTC,Ref_cities,Malaysia,refining,coal to liquids,2045,0.39656205
+MTC,Ref_cities,Malaysia,refining,coal to liquids,2050,0.66474043
+MTC,Ref_cities,Malaysia,refining,coal to liquids,2055,0.90928257
+MTC,Ref_cities,Malaysia,refining,coal to liquids,2060,1.09156135
+MTC,Ref_cities,Malaysia,refining,coal to liquids,2065,1.288232005
+MTC,Ref_cities,Malaysia,refining,coal to liquids,2070,1.46050079
+MTC,Ref_cities,Malaysia,refining,coal to liquids,2075,1.71851135
+MTC,Ref_cities,Malaysia,refining,coal to liquids,2080,2.07403538
+MTC,Ref_cities,Malaysia,refining,coal to liquids,2085,2.4332352
+MTC,Ref_cities,Malaysia,refining,coal to liquids,2090,2.7575478
+MTC,Ref_cities,Malaysia,refining,coal to liquids,2095,3.0371583
+MTC,Ref_cities,Malaysia,refining,coal to liquids,2100,3.30823407
+MTC,Ref_cities,Malaysia,refining,gas to liquids,2005,0.156508
+MTC,Ref_cities,Malaysia,refining,gas to liquids,2010,0.141052
+MTC,Ref_cities,Malaysia,refining,gas to liquids,2015,0.0756498
+MTC,Ref_cities,Malaysia,refining,gas to liquids,2020,0.07392
+MTC,Ref_cities,Malaysia,refining,gas to liquids,2025,0.072867377
+MTC,Ref_cities,Malaysia,refining,gas to liquids,2030,0.070220325
+MTC,Ref_cities,Malaysia,refining,gas to liquids,2035,0.06554846
+MTC,Ref_cities,Malaysia,refining,gas to liquids,2040,0.064995434
+MTC,Ref_cities,Malaysia,refining,gas to liquids,2045,0.07714987
+MTC,Ref_cities,Malaysia,refining,gas to liquids,2050,0.09898433
+MTC,Ref_cities,Malaysia,refining,gas to liquids,2055,0.121563313
+MTC,Ref_cities,Malaysia,refining,gas to liquids,2060,0.137864466
+MTC,Ref_cities,Malaysia,refining,gas to liquids,2065,0.1577298117
+MTC,Ref_cities,Malaysia,refining,gas to liquids,2070,0.172834675
+MTC,Ref_cities,Malaysia,refining,gas to liquids,2075,0.195102996
+MTC,Ref_cities,Malaysia,refining,gas to liquids,2080,0.224963045
+MTC,Ref_cities,Malaysia,refining,gas to liquids,2085,0.25190287
+MTC,Ref_cities,Malaysia,refining,gas to liquids,2090,0.2708611
+MTC,Ref_cities,Malaysia,refining,gas to liquids,2095,0.28163444
+MTC,Ref_cities,Malaysia,refining,gas to liquids,2100,0.28595402
+MTC,Ref_cities,Malaysia,refining,oil refining,1975,0.0690215
+MTC,Ref_cities,Malaysia,refining,oil refining,1990,-0.236279
+MTC,Ref_cities,Malaysia,refining,oil refining,2005,3.44485
+MTC,Ref_cities,Malaysia,refining,oil refining,2010,2.11662
+MTC,Ref_cities,Malaysia,refining,oil refining,2015,1.10916
+MTC,Ref_cities,Malaysia,refining,oil refining,2020,1.06314
+MTC,Ref_cities,Malaysia,refining,oil refining,2025,1.1016894
+MTC,Ref_cities,Malaysia,refining,oil refining,2030,1.1394116
+MTC,Ref_cities,Malaysia,refining,oil refining,2035,1.1760075
+MTC,Ref_cities,Malaysia,refining,oil refining,2040,1.2423965
+MTC,Ref_cities,Malaysia,refining,oil refining,2045,1.3123477
+MTC,Ref_cities,Malaysia,refining,oil refining,2050,1.366226
+MTC,Ref_cities,Malaysia,refining,oil refining,2055,1.4016576
+MTC,Ref_cities,Malaysia,refining,oil refining,2060,1.406993
+MTC,Ref_cities,Malaysia,refining,oil refining,2065,1.39494574
+MTC,Ref_cities,Malaysia,refining,oil refining,2070,1.35430668
+MTC,Ref_cities,Malaysia,refining,oil refining,2075,1.29059963
+MTC,Ref_cities,Malaysia,refining,oil refining,2080,1.2236013
+MTC,Ref_cities,Malaysia,refining,oil refining,2085,1.1563018
+MTC,Ref_cities,Malaysia,refining,oil refining,2090,1.1024382
+MTC,Ref_cities,Malaysia,refining,oil refining,2095,1.0581484
+MTC,Ref_cities,Malaysia,refining,oil refining,2100,1.01836572
+MTC,Ref_cities,Malaysia,regional biomass,regional biomass,1975,-0.620871
+MTC,Ref_cities,Malaysia,regional biomass,regional biomass,1990,-0.988777
+MTC,Ref_cities,Malaysia,regional biomass,regional biomass,2005,-1.00707
+MTC,Ref_cities,Malaysia,regional biomass,regional biomass,2010,-0.759964
+MTC,Ref_cities,Malaysia,regional biomass,regional biomass,2015,-0.274563
+MTC,Ref_cities,Malaysia,regional biomass,regional biomass,2020,-0.382872
+MTC,Ref_cities,Malaysia,regional biomass,regional biomass,2025,-0.588116
+MTC,Ref_cities,Malaysia,regional biomass,regional biomass,2030,-0.904622
+MTC,Ref_cities,Malaysia,regional biomass,regional biomass,2035,-1.33277
+MTC,Ref_cities,Malaysia,regional biomass,regional biomass,2040,-2.01438
+MTC,Ref_cities,Malaysia,regional biomass,regional biomass,2045,-2.86302
+MTC,Ref_cities,Malaysia,regional biomass,regional biomass,2050,-3.67399
+MTC,Ref_cities,Malaysia,regional biomass,regional biomass,2055,-4.23298
+MTC,Ref_cities,Malaysia,regional biomass,regional biomass,2060,-4.53348
+MTC,Ref_cities,Malaysia,regional biomass,regional biomass,2065,-4.86098
+MTC,Ref_cities,Malaysia,regional biomass,regional biomass,2070,-4.95572
+MTC,Ref_cities,Malaysia,regional biomass,regional biomass,2075,-5.09439
+MTC,Ref_cities,Malaysia,regional biomass,regional biomass,2080,-5.49051
+MTC,Ref_cities,Malaysia,regional biomass,regional biomass,2085,-5.88945
+MTC,Ref_cities,Malaysia,regional biomass,regional biomass,2090,-6.30721
+MTC,Ref_cities,Malaysia,regional biomass,regional biomass,2095,-6.64013
+MTC,Ref_cities,Malaysia,regional biomass,regional biomass,2100,-6.96465
+MTC,Ref_cities,Malaysia,regional biomassOil,regional biomassOil,2010,-0.00338218
+MTC,Ref_cities,Malaysia,regional biomassOil,regional biomassOil,2015,-0.328146
+MTC,Ref_cities,Malaysia,regional biomassOil,regional biomassOil,2020,-0.320856
+MTC,Ref_cities,Malaysia,regional biomassOil,regional biomassOil,2025,-0.371885
+MTC,Ref_cities,Malaysia,regional biomassOil,regional biomassOil,2030,-0.426073
+MTC,Ref_cities,Malaysia,regional biomassOil,regional biomassOil,2035,-0.502563
+MTC,Ref_cities,Malaysia,regional biomassOil,regional biomassOil,2040,-0.677043
+MTC,Ref_cities,Malaysia,regional biomassOil,regional biomassOil,2045,-0.960696
+MTC,Ref_cities,Malaysia,regional biomassOil,regional biomassOil,2050,-1.26942
+MTC,Ref_cities,Malaysia,regional biomassOil,regional biomassOil,2055,-1.47592
+MTC,Ref_cities,Malaysia,regional biomassOil,regional biomassOil,2060,-1.56099
+MTC,Ref_cities,Malaysia,regional biomassOil,regional biomassOil,2065,-1.61343
+MTC,Ref_cities,Malaysia,regional biomassOil,regional biomassOil,2070,-1.58194
+MTC,Ref_cities,Malaysia,regional biomassOil,regional biomassOil,2075,-1.53288
+MTC,Ref_cities,Malaysia,regional biomassOil,regional biomassOil,2080,-1.48975
+MTC,Ref_cities,Malaysia,regional biomassOil,regional biomassOil,2085,-1.4522
+MTC,Ref_cities,Malaysia,regional biomassOil,regional biomassOil,2090,-1.43339
+MTC,Ref_cities,Malaysia,regional biomassOil,regional biomassOil,2095,-1.42627
+MTC,Ref_cities,Malaysia,regional biomassOil,regional biomassOil,2100,-1.42785
+MTC,Ref_cities,Malaysia,regional sugar for ethanol,regional sugar for ethanol,2025,-0.00192987
+MTC,Ref_cities,Malaysia,regional sugar for ethanol,regional sugar for ethanol,2030,-0.00643923
+MTC,Ref_cities,Malaysia,regional sugar for ethanol,regional sugar for ethanol,2035,-0.0165127
+MTC,Ref_cities,Malaysia,regional sugar for ethanol,regional sugar for ethanol,2040,-0.0418853
+MTC,Ref_cities,Malaysia,regional sugar for ethanol,regional sugar for ethanol,2045,-0.0816206
+MTC,Ref_cities,Malaysia,regional sugar for ethanol,regional sugar for ethanol,2050,-0.122302
+MTC,Ref_cities,Malaysia,regional sugar for ethanol,regional sugar for ethanol,2055,-0.14711
+MTC,Ref_cities,Malaysia,regional sugar for ethanol,regional sugar for ethanol,2060,-0.159605
+MTC,Ref_cities,Malaysia,regional sugar for ethanol,regional sugar for ethanol,2065,-0.167738
+MTC,Ref_cities,Malaysia,regional sugar for ethanol,regional sugar for ethanol,2070,-0.168258
+MTC,Ref_cities,Malaysia,regional sugar for ethanol,regional sugar for ethanol,2075,-0.168483
+MTC,Ref_cities,Malaysia,regional sugar for ethanol,regional sugar for ethanol,2080,-0.168912
+MTC,Ref_cities,Malaysia,regional sugar for ethanol,regional sugar for ethanol,2085,-0.16779
+MTC,Ref_cities,Malaysia,regional sugar for ethanol,regional sugar for ethanol,2090,-0.166756
+MTC,Ref_cities,Malaysia,regional sugar for ethanol,regional sugar for ethanol,2095,-0.166173
+MTC,Ref_cities,Malaysia,regional sugar for ethanol,regional sugar for ethanol,2100,-0.166281
+MTC,Ref_cities,Malaysia,unconventional oil production,unconventional oil production,2020,1.45628
+MTC,Ref_cities,Malaysia,unconventional oil production,unconventional oil production,2025,2.01299
+MTC,Ref_cities,Malaysia,unconventional oil production,unconventional oil production,2030,2.36519
+MTC,Ref_cities,Malaysia,unconventional oil production,unconventional oil production,2035,2.64926
+MTC,Ref_cities,Malaysia,unconventional oil production,unconventional oil production,2040,3.04887
+MTC,Ref_cities,Malaysia,unconventional oil production,unconventional oil production,2045,3.7223
+MTC,Ref_cities,Malaysia,unconventional oil production,unconventional oil production,2050,4.59242
+MTC,Ref_cities,Malaysia,unconventional oil production,unconventional oil production,2055,5.82174
+MTC,Ref_cities,Malaysia,unconventional oil production,unconventional oil production,2060,7.4759
+MTC,Ref_cities,Malaysia,unconventional oil production,unconventional oil production,2065,9.36834
+MTC,Ref_cities,Malaysia,unconventional oil production,unconventional oil production,2070,11.7035
+MTC,Ref_cities,Malaysia,unconventional oil production,unconventional oil production,2075,14.1418
+MTC,Ref_cities,Malaysia,unconventional oil production,unconventional oil production,2080,16.401
+MTC,Ref_cities,Malaysia,unconventional oil production,unconventional oil production,2085,18.3824
+MTC,Ref_cities,Malaysia,unconventional oil production,unconventional oil production,2090,19.9661
+MTC,Ref_cities,Malaysia,unconventional oil production,unconventional oil production,2095,20.2973
+MTC,Ref_cities,Malaysia,unconventional oil production,unconventional oil production,2100,20.3814
+MTC,Ref_cities,Rest of Malaysia,comm others,gas,1990,0.00251624
+MTC,Ref_cities,Rest of Malaysia,comm others,gas,2005,0.0114864
+MTC,Ref_cities,Rest of Malaysia,comm others,gas,2010,0.0149867
+MTC,Ref_cities,Rest of Malaysia,comm others,gas,2015,0.011982
+MTC,Ref_cities,Rest of Malaysia,comm others,gas,2020,0.0130329
+MTC,Ref_cities,Rest of Malaysia,comm others,gas,2025,0.0146014
+MTC,Ref_cities,Rest of Malaysia,comm others,gas,2030,0.0161976
+MTC,Ref_cities,Rest of Malaysia,comm others,gas,2035,0.0173322
+MTC,Ref_cities,Rest of Malaysia,comm others,gas,2040,0.0181127
+MTC,Ref_cities,Rest of Malaysia,comm others,gas,2045,0.0188021
+MTC,Ref_cities,Rest of Malaysia,comm others,gas,2050,0.0196425
+MTC,Ref_cities,Rest of Malaysia,comm others,gas,2055,0.0203686
+MTC,Ref_cities,Rest of Malaysia,comm others,gas,2060,0.0204116
+MTC,Ref_cities,Rest of Malaysia,comm others,gas,2065,0.0203903
+MTC,Ref_cities,Rest of Malaysia,comm others,gas,2070,0.0194234
+MTC,Ref_cities,Rest of Malaysia,comm others,gas,2075,0.0190248
+MTC,Ref_cities,Rest of Malaysia,comm others,gas,2080,0.0202307
+MTC,Ref_cities,Rest of Malaysia,comm others,gas,2085,0.0206714
+MTC,Ref_cities,Rest of Malaysia,comm others,gas,2090,0.0202125
+MTC,Ref_cities,Rest of Malaysia,comm others,gas,2095,0.0190651
+MTC,Ref_cities,Rest of Malaysia,comm others,gas,2100,0.017596
+MTC,Ref_cities,Rest of Malaysia,comm others,refined liquids,1990,0.173656
+MTC,Ref_cities,Rest of Malaysia,comm others,refined liquids,2005,0.521117
+MTC,Ref_cities,Rest of Malaysia,comm others,refined liquids,2010,0.859125
+MTC,Ref_cities,Rest of Malaysia,comm others,refined liquids,2015,0.53892
+MTC,Ref_cities,Rest of Malaysia,comm others,refined liquids,2020,0.469742
+MTC,Ref_cities,Rest of Malaysia,comm others,refined liquids,2025,0.510613
+MTC,Ref_cities,Rest of Malaysia,comm others,refined liquids,2030,0.52469
+MTC,Ref_cities,Rest of Malaysia,comm others,refined liquids,2035,0.528713
+MTC,Ref_cities,Rest of Malaysia,comm others,refined liquids,2040,0.528501
+MTC,Ref_cities,Rest of Malaysia,comm others,refined liquids,2045,0.520105
+MTC,Ref_cities,Rest of Malaysia,comm others,refined liquids,2050,0.529434
+MTC,Ref_cities,Rest of Malaysia,comm others,refined liquids,2055,0.526778
+MTC,Ref_cities,Rest of Malaysia,comm others,refined liquids,2060,0.498799
+MTC,Ref_cities,Rest of Malaysia,comm others,refined liquids,2065,0.476699
+MTC,Ref_cities,Rest of Malaysia,comm others,refined liquids,2070,0.432639
+MTC,Ref_cities,Rest of Malaysia,comm others,refined liquids,2075,0.402301
+MTC,Ref_cities,Rest of Malaysia,comm others,refined liquids,2080,0.409177
+MTC,Ref_cities,Rest of Malaysia,comm others,refined liquids,2085,0.405132
+MTC,Ref_cities,Rest of Malaysia,comm others,refined liquids,2090,0.391309
+MTC,Ref_cities,Rest of Malaysia,comm others,refined liquids,2095,0.365591
+MTC,Ref_cities,Rest of Malaysia,comm others,refined liquids,2100,0.33561
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,biomass,1975,0.42207
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,biomass,1990,0.603497
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,biomass,2005,0.660139
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,biomass,2010,0.226642
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,biomass,2015,0.0057523
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,biomass,2020,0.00628023
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,biomass,2025,0.00667175
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,biomass,2030,0.00678903
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,biomass,2035,0.00680589
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,biomass,2040,0.00662944
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,biomass,2045,0.00651142
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,biomass,2050,0.0066244
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,biomass,2055,0.00668043
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,biomass,2060,0.00659511
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,biomass,2065,0.00654978
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,biomass,2070,0.00637193
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,biomass,2075,0.00623788
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,biomass,2080,0.00635048
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,biomass,2085,0.0064314
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,biomass,2090,0.00650518
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,biomass,2095,0.00653386
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,biomass,2100,0.00655456
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,coal,1990,0.0504586
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,coal,2005,0.039555
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,coal,2010,0.423802
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,coal,2015,0.377513
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,coal,2020,0.388647
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,coal,2025,0.407769
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,coal,2030,0.404782
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,coal,2035,0.403246
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,coal,2040,0.40657
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,coal,2045,0.411802
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,coal,2050,0.431043
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,coal,2055,0.443895
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,coal,2060,0.442303
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,coal,2065,0.441364
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,coal,2070,0.429451
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,coal,2075,0.421211
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,coal,2080,0.433735
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,coal,2085,0.441891
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,coal,2090,0.449189
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,coal,2095,0.450982
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,coal,2100,0.452815
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,gas,1990,0.678376
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,gas,2005,7.05137
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,gas,2010,4.12912
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,gas,2015,6.27585
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,gas,2020,6.64026
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,gas,2025,6.92061
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,gas,2030,7.13958
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,gas,2035,7.19747
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,gas,2040,7.16373
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,gas,2045,7.1986
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,gas,2050,7.2793
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,gas,2055,7.38192
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,gas,2060,7.40568
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,gas,2065,7.40769
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,gas,2070,7.23309
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,gas,2075,7.15313
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,gas,2080,7.34003
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,gas,2085,7.33889
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,gas,2090,7.14807
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,gas,2095,6.85133
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,gas,2100,6.51239
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,refined liquids,1975,1.27396
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,refined liquids,1990,2.40437
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,refined liquids,2005,3.79464
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,refined liquids,2010,3.56338
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,refined liquids,2015,2.85105
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,refined liquids,2020,2.63536
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,refined liquids,2025,2.90391
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,refined liquids,2030,3.06918
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,refined liquids,2035,3.25362
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,refined liquids,2040,3.451
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,refined liquids,2045,3.61579
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,refined liquids,2050,3.86379
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,refined liquids,2055,4.02043
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,refined liquids,2060,4.02554
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,refined liquids,2065,4.05311
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,refined liquids,2070,3.95665
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,refined liquids,2075,3.89677
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,refined liquids,2080,4.02087
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,refined liquids,2085,4.12046
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,refined liquids,2090,4.21059
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,refined liquids,2095,4.25077
+MTC,Ref_cities,Rest of Malaysia,industrial energy use,refined liquids,2100,4.27579
+MTC,Ref_cities,Rest of Malaysia,industrial feedstocks,gas,1990,0.226306
+MTC,Ref_cities,Rest of Malaysia,industrial feedstocks,gas,2005,0.651967
+MTC,Ref_cities,Rest of Malaysia,industrial feedstocks,gas,2010,0.68412
+MTC,Ref_cities,Rest of Malaysia,industrial feedstocks,gas,2015,2.11436
+MTC,Ref_cities,Rest of Malaysia,industrial feedstocks,gas,2020,2.41724
+MTC,Ref_cities,Rest of Malaysia,industrial feedstocks,gas,2025,2.67243
+MTC,Ref_cities,Rest of Malaysia,industrial feedstocks,gas,2030,2.96313
+MTC,Ref_cities,Rest of Malaysia,industrial feedstocks,gas,2035,3.23913
+MTC,Ref_cities,Rest of Malaysia,industrial feedstocks,gas,2040,3.48292
+MTC,Ref_cities,Rest of Malaysia,industrial feedstocks,gas,2045,3.71608
+MTC,Ref_cities,Rest of Malaysia,industrial feedstocks,gas,2050,3.90593
+MTC,Ref_cities,Rest of Malaysia,industrial feedstocks,gas,2055,4.09651
+MTC,Ref_cities,Rest of Malaysia,industrial feedstocks,gas,2060,4.29084
+MTC,Ref_cities,Rest of Malaysia,industrial feedstocks,gas,2065,4.45482
+MTC,Ref_cities,Rest of Malaysia,industrial feedstocks,gas,2070,4.60312
+MTC,Ref_cities,Rest of Malaysia,industrial feedstocks,gas,2075,4.73787
+MTC,Ref_cities,Rest of Malaysia,industrial feedstocks,gas,2080,4.84483
+MTC,Ref_cities,Rest of Malaysia,industrial feedstocks,gas,2085,4.92756
+MTC,Ref_cities,Rest of Malaysia,industrial feedstocks,gas,2090,4.97863
+MTC,Ref_cities,Rest of Malaysia,industrial feedstocks,gas,2095,5.02284
+MTC,Ref_cities,Rest of Malaysia,industrial feedstocks,gas,2100,5.0528
+MTC,Ref_cities,Rest of Malaysia,resid others,biomass,1990,0.229049
+MTC,Ref_cities,Rest of Malaysia,resid others,biomass,2005,0.1731
+MTC,Ref_cities,Rest of Malaysia,resid others,biomass,2010,0.11732
+MTC,Ref_cities,Rest of Malaysia,resid others,biomass,2015,0.000809598
+MTC,Ref_cities,Rest of Malaysia,resid others,biomass,2020,0.000957631
+MTC,Ref_cities,Rest of Malaysia,resid others,biomass,2025,0.00106622
+MTC,Ref_cities,Rest of Malaysia,resid others,biomass,2030,0.00114722
+MTC,Ref_cities,Rest of Malaysia,resid others,biomass,2035,0.00118407
+MTC,Ref_cities,Rest of Malaysia,resid others,biomass,2040,0.00114132
+MTC,Ref_cities,Rest of Malaysia,resid others,biomass,2045,0.00109378
+MTC,Ref_cities,Rest of Malaysia,resid others,biomass,2050,0.00108246
+MTC,Ref_cities,Rest of Malaysia,resid others,biomass,2055,0.0010619
+MTC,Ref_cities,Rest of Malaysia,resid others,biomass,2060,0.00101326
+MTC,Ref_cities,Rest of Malaysia,resid others,biomass,2065,0.000973538
+MTC,Ref_cities,Rest of Malaysia,resid others,biomass,2070,0.000903934
+MTC,Ref_cities,Rest of Malaysia,resid others,biomass,2075,0.000853545
+MTC,Ref_cities,Rest of Malaysia,resid others,biomass,2080,0.000864828
+MTC,Ref_cities,Rest of Malaysia,resid others,biomass,2085,0.000858406
+MTC,Ref_cities,Rest of Malaysia,resid others,biomass,2090,0.000834094
+MTC,Ref_cities,Rest of Malaysia,resid others,biomass,2095,0.00079023
+MTC,Ref_cities,Rest of Malaysia,resid others,biomass,2100,0.000735482
+MTC,Ref_cities,Rest of Malaysia,resid others,gas,1990,0.00150947
+MTC,Ref_cities,Rest of Malaysia,resid others,gas,2005,0.00249636
+MTC,Ref_cities,Rest of Malaysia,resid others,gas,2010,0.00299761
+MTC,Ref_cities,Rest of Malaysia,resid others,gas,2015,0.000499839
+MTC,Ref_cities,Rest of Malaysia,resid others,gas,2020,0.000610208
+MTC,Ref_cities,Rest of Malaysia,resid others,gas,2025,0.000728812
+MTC,Ref_cities,Rest of Malaysia,resid others,gas,2030,0.000878409
+MTC,Ref_cities,Rest of Malaysia,resid others,gas,2035,0.00102034
+MTC,Ref_cities,Rest of Malaysia,resid others,gas,2040,0.00114392
+MTC,Ref_cities,Rest of Malaysia,resid others,gas,2045,0.00125765
+MTC,Ref_cities,Rest of Malaysia,resid others,gas,2050,0.00136435
+MTC,Ref_cities,Rest of Malaysia,resid others,gas,2055,0.00145976
+MTC,Ref_cities,Rest of Malaysia,resid others,gas,2060,0.0015102
+MTC,Ref_cities,Rest of Malaysia,resid others,gas,2065,0.00154847
+MTC,Ref_cities,Rest of Malaysia,resid others,gas,2070,0.00151865
+MTC,Ref_cities,Rest of Malaysia,resid others,gas,2075,0.00152342
+MTC,Ref_cities,Rest of Malaysia,resid others,gas,2080,0.00164042
+MTC,Ref_cities,Rest of Malaysia,resid others,gas,2085,0.00170239
+MTC,Ref_cities,Rest of Malaysia,resid others,gas,2090,0.00169312
+MTC,Ref_cities,Rest of Malaysia,resid others,gas,2095,0.00162753
+MTC,Ref_cities,Rest of Malaysia,resid others,gas,2100,0.00152979
+MTC,Ref_cities,Rest of Malaysia,resid others,refined liquids,1990,0.332725
+MTC,Ref_cities,Rest of Malaysia,resid others,refined liquids,2005,0.540417
+MTC,Ref_cities,Rest of Malaysia,resid others,refined liquids,2010,0.490925
+MTC,Ref_cities,Rest of Malaysia,resid others,refined liquids,2015,0.46449
+MTC,Ref_cities,Rest of Malaysia,resid others,refined liquids,2020,0.454167
+MTC,Ref_cities,Rest of Malaysia,resid others,refined liquids,2025,0.526146
+MTC,Ref_cities,Rest of Malaysia,resid others,refined liquids,2030,0.587021
+MTC,Ref_cities,Rest of Malaysia,resid others,refined liquids,2035,0.641786
+MTC,Ref_cities,Rest of Malaysia,resid others,refined liquids,2040,0.688047
+MTC,Ref_cities,Rest of Malaysia,resid others,refined liquids,2045,0.716929
+MTC,Ref_cities,Rest of Malaysia,resid others,refined liquids,2050,0.757769
+MTC,Ref_cities,Rest of Malaysia,resid others,refined liquids,2055,0.777811
+MTC,Ref_cities,Rest of Malaysia,resid others,refined liquids,2060,0.760081
+MTC,Ref_cities,Rest of Malaysia,resid others,refined liquids,2065,0.74536
+MTC,Ref_cities,Rest of Malaysia,resid others,refined liquids,2070,0.696266
+MTC,Ref_cities,Rest of Malaysia,resid others,refined liquids,2075,0.662832
+MTC,Ref_cities,Rest of Malaysia,resid others,refined liquids,2080,0.68244
+MTC,Ref_cities,Rest of Malaysia,resid others,refined liquids,2085,0.686177
+MTC,Ref_cities,Rest of Malaysia,resid others,refined liquids,2090,0.67419
+MTC,Ref_cities,Rest of Malaysia,resid others,refined liquids,2095,0.642015
+MTC,Ref_cities,Rest of Malaysia,resid others,refined liquids,2100,0.600409
+MTC,Ref_cities,Rest of Malaysia,trn_aviation_intl,International Aviation,1975,0.182205
+MTC,Ref_cities,Rest of Malaysia,trn_aviation_intl,International Aviation,1990,0.459161
+MTC,Ref_cities,Rest of Malaysia,trn_aviation_intl,International Aviation,2005,1.4643
+MTC,Ref_cities,Rest of Malaysia,trn_aviation_intl,International Aviation,2010,1.73397
+MTC,Ref_cities,Rest of Malaysia,trn_aviation_intl,International Aviation,2015,2.28359
+MTC,Ref_cities,Rest of Malaysia,trn_aviation_intl,International Aviation,2020,2.50404
+MTC,Ref_cities,Rest of Malaysia,trn_aviation_intl,International Aviation,2025,2.80617
+MTC,Ref_cities,Rest of Malaysia,trn_aviation_intl,International Aviation,2030,3.15379
+MTC,Ref_cities,Rest of Malaysia,trn_aviation_intl,International Aviation,2035,3.51999
+MTC,Ref_cities,Rest of Malaysia,trn_aviation_intl,International Aviation,2040,3.8725
+MTC,Ref_cities,Rest of Malaysia,trn_aviation_intl,International Aviation,2045,4.17201
+MTC,Ref_cities,Rest of Malaysia,trn_aviation_intl,International Aviation,2050,4.40585
+MTC,Ref_cities,Rest of Malaysia,trn_aviation_intl,International Aviation,2055,4.68515
+MTC,Ref_cities,Rest of Malaysia,trn_aviation_intl,International Aviation,2060,4.91772
+MTC,Ref_cities,Rest of Malaysia,trn_aviation_intl,International Aviation,2065,5.11531
+MTC,Ref_cities,Rest of Malaysia,trn_aviation_intl,International Aviation,2070,5.27614
+MTC,Ref_cities,Rest of Malaysia,trn_aviation_intl,International Aviation,2075,5.41708
+MTC,Ref_cities,Rest of Malaysia,trn_aviation_intl,International Aviation,2080,5.55195
+MTC,Ref_cities,Rest of Malaysia,trn_aviation_intl,International Aviation,2085,5.69226
+MTC,Ref_cities,Rest of Malaysia,trn_aviation_intl,International Aviation,2090,5.83276
+MTC,Ref_cities,Rest of Malaysia,trn_aviation_intl,International Aviation,2095,5.9733
+MTC,Ref_cities,Rest of Malaysia,trn_aviation_intl,International Aviation,2100,6.10848
+MTC,Ref_cities,Rest of Malaysia,trn_freight,Domestic Ship,1990,0.0317439
+MTC,Ref_cities,Rest of Malaysia,trn_freight,Domestic Ship,2005,0.00309681
+MTC,Ref_cities,Rest of Malaysia,trn_freight,Domestic Ship,2010,0.00929032
+MTC,Ref_cities,Rest of Malaysia,trn_freight,Domestic Ship,2015,0.133942
+MTC,Ref_cities,Rest of Malaysia,trn_freight,Domestic Ship,2020,0.138892
+MTC,Ref_cities,Rest of Malaysia,trn_freight,Domestic Ship,2025,0.156067
+MTC,Ref_cities,Rest of Malaysia,trn_freight,Domestic Ship,2030,0.178119
+MTC,Ref_cities,Rest of Malaysia,trn_freight,Domestic Ship,2035,0.202878
+MTC,Ref_cities,Rest of Malaysia,trn_freight,Domestic Ship,2040,0.228004
+MTC,Ref_cities,Rest of Malaysia,trn_freight,Domestic Ship,2045,0.254706
+MTC,Ref_cities,Rest of Malaysia,trn_freight,Domestic Ship,2050,0.278182
+MTC,Ref_cities,Rest of Malaysia,trn_freight,Domestic Ship,2055,0.296935
+MTC,Ref_cities,Rest of Malaysia,trn_freight,Domestic Ship,2060,0.31226
+MTC,Ref_cities,Rest of Malaysia,trn_freight,Domestic Ship,2065,0.326351
+MTC,Ref_cities,Rest of Malaysia,trn_freight,Domestic Ship,2070,0.338275
+MTC,Ref_cities,Rest of Malaysia,trn_freight,Domestic Ship,2075,0.350529
+MTC,Ref_cities,Rest of Malaysia,trn_freight,Domestic Ship,2080,0.364012
+MTC,Ref_cities,Rest of Malaysia,trn_freight,Domestic Ship,2085,0.378815
+MTC,Ref_cities,Rest of Malaysia,trn_freight,Domestic Ship,2090,0.393805
+MTC,Ref_cities,Rest of Malaysia,trn_freight,Domestic Ship,2095,0.409233
+MTC,Ref_cities,Rest of Malaysia,trn_freight,Domestic Ship,2100,0.423708
+MTC,Ref_cities,Rest of Malaysia,trn_freight,Freight Rail,1975,0.00690881
+MTC,Ref_cities,Rest of Malaysia,trn_freight,Freight Rail,1990,0.0188198
+MTC,Ref_cities,Rest of Malaysia,trn_freight,Freight Rail,2005,0.0526026
+MTC,Ref_cities,Rest of Malaysia,trn_freight,Freight Rail,2010,0.0565729
+MTC,Ref_cities,Rest of Malaysia,trn_freight,Freight Rail,2015,0.0798668
+MTC,Ref_cities,Rest of Malaysia,trn_freight,Freight Rail,2020,0.0858044
+MTC,Ref_cities,Rest of Malaysia,trn_freight,Freight Rail,2025,0.0959406
+MTC,Ref_cities,Rest of Malaysia,trn_freight,Freight Rail,2030,0.109323
+MTC,Ref_cities,Rest of Malaysia,trn_freight,Freight Rail,2035,0.124115
+MTC,Ref_cities,Rest of Malaysia,trn_freight,Freight Rail,2040,0.138855
+MTC,Ref_cities,Rest of Malaysia,trn_freight,Freight Rail,2045,0.154431
+MTC,Ref_cities,Rest of Malaysia,trn_freight,Freight Rail,2050,0.167398
+MTC,Ref_cities,Rest of Malaysia,trn_freight,Freight Rail,2055,0.177919
+MTC,Ref_cities,Rest of Malaysia,trn_freight,Freight Rail,2060,0.187136
+MTC,Ref_cities,Rest of Malaysia,trn_freight,Freight Rail,2065,0.195246
+MTC,Ref_cities,Rest of Malaysia,trn_freight,Freight Rail,2070,0.202926
+MTC,Ref_cities,Rest of Malaysia,trn_freight,Freight Rail,2075,0.210106
+MTC,Ref_cities,Rest of Malaysia,trn_freight,Freight Rail,2080,0.216059
+MTC,Ref_cities,Rest of Malaysia,trn_freight,Freight Rail,2085,0.223127
+MTC,Ref_cities,Rest of Malaysia,trn_freight,Freight Rail,2090,0.230701
+MTC,Ref_cities,Rest of Malaysia,trn_freight,Freight Rail,2095,0.239094
+MTC,Ref_cities,Rest of Malaysia,trn_freight,Freight Rail,2100,0.24819
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Heavy truck,1975,0.0904778
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Heavy truck,1990,0.246446
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Heavy truck,2005,0.688874
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Heavy truck,2010,0.740872
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Heavy truck,2015,1.04592
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Heavy truck,2020,1.1404926
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Heavy truck,2025,1.22756037
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Heavy truck,2030,1.29224168
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Heavy truck,2035,1.32638155
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Heavy truck,2040,1.39532841
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Heavy truck,2045,1.45696855
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Heavy truck,2050,1.5156816
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Heavy truck,2055,1.5783919
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Heavy truck,2060,1.6424913
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Heavy truck,2065,1.7012861
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Heavy truck,2070,1.7533183
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Heavy truck,2075,1.8014205
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Heavy truck,2080,1.8506811
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Heavy truck,2085,1.9049323
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Heavy truck,2090,1.9624214
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Heavy truck,2095,2.0229317
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Heavy truck,2100,2.0855498
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Light truck,1975,0.0399084
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Light truck,1990,0.1087
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Light truck,2005,0.303842
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Light truck,2010,0.326778
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Light truck,2015,0.461325
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Light truck,2020,0.49215212
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Light truck,2025,0.52213291
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Light truck,2030,0.54329039
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Light truck,2035,0.543564394
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Light truck,2040,0.56194268
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Light truck,2045,0.57729897
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Light truck,2050,0.59160684
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Light truck,2055,0.61127627
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Light truck,2060,0.63468093
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Light truck,2065,0.65723611
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Light truck,2070,0.6775999
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Light truck,2075,0.69649606
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Light truck,2080,0.7165057
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Light truck,2085,0.7387267
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Light truck,2090,0.7622382
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Light truck,2095,0.7866365
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Light truck,2100,0.8113659
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Medium truck,1975,0.387361
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Medium truck,1990,1.05511
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Medium truck,2005,2.94927
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Medium truck,2010,3.17188
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Medium truck,2015,4.47788
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Medium truck,2020,4.8696495
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Medium truck,2025,5.2163256
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Medium truck,2030,5.460539
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Medium truck,2035,5.54769683
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Medium truck,2040,5.7912318
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Medium truck,2045,6.0100619
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Medium truck,2050,6.220408
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Medium truck,2055,6.4603035
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Medium truck,2060,6.7176121
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Medium truck,2065,6.9574646
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Medium truck,2070,7.1720613
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Medium truck,2075,7.3705968
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Medium truck,2080,7.573415
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Medium truck,2085,7.796061
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Medium truck,2090,8.03177
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Medium truck,2095,8.279852
+MTC,Ref_cities,Rest of Malaysia,trn_freight_road,Medium truck,2100,8.536624
+MTC,Ref_cities,Rest of Malaysia,trn_pass,Domestic Aviation,1975,0.0113248
+MTC,Ref_cities,Rest of Malaysia,trn_pass,Domestic Aviation,1990,0.0285376
+MTC,Ref_cities,Rest of Malaysia,trn_pass,Domestic Aviation,2005,0.0910047
+MTC,Ref_cities,Rest of Malaysia,trn_pass,Domestic Aviation,2010,0.107764
+MTC,Ref_cities,Rest of Malaysia,trn_pass,Domestic Aviation,2015,0.141919
+MTC,Ref_cities,Rest of Malaysia,trn_pass,Domestic Aviation,2020,0.166861
+MTC,Ref_cities,Rest of Malaysia,trn_pass,Domestic Aviation,2025,0.20074
+MTC,Ref_cities,Rest of Malaysia,trn_pass,Domestic Aviation,2030,0.243525
+MTC,Ref_cities,Rest of Malaysia,trn_pass,Domestic Aviation,2035,0.293658
+MTC,Ref_cities,Rest of Malaysia,trn_pass,Domestic Aviation,2040,0.340134
+MTC,Ref_cities,Rest of Malaysia,trn_pass,Domestic Aviation,2045,0.381836
+MTC,Ref_cities,Rest of Malaysia,trn_pass,Domestic Aviation,2050,0.416937
+MTC,Ref_cities,Rest of Malaysia,trn_pass,Domestic Aviation,2055,0.450839
+MTC,Ref_cities,Rest of Malaysia,trn_pass,Domestic Aviation,2060,0.478636
+MTC,Ref_cities,Rest of Malaysia,trn_pass,Domestic Aviation,2065,0.503192
+MTC,Ref_cities,Rest of Malaysia,trn_pass,Domestic Aviation,2070,0.525274
+MTC,Ref_cities,Rest of Malaysia,trn_pass,Domestic Aviation,2075,0.545936
+MTC,Ref_cities,Rest of Malaysia,trn_pass,Domestic Aviation,2080,0.566808
+MTC,Ref_cities,Rest of Malaysia,trn_pass,Domestic Aviation,2085,0.589075
+MTC,Ref_cities,Rest of Malaysia,trn_pass,Domestic Aviation,2090,0.61159
+MTC,Ref_cities,Rest of Malaysia,trn_pass,Domestic Aviation,2095,0.63432
+MTC,Ref_cities,Rest of Malaysia,trn_pass,Domestic Aviation,2100,0.656597
+MTC,Ref_cities,Rest of Malaysia,trn_pass,Passenger Rail,1975,0.00825547
+MTC,Ref_cities,Rest of Malaysia,trn_pass,Passenger Rail,1990,0.0224871
+MTC,Ref_cities,Rest of Malaysia,trn_pass,Passenger Rail,2005,0.0628532
+MTC,Ref_cities,Rest of Malaysia,trn_pass,Passenger Rail,2010,0.0675983
+MTC,Ref_cities,Rest of Malaysia,trn_pass,Passenger Rail,2015,0.0954322
+MTC,Ref_cities,Rest of Malaysia,trn_pass,Passenger Rail,2020,0.100767
+MTC,Ref_cities,Rest of Malaysia,trn_pass,Passenger Rail,2025,0.106233
+MTC,Ref_cities,Rest of Malaysia,trn_pass,Passenger Rail,2030,0.110393
+MTC,Ref_cities,Rest of Malaysia,trn_pass,Passenger Rail,2035,0.113338
+MTC,Ref_cities,Rest of Malaysia,trn_pass,Passenger Rail,2040,0.115191
+MTC,Ref_cities,Rest of Malaysia,trn_pass,Passenger Rail,2045,0.116172
+MTC,Ref_cities,Rest of Malaysia,trn_pass,Passenger Rail,2050,0.116938
+MTC,Ref_cities,Rest of Malaysia,trn_pass,Passenger Rail,2055,0.117173
+MTC,Ref_cities,Rest of Malaysia,trn_pass,Passenger Rail,2060,0.116836
+MTC,Ref_cities,Rest of Malaysia,trn_pass,Passenger Rail,2065,0.116085
+MTC,Ref_cities,Rest of Malaysia,trn_pass,Passenger Rail,2070,0.114999
+MTC,Ref_cities,Rest of Malaysia,trn_pass,Passenger Rail,2075,0.113424
+MTC,Ref_cities,Rest of Malaysia,trn_pass,Passenger Rail,2080,0.111579
+MTC,Ref_cities,Rest of Malaysia,trn_pass,Passenger Rail,2085,0.109434
+MTC,Ref_cities,Rest of Malaysia,trn_pass,Passenger Rail,2090,0.107166
+MTC,Ref_cities,Rest of Malaysia,trn_pass,Passenger Rail,2095,0.10481
+MTC,Ref_cities,Rest of Malaysia,trn_pass,Passenger Rail,2100,0.102536
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road,Bus,1975,0.164274
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road,Bus,1990,0.447451
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road,Bus,2005,1.2773738
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road,Bus,2010,1.4144217
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road,Bus,2015,1.9730499
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road,Bus,2020,2.5613813
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road,Bus,2025,2.7265196
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road,Bus,2030,2.2104265
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road,Bus,2035,1.9957427
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road,Bus,2040,1.9282681
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road,Bus,2045,1.9261659
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road,Bus,2050,1.9481529
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road,Bus,2055,1.9952137
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road,Bus,2060,2.053527
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road,Bus,2065,2.102727
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road,Bus,2070,2.108991
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road,Bus,2075,2.093317
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road,Bus,2080,2.066606
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road,Bus,2085,2.037658
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road,Bus,2090,2.00515
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road,Bus,2095,1.969732
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road,Bus,2100,1.933204
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV,2W and 3W,1975,0.325504
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV,2W and 3W,1990,0.886602
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV,2W and 3W,2005,2.48084989
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV,2W and 3W,2010,2.672066
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV,2W and 3W,2015,3.76997746
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV,2W and 3W,2020,2.7580579
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV,2W and 3W,2025,2.2532556
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV,2W and 3W,2030,2.319937
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV,2W and 3W,2035,2.147007
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV,2W and 3W,2040,1.91797
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV,2W and 3W,2045,1.748561
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV,2W and 3W,2050,1.597665
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV,2W and 3W,2055,1.527711
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV,2W and 3W,2060,1.447467
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV,2W and 3W,2065,1.367166
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV,2W and 3W,2070,1.301626
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV,2W and 3W,2075,1.245695
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV,2W and 3W,2080,1.205074
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV,2W and 3W,2085,1.153296
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV,2W and 3W,2090,1.096602
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV,2W and 3W,2095,1.043074
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV,2W and 3W,2100,1.017322
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Car,1975,0.199108
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Car,1990,0.542327
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Car,2005,1.5310346
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Car,2010,1.6696283
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Car,2015,2.3436386
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Car,2020,1.829832
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Car,2025,1.56675167
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Car,2030,1.37869248
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Car,2035,1.1896894
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Car,2040,0.99238294
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Car,2045,0.958908934
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Car,2050,0.88860888
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Car,2055,0.84763401
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Car,2060,0.82233699
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Car,2065,0.80714422
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Car,2070,0.80596498
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Car,2075,0.8145919
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Car,2080,0.82458005
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Car,2085,0.83137066
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Car,2090,0.83818019
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Car,2095,0.8445156
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Car,2100,0.8485082
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Large Car and Truck,1975,0.0612131
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Large Car and Truck,1990,0.166728
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Large Car and Truck,2005,0.4706871
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Large Car and Truck,2010,0.5132963
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Large Car and Truck,2015,0.7205068
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Large Car and Truck,2020,0.5709875
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Large Car and Truck,2025,0.50360144
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Large Car and Truck,2030,0.50098269
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Large Car and Truck,2035,0.50110533
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Large Car and Truck,2040,0.51307848
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Large Car and Truck,2045,0.554856523
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Large Car and Truck,2050,0.6035676
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Large Car and Truck,2055,0.65398706
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Large Car and Truck,2060,0.68306255
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Large Car and Truck,2065,0.69827024
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Large Car and Truck,2070,0.71240399
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Large Car and Truck,2075,0.72872626
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Large Car and Truck,2080,0.74645667
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Large Car and Truck,2085,0.76191617
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Large Car and Truck,2090,0.77811219
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Large Car and Truck,2095,0.7946884
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Large Car and Truck,2100,0.80962515
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Mini Car,1975,0.0570294
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Mini Car,1990,0.155335
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Mini Car,2005,0.43852608
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Mini Car,2010,0.4782214
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Mini Car,2015,0.6712746
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Mini Car,2020,0.52410711
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Mini Car,2025,0.49956308
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Mini Car,2030,0.57937772
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Mini Car,2035,0.623259801
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Mini Car,2040,0.658802841
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Mini Car,2045,0.71217933
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Mini Car,2050,0.775449878
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Mini Car,2055,0.833360234
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Mini Car,2060,0.862072165
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Mini Car,2065,0.871022165
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Mini Car,2070,0.877611724
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Mini Car,2075,0.885482779
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Mini Car,2080,0.894521748
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Mini Car,2085,0.899628191
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Mini Car,2090,0.904557123
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Mini Car,2095,0.908944897
+MTC,Ref_cities,Rest of Malaysia,trn_pass_road_LDV_4W,Mini Car,2100,0.911048596
+MTC,Ref_cities,Rest of Malaysia,trn_shipping_intl,International Ship,1975,0.0541918
+MTC,Ref_cities,Rest of Malaysia,trn_shipping_intl,International Ship,1990,0.0710574
+MTC,Ref_cities,Rest of Malaysia,trn_shipping_intl,International Ship,2005,0.0905959
+MTC,Ref_cities,Rest of Malaysia,trn_shipping_intl,International Ship,2010,1.88916
+MTC,Ref_cities,Rest of Malaysia,trn_shipping_intl,International Ship,2015,0.268637
+MTC,Ref_cities,Rest of Malaysia,trn_shipping_intl,International Ship,2020,0.277339
+MTC,Ref_cities,Rest of Malaysia,trn_shipping_intl,International Ship,2025,0.294512
+MTC,Ref_cities,Rest of Malaysia,trn_shipping_intl,International Ship,2030,0.314567
+MTC,Ref_cities,Rest of Malaysia,trn_shipping_intl,International Ship,2035,0.336239
+MTC,Ref_cities,Rest of Malaysia,trn_shipping_intl,International Ship,2040,0.357047
+MTC,Ref_cities,Rest of Malaysia,trn_shipping_intl,International Ship,2045,0.374989
+MTC,Ref_cities,Rest of Malaysia,trn_shipping_intl,International Ship,2050,0.389707
+MTC,Ref_cities,Rest of Malaysia,trn_shipping_intl,International Ship,2055,0.401147
+MTC,Ref_cities,Rest of Malaysia,trn_shipping_intl,International Ship,2060,0.410023
+MTC,Ref_cities,Rest of Malaysia,trn_shipping_intl,International Ship,2065,0.417575
+MTC,Ref_cities,Rest of Malaysia,trn_shipping_intl,International Ship,2070,0.423598
+MTC,Ref_cities,Rest of Malaysia,trn_shipping_intl,International Ship,2075,0.429325
+MTC,Ref_cities,Rest of Malaysia,trn_shipping_intl,International Ship,2080,0.435332
+MTC,Ref_cities,Rest of Malaysia,trn_shipping_intl,International Ship,2085,0.441904
+MTC,Ref_cities,Rest of Malaysia,trn_shipping_intl,International Ship,2090,0.448494
+MTC,Ref_cities,Rest of Malaysia,trn_shipping_intl,International Ship,2095,0.45518
+MTC,Ref_cities,Rest of Malaysia,trn_shipping_intl,International Ship,2100,0.463206

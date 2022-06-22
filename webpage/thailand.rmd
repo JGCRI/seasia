@@ -16,6 +16,7 @@ source("thailand_data_functions.R")
 source("thailand_aggregate_groups.R")
 source("conversions.R")
 knitr::opts_chunk$set(results = "hide", echo=FALSE, out.width = "75%", fig.align='center', message = F, warning = F, error = F, eval = T)
+library(tidyverse)
 ```
 
 
@@ -1518,6 +1519,112 @@ ggpubr::ggarrange(p1, p2, common.legend = T, nrow = 1, legend = "bottom") +
 <br>
 
 <p align="center"> <img src="images/divider.png"></p>
+
+<!-------------------------->
+<!-------------------------->
+# Summary Figures {.tabset}
+<!-------------------------->
+<!-------------------------->
+
+
+<!-------------------------->
+## Overall Indicators {.tabset}
+<!-------------------------->
+
+```{r summary 1 data}
+# ghg emissions by sector
+ghg_sector <- filter(
+  process_gcam_data(
+    read.csv("../data/Thailand/scenario_outputs/summary/queryoutall_non_co2_emissions_sector.csv",
+            skip = 1, check.names = F),
+    processed = F, class_name = sector, GHG), 
+  region %in% c("Thailand", "MEA area"),
+  year >= 2015, year <= 2070) 
+
+# ghg emissions by aggregate sector
+ghg_agg_sector <-  dplyr::bind_rows(
+  aggregate_rows(ghg_sector, class, "buildings", building_group),
+  aggregate_rows(ghg_sector, class, "industry", industry_group),
+  aggregate_rows(ghg_sector, class, "transport", transport_group)) %>% 
+  mutate(param = "GHG emissions by sector")
+
+# ghg emissions by gas
+ghg_gas <- filter(process_gcam_data(
+  read.csv("../data/Thailand/scenario_outputs/summary/queryoutall_non_co2_emissions_sector.csv",
+           skip = 1, check.names = F),
+  processed = F, class_name = GHG, sector) %>% 
+  mutate(param = "GHG emissions by gas"),
+  region %in% c("Thailand", "MEA area"),
+  year >= 2015, year <= 2070)
+
+# energy consumption by sector
+energy_agg_sector <- filter(
+  process_gcam_data(
+    read.csv("../data/Thailand/scenario_outputs/summary/queryoutall_tf_energy_agg_sector.csv",
+             skip = 1, check.names = F),
+    processed = F, class_name = sector),
+  region %in% c("Thailand", "MEA area"),
+  year >= 2015, year <= 2070) %>% 
+  mutate(param = "Energy consumption by sector")
+
+# electricity generation by fuel
+elec_gen_fuel <- filter(
+  process_gcam_data(
+    read.csv("../data/Thailand/scenario_outputs/summary/queryoutall_elec_gen_subsector.csv",
+             skip = 1, check.names = F),
+    processed = F, class_name = subsector, output),
+  region %in% c("Thailand", "MEA area"),
+  year >= 2015, year <= 2070) %>% 
+  mutate(param = "Electricity generation by fuel")
+
+# electricity consumption by sector
+elec_sector <- filter(
+  process_gcam_data(
+    read.csv("../data/Thailand/scenario_outputs/summary/queryoutall_elec_consumption_sector.csv",
+            skip = 1, check.names = F),
+    processed = F, class_name = sector, input), 
+  region %in% c("Thailand", "MEA area"),
+  year >= 2015, year <= 2070)
+
+# electricity consumption by aggregate sector
+elec_agg_sector <-  dplyr::bind_rows(
+  aggregate_rows(elec_sector, class, "buildings", building_group),
+  aggregate_rows(elec_sector, class, "industry", industry_group),
+  aggregate_rows(elec_sector, class, "transport", transport_group)) %>% 
+  mutate(param = "Electricity consumption by sector")
+
+# combine all params
+set1_data <- ghg_agg_sector %>% 
+  full_join(ghg_gas) %>% 
+  full_join(energy_agg_sector) %>%
+  full_join(elec_gen_fuel) %>% 
+  full_join(elec_agg_sector)
+
+```
+
+### National
+
+```{r summary national 1  plots, fig.dim = c(3,12)}
+# ghg_sector_charts <- rchart::chart(filter(set1_data, region == "Thailand"),
+#                                    save = F, chart_type = "class_absolute", aspect_ratio = 0.5)
+# ghg_sector_charts$chart_class +
+#   guides(fill = guide_legend(ncol = 2, bycol = TRUE))
+```
+
+### MEA area
+
+```{r summary MEA 1  plots}
+# ghg_sector_charts <- rchart::chart(filter(set1_data, region == "MEA area"),
+#                                    save = F, chart_type = "class_absolute")
+```
+
+<!-------------------------->
+## Sectoral Indicators {.tabset}
+<!-------------------------->
+
+### National
+
+### MEA area
 
 <!-------------------------->
 <!-------------------------->
