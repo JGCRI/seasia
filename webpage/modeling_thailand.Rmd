@@ -335,7 +335,7 @@ We can use GCAM's `shell-conductance` parameter to represent an increase in buil
 ```{r EV cost parity files table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
 library(kableExtra); library(dplyr)
 
-dt_url <- c("https://github.com/JGCRI/seasia/blob/main/data/Thailand/inputs/thailand_bau_vehicle_costs.csv",
+dt_url <- c("https://github.com/JGCRI/seasia/blob/main/data/thailand/inputs/thailand_bau_vehicle_costs.csv",
             "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/thailand_policy_subnational_transport_cost_ev_2050p_2060f.xml")
 
 data.frame(
@@ -429,7 +429,7 @@ The approach used here is to represent EV promotion as a decline in the cost of 
 ```{r shareweight files table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
 library(kableExtra); library(dplyr)
 
-dt_url <- c("https://github.com/JGCRI/seasia/blob/main/data/Thailand/inputs/thailand_bau_subsector_shareweights.csv",
+dt_url <- c("https://github.com/JGCRI/seasia/blob/main/data/thailand/inputs/thailand_bau_subsector_shareweights.csv",
             "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/thailand_policy_subnational_transport_freight_rail_0034_2040_lin.xml",
             "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/thailand_policy_subnational_transport_freight_road_55_2040_lin.xml")
 
@@ -478,7 +478,7 @@ The goal of this example is represent Thailand's plans to increase freight rail 
 <b>Approach</b></h3>
 
 <p style='margin-left:1em;'>
-Since infrastructure development is a non-cost impact on rail transport, we can use share weights to represent these impacts. Share weights are calibration parameters and not directly related to any "real-world" value, so it is usually necessary to test a range of share weight modifications to obtain the desired effect. The [subsector_shareweights_ref.csv]("https://github.com/JGCRI/seasia/blob/main/data/Thailand/inputs/thailand_bau_subsector_shareweights.csv") file contains the share weights for each transportation mode; the freight rail share weight is 0.001342 for all future periods and the freight road share weight is 1. For this example, we tested a range of share weights and determined that the following modifications had the desired effect: 
+Since infrastructure development is a non-cost impact on rail transport, we can use share weights to represent these impacts. Share weights are calibration parameters and not directly related to any "real-world" value, so it is usually necessary to test a range of share weight modifications to obtain the desired effect. The [subsector_shareweights_ref.csv]("https://github.com/JGCRI/seasia/blob/main/data/thailand/inputs/thailand_bau_subsector_shareweights.csv") file contains the share weights for each transportation mode; the freight rail share weight is 0.001342 for all future periods and the freight road share weight is 1. For this example, we tested a range of share weights and determined that the following modifications had the desired effect: 
 </p>
 <ul style='margin-left:4em; text-align:left;'>
   <li>Freight rail share weight: linearly increase from default 2015 value (0.001342) to 0.0034 in 2040 and remain at 0.0034 for the rest of the modeling period</li>
