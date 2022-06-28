@@ -11,7 +11,7 @@
 
 
 
-<title>header.knit</title>
+<title>background_coolingDemand.knit</title>
 
 <script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -286,63 +286,32 @@ $(document).ready(function () {
 </div>
 
 
-<!-- Allow href to tabsets -->
-<pre class="js"><code>window.onload = function() {
-  document.querySelector(&#39;a[href=&quot;&#39; + window.location.href.match(&quot;#.*$&quot;) + &#39;&quot;]&#39;).click();
-}
-
-function goToTab() {
-  var hash = String(window.location.href.match(&quot;#.*$&quot;));
-  var target = document.querySelector(&quot;a[role = &#39;tab&#39;][href=&#39;&quot; + hash + &quot;&#39;]&quot;);
-  if (target !== null) {
-    var greatgrandparent = target.parentElement.parentElement.parentElement;
-    if (greatgrandparent.getAttribute(&quot;role&quot;) == &quot;tabpanel&quot;) {
-      document.querySelector(&quot;a[role = &#39;tab&#39;][href=&#39;#&quot; + greatgrandparent.getAttribute(&quot;id&quot;) + &quot;&#39;]&quot;).click();
-    }
-    target.click();
-    target.scrollIntoView();
-  }
-}
-window.onload = function() {
-  setTimeout(goToTab, 100);
-}
-window.onhashchange = goToTab;</code></pre>
-<script type="text/javascript">
-window.onload = function() {
-  document.querySelector('a[href="' + window.location.href.match("#.*$") + '"]').click();
-}
-
-function goToTab() {
-  var hash = String(window.location.href.match("#.*$"));
-  var target = document.querySelector("a[role = 'tab'][href='" + hash + "']");
-  if (target !== null) {
-    var greatgrandparent = target.parentElement.parentElement.parentElement;
-    if (greatgrandparent.getAttribute("role") == "tabpanel") {
-      document.querySelector("a[role = 'tab'][href='#" + greatgrandparent.getAttribute("id") + "']").click();
-    }
-    target.click();
-    target.scrollIntoView();
-  }
-}
-window.onload = function() {
-  setTimeout(goToTab, 100);
-}
-window.onhashchange = goToTab;
-</script>
-<!-- Set table styles -->
-<style>
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
-</style>
+<!------------------------------------------------->
+<!---Background - Building Cooling Demand---------->
+<!------------------------------------------------->
+<div class="warning"
+style="background-color:#EFFFC9; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
+<p><span></p>
+<h3 style="text-align:center; font-size:24px">
+<b>Background - Cooling Demand</b>
+</h3>
+<p style="margin-left:1em;">
+Cooling demand in GCAM depends on the indoor-outdoor temperature
+difference (measured using cooling degree days or CDD), the building’s
+shell conductance, and the building’s external heat gains along with GDP
+and price factors. For more details and to view the equation used to
+calculate cooling demand, see the <strong>Building service
+demand</strong> section of the <a
+href="https://jgcri.github.io/gcam-doc/demand_energy.html#equations">GCAM
+energy demand documentation</a>. GCAM’s <code>shell-conductance</code>
+parameter is the inverse of building envelope efficiency. Its units are
+watts per square meter per degree Kelvin and it represents the amount of
+heat transferred through the building’s exterior when there is a
+difference between the indoor and outdoor temperature.
+</p>
+<p></span></p>
+</div>
+<p><br></p>
 
 
 
