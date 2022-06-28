@@ -1,0 +1,243 @@
+region,supplysector,tranSubsector,stub.technology,year,minicam.non.energy.input,input.cost,sce
+Thailand,trn_pass_road_LDV_4W,Car,BEV,1975,non-energy,0.5448,CORE
+Thailand,trn_pass_road_LDV_4W,Car,BEV,1990,non-energy,0.5448,CORE
+Thailand,trn_pass_road_LDV_4W,Car,BEV,2005,non-energy,0.3148,CORE
+Thailand,trn_pass_road_LDV_4W,Car,BEV,2010,non-energy,0.2818,CORE
+Thailand,trn_pass_road_LDV_4W,Car,BEV,2015,non-energy,0.2487,CORE
+Thailand,trn_pass_road_LDV_4W,Car,BEV,2020,non-energy,0.2232,CORE
+Thailand,trn_pass_road_LDV_4W,Car,BEV,2025,non-energy,0.213734832,CORE
+Thailand,trn_pass_road_LDV_4W,Car,BEV,2030,non-energy,0.20467105,CORE
+Thailand,trn_pass_road_LDV_4W,Car,BEV,2035,non-energy,0.195991632,CORE
+Thailand,trn_pass_road_LDV_4W,Car,BEV,2040,non-energy,0.18768028,CORE
+Thailand,trn_pass_road_LDV_4W,Car,BEV,2045,non-energy,0.179721385,CORE
+Thailand,trn_pass_road_LDV_4W,Car,BEV,2050,non-energy,0.1721,CORE
+Thailand,trn_pass_road_LDV_4W,Car,BEV,2055,non-energy,0.1721,CORE
+Thailand,trn_pass_road_LDV_4W,Car,BEV,2060,non-energy,0.1721,CORE
+Thailand,trn_pass_road_LDV_4W,Car,BEV,2065,non-energy,0.1721,CORE
+Thailand,trn_pass_road_LDV_4W,Car,BEV,2070,non-energy,0.1721,CORE
+Thailand,trn_pass_road_LDV_4W,Car,BEV,2075,non-energy,0.1721,CORE
+Thailand,trn_pass_road_LDV_4W,Car,BEV,2080,non-energy,0.1721,CORE
+Thailand,trn_pass_road_LDV_4W,Car,BEV,2085,non-energy,0.1721,CORE
+Thailand,trn_pass_road_LDV_4W,Car,BEV,2090,non-energy,0.1721,CORE
+Thailand,trn_pass_road_LDV_4W,Car,BEV,2095,non-energy,0.1721,CORE
+Thailand,trn_pass_road_LDV_4W,Car,BEV,2100,non-energy,0.1721,CORE
+Thailand,trn_pass_road_LDV_4W,Large Car and Truck,BEV,1975,non-energy,1.1146,CORE
+Thailand,trn_pass_road_LDV_4W,Large Car and Truck,BEV,1990,non-energy,1.1146,CORE
+Thailand,trn_pass_road_LDV_4W,Large Car and Truck,BEV,2005,non-energy,0.6044,CORE
+Thailand,trn_pass_road_LDV_4W,Large Car and Truck,BEV,2010,non-energy,0.5374,CORE
+Thailand,trn_pass_road_LDV_4W,Large Car and Truck,BEV,2015,non-energy,0.4704,CORE
+Thailand,trn_pass_road_LDV_4W,Large Car and Truck,BEV,2020,non-energy,0.4185,CORE
+Thailand,trn_pass_road_LDV_4W,Large Car and Truck,BEV,2025,non-energy,0.395758883,CORE
+Thailand,trn_pass_road_LDV_4W,Large Car and Truck,BEV,2030,non-energy,0.374253509,CORE
+Thailand,trn_pass_road_LDV_4W,Large Car and Truck,BEV,2035,non-energy,0.353916727,CORE
+Thailand,trn_pass_road_LDV_4W,Large Car and Truck,BEV,2040,non-energy,0.334685039,CORE
+Thailand,trn_pass_road_LDV_4W,Large Car and Truck,BEV,2045,non-energy,0.316498392,CORE
+Thailand,trn_pass_road_LDV_4W,Large Car and Truck,BEV,2050,non-energy,0.2993,CORE
+Thailand,trn_pass_road_LDV_4W,Large Car and Truck,BEV,2055,non-energy,0.2993,CORE
+Thailand,trn_pass_road_LDV_4W,Large Car and Truck,BEV,2060,non-energy,0.2993,CORE
+Thailand,trn_pass_road_LDV_4W,Large Car and Truck,BEV,2065,non-energy,0.2993,CORE
+Thailand,trn_pass_road_LDV_4W,Large Car and Truck,BEV,2070,non-energy,0.2993,CORE
+Thailand,trn_pass_road_LDV_4W,Large Car and Truck,BEV,2075,non-energy,0.2993,CORE
+Thailand,trn_pass_road_LDV_4W,Large Car and Truck,BEV,2080,non-energy,0.2993,CORE
+Thailand,trn_pass_road_LDV_4W,Large Car and Truck,BEV,2085,non-energy,0.2993,CORE
+Thailand,trn_pass_road_LDV_4W,Large Car and Truck,BEV,2090,non-energy,0.2993,CORE
+Thailand,trn_pass_road_LDV_4W,Large Car and Truck,BEV,2095,non-energy,0.2993,CORE
+Thailand,trn_pass_road_LDV_4W,Large Car and Truck,BEV,2100,non-energy,0.2993,CORE
+Thailand,trn_pass_road_LDV_4W,Mini Car,BEV,1975,non-energy,0.353,CORE
+Thailand,trn_pass_road_LDV_4W,Mini Car,BEV,1990,non-energy,0.353,CORE
+Thailand,trn_pass_road_LDV_4W,Mini Car,BEV,2005,non-energy,0.1894,CORE
+Thailand,trn_pass_road_LDV_4W,Mini Car,BEV,2010,non-energy,0.1694,CORE
+Thailand,trn_pass_road_LDV_4W,Mini Car,BEV,2015,non-energy,0.1493,CORE
+Thailand,trn_pass_road_LDV_4W,Mini Car,BEV,2020,non-energy,0.1338,CORE
+Thailand,trn_pass_road_LDV_4W,Mini Car,BEV,2025,non-energy,0.12075445,CORE
+Thailand,trn_pass_road_LDV_4W,Mini Car,BEV,2030,non-energy,0.108980846,CORE
+Thailand,trn_pass_road_LDV_4W,Mini Car,BEV,2035,non-energy,0.098355173,CORE
+Thailand,trn_pass_road_LDV_4W,Mini Car,BEV,2040,non-energy,0.088765507,CORE
+Thailand,trn_pass_road_LDV_4W,Mini Car,BEV,2045,non-energy,0.080110837,CORE
+Thailand,trn_pass_road_LDV_4W,Mini Car,BEV,2050,non-energy,0.0723,CORE
+Thailand,trn_pass_road_LDV_4W,Mini Car,BEV,2055,non-energy,0.0723,CORE
+Thailand,trn_pass_road_LDV_4W,Mini Car,BEV,2060,non-energy,0.0723,CORE
+Thailand,trn_pass_road_LDV_4W,Mini Car,BEV,2065,non-energy,0.0723,CORE
+Thailand,trn_pass_road_LDV_4W,Mini Car,BEV,2070,non-energy,0.0723,CORE
+Thailand,trn_pass_road_LDV_4W,Mini Car,BEV,2075,non-energy,0.0723,CORE
+Thailand,trn_pass_road_LDV_4W,Mini Car,BEV,2080,non-energy,0.0723,CORE
+Thailand,trn_pass_road_LDV_4W,Mini Car,BEV,2085,non-energy,0.0723,CORE
+Thailand,trn_pass_road_LDV_4W,Mini Car,BEV,2090,non-energy,0.0723,CORE
+Thailand,trn_pass_road_LDV_4W,Mini Car,BEV,2095,non-energy,0.0723,CORE
+Thailand,trn_pass_road_LDV_4W,Mini Car,BEV,2100,non-energy,0.0723,CORE
+Thailand,trn_pass_road_LDV_4W,Car,Hybrid Liquids,1975,non-energy,0.2096,CORE
+Thailand,trn_pass_road_LDV_4W,Car,Hybrid Liquids,1990,non-energy,0.2096,CORE
+Thailand,trn_pass_road_LDV_4W,Car,Hybrid Liquids,2005,non-energy,0.1563,CORE
+Thailand,trn_pass_road_LDV_4W,Car,Hybrid Liquids,2010,non-energy,0.1544,CORE
+Thailand,trn_pass_road_LDV_4W,Car,Hybrid Liquids,2015,non-energy,0.1527,CORE
+Thailand,trn_pass_road_LDV_4W,Car,Hybrid Liquids,2020,non-energy,0.1591,CORE
+Thailand,trn_pass_road_LDV_4W,Car,Hybrid Liquids,2025,non-energy,0.161196384,CORE
+Thailand,trn_pass_road_LDV_4W,Car,Hybrid Liquids,2030,non-energy,0.163320391,CORE
+Thailand,trn_pass_road_LDV_4W,Car,Hybrid Liquids,2035,non-energy,0.165472384,CORE
+Thailand,trn_pass_road_LDV_4W,Car,Hybrid Liquids,2040,non-energy,0.167652734,CORE
+Thailand,trn_pass_road_LDV_4W,Car,Hybrid Liquids,2045,non-energy,0.169861813,CORE
+Thailand,trn_pass_road_LDV_4W,Car,Hybrid Liquids,2050,non-energy,0.1721,CORE
+Thailand,trn_pass_road_LDV_4W,Car,Hybrid Liquids,2055,non-energy,0.1721,CORE
+Thailand,trn_pass_road_LDV_4W,Car,Hybrid Liquids,2060,non-energy,0.1721,CORE
+Thailand,trn_pass_road_LDV_4W,Car,Hybrid Liquids,2065,non-energy,0.1721,CORE
+Thailand,trn_pass_road_LDV_4W,Car,Hybrid Liquids,2070,non-energy,0.1721,CORE
+Thailand,trn_pass_road_LDV_4W,Car,Hybrid Liquids,2075,non-energy,0.1721,CORE
+Thailand,trn_pass_road_LDV_4W,Car,Hybrid Liquids,2080,non-energy,0.1721,CORE
+Thailand,trn_pass_road_LDV_4W,Car,Hybrid Liquids,2085,non-energy,0.1721,CORE
+Thailand,trn_pass_road_LDV_4W,Car,Hybrid Liquids,2090,non-energy,0.1721,CORE
+Thailand,trn_pass_road_LDV_4W,Car,Hybrid Liquids,2095,non-energy,0.1721,CORE
+Thailand,trn_pass_road_LDV_4W,Car,Hybrid Liquids,2100,non-energy,0.1721,CORE
+Thailand,trn_pass_road_LDV_4W,Large Car and Truck,Hybrid Liquids,1975,non-energy,0.3614,CORE
+Thailand,trn_pass_road_LDV_4W,Large Car and Truck,Hybrid Liquids,1990,non-energy,0.3614,CORE
+Thailand,trn_pass_road_LDV_4W,Large Car and Truck,Hybrid Liquids,2005,non-energy,0.2696,CORE
+Thailand,trn_pass_road_LDV_4W,Large Car and Truck,Hybrid Liquids,2010,non-energy,0.2674,CORE
+Thailand,trn_pass_road_LDV_4W,Large Car and Truck,Hybrid Liquids,2015,non-energy,0.2653,CORE
+Thailand,trn_pass_road_LDV_4W,Large Car and Truck,Hybrid Liquids,2020,non-energy,0.2777,CORE
+Thailand,trn_pass_road_LDV_4W,Large Car and Truck,Hybrid Liquids,2025,non-energy,0.281188585,CORE
+Thailand,trn_pass_road_LDV_4W,Large Car and Truck,Hybrid Liquids,2030,non-energy,0.284720995,CORE
+Thailand,trn_pass_road_LDV_4W,Large Car and Truck,Hybrid Liquids,2035,non-energy,0.28829778,CORE
+Thailand,trn_pass_road_LDV_4W,Large Car and Truck,Hybrid Liquids,2040,non-energy,0.291919499,CORE
+Thailand,trn_pass_road_LDV_4W,Large Car and Truck,Hybrid Liquids,2045,non-energy,0.295586715,CORE
+Thailand,trn_pass_road_LDV_4W,Large Car and Truck,Hybrid Liquids,2050,non-energy,0.2993,CORE
+Thailand,trn_pass_road_LDV_4W,Large Car and Truck,Hybrid Liquids,2055,non-energy,0.2993,CORE
+Thailand,trn_pass_road_LDV_4W,Large Car and Truck,Hybrid Liquids,2060,non-energy,0.2993,CORE
+Thailand,trn_pass_road_LDV_4W,Large Car and Truck,Hybrid Liquids,2065,non-energy,0.2993,CORE
+Thailand,trn_pass_road_LDV_4W,Large Car and Truck,Hybrid Liquids,2070,non-energy,0.2993,CORE
+Thailand,trn_pass_road_LDV_4W,Large Car and Truck,Hybrid Liquids,2075,non-energy,0.2993,CORE
+Thailand,trn_pass_road_LDV_4W,Large Car and Truck,Hybrid Liquids,2080,non-energy,0.2993,CORE
+Thailand,trn_pass_road_LDV_4W,Large Car and Truck,Hybrid Liquids,2085,non-energy,0.2993,CORE
+Thailand,trn_pass_road_LDV_4W,Large Car and Truck,Hybrid Liquids,2090,non-energy,0.2993,CORE
+Thailand,trn_pass_road_LDV_4W,Large Car and Truck,Hybrid Liquids,2095,non-energy,0.2993,CORE
+Thailand,trn_pass_road_LDV_4W,Large Car and Truck,Hybrid Liquids,2100,non-energy,0.2993,CORE
+Thailand,trn_pass_road_LDV_4W,Mini Car,Hybrid Liquids,1975,non-energy,0.0961,CORE
+Thailand,trn_pass_road_LDV_4W,Mini Car,Hybrid Liquids,1990,non-energy,0.0961,CORE
+Thailand,trn_pass_road_LDV_4W,Mini Car,Hybrid Liquids,2005,non-energy,0.0714,CORE
+Thailand,trn_pass_road_LDV_4W,Mini Car,Hybrid Liquids,2010,non-energy,0.0699,CORE
+Thailand,trn_pass_road_LDV_4W,Mini Car,Hybrid Liquids,2015,non-energy,0.0685,CORE
+Thailand,trn_pass_road_LDV_4W,Mini Car,Hybrid Liquids,2020,non-energy,0.0709,CORE
+Thailand,trn_pass_road_LDV_4W,Mini Car,Hybrid Liquids,2025,non-energy,0.071131436,CORE
+Thailand,trn_pass_road_LDV_4W,Mini Car,Hybrid Liquids,2030,non-energy,0.071363628,CORE
+Thailand,trn_pass_road_LDV_4W,Mini Car,Hybrid Liquids,2035,non-energy,0.071596578,CORE
+Thailand,trn_pass_road_LDV_4W,Mini Car,Hybrid Liquids,2040,non-energy,0.071830288,CORE
+Thailand,trn_pass_road_LDV_4W,Mini Car,Hybrid Liquids,2045,non-energy,0.072064761,CORE
+Thailand,trn_pass_road_LDV_4W,Mini Car,Hybrid Liquids,2050,non-energy,0.0723,CORE
+Thailand,trn_pass_road_LDV_4W,Mini Car,Hybrid Liquids,2055,non-energy,0.0723,CORE
+Thailand,trn_pass_road_LDV_4W,Mini Car,Hybrid Liquids,2060,non-energy,0.0723,CORE
+Thailand,trn_pass_road_LDV_4W,Mini Car,Hybrid Liquids,2065,non-energy,0.0723,CORE
+Thailand,trn_pass_road_LDV_4W,Mini Car,Hybrid Liquids,2070,non-energy,0.0723,CORE
+Thailand,trn_pass_road_LDV_4W,Mini Car,Hybrid Liquids,2075,non-energy,0.0723,CORE
+Thailand,trn_pass_road_LDV_4W,Mini Car,Hybrid Liquids,2080,non-energy,0.0723,CORE
+Thailand,trn_pass_road_LDV_4W,Mini Car,Hybrid Liquids,2085,non-energy,0.0723,CORE
+Thailand,trn_pass_road_LDV_4W,Mini Car,Hybrid Liquids,2090,non-energy,0.0723,CORE
+Thailand,trn_pass_road_LDV_4W,Mini Car,Hybrid Liquids,2095,non-energy,0.0723,CORE
+Thailand,trn_pass_road_LDV_4W,Mini Car,Hybrid Liquids,2100,non-energy,0.0723,CORE
+Thailand,trn_pass_road_LDV,2W and 3W,BEV,1975,non-energy,0.0679,CORE
+Thailand,trn_pass_road_LDV,2W and 3W,BEV,1990,non-energy,0.0679,CORE
+Thailand,trn_pass_road_LDV,2W and 3W,BEV,2005,non-energy,0.0561,CORE
+Thailand,trn_pass_road_LDV,2W and 3W,BEV,2010,non-energy,0.0488,CORE
+Thailand,trn_pass_road_LDV,2W and 3W,BEV,2015,non-energy,0.0417,CORE
+Thailand,trn_pass_road_LDV,2W and 3W,BEV,2020,non-energy,0.0349,CORE
+Thailand,trn_pass_road_LDV,2W and 3W,BEV,2025,non-energy,0.032968294,CORE
+Thailand,trn_pass_road_LDV,2W and 3W,BEV,2030,non-energy,0.031143507,CORE
+Thailand,trn_pass_road_LDV,2W and 3W,BEV,2035,non-energy,0.029419721,CORE
+Thailand,trn_pass_road_LDV,2W and 3W,BEV,2040,non-energy,0.027791347,CORE
+Thailand,trn_pass_road_LDV,2W and 3W,BEV,2045,non-energy,0.026253103,CORE
+Thailand,trn_pass_road_LDV,2W and 3W,BEV,2050,non-energy,0.0248,CORE
+Thailand,trn_pass_road_LDV,2W and 3W,BEV,2055,non-energy,0.0248,CORE
+Thailand,trn_pass_road_LDV,2W and 3W,BEV,2060,non-energy,0.0248,CORE
+Thailand,trn_pass_road_LDV,2W and 3W,BEV,2065,non-energy,0.0248,CORE
+Thailand,trn_pass_road_LDV,2W and 3W,BEV,2070,non-energy,0.0248,CORE
+Thailand,trn_pass_road_LDV,2W and 3W,BEV,2075,non-energy,0.0248,CORE
+Thailand,trn_pass_road_LDV,2W and 3W,BEV,2080,non-energy,0.0248,CORE
+Thailand,trn_pass_road_LDV,2W and 3W,BEV,2085,non-energy,0.0248,CORE
+Thailand,trn_pass_road_LDV,2W and 3W,BEV,2090,non-energy,0.0248,CORE
+Thailand,trn_pass_road_LDV,2W and 3W,BEV,2095,non-energy,0.0248,CORE
+Thailand,trn_pass_road_LDV,2W and 3W,BEV,2100,non-energy,0.0248,CORE
+Thailand,trn_freight_road,Medium truck,BEV,1975,non-energy,0.9781,CORE
+Thailand,trn_freight_road,Medium truck,BEV,1990,non-energy,0.9781,CORE
+Thailand,trn_freight_road,Medium truck,BEV,2005,non-energy,0.9781,CORE
+Thailand,trn_freight_road,Medium truck,BEV,2010,non-energy,0.8796,CORE
+Thailand,trn_freight_road,Medium truck,BEV,2015,non-energy,0.7811,CORE
+Thailand,trn_freight_road,Medium truck,BEV,2020,non-energy,0.6984,CORE
+Thailand,trn_freight_road,Medium truck,BEV,2025,non-energy,0.62763049,CORE
+Thailand,trn_freight_road,Medium truck,BEV,2030,non-energy,0.564032119,CORE
+Thailand,trn_freight_road,Medium truck,BEV,2035,non-energy,0.50687823,CORE
+Thailand,trn_freight_road,Medium truck,BEV,2040,non-energy,0.455515796,CORE
+Thailand,trn_freight_road,Medium truck,BEV,2045,non-energy,0.409357964,CORE
+Thailand,trn_freight_road,Medium truck,BEV,2050,non-energy,0.367877348,CORE
+Thailand,trn_freight_road,Medium truck,BEV,2055,non-energy,0.3306,CORE
+Thailand,trn_freight_road,Medium truck,BEV,2060,non-energy,0.2971,CORE
+Thailand,trn_freight_road,Medium truck,BEV,2065,non-energy,0.2971,CORE
+Thailand,trn_freight_road,Medium truck,BEV,2070,non-energy,0.2971,CORE
+Thailand,trn_freight_road,Medium truck,BEV,2075,non-energy,0.2971,CORE
+Thailand,trn_freight_road,Medium truck,BEV,2080,non-energy,0.2971,CORE
+Thailand,trn_freight_road,Medium truck,BEV,2085,non-energy,0.2971,CORE
+Thailand,trn_freight_road,Medium truck,BEV,2090,non-energy,0.2971,CORE
+Thailand,trn_freight_road,Medium truck,BEV,2095,non-energy,0.2971,CORE
+Thailand,trn_freight_road,Medium truck,BEV,2100,non-energy,0.2971,CORE
+Thailand,trn_freight_road,Light truck,BEV,1975,non-energy,0.4474,CORE
+Thailand,trn_freight_road,Light truck,BEV,1990,non-energy,0.4474,CORE
+Thailand,trn_freight_road,Light truck,BEV,2005,non-energy,0.4474,CORE
+Thailand,trn_freight_road,Light truck,BEV,2010,non-energy,0.3835,CORE
+Thailand,trn_freight_road,Light truck,BEV,2015,non-energy,0.3194,CORE
+Thailand,trn_freight_road,Light truck,BEV,2020,non-energy,0.2699,CORE
+Thailand,trn_freight_road,Light truck,BEV,2025,non-energy,0.257868754,CORE
+Thailand,trn_freight_road,Light truck,BEV,2030,non-energy,0.246373822,CORE
+Thailand,trn_freight_road,Light truck,BEV,2035,non-energy,0.235391295,CORE
+Thailand,trn_freight_road,Light truck,BEV,2040,non-energy,0.224898333,CORE
+Thailand,trn_freight_road,Light truck,BEV,2045,non-energy,0.214873112,CORE
+Thailand,trn_freight_road,Light truck,BEV,2050,non-energy,0.205294782,CORE
+Thailand,trn_freight_road,Light truck,BEV,2055,non-energy,0.196143422,CORE
+Thailand,trn_freight_road,Light truck,BEV,2060,non-energy,0.1874,CORE
+Thailand,trn_freight_road,Light truck,BEV,2065,non-energy,0.1874,CORE
+Thailand,trn_freight_road,Light truck,BEV,2070,non-energy,0.1874,CORE
+Thailand,trn_freight_road,Light truck,BEV,2075,non-energy,0.1874,CORE
+Thailand,trn_freight_road,Light truck,BEV,2080,non-energy,0.1874,CORE
+Thailand,trn_freight_road,Light truck,BEV,2085,non-energy,0.1874,CORE
+Thailand,trn_freight_road,Light truck,BEV,2090,non-energy,0.1874,CORE
+Thailand,trn_freight_road,Light truck,BEV,2095,non-energy,0.1874,CORE
+Thailand,trn_freight_road,Light truck,BEV,2100,non-energy,0.1874,CORE
+Thailand,trn_freight_road,Heavy truck,BEV,1975,non-energy,1.0714,CORE
+Thailand,trn_freight_road,Heavy truck,BEV,1990,non-energy,1.0714,CORE
+Thailand,trn_freight_road,Heavy truck,BEV,2005,non-energy,1.0714,CORE
+Thailand,trn_freight_road,Heavy truck,BEV,2010,non-energy,0.9678,CORE
+Thailand,trn_freight_road,Heavy truck,BEV,2015,non-energy,0.8641,CORE
+Thailand,trn_freight_road,Heavy truck,BEV,2020,non-energy,0.776,CORE
+Thailand,trn_freight_road,Heavy truck,BEV,2025,non-energy,0.690843466,CORE
+Thailand,trn_freight_road,Heavy truck,BEV,2030,non-energy,0.615031823,CORE
+Thailand,trn_freight_road,Heavy truck,BEV,2035,non-energy,0.547539583,CORE
+Thailand,trn_freight_road,Heavy truck,BEV,2040,non-energy,0.487453793,CORE
+Thailand,trn_freight_road,Heavy truck,BEV,2045,non-energy,0.433961685,CORE
+Thailand,trn_freight_road,Heavy truck,BEV,2050,non-energy,0.386339684,CORE
+Thailand,trn_freight_road,Heavy truck,BEV,2055,non-energy,0.343943616,CORE
+Thailand,trn_freight_road,Heavy truck,BEV,2060,non-energy,0.3062,CORE
+Thailand,trn_freight_road,Heavy truck,BEV,2065,non-energy,0.3062,CORE
+Thailand,trn_freight_road,Heavy truck,BEV,2070,non-energy,0.3062,CORE
+Thailand,trn_freight_road,Heavy truck,BEV,2075,non-energy,0.3062,CORE
+Thailand,trn_freight_road,Heavy truck,BEV,2080,non-energy,0.3062,CORE
+Thailand,trn_freight_road,Heavy truck,BEV,2085,non-energy,0.3062,CORE
+Thailand,trn_freight_road,Heavy truck,BEV,2090,non-energy,0.3062,CORE
+Thailand,trn_freight_road,Heavy truck,BEV,2095,non-energy,0.3062,CORE
+Thailand,trn_freight_road,Heavy truck,BEV,2100,non-energy,0.3062,CORE
+Thailand,trn_pass_road,Bus,BEV,1975,non-energy,1.9075,CORE
+Thailand,trn_pass_road,Bus,BEV,1990,non-energy,1.9075,CORE
+Thailand,trn_pass_road,Bus,BEV,2005,non-energy,1.9075,CORE
+Thailand,trn_pass_road,Bus,BEV,2010,non-energy,1.8153,CORE
+Thailand,trn_pass_road,Bus,BEV,2015,non-energy,1.7231,CORE
+Thailand,trn_pass_road,Bus,BEV,2020,non-energy,1.6377,CORE
+Thailand,trn_pass_road,Bus,BEV,2025,non-energy,1.48634234,CORE
+Thailand,trn_pass_road,Bus,BEV,2030,non-energy,1.348973286,CORE
+Thailand,trn_pass_road,Bus,BEV,2035,non-energy,1.2243,CORE
+Thailand,trn_pass_road,Bus,BEV,2040,non-energy,1.2243,CORE
+Thailand,trn_pass_road,Bus,BEV,2045,non-energy,1.2243,CORE
+Thailand,trn_pass_road,Bus,BEV,2050,non-energy,1.2243,CORE
+Thailand,trn_pass_road,Bus,BEV,2055,non-energy,1.2243,CORE
+Thailand,trn_pass_road,Bus,BEV,2060,non-energy,1.2243,CORE
+Thailand,trn_pass_road,Bus,BEV,2065,non-energy,1.2243,CORE
+Thailand,trn_pass_road,Bus,BEV,2070,non-energy,1.2243,CORE
+Thailand,trn_pass_road,Bus,BEV,2075,non-energy,1.2243,CORE
+Thailand,trn_pass_road,Bus,BEV,2080,non-energy,1.2243,CORE
+Thailand,trn_pass_road,Bus,BEV,2085,non-energy,1.2243,CORE
+Thailand,trn_pass_road,Bus,BEV,2090,non-energy,1.2243,CORE
+Thailand,trn_pass_road,Bus,BEV,2095,non-energy,1.2243,CORE
+Thailand,trn_pass_road,Bus,BEV,2100,non-energy,1.2243,CORE

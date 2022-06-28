@@ -11,7 +11,7 @@
 
 
 
-<title>header.knit</title>
+<title>background_policy-portfolio-standards.knit</title>
 
 <script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -286,63 +286,31 @@ $(document).ready(function () {
 </div>
 
 
-<!-- Allow href to tabsets -->
-<pre class="js"><code>window.onload = function() {
-  document.querySelector(&#39;a[href=&quot;&#39; + window.location.href.match(&quot;#.*$&quot;) + &#39;&quot;]&#39;).click();
-}
-
-function goToTab() {
-  var hash = String(window.location.href.match(&quot;#.*$&quot;));
-  var target = document.querySelector(&quot;a[role = &#39;tab&#39;][href=&#39;&quot; + hash + &quot;&#39;]&quot;);
-  if (target !== null) {
-    var greatgrandparent = target.parentElement.parentElement.parentElement;
-    if (greatgrandparent.getAttribute(&quot;role&quot;) == &quot;tabpanel&quot;) {
-      document.querySelector(&quot;a[role = &#39;tab&#39;][href=&#39;#&quot; + greatgrandparent.getAttribute(&quot;id&quot;) + &quot;&#39;]&quot;).click();
-    }
-    target.click();
-    target.scrollIntoView();
-  }
-}
-window.onload = function() {
-  setTimeout(goToTab, 100);
-}
-window.onhashchange = goToTab;</code></pre>
-<script type="text/javascript">
-window.onload = function() {
-  document.querySelector('a[href="' + window.location.href.match("#.*$") + '"]').click();
-}
-
-function goToTab() {
-  var hash = String(window.location.href.match("#.*$"));
-  var target = document.querySelector("a[role = 'tab'][href='" + hash + "']");
-  if (target !== null) {
-    var greatgrandparent = target.parentElement.parentElement.parentElement;
-    if (greatgrandparent.getAttribute("role") == "tabpanel") {
-      document.querySelector("a[role = 'tab'][href='#" + greatgrandparent.getAttribute("id") + "']").click();
-    }
-    target.click();
-    target.scrollIntoView();
-  }
-}
-window.onload = function() {
-  setTimeout(goToTab, 100);
-}
-window.onhashchange = goToTab;
-</script>
-<!-- Set table styles -->
-<style>
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
-</style>
+<!--------------------------------------------->
+<!---Background - Policy portfolio standards--->
+<!--------------------------------------------->
+<div class="warning"
+style="background-color:#EFFFC9; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
+<p><span></p>
+<h3 style="text-align:center; font-size:24px">
+<b>Background - Policy portfolio standards</b>
+</h3>
+<p style="margin-left:1em;">
+A <code>policy-portfolio-standard</code> in GCAM is a policy that can be
+used to implement taxes, subsidies, floors, ceilings, and constraints.
+Taxes and subsidies can be specified when the exact amount to be added
+or subtracted to the price is known. However, a
+<code>policy-portfolio-standard</code> can also contain a
+<code>constraint</code>, which acts as either a floor or ceiling for the
+technology or technologies included. Exact constraints can also be
+implemented. See the <a
+href="https://jgcri.github.io/gcam-doc/policies_examples.html">GCAM
+Policy Examples</a> documentation for more information on how to
+implement these options.
+</p>
+<p></span></p>
+</div>
+<p><br></p>
 
 
 
