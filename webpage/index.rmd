@@ -6,16 +6,10 @@ pagetitle: SEAsia
 knitr::opts_chunk$set(echo=FALSE, out.width="100%", results = "show")
 ```
 
-
-<div class="header_logo">
-<img src="images/logo_us_state_department.png" style="float:right;height:40px;">
-<img src="images/logo_pnnl_white.png" style="float:right;height:40px;">
-<img src="images/DoNotCite.png" style="float:right;height:32px;margin-top:8px;margin-right:380px">
-</div>
-
 <!-------------------------->
 <!-------------------------->
-# Welcome
+<h1 style="float:left;font-size:60px;vertical-align:middle"> Welcome </h1>
+<img src="images/logo_us_state_department_color.png" style="float:right;height:100px;"> <img src="images/logo_pnnl.png" style="float:right;height:100px;">
 <!-------------------------->
 <!-------------------------->
 <p align="center"> <img src="images/divider.png"></p>

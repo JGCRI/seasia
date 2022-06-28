@@ -1,0 +1,17 @@
+<!-------------------------------------->
+<!---Background - Shareweights---------->
+<!-------------------------------------->
+
+<div class="warning" style='background-color:#EFFFC9; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+
+<h3 style='text-align:center; font-size:24px'>
+<b>Background - Shareweights</b></h3>
+
+<p style='margin-left:1em;'>
+Text here. Linking to relevant places in gcam docs etc and summarizing key concepts.
+</p>
+</span>
+</div>
+
+<br>

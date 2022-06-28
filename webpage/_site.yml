@@ -9,6 +9,13 @@ navbar:
       href: thailand.html
     - text: "Malaysia"
       href: malaysia.html
+  right:
+    - text: "Appendix - Thailand"
+      href: thailand_appendix.html
+    - text: "Appendix - Malaysia"
+      href: malaysia_appendix.html
+    - text: "Modeling - Thailand"
+      href: modeling_thailand.html
     - icon: fab fa-github
       href: https://github.com/JGCRI/seasia
 

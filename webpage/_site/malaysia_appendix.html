@@ -13,8 +13,8 @@
 
 <title>Appendix (Malaysia)</title>
 
-<script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -62,6 +62,7 @@ if (window.hljs) {
 
 
 
+
 <link rel="stylesheet" href="style.css" type="text/css" />
 
 
@@ -86,6 +87,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -311,7 +315,7 @@ div.tocify {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -332,15 +336,23 @@ div.tocify {
 <li>
   <a href="malaysia.html">Malaysia</a>
 </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="thailand_appendix.html">Appendix - Thailand</a>
+</li>
+<li>
+  <a href="malaysia_appendix.html">Appendix - Malaysia</a>
+</li>
+<li>
+  <a href="modeling_thailand.html">Modeling - Thailand</a>
+</li>
 <li>
   <a href="https://github.com/JGCRI/seasia">
     <span class="fab fa-github"></span>
      
   </a>
 </li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        
       </ul>
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
@@ -354,57 +366,299 @@ div.tocify {
 </div>
 
 
-<!-- Allow href to tabsets -->
-<script type="text/javascript">
-window.onload = function() {
-  document.querySelector('a[href="' + window.location.href.match("#.*$") + '"]').click();
-}
-
-function goToTab() {
-  var hash = String(window.location.href.match("#.*$"));
-  var target = document.querySelector("a[role = 'tab'][href='" + hash + "']");
-  if (target !== null) {
-    var greatgrandparent = target.parentElement.parentElement.parentElement;
-    if (greatgrandparent.getAttribute("role") == "tabpanel") {
-      document.querySelector("a[role = 'tab'][href='#" + greatgrandparent.getAttribute("id") + "']").click();
-    }
-    target.click();
-    target.scrollIntoView();
-  }
-}
-window.onload = function() {
-  setTimeout(goToTab, 100);
-}
-window.onhashchange = goToTab;
-</script>
-<!-- Set table styles -->
-<style>
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
-</style>
-<!-- Header logos -->
-<div class="header_logo">
-<p><img src="images/logo_us_state_department.png" style="float:right;height:40px;"> <img src="images/logo_pnnl_white.png" style="float:right;height:40px;"></p>
-</div>
 <div id="appendix-malaysia" class="section level1 unnumbered">
 <h1 class="unnumbered">Appendix (Malaysia)</h1>
 <!-------------------------->
 <!-------------------------->
 </div>
-<div id="scenarios" class="section level1 tabset" number="1">
-<h1 class="tabset" number="1"><span class="header-section-number">1</span> Scenarios</h1>
+<div id="inputs" class="section level1 tabset" number="1">
+<h1 class="tabset"><span class="header-section-number">1</span>
+Inputs</h1>
 <!-------------------------->
 <!-------------------------->
-<p>Below are more details on the policies to be implemented across the different scenarios.</p>
+<p align="center">
+<img src="images/divider.png">
+</p>
+<!-------------------------->
+<div id="socioeconomics" class="section level2 tabset tabset-pills"
+number="1.1">
+<h2 class="tabset tabset-pills"><span
+class="header-section-number">1.1</span> Socioeconomics</h2>
+<!-------------------------->
+<p>This section details the socioeconomic inputs used to define Malaysia
+and its subregions, Kuala Lumpur and “Rest of Malaysia,” in GCAM. These
+metrics include population, GDP, and GDP per capita. Historical and
+projection data were used when available, otherwise data was calculated
+using the assumptions described below.</p>
+<table>
+<tr>
+<th>
+Variable
+</th>
+<th style="width:50%">
+Assumptions
+</th>
+<th style="width:40%">
+Data Sources
+</th>
+</tr>
+<tr>
+<td>
+Population
+</td>
+<td>
+<span>- Malaysia population used the medium variant projection and
+historical data from the UN</span><br/> <span>- KL census data gives a
+value for 2010. All other values were extrapolated and calculated using
+the growth rates for Malaysia in total</span><br/> <span>- “Rest of
+Malaysia” values found by subtracting KL numbers from
+Malaysia</span><br/>
+</td>
+<td>
+<span>- Malaysia: <a href="https://population.un.org/wpp/">United
+Nations</a></span><br/> <span>- Kuala Lumpur 2010: <a
+href="http://data.un.org/Data.aspx?q=kuala+lumpur&amp;d=POP&amp;f=tableCode%3a240%3bareaCode%3a0%3bsexCode%3a0%3bvarCode3%3a028690%3bvarCode4%3a000002">United
+Nations</a></span><br/>
+</td>
+</tr>
+<tr>
+<td rowspan="3">
+GDP
+</td>
+<td>
+<span>- Malaysia annual growth rates are applied to KL’s 2020 GDP value
+to extrapolate historical and future values</span><br/> <span>- “Rest of
+Malaysia” values found by subtracting KL numbers from Malaysia</span>
+</td>
+<td rowspan="2">
+<span>- Malaysia, historical: <a
+href="https://www.ers.usda.gov/data-products/international-macroeconomic-data-set/">USDA
+ERS</a></span><br/> <span>- Malaysia, future: <a
+href="https://tntcat.iiasa.ac.at/SspDb/dsd?Action=htmlpage&amp;page=welcome">SSP
+database</a></span><br/> <span>- Kuala Lumpur 2020: <a
+href="https://www.dosm.gov.my/v1/index.php?r=column/cthemeByCat&amp;cat=102&amp;bul_id=anVobldYUFZLNE5WVlRVRExkSWEyZz09&amp;menu_id=TE5CRUZCblh4ZTZMODZIbmk2aWRRQT09">Department
+of Statistics Malaysia</a></span><br/>
+</td>
+</tr>
+</table>
+<p><br> <br></p>
+<div id="population" class="section level3" number="1.1.1">
+<h3><span class="header-section-number">1.1.1</span> Population</h3>
+<div id="historical-trends-and-future-projections"
+class="section level4 unnumbered">
+<h4 class="unnumbered">Historical Trends and Future Projections</h4>
+<p>To estimate population values, we begin with annual data from the UN
+for Malaysia’s population; we use historical data and a medium
+population projection scenario. For Kuala Lumpur, we use 2010 census
+data as our base year. We then calculate annual growth rates using the
+complete Malaysia dataset and apply these growth rates to extrapolate
+Kuala Lumpur population values. To find “Rest of Malaysia” values, we
+subtract Kuala Lumpur population from Malaysia values.</p>
+<p>The plot below shows historical and future projected populations in
+Malaysia and Kuala Lumpur from the GCAM reference scenario from 1975 to
+2100.</p>
+<div class="figure" style="text-align: center">
+<img src="malaysia_appendix_files/figure-html/pop-plot-1.png" alt="Figure 9.1.1.1. **Historical and future projected population in Malaysia and Kuala Lumpur**" width="75%" />
+<p class="caption">
+Figure 9.1.1.1. <strong>Historical and future projected population in
+Malaysia and Kuala Lumpur</strong>
+</p>
+</div>
+<p><br></p>
+</div>
+</div>
+<div id="gdp" class="section level3" number="1.1.2">
+<h3><span class="header-section-number">1.1.2</span> GDP</h3>
+<div id="historical-trends-and-future-projections-1"
+class="section level4 unnumbered">
+<h4 class="unnumbered">Historical Trends and Future Projections</h4>
+<p>To find GDP values, we begin with historical data of GDP MER in
+Malaysia from the U.S. Department of Agriculture’s Economic Research
+Service. We use future projections data from the SSP2 database. In a
+similar process to the population, we then calculate annual growth
+rates, which are applied to a base year for Kuala Lumpur. We use the
+2020 GDP found in the Kuala Lumpur State Socioeconomic Report 2020. We
+find “Rest of Malaysia” values by subtracting Kuala Lumpur values from
+Malaysia.</p>
+<p>The following graphs show GDP in billion 2005 USD for Malaysia and
+Kuala Lumpur.</p>
+<div class="figure" style="text-align: center">
+<img src="malaysia_appendix_files/figure-html/gdp-1.png" alt="Figure 9.1.2.1. **Historical and future projected GDP in Malaysia and Kuala Lumpur**" width="75%" />
+<p class="caption">
+Figure 9.1.2.1. <strong>Historical and future projected GDP in Malaysia
+and Kuala Lumpur</strong>
+</p>
+</div>
+<p><br></p>
+</div>
+</div>
+<div id="per-capita-gdp" class="section level3" number="1.1.3">
+<h3><span class="header-section-number">1.1.3</span> Per capita GDP</h3>
+<div id="historical-trends-and-future-projections-2"
+class="section level4 unnumbered">
+<h4 class="unnumbered">Historical Trends and Future Projections</h4>
+<p>To find GDP per capita, we divide the above GDP values by the above
+population values.</p>
+<p>GDP per capita, in units of thousand 2005 USD, is shown below for
+Malaysia and Kuala Lumpur.</p>
+<div class="figure" style="text-align: center">
+<img src="malaysia_appendix_files/figure-html/gdp_pc-1.png" alt="Figure 9.1.3.1. **Historical and future projected GDP per capita in Malaysia and Kuala Lumpur**" width="75%" />
+<p class="caption">
+Figure 9.1.3.1. <strong>Historical and future projected GDP per capita
+in Malaysia and Kuala Lumpur</strong>
+</p>
+</div>
+<p><br></p>
+<!-------------------------->
+<!-------------------------->
+</div>
+</div>
+</div>
+</div>
+<div id="gcam-initial-diagnostics" class="section level1 tabset"
+number="2">
+<h1 class="tabset"><span class="header-section-number">2</span> GCAM
+Initial Diagnostics</h1>
+<!-------------------------->
+<!-------------------------->
+<p align="center">
+<img src="images/divider.png">
+</p>
+<!-------------------------->
+<div id="energy" class="section level2 tabset tabset-pills"
+number="2.1">
+<h2 class="tabset tabset-pills"><span
+class="header-section-number">2.1</span> Energy</h2>
+<!-------------------------->
+<div id="final-consumption" class="section level3" number="2.1.1">
+<h3><span class="header-section-number">2.1.1</span> Final
+consumption</h3>
+<div class="figure" style="text-align: center">
+<img src="malaysia_appendix_files/figure-html/final-energy-1.png" alt="**Figure 10.1.1.1**" width="75%" />
+<p class="caption">
+<strong>Figure 10.1.1.1</strong>
+</p>
+</div>
+<!-------------------------->
+</div>
+</div>
+<div id="electricity" class="section level2 tabset tabset-pills"
+number="2.2">
+<h2 class="tabset tabset-pills"><span
+class="header-section-number">2.2</span> Electricity</h2>
+<!-------------------------->
+<div id="final-consumption-1" class="section level3" number="2.2.1">
+<h3><span class="header-section-number">2.2.1</span> Final
+consumption</h3>
+<div class="figure" style="text-align: center">
+<img src="malaysia_appendix_files/figure-html/final-electricity-1.png" alt="**Figure 10.2.1.1**" width="75%" />
+<p class="caption">
+<strong>Figure 10.2.1.1</strong>
+</p>
+</div>
+<!-------------------------->
+</div>
+</div>
+<div id="emissions" class="section level2 tabset tabset-pills"
+number="2.3">
+<h2 class="tabset tabset-pills"><span
+class="header-section-number">2.3</span> Emissions</h2>
+<!-------------------------->
+<div id="co2-by-sector" class="section level3" number="2.3.1">
+<h3><span class="header-section-number">2.3.1</span> CO2 by Sector</h3>
+<div class="figure" style="text-align: center">
+<img src="malaysia_appendix_files/figure-html/co2-emissions-1.png" alt="**Figure 10.3.1.1**" width="75%" />
+<p class="caption">
+<strong>Figure 10.3.1.1</strong>
+</p>
+</div>
+<!-------------------------->
+</div>
+</div>
+<div id="buildings" class="section level2 tabset tabset-pills"
+number="2.4">
+<h2 class="tabset tabset-pills"><span
+class="header-section-number">2.4</span> Buildings</h2>
+<!-------------------------->
+<div id="co2-emissions" class="section level3" number="2.4.1">
+<h3><span class="header-section-number">2.4.1</span> CO2 emissions</h3>
+<div class="figure" style="text-align: center">
+<img src="malaysia_appendix_files/figure-html/building-co2-1.png" alt="**Figure 10.4.1.1**" width="75%" />
+<p class="caption">
+<strong>Figure 10.4.1.1</strong>
+</p>
+</div>
+</div>
+<div id="energy-consumption" class="section level3" number="2.4.2">
+<h3><span class="header-section-number">2.4.2</span> Energy
+consumption</h3>
+<div class="figure" style="text-align: center">
+<img src="malaysia_appendix_files/figure-html/building-energy-1.png" alt="**Figure 10.4.2.1**" width="75%" />
+<p class="caption">
+<strong>Figure 10.4.2.1</strong>
+</p>
+</div>
+</div>
+<div id="energy-consumption-by-sector" class="section level3"
+number="2.4.3">
+<h3><span class="header-section-number">2.4.3</span> Energy consumption
+by sector</h3>
+<div class="figure" style="text-align: center">
+<img src="malaysia_appendix_files/figure-html/building-energy-sector-1.png" alt="**Figure 10.4.3.1**" width="75%" />
+<p class="caption">
+<strong>Figure 10.4.3.1</strong>
+</p>
+</div>
+<!-------------------------->
+</div>
+</div>
+<div id="transportation" class="section level2 tabset tabset-pills"
+number="2.5">
+<h2 class="tabset tabset-pills"><span
+class="header-section-number">2.5</span> Transportation</h2>
+<!-------------------------->
+<div id="co2-emissions-1" class="section level3" number="2.5.1">
+<h3><span class="header-section-number">2.5.1</span> CO2 emissions</h3>
+<div class="figure" style="text-align: center">
+<img src="malaysia_appendix_files/figure-html/transport-co2-1.png" alt="**Figure 10.5.1.1**" width="75%" />
+<p class="caption">
+<strong>Figure 10.5.1.1</strong>
+</p>
+</div>
+</div>
+<div id="co2-emissions-by-mode" class="section level3" number="2.5.2">
+<h3><span class="header-section-number">2.5.2</span> CO2 emissions by
+mode</h3>
+<div class="figure" style="text-align: center">
+<img src="malaysia_appendix_files/figure-html/transport-co2-mode-1.png" alt="**Figure 10.5.2.1**" width="75%" />
+<p class="caption">
+<strong>Figure 10.5.2.1</strong>
+</p>
+</div>
+</div>
+<div id="co2-emissions-by-class---road" class="section level3"
+number="2.5.3">
+<h3><span class="header-section-number">2.5.3</span> CO2 emissions by
+class - road</h3>
+<div class="figure" style="text-align: center">
+<img src="malaysia_appendix_files/figure-html/transport-co2-class-road-1.png" alt="**Figure 10.5.3.1**" width="75%" />
+<p class="caption">
+<strong>Figure 10.5.3.1</strong>
+</p>
+</div>
+<p><br></p>
+<!-------------------------->
+<!-------------------------->
+</div>
+</div>
+</div>
+<div id="scenarios" class="section level1 tabset" number="3">
+<h1 class="tabset"><span class="header-section-number">3</span>
+Scenarios</h1>
+<!-------------------------->
+<!-------------------------->
+<p>Below are more details on the policies to be implemented across the
+different scenarios.</p>
 <table style="width:89%;">
 <caption>Additional Council Led policies</caption>
 <colgroup>
@@ -428,7 +682,8 @@ td, th {
 <tr class="even">
 <td>Transportation</td>
 <td><ul>
-<li>By 2030, KLCH will replace all municipal conventional vehicles with EV</li>
+<li>By 2030, KLCH will replace all municipal conventional vehicles with
+EV</li>
 <li>Gradual phaseout of conventional diesel engine buses by 2030</li>
 </ul></td>
 <td>KLLCSBP2030</td>
@@ -436,19 +691,54 @@ td, th {
 <tr class="odd">
 <td>Buildings</td>
 <td><ul>
-<li>By 2030, at least 60% of buildings will install solar PV systems</li>
-<li>All new, non-residential buildings must use high efficiency AC systems</li>
-<li>For existing buildings, 30% of commercial and 60% of residential buildings will be converted to a high efficiency AC system</li>
-<li>All new buildings must use energy efficient lighting such as LED and CFL bulbs</li>
-<li>All existing buildings will have energy efficient lighting by 2030</li>
-<li>Government buildings will decrease lighting energy usage by up to 75% by 2030</li>
-<li>New government buildings will have at least a 60% reduction in GHG emissions through reduced energy consumption</li>
-<li>All new schools should have at least 5-15% of electricity supplied by renewable energy by 2030</li>
+<li>By 2030, at least 60% of buildings will install solar PV
+systems</li>
+<li>All new, non-residential buildings must use high efficiency AC
+systems</li>
+<li>For existing buildings, 30% of commercial and 60% of residential
+buildings will be converted to a high efficiency AC system</li>
+<li>All new buildings must use energy efficient lighting such as LED and
+CFL bulbs</li>
+<li>All existing buildings will have energy efficient lighting by
+2030</li>
+<li>Government buildings will decrease lighting energy usage by up to
+75% by 2030</li>
+<li>New government buildings will have at least a 60% reduction in GHG
+emissions through reduced energy consumption</li>
+<li>All new schools should have at least 5-15% of electricity supplied
+by renewable energy by 2030</li>
 </ul></td>
 <td>KLLCSBP2030</td>
 </tr>
 </tbody>
 </table>
+<!-------------------------->
+<!-------------------------->
+</div>
+<div id="data-needs-andor-questions" class="section level1" number="4">
+<h1><span class="header-section-number">4</span> Data needs and/or
+questions</h1>
+<!-------------------------->
+<!-------------------------->
+<p align="center">
+<img src="images/divider.png">
+</p>
+<ul>
+<li>Sectoral emissions for each scenario: After review of the KLCAP2050,
+the team noted some discrepancies in the data presented. A primary data
+need is emissions for at least the key years (2030, 2050) broken down by
+sector for each scenario (BAU, Council Led, and Integrated Approach). A
+detailed breakdown of the discrepancies can be provided upon
+request.</li>
+</ul>
+<p><br></p>
+</div>
+<div id="section" class="section level1 unlisted unnumbered">
+<h1 class="unlisted unnumbered"></h1>
+<p><span class="navbar-fixed-bottom text-muted bg-info">WORK IN POGRESS
+- DO NOT CITE
+<img src="images/logo_us_state_department_color.png" style="padding-left:20px; height:40px;">
+<img src="images/logo_pnnl_white.png" style="padding-left:20px; height:40px;"></span></p>
 </div>
 
 

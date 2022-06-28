@@ -1,0 +1,272 @@
+---
+pagetitle: Modeling - Thailand
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    toc_collapsed: true
+    toc_depth: 2
+    number_sections: true
+    theme: cosmo
+    #inverse: true
+---
+
+```{r setup, echo = FALSE, message=FALSE, warning=FALSE}
+knitr::opts_chunk$set(results = "hide", echo=FALSE, out.width = "75%", fig.align='center', message = F, warning = F, error = F, eval = T)
+```
+
+
+```{r child = 'header.rmd'}
+```
+
+<!-------------------------->
+<!-------------------------->
+# Download GCAM SE Asia
+<!-------------------------->
+<!-------------------------->
+<p align="center"> <img src="images/divider.png"></p>
+
+<br>
+
+```{r key links table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
+library(kableExtra); library(dplyr)
+
+data.frame(
+  File = c("gcamv5p3_seasia"),
+  Link = c("Link_here")) %>%
+  kable("html", escape = FALSE) %>%
+  kable_styling(bootstrap_options = c("bordered","striped", "hover", "condensed", "responsive")) %>%
+  row_spec(0, background = "#2A2A2A", color = "white")
+```
+
+<br>
+
+<!-------------------------->
+<!-------------------------->
+# Guides
+<!-------------------------->
+<!-------------------------->
+<p align="center"> <img src="images/divider.png"></p>
+
+<br>
+
+```{r presentation links table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
+library(kableExtra); library(dplyr)
+
+dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/gcam_overview.pdf",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/gcam_walkthrough.pdf")
+
+data.frame(
+  File = c("gcam_overview.pdf",
+           "gcam_walkthrough.pdf"),
+  Description = c("GCAM overview presentation",
+                  "GCAM walkthrough presentation")) %>%
+  dplyr::mutate(Location = cell_spec(rep("Link",length(dt_url)),"html",link=dt_url)) %>%
+  kable("html", escape = FALSE) %>%
+  kable_styling(bootstrap_options = c("bordered","striped", "hover", "condensed", "responsive")) %>%
+  row_spec(0, background = "#2A2A2A", color = "white")
+```
+
+
+<br>
+
+<!-------------------------->
+<!-------------------------->
+# Scenarios
+<!-------------------------->
+<!-------------------------->
+<p align="center"> <img src="images/divider.png"></p>
+
+
+```{r scenarios links table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
+library(kableExtra); library(dplyr)
+
+dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/configuration_seasia_cities_bau.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/configuration_seasia_cities_thailand_policy.xml")
+
+data.frame(
+  File = c("configuration_seasia_cities_bau.xml",
+           "configuration_seasia_cities_thailand_policy.xml"),
+  Description = c("Business as Usual Scenario",
+                  "Example Policies Scenario")) %>%
+  dplyr::mutate(Location = cell_spec(rep("Link",length(dt_url)),"html",link=dt_url)) %>%
+  kable("html", escape = FALSE) %>%
+  kable_styling(bootstrap_options = c("bordered","striped", "hover", "condensed", "responsive")) %>%
+  row_spec(0, background = "#2A2A2A", color = "white")
+```
+
+
+
+<!-------------------------->
+<!-------------------------->
+# Example Policies
+<!-------------------------->
+<!-------------------------->
+<p align="center"> <img src="images/divider.png"></p>
+
+The following table lists some example policies that have been modeled in the example policy scenario. The subsequent sections explain what each of these policies is meant to represent and how to change them for future modeling. Each of these policies is added on in the `configuration_seasia_cities_thailand_policy.xml` file to include it in the scenario.
+
+```{r policy links table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
+library(kableExtra); library(dplyr)
+
+dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/thailand/thailand_policy_national_electricity_generation_floor_pdp2018.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/thailand_policy_subnational_buildings_shell_eff_015_018.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/thailand_policy_subnational_transport_cost_ev_2050p_2060f.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/thailand_policy_subnational_transport_freight_rail_0034_2040_lin.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/thailand_policy_subnational_transport_freight_road_55_2040_lin.xml")
+
+data.frame(
+  Description = c("Electricity Generation Mix - Subsidy: Modify the electricity generation mix by using a XXXXXXX",
+                  "Modify building shell efficiency by 15% EFGHGHEGHE",
+                  "Modify building shell efficiency by 15% EFGHGHEGHE",
+                  "Modify building shell efficiency by 15% EFGHGHEGHE",
+                  "Modify building shell efficiency by 15% EFGHGHEGHE"),
+  File = c("thailand_policy_national_electricity_generation_floor_pdp2018.xml",
+           "thailand_policy_subnational_buildings_shell_eff_015_018.xml",
+           "thailand_policy_subnational_transport_cost_ev_2050p_2060f.xml",
+           "thailand_policy_subnational_transport_freight_rail_0034_2040_lin.xml",
+           "thailand_policy_subnational_transport_freight_road_55_2040_lin.xml")) %>%
+  dplyr::mutate(Location = cell_spec(rep("Link",length(dt_url)),"html",link=dt_url)) %>%
+  kable("html", escape = FALSE) %>%
+  kable_styling(bootstrap_options = c("bordered","striped", "hover", "condensed", "responsive")) %>%
+  row_spec(0, background = "#2A2A2A", color = "white")
+```
+
+## Electricity Generation Mix - Subsidy
+***
+
+```{r shareweight files table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
+library(kableExtra); library(dplyr)
+
+dt_url <- c("https://github.com/JGCRI/gcam_training/blob/main/examples/subsector_shareweights_ref.csv",
+            "https://github.com/JGCRI/gcam_training/blob/main/examples/transportation_Subregions_Thailand.xml",
+            "https://github.com/JGCRI/gcam_training/blob/main/examples/freight_rail_0034_2040_lin.xml",
+            "https://github.com/JGCRI/gcam_training/blob/main/examples/freight_road_55_2040_lin.xml")
+
+data.frame(
+  "Files Used" = c("subsector_shareweights_ref.csv",
+           "transportation_Subregions_Thailand.xml",
+           "freight_rail_0034_2040_lin.xml",
+           "freight_road_55_2040_lin.xml"),
+  Description = c("Reference shareweights from Model Interface",
+              "Existing default xml",
+              "Linear interpolation from default 2015 value (0.001342) to 0.0034 in 2040 for freight rail",
+              "Linear interpolation from default 2015 value (1) to 0.55 in 2040 for freight road")) %>%
+  dplyr::mutate(Location = cell_spec(rep("Link",length(dt_url)),"html",link=dt_url)) %>%
+  kable("html", escape = FALSE, col.names = c("Files Used", "Description", "Link")) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
+  row_spec(0, background = "#2A2A2A", color = "white")
+```
+
+
+<!-------------------------->
+<!----------Goal------------>
+<!-------------------------->
+
+<div class="warning" style='background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+<h3 style='text-align:center; font-size:24px'>
+<b>Goal</b>
+</h3>
+
+<p style='margin-left:1em;'>
+The goal of this example is to create a GCAM scenario that represents Indonesia's plans to increase passenger rail infrastructure. Indonesia's plans include major intercity and urban railway projects and targets to increase railway shares in passenger and freight transport; however, in GCAM's reference scenario, the share of rail in passenger transport does not increase through the century. The goal is to represent the rail infrastructure projects by increasing passenger rail shares.
+
+</p>
+</span>
+</div>
+
+<br>
+
+
+<!-------------------------->
+<!--------Approach---------->
+<!-------------------------->
+
+<div class="warning" style='background-color:#fffae0; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+
+<h3 style='text-align:center; font-size:24px'>
+<b>Approach</b></h3>
+
+<p style='margin-left:1em;'>
+Since infrastructure development is a non-cost impact on rail transport, we can use shareweights to represent these impacts. For more information on shareweights and when it is and isn't appropriate to modify them, see [link to shareweights page]. 
+
+Share weights are calibration parameters and not directly related to any "real-world" value, so it is usually necessary to test a range of share weight modifications to obtain the desired effect. From the Model Interface "transport subsector share-weights" query, we see that the passenger rail share weight in Indonesia is 0.004 for all future periods. To represent infrastructure development through mid-century, we could gradually increase the share weight to 0.01 in 2050 and then keep it constant from 2050 to 2100. 
+
+</p>
+</span>
+</div>
+
+<br>
+
+
+<!-------------------------->
+<!--------Background---------->
+<!-------------------------->
+
+```{r child = 'background_shareweights.rmd'}
+```
+
+
+<!-------------------------->
+<!---GCAM Implementation---->
+<!-------------------------->
+
+<div class="warning" style='background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+<h3 style='text-align:center; font-size:24px'>
+<b>GCAM Implementation</b>
+</h3>
+
+<p style='margin-left:1em;'>
+1. Create a folder in the input directory eg. `./gcam-core/input/addons`.
+2. Download the example xml file [pass_rail_shrwt_lin_2050_fixed_2100](https://github.com/JGCRI/gcam_training/blob/main/examples/pass_rail_shrwt_lin_2050_fixed_2100.xml) to the folder.
+4. Adjust the following in the appropriate `tranSubsector` tag in the XML:
+</p>
+
+<ul style='margin-left:4em; text-align:left;'>
+  <li>`share-weight` for year 2050</li>
+  <li>The interpolation rule from 2015 to 2050 (linear)</li>
+  <li>The interpolation rule from 2050 to 2100 (fixed)</li>
+</ul>
+
+<p style='margin-bottom:1em; margin-left:1em; text-align:center;'> 
+<b>Example xml structure</b> 
+<br>
+<img src="images/adjust_transport_mix_shareweight_eg_xml_structure2.png">
+<i>Note: The first interpolation rule must include delete="1" in order to override all of the previous (default) interpolation rules.</i>
+</p>
+
+<p style='margin-left:1em;'>
+7. Save the xml and then point to it in your configuration file by adding the line: 
+<p style='font-size:0.8em'>
+`<Value name = "adjust_pass_rail_shrwt">../gcam-core/input/addons/pass_rail_shrwt_lin_2050_fixed_2100.xml</Value>`
+
+</p>
+</p>
+
+</span>
+</div>
+
+<br>
+
+<!-------------------------->
+<!-------------------------->
+# Diagnostics
+<!-------------------------->
+<!-------------------------->
+<p align="center"> <img src="images/divider.png"></p>
+
+This section describes how to explore and comapre the final output data using various tools.
+
+## Model Interface
+
+## Extract GCAM Data
+
+## Plot Figures
+
+
+# {.unlisted .unnumbered}
+```{r child = 'footer.rmd'}
+```
