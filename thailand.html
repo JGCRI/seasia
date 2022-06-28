@@ -13,7 +13,7 @@
 
 <title>SEAsia</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -62,6 +62,7 @@ if (window.hljs) {
 
 
 
+
 <link rel="stylesheet" href="style.css" type="text/css" />
 
 
@@ -86,6 +87,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -311,7 +315,7 @@ div.tocify {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -332,15 +336,23 @@ div.tocify {
 <li>
   <a href="malaysia.html">Malaysia</a>
 </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="thailand_appendix.html">Appendix - Thailand</a>
+</li>
+<li>
+  <a href="malaysia_appendix.html">Appendix - Malaysia</a>
+</li>
+<li>
+  <a href="modeling_thailand.html">Modeling - Thailand</a>
+</li>
 <li>
   <a href="https://github.com/JGCRI/seasia">
     <span class="fab fa-github"></span>
      
   </a>
 </li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        
       </ul>
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
@@ -391,62 +403,112 @@ td, th {
   padding: 8px;
 }
 </style>
-<div class="header_logo">
-<p><img src="images/logo_us_state_department.png" style="float:right;height:40px;"> <img src="images/logo_pnnl_white.png" style="float:right;height:40px;"> <img src="images/DoNotCite.png" style="float:right;height:32px;margin-top:8px;margin-right:380px"></p>
-</div>
 <!-------------------------->
 <!-------------------------->
 <div id="executive-summary" class="section level1" number="1">
-<h1 number="1"><span class="header-section-number">1</span> Executive Summary</h1>
+<h1><span class="header-section-number">1</span> Executive Summary</h1>
 <!-------------------------->
 <!-------------------------->
 <p align="center">
 <img src="images/divider.png">
 </p>
 <ul>
-<li><strong>Motivation:</strong> Growth in power demand, renewables, and changes in policies and resource availability will require significant evolution in grid planning. Current planning tools usually focus on near-term horizon (i.e., 5- to 10-year), and are inadequate to support long-term decisions about grid capacity and distribution infrastructure upgrades. Tools for integrated energy planning with both near-term and long-term time horizons could help MEA plan future activities.</li>
-<li><strong>Objectives:</strong> Energy sector development and modernization is required to support continued urbanization and socioeconomic growth while reducing environmental impact. The Pacific Northwest National Laboratory (PNNL) and Thammasat University will support Smart Grid planning for Bangkok by providing analysis and assessment of policy pathways using quantitative modeling approaches.</li>
-<li><strong>Approach:</strong> Policy and technology trajectories will be modeled using the Global Change Analysis Model (GCAM), an integrated assessment model. GCAM will be used to conduct the detailed assessment of energy and electricity system transition over time in different policy and technology scenarios, and provide high-resolution information on power demand from buildings, transportation, and industry as well as power generation technologies. We will also examine how digitalization and smart technologies could change electricity load and implications for electricity generation.</li>
-<li><strong>Expected Outcomes:</strong> Outputs of GCAM will be used to inform MEA’s effort on grid moderation, especially for long-term holistic, integrated energy planning. Results will inform policy recommendations.</li>
+<li><strong>Motivation:</strong> Growth in power demand, renewables, and
+changes in policies and resource availability will require significant
+evolution in grid planning. Current planning tools usually focus on
+near-term horizon (i.e., 5- to 10-year), and are inadequate to support
+long-term decisions about grid capacity and distribution infrastructure
+upgrades. Tools for integrated energy planning with both near-term and
+long-term time horizons could help MEA plan future activities.</li>
+<li><strong>Objectives:</strong> Energy sector development and
+modernization is required to support continued urbanization and
+socioeconomic growth while reducing environmental impact. The Pacific
+Northwest National Laboratory (PNNL) and Thammasat University will
+support Smart Grid planning for Bangkok by providing analysis and
+assessment of policy pathways using quantitative modeling
+approaches.</li>
+<li><strong>Approach:</strong> Policy and technology trajectories will
+be modeled using the Global Change Analysis Model (GCAM), an integrated
+assessment model. GCAM will be used to conduct the detailed assessment
+of energy and electricity system transition over time in different
+policy and technology scenarios, and provide high-resolution information
+on power demand from buildings, transportation, and industry as well as
+power generation technologies. We will also examine how digitalization
+and smart technologies could change electricity load and implications
+for electricity generation.</li>
+<li><strong>Expected Outcomes:</strong> Outputs of GCAM will be used to
+inform MEA’s effort on grid moderation, especially for long-term
+holistic, integrated energy planning. Results will inform policy
+recommendations.</li>
 </ul>
 <p><br></p>
 <!-------------------------->
 <!-------------------------->
 </div>
-<div id="introduction-motivation" class="section level1" number="2">
-<h1 number="2"><span class="header-section-number">2</span> Introduction &amp; Motivation</h1>
+<div id="introduction" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> Introduction</h1>
 <!-------------------------->
 <!-------------------------->
 <p align="center">
 <img src="images/divider.png">
 </p>
-<p>Urbanization is driving rapid socioeconomic growth in Thailand, posing challenges for power grids as energy demand increases. Maintaining stability, reliability, and affordability of electricity will be especially challenging as Thailand works toward increasing their renewable energy (RE) shares and decreasing their environmental impact in line with international agreements. These goals and challenges were highlighted in Thailand’s 2018 Power Development Plan, which emphasized three priorities: energy security, economy, and environment. Energy security encompasses the need for stability of power generation, transmission, and distribution to support socioeconomic development and resilience to energy crises. Economic priorities are to promote low cost, high efficiency electricity generation, keeping prices low for consumers to further facilitate socioeconomic growth. Lastly, the plan emphasizes reducing environmental impact by supporting RE development and increasing efficiency in production and consumption.</p>
+<p>Urbanization is driving rapid socioeconomic growth in Thailand,
+posing challenges for power grids as energy demand increases.
+Maintaining stability, reliability, and affordability of electricity
+will be especially challenging as Thailand works toward increasing their
+renewable energy (RE) shares and decreasing their environmental impact
+in line with international agreements. These goals and challenges were
+highlighted in Thailand’s 2018 Power Development Plan, which emphasized
+three priorities: energy security, economy, and environment. Energy
+security encompasses the need for stability of power generation,
+transmission, and distribution to support socioeconomic development and
+resilience to energy crises. Economic priorities are to promote low
+cost, high efficiency electricity generation, keeping prices low for
+consumers to further facilitate socioeconomic growth. Lastly, the plan
+emphasizes reducing environmental impact by supporting RE development
+and increasing efficiency in production and consumption.</p>
 <div class="figure" style="text-align: center">
 <img src="images/logo_diagram.png" alt="**Figure 2.1: Organizations involved in this analysis.**" width="75%" />
 <p class="caption">
 <strong>Figure 2.1: Organizations involved in this analysis.</strong>
 </p>
 </div>
-<p>The US-ASEAN Smart Cities Partnership (USASCP) uses innovative approaches across sectors to address the challenges and opportunities of energy development and urbanization in ASEAN Member States. The U.S. Department of Energy’s Pacific Northwest National Laboratory (PNNL) is partnering with Thammasat University and the Metropolitan Electricity Authority (MEA) of Thailand to supplement Bangkok’s existing Smart City roadmap plans by providing integrated modeling and assessment capabilities. PNNL’s Global Change Analysis Model (GCAM) is a global model integrating socioeconomics, energy, land use, water, and climate systems. PNNL, in collaboration with the Thammasat University modeling team, will use GCAM to assess the trajectories and outcomes of Smart City pathways for Bangkok and focus on the implications for the energy system in this analysis. The results of this analysis will aid MEA in their Smart City planning and implementation (Figure 2.1)</p>
+<p>The US-ASEAN Smart Cities Partnership (USASCP) uses innovative
+approaches across sectors to address the challenges and opportunities of
+energy development and urbanization in ASEAN Member States. The U.S.
+Department of Energy’s Pacific Northwest National Laboratory (PNNL) is
+partnering with Thammasat University and the Metropolitan Electricity
+Authority (MEA) of Thailand to supplement Bangkok’s existing Smart City
+roadmap plans by providing integrated modeling and assessment
+capabilities. PNNL’s Global Change Analysis Model (GCAM) is a global
+model integrating socioeconomics, energy, land use, water, and climate
+systems. PNNL, in collaboration with the Thammasat University modeling
+team, will use GCAM to assess the trajectories and outcomes of Smart
+City pathways for Bangkok and focus on the implications for the energy
+system in this analysis. The results of this analysis will aid MEA in
+their Smart City planning and implementation (Figure 2.1)</p>
 <p><br></p>
-<!-------------------------->
-<!-------------------------->
-</div>
-<div id="objectives" class="section level1" number="3">
-<h1 number="3"><span class="header-section-number">3</span> Objectives</h1>
-<!-------------------------->
-<!-------------------------->
-<p align="center">
-<img src="images/divider.png">
-</p>
 <div class="figure" style="text-align: center">
 <img src="images/national_goals_smartGrid_diagram.png" alt="**Figure 3.1: Role of MEA's Smart Grid initiatives in Thailand's national power development goals.**" width="75%" />
 <p class="caption">
-<strong>Figure 3.1: Role of MEA’s Smart Grid initiatives in Thailand’s national power development goals.</strong>
+<strong>Figure 3.1: Role of MEA’s Smart Grid initiatives in Thailand’s
+national power development goals.</strong>
 </p>
 </div>
-<p>MEA supports energy sector plans for Bangkok by implementing Smart Grid development. The Smart Grid framework uses technological innovation to promote efficiency and reliability in power generation, transmission, and distribution systems while ensuring that the grid can both keep up with growing demand and accommodate RE expansion. Smart Grid approaches vary based on stakeholder needs but may include decentralizing generation, facilitating bidirectional data communication across the grid, integrating automation and monitoring, and providing opportunities for demand side management.</p>
-<p>Thailand’s 2015 national Smart Grid master plan lays out plans to modernize its power sector through 2036 in line with the Smart Grid framework. In accordance with this national roadmap, MEA is developing Bangkok’s Smart Grid system by building capacity in the following areas:</p>
+<p>MEA supports energy sector plans for Bangkok by implementing Smart
+Grid development. The Smart Grid framework uses technological innovation
+to promote efficiency and reliability in power generation, transmission,
+and distribution systems while ensuring that the grid can both keep up
+with growing demand and accommodate RE expansion. Smart Grid approaches
+vary based on stakeholder needs but may include decentralizing
+generation, facilitating bidirectional data communication across the
+grid, integrating automation and monitoring, and providing opportunities
+for demand side management.</p>
+<p>Thailand’s 2015 national Smart Grid master plan lays out plans to
+modernize its power sector through 2036 in line with the Smart Grid
+framework. In accordance with this national roadmap, MEA is developing
+Bangkok’s Smart Grid system by building capacity in the following
+areas:</p>
 <ul>
 <li>Monitoring and Control</li>
 <li>Data Analytics</li>
@@ -455,52 +517,137 @@ td, th {
 <li>Green Energy</li>
 <li>Customer Engagement</li>
 </ul>
-<p>Examples of planned technologies and policies include load forecasting, smart meter infrastructure, microgrids, energy storage systems, electric vehicle charging, and improved customer management systems, among others.</p>
-<p>The collaboration between PNNL, Thammasat University, and MEA will support the long-term assessment of these plans and the analysis of their contribution to Thailand’s national socioeconomic growth, power development, and and environmental impact reduction goals (Figure 3.1). Based on results of the modeling approach detailed below, PNNL and Thammasat University will provide an analysis of pathways for grid modernization in Bangkok and possible trajectories towards a Bangkok Smart City in 2050.</p>
+<p>Examples of planned technologies and policies include load
+forecasting, smart meter infrastructure, microgrids, energy storage
+systems, electric vehicle charging, and improved customer management
+systems, among others.</p>
+<p>The collaboration between PNNL, Thammasat University, and MEA will
+support the long-term assessment of these plans and the analysis of
+their contribution to Thailand’s national socioeconomic growth, power
+development, and and environmental impact reduction goals (Figure 3.1).
+Based on results of the modeling approach detailed below, PNNL and
+Thammasat University will provide an analysis of pathways for grid
+modernization in Bangkok and possible trajectories towards a Bangkok
+Smart City in 2050.</p>
 <p><br></p>
 <!-------------------------->
 <!-------------------------->
 </div>
-<div id="approach" class="section level1" number="4">
-<h1 number="4"><span class="header-section-number">4</span> Approach</h1>
+<div id="methodology" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> Methodology</h1>
 <!-------------------------->
 <!-------------------------->
 <p align="center">
 <img src="images/divider.png">
 </p>
-<p>Integrated Assessment Models (IAMs) are computational models that use links and feedbacks between socioeconomic and environmental systems to assess the implications of technology and policy choices in the context of global climate change. IAMs can provide a holistic approach to energy sector planning by considering multi-sector dynamics and global processes. GCAM, an IAM developed at PNNL, incorporates socioeconomics, energy, land use, water, and climate system (Figure 4.1). The model is global but can also be used to assess specific regions and fine scale processes; PNNL has developed both Thailand and Bangkok regions within the model for national and city level analyses. GCAM utilizes the most up to date data on population, GDP, technology characteristics, policies, resource availabilities, and other inputs. It has the detailed representation of energy technologies in different sectors, including electricity, buildings, transportation, industry, hydrogen production, and other energy supply sectors. The model produces both historical and projected future outputs based on this information. These outputs include greenhouse gas emissions, electricity prices, energy supply and demand, and other indicators at five-year time steps from a historical baseline year to the desired end year. PNNL and Thammasat University’s modeling team will use GCAM to assess the implications of MEA’s Smart Grid plans for Bangkok through the year 2100.</p>
+<p>Integrated Assessment Models (IAMs) are computational models that use
+links and feedbacks between socioeconomic and environmental systems to
+assess the implications of technology and policy choices in the context
+of global climate change. IAMs can provide a holistic approach to energy
+sector planning by considering multi-sector dynamics and global
+processes. GCAM, an IAM developed at PNNL, incorporates socioeconomics,
+energy, land use, water, and climate system (Figure 4.1). The model is
+global but can also be used to assess specific regions and fine scale
+processes; PNNL has developed both Thailand and Bangkok regions within
+the model for national and city level analyses. GCAM utilizes the most
+up to date data on population, GDP, technology characteristics,
+policies, resource availabilities, and other inputs. It has the detailed
+representation of energy technologies in different sectors, including
+electricity, buildings, transportation, industry, hydrogen production,
+and other energy supply sectors. The model produces both historical and
+projected future outputs based on this information. These outputs
+include greenhouse gas emissions, electricity prices, energy supply and
+demand, and other indicators at five-year time steps from a historical
+baseline year to the desired end year. PNNL and Thammasat University’s
+modeling team will use GCAM to assess the implications of MEA’s Smart
+Grid plans for Bangkok through the year 2100.</p>
 <div class="figure" style="text-align: center">
-<img src="images/GCAM_diagram.png" alt="**Figure 4.1: Conceptual diagram of GCAM.**" width="75%" />
+<img src="images/GCAM_diagram.png" alt="**Figure 3.1: Conceptual diagram of GCAM.**" width="75%" />
 <p class="caption">
-<strong>Figure 4.1: Conceptual diagram of GCAM.</strong>
+<strong>Figure 3.1: Conceptual diagram of GCAM.</strong>
 </p>
 </div>
+<p><br></p>
+<p>PNNL’s assessment will encompass outcomes both on the national level
+and the city level, with the city level analysis including the three
+provinces served by MEA within the Bangkok metropolitan area. The map to
+the right shows these provinces (Figure 6.1.1): the green region
+includes Bangkok as well as the two other provinces served by MEA
+(Nonthaburi and Samut Prakan), while the shaded region includes only
+Bangkok itself, which is the area governed under the Bangkok
+Metropolitan Administration (BMA). For the city level analysis, results
+will be reported for each province individually as well as for the
+aggregated MEA service area.</p>
+<p><br></p>
+<div class="figure" style="text-align: center">
+<img src="images/MEA_BMA_boundaries_map.png" alt="**Figure 3.2. Map of analysis regions**" width="75%" />
+<p class="caption">
+<strong>Figure 3.2. Map of analysis regions</strong>
+</p>
+</div>
+<p><br></p>
+<p>Scenarios will be assessed up from the year 2015 to the year 2100,
+with the GCAM analysis conducted at five-year intervals within this
+range.</p>
 <p><br></p>
 <!-------------------------->
 <!-------------------------->
 </div>
-<div id="scenarios" class="section level1 tabset" number="5">
-<h1 class="tabset" number="5"><span class="header-section-number">5</span> Scenarios</h1>
+<div id="scenarios" class="section level1 tabset" number="4">
+<h1 class="tabset"><span class="header-section-number">4</span>
+Scenarios</h1>
 <!-------------------------->
 <!-------------------------->
 <p align="center">
 <img src="images/divider.png">
 </p>
-<p>PNNL, in consultation with Thammasat University and MEA, will develop a set of scenarios for GCAM modeling based on Thailand’s national energy policies and plans as well as MEA’s Smart Grid plans for Bangkok. The impacts of policies and technologies will be assessed in GCAM through associated changes to markets, efficiency assumptions, energy generation shares, and other multi-sector factors. GCAM will predict future outcomes under each scenario; these outcomes may include greenhouse gas emissions, energy supply and demand, market penetration of different technologies, electricity prices, and other relevant indicators of policy impacts. The scenarios will include the following:</p>
+<p>PNNL, in consultation with Thammasat University and MEA, will develop
+a set of scenarios for GCAM modeling based on Thailand’s national energy
+policies and plans as well as MEA’s Smart Grid plans for Bangkok. The
+impacts of policies and technologies will be assessed in GCAM through
+associated changes to markets, efficiency assumptions, energy generation
+shares, and other multi-sector factors. GCAM will predict future
+outcomes under each scenario; these outcomes may include greenhouse gas
+emissions, energy supply and demand, market penetration of different
+technologies, electricity prices, and other relevant indicators of
+policy impacts. The scenarios will include the following:</p>
 <ul>
-<li><strong>National Policies:</strong> Scenario integrating existing national energy development plans and energy and emissions reduction policies.</li>
-<li><strong>Extended National Policies:</strong> Scenario additionally including extended sustainable development measures implemented in other countries.</li>
-<li><strong>Bangkok Smart Energy:</strong> Scenario integrating MEA’s plans for Bangkok grid modernization and digitalization along with national policies.</li>
-<li><strong>Carbon Neutral Thailand:</strong> Scenario using most efficient pathway to national carbon neutrality by 2050.</li>
-<li><strong>Net-Zero Thailand:</strong> Scenario using most efficient pathway to net-zero national CO2 emissions by 2065</li>
+<li><strong>National Policies:</strong> Scenario integrating existing
+national energy development plans and energy and emissions reduction
+policies.</li>
+<li><strong>Extended National Policies:</strong> Scenario additionally
+including extended sustainable development measures implemented in other
+countries.</li>
+<li><strong>Bangkok Smart Energy:</strong> Scenario integrating MEA’s
+plans for Bangkok grid modernization and digitalization along with
+national policies.</li>
+<li><strong>Carbon Neutral Thailand:</strong> Scenario using most
+efficient pathway to national carbon neutrality by 2050.</li>
+<li><strong>Net-Zero Thailand:</strong> Scenario using most efficient
+pathway to net-zero national CO2 emissions by 2065</li>
 </ul>
 <!-------------------------->
-<div id="national-policies" class="section level2" number="5.1">
-<h2 number="5.1"><span class="header-section-number">5.1</span> National Policies</h2>
+<div id="national-policies" class="section level2" number="4.1">
+<h2><span class="header-section-number">4.1</span> National
+Policies</h2>
 <!-------------------------->
-<p><strong>National Policies Scenario:</strong> This scenario integrates all of Thailand’s national power development plans, as well as standards, regulations, and measures to promote energy efficiency, renewable energy expansion, and reduction of greenhouse gas emissions. These include the future power plant capacity changes reported in the Power Development Plan 2018-2037 (PDP2018) and the Renewable and Alternative Energy Development Plan 2018-2037 (AEDP2018). The scenario also incorporates the country’s planned energy conservation measures included the Energy Efficiency Plan 2018-2037 (EEP2018), the Transportation System Development Plan 2018-2037, and other policy documents. Policies and measures in this scenario span the power, transportation, buildings, and industry sectors. The table below summarizes the policies incorporated in the Mandatory National Policies scenario.</p>
+<p><strong>National Policies Scenario:</strong> This scenario integrates
+all of Thailand’s national power development plans, as well as
+standards, regulations, and measures to promote energy efficiency,
+renewable energy expansion, and reduction of greenhouse gas emissions.
+These include the future power plant capacity changes reported in the
+Power Development Plan 2018-2037 (PDP2018) and the Renewable and
+Alternative Energy Development Plan 2018-2037 (AEDP2018). The scenario
+also incorporates the country’s planned energy conservation measures
+included the Energy Efficiency Plan 2018-2037 (EEP2018), the
+Transportation System Development Plan 2018-2037, and other policy
+documents. Policies and measures in this scenario span the power,
+transportation, buildings, and industry sectors. The table below
+summarizes the policies incorporated in the Mandatory National Policies
+scenario.</p>
 <table style="width:68%;">
-<caption>Table 5.1.1. Policies included in the National Policies scenario.</caption>
+<caption>Table 5.1.1. Policies included in the National Policies
+scenario.</caption>
 <colgroup>
 <col width="23%" />
 <col width="44%" />
@@ -542,12 +689,23 @@ td, th {
 </table>
 <!-------------------------->
 </div>
-<div id="extended-national-policies" class="section level2" number="5.2">
-<h2 number="5.2"><span class="header-section-number">5.2</span> Extended National Policies</h2>
+<div id="extended-national-policies" class="section level2"
+number="4.2">
+<h2><span class="header-section-number">4.2</span> Extended National
+Policies</h2>
 <!-------------------------->
-<p><strong>Extended National Policies Scenario:</strong> This scenario includes additional sustainable development measures that have been implemented in other countries and regions along vwith the plans and policies in the National Policies scenario. These include more aggresive power transitions, enhanced energy and emissions regulations, and economic incentives. The table below summarizes the additional policies incorporated in the Extended National Policies scenario. Note that this scenario also incorporates the national policies included in the Mandatory National Policies scenario.</p>
+<p><strong>Extended National Policies Scenario:</strong> This scenario
+includes additional sustainable development measures that have been
+implemented in other countries and regions along vwith the plans and
+policies in the National Policies scenario. These include more aggresive
+power transitions, enhanced energy and emissions regulations, and
+economic incentives. The table below summarizes the additional policies
+incorporated in the Extended National Policies scenario. Note that this
+scenario also incorporates the national policies included in the
+Mandatory National Policies scenario.</p>
 <table style="width:75%;">
-<caption>Table 5.2.1. Policies included in the Extended National Policies scenario.</caption>
+<caption>Table 5.2.1. Policies included in the Extended National
+Policies scenario.</caption>
 <colgroup>
 <col width="31%" />
 <col width="43%" />
@@ -585,12 +743,23 @@ td, th {
 </table>
 <!-------------------------->
 </div>
-<div id="smart-energy" class="section level2" number="5.3">
-<h2 number="5.3"><span class="header-section-number">5.3</span> Smart Energy</h2>
+<div id="smart-energy" class="section level2" number="4.3">
+<h2><span class="header-section-number">4.3</span> Smart Energy</h2>
 <!-------------------------->
-<p><strong>Bangkok Smart Energy Scenario:</strong> This scenario incorporates the national-level policies included in the National Policies scenario as well as MEA’s grid modernization and digitalization plans for Bangkok. These plans include Smart Grid distribution system technologies, improved data management, and integration of microgrids and energy storage systems into the grid. Also included are transport sector plans, including EV charging system development, as well as measures for energy management and demand response in other sectors. The table below summarizes several components of MEA’s grid modernization and digitalization plans, along with the capabilities of GCAM integrated assessment modeling for each component.</p>
+<p><strong>Bangkok Smart Energy Scenario:</strong> This scenario
+incorporates the national-level policies included in the National
+Policies scenario as well as MEA’s grid modernization and digitalization
+plans for Bangkok. These plans include Smart Grid distribution system
+technologies, improved data management, and integration of microgrids
+and energy storage systems into the grid. Also included are transport
+sector plans, including EV charging system development, as well as
+measures for energy management and demand response in other sectors. The
+table below summarizes several components of MEA’s grid modernization
+and digitalization plans, along with the capabilities of GCAM integrated
+assessment modeling for each component.</p>
 <table>
-<caption>Table 5.3.1. Policies and technologies included in the Bangkok Smart Energy scenario.</caption>
+<caption>Table 5.3.1. Policies and technologies included in the Bangkok
+Smart Energy scenario.</caption>
 <colgroup>
 <col width="26%" />
 <col width="36%" />
@@ -612,7 +781,8 @@ td, th {
 <li>Communication systems for identifying and addressing faults</li>
 </ul></td>
 <td><ul>
-<li>Access long-term impacts of increased transmisison efficiency on the energy sector</li>
+<li>Access long-term impacts of increased transmisison efficiency on the
+energy sector</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -623,16 +793,19 @@ td, th {
 <li>Smart Energy Data Analytics Center</li>
 </ul></td>
 <td><ul>
-<li>Analyze how advanced metering can affect electricity demand &amp; load management</li>
+<li>Analyze how advanced metering can affect electricity demand &amp;
+load management</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Supply Reliability</td>
 <td><ul>
-<li>Support increasing electricity demand &amp; fully cover service area</li>
+<li>Support increasing electricity demand &amp; fully cover service
+area</li>
 </ul></td>
 <td><ul>
-<li>Examine changes in future electricity demand in response to policy &amp; technology changes</li>
+<li>Examine changes in future electricity demand in response to policy
+&amp; technology changes</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -643,8 +816,10 @@ td, th {
 <li>Building &amp; Factory Energy Management Systems</li>
 </ul></td>
 <td><ul>
-<li>Project RE shares under microgrid &amp; energy storage scenarios</li>
-<li>Assess how energy management systems will impact energy use by each sector</li>
+<li>Project RE shares under microgrid &amp; energy storage
+scenarios</li>
+<li>Assess how energy management systems will impact energy use by each
+sector</li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -655,8 +830,10 @@ td, th {
 <li>EV promotion &amp; smart charging</li>
 </ul></td>
 <td><ul>
-<li>Assess how contributions from green energy sources impact generation mix in the long-term</li>
-<li>Reveal impacts of EV initiatives on transport sector and emissions</li>
+<li>Assess how contributions from green energy sources impact generation
+mix in the long-term</li>
+<li>Reveal impacts of EV initiatives on transport sector and
+emissions</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -665,660 +842,70 @@ td, th {
 <li>Customer management systems &amp; information access</li>
 </ul></td>
 <td><ul>
-<li>Integrate demand response impacts into energy conservation planning</li>
+<li>Integrate demand response impacts into energy conservation
+planning</li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 <!-------------------------->
 </div>
-<div id="carbon-neutral-and-net-zero" class="section level2" number="5.4">
-<h2 number="5.4"><span class="header-section-number">5.4</span> Carbon Neutral and Net Zero</h2>
+<div id="carbon-neutral-and-net-zero" class="section level2"
+number="4.4">
+<h2><span class="header-section-number">4.4</span> Carbon Neutral and
+Net Zero</h2>
 <!-------------------------->
-<p><strong>Net Zero and Carbon Neutral Thailand Scenarios:</strong> At the 2021 United Nations climate change conference (COP26), Thailand’s prime minister announced the country’s goal to reach carbon neutrality by 2050 and net zero CO2 emissions by 2065. The carbon neutrality and net zero Thailand scenario represents the most economically efficient pathways for Thailand to reach carbon neutrality by 2050 and net zero CO2 emissions by 2065 given the energy policies included in the extended national policies scenario. This pathway will be found using GCAM’s solving capabilities. The outcomes of this scenario will provide insight into the role that the Bangkok metropolitan area will need play in Thailand’s decarbonization and highlight additional measures that may be needed.</p>
-<p><br></p>
-<!-------------------------->
-<!-------------------------->
-</div>
-</div>
-<div id="scope" class="section level1 tabset" number="6">
-<h1 class="tabset" number="6"><span class="header-section-number">6</span> Scope</h1>
-<!-------------------------->
-<!-------------------------->
-<p align="center">
-<img src="images/divider.png">
-</p>
-<!-------------------------->
-<div id="spatial" class="section level2" number="6.1">
-<h2 number="6.1"><span class="header-section-number">6.1</span> Spatial</h2>
-<!-------------------------->
-<p><img src="images/MEA_BMA_boundaries_map.png" width="50%" style="float:right; padding:10px" style="display: block; margin: auto;" /></p>
-<p>PNNL’s assessment will encompass outcomes both on the national level and the city level, with the city level analysis including the three provinces served by MEA within the Bangkok metropolitan area. The map to the right shows these provinces (Figure 6.1.1): the green region includes Bangkok as well as the two other provinces served by MEA (Nonthaburi and Samut Prakan), while the shaded region includes only Bangkok itself, which is the area governed under the Bangkok Metropolitan Administration (BMA). For the city level analysis, results will be reported for each province individually as well as for the aggregated MEA service area.</p>
-<div class="figure" style="text-align: right">
-<img src="images/half_blank_space.jpg" alt="**Figure 6.1.1. Map of analysis regions**" width="75%" />
-<p class="caption">
-<strong>Figure 6.1.1. Map of analysis regions</strong>
-</p>
-</div>
+<p><strong>Net Zero and Carbon Neutral Thailand Scenarios:</strong> At
+the 2021 United Nations climate change conference (COP26), Thailand’s
+prime minister announced the country’s goal to reach carbon neutrality
+by 2050 and net zero CO2 emissions by 2065. The carbon neutrality and
+net zero Thailand scenario represents the most economically efficient
+pathways for Thailand to reach carbon neutrality by 2050 and net zero
+CO2 emissions by 2065 given the energy policies included in the extended
+national policies scenario. This pathway will be found using GCAM’s
+solving capabilities. The outcomes of this scenario will provide insight
+into the role that the Bangkok metropolitan area will need play in
+Thailand’s decarbonization and highlight additional measures that may be
+needed.</p>
 <p><br></p>
 <!-------------------------->
 </div>
-<div id="temporal" class="section level2" number="6.2">
-<h2 number="6.2"><span class="header-section-number">6.2</span> Temporal</h2>
-<!-------------------------->
-<p>Scenarios will be assessed up from the year 2015 to the year 2100, with the GCAM analysis conducted at five-year intervals within this range.</p>
-<p align="center">
-<img src="images/blank_space.jpg">
-</p>
-<p><br></p>
-<!-------------------------->
-<!-------------------------->
 </div>
-</div>
-<div id="expected-outcomes" class="section level1 tabset" number="7">
-<h1 class="tabset" number="7"><span class="header-section-number">7</span> Expected Outcomes</h1>
+<div id="results" class="section level1" number="5">
+<h1><span class="header-section-number">5</span> Results</h1>
 <!-------------------------->
-<!-------------------------->
-<p align="center">
-<img src="images/divider.png">
-</p>
-<p>As illustrated above, GCAM will offer capacity for planning and decision-making in addition to MEA’s current capabilities. Benefits of GCAM and the integrated modeling approach include the following:</p>
-<ul>
-<li><strong>Climate change context:</strong> Since GCAM integrates water and climate systems, it will provide a more nuanced analysis of Smart Grid pathways in the context of ongoing climate change. GCAM considers the bi-directional relationship between climate and energy: climate change impacts electricity demand and power system stability and reliability, while power generation contributes to climate change.</li>
-<li><strong>Long-term assessment:</strong> GCAM will offer long-term projections of the impacts of Smart Grid technologies and policies, beyond the time frame already proposed in Thailand’s Smart Grid plan.</li>
-<li><strong>Technology analysis:</strong> Using GCAM’s technology scenario capabilities, PNNL will be able to assess the impacts of specific technology implementations on electricity demand, generation, emissions, and prices far into the future.</li>
-<li><strong>Holistic approach:</strong> GCAM analyzes the multi-sector impacts of policies and technologies, supporting the integration of MEA’s Smart Grid development into the Smart City initiative. GCAM’s holistic approach will provide insight into how MEA’s Smart Grid plans fit within Thailand’s broader goals for socioeconomic development and reduction of environmental impact.</li>
-</ul>
-<p>These capabilities will enrich MEA’s current capacity for grid planning and analyzing Smart City pathways.</p>
-<!-------------------------->
-<div id="key-indicators" class="section level2" number="7.1">
-<h2 number="7.1"><span class="header-section-number">7.1</span> Key Indicators</h2>
-<!-------------------------->
-<p>The GCAM output for each scenario will include the following indicators calculated at 5-year timesteps through the year 2100 in the study region, as specified in the Spatial and Temporal Scope section.</p>
-<table>
-<caption>Table 7.1.1. Key indicators reported for each scenario.</caption>
-<colgroup>
-<col width="29%" />
-<col width="35%" />
-<col width="35%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Indicator</th>
-<th>Description</th>
-<th>Units</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Electricity generation</td>
-<td>Amount of electricity generated (total &amp; by generation technology</td>
-<td>terawatt-hours (TWh)</td>
-</tr>
-<tr class="even">
-<td>Installed power capacity</td>
-<td>Power capacity of power plants (total &amp; by generation technology</td>
-<td>TWh</td>
-</tr>
-<tr class="odd">
-<td>Energy demand</td>
-<td>Amount of energy demanded (total &amp; by sector</td>
-<td>Exajoules (EJ)</td>
-</tr>
-<tr class="even">
-<td>Final energy consumption</td>
-<td>Amount of energy consumed (total &amp; by sector</td>
-<td>EJ</td>
-</tr>
-<tr class="odd">
-<td>CO2 emissions</td>
-<td>Amount of CO2 emitted (total &amp; by sector</td>
-<td>metric tons CO2 equivalent (MT CO2)</td>
-</tr>
-<tr class="even">
-<td>Electricity price</td>
-<td>Price of electricity for consumer by sector</td>
-<td>US dollars ($USD)</td>
-</tr>
-<tr class="odd">
-<td>Transport service output</td>
-<td>Output of each type of transportation</td>
-<td>passenger-kilometers (pass-km)</td>
-</tr>
-</tbody>
-</table>
+<p>PNNL and Thammasat University will present GCAM results showing
+relevant outcomes of the modeled scenarios up to the year 2100. These
+results could include greenhouse gas emissions, energy supply and
+demand, electricity price, and technology penetration, among other
+indicators. PNNL will work with MEA to determine which indicators are
+the most important to consider when assessing the impact of Smart Grid
+policies and technologies.</p>
 <!-------------------------->
 </div>
-<div id="model-results" class="section level2" number="7.2">
-<h2 number="7.2"><span class="header-section-number">7.2</span> Model Results</h2>
+<div id="discussion" class="section level1" number="6">
+<h1><span class="header-section-number">6</span> Discussion</h1>
 <!-------------------------->
-<p>PNNL and Thammasat University will present GCAM results showing relevant outcomes of the modeled scenarios up to the year 2100. These results could include greenhouse gas emissions, energy supply and demand, electricity price, and technology penetration, among other indicators. PNNL will work with MEA to determine which indicators are the most important to consider when assessing the impact of Smart Grid policies and technologies.</p>
-<!-------------------------->
-</div>
-<div id="analysis-and-recommendations" class="section level2" number="7.3">
-<h2 number="7.3"><span class="header-section-number">7.3</span> Analysis and Recommendations</h2>
-<!-------------------------->
-<p>PNNL, in collaboration with Thammasat University and MEA, will summarize and interpret the GCAM results for each policy pathway and impact indicator. This will include a discussion of how these results relate to MEA’s smart grid efforts and Bangkok’s current Smart City roadmaps and potential additional roadmaps. Based on the GCAM results, PNNL and Thammasat University will provide recommendations for policy pathways that best meet the goals of MEA’s Smart Grid development while making the desired contributions to Thailand’s holistic Smart City and power development objectives. The process of analysis and recommendations will involve engagement and feedback from MEA in order to provide information that best addresses MEA’s planning needs. Final results will be summarized in both a report and a peer-reviewed paper.</p>
-<p><br></p>
-<!-------------------------->
-<!-------------------------->
-</div>
-</div>
-<div id="timeline" class="section level1" number="8">
-<h1 number="8"><span class="header-section-number">8</span> Timeline</h1>
-<!-------------------------->
-<!-------------------------->
-<p align="center">
-<img src="images/divider.png">
-</p>
-<p>Below is the proposed timeline for GCAM analysis, reports, and stakeholder engagement.</p>
-<div class="figure" style="text-align: center">
-<img src="images/timeline2.png" alt="**Figure 8.1: Proposed timeline.**" width="100%" />
-<p class="caption">
-<strong>Figure 8.1: Proposed timeline.</strong>
-</p>
-</div>
-<!-------------------------->
-<!-------------------------->
-</div>
-<div id="inputs" class="section level1 tabset" number="9">
-<h1 class="tabset" number="9"><span class="header-section-number">9</span> Inputs</h1>
-<!-------------------------->
-<!-------------------------->
-<!-------------------------->
-<div id="socioeconomics" class="section level2 tabset tabset-pills" number="9.1">
-<h2 class="tabset tabset-pills" number="9.1"><span class="header-section-number">9.1</span> Socioeconomics</h2>
-<!-------------------------->
-<p>This section describes the socioeconomic (population and GDP) inputs used to define Thailand’s subregions (Bangkok, Nonthaburi, Samut Prakan, and Rest of Thailand) in GCAM. Historical data were available from 1990 to 2020 for all regions, and projections published by local agencies were available for some future periods. See the <a href = "thailand_appendix.html#122_Revised_Data"> Appendix </a> for a full list of data sources and assumptions used to infer socioeconomic trends for the remaining future periods.</p>
-<div id="population" class="section level3" number="9.1.1">
-<h3 number="9.1.1"><span class="header-section-number">9.1.1</span> Population</h3>
-<div id="historical-trends" class="section level4 unnumbered">
-<h4 class="unnumbered">Historical Trends</h4>
-<p>Thailand’s National Economic and Social Development Board (NESDB) and Department of Provincial Administration (DOPA) have reported annual population both nationally and by province from 1990 to 2020. The plot below shows national population, revealing a consistent upward trend.</p>
-<div class="figure" style="text-align: center">
-<img src="thailand_files/figure-html/recent%20national%20trends%20pop-1.png" alt="**Figure 9.1.1.1 Thailand National Population from 2011 to 2020. Source: [NESDB](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fwww.nesdc.go.th%2Fewt_dl_link.php%3Fnid%3D3507%26filename%3Dsocial&amp;wdOrigin=BROWSELINK)**" width="75%" />
-<p class="caption">
-<strong>Figure 9.1.1.1 Thailand National Population from 2011 to 2020. Source: <a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fwww.nesdc.go.th%2Fewt_dl_link.php%3Fnid%3D3507%26filename%3Dsocial&amp;wdOrigin=BROWSELINK">NESDB</a></strong>
-</p>
-</div>
-<p><br> <br></p>
-<p><img src="thailand_files/figure-html/recent%20MEA%20province%20trends%20pop-1.png" width="75%" style="float:right; padding:10px" style="display: block; margin: auto 0 auto auto;" /></p>
-<p>Of the three provinces in MEA’s service area (Bangkok, Nonthaburi, and Samut Prakan), Bangkok has the highest population. Between 1990 and 2020, population increased steadily in Nonthaburi and Samut Prakan, reaching nearly 1.3 million in Nonthaburi and 1.35 million in Samut Prakan. Meanwhile, Bangkok’s population showed much more variation, reaching its peak at almost 5.85 million in 2003 and declining to under 5.6 million in 2020.</p>
-<div class="figure" style="text-align: right">
-<img src="images/half_blank_space.jpg" alt="**Figure 9.1.1.2. Population from 1990 to 2020 in the MEA service area. Source: [DOPA](https://stat.bora.dopa.go.th/new_stat/webPage/statByYear.php)**" width="75%" />
-<p class="caption">
-<strong>Figure 9.1.1.2. Population from 1990 to 2020 in the MEA service area. Source: <a href="https://stat.bora.dopa.go.th/new_stat/webPage/statByYear.php">DOPA</a></strong>
-</p>
-</div>
-<p><br> <br></p>
-</div>
-<div id="future-projections" class="section level4 unnumbered">
-<h4 class="unnumbered">Future Projections</h4>
-<p>NESDB publishes populations projections for the whole country as well as by province for the period from 2021 to 2040. At the national level, the United Nations (UN) provides population projections through 2100; provincial populations after 2040 were estimated by applying the provinces’ shares of national population in 2040 to the UN projected national population through 2100. The charts below show estimated population in Thailand and the three MEA provinces from 1990 to 2100. The shaded regions represent future population projections reported by NESDB.</p>
-<div class="figure" style="text-align: center">
-<img src="thailand_files/figure-html/historical%20&%20future%20trends%20pop-1.png" alt="**Figure 9.1.1.3. Historical and projected future population in Thailand and MEA area. Sources: [NESDB](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fwww.nesdc.go.th%2Fewt_dl_link.php%3Fnid%3D3507%26filename%3Dsocial&amp;wdOrigin=BROWSELINK) and [DOPA](https://stat.bora.dopa.go.th/new_stat/webPage/statByYear.php) (1990-2020), [NESDB](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fwww.nesdc.go.th%2Fewt_dl_link.php%3Fnid%3D3507%26filename%3Dsocial&amp;wdOrigin=BROWSELINK) (2021-2040) and [United Nations](https://population.un.org/wpp/Download/Standard/Population/) (Post-2040)**" width="75%" />
-<p class="caption">
-<strong>Figure 9.1.1.3. Historical and projected future population in Thailand and MEA area. Sources: <a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fwww.nesdc.go.th%2Fewt_dl_link.php%3Fnid%3D3507%26filename%3Dsocial&amp;wdOrigin=BROWSELINK">NESDB</a> and <a href="https://stat.bora.dopa.go.th/new_stat/webPage/statByYear.php">DOPA</a> (1990-2020), <a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fwww.nesdc.go.th%2Fewt_dl_link.php%3Fnid%3D3507%26filename%3Dsocial&amp;wdOrigin=BROWSELINK">NESDB</a> (2021-2040) and <a href="https://population.un.org/wpp/Download/Standard/Population/">United Nations</a> (Post-2040)</strong>
-</p>
-</div>
-<p><br> <br></p>
-<!-------------------------->
-<!-------------------------->
-</div>
-</div>
-<div id="gdp-thb" class="section level3" number="9.1.2">
-<h3 number="9.1.2"><span class="header-section-number">9.1.2</span> GDP (THB)</h3>
-<!-------------------------->
-<!-------------------------->
-<p>The plots below show GDP and Gross Provincial Product (GPP; analagous to GDP at the provincial scale) in units of Thai Baht at current prices for each year. See <a href=thailand_appendix.html#11_GCAM_GDP_Units> appendix </a> for plots showing GDP and per capita GDP at constant prices (2005 $USD), which are the untis accepted by GCAM.</p>
-<div id="historical-trends-1" class="section level4 unnumbered">
-<h4 class="unnumbered">Historical Trends</h4>
-<p>Thailand’s National Economic and Social Development Board (NESDB) has reported both annual GDP from 1990 to 2020 and annual GPP from 1995 to 2020. The plots below show GDP and GPP at current market prices during these periods.</p>
-<div class="figure" style="text-align: center">
-<img src="thailand_files/figure-html/historical%20national%20trends%20gdp-1.png" alt="**Figure 9.1.2.1. Thailand national GDP from 1990 to 2020 at current market prices. Source: [NESDB](https://www.nesdc.go.th/main.php?filename=ni_page)**" width="75%" />
-<p class="caption">
-<strong>Figure 9.1.2.1. Thailand national GDP from 1990 to 2020 at current market prices. Source: <a href="https://www.nesdc.go.th/main.php?filename=ni_page">NESDB</a></strong>
-</p>
-</div>
-<p><br> <br></p>
-<p><img src="thailand_files/figure-html/recent%20MEA%20province%20trends%20gdp%20baht-1.png" width="70%" style="float:right; padding:10px" style="display: block; margin: auto;" /></p>
-<p>Of the three MEA provinces, Bangkok had the highest GDP in 2020, reaching over 5 trillion Baht. Samut Prakan had the next highest GDP of about 650 million Baht, while Nonthaburi’s GDP was about 350 million Baht. All three provinces experienced relatively consistent GDP growth in the period from 2010 to 2019.</p>
-<div class="figure" style="text-align: right">
-<img src="images/half_blank_space.jpg" alt="**Figure 9.1.2.2. GPP from 1995 to 2020 in the MEA service area at current market prices. Source: [NESDB](https://www.nesdc.go.th/main.php?filename=gross_regional)**" width="75%" />
-<p class="caption">
-<strong>Figure 9.1.2.2. GPP from 1995 to 2020 in the MEA service area at current market prices. Source: <a href="https://www.nesdc.go.th/main.php?filename=gross_regional">NESDB</a></strong>
-</p>
-</div>
-<p><br> <br></p>
-</div>
-<div id="future-projections-1" class="section level4 unnumbered">
-<h4 class="unnumbered">Future Projections</h4>
-<p>To project future GDP and GPP, we used a combination of NESDB projections and other assumptions. For GDP, NESDB has provided a projection through 2050 in Thailand’s Long Term Plan (LTP). Beyond 2050, we made an assumption that per capita GDP would reach 52,000 USD (at the 2005 price) by 2100 based on historical trajectories of several developed countries. We assumed that GPP future trajectories would vary between provinces, with Bangkok’s per capita GDP reaching around 70,000 USD (at the 2005 price) by 2100, consistent with income ranges of some high income cities at present. The plots below show estimated GDP and GPP in THB from 2021 to 2100 based on these assumptions, as well as GDP/GPP growth rates during this period.</p>
-<div class="figure" style="text-align: center">
-<img src="thailand_files/figure-html/historical%20&%20future%20trends%20gdp%20baht-1.png" alt="Figure 9.1.2.3. **Projected future GDP in Thailand and GPP in the MEA provinces.**" width="75%" />
-<p class="caption">
-Figure 9.1.2.3. <strong>Projected future GDP in Thailand and GPP in the MEA provinces.</strong>
-</p>
-</div>
-<p><br> <br></p>
-<div class="figure" style="text-align: center">
-<img src="thailand_files/figure-html/historical%20&%20future%20trends%20gdp%20growth%20rate%20baht-1.png" alt="Figure 9.1.2.4. **Projected future growth rates of GDP in Thailand and GPP in the MEA provinces.**" width="75%" />
-<p class="caption">
-Figure 9.1.2.4. <strong>Projected future growth rates of GDP in Thailand and GPP in the MEA provinces.</strong>
-</p>
-</div>
-<!-------------------------->
-<!-------------------------->
-</div>
-</div>
-<div id="per-capita-gdp-thb" class="section level3" number="9.1.3">
-<h3 number="9.1.3"><span class="header-section-number">9.1.3</span> Per Capita GDP (THB)</h3>
-<!-------------------------->
-<!-------------------------->
-<div id="historical-trends-2" class="section level4 unnumbered">
-<h4 class="unnumbered">Historical Trends</h4>
-<p>The plots below shows Thailand’s historical per capita GDP from 1990 to 2020.</p>
-<div class="figure" style="text-align: center">
-<img src="thailand_files/figure-html/historical%20national%20pcgdp%20baht-1.png" alt="Figure 9.1.3.1. **Per capita GDP from 1990 to 2019 at current market prices.**" width="75%" />
-<p class="caption">
-Figure 9.1.3.1. <strong>Per capita GDP from 1990 to 2019 at current market prices.</strong>
-</p>
-</div>
-<p><br> <br></p>
-<p><img src="thailand_files/figure-html/historical%20MEA%20province%20trends%20pcgdp%20baht-1.png" width="70%" style="float:right; padding:10px" style="display: block; margin: auto;" /> These plots show per capita GDP in the three MEA provinces during the same period.</p>
-<div class="figure" style="text-align: right">
-<img src="images/half_blank_space.jpg" alt="**Figure 9.1.3.2. GPP from 1995 to 2020 in the MEA service area provinces at current market prices.**" width="75%" />
-<p class="caption">
-<strong>Figure 9.1.3.2. GPP from 1995 to 2020 in the MEA service area provinces at current market prices.</strong>
-</p>
-</div>
-<p><br> <br></p>
-</div>
-<div id="future-projections-2" class="section level4 unnumbered">
-<h4 class="unnumbered">Future Projections</h4>
-<p>The plot below shows per capita GDP/GPP (THB) and growth rates from 1990 to 2100 for each region.</p>
-<div class="figure" style="text-align: center">
-<img src="thailand_files/figure-html/future%20%20pcgdp%20baht-1.png" alt="**Figure 9.1.3.3. Per capita GDP/GPP through 2100 in each region**" width="75%" />
-<p class="caption">
-<strong>Figure 9.1.3.3. Per capita GDP/GPP through 2100 in each region</strong>
-</p>
-</div>
-<p><br> <br></p>
-<div class="figure" style="text-align: center">
-<img src="thailand_files/figure-html/future%20pcgdp%20growth%20rate%20baht-1.png" alt="Figure 9.1.3.4. **Projected future growth rates of per capita GDP in Thailand and per capita GPP in the MEA provinces.**" width="75%" />
-<p class="caption">
-Figure 9.1.3.4. <strong>Projected future growth rates of per capita GDP in Thailand and per capita GPP in the MEA provinces.</strong>
-</p>
-</div>
-<!-------------------------->
-<!-------------------------->
-</div>
-</div>
-</div>
-</div>
-<div id="gcam-initial-diagnostics" class="section level1 tabset" number="10">
-<h1 class="tabset" number="10"><span class="header-section-number">10</span> GCAM Initial Diagnostics</h1>
-<!-------------------------->
-<!-------------------------->
-<!-------------------------->
-<div id="electricity" class="section level2 tabset tabset-pills" number="10.1">
-<h2 class="tabset tabset-pills" number="10.1"><span class="header-section-number">10.1</span> Electricity</h2>
-<!-------------------------->
-<div id="national" class="section level3" number="10.1.1">
-<h3 number="10.1.1"><span class="header-section-number">10.1.1</span> National</h3>
-<p>The figures below compare GCAM output with local data for national electricity consumption (total and by sector).</p>
-<div class="figure" style="text-align: center">
-<img src="thailand_files/figure-html/national%20consumption%20total%20charts-1.png" alt="**Figure 10.1.1.1. National electricity consumption from 2005 to 2100 (left) and 2011 to 2020 (right) from GCAM output (blue) and local utilities data (red). Local data source: [Energy Policy and Planning office](http://www.eppo.go.th/index.php/en/en-energystatistics/electricity-statistic)**" width="75%" />
-<p class="caption">
-<strong>Figure 10.1.1.1. National electricity consumption from 2005 to 2100 (left) and 2011 to 2020 (right) from GCAM output (blue) and local utilities data (red). Local data source: <a href="http://www.eppo.go.th/index.php/en/en-energystatistics/electricity-statistic">Energy Policy and Planning office</a></strong>
-</p>
-</div>
-<p><br> <br></p>
-<div class="figure" style="text-align: center">
-<img src="thailand_files/figure-html/national%20consumption%20by%20sector%201-1.png" alt="**Figure 10.1.1.2. National electricity consumption by sector in 2015 and 2020 from local utilities data (left) and GCAM output (right). Local data source: [Energy Policy and Planning office](http://www.eppo.go.th/index.php/en/en-energystatistics/electricity-statistic)**" width="75%" />
-<p class="caption">
-<strong>Figure 10.1.1.2. National electricity consumption by sector in 2015 and 2020 from local utilities data (left) and GCAM output (right). Local data source: <a href="http://www.eppo.go.th/index.php/en/en-energystatistics/electricity-statistic">Energy Policy and Planning office</a></strong>
-</p>
-</div>
-<p><br> <br></p>
-<p>The figure below shows the long-term GCAM output for national electricity consumption.</p>
-<div class="figure" style="text-align: center">
-<img src="thailand_files/figure-html/national%20consumption%20by%20sector%202-1.png" alt="**Figure 10.1.1.3. GCAM output national electricity consumption by sector from 2010 to 2100**" width="75%" />
-<p class="caption">
-<strong>Figure 10.1.1.3. GCAM output national electricity consumption by sector from 2010 to 2100</strong>
-</p>
-</div>
-<p><br> <br></p>
-<p align="center">
-<img src="images/divider.png">
-</p>
-</div>
-<div id="mea-service-area" class="section level3" number="10.1.2">
-<h3 number="10.1.2"><span class="header-section-number">10.1.2</span> MEA service area</h3>
-<p>The figures below compare GCAM output with local data for electricity consumption in the MEA service area (total and by sector).</p>
-<div class="figure" style="text-align: center">
-<img src="thailand_files/figure-html/consumption%20MEA%20area%20total%20charts-1.png" alt="Figure 10.1.2.1. **Electricity consumption in the MEA service area from 2005 to 2100 (left) and 2011 to 2020 (right) from GCAM output (blue) and MEA data (red). Local data source: [Energy Policy and Planning office](http://www.eppo.go.th/index.php/en/en-energystatistics/electricity-statistic)**" width="75%" />
-<p class="caption">
-Figure 10.1.2.1. <strong>Electricity consumption in the MEA service area from 2005 to 2100 (left) and 2011 to 2020 (right) from GCAM output (blue) and MEA data (red). Local data source: <a href="http://www.eppo.go.th/index.php/en/en-energystatistics/electricity-statistic">Energy Policy and Planning office</a></strong>
-</p>
-</div>
-<p><br> <br></p>
-<div class="figure" style="text-align: center">
-<img src="thailand_files/figure-html/consumption%20by%20sector%20MEA%20area%20chart%201-1.png" alt="**Figure 10.1.2.2. Electricity consumption by sector in the MEA service area from MEA data (left) and GCAM output (right) in 2015 and 2020. Local data source: [Energy Policy and Planning office](http://www.eppo.go.th/index.php/en/en-energystatistics/electricity-statistic)**" width="75%" />
-<p class="caption">
-<strong>Figure 10.1.2.2. Electricity consumption by sector in the MEA service area from MEA data (left) and GCAM output (right) in 2015 and 2020. Local data source: <a href="http://www.eppo.go.th/index.php/en/en-energystatistics/electricity-statistic">Energy Policy and Planning office</a></strong>
-</p>
-</div>
-<p><br> <br></p>
-<p>The figure below shows the long-term GCAM output for electricity consumption by sector in the MEA service area.</p>
-<div class="figure" style="text-align: center">
-<img src="thailand_files/figure-html/consumption%20by%20sector%20MEA%20area%20chart%202-1.png" alt="**Figure 10.1.2.3. GCAM output electricity consumption by sector in the MEA service area from 2010 to 2100**" width="75%" />
-<p class="caption">
-<strong>Figure 10.1.2.3. GCAM output electricity consumption by sector in the MEA service area from 2010 to 2100</strong>
-</p>
-</div>
-<p><br> <br></p>
-<p align="center">
-<img src="images/divider.png">
-</p>
-<!-------------------------->
-</div>
-</div>
-<div id="energy" class="section level2 tabset tabset-pills" number="10.2">
-<h2 class="tabset tabset-pills" number="10.2"><span class="header-section-number">10.2</span> Energy</h2>
-<!-------------------------->
-<div id="national-1" class="section level3" number="10.2.1">
-<h3 number="10.2.1"><span class="header-section-number">10.2.1</span> National</h3>
-<p>The figures below compare GCAM output with local data for national final energy consumption (total, by fuel type, and by sector).</p>
-<div class="figure" style="text-align: center">
-<img src="thailand_files/figure-html/national%20final%20energy%20total%20charts-1.png" alt="Figure 10.2.1.1. **National total final energy from 1986 to 2100 (left) and 1986 to 2020 (right) from GCAM output (blue) and local data (red). Local data source: [Energy Policy and Planning Office](http://www.eppo.go.th/index.php/en/en-energystatistics/summary-statistic?orders[publishUp]=publishUp&amp;issearch=1)**" width="75%" />
-<p class="caption">
-Figure 10.2.1.1. <strong>National total final energy from 1986 to 2100 (left) and 1986 to 2020 (right) from GCAM output (blue) and local data (red). Local data source: <a href="http://www.eppo.go.th/index.php/en/en-energystatistics/summary-statistic?orders%5BpublishUp%5D=publishUp&amp;issearch=1">Energy Policy and Planning Office</a></strong>
-</p>
-</div>
-<p><br> <br></p>
-<div class="figure" style="text-align: center">
-<img src="thailand_files/figure-html/national%20final%20energy%20consumption%20by%20fuel%201-1.png" alt="**Figure 10.2.1.2. National total final energy by fuel from local data (left) and GCAM output (right) from 2005 to 2020. Local data source: [Energy Policy and Planning Office](http://www.eppo.go.th/index.php/en/en-energystatistics/summary-statistic?orders[publishUp]=publishUp&amp;issearch=1)**" width="75%" />
-<p class="caption">
-<strong>Figure 10.2.1.2. National total final energy by fuel from local data (left) and GCAM output (right) from 2005 to 2020. Local data source: <a href="http://www.eppo.go.th/index.php/en/en-energystatistics/summary-statistic?orders%5BpublishUp%5D=publishUp&amp;issearch=1">Energy Policy and Planning Office</a></strong>
-</p>
-</div>
-<p><br> <br></p>
-<div class="figure" style="text-align: center">
-<img src="thailand_files/figure-html/national%20final%20energy%20consumption%20by%20sector%201-1.png" alt="**Figure 10.2.1.3. National total final energy by sector from local data (left) and GCAM output (right) in 2015. Local data source: [Energy Efficiency Plan 2018](https://www.dede.go.th/ewt_w3c/ewt_dl_link.php?filename=index&amp;nid=54495)**" width="75%" />
-<p class="caption">
-<strong>Figure 10.2.1.3. National total final energy by sector from local data (left) and GCAM output (right) in 2015. Local data source: <a href="https://www.dede.go.th/ewt_w3c/ewt_dl_link.php?filename=index&amp;nid=54495">Energy Efficiency Plan 2018</a></strong>
-</p>
-</div>
-<p><br> <br></p>
-<p>The figures below show the long-term GCAM output for national final energy consumption by fuel and by sector.</p>
-<div class="figure" style="text-align: center">
-<img src="thailand_files/figure-html/national%20final%20energy%20consumption%20by%20fuel%202-1.png" alt="**Figure 10.2.1.4. GCAM output national total final energy consumption by fuel from 2010 to 2100**" width="75%" />
-<p class="caption">
-<strong>Figure 10.2.1.4. GCAM output national total final energy consumption by fuel from 2010 to 2100</strong>
-</p>
-</div>
-<p><br> <br></p>
-<div class="figure" style="text-align: center">
-<img src="thailand_files/figure-html/national%20final%20energy%20consumption%20by%20sector%20charts-1.png" alt="**Figure 10.2.1.5. GCAM output national total final energy consumption by sector from 2010 to 2100**" width="75%" />
-<p class="caption">
-<strong>Figure 10.2.1.5. GCAM output national total final energy consumption by sector from 2010 to 2100</strong>
-</p>
-</div>
-<p><br> <br></p>
-<p align="center">
-<img src="images/divider.png">
-</p>
-</div>
-<div id="mea-service-area-1" class="section level3" number="10.2.2">
-<h3 number="10.2.2"><span class="header-section-number">10.2.2</span> MEA service area</h3>
-<p>We have not identified any local data regarding energy consumption in the MEA service area. Below are some initial energy results from GCAM for the region.</p>
-<div class="figure" style="text-align: center">
-<img src="thailand_files/figure-html/MEA%20energy%20consumption%20total-1.png" alt="**Figure 10.2.2.1. GCAM output of total final energy consumption in the MEA service area**" width="75%" />
-<p class="caption">
-<strong>Figure 10.2.2.1. GCAM output of total final energy consumption in the MEA service area</strong>
-</p>
-</div>
-<p><br> <br></p>
-<div class="figure" style="text-align: center">
-<img src="thailand_files/figure-html/MEA%20energy%20consumption%20by%20sector-1.png" alt="**Figure 10.2.2.2. GCAM output of total final energy consumption by sector in the MEA service area**" width="75%" />
-<p class="caption">
-<strong>Figure 10.2.2.2. GCAM output of total final energy consumption by sector in the MEA service area</strong>
-</p>
-</div>
-<p><br> <br></p>
-<div class="figure" style="text-align: center">
-<img src="thailand_files/figure-html/MEA%20energy%20consumption%20by%20fuel-1.png" alt="**Figure 10.2.2.3. GCAM output of total final energy consumption by fuel in the MEA service area**" width="75%" />
-<p class="caption">
-<strong>Figure 10.2.2.3. GCAM output of total final energy consumption by fuel in the MEA service area</strong>
-</p>
-</div>
-<p><br> <br></p>
-<p align="center">
-<img src="images/divider.png">
-</p>
-<!-------------------------->
-</div>
-</div>
-<div id="emissions" class="section level2 tabset tabset-pills" number="10.3">
-<h2 class="tabset tabset-pills" number="10.3"><span class="header-section-number">10.3</span> Emissions</h2>
-<!-------------------------->
-<div id="national-2" class="section level3" number="10.3.1">
-<h3 number="10.3.1"><span class="header-section-number">10.3.1</span> National</h3>
-<p>The figures below compare GCAM output with local data for national CO2 emissions (total and by sector).</p>
-<div class="figure" style="text-align: center">
-<img src="thailand_files/figure-html/national%20co2%20emissions%20total-1.png" alt="**Figure 10.3.1.1. National total CO2 emissions from 1986 to 2100 (left) and 1986 to 2015 (right) from GCAM output (blue) and local data (red). Local data source: [Energy Policy and Planning Office](http://www.eppo.go.th/index.php/en/en-energystatistics/co2-statistic)**" width="75%" />
-<p class="caption">
-<strong>Figure 10.3.1.1. National total CO2 emissions from 1986 to 2100 (left) and 1986 to 2015 (right) from GCAM output (blue) and local data (red). Local data source: <a href="http://www.eppo.go.th/index.php/en/en-energystatistics/co2-statistic">Energy Policy and Planning Office</a></strong>
-</p>
-</div>
-<p><br> <br></p>
-<div class="figure" style="text-align: center">
-<img src="thailand_files/figure-html/national%20co2%20emissions%20by%20sector%20plots-1.png" alt="**Figure 10.3.1.2. National total CO2 emissions by sector from local data (left) and GCAM output (right) from 2005 to 2015. Local data source: [Energy Policy and Planning Office](http://www.eppo.go.th/index.php/en/en-energystatistics/co2-statistic)**" width="75%" />
-<p class="caption">
-<strong>Figure 10.3.1.2. National total CO2 emissions by sector from local data (left) and GCAM output (right) from 2005 to 2015. Local data source: <a href="http://www.eppo.go.th/index.php/en/en-energystatistics/co2-statistic">Energy Policy and Planning Office</a></strong>
-</p>
-</div>
-<p><br> <br></p>
-<p>The figure below shows the long-term GCAM output for national CO2 emissions by sector.</p>
-<div class="figure" style="text-align: center">
-<img src="thailand_files/figure-html/national%20co2%20emissions%20by%20sector%20gcam-1.png" alt="**Figure 10.3.1.3. GCAM output of national total CO2 emissions by sector through 2100**" width="75%" />
-<p class="caption">
-<strong>Figure 10.3.1.3. GCAM output of national total CO2 emissions by sector through 2100</strong>
-</p>
-</div>
-<p><br> <br></p>
-<p align="center">
-<img src="images/divider.png">
-</p>
-</div>
-<div id="mea-service-area-2" class="section level3" number="10.3.2">
-<h3 number="10.3.2"><span class="header-section-number">10.3.2</span> MEA service area</h3>
-<p>We have not identified any local data concerning emissions in the MEA service area. Below are some initial emissions results from GCAM for the region.</p>
-<div class="figure" style="text-align: center">
-<img src="thailand_files/figure-html/MEA%20co2%20emissions%20total%20gcam-1.png" alt="**Figure 10.3.2.1 GCAM output of total CO2 emissions in the MEA service area**" width="75%" />
-<p class="caption">
-<strong>Figure 10.3.2.1 GCAM output of total CO2 emissions in the MEA service area</strong>
-</p>
-</div>
-<p><br> <br></p>
-<div class="figure" style="text-align: center">
-<img src="thailand_files/figure-html/MEA%20co2%20emissions%20sector%20gcam-1.png" alt="**Figure 10.3.2.2. GCAM output of total CO2 emissions in the MEA service area**" width="75%" />
-<p class="caption">
-<strong>Figure 10.3.2.2. GCAM output of total CO2 emissions in the MEA service area</strong>
-</p>
-</div>
-<p><br> <br></p>
-<p align="center">
-<img src="images/divider.png">
-</p>
-<!-------------------------->
-</div>
-</div>
-<div id="transportation" class="section level2 tabset tabset-pills" number="10.4">
-<h2 class="tabset tabset-pills" number="10.4"><span class="header-section-number">10.4</span> Transportation</h2>
-<!-------------------------->
-<div id="national-3" class="section level3" number="10.4.1">
-<h3 number="10.4.1"><span class="header-section-number">10.4.1</span> National</h3>
-<p>The figures below compare GCAM output with local data for national greenhouse gas emissions in the transportation sector (total and by mode of transport).</p>
-<div class="figure" style="text-align: center">
-<img src="thailand_files/figure-html/national%20transport%20ghg%20total-1.png" alt="**Figure 10.4.1.1. National GHG emissions in transportation from GCAM output (blue) and local data (red). Local data source: [Ministry of Transport](https://datagov.mot.go.th/dataset/transport-ghg)**" width="75%" />
-<p class="caption">
-<strong>Figure 10.4.1.1. National GHG emissions in transportation from GCAM output (blue) and local data (red). Local data source: <a href="https://datagov.mot.go.th/dataset/transport-ghg">Ministry of Transport</a></strong>
-</p>
-</div>
-<p><br> <br></p>
-<div class="figure" style="text-align: center">
-<img src="thailand_files/figure-html/transport%20ghg%20by%20mode-1.png" alt="**Figure 10.4.1.2. National GHG emissions by mode of transportation from local data (left) and GCAM output (right). Local data source: [Ministry of Transport](https://datagov.mot.go.th/dataset/)**" width="75%" />
-<p class="caption">
-<strong>Figure 10.4.1.2. National GHG emissions by mode of transportation from local data (left) and GCAM output (right). Local data source: <a href="https://datagov.mot.go.th/dataset/">Ministry of Transport</a></strong>
-</p>
-</div>
-<p><br> <br></p>
-<p>The figure below shows the long-term GCAM output for national greenhouse gas emissions by mode of transport.</p>
-<div class="figure" style="text-align: center">
-<img src="thailand_files/figure-html/transport%20ghg%20by%20mode%20gcam-1.png" alt="**Figure 10.4.1.3. GCAM output of national GHG emissions by mode of transportation through 2100**" width="75%" />
-<p class="caption">
-<strong>Figure 10.4.1.3. GCAM output of national GHG emissions by mode of transportation through 2100</strong>
-</p>
-</div>
-<p><br> <br></p>
-<p align="center">
-<img src="images/divider.png">
-</p>
-</div>
-<div id="mea-service-area-3" class="section level3" number="10.4.2">
-<h3 number="10.4.2"><span class="header-section-number">10.4.2</span> MEA service area</h3>
-<p>We have not identified any local transportation data in the MEA service area. Below are some initial transportation results from GCAM for the region.</p>
-<div class="figure" style="text-align: center">
-<img src="thailand_files/figure-html/total%20transportation%20ghg%20mea-1.png" alt="**Figure 10.4.2.1. GCAM output of total GHG emissions from transportation in the MEA service area**" width="75%" />
-<p class="caption">
-<strong>Figure 10.4.2.1. GCAM output of total GHG emissions from transportation in the MEA service area</strong>
-</p>
-</div>
-<p><br> <br></p>
-<div class="figure" style="text-align: center">
-<img src="thailand_files/figure-html/total%20transportation%20ghg%20mea%20mode-1.png" alt="**Figure 10.4.2.2 GCAM output of GHG emissions by transportation mode in the MEA service area**" width="75%" />
-<p class="caption">
-<strong>Figure 10.4.2.2 GCAM output of GHG emissions by transportation mode in the MEA service area</strong>
-</p>
-</div>
-<p><br> <br></p>
-<p align="center">
-<img src="images/divider.png">
-</p>
-<!-------------------------->
-</div>
-</div>
-<div id="buildings" class="section level2 tabset tabset-pills" number="10.5">
-<h2 class="tabset tabset-pills" number="10.5"><span class="header-section-number">10.5</span> Buildings</h2>
-<!-------------------------->
-<p>We have not identified local data regarding buildings energy consumption. Below are some initial GCAM outputs for the national and MEA service area regions.</p>
-<div class="figure" style="text-align: center">
-<img src="thailand_files/figure-html/GCAM%20buildings%20energy%20total%20all%20regions-1.png" alt="**Figure 10.5.1. GCAM output for buildings final energy consumption in all regions from 2005 to 2100**" width="75%" />
-<p class="caption">
-<strong>Figure 10.5.1. GCAM output for buildings final energy consumption in all regions from 2005 to 2100</strong>
-</p>
-</div>
-<p><br> <br></p>
-<div class="figure" style="text-align: center">
-<img src="thailand_files/figure-html/GCAM%20buildings%20energy%20consumption%20by%20sector-1.png" alt="**Figure 10.5.2. GCAM output for buildings energy consumption by sector in the MEA service area (top) and the rest of Thailand (bottom)**" width="75%" />
-<p class="caption">
-<strong>Figure 10.5.2. GCAM output for buildings energy consumption by sector in the MEA service area (top) and the rest of Thailand (bottom)</strong>
-</p>
-</div>
-<p><br> <br></p>
-<p align="center">
-<img src="images/divider.png">
-</p>
-<!-------------------------->
-<!-------------------------->
-</div>
-</div>
-<div id="summary-figures" class="section level1 tabset" number="11">
-<h1 class="tabset" number="11"><span class="header-section-number">11</span> Summary Figures</h1>
-<!-------------------------->
-<!-------------------------->
-<!-------------------------->
-<div id="overall-indicators" class="section level2 tabset" number="11.1">
-<h2 class="tabset" number="11.1"><span class="header-section-number">11.1</span> Overall Indicators</h2>
-<!-------------------------->
-<div id="national-4" class="section level3" number="11.1.1">
-<h3 number="11.1.1"><span class="header-section-number">11.1.1</span> National</h3>
-</div>
-<div id="mea-area" class="section level3" number="11.1.2">
-<h3 number="11.1.2"><span class="header-section-number">11.1.2</span> MEA area</h3>
-<!-------------------------->
-</div>
-</div>
-<div id="sectoral-indicators" class="section level2 tabset" number="11.2">
-<h2 class="tabset" number="11.2"><span class="header-section-number">11.2</span> Sectoral Indicators</h2>
-<!-------------------------->
-<div id="national-5" class="section level3" number="11.2.1">
-<h3 number="11.2.1"><span class="header-section-number">11.2.1</span> National</h3>
-</div>
-<div id="mea-area-1" class="section level3" number="11.2.2">
-<h3 number="11.2.2"><span class="header-section-number">11.2.2</span> MEA area</h3>
-<!-------------------------->
-<!-------------------------->
-</div>
-</div>
-</div>
-<div id="references" class="section level1 tabset" number="12">
-<h1 class="tabset" number="12"><span class="header-section-number">12</span> References</h1>
-<!-------------------------->
-<!-------------------------->
-<!-------------------------->
-<div id="local-data" class="section level2" number="12.1">
-<h2 number="12.1"><span class="header-section-number">12.1</span> Local Data</h2>
-<!-------------------------->
-<div id="socioeconomics-1" class="section level3 unnumbered">
-<h3 class="unnumbered">Socioeconomics</h3>
-<ul>
-<li>Historical national population (1990-2020): <a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fwww.nesdc.go.th%2Fewt_dl_link.php%3Fnid%3D3507%26filename%3Dsocial&amp;wdOrigin=BROWSELINK">National Economic and Social Development Board (NESDB)</a></li>
-<li>Historical provincial population (1990-2020): <a href="https://stat.bora.dopa.go.th/new_stat/webPage/statByYear.php">Department of Provincial Administration</a></li>
-<li>National and provincial population projection (2021-2040) <a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fwww.nesdc.go.th%2Fewt_dl_link.php%3Fnid%3D3507%26filename%3Dsocial&amp;wdOrigin=BROWSELINK">NESDB</a></li>
-<li>National population Projection (2041-2100): <a href="https://population.un.org/wpp/Download/Standard/Population/">United Nations</a></li>
-<li>Historical GDP and GPP (1990-2019): <a href="https://www.nesdc.go.th/main.php?filename=gross_regional">NESDB</a></li>
-</ul>
-</div>
-<div id="electricity-1" class="section level3 unnumbered">
-<h3 class="unnumbered">Electricity</h3>
-<ul>
-<li>Electricity consumption: <a href="http://www.eppo.go.th/index.php/en/en-energystatistics/electricity-statistic">Energy Policy and Planning Office</a></li>
-</ul>
-</div>
-<div id="energy-1" class="section level3 unnumbered">
-<h3 class="unnumbered">Energy</h3>
-<ul>
-<li>Energy consumption: <a href="http://www.eppo.go.th/index.php/en/en-energystatistics/summary-statistic?orders%5BpublishUp%5D=publishUp&amp;issearch=1">Energy Policy and Planning Office</a></li>
-</ul>
-</div>
-<div id="emissions-1" class="section level3 unnumbered">
-<h3 class="unnumbered">Emissions</h3>
-<ul>
-<li>CO2 emissions: <a href="http://www.eppo.go.th/index.php/en/en-energystatistics/co2-statistic">Energy Policy and Planning Office</a></li>
-</ul>
-</div>
-<div id="transportation-1" class="section level3 unnumbered">
-<h3 class="unnumbered">Transportation</h3>
-<ul>
-<li>GHG emissions: <a href="https://datagov.mot.go.th/dataset/transport-ghg">Ministry of Transport</a></li>
-</ul>
-<p><br></p>
-<p align="center">
-<img src="images/divider.png">
-</p>
-<!-------------------------->
-<!-------------------------->
-</div>
-</div>
-</div>
-<div id="appendix" class="section level1" number="13">
-<h1 number="13"><span class="header-section-number">13</span> Appendix</h1>
-<!-------------------------->
-<!-------------------------->
-<p>See <a href = "thailand_appendix.html"> Appendix </a> for supplementary information.</p>
+<p>PNNL, in collaboration with Thammasat University and MEA, will
+summarize and interpret the GCAM results for each policy pathway and
+impact indicator. This will include a discussion of how these results
+relate to MEA’s smart grid efforts and Bangkok’s current Smart City
+roadmaps and potential additional roadmaps. Based on the GCAM results,
+PNNL and Thammasat University will provide recommendations for policy
+pathways that best meet the goals of MEA’s Smart Grid development while
+making the desired contributions to Thailand’s holistic Smart City and
+power development objectives. The process of analysis and
+recommendations will involve engagement and feedback from MEA in order
+to provide information that best addresses MEA’s planning needs. Final
+results will be summarized in both a report and a peer-reviewed
+paper.</p>
+</div>
+<div id="section" class="section level1 unlisted unnumbered">
+<h1 class="unlisted unnumbered"></h1>
+<p><span class="navbar-fixed-bottom text-muted bg-info">WORK IN POGRESS
+- DO NOT CITE
+<img src="images/logo_us_state_department_color.png" style="padding-left:20px; height:40px;">
+<img src="images/logo_pnnl_white.png" style="padding-left:20px; height:40px;"></span></p>
 </div>
 
 

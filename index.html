@@ -13,7 +13,7 @@
 
 <title>SEAsia</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -59,6 +59,7 @@ if (window.hljs) {
 
 
 
+
 <link rel="stylesheet" href="style.css" type="text/css" />
 
 
@@ -83,6 +84,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -235,7 +239,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -256,15 +260,23 @@ $(document).ready(function () {
 <li>
   <a href="malaysia.html">Malaysia</a>
 </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="thailand_appendix.html">Appendix - Thailand</a>
+</li>
+<li>
+  <a href="malaysia_appendix.html">Appendix - Malaysia</a>
+</li>
+<li>
+  <a href="modeling_thailand.html">Modeling - Thailand</a>
+</li>
 <li>
   <a href="https://github.com/JGCRI/seasia">
     <span class="fab fa-github"></span>
      
   </a>
 </li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        
       </ul>
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
@@ -278,32 +290,43 @@ $(document).ready(function () {
 </div>
 
 
-<div class="header_logo">
-<p><img src="images/logo_us_state_department.png" style="float:right;height:40px;"> <img src="images/logo_pnnl_white.png" style="float:right;height:40px;"> <img src="images/DoNotCite.png" style="float:right;height:32px;margin-top:8px;margin-right:380px"></p>
-</div>
 <!-------------------------->
 <!-------------------------->
-<div id="welcome" class="section level1">
-<h1>Welcome</h1>
-<!-------------------------->
-<!-------------------------->
+<h1 style="float:left;font-size:60px;vertical-align:middle">
+Welcome
+</h1>
+<img src="images/logo_us_state_department_color.png" style="float:right;height:100px;">
+<img src="images/logo_pnnl.png" style="float:right;height:100px;">
+<!--------------------------> <!-------------------------->
 <p align="center">
 <img src="images/divider.png">
 </p>
-<p>The US-ASEAN Smart Cities Partnership (USASCP) uses innovative approaches across sectors to address the challenges and opportunities of energy development and urbanization in ASEAN Member States. The U.S. Department of Energy’s Pacific Northwest National Laboratory (PNNL) is partnering with local partners in selected ASEAN countries to supplement existing Digitalization and Smart City roadmap plans by providing integrated modeling and assessment capabilities. PNNL’s Global Change Analysis Model (GCAM) is a global model integrating socioeconomics, energy, land use, water, and climate systems. PNNL will use GCAM to assess the trajectories and outcomes of digitalization and Smart City pathways in the selected ASEAN countries.</p>
+<p>The US-ASEAN Smart Cities Partnership (USASCP) uses innovative
+approaches across sectors to address the challenges and opportunities of
+energy development and urbanization in ASEAN Member States. The U.S.
+Department of Energy’s Pacific Northwest National Laboratory (PNNL) is
+partnering with local partners in selected ASEAN countries to supplement
+existing Digitalization and Smart City roadmap plans by providing
+integrated modeling and assessment capabilities. PNNL’s Global Change
+Analysis Model (GCAM) is a global model integrating socioeconomics,
+energy, land use, water, and climate systems. PNNL will use GCAM to
+assess the trajectories and outcomes of digitalization and Smart City
+pathways in the selected ASEAN countries.</p>
 <p align="center">
 <img src="images/divider.png">
 </p>
 <div class="container_map_outer">
 <div class="container_map">
-<p><a href = "thailand.html"> <img src="images/thailand.jpg" width="100%" style="display: block; margin: auto;" /> </a></p>
+<p><a href = "thailand.html">
+<img src="images/thailand.jpg" width="100%" /> </a></p>
 </div>
 <div class="container_map">
-<p><a href = "malaysia.html"> <img src="images/malaysia.jpg" width="100%" style="display: block; margin: auto;" /> </a></p>
+<p><a href = "malaysia.html">
+<img src="images/malaysia.jpg" width="100%" /> </a></p>
 </div>
 <div class="container_map">
-<p><a href = "index.html"> <img src="images/vietnam.jpg" width="100%" style="display: block; margin: auto;" /> </a></p>
-</div>
+<p><a href = "index.html"> <img src="images/vietnam.jpg" width="100%" />
+</a></p>
 </div>
 </div>
 

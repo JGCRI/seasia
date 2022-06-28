@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Modeling - Thailand</title>
+
+<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">SE Asia</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">
+    <span class="fa fa-home"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="thailand.html">Thailand</a>
+</li>
+<li>
+  <a href="malaysia.html">Malaysia</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="thailand_appendix.html">Appendix - Thailand</a>
+</li>
+<li>
+  <a href="malaysia_appendix.html">Appendix - Malaysia</a>
+</li>
+<li>
+  <a href="modeling_thailand.html">Modeling - Thailand</a>
+</li>
+<li>
+  <a href="https://github.com/JGCRI/seasia">
+    <span class="fab fa-github"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+
+</div>
+
+
+<!-- Allow href to tabsets -->
+<script type="text/javascript">
+window.onload = function() {
+  document.querySelector('a[href="' + window.location.href.match("#.*$") + '"]').click();
+}
+
+function goToTab() {
+  var hash = String(window.location.href.match("#.*$"));
+  var target = document.querySelector("a[role = 'tab'][href='" + hash + "']");
+  if (target !== null) {
+    var greatgrandparent = target.parentElement.parentElement.parentElement;
+    if (greatgrandparent.getAttribute("role") == "tabpanel") {
+      document.querySelector("a[role = 'tab'][href='#" + greatgrandparent.getAttribute("id") + "']").click();
+    }
+    target.click();
+    target.scrollIntoView();
+  }
+}
+window.onload = function() {
+  setTimeout(goToTab, 100);
+}
+window.onhashchange = goToTab;
+</script>
+<!-- Set table styles -->
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+</style>
+<!-------------------------->
+<!-------------------------->
+<div id="download-gcam-se-asia" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> Download GCAM SE
+Asia</h1>
+<!-------------------------->
+<!-------------------------->
+<p align="center">
+<img src="images/divider.png">
+</p>
+<p><br></p>
+<table class="table table-bordered table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+File
+</th>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+Link
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+gcamv5p3_seasia
+</td>
+<td style="text-align:left;">
+Link_here
+</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<!-------------------------->
+<!-------------------------->
+</div>
+<div id="guides" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> Guides</h1>
+<!-------------------------->
+<!-------------------------->
+<p align="center">
+<img src="images/divider.png">
+</p>
+<p><br></p>
+<table class="table table-bordered table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+File
+</th>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+Description
+</th>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+Location
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+gcam_overview.pdf
+</td>
+<td style="text-align:left;">
+GCAM overview presentation
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/gcam_overview.pdf" style="     ">Link</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+gcam_walkthrough.pdf
+</td>
+<td style="text-align:left;">
+GCAM walkthrough presentation
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/gcam_walkthrough.pdf" style="     ">Link</a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<!-------------------------->
+<!-------------------------->
+</div>
+<div id="scenarios" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> Scenarios</h1>
+<!-------------------------->
+<!-------------------------->
+<p align="center">
+<img src="images/divider.png">
+</p>
+<table class="table table-bordered table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+File
+</th>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+Description
+</th>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+Location
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+configuration_seasia_cities_bau.xml
+</td>
+<td style="text-align:left;">
+Business as Usual Scenario
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/configuration_seasia_cities_bau.xml" style="     ">Link</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+configuration_seasia_cities_thailand_policy.xml
+</td>
+<td style="text-align:left;">
+Example Policies Scenario
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/configuration_seasia_cities_thailand_policy.xml" style="     ">Link</a>
+</td>
+</tr>
+</tbody>
+</table>
+<!-------------------------->
+<!-------------------------->
+</div>
+<div id="example-policies" class="section level1" number="4">
+<h1><span class="header-section-number">4</span> Example Policies</h1>
+<!-------------------------->
+<!-------------------------->
+<p align="center">
+<img src="images/divider.png">
+</p>
+<p>The following table lists some example policies that have been
+modeled in the example policy scenario. The subsequent sections explain
+what each of these policies is meant to represent and how to change them
+for future modeling. Each of these policies is added on in the
+<code>configuration_seasia_cities_thailand_policy.xml</code> file to
+include it in the scenario.</p>
+<table class="table table-bordered table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+Description
+</th>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+File
+</th>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+Location
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Electricity Generation Mix - Subsidy: Modify the electricity generation
+mix by using a XXXXXXX
+</td>
+<td style="text-align:left;">
+thailand_policy_national_electricity_generation_floor_pdp2018.xml
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/thailand_policy_national_electricity_generation_floor_pdp2018.xml" style="     ">Link</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Modify building shell efficiency by 15% EFGHGHEGHE
+</td>
+<td style="text-align:left;">
+thailand_policy_subnational_buildings_shell_eff_015_018.xml
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/thailand_policy_subnational_buildings_shell_eff_015_018.xml" style="     ">Link</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Modify building shell efficiency by 15% EFGHGHEGHE
+</td>
+<td style="text-align:left;">
+thailand_policy_subnational_transport_cost_ev_2050p_2060f.xml
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/thailand_policy_subnational_transport_cost_ev_2050p_2060f.xml" style="     ">Link</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Modify building shell efficiency by 15% EFGHGHEGHE
+</td>
+<td style="text-align:left;">
+thailand_policy_subnational_transport_freight_rail_0034_2040_lin.xml
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/thailand_policy_subnational_transport_freight_rail_0034_2040_lin.xml" style="     ">Link</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Modify building shell efficiency by 15% EFGHGHEGHE
+</td>
+<td style="text-align:left;">
+thailand_policy_subnational_transport_freight_road_55_2040_lin.xml
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/thailand_policy_subnational_transport_freight_road_55_2040_lin.xml" style="     ">Link</a>
+</td>
+</tr>
+</tbody>
+</table>
+<div id="electricity-generation-mix---subsidy" class="section level2"
+number="4.1">
+<h2><span class="header-section-number">4.1</span> Electricity
+Generation Mix - Subsidy</h2>
+<hr />
+<table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+Files Used
+</th>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+Description
+</th>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+Link
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+subsector_shareweights_ref.csv
+</td>
+<td style="text-align:left;">
+Reference shareweights from Model Interface
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/JGCRI/gcam_training/blob/main/examples/subsector_shareweights_ref.csv" style="     ">Link</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+transportation_Subregions_Thailand.xml
+</td>
+<td style="text-align:left;">
+Existing default xml
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/JGCRI/gcam_training/blob/main/examples/transportation_Subregions_Thailand.xml" style="     ">Link</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+freight_rail_0034_2040_lin.xml
+</td>
+<td style="text-align:left;">
+Linear interpolation from default 2015 value (0.001342) to 0.0034 in
+2040 for freight rail
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/JGCRI/gcam_training/blob/main/examples/freight_rail_0034_2040_lin.xml" style="     ">Link</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+freight_road_55_2040_lin.xml
+</td>
+<td style="text-align:left;">
+Linear interpolation from default 2015 value (1) to 0.55 in 2040 for
+freight road
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/JGCRI/gcam_training/blob/main/examples/freight_road_55_2040_lin.xml" style="     ">Link</a>
+</td>
+</tr>
+</tbody>
+</table>
+<!-------------------------->
+<!----------Goal------------>
+<!-------------------------->
+<div class="warning"
+style="background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
+<span>
+<h3 style="text-align:center; font-size:24px">
+<b>Goal</b>
+</h3>
+<p style="margin-left:1em;">
+<p>The goal of this example is to create a GCAM scenario that represents
+Indonesia’s plans to increase passenger rail infrastructure. Indonesia’s
+plans include major intercity and urban railway projects and targets to
+increase railway shares in passenger and freight transport; however, in
+GCAM’s reference scenario, the share of rail in passenger transport does
+not increase through the century. The goal is to represent the rail
+infrastructure projects by increasing passenger rail shares.</p>
+</p>
+<p></span></p>
+</div>
+<p><br></p>
+<!-------------------------->
+<!--------Approach---------->
+<!-------------------------->
+<div class="warning"
+style="background-color:#fffae0; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
+<p><span></p>
+<h3 style="text-align:center; font-size:24px">
+<b>Approach</b>
+</h3>
+<p style="margin-left:1em;">
+<p>Since infrastructure development is a non-cost impact on rail
+transport, we can use shareweights to represent these impacts. For more
+information on shareweights and when it is and isn’t appropriate to
+modify them, see [link to shareweights page].</p>
+<p>Share weights are calibration parameters and not directly related to
+any “real-world” value, so it is usually necessary to test a range of
+share weight modifications to obtain the desired effect. From the Model
+Interface “transport subsector share-weights” query, we see that the
+passenger rail share weight in Indonesia is 0.004 for all future
+periods. To represent infrastructure development through mid-century, we
+could gradually increase the share weight to 0.01 in 2050 and then keep
+it constant from 2050 to 2100.</p>
+</p>
+<p></span></p>
+</div>
+<p><br></p>
+<!-------------------------->
+<!--------Background---------->
+<!-------------------------->
+<!-------------------------------------->
+<!---Background - Shareweights---------->
+<!-------------------------------------->
+<div class="warning"
+style="background-color:#EFFFC9; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
+<p><span></p>
+<h3 style="text-align:center; font-size:24px">
+<b>Background - Shareweights</b>
+</h3>
+<p style="margin-left:1em;">
+Text here. Linking to relevant places in gcam docs etc and summarizing
+key concepts.
+</p>
+<p></span></p>
+</div>
+<p><br></p>
+<!-------------------------->
+<!---GCAM Implementation---->
+<!-------------------------->
+<div class="warning"
+style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
+<span>
+<h3 style="text-align:center; font-size:24px">
+<b>GCAM Implementation</b>
+</h3>
+<p style="margin-left:1em;">
+<ol style="list-style-type: decimal">
+<li>Create a folder in the input directory eg.
+<code>./gcam-core/input/addons</code>.</li>
+<li>Download the example xml file <a
+href="https://github.com/JGCRI/gcam_training/blob/main/examples/pass_rail_shrwt_lin_2050_fixed_2100.xml">pass_rail_shrwt_lin_2050_fixed_2100</a>
+to the folder.</li>
+<li>Adjust the following in the appropriate <code>tranSubsector</code>
+tag in the XML:</li>
+</ol>
+</p>
+<ul style="margin-left:4em; text-align:left;">
+<li>
+<code>share-weight</code> for year 2050
+</li>
+<li>
+The interpolation rule from 2015 to 2050 (linear)
+</li>
+<li>
+The interpolation rule from 2050 to 2100 (fixed)
+</li>
+</ul>
+<p style="margin-bottom:1em; margin-left:1em; text-align:center;">
+<b>Example xml structure</b> <br>
+<img src="images/adjust_transport_mix_shareweight_eg_xml_structure2.png">
+<i>Note: The first interpolation rule must include delete=“1” in order
+to override all of the previous (default) interpolation rules.</i>
+</p>
+<p style="margin-left:1em;">
+<ol start="7" style="list-style-type: decimal">
+<li>Save the xml and then point to it in your configuration file by
+adding the line:
+<p style='font-size:0.8em'>
+<code>&lt;Value name = "adjust_pass_rail_shrwt"&gt;../gcam-core/input/addons/pass_rail_shrwt_lin_2050_fixed_2100.xml&lt;/Value&gt;</code></li>
+</ol>
+</p>
+</p>
+<p></span></p>
+</div>
+<p><br></p>
+<!-------------------------->
+<!-------------------------->
+</div>
+</div>
+<div id="diagnostics" class="section level1" number="5">
+<h1><span class="header-section-number">5</span> Diagnostics</h1>
+<!-------------------------->
+<!-------------------------->
+<p align="center">
+<img src="images/divider.png">
+</p>
+<p>This section describes how to explore and comapre the final output
+data using various tools.</p>
+<div id="model-interface" class="section level2" number="5.1">
+<h2><span class="header-section-number">5.1</span> Model Interface</h2>
+</div>
+<div id="extract-gcam-data" class="section level2" number="5.2">
+<h2><span class="header-section-number">5.2</span> Extract GCAM
+Data</h2>
+</div>
+<div id="plot-figures" class="section level2" number="5.3">
+<h2><span class="header-section-number">5.3</span> Plot Figures</h2>
+</div>
+</div>
+<div id="section" class="section level1 unlisted unnumbered">
+<h1 class="unlisted unnumbered"></h1>
+<p><span class="navbar-fixed-bottom text-muted bg-info">WORK IN POGRESS
+- DO NOT CITE
+<img src="images/logo_us_state_department_color.png" style="padding-left:20px; height:40px;">
+<img src="images/logo_pnnl_white.png" style="padding-left:20px; height:40px;"></span></p>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
