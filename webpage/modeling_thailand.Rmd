@@ -548,7 +548,7 @@ Since infrastructure development is a non-cost impact on rail transport, we can 
 <!-------------------------->
 <p align="center"> <img src="images/divider.png"></p>
 
-This section describes how to explore and comapre the final output data using various tools.
+This section describes how to explore and compare the final output data using various tools.
 
 ## Model Interface
 
