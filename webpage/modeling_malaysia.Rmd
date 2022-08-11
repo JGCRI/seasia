@@ -11,8 +11,13 @@ output:
     #inverse: true
 ---
 
-```{r setup, echo = FALSE, message=FALSE, warning=FALSE}
-knitr::opts_chunk$set(results = "hide", echo=FALSE, out.width = "75%", fig.align='center', message = F, warning = F, error = F, eval = T)
+```{r setup, echo = FALSE, message = FALSE, warning = FALSE}
+knitr::opts_chunk$set(results = "hide", echo = FALSE, out.width = "75%", fig.align='center', message = F, warning = F, error = F, eval = T)
+
+library(kableExtra)
+library(dplyr)
+library(gcamextractor)
+library(rchart)
 ```
 
 
@@ -28,8 +33,7 @@ knitr::opts_chunk$set(results = "hide", echo=FALSE, out.width = "75%", fig.align
 
 <br>
 
-```{r key links table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
-library(kableExtra); library(dplyr)
+```{r key-links-table, results = 'show', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE}
 
 dt_url <- c("https://mega.nz/file/hNAyBACY#JrBcDtV4OKZItR7DY77n1nrp6b9hz_vjyXYA0TU5Hwc")
 
@@ -52,8 +56,7 @@ data.frame(
 
 <br>
 
-```{r presentation links table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
-library(kableExtra); library(dplyr)
+```{r presentation-links-table, results = 'show', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE}
 
 dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/gcam_overview.pdf",
             "https://github.com/JGCRI/seasia/blob/main/modeling/gcam_walkthrough.pdf")
@@ -80,8 +83,7 @@ data.frame(
 <p align="center"> <img src="images/divider.png"></p>
 
 
-```{r scenarios links table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
-library(kableExtra); library(dplyr)
+```{r scenarios-links-table, results = 'show', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE}
 
 dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/configuration_seasia_cities_bau.xml",
             "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/configuration_seasia_cities_thailand_policy.xml")
@@ -106,28 +108,15 @@ data.frame(
 <!-------------------------->
 <p align="center"> <img src="images/divider.png"></p>
 
-The following table lists some example policies that have been modeled in the example policy scenario. The subsequent sections explain what each of these policies is meant to represent and how to change them for future modeling. Each of these policies is added on in the `configuration_seasia_cities_thailand_policy.xml` file to include it in the scenario.
+The following table lists an example policy that has been modeled in GCAM. The section below explains what this policy is meant to represent and how to change it for future modeling by walking through the goal, approach, background, and GCAM implementation process. This policy is added on in the `configuration_seasia_cities_thailand_policy.xml` file to include it in the example policy scenario.
 
-```{r policy links table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
-library(kableExtra); library(dplyr)
+```{r policy-links-table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
 
-dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/thailand/thailand_policy_national_electricity_generation_floor_pdp2018.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/thailand_policy_subnational_buildings_shell_eff_015_018.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/thailand_policy_subnational_transport_cost_ev_2050p_2060f.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/thailand_policy_subnational_transport_freight_rail_0034_2040_lin.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/thailand_policy_subnational_transport_freight_road_55_2040_lin.xml")
+dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/thailand/thailand_policy_national_electricity_generation_floor_pdp2018.xml")
 
 data.frame(
-  Description = c("Electricity Generation Mix - Subsidy: Modify the electricity generation mix by setting generation floors for each technology using a subsidy policy",
-                  "Building Energy Codes - Envelope Efficiency: Modify the envelope efficiency of residential and commercial buildings by setting the shell-conductance parameter for each year",
-                  "Transportation Fuel Shift - EV cost parity: Modify costs of EVs and hybrid vehicles so that they reach cost parity with traditional liquids vehicles by 2050 (passenger) and 2060 (freight)",
-                  "Transportation Mode Shift - Shareweights: Increase consumer preference for rail in the freight transport sector by increasing the rail shareweight through 2040",
-                  "Transportation Mode Shift - Shareweights: Decrease consumer preference for road in the freight transport sector by decreasing the road shareweight through 2040"),
-  File = c("thailand_policy_national_electricity_generation_floor_pdp2018.xml",
-           "thailand_policy_subnational_buildings_shell_eff_015_018.xml",
-           "thailand_policy_subnational_transport_cost_ev_2050p_2060f.xml",
-           "thailand_policy_subnational_transport_freight_rail_0034_2040_lin.xml",
-           "thailand_policy_subnational_transport_freight_road_55_2040_lin.xml")) %>%
+  Description = c("Electricity Generation Mix - Subsidy: Modify the electricity generation mix by setting generation floors for each technology using a subsidy policy"),
+  File = c("thailand_policy_national_electricity_generation_floor_pdp2018.xml")) %>%
   dplyr::mutate(Location = cell_spec(rep("Link",length(dt_url)),"html",link=dt_url)) %>%
   kable("html", escape = FALSE) %>%
   kable_styling(bootstrap_options = c("bordered","striped", "hover", "condensed", "responsive")) %>%
@@ -137,8 +126,7 @@ data.frame(
 ## Electricity Generation Mix - Subsidy
 ***
 
-```{r electricity generation files table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
-library(kableExtra); library(dplyr)
+```{r electricity-generation-files-table, results = 'show', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE}
 
 dt_url <- c("https://github.com/JGCRI/seasia/blob/main/data/thailand/inputs/thailand_bau_electricity_generation_2018_to_2037.csv",
             "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/thailand_policy_national_electricity_generation_floor_pdp2018.xml")
@@ -250,7 +238,50 @@ This section describes how to explore and compare the final output data using va
 
 ## Extract GCAM Data
 
+`gcamextractor` is an R package used to extract and process GCAM data and manipulate into standardized tables. `gcamextractor` converts GCAM outputs into commonly used units as well as aggregates across different classes and sectors for easy use in plots, maps and tables. For more information, please reference the documentation page found [here](https://jgcri.github.io/gcamextractor/index.html).
+
+The first step is to create a path to the GCAM database, found ____, and a list of desired parameters. The `readgcam()` function also requires region names and a specific output folder. Because reading in many parameters can take several minutes, we will be using existing outputs, found in "gcamextractor/sample", generated by the code below.
+
+```{r gcamextractor-setup, echo = TRUE, eval = FALSE}
+sample_path <- "."
+
+sample_params <- "pop"
+
+regions <- c("Malaysia", "KualaLumpur", "Rest of Malaysia")
+
+data <- gcamextractor::readgcam(gcamdatabase = sample_path,
+                                paramsSelect = sample_params,
+                                regionsSelect = regions,
+                                regionsAggregate = list(regions),
+                                regionsAggregateNames = "All of Malaysia",
+                                folder = "gcamextractor/sample")
+
+```
+
+```{r gcamextractor}
+df1 <- read.csv()
+df2 <- read.csv()
+
+malaysia <- df1 %>%
+  filter(region %in% c("All of Malaysia", "KualaLumpur"),
+         scenario = "Ref",
+         x > 2000)
+
+malaysia_class2 <- df2 %>%
+  filter(region %in% c("All of Malaysia", "KualaLumpur"),
+         scenario = "Ref",
+         x > 2000)
+```
+
+
 ## Plot Figures
+
+`rchart` is a comprehensive charting package to plot and compare data across scenarios, regions, sectors and time periods in GCAM.
+
+```{r rchart}
+
+
+```
 
 
 # {.unlisted .unnumbered}
