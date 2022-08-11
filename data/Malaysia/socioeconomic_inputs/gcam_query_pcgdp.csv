@@ -1,45 +1,67 @@
-"","Units","region","year","value","units","source"
-"1","Thous90US$/per","KualaLumpur",1975,1.8815273,"thousand (2005 USD)","GCAM output"
-"2","Thous90US$/per","KualaLumpur",1990,7.4101574,"thousand (2005 USD)","GCAM output"
-"3","Thous90US$/per","KualaLumpur",2005,24.870633,"thousand (2005 USD)","GCAM output"
-"4","Thous90US$/per","KualaLumpur",2010,34.166296,"thousand (2005 USD)","GCAM output"
-"5","Thous90US$/per","KualaLumpur",2015,38.306559,"thousand (2005 USD)","GCAM output"
-"6","Thous90US$/per","KualaLumpur",2020,42.010252,"thousand (2005 USD)","GCAM output"
-"7","Thous90US$/per","KualaLumpur",2025,48.24918,"thousand (2005 USD)","GCAM output"
-"8","Thous90US$/per","KualaLumpur",2030,56.184175,"thousand (2005 USD)","GCAM output"
-"9","Thous90US$/per","KualaLumpur",2035,65.748634,"thousand (2005 USD)","GCAM output"
-"10","Thous90US$/per","KualaLumpur",2040,76.509712,"thousand (2005 USD)","GCAM output"
-"11","Thous90US$/per","KualaLumpur",2045,87.872005,"thousand (2005 USD)","GCAM output"
-"12","Thous90US$/per","KualaLumpur",2050,99.399837,"thousand (2005 USD)","GCAM output"
-"13","Thous90US$/per","KualaLumpur",2055,110.80385,"thousand (2005 USD)","GCAM output"
-"14","Thous90US$/per","KualaLumpur",2060,122.04888,"thousand (2005 USD)","GCAM output"
-"15","Thous90US$/per","KualaLumpur",2065,133.449019,"thousand (2005 USD)","GCAM output"
-"16","Thous90US$/per","KualaLumpur",2070,145.098733,"thousand (2005 USD)","GCAM output"
-"17","Thous90US$/per","KualaLumpur",2075,157.37827,"thousand (2005 USD)","GCAM output"
-"18","Thous90US$/per","KualaLumpur",2080,170.92386,"thousand (2005 USD)","GCAM output"
-"19","Thous90US$/per","KualaLumpur",2085,186.28427,"thousand (2005 USD)","GCAM output"
-"20","Thous90US$/per","KualaLumpur",2090,203.57423,"thousand (2005 USD)","GCAM output"
-"21","Thous90US$/per","KualaLumpur",2095,222.75351,"thousand (2005 USD)","GCAM output"
-"22","Thous90US$/per","KualaLumpur",2100,243.83403,"thousand (2005 USD)","GCAM output"
-"23","Thous90US$/per","Malaysia",1975,2.3837318,"thousand (2005 USD)","GCAM output"
-"24","Thous90US$/per","Malaysia",1990,4.4593614,"thousand (2005 USD)","GCAM output"
-"25","Thous90US$/per","Malaysia",2005,7.8375192,"thousand (2005 USD)","GCAM output"
-"26","Thous90US$/per","Malaysia",2010,8.885615,"thousand (2005 USD)","GCAM output"
-"27","Thous90US$/per","Malaysia",2015,10.7185087,"thousand (2005 USD)","GCAM output"
-"28","Thous90US$/per","Malaysia",2020,12.6596509,"thousand (2005 USD)","GCAM output"
-"29","Thous90US$/per","Malaysia",2025,14.927118,"thousand (2005 USD)","GCAM output"
-"30","Thous90US$/per","Malaysia",2030,17.160628,"thousand (2005 USD)","GCAM output"
-"31","Thous90US$/per","Malaysia",2035,19.547608,"thousand (2005 USD)","GCAM output"
-"32","Thous90US$/per","Malaysia",2040,22.120689,"thousand (2005 USD)","GCAM output"
-"33","Thous90US$/per","Malaysia",2045,24.757542,"thousand (2005 USD)","GCAM output"
-"34","Thous90US$/per","Malaysia",2050,27.469938,"thousand (2005 USD)","GCAM output"
-"35","Thous90US$/per","Malaysia",2055,30.38557,"thousand (2005 USD)","GCAM output"
-"36","Thous90US$/per","Malaysia",2060,33.474191,"thousand (2005 USD)","GCAM output"
-"37","Thous90US$/per","Malaysia",2065,36.667559,"thousand (2005 USD)","GCAM output"
-"38","Thous90US$/per","Malaysia",2070,39.964631,"thousand (2005 USD)","GCAM output"
-"39","Thous90US$/per","Malaysia",2075,43.442738,"thousand (2005 USD)","GCAM output"
-"40","Thous90US$/per","Malaysia",2080,47.077593,"thousand (2005 USD)","GCAM output"
-"41","Thous90US$/per","Malaysia",2085,50.853402,"thousand (2005 USD)","GCAM output"
-"42","Thous90US$/per","Malaysia",2090,54.778211,"thousand (2005 USD)","GCAM output"
-"43","Thous90US$/per","Malaysia",2095,58.794059,"thousand (2005 USD)","GCAM output"
-"44","Thous90US$/per","Malaysia",2100,62.883662,"thousand (2005 USD)","GCAM output"
+region,year,value,source
+KualaLumpur,1975,4.0803501,GCAM output
+KualaLumpur,1990,8.2224011,GCAM output
+KualaLumpur,2005,11.2251683,GCAM output
+KualaLumpur,2010,15.732165,GCAM output
+KualaLumpur,2015,19.274342,GCAM output
+KualaLumpur,2020,23.352174,GCAM output
+KualaLumpur,2025,25.434598,GCAM output
+KualaLumpur,2030,28.193482,GCAM output
+KualaLumpur,2035,30.97263,GCAM output
+KualaLumpur,2040,33.985559,GCAM output
+KualaLumpur,2045,36.642676,GCAM output
+KualaLumpur,2050,39.179997,GCAM output
+KualaLumpur,2055,42.05227,GCAM output
+KualaLumpur,2060,44.824415,GCAM output
+KualaLumpur,2065,48.048924,GCAM output
+KualaLumpur,2070,51.244229,GCAM output
+KualaLumpur,2075,54.339853,GCAM output
+KualaLumpur,2080,57.565405,GCAM output
+KualaLumpur,2085,60.714818,GCAM output
+KualaLumpur,2090,64.046011,GCAM output
+KualaLumpur,2095,67.26307,GCAM output
+KualaLumpur,2100,70.529746,GCAM output
+Malaysia,1975,2.3836126,GCAM output
+Malaysia,1990,4.4591379,GCAM output
+Malaysia,2005,7.8371169,GCAM output
+Malaysia,2010,8.8851531,GCAM output
+Malaysia,2015,10.7179574,GCAM output
+Malaysia,2020,14.6411423,GCAM output
+Malaysia,2025,16.12627,GCAM output
+Malaysia,2030,18.081299,GCAM output
+Malaysia,2035,20.430433,GCAM output
+Malaysia,2040,22.994723,GCAM output
+Malaysia,2045,25.538898,GCAM output
+Malaysia,2050,27.919024,GCAM output
+Malaysia,2055,30.082504,GCAM output
+Malaysia,2060,32.091024,GCAM output
+Malaysia,2065,34.031302,GCAM output
+Malaysia,2070,35.974858,GCAM output
+Malaysia,2075,37.997533,GCAM output
+Malaysia,2080,40.231192,GCAM output
+Malaysia,2085,42.731114,GCAM output
+Malaysia,2090,45.467201,GCAM output
+Malaysia,2095,48.392816,GCAM output
+Malaysia,2100,51.499019,GCAM output
+Rest of Malaysia,1975,2.1568048,GCAM output
+Rest of Malaysia,1990,4.0116909,GCAM output
+Rest of Malaysia,2005,7.5503366,GCAM output
+Rest of Malaysia,2010,8.3566352,GCAM output
+Rest of Malaysia,2015,10.1061783,GCAM output
+Rest of Malaysia,2020,14.0727222,GCAM output
+Rest of Malaysia,2025,15.556494,GCAM output
+Rest of Malaysia,2030,17.495431,GCAM output
+Rest of Malaysia,2035,19.853356,GCAM output
+Rest of Malaysia,2040,22.427182,GCAM output
+Rest of Malaysia,2045,24.992962,GCAM output
+Rest of Malaysia,2050,27.390521,GCAM output
+Rest of Malaysia,2055,29.54819,GCAM output
+Rest of Malaysia,2060,31.550452,GCAM output
+Rest of Malaysia,2065,33.463016,GCAM output
+Rest of Malaysia,2070,35.379454,GCAM output
+Rest of Malaysia,2075,37.381567,GCAM output
+Rest of Malaysia,2080,39.596601,GCAM output
+Rest of Malaysia,2085,42.0925,GCAM output
+Rest of Malaysia,2090,44.825309,GCAM output
+Rest of Malaysia,2095,47.75897,GCAM output
+Rest of Malaysia,2100,50.874709,GCAM output
