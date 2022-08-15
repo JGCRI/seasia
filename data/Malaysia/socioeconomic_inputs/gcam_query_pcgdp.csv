@@ -1,67 +1,67 @@
-region,year,value,source
-KualaLumpur,1975,4.0803501,GCAM output
-KualaLumpur,1990,8.2224011,GCAM output
-KualaLumpur,2005,11.2251683,GCAM output
-KualaLumpur,2010,15.732165,GCAM output
-KualaLumpur,2015,19.274342,GCAM output
-KualaLumpur,2020,23.352174,GCAM output
-KualaLumpur,2025,25.434598,GCAM output
-KualaLumpur,2030,28.193482,GCAM output
-KualaLumpur,2035,30.97263,GCAM output
-KualaLumpur,2040,33.985559,GCAM output
-KualaLumpur,2045,36.642676,GCAM output
-KualaLumpur,2050,39.179997,GCAM output
-KualaLumpur,2055,42.05227,GCAM output
-KualaLumpur,2060,44.824415,GCAM output
-KualaLumpur,2065,48.048924,GCAM output
-KualaLumpur,2070,51.244229,GCAM output
-KualaLumpur,2075,54.339853,GCAM output
-KualaLumpur,2080,57.565405,GCAM output
-KualaLumpur,2085,60.714818,GCAM output
-KualaLumpur,2090,64.046011,GCAM output
-KualaLumpur,2095,67.26307,GCAM output
-KualaLumpur,2100,70.529746,GCAM output
-Malaysia,1975,2.3836126,GCAM output
-Malaysia,1990,4.4591379,GCAM output
-Malaysia,2005,7.8371169,GCAM output
-Malaysia,2010,8.8851531,GCAM output
-Malaysia,2015,10.7179574,GCAM output
-Malaysia,2020,14.6411423,GCAM output
-Malaysia,2025,16.12627,GCAM output
-Malaysia,2030,18.081299,GCAM output
-Malaysia,2035,20.430433,GCAM output
-Malaysia,2040,22.994723,GCAM output
-Malaysia,2045,25.538898,GCAM output
-Malaysia,2050,27.919024,GCAM output
-Malaysia,2055,30.082504,GCAM output
-Malaysia,2060,32.091024,GCAM output
-Malaysia,2065,34.031302,GCAM output
-Malaysia,2070,35.974858,GCAM output
-Malaysia,2075,37.997533,GCAM output
-Malaysia,2080,40.231192,GCAM output
-Malaysia,2085,42.731114,GCAM output
-Malaysia,2090,45.467201,GCAM output
-Malaysia,2095,48.392816,GCAM output
-Malaysia,2100,51.499019,GCAM output
-Rest of Malaysia,1975,2.1568048,GCAM output
-Rest of Malaysia,1990,4.0116909,GCAM output
-Rest of Malaysia,2005,7.5503366,GCAM output
-Rest of Malaysia,2010,8.3566352,GCAM output
-Rest of Malaysia,2015,10.1061783,GCAM output
-Rest of Malaysia,2020,14.0727222,GCAM output
-Rest of Malaysia,2025,15.556494,GCAM output
-Rest of Malaysia,2030,17.495431,GCAM output
-Rest of Malaysia,2035,19.853356,GCAM output
-Rest of Malaysia,2040,22.427182,GCAM output
-Rest of Malaysia,2045,24.992962,GCAM output
-Rest of Malaysia,2050,27.390521,GCAM output
-Rest of Malaysia,2055,29.54819,GCAM output
-Rest of Malaysia,2060,31.550452,GCAM output
-Rest of Malaysia,2065,33.463016,GCAM output
-Rest of Malaysia,2070,35.379454,GCAM output
-Rest of Malaysia,2075,37.381567,GCAM output
-Rest of Malaysia,2080,39.596601,GCAM output
-Rest of Malaysia,2085,42.0925,GCAM output
-Rest of Malaysia,2090,44.825309,GCAM output
-Rest of Malaysia,2095,47.75897,GCAM output
-Rest of Malaysia,2100,50.874709,GCAM output
+region,year,value,units,source
+KualaLumpur,1975,4.0803501,thousand (2005 USD),GCAM output
+KualaLumpur,1990,8.2224011,thousand (2005 USD),GCAM output
+KualaLumpur,2005,11.2251683,thousand (2005 USD),GCAM output
+KualaLumpur,2010,15.732165,thousand (2005 USD),GCAM output
+KualaLumpur,2015,19.274342,thousand (2005 USD),GCAM output
+KualaLumpur,2020,23.352174,thousand (2005 USD),GCAM output
+KualaLumpur,2025,25.434598,thousand (2005 USD),GCAM output
+KualaLumpur,2030,28.193482,thousand (2005 USD),GCAM output
+KualaLumpur,2035,30.97263,thousand (2005 USD),GCAM output
+KualaLumpur,2040,33.985559,thousand (2005 USD),GCAM output
+KualaLumpur,2045,36.642676,thousand (2005 USD),GCAM output
+KualaLumpur,2050,39.179997,thousand (2005 USD),GCAM output
+KualaLumpur,2055,42.05227,thousand (2005 USD),GCAM output
+KualaLumpur,2060,44.824415,thousand (2005 USD),GCAM output
+KualaLumpur,2065,48.048924,thousand (2005 USD),GCAM output
+KualaLumpur,2070,51.244229,thousand (2005 USD),GCAM output
+KualaLumpur,2075,54.339853,thousand (2005 USD),GCAM output
+KualaLumpur,2080,57.565405,thousand (2005 USD),GCAM output
+KualaLumpur,2085,60.714818,thousand (2005 USD),GCAM output
+KualaLumpur,2090,64.046011,thousand (2005 USD),GCAM output
+KualaLumpur,2095,67.26307,thousand (2005 USD),GCAM output
+KualaLumpur,2100,70.529746,thousand (2005 USD),GCAM output
+Malaysia,1975,2.3836126,thousand (2005 USD),GCAM output
+Malaysia,1990,4.4591379,thousand (2005 USD),GCAM output
+Malaysia,2005,7.8371169,thousand (2005 USD),GCAM output
+Malaysia,2010,8.8851531,thousand (2005 USD),GCAM output
+Malaysia,2015,10.7179574,thousand (2005 USD),GCAM output
+Malaysia,2020,14.6411423,thousand (2005 USD),GCAM output
+Malaysia,2025,16.12627,thousand (2005 USD),GCAM output
+Malaysia,2030,18.081299,thousand (2005 USD),GCAM output
+Malaysia,2035,20.430433,thousand (2005 USD),GCAM output
+Malaysia,2040,22.994723,thousand (2005 USD),GCAM output
+Malaysia,2045,25.538898,thousand (2005 USD),GCAM output
+Malaysia,2050,27.919024,thousand (2005 USD),GCAM output
+Malaysia,2055,30.082504,thousand (2005 USD),GCAM output
+Malaysia,2060,32.091024,thousand (2005 USD),GCAM output
+Malaysia,2065,34.031302,thousand (2005 USD),GCAM output
+Malaysia,2070,35.974858,thousand (2005 USD),GCAM output
+Malaysia,2075,37.997533,thousand (2005 USD),GCAM output
+Malaysia,2080,40.231192,thousand (2005 USD),GCAM output
+Malaysia,2085,42.731114,thousand (2005 USD),GCAM output
+Malaysia,2090,45.467201,thousand (2005 USD),GCAM output
+Malaysia,2095,48.392816,thousand (2005 USD),GCAM output
+Malaysia,2100,51.499019,thousand (2005 USD),GCAM output
+Rest of Malaysia,1975,2.1568048,thousand (2005 USD),GCAM output
+Rest of Malaysia,1990,4.0116909,thousand (2005 USD),GCAM output
+Rest of Malaysia,2005,7.5503366,thousand (2005 USD),GCAM output
+Rest of Malaysia,2010,8.3566352,thousand (2005 USD),GCAM output
+Rest of Malaysia,2015,10.1061783,thousand (2005 USD),GCAM output
+Rest of Malaysia,2020,14.0727222,thousand (2005 USD),GCAM output
+Rest of Malaysia,2025,15.556494,thousand (2005 USD),GCAM output
+Rest of Malaysia,2030,17.495431,thousand (2005 USD),GCAM output
+Rest of Malaysia,2035,19.853356,thousand (2005 USD),GCAM output
+Rest of Malaysia,2040,22.427182,thousand (2005 USD),GCAM output
+Rest of Malaysia,2045,24.992962,thousand (2005 USD),GCAM output
+Rest of Malaysia,2050,27.390521,thousand (2005 USD),GCAM output
+Rest of Malaysia,2055,29.54819,thousand (2005 USD),GCAM output
+Rest of Malaysia,2060,31.550452,thousand (2005 USD),GCAM output
+Rest of Malaysia,2065,33.463016,thousand (2005 USD),GCAM output
+Rest of Malaysia,2070,35.379454,thousand (2005 USD),GCAM output
+Rest of Malaysia,2075,37.381567,thousand (2005 USD),GCAM output
+Rest of Malaysia,2080,39.596601,thousand (2005 USD),GCAM output
+Rest of Malaysia,2085,42.0925,thousand (2005 USD),GCAM output
+Rest of Malaysia,2090,44.825309,thousand (2005 USD),GCAM output
+Rest of Malaysia,2095,47.75897,thousand (2005 USD),GCAM output
+Rest of Malaysia,2100,50.874709,thousand (2005 USD),GCAM output
