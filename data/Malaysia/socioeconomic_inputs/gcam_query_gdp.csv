@@ -1,45 +1,67 @@
-"","region","year","value","units","source"
-"1","KualaLumpur",1975,1.28885,"billion (2005 USD)","GCAM output"
-"2","KualaLumpur",1990,7.5287167,"billion (2005 USD)","GCAM output"
-"3","KualaLumpur",2005,35.987821,"billion (2005 USD)","GCAM output"
-"4","KualaLumpur",2010,54.290087,"billion (2005 USD)","GCAM output"
-"5","KualaLumpur",2015,65.312511,"billion (2005 USD)","GCAM output"
-"6","KualaLumpur",2020,76.584659,"billion (2005 USD)","GCAM output"
-"7","KualaLumpur",2025,93.362059,"billion (2005 USD)","GCAM output"
-"8","KualaLumpur",2030,114.222506,"billion (2005 USD)","GCAM output"
-"9","KualaLumpur",2035,139.123982,"billion (2005 USD)","GCAM output"
-"10","KualaLumpur",2040,167.02006,"billion (2005 USD)","GCAM output"
-"11","KualaLumpur",2045,196.65765,"billion (2005 USD)","GCAM output"
-"12","KualaLumpur",2050,227.02981,"billion (2005 USD)","GCAM output"
-"13","KualaLumpur",2055,257.3975,"billion (2005 USD)","GCAM output"
-"14","KualaLumpur",2060,286.93675,"billion (2005 USD)","GCAM output"
-"15","KualaLumpur",2065,315.87404,"billion (2005 USD)","GCAM output"
-"16","KualaLumpur",2070,343.73853,"billion (2005 USD)","GCAM output"
-"17","KualaLumpur",2075,371.57024,"billion (2005 USD)","GCAM output"
-"18","KualaLumpur",2080,400.81596,"billion (2005 USD)","GCAM output"
-"19","KualaLumpur",2085,433.11022,"billion (2005 USD)","GCAM output"
-"20","KualaLumpur",2090,468.82999,"billion (2005 USD)","GCAM output"
-"21","KualaLumpur",2095,508.09894,"billion (2005 USD)","GCAM output"
-"22","KualaLumpur",2100,550.57884,"billion (2005 USD)","GCAM output"
-"23","Malaysia",1975,28.99093,"billion (2005 USD)","GCAM output"
-"24","Malaysia",1990,80.402337,"billion (2005 USD)","GCAM output"
-"25","Malaysia",2005,201.35413,"billion (2005 USD)","GCAM output"
-"26","Malaysia",2010,250.64482,"billion (2005 USD)","GCAM output"
-"27","Malaysia",2015,324.45942,"billion (2005 USD)","GCAM output"
-"28","Malaysia",2020,411.32493,"billion (2005 USD)","GCAM output"
-"29","Malaysia",2025,516.86461,"billion (2005 USD)","GCAM output"
-"30","Malaysia",2030,628.91708,"billion (2005 USD)","GCAM output"
-"31","Malaysia",2035,752.56324,"billion (2005 USD)","GCAM output"
-"32","Malaysia",2040,886.99253,"billion (2005 USD)","GCAM output"
-"33","Malaysia",2045,1026.89608,"billion (2005 USD)","GCAM output"
-"34","Malaysia",2050,1172.11744,"billion (2005 USD)","GCAM output"
-"35","Malaysia",2055,1327.18323,"billion (2005 USD)","GCAM output"
-"36","Malaysia",2060,1489.77203,"billion (2005 USD)","GCAM output"
-"37","Malaysia",2065,1654.9877,"billion (2005 USD)","GCAM output"
-"38","Malaysia",2070,1821.5548,"billion (2005 USD)","GCAM output"
-"39","Malaysia",2075,1990.5059,"billion (2005 USD)","GCAM output"
-"40","Malaysia",2080,2158.1756,"billion (2005 USD)","GCAM output"
-"41","Malaysia",2085,2322.6269,"billion (2005 USD)","GCAM output"
-"42","Malaysia",2090,2482.936,"billion (2005 USD)","GCAM output"
-"43","Malaysia",2095,2637.8513,"billion (2005 USD)","GCAM output"
-"44","Malaysia",2100,2786.8066,"billion (2005 USD)","GCAM output"
+region,year,value,units,source
+KualaLumpur,1975,3.927,billion (1990 USD),GCAM output
+KualaLumpur,1990,10.5787,billion (1990 USD),GCAM output
+KualaLumpur,2005,15.1201,billion (1990 USD),GCAM output
+KualaLumpur,2010,21.3492,billion (1990 USD),GCAM output
+KualaLumpur,2015,26.1303,billion (1990 USD),GCAM output
+KualaLumpur,2020,31.0632,billion (1990 USD),GCAM output
+KualaLumpur,2025,33.799,billion (1990 USD),GCAM output
+KualaLumpur,2030,37.3895,billion (1990 USD),GCAM output
+KualaLumpur,2035,40.493,billion (1990 USD),GCAM output
+KualaLumpur,2040,43.3829,billion (1990 USD),GCAM output
+KualaLumpur,2045,45.7665,billion (1990 USD),GCAM output
+KualaLumpur,2050,47.6996,billion (1990 USD),GCAM output
+KualaLumpur,2055,49.616,billion (1990 USD),GCAM output
+KualaLumpur,2060,51.0517,billion (1990 USD),GCAM output
+KualaLumpur,2065,52.7248,billion (1990 USD),GCAM output
+KualaLumpur,2070,54.1675,billion (1990 USD),GCAM output
+KualaLumpur,2075,55.3609,billion (1990 USD),GCAM output
+KualaLumpur,2080,56.561,billion (1990 USD),GCAM output
+KualaLumpur,2085,57.4957,billion (1990 USD),GCAM output
+KualaLumpur,2090,58.4581,billion (1990 USD),GCAM output
+KualaLumpur,2095,59.1824,billion (1990 USD),GCAM output
+KualaLumpur,2100,59.9267,billion (1990 USD),GCAM output
+Malaysia,1975,19.456,billion (1990 USD),GCAM output
+Malaysia,1990,53.9585,billion (1990 USD),GCAM output
+Malaysia,2005,135.13,billion (1990 USD),GCAM output
+Malaysia,2010,168.21,billion (1990 USD),GCAM output
+Malaysia,2015,217.747,billion (1990 USD),GCAM output
+Malaysia,2020,318.037,billion (1990 USD),GCAM output
+Malaysia,2025,371.769,billion (1990 USD),GCAM output
+Malaysia,2030,438.016,billion (1990 USD),GCAM output
+Malaysia,2035,515.092,billion (1990 USD),GCAM output
+Malaysia,2040,598.094,billion (1990 USD),GCAM output
+Malaysia,2045,680.981,billion (1990 USD),GCAM output
+Malaysia,2050,759.808,billion (1990 USD),GCAM output
+Malaysia,2055,832.439,billion (1990 USD),GCAM output
+Malaysia,2060,898.807,billion (1990 USD),GCAM output
+Malaysia,2065,959.568,billion (1990 USD),GCAM output
+Malaysia,2070,1015.55,billion (1990 USD),GCAM output
+Malaysia,2075,1068.83,billion (1990 USD),GCAM output
+Malaysia,2080,1123.91,billion (1990 USD),GCAM output
+Malaysia,2085,1183.51,billion (1990 USD),GCAM output
+Malaysia,2090,1247.66,billion (1990 USD),GCAM output
+Malaysia,2095,1315.15,billion (1990 USD),GCAM output
+Malaysia,2100,1385.22,billion (1990 USD),GCAM output
+Rest of Malaysia,1975,15.529,billion (1990 USD),GCAM output
+Rest of Malaysia,1990,43.3828,billion (1990 USD),GCAM output
+Rest of Malaysia,2005,120.01,billion (1990 USD),GCAM output
+Rest of Malaysia,2010,146.864,billion (1990 USD),GCAM output
+Rest of Malaysia,2015,191.61,billion (1990 USD),GCAM output
+Rest of Malaysia,2020,286.97,billion (1990 USD),GCAM output
+Rest of Malaysia,2025,337.962,billion (1990 USD),GCAM output
+Rest of Malaysia,2030,400.62,billion (1990 USD),GCAM output
+Rest of Malaysia,2035,474.589,billion (1990 USD),GCAM output
+Rest of Malaysia,2040,554.705,billion (1990 USD),GCAM output
+Rest of Malaysia,2045,635.19,billion (1990 USD),GCAM output
+Rest of Malaysia,2050,712.1,billion (1990 USD),GCAM output
+Rest of Malaysia,2055,782.788,billion (1990 USD),GCAM output
+Rest of Malaysia,2060,847.735,billion (1990 USD),GCAM output
+Rest of Malaysia,2065,906.826,billion (1990 USD),GCAM output
+Rest of Malaysia,2070,961.347,billion (1990 USD),GCAM output
+Rest of Malaysia,2075,1013.44,billion (1990 USD),GCAM output
+Rest of Malaysia,2080,1067.28,billion (1990 USD),GCAM output
+Rest of Malaysia,2085,1125.96,billion (1990 USD),GCAM output
+Rest of Malaysia,2090,1189.13,billion (1990 USD),GCAM output
+Rest of Malaysia,2095,1255.9,billion (1990 USD),GCAM output
+Rest of Malaysia,2100,1325.24,billion (1990 USD),GCAM output
