@@ -419,6 +419,7 @@ Asia</h1>
 <img src="images/divider.png">
 </p>
 <p><br></p>
+<p>Please use the link below to download GCAM.</p>
 <table class="table table-bordered table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -454,41 +455,33 @@ gcamv5p3_seasia
 <img src="images/divider.png">
 </p>
 <p><br></p>
+<p>Below are links to an overview and walkthrough of GCAM.</p>
 <table class="table table-bordered table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
-File
-</th>
-<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
 Description
 </th>
 <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
-Location
+File
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align:left;">
-gcam_overview.pdf
-</td>
-<td style="text-align:left;">
 GCAM overview presentation
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/gcam_overview.pdf" style="     ">Link</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/gcam_overview.pdf" style="     ">gcam_overview.pdf</a>
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-gcam_walkthrough.pdf
-</td>
-<td style="text-align:left;">
 GCAM walkthrough presentation
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/gcam_walkthrough.pdf" style="     ">Link</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/gcam_walkthrough.pdf" style="     ">gcam_walkthrough.pdf</a>
 </td>
 </tr>
 </tbody>
@@ -504,41 +497,34 @@ GCAM walkthrough presentation
 <p align="center">
 <img src="images/divider.png">
 </p>
+<p>Below are links to the reference and policy scenarios that we will be
+using.</p>
 <table class="table table-bordered table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
-File
-</th>
-<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
 Description
 </th>
 <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
-Location
+File
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align:left;">
-configuration_seasia_cities_bau.xml
-</td>
-<td style="text-align:left;">
 Business as Usual Scenario
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/configuration_seasia_cities_bau.xml" style="     ">Link</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/configuration_seasia_cities_bau.xml" style="     ">configuration_seasia_cities_bau.xml</a>
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-configuration_seasia_cities_thailand_policy.xml
+Example Policy Scenario
 </td>
 <td style="text-align:left;">
-Example Policies Scenario
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/configuration_seasia_cities_thailand_policy.xml" style="     ">Link</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/malaysia_elec_fuel_mix_2030_KL.xml" style="     ">malaysia_elec_fuel_mix_2030_KL.xml</a>
 </td>
 </tr>
 </tbody>
@@ -557,8 +543,7 @@ Example Policies Scenario
 GCAM. The section below explains what this policy is meant to represent
 and how to change it for future modeling by walking through the goal,
 approach, background, and GCAM implementation process. This policy is
-added on in the
-<code>configuration_seasia_cities_thailand_policy.xml</code> file to
+added on in the <code>malaysia_elec_fuel_mix_2030_KL.xml</code> file to
 include it in the example policy scenario.</p>
 <table class="table table-bordered table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
 <thead>
@@ -568,9 +553,6 @@ Description
 </th>
 <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
 File
-</th>
-<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
-Location
 </th>
 </tr>
 </thead>
@@ -582,14 +564,18 @@ mix by setting generation floors for each technology using a subsidy
 policy
 </td>
 <td style="text-align:left;">
-thailand_policy_national_electricity_generation_floor_pdp2018.xml
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/thailand_policy_national_electricity_generation_floor_pdp2018.xml" style="     ">Link</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/malaysia_elec_fuel_mix_2030_KL.xml" style="     ">malaysia_elec_fuel_mix_2030_KL.xml</a>
 </td>
 </tr>
 </tbody>
 </table>
+<p>Future policies that will be modeled are described in the table
+below. In general, two policy scenarios will be presented: a “low
+ambition” and “high ambition” option.</p>
+<p align="center">
+<img src="images/malaysia_initial_policy_assumptions.png">
+</p>
+<p><br></p>
 <div id="electricity-generation-mix---subsidy" class="section level2"
 number="4.1">
 <h2><span class="header-section-number">4.1</span> Electricity
@@ -599,10 +585,7 @@ Generation Mix - Subsidy</h2>
 <thead>
 <tr>
 <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
-Files Used
-</th>
-<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
-Description
+Relevant Files
 </th>
 <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
 Link
@@ -612,26 +595,18 @@ Link
 <tbody>
 <tr>
 <td style="text-align:left;">
-thailand_bau_electricity_generation_2018_to_2037.csv
+Initial pathway constraint calculations
 </td>
 <td style="text-align:left;">
-Desired electricity generation by fuel from 2018 to 2037 (based on
-PDP2018)
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/data/thailand/inputs/thailand_bau_electricity_generation_2018_to_2037.csv" style="     ">Link</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/data/Malaysia/inputs/malaysia_elec_fuel_mix_2030_pathway.xlsx" style="     ">malaysia_elec_fuel_mix_2030_pathway.xlsx</a>
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-thailand_policy_national_electricity_generation_floor_pdp2018.xml
+Desired electricity generation percentages by fuel in 2030
 </td>
 <td style="text-align:left;">
-XML structure to implement generation floors matching the desired
-generation by fuel
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/thailand_policy_national_electricity_generation_floor_pdp2018.xml" style="     ">Link</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/malaysia_elec_fuel_mix_2030_KL.xml" style="     ">malaysia_elec_fuel_mix_2030_KL.xml</a>
 </td>
 </tr>
 </tbody>
@@ -648,8 +623,11 @@ style="background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 
 <p style="margin-left:1em;">
 <p>The goal of this example is to set a minimum value (floor) in GCAM
 for the amount of electricity generation from each fuel type (coal,
-natural gas, hydropower, solar, etc.) corresponding with the planned
-capacities in the PDP2018.</p>
+natural gas, solar, etc.) corresponding with the planned percentages in
+the KLLCSBP2030 (below).</p>
+<p align="center">
+<img src="images/KL_2030_power.PNG">
+</p>
 </p>
 <p></span></p>
 </div>
@@ -670,6 +648,9 @@ generation technology until the floor is reached. If there is more
 demand for electricity than is supplied by the sum of the generation
 floors, then the remaining demand will be met by a mix of fuels
 determined by the market.</p>
+<p>Hydropower is exogenous in GCAM and has a fixed pathway. The power
+generation values for this technology are set explicitly using a fixed
+output add-on XML.</p>
 </p>
 <p></span></p>
 </div>
@@ -714,9 +695,9 @@ style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 
 <p style="margin-left:1em;">
 <ol style="list-style-type: decimal">
 <li>Create a folder in the input directory eg.
-<code>./gcam-core/input/addons</code>.</li>
-<li>Download the example xml file <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/thailand_policy_national_electricity_generation_floor_pdp2018.xml">thailand_policy_national_electricity_generation_floor_pdp2018.xml</a>
+<code>./gcam-core/input/addons/malaysia</code>.</li>
+<li>Download the example XML file <a
+href="https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/malaysia_elec_fuel_mix_2030_KL.xml">malaysia_elec_fuel_mix_2030_KL.xml</a>
 to the folder.</li>
 <li>Within each <code>policy-portfolio-standard</code> tag in the XML,
 adjust the following:</li>
@@ -737,10 +718,20 @@ an exact constraint, rather than a floor, is desired
 the corresponding <code>input-subsidy</code> is added within each
 relevant <code>period</code> for each <code>stub-technology</code> you
 wish to constrain.</li>
-<li>Save the xml and then point to it in your configuration file by
+<li>Save the XML and then point to it in your configuration file by
 adding the line:
-<p style='font-size:0.8em'>
-<code>&lt;Value name = "scen"&gt;../input/addons/thailand/thailand_policy_national_electricity_generation_floor_pdp2018.xml&lt;/Value&gt;</code></li>
+<p style='font-size:0.9em'>
+<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/malaysia_elec_fuel_mix_2030_KL.xml&lt;/Value&gt;</code></li>
+<li>To adjust the hydropower pathway, download the example XML file <a
+href="https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/malaysia_hydro_constraint_2030_KL.xml">malaysia_hydro_constraint_2030_KL.xml</a>
+to the folder.</li>
+<li>Within each <code>fixedOutput</code> tag in the XML, adjust the
+value to reflect desired hydropower output in each period. The user can
+also add additional periods.</li>
+<li>Save the XML and point to it in your configuration file by adding
+the line:
+<p style='font-size:0.9em'>
+<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/malaysia_hydro_constraint_2030_KL.xml&lt;/Value&gt;</code></li>
 </ol>
 </p>
 </p>
@@ -760,11 +751,8 @@ adding the line:
 </p>
 <p>This section describes how to explore and compare the final output
 data using various tools.</p>
-<div id="model-interface" class="section level2" number="5.1">
-<h2><span class="header-section-number">5.1</span> Model Interface</h2>
-</div>
-<div id="extract-gcam-data" class="section level2" number="5.2">
-<h2><span class="header-section-number">5.2</span> Extract GCAM
+<div id="extract-gcam-data" class="section level2" number="5.1">
+<h2><span class="header-section-number">5.1</span> Extract GCAM
 Data</h2>
 <p><code>gcamextractor</code> is an R package used to extract and
 process GCAM data and manipulate into standardized tables.
@@ -773,11 +761,12 @@ units as well as aggregates across different classes and sectors for
 easy use in plots, maps and tables. For more information, please
 reference the documentation page found <a
 href="https://jgcri.github.io/gcamextractor/index.html">here</a>.</p>
-<p>The first step is to create a path to the GCAM database, found ____,
-and a list of desired parameters. The <code>readgcam()</code> function
-also requires region names and a specific output folder. Because reading
-in many parameters can take several minutes, we will be using existing
-outputs, found in “gcamextractor/sample”, generated by the code
+<p>The first step is to create a path to the GCAM database, found in the
+output folder of your GCAM folder, and a list of desired parameters. The
+<code>readgcam()</code> function also requires region names and a
+specific output folder. Because reading in many parameters can take
+several minutes, we will be using existing outputs, found in your
+working directory’s “gcamextractor” folder, generated by the code
 below.</p>
 <pre class="r"><code>sample_path &lt;- &quot;.&quot;
 
@@ -790,18 +779,35 @@ data &lt;- gcamextractor::readgcam(gcamdatabase = sample_path,
                                 regionsSelect = regions,
                                 regionsAggregate = list(regions),
                                 regionsAggregateNames = &quot;All of Malaysia&quot;,
-                                folder = &quot;gcamextractor/sample&quot;)</code></pre>
+                                folder = &quot;..data/Malaysia/gcamextractor&quot;)</code></pre>
+<pre class="r"><code>df1 &lt;- read.csv(&quot;../data/Malaysia/gcamextractor/gcamDataTable_aggClass1.csv&quot;)
+df2 &lt;- read.csv(&quot;../data/Malaysia/gcamextractor/gcamDataTable_aggClass1.csv&quot;)
+
+malaysia &lt;- df1 %&gt;%
+  filter(region %in% c(&quot;All of Malaysia&quot;, &quot;KualaLumpur&quot;),
+         scenario == &quot;Ref&quot;,
+         x &gt; 2000)
+
+malaysia_class2 &lt;- df2 %&gt;%
+  filter(region %in% c(&quot;All of Malaysia&quot;, &quot;KualaLumpur&quot;),
+         scenario == &quot;Ref&quot;,
+         x &gt; 2000)</code></pre>
 </div>
-<div id="plot-figures" class="section level2" number="5.3">
-<h2><span class="header-section-number">5.3</span> Plot Figures</h2>
+<div id="plot-figures" class="section level2" number="5.2">
+<h2><span class="header-section-number">5.2</span> Plot Figures</h2>
 <p><code>rchart</code> is a comprehensive charting package to plot and
 compare data across scenarios, regions, sectors and time periods in
 GCAM.</p>
+<p>Example 1: Socioeconomic summary This first chart will plot GDP, GDP
+per capita, and population with color-coded lines for each region.</p>
+<p><img src="modeling_malaysia_files/figure-html/rchart-socio-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<p>Example 2:</p>
+<p>Example 3:</p>
 </div>
 </div>
 <div id="section" class="section level1 unlisted unnumbered">
 <h1 class="unlisted unnumbered"></h1>
-<p><span class="navbar-fixed-bottom text-muted bg-info">WORK IN POGRESS
+<p><span class="navbar-fixed-bottom text-muted bg-info">WORK IN PROGRESS
 - DO NOT CITE
 <img src="images/logo_us_state_department_color.png" style="padding-left:20px; height:40px;">
 <img src="images/logo_pnnl_white.png" style="padding-left:20px; height:40px;"></span></p>

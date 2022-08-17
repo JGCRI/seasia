@@ -65,12 +65,13 @@ Below are links to an overview and walkthrough of GCAM.
 dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/gcam_overview.pdf",
             "https://github.com/JGCRI/seasia/blob/main/modeling/gcam_walkthrough.pdf")
 
+xml = c("gcam_overview.pdf",
+        "gcam_walkthrough.pdf")
+
 data.frame(
-  File = c("gcam_overview.pdf",
-           "gcam_walkthrough.pdf"),
   Description = c("GCAM overview presentation",
                   "GCAM walkthrough presentation")) %>%
-  dplyr::mutate(Location = cell_spec(rep("Link",length(dt_url)),"html",link=dt_url)) %>%
+  dplyr::mutate(File = cell_spec(xml,"html",link=dt_url)) %>%
   kable("html", escape = FALSE) %>%
   kable_styling(bootstrap_options = c("bordered", "striped", "hover", "condensed", "responsive")) %>%
   row_spec(0, background = "#2A2A2A", color = "white")
@@ -91,14 +92,15 @@ Below are links to the reference and policy scenarios that we will be using.
 ```{r scenarios-links-table, results = 'show', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE}
 
 dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/configuration_seasia_cities_bau.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/configuration_seasia_cities_thailand_policy.xml")
+            "https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/malaysia_elec_fuel_mix_2030_KL.xml")
+
+xml = c("configuration_seasia_cities_bau.xml",
+           "malaysia_elec_fuel_mix_2030_KL.xml")
 
 data.frame(
-  File = c("configuration_seasia_cities_bau.xml",
-           "configuration_seasia_cities_thailand_policy.xml"),
   Description = c("Business as Usual Scenario",
-                  "Example Policies Scenario")) %>%
-  dplyr::mutate(Location = cell_spec(rep("Link",length(dt_url)),"html",link=dt_url)) %>%
+                  "Example Policy Scenario")) %>%
+  dplyr::mutate(File = cell_spec(xml,"html",link=dt_url)) %>%
   kable("html", escape = FALSE) %>%
   kable_styling(bootstrap_options = c("bordered","striped", "hover", "condensed", "responsive")) %>%
   row_spec(0, background = "#2A2A2A", color = "white")
@@ -113,38 +115,45 @@ data.frame(
 <!-------------------------->
 <p align="center"> <img src="images/divider.png"></p>
 
-The following table lists an example policy that has been modeled in GCAM. The section below explains what this policy is meant to represent and how to change it for future modeling by walking through the goal, approach, background, and GCAM implementation process. This policy is added on in the `configuration_seasia_cities_thailand_policy.xml` file to include it in the example policy scenario.
+The following table lists an example policy that has been modeled in GCAM. The section below explains what this policy is meant to represent and how to change it for future modeling by walking through the goal, approach, background, and GCAM implementation process. This policy is added on in the `malaysia_elec_fuel_mix_2030_KL.xml` file to include it in the example policy scenario.
 
-<br>
 
 ```{r policy-links-table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
 
-dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/thailand/thailand_policy_national_electricity_generation_floor_pdp2018.xml")
+dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/malaysia_elec_fuel_mix_2030_KL.xml")
+
+xml <- c("malaysia_elec_fuel_mix_2030_KL.xml")
 
 data.frame(
-  Description = c("Electricity Generation Mix - Subsidy: Modify the electricity generation mix by setting generation floors for each technology using a subsidy policy"),
-  File = c("thailand_policy_national_electricity_generation_floor_pdp2018.xml")) %>%
-  dplyr::mutate(Location = cell_spec(rep("Link",length(dt_url)),"html",link=dt_url)) %>%
+  Description = c("Electricity Generation Mix - Subsidy: Modify the electricity generation mix by setting generation floors for each technology using a subsidy policy")) %>%
+  dplyr::mutate(File = cell_spec(xml,"html",link=dt_url)) %>%
   kable("html", escape = FALSE) %>%
   kable_styling(bootstrap_options = c("bordered","striped", "hover", "condensed", "responsive")) %>%
   row_spec(0, background = "#2A2A2A", color = "white")
 ```
+
+Future policies that will be modeled are described in the table below. In general, two policy scenarios will be presented: a "low ambition" and "high ambition" option. 
+
+<p align="center"> <img src="images/malaysia_initial_policy_assumptions.png"></p>
+
+<br>
 
 ## Electricity Generation Mix - Subsidy
 ***
 
 ```{r electricity-generation-files-table, results = 'show', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE}
 
-dt_url <- c("https://github.com/JGCRI/seasia/blob/main/data/thailand/inputs/thailand_bau_electricity_generation_2018_to_2037.csv",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/thailand_policy_national_electricity_generation_floor_pdp2018.xml")
+dt_url <- c("https://github.com/JGCRI/seasia/blob/main/data/Malaysia/inputs/malaysia_elec_fuel_mix_2030_pathway.xlsx",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/malaysia_elec_fuel_mix_2030_KL.xml")
+
+files <- c("malaysia_elec_fuel_mix_2030_pathway.xlsx",
+           "malaysia_elec_fuel_mix_2030_KL.xml")
 
 data.frame(
-  "Files Used" = c("thailand_bau_electricity_generation_2018_to_2037.csv",
-                   "thailand_policy_national_electricity_generation_floor_pdp2018.xml"),
-  Description = c("Desired electricity generation by fuel from 2018 to 2037 (based on PDP2018)",
-                  "XML structure to implement generation floors matching the desired generation by fuel")) %>%
-  dplyr::mutate(Location = cell_spec(rep("Link",length(dt_url)),"html",link=dt_url)) %>%
-  kable("html", escape = FALSE, col.names = c("Files Used", "Description", "Link")) %>%
+  "Relevant Files" = c("Initial pathway constraint calculations",
+                   "Desired electricity generation percentages by fuel in 2030")) %>%
+  dplyr::mutate(Link = cell_spec(files,"html",link=dt_url)) %>%
+  kable("html", escape = FALSE, col.names = c("Relevant Files", "Link")) %>%
   kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
   row_spec(0, background = "#2A2A2A", color = "white")
 ```
@@ -161,7 +170,9 @@ data.frame(
 </h3>
 
 <p style='margin-left:1em;'>
-The goal of this example is to set a minimum value (floor) in GCAM for the amount of electricity generation from each fuel type (coal, natural gas, hydropower, solar, etc.) corresponding with the planned capacities in the PDP2018. 
+The goal of this example is to set a minimum value (floor) in GCAM for the amount of electricity generation from each fuel type (coal, natural gas, solar, etc.) corresponding with the planned percentages in the KLLCSBP2030 (below).
+
+<p align="center"> <img src="images/KL_2030_power.png"></p>
 
 </p>
 </span>
@@ -182,6 +193,8 @@ The goal of this example is to set a minimum value (floor) in GCAM for the amoun
 
 <p style='margin-left:1em;'>
 One way to set a generation floor for each fuel type in GCAM is to use a subsidy policy. This will lower the cost of the electricity generation technology until the floor is reached. If there is more demand for electricity than is supplied by the sum of the generation floors, then the remaining demand will be met by a mix of fuels determined by the market.
+
+Hydropower is exogenous in GCAM and has a fixed pathway. The power generation values for this technology are set explicitly using a fixed output add-on XML. 
 
 </p>
 </span>
@@ -209,8 +222,8 @@ One way to set a generation floor for each fuel type in GCAM is to use a subsidy
 </h3>
 
 <p style='margin-left:1em;'>
-1. Create a folder in the input directory eg. `./gcam-core/input/addons`.
-2. Download the example xml file [thailand_policy_national_electricity_generation_floor_pdp2018.xml](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/thailand_policy_national_electricity_generation_floor_pdp2018.xml) to the folder.
+1. Create a folder in the input directory eg. `./gcam-core/input/addons/malaysia`.
+2. Download the example XML file [malaysia_elec_fuel_mix_2030_KL.xml](https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/malaysia_elec_fuel_mix_2030_KL.xml) to the folder.
 4. Within each `policy-portfolio-standard` tag in the XML, adjust the following:
 </p>
 
@@ -220,9 +233,14 @@ One way to set a generation floor for each fuel type in GCAM is to use a subsidy
 </ul>
 <p style='margin-left:1em;'>
 5. Within each `supplysector` tag in the XML, make sure that the corresponding `input-subsidy` is added within each relevant `period` for each `stub-technology` you wish to constrain.
-6. Save the xml and then point to it in your configuration file by adding the line: 
-<p style='font-size:0.8em'>
-`<Value name = "scen">../input/addons/thailand/thailand_policy_national_electricity_generation_floor_pdp2018.xml</Value>`
+6. Save the XML and then point to it in your configuration file by adding the line: 
+<p style='font-size:0.9em'>
+`<Value name = "scen">../input/addons/malaysia/malaysia_elec_fuel_mix_2030_KL.xml</Value>`
+7. To adjust the hydropower pathway, download the example XML file [malaysia_hydro_constraint_2030_KL.xml](https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/malaysia_hydro_constraint_2030_KL.xml) to the folder. 
+8. Within each `fixedOutput` tag in the XML, adjust the value to reflect desired hydropower output in each period. The user can also add additional periods. 
+9. Save the XML and point to it in your configuration file by adding the line: 
+<p style='font-size:0.9em'>
+`<Value name = "scen">../input/addons/malaysia/malaysia_hydro_constraint_2030_KL.xml</Value>`
 
 </p>
 </p>
@@ -241,13 +259,11 @@ One way to set a generation floor for each fuel type in GCAM is to use a subsidy
 
 This section describes how to explore and compare the final output data using various tools.
 
-## Model Interface
-
 ## Extract GCAM Data
 
 `gcamextractor` is an R package used to extract and process GCAM data and manipulate into standardized tables. `gcamextractor` converts GCAM outputs into commonly used units as well as aggregates across different classes and sectors for easy use in plots, maps and tables. For more information, please reference the documentation page found [here](https://jgcri.github.io/gcamextractor/index.html).
 
-The first step is to create a path to the GCAM database, found ____, and a list of desired parameters. The `readgcam()` function also requires region names and a specific output folder. Because reading in many parameters can take several minutes, we will be using existing outputs, found in "gcamextractor/sample", generated by the code below.
+The first step is to create a path to the GCAM database, found in the output folder of your GCAM folder, and a list of desired parameters. The `readgcam()` function also requires region names and a specific output folder. Because reading in many parameters can take several minutes, we will be using existing outputs, found in your working directory's "gcamextractor" folder, generated by the code below.
 
 ```{r gcamextractor-setup, echo = TRUE, eval = FALSE}
 sample_path <- "."
@@ -261,22 +277,22 @@ data <- gcamextractor::readgcam(gcamdatabase = sample_path,
                                 regionsSelect = regions,
                                 regionsAggregate = list(regions),
                                 regionsAggregateNames = "All of Malaysia",
-                                folder = "gcamextractor/sample")
+                                folder = "..data/Malaysia/gcamextractor")
 
 ```
 
-```{r gcamextractor, eval=F}
-df1 <- read.csv("")
-df2 <- read.csv("")
+```{r gcamextractor, echo = TRUE}
+df1 <- read.csv("../data/Malaysia/gcamextractor/gcamDataTable_aggClass1.csv")
+df2 <- read.csv("../data/Malaysia/gcamextractor/gcamDataTable_aggClass1.csv")
 
 malaysia <- df1 %>%
   filter(region %in% c("All of Malaysia", "KualaLumpur"),
-         scenario = "Ref",
+         scenario == "Ref",
          x > 2000)
 
 malaysia_class2 <- df2 %>%
   filter(region %in% c("All of Malaysia", "KualaLumpur"),
-         scenario = "Ref",
+         scenario == "Ref",
          x > 2000)
 ```
 
@@ -288,8 +304,8 @@ malaysia_class2 <- df2 %>%
 Example 1: Socioeconomic summary
 This first chart will plot GDP, GDP per capita, and population with color-coded lines for each region.
 
-```{r rchart, message = FALSE, eval = F}
-socioeconomic_parameters <- c("pop", "gdp", "gdp_pc")
+```{r rchart-socio, message = FALSE}
+socioeconomic_parameters <- c("pop", "gdp", "gdpPerCapita")
   
 malaysia %>%
   filter(param %in% socioeconomic_parameters) %>%
@@ -297,7 +313,21 @@ malaysia %>%
   rchart::chart(folder = "rchart/socioeconomic",
                 chart_type = "region_absolute",
                 save = F, 
-                show = T)
+                show = T,
+                size_text = 10,
+                width = 15,
+                height = 9,)
+```
+
+Example 2: 
+``` {r rchart-emiss}
+
+```
+
+Example 3:
+
+``` {r rchart-elec}
+elec <- c("elecConsumByDemandSectorTWh", "energyFinalConsumBySecEJ")
 ```
 
 
