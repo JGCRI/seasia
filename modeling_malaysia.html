@@ -394,6 +394,23 @@ window.onload = function() {
 }
 window.onhashchange = goToTab;
 </script>
+<style type="text/css">
+script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+</style>
+<script type="text/javascript">
+ $(document).ready(function() {
+    $('body').prepend('<div class=\"zoomDiv\"><img src=\"\" class=\"zoomImg\"></div>');
+    // onClick function for all plots (img's)
+    $('img:not(.zoomImg)').click(function() {
+      $('.zoomImg').attr('src', $(this).attr('src')).css({width: '100%'});
+      $('.zoomDiv').css({opacity: '1', width: 'auto', border: '1px solid white', borderRadius: '5px', position: 'fixed', top: '50%', left: '50%', marginRight: '-50%', transform: 'translate(-50%, -50%)', boxShadow: '0px 0px 50px #888888', zIndex: '50', overflow: 'auto', maxHeight: '100%'});
+    });
+    // onClick function for zoomImg
+    $('img.zoomImg').click(function() {
+      $('.zoomDiv').css({opacity: '0', width: '0%'}); 
+    });
+  });
+</script>
 <!-- Set table styles -->
 <style>
 table {
@@ -571,7 +588,7 @@ Link
 Excel spreadsheet showing initial calculations to build this policy
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/data/Malaysia/inputs/malaysia_elec_fuel_mix_2030_pathway.xlsx" style="     ">malaysia_elec_fuel_mix_2030_pathway.xlsx</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/data/malaysia/inputs/malaysia_elec_fuel_mix_2030_pathway.xlsx" style="     ">malaysia_elec_fuel_mix_2030_pathway.xlsx</a>
 </td>
 </tr>
 <tr>
@@ -580,7 +597,7 @@ XML file for GCAM with electricity generation percentages by fuel in
 2030
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/malaysia_elec_fuel_mix_2030_KL.xml" style="     ">malaysia_elec_fuel_mix_2030_KL.xml</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_elec_fuel_mix_2030_KL.xml" style="     ">malaysia_elec_fuel_mix_2030_KL.xml</a>
 </td>
 </tr>
 <tr>
@@ -588,7 +605,7 @@ XML file for GCAM with electricity generation percentages by fuel in
 XML file for GCAM to set exogenous hydropower generation
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/malaysia_hydro_constraint_2030_KL.xml" style="     ">malaysia_hydro_constraint_2030_KL.xml</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_hydro_constraint_2030_KL.xml" style="     ">malaysia_hydro_constraint_2030_KL.xml</a>
 </td>
 </tr>
 </tbody>
@@ -679,7 +696,7 @@ style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 
 <li>Create a folder in the input directory eg.
 <code>./gcam-core/input/addons/malaysia</code>.</li>
 <li>Download the example XML file <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/malaysia_elec_fuel_mix_2030_KL.xml">malaysia_elec_fuel_mix_2030_KL.xml</a>
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_elec_fuel_mix_2030_KL.xml">malaysia_elec_fuel_mix_2030_KL.xml</a>
 to the folder. (Click on <code>Raw</code> and then
 <code>right-click</code> and select <code>save-as</code>.)</li>
 <li>To make adjustments: within each
@@ -707,7 +724,7 @@ adding the line:
 <p style='font-size:0.9em'>
 <code>&lt;Value name = "scen"&gt;../input/addons/malaysia/malaysia_elec_fuel_mix_2030_KL.xml&lt;/Value&gt;</code></li>
 <li>To adjust the hydropower pathway, download the example XML file <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/malaysia_hydro_constraint_2030_KL.xml">malaysia_hydro_constraint_2030_KL.xml</a>
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_hydro_constraint_2030_KL.xml">malaysia_hydro_constraint_2030_KL.xml</a>
 to the folder.</li>
 <li>Within each <code>fixedOutput</code> tag in the XML, adjust the
 value to reflect desired hydropower output in each period. The user can
@@ -763,9 +780,9 @@ data &lt;- gcamextractor::readgcam(gcamdatabase = sample_path,
                                 regionsSelect = regions,
                                 regionsAggregate = list(regions),
                                 regionsAggregateNames = &quot;All of Malaysia&quot;,
-                                folder = &quot;..data/Malaysia/gcamextractor&quot;)</code></pre>
-<pre class="r"><code>df1 &lt;- read.csv(&quot;../data/Malaysia/gcamextractor/gcamDataTable_aggClass1.csv&quot;)
-df2 &lt;- read.csv(&quot;../data/Malaysia/gcamextractor/gcamDataTable_aggClass1.csv&quot;)
+                                folder = &quot;..data/malaysia/gcamextractor&quot;)</code></pre>
+<pre class="r"><code>df1 &lt;- read.csv(&quot;../data/malaysia/gcamextractor/gcamDataTable_aggClass1.csv&quot;)
+df2 &lt;- read.csv(&quot;../data/malaysia/gcamextractor/gcamDataTable_aggClass1.csv&quot;)
 
 malaysia &lt;- df1 %&gt;%
   filter(region != (&quot;Rest of Malaysia&quot;),
@@ -821,6 +838,7 @@ malaysia_emissions &lt;- bind_rows(co2, ghg)</code></pre>
                 size_text = 18)
 
 emissions$chart_class_byRegion</code></pre>
+<p><img src="modeling_malaysia_files/figure-html/rchart-emiss-plot-1.png" width="85%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 </div>
 <div id="example-3-emissions-by-gas" class="section level3"
@@ -846,6 +864,7 @@ malaysia_emissions_gas &lt;- bind_rows(co2_gas, ghg_gas)</code></pre>
                 size_text = 10)
 
 gas$chart_class_byRegion</code></pre>
+<p><img src="modeling_malaysia_files/figure-html/rchart-emiss-gas-plot-1.png" width="85%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 </div>
 <div id="example-4-final-energy-by-fuel-and-sector"
@@ -866,6 +885,7 @@ energy &lt;- malaysia %&gt;%
                 size_text = 20)
 
 energy$chart_class_byRegion</code></pre>
+<p><img src="modeling_malaysia_files/figure-html/rchart-energy-1.png" width="85%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 </div>
 </div>
