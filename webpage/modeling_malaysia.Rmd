@@ -12,7 +12,7 @@ output:
 ---
 
 ```{r setup, echo = FALSE, message = FALSE, warning = FALSE}
-knitr::opts_chunk$set(results = "hide", echo = FALSE, out.width = "75%", fig.align='center', message = F, warning = F, error = F, eval = T)
+knitr::opts_chunk$set(results = "hide", echo = FALSE, out.width = "85%", fig.align = 'center', message = F, warning = F, error = F, eval = T)
 
 library(kableExtra)
 library(dplyr)
@@ -284,10 +284,12 @@ malaysia <- df1 %>%
 
 `rchart` is a comprehensive charting package to plot and compare data across scenarios, regions, sectors and time periods in GCAM.
 
+<br>
+
 ### Example 1: Socioeconomic summary
 ***
 
-```{r rchart-socio, results = 'hide', eval=TRUE, echo=TRUE, warning=FALSE, error = FALSE, message = FALSE}
+```{r rchart-socio, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 16, fig.height = 8, out.width = "100%"}
 socioeconomic_parameters <- c("pop", "gdp", "gdpPerCapita")
   
 socioeconomic <- malaysia %>%
@@ -298,7 +300,7 @@ socioeconomic <- malaysia %>%
                 chart_type = "region_absolute",
                 save = F, 
                 show = F,
-                size_text = 8)
+                size_text = 19)
 
 socioeconomic$chart_region_absolute
 ```
@@ -308,7 +310,7 @@ socioeconomic$chart_region_absolute
 ### Example 2: Emissions by sector
 ***
 
-``` {r rchart-emiss, results = 'hide', eval=TRUE, echo=TRUE, warning=FALSE, error = FALSE, message = FALSE}
+``` {r rchart-emiss, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
 co2 <- malaysia %>% filter(param == "emissCO2BySector",
                            region != "Malaysia") %>%
   mutate(value = value * 3.67,
@@ -321,15 +323,14 @@ malaysia_emissions <- bind_rows(co2, ghg)
 
 ```
 
-``` {r rchart-emiss-plot, results = 'hide', eval=TRUE, echo=TRUE, warning=FALSE, error = FALSE, message = FALSE}
+``` {r rchart-emiss-plot, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 12, fig.height = 9}
 emissions <- malaysia_emissions %>%
   mutate(param = units) %>%
   rchart::chart(folder = "rchart/emissions_by_sector",
                 chart_type = "class_absolute",
                 save = F, 
                 show = F,
-                size_text = 10, 
-                aspect_ratio = 0.8)
+                size_text = 18)
 
 emissions$chart_class_byRegion
 ```
@@ -339,7 +340,7 @@ emissions$chart_class_byRegion
 ### Example 3: Emissions by gas
 ***
 
-``` {r rchart-emiss-gas, results = 'hide', eval=TRUE, echo=TRUE, warning=FALSE, error = FALSE, message = FALSE}
+``` {r rchart-emiss-gas, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
 co2_gas <- co2 %>%
   mutate(class = "CO2")
 
@@ -352,7 +353,7 @@ malaysia_emissions_gas <- bind_rows(co2_gas, ghg_gas)
 
 ```
 
-``` {r rchart-emiss-gas-plot, results = 'hide', eval=TRUE, echo=TRUE, warning=FALSE, error = FALSE, message = FALSE}
+``` {r rchart-emiss-gas-plot, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
 gas <- malaysia_emissions_gas %>%
   mutate(param = units) %>%
   rchart::chart(folder = "rchart/emissions_by_gas",
@@ -370,7 +371,7 @@ gas$chart_class_byRegion
 ### Example 4: Final Energy by Fuel and Sector
 ***
 
-```{r rchart-energy, results = 'hide', eval=TRUE, echo=TRUE, warning=FALSE, error = FALSE, message = FALSE}
+```{r rchart-energy, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 15, fig.height = 12}
 energy_parameters <- c("energyFinalConsumBySecEJ", "energyFinalByFuelEJ")
 
 energy <- malaysia %>% 
@@ -381,32 +382,12 @@ energy <- malaysia %>%
                 chart_type = "class_absolute",
                 save = F, 
                 show = F,
-                size_text = 9)
+                size_text = 20)
 
 energy$chart_class_byRegion
 ```
 
 <br>
-
-### Example 5: Electricity Generation by Fuel and Consumption by Sector
-***
-
-``` {r rchart-elec, results = 'hide', eval=TRUE, echo=TRUE, warning=FALSE, error = FALSE, message = FALSE}
-elec_parameters <- c("elecConsumByDemandSectorTWh", "elecByTechTWh")
-
-electricity <- malaysia %>% 
-  filter(param %in% elec_parameters,
-         region != "Malaysia") %>%
-  mutate(param = units) %>%
-  rchart::chart(folder = "rchart/electricity",
-                chart_type = "class_absolute",
-                save = F, 
-                show = F,
-                size_text = 8)
-
-electricity$chart_class_byRegion
-          
-```
 
 # {.unlisted .unnumbered}
 ```{r child = 'footer.rmd'}
