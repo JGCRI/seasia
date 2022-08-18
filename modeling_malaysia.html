@@ -344,10 +344,10 @@ div.tocify {
   <a href="thailand_appendix.html">Appendix - Thailand</a>
 </li>
 <li>
-  <a href="modeling_thailand.html">Modeling - Thailand</a>
+  <a href="malaysia_appendix.html">Appendix - Malaysia</a>
 </li>
 <li>
-  <a href="malaysia_appendix.html">Appendix - Malaysia</a>
+  <a href="modeling_thailand.html">Modeling - Thailand</a>
 </li>
 <li>
   <a href="modeling_malaysia.html">Modeling - Malaysia</a>
@@ -524,7 +524,7 @@ Business as Usual Scenario
 Example Policy Scenario
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/malaysia_elec_fuel_mix_2030_KL.xml" style="     ">malaysia_elec_fuel_mix_2030_KL.xml</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/configuration_seasia_cities_policy.xml" style="     ">configuration_seasia_cities_policy.xml</a>
 </td>
 </tr>
 </tbody>
@@ -532,43 +532,13 @@ Example Policy Scenario
 <!-------------------------->
 <!-------------------------->
 </div>
-<div id="example-policies" class="section level1" number="4">
-<h1><span class="header-section-number">4</span> Example Policies</h1>
+<div id="policies" class="section level1" number="4">
+<h1><span class="header-section-number">4</span> Policies</h1>
 <!-------------------------->
 <!-------------------------->
 <p align="center">
 <img src="images/divider.png">
 </p>
-<p>The following table lists an example policy that has been modeled in
-GCAM. The section below explains what this policy is meant to represent
-and how to change it for future modeling by walking through the goal,
-approach, background, and GCAM implementation process. This policy is
-added on in the <code>malaysia_elec_fuel_mix_2030_KL.xml</code> file to
-include it in the example policy scenario.</p>
-<table class="table table-bordered table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
-<thead>
-<tr>
-<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
-Description
-</th>
-<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
-File
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left;">
-Electricity Generation Mix - Subsidy: Modify the electricity generation
-mix by setting generation floors for each technology using a subsidy
-policy
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/malaysia_elec_fuel_mix_2030_KL.xml" style="     ">malaysia_elec_fuel_mix_2030_KL.xml</a>
-</td>
-</tr>
-</tbody>
-</table>
 <p>Future policies that will be modeled are described in the table
 below. In general, two policy scenarios will be presented: a “low
 ambition” and “high ambition” option.</p>
@@ -576,6 +546,9 @@ ambition” and “high ambition” option.</p>
 <img src="images/malaysia_initial_policy_assumptions.png">
 </p>
 <p><br></p>
+<p>The following subsections give additional details and explanations
+for the policies listed above. (In progress. Will be expanded with
+examples for each.)</p>
 <div id="electricity-generation-mix---subsidy" class="section level2"
 number="4.1">
 <h2><span class="header-section-number">4.1</span> Electricity
@@ -595,7 +568,7 @@ Link
 <tbody>
 <tr>
 <td style="text-align:left;">
-Initial pathway constraint calculations
+Excel spreadsheet showing initial calculations to build this policy
 </td>
 <td style="text-align:left;">
 <a href="https://github.com/JGCRI/seasia/blob/main/data/Malaysia/inputs/malaysia_elec_fuel_mix_2030_pathway.xlsx" style="     ">malaysia_elec_fuel_mix_2030_pathway.xlsx</a>
@@ -603,10 +576,19 @@ Initial pathway constraint calculations
 </tr>
 <tr>
 <td style="text-align:left;">
-Desired electricity generation percentages by fuel in 2030
+XML file for GCAM with electricity generation percentages by fuel in
+2030
 </td>
 <td style="text-align:left;">
 <a href="https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/malaysia_elec_fuel_mix_2030_KL.xml" style="     ">malaysia_elec_fuel_mix_2030_KL.xml</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+XML file for GCAM to set exogenous hydropower generation
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/malaysia_hydro_constraint_2030_KL.xml" style="     ">malaysia_hydro_constraint_2030_KL.xml</a>
 </td>
 </tr>
 </tbody>
@@ -698,9 +680,11 @@ style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 
 <code>./gcam-core/input/addons/malaysia</code>.</li>
 <li>Download the example XML file <a
 href="https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/malaysia_elec_fuel_mix_2030_KL.xml">malaysia_elec_fuel_mix_2030_KL.xml</a>
-to the folder.</li>
-<li>Within each <code>policy-portfolio-standard</code> tag in the XML,
-adjust the following:</li>
+to the folder. (Click on <code>Raw</code> and then
+<code>right-click</code> and select <code>save-as</code>.)</li>
+<li>To make adjustments: within each
+<code>policy-portfolio-standard</code> tag in the XML, adjust the
+following:</li>
 </ol>
 </p>
 <ul style="margin-left:4em; text-align:left;">
@@ -713,7 +697,7 @@ an exact constraint, rather than a floor, is desired
 </li>
 </ul>
 <p style="margin-left:1em;">
-<ol start="5" style="list-style-type: decimal">
+<ol start="4" style="list-style-type: decimal">
 <li>Within each <code>supplysector</code> tag in the XML, make sure that
 the corresponding <code>input-subsidy</code> is added within each
 relevant <code>period</code> for each <code>stub-technology</code> you
@@ -797,6 +781,18 @@ number="5.2.1">
 <h3><span class="header-section-number">5.2.1</span> Example 1:
 Socioeconomic summary</h3>
 <hr />
+<pre class="r"><code>socioeconomic_parameters &lt;- c(&quot;pop&quot;, &quot;gdp&quot;, &quot;gdpPerCapita&quot;)
+  
+socioeconomic &lt;- malaysia %&gt;%
+  filter(param %in% socioeconomic_parameters) %&gt;%
+  mutate(param = units) %&gt;% 
+  rchart::chart(folder = &quot;rchart/socioeconomic&quot;,
+                chart_type = &quot;region_absolute&quot;,
+                save = F, 
+                show = F,
+                size_text = 8)
+
+socioeconomic$chart_region_absolute</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-socio-1.png" width="75%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 </div>
@@ -805,7 +801,23 @@ number="5.2.2">
 <h3><span class="header-section-number">5.2.2</span> Example 2:
 Emissions by sector</h3>
 <hr />
-<p><img src="modeling_malaysia_files/figure-html/rchart-emiss-plot-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>co2 &lt;- malaysia %&gt;% filter(param == &quot;emissCO2BySector&quot;) %&gt;%
+  mutate(value = value * 3.67,
+         units = &quot;CO2 Emissions (MTCO2eq)&quot;)
+
+ghg &lt;- malaysia %&gt;% filter(param == &quot;emissGHGBySectorGWPAR5&quot;)
+
+malaysia_emissions &lt;- bind_rows(co2, ghg)</code></pre>
+<pre class="r"><code>emissions &lt;- malaysia_emissions %&gt;%
+  mutate(param = units) %&gt;%
+  rchart::chart(folder = &quot;rchart/emissions_by_sector&quot;,
+                chart_type = &quot;class_absolute&quot;,
+                save = F, 
+                show = F,
+                size_text = 10, 
+                aspect_ratio = 0.8)
+
+emissions$chart_class_byRegion</code></pre>
 <p><br></p>
 </div>
 <div id="example-3-emissions-by-gas" class="section level3"
@@ -813,7 +825,23 @@ number="5.2.3">
 <h3><span class="header-section-number">5.2.3</span> Example 3:
 Emissions by gas</h3>
 <hr />
-<p><img src="modeling_malaysia_files/figure-html/rchart-emiss-gas-plot-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>co2_gas &lt;- co2 %&gt;%
+  mutate(class = &quot;CO2&quot;)
+
+ghg_gas &lt;- malaysia %&gt;% 
+  filter(param == &quot;emissGHGByGasGWPAR5&quot;,
+         class != &quot;CO2&quot;)
+
+malaysia_emissions_gas &lt;- bind_rows(co2_gas, ghg_gas)</code></pre>
+<pre class="r"><code>gas &lt;- malaysia_emissions_gas %&gt;%
+  mutate(param = units) %&gt;%
+  rchart::chart(folder = &quot;rchart/emissions_by_gas&quot;,
+                chart_type = &quot;class_absolute&quot;,
+                save = F, 
+                show = F,
+                size_text = 10)
+
+gas$chart_class_byRegion</code></pre>
 <p><br></p>
 </div>
 <div id="example-4-final-energy-by-fuel-and-sector"
@@ -821,7 +849,18 @@ class="section level3" number="5.2.4">
 <h3><span class="header-section-number">5.2.4</span> Example 4: Final
 Energy by Fuel and Sector</h3>
 <hr />
-<p><img src="modeling_malaysia_files/figure-html/rchart-energy-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>energy_parameters &lt;- c(&quot;energyFinalConsumBySecEJ&quot;, &quot;energyFinalByFuelEJ&quot;)
+
+energy &lt;- malaysia %&gt;% 
+  filter(param %in% energy_parameters) %&gt;%
+  mutate(param = units) %&gt;%
+  rchart::chart(folder = &quot;rchart/energy&quot;,
+                chart_type = &quot;class_absolute&quot;,
+                save = F, 
+                show = F,
+                size_text = 9)
+
+energy$chart_class_byRegion</code></pre>
 <p><br></p>
 </div>
 <div
@@ -830,7 +869,18 @@ class="section level3" number="5.2.5">
 <h3><span class="header-section-number">5.2.5</span> Example 5:
 Electricity Generation by Fuel and Consumption by Sector</h3>
 <hr />
-<p><img src="modeling_malaysia_files/figure-html/rchart-elec-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>elec_parameters &lt;- c(&quot;elecConsumByDemandSectorTWh&quot;, &quot;elecByTechTWh&quot;)
+
+electricity &lt;- malaysia %&gt;% 
+  filter(param %in% elec_parameters) %&gt;%
+  mutate(param = units) %&gt;%
+  rchart::chart(folder = &quot;rchart/electricity&quot;,
+                chart_type = &quot;class_absolute&quot;,
+                save = F, 
+                show = F,
+                size_text = 6)
+
+electricity$chart_class_byRegion</code></pre>
 </div>
 </div>
 </div>
