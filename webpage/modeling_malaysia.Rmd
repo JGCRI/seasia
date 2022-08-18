@@ -92,10 +92,10 @@ Below are links to the reference and policy scenarios that we will be using.
 ```{r scenarios-links-table, results = 'show', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE}
 
 dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/configuration_seasia_cities_bau.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/malaysia_elec_fuel_mix_2030_KL.xml")
+            "https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/configuration_seasia_cities_policy.xml")
 
 xml = c("configuration_seasia_cities_bau.xml",
-           "malaysia_elec_fuel_mix_2030_KL.xml")
+           "configuration_seasia_cities_policy.xml")
 
 data.frame(
   Description = c("Business as Usual Scenario",
@@ -110,27 +110,10 @@ data.frame(
 
 <!-------------------------->
 <!-------------------------->
-# Example Policies
+# Policies
 <!-------------------------->
 <!-------------------------->
 <p align="center"> <img src="images/divider.png"></p>
-
-The following table lists an example policy that has been modeled in GCAM. The section below explains what this policy is meant to represent and how to change it for future modeling by walking through the goal, approach, background, and GCAM implementation process. This policy is added on in the `malaysia_elec_fuel_mix_2030_KL.xml` file to include it in the example policy scenario.
-
-
-```{r policy-links-table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
-
-dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/malaysia_elec_fuel_mix_2030_KL.xml")
-
-xml <- c("malaysia_elec_fuel_mix_2030_KL.xml")
-
-data.frame(
-  Description = c("Electricity Generation Mix - Subsidy: Modify the electricity generation mix by setting generation floors for each technology using a subsidy policy")) %>%
-  dplyr::mutate(File = cell_spec(xml,"html",link=dt_url)) %>%
-  kable("html", escape = FALSE) %>%
-  kable_styling(bootstrap_options = c("bordered","striped", "hover", "condensed", "responsive")) %>%
-  row_spec(0, background = "#2A2A2A", color = "white")
-```
 
 Future policies that will be modeled are described in the table below. In general, two policy scenarios will be presented: a "low ambition" and "high ambition" option. 
 
@@ -138,20 +121,26 @@ Future policies that will be modeled are described in the table below. In genera
 
 <br>
 
+The following subsections give additional details and explanations for the policies listed above.
+(In progress. Will be expanded with examples for each.)
+
 ## Electricity Generation Mix - Subsidy
 ***
 
 ```{r electricity-generation-files-table, results = 'show', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE}
 
 dt_url <- c("https://github.com/JGCRI/seasia/blob/main/data/Malaysia/inputs/malaysia_elec_fuel_mix_2030_pathway.xlsx",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/malaysia_elec_fuel_mix_2030_KL.xml")
+            "https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/malaysia_elec_fuel_mix_2030_KL.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/malaysia_hydro_constraint_2030_KL.xml")
 
 files <- c("malaysia_elec_fuel_mix_2030_pathway.xlsx",
-           "malaysia_elec_fuel_mix_2030_KL.xml")
+           "malaysia_elec_fuel_mix_2030_KL.xml",
+           "malaysia_hydro_constraint_2030_KL.xml")
 
 data.frame(
-  "Relevant Files" = c("Initial pathway constraint calculations",
-                   "Desired electricity generation percentages by fuel in 2030")) %>%
+  "Relevant Files" = c("Excel spreadsheet showing initial calculations to build this policy",
+                   "XML file for GCAM with electricity generation percentages by fuel in 2030",
+                   "XML file for GCAM to set exogenous hydropower generation")) %>%
   dplyr::mutate(Link = cell_spec(files,"html",link=dt_url)) %>%
   kable("html", escape = FALSE, col.names = c("Relevant Files", "Link")) %>%
   kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
@@ -223,22 +212,21 @@ Hydropower is exogenous in GCAM and has a fixed pathway. The power generation va
 
 <p style='margin-left:1em;'>
 1. Create a folder in the input directory eg. `./gcam-core/input/addons/malaysia`.
-2. Download the example XML file [malaysia_elec_fuel_mix_2030_KL.xml](https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/malaysia_elec_fuel_mix_2030_KL.xml) to the folder.
-4. Within each `policy-portfolio-standard` tag in the XML, adjust the following:
+2. Download the example XML file [malaysia_elec_fuel_mix_2030_KL.xml](https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/malaysia_elec_fuel_mix_2030_KL.xml) to the folder. (Click on `Raw` and then `right-click` and select `save-as`.)
+3. To make adjustments: within each `policy-portfolio-standard` tag in the XML, adjust the following:
 </p>
-
 <ul style='margin-left:4em; text-align:left;'>
   <li>`constraint` for each year in which a floor is desired</li>
   <li>Set `min-price` to a large negative value for years in which an exact constraint, rather than a floor, is desired</li>
 </ul>
 <p style='margin-left:1em;'>
-5. Within each `supplysector` tag in the XML, make sure that the corresponding `input-subsidy` is added within each relevant `period` for each `stub-technology` you wish to constrain.
-6. Save the XML and then point to it in your configuration file by adding the line: 
+4. Within each `supplysector` tag in the XML, make sure that the corresponding `input-subsidy` is added within each relevant `period` for each `stub-technology` you wish to constrain.
+5. Save the XML and then point to it in your configuration file by adding the line: 
 <p style='font-size:0.9em'>
 `<Value name = "scen">../input/addons/malaysia/malaysia_elec_fuel_mix_2030_KL.xml</Value>`
-7. To adjust the hydropower pathway, download the example XML file [malaysia_hydro_constraint_2030_KL.xml](https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/malaysia_hydro_constraint_2030_KL.xml) to the folder. 
-8. Within each `fixedOutput` tag in the XML, adjust the value to reflect desired hydropower output in each period. The user can also add additional periods. 
-9. Save the XML and point to it in your configuration file by adding the line: 
+6. To adjust the hydropower pathway, download the example XML file [malaysia_hydro_constraint_2030_KL.xml](https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/malaysia_hydro_constraint_2030_KL.xml) to the folder. 
+7. Within each `fixedOutput` tag in the XML, adjust the value to reflect desired hydropower output in each period. The user can also add additional periods. 
+8. Save the XML and point to it in your configuration file by adding the line: 
 <p style='font-size:0.9em'>
 `<Value name = "scen">../input/addons/malaysia/malaysia_hydro_constraint_2030_KL.xml</Value>`
 
@@ -299,7 +287,7 @@ malaysia <- df1 %>%
 ### Example 1: Socioeconomic summary
 ***
 
-```{r rchart-socio}
+```{r rchart-socio, results = 'hide', eval=TRUE, echo=TRUE, warning=FALSE, error = FALSE, message = FALSE}
 socioeconomic_parameters <- c("pop", "gdp", "gdpPerCapita")
   
 socioeconomic <- malaysia %>%
@@ -319,7 +307,7 @@ socioeconomic$chart_region_absolute
 ### Example 2: Emissions by sector
 ***
 
-``` {r rchart-emiss, echo = FALSE}
+``` {r rchart-emiss, results = 'hide', eval=TRUE, echo=TRUE, warning=FALSE, error = FALSE, message = FALSE}
 co2 <- malaysia %>% filter(param == "emissCO2BySector") %>%
   mutate(value = value * 3.67,
          units = "CO2 Emissions (MTCO2eq)")
@@ -330,7 +318,7 @@ malaysia_emissions <- bind_rows(co2, ghg)
 
 ```
 
-``` {r rchart-emiss-plot}
+``` {r rchart-emiss-plot, results = 'hide', eval=TRUE, echo=TRUE, warning=FALSE, error = FALSE, message = FALSE}
 emissions <- malaysia_emissions %>%
   mutate(param = units) %>%
   rchart::chart(folder = "rchart/emissions_by_sector",
@@ -348,7 +336,7 @@ emissions$chart_class_byRegion
 ### Example 3: Emissions by gas
 ***
 
-``` {r rchart-emiss-gas, echo = FALSE}
+``` {r rchart-emiss-gas, results = 'hide', eval=TRUE, echo=TRUE, warning=FALSE, error = FALSE, message = FALSE}
 co2_gas <- co2 %>%
   mutate(class = "CO2")
 
@@ -360,7 +348,7 @@ malaysia_emissions_gas <- bind_rows(co2_gas, ghg_gas)
 
 ```
 
-``` {r rchart-emiss-gas-plot}
+``` {r rchart-emiss-gas-plot, results = 'hide', eval=TRUE, echo=TRUE, warning=FALSE, error = FALSE, message = FALSE}
 gas <- malaysia_emissions_gas %>%
   mutate(param = units) %>%
   rchart::chart(folder = "rchart/emissions_by_gas",
@@ -378,7 +366,7 @@ gas$chart_class_byRegion
 ### Example 4: Final Energy by Fuel and Sector
 ***
 
-```{r rchart-energy}
+```{r rchart-energy, results = 'hide', eval=TRUE, echo=TRUE, warning=FALSE, error = FALSE, message = FALSE}
 energy_parameters <- c("energyFinalConsumBySecEJ", "energyFinalByFuelEJ")
 
 energy <- malaysia %>% 
@@ -398,7 +386,7 @@ energy$chart_class_byRegion
 ### Example 5: Electricity Generation by Fuel and Consumption by Sector
 ***
 
-``` {r rchart-elec}
+``` {r rchart-elec, results = 'hide', eval=TRUE, echo=TRUE, warning=FALSE, error = FALSE, message = FALSE}
 elec_parameters <- c("elecConsumByDemandSectorTWh", "elecByTechTWh")
 
 electricity <- malaysia %>% 

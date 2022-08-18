@@ -12,10 +12,10 @@ navbar:
   right:
     - text: "Appendix - Thailand"
       href: thailand_appendix.html
-    - text: "Modeling - Thailand"
-      href: modeling_thailand.html
     - text: "Appendix - Malaysia"
       href: malaysia_appendix.html
+    - text: "Modeling - Thailand"
+      href: modeling_thailand.html
     - text: "Modeling - Malaysia"
       href: modeling_malaysia.html
     - icon: fab fa-github
