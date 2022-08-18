@@ -768,7 +768,7 @@ data &lt;- gcamextractor::readgcam(gcamdatabase = sample_path,
 df2 &lt;- read.csv(&quot;../data/Malaysia/gcamextractor/gcamDataTable_aggClass1.csv&quot;)
 
 malaysia &lt;- df1 %&gt;%
-  filter(region %in% c(&quot;All of Malaysia&quot;, &quot;KualaLumpur&quot;),
+  filter(region != (&quot;Rest of Malaysia&quot;),
          x &gt; 2000)</code></pre>
 </div>
 <div id="plot-figures" class="section level2" number="5.2">
@@ -776,6 +776,7 @@ malaysia &lt;- df1 %&gt;%
 <p><code>rchart</code> is a comprehensive charting package to plot and
 compare data across scenarios, regions, sectors and time periods in
 GCAM.</p>
+<p><br></p>
 <div id="example-1-socioeconomic-summary" class="section level3"
 number="5.2.1">
 <h3><span class="header-section-number">5.2.1</span> Example 1:
@@ -784,16 +785,17 @@ Socioeconomic summary</h3>
 <pre class="r"><code>socioeconomic_parameters &lt;- c(&quot;pop&quot;, &quot;gdp&quot;, &quot;gdpPerCapita&quot;)
   
 socioeconomic &lt;- malaysia %&gt;%
-  filter(param %in% socioeconomic_parameters) %&gt;%
+  filter(param %in% socioeconomic_parameters,
+         region != &quot;All of Malaysia&quot;) %&gt;%
   mutate(param = units) %&gt;% 
   rchart::chart(folder = &quot;rchart/socioeconomic&quot;,
                 chart_type = &quot;region_absolute&quot;,
                 save = F, 
                 show = F,
-                size_text = 8)
+                size_text = 19)
 
 socioeconomic$chart_region_absolute</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-socio-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<p><img src="modeling_malaysia_files/figure-html/rchart-socio-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 </div>
 <div id="example-2-emissions-by-sector" class="section level3"
@@ -801,11 +803,13 @@ number="5.2.2">
 <h3><span class="header-section-number">5.2.2</span> Example 2:
 Emissions by sector</h3>
 <hr />
-<pre class="r"><code>co2 &lt;- malaysia %&gt;% filter(param == &quot;emissCO2BySector&quot;) %&gt;%
+<pre class="r"><code>co2 &lt;- malaysia %&gt;% filter(param == &quot;emissCO2BySector&quot;,
+                           region != &quot;Malaysia&quot;) %&gt;%
   mutate(value = value * 3.67,
          units = &quot;CO2 Emissions (MTCO2eq)&quot;)
 
-ghg &lt;- malaysia %&gt;% filter(param == &quot;emissGHGBySectorGWPAR5&quot;)
+ghg &lt;- malaysia %&gt;% filter(param == &quot;emissGHGBySectorGWPAR5&quot;,
+                           region != &quot;Malaysia&quot;)
 
 malaysia_emissions &lt;- bind_rows(co2, ghg)</code></pre>
 <pre class="r"><code>emissions &lt;- malaysia_emissions %&gt;%
@@ -814,10 +818,10 @@ malaysia_emissions &lt;- bind_rows(co2, ghg)</code></pre>
                 chart_type = &quot;class_absolute&quot;,
                 save = F, 
                 show = F,
-                size_text = 10, 
-                aspect_ratio = 0.8)
+                size_text = 18)
 
 emissions$chart_class_byRegion</code></pre>
+<p><img src="modeling_malaysia_files/figure-html/rchart-emiss-plot-1.png" width="85%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 </div>
 <div id="example-3-emissions-by-gas" class="section level3"
@@ -830,7 +834,8 @@ Emissions by gas</h3>
 
 ghg_gas &lt;- malaysia %&gt;% 
   filter(param == &quot;emissGHGByGasGWPAR5&quot;,
-         class != &quot;CO2&quot;)
+         class != &quot;CO2&quot;,
+         region != &quot;Malaysia&quot;)
 
 malaysia_emissions_gas &lt;- bind_rows(co2_gas, ghg_gas)</code></pre>
 <pre class="r"><code>gas &lt;- malaysia_emissions_gas %&gt;%
@@ -842,6 +847,7 @@ malaysia_emissions_gas &lt;- bind_rows(co2_gas, ghg_gas)</code></pre>
                 size_text = 10)
 
 gas$chart_class_byRegion</code></pre>
+<p><img src="modeling_malaysia_files/figure-html/rchart-emiss-gas-plot-1.png" width="85%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 </div>
 <div id="example-4-final-energy-by-fuel-and-sector"
@@ -852,35 +858,18 @@ Energy by Fuel and Sector</h3>
 <pre class="r"><code>energy_parameters &lt;- c(&quot;energyFinalConsumBySecEJ&quot;, &quot;energyFinalByFuelEJ&quot;)
 
 energy &lt;- malaysia %&gt;% 
-  filter(param %in% energy_parameters) %&gt;%
+  filter(param %in% energy_parameters,
+         region != &quot;Malaysia&quot;) %&gt;%
   mutate(param = units) %&gt;%
   rchart::chart(folder = &quot;rchart/energy&quot;,
                 chart_type = &quot;class_absolute&quot;,
                 save = F, 
                 show = F,
-                size_text = 9)
+                size_text = 20)
 
 energy$chart_class_byRegion</code></pre>
+<p><img src="modeling_malaysia_files/figure-html/rchart-energy-1.png" width="85%" style="display: block; margin: auto;" /></p>
 <p><br></p>
-</div>
-<div
-id="example-5-electricity-generation-by-fuel-and-consumption-by-sector"
-class="section level3" number="5.2.5">
-<h3><span class="header-section-number">5.2.5</span> Example 5:
-Electricity Generation by Fuel and Consumption by Sector</h3>
-<hr />
-<pre class="r"><code>elec_parameters &lt;- c(&quot;elecConsumByDemandSectorTWh&quot;, &quot;elecByTechTWh&quot;)
-
-electricity &lt;- malaysia %&gt;% 
-  filter(param %in% elec_parameters) %&gt;%
-  mutate(param = units) %&gt;%
-  rchart::chart(folder = &quot;rchart/electricity&quot;,
-                chart_type = &quot;class_absolute&quot;,
-                save = F, 
-                show = F,
-                size_text = 6)
-
-electricity$chart_class_byRegion</code></pre>
 </div>
 </div>
 </div>
