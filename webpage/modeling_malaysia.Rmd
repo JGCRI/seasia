@@ -286,7 +286,7 @@ df1 <- read.csv("../data/Malaysia/gcamextractor/gcamDataTable_aggClass1.csv")
 df2 <- read.csv("../data/Malaysia/gcamextractor/gcamDataTable_aggClass1.csv")
 
 malaysia <- df1 %>%
-  filter(region %in% c("All of Malaysia", "KualaLumpur"),
+  filter(region != ("Rest of Malaysia"),
          x > 2000)
 
 ```
@@ -303,7 +303,8 @@ malaysia <- df1 %>%
 socioeconomic_parameters <- c("pop", "gdp", "gdpPerCapita")
   
 socioeconomic <- malaysia %>%
-  filter(param %in% socioeconomic_parameters) %>%
+  filter(param %in% socioeconomic_parameters,
+         region != "All of Malaysia") %>%
   mutate(param = units) %>% 
   rchart::chart(folder = "rchart/socioeconomic",
                 chart_type = "region_absolute",
@@ -320,11 +321,13 @@ socioeconomic$chart_region_absolute
 ***
 
 ``` {r rchart-emiss, echo = FALSE}
-co2 <- malaysia %>% filter(param == "emissCO2BySector") %>%
+co2 <- malaysia %>% filter(param == "emissCO2BySector",
+                           region != "Malaysia") %>%
   mutate(value = value * 3.67,
          units = "CO2 Emissions (MTCO2eq)")
 
-ghg <- malaysia %>% filter(param == "emissGHGBySectorGWPAR5")
+ghg <- malaysia %>% filter(param == "emissGHGBySectorGWPAR5",
+                           region != "Malaysia")
 
 malaysia_emissions <- bind_rows(co2, ghg)
 
@@ -354,7 +357,8 @@ co2_gas <- co2 %>%
 
 ghg_gas <- malaysia %>% 
   filter(param == "emissGHGByGasGWPAR5",
-         class != "CO2")
+         class != "CO2",
+         region != "Malaysia")
 
 malaysia_emissions_gas <- bind_rows(co2_gas, ghg_gas)
 
@@ -382,7 +386,8 @@ gas$chart_class_byRegion
 energy_parameters <- c("energyFinalConsumBySecEJ", "energyFinalByFuelEJ")
 
 energy <- malaysia %>% 
-  filter(param %in% energy_parameters) %>%
+  filter(param %in% energy_parameters,
+         region != "Malaysia") %>%
   mutate(param = units) %>%
   rchart::chart(folder = "rchart/energy",
                 chart_type = "class_absolute",
@@ -402,13 +407,14 @@ energy$chart_class_byRegion
 elec_parameters <- c("elecConsumByDemandSectorTWh", "elecByTechTWh")
 
 electricity <- malaysia %>% 
-  filter(param %in% elec_parameters) %>%
+  filter(param %in% elec_parameters,
+         region != "Malaysia") %>%
   mutate(param = units) %>%
   rchart::chart(folder = "rchart/electricity",
                 chart_type = "class_absolute",
                 save = F, 
                 show = F,
-                size_text = 6)
+                size_text = 8)
 
 electricity$chart_class_byRegion
           
