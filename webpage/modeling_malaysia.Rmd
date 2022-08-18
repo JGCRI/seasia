@@ -12,10 +12,7 @@ output:
 ---
 
 ```{r setup, echo = FALSE, message = FALSE, warning = FALSE}
-knitr::opts_chunk$set(results = "hide", echo = FALSE, 
-                      out.width = "75%",
-                      fig.align='center', message = F, 
-                      warning = F, error = F,eval = T)
+knitr::opts_chunk$set(results = "hide", echo = FALSE, out.width = "75%", fig.align='center', message = F, warning = F, error = F, eval = T)
 
 library(kableExtra)
 library(dplyr)

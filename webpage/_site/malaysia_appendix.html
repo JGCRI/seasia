@@ -342,13 +342,10 @@ div.tocify {
   <a href="thailand_appendix.html">Appendix - Thailand</a>
 </li>
 <li>
-  <a href="modeling_thailand.html">Modeling - Thailand</a>
-</li>
-<li>
   <a href="malaysia_appendix.html">Appendix - Malaysia</a>
 </li>
 <li>
-  <a href="modeling_malaysia.html">Modeling - Malaysia</a>
+  <a href="modeling_thailand.html">Modeling - Thailand</a>
 </li>
 <li>
   <a href="https://github.com/JGCRI/seasia">
@@ -411,18 +408,17 @@ Population
 </td>
 <td>
 <span>- Malaysia population used the medium variant projection and
-historical data from the UN</span><br/> <span>- KL 2020 population value
-was taken from the Key Findings Population and Housing Census of
-Malaysia 2020: Administrative District. All other values were
-extrapolated and calculated using the growth rates for Bangkok
-</span><br/> <span>- “Rest of Malaysia” values found by subtracting KL
-numbers from Malaysia</span><br/>
+historical data from the UN</span><br/> <span>- KL census data gives a
+value for 2010. All other values were extrapolated and calculated using
+the growth rates for Malaysia in total</span><br/> <span>- “Rest of
+Malaysia” values found by subtracting KL numbers from
+Malaysia</span><br/>
 </td>
 <td>
 <span>- Malaysia: <a href="https://population.un.org/wpp/">United
-Nations</a></span><br/> <span>- Kuala Lumpur 2020: <a
-href="https://www.dosm.gov.my/v1/index.php?r=column/cthemeByCat&amp;cat=500&amp;bul_id=WEFGYlprNFpVcUdWcXFFWkY3WHhEQT09&amp;menu_id=L0pheU43NWJwRWVSZklWdzQ4TlhUUT09">Census
-of Malaysia 2020</a></span><br/>
+Nations</a></span><br/> <span>- Kuala Lumpur 2010: <a
+href="http://data.un.org/Data.aspx?q=kuala+lumpur&amp;d=POP&amp;f=tableCode%3a240%3bareaCode%3a0%3bsexCode%3a0%3bvarCode3%3a028690%3bvarCode4%3a000002">United
+Nations</a></span><br/>
 </td>
 </tr>
 <tr>
@@ -430,10 +426,9 @@ of Malaysia 2020</a></span><br/>
 GDP
 </td>
 <td>
-<span>- KL’s 2020 GDP value is sourced from the State Socioeconomic
-Report 2020. Bangkok annual growth rates are applied to extrapolate
-historical and future values</span><br/> <span>- “Rest of Malaysia”
-values found by subtracting KL numbers from Malaysia</span>
+<span>- Malaysia annual growth rates are applied to KL’s 2020 GDP value
+to extrapolate historical and future values</span><br/> <span>- “Rest of
+Malaysia” values found by subtracting KL numbers from Malaysia</span>
 </td>
 <td rowspan="2">
 <span>- Malaysia, historical: <a
@@ -454,12 +449,11 @@ class="section level4 unnumbered">
 <h4 class="unnumbered">Historical Trends and Future Projections</h4>
 <p>To estimate population values, we begin with annual data from the UN
 for Malaysia’s population; we use historical data and a medium
-population projection scenario. For Kuala Lumpur, we use 2020 census
-data as our base year. We then calculate annual growth rates using
-growth rates for Bangkok over the same period and apply these growth
-rates to extrapolate Kuala Lumpur population values. To find “Rest of
-Malaysia” values, we subtract Kuala Lumpur population from Malaysia
-values.</p>
+population projection scenario. For Kuala Lumpur, we use 2010 census
+data as our base year. We then calculate annual growth rates using the
+complete Malaysia dataset and apply these growth rates to extrapolate
+Kuala Lumpur population values. To find “Rest of Malaysia” values, we
+subtract Kuala Lumpur population from Malaysia values.</p>
 <p>The plot below shows historical and future projected populations in
 Malaysia and Kuala Lumpur from the GCAM reference scenario from 1975 to
 2100.</p>
@@ -480,11 +474,12 @@ class="section level4 unnumbered">
 <h4 class="unnumbered">Historical Trends and Future Projections</h4>
 <p>To find GDP values, we begin with historical data of GDP MER in
 Malaysia from the U.S. Department of Agriculture’s Economic Research
-Service. We use future projections data from the SSP2 database. We use
-the 2020 GDP found in the Kuala Lumpur State Socioeconomic Report 2020;
-in a similar process as described above, we apply Bangkok growth rates
-to KL to extrapolate past and future values. We then find “Rest of
-Malaysia” values by subtracting Kuala Lumpur values from Malaysia.</p>
+Service. We use future projections data from the SSP2 database. In a
+similar process to the population, we then calculate annual growth
+rates, which are applied to a base year for Kuala Lumpur. We use the
+2020 GDP found in the Kuala Lumpur State Socioeconomic Report 2020. We
+find “Rest of Malaysia” values by subtracting Kuala Lumpur values from
+Malaysia.</p>
 <p>The following graphs show GDP in billion 2005 USD for Malaysia and
 Kuala Lumpur.</p>
 <div class="figure" style="text-align: center">
@@ -504,7 +499,8 @@ class="section level4 unnumbered">
 <h4 class="unnumbered">Historical Trends and Future Projections</h4>
 <p>To find GDP per capita, we divide the above GDP values by the above
 population values.</p>
-<p>GDP per capita, in units of thousand 2005 USD, is shown below.</p>
+<p>GDP per capita, in units of thousand 2005 USD, is shown below for
+Malaysia and Kuala Lumpur.</p>
 <div class="figure" style="text-align: center">
 <img src="malaysia_appendix_files/figure-html/gdp_pc-1.png" alt="Figure 9.1.3.1. **Historical and future projected GDP per capita in Malaysia and Kuala Lumpur**" width="75%" />
 <p class="caption">
@@ -739,7 +735,7 @@ request.</li>
 </div>
 <div id="section" class="section level1 unlisted unnumbered">
 <h1 class="unlisted unnumbered"></h1>
-<p><span class="navbar-fixed-bottom text-muted bg-info">WORK IN PROGRESS
+<p><span class="navbar-fixed-bottom text-muted bg-info">WORK IN POGRESS
 - DO NOT CITE
 <img src="images/logo_us_state_department_color.png" style="padding-left:20px; height:40px;">
 <img src="images/logo_pnnl_white.png" style="padding-left:20px; height:40px;"></span></p>
