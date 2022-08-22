@@ -459,8 +459,58 @@ gcamv5p3_seasia
 </tr>
 </tbody>
 </table>
-<p><i>Note: You do not need a drop box account to download the file
-(just click the x and the download link will appear).</i> <br></p>
+<p><br></p>
+<p>You will need the following prerequisites in order to run GCAM. You
+will also need at least 8 GM of RAM.</p>
+<table class="table table-bordered table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+Prerequisite
+</th>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+Link
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Java 64
+</td>
+<td style="text-align:left;">
+<a href="https://www.java.com/en/download/" style="     ">Install Java
+64</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+R
+</td>
+<td style="text-align:left;">
+<a href="https://cran.r-project.org/" style="     ">Install R</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+RStudio
+</td>
+<td style="text-align:left;">
+<a href="https://www.rstudio.com/" style="     ">Install RStudio</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Windows XML Maker
+</td>
+<td style="text-align:left;">
+<a href="http://symbolclick.com/xmlmarker_1_1_setup.exe" style="     ">Install
+Windows XML Maker</a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
 <!-------------------------->
 <!-------------------------->
 </div>
@@ -541,7 +591,7 @@ Business as Usual Scenario
 Example Policy Scenario
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/configuration_seasia_cities_malaysia_policy.xml" style="     ">configuration_seasia_cities_policy.xml</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/configuration_seasia_cities_malaysia_policy.xml" style="     ">configuration_seasia_cities_policy.xml</a>
 </td>
 </tr>
 </tbody>
@@ -588,7 +638,7 @@ Link
 Excel spreadsheet showing initial calculations to build this policy
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/data/Malaysia/inputs/malaysia_elec_fuel_mix_2030_pathway.xlsx" style="     ">malaysia_elec_fuel_mix_2030_pathway.xlsx</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/data/malaysia/inputs/malaysia_elec_fuel_mix_2030_pathway.xlsx" style="     ">malaysia_elec_fuel_mix_2030_pathway.xlsx</a>
 </td>
 </tr>
 <tr>
@@ -597,7 +647,7 @@ XML file for GCAM with electricity generation percentages by fuel in
 2030
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/malaysia_elec_fuel_mix_2030_KL.xml" style="     ">malaysia_elec_fuel_mix_2030_KL.xml</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_elec_fuel_mix_2030_KL.xml" style="     ">malaysia_elec_fuel_mix_2030_KL.xml</a>
 </td>
 </tr>
 <tr>
@@ -605,7 +655,7 @@ XML file for GCAM with electricity generation percentages by fuel in
 XML file for GCAM to set exogenous hydropower generation
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/malaysia_hydro_constraint_2030_KL.xml" style="     ">malaysia_hydro_constraint_2030_KL.xml</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_hydro_constraint_2030_KL.xml" style="     ">malaysia_hydro_constraint_2030_KL.xml</a>
 </td>
 </tr>
 </tbody>
@@ -696,7 +746,7 @@ style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 
 <li>Create a folder in the input directory eg.
 <code>./gcam-core/input/addons/malaysia</code>.</li>
 <li>Download the example XML file <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/malaysia_elec_fuel_mix_2030_KL.xml">malaysia_elec_fuel_mix_2030_KL.xml</a>
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_elec_fuel_mix_2030_KL.xml">malaysia_elec_fuel_mix_2030_KL.xml</a>
 to the folder. (Click on <code>Raw</code> and then
 <code>right-click</code> and select <code>save-as</code>.)</li>
 <li>To make adjustments: within each
@@ -724,7 +774,7 @@ adding the line:
 <p style='font-size:0.9em'>
 <code>&lt;Value name = "scen"&gt;../input/addons/malaysia/malaysia_elec_fuel_mix_2030_KL.xml&lt;/Value&gt;</code></li>
 <li>To adjust the hydropower pathway, download the example XML file <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/malaysia_hydro_constraint_2030_KL.xml">malaysia_hydro_constraint_2030_KL.xml</a>
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_hydro_constraint_2030_KL.xml">malaysia_hydro_constraint_2030_KL.xml</a>
 to the folder.</li>
 <li>Within each <code>fixedOutput</code> tag in the XML, adjust the
 value to reflect desired hydropower output in each period. The user can
@@ -755,6 +805,7 @@ data using GCAM-specific post-processing tools.</p>
 <div id="extract-gcam-data" class="section level2" number="5.1">
 <h2><span class="header-section-number">5.1</span> Extract GCAM
 Data</h2>
+<hr />
 <p><code>gcamextractor</code> is an R package used to extract and
 process GCAM data and manipulate into standardized tables.
 <code>gcamextractor</code> converts GCAM outputs into commonly used
@@ -780,9 +831,9 @@ data &lt;- gcamextractor::readgcam(gcamdatabase = sample_path,
                                 regionsSelect = regions,
                                 regionsAggregate = list(regions),
                                 regionsAggregateNames = &quot;All of Malaysia&quot;,
-                                folder = &quot;..data/Malaysia/gcamextractor&quot;)</code></pre>
-<pre class="r"><code>df1 &lt;- read.csv(&quot;../data/Malaysia/gcamextractor/gcamDataTable_aggClass1.csv&quot;)
-df2 &lt;- read.csv(&quot;../data/Malaysia/gcamextractor/gcamDataTable_aggClass1.csv&quot;)
+                                folder = &quot;..data/malaysia/gcamextractor&quot;)</code></pre>
+<pre class="r"><code>df1 &lt;- read.csv(&quot;../data/malaysia/gcamextractor/gcamDataTable_aggClass1.csv&quot;)
+df2 &lt;- read.csv(&quot;../data/malaysia/gcamextractor/gcamDataTable_aggClass1.csv&quot;)
 
 malaysia &lt;- df1 %&gt;%
   filter(region != (&quot;Rest of Malaysia&quot;),
@@ -790,6 +841,7 @@ malaysia &lt;- df1 %&gt;%
 </div>
 <div id="plot-figures" class="section level2" number="5.2">
 <h2><span class="header-section-number">5.2</span> Plot Figures</h2>
+<hr />
 <p><code>rchart</code> is a comprehensive charting package to plot and
 compare data across scenarios, regions, sectors and time periods in
 GCAM.</p>
