@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?><scenario>
+    <world>
+        
+        <global-technology-database>
+            <location-info sector-name="resid rural air conditioners" subsector-name="electricity">
+		    <technology name="air-conditioner (hi-eff)">
+		        <period year="2020">
+		            <minicam-energy-input name="elect_td_bld">
+			        <efficiency>3.1</efficiency>
+			    </minicam-energy-input>
+			</period>
+		        <period year="2025">
+		            <minicam-energy-input name="elect_td_bld">
+			        <efficiency>3.7</efficiency>
+			    </minicam-energy-input>
+			</period>
+		        <period year="2030">
+		            <minicam-energy-input name="elect_td_bld">
+			        <efficiency>4.3</efficiency>
+			    </minicam-energy-input>
+			</period>
+		        <period year="2035">
+		            <minicam-energy-input name="elect_td_bld">
+			        <efficiency>4.7</efficiency>
+			    </minicam-energy-input>
+			</period>
+		        <period year="2040">
+		            <minicam-energy-input name="elect_td_bld">
+			        <efficiency>5.1</efficiency>
+			    </minicam-energy-input>
+			</period>
+		        <period year="2045">
+		            <minicam-energy-input name="elect_td_bld">
+			        <efficiency>5.6</efficiency>
+			    </minicam-energy-input>
+			</period>
+		        <period year="2050">
+		            <minicam-energy-input name="elect_td_bld">
+			        <efficiency>6</efficiency>
+			    </minicam-energy-input>
+			</period>
+		        <period year="2055">
+		            <minicam-energy-input name="elect_td_bld">
+			        <efficiency>6</efficiency>
+			    </minicam-energy-input>
+			</period>
+		        <period year="2060">
+		            <minicam-energy-input name="elect_td_bld">
+			        <efficiency>6</efficiency>
+			    </minicam-energy-input>
+			</period>
+		        <period year="2065">
+		            <minicam-energy-input name="elect_td_bld">
+			        <efficiency>6</efficiency>
+			    </minicam-energy-input>
+			</period>
+		        <period year="2070">
+		            <minicam-energy-input name="elect_td_bld">
+			        <efficiency>6</efficiency>
+			    </minicam-energy-input>
+			</period>
+
+		    </technology>
+	    </location-info>
+
+            <location-info sector-name="resid urban air conditioners" subsector-name="electricity">
+		    <technology name="air-conditioner (hi-eff)">
+		        <period year="2020">
+		            <minicam-energy-input name="elect_td_bld">
+			        <efficiency>3.1</efficiency>
+			    </minicam-energy-input>
+			</period>
+		        <period year="2025">
+		            <minicam-energy-input name="elect_td_bld">
+			        <efficiency>3.7</efficiency>
+			    </minicam-energy-input>
+			</period>
+		        <period year="2030">
+		            <minicam-energy-input name="elect_td_bld">
+			        <efficiency>4.3</efficiency>
+			    </minicam-energy-input>
+			</period>
+		        <period year="2035">
+		            <minicam-energy-input name="elect_td_bld">
+			        <efficiency>4.7</efficiency>
+			    </minicam-energy-input>
+			</period>
+		        <period year="2040">
+		            <minicam-energy-input name="elect_td_bld">
+			        <efficiency>5.1</efficiency>
+			    </minicam-energy-input>
+			</period>
+		        <period year="2045">
+		            <minicam-energy-input name="elect_td_bld">
+			        <efficiency>5.6</efficiency>
+			    </minicam-energy-input>
+			</period>
+		        <period year="2050">
+		            <minicam-energy-input name="elect_td_bld">
+			        <efficiency>6</efficiency>
+			    </minicam-energy-input>
+			</period>
+		        <period year="2055">
+		            <minicam-energy-input name="elect_td_bld">
+			        <efficiency>6</efficiency>
+			    </minicam-energy-input>
+			</period>
+		        <period year="2060">
+		            <minicam-energy-input name="elect_td_bld">
+			        <efficiency>6</efficiency>
+			    </minicam-energy-input>
+			</period>
+		        <period year="2065">
+		            <minicam-energy-input name="elect_td_bld">
+			        <efficiency>6</efficiency>
+			    </minicam-energy-input>
+			</period>
+		        <period year="2070">
+		            <minicam-energy-input name="elect_td_bld">
+			        <efficiency>6</efficiency>
+			    </minicam-energy-input>
+			</period>
+
+		    </technology>
+	    </location-info>			
+		
+        </global-technology-database>
+
+     </world>
+</scenario>

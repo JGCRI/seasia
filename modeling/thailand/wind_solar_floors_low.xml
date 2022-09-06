@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario>
+   <world>
+      <region name="Thailand">
+
+         <policy-portfolio-standard name="Solar-Generation-Floor">
+            <policyType>subsidy</policyType>
+            <market>Thailand</market>
+            <min-price year="2020">-100000</min-price>
+	    <min-price year="2025">0</min-price>
+	    <min-price year="2030">0</min-price>
+	    <min-price year="2035">0</min-price>
+	    <min-price year="2040">0</min-price>
+	    <min-price year="2045">0</min-price>
+	    <min-price year="2050">0</min-price>
+	    <min-price year="2055">0</min-price>
+	    <min-price year="2060">0</min-price>
+	    <min-price year="2065">0</min-price>
+	    <min-price year="2070">0</min-price>
+            
+            <constraint year="2020">0.0134703</constraint>
+            <constraint year="2025">0.019305</constraint>
+            <constraint year="2030">0.2195694</constraint>
+            <constraint year="2035">0.3200283</constraint>
+            <constraint year="2040">0.4333392</constraint>
+            <constraint year="2045">0.468045</constraint>
+            <constraint year="2050">0.5880708</constraint>
+            <constraint year="2055">0.6739794</constraint>
+            <constraint year="2060">0.7585893</constraint>
+            <constraint year="2065">0.8429454</constraint>
+	 </policy-portfolio-standard>
+
+         <policy-portfolio-standard name="Wind-Generation-Floor">
+            <policyType>subsidy</policyType>
+            <market>Thailand</market>
+            <min-price year="2020">-100000</min-price>
+	    <min-price year="2025">0</min-price>
+	    <min-price year="2030">0</min-price>
+	    <min-price year="2035">0</min-price>
+	    <min-price year="2040">0</min-price>
+	    <min-price year="2045">0</min-price>
+	    <min-price year="2050">0</min-price>
+	    <min-price year="2055">0</min-price>
+	    <min-price year="2060">0</min-price>
+	    <min-price year="2065">0</min-price>
+	    <min-price year="2070">0</min-price>
+	    <min-price year="2075">0</min-price>
+	    <min-price year="2080">0</min-price>
+	    <min-price year="2085">0</min-price>
+	    <min-price year="2090">0</min-price>
+	    <min-price year="2095">0</min-price>
+	    <min-price year="2100">0</min-price>
+            
+            <constraint year="2020">0.0086049</constraint>
+            <constraint year="2025">0.0099549</constraint>
+            <constraint year="2030">0.0244512</constraint>
+            <constraint year="2035">0.131787</constraint>
+            <constraint year="2040">0.1225044</constraint>
+            <constraint year="2045">0.1619919</constraint>
+            <constraint year="2050">0.1866618</constraint>
+            <constraint year="2055">0.3344004</constraint>
+            <constraint year="2060">0.3749976</constraint>
+            <constraint year="2065">0.4154247</constraint>
+         </policy-portfolio-standard>
+
+      </region>
+   </world>
+</scenario>
