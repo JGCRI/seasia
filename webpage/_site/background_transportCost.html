@@ -11,9 +11,9 @@
 
 
 
-<title>header.knit</title>
+<title>background_transportCost.knit</title>
 
-<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -59,7 +59,6 @@ if (window.hljs) {
 
 
 
-
 <link rel="stylesheet" href="style.css" type="text/css" />
 
 
@@ -84,9 +83,6 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
-}
-details > summary > p:only-child {
-  display: inline;
 }
 pre code {
   padding: 0;
@@ -239,7 +235,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -272,9 +268,6 @@ $(document).ready(function () {
   <a href="modeling_thailand.html">Modeling - Thailand</a>
 </li>
 <li>
-  <a href="modeling_malaysia.html">Modeling - Malaysia</a>
-</li>
-<li>
   <a href="https://github.com/JGCRI/seasia">
     <span class="fab fa-github"></span>
      
@@ -293,60 +286,31 @@ $(document).ready(function () {
 </div>
 
 
-<!-- Allow href to tabsets -->
-<script type="text/javascript">
-window.onload = function() {
-  document.querySelector('a[href="' + window.location.href.match("#.*$") + '"]').click();
-}
-
-function goToTab() {
-  var hash = String(window.location.href.match("#.*$"));
-  var target = document.querySelector("a[role = 'tab'][href='" + hash + "']");
-  if (target !== null) {
-    var greatgrandparent = target.parentElement.parentElement.parentElement;
-    if (greatgrandparent.getAttribute("role") == "tabpanel") {
-      document.querySelector("a[role = 'tab'][href='#" + greatgrandparent.getAttribute("id") + "']").click();
-    }
-    target.click();
-    target.scrollIntoView();
-  }
-}
-window.onload = function() {
-  setTimeout(goToTab, 100);
-}
-window.onhashchange = goToTab;
-</script>
-<style type="text/css">
-script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
-</style>
-<script type="text/javascript">
- $(document).ready(function() {
-    $('body').prepend('<div class=\"zoomDiv\"><img src=\"\" class=\"zoomImg\"></div>');
-    // onClick function for all plots (img's)
-    $('img:not(.zoomImg)').click(function() {
-      $('.zoomImg').attr('src', $(this).attr('src')).css({width: '100%'});
-      $('.zoomDiv').css({opacity: '1', width: 'auto', border: '1px solid white', borderRadius: '5px', position: 'fixed', top: '50%', left: '50%', marginRight: '-50%', transform: 'translate(-50%, -50%)', boxShadow: '0px 0px 50px #888888', zIndex: '50', overflow: 'auto', maxHeight: '100%'});
-    });
-    // onClick function for zoomImg
-    $('img.zoomImg').click(function() {
-      $('.zoomDiv').css({opacity: '0', width: '0%'}); 
-    });
-  });
-</script>
-<!-- Set table styles -->
-<style>
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
-</style>
+<!--------------------------------------------------->
+<!---Background - Transportation technology cost----->
+<!--------------------------------------------------->
+<div class="warning"
+style="background-color:#EFFFC9; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
+<p><span></p>
+<h3 style="text-align:center; font-size:24px">
+<b>Background - Transportation Cost</b>
+</h3>
+<p style="margin-left:1em;">
+In GCAM, the costs of different transportation technologies are
+comprised of two components: fuel costs and non-fuel costs. A
+transportation technology’s fuel cost is determined by its vehicle fuel
+intensity as well as fuel price. The non-fuel costs encompass factors
+such as capital costs, operation and maintenance, and service costs.
+These non-fuel costs can be adjusted using the <code>input-cost</code>
+parameter. For more information on how transportation demand is modeled
+in GCAM, including cost calculations, see the transportation sections of
+the GCAM <a
+href="https://jgcri.github.io/gcam-doc/demand_energy.html">Demand for
+Energy</a> documentation.
+</p>
+<p></span></p>
+</div>
+<p><br></p>
 
 
 
