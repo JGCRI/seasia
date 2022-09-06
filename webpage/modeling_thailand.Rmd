@@ -28,10 +28,12 @@ knitr::opts_chunk$set(results = "hide", echo=FALSE, out.width = "75%", fig.align
 
 <br>
 
+Please use the link below to download GCAM.
+
 ```{r key links table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
 library(kableExtra); library(dplyr)
 
-dt_url <- c("https://www.dropbox.com/s/4k3xz97aqwqpqb5/gcam_v5p3_seasia.zip?dl=0")
+dt_url <- c("https://drive.google.com/file/d/1AFhbaTf6K6UsLsIXpne4_ska3stYIHRa/view?usp=sharing")
 
 data.frame(
   File = c("gcamv5p3_seasia")) %>% 
@@ -40,7 +42,35 @@ data.frame(
   kable_styling(bootstrap_options = c("bordered","striped", "hover", "condensed", "responsive")) %>%
   row_spec(0, background = "#2A2A2A", color = "white")
 ```
-<i>Note: You do not need a drop box account to download the file (just click the x and the download link will appear).</i>
+
+<br>
+
+You will need the following prerequisites in order to run GCAM. You will also need at least 8 GB of RAM.
+
+```{r prereq-table, results = 'show', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE}
+
+dt_url <- c("https://www.java.com/en/download/",
+            "https://cran.r-project.org/",
+            "https://www.rstudio.com/",
+            "http://symbolclick.com/xmlmarker_1_1_setup.exe")
+
+links <- c("Install Java 64",
+           "Install R",
+           "Install RStudio",
+           "Install Windows XML Maker")
+
+data.frame(
+  Prerequisite = c("Java 64",
+           "R",
+           "RStudio",
+           "Windows XML Maker")) %>%
+  dplyr::mutate(Link = cell_spec(links,"html",link=dt_url)) %>%
+  kable("html", escape = FALSE) %>%
+  kable_styling(bootstrap_options = c("bordered", "striped", "hover", "condensed", "responsive")) %>%
+  row_spec(0, background = "#2A2A2A", color = "white")
+
+```
+
 <br>
 
 <!-------------------------->

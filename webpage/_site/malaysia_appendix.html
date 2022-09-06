@@ -13,7 +13,7 @@
 
 <title>Appendix (Malaysia)</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -62,6 +62,7 @@ if (window.hljs) {
 
 
 
+
 <link rel="stylesheet" href="style.css" type="text/css" />
 
 
@@ -86,6 +87,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -311,7 +315,7 @@ div.tocify {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -342,6 +346,9 @@ div.tocify {
 </li>
 <li>
   <a href="modeling_thailand.html">Modeling - Thailand</a>
+</li>
+<li>
+  <a href="modeling_malaysia.html">Modeling - Malaysia</a>
 </li>
 <li>
   <a href="https://github.com/JGCRI/seasia">
@@ -511,145 +518,8 @@ in Malaysia and Kuala Lumpur</strong>
 </div>
 </div>
 </div>
-<div id="gcam-initial-diagnostics" class="section level1 tabset"
-number="2">
-<h1 class="tabset"><span class="header-section-number">2</span> GCAM
-Initial Diagnostics</h1>
-<!-------------------------->
-<!-------------------------->
-<p align="center">
-<img src="images/divider.png">
-</p>
-<!-------------------------->
-<div id="energy" class="section level2 tabset tabset-pills"
-number="2.1">
-<h2 class="tabset tabset-pills"><span
-class="header-section-number">2.1</span> Energy</h2>
-<!-------------------------->
-<div id="final-consumption" class="section level3" number="2.1.1">
-<h3><span class="header-section-number">2.1.1</span> Final
-consumption</h3>
-<div class="figure" style="text-align: center">
-<img src="malaysia_appendix_files/figure-html/final-energy-1.png" alt="**Figure 10.1.1.1**" width="75%" />
-<p class="caption">
-<strong>Figure 10.1.1.1</strong>
-</p>
-</div>
-<!-------------------------->
-</div>
-</div>
-<div id="electricity" class="section level2 tabset tabset-pills"
-number="2.2">
-<h2 class="tabset tabset-pills"><span
-class="header-section-number">2.2</span> Electricity</h2>
-<!-------------------------->
-<div id="final-consumption-1" class="section level3" number="2.2.1">
-<h3><span class="header-section-number">2.2.1</span> Final
-consumption</h3>
-<div class="figure" style="text-align: center">
-<img src="malaysia_appendix_files/figure-html/final-electricity-1.png" alt="**Figure 10.2.1.1**" width="75%" />
-<p class="caption">
-<strong>Figure 10.2.1.1</strong>
-</p>
-</div>
-<!-------------------------->
-</div>
-</div>
-<div id="emissions" class="section level2 tabset tabset-pills"
-number="2.3">
-<h2 class="tabset tabset-pills"><span
-class="header-section-number">2.3</span> Emissions</h2>
-<!-------------------------->
-<div id="co2-by-sector" class="section level3" number="2.3.1">
-<h3><span class="header-section-number">2.3.1</span> CO2 by Sector</h3>
-<div class="figure" style="text-align: center">
-<img src="malaysia_appendix_files/figure-html/co2-emissions-1.png" alt="**Figure 10.3.1.1**" width="75%" />
-<p class="caption">
-<strong>Figure 10.3.1.1</strong>
-</p>
-</div>
-<!-------------------------->
-</div>
-</div>
-<div id="buildings" class="section level2 tabset tabset-pills"
-number="2.4">
-<h2 class="tabset tabset-pills"><span
-class="header-section-number">2.4</span> Buildings</h2>
-<!-------------------------->
-<div id="co2-emissions" class="section level3" number="2.4.1">
-<h3><span class="header-section-number">2.4.1</span> CO2 emissions</h3>
-<div class="figure" style="text-align: center">
-<img src="malaysia_appendix_files/figure-html/building-co2-1.png" alt="**Figure 10.4.1.1**" width="75%" />
-<p class="caption">
-<strong>Figure 10.4.1.1</strong>
-</p>
-</div>
-</div>
-<div id="energy-consumption" class="section level3" number="2.4.2">
-<h3><span class="header-section-number">2.4.2</span> Energy
-consumption</h3>
-<div class="figure" style="text-align: center">
-<img src="malaysia_appendix_files/figure-html/building-energy-1.png" alt="**Figure 10.4.2.1**" width="75%" />
-<p class="caption">
-<strong>Figure 10.4.2.1</strong>
-</p>
-</div>
-</div>
-<div id="energy-consumption-by-sector" class="section level3"
-number="2.4.3">
-<h3><span class="header-section-number">2.4.3</span> Energy consumption
-by sector</h3>
-<div class="figure" style="text-align: center">
-<img src="malaysia_appendix_files/figure-html/building-energy-sector-1.png" alt="**Figure 10.4.3.1**" width="75%" />
-<p class="caption">
-<strong>Figure 10.4.3.1</strong>
-</p>
-</div>
-<!-------------------------->
-</div>
-</div>
-<div id="transportation" class="section level2 tabset tabset-pills"
-number="2.5">
-<h2 class="tabset tabset-pills"><span
-class="header-section-number">2.5</span> Transportation</h2>
-<!-------------------------->
-<div id="co2-emissions-1" class="section level3" number="2.5.1">
-<h3><span class="header-section-number">2.5.1</span> CO2 emissions</h3>
-<div class="figure" style="text-align: center">
-<img src="malaysia_appendix_files/figure-html/transport-co2-1.png" alt="**Figure 10.5.1.1**" width="75%" />
-<p class="caption">
-<strong>Figure 10.5.1.1</strong>
-</p>
-</div>
-</div>
-<div id="co2-emissions-by-mode" class="section level3" number="2.5.2">
-<h3><span class="header-section-number">2.5.2</span> CO2 emissions by
-mode</h3>
-<div class="figure" style="text-align: center">
-<img src="malaysia_appendix_files/figure-html/transport-co2-mode-1.png" alt="**Figure 10.5.2.1**" width="75%" />
-<p class="caption">
-<strong>Figure 10.5.2.1</strong>
-</p>
-</div>
-</div>
-<div id="co2-emissions-by-class---road" class="section level3"
-number="2.5.3">
-<h3><span class="header-section-number">2.5.3</span> CO2 emissions by
-class - road</h3>
-<div class="figure" style="text-align: center">
-<img src="malaysia_appendix_files/figure-html/transport-co2-class-road-1.png" alt="**Figure 10.5.3.1**" width="75%" />
-<p class="caption">
-<strong>Figure 10.5.3.1</strong>
-</p>
-</div>
-<p><br></p>
-<!-------------------------->
-<!-------------------------->
-</div>
-</div>
-</div>
-<div id="scenarios" class="section level1 tabset" number="3">
-<h1 class="tabset"><span class="header-section-number">3</span>
+<div id="scenarios" class="section level1 tabset" number="2">
+<h1 class="tabset"><span class="header-section-number">2</span>
 Scenarios</h1>
 <!-------------------------->
 <!-------------------------->
@@ -711,8 +581,8 @@ by renewable energy by 2030</li>
 <!-------------------------->
 <!-------------------------->
 </div>
-<div id="data-needs-andor-questions" class="section level1" number="4">
-<h1><span class="header-section-number">4</span> Data needs and/or
+<div id="data-needs-andor-questions" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> Data needs and/or
 questions</h1>
 <!-------------------------->
 <!-------------------------->

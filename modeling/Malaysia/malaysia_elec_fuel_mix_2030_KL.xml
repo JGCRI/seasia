@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario>
+   <world>
+      <region name="Malaysia">
+         <policy-portfolio-standard name="Wind-Generation-Floor">
+            <policyType>subsidy</policyType>
+            <market>Malaysia</market>
+            <min-price year="2020">0</min-price>
+	    <min-price year="2025">0</min-price>
+	    <min-price year="2030">0</min-price>
+	    <min-price year="2035">0</min-price>
+	    <min-price year="2040">0</min-price>
+	    <min-price year="2045">0</min-price>
+	    <min-price year="2050">0</min-price>
+	    <min-price year="2055">0</min-price>
+	    <min-price year="2060">0</min-price>
+	    <min-price year="2065">0</min-price>
+	    <min-price year="2070">0</min-price>
+	    <min-price year="2075">0</min-price>
+	    <min-price year="2080">0</min-price>
+	    <min-price year="2085">0</min-price>
+	    <min-price year="2090">0</min-price>
+	    <min-price year="2095">0</min-price>
+	    <min-price year="2100">0</min-price>
+            
+            <constraint year="2020">0</constraint>
+            <constraint year="2025">0</constraint>
+            <constraint year="2030">0</constraint>
+	 </policy-portfolio-standard>
+
+	 <policy-portfolio-standard name="Coal-Generation-Floor">
+            <policyType>subsidy</policyType>
+            <market>Malaysia</market>
+            <min-price year="2020">0</min-price>
+	    <min-price year="2025">0</min-price>
+	    <min-price year="2030">0</min-price>
+	    <min-price year="2035">0</min-price>
+	    <min-price year="2040">0</min-price>
+	    <min-price year="2045">0</min-price>
+	    <min-price year="2050">0</min-price>
+	    <min-price year="2055">0</min-price>
+	    <min-price year="2060">0</min-price>
+	    <min-price year="2065">0</min-price>
+	    <min-price year="2070">0</min-price>
+	    <min-price year="2075">0</min-price>
+	    <min-price year="2080">0</min-price>
+	    <min-price year="2085">0</min-price>
+	    <min-price year="2090">0</min-price>
+	    <min-price year="2095">0</min-price>
+	    <min-price year="2100">0</min-price>
+            
+            <constraint year="2020">0.3259</constraint>
+            <constraint year="2025">0.4233</constraint>
+            <constraint year="2030">0.5206</constraint>
+	 </policy-portfolio-standard>
+
+	 <policy-portfolio-standard name="Gas-Generation-Floor">
+            <policyType>subsidy</policyType>
+            <market>Malaysia</market>
+            	<min-price year="2020">0</min-price>
+	    	<min-price year="2025">0</min-price>
+	    	<min-price year="2030">0</min-price>
+	    	<min-price year="2035">0</min-price>
+	    	<min-price year="2040">0</min-price>
+	    	<min-price year="2045">0</min-price>
+	    	<min-price year="2050">0</min-price>
+	    	<min-price year="2055">0</min-price>
+	    	<min-price year="2060">0</min-price>
+	    	<min-price year="2065">0</min-price>
+	    	<min-price year="2070">0</min-price>
+	    	<min-price year="2075">0</min-price>
+	    	<min-price year="2080">0</min-price>
+	    	<min-price year="2085">0</min-price>
+	    	<min-price year="2090">0</min-price>
+	    	<min-price year="2095">0</min-price>
+	    	<min-price year="2100">0</min-price>
+            
+            	<constraint year="2020">0.2920</constraint>
+            	<constraint year="2025">0.3319</constraint>
+            	<constraint year="2030">0.3719</constraint>
+	    </policy-portfolio-standard>
+
+
+	 
+         <policy-portfolio-standard name="Solar-Generation-Floor">
+            <policyType>subsidy</policyType>
+            <market>Malaysia</market>
+            <min-price year="2020">0</min-price>
+	    <min-price year="2025">0</min-price>
+	    <min-price year="2030">0</min-price>
+	    <min-price year="2035">0</min-price>
+	    <min-price year="2040">0</min-price>
+	    <min-price year="2045">0</min-price>
+	    <min-price year="2050">0</min-price>
+	    <min-price year="2055">0</min-price>
+	    <min-price year="2060">0</min-price>
+	    <min-price year="2065">0</min-price>
+	    <min-price year="2070">0</min-price>
+	    <min-price year="2075">0</min-price>
+	    <min-price year="2080">0</min-price>
+	    <min-price year="2085">0</min-price>
+	    <min-price year="2090">0</min-price>
+	    <min-price year="2095">0</min-price>
+	    <min-price year="2100">0</min-price>
+            
+            <constraint year="2020">0.0420</constraint>
+            <constraint year="2025">0.0830</constraint>
+            <constraint year="2030">0.1240</constraint>
+         </policy-portfolio-standard>
+
+
+	 <policy-portfolio-standard name="Biomass-Generation-Floor">
+            <policyType>subsidy</policyType>
+            <market>Malaysia</market>
+             <min-price year="2020">0</min-price>
+             <min-price year="2025">0</min-price>
+             <min-price year="2030">0</min-price>
+             <min-price year="2035">0</min-price>
+             <min-price year="2040">0</min-price>
+             <min-price year="2045">0</min-price>
+             <min-price year="2050">0</min-price>
+             <min-price year="2055">0</min-price>
+             <min-price year="2060">0</min-price>
+             <min-price year="2065">0</min-price>
+             <min-price year="2070">0</min-price>
+             <min-price year="2075">0</min-price>
+             <min-price year="2080">0</min-price>
+             <min-price year="2085">0</min-price>
+             <min-price year="2090">0</min-price>
+             <min-price year="2095">0</min-price>
+             <min-price year="2100">0</min-price>
+            
+            <constraint year="2020">0.0223</constraint>
+            <constraint year="2025">0.0421</constraint>
+            <constraint year="2030">0.0620</constraint>
+         </policy-portfolio-standard>
+
+	 <policy-portfolio-standard name="Geothermal-Generation-Floor">
+            <policyType>subsidy</policyType>
+            <market>Malaysia</market>
+             <min-price year="2020">0</min-price>
+             <min-price year="2025">0</min-price>
+             <min-price year="2030">0</min-price>
+             <min-price year="2035">0</min-price>
+             <min-price year="2040">0</min-price>
+             <min-price year="2045">0</min-price>
+             <min-price year="2050">0</min-price>
+             <min-price year="2055">0</min-price>
+             <min-price year="2060">0</min-price>
+             <min-price year="2065">0</min-price>
+             <min-price year="2070">0</min-price>
+             <min-price year="2075">0</min-price>
+             <min-price year="2080">0</min-price>
+             <min-price year="2085">0</min-price>
+             <min-price year="2090">0</min-price>
+             <min-price year="2095">0</min-price>
+             <min-price year="2100">0</min-price>
+            
+            <constraint year="2020">0</constraint>
+            <constraint year="2025">0</constraint>
+            <constraint year="2030">0</constraint>
+         </policy-portfolio-standard>
+
+
+	 <policy-portfolio-standard name="Oil-Generation-Floor">
+            <policyType>subsidy</policyType>
+            <market>Malaysia</market>
+             <min-price year="2020">0</min-price>
+             <min-price year="2025">0</min-price>
+             <min-price year="2030">0</min-price>
+             <min-price year="2035">0</min-price>
+             <min-price year="2040">0</min-price>
+             <min-price year="2045">0</min-price>
+             <min-price year="2050">0</min-price>
+             <min-price year="2055">0</min-price>
+             <min-price year="2060">0</min-price>
+             <min-price year="2065">0</min-price>
+             <min-price year="2070">0</min-price>
+             <min-price year="2075">0</min-price>
+             <min-price year="2080">0</min-price>
+             <min-price year="2085">0</min-price>
+             <min-price year="2090">0</min-price>
+             <min-price year="2095">0</min-price>
+             <min-price year="2100">0</min-price>
+            
+            <constraint year="2020">0.0166</constraint>
+            <constraint year="2025">0.0269</constraint>
+            <constraint year="2030">0.0372</constraint>
+         </policy-portfolio-standard>
+
+
+
+	 <policy-portfolio-standard name="Nuclear-Generation-Floor">
+            <policyType>subsidy</policyType>
+            <market>Malaysia</market>
+             <min-price year="2020">0</min-price>
+             <min-price year="2025">0</min-price>
+             <min-price year="2030">0</min-price>
+             <min-price year="2035">0</min-price>
+             <min-price year="2040">0</min-price>
+             <min-price year="2045">0</min-price>
+             <min-price year="2050">0</min-price>
+             <min-price year="2055">0</min-price>
+             <min-price year="2060">0</min-price>
+             <min-price year="2065">0</min-price>
+             <min-price year="2070">0</min-price>
+             <min-price year="2075">0</min-price>
+             <min-price year="2080">0</min-price>
+             <min-price year="2085">0</min-price>
+             <min-price year="2090">0</min-price>
+             <min-price year="2095">0</min-price>
+             <min-price year="2100">0</min-price>
+            
+            <constraint year="2020">0</constraint>
+            <constraint year="2025">0</constraint>
+            <constraint year="2030">0</constraint>
+         </policy-portfolio-standard>
+
+
+
+
+         <supplysector name="electricity">
+
+            <subsector name="solar">
+               <stub-technology name="PV">         
+                   <period year="2020">
+                       <input-subsidy name="Solar-Generation-Floor"/>
+                   </period>
+                   <period year="2025">
+                       <input-subsidy name="Solar-Generation-Floor"/>
+                   </period>
+                   <period year="2030">
+                       <input-subsidy name="Solar-Generation-Floor"/>
+                   </period>
+               </stub-technology>
+
+               <stub-technology name="PV_storage">
+                    <period year="2020">
+                        <input-subsidy name="Solar-Generation-Floor"/>
+                    </period>
+                    <period year="2025">
+                        <input-subsidy name="Solar-Generation-Floor"/>
+                    </period>
+                    <period year="2030">
+                        <input-subsidy name="Solar-Generation-Floor"/>
+                    </period>
+                </stub-technology>
+
+                <stub-technology name="CSP">
+                    <period year="2020">
+                        <input-subsidy name="Solar-Generation-Floor"/>
+                    </period>
+                    <period year="2025">
+                        <input-subsidy name="Solar-Generation-Floor"/>
+                    </period>
+                    <period year="2030">
+                        <input-subsidy name="Solar-Generation-Floor"/>
+                    </period>
+                </stub-technology>
+
+                <stub-technology name="CSP_storage">
+                    <period year="2020">
+                        <input-subsidy name="Solar-Generation-Floor"/>
+                    </period>
+                    <period year="2025">
+                        <input-subsidy name="Solar-Generation-Floor"/>
+                    </period>
+                    <period year="2030">
+                        <input-subsidy name="Solar-Generation-Floor"/>
+                    </period>
+                </stub-technology>           
+            </subsector>
+
+
+	    <subsector name="nuclear">
+               <stub-technology name="Gen_III">         
+                   <period year="2020">
+                       <input-subsidy name="Nuclear-Generation-Floor"/>
+                   </period>
+                   <period year="2025">
+                       <input-subsidy name="Nuclear-Generation-Floor"/>
+                   </period>
+                   <period year="2030">
+                       <input-subsidy name="Nuclear-Generation-Floor"/>
+                   </period>
+               </stub-technology>
+	    </subsector>
+
+
+
+
+            <subsector name="wind">
+               <stub-technology name="wind">
+                   <period year="2020">
+                       <input-subsidy name="Wind-Generation-Floor"/>
+                   </period>
+                   <period year="2025">
+                       <input-subsidy name="Wind-Generation-Floor"/>
+                   </period>
+                   <period year="2030">
+                       <input-subsidy name="Wind-Generation-Floor"/>
+                   </period>
+               </stub-technology>
+
+                <stub-technology name="wind_storage">
+                    <period year="2020">
+                        <input-subsidy name="Wind-Generation-Floor"/>
+                    </period>
+                    <period year="2025">
+                        <input-subsidy name="Wind-Generation-Floor"/>
+                    </period>
+                    <period year="2030">
+                        <input-subsidy name="Wind-Generation-Floor"/>
+                    </period>
+                </stub-technology>
+
+                <stub-technology name="wind_offshore">
+                    <period year="2020">
+                        <input-subsidy name="Wind-Generation-Floor"/>
+                    </period>
+                    <period year="2025">
+                        <input-subsidy name="Wind-Generation-Floor"/>
+                    </period>
+                    <period year="2030">
+                        <input-subsidy name="Wind-Generation-Floor"/>
+                    </period>
+                </stub-technology>
+            </subsector>
+
+
+            <subsector name="biomass">
+               <stub-technology name="biomass (conv)">
+                   <period year="2020">
+                       <input-subsidy name="Biomass-Generation-Floor"/>
+                   </period>
+                   <period year="2025">
+                       <input-subsidy name="Biomass-Generation-Floor"/>
+                   </period>
+                   <period year="2030">
+                       <input-subsidy name="Biomass-Generation-Floor"/>
+                   </period>
+               </stub-technology>
+
+                <stub-technology name="biomass (conv CCS)">
+                    <period year="2020">
+                        <input-subsidy name="Biomass-Generation-Floor"/>
+                    </period>
+                    <period year="2025">
+                        <input-subsidy name="Biomass-Generation-Floor"/>
+                    </period>
+                    <period year="2030">
+                        <input-subsidy name="Biomass-Generation-Floor"/>
+                    </period>
+                </stub-technology>
+
+                <stub-technology name="biomass (IGCC)">
+                    <period year="2020">
+                        <input-subsidy name="Biomass-Generation-Floor"/>
+                    </period>
+                    <period year="2025">
+                        <input-subsidy name="Biomass-Generation-Floor"/>
+                    </period>
+                    <period year="2030">
+                        <input-subsidy name="Biomass-Generation-Floor"/>
+                    </period>
+                </stub-technology>
+
+                <stub-technology name="biomass (IGCC CCS)">
+                    <period year="2020">
+                        <input-subsidy name="Biomass-Generation-Floor"/>
+                    </period>
+                    <period year="2025">
+                        <input-subsidy name="Biomass-Generation-Floor"/>
+                    </period>
+                    <period year="2030">
+                        <input-subsidy name="Biomass-Generation-Floor"/>
+                    </period>
+                </stub-technology>
+            </subsector>
+
+	    
+	    <subsector name = "coal">
+		<stub-technology name="coal (IGCC)">
+		    <period year="2020">
+                    	<input-subsidy name="Coal-Generation-Floor"/>
+                    </period>
+                    <period year="2025">
+                        <input-subsidy name="Coal-Generation-Floor"/>
+                    </period>
+                    <period year="2030">
+                        <input-subsidy name="Coal-Generation-Floor"/>
+                    </period>
+		</stub-technology>
+
+		<stub-technology name="coal (conv pul)">
+		    <period year="2020">
+                    	<input-subsidy name="Coal-Generation-Floor"/>
+                    </period>
+                    <period year="2025">
+                        <input-subsidy name="Coal-Generation-Floor"/>
+                    </period>
+                    <period year="2030">
+                        <input-subsidy name="Coal-Generation-Floor"/>
+                    </period>
+		</stub-technology>
+	    </subsector>
+
+
+	    <subsector name = "gas">
+		<stub-technology name="gas (CC)">
+		    <period year="2020">
+                    	<input-subsidy name="Gas-Generation-Floor"/>
+                    </period>
+                    <period year="2025">
+                        <input-subsidy name="Gas-Generation-Floor"/>
+                    </period>
+                    <period year="2030">
+                        <input-subsidy name="Gas-Generation-Floor"/>
+                    </period>
+		</stub-technology>
+
+		<stub-technology name="gas (steam/CT)">
+		    <period year="2020">
+                    	<input-subsidy name="Gas-Generation-Floor"/>
+                    </period>
+                    <period year="2025">
+                        <input-subsidy name="Gas-Generation-Floor"/>
+                    </period>
+                    <period year="2030">
+                        <input-subsidy name="Gas-Generation-Floor"/>
+                    </period>
+		</stub-technology>
+	    </subsector>
+
+	    <subsector name = "geothermal">
+		<stub-technology name="geothermal">
+		    <period year="2020">
+                    	<input-subsidy name="Geothermal-Generation-Floor"/>
+                    </period>
+                    <period year="2025">
+                        <input-subsidy name="Geothermal-Generation-Floor"/>
+                    </period>
+                    <period year="2030">
+                        <input-subsidy name="Geothermal-Generation-Floor"/>
+                    </period>
+		</stub-technology>
+
+	    </subsector>
+
+	    <subsector name = "refined liquids">
+		<stub-technology name="refined liquids (CC)">
+		    <period year="2020">
+                    	<input-subsidy name="Oil-Generation-Floor"/>
+                    </period>
+                    <period year="2025">
+                        <input-subsidy name="Oil-Generation-Floor"/>
+                    </period>
+                    <period year="2030">
+                        <input-subsidy name="Oil-Generation-Floor"/>
+                    </period>
+		</stub-technology>
+
+		<stub-technology name="refined liquids (steam/CT)">
+		    <period year="2020">
+                    	<input-subsidy name="Oil-Generation-Floor"/>
+                    </period>
+                    <period year="2025">
+                        <input-subsidy name="Oil-Generation-Floor"/>
+                    </period>
+                    <period year="2030">
+                        <input-subsidy name="Oil-Generation-Floor"/>
+                    </period>
+		</stub-technology>
+	    </subsector>
+       
+         </supplysector>
+
+	<supplysector name="elect_td_bld">
+	    <subsector name="rooftop_pv">
+               <stub-technology name="rooftop_pv">         
+                   <period year="2020">
+                       <input-subsidy name="Solar-Generation-Floor"/>
+                   </period>
+                   <period year="2025">
+                       <input-subsidy name="Solar-Generation-Floor"/>
+                   </period>
+                   <period year="2030">
+                       <input-subsidy name="Solar-Generation-Floor"/>
+                   </period>
+               </stub-technology>
+	    </subsector>
+	</supplysector>
+	
+
+      </region>
+   </world>
+</scenario>

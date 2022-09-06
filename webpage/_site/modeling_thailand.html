@@ -13,7 +13,7 @@
 
 <title>Modeling - Thailand</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -64,6 +64,7 @@ if (window.hljs) {
 
 
 
+
 <link rel="stylesheet" href="style.css" type="text/css" />
 
 
@@ -88,6 +89,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -313,7 +317,7 @@ div.tocify {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -344,6 +348,9 @@ div.tocify {
 </li>
 <li>
   <a href="modeling_thailand.html">Modeling - Thailand</a>
+</li>
+<li>
+  <a href="modeling_malaysia.html">Modeling - Malaysia</a>
 </li>
 <li>
   <a href="https://github.com/JGCRI/seasia">
@@ -387,6 +394,23 @@ window.onload = function() {
 }
 window.onhashchange = goToTab;
 </script>
+<style type="text/css">
+script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+</style>
+<script type="text/javascript">
+ $(document).ready(function() {
+    $('body').prepend('<div class=\"zoomDiv\"><img src=\"\" class=\"zoomImg\"></div>');
+    // onClick function for all plots (img's)
+    $('img:not(.zoomImg)').click(function() {
+      $('.zoomImg').attr('src', $(this).attr('src')).css({width: '100%'});
+      $('.zoomDiv').css({opacity: '1', width: 'auto', border: '1px solid white', borderRadius: '5px', position: 'fixed', top: '50%', left: '50%', marginRight: '-50%', transform: 'translate(-50%, -50%)', boxShadow: '0px 0px 50px #888888', zIndex: '50', overflow: 'auto', maxHeight: '100%'});
+    });
+    // onClick function for zoomImg
+    $('img.zoomImg').click(function() {
+      $('.zoomDiv').css({opacity: '0', width: '0%'}); 
+    });
+  });
+</script>
 <!-- Set table styles -->
 <style>
 table {
@@ -412,6 +436,7 @@ Asia</h1>
 <img src="images/divider.png">
 </p>
 <p><br></p>
+<p>Please use the link below to download GCAM.</p>
 <table class="table table-bordered table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -429,13 +454,63 @@ Location
 gcamv5p3_seasia
 </td>
 <td style="text-align:left;">
-<a href="https://www.dropbox.com/s/4k3xz97aqwqpqb5/gcam_v5p3_seasia.zip?dl=0" style="     ">Link</a>
+<a href="https://drive.google.com/file/d/1AFhbaTf6K6UsLsIXpne4_ska3stYIHRa/view?usp=sharing" style="     ">Link</a>
 </td>
 </tr>
 </tbody>
 </table>
-<p><i>Note: You do not need a drop box account to download the file
-(just click the x and the download link will appear).</i> <br></p>
+<p><br></p>
+<p>You will need the following prerequisites in order to run GCAM. You
+will also need at least 8 GB of RAM.</p>
+<table class="table table-bordered table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+Prerequisite
+</th>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+Link
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Java 64
+</td>
+<td style="text-align:left;">
+<a href="https://www.java.com/en/download/" style="     ">Install Java
+64</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+R
+</td>
+<td style="text-align:left;">
+<a href="https://cran.r-project.org/" style="     ">Install R</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+RStudio
+</td>
+<td style="text-align:left;">
+<a href="https://www.rstudio.com/" style="     ">Install RStudio</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Windows XML Maker
+</td>
+<td style="text-align:left;">
+<a href="http://symbolclick.com/xmlmarker_1_1_setup.exe" style="     ">Install
+Windows XML Maker</a>
+</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
 <!-------------------------->
 <!-------------------------->
 </div>
