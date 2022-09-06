@@ -257,7 +257,7 @@ One way to set a generation floor for each fuel type in GCAM is to use a subsidy
 
 <p style='margin-left:1em;'>
 1. Create a folder in the input directory eg. `./gcam-core/input/addons`.
-2. Download the desired constraint file (either [wind_solar_floors_high.xml]("https://github.com/JGCRI/seasia/blob/main/modeling/thailand/wind_solar_floors_high.xml") or [wind_solar_floors_low.xml]("https://github.com/JGCRI/seasia/blob/main/modeling/thailand/wind_solar_floors_low.xml")) as well as the subsidy link file [wind_solar_input_subsidies](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/wind_solar_input_subsidies.xml) to the folder.
+2. Download the desired constraint file (either [wind_solar_floors_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/wind_solar_floors_high.xml) or [wind_solar_floors_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/wind_solar_floors_low.xml)) as well as the subsidy link file [wind_solar_input_subsidies](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/wind_solar_input_subsidies.xml) to the folder.
 4. To make custom adjustments, optionally change the following within each `policy-portfolio-standard` tag in the XML:
 </p>
 
@@ -478,7 +478,7 @@ We can use GCAM's `shell-conductance` parameter to represent an increase in the 
 
 <p style='margin-left:1em;'>
 1. Create a folder in the input directory: `./gcam-core/input/addons`.
-2. Download the desired xml file (either [shell_eff_high.xml]("https://github.com/JGCRI/seasia/blob/main/modeling/thailand/shell_eff_high.xml") or [shell_eff_low.xml]("https://github.com/JGCRI/seasia/blob/main/modeling/thailand/shell_eff_low.xml")) to the folder.
+2. Download the desired xml file (either [shell_eff_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/shell_eff_high.xml) or [shell_eff_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/shell_eff_low.xml)) to the folder.
 4. To make custom adjustments: within each `gcam-consumer` tag in the XML, specify the desired `shell-conductance` values for each year.
 5. Save the xml and then point to it in your configuration file by adding the line (replace `high` with `low` as needed): 
 <p style='font-size:0.8em'>
@@ -577,7 +577,7 @@ We can use GCAM's `efficiency` parameter corresponding with the relevant AC tech
 
 <p style='margin-left:1em;'>
 1. Create a folder in the input directory: `./gcam-core/input/addons`.
-2. Download the desired xml file (either [ac_eff_high.xml]("https://github.com/JGCRI/seasia/blob/main/modeling/thailand/ac_eff_high.xml") or [ac_eff_low.xml]("https://github.com/JGCRI/seasia/blob/main/modeling/thailand/ac_eff_low.xml")) to the folder.
+2. Download the desired xml file (either [ac_eff_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/ac_eff_high.xml) or [ac_eff_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/ac_eff_low.xml)) to the folder.
 4. To make custom adjustments: within each period, adjust the efficiency value.
 5. Save the xml and then point to it in your configuration file by adding the line (replace `high` with `low` as needed): 
 <p style='font-size:0.8em'>
@@ -674,7 +674,7 @@ We can gradually decrease the shareweights of all non-LED residential lighting t
 
 <p style='margin-left:1em;'>
 1. Create a folder in the input directory: `./gcam-core/input/addons`.
-2. Download the desired xml file (either [buildings_led_high.xml]("https://github.com/JGCRI/seasia/blob/main/modeling/thailand/buildings_led_high.xml") or [buildings_led_low.xml]("https://github.com/JGCRI/seasia/blob/main/modeling/thailand/buildings_led_low.xml")) to the folder.
+2. Download the desired xml file (either [buildings_led_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/buildings_led_high.xml) or [buildings_led_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/buildings_led_low.xml)) to the folder.
 4. To adjust the year in which 100% LED lighting is achieved: within each non-LED `stub-technology` tag in the XML, change the `to-year` in the first `interpolation-rule` and the `from-year` in the second. Also change the `year` of the `period` tag in which the `share-weight` is 0.
 5. Save the xml and then point to it in your configuration file by adding the line (replace `high` with `low` as needed): 
 <p style='font-size:0.8em'>
