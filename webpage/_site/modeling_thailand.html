@@ -2178,6 +2178,128 @@ needed):</li>
 Constraints</h1>
 <!-------------------------->
 <!-------------------------->
+<table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+Scenario
+</th>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+Files Used
+</th>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+Description
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+SCENARIO_NAME_1
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/FILENAME_1" style="     ">FILENAME_1</a>
+</td>
+<td style="text-align:left;">
+DESCRIPTION OF FILE 1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SCENARIO_NAME_2
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/FILENAME_2" style="     ">FILENAME_2</a>
+</td>
+<td style="text-align:left;">
+DESCRIPTION OF FILE 2
+</td>
+</tr>
+</tbody>
+</table>
+<!-------------------------->
+<!----------Goal------------>
+<!-------------------------->
+<div class="warning"
+style="background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
+<span>
+<h3 style="text-align:center; font-size:24px">
+<b>Goal</b>
+</h3>
+<p style="margin-left:1em;">
+<!---description of the goal goes here--->
+DESCRIPTION OF GOAL
+</p>
+<p></span></p>
+</div>
+<p><br></p>
+<!-------------------------->
+<!--------Approach---------->
+<!-------------------------->
+<div class="warning"
+style="background-color:#fffae0; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
+<p><span></p>
+<h3 style="text-align:center; font-size:24px">
+<b>Approach</b>
+</h3>
+<p style="margin-left:1em;">
+<!---description of the approach goes here--->
+DESCRIPTION OF APPROACH
+</p>
+<p></span></p>
+</div>
+<p><br></p>
+<!--------------------------->
+<!--------Background--------->
+<!--------------------------->
+<div class="warning"
+style="background-color:#EFFFC9; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
+<p><span></p>
+<h3 style="text-align:center; font-size:24px">
+<b>Background - Transportation Cost</b>
+</h3>
+<!---background information goes here--->
+<p style="margin-left:1em;">
+BACKGROUND INFORMATION ABOUT EMISSIONS CONSTRAINTS, INCLUDING LINK(S) TO
+RELEVANT PARTS OF GCAM DOCUMENTATION
+</p>
+<p></span></p>
+</div>
+<p><br></p>
+<!-------------------------->
+<!---GCAM Implementation---->
+<!-------------------------->
+<div class="warning"
+style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
+<span>
+<h3 style="text-align:center; font-size:24px">
+<b>GCAM Implementation</b>
+</h3>
+<p style="margin-left:1em;">
+<ol style="list-style-type: decimal">
+<li>Create a folder in the input directory:
+<code>./gcam-core/input/addons</code>.
+<!---include links to example XMLs here---></li>
+<li>Download the emissions constraint xml file(s) <a
+href="LINK_TO_FILE_1">FILENAME_1</a> and <a
+href="LINK_TO_FILE_2">FILENAME_2</a>) to the folder.
+<!---add description of customization---></li>
+<li>DESCRIBE HOW TO CHANGE RELEVANT PARAMETERS (I.E. NET-ZERO YEAR,
+etc.)</li>
+<li>Save the xml files and then point to them in your configuration file
+by adding the line:</li>
+</ol>
+</p>
+<p style="font-size:0.8em">
+<!---insert exmaple XML filenames--->
+<code>&lt;Value name = "scen"&gt;../input/addons/thailand/FILENAME_1&lt;/Value&gt;</code>
+<code>&lt;Value name = "scen"&gt;../input/addons/thailand/FILENAME_2&lt;/Value&gt;</code>
+</p>
+</p>
+<p></span></p>
+</div>
+<p><br></p>
+<p><br></p>
 <!-------------------------->
 <!-------------------------->
 </div>

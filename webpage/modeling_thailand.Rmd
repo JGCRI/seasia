@@ -1197,6 +1197,118 @@ To represent a phase-in of hydrogen technologies, we can gradually increase thei
 <!-------------------------->
 <!-------------------------->
 
+```{r emissions constraints files table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
+library(kableExtra); library(dplyr)
+
+# in the dt_url vector, add link(s) to the relevant XML file(s) used to run the policy. 
+# also add the files to their corresponding directories in the repo.
+dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/thailand/FILENAME_1",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/FILENAME_2")
+
+# add scenario names, filenames, and descriptions of files to this table.
+# make sure info in this table matches the links provided above (in the same order).
+data.frame(
+  Scenario = c("SCENARIO_NAME_1", "SCENARIO_NAME_2")) %>% 
+  mutate("Files Used" = cell_spec( c("FILENAME_1",
+                                     "FILENAME_2"),
+                                   "html", link = dt_url)) %>% 
+  mutate(Description = c("DESCRIPTION OF FILE 1",
+                         "DESCRIPTION OF FILE 2")) %>%
+  kable("html", escape = FALSE, col.names = c("Scenario", "Files Used", "Description")) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
+  row_spec(0, background = "#2A2A2A", color = "white")
+```
+
+<!-------------------------->
+<!----------Goal------------>
+<!-------------------------->
+
+<div class="warning" style='background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+<h3 style='text-align:center; font-size:24px'>
+<b>Goal</b>
+</h3>
+<p style='margin-left:1em;'>
+<!---description of the goal goes here--->
+DESCRIPTION OF GOAL
+</p>
+</span>
+</div>
+
+<br>
+
+
+<!-------------------------->
+<!--------Approach---------->
+<!-------------------------->
+
+<div class="warning" style='background-color:#fffae0; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+
+<h3 style='text-align:center; font-size:24px'>
+<b>Approach</b></h3>
+
+<p style='margin-left:1em;'>
+<!---description of the approach goes here--->
+DESCRIPTION OF APPROACH
+</p>
+
+</span>
+</div>
+
+<br>
+
+
+<!--------------------------->
+<!--------Background--------->
+<!--------------------------->
+
+<div class="warning" style='background-color:#EFFFC9; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+
+<h3 style='text-align:center; font-size:24px'>
+<b>Background - Transportation Cost</b></h3>
+
+<!---background information goes here--->
+<p style='margin-left:1em;'>
+BACKGROUND INFORMATION ABOUT EMISSIONS CONSTRAINTS, INCLUDING LINK(S) TO RELEVANT PARTS OF GCAM DOCUMENTATION
+</p>
+</span>
+</div>
+
+<br>
+
+<!-------------------------->
+<!---GCAM Implementation---->
+<!-------------------------->
+
+<div class="warning" style='background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+<h3 style='text-align:center; font-size:24px'>
+<b>GCAM Implementation</b>
+</h3>
+
+<p style='margin-left:1em;'>
+1. Create a folder in the input directory: `./gcam-core/input/addons`.
+<!---include links to example XMLs here--->
+2. Download the emissions constraint xml file(s) [FILENAME_1](LINK_TO_FILE_1) and [FILENAME_2](LINK_TO_FILE_2)) to the folder.
+<!---add description of customization--->
+4. DESCRIBE HOW TO CHANGE RELEVANT PARAMETERS (I.E. NET-ZERO YEAR, etc.)
+5. Save the xml files and then point to them in your configuration file by adding the line: 
+</p>
+<p style='font-size:0.8em'>
+<!---insert exmaple XML filenames--->
+`<Value name = "scen">../input/addons/thailand/FILENAME_1</Value>`
+`<Value name = "scen">../input/addons/thailand/FILENAME_2</Value>`
+</p>
+</p>
+
+</span>
+</div>
+
+<br>
+
+<br>
 
 
 <!-------------------------->
