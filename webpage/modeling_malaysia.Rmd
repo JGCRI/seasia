@@ -429,7 +429,21 @@ words! words! words!
 
 #### Malaysia vs Kuala Lumpur
 
-words! words! words!
+```{r rchart-primary-energy, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 15, fig.height = 12}
+
+p_energy <- malaysia %>% 
+  filter(param == "primary energy",
+         region != "Malaysia") %>%
+  mutate(param = units) %>%
+  rchart::chart(folder = "rchart/energy",
+                chart_type = "class_absolute",
+                save = F, 
+                show = F,
+                size_text = 20)
+
+energy$chart_class_byRegion
+```
+
 
 <br>
 
@@ -490,7 +504,22 @@ words! words! words!
 
 #### Malaysia vs Kuala Lumpur
 
-words! words! words!
+```{r rchart-elec-gen, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 15, fig.height = 12}
+electricity_parameters <- c()
+
+electricity <- malaysia %>% 
+  filter(param %in% electricity_parameters,
+         region != "Malaysia") %>%
+  mutate(param = units) %>%
+  rchart::chart(folder = "rchart/electricity",
+                chart_type = "class_absolute",
+                save = F, 
+                show = F,
+                size_text = 20)
+
+electricity$chart_class_byRegion
+```
+
 
 <br>
 
@@ -513,7 +542,20 @@ words! words! words!
 
 #### Malaysia vs Kuala Lumpur
 
-words! words! words!
+```{r rchart-building, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 15, fig.height = 12}
+building_energy <- malaysia %>% 
+  filter(param == "building_energy",
+         region != "Malaysia") %>%
+  mutate(param = units) %>%
+  rchart::chart(folder = "rchart/building_energy",
+                chart_type = "class_absolute",
+                save = F, 
+                show = F,
+                size_text = 20)
+
+building_energy$chart_class_byRegion
+```
+
 
 <br>
 
@@ -536,7 +578,20 @@ words! words! words!
 
 #### Malaysia vs Kuala Lumpur
 
-words! words! words!
+```{r rchart-transport, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 15, fig.height = 12}
+transport <- malaysia %>% 
+  filter(param == "transport mode",
+         region != "Malaysia") %>%
+  mutate(param = units) %>%
+  rchart::chart(folder = "rchart/transport",
+                chart_type = "class_absolute",
+                save = F, 
+                show = F,
+                size_text = 20)
+
+transport$chart_class_byRegion
+```
+
 
 <br>
 
