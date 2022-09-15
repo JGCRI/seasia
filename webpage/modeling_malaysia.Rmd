@@ -240,14 +240,21 @@ Hydropower is exogenous in GCAM and has a fixed pathway. The power generation va
 
 <!-------------------------->
 <!-------------------------->
+<!-------------------------->
 # Diagnostics
+<!-------------------------->
 <!-------------------------->
 <!-------------------------->
 <p align="center"> <img src="images/divider.png"></p>
 
 This section describes how to explore and compare the final output data using GCAM-specific post-processing tools.
 
+<!-------------------------->
+<!-------------------------->
 ## Extract GCAM Data
+<!-------------------------->
+<!-------------------------->
+***
 
 `gcamextractor` is an R package used to extract and process GCAM data and manipulate into standardized tables. `gcamextractor` converts GCAM outputs into commonly used units as well as aggregates across different classes and sectors for easy use in plots, maps and tables. For more information, please reference the documentation page found [here](https://jgcri.github.io/gcamextractor/index.html).
 
@@ -279,15 +286,36 @@ malaysia <- df1 %>%
 
 ```
 
+<br>
 
-## Plot Figures
+<!-------------------------->
+<!-------------------------->
+## Plot Figures 
+<!-------------------------->
+<!-------------------------->
+***
 
-`rchart` is a comprehensive charting package to plot and compare data across scenarios, regions, sectors and time periods in GCAM.
+`rchart` is a comprehensive charting package to plot and compare data across scenarios, regions, sectors and time periods in GCAM. The diagnostic figures below were created using `gcamextractor` and `rchart` and include the following parameters:
+
+* Socioeconomics: population, GDP, GDP per capita
+* CO~2~ emissions by sector
+* GHG emissions by sector
+* Primary energy by fuel
+* Final energy by fuel
+* Final energy by sector
+* Electricity generation by fuel
+* Electricity generation by sector
+* Building energy by subsector
+* Transportation by mode
 
 <br>
 
-### Example 1: Socioeconomic summary
+<!-------------------------->
+### Socioeconomic Summary {.tabset}
+<!-------------------------->
 ***
+
+#### Malaysia vs Kuala Lumpur
 
 ```{r rchart-socio, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 16, fig.height = 8, out.width = "100%"}
 socioeconomic_parameters <- c("pop", "gdp", "gdpPerCapita")
@@ -307,8 +335,25 @@ socioeconomic$chart_region_absolute
 
 <br> 
 
-### Example 2: Emissions by sector
+#### Malaysia
+
+words! words! words!
+
+<br>
+
+
+#### Kuala Lumpur
+
+words! words! words!
+
+<br>
+
+<!-------------------------->
+### Emissions by Sector {.tabset}
+<!-------------------------->
 ***
+
+#### Malaysia vs Kuala Lumpur
 
 ``` {r rchart-emiss, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
 co2 <- malaysia %>% filter(param == "emissCO2BySector",
@@ -337,39 +382,48 @@ emissions$chart_class_byRegion
 
 <br>
 
-### Example 3: Emissions by gas
-***
+#### Malaysia
 
-``` {r rchart-emiss-gas, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
-co2_gas <- co2 %>%
-  mutate(class = "CO2")
-
-ghg_gas <- malaysia %>% 
-  filter(param == "emissGHGByGasGWPAR5",
-         class != "CO2",
-         region != "Malaysia")
-
-malaysia_emissions_gas <- bind_rows(co2_gas, ghg_gas)
-
-```
-
-``` {r rchart-emiss-gas-plot, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
-gas <- malaysia_emissions_gas %>%
-  mutate(param = units) %>%
-  rchart::chart(folder = "rchart/emissions_by_gas",
-                chart_type = "class_absolute",
-                save = F, 
-                show = F,
-                size_text = 10)
-
-gas$chart_class_byRegion
-
-```
+words! words! words!
 
 <br>
 
-### Example 4: Final Energy by Fuel and Sector
+#### Kuala Lumpur
+
+words! words! words!
+
+<br>
+
+<!-------------------------->
+### Primary Energy by Fuel {.tabset}
+<!-------------------------->
 ***
+
+#### Malaysia vs Kuala Lumpur
+
+words! words! words!
+
+<br>
+
+#### Malaysia 
+
+words! words! words!
+
+<br>
+
+#### Kuala Lumpur
+
+words! words! words!
+
+<br>
+
+
+<!-------------------------->
+### Final Energy by Fuel and Sector {.tabset}
+<!-------------------------->
+***
+
+#### Malaysia vs Kuala Lumpur
 
 ```{r rchart-energy, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 15, fig.height = 12}
 energy_parameters <- c("energyFinalConsumBySecEJ", "energyFinalByFuelEJ")
@@ -388,6 +442,88 @@ energy$chart_class_byRegion
 ```
 
 <br>
+
+#### Malaysia
+
+words! words! words!
+
+<br>
+
+#### Kuala Lumpur
+
+words! words! words!
+
+<br>
+
+<!-------------------------->
+### Electricity Generation by Fuel and Sector {.tabset}
+<!-------------------------->
+***
+
+#### Malaysia vs Kuala Lumpur
+
+words! words! words!
+
+<br>
+
+#### Malaysia 
+
+words! words! words!
+
+<br>
+
+#### Kuala Lumpur
+
+words! words! words!
+
+<br>
+
+<!-------------------------->
+### Building Energy by Subsector {.tabset}
+<!-------------------------->
+***
+
+#### Malaysia vs Kuala Lumpur
+
+words! words! words!
+
+<br>
+
+#### Malaysia 
+
+words! words! words!
+
+<br>
+
+#### Kuala Lumpur
+
+words! words! words!
+
+<br>
+
+<!-------------------------->
+### Transportation by Mode {.tabset}
+<!-------------------------->
+***
+
+#### Malaysia vs Kuala Lumpur
+
+words! words! words!
+
+<br>
+
+#### Malaysia 
+
+words! words! words!
+
+<br>
+
+#### Kuala Lumpur
+
+words! words! words!
+
+<br>
+
 
 # {.unlisted .unnumbered}
 ```{r child = 'footer.rmd'}
