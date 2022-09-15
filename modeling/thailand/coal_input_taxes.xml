@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario>
+   <world>
+      <region name="Thailand">
+
+         <supplysector name="electricity">
+	    
+	    <subsector name = "coal">
+		<stub-technology name="coal (IGCC)">
+		    <period year="2020">
+                    	<input-tax name="Coal-Generation-Ceiling"/>
+                    </period>
+                    <period year="2025">
+                        <input-tax name="Coal-Generation-Ceiling"/>
+                    </period>
+                    <period year="2030">
+                        <input-tax name="Coal-Generation-Ceiling"/>
+                    </period>
+                    <period year="2035">
+                        <input-tax name="Coal-Generation-Ceiling"/>
+                    </period>
+                    <period year="2040">
+                        <input-tax name="Coal-Generation-Ceiling"/>
+                    </period>
+                    <period year="2045">
+                        <input-tax name="Coal-Generation-Ceiling"/>
+                    </period>
+                    <period year="2050">
+                        <input-tax name="Coal-Generation-Ceiling"/>
+                    </period>
+                    <period year="2055">
+                        <input-tax name="Coal-Generation-Ceiling"/>
+                    </period>
+                    <period year="2060">
+                        <input-tax name="Coal-Generation-Ceiling"/>
+                    </period>
+                    <period year="2065">
+                        <input-tax name="Coal-Generation-Ceiling"/>
+                    </period>
+		</stub-technology>
+
+		<stub-technology name="coal (conv pul)">
+		    <period year="2020">
+                    	<input-tax name="Coal-Generation-Ceiling"/>
+                    </period>
+                    <period year="2025">
+                        <input-tax name="Coal-Generation-Ceiling"/>
+                    </period>
+                    <period year="2030">
+                        <input-tax name="Coal-Generation-Ceiling"/>
+                    </period>
+                    <period year="2035">
+                        <input-tax name="Coal-Generation-Ceiling"/>
+                    </period>
+                    <period year="2040">
+                        <input-tax name="Coal-Generation-Ceiling"/>
+                    </period>
+                    <period year="2045">
+                        <input-tax name="Coal-Generation-Ceiling"/>
+                    </period>
+                    <period year="2050">
+                        <input-tax name="Coal-Generation-Ceiling"/>
+                    </period>
+                    <period year="2055">
+                        <input-tax name="Coal-Generation-Ceiling"/>
+                    </period>
+                    <period year="2060">
+                        <input-tax name="Coal-Generation-Ceiling"/>
+                    </period>
+                    <period year="2065">
+                        <input-tax name="Coal-Generation-Ceiling"/>
+                    </period>
+		</stub-technology>
+	    </subsector>
+	</supplysector>
+
+	
+      </region>
+   </world>
+</scenario>

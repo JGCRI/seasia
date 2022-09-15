@@ -1,0 +1,17 @@
+<!--------------------------------------------------->
+<!---Background - Transportation technology cost----->
+<!--------------------------------------------------->
+
+<div class="warning" style='background-color:#EFFFC9; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+
+<h3 style='text-align:center; font-size:24px'>
+<b>Background - Transportation Cost</b></h3>
+
+<p style='margin-left:1em;'>
+In GCAM, the costs of different transportation technologies are comprised of two components: fuel costs and non-fuel costs. A transportation technology's fuel cost is determined by its vehicle fuel intensity as well as fuel price. The non-fuel costs encompass factors such as capital costs, operation and maintenance, and service costs. These non-fuel costs can be adjusted using the `input-cost` parameter. For more information on how transportation demand is modeled in GCAM, including cost calculations, see the transportation sections of the GCAM [Demand for Energy](https://jgcri.github.io/gcam-doc/demand_energy.html) documentation.
+</p>
+</span>
+</div>
+
+<br>

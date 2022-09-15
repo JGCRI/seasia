@@ -37,7 +37,7 @@ Please use the link below to download GCAM.
 
 ```{r key-links-table, results = 'show', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE}
 
-dt_url <- c("https://mega.nz/file/hNAyBACY#JrBcDtV4OKZItR7DY77n1nrp6b9hz_vjyXYA0TU5Hwc")
+dt_url <- c("https://drive.google.com/file/d/1AFhbaTf6K6UsLsIXpne4_ska3stYIHRa/view?usp=sharing")
 
 data.frame(
   File = c("gcamv5p3_seasia")) %>% 
@@ -46,7 +46,35 @@ data.frame(
   kable_styling(bootstrap_options = c("bordered","striped", "hover", "condensed", "responsive")) %>%
   row_spec(0, background = "#2A2A2A", color = "white")
 ```
-<i>Note: You do not need a drop box account to download the file (just click the x and the download link will appear).</i>
+
+<br> 
+
+You will need the following prerequisites in order to run GCAM. You will also need at least 8 GB of RAM.
+
+```{r prereq-table, results = 'show', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE}
+
+dt_url <- c("https://www.java.com/en/download/",
+            "https://cran.r-project.org/",
+            "https://www.rstudio.com/",
+            "http://symbolclick.com/xmlmarker_1_1_setup.exe")
+
+links <- c("Install Java 64",
+           "Install R",
+           "Install RStudio",
+           "Install Windows XML Maker")
+
+data.frame(
+  Prerequisite = c("Java 64",
+           "R",
+           "RStudio",
+           "Windows XML Maker")) %>%
+  dplyr::mutate(Link = cell_spec(links,"html",link=dt_url)) %>%
+  kable("html", escape = FALSE) %>%
+  kable_styling(bootstrap_options = c("bordered", "striped", "hover", "condensed", "responsive")) %>%
+  row_spec(0, background = "#2A2A2A", color = "white")
+
+```
+
 <br>
 
 <!-------------------------->
@@ -92,7 +120,7 @@ Below are links to the reference and policy scenarios that we will be using.
 ```{r scenarios-links-table, results = 'show', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE}
 
 dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/configuration_seasia_cities_bau.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/configuration_seasia_cities_policy.xml")
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/configuration_seasia_cities_malaysia_policy.xml")
 
 xml = c("configuration_seasia_cities_bau.xml",
            "configuration_seasia_cities_policy.xml")
@@ -129,9 +157,9 @@ The following subsections give additional details and explanations for the polic
 
 ```{r electricity-generation-files-table, results = 'show', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE}
 
-dt_url <- c("https://github.com/JGCRI/seasia/blob/main/data/Malaysia/inputs/malaysia_elec_fuel_mix_2030_pathway.xlsx",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/malaysia_elec_fuel_mix_2030_KL.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/malaysia_hydro_constraint_2030_KL.xml")
+dt_url <- c("https://github.com/JGCRI/seasia/blob/main/data/malaysia/inputs/malaysia_elec_fuel_mix_2030_pathway.xlsx",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_elec_fuel_mix_2030_KL.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_hydro_constraint_2030_KL.xml")
 
 files <- c("malaysia_elec_fuel_mix_2030_pathway.xlsx",
            "malaysia_elec_fuel_mix_2030_KL.xml",
@@ -212,7 +240,7 @@ Hydropower is exogenous in GCAM and has a fixed pathway. The power generation va
 
 <p style='margin-left:1em;'>
 1. Create a folder in the input directory eg. `./gcam-core/input/addons/malaysia`.
-2. Download the example XML file [malaysia_elec_fuel_mix_2030_KL.xml](https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/malaysia_elec_fuel_mix_2030_KL.xml) to the folder. (Click on `Raw` and then `right-click` and select `save-as`.)
+2. Download the example XML file [malaysia_elec_fuel_mix_2030_KL.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_elec_fuel_mix_2030_KL.xml) to the folder. (Click on `Raw` and then `right-click` and select `save-as`.)
 3. To make adjustments: within each `policy-portfolio-standard` tag in the XML, adjust the following:
 </p>
 <ul style='margin-left:4em; text-align:left;'>
@@ -224,7 +252,7 @@ Hydropower is exogenous in GCAM and has a fixed pathway. The power generation va
 5. Save the XML and then point to it in your configuration file by adding the line: 
 <p style='font-size:0.9em'>
 `<Value name = "scen">../input/addons/malaysia/malaysia_elec_fuel_mix_2030_KL.xml</Value>`
-6. To adjust the hydropower pathway, download the example XML file [malaysia_hydro_constraint_2030_KL.xml](https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/malaysia_hydro_constraint_2030_KL.xml) to the folder. 
+6. To adjust the hydropower pathway, download the example XML file [malaysia_hydro_constraint_2030_KL.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_hydro_constraint_2030_KL.xml) to the folder. 
 7. Within each `fixedOutput` tag in the XML, adjust the value to reflect desired hydropower output in each period. The user can also add additional periods. 
 8. Save the XML and point to it in your configuration file by adding the line: 
 <p style='font-size:0.9em'>
@@ -272,13 +300,13 @@ data <- gcamextractor::readgcam(gcamdatabase = sample_path,
                                 regionsSelect = regions,
                                 regionsAggregate = list(regions),
                                 regionsAggregateNames = "All of Malaysia",
-                                folder = "..data/Malaysia/gcamextractor")
+                                folder = "..data/malaysia/gcamextractor")
 
 ```
 
 ```{r gcamextractor, echo = TRUE}
-df1 <- read.csv("../data/Malaysia/gcamextractor/gcamDataTable_aggClass1.csv")
-df2 <- read.csv("../data/Malaysia/gcamextractor/gcamDataTable_aggClass1.csv")
+df1 <- read.csv("../data/malaysia/gcamextractor/gcamDataTable_aggClass1.csv")
+df2 <- read.csv("../data/malaysia/gcamextractor/gcamDataTable_aggClass1.csv")
 
 malaysia <- df1 %>%
   filter(region != ("Rest of Malaysia"),
