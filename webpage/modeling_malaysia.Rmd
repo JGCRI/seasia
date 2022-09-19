@@ -5,7 +5,7 @@ output:
     toc: true
     toc_float: true
     toc_collapsed: true
-    toc_depth: 2
+    toc_depth: 4
     number_sections: true
     theme: cosmo
     #inverse: true
@@ -182,9 +182,9 @@ data.frame(
 
 <div class="warning" style='background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
 <span>
-<h3 style='text-align:center; font-size:24px'>
+<p style='text-align:center; font-size:24px'>
 <b>Goal</b>
-</h3>
+</p>
 
 <p style='margin-left:1em;'>
 The goal of this example is to set a minimum value (floor) in GCAM for the amount of electricity generation from each fuel type (coal, natural gas, solar, etc.) corresponding with the planned percentages in the KLLCSBP2030 (below).
@@ -205,8 +205,8 @@ The goal of this example is to set a minimum value (floor) in GCAM for the amoun
 <div class="warning" style='background-color:#fffae0; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
 <span>
 
-<h3 style='text-align:center; font-size:24px'>
-<b>Approach</b></h3>
+<p style='text-align:center; font-size:24px'>
+<b>Approach</b></p>
 
 <p style='margin-left:1em;'>
 One way to set a generation floor for each fuel type in GCAM is to use a subsidy policy. This will lower the cost of the electricity generation technology until the floor is reached. If there is more demand for electricity than is supplied by the sum of the generation floors, then the remaining demand will be met by a mix of fuels determined by the market.
@@ -224,8 +224,19 @@ Hydropower is exogenous in GCAM and has a fixed pathway. The power generation va
 <!--------Background-------->
 <!-------------------------->
 
-```{r child = 'background_policy-portfolio-standards.rmd'}
-```
+<div class="warning" style='background-color:#EFFFC9; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+
+<p style='text-align:center; font-size:24px'>
+<b>Background - Policy portfolio standards</b></p>
+
+<p style='margin-left:1em;'>
+A `policy-portfolio-standard` in GCAM is a policy that can be used to implement taxes, subsidies, floors, ceilings, and constraints. Taxes and subsidies can be specified when the exact amount to be added or subtracted to the price is known. However, a `policy-portfolio-standard` can also contain a `constraint`, which acts as either a floor or ceiling for the technology or technologies included. Exact constraints can also be implemented. See the [GCAM Policy Examples](https://jgcri.github.io/gcam-doc/policies_examples.html) documentation for more information on how to implement these options.
+</p>
+</span>
+</div>
+
+<br>
 
 
 <!-------------------------->
@@ -234,9 +245,9 @@ Hydropower is exogenous in GCAM and has a fixed pathway. The power generation va
 
 <div class="warning" style='background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
 <span>
-<h3 style='text-align:center; font-size:24px'>
+<p style='text-align:center; font-size:24px'>
 <b>GCAM Implementation</b>
-</h3>
+</p>
 
 <p style='margin-left:1em;'>
 1. Create a folder in the input directory eg. `./gcam-core/input/addons/malaysia`.
