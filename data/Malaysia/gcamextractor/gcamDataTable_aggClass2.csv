@@ -2526,6 +2526,166 @@
 "KL_socio","All of Malaysia","All of Malaysia","energyFinalConsumBySecEJ","Subsector","transport","Year",2090,"Vint_2090","Final Energy by Sector (EJ)",1.74479241887225
 "KL_socio","All of Malaysia","All of Malaysia","energyFinalConsumBySecEJ","Subsector","transport","Year",2095,"Vint_2095","Final Energy by Sector (EJ)",1.79094995916709
 "KL_socio","All of Malaysia","All of Malaysia","energyFinalConsumBySecEJ","Subsector","transport","Year",2100,"Vint_2100","Final Energy by Sector (EJ)",1.83862153814899
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",1990,"Vint_1990","Building Final Energy By Subsector (EJ)",0.01176261
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2005,"Vint_2005","Building Final Energy By Subsector (EJ)",0.008958049
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2010,"Vint_2010","Building Final Energy By Subsector (EJ)",0.006069848
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2015,"Vint_2015","Building Final Energy By Subsector (EJ)",4.189923e-05
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2020,"Vint_2020","Building Final Energy By Subsector (EJ)",0.015227387
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2025,"Vint_2025","Building Final Energy By Subsector (EJ)",0.019525978
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2030,"Vint_2030","Building Final Energy By Subsector (EJ)",0.02485666
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2035,"Vint_2035","Building Final Energy By Subsector (EJ)",0.02983043
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2040,"Vint_2040","Building Final Energy By Subsector (EJ)",0.03231282
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2045,"Vint_2045","Building Final Energy By Subsector (EJ)",0.034230167
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2050,"Vint_2050","Building Final Energy By Subsector (EJ)",0.036049379
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2055,"Vint_2055","Building Final Energy By Subsector (EJ)",0.037573775
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2060,"Vint_2060","Building Final Energy By Subsector (EJ)",0.03908015
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2065,"Vint_2065","Building Final Energy By Subsector (EJ)",0.040765595
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2070,"Vint_2070","Building Final Energy By Subsector (EJ)",0.041978681
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2075,"Vint_2075","Building Final Energy By Subsector (EJ)",0.042570008
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2080,"Vint_2080","Building Final Energy By Subsector (EJ)",0.042922937
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2085,"Vint_2085","Building Final Energy By Subsector (EJ)",0.043497714
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2090,"Vint_2090","Building Final Energy By Subsector (EJ)",0.044380382
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2095,"Vint_2095","Building Final Energy By Subsector (EJ)",0.04538051
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2100,"Vint_2100","Building Final Energy By Subsector (EJ)",0.046252065
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","coal","Year",2020,"Vint_2020","Building Final Energy By Subsector (EJ)",0.2089023
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","coal","Year",2025,"Vint_2025","Building Final Energy By Subsector (EJ)",0.2561948
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","coal","Year",2030,"Vint_2030","Building Final Energy By Subsector (EJ)",0.3043362
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","coal","Year",2035,"Vint_2035","Building Final Energy By Subsector (EJ)",0.359442
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","coal","Year",2040,"Vint_2040","Building Final Energy By Subsector (EJ)",0.4192137
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","coal","Year",2045,"Vint_2045","Building Final Energy By Subsector (EJ)",0.47237
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","coal","Year",2050,"Vint_2050","Building Final Energy By Subsector (EJ)",0.5279684
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","coal","Year",2055,"Vint_2055","Building Final Energy By Subsector (EJ)",0.5703062
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","coal","Year",2060,"Vint_2060","Building Final Energy By Subsector (EJ)",0.5976071
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","coal","Year",2065,"Vint_2065","Building Final Energy By Subsector (EJ)",0.6234975
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","coal","Year",2070,"Vint_2070","Building Final Energy By Subsector (EJ)",0.6394174
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","coal","Year",2075,"Vint_2075","Building Final Energy By Subsector (EJ)",0.65411363
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","coal","Year",2080,"Vint_2080","Building Final Energy By Subsector (EJ)",0.68674352
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","coal","Year",2085,"Vint_2085","Building Final Energy By Subsector (EJ)",0.71171707
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","coal","Year",2090,"Vint_2090","Building Final Energy By Subsector (EJ)",0.7376462
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","coal","Year",2095,"Vint_2095","Building Final Energy By Subsector (EJ)",0.75577089
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","coal","Year",2100,"Vint_2100","Building Final Energy By Subsector (EJ)",0.76926105
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",1990,"Vint_1990","Building Final Energy By Subsector (EJ)",0.03714228994
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2005,"Vint_2005","Building Final Energy By Subsector (EJ)",0.13456077101
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2010,"Vint_2010","Building Final Energy By Subsector (EJ)",0.2078202804
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2015,"Vint_2015","Building Final Energy By Subsector (EJ)",0.2609309002
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2020,"Vint_2020","Building Final Energy By Subsector (EJ)",0.5223982916
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2025,"Vint_2025","Building Final Energy By Subsector (EJ)",0.6213427811
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2030,"Vint_2030","Building Final Energy By Subsector (EJ)",0.7361161892
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2035,"Vint_2035","Building Final Energy By Subsector (EJ)",0.8532910141
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2040,"Vint_2040","Building Final Energy By Subsector (EJ)",0.96108753517
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2045,"Vint_2045","Building Final Energy By Subsector (EJ)",1.04791440445
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2050,"Vint_2050","Building Final Energy By Subsector (EJ)",1.1110073919
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2055,"Vint_2055","Building Final Energy By Subsector (EJ)",1.1509375757
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2060,"Vint_2060","Building Final Energy By Subsector (EJ)",1.1733857265
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2065,"Vint_2065","Building Final Energy By Subsector (EJ)",1.1804237111
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2070,"Vint_2070","Building Final Energy By Subsector (EJ)",1.18115313373
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2075,"Vint_2075","Building Final Energy By Subsector (EJ)",1.17572447439
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2080,"Vint_2080","Building Final Energy By Subsector (EJ)",1.16920451018
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2085,"Vint_2085","Building Final Energy By Subsector (EJ)",1.16786048682
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2090,"Vint_2090","Building Final Energy By Subsector (EJ)",1.16777430763
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2095,"Vint_2095","Building Final Energy By Subsector (EJ)",1.16687561994
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2100,"Vint_2100","Building Final Energy By Subsector (EJ)",1.1650405785
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",1990,"Vint_1990","Building Final Energy By Subsector (EJ)",0.0003348981
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2005,"Vint_2005","Building Final Energy By Subsector (EJ)",0.0011721043
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2010,"Vint_2010","Building Final Energy By Subsector (EJ)",0.0015069983
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2015,"Vint_2015","Building Final Energy By Subsector (EJ)",0.00104649796
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2020,"Vint_2020","Building Final Energy By Subsector (EJ)",0.03116048
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2025,"Vint_2025","Building Final Energy By Subsector (EJ)",0.03816175
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2030,"Vint_2030","Building Final Energy By Subsector (EJ)",0.04778494
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2035,"Vint_2035","Building Final Energy By Subsector (EJ)",0.05621619
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2040,"Vint_2040","Building Final Energy By Subsector (EJ)",0.06290614
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2045,"Vint_2045","Building Final Energy By Subsector (EJ)",0.06885423
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2050,"Vint_2050","Building Final Energy By Subsector (EJ)",0.07219083
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2055,"Vint_2055","Building Final Energy By Subsector (EJ)",0.07576978
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2060,"Vint_2060","Building Final Energy By Subsector (EJ)",0.07973519
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2065,"Vint_2065","Building Final Energy By Subsector (EJ)",0.08305893
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2070,"Vint_2070","Building Final Energy By Subsector (EJ)",0.08434298
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2075,"Vint_2075","Building Final Energy By Subsector (EJ)",0.08506868
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2080,"Vint_2080","Building Final Energy By Subsector (EJ)",0.08525625
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2085,"Vint_2085","Building Final Energy By Subsector (EJ)",0.083234071
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2090,"Vint_2090","Building Final Energy By Subsector (EJ)",0.079057977
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2095,"Vint_2095","Building Final Energy By Subsector (EJ)",0.07425853
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2100,"Vint_2100","Building Final Energy By Subsector (EJ)",0.069746255
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",1990,"Vint_1990","Building Final Energy By Subsector (EJ)",0.0305157253
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2005,"Vint_2005","Building Final Energy By Subsector (EJ)",0.0644647199
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2010,"Vint_2010","Building Final Energy By Subsector (EJ)",0.0819620906
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2015,"Vint_2015","Building Final Energy By Subsector (EJ)",0.060947991
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2020,"Vint_2020","Building Final Energy By Subsector (EJ)",0.0077698367
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2025,"Vint_2025","Building Final Energy By Subsector (EJ)",0.0092250571
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2030,"Vint_2030","Building Final Energy By Subsector (EJ)",0.01185047
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2035,"Vint_2035","Building Final Energy By Subsector (EJ)",0.01470925708
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2040,"Vint_2040","Building Final Energy By Subsector (EJ)",0.01755738773
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2045,"Vint_2045","Building Final Energy By Subsector (EJ)",0.0200274123
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2050,"Vint_2050","Building Final Energy By Subsector (EJ)",0.0221148901
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2055,"Vint_2055","Building Final Energy By Subsector (EJ)",0.0236116137
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2060,"Vint_2060","Building Final Energy By Subsector (EJ)",0.0244818893
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2065,"Vint_2065","Building Final Energy By Subsector (EJ)",0.0252900036
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2070,"Vint_2070","Building Final Energy By Subsector (EJ)",0.0254818348
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2075,"Vint_2075","Building Final Energy By Subsector (EJ)",0.0253864839
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2080,"Vint_2080","Building Final Energy By Subsector (EJ)",0.0255357774
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2085,"Vint_2085","Building Final Energy By Subsector (EJ)",0.025636964
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2090,"Vint_2090","Building Final Energy By Subsector (EJ)",0.0258732751
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2095,"Vint_2095","Building Final Energy By Subsector (EJ)",0.0259952269
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2100,"Vint_2100","Building Final Energy By Subsector (EJ)",0.0262063287
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","solar","Year",2020,"Vint_2020","Building Final Energy By Subsector (EJ)",7.203832e-05
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","solar","Year",2025,"Vint_2025","Building Final Energy By Subsector (EJ)",0.00010028942
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","solar","Year",2030,"Vint_2030","Building Final Energy By Subsector (EJ)",0.0001330007
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","solar","Year",2035,"Vint_2035","Building Final Energy By Subsector (EJ)",0.00016379944
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","solar","Year",2040,"Vint_2040","Building Final Energy By Subsector (EJ)",0.00018709373
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","solar","Year",2045,"Vint_2045","Building Final Energy By Subsector (EJ)",0.00020509228
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","solar","Year",2050,"Vint_2050","Building Final Energy By Subsector (EJ)",0.00021337718
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","solar","Year",2055,"Vint_2055","Building Final Energy By Subsector (EJ)",0.000218226095
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","solar","Year",2060,"Vint_2060","Building Final Energy By Subsector (EJ)",0.000219439679
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","solar","Year",2065,"Vint_2065","Building Final Energy By Subsector (EJ)",0.000219981672
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","solar","Year",2070,"Vint_2070","Building Final Energy By Subsector (EJ)",0.000219742091
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","solar","Year",2075,"Vint_2075","Building Final Energy By Subsector (EJ)",0.000218190021
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","solar","Year",2080,"Vint_2080","Building Final Energy By Subsector (EJ)",0.00022013934
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","solar","Year",2085,"Vint_2085","Building Final Energy By Subsector (EJ)",0.000223058343
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","solar","Year",2090,"Vint_2090","Building Final Energy By Subsector (EJ)",0.000226804322
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","solar","Year",2095,"Vint_2095","Building Final Energy By Subsector (EJ)",0.000230005255
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","solar","Year",2100,"Vint_2100","Building Final Energy By Subsector (EJ)",0.000231509302
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",1990,"Vint_1990","Building Final Energy By Subsector (EJ)",0.009209131
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2005,"Vint_2005","Building Final Energy By Subsector (EJ)",0.001465105
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2010,"Vint_2010","Building Final Energy By Subsector (EJ)",0.000962823
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2020,"Vint_2020","Building Final Energy By Subsector (EJ)",0.07343872
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2025,"Vint_2025","Building Final Energy By Subsector (EJ)",0.07909761
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2030,"Vint_2030","Building Final Energy By Subsector (EJ)",0.08421096
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2035,"Vint_2035","Building Final Energy By Subsector (EJ)",0.08836289
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2040,"Vint_2040","Building Final Energy By Subsector (EJ)",0.09193254
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2045,"Vint_2045","Building Final Energy By Subsector (EJ)",0.09485632
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2050,"Vint_2050","Building Final Energy By Subsector (EJ)",0.0974676
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2055,"Vint_2055","Building Final Energy By Subsector (EJ)",0.09961055
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2060,"Vint_2060","Building Final Energy By Subsector (EJ)",0.10118769
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2065,"Vint_2065","Building Final Energy By Subsector (EJ)",0.10264845
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2070,"Vint_2070","Building Final Energy By Subsector (EJ)",0.10336607
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2075,"Vint_2075","Building Final Energy By Subsector (EJ)",0.10353827
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2080,"Vint_2080","Building Final Energy By Subsector (EJ)",0.10370961
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2085,"Vint_2085","Building Final Energy By Subsector (EJ)",0.10367124
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2090,"Vint_2090","Building Final Energy By Subsector (EJ)",0.10385197
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2095,"Vint_2095","Building Final Energy By Subsector (EJ)",0.103902
+"KL_socio","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2100,"Vint_2100","Building Final Energy By Subsector (EJ)",0.10414247
+"KL_socio","All of Malaysia","All of Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",1975,"Vint_1975","Primary Energy Consumption by Fuel (EJ)",0.1951411
+"KL_socio","All of Malaysia","All of Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",1990,"Vint_1990","Primary Energy Consumption by Fuel (EJ)",0.940561731
+"KL_socio","All of Malaysia","All of Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2005,"Vint_2005","Primary Energy Consumption by Fuel (EJ)",2.813145275
+"KL_socio","All of Malaysia","All of Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2010,"Vint_2010","Primary Energy Consumption by Fuel (EJ)",3.281109284
+"KL_socio","All of Malaysia","All of Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2015,"Vint_2015","Primary Energy Consumption by Fuel (EJ)",3.7106493
+"KL_socio","All of Malaysia","All of Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2020,"Vint_2020","Primary Energy Consumption by Fuel (EJ)",5.14537273585359
+"KL_socio","All of Malaysia","All of Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2025,"Vint_2025","Primary Energy Consumption by Fuel (EJ)",5.62534842528875
+"KL_socio","All of Malaysia","All of Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2030,"Vint_2030","Primary Energy Consumption by Fuel (EJ)",6.11819073343325
+"KL_socio","All of Malaysia","All of Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2035,"Vint_2035","Primary Energy Consumption by Fuel (EJ)",6.53870579620465
+"KL_socio","All of Malaysia","All of Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2040,"Vint_2040","Primary Energy Consumption by Fuel (EJ)",6.94338145541635
+"KL_socio","All of Malaysia","All of Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2045,"Vint_2045","Primary Energy Consumption by Fuel (EJ)",7.32361987544835
+"KL_socio","All of Malaysia","All of Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2050,"Vint_2050","Primary Energy Consumption by Fuel (EJ)",7.64782408412476
+"KL_socio","All of Malaysia","All of Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2055,"Vint_2055","Primary Energy Consumption by Fuel (EJ)",7.9308243029746
+"KL_socio","All of Malaysia","All of Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2060,"Vint_2060","Primary Energy Consumption by Fuel (EJ)",8.1560432886781
+"KL_socio","All of Malaysia","All of Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2065,"Vint_2065","Primary Energy Consumption by Fuel (EJ)",8.2351825406327
+"KL_socio","All of Malaysia","All of Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2070,"Vint_2070","Primary Energy Consumption by Fuel (EJ)",8.36558708542
+"KL_socio","All of Malaysia","All of Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2075,"Vint_2075","Primary Energy Consumption by Fuel (EJ)",8.467806311055
+"KL_socio","All of Malaysia","All of Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2080,"Vint_2080","Primary Energy Consumption by Fuel (EJ)",8.434507967118
+"KL_socio","All of Malaysia","All of Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2085,"Vint_2085","Primary Energy Consumption by Fuel (EJ)",8.49833897113
+"KL_socio","All of Malaysia","All of Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2090,"Vint_2090","Primary Energy Consumption by Fuel (EJ)",8.571124266682
+"KL_socio","All of Malaysia","All of Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2095,"Vint_2095","Primary Energy Consumption by Fuel (EJ)",8.614154948806
+"KL_socio","All of Malaysia","All of Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2100,"Vint_2100","Primary Energy Consumption by Fuel (EJ)",8.659424233917
 "KL_socio","All of Malaysia","All of Malaysia","gdp","classLabel2","class2","Year",1975,"Vint_1975","GDP (Billion 1990 USD)",38.912
 "KL_socio","All of Malaysia","All of Malaysia","gdp","classLabel2","class2","Year",1990,"Vint_1990","GDP (Billion 1990 USD)",107.92
 "KL_socio","All of Malaysia","All of Malaysia","gdp","classLabel2","class2","Year",2005,"Vint_2005","GDP (Billion 1990 USD)",270.2601
@@ -2592,6 +2752,160 @@
 "KL_socio","All of Malaysia","All of Malaysia","pop","classLabel2","class2","Year",2090,"Vint_2090","Population (Millions)",81.774
 "KL_socio","All of Malaysia","All of Malaysia","pop","classLabel2","class2","Year",2095,"Vint_2095","Population (Millions)",80.986
 "KL_socio","All of Malaysia","All of Malaysia","pop","classLabel2","class2","Year",2100,"Vint_2100","Population (Millions)",80.157
+"KL_socio","All of Malaysia","All of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight","Year",1975,"Vint_1975","Freight (million ton-km)",265.6235
+"KL_socio","All of Malaysia","All of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight","Year",1990,"Vint_1990","Freight (million ton-km)",5747.7395
+"KL_socio","All of Malaysia","All of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight","Year",2005,"Vint_2005","Freight (million ton-km)",2743.2781
+"KL_socio","All of Malaysia","All of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight","Year",2010,"Vint_2010","Freight (million ton-km)",4579.8835
+"KL_socio","All of Malaysia","All of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight","Year",2015,"Vint_2015","Freight (million ton-km)",25689.7346
+"KL_socio","All of Malaysia","All of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight","Year",2020,"Vint_2020","Freight (million ton-km)",32367.2765
+"KL_socio","All of Malaysia","All of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight","Year",2025,"Vint_2025","Freight (million ton-km)",36914.785
+"KL_socio","All of Malaysia","All of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight","Year",2030,"Vint_2030","Freight (million ton-km)",42779.546
+"KL_socio","All of Malaysia","All of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight","Year",2035,"Vint_2035","Freight (million ton-km)",49454.612
+"KL_socio","All of Malaysia","All of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight","Year",2040,"Vint_2040","Freight (million ton-km)",56390.87
+"KL_socio","All of Malaysia","All of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight","Year",2045,"Vint_2045","Freight (million ton-km)",63883.244
+"KL_socio","All of Malaysia","All of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight","Year",2050,"Vint_2050","Freight (million ton-km)",70714.921
+"KL_socio","All of Malaysia","All of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight","Year",2055,"Vint_2055","Freight (million ton-km)",76471.337
+"KL_socio","All of Malaysia","All of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight","Year",2060,"Vint_2060","Freight (million ton-km)",81537.012
+"KL_socio","All of Malaysia","All of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight","Year",2065,"Vint_2065","Freight (million ton-km)",86218.553
+"KL_socio","All of Malaysia","All of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight","Year",2070,"Vint_2070","Freight (million ton-km)",90565.735
+"KL_socio","All of Malaysia","All of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight","Year",2075,"Vint_2075","Freight (million ton-km)",94985.633
+"KL_socio","All of Malaysia","All of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight","Year",2080,"Vint_2080","Freight (million ton-km)",99578.484
+"KL_socio","All of Malaysia","All of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight","Year",2085,"Vint_2085","Freight (million ton-km)",104697.968
+"KL_socio","All of Malaysia","All of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight","Year",2090,"Vint_2090","Freight (million ton-km)",109983.665
+"KL_socio","All of Malaysia","All of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight","Year",2095,"Vint_2095","Freight (million ton-km)",115515.716
+"KL_socio","All of Malaysia","All of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight","Year",2100,"Vint_2100","Freight (million ton-km)",120462.062
+"KL_socio","All of Malaysia","All of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",1975,"Vint_1975","Freight (million ton-km)",11070.3764
+"KL_socio","All of Malaysia","All of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",1990,"Vint_1990","Freight (million ton-km)",30153.292
+"KL_socio","All of Malaysia","All of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2005,"Vint_2005","Freight (million ton-km)",77508.705
+"KL_socio","All of Malaysia","All of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2010,"Vint_2010","Freight (million ton-km)",83360.144
+"KL_socio","All of Malaysia","All of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2015,"Vint_2015","Freight (million ton-km)",117682.202
+"KL_socio","All of Malaysia","All of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2020,"Vint_2020","Freight (million ton-km)",156741.965923954
+"KL_socio","All of Malaysia","All of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2025,"Vint_2025","Freight (million ton-km)",178008.917057064
+"KL_socio","All of Malaysia","All of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2030,"Vint_2030","Freight (million ton-km)",203194.140917037
+"KL_socio","All of Malaysia","All of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2035,"Vint_2035","Freight (million ton-km)",232558.15089254
+"KL_socio","All of Malaysia","All of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2040,"Vint_2040","Freight (million ton-km)",263408.94630435
+"KL_socio","All of Malaysia","All of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2045,"Vint_2045","Freight (million ton-km)",290149.00600368
+"KL_socio","All of Malaysia","All of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2050,"Vint_2050","Freight (million ton-km)",314570.1330901
+"KL_socio","All of Malaysia","All of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2055,"Vint_2055","Freight (million ton-km)",336395.537295
+"KL_socio","All of Malaysia","All of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2060,"Vint_2060","Freight (million ton-km)",355722.1946432
+"KL_socio","All of Malaysia","All of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2065,"Vint_2065","Freight (million ton-km)",372980.197677
+"KL_socio","All of Malaysia","All of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2070,"Vint_2070","Freight (million ton-km)",388432.563274
+"KL_socio","All of Malaysia","All of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2075,"Vint_2075","Freight (million ton-km)",402936.709945
+"KL_socio","All of Malaysia","All of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2080,"Vint_2080","Freight (million ton-km)",417836.853448
+"KL_socio","All of Malaysia","All of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2085,"Vint_2085","Freight (million ton-km)",433775.400506
+"KL_socio","All of Malaysia","All of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2090,"Vint_2090","Freight (million ton-km)",450631.258206
+"KL_socio","All of Malaysia","All of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2095,"Vint_2095","Freight (million ton-km)",468084.240052
+"KL_socio","All of Malaysia","All of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2100,"Vint_2100","Freight (million ton-km)",486185.867955
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",1975,"Vint_1975","Pasenger (million pass-km)",4208
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",1990,"Vint_1990","Pasenger (million pass-km)",10605
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2005,"Vint_2005","Pasenger (million pass-km)",33818
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2010,"Vint_2010","Pasenger (million pass-km)",43093
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2015,"Vint_2015","Pasenger (million pass-km)",61175
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2020,"Vint_2020","Pasenger (million pass-km)",89002.22
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2025,"Vint_2025","Pasenger (million pass-km)",106159.8
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2030,"Vint_2030","Pasenger (million pass-km)",126899.88
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2035,"Vint_2035","Pasenger (million pass-km)",150634.98
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2040,"Vint_2040","Pasenger (million pass-km)",172084.13
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2045,"Vint_2045","Pasenger (million pass-km)",192353.49
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2050,"Vint_2050","Pasenger (million pass-km)",210800.6
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2055,"Vint_2055","Pasenger (million pass-km)",225535.3
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2060,"Vint_2060","Pasenger (million pass-km)",238187.64
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2065,"Vint_2065","Pasenger (million pass-km)",249005.92
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2070,"Vint_2070","Pasenger (million pass-km)",258083.42
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2075,"Vint_2075","Pasenger (million pass-km)",266033.93
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2080,"Vint_2080","Pasenger (million pass-km)",273608.12
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2085,"Vint_2085","Pasenger (million pass-km)",281267.22
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2090,"Vint_2090","Pasenger (million pass-km)",288888.45
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2095,"Vint_2095","Pasenger (million pass-km)",296343.27
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2100,"Vint_2100","Pasenger (million pass-km)",303482.6
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass","Year",1975,"Vint_1975","Pasenger (million pass-km)",1359.1209
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass","Year",1990,"Vint_1990","Pasenger (million pass-km)",3669.1269
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2005,"Vint_2005","Pasenger (million pass-km)",11061.9119
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2010,"Vint_2010","Pasenger (million pass-km)",14059.615
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2015,"Vint_2015","Pasenger (million pass-km)",19585.32
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2020,"Vint_2020","Pasenger (million pass-km)",22288.2572
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2025,"Vint_2025","Pasenger (million pass-km)",24524.7148
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2030,"Vint_2030","Pasenger (million pass-km)",26961.3794
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2035,"Vint_2035","Pasenger (million pass-km)",29635.3285
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2040,"Vint_2040","Pasenger (million pass-km)",32113.379
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2045,"Vint_2045","Pasenger (million pass-km)",34537.136
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2050,"Vint_2050","Pasenger (million pass-km)",36951.217
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2055,"Vint_2055","Pasenger (million pass-km)",38789.932
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2060,"Vint_2060","Pasenger (million pass-km)",40409.86
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2065,"Vint_2065","Pasenger (million pass-km)",41837.198
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2070,"Vint_2070","Pasenger (million pass-km)",43215.397
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2075,"Vint_2075","Pasenger (million pass-km)",44460.495
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2080,"Vint_2080","Pasenger (million pass-km)",45584.306
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2085,"Vint_2085","Pasenger (million pass-km)",46791.648
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2090,"Vint_2090","Pasenger (million pass-km)",48046.099
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2095,"Vint_2095","Pasenger (million pass-km)",49369.701
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2100,"Vint_2100","Pasenger (million pass-km)",50730.938
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",1975,"Vint_1975","Pasenger (million pass-km)",66034.79
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",1990,"Vint_1990","Pasenger (million pass-km)",179870.8
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2005,"Vint_2005","Pasenger (million pass-km)",310433.347
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2010,"Vint_2010","Pasenger (million pass-km)",346191.71
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2015,"Vint_2015","Pasenger (million pass-km)",481526.93
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2020,"Vint_2020","Pasenger (million pass-km)",670732.923
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2025,"Vint_2025","Pasenger (million pass-km)",793103.273
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2030,"Vint_2030","Pasenger (million pass-km)",794053.473
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2035,"Vint_2035","Pasenger (million pass-km)",834227.394
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2040,"Vint_2040","Pasenger (million pass-km)",877512.19
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2045,"Vint_2045","Pasenger (million pass-km)",907718.19
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2050,"Vint_2050","Pasenger (million pass-km)",933526.18
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2055,"Vint_2055","Pasenger (million pass-km)",957842.27
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2060,"Vint_2060","Pasenger (million pass-km)",982863.73
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2065,"Vint_2065","Pasenger (million pass-km)",1000721.55
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2070,"Vint_2070","Pasenger (million pass-km)",998044
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2075,"Vint_2075","Pasenger (million pass-km)",984519.3
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2080,"Vint_2080","Pasenger (million pass-km)",965259.15
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2085,"Vint_2085","Pasenger (million pass-km)",945232.14
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2090,"Vint_2090","Pasenger (million pass-km)",923928.4
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2095,"Vint_2095","Pasenger (million pass-km)",902019.8
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2100,"Vint_2100","Pasenger (million pass-km)",880184.55
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",1975,"Vint_1975","Pasenger (million pass-km)",29306.54
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",1990,"Vint_1990","Pasenger (million pass-km)",79827.09
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2005,"Vint_2005","Pasenger (million pass-km)",223386.2743
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2010,"Vint_2010","Pasenger (million pass-km)",249869.7072
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2015,"Vint_2015","Pasenger (million pass-km)",366594.3385
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2020,"Vint_2020","Pasenger (million pass-km)",276171.112
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2025,"Vint_2025","Pasenger (million pass-km)",242235.911
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2030,"Vint_2030","Pasenger (million pass-km)",265837.347
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2035,"Vint_2035","Pasenger (million pass-km)",262032.339
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2040,"Vint_2040","Pasenger (million pass-km)",251285.97
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2045,"Vint_2045","Pasenger (million pass-km)",244725.249
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2050,"Vint_2050","Pasenger (million pass-km)",238347.234
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2055,"Vint_2055","Pasenger (million pass-km)",232121.591
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2060,"Vint_2060","Pasenger (million pass-km)",225234.666
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2065,"Vint_2065","Pasenger (million pass-km)",217856.164
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2070,"Vint_2070","Pasenger (million pass-km)",212670.212
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2075,"Vint_2075","Pasenger (million pass-km)",209126.504
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2080,"Vint_2080","Pasenger (million pass-km)",205522.473
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2085,"Vint_2085","Pasenger (million pass-km)",200993.419
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2090,"Vint_2090","Pasenger (million pass-km)",196530.192
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2095,"Vint_2095","Pasenger (million pass-km)",192205.189
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2100,"Vint_2100","Pasenger (million pass-km)",187623.553
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",1975,"Vint_1975","Pasenger (million pass-km)",17516.647
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",1990,"Vint_1990","Pasenger (million pass-km)",47712.737
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2005,"Vint_2005","Pasenger (million pass-km)",175998.4527
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2010,"Vint_2010","Pasenger (million pass-km)",188904.3516
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2015,"Vint_2015","Pasenger (million pass-km)",259963.6397
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2020,"Vint_2020","Pasenger (million pass-km)",241285.7747
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2025,"Vint_2025","Pasenger (million pass-km)",228530.21943846
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2030,"Vint_2030","Pasenger (million pass-km)",272171.14577671
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2035,"Vint_2035","Pasenger (million pass-km)",290861.56368946
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2040,"Vint_2040","Pasenger (million pass-km)",299274.148171225
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2045,"Vint_2045","Pasenger (million pass-km)",309939.539034437
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2050,"Vint_2050","Pasenger (million pass-km)",315958.45177224
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2055,"Vint_2055","Pasenger (million pass-km)",323070.06965379
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2060,"Vint_2060","Pasenger (million pass-km)",326200.20737315
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2065,"Vint_2065","Pasenger (million pass-km)",326657.98628882
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2070,"Vint_2070","Pasenger (million pass-km)",329044.9848362
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2075,"Vint_2075","Pasenger (million pass-km)",333142.6759363
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2080,"Vint_2080","Pasenger (million pass-km)",337401.2704411
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2085,"Vint_2085","Pasenger (million pass-km)",340137.57975932
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2090,"Vint_2090","Pasenger (million pass-km)",342676.68287333
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2095,"Vint_2095","Pasenger (million pass-km)",344920.5614181
+"KL_socio","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2100,"Vint_2100","Pasenger (million pass-km)",346328.44704811
 "KL_socio","KualaLumpur","KualaLumpur","elecConsumByDemandSectorTWh","Sector","comm cooking","Year",2020,"Vint_2020","Electricity Consumption by Sector (TWh)",0.0776872222222228
 "KL_socio","KualaLumpur","KualaLumpur","elecConsumByDemandSectorTWh","Sector","comm cooking","Year",2025,"Vint_2025","Electricity Consumption by Sector (TWh)",0.0928452777777785
 "KL_socio","KualaLumpur","KualaLumpur","elecConsumByDemandSectorTWh","Sector","comm cooking","Year",2030,"Vint_2030","Electricity Consumption by Sector (TWh)",0.118724444444445
@@ -3636,6 +3950,164 @@
 "KL_socio","KualaLumpur","KualaLumpur","energyFinalConsumBySecEJ","Subsector","transport","Year",2090,"Vint_2090","Final Energy by Sector (EJ)",0.05092743304675
 "KL_socio","KualaLumpur","KualaLumpur","energyFinalConsumBySecEJ","Subsector","transport","Year",2095,"Vint_2095","Final Energy by Sector (EJ)",0.05064339360619
 "KL_socio","KualaLumpur","KualaLumpur","energyFinalConsumBySecEJ","Subsector","transport","Year",2100,"Vint_2100","Final Energy by Sector (EJ)",0.05045695981179
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",1990,"Vint_1990","Building Final Energy By Subsector (EJ)",0.00230561
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2005,"Vint_2005","Building Final Energy By Subsector (EJ)",0.00100211
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2010,"Vint_2010","Building Final Energy By Subsector (EJ)",0.000770083
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2015,"Vint_2015","Building Final Energy By Subsector (EJ)",5.00016e-06
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2020,"Vint_2020","Building Final Energy By Subsector (EJ)",0.001943397
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2025,"Vint_2025","Building Final Energy By Subsector (EJ)",0.00249047
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2030,"Vint_2030","Building Final Energy By Subsector (EJ)",0.00317086
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2035,"Vint_2035","Building Final Energy By Subsector (EJ)",0.00366885
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2040,"Vint_2040","Building Final Energy By Subsector (EJ)",0.00380183
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2045,"Vint_2045","Building Final Energy By Subsector (EJ)",0.00383093
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2050,"Vint_2050","Building Final Energy By Subsector (EJ)",0.00384345
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2055,"Vint_2055","Building Final Energy By Subsector (EJ)",0.00385547
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2060,"Vint_2060","Building Final Energy By Subsector (EJ)",0.00385271
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2065,"Vint_2065","Building Final Energy By Subsector (EJ)",0.00388968
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2070,"Vint_2070","Building Final Energy By Subsector (EJ)",0.00387999
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2075,"Vint_2075","Building Final Energy By Subsector (EJ)",0.00381857
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2080,"Vint_2080","Building Final Energy By Subsector (EJ)",0.00373951
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2085,"Vint_2085","Building Final Energy By Subsector (EJ)",0.0036713
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2090,"Vint_2090","Building Final Energy By Subsector (EJ)",0.00362844
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2095,"Vint_2095","Building Final Energy By Subsector (EJ)",0.0035947
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2100,"Vint_2100","Building Final Energy By Subsector (EJ)",0.00355689
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","coal","Year",2020,"Vint_2020","Building Final Energy By Subsector (EJ)",0.0266613
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","coal","Year",2025,"Vint_2025","Building Final Energy By Subsector (EJ)",0.0326767
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","coal","Year",2030,"Vint_2030","Building Final Energy By Subsector (EJ)",0.0388229
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","coal","Year",2035,"Vint_2035","Building Final Energy By Subsector (EJ)",0.0442079
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","coal","Year",2040,"Vint_2040","Building Final Energy By Subsector (EJ)",0.0493235
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","coal","Year",2045,"Vint_2045","Building Final Energy By Subsector (EJ)",0.0528661
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","coal","Year",2050,"Vint_2050","Building Final Energy By Subsector (EJ)",0.0562901
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","coal","Year",2055,"Vint_2055","Building Final Energy By Subsector (EJ)",0.0585194
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","coal","Year",2060,"Vint_2060","Building Final Energy By Subsector (EJ)",0.0589151
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","coal","Year",2065,"Vint_2065","Building Final Energy By Subsector (EJ)",0.0594914
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","coal","Year",2070,"Vint_2070","Building Final Energy By Subsector (EJ)",0.0590998
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","coal","Year",2075,"Vint_2075","Building Final Energy By Subsector (EJ)",0.0586747
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","coal","Year",2080,"Vint_2080","Building Final Energy By Subsector (EJ)",0.0598302
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","coal","Year",2085,"Vint_2085","Building Final Energy By Subsector (EJ)",0.0600705
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","coal","Year",2090,"Vint_2090","Building Final Energy By Subsector (EJ)",0.0603083
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","coal","Year",2095,"Vint_2095","Building Final Energy By Subsector (EJ)",0.0598665
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","coal","Year",2100,"Vint_2100","Building Final Energy By Subsector (EJ)",0.0591579
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",1990,"Vint_1990","Building Final Energy By Subsector (EJ)",0.00728025766
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2005,"Vint_2005","Building Final Energy By Subsector (EJ)",0.01505233421
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2010,"Vint_2010","Building Final Energy By Subsector (EJ)",0.0263684527
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2015,"Vint_2015","Building Final Energy By Subsector (EJ)",0.0313049025
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2020,"Vint_2020","Building Final Energy By Subsector (EJ)",0.0693967479
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2025,"Vint_2025","Building Final Energy By Subsector (EJ)",0.0838616641
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2030,"Vint_2030","Building Final Energy By Subsector (EJ)",0.1011714037
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2035,"Vint_2035","Building Final Energy By Subsector (EJ)",0.1148710138
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2040,"Vint_2040","Building Final Energy By Subsector (EJ)",0.125241375
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2045,"Vint_2045","Building Final Energy By Subsector (EJ)",0.1310112208
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2050,"Vint_2050","Building Final Energy By Subsector (EJ)",0.1329087686
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2055,"Vint_2055","Building Final Energy By Subsector (EJ)",0.1326273721
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2060,"Vint_2060","Building Final Energy By Subsector (EJ)",0.1299092901
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2065,"Vint_2065","Building Final Energy By Subsector (EJ)",0.1262332018
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2070,"Vint_2070","Building Final Energy By Subsector (EJ)",0.1224755604
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2075,"Vint_2075","Building Final Energy By Subsector (EJ)",0.11840264134
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2080,"Vint_2080","Building Final Energy By Subsector (EJ)",0.11437447446
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2085,"Vint_2085","Building Final Energy By Subsector (EJ)",0.11077260078
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2090,"Vint_2090","Building Final Energy By Subsector (EJ)",0.10745562968
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2095,"Vint_2095","Building Final Energy By Subsector (EJ)",0.10419961445
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2100,"Vint_2100","Building Final Energy By Subsector (EJ)",0.10113097734
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",1990,"Vint_1990","Building Final Energy By Subsector (EJ)",6.55991e-05
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2005,"Vint_2005","Building Final Energy By Subsector (EJ)",0.0001311013
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2010,"Vint_2010","Building Final Energy By Subsector (EJ)",0.0001912003
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2015,"Vint_2015","Building Final Energy By Subsector (EJ)",0.00012549916
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2020,"Vint_2020","Building Final Energy By Subsector (EJ)",0.00397686
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2025,"Vint_2025","Building Final Energy By Subsector (EJ)",0.0048674
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2030,"Vint_2030","Building Final Energy By Subsector (EJ)",0.00609573
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2035,"Vint_2035","Building Final Energy By Subsector (EJ)",0.00691405
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2040,"Vint_2040","Building Final Energy By Subsector (EJ)",0.00740136
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2045,"Vint_2045","Building Final Energy By Subsector (EJ)",0.00770595
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2050,"Vint_2050","Building Final Energy By Subsector (EJ)",0.00769672
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2055,"Vint_2055","Building Final Energy By Subsector (EJ)",0.00777479
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2060,"Vint_2060","Building Final Energy By Subsector (EJ)",0.00786068
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2065,"Vint_2065","Building Final Energy By Subsector (EJ)",0.00792511
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2070,"Vint_2070","Building Final Energy By Subsector (EJ)",0.00779561
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2075,"Vint_2075","Building Final Energy By Subsector (EJ)",0.00763075
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2080,"Vint_2080","Building Final Energy By Subsector (EJ)",0.00742766
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2085,"Vint_2085","Building Final Energy By Subsector (EJ)",0.00702513
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2090,"Vint_2090","Building Final Energy By Subsector (EJ)",0.0064636
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2095,"Vint_2095","Building Final Energy By Subsector (EJ)",0.0058822
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2100,"Vint_2100","Building Final Energy By Subsector (EJ)",0.00536364
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",1990,"Vint_1990","Building Final Energy By Subsector (EJ)",0.0059814693
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2005,"Vint_2005","Building Final Energy By Subsector (EJ)",0.0072111999
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2010,"Vint_2010","Building Final Energy By Subsector (EJ)",0.0103994696
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2015,"Vint_2015","Building Final Energy By Subsector (EJ)",0.00731226
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2020,"Vint_2020","Building Final Energy By Subsector (EJ)",0.0008549997
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2025,"Vint_2025","Building Final Energy By Subsector (EJ)",0.001095369
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2030,"Vint_2030","Building Final Energy By Subsector (EJ)",0.0014170567
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2035,"Vint_2035","Building Final Energy By Subsector (EJ)",0.00170090658
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2040,"Vint_2040","Building Final Energy By Subsector (EJ)",0.00194823113
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2045,"Vint_2045","Building Final Energy By Subsector (EJ)",0.0021176474
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2050,"Vint_2050","Building Final Energy By Subsector (EJ)",0.0022310932
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2055,"Vint_2055","Building Final Energy By Subsector (EJ)",0.0022960062
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2060,"Vint_2060","Building Final Energy By Subsector (EJ)",0.0022896359
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2065,"Vint_2065","Building Final Energy By Subsector (EJ)",0.0022913861
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2070,"Vint_2070","Building Final Energy By Subsector (EJ)",0.0022373695
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2075,"Vint_2075","Building Final Energy By Subsector (EJ)",0.0021637511
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2080,"Vint_2080","Building Final Energy By Subsector (EJ)",0.0021121589
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2085,"Vint_2085","Building Final Energy By Subsector (EJ)",0.0020520868
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2090,"Vint_2090","Building Final Energy By Subsector (EJ)",0.002004089
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2095,"Vint_2095","Building Final Energy By Subsector (EJ)",0.0019496963
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2100,"Vint_2100","Building Final Energy By Subsector (EJ)",0.0019084193
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","solar","Year",2020,"Vint_2020","Building Final Energy By Subsector (EJ)",7.85042e-06
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","solar","Year",2025,"Vint_2025","Building Final Energy By Subsector (EJ)",1.093122e-05
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","solar","Year",2030,"Vint_2030","Building Final Energy By Subsector (EJ)",1.444985e-05
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","solar","Year",2035,"Vint_2035","Building Final Energy By Subsector (EJ)",1.707046e-05
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","solar","Year",2040,"Vint_2040","Building Final Energy By Subsector (EJ)",1.865248e-05
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","solar","Year",2045,"Vint_2045","Building Final Energy By Subsector (EJ)",1.939549e-05
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","solar","Year",2050,"Vint_2050","Building Final Energy By Subsector (EJ)",1.919865e-05
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","solar","Year",2055,"Vint_2055","Building Final Energy By Subsector (EJ)",1.8879095e-05
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","solar","Year",2060,"Vint_2060","Building Final Energy By Subsector (EJ)",1.8209389e-05
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","solar","Year",2065,"Vint_2065","Building Final Energy By Subsector (EJ)",1.7622462e-05
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","solar","Year",2070,"Vint_2070","Building Final Energy By Subsector (EJ)",1.7030971e-05
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","solar","Year",2075,"Vint_2075","Building Final Energy By Subsector (EJ)",1.6399041e-05
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","solar","Year",2080,"Vint_2080","Building Final Energy By Subsector (EJ)",1.602259e-05
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","solar","Year",2085,"Vint_2085","Building Final Energy By Subsector (EJ)",1.5695353e-05
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","solar","Year",2090,"Vint_2090","Building Final Energy By Subsector (EJ)",1.5429552e-05
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","solar","Year",2095,"Vint_2095","Building Final Energy By Subsector (EJ)",1.5159935e-05
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","solar","Year",2100,"Vint_2100","Building Final Energy By Subsector (EJ)",1.4817732e-05
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",1990,"Vint_1990","Building Final Energy By Subsector (EJ)",0.00180511
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2005,"Vint_2005","Building Final Energy By Subsector (EJ)",0.000163902
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2010,"Vint_2010","Building Final Energy By Subsector (EJ)",0.000122197
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2020,"Vint_2020","Building Final Energy By Subsector (EJ)",0.0107954
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2025,"Vint_2025","Building Final Energy By Subsector (EJ)",0.0116617
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2030,"Vint_2030","Building Final Energy By Subsector (EJ)",0.0123992
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2035,"Vint_2035","Building Final Energy By Subsector (EJ)",0.0124815
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2040,"Vint_2040","Building Final Energy By Subsector (EJ)",0.0123662
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2045,"Vint_2045","Building Final Energy By Subsector (EJ)",0.0120741
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2050,"Vint_2050","Building Final Energy By Subsector (EJ)",0.0117692
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2055,"Vint_2055","Building Final Energy By Subsector (EJ)",0.0115602
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2060,"Vint_2060","Building Final Energy By Subsector (EJ)",0.0112647
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2065,"Vint_2065","Building Final Energy By Subsector (EJ)",0.0110474
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2070,"Vint_2070","Building Final Energy By Subsector (EJ)",0.010761
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2075,"Vint_2075","Building Final Energy By Subsector (EJ)",0.0104546
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2080,"Vint_2080","Building Final Energy By Subsector (EJ)",0.0101623
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2085,"Vint_2085","Building Final Energy By Subsector (EJ)",0.00983431
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2090,"Vint_2090","Building Final Energy By Subsector (EJ)",0.00953696
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2095,"Vint_2095","Building Final Energy By Subsector (EJ)",0.00924606
+"KL_socio","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2100,"Vint_2100","Building Final Energy By Subsector (EJ)",0.00899806
+"KL_socio","KualaLumpur","KualaLumpur","energyPrimaryByFuelEJ","classLabel2","class2","Year",1990,"Vint_1990","Primary Energy Consumption by Fuel (EJ)",0.00180511
+"KL_socio","KualaLumpur","KualaLumpur","energyPrimaryByFuelEJ","classLabel2","class2","Year",2005,"Vint_2005","Primary Energy Consumption by Fuel (EJ)",0.000163902
+"KL_socio","KualaLumpur","KualaLumpur","energyPrimaryByFuelEJ","classLabel2","class2","Year",2010,"Vint_2010","Primary Energy Consumption by Fuel (EJ)",0.000122197
+"KL_socio","KualaLumpur","KualaLumpur","energyPrimaryByFuelEJ","classLabel2","class2","Year",2020,"Vint_2020","Primary Energy Consumption by Fuel (EJ)",0.0107954
+"KL_socio","KualaLumpur","KualaLumpur","energyPrimaryByFuelEJ","classLabel2","class2","Year",2025,"Vint_2025","Primary Energy Consumption by Fuel (EJ)",0.0116617
+"KL_socio","KualaLumpur","KualaLumpur","energyPrimaryByFuelEJ","classLabel2","class2","Year",2030,"Vint_2030","Primary Energy Consumption by Fuel (EJ)",0.0123992
+"KL_socio","KualaLumpur","KualaLumpur","energyPrimaryByFuelEJ","classLabel2","class2","Year",2035,"Vint_2035","Primary Energy Consumption by Fuel (EJ)",0.0124815
+"KL_socio","KualaLumpur","KualaLumpur","energyPrimaryByFuelEJ","classLabel2","class2","Year",2040,"Vint_2040","Primary Energy Consumption by Fuel (EJ)",0.0123662
+"KL_socio","KualaLumpur","KualaLumpur","energyPrimaryByFuelEJ","classLabel2","class2","Year",2045,"Vint_2045","Primary Energy Consumption by Fuel (EJ)",0.0120741
+"KL_socio","KualaLumpur","KualaLumpur","energyPrimaryByFuelEJ","classLabel2","class2","Year",2050,"Vint_2050","Primary Energy Consumption by Fuel (EJ)",0.0117692
+"KL_socio","KualaLumpur","KualaLumpur","energyPrimaryByFuelEJ","classLabel2","class2","Year",2055,"Vint_2055","Primary Energy Consumption by Fuel (EJ)",0.0115602
+"KL_socio","KualaLumpur","KualaLumpur","energyPrimaryByFuelEJ","classLabel2","class2","Year",2060,"Vint_2060","Primary Energy Consumption by Fuel (EJ)",0.0112647
+"KL_socio","KualaLumpur","KualaLumpur","energyPrimaryByFuelEJ","classLabel2","class2","Year",2065,"Vint_2065","Primary Energy Consumption by Fuel (EJ)",0.0110474
+"KL_socio","KualaLumpur","KualaLumpur","energyPrimaryByFuelEJ","classLabel2","class2","Year",2070,"Vint_2070","Primary Energy Consumption by Fuel (EJ)",0.010761
+"KL_socio","KualaLumpur","KualaLumpur","energyPrimaryByFuelEJ","classLabel2","class2","Year",2075,"Vint_2075","Primary Energy Consumption by Fuel (EJ)",0.0104546
+"KL_socio","KualaLumpur","KualaLumpur","energyPrimaryByFuelEJ","classLabel2","class2","Year",2080,"Vint_2080","Primary Energy Consumption by Fuel (EJ)",0.0101623
+"KL_socio","KualaLumpur","KualaLumpur","energyPrimaryByFuelEJ","classLabel2","class2","Year",2085,"Vint_2085","Primary Energy Consumption by Fuel (EJ)",0.00983431
+"KL_socio","KualaLumpur","KualaLumpur","energyPrimaryByFuelEJ","classLabel2","class2","Year",2090,"Vint_2090","Primary Energy Consumption by Fuel (EJ)",0.00953696
+"KL_socio","KualaLumpur","KualaLumpur","energyPrimaryByFuelEJ","classLabel2","class2","Year",2095,"Vint_2095","Primary Energy Consumption by Fuel (EJ)",0.00924606
+"KL_socio","KualaLumpur","KualaLumpur","energyPrimaryByFuelEJ","classLabel2","class2","Year",2100,"Vint_2100","Primary Energy Consumption by Fuel (EJ)",0.00899806
 "KL_socio","KualaLumpur","KualaLumpur","gdp","classLabel2","class2","Year",1975,"Vint_1975","GDP (Billion 1990 USD)",3.927
 "KL_socio","KualaLumpur","KualaLumpur","gdp","classLabel2","class2","Year",1990,"Vint_1990","GDP (Billion 1990 USD)",10.5787
 "KL_socio","KualaLumpur","KualaLumpur","gdp","classLabel2","class2","Year",2005,"Vint_2005","GDP (Billion 1990 USD)",15.1201
@@ -3702,6 +4174,160 @@
 "KL_socio","KualaLumpur","KualaLumpur","pop","classLabel2","class2","Year",2090,"Vint_2090","Population (Millions)",1.36
 "KL_socio","KualaLumpur","KualaLumpur","pop","classLabel2","class2","Year",2095,"Vint_2095","Population (Millions)",1.311
 "KL_socio","KualaLumpur","KualaLumpur","pop","classLabel2","class2","Year",2100,"Vint_2100","Population (Millions)",1.266
+"KL_socio","KualaLumpur","KualaLumpur","transportFreightVMTByMode","classLabel2","trn_freight","Year",1975,"Vint_1975","Freight (million ton-km)",31.3015
+"KL_socio","KualaLumpur","KualaLumpur","transportFreightVMTByMode","classLabel2","trn_freight","Year",1990,"Vint_1990","Freight (million ton-km)",611.1555
+"KL_socio","KualaLumpur","KualaLumpur","transportFreightVMTByMode","classLabel2","trn_freight","Year",2005,"Vint_2005","Freight (million ton-km)",214.3261
+"KL_socio","KualaLumpur","KualaLumpur","transportFreightVMTByMode","classLabel2","trn_freight","Year",2010,"Vint_2010","Freight (million ton-km)",328.3405
+"KL_socio","KualaLumpur","KualaLumpur","transportFreightVMTByMode","classLabel2","trn_freight","Year",2015,"Vint_2015","Freight (million ton-km)",1714.5846
+"KL_socio","KualaLumpur","KualaLumpur","transportFreightVMTByMode","classLabel2","trn_freight","Year",2020,"Vint_2020","Freight (million ton-km)",1836.1465
+"KL_socio","KualaLumpur","KualaLumpur","transportFreightVMTByMode","classLabel2","trn_freight","Year",2025,"Vint_2025","Freight (million ton-km)",1979.905
+"KL_socio","KualaLumpur","KualaLumpur","transportFreightVMTByMode","classLabel2","trn_freight","Year",2030,"Vint_2030","Freight (million ton-km)",2184.456
+"KL_socio","KualaLumpur","KualaLumpur","transportFreightVMTByMode","classLabel2","trn_freight","Year",2035,"Vint_2035","Freight (million ton-km)",2368.882
+"KL_socio","KualaLumpur","KualaLumpur","transportFreightVMTByMode","classLabel2","trn_freight","Year",2040,"Vint_2040","Freight (million ton-km)",2538.1
+"KL_socio","KualaLumpur","KualaLumpur","transportFreightVMTByMode","classLabel2","trn_freight","Year",2045,"Vint_2045","Freight (million ton-km)",2711.094
+"KL_socio","KualaLumpur","KualaLumpur","transportFreightVMTByMode","classLabel2","trn_freight","Year",2050,"Vint_2050","Freight (million ton-km)",2847.721
+"KL_socio","KualaLumpur","KualaLumpur","transportFreightVMTByMode","classLabel2","trn_freight","Year",2055,"Vint_2055","Freight (million ton-km)",2959.357
+"KL_socio","KualaLumpur","KualaLumpur","transportFreightVMTByMode","classLabel2","trn_freight","Year",2060,"Vint_2060","Freight (million ton-km)",3041.002
+"KL_socio","KualaLumpur","KualaLumpur","transportFreightVMTByMode","classLabel2","trn_freight","Year",2065,"Vint_2065","Freight (million ton-km)",3135.013
+"KL_socio","KualaLumpur","KualaLumpur","transportFreightVMTByMode","classLabel2","trn_freight","Year",2070,"Vint_2070","Freight (million ton-km)",3219.185
+"KL_socio","KualaLumpur","KualaLumpur","transportFreightVMTByMode","classLabel2","trn_freight","Year",2075,"Vint_2075","Freight (million ton-km)",3301.453
+"KL_socio","KualaLumpur","KualaLumpur","transportFreightVMTByMode","classLabel2","trn_freight","Year",2080,"Vint_2080","Freight (million ton-km)",3385.934
+"KL_socio","KualaLumpur","KualaLumpur","transportFreightVMTByMode","classLabel2","trn_freight","Year",2085,"Vint_2085","Freight (million ton-km)",3465.458
+"KL_socio","KualaLumpur","KualaLumpur","transportFreightVMTByMode","classLabel2","trn_freight","Year",2090,"Vint_2090","Freight (million ton-km)",3541.445
+"KL_socio","KualaLumpur","KualaLumpur","transportFreightVMTByMode","classLabel2","trn_freight","Year",2095,"Vint_2095","Freight (million ton-km)",3607.016
+"KL_socio","KualaLumpur","KualaLumpur","transportFreightVMTByMode","classLabel2","trn_freight","Year",2100,"Vint_2100","Freight (million ton-km)",3650.372
+"KL_socio","KualaLumpur","KualaLumpur","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",1975,"Vint_1975","Freight (million ton-km)",1305.6984
+"KL_socio","KualaLumpur","KualaLumpur","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",1990,"Vint_1990","Freight (million ton-km)",3205.847
+"KL_socio","KualaLumpur","KualaLumpur","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2005,"Vint_2005","Freight (million ton-km)",6055.675
+"KL_socio","KualaLumpur","KualaLumpur","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2010,"Vint_2010","Freight (million ton-km)",5975.654
+"KL_socio","KualaLumpur","KualaLumpur","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2015,"Vint_2015","Freight (million ton-km)",7853.412
+"KL_socio","KualaLumpur","KualaLumpur","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2020,"Vint_2020","Freight (million ton-km)",8890.589052154
+"KL_socio","KualaLumpur","KualaLumpur","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2025,"Vint_2025","Freight (million ton-km)",9546.151083864
+"KL_socio","KualaLumpur","KualaLumpur","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2030,"Vint_2030","Freight (million ton-km)",10374.358407447
+"KL_socio","KualaLumpur","KualaLumpur","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2035,"Vint_2035","Freight (million ton-km)",11138.10230553
+"KL_socio","KualaLumpur","KualaLumpur","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2040,"Vint_2040","Freight (million ton-km)",11854.18760345
+"KL_socio","KualaLumpur","KualaLumpur","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2045,"Vint_2045","Freight (million ton-km)",12311.79804968
+"KL_socio","KualaLumpur","KualaLumpur","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2050,"Vint_2050","Freight (million ton-km)",12666.2022161
+"KL_socio","KualaLumpur","KualaLumpur","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2055,"Vint_2055","Freight (million ton-km)",13016.446405
+"KL_socio","KualaLumpur","KualaLumpur","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2060,"Vint_2060","Freight (million ton-km)",13265.2755132
+"KL_socio","KualaLumpur","KualaLumpur","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2065,"Vint_2065","Freight (million ton-km)",13560.232747
+"KL_socio","KualaLumpur","KualaLumpur","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2070,"Vint_2070","Freight (million ton-km)",13805.130814
+"KL_socio","KualaLumpur","KualaLumpur","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2075,"Vint_2075","Freight (million ton-km)",14003.162975
+"KL_socio","KualaLumpur","KualaLumpur","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2080,"Vint_2080","Freight (million ton-km)",14205.680208
+"KL_socio","KualaLumpur","KualaLumpur","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2085,"Vint_2085","Freight (million ton-km)",14355.898776
+"KL_socio","KualaLumpur","KualaLumpur","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2090,"Vint_2090","Freight (million ton-km)",14508.298316
+"KL_socio","KualaLumpur","KualaLumpur","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2095,"Vint_2095","Freight (million ton-km)",14614.154752
+"KL_socio","KualaLumpur","KualaLumpur","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2100,"Vint_2100","Freight (million ton-km)",14730.989005
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",1975,"Vint_1975","Pasenger (million pass-km)",496
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",1990,"Vint_1990","Pasenger (million pass-km)",1128
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2005,"Vint_2005","Pasenger (million pass-km)",2642
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2010,"Vint_2010","Pasenger (million pass-km)",3089
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2015,"Vint_2015","Pasenger (million pass-km)",4082
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2020,"Vint_2020","Pasenger (million pass-km)",4781.12
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2025,"Vint_2025","Pasenger (million pass-km)",5248.8
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2030,"Vint_2030","Pasenger (million pass-km)",5816.88
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2035,"Vint_2035","Pasenger (million pass-km)",6304.98
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2040,"Vint_2040","Pasenger (million pass-km)",6610.13
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2045,"Vint_2045","Pasenger (million pass-km)",6838.49
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2050,"Vint_2050","Pasenger (million pass-km)",6991.6
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2055,"Vint_2055","Pasenger (million pass-km)",7062.3
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2060,"Vint_2060","Pasenger (million pass-km)",7065.64
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2065,"Vint_2065","Pasenger (million pass-km)",7071.92
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2070,"Vint_2070","Pasenger (million pass-km)",7048.42
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2075,"Vint_2075","Pasenger (million pass-km)",7003.93
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2080,"Vint_2080","Pasenger (million pass-km)",6957.12
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2085,"Vint_2085","Pasenger (million pass-km)",6886.22
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2090,"Vint_2090","Pasenger (million pass-km)",6810.45
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2095,"Vint_2095","Pasenger (million pass-km)",6717.27
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2100,"Vint_2100","Pasenger (million pass-km)",6628.6
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass","Year",1975,"Vint_1975","Pasenger (million pass-km)",160.1919
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass","Year",1990,"Vint_1990","Pasenger (million pass-km)",390.1989
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2005,"Vint_2005","Pasenger (million pass-km)",864.2719
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2010,"Vint_2010","Pasenger (million pass-km)",1007.805
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2015,"Vint_2015","Pasenger (million pass-km)",1306.77
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2020,"Vint_2020","Pasenger (million pass-km)",1313.2689
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2025,"Vint_2025","Pasenger (million pass-km)",1343.9638
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2030,"Vint_2030","Pasenger (million pass-km)",1382.0374
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2035,"Vint_2035","Pasenger (million pass-km)",1410.0695
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2040,"Vint_2040","Pasenger (million pass-km)",1422.778
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2045,"Vint_2045","Pasenger (million pass-km)",1438.286
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2050,"Vint_2050","Pasenger (million pass-km)",1452.017
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2055,"Vint_2055","Pasenger (million pass-km)",1444.862
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2060,"Vint_2060","Pasenger (million pass-km)",1431.17
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2065,"Vint_2065","Pasenger (million pass-km)",1418.868
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2070,"Vint_2070","Pasenger (million pass-km)",1412.537
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2075,"Vint_2075","Pasenger (million pass-km)",1406.395
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2080,"Vint_2080","Pasenger (million pass-km)",1398.376
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2085,"Vint_2085","Pasenger (million pass-km)",1390.508
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2090,"Vint_2090","Pasenger (million pass-km)",1383.389
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2095,"Vint_2095","Pasenger (million pass-km)",1376.431
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2100,"Vint_2100","Pasenger (million pass-km)",1372.358
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",1975,"Vint_1975","Pasenger (million pass-km)",7786.09
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",1990,"Vint_1990","Pasenger (million pass-km)",19124.8
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2005,"Vint_2005","Pasenger (million pass-km)",24252.637
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2010,"Vint_2010","Pasenger (million pass-km)",24815.41
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2015,"Vint_2015","Pasenger (million pass-km)",32133.73
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2020,"Vint_2020","Pasenger (million pass-km)",42053.023
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2025,"Vint_2025","Pasenger (million pass-km)",47028.183
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2030,"Vint_2030","Pasenger (million pass-km)",43926.273
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2035,"Vint_2035","Pasenger (million pass-km)",43793.294
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2040,"Vint_2040","Pasenger (million pass-km)",43835.09
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2045,"Vint_2045","Pasenger (million pass-km)",43200.89
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2050,"Vint_2050","Pasenger (million pass-km)",42470.28
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2055,"Vint_2055","Pasenger (million pass-km)",41621.27
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2060,"Vint_2060","Pasenger (million pass-km)",40678.73
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2065,"Vint_2065","Pasenger (million pass-km)",39464.75
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2070,"Vint_2070","Pasenger (million pass-km)",37726.4
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2075,"Vint_2075","Pasenger (million pass-km)",35895.6
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2080,"Vint_2080","Pasenger (million pass-km)",34136.25
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2085,"Vint_2085","Pasenger (million pass-km)",32538.74
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2090,"Vint_2090","Pasenger (million pass-km)",31003.5
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2095,"Vint_2095","Pasenger (million pass-km)",29548.6
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2100,"Vint_2100","Pasenger (million pass-km)",28216.85
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",1975,"Vint_1975","Pasenger (million pass-km)",3455.44
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",1990,"Vint_1990","Pasenger (million pass-km)",8487.79
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2005,"Vint_2005","Pasenger (million pass-km)",17452.0763
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2010,"Vint_2010","Pasenger (million pass-km)",17910.9352
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2015,"Vint_2015","Pasenger (million pass-km)",24464.2365
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2020,"Vint_2020","Pasenger (million pass-km)",16686.592
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2025,"Vint_2025","Pasenger (million pass-km)",13389.241
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2030,"Vint_2030","Pasenger (million pass-km)",14527.697
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2035,"Vint_2035","Pasenger (million pass-km)",13596.139
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2040,"Vint_2040","Pasenger (million pass-km)",12255.97
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2045,"Vint_2045","Pasenger (million pass-km)",11549.249
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2050,"Vint_2050","Pasenger (million pass-km)",10801.634
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2055,"Vint_2055","Pasenger (million pass-km)",9967.691
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2060,"Vint_2060","Pasenger (million pass-km)",9212.066
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2065,"Vint_2065","Pasenger (million pass-km)",8510.164
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2070,"Vint_2070","Pasenger (million pass-km)",7996.812
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2075,"Vint_2075","Pasenger (million pass-km)",7633.904
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2080,"Vint_2080","Pasenger (million pass-km)",7309.673
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2085,"Vint_2085","Pasenger (million pass-km)",6967.319
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2090,"Vint_2090","Pasenger (million pass-km)",6644.892
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2095,"Vint_2095","Pasenger (million pass-km)",6352.489
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2100,"Vint_2100","Pasenger (million pass-km)",6082.553
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",1975,"Vint_1975","Pasenger (million pass-km)",2065.287
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",1990,"Vint_1990","Pasenger (million pass-km)",5073.137
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2005,"Vint_2005","Pasenger (million pass-km)",13749.9407
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2010,"Vint_2010","Pasenger (million pass-km)",13540.8606
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2015,"Vint_2015","Pasenger (million pass-km)",17348.3307
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2020,"Vint_2020","Pasenger (million pass-km)",12695.1469
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2025,"Vint_2025","Pasenger (million pass-km)",10700.73639146
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2030,"Vint_2030","Pasenger (million pass-km)",12255.95024561
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2035,"Vint_2035","Pasenger (million pass-km)",11976.32081066
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2040,"Vint_2040","Pasenger (million pass-km)",11214.284368325
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2045,"Vint_2045","Pasenger (million pass-km)",10892.424040137
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2050,"Vint_2050","Pasenger (million pass-km)",10426.53042324
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2055,"Vint_2055","Pasenger (million pass-km)",9962.95420579
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2060,"Vint_2060","Pasenger (million pass-km)",9483.33511315
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2065,"Vint_2065","Pasenger (million pass-km)",9035.04868882
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2070,"Vint_2070","Pasenger (million pass-km)",8723.0384932
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2075,"Vint_2075","Pasenger (million pass-km)",8521.9890253
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2080,"Vint_2080","Pasenger (million pass-km)",8344.0041881
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2085,"Vint_2085","Pasenger (million pass-km)",8110.23389232
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2090,"Vint_2090","Pasenger (million pass-km)",7881.53204633
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2095,"Vint_2095","Pasenger (million pass-km)",7660.2417731
+"KL_socio","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2100,"Vint_2100","Pasenger (million pass-km)",7452.79741211
 "KL_socio","Malaysia","Malaysia","elecByTechTWh","Technology","biomass (conv) (dry cooling)","Year",2010,"Vint_2010","Electricity Generation by Fuel (TWh)",0.0356944444444447
 "KL_socio","Malaysia","Malaysia","elecByTechTWh","Technology","biomass (conv) (dry cooling)","Year",2015,"Vint_2015","Electricity Generation by Fuel (TWh)",0.024277777777778
 "KL_socio","Malaysia","Malaysia","elecByTechTWh","Technology","biomass (conv) (dry cooling)","Year",2020,"Vint_2020","Electricity Generation by Fuel (TWh)",0.0430570277777781
@@ -5024,6 +5650,28 @@
 "KL_socio","Malaysia","Malaysia","energyFinalConsumBySecEJ","Subsector","industry","Year",2090,"Vint_2090","Final Energy by Sector (EJ)",0.116404399
 "KL_socio","Malaysia","Malaysia","energyFinalConsumBySecEJ","Subsector","industry","Year",2095,"Vint_2095","Final Energy by Sector (EJ)",0.113846512
 "KL_socio","Malaysia","Malaysia","energyFinalConsumBySecEJ","Subsector","industry","Year",2100,"Vint_2100","Final Energy by Sector (EJ)",0.111318791
+"KL_socio","Malaysia","Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",1975,"Vint_1975","Primary Energy Consumption by Fuel (EJ)",0.1951411
+"KL_socio","Malaysia","Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",1990,"Vint_1990","Primary Energy Consumption by Fuel (EJ)",0.9313526
+"KL_socio","Malaysia","Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2005,"Vint_2005","Primary Energy Consumption by Fuel (EJ)",2.81168017
+"KL_socio","Malaysia","Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2010,"Vint_2010","Primary Energy Consumption by Fuel (EJ)",3.280146461
+"KL_socio","Malaysia","Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2015,"Vint_2015","Primary Energy Consumption by Fuel (EJ)",3.7106493
+"KL_socio","Malaysia","Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2020,"Vint_2020","Primary Energy Consumption by Fuel (EJ)",5.07193401585359
+"KL_socio","Malaysia","Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2025,"Vint_2025","Primary Energy Consumption by Fuel (EJ)",5.54625081528875
+"KL_socio","Malaysia","Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2030,"Vint_2030","Primary Energy Consumption by Fuel (EJ)",6.03397977343325
+"KL_socio","Malaysia","Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2035,"Vint_2035","Primary Energy Consumption by Fuel (EJ)",6.45034290620465
+"KL_socio","Malaysia","Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2040,"Vint_2040","Primary Energy Consumption by Fuel (EJ)",6.85144891541635
+"KL_socio","Malaysia","Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2045,"Vint_2045","Primary Energy Consumption by Fuel (EJ)",7.22876355544835
+"KL_socio","Malaysia","Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2050,"Vint_2050","Primary Energy Consumption by Fuel (EJ)",7.55035648412476
+"KL_socio","Malaysia","Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2055,"Vint_2055","Primary Energy Consumption by Fuel (EJ)",7.8312137529746
+"KL_socio","Malaysia","Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2060,"Vint_2060","Primary Energy Consumption by Fuel (EJ)",8.0548555986781
+"KL_socio","Malaysia","Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2065,"Vint_2065","Primary Energy Consumption by Fuel (EJ)",8.1325340906327
+"KL_socio","Malaysia","Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2070,"Vint_2070","Primary Energy Consumption by Fuel (EJ)",8.26222101542
+"KL_socio","Malaysia","Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2075,"Vint_2075","Primary Energy Consumption by Fuel (EJ)",8.364268041055
+"KL_socio","Malaysia","Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2080,"Vint_2080","Primary Energy Consumption by Fuel (EJ)",8.330798357118
+"KL_socio","Malaysia","Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2085,"Vint_2085","Primary Energy Consumption by Fuel (EJ)",8.39466773113
+"KL_socio","Malaysia","Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2090,"Vint_2090","Primary Energy Consumption by Fuel (EJ)",8.467272296682
+"KL_socio","Malaysia","Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2095,"Vint_2095","Primary Energy Consumption by Fuel (EJ)",8.510252948806
+"KL_socio","Malaysia","Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2100,"Vint_2100","Primary Energy Consumption by Fuel (EJ)",8.555281763917
 "KL_socio","Malaysia","Malaysia","gdp","classLabel2","class2","Year",1975,"Vint_1975","GDP (Billion 1990 USD)",19.456
 "KL_socio","Malaysia","Malaysia","gdp","classLabel2","class2","Year",1990,"Vint_1990","GDP (Billion 1990 USD)",53.9585
 "KL_socio","Malaysia","Malaysia","gdp","classLabel2","class2","Year",2005,"Vint_2005","GDP (Billion 1990 USD)",135.13
@@ -6471,6 +7119,164 @@
 "KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalConsumBySecEJ","Subsector","transport","Year",2090,"Vint_2090","Final Energy by Sector (EJ)",1.6938649858255
 "KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalConsumBySecEJ","Subsector","transport","Year",2095,"Vint_2095","Final Energy by Sector (EJ)",1.7403065655609
 "KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalConsumBySecEJ","Subsector","transport","Year",2100,"Vint_2100","Final Energy by Sector (EJ)",1.7881645783372
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",1990,"Vint_1990","Building Final Energy By Subsector (EJ)",0.009457
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2005,"Vint_2005","Building Final Energy By Subsector (EJ)",0.007955939
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2010,"Vint_2010","Building Final Energy By Subsector (EJ)",0.005299765
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2015,"Vint_2015","Building Final Energy By Subsector (EJ)",3.689907e-05
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2020,"Vint_2020","Building Final Energy By Subsector (EJ)",0.01328399
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2025,"Vint_2025","Building Final Energy By Subsector (EJ)",0.017035508
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2030,"Vint_2030","Building Final Energy By Subsector (EJ)",0.0216858
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2035,"Vint_2035","Building Final Energy By Subsector (EJ)",0.02616158
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2040,"Vint_2040","Building Final Energy By Subsector (EJ)",0.02851099
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2045,"Vint_2045","Building Final Energy By Subsector (EJ)",0.030399237
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2050,"Vint_2050","Building Final Energy By Subsector (EJ)",0.032205929
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2055,"Vint_2055","Building Final Energy By Subsector (EJ)",0.033718305
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2060,"Vint_2060","Building Final Energy By Subsector (EJ)",0.03522744
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2065,"Vint_2065","Building Final Energy By Subsector (EJ)",0.036875915
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2070,"Vint_2070","Building Final Energy By Subsector (EJ)",0.038098691
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2075,"Vint_2075","Building Final Energy By Subsector (EJ)",0.038751438
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2080,"Vint_2080","Building Final Energy By Subsector (EJ)",0.039183427
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2085,"Vint_2085","Building Final Energy By Subsector (EJ)",0.039826414
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2090,"Vint_2090","Building Final Energy By Subsector (EJ)",0.040751942
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2095,"Vint_2095","Building Final Energy By Subsector (EJ)",0.04178581
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","biomass","Year",2100,"Vint_2100","Building Final Energy By Subsector (EJ)",0.042695175
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","coal","Year",2020,"Vint_2020","Building Final Energy By Subsector (EJ)",0.182241
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","coal","Year",2025,"Vint_2025","Building Final Energy By Subsector (EJ)",0.2235181
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","coal","Year",2030,"Vint_2030","Building Final Energy By Subsector (EJ)",0.2655133
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","coal","Year",2035,"Vint_2035","Building Final Energy By Subsector (EJ)",0.3152341
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","coal","Year",2040,"Vint_2040","Building Final Energy By Subsector (EJ)",0.3698902
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","coal","Year",2045,"Vint_2045","Building Final Energy By Subsector (EJ)",0.4195039
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","coal","Year",2050,"Vint_2050","Building Final Energy By Subsector (EJ)",0.4716783
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","coal","Year",2055,"Vint_2055","Building Final Energy By Subsector (EJ)",0.5117868
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","coal","Year",2060,"Vint_2060","Building Final Energy By Subsector (EJ)",0.538692
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","coal","Year",2065,"Vint_2065","Building Final Energy By Subsector (EJ)",0.5640061
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","coal","Year",2070,"Vint_2070","Building Final Energy By Subsector (EJ)",0.5803176
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","coal","Year",2075,"Vint_2075","Building Final Energy By Subsector (EJ)",0.59543893
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","coal","Year",2080,"Vint_2080","Building Final Energy By Subsector (EJ)",0.62691332
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","coal","Year",2085,"Vint_2085","Building Final Energy By Subsector (EJ)",0.65164657
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","coal","Year",2090,"Vint_2090","Building Final Energy By Subsector (EJ)",0.6773379
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","coal","Year",2095,"Vint_2095","Building Final Energy By Subsector (EJ)",0.69590439
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","coal","Year",2100,"Vint_2100","Building Final Energy By Subsector (EJ)",0.71010315
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",1990,"Vint_1990","Building Final Energy By Subsector (EJ)",0.02986203228
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2005,"Vint_2005","Building Final Energy By Subsector (EJ)",0.1195084368
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2010,"Vint_2010","Building Final Energy By Subsector (EJ)",0.1814518277
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2015,"Vint_2015","Building Final Energy By Subsector (EJ)",0.2296259977
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2020,"Vint_2020","Building Final Energy By Subsector (EJ)",0.4530015437
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2025,"Vint_2025","Building Final Energy By Subsector (EJ)",0.537481117
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2030,"Vint_2030","Building Final Energy By Subsector (EJ)",0.6349447855
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2035,"Vint_2035","Building Final Energy By Subsector (EJ)",0.7384200003
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2040,"Vint_2040","Building Final Energy By Subsector (EJ)",0.83584616017
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2045,"Vint_2045","Building Final Energy By Subsector (EJ)",0.91690318365
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2050,"Vint_2050","Building Final Energy By Subsector (EJ)",0.9780986233
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2055,"Vint_2055","Building Final Energy By Subsector (EJ)",1.0183102036
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2060,"Vint_2060","Building Final Energy By Subsector (EJ)",1.0434764364
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2065,"Vint_2065","Building Final Energy By Subsector (EJ)",1.0541905093
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2070,"Vint_2070","Building Final Energy By Subsector (EJ)",1.05867757333
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2075,"Vint_2075","Building Final Energy By Subsector (EJ)",1.05732183305
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2080,"Vint_2080","Building Final Energy By Subsector (EJ)",1.05483003572
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2085,"Vint_2085","Building Final Energy By Subsector (EJ)",1.05708788604
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2090,"Vint_2090","Building Final Energy By Subsector (EJ)",1.06031867795
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2095,"Vint_2095","Building Final Energy By Subsector (EJ)",1.06267600549
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","electricity","Year",2100,"Vint_2100","Building Final Energy By Subsector (EJ)",1.06390960116
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",1990,"Vint_1990","Building Final Energy By Subsector (EJ)",0.000269299
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2005,"Vint_2005","Building Final Energy By Subsector (EJ)",0.001041003
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2010,"Vint_2010","Building Final Energy By Subsector (EJ)",0.001315798
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2015,"Vint_2015","Building Final Energy By Subsector (EJ)",0.0009209988
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2020,"Vint_2020","Building Final Energy By Subsector (EJ)",0.02718362
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2025,"Vint_2025","Building Final Energy By Subsector (EJ)",0.03329435
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2030,"Vint_2030","Building Final Energy By Subsector (EJ)",0.04168921
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2035,"Vint_2035","Building Final Energy By Subsector (EJ)",0.04930214
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2040,"Vint_2040","Building Final Energy By Subsector (EJ)",0.05550478
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2045,"Vint_2045","Building Final Energy By Subsector (EJ)",0.06114828
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2050,"Vint_2050","Building Final Energy By Subsector (EJ)",0.06449411
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2055,"Vint_2055","Building Final Energy By Subsector (EJ)",0.06799499
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2060,"Vint_2060","Building Final Energy By Subsector (EJ)",0.07187451
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2065,"Vint_2065","Building Final Energy By Subsector (EJ)",0.07513382
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2070,"Vint_2070","Building Final Energy By Subsector (EJ)",0.07654737
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2075,"Vint_2075","Building Final Energy By Subsector (EJ)",0.07743793
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2080,"Vint_2080","Building Final Energy By Subsector (EJ)",0.07782859
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2085,"Vint_2085","Building Final Energy By Subsector (EJ)",0.076208941
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2090,"Vint_2090","Building Final Energy By Subsector (EJ)",0.072594377
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2095,"Vint_2095","Building Final Energy By Subsector (EJ)",0.06837633
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","gas","Year",2100,"Vint_2100","Building Final Energy By Subsector (EJ)",0.064382615
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",1990,"Vint_1990","Building Final Energy By Subsector (EJ)",0.024534256
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2005,"Vint_2005","Building Final Energy By Subsector (EJ)",0.05725352
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2010,"Vint_2010","Building Final Energy By Subsector (EJ)",0.071562621
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2015,"Vint_2015","Building Final Energy By Subsector (EJ)",0.053635731
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2020,"Vint_2020","Building Final Energy By Subsector (EJ)",0.006914837
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2025,"Vint_2025","Building Final Energy By Subsector (EJ)",0.0081296881
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2030,"Vint_2030","Building Final Energy By Subsector (EJ)",0.0104334133
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2035,"Vint_2035","Building Final Energy By Subsector (EJ)",0.0130083505
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2040,"Vint_2040","Building Final Energy By Subsector (EJ)",0.0156091566
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2045,"Vint_2045","Building Final Energy By Subsector (EJ)",0.0179097649
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2050,"Vint_2050","Building Final Energy By Subsector (EJ)",0.0198837969
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2055,"Vint_2055","Building Final Energy By Subsector (EJ)",0.0213156075
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2060,"Vint_2060","Building Final Energy By Subsector (EJ)",0.0221922534
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2065,"Vint_2065","Building Final Energy By Subsector (EJ)",0.0229986175
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2070,"Vint_2070","Building Final Energy By Subsector (EJ)",0.0232444653
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2075,"Vint_2075","Building Final Energy By Subsector (EJ)",0.0232227328
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2080,"Vint_2080","Building Final Energy By Subsector (EJ)",0.0234236185
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2085,"Vint_2085","Building Final Energy By Subsector (EJ)",0.0235848772
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2090,"Vint_2090","Building Final Energy By Subsector (EJ)",0.0238691861
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2095,"Vint_2095","Building Final Energy By Subsector (EJ)",0.0240455306
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","refined liquids","Year",2100,"Vint_2100","Building Final Energy By Subsector (EJ)",0.0242979094
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","solar","Year",2020,"Vint_2020","Building Final Energy By Subsector (EJ)",6.41879e-05
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","solar","Year",2025,"Vint_2025","Building Final Energy By Subsector (EJ)",8.93582e-05
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","solar","Year",2030,"Vint_2030","Building Final Energy By Subsector (EJ)",0.00011855085
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","solar","Year",2035,"Vint_2035","Building Final Energy By Subsector (EJ)",0.00014672898
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","solar","Year",2040,"Vint_2040","Building Final Energy By Subsector (EJ)",0.00016844125
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","solar","Year",2045,"Vint_2045","Building Final Energy By Subsector (EJ)",0.00018569679
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","solar","Year",2050,"Vint_2050","Building Final Energy By Subsector (EJ)",0.00019417853
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","solar","Year",2055,"Vint_2055","Building Final Energy By Subsector (EJ)",0.000199347
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","solar","Year",2060,"Vint_2060","Building Final Energy By Subsector (EJ)",0.00020123029
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","solar","Year",2065,"Vint_2065","Building Final Energy By Subsector (EJ)",0.00020235921
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","solar","Year",2070,"Vint_2070","Building Final Energy By Subsector (EJ)",0.00020271112
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","solar","Year",2075,"Vint_2075","Building Final Energy By Subsector (EJ)",0.00020179098
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","solar","Year",2080,"Vint_2080","Building Final Energy By Subsector (EJ)",0.00020411675
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","solar","Year",2085,"Vint_2085","Building Final Energy By Subsector (EJ)",0.00020736299
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","solar","Year",2090,"Vint_2090","Building Final Energy By Subsector (EJ)",0.00021137477
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","solar","Year",2095,"Vint_2095","Building Final Energy By Subsector (EJ)",0.00021484532
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","solar","Year",2100,"Vint_2100","Building Final Energy By Subsector (EJ)",0.00021669157
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",1990,"Vint_1990","Building Final Energy By Subsector (EJ)",0.007404021
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2005,"Vint_2005","Building Final Energy By Subsector (EJ)",0.001301203
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2010,"Vint_2010","Building Final Energy By Subsector (EJ)",0.000840626
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2020,"Vint_2020","Building Final Energy By Subsector (EJ)",0.06264332
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2025,"Vint_2025","Building Final Energy By Subsector (EJ)",0.06743591
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2030,"Vint_2030","Building Final Energy By Subsector (EJ)",0.07181176
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2035,"Vint_2035","Building Final Energy By Subsector (EJ)",0.07588139
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2040,"Vint_2040","Building Final Energy By Subsector (EJ)",0.07956634
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2045,"Vint_2045","Building Final Energy By Subsector (EJ)",0.08278222
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2050,"Vint_2050","Building Final Energy By Subsector (EJ)",0.0856984
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2055,"Vint_2055","Building Final Energy By Subsector (EJ)",0.08805035
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2060,"Vint_2060","Building Final Energy By Subsector (EJ)",0.08992299
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2065,"Vint_2065","Building Final Energy By Subsector (EJ)",0.09160105
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2070,"Vint_2070","Building Final Energy By Subsector (EJ)",0.09260507
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2075,"Vint_2075","Building Final Energy By Subsector (EJ)",0.09308367
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2080,"Vint_2080","Building Final Energy By Subsector (EJ)",0.09354731
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2085,"Vint_2085","Building Final Energy By Subsector (EJ)",0.09383693
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2090,"Vint_2090","Building Final Energy By Subsector (EJ)",0.09431501
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2095,"Vint_2095","Building Final Energy By Subsector (EJ)",0.09465594
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","classLabel2","traditional biomass","Year",2100,"Vint_2100","Building Final Energy By Subsector (EJ)",0.09514441
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",1990,"Vint_1990","Primary Energy Consumption by Fuel (EJ)",0.007404021
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2005,"Vint_2005","Primary Energy Consumption by Fuel (EJ)",0.001301203
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2010,"Vint_2010","Primary Energy Consumption by Fuel (EJ)",0.000840626
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2020,"Vint_2020","Primary Energy Consumption by Fuel (EJ)",0.06264332
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2025,"Vint_2025","Primary Energy Consumption by Fuel (EJ)",0.06743591
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2030,"Vint_2030","Primary Energy Consumption by Fuel (EJ)",0.07181176
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2035,"Vint_2035","Primary Energy Consumption by Fuel (EJ)",0.07588139
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2040,"Vint_2040","Primary Energy Consumption by Fuel (EJ)",0.07956634
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2045,"Vint_2045","Primary Energy Consumption by Fuel (EJ)",0.08278222
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2050,"Vint_2050","Primary Energy Consumption by Fuel (EJ)",0.0856984
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2055,"Vint_2055","Primary Energy Consumption by Fuel (EJ)",0.08805035
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2060,"Vint_2060","Primary Energy Consumption by Fuel (EJ)",0.08992299
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2065,"Vint_2065","Primary Energy Consumption by Fuel (EJ)",0.09160105
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2070,"Vint_2070","Primary Energy Consumption by Fuel (EJ)",0.09260507
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2075,"Vint_2075","Primary Energy Consumption by Fuel (EJ)",0.09308367
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2080,"Vint_2080","Primary Energy Consumption by Fuel (EJ)",0.09354731
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2085,"Vint_2085","Primary Energy Consumption by Fuel (EJ)",0.09383693
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2090,"Vint_2090","Primary Energy Consumption by Fuel (EJ)",0.09431501
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2095,"Vint_2095","Primary Energy Consumption by Fuel (EJ)",0.09465594
+"KL_socio","Rest of Malaysia","Rest of Malaysia","energyPrimaryByFuelEJ","classLabel2","class2","Year",2100,"Vint_2100","Primary Energy Consumption by Fuel (EJ)",0.09514441
 "KL_socio","Rest of Malaysia","Rest of Malaysia","gdp","classLabel2","class2","Year",1975,"Vint_1975","GDP (Billion 1990 USD)",15.529
 "KL_socio","Rest of Malaysia","Rest of Malaysia","gdp","classLabel2","class2","Year",1990,"Vint_1990","GDP (Billion 1990 USD)",43.3828
 "KL_socio","Rest of Malaysia","Rest of Malaysia","gdp","classLabel2","class2","Year",2005,"Vint_2005","GDP (Billion 1990 USD)",120.01
@@ -6537,3 +7343,157 @@
 "KL_socio","Rest of Malaysia","Rest of Malaysia","pop","classLabel2","class2","Year",2090,"Vint_2090","Population (Millions)",39.527
 "KL_socio","Rest of Malaysia","Rest of Malaysia","pop","classLabel2","class2","Year",2095,"Vint_2095","Population (Millions)",39.182
 "KL_socio","Rest of Malaysia","Rest of Malaysia","pop","classLabel2","class2","Year",2100,"Vint_2100","Population (Millions)",38.813
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight","Year",1975,"Vint_1975","Freight (million ton-km)",234.322
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight","Year",1990,"Vint_1990","Freight (million ton-km)",5136.584
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight","Year",2005,"Vint_2005","Freight (million ton-km)",2528.952
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight","Year",2010,"Vint_2010","Freight (million ton-km)",4251.543
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight","Year",2015,"Vint_2015","Freight (million ton-km)",23975.15
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight","Year",2020,"Vint_2020","Freight (million ton-km)",30531.13
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight","Year",2025,"Vint_2025","Freight (million ton-km)",34934.88
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight","Year",2030,"Vint_2030","Freight (million ton-km)",40595.09
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight","Year",2035,"Vint_2035","Freight (million ton-km)",47085.73
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight","Year",2040,"Vint_2040","Freight (million ton-km)",53852.77
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight","Year",2045,"Vint_2045","Freight (million ton-km)",61172.15
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight","Year",2050,"Vint_2050","Freight (million ton-km)",67867.2
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight","Year",2055,"Vint_2055","Freight (million ton-km)",73511.98
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight","Year",2060,"Vint_2060","Freight (million ton-km)",78496.01
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight","Year",2065,"Vint_2065","Freight (million ton-km)",83083.54
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight","Year",2070,"Vint_2070","Freight (million ton-km)",87346.55
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight","Year",2075,"Vint_2075","Freight (million ton-km)",91684.18
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight","Year",2080,"Vint_2080","Freight (million ton-km)",96192.55
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight","Year",2085,"Vint_2085","Freight (million ton-km)",101232.51
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight","Year",2090,"Vint_2090","Freight (million ton-km)",106442.22
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight","Year",2095,"Vint_2095","Freight (million ton-km)",111908.7
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight","Year",2100,"Vint_2100","Freight (million ton-km)",116811.69
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",1975,"Vint_1975","Freight (million ton-km)",9764.678
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",1990,"Vint_1990","Freight (million ton-km)",26947.445
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2005,"Vint_2005","Freight (million ton-km)",71453.03
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2010,"Vint_2010","Freight (million ton-km)",77384.49
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2015,"Vint_2015","Freight (million ton-km)",109828.79
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2020,"Vint_2020","Freight (million ton-km)",147851.3768718
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2025,"Vint_2025","Freight (million ton-km)",168462.7659732
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2030,"Vint_2030","Freight (million ton-km)",192819.78250959
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2035,"Vint_2035","Freight (million ton-km)",221420.04858701
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2040,"Vint_2040","Freight (million ton-km)",251554.7587009
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2045,"Vint_2045","Freight (million ton-km)",277837.207954
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2050,"Vint_2050","Freight (million ton-km)",301903.930874
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2055,"Vint_2055","Freight (million ton-km)",323379.09089
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2060,"Vint_2060","Freight (million ton-km)",342456.91913
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2065,"Vint_2065","Freight (million ton-km)",359419.96493
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2070,"Vint_2070","Freight (million ton-km)",374627.43246
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2075,"Vint_2075","Freight (million ton-km)",388933.54697
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2080,"Vint_2080","Freight (million ton-km)",403631.17324
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2085,"Vint_2085","Freight (million ton-km)",419419.50173
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2090,"Vint_2090","Freight (million ton-km)",436122.95989
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2095,"Vint_2095","Freight (million ton-km)",453470.0853
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","classLabel2","trn_freight_road","Year",2100,"Vint_2100","Freight (million ton-km)",471454.87895
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",1975,"Vint_1975","Pasenger (million pass-km)",3712
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",1990,"Vint_1990","Pasenger (million pass-km)",9477
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2005,"Vint_2005","Pasenger (million pass-km)",31176
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2010,"Vint_2010","Pasenger (million pass-km)",40004
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2015,"Vint_2015","Pasenger (million pass-km)",57093
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2020,"Vint_2020","Pasenger (million pass-km)",84221.1
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2025,"Vint_2025","Pasenger (million pass-km)",100911
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2030,"Vint_2030","Pasenger (million pass-km)",121083
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2035,"Vint_2035","Pasenger (million pass-km)",144330
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2040,"Vint_2040","Pasenger (million pass-km)",165474
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2045,"Vint_2045","Pasenger (million pass-km)",185515
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2050,"Vint_2050","Pasenger (million pass-km)",203809
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2055,"Vint_2055","Pasenger (million pass-km)",218473
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2060,"Vint_2060","Pasenger (million pass-km)",231122
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2065,"Vint_2065","Pasenger (million pass-km)",241934
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2070,"Vint_2070","Pasenger (million pass-km)",251035
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2075,"Vint_2075","Pasenger (million pass-km)",259030
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2080,"Vint_2080","Pasenger (million pass-km)",266651
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2085,"Vint_2085","Pasenger (million pass-km)",274381
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2090,"Vint_2090","Pasenger (million pass-km)",282078
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2095,"Vint_2095","Pasenger (million pass-km)",289626
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_aviation_intl","Year",2100,"Vint_2100","Pasenger (million pass-km)",296854
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass","Year",1975,"Vint_1975","Pasenger (million pass-km)",1198.929
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass","Year",1990,"Vint_1990","Pasenger (million pass-km)",3278.928
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2005,"Vint_2005","Pasenger (million pass-km)",10197.64
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2010,"Vint_2010","Pasenger (million pass-km)",13051.81
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2015,"Vint_2015","Pasenger (million pass-km)",18278.55
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2020,"Vint_2020","Pasenger (million pass-km)",20974.9883
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2025,"Vint_2025","Pasenger (million pass-km)",23180.751
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2030,"Vint_2030","Pasenger (million pass-km)",25579.342
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2035,"Vint_2035","Pasenger (million pass-km)",28225.259
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2040,"Vint_2040","Pasenger (million pass-km)",30690.601
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2045,"Vint_2045","Pasenger (million pass-km)",33098.85
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2050,"Vint_2050","Pasenger (million pass-km)",35499.2
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2055,"Vint_2055","Pasenger (million pass-km)",37345.07
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2060,"Vint_2060","Pasenger (million pass-km)",38978.69
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2065,"Vint_2065","Pasenger (million pass-km)",40418.33
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2070,"Vint_2070","Pasenger (million pass-km)",41802.86
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2075,"Vint_2075","Pasenger (million pass-km)",43054.1
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2080,"Vint_2080","Pasenger (million pass-km)",44185.93
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2085,"Vint_2085","Pasenger (million pass-km)",45401.14
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2090,"Vint_2090","Pasenger (million pass-km)",46662.71
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2095,"Vint_2095","Pasenger (million pass-km)",47993.27
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass","Year",2100,"Vint_2100","Pasenger (million pass-km)",49358.58
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",1975,"Vint_1975","Pasenger (million pass-km)",58248.7
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",1990,"Vint_1990","Pasenger (million pass-km)",160746
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2005,"Vint_2005","Pasenger (million pass-km)",286180.71
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2010,"Vint_2010","Pasenger (million pass-km)",321376.3
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2015,"Vint_2015","Pasenger (million pass-km)",449393.2
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2020,"Vint_2020","Pasenger (million pass-km)",628679.9
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2025,"Vint_2025","Pasenger (million pass-km)",746075.09
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2030,"Vint_2030","Pasenger (million pass-km)",750127.2
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2035,"Vint_2035","Pasenger (million pass-km)",790434.1
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2040,"Vint_2040","Pasenger (million pass-km)",833677.1
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2045,"Vint_2045","Pasenger (million pass-km)",864517.3
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2050,"Vint_2050","Pasenger (million pass-km)",891055.9
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2055,"Vint_2055","Pasenger (million pass-km)",916221
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2060,"Vint_2060","Pasenger (million pass-km)",942185
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2065,"Vint_2065","Pasenger (million pass-km)",961256.8
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2070,"Vint_2070","Pasenger (million pass-km)",960317.6
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2075,"Vint_2075","Pasenger (million pass-km)",948623.7
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2080,"Vint_2080","Pasenger (million pass-km)",931122.9
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2085,"Vint_2085","Pasenger (million pass-km)",912693.4
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2090,"Vint_2090","Pasenger (million pass-km)",892924.9
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2095,"Vint_2095","Pasenger (million pass-km)",872471.2
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road","Year",2100,"Vint_2100","Pasenger (million pass-km)",851967.7
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",1975,"Vint_1975","Pasenger (million pass-km)",25851.1
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",1990,"Vint_1990","Pasenger (million pass-km)",71339.3
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2005,"Vint_2005","Pasenger (million pass-km)",205934.198
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2010,"Vint_2010","Pasenger (million pass-km)",231958.772
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2015,"Vint_2015","Pasenger (million pass-km)",342130.102
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2020,"Vint_2020","Pasenger (million pass-km)",259484.52
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2025,"Vint_2025","Pasenger (million pass-km)",228846.67
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2030,"Vint_2030","Pasenger (million pass-km)",251309.65
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2035,"Vint_2035","Pasenger (million pass-km)",248436.2
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2040,"Vint_2040","Pasenger (million pass-km)",239030
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2045,"Vint_2045","Pasenger (million pass-km)",233176
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2050,"Vint_2050","Pasenger (million pass-km)",227545.6
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2055,"Vint_2055","Pasenger (million pass-km)",222153.9
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2060,"Vint_2060","Pasenger (million pass-km)",216022.6
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2065,"Vint_2065","Pasenger (million pass-km)",209346
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2070,"Vint_2070","Pasenger (million pass-km)",204673.4
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2075,"Vint_2075","Pasenger (million pass-km)",201492.6
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2080,"Vint_2080","Pasenger (million pass-km)",198212.8
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2085,"Vint_2085","Pasenger (million pass-km)",194026.1
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2090,"Vint_2090","Pasenger (million pass-km)",189885.3
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2095,"Vint_2095","Pasenger (million pass-km)",185852.7
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV","Year",2100,"Vint_2100","Pasenger (million pass-km)",181541
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",1975,"Vint_1975","Pasenger (million pass-km)",15451.36
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",1990,"Vint_1990","Pasenger (million pass-km)",42639.6
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2005,"Vint_2005","Pasenger (million pass-km)",162248.512
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2010,"Vint_2010","Pasenger (million pass-km)",175363.491
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2015,"Vint_2015","Pasenger (million pass-km)",242615.309
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2020,"Vint_2020","Pasenger (million pass-km)",228590.6278
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2025,"Vint_2025","Pasenger (million pass-km)",217829.483047
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2030,"Vint_2030","Pasenger (million pass-km)",259915.1955311
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2035,"Vint_2035","Pasenger (million pass-km)",278885.2428788
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2040,"Vint_2040","Pasenger (million pass-km)",288059.8638029
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2045,"Vint_2045","Pasenger (million pass-km)",299047.1149943
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2050,"Vint_2050","Pasenger (million pass-km)",305531.921349
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2055,"Vint_2055","Pasenger (million pass-km)",313107.115448
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2060,"Vint_2060","Pasenger (million pass-km)",316716.87226
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2065,"Vint_2065","Pasenger (million pass-km)",317622.9376
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2070,"Vint_2070","Pasenger (million pass-km)",320321.946343
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2075,"Vint_2075","Pasenger (million pass-km)",324620.686911
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2080,"Vint_2080","Pasenger (million pass-km)",329057.266253
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2085,"Vint_2085","Pasenger (million pass-km)",332027.345867
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2090,"Vint_2090","Pasenger (million pass-km)",334795.150827
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2095,"Vint_2095","Pasenger (million pass-km)",337260.319645
+"KL_socio","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","classLabel2","trn_pass_road_LDV_4W","Year",2100,"Vint_2100","Pasenger (million pass-km)",338875.649636
