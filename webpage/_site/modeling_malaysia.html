@@ -866,6 +866,8 @@ following parameters:</p>
 <li>Building energy by subsector</li>
 <li>Transportation by mode</li>
 </ul>
+<p>To enlarge a figure, please click directly on the image. Click on the
+image again to close out.</p>
 <p><br></p>
 <!-------------------------->
 <div id="socioeconomic-summary" class="section level3 tabset"
@@ -953,7 +955,7 @@ malaysia_emissions &lt;- bind_rows(co2, ghg)</code></pre>
                 chart_type = &quot;class_absolute&quot;,
                 save = F, 
                 show = F,
-                size_text = 18)
+                size_text = 10)
 
 emissions$chart_class_byRegion</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-emiss-plot-1.png" width="85%" style="display: block; margin: auto;" /></p>
@@ -981,13 +983,17 @@ gas$chart_class_byRegion</code></pre>
 </div>
 <div id="malaysia-1" class="section level4" number="5.2.2.2">
 <h4><span class="header-section-number">5.2.2.2</span> Malaysia</h4>
-<pre class="r"><code>co2_my &lt;- malaysia %&gt;% filter(param == &quot;emissCO2BySector&quot;,
-                           region == &quot;All of Malaysia&quot;) %&gt;%
+<pre class="r"><code>co2_my &lt;- malaysia %&gt;% 
+  filter(param == &quot;emissCO2BySector&quot;, 
+         region == &quot;All of Malaysia&quot;) %&gt;%
   mutate(value = value * 3.67,
-         units = &quot;CO2 Emissions (MTCO2eq)&quot;)
+         units = &quot;CO2 Emissions (MTCO2eq)&quot;,
+         param = &quot;CO2 Emissions&quot;)
 
-ghg_my &lt;- malaysia %&gt;% filter(param == &quot;emissGHGBySectorGWPAR5&quot;,
-                           region == &quot;All of Malaysia&quot;)
+ghg_my &lt;- malaysia %&gt;% 
+  filter(param == &quot;emissGHGBySectorGWPAR5&quot;, 
+         region == &quot;All of Malaysia&quot;) %&gt;%
+  mutate(param = &quot;GHG Emissions by Sector&quot;)
 
 my_emissions &lt;- bind_rows(co2_my, ghg_my) </code></pre>
 <pre class="r"><code>emissions_my_plot &lt;- my_emissions %&gt;%
@@ -995,21 +1001,22 @@ my_emissions &lt;- bind_rows(co2_my, ghg_my) </code></pre>
   rchart::chart(folder = &quot;rchart/emissions_by_sector&quot;,
                 save = F, 
                 show = F,
-                size_text = 18)
+                size_text = 12)
 
 emissions_my_plot$chart_param</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-emiss-plot-my-1.png" width="85%" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>ghg_gas_my &lt;- malaysia %&gt;% 
   filter(param == &quot;emissGHGByGasGWPAR5&quot;,
          class != &quot;CO2&quot;,
-         region == &quot;All of Malaysia&quot;)
+         region == &quot;All of Malaysia&quot;) %&gt;%
+  mutate(param = &quot;GHG Emissions by Gas&quot;)
 
 my_emissions_gas &lt;- bind_rows(ghg_gas_my, my_emissions)</code></pre>
 <pre class="r"><code>gas_my &lt;- my_emissions_gas %&gt;%
   rchart::chart(folder = &quot;rchart/emissions_by_gas&quot;,
                 save = F, 
                 show = F,
-                size_text = 10)
+                size_text = 12)
 
 gas_my$chart_class</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-emiss-gas-plot-my-1.png" width="85%" style="display: block; margin: auto;" /></p>
@@ -1021,10 +1028,12 @@ gas_my$chart_class</code></pre>
 <pre class="r"><code>co2_kl &lt;- malaysia %&gt;% filter(param == &quot;emissCO2BySector&quot;,
                            region == &quot;KualaLumpur&quot;) %&gt;%
   mutate(value = value * 3.67,
-         units = &quot;CO2 Emissions (MTCO2eq)&quot;)
+         units = &quot;CO2 Emissions (MTCO2eq)&quot;,
+         param = &quot;CO2 Emissions&quot;)
 
 ghg_kl &lt;- malaysia %&gt;% filter(param == &quot;emissGHGBySectorGWPAR5&quot;,
-                           region == &quot;KualaLumpur&quot;)
+                           region == &quot;KualaLumpur&quot;) %&gt;%
+  mutate(param = &quot;GHG Emissions by Sector&quot;)
 
 kl_emissions &lt;- bind_rows(co2_kl, ghg_kl) </code></pre>
 <pre class="r"><code>emissions_kl_plot &lt;- kl_emissions %&gt;%
@@ -1032,24 +1041,25 @@ kl_emissions &lt;- bind_rows(co2_kl, ghg_kl) </code></pre>
   rchart::chart(folder = &quot;rchart/emissions_by_sector&quot;,
                 save = F, 
                 show = F,
-                size_text = 18)
+                size_text = 12)
 
 emissions_kl_plot$chart_param</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-emiss-plot-kl-1.png" width="85%" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>ghg_gas_kl &lt;- malaysia %&gt;% 
   filter(param == &quot;emissGHGByGasGWPAR5&quot;,
          class != &quot;CO2&quot;,
-         region == &quot;KualaLumpur&quot;)
+         region == &quot;KualaLumpur&quot;) %&gt;%
+  mutate(param = &quot;GHG Emissions by Gas&quot;)
 
 kl_emissions_gas &lt;- bind_rows(ghg_gas_kl, kl_emissions)</code></pre>
 <pre class="r"><code>gas_kl &lt;- kl_emissions_gas %&gt;%
   rchart::chart(folder = &quot;rchart/emissions_by_gas&quot;,
                 save = F, 
                 show = F,
-                size_text = 10)
+                size_text = 12)
 
 gas_kl$chart_class</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-emiss-gas-plot-kl-1.png" width="85%" style="display: block; margin: auto;" /></p>
+<p><img src="modeling_malaysia_files/figure-html/rchart-gas-plot-kl-1.png" width="85%" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>gas_kl$chart_class_diff_absolute_KualaLumpur</code></pre>
 <p><br></p>
 <!-------------------------->
@@ -1073,7 +1083,7 @@ Lumpur</h4>
                 chart_type = &quot;class_absolute&quot;,
                 save = F, 
                 show = F,
-                size_text = 20)
+                size_text = 12)
 
 p_energy$chart_class_byRegion</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-primary-energy-1.png" width="85%" style="display: block; margin: auto;" /></p>
@@ -1089,7 +1099,7 @@ p_energy$chart_class_byRegion</code></pre>
                 chart_type = &quot;class_absolute&quot;,
                 save = F, 
                 show = F,
-                size_text = 20)
+                size_text = 12)
 
 p_energy_my$chart_class</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-primary-energy-my-1.png" width="85%" style="display: block; margin: auto;" /></p>
@@ -1106,7 +1116,7 @@ p_energy_my$chart_class</code></pre>
                 chart_type = &quot;class_absolute&quot;,
                 save = F, 
                 show = F,
-                size_text = 20)
+                size_text = 12)
 
 p_energy_kl$chart_class
 
@@ -1135,7 +1145,7 @@ energy &lt;- malaysia %&gt;%
                 chart_type = &quot;class_absolute&quot;,
                 save = F, 
                 show = F,
-                size_text = 20)
+                size_text = 10)
 
 energy$chart_class_byRegion</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-energy-1.png" width="85%" style="display: block; margin: auto;" /></p>
@@ -1150,7 +1160,7 @@ energy$chart_class_byRegion</code></pre>
   rchart::chart(folder = &quot;rchart/energy&quot;,
                 save = F, 
                 show = F,
-                size_text = 20)
+                size_text = 12)
 
 energy_my$chart_class</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-energy-my-1.png" width="85%" style="display: block; margin: auto;" /></p>
@@ -1166,7 +1176,7 @@ energy_my$chart_class</code></pre>
   rchart::chart(folder = &quot;rchart/energy&quot;,
                 save = F, 
                 show = F,
-                size_text = 20)
+                size_text = 12)
 
 energy_kl$chart_class</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-energy-kl-1.png" width="85%" style="display: block; margin: auto;" /></p>
@@ -1195,7 +1205,7 @@ electricity &lt;- malaysia %&gt;%
                 chart_type = &quot;class_absolute&quot;,
                 save = F, 
                 show = F,
-                size_text = 20)
+                size_text = 8)
 
 electricity$chart_class_byRegion</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-elec-gen-1.png" width="85%" style="display: block; margin: auto;" /></p>
@@ -1210,7 +1220,7 @@ electricity$chart_class_byRegion</code></pre>
   rchart::chart(folder = &quot;rchart/electricity&quot;,
                 save = F, 
                 show = F,
-                size_text = 20)
+                size_text = 10)
 
 electricity_my$chart_class</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-elec-gen-my-1.png" width="85%" style="display: block; margin: auto;" /></p>
@@ -1226,7 +1236,7 @@ electricity_my$chart_class</code></pre>
   rchart::chart(folder = &quot;rchart/electricity&quot;,
                 save = F, 
                 show = F,
-                size_text = 20)
+                size_text = 12)
 
 electricity_kl$chart_class</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-elec-gen-kl-1.png" width="85%" style="display: block; margin: auto;" /></p>
@@ -1252,7 +1262,7 @@ Lumpur</h4>
   rchart::chart(folder = &quot;rchart/building_energy&quot;,
                 save = F, 
                 show = F,
-                size_text = 20)
+                size_text = 12)
 
 building_energy$chart_class_byRegion</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-building-1.png" width="85%" style="display: block; margin: auto;" /></p>
@@ -1267,7 +1277,7 @@ building_energy$chart_class_byRegion</code></pre>
   rchart::chart(folder = &quot;rchart/building_energy&quot;,
                 save = F, 
                 show = F,
-                size_text = 20)
+                size_text = 12)
 
 building_energy_my$chart_class</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-building-my-1.png" width="85%" style="display: block; margin: auto;" /></p>
@@ -1283,7 +1293,7 @@ building_energy_my$chart_class</code></pre>
   rchart::chart(folder = &quot;rchart/building_energy&quot;,
                 save = F, 
                 show = F,
-                size_text = 20)
+                size_text = 12)
 
 building_energy_kl$chart_class</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-building-kl-1.png" width="85%" style="display: block; margin: auto;" /></p>
@@ -1312,7 +1322,7 @@ transport &lt;- malaysia %&gt;%
                 chart_type = &quot;class_absolute&quot;,
                 save = F, 
                 show = F,
-                size_text = 20)
+                size_text = 10)
 
 transport$chart_class_byRegion</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-transport-1.png" width="85%" style="display: block; margin: auto;" /></p>
@@ -1327,7 +1337,7 @@ transport$chart_class_byRegion</code></pre>
   rchart::chart(folder = &quot;rchart/transport&quot;,
                 save = F, 
                 show = F,
-                size_text = 20)
+                size_text = 12)
 
 transport_my$chart_class</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-transport-my-1.png" width="85%" style="display: block; margin: auto;" /></p>
@@ -1343,7 +1353,7 @@ transport_my$chart_class</code></pre>
   rchart::chart(folder = &quot;rchart/transport&quot;,
                 save = F, 
                 show = F,
-                size_text = 20)
+                size_text = 12)
 
 transport_kl$chart_class</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-transport-kl-1.png" width="85%" style="display: block; margin: auto;" /></p>
