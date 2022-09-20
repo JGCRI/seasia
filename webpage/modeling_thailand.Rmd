@@ -1280,7 +1280,7 @@ socioeconomic$chart_param_Thailand
 #### Emissions by sector and gas
 ***
 
-``` {r emiss-line-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 12, fig.height = 6}
+``` {r emiss-line-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 12, fig.height = 6, out.width = "100%"}
 
 emissions_line_params <- c("emissCO2BySector", "emissGHGBySectorGWPAR5")
 
@@ -1306,7 +1306,7 @@ thailand <- thailand %>%
 
 ```
 
-``` {r emiss-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 20, fig.height = 18}
+``` {r emiss-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 20, fig.height = 18, out.width = "100%"}
 
 emissions_params <- c("emissCO2BySector", "emissGHGBySectorGWPAR5", "emissGHGByGasGWPAR5")
 
@@ -1322,7 +1322,7 @@ emissions$`chart_class_All of Thailand`
 
 ```
 
-``` {r emiss-diff-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 33, fig.height = 18}
+``` {r emiss-diff-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 32, fig.height = 17, out.width = "100%"}
 
 
 emissions$`chart_class_diff_absolute_All of Thailand`
@@ -1335,7 +1335,7 @@ emissions$`chart_class_diff_absolute_All of Thailand`
 #### Final Energy by Fuel and Sector
 ***
 
-```{r energy-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 20, fig.height = 12}
+```{r energy-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 20, fig.height = 12, out.width = "100%"}
 energy_parameters <- c("energyFinalConsumBySecEJ", "energyFinalByFuelEJ")
 
 energy <- thailand %>% 
@@ -1352,7 +1352,7 @@ energy$`chart_class_All of Thailand`
 
 <br>
 
-``` {r energy-diff-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 32, fig.height = 12}
+``` {r energy-diff-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 32, fig.height = 12, out.width = "100%"}
 
 
 energy$`chart_class_diff_absolute_All of Thailand`
@@ -1362,7 +1362,7 @@ energy$`chart_class_diff_absolute_All of Thailand`
 #### Electricity Generation and Consumption
 ***
 
-```{r elec-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 20, fig.height = 12}
+```{r elec-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 20, fig.height = 12, out.width = "100%"}
 elec_parameters <- c("elecByTechTWh", "elecConsumByDemandSectorTWh")
 
 electricity <- thailand %>% 
@@ -1378,7 +1378,7 @@ electricity$`chart_class_All of Thailand`
 
 ```
 
-``` {r elec-diff-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 32, fig.height = 12}
+``` {r elec-diff-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 32, fig.height = 12, out.width = "100%"}
 
 
 electricity$`chart_class_diff_absolute_All of Thailand`
@@ -1415,21 +1415,21 @@ socioeconomic_mea$chart_region_absolute
 #### Emissions by sector and gas
 ***
 
-``` {r emiss-line-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 12, fig.height = 6}
+``` {r emiss-line-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 12, fig.height = 6, out.width = "100%"}
 
 emissions_line$`chart_param_MEA area`
 
 ```
 
 
-``` {r emiss-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 20, fig.height = 18}
+``` {r emiss-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 20, fig.height = 18, out.width = "100%"}
 
 
 emissions$`chart_class_MEA area`
 
 ```
 
-``` {r emiss-diff-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 32, fig.height = 18}
+``` {r emiss-diff-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 32, fig.height = 18, out.width = "100%"}
 
 
 emissions$`chart_class_diff_absolute_MEA area`
@@ -1442,12 +1442,12 @@ emissions$`chart_class_diff_absolute_MEA area`
 #### Final Energy by Fuel and Sector
 ***
 
-```{r energy-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 20, fig.height = 12}
+```{r energy-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 20, fig.height = 12, out.width = "100%"}
 
 energy$`chart_class_MEA area`
 ```
 
-``` {r energy-diff-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 32, fig.height = 12}
+``` {r energy-diff-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 32, fig.height = 12, out.width = "100%"}
 
 
 energy$`chart_class_diff_absolute_MEA area`
@@ -1459,13 +1459,13 @@ energy$`chart_class_diff_absolute_MEA area`
 #### Electricity Consumption
 ***
 
-```{r elec-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 20, fig.height = 6}
+```{r elec-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 20, fig.height = 6, out.width = "100%"}
 
 electricity$`chart_class_MEA area`
 
 ```
 
-``` {r elec-diff-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 32, fig.height = 6}
+``` {r elec-diff-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 32, fig.height = 6,out.width = "100%"}
 
 
 electricity$`chart_class_diff_absolute_MEA area`

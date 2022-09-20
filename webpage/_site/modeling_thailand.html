@@ -2276,7 +2276,7 @@ emissions_line &lt;- thailand %&gt;% filter(param %in% emissions_line_params,
                 size_text = 19)
 
 emissions_line$`chart_param_All of Thailand`</code></pre>
-<p><img src="modeling_thailand_files/figure-html/emiss-line-th-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<p><img src="modeling_thailand_files/figure-html/emiss-line-th-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>emissions_params &lt;- c(&quot;emissCO2BySector&quot;, &quot;emissGHGBySectorGWPAR5&quot;, &quot;emissGHGByGasGWPAR5&quot;)
 
 emissions &lt;- thailand %&gt;% filter(param %in% emissions_params,
@@ -2288,9 +2288,9 @@ emissions &lt;- thailand %&gt;% filter(param %in% emissions_params,
                 scenRef = &quot;Ref&quot;)
 
 emissions$`chart_class_All of Thailand`</code></pre>
-<p><img src="modeling_thailand_files/figure-html/emiss-th-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<p><img src="modeling_thailand_files/figure-html/emiss-th-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>emissions$`chart_class_diff_absolute_All of Thailand`</code></pre>
-<p><img src="modeling_thailand_files/figure-html/emiss-diff-th-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<p><img src="modeling_thailand_files/figure-html/emiss-diff-th-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 </div>
 <div id="final-energy-by-fuel-and-sector" class="section level4"
@@ -2310,10 +2310,10 @@ energy &lt;- thailand %&gt;%
                 scenRef = &quot;Ref&quot;)
 
 energy$`chart_class_All of Thailand`</code></pre>
-<p><img src="modeling_thailand_files/figure-html/energy-th-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<p><img src="modeling_thailand_files/figure-html/energy-th-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 <pre class="r"><code>energy$`chart_class_diff_absolute_All of Thailand`</code></pre>
-<p><img src="modeling_thailand_files/figure-html/energy-diff-th-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<p><img src="modeling_thailand_files/figure-html/energy-diff-th-1.png" width="100%" style="display: block; margin: auto;" /></p>
 </div>
 <div id="electricity-generation-and-consumption" class="section level4"
 number="6.2.1.4">
@@ -2332,9 +2332,9 @@ electricity &lt;- thailand %&gt;%
                 scenRef = &quot;Ref&quot;)
 
 electricity$`chart_class_All of Thailand`</code></pre>
-<p><img src="modeling_thailand_files/figure-html/elec-th-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<p><img src="modeling_thailand_files/figure-html/elec-th-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>electricity$`chart_class_diff_absolute_All of Thailand`</code></pre>
-<p><img src="modeling_thailand_files/figure-html/elec-diff-th-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<p><img src="modeling_thailand_files/figure-html/elec-diff-th-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 </div>
 </div>
@@ -2367,11 +2367,11 @@ number="6.2.2.2">
 sector and gas</h4>
 <hr />
 <pre class="r"><code>emissions_line$`chart_param_MEA area`</code></pre>
-<p><img src="modeling_thailand_files/figure-html/emiss-line-mea-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<p><img src="modeling_thailand_files/figure-html/emiss-line-mea-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>emissions$`chart_class_MEA area`</code></pre>
-<p><img src="modeling_thailand_files/figure-html/emiss-mea-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<p><img src="modeling_thailand_files/figure-html/emiss-mea-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>emissions$`chart_class_diff_absolute_MEA area`</code></pre>
-<p><img src="modeling_thailand_files/figure-html/emiss-diff-mea-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<p><img src="modeling_thailand_files/figure-html/emiss-diff-mea-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 </div>
 <div id="final-energy-by-fuel-and-sector-1" class="section level4"
@@ -2380,9 +2380,9 @@ number="6.2.2.3">
 Fuel and Sector</h4>
 <hr />
 <pre class="r"><code>energy$`chart_class_MEA area`</code></pre>
-<p><img src="modeling_thailand_files/figure-html/energy-mea-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<p><img src="modeling_thailand_files/figure-html/energy-mea-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>energy$`chart_class_diff_absolute_MEA area`</code></pre>
-<p><img src="modeling_thailand_files/figure-html/energy-diff-mea-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<p><img src="modeling_thailand_files/figure-html/energy-diff-mea-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 </div>
 <div id="electricity-consumption" class="section level4"
@@ -2391,9 +2391,9 @@ number="6.2.2.4">
 Consumption</h4>
 <hr />
 <pre class="r"><code>electricity$`chart_class_MEA area`</code></pre>
-<p><img src="modeling_thailand_files/figure-html/elec-mea-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<p><img src="modeling_thailand_files/figure-html/elec-mea-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>electricity$`chart_class_diff_absolute_MEA area`</code></pre>
-<p><img src="modeling_thailand_files/figure-html/elec-diff-mea-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<p><img src="modeling_thailand_files/figure-html/elec-diff-mea-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 </div>
 </div>

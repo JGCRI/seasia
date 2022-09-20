@@ -221,22 +221,6 @@
 "policies_high","All of Thailand","All of Thailand","emissCO2BySector","sector","hydrogen","Year",2060,"Vint_2060","CO2 emissions - (MTCO2)",1.14751706666667
 "policies_high","All of Thailand","All of Thailand","emissCO2BySector","sector","hydrogen","Year",2065,"Vint_2065","CO2 emissions - (MTCO2)",0.8663699
 "policies_high","All of Thailand","All of Thailand","emissCO2BySector","sector","hydrogen","Year",2070,"Vint_2070","CO2 emissions - (MTCO2)",2.1993444
-"policies_high","All of Thailand","All of Thailand","emissCO2BySector","sector","industrial feedstocks","Year",1975,"Vint_1975","CO2 emissions - (MTCO2)",-0.85723924
-"policies_high","All of Thailand","All of Thailand","emissCO2BySector","sector","industrial feedstocks","Year",1990,"Vint_1990","CO2 emissions - (MTCO2)",-1.29057617333333
-"policies_high","All of Thailand","All of Thailand","emissCO2BySector","sector","industrial feedstocks","Year",2005,"Vint_2005","CO2 emissions - (MTCO2)",-36.2264283333333
-"policies_high","All of Thailand","All of Thailand","emissCO2BySector","sector","industrial feedstocks","Year",2010,"Vint_2010","CO2 emissions - (MTCO2)",-50.961262
-"policies_high","All of Thailand","All of Thailand","emissCO2BySector","sector","industrial feedstocks","Year",2015,"Vint_2015","CO2 emissions - (MTCO2)",-63.0277963333333
-"policies_high","All of Thailand","All of Thailand","emissCO2BySector","sector","industrial feedstocks","Year",2020,"Vint_2020","CO2 emissions - (MTCO2)",-61.2573463333333
-"policies_high","All of Thailand","All of Thailand","emissCO2BySector","sector","industrial feedstocks","Year",2025,"Vint_2025","CO2 emissions - (MTCO2)",-59.6511593333333
-"policies_high","All of Thailand","All of Thailand","emissCO2BySector","sector","industrial feedstocks","Year",2030,"Vint_2030","CO2 emissions - (MTCO2)",-59.138013
-"policies_high","All of Thailand","All of Thailand","emissCO2BySector","sector","industrial feedstocks","Year",2035,"Vint_2035","CO2 emissions - (MTCO2)",-58.0796993333333
-"policies_high","All of Thailand","All of Thailand","emissCO2BySector","sector","industrial feedstocks","Year",2040,"Vint_2040","CO2 emissions - (MTCO2)",-56.1923743333333
-"policies_high","All of Thailand","All of Thailand","emissCO2BySector","sector","industrial feedstocks","Year",2045,"Vint_2045","CO2 emissions - (MTCO2)",-53.9064093333333
-"policies_high","All of Thailand","All of Thailand","emissCO2BySector","sector","industrial feedstocks","Year",2050,"Vint_2050","CO2 emissions - (MTCO2)",-51.6351916666667
-"policies_high","All of Thailand","All of Thailand","emissCO2BySector","sector","industrial feedstocks","Year",2055,"Vint_2055","CO2 emissions - (MTCO2)",-49.3545323333333
-"policies_high","All of Thailand","All of Thailand","emissCO2BySector","sector","industrial feedstocks","Year",2060,"Vint_2060","CO2 emissions - (MTCO2)",-46.8564396666667
-"policies_high","All of Thailand","All of Thailand","emissCO2BySector","sector","industrial feedstocks","Year",2065,"Vint_2065","CO2 emissions - (MTCO2)",-44.5288066666667
-"policies_high","All of Thailand","All of Thailand","emissCO2BySector","sector","industrial feedstocks","Year",2070,"Vint_2070","CO2 emissions - (MTCO2)",-40.1954483333333
 "policies_high","All of Thailand","All of Thailand","emissCO2BySector","sector","industry","Year",1975,"Vint_1975","CO2 emissions - (MTCO2)",25.2036199433333
 "policies_high","All of Thailand","All of Thailand","emissCO2BySector","sector","industry","Year",1990,"Vint_1990","CO2 emissions - (MTCO2)",62.2483287066667
 "policies_high","All of Thailand","All of Thailand","emissCO2BySector","sector","industry","Year",2005,"Vint_2005","CO2 emissions - (MTCO2)",122.176651923333
@@ -326,26 +310,26 @@
 "policies_high","All of Thailand","All of Thailand","emissGHGByGasGWPAR5","ghg","CH4","Year",2060,"Vint_2060","GHG emissions (MTCO2eq)",119.727612359953
 "policies_high","All of Thailand","All of Thailand","emissGHGByGasGWPAR5","ghg","CH4","Year",2065,"Vint_2065","GHG emissions (MTCO2eq)",119.929801998905
 "policies_high","All of Thailand","All of Thailand","emissGHGByGasGWPAR5","ghg","CH4","Year",2070,"Vint_2070","GHG emissions (MTCO2eq)",121.084189693033
-"policies_high","All of Thailand","All of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",18.0964449233333
+"policies_high","All of Thailand","All of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",18.9536841633333
 "policies_high","All of Thailand","All of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",1980,"Vint_1980","GHG emissions (MTCO2eq)",146.942087967899
 "policies_high","All of Thailand","All of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",1985,"Vint_1985","GHG emissions (MTCO2eq)",147.076438944747
-"policies_high","All of Thailand","All of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",245.420282780754
+"policies_high","All of Thailand","All of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",246.710858954087
 "policies_high","All of Thailand","All of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",1995,"Vint_1995","GHG emissions (MTCO2eq)",-1.5020065140311
 "policies_high","All of Thailand","All of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2000,"Vint_2000","GHG emissions (MTCO2eq)",-13.87316870361
-"policies_high","All of Thailand","All of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",186.317085621768
-"policies_high","All of Thailand","All of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",323.811047441386
-"policies_high","All of Thailand","All of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",424.083930103051
-"policies_high","All of Thailand","All of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",237.41031050896
-"policies_high","All of Thailand","All of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",231.093499713372
-"policies_high","All of Thailand","All of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",213.759586530237
-"policies_high","All of Thailand","All of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",195.042148561592
-"policies_high","All of Thailand","All of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",178.198556956658
-"policies_high","All of Thailand","All of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",176.046342013927
-"policies_high","All of Thailand","All of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",164.15992588138
-"policies_high","All of Thailand","All of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2055,"Vint_2055","GHG emissions (MTCO2eq)",156.201172942293
-"policies_high","All of Thailand","All of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2060,"Vint_2060","GHG emissions (MTCO2eq)",154.354154171278
-"policies_high","All of Thailand","All of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2065,"Vint_2065","GHG emissions (MTCO2eq)",154.318575046703
-"policies_high","All of Thailand","All of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2070,"Vint_2070","GHG emissions (MTCO2eq)",211.579272833659
+"policies_high","All of Thailand","All of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",222.543513955101
+"policies_high","All of Thailand","All of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",374.772309441386
+"policies_high","All of Thailand","All of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",487.111726436385
+"policies_high","All of Thailand","All of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",298.667656842293
+"policies_high","All of Thailand","All of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",290.744659046706
+"policies_high","All of Thailand","All of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",272.897599530237
+"policies_high","All of Thailand","All of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",253.121847894926
+"policies_high","All of Thailand","All of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",234.390931289992
+"policies_high","All of Thailand","All of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",229.952751347261
+"policies_high","All of Thailand","All of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",215.795117548047
+"policies_high","All of Thailand","All of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2055,"Vint_2055","GHG emissions (MTCO2eq)",205.555705275626
+"policies_high","All of Thailand","All of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2060,"Vint_2060","GHG emissions (MTCO2eq)",201.210593837945
+"policies_high","All of Thailand","All of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2065,"Vint_2065","GHG emissions (MTCO2eq)",198.847381713369
+"policies_high","All of Thailand","All of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2070,"Vint_2070","GHG emissions (MTCO2eq)",251.774721166992
 "policies_high","All of Thailand","All of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2075,"Vint_2075","GHG emissions (MTCO2eq)",-1.46172135614851
 "policies_high","All of Thailand","All of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2080,"Vint_2080","GHG emissions (MTCO2eq)",-1.04220041954466
 "policies_high","All of Thailand","All of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2085,"Vint_2085","GHG emissions (MTCO2eq)",-0.733085144444178
@@ -415,6 +399,22 @@
 "policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","building","Year",2060,"Vint_2060","GHG emissions (MTCO2eq)",72.3804604776733
 "policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","building","Year",2065,"Vint_2065","GHG emissions (MTCO2eq)",73.0943314332367
 "policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","building","Year",2070,"Vint_2070","GHG emissions (MTCO2eq)",75.9295157487717
+"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","coal","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",7.667004445
+"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","coal","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",20.376789965
+"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","coal","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",20.14402215
+"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","coal","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",14.79655561
+"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","coal","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",9.721168445
+"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","coal","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",12.72480552
+"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","coal","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",14.95062997
+"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","coal","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",16.83221944495
+"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","coal","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",18.382195546
+"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","coal","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",20.2035421885
+"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","coal","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",23.278842845
+"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","coal","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",25.86250415
+"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","coal","Year",2055,"Vint_2055","GHG emissions (MTCO2eq)",27.5000512
+"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","coal","Year",2060,"Vint_2060","GHG emissions (MTCO2eq)",28.543299301
+"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","coal","Year",2065,"Vint_2065","GHG emissions (MTCO2eq)",29.394233034
+"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","coal","Year",2070,"Vint_2070","GHG emissions (MTCO2eq)",30.1027170215
 "policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","crops","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",43.7634921857305
 "policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","crops","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",49.0963606187758
 "policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","crops","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",58.9703177203435
@@ -431,6 +431,22 @@
 "policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","crops","Year",2060,"Vint_2060","GHG emissions (MTCO2eq)",74.7765482277551
 "policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","crops","Year",2065,"Vint_2065","GHG emissions (MTCO2eq)",75.4871275356725
 "policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","crops","Year",2070,"Vint_2070","GHG emissions (MTCO2eq)",75.8559889338742
+"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","crude oil","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",0.05392868691592
+"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","crude oil","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",0.94259267522668
+"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","crude oil","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",4.27613798320083
+"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","crude oil","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",5.82910231864947
+"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","crude oil","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",6.4823372613197
+"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","crude oil","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",5.95179772674869
+"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","crude oil","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",5.35959326938537
+"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","crude oil","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",4.7295176668095
+"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","crude oil","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",4.16900297789963
+"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","crude oil","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",3.33813135682344
+"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","crude oil","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",2.75128314068123
+"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","crude oil","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",2.30315002673647
+"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","crude oil","Year",2055,"Vint_2055","GHG emissions (MTCO2eq)",1.86039780512507
+"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","crude oil","Year",2060,"Vint_2060","GHG emissions (MTCO2eq)",1.34870745849122
+"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","crude oil","Year",2065,"Vint_2065","GHG emissions (MTCO2eq)",0.908260397807775
+"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","crude oil","Year",2070,"Vint_2070","GHG emissions (MTCO2eq)",0.597776266200215
 "policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","electricity","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",0.20539
 "policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","electricity","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",28.370339236
 "policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","electricity","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",70.0455001097833
@@ -458,22 +474,6 @@
 "policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","hydrogen","Year",2060,"Vint_2060","GHG emissions (MTCO2eq)",1.14784788834667
 "policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","hydrogen","Year",2065,"Vint_2065","GHG emissions (MTCO2eq)",0.86661933338
 "policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","hydrogen","Year",2070,"Vint_2070","GHG emissions (MTCO2eq)",2.19995671996
-"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",-0.85723924
-"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",-1.29057617333333
-"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",-36.2264283333333
-"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",-50.961262
-"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",-63.0277963333333
-"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",-61.2573463333333
-"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",-59.6511593333333
-"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",-59.138013
-"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",-58.0796993333333
-"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",-56.1923743333333
-"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",-53.9064093333333
-"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",-51.6351916666667
-"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2055,"Vint_2055","GHG emissions (MTCO2eq)",-49.3545323333333
-"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2060,"Vint_2060","GHG emissions (MTCO2eq)",-46.8564396666667
-"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2065,"Vint_2065","GHG emissions (MTCO2eq)",-44.5288066666667
-"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2070,"Vint_2070","GHG emissions (MTCO2eq)",-40.1954483333333
 "policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","industry","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",25.3263556730333
 "policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","industry","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",62.5923626994667
 "policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","industry","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",123.379758625263
@@ -531,6 +531,21 @@
 "policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","LUC","Year",2090,"Vint_2090","GHG emissions (MTCO2eq)",-0.508413791788563
 "policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","LUC","Year",2095,"Vint_2095","GHG emissions (MTCO2eq)",-0.348975392877813
 "policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","LUC","Year",2100,"Vint_2100","GHG emissions (MTCO2eq)",-0.237939095997119
+"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","natural gas","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",1.53203802947
+"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","natural gas","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",5.94932421789
+"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","natural gas","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",8.023809208135
+"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","natural gas","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",8.1260695278785
+"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","natural gas","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",6.654112007491
+"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","natural gas","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",5.5961930371705
+"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","natural gas","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",5.6992221968075
+"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","natural gas","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",4.8243418938545
+"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","natural gas","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",3.57079890054095
+"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","natural gas","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",3.832860781369
+"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","natural gas","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",3.8163148336185
+"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","natural gas","Year",2055,"Vint_2055","GHG emissions (MTCO2eq)",3.719548061251
+"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","natural gas","Year",2060,"Vint_2060","GHG emissions (MTCO2eq)",3.785323033385
+"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","natural gas","Year",2065,"Vint_2065","GHG emissions (MTCO2eq)",3.8792616778105
+"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","natural gas","Year",2070,"Vint_2070","GHG emissions (MTCO2eq)",4.6984610917915
 "policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","refining","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",0.2794209
 "policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","refining","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",0.291791866666667
 "policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","refining","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",6.13070437934667
@@ -547,22 +562,6 @@
 "policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","refining","Year",2060,"Vint_2060","GHG emissions (MTCO2eq)",26.3509700100392
 "policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","refining","Year",2065,"Vint_2065","GHG emissions (MTCO2eq)",27.8203577844256
 "policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","refining","Year",2070,"Vint_2070","GHG emissions (MTCO2eq)",31.1745038696764
-"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","resource production","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",7.72093313191592
-"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","resource production","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",22.8514206696967
-"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","resource production","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",30.3694843510908
-"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","resource production","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",28.6494671367845
-"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","resource production","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",24.3295752341982
-"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","resource production","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",25.3307152542397
-"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","resource production","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",25.9064162765559
-"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","resource production","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",27.260959308567
-"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","resource production","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",27.3755404177541
-"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","resource production","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",27.1124724458644
-"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","resource production","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",29.8629867670502
-"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","resource production","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",31.981969010355
-"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","resource production","Year",2055,"Vint_2055","GHG emissions (MTCO2eq)",33.0799970663761
-"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","resource production","Year",2060,"Vint_2060","GHG emissions (MTCO2eq)",33.6773297928762
-"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","resource production","Year",2065,"Vint_2065","GHG emissions (MTCO2eq)",34.1817551096183
-"policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","resource production","Year",2070,"Vint_2070","GHG emissions (MTCO2eq)",35.3989543794917
 "policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","transport","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",9.64754192
 "policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","transport","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",38.222033733
 "policies_high","All of Thailand","All of Thailand","emissGHGBySectorGWPAR5","sector","transport","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",80.9731934917667
@@ -901,22 +900,6 @@
 "policies_high","Bangkok","Bangkok","emissCO2BySector","sector","building","Year",2060,"Vint_2060","CO2 emissions - (MTCO2)",42.0938702345333
 "policies_high","Bangkok","Bangkok","emissCO2BySector","sector","building","Year",2065,"Vint_2065","CO2 emissions - (MTCO2)",42.1452482117333
 "policies_high","Bangkok","Bangkok","emissCO2BySector","sector","building","Year",2070,"Vint_2070","CO2 emissions - (MTCO2)",42.9973658224
-"policies_high","Bangkok","Bangkok","emissCO2BySector","sector","industrial feedstocks","Year",1975,"Vint_1975","CO2 emissions - (MTCO2)",-0.321871733333333
-"policies_high","Bangkok","Bangkok","emissCO2BySector","sector","industrial feedstocks","Year",1990,"Vint_1990","CO2 emissions - (MTCO2)",-0.484601333333333
-"policies_high","Bangkok","Bangkok","emissCO2BySector","sector","industrial feedstocks","Year",2005,"Vint_2005","CO2 emissions - (MTCO2)",-12.0826933333333
-"policies_high","Bangkok","Bangkok","emissCO2BySector","sector","industrial feedstocks","Year",2010,"Vint_2010","CO2 emissions - (MTCO2)",-14.6337033333333
-"policies_high","Bangkok","Bangkok","emissCO2BySector","sector","industrial feedstocks","Year",2015,"Vint_2015","CO2 emissions - (MTCO2)",-20.4883433333333
-"policies_high","Bangkok","Bangkok","emissCO2BySector","sector","industrial feedstocks","Year",2020,"Vint_2020","CO2 emissions - (MTCO2)",-19.8480333333333
-"policies_high","Bangkok","Bangkok","emissCO2BySector","sector","industrial feedstocks","Year",2025,"Vint_2025","CO2 emissions - (MTCO2)",-19.2002066666667
-"policies_high","Bangkok","Bangkok","emissCO2BySector","sector","industrial feedstocks","Year",2030,"Vint_2030","CO2 emissions - (MTCO2)",-18.6440833333333
-"policies_high","Bangkok","Bangkok","emissCO2BySector","sector","industrial feedstocks","Year",2035,"Vint_2035","CO2 emissions - (MTCO2)",-17.8565933333333
-"policies_high","Bangkok","Bangkok","emissCO2BySector","sector","industrial feedstocks","Year",2040,"Vint_2040","CO2 emissions - (MTCO2)",-16.8848166666667
-"policies_high","Bangkok","Bangkok","emissCO2BySector","sector","industrial feedstocks","Year",2045,"Vint_2045","CO2 emissions - (MTCO2)",-15.8879233333333
-"policies_high","Bangkok","Bangkok","emissCO2BySector","sector","industrial feedstocks","Year",2050,"Vint_2050","CO2 emissions - (MTCO2)",-14.9022133333333
-"policies_high","Bangkok","Bangkok","emissCO2BySector","sector","industrial feedstocks","Year",2055,"Vint_2055","CO2 emissions - (MTCO2)",-13.95383
-"policies_high","Bangkok","Bangkok","emissCO2BySector","sector","industrial feedstocks","Year",2060,"Vint_2060","CO2 emissions - (MTCO2)",-12.9744633333333
-"policies_high","Bangkok","Bangkok","emissCO2BySector","sector","industrial feedstocks","Year",2065,"Vint_2065","CO2 emissions - (MTCO2)",-12.10209
-"policies_high","Bangkok","Bangkok","emissCO2BySector","sector","industrial feedstocks","Year",2070,"Vint_2070","CO2 emissions - (MTCO2)",-10.7309766666667
 "policies_high","Bangkok","Bangkok","emissCO2BySector","sector","industry","Year",1975,"Vint_1975","CO2 emissions - (MTCO2)",8.15598666666667
 "policies_high","Bangkok","Bangkok","emissCO2BySector","sector","industry","Year",1990,"Vint_1990","CO2 emissions - (MTCO2)",17.3226936666667
 "policies_high","Bangkok","Bangkok","emissCO2BySector","sector","industry","Year",2005,"Vint_2005","CO2 emissions - (MTCO2)",29.7904566666667
@@ -965,22 +948,22 @@
 "policies_high","Bangkok","Bangkok","emissGHGByGasGWPAR5","ghg","CH4","Year",2060,"Vint_2060","GHG emissions (MTCO2eq)",0.075929056899136
 "policies_high","Bangkok","Bangkok","emissGHGByGasGWPAR5","ghg","CH4","Year",2065,"Vint_2065","GHG emissions (MTCO2eq)",0.065660260500632
 "policies_high","Bangkok","Bangkok","emissGHGByGasGWPAR5","ghg","CH4","Year",2070,"Vint_2070","GHG emissions (MTCO2eq)",0.091366843756664
-"policies_high","Bangkok","Bangkok","emissGHGByGasGWPAR5","ghg","CO2","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",8.736051885
-"policies_high","Bangkok","Bangkok","emissGHGByGasGWPAR5","ghg","CO2","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",26.10531506
-"policies_high","Bangkok","Bangkok","emissGHGByGasGWPAR5","ghg","CO2","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",30.24344708
-"policies_high","Bangkok","Bangkok","emissGHGByGasGWPAR5","ghg","CO2","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",30.9526115396667
-"policies_high","Bangkok","Bangkok","emissGHGByGasGWPAR5","ghg","CO2","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",32.865783456
-"policies_high","Bangkok","Bangkok","emissGHGByGasGWPAR5","ghg","CO2","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",43.0146917823333
-"policies_high","Bangkok","Bangkok","emissGHGByGasGWPAR5","ghg","CO2","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",47.3575632566667
-"policies_high","Bangkok","Bangkok","emissGHGByGasGWPAR5","ghg","CO2","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",47.4336872276667
-"policies_high","Bangkok","Bangkok","emissGHGByGasGWPAR5","ghg","CO2","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",49.0753602067667
-"policies_high","Bangkok","Bangkok","emissGHGByGasGWPAR5","ghg","CO2","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",50.6137230401
-"policies_high","Bangkok","Bangkok","emissGHGByGasGWPAR5","ghg","CO2","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",51.8418660228333
-"policies_high","Bangkok","Bangkok","emissGHGByGasGWPAR5","ghg","CO2","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",50.728117726
-"policies_high","Bangkok","Bangkok","emissGHGByGasGWPAR5","ghg","CO2","Year",2055,"Vint_2055","GHG emissions (MTCO2eq)",48.3053500904333
-"policies_high","Bangkok","Bangkok","emissGHGByGasGWPAR5","ghg","CO2","Year",2060,"Vint_2060","GHG emissions (MTCO2eq)",46.4375657878
-"policies_high","Bangkok","Bangkok","emissGHGByGasGWPAR5","ghg","CO2","Year",2065,"Vint_2065","GHG emissions (MTCO2eq)",44.0431255792
-"policies_high","Bangkok","Bangkok","emissGHGByGasGWPAR5","ghg","CO2","Year",2070,"Vint_2070","GHG emissions (MTCO2eq)",56.4103657058333
+"policies_high","Bangkok","Bangkok","emissGHGByGasGWPAR5","ghg","CO2","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",9.05792361833333
+"policies_high","Bangkok","Bangkok","emissGHGByGasGWPAR5","ghg","CO2","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",26.5899163933333
+"policies_high","Bangkok","Bangkok","emissGHGByGasGWPAR5","ghg","CO2","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",42.3261404133333
+"policies_high","Bangkok","Bangkok","emissGHGByGasGWPAR5","ghg","CO2","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",45.586314873
+"policies_high","Bangkok","Bangkok","emissGHGByGasGWPAR5","ghg","CO2","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",53.3541267893333
+"policies_high","Bangkok","Bangkok","emissGHGByGasGWPAR5","ghg","CO2","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",62.8627251156667
+"policies_high","Bangkok","Bangkok","emissGHGByGasGWPAR5","ghg","CO2","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",66.5577699233333
+"policies_high","Bangkok","Bangkok","emissGHGByGasGWPAR5","ghg","CO2","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",66.077770561
+"policies_high","Bangkok","Bangkok","emissGHGByGasGWPAR5","ghg","CO2","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",66.9319535401
+"policies_high","Bangkok","Bangkok","emissGHGByGasGWPAR5","ghg","CO2","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",67.4985397067667
+"policies_high","Bangkok","Bangkok","emissGHGByGasGWPAR5","ghg","CO2","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",67.7297893561667
+"policies_high","Bangkok","Bangkok","emissGHGByGasGWPAR5","ghg","CO2","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",65.6303310593333
+"policies_high","Bangkok","Bangkok","emissGHGByGasGWPAR5","ghg","CO2","Year",2055,"Vint_2055","GHG emissions (MTCO2eq)",62.2591800904333
+"policies_high","Bangkok","Bangkok","emissGHGByGasGWPAR5","ghg","CO2","Year",2060,"Vint_2060","GHG emissions (MTCO2eq)",59.4120291211333
+"policies_high","Bangkok","Bangkok","emissGHGByGasGWPAR5","ghg","CO2","Year",2065,"Vint_2065","GHG emissions (MTCO2eq)",56.1452155792
+"policies_high","Bangkok","Bangkok","emissGHGByGasGWPAR5","ghg","CO2","Year",2070,"Vint_2070","GHG emissions (MTCO2eq)",67.1413423725
 "policies_high","Bangkok","Bangkok","emissGHGByGasGWPAR5","ghg","N2O","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",0.040227
 "policies_high","Bangkok","Bangkok","emissGHGByGasGWPAR5","ghg","N2O","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",0.1031645
 "policies_high","Bangkok","Bangkok","emissGHGByGasGWPAR5","ghg","N2O","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",0.3341385
@@ -1012,22 +995,6 @@
 "policies_high","Bangkok","Bangkok","emissGHGBySectorGWPAR5","sector","building","Year",2060,"Vint_2060","GHG emissions (MTCO2eq)",42.0938702345333
 "policies_high","Bangkok","Bangkok","emissGHGBySectorGWPAR5","sector","building","Year",2065,"Vint_2065","GHG emissions (MTCO2eq)",42.1452482117333
 "policies_high","Bangkok","Bangkok","emissGHGBySectorGWPAR5","sector","building","Year",2070,"Vint_2070","GHG emissions (MTCO2eq)",42.9973658224
-"policies_high","Bangkok","Bangkok","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",-0.321871733333333
-"policies_high","Bangkok","Bangkok","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",-0.484601333333333
-"policies_high","Bangkok","Bangkok","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",-12.0826933333333
-"policies_high","Bangkok","Bangkok","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",-14.6337033333333
-"policies_high","Bangkok","Bangkok","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",-20.4883433333333
-"policies_high","Bangkok","Bangkok","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",-19.8480333333333
-"policies_high","Bangkok","Bangkok","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",-19.2002066666667
-"policies_high","Bangkok","Bangkok","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",-18.6440833333333
-"policies_high","Bangkok","Bangkok","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",-17.8565933333333
-"policies_high","Bangkok","Bangkok","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",-16.8848166666667
-"policies_high","Bangkok","Bangkok","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",-15.8879233333333
-"policies_high","Bangkok","Bangkok","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",-14.9022133333333
-"policies_high","Bangkok","Bangkok","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2055,"Vint_2055","GHG emissions (MTCO2eq)",-13.95383
-"policies_high","Bangkok","Bangkok","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2060,"Vint_2060","GHG emissions (MTCO2eq)",-12.9744633333333
-"policies_high","Bangkok","Bangkok","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2065,"Vint_2065","GHG emissions (MTCO2eq)",-12.10209
-"policies_high","Bangkok","Bangkok","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2070,"Vint_2070","GHG emissions (MTCO2eq)",-10.7309766666667
 "policies_high","Bangkok","Bangkok","emissGHGBySectorGWPAR5","sector","industry","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",8.19904536666666
 "policies_high","Bangkok","Bangkok","emissGHGBySectorGWPAR5","sector","industry","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",17.4356492666667
 "policies_high","Bangkok","Bangkok","emissGHGBySectorGWPAR5","sector","industry","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",30.1454965666667
@@ -1364,22 +1331,6 @@
 "policies_high","MEA area","MEA area","emissCO2BySector","sector","building","Year",2060,"Vint_2060","CO2 emissions - (MTCO2)",45.99962561744
 "policies_high","MEA area","MEA area","emissCO2BySector","sector","building","Year",2065,"Vint_2065","CO2 emissions - (MTCO2)",46.1289430298033
 "policies_high","MEA area","MEA area","emissCO2BySector","sector","building","Year",2070,"Vint_2070","CO2 emissions - (MTCO2)",47.178876277005
-"policies_high","MEA area","MEA area","emissCO2BySector","sector","industrial feedstocks","Year",1975,"Vint_1975","CO2 emissions - (MTCO2)",-0.374698573333333
-"policies_high","MEA area","MEA area","emissCO2BySector","sector","industrial feedstocks","Year",1990,"Vint_1990","CO2 emissions - (MTCO2)",-0.56407384
-"policies_high","MEA area","MEA area","emissCO2BySector","sector","industrial feedstocks","Year",2005,"Vint_2005","CO2 emissions - (MTCO2)",-14.6126016666667
-"policies_high","MEA area","MEA area","emissCO2BySector","sector","industrial feedstocks","Year",2010,"Vint_2010","CO2 emissions - (MTCO2)",-18.5925886666667
-"policies_high","MEA area","MEA area","emissCO2BySector","sector","industrial feedstocks","Year",2015,"Vint_2015","CO2 emissions - (MTCO2)",-24.8896963333333
-"policies_high","MEA area","MEA area","emissCO2BySector","sector","industrial feedstocks","Year",2020,"Vint_2020","CO2 emissions - (MTCO2)",-24.1521463333333
-"policies_high","MEA area","MEA area","emissCO2BySector","sector","industrial feedstocks","Year",2025,"Vint_2025","CO2 emissions - (MTCO2)",-23.7379193333333
-"policies_high","MEA area","MEA area","emissCO2BySector","sector","industrial feedstocks","Year",2030,"Vint_2030","CO2 emissions - (MTCO2)",-23.3535096666667
-"policies_high","MEA area","MEA area","emissCO2BySector","sector","industrial feedstocks","Year",2035,"Vint_2035","CO2 emissions - (MTCO2)",-22.6930293333333
-"policies_high","MEA area","MEA area","emissCO2BySector","sector","industrial feedstocks","Year",2040,"Vint_2040","CO2 emissions - (MTCO2)",-21.7905343333333
-"policies_high","MEA area","MEA area","emissCO2BySector","sector","industrial feedstocks","Year",2045,"Vint_2045","CO2 emissions - (MTCO2)",-20.5987026666667
-"policies_high","MEA area","MEA area","emissCO2BySector","sector","industrial feedstocks","Year",2050,"Vint_2050","CO2 emissions - (MTCO2)",-19.4069516666667
-"policies_high","MEA area","MEA area","emissCO2BySector","sector","industrial feedstocks","Year",2055,"Vint_2055","CO2 emissions - (MTCO2)",-18.2458723333333
-"policies_high","MEA area","MEA area","emissCO2BySector","sector","industrial feedstocks","Year",2060,"Vint_2060","CO2 emissions - (MTCO2)",-17.0349263333333
-"policies_high","MEA area","MEA area","emissCO2BySector","sector","industrial feedstocks","Year",2065,"Vint_2065","CO2 emissions - (MTCO2)",-15.9445733333333
-"policies_high","MEA area","MEA area","emissCO2BySector","sector","industrial feedstocks","Year",2070,"Vint_2070","CO2 emissions - (MTCO2)",-14.1842616666667
 "policies_high","MEA area","MEA area","emissCO2BySector","sector","industry","Year",1975,"Vint_1975","CO2 emissions - (MTCO2)",9.49458473333333
 "policies_high","MEA area","MEA area","emissCO2BySector","sector","industry","Year",1990,"Vint_1990","CO2 emissions - (MTCO2)",20.16353394
 "policies_high","MEA area","MEA area","emissCO2BySector","sector","industry","Year",2005,"Vint_2005","CO2 emissions - (MTCO2)",36.0280737666667
@@ -1428,22 +1379,22 @@
 "policies_high","MEA area","MEA area","emissGHGByGasGWPAR5","ghg","CH4","Year",2060,"Vint_2060","GHG emissions (MTCO2eq)",0.114132972680916
 "policies_high","MEA area","MEA area","emissGHGByGasGWPAR5","ghg","CH4","Year",2065,"Vint_2065","GHG emissions (MTCO2eq)",0.10109392469302
 "policies_high","MEA area","MEA area","emissGHGByGasGWPAR5","ghg","CH4","Year",2070,"Vint_2070","GHG emissions (MTCO2eq)",0.137065281429356
-"policies_high","MEA area","MEA area","emissGHGByGasGWPAR5","ghg","CO2","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",10.2831210533333
-"policies_high","MEA area","MEA area","emissGHGByGasGWPAR5","ghg","CO2","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",30.8371178305667
-"policies_high","MEA area","MEA area","emissGHGByGasGWPAR5","ghg","CO2","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",37.6788998245
-"policies_high","MEA area","MEA area","emissGHGByGasGWPAR5","ghg","CO2","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",40.2883947708
-"policies_high","MEA area","MEA area","emissGHGByGasGWPAR5","ghg","CO2","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",41.5399306699667
-"policies_high","MEA area","MEA area","emissGHGByGasGWPAR5","ghg","CO2","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",51.3962088522667
-"policies_high","MEA area","MEA area","emissGHGByGasGWPAR5","ghg","CO2","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",56.5061605830333
-"policies_high","MEA area","MEA area","emissGHGByGasGWPAR5","ghg","CO2","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",55.6654118735
-"policies_high","MEA area","MEA area","emissGHGByGasGWPAR5","ghg","CO2","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",57.08726153845
-"policies_high","MEA area","MEA area","emissGHGByGasGWPAR5","ghg","CO2","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",58.84912109989
-"policies_high","MEA area","MEA area","emissGHGByGasGWPAR5","ghg","CO2","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",60.40166113883
-"policies_high","MEA area","MEA area","emissGHGByGasGWPAR5","ghg","CO2","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",58.99686116698
-"policies_high","MEA area","MEA area","emissGHGByGasGWPAR5","ghg","CO2","Year",2055,"Vint_2055","GHG emissions (MTCO2eq)",55.92246854997
-"policies_high","MEA area","MEA area","emissGHGByGasGWPAR5","ghg","CO2","Year",2060,"Vint_2060","GHG emissions (MTCO2eq)",53.65291231674
-"policies_high","MEA area","MEA area","emissGHGByGasGWPAR5","ghg","CO2","Year",2065,"Vint_2065","GHG emissions (MTCO2eq)",50.6909486219033
-"policies_high","MEA area","MEA area","emissGHGByGasGWPAR5","ghg","CO2","Year",2070,"Vint_2070","GHG emissions (MTCO2eq)",67.1381302242383
+"policies_high","MEA area","MEA area","emissGHGByGasGWPAR5","ghg","CO2","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",10.6578196266667
+"policies_high","MEA area","MEA area","emissGHGByGasGWPAR5","ghg","CO2","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",31.4011916705667
+"policies_high","MEA area","MEA area","emissGHGByGasGWPAR5","ghg","CO2","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",52.2915014911667
+"policies_high","MEA area","MEA area","emissGHGByGasGWPAR5","ghg","CO2","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",58.8809834374667
+"policies_high","MEA area","MEA area","emissGHGByGasGWPAR5","ghg","CO2","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",66.4296270033
+"policies_high","MEA area","MEA area","emissGHGByGasGWPAR5","ghg","CO2","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",75.5483551856
+"policies_high","MEA area","MEA area","emissGHGByGasGWPAR5","ghg","CO2","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",80.2440799163667
+"policies_high","MEA area","MEA area","emissGHGByGasGWPAR5","ghg","CO2","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",79.0189215401667
+"policies_high","MEA area","MEA area","emissGHGByGasGWPAR5","ghg","CO2","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",79.7802908717833
+"policies_high","MEA area","MEA area","emissGHGByGasGWPAR5","ghg","CO2","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",80.6396554332233
+"policies_high","MEA area","MEA area","emissGHGByGasGWPAR5","ghg","CO2","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",81.0003638054967
+"policies_high","MEA area","MEA area","emissGHGByGasGWPAR5","ghg","CO2","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",78.4038128336467
+"policies_high","MEA area","MEA area","emissGHGByGasGWPAR5","ghg","CO2","Year",2055,"Vint_2055","GHG emissions (MTCO2eq)",74.1683408833033
+"policies_high","MEA area","MEA area","emissGHGByGasGWPAR5","ghg","CO2","Year",2060,"Vint_2060","GHG emissions (MTCO2eq)",70.6878386500733
+"policies_high","MEA area","MEA area","emissGHGByGasGWPAR5","ghg","CO2","Year",2065,"Vint_2065","GHG emissions (MTCO2eq)",66.6355219552367
+"policies_high","MEA area","MEA area","emissGHGByGasGWPAR5","ghg","CO2","Year",2070,"Vint_2070","GHG emissions (MTCO2eq)",81.322391890905
 "policies_high","MEA area","MEA area","emissGHGByGasGWPAR5","ghg","N2O","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",0.0475145
 "policies_high","MEA area","MEA area","emissGHGByGasGWPAR5","ghg","N2O","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",0.122748
 "policies_high","MEA area","MEA area","emissGHGByGasGWPAR5","ghg","N2O","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",0.4109885
@@ -1475,22 +1426,6 @@
 "policies_high","MEA area","MEA area","emissGHGBySectorGWPAR5","sector","building","Year",2060,"Vint_2060","GHG emissions (MTCO2eq)",45.99962561744
 "policies_high","MEA area","MEA area","emissGHGBySectorGWPAR5","sector","building","Year",2065,"Vint_2065","GHG emissions (MTCO2eq)",46.1289430298033
 "policies_high","MEA area","MEA area","emissGHGBySectorGWPAR5","sector","building","Year",2070,"Vint_2070","GHG emissions (MTCO2eq)",47.178876277005
-"policies_high","MEA area","MEA area","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",-0.374698573333333
-"policies_high","MEA area","MEA area","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",-0.56407384
-"policies_high","MEA area","MEA area","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",-14.6126016666667
-"policies_high","MEA area","MEA area","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",-18.5925886666667
-"policies_high","MEA area","MEA area","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",-24.8896963333333
-"policies_high","MEA area","MEA area","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",-24.1521463333333
-"policies_high","MEA area","MEA area","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",-23.7379193333333
-"policies_high","MEA area","MEA area","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",-23.3535096666667
-"policies_high","MEA area","MEA area","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",-22.6930293333333
-"policies_high","MEA area","MEA area","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",-21.7905343333333
-"policies_high","MEA area","MEA area","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",-20.5987026666667
-"policies_high","MEA area","MEA area","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",-19.4069516666667
-"policies_high","MEA area","MEA area","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2055,"Vint_2055","GHG emissions (MTCO2eq)",-18.2458723333333
-"policies_high","MEA area","MEA area","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2060,"Vint_2060","GHG emissions (MTCO2eq)",-17.0349263333333
-"policies_high","MEA area","MEA area","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2065,"Vint_2065","GHG emissions (MTCO2eq)",-15.9445733333333
-"policies_high","MEA area","MEA area","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2070,"Vint_2070","GHG emissions (MTCO2eq)",-14.1842616666667
 "policies_high","MEA area","MEA area","emissGHGBySectorGWPAR5","sector","industry","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",9.54470473333333
 "policies_high","MEA area","MEA area","emissGHGBySectorGWPAR5","sector","industry","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",20.29496694
 "policies_high","MEA area","MEA area","emissGHGBySectorGWPAR5","sector","industry","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",36.4574576666667
@@ -1827,22 +1762,6 @@
 "policies_high","Nonthaburi","Nonthaburi","emissCO2BySector","sector","building","Year",2060,"Vint_2060","CO2 emissions - (MTCO2)",1.11859643511
 "policies_high","Nonthaburi","Nonthaburi","emissCO2BySector","sector","building","Year",2065,"Vint_2065","CO2 emissions - (MTCO2)",1.13279425754
 "policies_high","Nonthaburi","Nonthaburi","emissCO2BySector","sector","building","Year",2070,"Vint_2070","CO2 emissions - (MTCO2)",1.18536896883167
-"policies_high","Nonthaburi","Nonthaburi","emissCO2BySector","sector","industrial feedstocks","Year",1975,"Vint_1975","CO2 emissions - (MTCO2)",-0.0122529733333333
-"policies_high","Nonthaburi","Nonthaburi","emissCO2BySector","sector","industrial feedstocks","Year",1990,"Vint_1990","CO2 emissions - (MTCO2)",-0.01843864
-"policies_high","Nonthaburi","Nonthaburi","emissCO2BySector","sector","industrial feedstocks","Year",2005,"Vint_2005","CO2 emissions - (MTCO2)",-0.562661
-"policies_high","Nonthaburi","Nonthaburi","emissCO2BySector","sector","industrial feedstocks","Year",2010,"Vint_2010","CO2 emissions - (MTCO2)",-0.836729666666667
-"policies_high","Nonthaburi","Nonthaburi","emissCO2BySector","sector","industrial feedstocks","Year",2015,"Vint_2015","CO2 emissions - (MTCO2)",-1.24927366666667
-"policies_high","Nonthaburi","Nonthaburi","emissCO2BySector","sector","industrial feedstocks","Year",2020,"Vint_2020","CO2 emissions - (MTCO2)",-1.31322766666667
-"policies_high","Nonthaburi","Nonthaburi","emissCO2BySector","sector","industrial feedstocks","Year",2025,"Vint_2025","CO2 emissions - (MTCO2)",-1.35349133333333
-"policies_high","Nonthaburi","Nonthaburi","emissCO2BySector","sector","industrial feedstocks","Year",2030,"Vint_2030","CO2 emissions - (MTCO2)",-1.40438466666667
-"policies_high","Nonthaburi","Nonthaburi","emissCO2BySector","sector","industrial feedstocks","Year",2035,"Vint_2035","CO2 emissions - (MTCO2)",-1.44218066666667
-"policies_high","Nonthaburi","Nonthaburi","emissCO2BySector","sector","industrial feedstocks","Year",2040,"Vint_2040","CO2 emissions - (MTCO2)",-1.489961
-"policies_high","Nonthaburi","Nonthaburi","emissCO2BySector","sector","industrial feedstocks","Year",2045,"Vint_2045","CO2 emissions - (MTCO2)",-1.45140966666667
-"policies_high","Nonthaburi","Nonthaburi","emissCO2BySector","sector","industrial feedstocks","Year",2050,"Vint_2050","CO2 emissions - (MTCO2)",-1.40164566666667
-"policies_high","Nonthaburi","Nonthaburi","emissCO2BySector","sector","industrial feedstocks","Year",2055,"Vint_2055","CO2 emissions - (MTCO2)",-1.345894
-"policies_high","Nonthaburi","Nonthaburi","emissCO2BySector","sector","industrial feedstocks","Year",2060,"Vint_2060","CO2 emissions - (MTCO2)",-1.281643
-"policies_high","Nonthaburi","Nonthaburi","emissCO2BySector","sector","industrial feedstocks","Year",2065,"Vint_2065","CO2 emissions - (MTCO2)",-1.21944533333333
-"policies_high","Nonthaburi","Nonthaburi","emissCO2BySector","sector","industrial feedstocks","Year",2070,"Vint_2070","CO2 emissions - (MTCO2)",-1.09995966666667
 "policies_high","Nonthaburi","Nonthaburi","emissCO2BySector","sector","industry","Year",1975,"Vint_1975","CO2 emissions - (MTCO2)",0.310482333333333
 "policies_high","Nonthaburi","Nonthaburi","emissCO2BySector","sector","industry","Year",1990,"Vint_1990","CO2 emissions - (MTCO2)",0.65911494
 "policies_high","Nonthaburi","Nonthaburi","emissCO2BySector","sector","industry","Year",2005,"Vint_2005","CO2 emissions - (MTCO2)",1.38726243333333
@@ -1891,22 +1810,22 @@
 "policies_high","Nonthaburi","Nonthaburi","emissGHGByGasGWPAR5","ghg","CH4","Year",2060,"Vint_2060","GHG emissions (MTCO2eq)",0.01889877530212
 "policies_high","Nonthaburi","Nonthaburi","emissGHGByGasGWPAR5","ghg","CH4","Year",2065,"Vint_2065","GHG emissions (MTCO2eq)",0.01809012791208
 "policies_high","Nonthaburi","Nonthaburi","emissGHGByGasGWPAR5","ghg","CH4","Year",2070,"Vint_2070","GHG emissions (MTCO2eq)",0.0221125186478
-"policies_high","Nonthaburi","Nonthaburi","emissGHGByGasGWPAR5","ghg","CO2","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",0.414514221
-"policies_high","Nonthaburi","Nonthaburi","emissGHGByGasGWPAR5","ghg","CO2","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",1.31936980853333
-"policies_high","Nonthaburi","Nonthaburi","emissGHGByGasGWPAR5","ghg","CO2","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",2.31162303826667
-"policies_high","Nonthaburi","Nonthaburi","emissGHGByGasGWPAR5","ghg","CO2","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",2.77243145666667
-"policies_high","Nonthaburi","Nonthaburi","emissGHGByGasGWPAR5","ghg","CO2","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",3.09760249296667
-"policies_high","Nonthaburi","Nonthaburi","emissGHGByGasGWPAR5","ghg","CO2","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",3.3324923852
-"policies_high","Nonthaburi","Nonthaburi","emissGHGByGasGWPAR5","ghg","CO2","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",3.42126877216667
-"policies_high","Nonthaburi","Nonthaburi","emissGHGByGasGWPAR5","ghg","CO2","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",3.11532781523333
-"policies_high","Nonthaburi","Nonthaburi","emissGHGByGasGWPAR5","ghg","CO2","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",3.02270158498
-"policies_high","Nonthaburi","Nonthaburi","emissGHGByGasGWPAR5","ghg","CO2","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",3.18491870389
-"policies_high","Nonthaburi","Nonthaburi","emissGHGByGasGWPAR5","ghg","CO2","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",3.35324977126333
-"policies_high","Nonthaburi","Nonthaburi","emissGHGByGasGWPAR5","ghg","CO2","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",3.29086620877667
-"policies_high","Nonthaburi","Nonthaburi","emissGHGByGasGWPAR5","ghg","CO2","Year",2055,"Vint_2055","GHG emissions (MTCO2eq)",3.13113741405667
-"policies_high","Nonthaburi","Nonthaburi","emissGHGByGasGWPAR5","ghg","CO2","Year",2060,"Vint_2060","GHG emissions (MTCO2eq)",3.05224425854333
-"policies_high","Nonthaburi","Nonthaburi","emissGHGByGasGWPAR5","ghg","CO2","Year",2065,"Vint_2065","GHG emissions (MTCO2eq)",2.91892612630667
-"policies_high","Nonthaburi","Nonthaburi","emissGHGByGasGWPAR5","ghg","CO2","Year",2070,"Vint_2070","GHG emissions (MTCO2eq)",4.285548502565
+"policies_high","Nonthaburi","Nonthaburi","emissGHGByGasGWPAR5","ghg","CO2","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",0.426767194333333
+"policies_high","Nonthaburi","Nonthaburi","emissGHGByGasGWPAR5","ghg","CO2","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",1.33780844853333
+"policies_high","Nonthaburi","Nonthaburi","emissGHGByGasGWPAR5","ghg","CO2","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",2.87428403826667
+"policies_high","Nonthaburi","Nonthaburi","emissGHGByGasGWPAR5","ghg","CO2","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",3.60916112333333
+"policies_high","Nonthaburi","Nonthaburi","emissGHGByGasGWPAR5","ghg","CO2","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",4.34687615963333
+"policies_high","Nonthaburi","Nonthaburi","emissGHGByGasGWPAR5","ghg","CO2","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",4.64572005186667
+"policies_high","Nonthaburi","Nonthaburi","emissGHGByGasGWPAR5","ghg","CO2","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",4.7747601055
+"policies_high","Nonthaburi","Nonthaburi","emissGHGByGasGWPAR5","ghg","CO2","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",4.5197124819
+"policies_high","Nonthaburi","Nonthaburi","emissGHGByGasGWPAR5","ghg","CO2","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",4.46488225164667
+"policies_high","Nonthaburi","Nonthaburi","emissGHGByGasGWPAR5","ghg","CO2","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",4.67487970389
+"policies_high","Nonthaburi","Nonthaburi","emissGHGByGasGWPAR5","ghg","CO2","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",4.80465943793
+"policies_high","Nonthaburi","Nonthaburi","emissGHGByGasGWPAR5","ghg","CO2","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",4.69251187544333
+"policies_high","Nonthaburi","Nonthaburi","emissGHGByGasGWPAR5","ghg","CO2","Year",2055,"Vint_2055","GHG emissions (MTCO2eq)",4.47703141405667
+"policies_high","Nonthaburi","Nonthaburi","emissGHGByGasGWPAR5","ghg","CO2","Year",2060,"Vint_2060","GHG emissions (MTCO2eq)",4.33388725854333
+"policies_high","Nonthaburi","Nonthaburi","emissGHGByGasGWPAR5","ghg","CO2","Year",2065,"Vint_2065","GHG emissions (MTCO2eq)",4.13837145964
+"policies_high","Nonthaburi","Nonthaburi","emissGHGByGasGWPAR5","ghg","CO2","Year",2070,"Vint_2070","GHG emissions (MTCO2eq)",5.38550816923167
 "policies_high","Nonthaburi","Nonthaburi","emissGHGByGasGWPAR5","ghg","N2O","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",0.002014
 "policies_high","Nonthaburi","Nonthaburi","emissGHGByGasGWPAR5","ghg","N2O","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",0.005883
 "policies_high","Nonthaburi","Nonthaburi","emissGHGByGasGWPAR5","ghg","N2O","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",0.0211735
@@ -1938,22 +1857,6 @@
 "policies_high","Nonthaburi","Nonthaburi","emissGHGBySectorGWPAR5","sector","building","Year",2060,"Vint_2060","GHG emissions (MTCO2eq)",1.11859643511
 "policies_high","Nonthaburi","Nonthaburi","emissGHGBySectorGWPAR5","sector","building","Year",2065,"Vint_2065","GHG emissions (MTCO2eq)",1.13279425754
 "policies_high","Nonthaburi","Nonthaburi","emissGHGBySectorGWPAR5","sector","building","Year",2070,"Vint_2070","GHG emissions (MTCO2eq)",1.18536896883167
-"policies_high","Nonthaburi","Nonthaburi","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",-0.0122529733333333
-"policies_high","Nonthaburi","Nonthaburi","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",-0.01843864
-"policies_high","Nonthaburi","Nonthaburi","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",-0.562661
-"policies_high","Nonthaburi","Nonthaburi","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",-0.836729666666667
-"policies_high","Nonthaburi","Nonthaburi","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",-1.24927366666667
-"policies_high","Nonthaburi","Nonthaburi","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",-1.31322766666667
-"policies_high","Nonthaburi","Nonthaburi","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",-1.35349133333333
-"policies_high","Nonthaburi","Nonthaburi","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",-1.40438466666667
-"policies_high","Nonthaburi","Nonthaburi","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",-1.44218066666667
-"policies_high","Nonthaburi","Nonthaburi","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",-1.489961
-"policies_high","Nonthaburi","Nonthaburi","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",-1.45140966666667
-"policies_high","Nonthaburi","Nonthaburi","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",-1.40164566666667
-"policies_high","Nonthaburi","Nonthaburi","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2055,"Vint_2055","GHG emissions (MTCO2eq)",-1.345894
-"policies_high","Nonthaburi","Nonthaburi","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2060,"Vint_2060","GHG emissions (MTCO2eq)",-1.281643
-"policies_high","Nonthaburi","Nonthaburi","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2065,"Vint_2065","GHG emissions (MTCO2eq)",-1.21944533333333
-"policies_high","Nonthaburi","Nonthaburi","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2070,"Vint_2070","GHG emissions (MTCO2eq)",-1.09995966666667
 "policies_high","Nonthaburi","Nonthaburi","emissGHGBySectorGWPAR5","sector","industry","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",0.312108433333333
 "policies_high","Nonthaburi","Nonthaburi","emissGHGBySectorGWPAR5","sector","industry","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",0.66339014
 "policies_high","Nonthaburi","Nonthaburi","emissGHGBySectorGWPAR5","sector","industry","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",1.40379603333333
@@ -2290,22 +2193,6 @@
 "policies_high","Rest of Thailand","Rest of Thailand","emissCO2BySector","sector","building","Year",2060,"Vint_2060","CO2 emissions - (MTCO2)",26.3808348602333
 "policies_high","Rest of Thailand","Rest of Thailand","emissCO2BySector","sector","building","Year",2065,"Vint_2065","CO2 emissions - (MTCO2)",26.9653884034333
 "policies_high","Rest of Thailand","Rest of Thailand","emissCO2BySector","sector","building","Year",2070,"Vint_2070","CO2 emissions - (MTCO2)",28.7506394717667
-"policies_high","Rest of Thailand","Rest of Thailand","emissCO2BySector","sector","industrial feedstocks","Year",1975,"Vint_1975","CO2 emissions - (MTCO2)",-0.482540666666667
-"policies_high","Rest of Thailand","Rest of Thailand","emissCO2BySector","sector","industrial feedstocks","Year",1990,"Vint_1990","CO2 emissions - (MTCO2)",-0.726502333333333
-"policies_high","Rest of Thailand","Rest of Thailand","emissCO2BySector","sector","industrial feedstocks","Year",2005,"Vint_2005","CO2 emissions - (MTCO2)",-21.6138266666667
-"policies_high","Rest of Thailand","Rest of Thailand","emissCO2BySector","sector","industrial feedstocks","Year",2010,"Vint_2010","CO2 emissions - (MTCO2)",-32.3686733333333
-"policies_high","Rest of Thailand","Rest of Thailand","emissCO2BySector","sector","industrial feedstocks","Year",2015,"Vint_2015","CO2 emissions - (MTCO2)",-38.1381
-"policies_high","Rest of Thailand","Rest of Thailand","emissCO2BySector","sector","industrial feedstocks","Year",2020,"Vint_2020","CO2 emissions - (MTCO2)",-37.1052
-"policies_high","Rest of Thailand","Rest of Thailand","emissCO2BySector","sector","industrial feedstocks","Year",2025,"Vint_2025","CO2 emissions - (MTCO2)",-35.91324
-"policies_high","Rest of Thailand","Rest of Thailand","emissCO2BySector","sector","industrial feedstocks","Year",2030,"Vint_2030","CO2 emissions - (MTCO2)",-35.7845033333333
-"policies_high","Rest of Thailand","Rest of Thailand","emissCO2BySector","sector","industrial feedstocks","Year",2035,"Vint_2035","CO2 emissions - (MTCO2)",-35.38667
-"policies_high","Rest of Thailand","Rest of Thailand","emissCO2BySector","sector","industrial feedstocks","Year",2040,"Vint_2040","CO2 emissions - (MTCO2)",-34.40184
-"policies_high","Rest of Thailand","Rest of Thailand","emissCO2BySector","sector","industrial feedstocks","Year",2045,"Vint_2045","CO2 emissions - (MTCO2)",-33.3077066666667
-"policies_high","Rest of Thailand","Rest of Thailand","emissCO2BySector","sector","industrial feedstocks","Year",2050,"Vint_2050","CO2 emissions - (MTCO2)",-32.22824
-"policies_high","Rest of Thailand","Rest of Thailand","emissCO2BySector","sector","industrial feedstocks","Year",2055,"Vint_2055","CO2 emissions - (MTCO2)",-31.10866
-"policies_high","Rest of Thailand","Rest of Thailand","emissCO2BySector","sector","industrial feedstocks","Year",2060,"Vint_2060","CO2 emissions - (MTCO2)",-29.8215133333333
-"policies_high","Rest of Thailand","Rest of Thailand","emissCO2BySector","sector","industrial feedstocks","Year",2065,"Vint_2065","CO2 emissions - (MTCO2)",-28.5842333333333
-"policies_high","Rest of Thailand","Rest of Thailand","emissCO2BySector","sector","industrial feedstocks","Year",2070,"Vint_2070","CO2 emissions - (MTCO2)",-26.0111866666667
 "policies_high","Rest of Thailand","Rest of Thailand","emissCO2BySector","sector","industry","Year",1975,"Vint_1975","CO2 emissions - (MTCO2)",12.2271966666667
 "policies_high","Rest of Thailand","Rest of Thailand","emissCO2BySector","sector","industry","Year",1990,"Vint_1990","CO2 emissions - (MTCO2)",25.9697386666667
 "policies_high","Rest of Thailand","Rest of Thailand","emissCO2BySector","sector","industry","Year",2005,"Vint_2005","CO2 emissions - (MTCO2)",53.28994
@@ -2354,22 +2241,22 @@
 "policies_high","Rest of Thailand","Rest of Thailand","emissGHGByGasGWPAR5","ghg","CH4","Year",2060,"Vint_2060","GHG emissions (MTCO2eq)",0.7410654832924
 "policies_high","Rest of Thailand","Rest of Thailand","emissGHGByGasGWPAR5","ghg","CH4","Year",2065,"Vint_2065","GHG emissions (MTCO2eq)",0.73762289804
 "policies_high","Rest of Thailand","Rest of Thailand","emissGHGByGasGWPAR5","ghg","CH4","Year",2070,"Vint_2070","GHG emissions (MTCO2eq)",0.8861971096496
-"policies_high","Rest of Thailand","Rest of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",20.0236244266667
-"policies_high","Rest of Thailand","Rest of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",66.7345484666667
-"policies_high","Rest of Thailand","Rest of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",110.94602904
-"policies_high","Rest of Thailand","Rest of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",124.382151076333
-"policies_high","Rest of Thailand","Rest of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",121.833056997667
-"policies_high","Rest of Thailand","Rest of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",118.970809598667
-"policies_high","Rest of Thailand","Rest of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",115.141338323
-"policies_high","Rest of Thailand","Rest of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",105.932181941667
-"policies_high","Rest of Thailand","Rest of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",103.714395832667
-"policies_high","Rest of Thailand","Rest of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",103.772140374467
-"policies_high","Rest of Thailand","Rest of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",108.2685651861
-"policies_high","Rest of Thailand","Rest of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",108.305787828333
-"policies_high","Rest of Thailand","Rest of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2055,"Vint_2055","GHG emissions (MTCO2eq)",108.200003779267
-"policies_high","Rest of Thailand","Rest of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2060,"Vint_2060","GHG emissions (MTCO2eq)",110.8188544199
-"policies_high","Rest of Thailand","Rest of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2065,"Vint_2065","GHG emissions (MTCO2eq)",112.276799346433
-"policies_high","Rest of Thailand","Rest of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2070,"Vint_2070","GHG emissions (MTCO2eq)",151.248643671767
+"policies_high","Rest of Thailand","Rest of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",20.5061650933333
+"policies_high","Rest of Thailand","Rest of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",67.4610508
+"policies_high","Rest of Thailand","Rest of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",132.559855706667
+"policies_high","Rest of Thailand","Rest of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",156.750824409667
+"policies_high","Rest of Thailand","Rest of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",159.971156997667
+"policies_high","Rest of Thailand","Rest of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",156.076009598667
+"policies_high","Rest of Thailand","Rest of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",151.054578323
+"policies_high","Rest of Thailand","Rest of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",141.716685275
+"policies_high","Rest of Thailand","Rest of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",139.101065832667
+"policies_high","Rest of Thailand","Rest of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",138.173980374467
+"policies_high","Rest of Thailand","Rest of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",141.576271852767
+"policies_high","Rest of Thailand","Rest of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",140.534027828333
+"policies_high","Rest of Thailand","Rest of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2055,"Vint_2055","GHG emissions (MTCO2eq)",139.308663779267
+"policies_high","Rest of Thailand","Rest of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2060,"Vint_2060","GHG emissions (MTCO2eq)",140.640367753233
+"policies_high","Rest of Thailand","Rest of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2065,"Vint_2065","GHG emissions (MTCO2eq)",140.861032679767
+"policies_high","Rest of Thailand","Rest of Thailand","emissGHGByGasGWPAR5","ghg","CO2","Year",2070,"Vint_2070","GHG emissions (MTCO2eq)",177.259830338433
 "policies_high","Rest of Thailand","Rest of Thailand","emissGHGByGasGWPAR5","ghg","N2O","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",0.1048075
 "policies_high","Rest of Thailand","Rest of Thailand","emissGHGByGasGWPAR5","ghg","N2O","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",0.321445
 "policies_high","Rest of Thailand","Rest of Thailand","emissGHGByGasGWPAR5","ghg","N2O","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",0.952887
@@ -2401,22 +2288,6 @@
 "policies_high","Rest of Thailand","Rest of Thailand","emissGHGBySectorGWPAR5","sector","building","Year",2060,"Vint_2060","GHG emissions (MTCO2eq)",26.3808348602333
 "policies_high","Rest of Thailand","Rest of Thailand","emissGHGBySectorGWPAR5","sector","building","Year",2065,"Vint_2065","GHG emissions (MTCO2eq)",26.9653884034333
 "policies_high","Rest of Thailand","Rest of Thailand","emissGHGBySectorGWPAR5","sector","building","Year",2070,"Vint_2070","GHG emissions (MTCO2eq)",28.7506394717667
-"policies_high","Rest of Thailand","Rest of Thailand","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",-0.482540666666667
-"policies_high","Rest of Thailand","Rest of Thailand","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",-0.726502333333333
-"policies_high","Rest of Thailand","Rest of Thailand","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",-21.6138266666667
-"policies_high","Rest of Thailand","Rest of Thailand","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",-32.3686733333333
-"policies_high","Rest of Thailand","Rest of Thailand","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",-38.1381
-"policies_high","Rest of Thailand","Rest of Thailand","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",-37.1052
-"policies_high","Rest of Thailand","Rest of Thailand","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",-35.91324
-"policies_high","Rest of Thailand","Rest of Thailand","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",-35.7845033333333
-"policies_high","Rest of Thailand","Rest of Thailand","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",-35.38667
-"policies_high","Rest of Thailand","Rest of Thailand","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",-34.40184
-"policies_high","Rest of Thailand","Rest of Thailand","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",-33.3077066666667
-"policies_high","Rest of Thailand","Rest of Thailand","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",-32.22824
-"policies_high","Rest of Thailand","Rest of Thailand","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2055,"Vint_2055","GHG emissions (MTCO2eq)",-31.10866
-"policies_high","Rest of Thailand","Rest of Thailand","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2060,"Vint_2060","GHG emissions (MTCO2eq)",-29.8215133333333
-"policies_high","Rest of Thailand","Rest of Thailand","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2065,"Vint_2065","GHG emissions (MTCO2eq)",-28.5842333333333
-"policies_high","Rest of Thailand","Rest of Thailand","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2070,"Vint_2070","GHG emissions (MTCO2eq)",-26.0111866666667
 "policies_high","Rest of Thailand","Rest of Thailand","emissGHGBySectorGWPAR5","sector","industry","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",12.2917128666667
 "policies_high","Rest of Thailand","Rest of Thailand","emissGHGBySectorGWPAR5","sector","industry","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",26.1390924666667
 "policies_high","Rest of Thailand","Rest of Thailand","emissGHGBySectorGWPAR5","sector","industry","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",53.9250812
@@ -2753,22 +2624,6 @@
 "policies_high","SamutPrakan","SamutPrakan","emissCO2BySector","sector","building","Year",2060,"Vint_2060","CO2 emissions - (MTCO2)",2.78715894779667
 "policies_high","SamutPrakan","SamutPrakan","emissCO2BySector","sector","building","Year",2065,"Vint_2065","CO2 emissions - (MTCO2)",2.85090056053
 "policies_high","SamutPrakan","SamutPrakan","emissCO2BySector","sector","building","Year",2070,"Vint_2070","CO2 emissions - (MTCO2)",2.99614148577333
-"policies_high","SamutPrakan","SamutPrakan","emissCO2BySector","sector","industrial feedstocks","Year",1975,"Vint_1975","CO2 emissions - (MTCO2)",-0.0405738666666667
-"policies_high","SamutPrakan","SamutPrakan","emissCO2BySector","sector","industrial feedstocks","Year",1990,"Vint_1990","CO2 emissions - (MTCO2)",-0.0610338666666667
-"policies_high","SamutPrakan","SamutPrakan","emissCO2BySector","sector","industrial feedstocks","Year",2005,"Vint_2005","CO2 emissions - (MTCO2)",-1.96724733333333
-"policies_high","SamutPrakan","SamutPrakan","emissCO2BySector","sector","industrial feedstocks","Year",2010,"Vint_2010","CO2 emissions - (MTCO2)",-3.12215566666667
-"policies_high","SamutPrakan","SamutPrakan","emissCO2BySector","sector","industrial feedstocks","Year",2015,"Vint_2015","CO2 emissions - (MTCO2)",-3.15207933333333
-"policies_high","SamutPrakan","SamutPrakan","emissCO2BySector","sector","industrial feedstocks","Year",2020,"Vint_2020","CO2 emissions - (MTCO2)",-2.99088533333333
-"policies_high","SamutPrakan","SamutPrakan","emissCO2BySector","sector","industrial feedstocks","Year",2025,"Vint_2025","CO2 emissions - (MTCO2)",-3.18422133333333
-"policies_high","SamutPrakan","SamutPrakan","emissCO2BySector","sector","industrial feedstocks","Year",2030,"Vint_2030","CO2 emissions - (MTCO2)",-3.30504166666667
-"policies_high","SamutPrakan","SamutPrakan","emissCO2BySector","sector","industrial feedstocks","Year",2035,"Vint_2035","CO2 emissions - (MTCO2)",-3.39425533333333
-"policies_high","SamutPrakan","SamutPrakan","emissCO2BySector","sector","industrial feedstocks","Year",2040,"Vint_2040","CO2 emissions - (MTCO2)",-3.41575666666667
-"policies_high","SamutPrakan","SamutPrakan","emissCO2BySector","sector","industrial feedstocks","Year",2045,"Vint_2045","CO2 emissions - (MTCO2)",-3.25936966666667
-"policies_high","SamutPrakan","SamutPrakan","emissCO2BySector","sector","industrial feedstocks","Year",2050,"Vint_2050","CO2 emissions - (MTCO2)",-3.10309266666667
-"policies_high","SamutPrakan","SamutPrakan","emissCO2BySector","sector","industrial feedstocks","Year",2055,"Vint_2055","CO2 emissions - (MTCO2)",-2.94614833333333
-"policies_high","SamutPrakan","SamutPrakan","emissCO2BySector","sector","industrial feedstocks","Year",2060,"Vint_2060","CO2 emissions - (MTCO2)",-2.77882
-"policies_high","SamutPrakan","SamutPrakan","emissCO2BySector","sector","industrial feedstocks","Year",2065,"Vint_2065","CO2 emissions - (MTCO2)",-2.623038
-"policies_high","SamutPrakan","SamutPrakan","emissCO2BySector","sector","industrial feedstocks","Year",2070,"Vint_2070","CO2 emissions - (MTCO2)",-2.35332533333333
 "policies_high","SamutPrakan","SamutPrakan","emissCO2BySector","sector","industry","Year",1975,"Vint_1975","CO2 emissions - (MTCO2)",1.02811573333333
 "policies_high","SamutPrakan","SamutPrakan","emissCO2BySector","sector","industry","Year",1990,"Vint_1990","CO2 emissions - (MTCO2)",2.18172533333333
 "policies_high","SamutPrakan","SamutPrakan","emissCO2BySector","sector","industry","Year",2005,"Vint_2005","CO2 emissions - (MTCO2)",4.85035466666667
@@ -2817,22 +2672,22 @@
 "policies_high","SamutPrakan","SamutPrakan","emissGHGByGasGWPAR5","ghg","CH4","Year",2060,"Vint_2060","GHG emissions (MTCO2eq)",0.01930514047966
 "policies_high","SamutPrakan","SamutPrakan","emissGHGByGasGWPAR5","ghg","CH4","Year",2065,"Vint_2065","GHG emissions (MTCO2eq)",0.017343536280308
 "policies_high","SamutPrakan","SamutPrakan","emissGHGByGasGWPAR5","ghg","CH4","Year",2070,"Vint_2070","GHG emissions (MTCO2eq)",0.023585919024892
-"policies_high","SamutPrakan","SamutPrakan","emissGHGByGasGWPAR5","ghg","CO2","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",1.13255494733333
-"policies_high","SamutPrakan","SamutPrakan","emissGHGByGasGWPAR5","ghg","CO2","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",3.41243296203333
-"policies_high","SamutPrakan","SamutPrakan","emissGHGByGasGWPAR5","ghg","CO2","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",5.12382970623333
-"policies_high","SamutPrakan","SamutPrakan","emissGHGByGasGWPAR5","ghg","CO2","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",6.56335177446667
-"policies_high","SamutPrakan","SamutPrakan","emissGHGByGasGWPAR5","ghg","CO2","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",5.576544721
-"policies_high","SamutPrakan","SamutPrakan","emissGHGByGasGWPAR5","ghg","CO2","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",5.04902468473334
-"policies_high","SamutPrakan","SamutPrakan","emissGHGByGasGWPAR5","ghg","CO2","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",5.7273285542
-"policies_high","SamutPrakan","SamutPrakan","emissGHGByGasGWPAR5","ghg","CO2","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",5.1163968306
-"policies_high","SamutPrakan","SamutPrakan","emissGHGByGasGWPAR5","ghg","CO2","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",4.98919974670333
-"policies_high","SamutPrakan","SamutPrakan","emissGHGByGasGWPAR5","ghg","CO2","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",5.0504793559
-"policies_high","SamutPrakan","SamutPrakan","emissGHGByGasGWPAR5","ghg","CO2","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",5.20654534473333
-"policies_high","SamutPrakan","SamutPrakan","emissGHGByGasGWPAR5","ghg","CO2","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",4.97787723220333
-"policies_high","SamutPrakan","SamutPrakan","emissGHGByGasGWPAR5","ghg","CO2","Year",2055,"Vint_2055","GHG emissions (MTCO2eq)",4.48598104548
-"policies_high","SamutPrakan","SamutPrakan","emissGHGByGasGWPAR5","ghg","CO2","Year",2060,"Vint_2060","GHG emissions (MTCO2eq)",4.16310227039667
-"policies_high","SamutPrakan","SamutPrakan","emissGHGByGasGWPAR5","ghg","CO2","Year",2065,"Vint_2065","GHG emissions (MTCO2eq)",3.72889691639667
-"policies_high","SamutPrakan","SamutPrakan","emissGHGByGasGWPAR5","ghg","CO2","Year",2070,"Vint_2070","GHG emissions (MTCO2eq)",6.44221601584
+"policies_high","SamutPrakan","SamutPrakan","emissGHGByGasGWPAR5","ghg","CO2","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",1.173128814
+"policies_high","SamutPrakan","SamutPrakan","emissGHGByGasGWPAR5","ghg","CO2","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",3.4734668287
+"policies_high","SamutPrakan","SamutPrakan","emissGHGByGasGWPAR5","ghg","CO2","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",7.09107703956667
+"policies_high","SamutPrakan","SamutPrakan","emissGHGByGasGWPAR5","ghg","CO2","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",9.68550744113333
+"policies_high","SamutPrakan","SamutPrakan","emissGHGByGasGWPAR5","ghg","CO2","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",8.72862405433333
+"policies_high","SamutPrakan","SamutPrakan","emissGHGByGasGWPAR5","ghg","CO2","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",8.03991001806667
+"policies_high","SamutPrakan","SamutPrakan","emissGHGByGasGWPAR5","ghg","CO2","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",8.91154988753333
+"policies_high","SamutPrakan","SamutPrakan","emissGHGByGasGWPAR5","ghg","CO2","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",8.42143849726667
+"policies_high","SamutPrakan","SamutPrakan","emissGHGByGasGWPAR5","ghg","CO2","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",8.38345508003667
+"policies_high","SamutPrakan","SamutPrakan","emissGHGByGasGWPAR5","ghg","CO2","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",8.46623602256667
+"policies_high","SamutPrakan","SamutPrakan","emissGHGByGasGWPAR5","ghg","CO2","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",8.4659150114
+"policies_high","SamutPrakan","SamutPrakan","emissGHGByGasGWPAR5","ghg","CO2","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",8.08096989887
+"policies_high","SamutPrakan","SamutPrakan","emissGHGByGasGWPAR5","ghg","CO2","Year",2055,"Vint_2055","GHG emissions (MTCO2eq)",7.43212937881333
+"policies_high","SamutPrakan","SamutPrakan","emissGHGByGasGWPAR5","ghg","CO2","Year",2060,"Vint_2060","GHG emissions (MTCO2eq)",6.94192227039667
+"policies_high","SamutPrakan","SamutPrakan","emissGHGByGasGWPAR5","ghg","CO2","Year",2065,"Vint_2065","GHG emissions (MTCO2eq)",6.35193491639667
+"policies_high","SamutPrakan","SamutPrakan","emissGHGByGasGWPAR5","ghg","CO2","Year",2070,"Vint_2070","GHG emissions (MTCO2eq)",8.79554134917333
 "policies_high","SamutPrakan","SamutPrakan","emissGHGByGasGWPAR5","ghg","N2O","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",0.0052735
 "policies_high","SamutPrakan","SamutPrakan","emissGHGByGasGWPAR5","ghg","N2O","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",0.0137005
 "policies_high","SamutPrakan","SamutPrakan","emissGHGByGasGWPAR5","ghg","N2O","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",0.0556765
@@ -2864,22 +2719,6 @@
 "policies_high","SamutPrakan","SamutPrakan","emissGHGBySectorGWPAR5","sector","building","Year",2060,"Vint_2060","GHG emissions (MTCO2eq)",2.78715894779667
 "policies_high","SamutPrakan","SamutPrakan","emissGHGBySectorGWPAR5","sector","building","Year",2065,"Vint_2065","GHG emissions (MTCO2eq)",2.85090056053
 "policies_high","SamutPrakan","SamutPrakan","emissGHGBySectorGWPAR5","sector","building","Year",2070,"Vint_2070","GHG emissions (MTCO2eq)",2.99614148577333
-"policies_high","SamutPrakan","SamutPrakan","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",-0.0405738666666667
-"policies_high","SamutPrakan","SamutPrakan","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",-0.0610338666666667
-"policies_high","SamutPrakan","SamutPrakan","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",-1.96724733333333
-"policies_high","SamutPrakan","SamutPrakan","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",-3.12215566666667
-"policies_high","SamutPrakan","SamutPrakan","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",-3.15207933333333
-"policies_high","SamutPrakan","SamutPrakan","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",-2.99088533333333
-"policies_high","SamutPrakan","SamutPrakan","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",-3.18422133333333
-"policies_high","SamutPrakan","SamutPrakan","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",-3.30504166666667
-"policies_high","SamutPrakan","SamutPrakan","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",-3.39425533333333
-"policies_high","SamutPrakan","SamutPrakan","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",-3.41575666666667
-"policies_high","SamutPrakan","SamutPrakan","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",-3.25936966666667
-"policies_high","SamutPrakan","SamutPrakan","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",-3.10309266666667
-"policies_high","SamutPrakan","SamutPrakan","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2055,"Vint_2055","GHG emissions (MTCO2eq)",-2.94614833333333
-"policies_high","SamutPrakan","SamutPrakan","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2060,"Vint_2060","GHG emissions (MTCO2eq)",-2.77882
-"policies_high","SamutPrakan","SamutPrakan","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2065,"Vint_2065","GHG emissions (MTCO2eq)",-2.623038
-"policies_high","SamutPrakan","SamutPrakan","emissGHGBySectorGWPAR5","sector","industrial feedstocks","Year",2070,"Vint_2070","GHG emissions (MTCO2eq)",-2.35332533333333
 "policies_high","SamutPrakan","SamutPrakan","emissGHGBySectorGWPAR5","sector","industry","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",1.03355093333333
 "policies_high","SamutPrakan","SamutPrakan","emissGHGBySectorGWPAR5","sector","industry","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",2.19592753333333
 "policies_high","SamutPrakan","SamutPrakan","emissGHGBySectorGWPAR5","sector","industry","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",4.90816506666667
@@ -3491,6 +3330,22 @@
 "policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","biomass","Year",2060,"Vint_2060","GHG emissions (MTCO2eq)",-95.0826653395417
 "policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","biomass","Year",2065,"Vint_2065","GHG emissions (MTCO2eq)",-92.6059167066084
 "policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","biomass","Year",2070,"Vint_2070","GHG emissions (MTCO2eq)",-108.682271367792
+"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","coal","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",7.667004445
+"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","coal","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",20.376789965
+"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","coal","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",20.14402215
+"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","coal","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",14.79655561
+"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","coal","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",9.721168445
+"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","coal","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",12.72480552
+"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","coal","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",14.95062997
+"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","coal","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",16.83221944495
+"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","coal","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",18.382195546
+"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","coal","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",20.2035421885
+"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","coal","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",23.278842845
+"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","coal","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",25.86250415
+"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","coal","Year",2055,"Vint_2055","GHG emissions (MTCO2eq)",27.5000512
+"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","coal","Year",2060,"Vint_2060","GHG emissions (MTCO2eq)",28.543299301
+"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","coal","Year",2065,"Vint_2065","GHG emissions (MTCO2eq)",29.394233034
+"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","coal","Year",2070,"Vint_2070","GHG emissions (MTCO2eq)",30.1027170215
 "policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","crops","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",43.7634921857305
 "policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","crops","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",49.0963606187758
 "policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","crops","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",58.9703177203435
@@ -3507,6 +3362,22 @@
 "policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","crops","Year",2060,"Vint_2060","GHG emissions (MTCO2eq)",74.7765482277551
 "policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","crops","Year",2065,"Vint_2065","GHG emissions (MTCO2eq)",75.4871275356725
 "policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","crops","Year",2070,"Vint_2070","GHG emissions (MTCO2eq)",75.8559889338742
+"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","crude oil","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",0.05392868691592
+"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","crude oil","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",0.94259267522668
+"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","crude oil","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",4.27613798320083
+"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","crude oil","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",5.82910231864947
+"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","crude oil","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",6.4823372613197
+"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","crude oil","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",5.95179772674869
+"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","crude oil","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",5.35959326938537
+"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","crude oil","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",4.7295176668095
+"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","crude oil","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",4.16900297789963
+"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","crude oil","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",3.33813135682344
+"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","crude oil","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",2.75128314068123
+"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","crude oil","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",2.30315002673647
+"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","crude oil","Year",2055,"Vint_2055","GHG emissions (MTCO2eq)",1.86039780512507
+"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","crude oil","Year",2060,"Vint_2060","GHG emissions (MTCO2eq)",1.34870745849122
+"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","crude oil","Year",2065,"Vint_2065","GHG emissions (MTCO2eq)",0.908260397807775
+"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","crude oil","Year",2070,"Vint_2070","GHG emissions (MTCO2eq)",0.597776266200215
 "policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","electricity","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",0.20539
 "policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","electricity","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",28.370339236
 "policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","electricity","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",70.0455001097833
@@ -3591,6 +3462,21 @@
 "policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","LUC","Year",2090,"Vint_2090","GHG emissions (MTCO2eq)",-0.508413791788563
 "policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","LUC","Year",2095,"Vint_2095","GHG emissions (MTCO2eq)",-0.348975392877813
 "policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","LUC","Year",2100,"Vint_2100","GHG emissions (MTCO2eq)",-0.237939095997119
+"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","natural gas","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",1.53203802947
+"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","natural gas","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",5.94932421789
+"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","natural gas","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",8.023809208135
+"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","natural gas","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",8.1260695278785
+"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","natural gas","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",6.654112007491
+"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","natural gas","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",5.5961930371705
+"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","natural gas","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",5.6992221968075
+"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","natural gas","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",4.8243418938545
+"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","natural gas","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",3.57079890054095
+"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","natural gas","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",3.832860781369
+"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","natural gas","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",3.8163148336185
+"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","natural gas","Year",2055,"Vint_2055","GHG emissions (MTCO2eq)",3.719548061251
+"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","natural gas","Year",2060,"Vint_2060","GHG emissions (MTCO2eq)",3.785323033385
+"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","natural gas","Year",2065,"Vint_2065","GHG emissions (MTCO2eq)",3.8792616778105
+"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","natural gas","Year",2070,"Vint_2070","GHG emissions (MTCO2eq)",4.6984610917915
 "policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","refining","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",0.2794209
 "policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","refining","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",0.291791866666667
 "policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","refining","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",6.13070437934667
@@ -3607,22 +3493,6 @@
 "policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","refining","Year",2060,"Vint_2060","GHG emissions (MTCO2eq)",26.3509700100392
 "policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","refining","Year",2065,"Vint_2065","GHG emissions (MTCO2eq)",27.8203577844256
 "policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","refining","Year",2070,"Vint_2070","GHG emissions (MTCO2eq)",31.1745038696764
-"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","resource production","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",7.72093313191592
-"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","resource production","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",22.8514206696967
-"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","resource production","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",30.3694843510908
-"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","resource production","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",28.6494671367845
-"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","resource production","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",24.3295752341982
-"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","resource production","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",25.3307152542397
-"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","resource production","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",25.9064162765559
-"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","resource production","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",27.260959308567
-"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","resource production","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",27.3755404177541
-"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","resource production","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",27.1124724458644
-"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","resource production","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",29.8629867670502
-"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","resource production","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",31.981969010355
-"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","resource production","Year",2055,"Vint_2055","GHG emissions (MTCO2eq)",33.0799970663761
-"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","resource production","Year",2060,"Vint_2060","GHG emissions (MTCO2eq)",33.6773297928762
-"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","resource production","Year",2065,"Vint_2065","GHG emissions (MTCO2eq)",34.1817551096183
-"policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","resource production","Year",2070,"Vint_2070","GHG emissions (MTCO2eq)",35.3989543794917
 "policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","urban processes","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",8.20584382
 "policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","urban processes","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",12.2340317
 "policies_high","Thailand","Thailand","emissGHGBySectorGWPAR5","sector","urban processes","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",17.8267455
