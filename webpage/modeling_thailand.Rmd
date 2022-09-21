@@ -1245,6 +1245,19 @@ thailand <- dplyr::bind_rows(ref, high, low) %>%
 
 ```
 
+```{r fix param names, eval = TRUE, echo = FALSE, warning=FALSE, error=FALSE, message=FALSE}
+# need to fix emisisons units names in gcamextractor so they aren't the same across params
+# doing it here for now until it's fixed in gcamextractor
+thailand <- thailand %>% 
+  mutate(units = case_when(param == "emissGHGBySectorGWPAR5" ~ "GHG Emissions by Sector (MTCO2eq)",
+                           param == "emissGHGByGasGWPAR5" ~ "GHG Emissions by Gas (MTCO2eq)",
+                           param == "transportFreightVMTByFuel" ~ "Freight (million ton-km) by Fuel",
+                           param == "transportPassengerVMTByFuel" ~ "Passenger (million pass-km) by Fuel",
+                           param == "transportFreightVMTByTech" ~ "Freight (million ton-km) by Tech",
+                           param == "transportPassengerVMTByTech" ~ "Passenger (million pass-km) by Tech",
+                           T ~ units))
+
+```
 
 ## Plot Figures {.tabset}
 ***
@@ -1253,10 +1266,12 @@ thailand <- dplyr::bind_rows(ref, high, low) %>%
 
 <br>
 
-### Thailand
+### Thailand {.tabset}
 ***
 
-#### Socioeconomic summary
+#### Summary figures
+
+##### Socioeconomic summary
 
 ```{r socio-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 16, fig.height = 6, out.width = "100%"}
 socioeconomic_parameters <- c("pop", "gdp", "gdpPerCapita")
@@ -1277,7 +1292,7 @@ socioeconomic$chart_param_Thailand
 <br>
 
 
-#### Emissions by sector and gas
+##### Emissions by sector and gas
 ***
 
 ``` {r emiss-line-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 12, fig.height = 6, out.width = "100%"}
@@ -1296,15 +1311,6 @@ emissions_line$`chart_param_All of Thailand`
 
 ```
 
-```{r fix param names, eval = TRUE, echo = FALSE, warning=FALSE, error=FALSE, message=FALSE}
-# need to fix emisisons units names in gcamextractor so they aren't the same across params
-# doing it here for now until it's fixed in gcamextractor
-thailand <- thailand %>% 
-  mutate(units = case_when(param == "emissGHGBySectorGWPAR5" ~ "GHG Emissions by Sector (MTCO2eq)",
-                           param == "emissGHGByGasGWPAR5" ~ "GHG Emissions by Gas (MTCO2eq)",
-                           T ~ units))
-
-```
 
 ``` {r emiss-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 20, fig.height = 18, out.width = "100%"}
 
@@ -1324,7 +1330,6 @@ emissions$`chart_class_All of Thailand`
 
 ``` {r emiss-diff-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 32, fig.height = 17, out.width = "100%"}
 
-
 emissions$`chart_class_diff_absolute_All of Thailand`
 
 ```
@@ -1332,7 +1337,7 @@ emissions$`chart_class_diff_absolute_All of Thailand`
 <br>
 
 
-#### Final Energy by Fuel and Sector
+##### Final Energy by Fuel and Sector
 ***
 
 ```{r energy-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 20, fig.height = 12, out.width = "100%"}
@@ -1359,7 +1364,7 @@ energy$`chart_class_diff_absolute_All of Thailand`
 
 ```
 
-#### Electricity Generation and Consumption
+##### Electricity Generation and Consumption
 ***
 
 ```{r elec-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 20, fig.height = 12, out.width = "100%"}
@@ -1387,10 +1392,82 @@ electricity$`chart_class_diff_absolute_All of Thailand`
 
 <br>
 
-### MEA Area
+#### Sectoral details
+
+##### Buildings
+```{r building-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 21, fig.height = 12, out.width = "100%"}
+buildings_params <- c("energyFinalSubsecByFuelBuildEJ", 
+                      "energyFinalSubsecBySectorBuildEJ")
+
+buildings <- thailand %>% 
+  filter(param %in% buildings_params,
+         region %in% c("All of Thailand", "MEA area")) %>%
+  mutate(param = units) %>%
+  rchart::chart(save = F, 
+                show = F,
+                size_text = 19,
+                scenRef = "Ref")
+
+buildings$`chart_class_All of Thailand`
+```
+
+```{r building-diff-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 32, fig.height = 14, out.width = "100%"}
+
+buildings$`chart_class_diff_absolute_All of Thailand`
+```
+
+
+##### Transportation
+```{r transport-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 21, fig.height = 25, out.width = "100%"}
+transport_params <- c("transportFreightVMTByFuel", "transportPassengerVMTByFuel",
+                      "transportPassengerVMTByTech", "transportFreightVMTByTech")
+
+transport <- thailand %>% 
+  filter(param %in% transport_params,
+         region %in% c("All of Thailand", "MEA area")) %>%
+  mutate(param = units) %>%
+  rchart::chart(save = F, 
+                show = F,
+                size_text = 19,
+                scenRef = "Ref")
+
+transport$`chart_class_All of Thailand`
+```
+
+```{r transport-diff-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 33, fig.height = 24, out.width = "100%"}
+
+transport$`chart_class_diff_absolute_All of Thailand`
+```
+
+##### Industry
+```{r industry-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 15, fig.height = 5, out.width = "100%"}
+industry_params <- c("energyFinalSubsecByFuelIndusEJ")
+
+industry <- thailand %>% 
+  filter(param %in% industry_params,
+         region %in% c("All of Thailand", "MEA area")) %>%
+  mutate(param = units) %>%
+  rchart::chart(save = F, 
+                show = F,
+                size_text = 19,
+                scenRef = "Ref")
+
+industry$`chart_class_All of Thailand`
+```
+
+```{r industry-diff-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 32, fig.height = 6, out.width = "100%"}
+
+industry$`chart_class_diff_absolute_All of Thailand`
+```
+
+<br>
+
+### MEA Area {.tabset}
 ***
 
-#### Socioeconomic summary
+#### Summary figures
+
+##### Socioeconomic summary
 
 ```{r socio-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 16, fig.height = 6, out.width = "100%"}
 socioeconomic_parameters <- c("pop", "gdp", "gdpPerCapita")
@@ -1412,7 +1489,7 @@ socioeconomic_mea$chart_region_absolute
 <br>
 
 
-#### Emissions by sector and gas
+##### Emissions by sector and gas
 ***
 
 ``` {r emiss-line-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 12, fig.height = 6, out.width = "100%"}
@@ -1439,7 +1516,7 @@ emissions$`chart_class_diff_absolute_MEA area`
 <br>
 
 
-#### Final Energy by Fuel and Sector
+##### Final Energy by Fuel and Sector
 ***
 
 ```{r energy-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 20, fig.height = 12, out.width = "100%"}
@@ -1456,7 +1533,7 @@ energy$`chart_class_diff_absolute_MEA area`
 
 <br>
 
-#### Electricity Consumption
+##### Electricity Consumption
 ***
 
 ```{r elec-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 20, fig.height = 6, out.width = "100%"}
@@ -1474,6 +1551,40 @@ electricity$`chart_class_diff_absolute_MEA area`
 
 <br>
 
+#### Sectoral details
+
+##### Buildings
+```{r building-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 21, fig.height = 12, out.width = "100%"}
+
+buildings$`chart_class_MEA area`
+```
+
+```{r building-diff-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 32, fig.height = 14, out.width = "100%"}
+
+buildings$`chart_class_diff_absolute_MEA area`
+```
+
+##### Transportation
+```{r transport-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 21, fig.height = 25, out.width = "100%"}
+
+transport$`chart_class_MEA area`
+```
+
+```{r transport-diff-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 33, fig.height = 24, out.width = "100%"}
+
+transport$`chart_class_diff_absolute_MEA area`
+```
+
+##### Industry
+```{r industry-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 15, fig.height = 5, out.width = "100%"}
+
+industry$`chart_class_MEA area`
+```
+
+```{r industry-diff-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 32, fig.height = 6, out.width = "100%"}
+
+industry$`chart_class_diff_absolute_MEA area`
+```
 
 # {.unlisted .unnumbered}
 ```{r child = 'footer.rmd'}

@@ -2239,12 +2239,17 @@ Figures</h2>
 compare data across scenarios, regions, sectors and time periods in
 GCAM.</p>
 <p><br></p>
-<div id="thailand" class="section level3" number="6.2.1">
-<h3><span class="header-section-number">6.2.1</span> Thailand</h3>
+<div id="thailand" class="section level3 tabset" number="6.2.1">
+<h3 class="tabset"><span class="header-section-number">6.2.1</span>
+Thailand</h3>
 <hr />
-<div id="socioeconomic-summary" class="section level4" number="6.2.1.1">
-<h4><span class="header-section-number">6.2.1.1</span> Socioeconomic
-summary</h4>
+<div id="summary-figures" class="section level4" number="6.2.1.1">
+<h4><span class="header-section-number">6.2.1.1</span> Summary
+figures</h4>
+<div id="socioeconomic-summary" class="section level5"
+number="6.2.1.1.1">
+<h5><span class="header-section-number">6.2.1.1.1</span> Socioeconomic
+summary</h5>
 <pre class="r"><code>socioeconomic_parameters &lt;- c(&quot;pop&quot;, &quot;gdp&quot;, &quot;gdpPerCapita&quot;)
 
 socioeconomic &lt;- thailand %&gt;%
@@ -2260,10 +2265,10 @@ socioeconomic$chart_param_Thailand</code></pre>
 <p><img src="modeling_thailand_files/figure-html/socio-th-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br> <br></p>
 </div>
-<div id="emissions-by-sector-and-gas" class="section level4"
-number="6.2.1.2">
-<h4><span class="header-section-number">6.2.1.2</span> Emissions by
-sector and gas</h4>
+<div id="emissions-by-sector-and-gas" class="section level5"
+number="6.2.1.1.2">
+<h5><span class="header-section-number">6.2.1.1.2</span> Emissions by
+sector and gas</h5>
 <hr />
 <pre class="r"><code>emissions_line_params &lt;- c(&quot;emissCO2BySector&quot;, &quot;emissGHGBySectorGWPAR5&quot;)
 
@@ -2293,10 +2298,10 @@ emissions$`chart_class_All of Thailand`</code></pre>
 <p><img src="modeling_thailand_files/figure-html/emiss-diff-th-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 </div>
-<div id="final-energy-by-fuel-and-sector" class="section level4"
-number="6.2.1.3">
-<h4><span class="header-section-number">6.2.1.3</span> Final Energy by
-Fuel and Sector</h4>
+<div id="final-energy-by-fuel-and-sector" class="section level5"
+number="6.2.1.1.3">
+<h5><span class="header-section-number">6.2.1.1.3</span> Final Energy by
+Fuel and Sector</h5>
 <hr />
 <pre class="r"><code>energy_parameters &lt;- c(&quot;energyFinalConsumBySecEJ&quot;, &quot;energyFinalByFuelEJ&quot;)
 
@@ -2315,10 +2320,10 @@ energy$`chart_class_All of Thailand`</code></pre>
 <pre class="r"><code>energy$`chart_class_diff_absolute_All of Thailand`</code></pre>
 <p><img src="modeling_thailand_files/figure-html/energy-diff-th-1.png" width="100%" style="display: block; margin: auto;" /></p>
 </div>
-<div id="electricity-generation-and-consumption" class="section level4"
-number="6.2.1.4">
-<h4><span class="header-section-number">6.2.1.4</span> Electricity
-Generation and Consumption</h4>
+<div id="electricity-generation-and-consumption" class="section level5"
+number="6.2.1.1.4">
+<h5><span class="header-section-number">6.2.1.1.4</span> Electricity
+Generation and Consumption</h5>
 <hr />
 <pre class="r"><code>elec_parameters &lt;- c(&quot;elecByTechTWh&quot;, &quot;elecConsumByDemandSectorTWh&quot;)
 
@@ -2338,13 +2343,80 @@ electricity$`chart_class_All of Thailand`</code></pre>
 <p><br></p>
 </div>
 </div>
-<div id="mea-area" class="section level3" number="6.2.2">
-<h3><span class="header-section-number">6.2.2</span> MEA Area</h3>
+<div id="sectoral-details" class="section level4" number="6.2.1.2">
+<h4><span class="header-section-number">6.2.1.2</span> Sectoral
+details</h4>
+<div id="buildings" class="section level5" number="6.2.1.2.1">
+<h5><span class="header-section-number">6.2.1.2.1</span> Buildings</h5>
+<pre class="r"><code>buildings_params &lt;- c(&quot;energyFinalSubsecByFuelBuildEJ&quot;, 
+                      &quot;energyFinalSubsecBySectorBuildEJ&quot;)
+
+buildings &lt;- thailand %&gt;% 
+  filter(param %in% buildings_params,
+         region %in% c(&quot;All of Thailand&quot;, &quot;MEA area&quot;)) %&gt;%
+  mutate(param = units) %&gt;%
+  rchart::chart(save = F, 
+                show = F,
+                size_text = 19,
+                scenRef = &quot;Ref&quot;)
+
+buildings$`chart_class_All of Thailand`</code></pre>
+<p><img src="modeling_thailand_files/figure-html/building-th-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>buildings$`chart_class_diff_absolute_All of Thailand`</code></pre>
+<p><img src="modeling_thailand_files/figure-html/building-diff-th-1.png" width="100%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="transportation" class="section level5" number="6.2.1.2.2">
+<h5><span class="header-section-number">6.2.1.2.2</span>
+Transportation</h5>
+<pre class="r"><code>transport_params &lt;- c(&quot;transportFreightVMTByFuel&quot;, &quot;transportPassengerVMTByFuel&quot;,
+                      &quot;transportPassengerVMTByTech&quot;, &quot;transportFreightVMTByTech&quot;)
+
+transport &lt;- thailand %&gt;% 
+  filter(param %in% transport_params,
+         region %in% c(&quot;All of Thailand&quot;, &quot;MEA area&quot;)) %&gt;%
+  mutate(param = units) %&gt;%
+  rchart::chart(save = F, 
+                show = F,
+                size_text = 19,
+                scenRef = &quot;Ref&quot;)
+
+transport$`chart_class_All of Thailand`</code></pre>
+<p><img src="modeling_thailand_files/figure-html/transport-th-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>transport$`chart_class_diff_absolute_All of Thailand`</code></pre>
+<p><img src="modeling_thailand_files/figure-html/transport-diff-th-1.png" width="100%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="industry" class="section level5" number="6.2.1.2.3">
+<h5><span class="header-section-number">6.2.1.2.3</span> Industry</h5>
+<pre class="r"><code>industry_params &lt;- c(&quot;energyFinalSubsecByFuelIndusEJ&quot;)
+
+industry &lt;- thailand %&gt;% 
+  filter(param %in% industry_params,
+         region %in% c(&quot;All of Thailand&quot;, &quot;MEA area&quot;)) %&gt;%
+  mutate(param = units) %&gt;%
+  rchart::chart(save = F, 
+                show = F,
+                size_text = 19,
+                scenRef = &quot;Ref&quot;)
+
+industry$`chart_class_All of Thailand`</code></pre>
+<p><img src="modeling_thailand_files/figure-html/industry-th-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>industry$`chart_class_diff_absolute_All of Thailand`</code></pre>
+<p><img src="modeling_thailand_files/figure-html/industry-diff-th-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><br></p>
+</div>
+</div>
+</div>
+<div id="mea-area" class="section level3 tabset" number="6.2.2">
+<h3 class="tabset"><span class="header-section-number">6.2.2</span> MEA
+Area</h3>
 <hr />
-<div id="socioeconomic-summary-1" class="section level4"
-number="6.2.2.1">
-<h4><span class="header-section-number">6.2.2.1</span> Socioeconomic
-summary</h4>
+<div id="summary-figures-1" class="section level4" number="6.2.2.1">
+<h4><span class="header-section-number">6.2.2.1</span> Summary
+figures</h4>
+<div id="socioeconomic-summary-1" class="section level5"
+number="6.2.2.1.1">
+<h5><span class="header-section-number">6.2.2.1.1</span> Socioeconomic
+summary</h5>
 <pre class="r"><code>socioeconomic_parameters &lt;- c(&quot;pop&quot;, &quot;gdp&quot;, &quot;gdpPerCapita&quot;)
 
 socioeconomic_mea &lt;- thailand %&gt;%
@@ -2361,10 +2433,10 @@ socioeconomic_mea$chart_region_absolute</code></pre>
 <p><img src="modeling_thailand_files/figure-html/socio-mea-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br> <br></p>
 </div>
-<div id="emissions-by-sector-and-gas-1" class="section level4"
-number="6.2.2.2">
-<h4><span class="header-section-number">6.2.2.2</span> Emissions by
-sector and gas</h4>
+<div id="emissions-by-sector-and-gas-1" class="section level5"
+number="6.2.2.1.2">
+<h5><span class="header-section-number">6.2.2.1.2</span> Emissions by
+sector and gas</h5>
 <hr />
 <pre class="r"><code>emissions_line$`chart_param_MEA area`</code></pre>
 <p><img src="modeling_thailand_files/figure-html/emiss-line-mea-1.png" width="100%" style="display: block; margin: auto;" /></p>
@@ -2374,10 +2446,10 @@ sector and gas</h4>
 <p><img src="modeling_thailand_files/figure-html/emiss-diff-mea-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 </div>
-<div id="final-energy-by-fuel-and-sector-1" class="section level4"
-number="6.2.2.3">
-<h4><span class="header-section-number">6.2.2.3</span> Final Energy by
-Fuel and Sector</h4>
+<div id="final-energy-by-fuel-and-sector-1" class="section level5"
+number="6.2.2.1.3">
+<h5><span class="header-section-number">6.2.2.1.3</span> Final Energy by
+Fuel and Sector</h5>
 <hr />
 <pre class="r"><code>energy$`chart_class_MEA area`</code></pre>
 <p><img src="modeling_thailand_files/figure-html/energy-mea-1.png" width="100%" style="display: block; margin: auto;" /></p>
@@ -2385,16 +2457,43 @@ Fuel and Sector</h4>
 <p><img src="modeling_thailand_files/figure-html/energy-diff-mea-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 </div>
-<div id="electricity-consumption" class="section level4"
-number="6.2.2.4">
-<h4><span class="header-section-number">6.2.2.4</span> Electricity
-Consumption</h4>
+<div id="electricity-consumption" class="section level5"
+number="6.2.2.1.4">
+<h5><span class="header-section-number">6.2.2.1.4</span> Electricity
+Consumption</h5>
 <hr />
 <pre class="r"><code>electricity$`chart_class_MEA area`</code></pre>
 <p><img src="modeling_thailand_files/figure-html/elec-mea-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>electricity$`chart_class_diff_absolute_MEA area`</code></pre>
 <p><img src="modeling_thailand_files/figure-html/elec-diff-mea-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
+</div>
+</div>
+<div id="sectoral-details-1" class="section level4" number="6.2.2.2">
+<h4><span class="header-section-number">6.2.2.2</span> Sectoral
+details</h4>
+<div id="buildings-1" class="section level5" number="6.2.2.2.1">
+<h5><span class="header-section-number">6.2.2.2.1</span> Buildings</h5>
+<pre class="r"><code>buildings$`chart_class_MEA area`</code></pre>
+<p><img src="modeling_thailand_files/figure-html/building-mea-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>buildings$`chart_class_diff_absolute_MEA area`</code></pre>
+<p><img src="modeling_thailand_files/figure-html/building-diff-mea-1.png" width="100%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="transportation-1" class="section level5" number="6.2.2.2.2">
+<h5><span class="header-section-number">6.2.2.2.2</span>
+Transportation</h5>
+<pre class="r"><code>transport$`chart_class_MEA area`</code></pre>
+<p><img src="modeling_thailand_files/figure-html/transport-mea-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>transport$`chart_class_diff_absolute_MEA area`</code></pre>
+<p><img src="modeling_thailand_files/figure-html/transport-diff-mea-1.png" width="100%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="industry-1" class="section level5" number="6.2.2.2.3">
+<h5><span class="header-section-number">6.2.2.2.3</span> Industry</h5>
+<pre class="r"><code>industry$`chart_class_MEA area`</code></pre>
+<p><img src="modeling_thailand_files/figure-html/industry-mea-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>industry$`chart_class_diff_absolute_MEA area`</code></pre>
+<p><img src="modeling_thailand_files/figure-html/industry-diff-mea-1.png" width="100%" style="display: block; margin: auto;" /></p>
+</div>
 </div>
 </div>
 </div>
