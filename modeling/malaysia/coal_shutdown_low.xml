@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario>
+   <world>
+      <region name="Malaysia">
+         <pass-through-sector name="elec_coal (conv pul)">
+            <subsector name="coal (conv pul)">
+               <stub-technology name="coal (conv pul) (once through)">
+			<period year="2015">           
+			    <lifetime>35</lifetime>      
+			    <s-curve-shutdown-decider name="s-curve">
+                     		<steepness>0.0845</steepness>
+                     		<half-life>25</half-life>
+                  	    </s-curve-shutdown-decider>
+			</period>
+               </stub-technology>
+               <stub-technology name="coal (conv pul) (seawater)">
+			<period year="2015">           
+			    <lifetime>35</lifetime>      
+			    <s-curve-shutdown-decider name="s-curve">
+                     		<steepness>0.0845</steepness>
+                     		<half-life>25</half-life>
+                  	    </s-curve-shutdown-decider>
+			</period>
+               </stub-technology>
+               <stub-technology name="coal (conv pul) (recirculating)">
+			<period year="2015">           
+			    <lifetime>35</lifetime>      
+			    <s-curve-shutdown-decider name="s-curve">
+                     		<steepness>0.0845</steepness>
+                     		<half-life>25</half-life>
+                  	    </s-curve-shutdown-decider>
+			</period>
+               </stub-technology>
+               <stub-technology name="coal (conv pul) (cooling pond)">
+			<period year="2015">           
+			    <lifetime>35</lifetime>      
+			    <s-curve-shutdown-decider name="s-curve">
+                     		<steepness>0.0845</steepness>
+                     		<half-life>25</half-life>
+                  	    </s-curve-shutdown-decider>
+			</period>
+               </stub-technology>
+               <stub-technology name="coal (conv pul) (dry cooling)">
+			<period year="2015">           
+			    <lifetime>35</lifetime>      
+			    <s-curve-shutdown-decider name="s-curve">
+                     		<steepness>0.0845</steepness>
+                     		<half-life>25</half-life>
+                  	    </s-curve-shutdown-decider>
+			</period>
+               </stub-technology>
+            </subsector>
+         </pass-through-sector>
+      </region>
+   </world>
+</scenario>
