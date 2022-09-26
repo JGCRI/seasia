@@ -316,9 +316,11 @@ data <- gcamextractor::readgcam(gcamdatabase = sample_path,
 ```
 
 ```{r gcamextractor, echo = TRUE}
-df1 <- read.csv("../data/malaysia/gcamextractor/gcamDataTable_aggClass1.csv")
+ref <- read.csv("../data/malaysia/gcamextractor/reference/gcamDataTable_aggClass1.csv") %>% mutate(scenario = "Ref")
+high <- read.csv("../data/malaysia/gcamextractor/high/gcamDataTable_aggClass1.csv") %>% mutate(scenario = "High")
+low <- read.csv("../data/malaysia/gcamextractor/low/gcamDataTable_aggClass1.csv")
 
-malaysia <- df1 %>%
+malaysia <- bind_rows(ref, high, low) %>%
   filter(region != ("Rest of Malaysia"),
          x > 2000)
 
@@ -362,10 +364,10 @@ socioeconomic_parameters <- c("pop", "gdp", "gdpPerCapita")
   
 socioeconomic <- malaysia %>%
   filter(param %in% socioeconomic_parameters,
-         region != "All of Malaysia") %>%
+         region != "All of Malaysia",
+         scenario == "Ref") %>%
   mutate(param = units) %>% 
   rchart::chart(folder = "rchart/socioeconomic",
-                chart_type = "region_absolute",
                 save = F, 
                 show = F,
                 size_text = 19)
@@ -447,7 +449,7 @@ emissions <- malaysia_emissions %>%
                 show = F,
                 size_text = 10)
 
-emissions$chart_class_byRegion
+emissions$chart_class_Ref
 ```
 
 ``` {r rchart-emiss-gas, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
@@ -467,12 +469,11 @@ malaysia_emissions_gas <- bind_rows(co2_gas, ghg_gas)
 gas <- malaysia_emissions_gas %>%
   mutate(param = units) %>%
   rchart::chart(folder = "rchart/emissions_by_gas",
-                chart_type = "class_absolute",
                 save = F, 
                 show = F,
                 size_text = 10)
 
-gas$chart_class_byRegion
+gas$chart_class_Ref
 
 ```
 
@@ -503,7 +504,8 @@ emissions_my_plot <- my_emissions %>%
   rchart::chart(folder = "rchart/emissions_by_sector",
                 save = F, 
                 show = F,
-                size_text = 12)
+                size_text = 12,
+                scenRef = "Ref")
 
 emissions_my_plot$chart_param
 ```
@@ -518,16 +520,15 @@ ghg_gas_my <- malaysia %>%
 my_emissions_gas <- bind_rows(ghg_gas_my, my_emissions)
 ```
 
-``` {r rchart-emiss-gas-plot-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.height = 12, fig.wdith = 9}
+``` {r rchart-emiss-gas-plot-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, out.width = "150%"}
 gas_my <- my_emissions_gas %>%
   rchart::chart(folder = "rchart/emissions_by_gas",
                 save = F, 
                 show = F,
-                size_text = 12)
+                size_text = 12,
+                scenRef = "Ref")
 
-gas_my$chart_class
-
-gas_my$`chart_class_diff_absolute_All of Malaysia`
+gas_my$chart_class_diff_absolute
 
 ```
 
@@ -577,11 +578,10 @@ gas_kl <- kl_emissions_gas %>%
   rchart::chart(folder = "rchart/emissions_by_gas",
                 save = F, 
                 show = F,
-                size_text = 12)
+                size_text = 12,
+                scenRef = "Ref")
 
-gas_kl$chart_class
-
-gas_kl$chart_class_diff_absolute_KualaLumpur
+gas_kl$chart_class_diff_absolute
 
 ```
 
@@ -604,9 +604,10 @@ p_energy <- malaysia %>%
                 chart_type = "class_absolute",
                 save = F, 
                 show = F,
-                size_text = 12)
+                size_text = 12,
+                scenRef = "Ref")
 
-p_energy$chart_class_byRegion
+p_energy$chart_class_Ref
 ```
 
 
@@ -621,14 +622,13 @@ p_energy_my <- malaysia %>%
          region == "All of Malaysia") %>%
   mutate(param = units) %>%
   rchart::chart(folder = "rchart/energy",
-                chart_type = "class_absolute",
                 save = F, 
                 show = F,
-                size_text = 12)
+                size_text = 12,
+                scenRef = "Ref")
 
-p_energy_my$chart_class
+p_energy_my$chart_class_diff_absolute
 
-p_energy_my$`chart_class_diff_absolute_All of Malaysia`
 ```
 
 
@@ -643,14 +643,12 @@ p_energy_kl <- malaysia %>%
          region == "KualaLumpur") %>%
   mutate(param = units) %>%
   rchart::chart(folder = "rchart/energy",
-                chart_type = "class_absolute",
                 save = F, 
                 show = F,
-                size_text = 12)
+                size_text = 12,
+                scenRef = "Ref")
 
-p_energy_kl$chart_class
-
-p_energy_kl$chart_class_diff_absolute_KualaLumpur
+p_energy_kl$chart_param_diff_absolute
 ```
 
 
@@ -692,11 +690,10 @@ energy_my <- malaysia %>%
   rchart::chart(folder = "rchart/energy",
                 save = F, 
                 show = F,
-                size_text = 12)
+                size_text = 12,
+                scenRef = "Ref")
 
-energy_my$chart_class
-
-energy_my$`chart_class_diff_absolute_All of Malaysia`
+energy_my$chart_class_diff_absolute
 ```
 
 
@@ -712,11 +709,10 @@ energy_kl <- malaysia %>%
   rchart::chart(folder = "rchart/energy",
                 save = F, 
                 show = F,
-                size_text = 12)
+                size_text = 12,
+                scenRef = "Ref")
 
-energy_kl$chart_class
-
-energy_kl$chart_class_diff_absolute_KualaLumpur
+energy_kl$chart_class_diff_absolute
 ```
 
 
@@ -742,7 +738,7 @@ electricity <- malaysia %>%
                 show = F,
                 size_text = 8)
 
-electricity$chart_class_byRegion
+electricity$chart_class_Ref
 ```
 
 
@@ -759,11 +755,11 @@ electricity_my <- malaysia %>%
   rchart::chart(folder = "rchart/electricity",
                 save = F, 
                 show = F,
-                size_text = 10)
+                size_text = 10,
+                scenRef = "Ref")
 
-electricity_my$chart_class
 
-electricity_my$`chart_class_diff_absolute_All of Malaysia`
+electricity_my$chart_class_diff_absolute
 ```
 
 
@@ -780,11 +776,10 @@ electricity_kl <- malaysia %>%
   rchart::chart(folder = "rchart/electricity",
                 save = F, 
                 show = F,
-                size_text = 12)
+                size_text = 12,
+                scenRef = "Ref")
 
-electricity_kl$chart_class
-
-electricity_kl$chart_class_diff_absolute_KualaLumpur
+electricity_kl$chart_class_diff_absolute
 ```
 
 
@@ -807,7 +802,8 @@ building_energy <- malaysia %>%
                 show = F,
                 size_text = 12)
 
-building_energy$chart_class_byRegion
+building_energy$`chart_class_All of Malaysia`
+building_energy$chart_class_KualaLumpur
 ```
 
 
@@ -823,11 +819,10 @@ building_energy_my <- malaysia %>%
   rchart::chart(folder = "rchart/building_energy",
                 save = F, 
                 show = F,
-                size_text = 12)
+                size_text = 12,
+                scenRef = "Ref")
 
-building_energy_my$chart_class
-
-building_energy_my$`chart_class_diff_absolute_All of Malaysia`
+building_energy_my$chart_class_diff_absolute
 ```
 
 
@@ -843,11 +838,10 @@ building_energy_kl <- malaysia %>%
   rchart::chart(folder = "rchart/building_energy",
                 save = F, 
                 show = F,
-                size_text = 12)
+                size_text = 12,
+                scenRef = "Ref")
 
-building_energy_kl$chart_class
-
-building_energy_kl$chart_class_diff_absolute_KualaLumpur
+building_energy_kl$chart_class_diff_absolute
 ```
 
 <br>
@@ -888,11 +882,10 @@ transport_my <- malaysia %>%
   rchart::chart(folder = "rchart/transport",
                 save = F, 
                 show = F,
-                size_text = 12)
+                size_text = 12,
+                scenRef = "Ref")
 
-transport_my$chart_class
-
-transport_my$`chart_class_diff_absolute_All of Malaysia`
+transport_my$chart_class_diff_absolute
 ```
 
 
@@ -908,15 +901,24 @@ transport_kl <- malaysia %>%
   rchart::chart(folder = "rchart/transport",
                 save = F, 
                 show = F,
-                size_text = 12)
+                size_text = 12,
+                scenRef = "Ref")
 
-transport_kl$chart_class
-
-transport_kl$`chart_class_diff_absolute_All of Malaysia`
+transport_kl$chart_class_diff_absolute
 ```
 
 
 <br>
+
+
+<!-------------------------->
+<!-------------------------->
+# Validation
+<!-------------------------->
+<!-------------------------->
+<p align="center"> <img src="images/divider.png"></p>
+
+This section will compare local data in sources from Malaysia and Kuala Lumpur to GCAM outputs.
 
 # {.unlisted .unnumbered}
 ```{r child = 'footer.rmd'}

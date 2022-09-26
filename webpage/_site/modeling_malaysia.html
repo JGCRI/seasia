@@ -835,9 +835,11 @@ data &lt;- gcamextractor::readgcam(gcamdatabase = sample_path,
                                 regionsAggregate = list(regions),
                                 regionsAggregateNames = &quot;All of Malaysia&quot;,
                                 folder = &quot;..data/malaysia/gcamextractor&quot;)</code></pre>
-<pre class="r"><code>df1 &lt;- read.csv(&quot;../data/malaysia/gcamextractor/gcamDataTable_aggClass1.csv&quot;)
+<pre class="r"><code>ref &lt;- read.csv(&quot;../data/malaysia/gcamextractor/reference/gcamDataTable_aggClass1.csv&quot;) %&gt;% mutate(scenario = &quot;Ref&quot;)
+high &lt;- read.csv(&quot;../data/malaysia/gcamextractor/high/gcamDataTable_aggClass1.csv&quot;) %&gt;% mutate(scenario = &quot;High&quot;)
+low &lt;- read.csv(&quot;../data/malaysia/gcamextractor/low/gcamDataTable_aggClass1.csv&quot;)
 
-malaysia &lt;- df1 %&gt;%
+malaysia &lt;- bind_rows(ref, high, low) %&gt;%
   filter(region != (&quot;Rest of Malaysia&quot;),
          x &gt; 2000)</code></pre>
 <p><br></p>
@@ -884,10 +886,10 @@ Lumpur</h4>
   
 socioeconomic &lt;- malaysia %&gt;%
   filter(param %in% socioeconomic_parameters,
-         region != &quot;All of Malaysia&quot;) %&gt;%
+         region != &quot;All of Malaysia&quot;,
+         scenario == &quot;Ref&quot;) %&gt;%
   mutate(param = units) %&gt;% 
   rchart::chart(folder = &quot;rchart/socioeconomic&quot;,
-                chart_type = &quot;region_absolute&quot;,
                 save = F, 
                 show = F,
                 size_text = 19)
@@ -957,7 +959,7 @@ malaysia_emissions &lt;- bind_rows(co2, ghg)</code></pre>
                 show = F,
                 size_text = 10)
 
-emissions$chart_class_byRegion</code></pre>
+emissions$chart_class_Ref</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-emiss-plot-1.png" width="85%" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>co2_gas &lt;- co2 %&gt;%
   mutate(class = &quot;CO2&quot;,
@@ -972,12 +974,11 @@ malaysia_emissions_gas &lt;- bind_rows(co2_gas, ghg_gas)</code></pre>
 <pre class="r"><code>gas &lt;- malaysia_emissions_gas %&gt;%
   mutate(param = units) %&gt;%
   rchart::chart(folder = &quot;rchart/emissions_by_gas&quot;,
-                chart_type = &quot;class_absolute&quot;,
                 save = F, 
                 show = F,
                 size_text = 10)
 
-gas$chart_class_byRegion</code></pre>
+gas$chart_class_Ref</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-emiss-gas-plot-1.png" width="85%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 </div>
@@ -1001,7 +1002,8 @@ my_emissions &lt;- bind_rows(co2_my, ghg_my) </code></pre>
   rchart::chart(folder = &quot;rchart/emissions_by_sector&quot;,
                 save = F, 
                 show = F,
-                size_text = 12)
+                size_text = 12,
+                scenRef = &quot;Ref&quot;)
 
 emissions_my_plot$chart_param</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-emiss-plot-my-1.png" width="85%" style="display: block; margin: auto;" /></p>
@@ -1016,11 +1018,11 @@ my_emissions_gas &lt;- bind_rows(ghg_gas_my, my_emissions)</code></pre>
   rchart::chart(folder = &quot;rchart/emissions_by_gas&quot;,
                 save = F, 
                 show = F,
-                size_text = 12)
+                size_text = 12,
+                scenRef = &quot;Ref&quot;)
 
-gas_my$chart_class</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-emiss-gas-plot-my-1.png" width="85%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>gas_my$`chart_class_diff_absolute_All of Malaysia`</code></pre>
+gas_my$chart_class_diff_absolute</code></pre>
+<p><img src="modeling_malaysia_files/figure-html/rchart-emiss-gas-plot-my-1.png" width="150%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 </div>
 <div id="kuala-lumpur-1" class="section level4" number="5.2.2.3">
@@ -1056,11 +1058,11 @@ kl_emissions_gas &lt;- bind_rows(ghg_gas_kl, kl_emissions)</code></pre>
   rchart::chart(folder = &quot;rchart/emissions_by_gas&quot;,
                 save = F, 
                 show = F,
-                size_text = 12)
+                size_text = 12,
+                scenRef = &quot;Ref&quot;)
 
-gas_kl$chart_class</code></pre>
+gas_kl$chart_class_diff_absolute</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-gas-plot-kl-1.png" width="85%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>gas_kl$chart_class_diff_absolute_KualaLumpur</code></pre>
 <p><br></p>
 <!-------------------------->
 </div>
@@ -1083,9 +1085,10 @@ Lumpur</h4>
                 chart_type = &quot;class_absolute&quot;,
                 save = F, 
                 show = F,
-                size_text = 12)
+                size_text = 12,
+                scenRef = &quot;Ref&quot;)
 
-p_energy$chart_class_byRegion</code></pre>
+p_energy$chart_class_Ref</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-primary-energy-1.png" width="85%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 </div>
@@ -1096,14 +1099,13 @@ p_energy$chart_class_byRegion</code></pre>
          region == &quot;All of Malaysia&quot;) %&gt;%
   mutate(param = units) %&gt;%
   rchart::chart(folder = &quot;rchart/energy&quot;,
-                chart_type = &quot;class_absolute&quot;,
                 save = F, 
                 show = F,
-                size_text = 12)
+                size_text = 12,
+                scenRef = &quot;Ref&quot;)
 
-p_energy_my$chart_class</code></pre>
+p_energy_my$chart_class_diff_absolute</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-primary-energy-my-1.png" width="85%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>p_energy_my$`chart_class_diff_absolute_All of Malaysia`</code></pre>
 <p><br></p>
 </div>
 <div id="kuala-lumpur-2" class="section level4" number="5.2.3.3">
@@ -1113,14 +1115,13 @@ p_energy_my$chart_class</code></pre>
          region == &quot;KualaLumpur&quot;) %&gt;%
   mutate(param = units) %&gt;%
   rchart::chart(folder = &quot;rchart/energy&quot;,
-                chart_type = &quot;class_absolute&quot;,
                 save = F, 
                 show = F,
-                size_text = 12)
+                size_text = 12,
+                scenRef = &quot;Ref&quot;)
 
-p_energy_kl$chart_class
-
-p_energy_kl$chart_class_diff_absolute_KualaLumpur</code></pre>
+p_energy_kl$chart_param_diff_absolute</code></pre>
+<p><img src="modeling_malaysia_files/figure-html/rchart-primary-energy-kl-1.png" width="85%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 <!-------------------------->
 </div>
@@ -1148,7 +1149,6 @@ energy &lt;- malaysia %&gt;%
                 size_text = 10)
 
 energy$chart_class_byRegion</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-energy-1.png" width="85%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 </div>
 <div id="malaysia-3" class="section level4" number="5.2.4.2">
@@ -1160,11 +1160,11 @@ energy$chart_class_byRegion</code></pre>
   rchart::chart(folder = &quot;rchart/energy&quot;,
                 save = F, 
                 show = F,
-                size_text = 12)
+                size_text = 12,
+                scenRef = &quot;Ref&quot;)
 
-energy_my$chart_class</code></pre>
+energy_my$chart_class_diff_absolute</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-energy-my-1.png" width="85%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>energy_my$`chart_class_diff_absolute_All of Malaysia`</code></pre>
 <p><br></p>
 </div>
 <div id="kuala-lumpur-3" class="section level4" number="5.2.4.3">
@@ -1176,11 +1176,11 @@ energy_my$chart_class</code></pre>
   rchart::chart(folder = &quot;rchart/energy&quot;,
                 save = F, 
                 show = F,
-                size_text = 12)
+                size_text = 12,
+                scenRef = &quot;Ref&quot;)
 
-energy_kl$chart_class</code></pre>
+energy_kl$chart_class_diff_absolute</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-energy-kl-1.png" width="85%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>energy_kl$chart_class_diff_absolute_KualaLumpur</code></pre>
 <p><br></p>
 <!-------------------------->
 </div>
@@ -1207,7 +1207,7 @@ electricity &lt;- malaysia %&gt;%
                 show = F,
                 size_text = 8)
 
-electricity$chart_class_byRegion</code></pre>
+electricity$chart_class_Ref</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-elec-gen-1.png" width="85%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 </div>
@@ -1220,11 +1220,12 @@ electricity$chart_class_byRegion</code></pre>
   rchart::chart(folder = &quot;rchart/electricity&quot;,
                 save = F, 
                 show = F,
-                size_text = 10)
+                size_text = 10,
+                scenRef = &quot;Ref&quot;)
 
-electricity_my$chart_class</code></pre>
+
+electricity_my$chart_class_diff_absolute</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-elec-gen-my-1.png" width="85%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>electricity_my$`chart_class_diff_absolute_All of Malaysia`</code></pre>
 <p><br></p>
 </div>
 <div id="kuala-lumpur-4" class="section level4" number="5.2.5.3">
@@ -1236,11 +1237,11 @@ electricity_my$chart_class</code></pre>
   rchart::chart(folder = &quot;rchart/electricity&quot;,
                 save = F, 
                 show = F,
-                size_text = 12)
+                size_text = 12,
+                scenRef = &quot;Ref&quot;)
 
-electricity_kl$chart_class</code></pre>
+electricity_kl$chart_class_diff_absolute</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-elec-gen-kl-1.png" width="85%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>electricity_kl$chart_class_diff_absolute_KualaLumpur</code></pre>
 <p><br></p>
 <!-------------------------->
 </div>
@@ -1264,8 +1265,10 @@ Lumpur</h4>
                 show = F,
                 size_text = 12)
 
-building_energy$chart_class_byRegion</code></pre>
+building_energy$`chart_class_All of Malaysia`</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-building-1.png" width="85%" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>building_energy$chart_class_KualaLumpur</code></pre>
+<p><img src="modeling_malaysia_files/figure-html/rchart-building-2.png" width="85%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 </div>
 <div id="malaysia-5" class="section level4" number="5.2.6.2">
@@ -1277,11 +1280,11 @@ building_energy$chart_class_byRegion</code></pre>
   rchart::chart(folder = &quot;rchart/building_energy&quot;,
                 save = F, 
                 show = F,
-                size_text = 12)
+                size_text = 12,
+                scenRef = &quot;Ref&quot;)
 
-building_energy_my$chart_class</code></pre>
+building_energy_my$chart_class_diff_absolute</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-building-my-1.png" width="85%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>building_energy_my$`chart_class_diff_absolute_All of Malaysia`</code></pre>
 <p><br></p>
 </div>
 <div id="kuala-lumpur-5" class="section level4" number="5.2.6.3">
@@ -1293,11 +1296,11 @@ building_energy_my$chart_class</code></pre>
   rchart::chart(folder = &quot;rchart/building_energy&quot;,
                 save = F, 
                 show = F,
-                size_text = 12)
+                size_text = 12,
+                scenRef = &quot;Ref&quot;)
 
-building_energy_kl$chart_class</code></pre>
+building_energy_kl$chart_class_diff_absolute</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-building-kl-1.png" width="85%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>building_energy_kl$chart_class_diff_absolute_KualaLumpur</code></pre>
 <p><br></p>
 <!-------------------------->
 </div>
@@ -1325,7 +1328,6 @@ transport &lt;- malaysia %&gt;%
                 size_text = 10)
 
 transport$chart_class_byRegion</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-transport-1.png" width="85%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 </div>
 <div id="malaysia-6" class="section level4" number="5.2.7.2">
@@ -1337,11 +1339,11 @@ transport$chart_class_byRegion</code></pre>
   rchart::chart(folder = &quot;rchart/transport&quot;,
                 save = F, 
                 show = F,
-                size_text = 12)
+                size_text = 12,
+                scenRef = &quot;Ref&quot;)
 
-transport_my$chart_class</code></pre>
+transport_my$chart_class_diff_absolute</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-transport-my-1.png" width="85%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>transport_my$`chart_class_diff_absolute_All of Malaysia`</code></pre>
 <p><br></p>
 </div>
 <div id="kuala-lumpur-6" class="section level4" number="5.2.7.3">
@@ -1353,15 +1355,27 @@ transport_my$chart_class</code></pre>
   rchart::chart(folder = &quot;rchart/transport&quot;,
                 save = F, 
                 show = F,
-                size_text = 12)
+                size_text = 12,
+                scenRef = &quot;Ref&quot;)
 
-transport_kl$chart_class</code></pre>
+transport_kl$chart_class_diff_absolute</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-transport-kl-1.png" width="85%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>transport_kl$`chart_class_diff_absolute_All of Malaysia`</code></pre>
 <p><br></p>
+<!-------------------------->
+<!-------------------------->
 </div>
 </div>
 </div>
+</div>
+<div id="validation" class="section level1" number="6">
+<h1><span class="header-section-number">6</span> Validation</h1>
+<!-------------------------->
+<!-------------------------->
+<p align="center">
+<img src="images/divider.png">
+</p>
+<p>This section will compare local data in sources from Malaysia and
+Kuala Lumpur to GCAM outputs.</p>
 </div>
 <div id="section" class="section level1 unlisted unnumbered">
 <h1 class="unlisted unnumbered"></h1>
