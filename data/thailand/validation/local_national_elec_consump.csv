@@ -1,0 +1,71 @@
+year,Units,region,class,value,scenario
+2011,EJ,Thailand,Residential,0.1180764,MEA/PEA/EGAT
+2011,EJ,Thailand,Business,0.1101996,MEA/PEA/EGAT
+2011,EJ,Thailand,Industrial,0.2713104,MEA/PEA/EGAT
+2011,EJ,Thailand,Government and Non-Profit(1),0.0175968,MEA/PEA/EGAT
+2011,EJ,Thailand,Agriculture,0.0010692,MEA/PEA/EGAT
+2011,EJ,Thailand,Other,0.0098172,MEA/PEA/EGAT
+2011,EJ,Thailand,Free of Charge,0.0078048,MEA/PEA/EGAT
+2012,EJ,Thailand,Residential,0.1312092,MEA/PEA/EGAT
+2012,EJ,Thailand,Business,0.1252224,MEA/PEA/EGAT
+2012,EJ,Thailand,Industrial,0.2893896,MEA/PEA/EGAT
+2012,EJ,Thailand,Government and Non-Profit(1),0.0136764,MEA/PEA/EGAT
+2012,EJ,Thailand,Agriculture,0.0013572,MEA/PEA/EGAT
+2012,EJ,Thailand,Other,0.0136584,MEA/PEA/EGAT
+2012,EJ,Thailand,Free of Charge,0.0078876,MEA/PEA/EGAT
+2013,EJ,Thailand,Residential,0.1355652,MEA/PEA/EGAT
+2013,EJ,Thailand,Business,0.1399428,MEA/PEA/EGAT
+2013,EJ,Thailand,Industrial,0.2922768,MEA/PEA/EGAT
+2013,EJ,Thailand,Government and Non-Profit(1),0.0005364,MEA/PEA/EGAT
+2013,EJ,Thailand,Agriculture,0.0012744,MEA/PEA/EGAT
+2013,EJ,Thailand,Other,0.0134676,MEA/PEA/EGAT
+2013,EJ,Thailand,Free of Charge,0.0085644,MEA/PEA/EGAT
+2014,EJ,Thailand,Residential,0.1403748,MEA/PEA/EGAT
+2014,EJ,Thailand,Business,0.1440936,MEA/PEA/EGAT
+2014,EJ,Thailand,Industrial,0.2974464,MEA/PEA/EGAT
+2014,EJ,Thailand,Government and Non-Profit(1),0.0005472,MEA/PEA/EGAT
+2014,EJ,Thailand,Agriculture,0.0014904,MEA/PEA/EGAT
+2014,EJ,Thailand,Other,0.0140148,MEA/PEA/EGAT
+2014,EJ,Thailand,Free of Charge,0.0092952,MEA/PEA/EGAT
+2015,EJ,Thailand,Residential,0.1486296,MEA/PEA/EGAT
+2015,EJ,Thailand,Business,0.1528776,MEA/PEA/EGAT
+2015,EJ,Thailand,Industrial,0.3023424,MEA/PEA/EGAT
+2015,EJ,Thailand,Government and Non-Profit(1),0.0006444,MEA/PEA/EGAT
+2015,EJ,Thailand,Agriculture,0.0013932,MEA/PEA/EGAT
+2015,EJ,Thailand,Other,0.0136404,MEA/PEA/EGAT
+2015,EJ,Thailand,Free of Charge,0.0098748,MEA/PEA/EGAT
+2016,EJ,Thailand,Residential,0.1581552,MEA/PEA/EGAT
+2016,EJ,Thailand,Business,0.1607004,MEA/PEA/EGAT
+2016,EJ,Thailand,Industrial,0.3127608,MEA/PEA/EGAT
+2016,EJ,Thailand,Government and Non-Profit(1),0.0007236,MEA/PEA/EGAT
+2016,EJ,Thailand,Agriculture,0.0009612,MEA/PEA/EGAT
+2016,EJ,Thailand,Other,0.0142812,MEA/PEA/EGAT
+2016,EJ,Thailand,Free of Charge,0.0106668,MEA/PEA/EGAT
+2017,EJ,Thailand,Residential,0.1597464,MEA/PEA/EGAT
+2017,EJ,Thailand,Business,0.16236,MEA/PEA/EGAT
+2017,EJ,Thailand,Industrial,0.3159792,MEA/PEA/EGAT
+2017,EJ,Thailand,Government and Non-Profit(1),0.0007128,MEA/PEA/EGAT
+2017,EJ,Thailand,Agriculture,0.0010728,MEA/PEA/EGAT
+2017,EJ,Thailand,Other,0.0152892,MEA/PEA/EGAT
+2017,EJ,Thailand,Free of Charge,0.011286,MEA/PEA/EGAT
+2018,EJ,Thailand,Residential,0.162738,MEA/PEA/EGAT
+2018,EJ,Thailand,Business,0.1683504,MEA/PEA/EGAT
+2018,EJ,Thailand,Industrial,0.3161844,MEA/PEA/EGAT
+2018,EJ,Thailand,Government and Non-Profit(1),0.0007344,MEA/PEA/EGAT
+2018,EJ,Thailand,Agriculture,0.001314,MEA/PEA/EGAT
+2018,EJ,Thailand,Other,0.015156,MEA/PEA/EGAT
+2018,EJ,Thailand,Free of Charge,0.011718,MEA/PEA/EGAT
+2019,EJ,Thailand,Residential,0.1771272,MEA/PEA/EGAT
+2019,EJ,Thailand,Business,0.1768608,MEA/PEA/EGAT
+2019,EJ,Thailand,Industrial,0.3099744,MEA/PEA/EGAT
+2019,EJ,Thailand,Government and Non-Profit(1),0.0007596,MEA/PEA/EGAT
+2019,EJ,Thailand,Agriculture,0.0016848,MEA/PEA/EGAT
+2019,EJ,Thailand,Other,0.0159768,MEA/PEA/EGAT
+2019,EJ,Thailand,Free of Charge,0.012276,MEA/PEA/EGAT
+2020,EJ,Thailand,Residential,0.190296,MEA/PEA/EGAT
+2020,EJ,Thailand,Business,0.15822,MEA/PEA/EGAT
+2020,EJ,Thailand,Industrial,0.2957688,MEA/PEA/EGAT
+2020,EJ,Thailand,Government and Non-Profit(1),0.0007344,MEA/PEA/EGAT
+2020,EJ,Thailand,Agriculture,0.0015012,MEA/PEA/EGAT
+2020,EJ,Thailand,Other,0.0139392,MEA/PEA/EGAT
+2020,EJ,Thailand,Free of Charge,0.0129096,MEA/PEA/EGAT

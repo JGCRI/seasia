@@ -2417,9 +2417,7 @@ figures</h4>
 number="6.2.2.1.1">
 <h5><span class="header-section-number">6.2.2.1.1</span> Socioeconomic
 summary</h5>
-<pre class="r"><code>socioeconomic_parameters &lt;- c(&quot;pop&quot;, &quot;gdp&quot;, &quot;gdpPerCapita&quot;)
-
-socioeconomic_mea &lt;- thailand %&gt;%
+<pre class="r"><code>socioeconomic_mea &lt;- thailand %&gt;%
   filter(param %in% socioeconomic_parameters,
          region %in% c(&quot;Bangkok&quot;, &quot;SamutPrakan&quot;, &quot;Nonthaburi&quot;),
          scenario == &quot;Ref&quot;) %&gt;%
@@ -2493,7 +2491,143 @@ Transportation</h5>
 <p><img src="modeling_thailand_files/figure-html/industry-mea-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>industry$`chart_class_diff_absolute_MEA area`</code></pre>
 <p><img src="modeling_thailand_files/figure-html/industry-diff-mea-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><br></p>
+<!-------------------------->
+<!-------------------------->
 </div>
+</div>
+</div>
+</div>
+</div>
+<div id="validation" class="section level1" number="7">
+<h1><span class="header-section-number">7</span> Validation</h1>
+<!-------------------------->
+<!-------------------------->
+<p align="center">
+<img src="images/divider.png">
+</p>
+<div id="thailand-1" class="section level2 tabset" number="7.1">
+<h2 class="tabset"><span class="header-section-number">7.1</span>
+Thailand</h2>
+<div id="emissions" class="section level3" number="7.1.1">
+<h3><span class="header-section-number">7.1.1</span> Emissions</h3>
+<p><br></p>
+<div class="figure" style="text-align: center">
+<img src="modeling_thailand_files/figure-html/national%20co2%20emissions%20total-1.png" alt="**National total CO2 emissions from 1986 to 2100 (left) and 1986 to 2015 (right) from GCAM output (blue) and local data (red). Local data source: [Energy Policy and Planning Office](http://www.eppo.go.th/index.php/en/en-energystatistics/co2-statistic)**" width="75%" />
+<p class="caption">
+<strong>National total CO2 emissions from 1986 to 2100 (left) and 1986
+to 2015 (right) from GCAM output (blue) and local data (red). Local data
+source: <a
+href="http://www.eppo.go.th/index.php/en/en-energystatistics/co2-statistic">Energy
+Policy and Planning Office</a></strong>
+</p>
+</div>
+<div class="figure" style="text-align: center">
+<img src="modeling_thailand_files/figure-html/national%20co2%20emissions%20by%20sector%20plots-1.png" alt="National total CO2 emissions by sector from local data (left) and GCAM output (right) from 2005 to 2015. Local data source: [Energy Policy and Planning Office](http://www.eppo.go.th/index.php/en/en-energystatistics/co2-statistic)**" width="75%" />
+<p class="caption">
+National total CO2 emissions by sector from local data (left) and GCAM
+output (right) from 2005 to 2015. Local data source: <a
+href="http://www.eppo.go.th/index.php/en/en-energystatistics/co2-statistic">Energy
+Policy and Planning Office</a>**
+</p>
+</div>
+</div>
+<div id="electricity" class="section level3" number="7.1.2">
+<h3><span class="header-section-number">7.1.2</span> Electricity</h3>
+<br>
+<div class="figure" style="text-align: center">
+<img src="modeling_thailand_files/figure-html/national%20consumption%20total%20charts-1.png" alt="**National electricity consumption from 2005 to 2100 (left) and 2011 to 2020 (right) from GCAM output (blue) and local utilities data (red). Local data source: [Energy Policy and Planning office](http://www.eppo.go.th/index.php/en/en-energystatistics/electricity-statistic)**" width="75%" />
+<p class="caption">
+<strong>National electricity consumption from 2005 to 2100 (left) and
+2011 to 2020 (right) from GCAM output (blue) and local utilities data
+(red). Local data source: <a
+href="http://www.eppo.go.th/index.php/en/en-energystatistics/electricity-statistic">Energy
+Policy and Planning office</a></strong>
+</p>
+</div>
+<br>
+<div class="figure" style="text-align: center">
+<img src="modeling_thailand_files/figure-html/national%20elec%20consumption%20by%20sector-1.png" alt="**Figure National electricity consumption by sector in 2015 and 2020 from local utilities data (left) and GCAM output (right). Local data source: [Energy Policy and Planning office](http://www.eppo.go.th/index.php/en/en-energystatistics/electricity-statistic)**" width="75%" />
+<p class="caption">
+<strong>Figure National electricity consumption by sector in 2015 and
+2020 from local utilities data (left) and GCAM output (right). Local
+data source: <a
+href="http://www.eppo.go.th/index.php/en/en-energystatistics/electricity-statistic">Energy
+Policy and Planning office</a></strong>
+</p>
+</div>
+<p><br></p>
+</div>
+<div id="energy" class="section level3" number="7.1.3">
+<h3><span class="header-section-number">7.1.3</span> Energy</h3>
+<div class="figure" style="text-align: center">
+<img src="modeling_thailand_files/figure-html/national%20final%20energy%20total%20charts-1.png" alt="**National total final energy from 1986 to 2100 (left) and 1986 to 2020 (right) from GCAM output (blue) and local data (red). Local data source: [Energy Policy and Planning Office](http://www.eppo.go.th/index.php/en/en-energystatistics/summary-statistic?orders[publishUp]=publishUp&amp;issearch=1)**" width="75%" />
+<p class="caption">
+<strong>National total final energy from 1986 to 2100 (left) and 1986 to
+2020 (right) from GCAM output (blue) and local data (red). Local data
+source: <a
+href="http://www.eppo.go.th/index.php/en/en-energystatistics/summary-statistic?orders%5BpublishUp%5D=publishUp&amp;issearch=1">Energy
+Policy and Planning Office</a></strong>
+</p>
+</div>
+<p><br></p>
+<div class="figure" style="text-align: center">
+<img src="modeling_thailand_files/figure-html/national%20final%20energy%20consumption%20by%20sector-1.png" alt="**National total final energy by sector from local data (left) and GCAM output (right) in 2015. Local data source: [Energy Efficiency Plan 2018](https://www.dede.go.th/ewt_w3c/ewt_dl_link.php?filename=index&amp;nid=54495)**" width="75%" />
+<p class="caption">
+<strong>National total final energy by sector from local data (left) and
+GCAM output (right) in 2015. Local data source: <a
+href="https://www.dede.go.th/ewt_w3c/ewt_dl_link.php?filename=index&amp;nid=54495">Energy
+Efficiency Plan 2018</a></strong>
+</p>
+</div>
+<p><br></p>
+<div class="figure" style="text-align: center">
+<img src="modeling_thailand_files/figure-html/national%20final%20energy%20consumption%20by%20fuel-1.png" alt="**National total final energy by fuel from local data (left) and GCAM output (right) from 2005 to 2020. Local data source: [Energy Policy and Planning Office](http://www.eppo.go.th/index.php/en/en-energystatistics/summary-statistic?orders[publishUp]=publishUp&amp;issearch=1)**" width="75%" />
+<p class="caption">
+<strong>National total final energy by fuel from local data (left) and
+GCAM output (right) from 2005 to 2020. Local data source: <a
+href="http://www.eppo.go.th/index.php/en/en-energystatistics/summary-statistic?orders%5BpublishUp%5D=publishUp&amp;issearch=1">Energy
+Policy and Planning Office</a></strong>
+</p>
+</div>
+<p><br> <br></p>
+</div>
+<div id="transportation-2" class="section level3" number="7.1.4">
+<h3><span class="header-section-number">7.1.4</span> Transportation</h3>
+<div class="figure" style="text-align: center">
+<img src="modeling_thailand_files/figure-html/national%20transport%20output%20by%20mode-1.png" alt="****" width="75%" />
+<p class="caption">
+****
+</p>
+</div>
+</div>
+</div>
+<div id="mea-area-1" class="section level2 tabset" number="7.2">
+<h2 class="tabset"><span class="header-section-number">7.2</span> MEA
+area</h2>
+<div id="electricity-1" class="section level3" number="7.2.1">
+<h3><span class="header-section-number">7.2.1</span> Electricity</h3>
+<br>
+<div class="figure" style="text-align: center">
+<img src="modeling_thailand_files/figure-html/mea%20consumption%20total%20charts-1.png" alt="**Electricity consumption in the MEA service area from 2005 to 2100 (left) and 2011 to 2020 (right) from GCAM output (blue) and MEA data (red). Local data source: [Energy Policy and Planning office](http://www.eppo.go.th/index.php/en/en-energystatistics/electricity-statistic)**" width="75%" />
+<p class="caption">
+<strong>Electricity consumption in the MEA service area from 2005 to
+2100 (left) and 2011 to 2020 (right) from GCAM output (blue) and MEA
+data (red). Local data source: <a
+href="http://www.eppo.go.th/index.php/en/en-energystatistics/electricity-statistic">Energy
+Policy and Planning office</a></strong>
+</p>
+</div>
+<br>
+<div class="figure" style="text-align: center">
+<img src="modeling_thailand_files/figure-html/mea%20consumption%20by%20sector-1.png" alt="**Electricity consumption by sector in the MEA service area from MEA data (left) and GCAM output (right) in 2015 and 2020. Local data source: [Energy Policy and Planning office](http://www.eppo.go.th/index.php/en/en-energystatistics/electricity-statistic)**" width="75%" />
+<p class="caption">
+<strong>Electricity consumption by sector in the MEA service area from
+MEA data (left) and GCAM output (right) in 2015 and 2020. Local data
+source: <a
+href="http://www.eppo.go.th/index.php/en/en-energystatistics/electricity-statistic">Energy
+Policy and Planning office</a></strong>
+</p>
 </div>
 </div>
 </div>
