@@ -5,7 +5,7 @@ output:
     toc: true
     toc_float: true
     toc_collapsed: true
-    toc_depth: 3
+    toc_depth: 4
     number_sections: true
     theme: cosmo
     #inverse: true
@@ -108,7 +108,9 @@ PNNL, with input from KLCH, will develop a set of GCAM scenarios based on the KL
 <br>
 
 <!-------------------------->
+<!-------------------------->
 ## Council-Led
+<!-------------------------->
 <!-------------------------->
 
 **Council-Led Scenario:** In this scenario, KLCH has the authority to implement measures to achieve carbon emissions reductions. The scenario will largely be achieved through existing actions outlined in the KLLCSBP2030, Federal policies and plans, and publicly declared renewable energy targets. 
