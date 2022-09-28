@@ -675,7 +675,9 @@ energy <- malaysia %>%
                 show = F,
                 size_text = 10)
 
-energy$chart_class_byRegion
+energy$`chart_class_All of Malaysia`
+energy$chart_class_KualaLumpur
+
 ```
 
 <br>
