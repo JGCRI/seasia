@@ -316,8 +316,8 @@ data <- gcamextractor::readgcam(gcamdatabase = sample_path,
 ```
 
 ```{r gcamextractor, echo = TRUE}
-ref <- read.csv("../data/malaysia/gcamextractor/reference/gcamDataTable_aggClass1.csv") %>% mutate(scenario = "Ref")
-high <- read.csv("../data/malaysia/gcamextractor/high/gcamDataTable_aggClass1.csv") %>% mutate(scenario = "High")
+ref <- read.csv("../data/malaysia/gcamextractor/reference/gcamDataTable_aggClass1.csv") 
+high <- read.csv("../data/malaysia/gcamextractor/high/gcamDataTable_aggClass1.csv")
 low <- read.csv("../data/malaysia/gcamextractor/low/gcamDataTable_aggClass1.csv")
 
 malaysia <- bind_rows(ref, high, low) %>%

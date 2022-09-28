@@ -70,6 +70,27 @@
 			</period>
 	  	</stub-technology>
 
+	  	<stub-technology name="led">
+         		<interpolation-rule apply-to="share-weight" from-year="2015" to-year="2050" delete="1">
+            		<interpolation-function name="linear"/>
+         		</interpolation-rule>
+			<interpolation-rule apply-to="share-weight" from-year="2050" to-year="2100">
+				<interpolation-function name="fixed"/>
+			</interpolation-rule>
+			<period year="2015">
+		   		<share-weight></share-weight>
+			</period>
+	    	<period year="2030">
+		   		<share-weight>0.5</share-weight>
+	    	</period>
+			<period year="2040">
+		   		<share-weight>0.75</share-weight>
+			</period>
+			<period year="2050">
+		   		<share-weight>1</share-weight>
+			</period>
+	  	</stub-technology>
+
 	  </subsector>
 
 	  <subsector name="refined liquids">
@@ -152,6 +173,27 @@
 			</period>
 	  	</stub-technology>
 
+	  	<stub-technology name="led">
+         		<interpolation-rule apply-to="share-weight" from-year="2015" to-year="2050" delete="1">
+            		<interpolation-function name="linear"/>
+         		</interpolation-rule>
+			<interpolation-rule apply-to="share-weight" from-year="2050" to-year="2100">
+				<interpolation-function name="fixed"/>
+			</interpolation-rule>
+			<period year="2015">
+		   		<share-weight></share-weight>
+			</period>
+	    	<period year="2030">
+		   		<share-weight>0.5</share-weight>
+	    	</period>
+			<period year="2040">
+		   		<share-weight>0.75</share-weight>
+			</period>
+			<period year="2050">
+		   		<share-weight>1</share-weight>
+			</period>
+	  	</stub-technology>
+
 	  </subsector>
 
 	  <subsector name="refined liquids">
@@ -227,6 +269,27 @@
 			</period>
 			<period year="2050">
 		   		<share-weight>0</share-weight>
+			</period>
+	  	</stub-technology>
+
+	  	<stub-technology name="led">
+         		<interpolation-rule apply-to="share-weight" from-year="2015" to-year="2050" delete="1">
+            		<interpolation-function name="linear"/>
+         		</interpolation-rule>
+			<interpolation-rule apply-to="share-weight" from-year="2050" to-year="2100">
+				<interpolation-function name="fixed"/>
+			</interpolation-rule>
+			<period year="2015">
+		   		<share-weight></share-weight>
+			</period>
+	    	<period year="2030">
+		   		<share-weight>0.5</share-weight>
+	    	</period>
+			<period year="2040">
+		   		<share-weight>0.75</share-weight>
+			</period>
+			<period year="2050">
+		   		<share-weight>1</share-weight>
 			</period>
 	  	</stub-technology>
 
