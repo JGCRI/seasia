@@ -89,7 +89,7 @@
                             <interpolation-function name = "fixed"/>
                         </interpolation-rule>
                         <period year = "2015">
-                            <share-weight>0.0002186</share-weight>
+                            <share-weight>0</share-weight>
                         </period>
                         <period year = "2030">
                             <share-weight>0.6</share-weight>
@@ -137,7 +137,7 @@
                             <interpolation-function name = "fixed"/>
                         </interpolation-rule>
                         <period year = "2015">
-                            <share-weight>0.0022284</share-weight>
+                            <share-weight>0</share-weight>
                         </period>
                         <period year = "2030">
                             <share-weight>0.4</share-weight>
@@ -243,7 +243,7 @@
                             <interpolation-function name = "fixed"/>
                         </interpolation-rule>
                         <period year = "2015">
-                            <share-weight>0.0002186</share-weight>
+                            <share-weight>0</share-weight>
                         </period>
                         <period year = "2030">
                             <share-weight>0.6</share-weight>
@@ -291,7 +291,7 @@
                             <interpolation-function name = "fixed"/>
                         </interpolation-rule>
                         <period year = "2015">
-                            <share-weight>0.0022284</share-weight>
+                            <share-weight>0</share-weight>
                         </period>
                         <period year = "2030">
                             <share-weight>0.4</share-weight>
@@ -395,7 +395,7 @@
                             <interpolation-function name = "fixed"/>
                         </interpolation-rule>
                         <period year = "2015">
-                            <share-weight>0.0002186</share-weight>
+                            <share-weight>0</share-weight>
                         </period>
                         <period year = "2030">
                             <share-weight>0.6</share-weight>
@@ -443,7 +443,7 @@
                             <interpolation-function name = "fixed"/>
                         </interpolation-rule>
                         <period year = "2015">
-                            <share-weight>0.0022284</share-weight>
+                            <share-weight>0</share-weight>
                         </period>
                         <period year = "2030">
                             <share-weight>0.4</share-weight>

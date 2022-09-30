@@ -428,12 +428,12 @@ socioeconomic_kl$chart_param
 #### Malaysia vs Kuala Lumpur
 
 ``` {r rchart-emiss, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
-co2 <- malaysia %>% filter(param == "emissCO2BySector",
+co2 <- malaysia %>% filter(param == "emissCO2BySectorNoBio",
                            region != "Malaysia") %>%
   mutate(value = value * 3.67,
          units = "CO2 Emissions (MTCO2eq)")
 
-ghg <- malaysia %>% filter(param == "emissGHGBySectorGWPAR5",
+ghg <- malaysia %>% filter(param == "emissGHGBySectorNoBioGWPAR5",
                            region != "Malaysia")
 
 malaysia_emissions <- bind_rows(co2, ghg)
@@ -455,10 +455,10 @@ emissions$chart_class_Ref
 ``` {r rchart-emiss-gas, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
 co2_gas <- co2 %>%
   mutate(class = "CO2",
-         param = "emissGHGByGasGWPAR5")
+         param = "emissGHGByGasNoBioGWPAR5")
 
 ghg_gas <- malaysia %>% 
-  filter(param == "emissGHGByGasGWPAR5",
+  filter(param == "emissGHGByGasNoBioGWPAR5",
          class != "CO2",
          region != "Malaysia")
 
@@ -483,14 +483,14 @@ gas$chart_class_Ref
 
 ``` {r rchart-emiss-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
 co2_my <- malaysia %>% 
-  filter(param == "emissCO2BySector", 
+  filter(param == "emissCO2BySectorNoBio", 
          region == "All of Malaysia") %>%
   mutate(value = value * 3.67,
          units = "CO2 Emissions (MTCO2eq)",
          param = "CO2 Emissions")
 
 ghg_my <- malaysia %>% 
-  filter(param == "emissGHGBySectorGWPAR5", 
+  filter(param == "emissGHGBySectorNoBioGWPAR5", 
          region == "All of Malaysia") %>%
   mutate(param = "GHG Emissions by Sector")
 
@@ -512,7 +512,7 @@ emissions_my_plot$chart_param
 
 ``` {r rchart-emiss-gas-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
 ghg_gas_my <- malaysia %>% 
-  filter(param == "emissGHGByGasGWPAR5",
+  filter(param == "emissGHGByGasNoBioGWPAR5",
          class != "CO2",
          region == "All of Malaysia") %>%
   mutate(param = "GHG Emissions by Gas")
@@ -538,13 +538,13 @@ gas_my$chart_class_diff_absolute
 #### Kuala Lumpur
 
 ``` {r rchart-emiss-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
-co2_kl <- malaysia %>% filter(param == "emissCO2BySector",
+co2_kl <- malaysia %>% filter(param == "emissCO2BySectorNoBio",
                            region == "KualaLumpur") %>%
   mutate(value = value * 3.67,
          units = "CO2 Emissions (MTCO2eq)",
          param = "CO2 Emissions")
 
-ghg_kl <- malaysia %>% filter(param == "emissGHGBySectorGWPAR5",
+ghg_kl <- malaysia %>% filter(param == "emissGHGBySectorNoBioGWPAR5",
                            region == "KualaLumpur") %>%
   mutate(param = "GHG Emissions by Sector")
 
@@ -565,7 +565,7 @@ emissions_kl_plot$chart_param
 
 ``` {r rchart-emiss-gas-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
 ghg_gas_kl <- malaysia %>% 
-  filter(param == "emissGHGByGasGWPAR5",
+  filter(param == "emissGHGByGasNoBioGWPAR5",
          class != "CO2",
          region == "KualaLumpur") %>%
   mutate(param = "GHG Emissions by Gas")
@@ -670,13 +670,11 @@ energy <- malaysia %>%
          region != "Malaysia") %>%
   mutate(param = units) %>%
   rchart::chart(folder = "rchart/energy",
-                chart_type = "class_absolute",
                 save = F, 
                 show = F,
                 size_text = 10)
 
-energy$`chart_class_All of Malaysia`
-energy$chart_class_KualaLumpur
+energy$chart_class_Ref
 
 ```
 
@@ -735,7 +733,6 @@ electricity <- malaysia %>%
          region != "Malaysia") %>%
   mutate(param = units) %>%
   rchart::chart(folder = "rchart/electricity",
-                chart_type = "class_absolute",
                 save = F, 
                 show = F,
                 size_text = 8)
@@ -863,12 +860,11 @@ transport <- malaysia %>%
          region != "Malaysia") %>%
   mutate(param = units) %>%
   rchart::chart(folder = "rchart/transport",
-                chart_type = "class_absolute",
                 save = F, 
                 show = F,
                 size_text = 10)
 
-transport$chart_class_byRegion
+transport$chart_class_Ref
 ```
 
 

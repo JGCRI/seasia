@@ -835,8 +835,8 @@ data &lt;- gcamextractor::readgcam(gcamdatabase = sample_path,
                                 regionsAggregate = list(regions),
                                 regionsAggregateNames = &quot;All of Malaysia&quot;,
                                 folder = &quot;..data/malaysia/gcamextractor&quot;)</code></pre>
-<pre class="r"><code>ref &lt;- read.csv(&quot;../data/malaysia/gcamextractor/reference/gcamDataTable_aggClass1.csv&quot;) %&gt;% mutate(scenario = &quot;Ref&quot;)
-high &lt;- read.csv(&quot;../data/malaysia/gcamextractor/high/gcamDataTable_aggClass1.csv&quot;) %&gt;% mutate(scenario = &quot;High&quot;)
+<pre class="r"><code>ref &lt;- read.csv(&quot;../data/malaysia/gcamextractor/reference/gcamDataTable_aggClass1.csv&quot;) 
+high &lt;- read.csv(&quot;../data/malaysia/gcamextractor/high/gcamDataTable_aggClass1.csv&quot;)
 low &lt;- read.csv(&quot;../data/malaysia/gcamextractor/low/gcamDataTable_aggClass1.csv&quot;)
 
 malaysia &lt;- bind_rows(ref, high, low) %&gt;%
@@ -942,12 +942,12 @@ Emissions by Sector and Gas</h3>
 number="5.2.2.1">
 <h4><span class="header-section-number">5.2.2.1</span> Malaysia vs Kuala
 Lumpur</h4>
-<pre class="r"><code>co2 &lt;- malaysia %&gt;% filter(param == &quot;emissCO2BySector&quot;,
+<pre class="r"><code>co2 &lt;- malaysia %&gt;% filter(param == &quot;emissCO2BySectorNoBio&quot;,
                            region != &quot;Malaysia&quot;) %&gt;%
   mutate(value = value * 3.67,
          units = &quot;CO2 Emissions (MTCO2eq)&quot;)
 
-ghg &lt;- malaysia %&gt;% filter(param == &quot;emissGHGBySectorGWPAR5&quot;,
+ghg &lt;- malaysia %&gt;% filter(param == &quot;emissGHGBySectorNoBioGWPAR5&quot;,
                            region != &quot;Malaysia&quot;)
 
 malaysia_emissions &lt;- bind_rows(co2, ghg)</code></pre>
@@ -963,10 +963,10 @@ emissions$chart_class_Ref</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-emiss-plot-1.png" width="85%" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>co2_gas &lt;- co2 %&gt;%
   mutate(class = &quot;CO2&quot;,
-         param = &quot;emissGHGByGasGWPAR5&quot;)
+         param = &quot;emissGHGByGasNoBioGWPAR5&quot;)
 
 ghg_gas &lt;- malaysia %&gt;% 
-  filter(param == &quot;emissGHGByGasGWPAR5&quot;,
+  filter(param == &quot;emissGHGByGasNoBioGWPAR5&quot;,
          class != &quot;CO2&quot;,
          region != &quot;Malaysia&quot;)
 
@@ -985,14 +985,14 @@ gas$chart_class_Ref</code></pre>
 <div id="malaysia-1" class="section level4" number="5.2.2.2">
 <h4><span class="header-section-number">5.2.2.2</span> Malaysia</h4>
 <pre class="r"><code>co2_my &lt;- malaysia %&gt;% 
-  filter(param == &quot;emissCO2BySector&quot;, 
+  filter(param == &quot;emissCO2BySectorNoBio&quot;, 
          region == &quot;All of Malaysia&quot;) %&gt;%
   mutate(value = value * 3.67,
          units = &quot;CO2 Emissions (MTCO2eq)&quot;,
          param = &quot;CO2 Emissions&quot;)
 
 ghg_my &lt;- malaysia %&gt;% 
-  filter(param == &quot;emissGHGBySectorGWPAR5&quot;, 
+  filter(param == &quot;emissGHGBySectorNoBioGWPAR5&quot;, 
          region == &quot;All of Malaysia&quot;) %&gt;%
   mutate(param = &quot;GHG Emissions by Sector&quot;)
 
@@ -1008,7 +1008,7 @@ my_emissions &lt;- bind_rows(co2_my, ghg_my) </code></pre>
 emissions_my_plot$chart_param</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-emiss-plot-my-1.png" width="85%" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>ghg_gas_my &lt;- malaysia %&gt;% 
-  filter(param == &quot;emissGHGByGasGWPAR5&quot;,
+  filter(param == &quot;emissGHGByGasNoBioGWPAR5&quot;,
          class != &quot;CO2&quot;,
          region == &quot;All of Malaysia&quot;) %&gt;%
   mutate(param = &quot;GHG Emissions by Gas&quot;)
@@ -1027,13 +1027,13 @@ gas_my$chart_class_diff_absolute</code></pre>
 </div>
 <div id="kuala-lumpur-1" class="section level4" number="5.2.2.3">
 <h4><span class="header-section-number">5.2.2.3</span> Kuala Lumpur</h4>
-<pre class="r"><code>co2_kl &lt;- malaysia %&gt;% filter(param == &quot;emissCO2BySector&quot;,
+<pre class="r"><code>co2_kl &lt;- malaysia %&gt;% filter(param == &quot;emissCO2BySectorNoBio&quot;,
                            region == &quot;KualaLumpur&quot;) %&gt;%
   mutate(value = value * 3.67,
          units = &quot;CO2 Emissions (MTCO2eq)&quot;,
          param = &quot;CO2 Emissions&quot;)
 
-ghg_kl &lt;- malaysia %&gt;% filter(param == &quot;emissGHGBySectorGWPAR5&quot;,
+ghg_kl &lt;- malaysia %&gt;% filter(param == &quot;emissGHGBySectorNoBioGWPAR5&quot;,
                            region == &quot;KualaLumpur&quot;) %&gt;%
   mutate(param = &quot;GHG Emissions by Sector&quot;)
 
@@ -1048,7 +1048,7 @@ kl_emissions &lt;- bind_rows(co2_kl, ghg_kl) </code></pre>
 emissions_kl_plot$chart_param</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-emiss-plot-kl-1.png" width="85%" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>ghg_gas_kl &lt;- malaysia %&gt;% 
-  filter(param == &quot;emissGHGByGasGWPAR5&quot;,
+  filter(param == &quot;emissGHGByGasNoBioGWPAR5&quot;,
          class != &quot;CO2&quot;,
          region == &quot;KualaLumpur&quot;) %&gt;%
   mutate(param = &quot;GHG Emissions by Gas&quot;)
@@ -1143,12 +1143,12 @@ energy &lt;- malaysia %&gt;%
          region != &quot;Malaysia&quot;) %&gt;%
   mutate(param = units) %&gt;%
   rchart::chart(folder = &quot;rchart/energy&quot;,
-                chart_type = &quot;class_absolute&quot;,
                 save = F, 
                 show = F,
                 size_text = 10)
 
-energy$chart_class_byRegion</code></pre>
+energy$chart_class_Ref</code></pre>
+<p><img src="modeling_malaysia_files/figure-html/rchart-energy-1.png" width="85%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 </div>
 <div id="malaysia-3" class="section level4" number="5.2.4.2">
@@ -1202,7 +1202,6 @@ electricity &lt;- malaysia %&gt;%
          region != &quot;Malaysia&quot;) %&gt;%
   mutate(param = units) %&gt;%
   rchart::chart(folder = &quot;rchart/electricity&quot;,
-                chart_type = &quot;class_absolute&quot;,
                 save = F, 
                 show = F,
                 size_text = 8)
@@ -1322,12 +1321,12 @@ transport &lt;- malaysia %&gt;%
          region != &quot;Malaysia&quot;) %&gt;%
   mutate(param = units) %&gt;%
   rchart::chart(folder = &quot;rchart/transport&quot;,
-                chart_type = &quot;class_absolute&quot;,
                 save = F, 
                 show = F,
                 size_text = 10)
 
-transport$chart_class_byRegion</code></pre>
+transport$chart_class_Ref</code></pre>
+<p><img src="modeling_malaysia_files/figure-html/rchart-transport-1.png" width="85%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 </div>
 <div id="malaysia-6" class="section level4" number="5.2.7.2">
