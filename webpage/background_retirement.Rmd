@@ -5,8 +5,8 @@
 <div class="warning" style='background-color:#EFFFC9; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
 <span>
 
-<h3 style='text-align:center; font-size:24px'>
-<b>Background - Energy Technology Retirement </b></h3>
+<p style='text-align:center; font-size:24px'>
+<b>Background - Energy Technology Retirement </b></p>
 
 <p style='margin-left:1em;'>
 For some energy technologies, such as coal, the "cohort" installed in each period is modeled as a separate technology. Therefore, even if no new capacity is installed in future years, output from the capacity installed in previous years will still be modeled. There are several GCAM parameters that determine the trajectory of output from previously installed technology cohorts. The `lifetime` is the maximum number of years for which the technology cohort can continue producing output; i.e., a technology cohort installed in year `t` will no longer produce any output in the year `t + lifetime`. The `s-curve-shutdown-decider` is a function that controls the speed at which the technology cohort retires, or reduces its output, within its lifetime. This function depends on a `steepness` parameter that determines the shape of the function as well as a `half-life` parameter that sets the number of years after which half of the technology cohort is retired. For more information on retirement parameters, see the GCAM [Energy Technologies](https://jgcri.github.io/gcam-doc/en_technologies.html) documentation.

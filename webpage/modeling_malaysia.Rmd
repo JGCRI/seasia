@@ -206,7 +206,8 @@ The goal of this example is to set a minimum value (floor) in GCAM for the amoun
 <span>
 
 <p style='text-align:center; font-size:24px'>
-<b>Approach</b></p>
+<b>Approach</b>
+</p>
 
 <p style='margin-left:1em;'>
 One way to set a generation floor for each fuel type in GCAM is to use a subsidy policy. This will lower the cost of the electricity generation technology until the floor is reached. If there is more demand for electricity than is supplied by the sum of the generation floors, then the remaining demand will be met by a mix of fuels determined by the market.
@@ -224,20 +225,8 @@ Hydropower is exogenous in GCAM and has a fixed pathway. The power generation va
 <!--------Background-------->
 <!-------------------------->
 
-<div class="warning" style='background-color:#EFFFC9; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
-<span>
-
-<p style='text-align:center; font-size:24px'>
-<b>Background - Policy portfolio standards</b></p>
-
-<p style='margin-left:1em;'>
-A `policy-portfolio-standard` in GCAM is a policy that can be used to implement taxes, subsidies, floors, ceilings, and constraints. Taxes and subsidies can be specified when the exact amount to be added or subtracted to the price is known. However, a `policy-portfolio-standard` can also contain a `constraint`, which acts as either a floor or ceiling for the technology or technologies included. Exact constraints can also be implemented. See the [GCAM Policy Examples](https://jgcri.github.io/gcam-doc/policies_examples.html) documentation for more information on how to implement these options.
-</p>
-</span>
-</div>
-
-<br>
-
+```{r background policy-portfolio-standards RE, child = 'background_policy-portfolio-standards.rmd'}
+```
 
 <!-------------------------->
 <!---GCAM Implementation---->
@@ -269,6 +258,407 @@ A `policy-portfolio-standard` in GCAM is a policy that can be used to implement 
 <p style='font-size:0.9em'>
 `<Value name = "scen">../input/addons/malaysia/malaysia_hydro_constraint_2030_KL.xml</Value>`
 
+</p>
+</p>
+
+</span>
+</div>
+
+<br>
+
+## Coal phase-out
+***
+
+```{r coal-phaseout-files-table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
+
+dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/no_new_coal.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/coal_shutdown_high.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/coal_shutdown_low.xml")
+
+data.frame(
+  Scenario = c("Both", "High", "Low")) %>% 
+  dplyr:: mutate("Files Used" = cell_spec(c("no_new_coal.xml",
+                                            "coal_shutdown_high.xml",
+                                            "coal_shutdown_low.xml"),
+                                          "html", link=dt_url),
+         Description = c("Prevents additional coal capacity from being built starting in 2020",
+                         "Retires existing coal capacity quickly; all coal is retired by 2050",
+                         "Retires existing coal capacity more slowly; 95% of coal is retired by 2075")) %>% 
+  kable("html", escape = FALSE, col.names = c("Scenario", "Files Used", "Description")) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
+  row_spec(0, background = "#2A2A2A", color = "white")
+```
+
+
+<!-------------------------->
+<!----------Goal------------>
+<!-------------------------->
+
+<div class="warning" style='background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+<p style='text-align:center; font-size:24px'>
+<b>Goal</b>
+</p>
+
+<p style='margin-left:1em;'>
+The goal of this example is to phase out coal from Malaysia's electricity generation capacity. The difference between the high and low scenarios is how quickly coal is phased out and the year in which the phase-out is completed. 
+
+</p>
+</span>
+</div>
+
+<br>
+
+
+<!-------------------------->
+<!--------Approach---------->
+<!-------------------------->
+
+<div class="warning" style='background-color:#fffae0; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+
+<p style='text-align:center; font-size:24px'>
+<b>Approach</b>
+</p>
+
+<p style='margin-left:1em;'>
+There are two steps to phase out coal generation. The first is to prevent any new coal capacity from being built; we do this by setting coal shareweights to 0 in all future years. The second step is to gradually retire all existing coal capacity; we do this by shortening coal technologies' lifetimes and by assigning a shutdown curve to each technology.
+
+</p>
+</span>
+</div>
+
+<br>
+
+
+<!-------------------------->
+<!--------Background-------->
+<!-------------------------->
+
+<!--- TO DO: make background page for lifetime and s-curve-shutdown-decider --->
+
+```{r background shareweights coal, child = 'background_shareweights.rmd'}
+```
+
+```{r background retirement coal, child = 'background_retirement.rmd'}
+```
+
+
+<!-------------------------->
+<!---GCAM Implementation---->
+<!-------------------------->
+
+<div class="warning" style='background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+<p style='text-align:center; font-size:24px'>
+<b>GCAM Implementation</b>
+</p>
+
+<p style='margin-left:1em;'>
+1. Create a folder in the input directory eg. `./gcam-core/input/addons`.
+2. Download the coal shareweight file [no_new_coal.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/no_new_coal.xml) as well as the desired coal retirement file (either [coal_shutdown_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/coal_shutdown_high.xml) or [coal_shutdown_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/coal_shutdown_low.xml)) to the folder.
+4. To make custom adjustments to the coal retirement trajectory, optionally change the following within each `stub-technology` tag in the retirement XML:
+</p>
+
+<ul style='margin-left:4em; text-align:left;'>
+  <li>Use `lifetime` to adjust the year in which the coal phase-out is complete; the phase-out will be complete `x` years after 2015, where `x` is the `lifetime`. </li>
+  <li>Use the `steepness` and `half-life` within the `s-curve-shutdown-decider` to adjust the phaseout trajectory; a smaller `half-life` and larger `steepness` will result in a faster phase-out.</li>
+</ul>
+<p style='margin-left:1em;'>
+5. Save the xmls and then point to them in your configuration file by adding the lines (replace `high` with `low` as needed): 
+<p style='font-size:0.8em'>
+`<Value name = "scen">../input/addons/no_new_coal.xml</Value>`
+`<Value name = "scen">../input/addons/coal_shutdown_high.xml</Value>`
+
+</p>
+</p>
+
+</span>
+</div>
+
+<br>
+
+## Lighting Efficiency
+***
+
+```{r lighting-files-table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
+
+dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/buildings_led_high.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/buildings_led_low.xml")
+
+data.frame(
+  Scenario = c("High", "Low")) %>% 
+  dplyr:: mutate("Files Used" = cell_spec(c("buildings_led_high.xml",
+                                            "buildings_led_low.xml"),
+                                          "html", link=dt_url),
+         Description = c("Gradually phases non-LED residential lighting technology out of the market by 2050",
+                         "Gradually phases non-LED residential lighting technology out of the market by 2070")) %>% 
+  kable("html", escape = FALSE, col.names = c("Scenario", "Files Used", "Description")) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
+  row_spec(0, background = "#2A2A2A", color = "white")
+
+```
+
+
+<!-------------------------->
+<!----------Goal------------>
+<!-------------------------->
+
+<div class="warning" style='background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+<p style='text-align:center; font-size:24px'>
+<b>Goal</b>
+</p>
+
+<p style='margin-left:1em;'>
+The goal of this policy is to represent increasing use of LED lighting in residential buildings and the decreasing use of other, less energy efficient lighting technologies. The difference between the low and high scenario versions of this policy is the year in which 100% LED residential lighting is achieved.
+
+</p>
+</span>
+</div>
+
+<br>
+
+
+<!-------------------------->
+<!--------Approach---------->
+<!-------------------------->
+
+<div class="warning" style='background-color:#fffae0; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+
+<p style='text-align:center; font-size:24px'>
+<b>Approach</b>
+</p>
+
+<p style='margin-left:1em;'>
+We can gradually decrease the shareweights of all non-LED residential lighting technologies in order to phase them out of the market. The year in which the non-LED shareweights reach 0 corresponds with the year in which 100% LED residential lighting is achieved.
+</p>
+
+
+
+</span>
+</div>
+
+<br>
+
+
+<!-------------------------->
+<!--------Background-------->
+<!-------------------------->
+
+```{r background shareweights lighting, child = 'background_shareweights.rmd'}
+```
+
+
+<!-------------------------->
+<!---GCAM Implementation---->
+<!-------------------------->
+
+<div class="warning" style='background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+<p style='text-align:center; font-size:24px'>
+<b>GCAM Implementation</b>
+</p>
+
+<p style='margin-left:1em;'>
+1. Create a folder in the input directory: `./gcam-core/input/addons`.
+2. Download the desired xml file (either [buildings_led_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/buildings_led_high.xml) or [buildings_led_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/buildings_led_low.xml)) to the folder.
+4. To adjust the year in which 100% LED lighting is achieved: within each non-LED `stub-technology` tag in the XML, change the `to-year` in the first `interpolation-rule` and the `from-year` in the second. Also change the `year` of the `period` tag in which the `share-weight` is 0.
+5. Save the xml and then point to it in your configuration file by adding the line (replace `high` with `low` as needed): 
+<p style='font-size:0.8em'>
+`<Value name = "scen">../input/addons/malaysia/buildings_led_high.xml</Value>`
+</p>
+
+</span>
+</div>
+
+<br>   
+
+## Industry Energy Efficiency
+***
+
+```{r industry-aeei-files-table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
+
+dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/industry_aeei_high.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/industry_aeei_low.xml")
+
+data.frame(
+  Scenario = c(rep("High",1), rep("Low",1))) %>% 
+  mutate("Files Used" = cell_spec( c("industry_aeei_high.xml",
+                                     "industry_aeei_low.xml"),
+                                   "html", link = dt_url)) %>% 
+  mutate(Description = c("Increases overall efficiency of industrial processes by 1% annually through 2070",
+                         "Increases overall efficiency of industrial processes by 0.5% annually through 2070")) %>%
+  kable("html", escape = FALSE, col.names = c("Scenario", "Files Used", "Description")) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
+  row_spec(0, background = "#2A2A2A", color = "white")
+```
+
+
+<!-------------------------->
+<!----------Goal------------>
+<!-------------------------->
+
+<div class="warning" style='background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+<p style='text-align:center; font-size:24px'>
+<b>Goal</b>
+</p>
+
+<p style='margin-left:1em;'>
+The goal of this policy is to represent measures to increase average efficiency of industrial processes. The difference between the low and high scenarios is the rate at which average industrial energy intensity decreases annually.
+</p>
+
+</span>
+</div>
+
+<br>
+
+
+<!-------------------------->
+<!--------Approach---------->
+<!-------------------------->
+
+<div class="warning" style='background-color:#fffae0; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+
+<p style='text-align:center; font-size:24px'>
+<b>Approach</b>
+</p>
+
+<p style='margin-left:1em;'>
+To represent a gradual increase in industrial efficiency, we can use GCAM's `aeei` parameter, which controls the autonomous energy efficiency improvement (AEEI) of industrial processes.
+</p>
+
+
+</span>
+</div>
+
+<br>
+
+
+<!--------------------------->
+<!--------Background--------->
+<!--------------------------->
+
+<!-- TO DO: make background page for aeei -->
+
+```{r background aeei industry}
+```
+
+<!-------------------------->
+<!---GCAM Implementation---->
+<!-------------------------->
+
+<div class="warning" style='background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+<p style='text-align:center; font-size:24px'>
+<b>GCAM Implementation</b>
+</p>
+
+<p style='margin-left:1em;'>
+1. Create a folder in the input directory: `./gcam-core/input/addons`.
+2. Download the desired industrial aeei xml file (either [industry_aeei_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/industry_aeei_high.xml) or [industry_aeei_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/industry_aeei_low.xml)) to the folder.
+4. To adjust the rate of industrial energy efficiency increase, change the value of the `aeei` tag for each desired year.
+5. Save the xml and then point to it in your configuration file by adding the line (replace `high` with `low` as needed): 
+</p>
+<p style='font-size:0.8em'>
+`<Value name = "scen">../input/addons/malaysia/industry_aeei_high.xml</Value>`
+</p>
+</p>
+
+</span>
+</div>
+
+<br>
+
+## Industry Hydrogen
+***
+
+```{r industry-h2-files-table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
+dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/industry_h2_high.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/industry_h2_low.xml")
+
+data.frame(
+  Scenario = c(rep("High",1), rep("Low",1))) %>% 
+  mutate("Files Used" = cell_spec( c("industry_h2_high.xml",
+                                     "industry_h2_low.xml"),
+                                   "html", link = dt_url)) %>% 
+  mutate(Description = c("Phases hydrogen industrial technologies into the market relatively quickly",
+                         "Phases hydrogen industrial technologies into the market relatively more slowly")) %>%
+  kable("html", escape = FALSE, col.names = c("Scenario", "Files Used", "Description")) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
+  row_spec(0, background = "#2A2A2A", color = "white")
+```
+
+
+<!-------------------------->
+<!----------Goal------------>
+<!-------------------------->
+
+<div class="warning" style='background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+<p style='text-align:center; font-size:24px'>
+<b>Goal</b>
+</p>
+
+<p style='margin-left:1em;'>
+The goal of this policy is to represent a phase-in of industrial technologies that use hydrogen as a fuel source. The difference between the high and low scenarios is how quickly these technologies are phased into the market.
+</p>
+
+</span>
+</div>
+
+<br>
+
+
+<!-------------------------->
+<!--------Approach---------->
+<!-------------------------->
+
+<div class="warning" style='background-color:#fffae0; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+
+<p style='text-align:center; font-size:24px'>
+<b>Approach</b>
+</p>
+
+<p style='margin-left:1em;'>
+To represent a phase-in of hydrogen technologies, we can gradually increase their shareweights.
+</p>
+
+</span>
+</div>
+
+<br>
+
+
+<!--------------------------->
+<!--------Background--------->
+<!--------------------------->
+
+```{r backgroud shareweights industry h2, child = 'background_shareweights.rmd'}
+```
+
+<!-------------------------->
+<!---GCAM Implementation---->
+<!-------------------------->
+
+<div class="warning" style='background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+<p style='text-align:center; font-size:24px'>
+<b>GCAM Implementation</b>
+</p>
+
+<p style='margin-left:1em;'>
+1. Create a folder in the input directory: `./gcam-core/input/addons`.
+2. Download the desired industrial hydrogen technology shareweight xml file (either [industry_h2_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/industry_h2_high.xml) or [industry_h2_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/industry_h2_low.xml)) to the folder.
+4. To adjust how quicly hydrogen technologies are phased into the market: within each `subsector` tag in the XML, change the `to-year` in the  `interpolation-rule`. Also change the `year` of the `period` tag in which the `share-weight` is 1. Be sure that these years match. An earlier year corresponds to a faster phase-in.
+5. Save the xml and then point to it in your configuration file by adding the line (replace `high` with `low` as needed): 
+</p>
+<p style='font-size:0.8em'>
+`<Value name = "scen">../input/addons/malaysia/industry_h2_high.xml</Value>`
 </p>
 </p>
 
@@ -498,7 +888,7 @@ my_emissions <- bind_rows(co2_my, ghg_my)
 
 ```
 
-``` {r rchart-emiss-plot-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
+``` {r rchart-emiss-plot-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 12, fig.height = 6, out.width = "100%"}
 emissions_my_plot <- my_emissions %>%
   mutate(param = units) %>%
   rchart::chart(folder = "rchart/emissions_by_sector",
@@ -520,12 +910,11 @@ ghg_gas_my <- malaysia %>%
 my_emissions_gas <- bind_rows(ghg_gas_my, my_emissions)
 ```
 
-``` {r rchart-emiss-gas-plot-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, out.width = "150%"}
+``` {r rchart-emiss-gas-plot-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 12, fig.height = 6, out.width = "100%"}
 gas_my <- my_emissions_gas %>%
   rchart::chart(folder = "rchart/emissions_by_gas",
                 save = F, 
                 show = F,
-                size_text = 12,
                 scenRef = "Ref")
 
 gas_my$chart_class_diff_absolute
@@ -537,7 +926,7 @@ gas_my$chart_class_diff_absolute
 
 #### Kuala Lumpur
 
-``` {r rchart-emiss-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
+``` {r rchart-emiss-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 12, fig.height = 6, out.width = "100%"}
 co2_kl <- malaysia %>% filter(param == "emissCO2BySectorNoBio",
                            region == "KualaLumpur") %>%
   mutate(value = value * 3.67,
@@ -552,7 +941,7 @@ kl_emissions <- bind_rows(co2_kl, ghg_kl)
 
 ```
 
-``` {r rchart-emiss-plot-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
+``` {r rchart-emiss-plot-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 12, fig.height = 6, out.width = "100%"}
 emissions_kl_plot <- kl_emissions %>%
   mutate(param = units) %>%
   rchart::chart(folder = "rchart/emissions_by_sector",
@@ -573,7 +962,7 @@ ghg_gas_kl <- malaysia %>%
 kl_emissions_gas <- bind_rows(ghg_gas_kl, kl_emissions)
 ```
 
-``` {r rchart-gas-plot-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.height = 12, fig.wdith = 9}
+``` {r rchart-gas-plot-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 12, fig.height = 6, out.width = "100%"}
 gas_kl <- kl_emissions_gas %>%
   rchart::chart(folder = "rchart/emissions_by_gas",
                 save = F, 
@@ -615,7 +1004,7 @@ p_energy$chart_class_Ref
 
 #### Malaysia 
 
-```{r rchart-primary-energy-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
+```{r rchart-primary-energy-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 12, fig.height = 6, out.width = "100%"}
 
 p_energy_my <- malaysia %>% 
   filter(param == "energyPrimaryByFuelEJ",
@@ -636,7 +1025,7 @@ p_energy_my$chart_class_diff_absolute
 
 #### Kuala Lumpur
 
-```{r rchart-primary-energy-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
+```{r rchart-primary-energy-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 12, fig.height = 6, out.width = "100%"}
 
 p_energy_kl <- malaysia %>% 
   filter(param == "energyPrimaryByFuelEJ",
@@ -682,7 +1071,7 @@ energy$chart_class_Ref
 
 #### Malaysia
 
-```{r rchart-energy-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
+```{r rchart-energy-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 12, fig.height = 6, out.width = "100%"}
 energy_my <- malaysia %>% 
   filter(param %in% energy_parameters,
          region == "All of Malaysia") %>%
@@ -701,7 +1090,7 @@ energy_my$chart_class_diff_absolute
 
 #### Kuala Lumpur
 
-```{r rchart-energy-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
+```{r rchart-energy-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 12, fig.height = 6, out.width = "100%"}
 energy_kl <- malaysia %>% 
   filter(param %in% energy_parameters,
          region == "KualaLumpur") %>%
@@ -745,7 +1134,7 @@ electricity$chart_class_Ref
 
 #### Malaysia 
 
-```{r rchart-elec-gen-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
+```{r rchart-elec-gen-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 12, fig.height = 6, out.width = "100%"}
 
 electricity_my <- malaysia %>% 
   filter(param %in% electricity_parameters,
@@ -766,7 +1155,7 @@ electricity_my$chart_class_diff_absolute
 
 #### Kuala Lumpur
 
-```{r rchart-elec-gen-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
+```{r rchart-elec-gen-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 12, fig.height = 6, out.width = "100%"}
 
 electricity_kl <- malaysia %>% 
   filter(param %in% electricity_parameters,
@@ -810,7 +1199,7 @@ building_energy$chart_class_KualaLumpur
 
 #### Malaysia 
 
-```{r rchart-building-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
+```{r rchart-building-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 32, fig.height = 14, out.width = "100%"}
 building_energy_my <- malaysia %>% 
   filter(param == "energyFinalSubsecBySectorBuildEJ",
          region == "All of Malaysia") %>%
@@ -829,7 +1218,7 @@ building_energy_my$chart_class_diff_absolute
 
 #### Kuala Lumpur
 
-```{r rchart-building-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
+```{r rchart-building-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 32, fig.height = 14, out.width = "100%"}
 building_energy_kl <- malaysia %>% 
   filter(param == "energyFinalSubsecBySectorBuildEJ",
          region == "KualaLumpur") %>%
@@ -853,8 +1242,9 @@ building_energy_kl$chart_class_diff_absolute
 #### Malaysia vs Kuala Lumpur
 
 ```{r rchart-transport, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
-transport_params <- c("transportFreightVMTByMode", "transportPassengerVMTByMode")
-
+transport_params <- c("transportFreightVMTByMode", "transportPassengerVMTByMode",
+                      "transportFreightVMTByFuel", "transportPassengerVMTByFuel",
+                      "transportPassengerVMTByTech", "transportFreightVMTByTech")
 transport <- malaysia %>% 
   filter(param %in% transport_params,
          region != "Malaysia") %>%
@@ -872,7 +1262,7 @@ transport$chart_class_Ref
 
 #### Malaysia 
 
-```{r rchart-transport-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
+```{r rchart-transport-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 21, fig.height = 25, out.width = "100%"}
 transport_my <- malaysia %>% 
   filter(param %in% transport_params,
          region == "All of Malaysia") %>%
@@ -891,7 +1281,7 @@ transport_my$chart_class_diff_absolute
 
 #### Kuala Lumpur
 
-```{r rchart-transport-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
+```{r rchart-transport-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 21, fig.height = 25, out.width = "100%"}
 transport_kl <- malaysia %>% 
   filter(param %in% transport_params,
          region == "KualaLumpur") %>%
@@ -905,6 +1295,66 @@ transport_kl <- malaysia %>%
 transport_kl$chart_class_diff_absolute
 ```
 
+
+<br>
+
+<!-------------------------->
+### Industry Energy by Subsector {.tabset}
+<!-------------------------->
+***
+
+#### Malaysia vs Kuala Lumpur
+
+```{r rchart-industry, results = 'hide', eval = F, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
+industry_energy <- malaysia %>% 
+  filter(param == "energyFinalSubsecBySectorIndusEJ",
+         region != "Malaysia") %>%
+  mutate(param = units) %>%
+  rchart::chart(folder = "rchart/industrial_energy",
+                save = F, 
+                show = F,
+                size_text = 12)
+
+
+```
+
+
+<br>
+
+#### Malaysia 
+
+```{r rchart-industry-my, results = 'hide', eval = F, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 32, fig.height = 6, out.width = "100%"}
+industry_energy_my <- malaysia %>% 
+  filter(param == "energyFinalSubsecBySectorIndusEJ",
+         region == "All of Malaysia") %>%
+  mutate(param = units) %>%
+  rchart::chart(folder = "rchart/industrial_energy",
+                save = F, 
+                show = F,
+                size_text = 12,
+                scenRef = "Ref")
+
+industry_energy_my$chart_class_diff_absolute
+```
+
+
+<br>
+
+#### Kuala Lumpur
+
+```{r rchart-industry-kl, results = 'hide', eval = F, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 32, fig.height = 6, out.width = "100%"}
+industry_energy_kl <- malaysia %>% 
+  filter(param == "energyFinalSubsecBySectorIndusEJ",
+         region == "KualaLumpur") %>%
+  mutate(param = units) %>%
+  rchart::chart(folder = "rchart/industrial_energy",
+                save = F, 
+                show = F,
+                size_text = 12,
+                scenRef = "Ref")
+
+industry_energy_kl$chart_class_diff_absolute
+```
 
 <br>
 
