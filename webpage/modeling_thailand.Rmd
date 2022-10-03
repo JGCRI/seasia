@@ -12,6 +12,9 @@ output:
 ---
 
 ```{r setup, echo = FALSE, message=FALSE, warning=FALSE}
+source("thailand_data_functions.R")
+source("thailand_aggregate_groups.R")
+source("conversions.R")
 knitr::opts_chunk$set(results = "hide", echo=FALSE, out.width = "75%", fig.align='center', message = F, warning = F, error = F, eval = T)
 library(dplyr)
 ```
@@ -1245,6 +1248,19 @@ thailand <- dplyr::bind_rows(ref, high, low) %>%
 
 ```
 
+```{r fix param names, eval = TRUE, echo = FALSE, warning=FALSE, error=FALSE, message=FALSE}
+# need to fix emisisons units names in gcamextractor so they aren't the same across params
+# doing it here for now until it's fixed in gcamextractor
+thailand <- thailand %>% 
+  mutate(units = case_when(param == "emissGHGBySectorGWPAR5" ~ "GHG Emissions by Sector (MTCO2eq)",
+                           param == "emissGHGByGasGWPAR5" ~ "GHG Emissions by Gas (MTCO2eq)",
+                           param == "transportFreightVMTByFuel" ~ "Freight (million ton-km) by Fuel",
+                           param == "transportPassengerVMTByFuel" ~ "Passenger (million pass-km) by Fuel",
+                           param == "transportFreightVMTByTech" ~ "Freight (million ton-km) by Tech",
+                           param == "transportPassengerVMTByTech" ~ "Passenger (million pass-km) by Tech",
+                           T ~ units))
+
+```
 
 ## Plot Figures {.tabset}
 ***
@@ -1253,10 +1269,12 @@ thailand <- dplyr::bind_rows(ref, high, low) %>%
 
 <br>
 
-### Thailand
+### Thailand {.tabset}
 ***
 
-#### Socioeconomic summary
+#### Summary figures
+
+##### Socioeconomic summary
 
 ```{r socio-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 16, fig.height = 6, out.width = "100%"}
 socioeconomic_parameters <- c("pop", "gdp", "gdpPerCapita")
@@ -1277,10 +1295,10 @@ socioeconomic$chart_param_Thailand
 <br>
 
 
-#### Emissions by sector and gas
+##### Emissions by sector and gas
 ***
 
-``` {r emiss-line-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 12, fig.height = 6}
+``` {r emiss-line-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 12, fig.height = 6, out.width = "100%"}
 
 emissions_line_params <- c("emissCO2BySector", "emissGHGBySectorGWPAR5")
 
@@ -1296,17 +1314,8 @@ emissions_line$`chart_param_All of Thailand`
 
 ```
 
-```{r fix param names, eval = TRUE, echo = FALSE, warning=FALSE, error=FALSE, message=FALSE}
-# need to fix emisisons units names in gcamextractor so they aren't the same across params
-# doing it here for now until it's fixed in gcamextractor
-thailand <- thailand %>% 
-  mutate(units = case_when(param == "emissGHGBySectorGWPAR5" ~ "GHG Emissions by Sector (MTCO2eq)",
-                           param == "emissGHGByGasGWPAR5" ~ "GHG Emissions by Gas (MTCO2eq)",
-                           T ~ units))
 
-```
-
-``` {r emiss-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 20, fig.height = 18}
+``` {r emiss-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 20, fig.height = 18, out.width = "100%"}
 
 emissions_params <- c("emissCO2BySector", "emissGHGBySectorGWPAR5", "emissGHGByGasGWPAR5")
 
@@ -1322,8 +1331,7 @@ emissions$`chart_class_All of Thailand`
 
 ```
 
-``` {r emiss-diff-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 33, fig.height = 18}
-
+``` {r emiss-diff-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 32, fig.height = 17, out.width = "100%"}
 
 emissions$`chart_class_diff_absolute_All of Thailand`
 
@@ -1332,10 +1340,10 @@ emissions$`chart_class_diff_absolute_All of Thailand`
 <br>
 
 
-#### Final Energy by Fuel and Sector
+##### Final Energy by Fuel and Sector
 ***
 
-```{r energy-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 20, fig.height = 12}
+```{r energy-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 20, fig.height = 12, out.width = "100%"}
 energy_parameters <- c("energyFinalConsumBySecEJ", "energyFinalByFuelEJ")
 
 energy <- thailand %>% 
@@ -1352,17 +1360,17 @@ energy$`chart_class_All of Thailand`
 
 <br>
 
-``` {r energy-diff-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 32, fig.height = 12}
+``` {r energy-diff-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 32, fig.height = 12, out.width = "100%"}
 
 
 energy$`chart_class_diff_absolute_All of Thailand`
 
 ```
 
-#### Electricity Generation and Consumption
+##### Electricity Generation and Consumption
 ***
 
-```{r elec-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 20, fig.height = 12}
+```{r elec-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 20, fig.height = 12, out.width = "100%"}
 elec_parameters <- c("elecByTechTWh", "elecConsumByDemandSectorTWh")
 
 electricity <- thailand %>% 
@@ -1378,7 +1386,7 @@ electricity$`chart_class_All of Thailand`
 
 ```
 
-``` {r elec-diff-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 32, fig.height = 12}
+``` {r elec-diff-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 32, fig.height = 12, out.width = "100%"}
 
 
 electricity$`chart_class_diff_absolute_All of Thailand`
@@ -1387,13 +1395,84 @@ electricity$`chart_class_diff_absolute_All of Thailand`
 
 <br>
 
-### MEA Area
+#### Sectoral details
+
+##### Buildings
+```{r building-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 21, fig.height = 12, out.width = "100%"}
+buildings_params <- c("energyFinalSubsecByFuelBuildEJ", 
+                      "energyFinalSubsecBySectorBuildEJ")
+
+buildings <- thailand %>% 
+  filter(param %in% buildings_params,
+         region %in% c("All of Thailand", "MEA area")) %>%
+  mutate(param = units) %>%
+  rchart::chart(save = F, 
+                show = F,
+                size_text = 19,
+                scenRef = "Ref")
+
+buildings$`chart_class_All of Thailand`
+```
+
+```{r building-diff-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 32, fig.height = 14, out.width = "100%"}
+
+buildings$`chart_class_diff_absolute_All of Thailand`
+```
+
+
+##### Transportation
+```{r transport-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 21, fig.height = 25, out.width = "100%"}
+transport_params <- c("transportFreightVMTByFuel", "transportPassengerVMTByFuel",
+                      "transportPassengerVMTByTech", "transportFreightVMTByTech")
+
+transport <- thailand %>% 
+  filter(param %in% transport_params,
+         region %in% c("All of Thailand", "MEA area")) %>%
+  mutate(param = units) %>%
+  rchart::chart(save = F, 
+                show = F,
+                size_text = 19,
+                scenRef = "Ref")
+
+transport$`chart_class_All of Thailand`
+```
+
+```{r transport-diff-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 33, fig.height = 24, out.width = "100%"}
+
+transport$`chart_class_diff_absolute_All of Thailand`
+```
+
+##### Industry
+```{r industry-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 15, fig.height = 5, out.width = "100%"}
+industry_params <- c("energyFinalSubsecByFuelIndusEJ")
+
+industry <- thailand %>% 
+  filter(param %in% industry_params,
+         region %in% c("All of Thailand", "MEA area")) %>%
+  mutate(param = units) %>%
+  rchart::chart(save = F, 
+                show = F,
+                size_text = 19,
+                scenRef = "Ref")
+
+industry$`chart_class_All of Thailand`
+```
+
+```{r industry-diff-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 32, fig.height = 6, out.width = "100%"}
+
+industry$`chart_class_diff_absolute_All of Thailand`
+```
+
+<br>
+
+### MEA Area {.tabset}
 ***
 
-#### Socioeconomic summary
+#### Summary figures
+
+##### Socioeconomic summary
 
 ```{r socio-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 16, fig.height = 6, out.width = "100%"}
-socioeconomic_parameters <- c("pop", "gdp", "gdpPerCapita")
 
 socioeconomic_mea <- thailand %>%
   filter(param %in% socioeconomic_parameters,
@@ -1412,24 +1491,24 @@ socioeconomic_mea$chart_region_absolute
 <br>
 
 
-#### Emissions by sector and gas
+##### Emissions by sector and gas
 ***
 
-``` {r emiss-line-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 12, fig.height = 6}
+``` {r emiss-line-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 12, fig.height = 6, out.width = "100%"}
 
 emissions_line$`chart_param_MEA area`
 
 ```
 
 
-``` {r emiss-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 20, fig.height = 18}
+``` {r emiss-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 20, fig.height = 18, out.width = "100%"}
 
 
 emissions$`chart_class_MEA area`
 
 ```
 
-``` {r emiss-diff-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 32, fig.height = 18}
+``` {r emiss-diff-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 32, fig.height = 18, out.width = "100%"}
 
 
 emissions$`chart_class_diff_absolute_MEA area`
@@ -1439,15 +1518,15 @@ emissions$`chart_class_diff_absolute_MEA area`
 <br>
 
 
-#### Final Energy by Fuel and Sector
+##### Final Energy by Fuel and Sector
 ***
 
-```{r energy-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 20, fig.height = 12}
+```{r energy-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 20, fig.height = 12, out.width = "100%"}
 
 energy$`chart_class_MEA area`
 ```
 
-``` {r energy-diff-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 32, fig.height = 12}
+``` {r energy-diff-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 32, fig.height = 12, out.width = "100%"}
 
 
 energy$`chart_class_diff_absolute_MEA area`
@@ -1456,16 +1535,16 @@ energy$`chart_class_diff_absolute_MEA area`
 
 <br>
 
-#### Electricity Consumption
+##### Electricity Consumption
 ***
 
-```{r elec-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 20, fig.height = 6}
+```{r elec-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 20, fig.height = 6, out.width = "100%"}
 
 electricity$`chart_class_MEA area`
 
 ```
 
-``` {r elec-diff-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 32, fig.height = 6}
+``` {r elec-diff-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 32, fig.height = 6,out.width = "100%"}
 
 
 electricity$`chart_class_diff_absolute_MEA area`
@@ -1473,6 +1552,471 @@ electricity$`chart_class_diff_absolute_MEA area`
 ```
 
 <br>
+
+#### Sectoral details
+
+##### Buildings
+```{r building-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 21, fig.height = 12, out.width = "100%"}
+
+buildings$`chart_class_MEA area`
+```
+
+```{r building-diff-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 32, fig.height = 14, out.width = "100%"}
+
+buildings$`chart_class_diff_absolute_MEA area`
+```
+
+##### Transportation
+```{r transport-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 21, fig.height = 25, out.width = "100%"}
+
+transport$`chart_class_MEA area`
+```
+
+```{r transport-diff-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 33, fig.height = 24, out.width = "100%"}
+
+transport$`chart_class_diff_absolute_MEA area`
+```
+
+##### Industry
+```{r industry-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 15, fig.height = 5, out.width = "100%"}
+
+industry$`chart_class_MEA area`
+```
+
+```{r industry-diff-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 32, fig.height = 6, out.width = "100%"}
+
+industry$`chart_class_diff_absolute_MEA area`
+```
+
+<br>
+
+<!-------------------------->
+<!-------------------------->
+# Validation
+<!-------------------------->
+<!-------------------------->
+<p align="center"> <img src="images/divider.png"></p>
+
+## Thailand {.tabset}
+
+### Emissions
+
+```{r national co2 emissions data prep}
+# read in gcam data
+gcam_co2_emiss_th <- ref %>% 
+  filter(param == "emissCO2BySectorNoBio",
+         region == "All of Thailand",
+         x >= 1990, class != "LUC") %>% 
+  select(x, units, region, scenario, value, class) %>% 
+  mutate(region = "Thailand")
+
+# read in local data 
+local_national_co2_emissions_sector <- dplyr::mutate(
+  read.csv(
+  "../data/thailand/outputs/local_national_co2_emissions_sector.csv",
+  check.names = F)
+) %>% rename(units = Units, x = year) %>% 
+  mutate(class = case_when(class == "transportation" ~ "transport", T~class))
+
+# combine local and gcam data
+all_national_co2_emissions_sector <- dplyr::bind_rows(
+  gcam_co2_emiss_th, local_national_co2_emissions_sector
+)
+```
+
+<br>
+
+```{r national co2 emissions total, fig.dim=c(8,4), fig.cap="**National total CO2 emissions from 1986 to 2100 (left) and 1986 to 2015 (right) from GCAM output (blue) and local data (red). Local data source: [Energy Policy and Planning Office](http://www.eppo.go.th/index.php/en/en-energystatistics/co2-statistic)**"}
+
+# 1986 to 2015
+national_co2_emissions_plot_local <- rchart::chart( dplyr::filter(
+  all_national_co2_emissions_sector, x >= 1986, x <= 2015),
+  chart_type = "param_absolute",
+  save = F
+)
+
+p1 <- national_co2_emissions_plot_local$chart_param +
+  ggplot2::ylab("") + ggplot2::ggtitle("") +
+  ggplot2::theme(strip.text = ggplot2::element_blank())
+
+
+# 2000 to 2100
+national_co2_emissions_plot_gcam <- rchart::chart(dplyr::filter(
+  all_national_co2_emissions_sector, x >= 1986),
+  chart_type = "param_absolute",
+  save = F)
+
+p2 <- national_co2_emissions_plot_gcam$chart_param +
+  ggplot2::ylab("CO2 emissions (MT)") + ggplot2::ggtitle("") +
+  ggplot2::theme(strip.text = ggplot2::element_blank())
+
+ggpubr::ggarrange(p2, p1, align = "h", common.legend = T, legend = "bottom") +
+  ggplot2::theme(plot.margin = ggplot2::unit(c(0,0,0.5,0), "cm"))
+
+```
+
+```{r national co2 emissions by sector plots, fig.dim=c(9,4), fig.cap="National total CO2 emissions by sector from local data (left) and GCAM output (right) from 2005 to 2015. Local data source: [Energy Policy and Planning Office](http://www.eppo.go.th/index.php/en/en-energystatistics/co2-statistic)**"}
+
+# 2005 to 2015
+national_co2_emissions_sector_plot_local <- rchart::chart( dplyr::filter(
+  all_national_co2_emissions_sector, x >= 2005, x <= 2015, x %% 5 == 0),
+  chart_type = "class_absolute",
+  save = F
+)
+
+national_co2_emissions_sector_plot_local$chart_class +
+  ggplot2::ggtitle("") + ggplot2::ylab("CO2 Emissions (MT)") +
+  ggplot2::theme(plot.margin = ggplot2::unit(c(0,0,0.5,0), "cm"))
+```
+
+### Electricity 
+
+```{r elec consump th data prep}
+# read in local data
+local_national_elec_consump <- read.csv(
+  "../data/thailand/validation/local_national_elec_consump.csv"
+)
+
+# aggregate local sectors
+local_national_elec_consump_agg <- dplyr::bind_rows(
+  aggregate_rows(local_national_elec_consump, class, "industry", industry_group_local),
+  aggregate_rows(local_national_elec_consump, class, "building", building_group_local),
+  aggregate_rows(local_national_elec_consump, class, "other", other_group_local)) %>% 
+  rename(x = year, units = Units) %>% 
+  mutate(units = "Electricity Consumption by Sector (TWh)")
+
+gcam_elec_consump_th <- ref %>% 
+  filter(param == "elecConsumByDemandSectorTWh",
+         region == "All of Thailand",
+         x >= 2000) %>% 
+  select(x, units, region, scenario, value, class) %>% 
+  mutate(value = value*.0036, region = "Thailand")
+  
+
+# combine local and national data
+all_elec_consump_sector_national <- dplyr::full_join(
+  dplyr::ungroup(local_national_elec_consump_agg),
+  dplyr::ungroup(gcam_elec_consump_th))
+
+```
+
+<br>
+```{r national consumption total charts, fig.dim=c(8,4), fig.cap="**National electricity consumption from 2005 to 2100 (left) and 2011 to 2020 (right) from GCAM output (blue) and local utilities data (red). Local data source: [Energy Policy and Planning office](http://www.eppo.go.th/index.php/en/en-energystatistics/electricity-statistic)**"}
+
+# 2010 to 2020 total elec consump
+elec_consump_national_chart_local <- rchart::chart(
+  dplyr::filter(all_elec_consump_sector_national, x <= 2020, x >= 2010),
+  chart_type = "param_absolute",
+  save = F)
+
+p1 <- elec_consump_national_chart_local$chart_param +
+        ggplot2::theme(strip.text = ggplot2::element_blank(),
+                       plot.margin = ggplot2::unit(c(0,0,1,0), "cm")) +
+        ggplot2::ylab("") + ggplot2::ggtitle("") 
+
+
+# 2000 to 2100 total elec consump
+elec_consump_national_chart_gcam <- rchart::chart(
+  dplyr::filter(all_elec_consump_sector_national, x >= 2000),
+  chart_type = "param_absolute",
+  save = F
+)
+
+p2 <- elec_consump_national_chart_gcam$chart_param +
+        ggplot2::ylab("Electricity Consumption (EJ)") +
+        ggplot2::theme(strip.text = ggplot2::element_blank(),
+                       plot.margin = ggplot2::unit(c(0,0,1,0), "cm"),
+                       axis.title.y = ggplot2::element_text(size = 12)) +
+        ggplot2::ggtitle("")
+
+
+ggpubr::ggarrange(p2, p1, nrow = 1, common.legend = T, legend = "bottom") +
+  ggplot2::theme(plot.margin = ggplot2::unit(c(0,0,0.5,0), "cm"))
+
+```
+
+<br>
+```{r national elec consumption by sector, fig.dim=c(9,4), fig.cap="**Figure National electricity consumption by sector in 2015 and 2020 from local utilities data (left) and GCAM output (right). Local data source: [Energy Policy and Planning office](http://www.eppo.go.th/index.php/en/en-energystatistics/electricity-statistic)**"}
+# 2015, 2020 chart elec consump by sector
+elec_consump_sector_national_chart_local <- rchart::chart(
+  dplyr::filter(all_elec_consump_sector_national, x %in% c(2015,2020)),
+  chart_type = "class_absolute",
+  save = F)
+
+elec_consump_sector_national_chart_local$chart_class +
+  ggplot2::ylab("Electricity Consumption (EJ)") +
+  ggplot2::ggtitle("") +
+  ggplot2::theme(plot.margin = ggplot2::unit(c(0,0,0.5,0), "cm"),
+                 axis.title.y = ggplot2::element_text(size = 12))
+```
+
+<br>
+
+### Energy
+
+```{r national final energy data prep}
+
+######## by fuel ########
+
+# read  gcam data
+gcam_final_energy_fuel <- ref %>% 
+  filter(region == "All of Thailand",
+         param == "energyFinalByFuelEJ",
+         x >= 1990) %>% 
+  select(x, units, value, region, scenario, class) %>% 
+  mutate(class = case_when(class == "liquids" ~"refined liquids",
+                           T ~ class),
+         region = "Thailand")
+
+# read in local data
+local_national_final_energy_fuel <- read.csv(
+  "../data/thailand/outputs/local_national_final_energy_fuel.csv",
+  check.names = F
+)
+
+# aggregate fuel types for local data
+local_national_final_energy_fuel_agg <- dplyr::bind_rows(
+  aggregate_rows(local_national_final_energy_fuel, class,
+                 "electricity", electricity_group_local),
+  aggregate_rows(local_national_final_energy_fuel, class,
+                 "refined liquids", liquids_group_local),
+  aggregate_rows(local_national_final_energy_fuel, class,
+                 "gas", gas_group_local),
+  aggregate_rows(local_national_final_energy_fuel, class,
+                 "coal", coal_group_local)
+) %>% 
+  rename(units = Units, x = year)
+
+# combine local and gcam data
+all_national_final_energy_fuel <- dplyr::bind_rows(
+  local_national_final_energy_fuel_agg, gcam_final_energy_fuel
+)
+
+######### by sector ##########
+# read in gcam data
+gcam_final_energy_sector <- ref %>% 
+  filter(region == "All of Thailand",
+         param == "energyFinalConsumBySecEJ",
+         x >= 2000) %>% 
+  select(x, units, value, region, scenario, class) %>% 
+  mutate(region = "Thailand")
+
+# read in local data
+local_national_final_energy_sector <- dplyr::mutate(read.csv(
+  "../data/thailand/outputs/local_national_final_energy_sector.csv",
+  check.names = F
+),value = value/23884.58966)
+
+# aggregate fuel types for local data
+local_national_final_energy_sector_agg <- dplyr::bind_rows(
+  aggregate_rows(local_national_final_energy_sector, class,
+                 "industry", industry_group_local),
+  aggregate_rows(local_national_final_energy_sector, class,
+                 "building", building_group_local),
+  aggregate_rows(local_national_final_energy_sector, class,
+                 "transport", transport_group_local)
+) %>% 
+  rename(units = Units, x = year)
+
+# combine gcam and local data
+all_national_final_energy_sector <- dplyr::bind_rows(
+  local_national_final_energy_sector_agg, gcam_final_energy_sector
+)
+
+```
+
+```{r national final energy total charts, fig.dim=c(8,4), fig.cap="**National total final energy from 1986 to 2100 (left) and 1986 to 2020 (right) from GCAM output (blue) and local data (red). Local data source: [Energy Policy and Planning Office](http://www.eppo.go.th/index.php/en/en-energystatistics/summary-statistic?orders[publishUp]=publishUp&issearch=1)**"}
+
+# total final energy, 1986 to 2020
+national_final_energy_chart_local <- rchart::chart(
+  dplyr::filter(all_national_final_energy_fuel, x <= 2020),
+  chart_type = "param_absolute",
+  save = F
+)
+
+p1 <- national_final_energy_chart_local$chart_param +
+        ggplot2::ylab("") +
+        ggplot2::theme(strip.text = ggplot2::element_blank(),
+                       plot.margin = ggplot2::unit(c(0,0,0.5,0), "cm")) +
+        ggplot2::ggtitle("") 
+
+
+# total final energy, 1986 to 2070
+national_final_energy_chart_gcam <- rchart::chart(
+  all_national_final_energy_fuel,
+  chart_type = "param_absolute",
+  save = F
+)
+
+p2 <- national_final_energy_chart_gcam$chart_param +
+      ggplot2::ylab("Energy (EJ)") +
+      ggplot2::theme(strip.text = ggplot2::element_blank()) +
+      ggplot2::ggtitle("") +
+      ggplot2::scale_y_continuous(breaks = scales::pretty_breaks())
+
+ggpubr::ggarrange(p2, p1, nrow = 1, common.legend = T, legend = "bottom", 
+                  widths = c(1,0.975)) +
+  ggplot2::theme(plot.margin = ggplot2::unit(c(0,0,0.5,0), "cm"))
+
+```
+
+<br>
+
+```{r national final energy consumption by sector, fig.dim=c(9,4), fig.cap="**National total final energy by sector from local data (left) and GCAM output (right) in 2015. Local data source: [Energy Efficiency Plan 2018](https://www.dede.go.th/ewt_w3c/ewt_dl_link.php?filename=index&nid=54495)**"}
+
+# 2005 to 2020 final energy by fuel (gcam and local)
+final_energy_sector_chart_local <- rchart::chart(dplyr::filter(
+  all_national_final_energy_sector, x == 2015),
+  save = F)
+
+final_energy_sector_chart_local$chart_class +
+  ggplot2::ggtitle("") + ggplot2::ylab("Energy (EJ)")
+```
+
+<br>
+
+```{r national final energy consumption by fuel, fig.dim=c(9,4), fig.cap="**National total final energy by fuel from local data (left) and GCAM output (right) from 2005 to 2020. Local data source: [Energy Policy and Planning Office](http://www.eppo.go.th/index.php/en/en-energystatistics/summary-statistic?orders[publishUp]=publishUp&issearch=1)**"}
+
+# 2005 to 2020 final energy by fuel (gcam and local)
+final_energy_fuel_chart_local <- rchart::chart(dplyr::filter(
+  all_national_final_energy_fuel, x >= 2005, x <= 2020, x %% 5 == 0),
+  chart_type = "class_absolute",
+  save = F)
+
+final_energy_fuel_chart_local$chart_class +
+  ggplot2::ggtitle("") + ggplot2::ylab("Energy (EJ)")
+```
+
+<br>
+<br>
+
+### Transportation
+
+```{r transportation-th data prep}
+# read in local data
+local_national_transport_ghg <- read.csv(
+  "../data/thailand/outputs/local_transport_ghg_emissions_mode.csv",
+  check.names = F, skip = 1
+) %>% 
+  rename(units = Units, x = year) %>% 
+  mutate(class = str_to_title(class))
+  
+
+# read in gcam data
+gcam_ghg_mode <- ref %>% 
+  filter(region == "All of Thailand",
+         param %in% c("transportFreightGHGByMode", "transportPassengerGHGByMode"),
+         x >= 1990) %>% 
+  select(x, units, value, region, scenario, class) %>% 
+  mutate(class = case_when(grepl("Bus|LDV|Road", class) ~ "Road",
+                           grepl("Rail", class) ~ "Rail",
+                           T ~ class),
+         region = "Thailand")
+
+# gcam_ghg_subsector <- process_gcam_data(conv_ghg_co2e(process_gcam_data(
+#   read.csv("../data/thailand/outputs/queryoutall_non_co2_emissions_subsector.csv", skip = 1, check.names = F))),
+#   processed = T, subsector, sector, GHG)
+
+
+# combine GCAM and local data
+all_national_transport_ghg <- dplyr::ungroup(dplyr::bind_rows(gcam_ghg_mode, local_national_transport_ghg))
+
+```
+
+```{r national transport output by mode, fig.dim=c(9,4), fig.cap="****"}
+
+# 2005 to 2020 final energy by fuel (gcam and local)
+national_transport_ghg_chart <- rchart::chart(dplyr::filter(
+  all_national_transport_ghg, x >= 2005, x < 2020, x %% 5 == 0),
+  chart_type = "class_absolute",
+  save = F)
+
+national_transport_ghg_chart$chart_class +
+  ggplot2::ggtitle("") + ggplot2::ylab("GHG Emissions (MTCO2eq)")
+```
+
+## MEA area {.tabset}
+
+### Electricity 
+
+```{r elec consump mea data prep}
+# read in local data
+local_mea_elec_consump <- tidyr::drop_na(read.csv(
+  "../data/thailand/validation/local_mea_area_elec_consump.csv"
+))
+
+# aggregate local sectors
+local_mea_elec_consump_agg <- dplyr::bind_rows(
+  aggregate_rows(local_mea_elec_consump, class, "industry", industry_group_local),
+  aggregate_rows(local_mea_elec_consump, class, "building", building_group_local),
+  aggregate_rows(local_mea_elec_consump, class, "other", other_group_local)) %>% 
+  rename(x = year, units = Units) %>% 
+  mutate(units = "Electricity Consumption by Sector (TWh)")
+
+gcam_elec_consump_mea <- ref %>% 
+  filter(param == "elecConsumByDemandSectorTWh",
+         region == "MEA area",
+         x >= 2000) %>% 
+  select(x, units, region, scenario, value, class) %>% 
+  mutate(value = value*.0036)
+  
+
+# combine local and national data
+all_elec_consump_sector_mea <- dplyr::full_join(
+  dplyr::ungroup(local_mea_elec_consump_agg),
+  dplyr::ungroup(gcam_elec_consump_mea))
+
+```
+
+<br>
+```{r mea consumption total charts, fig.dim=c(8,4), fig.cap="**Electricity consumption in the MEA service area from 2005 to 2100 (left) and 2011 to 2020 (right) from GCAM output (blue) and MEA data (red). Local data source: [Energy Policy and Planning office](http://www.eppo.go.th/index.php/en/en-energystatistics/electricity-statistic)**"}
+
+# 2010 to 2020 total elec consump
+elec_consump_mea_chart_local <- rchart::chart(
+  dplyr::filter(all_elec_consump_sector_mea, x <= 2020, x >= 2010),
+  chart_type = "param_absolute",
+  save = F)
+
+p1 <- elec_consump_mea_chart_local$chart_param +
+        ggplot2::theme(strip.text = ggplot2::element_blank(),
+                       plot.margin = ggplot2::unit(c(0,0,1,0), "cm")) +
+        ggplot2::ylab("") + ggplot2::ggtitle("") 
+
+
+# 2000 to 2100 total elec consump
+elec_consump_mea_chart_gcam <- rchart::chart(
+  dplyr::filter(all_elec_consump_sector_mea, x >= 2000),
+  chart_type = "param_absolute",
+  save = F
+)
+
+p2 <- elec_consump_mea_chart_gcam$chart_param +
+        ggplot2::ylab("Electricity Consumption (EJ)") +
+        ggplot2::theme(strip.text = ggplot2::element_blank(),
+                       plot.margin = ggplot2::unit(c(0,0,1,0), "cm"),
+                       axis.title.y = ggplot2::element_text(size = 12)) +
+        ggplot2::ggtitle("")
+
+
+ggpubr::ggarrange(p2, p1, nrow = 1, common.legend = T, legend = "bottom") +
+  ggplot2::theme(plot.margin = ggplot2::unit(c(0,0,0.5,0), "cm"))
+
+```
+
+<br>
+```{r mea consumption by sector, fig.dim=c(9,4), fig.cap="**Electricity consumption by sector in the MEA service area from MEA data (left) and GCAM output (right) in 2015 and 2020. Local data source: [Energy Policy and Planning office](http://www.eppo.go.th/index.php/en/en-energystatistics/electricity-statistic)**"}
+# 2015, 2020 chart elec consump by sector
+elec_consump_sector_mea_chart_local <- rchart::chart(
+  dplyr::filter(all_elec_consump_sector_mea, x %in% c(2015,2020)),
+  chart_type = "class_absolute",
+  save = F)
+
+elec_consump_sector_mea_chart_local$chart_class +
+  ggplot2::ylab("Electricity Consumption (EJ)") +
+  ggplot2::ggtitle("") +
+  ggplot2::theme(plot.margin = ggplot2::unit(c(0,0,0.5,0), "cm"),
+                 axis.title.y = ggplot2::element_text(size = 12))
+```
 
 
 # {.unlisted .unnumbered}
