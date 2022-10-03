@@ -1484,6 +1484,8 @@ following parameters:</p>
 <li>Electricity generation by sector</li>
 <li>Building energy by subsector</li>
 <li>Transportation by mode</li>
+<li>Transportation by fuel</li>
+<li>Industry energy by fuel</li>
 </ul>
 <p>To enlarge a figure, please click directly on the image. Click on the
 image again to close out.</p>
@@ -1717,7 +1719,6 @@ p_energy$chart_class_Ref</code></pre>
   rchart::chart(folder = &quot;rchart/energy&quot;,
                 save = F, 
                 show = F,
-                size_text = 12,
                 scenRef = &quot;Ref&quot;)
 
 p_energy_my$chart_class_diff_absolute</code></pre>
@@ -1733,7 +1734,7 @@ p_energy_my$chart_class_diff_absolute</code></pre>
   rchart::chart(folder = &quot;rchart/energy&quot;,
                 save = F, 
                 show = F,
-                size_text = 12,
+                size_text = 18,
                 scenRef = &quot;Ref&quot;)
 
 p_energy_kl$chart_param_diff_absolute</code></pre>
@@ -1776,7 +1777,6 @@ energy$chart_class_Ref</code></pre>
   rchart::chart(folder = &quot;rchart/energy&quot;,
                 save = F, 
                 show = F,
-                size_text = 12,
                 scenRef = &quot;Ref&quot;)
 
 energy_my$chart_class_diff_absolute</code></pre>
@@ -1792,7 +1792,6 @@ energy_my$chart_class_diff_absolute</code></pre>
   rchart::chart(folder = &quot;rchart/energy&quot;,
                 save = F, 
                 show = F,
-                size_text = 12,
                 scenRef = &quot;Ref&quot;)
 
 energy_kl$chart_class_diff_absolute</code></pre>
@@ -1895,7 +1894,6 @@ building_energy$`chart_class_All of Malaysia`</code></pre>
   rchart::chart(folder = &quot;rchart/building_energy&quot;,
                 save = F, 
                 show = F,
-                size_text = 12,
                 scenRef = &quot;Ref&quot;)
 
 building_energy_my$chart_class_diff_absolute</code></pre>
@@ -1911,7 +1909,6 @@ building_energy_my$chart_class_diff_absolute</code></pre>
   rchart::chart(folder = &quot;rchart/building_energy&quot;,
                 save = F, 
                 show = F,
-                size_text = 12,
                 scenRef = &quot;Ref&quot;)
 
 building_energy_kl$chart_class_diff_absolute</code></pre>
@@ -1930,68 +1927,122 @@ Transportation by Mode</h3>
 number="5.2.7.1">
 <h4><span class="header-section-number">5.2.7.1</span> Malaysia vs Kuala
 Lumpur</h4>
-<pre class="r"><code>transport_params &lt;- c(&quot;transportFreightVMTByMode&quot;, &quot;transportPassengerVMTByMode&quot;,
-                      &quot;transportFreightVMTByFuel&quot;, &quot;transportPassengerVMTByFuel&quot;,
-                      &quot;transportPassengerVMTByTech&quot;, &quot;transportFreightVMTByTech&quot;)
-transport &lt;- malaysia %&gt;% 
-  filter(param %in% transport_params,
+<pre class="r"><code>transport_mode_params &lt;- c(&quot;transportFreightVMTByMode&quot;, &quot;transportPassengerVMTByMode&quot;)
+                
+transport_m &lt;- malaysia %&gt;% 
+  filter(param %in% transport_mode_params,
          region != &quot;Malaysia&quot;) %&gt;%
   mutate(param = units) %&gt;%
-  rchart::chart(folder = &quot;rchart/transport&quot;,
+  rchart::chart(folder = &quot;rchart/transport/mode&quot;,
                 save = F, 
                 show = F,
                 size_text = 10)
 
-transport$chart_class_Ref</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-transport-1.png" width="85%" style="display: block; margin: auto;" /></p>
+transport_m$chart_class_Ref</code></pre>
+<p><img src="modeling_malaysia_files/figure-html/rchart-transport-mode-1.png" width="85%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 </div>
 <div id="malaysia-6" class="section level4" number="5.2.7.2">
 <h4><span class="header-section-number">5.2.7.2</span> Malaysia</h4>
-<pre class="r"><code>transport_my &lt;- malaysia %&gt;% 
-  filter(param %in% transport_params,
+<pre class="r"><code>transport_my_m &lt;- malaysia %&gt;% 
+  filter(param %in% transport_mode_params,
          region == &quot;All of Malaysia&quot;) %&gt;%
   mutate(param = units) %&gt;%
-  rchart::chart(folder = &quot;rchart/transport&quot;,
+  rchart::chart(folder = &quot;rchart/transport/mode&quot;,
                 save = F, 
                 show = F,
-                size_text = 12,
                 scenRef = &quot;Ref&quot;)
 
-transport_my$chart_class_diff_absolute</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-transport-my-1.png" width="100%" style="display: block; margin: auto;" /></p>
+transport_my_m$chart_class_diff_absolute</code></pre>
+<p><img src="modeling_malaysia_files/figure-html/rchart-transport-my-mode-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 </div>
 <div id="kuala-lumpur-6" class="section level4" number="5.2.7.3">
 <h4><span class="header-section-number">5.2.7.3</span> Kuala Lumpur</h4>
-<pre class="r"><code>transport_kl &lt;- malaysia %&gt;% 
-  filter(param %in% transport_params,
+<pre class="r"><code>transport_kl_m &lt;- malaysia %&gt;% 
+  filter(param %in% transport_mode_params,
          region == &quot;KualaLumpur&quot;) %&gt;%
   mutate(param = units) %&gt;%
-  rchart::chart(folder = &quot;rchart/transport&quot;,
+  rchart::chart(folder = &quot;rchart/transport/mode&quot;,
                 save = F, 
                 show = F,
-                size_text = 12,
                 scenRef = &quot;Ref&quot;)
 
-transport_kl$chart_class_diff_absolute</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-transport-kl-1.png" width="100%" style="display: block; margin: auto;" /></p>
+transport_kl_m$chart_class_diff_absolute</code></pre>
+<p><img src="modeling_malaysia_files/figure-html/rchart-transport-kl-mode-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 <!-------------------------->
 </div>
 </div>
-<div id="industry-energy-by-subsector" class="section level3 tabset"
+<div id="transportation-by-fuel" class="section level3 tabset"
 number="5.2.8">
 <h3 class="tabset"><span class="header-section-number">5.2.8</span>
-Industry Energy by Subsector</h3>
+Transportation by Fuel</h3>
 <!-------------------------->
 <hr />
 <div id="malaysia-vs-kuala-lumpur-7" class="section level4"
 number="5.2.8.1">
 <h4><span class="header-section-number">5.2.8.1</span> Malaysia vs Kuala
 Lumpur</h4>
+<pre class="r"><code>transport_fuel_params &lt;- c(&quot;transportFreightVMTByFuel&quot;, &quot;transportPassengerVMTByFuel&quot;)
+                
+transport_f &lt;- malaysia %&gt;% 
+  filter(param %in% transport_fuel_params,
+         region != &quot;Malaysia&quot;) %&gt;%
+  mutate(param = units) %&gt;%
+  rchart::chart(folder = &quot;rchart/transport/fuel&quot;,
+                save = F, 
+                show = F,
+                size_text = 10)
+
+transport_f$chart_class_Ref</code></pre>
+<p><img src="modeling_malaysia_files/figure-html/rchart-transport-fuel-1.png" width="85%" style="display: block; margin: auto;" /></p>
+<p><br></p>
+</div>
+<div id="malaysia-7" class="section level4" number="5.2.8.2">
+<h4><span class="header-section-number">5.2.8.2</span> Malaysia</h4>
+<pre class="r"><code>transport_my_f &lt;- malaysia %&gt;% 
+  filter(param %in% transport_fuel_params,
+         region == &quot;All of Malaysia&quot;) %&gt;%
+  mutate(param = units) %&gt;%
+  rchart::chart(folder = &quot;rchart/transport/fuel&quot;,
+                save = F, 
+                show = F,
+                scenRef = &quot;Ref&quot;)
+
+transport_my$chart_class_diff_absolute</code></pre>
+<p><img src="modeling_malaysia_files/figure-html/rchart-transport-my-fuel-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><br></p>
+</div>
+<div id="kuala-lumpur-7" class="section level4" number="5.2.8.3">
+<h4><span class="header-section-number">5.2.8.3</span> Kuala Lumpur</h4>
+<pre class="r"><code>transport_kl_f &lt;- malaysia %&gt;% 
+  filter(param %in% transport_fuel_params,
+         region == &quot;KualaLumpur&quot;) %&gt;%
+  mutate(param = units) %&gt;%
+  rchart::chart(folder = &quot;rchart/transport/fuel&quot;,
+                save = F, 
+                show = F,
+                scenRef = &quot;Ref&quot;)
+
+transport_kl_f$chart_class_diff_absolute</code></pre>
+<p><img src="modeling_malaysia_files/figure-html/rchart-transport-kl-fuel-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><br></p>
+<!-------------------------->
+</div>
+</div>
+<div id="industry-energy-by-subsector" class="section level3 tabset"
+number="5.2.9">
+<h3 class="tabset"><span class="header-section-number">5.2.9</span>
+Industry Energy by Subsector</h3>
+<!-------------------------->
+<hr />
+<div id="malaysia-vs-kuala-lumpur-8" class="section level4"
+number="5.2.9.1">
+<h4><span class="header-section-number">5.2.9.1</span> Malaysia vs Kuala
+Lumpur</h4>
 <pre class="r"><code>industry_energy &lt;- malaysia %&gt;% 
-  filter(param == &quot;energyFinalSubsecBySectorIndusEJ&quot;,
+  filter(param == &quot;energyFinalSubsecByFuelIndusEJ&quot;,
          region != &quot;Malaysia&quot;) %&gt;%
   mutate(param = units) %&gt;%
   rchart::chart(folder = &quot;rchart/industrial_energy&quot;,
@@ -2000,10 +2051,10 @@ Lumpur</h4>
                 size_text = 12)</code></pre>
 <p><br></p>
 </div>
-<div id="malaysia-7" class="section level4" number="5.2.8.2">
-<h4><span class="header-section-number">5.2.8.2</span> Malaysia</h4>
+<div id="malaysia-8" class="section level4" number="5.2.9.2">
+<h4><span class="header-section-number">5.2.9.2</span> Malaysia</h4>
 <pre class="r"><code>industry_energy_my &lt;- malaysia %&gt;% 
-  filter(param == &quot;energyFinalSubsecBySectorIndusEJ&quot;,
+  filter(param == &quot;energyFinalSubsecByFuelIndusEJ&quot;,
          region == &quot;All of Malaysia&quot;) %&gt;%
   mutate(param = units) %&gt;%
   rchart::chart(folder = &quot;rchart/industrial_energy&quot;,
@@ -2013,12 +2064,13 @@ Lumpur</h4>
                 scenRef = &quot;Ref&quot;)
 
 industry_energy_my$chart_class_diff_absolute</code></pre>
+<p><img src="modeling_malaysia_files/figure-html/rchart-industry-my-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 </div>
-<div id="kuala-lumpur-7" class="section level4" number="5.2.8.3">
-<h4><span class="header-section-number">5.2.8.3</span> Kuala Lumpur</h4>
+<div id="kuala-lumpur-8" class="section level4" number="5.2.9.3">
+<h4><span class="header-section-number">5.2.9.3</span> Kuala Lumpur</h4>
 <pre class="r"><code>industry_energy_kl &lt;- malaysia %&gt;% 
-  filter(param == &quot;energyFinalSubsecBySectorIndusEJ&quot;,
+  filter(param == &quot;energyFinalSubsecByFuelIndusEJ&quot;,
          region == &quot;KualaLumpur&quot;) %&gt;%
   mutate(param = units) %&gt;%
   rchart::chart(folder = &quot;rchart/industrial_energy&quot;,
@@ -2028,6 +2080,7 @@ industry_energy_my$chart_class_diff_absolute</code></pre>
                 scenRef = &quot;Ref&quot;)
 
 industry_energy_kl$chart_class_diff_absolute</code></pre>
+<p><img src="modeling_malaysia_files/figure-html/rchart-industry-kl-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 <!-------------------------->
 <!-------------------------->
