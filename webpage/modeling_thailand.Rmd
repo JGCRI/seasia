@@ -138,7 +138,7 @@ data.frame(
 
 <!-------------------------->
 <!-------------------------->
-# National Policies
+# Sectoral Policies
 <!-------------------------->
 <!-------------------------->
 <p align="center"> <img src="images/divider.png"></p>
@@ -1272,7 +1272,6 @@ thailand <- thailand %>%
 <br>
 
 ### Thailand {.tabset}
-***
 
 #### Summary figures
 
@@ -1410,7 +1409,7 @@ electricity$`chart_class_diff_absolute_All of Thailand`
 
 <br>
 
-#### Sectoral details
+#### Sectoral details {.tabset}
 
 ##### Buildings
 ```{r building-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 21, fig.height = 12, out.width = "100%"}
@@ -1481,7 +1480,6 @@ industry$`chart_class_diff_absolute_All of Thailand`
 <br>
 
 ### MEA Area {.tabset}
-***
 
 #### Summary figures
 
