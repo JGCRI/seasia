@@ -1329,7 +1329,7 @@ transport_my_f <- malaysia %>%
                 show = F,
                 scenRef = "Ref")
 
-transport_my$chart_class_diff_absolute
+transport_my_f$chart_class_diff_absolute
 ```
 
 
