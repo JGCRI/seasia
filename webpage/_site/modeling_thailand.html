@@ -569,6 +569,9 @@ GCAM walkthrough presentation
 File
 </th>
 <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+Scenario.Name
+</th>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
 Description
 </th>
 <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
@@ -582,10 +585,13 @@ Location
 configuration_seasia_cities_bau.xml
 </td>
 <td style="text-align:left;">
+Ref
+</td>
+<td style="text-align:left;">
 Business as Usual Scenario
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/configuration_seasia_cities_bau.xml" style="     ">Link</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/configuration_files/configuration_seasia_cities_bau.xml" style="     ">Link</a>
 </td>
 </tr>
 <tr>
@@ -593,10 +599,13 @@ Business as Usual Scenario
 configuration_seasia_cities_thailand_low.xml
 </td>
 <td style="text-align:left;">
-National Policies Scenario (low ambition)
+policies_high
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/configuration_seasia_cities_thailand_low.xml" style="     ">Link</a>
+Low-ambition sectoral policies in both the MEA area and Rest of Thailand
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/configuration_files/configuration_seasia_cities_low_mea_low_rot.xml" style="     ">Link</a>
 </td>
 </tr>
 <tr>
@@ -604,10 +613,14 @@ National Policies Scenario (low ambition)
 configuration_seasia_cities_thailand_high.xml
 </td>
 <td style="text-align:left;">
-National Policies Scenario (high ambition)
+policies_low
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/configuration_seasia_cities_thailand_high.xml" style="     ">Link</a>
+High-ambition sectoral policies in both the MEA area and Rest of
+Thailand
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/configuration-files/configuration_seasia_cities_high_mea_high_rot.xml" style="     ">Link</a>
 </td>
 </tr>
 </tbody>
@@ -641,6 +654,12 @@ Policy
 <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
 Description
 </th>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+High.Ambition
+</th>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+Low.Ambition
+</th>
 </tr>
 </thead>
 <tbody>
@@ -655,6 +674,13 @@ RE subsidies
 Modify the electricity generation mix by setting generation floors for
 wind and solar using a subsidy policy
 </td>
+<td style="text-align:left;">
+Minimum wind and solar generation correspond with Thailand’s LTS goals
+</td>
+<td style="text-align:left;">
+Minimum wind and solar generation correspond with 75% of Thailand’s LTS
+goals
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
@@ -666,6 +692,12 @@ Coal retirement
 <td style="text-align:left;">
 Prevent new coal development starting in 2020 and phase out existing
 coal
+</td>
+<td style="text-align:left;">
+Coal is phased out by 2050
+</td>
+<td style="text-align:left;">
+Coal is phased out by 2065
 </td>
 </tr>
 <tr>
@@ -679,6 +711,14 @@ Building envelope efficiency
 Modify the average envelope efficiency of residential and commercial
 buildings by setting the shell-conductance parameter for each year
 </td>
+<td style="text-align:left;">
+Envelope efficiency increases at an annual rate of 4% (residential)/
+4.5% (commercial)
+</td>
+<td style="text-align:left;">
+Envelope efficiency increases at an annual rate of 2% (residential)/
+2.5% (commercial)
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
@@ -690,6 +730,12 @@ AC efficiency
 <td style="text-align:left;">
 Modify the average energy efficiency of air conditioners in buildings
 </td>
+<td style="text-align:left;">
+Average AC efficiency is 6 W/W by 2030 and 8 W/W by 2050
+</td>
+<td style="text-align:left;">
+Average AC efficiency is 4.3 W/W by 2030 and 6 W/W by 2050
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
@@ -700,6 +746,12 @@ Lighting efficiency
 </td>
 <td style="text-align:left;">
 Phase out non-LED lighting technologies in buildings
+</td>
+<td style="text-align:left;">
+Non-LED lighting is phased out by 2030
+</td>
+<td style="text-align:left;">
+Non-LED lighting is phased out by 2050
 </td>
 </tr>
 <tr>
@@ -713,6 +765,12 @@ EV cost parity
 Reduce costs of EVs and hybrid vehicles to reach cost parity with
 traditional liquids vehicles
 </td>
+<td style="text-align:left;">
+EVs reach cost-parity with CEVs by 2030 (passenger)/ 2040 (freight)
+</td>
+<td style="text-align:left;">
+EVs reach cost-parity with CEVs by 2050 (passenger)/ 2060 (freight)
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
@@ -723,6 +781,12 @@ Liquids phaseout
 </td>
 <td style="text-align:left;">
 Phase out combustion engine vehicles
+</td>
+<td style="text-align:left;">
+CEVs are phased out by 2050
+</td>
+<td style="text-align:left;">
+CEVs are phased out by 2065
 </td>
 </tr>
 <tr>
@@ -735,6 +799,12 @@ Industrial energy efficiency
 <td style="text-align:left;">
 Increase average energy efficiency across industrial processes
 </td>
+<td style="text-align:left;">
+Industrial energy efficiency increases 1% annually
+</td>
+<td style="text-align:left;">
+Industrial energy efficiency increases 0.5% annually
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
@@ -746,9 +816,17 @@ Industrial hydrogen use
 <td style="text-align:left;">
 Increase the use of hydrogen in industrial processes
 </td>
+<td style="text-align:left;">
+Hydrogen industrial technologies are phased in relatively quickly
+</td>
+<td style="text-align:left;">
+Hydrogen industrial technologies are phased in relatively more slowly
+</td>
 </tr>
 </tbody>
 </table>
+<p>For each of the above policies, we are modeling a low-ambition and
+high-ambition version. For details on the differences between these</p>
 <div id="re-subsidies" class="section level2" number="4.1">
 <h2><span class="header-section-number">4.1</span> RE Subsidies</h2>
 <hr />
@@ -772,7 +850,7 @@ Description
 High
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/wind_solar_floors_high.xml" style="     ">wind_solar_floors_high.xml</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/wind_solar_floors_high.xml" style="     ">wind_solar_floors_high.xml</a>
 </td>
 <td style="text-align:left;">
 Sets floors for wind and solar generation corresponding with Thailand’s
@@ -784,7 +862,7 @@ updated LTS generation goals
 Low
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/wind_solar_floors_low.xml" style="     ">wind_solar_floors_low.xml</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/wind_solar_floors_low.xml" style="     ">wind_solar_floors_low.xml</a>
 </td>
 <td style="text-align:left;">
 Sets floors for wind and solar generation corresponding with 75%
@@ -796,7 +874,7 @@ Thailand’s updated LTS generation goals
 Both
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/wind_solar_input_subsidies.xml" style="     ">wind_solar_input_subsidies.xml</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/wind_solar_input_subsidies.xml" style="     ">wind_solar_input_subsidies.xml</a>
 </td>
 <td style="text-align:left;">
 Applies subsidies to relevant wind and solar technologies in order to
@@ -882,11 +960,11 @@ style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 
 <li>Create a folder in the input directory eg.
 <code>./gcam-core/input/addons</code>.</li>
 <li>Download the desired constraint file (either <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/wind_solar_floors_high.xml">wind_solar_floors_high.xml</a>
+href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/wind_solar_floors_high.xml">wind_solar_floors_high.xml</a>
 or <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/wind_solar_floors_low.xml">wind_solar_floors_low.xml</a>)
+href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/wind_solar_floors_low.xml">wind_solar_floors_low.xml</a>)
 as well as the subsidy link file <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/wind_solar_input_subsidies.xml">wind_solar_input_subsidies</a>
+href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/wind_solar_input_subsidies.xml">wind_solar_input_subsidies</a>
 to the folder.</li>
 <li>To make custom adjustments, optionally change the following within
 each <code>policy-portfolio-standard</code> tag in the XML:</li>
@@ -944,7 +1022,7 @@ Description
 Both
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/no_new_coal.xml" style="     ">no_new_coal.xml</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/no_new_coal.xml" style="     ">no_new_coal.xml</a>
 </td>
 <td style="text-align:left;">
 Prevents additional coal capacity from being built starting in 2020
@@ -955,7 +1033,7 @@ Prevents additional coal capacity from being built starting in 2020
 High
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/coal_shutdown_high.xml" style="     ">coal_shutdown_high.xml</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/coal_shutdown_high.xml" style="     ">coal_shutdown_high.xml</a>
 </td>
 <td style="text-align:left;">
 Retires existing coal capacity quickly; all coal is retired by 2050
@@ -966,7 +1044,7 @@ Retires existing coal capacity quickly; all coal is retired by 2050
 Low
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/coal_shutdown_low.xml" style="     ">coal_shutdown_low.xml</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/coal_shutdown_low.xml" style="     ">coal_shutdown_low.xml</a>
 </td>
 <td style="text-align:left;">
 Retires existing coal capacity more slowly; all coal is retired by 2065
@@ -1087,11 +1165,11 @@ style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 
 <li>Create a folder in the input directory eg.
 <code>./gcam-core/input/addons</code>.</li>
 <li>Download the coal shareweight file <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/no_new_coal.xml">no_new_coal.xml</a>
+href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/no_new_coal.xml">no_new_coal.xml</a>
 as well as the desired coal retirement file (either <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/coal_shutdown_high.xml">coal_shutdown_high.xml</a>
+href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/coal_shutdown_high.xml">coal_shutdown_high.xml</a>
 or <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/coal_shutdown_low.xml">coal_shutdown_low.xml</a>)
+href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/coal_shutdown_low.xml">coal_shutdown_low.xml</a>)
 to the folder.</li>
 <li>To make custom adjustments to the coal retirement trajectory,
 optionally change the following within each <code>stub-technology</code>
@@ -1151,7 +1229,7 @@ Description
 High
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/shell_eff_high.xml" style="     ">shell_eff_high.xml</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/shell_eff_high.xml" style="     ">shell_eff_high.xml</a>
 </td>
 <td style="text-align:left;">
 Decreases shell conductance from 3.75 in 2020 to 0.487 (residential)/
@@ -1164,7 +1242,7 @@ Decreases shell conductance from 3.75 in 2020 to 0.487 (residential)/
 Low
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/shell_eff_low.xml" style="     ">shell_eff_low.xml</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/shell_eff_low.xml" style="     ">shell_eff_low.xml</a>
 </td>
 <td style="text-align:left;">
 Decreases shell conductance from 3.75 in 2020 to 1.366 (residential)/
@@ -1252,9 +1330,9 @@ style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 
 <li>Create a folder in the input directory:
 <code>./gcam-core/input/addons</code>.</li>
 <li>Download the desired xml file (either <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/shell_eff_high.xml">shell_eff_high.xml</a>
+href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/shell_eff_high.xml">shell_eff_high.xml</a>
 or <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/shell_eff_low.xml">shell_eff_low.xml</a>)
+href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/shell_eff_low.xml">shell_eff_low.xml</a>)
 to the folder.</li>
 <li>To make custom adjustments: within each <code>gcam-consumer</code>
 tag in the XML, specify the desired <code>shell-conductance</code>
@@ -1293,7 +1371,7 @@ Description
 High
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/ac_eff_high.xml" style="     ">ac_eff_high.xml</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/ac_eff_high.xml" style="     ">ac_eff_high.xml</a>
 </td>
 <td style="text-align:left;">
 Increases acerage efficiency of high-efficiency ACs from 3.1 W/W in 2020
@@ -1305,7 +1383,7 @@ to 6 W/W in 2030 and 8 W/W in 2050
 Low
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/ac_eff_low.xml" style="     ">ac_eff_low.xml</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/ac_eff_low.xml" style="     ">ac_eff_low.xml</a>
 </td>
 <td style="text-align:left;">
 Increases acerage efficiency of high-efficiency ACs from 3.1 W/W in 2020
@@ -1367,9 +1445,9 @@ style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 
 <li>Create a folder in the input directory:
 <code>./gcam-core/input/addons</code>.</li>
 <li>Download the desired xml file (either <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/ac_eff_high.xml">ac_eff_high.xml</a>
+href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/ac_eff_high.xml">ac_eff_high.xml</a>
 or <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/ac_eff_low.xml">ac_eff_low.xml</a>)
+href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/ac_eff_low.xml">ac_eff_low.xml</a>)
 to the folder.</li>
 <li>To make custom adjustments: within each period, adjust the
 efficiency value.</li>
@@ -1408,7 +1486,7 @@ Description
 High
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/buildings_led_high.xml" style="     ">buildings_led_high.xml</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/buildings_led_high.xml" style="     ">buildings_led_high.xml</a>
 </td>
 <td style="text-align:left;">
 Gradually phases non-LED residential lighting technology out of the
@@ -1420,7 +1498,7 @@ market by 2030
 Low
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/buildings_led_low.xml" style="     ">buildings_led_low.xml</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/buildings_led_low.xml" style="     ">buildings_led_low.xml</a>
 </td>
 <td style="text-align:left;">
 Gradually phases non-LED residential lighting technology out of the
@@ -1508,9 +1586,9 @@ style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 
 <li>Create a folder in the input directory:
 <code>./gcam-core/input/addons</code>.</li>
 <li>Download the desired xml file (either <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/buildings_led_high.xml">buildings_led_high.xml</a>
+href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/buildings_led_high.xml">buildings_led_high.xml</a>
 or <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/buildings_led_low.xml">buildings_led_low.xml</a>)
+href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/buildings_led_low.xml">buildings_led_low.xml</a>)
 to the folder.</li>
 <li>To adjust the year in which 100% LED lighting is achieved: within
 each non-LED <code>stub-technology</code> tag in the XML, change the
@@ -1552,7 +1630,7 @@ Description
 High
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/ev_cost_parity_high.xml" style="     ">ev_cost_parity_high.xml</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/ev_cost_parity_high.xml" style="     ">ev_cost_parity_high.xml</a>
 </td>
 <td style="text-align:left;">
 Reduces EV costs to reach cost parity with liquids vehicles by 2030
@@ -1564,7 +1642,7 @@ Reduces EV costs to reach cost parity with liquids vehicles by 2030
 Low
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/ev_cost_parity_low.xml" style="     ">ev_cost_parity_low.xml</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/ev_cost_parity_low.xml" style="     ">ev_cost_parity_low.xml</a>
 </td>
 <td style="text-align:left;">
 Reduces EV costs to reach cost parity with liquids vehicles by 2050
@@ -1651,9 +1729,9 @@ style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 
 <li>Create a folder in the input directory:
 <code>./gcam-core/input/addons</code>.</li>
 <li>Download the desired cost parity xml file (either <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/ev_cost_parity_high.xml">ev_cost_parity_high.xml</a>
+href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/ev_cost_parity_high.xml">ev_cost_parity_high.xml</a>
 or <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/ev_cost_parity_low.xml">ev_cost_parity_low.xml</a>)
+href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/ev_cost_parity_low.xml">ev_cost_parity_low.xml</a>)
 to the folder.</li>
 <li>To make custom adjustments to the EV cost trajectory, set the
 desired <code>input-cost</code> for each year within
@@ -1694,7 +1772,7 @@ Description
 High
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/ldv_liquids_phaseout_high.xml" style="     ">ldv_liquids_phaseout_high.xml</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/ldv_liquids_phaseout_high.xml" style="     ">ldv_liquids_phaseout_high.xml</a>
 </td>
 <td style="text-align:left;">
 Phases liquids passenger vehicles out of the market by 2050
@@ -1705,7 +1783,7 @@ Phases liquids passenger vehicles out of the market by 2050
 Low
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/ldv_liquids_phaseout_low.xml" style="     ">ldv_liquids_phaseout_low.xml</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/ldv_liquids_phaseout_low.xml" style="     ">ldv_liquids_phaseout_low.xml</a>
 </td>
 <td style="text-align:left;">
 Phases liquids passenger vehicles out of the market by 2065
@@ -1789,9 +1867,9 @@ style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 
 <li>Create a folder in the input directory:
 <code>./gcam-core/input/addons</code>.</li>
 <li>Download the desired CEV phase-out xml file (either <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/ldv_liquids_phaseout_high.xml">ldv_liquids_phaseout_high.xml</a>
+href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/ldv_liquids_phaseout_high.xml">ldv_liquids_phaseout_high.xml</a>
 or <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/ldv_liquids_phaseout_low.xml">ldv_liquids_phaseout_low.xml</a>)
+href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/ldv_liquids_phaseout_low.xml">ldv_liquids_phaseout_low.xml</a>)
 to the folder.</li>
 <li>To adjust the year in which CEVs are completely phased out: within
 each <code>stub-technology</code> tag in the XML, change the
@@ -1926,7 +2004,7 @@ Description
 High
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/industry_aeei_high.xml" style="     ">industry_aeei_high.xml</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/industry_aeei_high.xml" style="     ">industry_aeei_high.xml</a>
 </td>
 <td style="text-align:left;">
 Increases overall efficiency of industrial processes by 1% annually
@@ -1938,7 +2016,7 @@ through 2070
 Low
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/industry_aeei_low.xml" style="     ">industry_aeei_low.xml</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/industry_aeei_low.xml" style="     ">industry_aeei_low.xml</a>
 </td>
 <td style="text-align:left;">
 Increases overall efficiency of industrial processes by 0.5% annually
@@ -2000,9 +2078,9 @@ style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 
 <li>Create a folder in the input directory:
 <code>./gcam-core/input/addons</code>.</li>
 <li>Download the desired industrial aeei xml file (either <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/industry_aeei_high.xml">industry_aeei_high.xml</a>
+href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/industry_aeei_high.xml">industry_aeei_high.xml</a>
 or <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/industry_aeei_low.xml">industry_aeei_low.xml</a>)
+href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/industry_aeei_low.xml">industry_aeei_low.xml</a>)
 to the folder.</li>
 <li>To adjust the rate of industrial energy efficiency increase, change
 the value of the <code>aeei</code> tag for each desired year.</li>
@@ -2043,7 +2121,7 @@ Description
 High
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/industry_h2_high.xml" style="     ">industry_h2_high.xml</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/industry_h2_high.xml" style="     ">industry_h2_high.xml</a>
 </td>
 <td style="text-align:left;">
 Phases hydrogen industrial technologies into the market relatively
@@ -2055,7 +2133,7 @@ quickly
 Low
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/industry_h2_low.xml" style="     ">industry_h2_low.xml</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/industry_h2_low.xml" style="     ">industry_h2_low.xml</a>
 </td>
 <td style="text-align:left;">
 Phases hydrogen industrial technologies into the market relatively more
@@ -2141,9 +2219,9 @@ style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 
 <code>./gcam-core/input/addons</code>.</li>
 <li>Download the desired industrial hydrogen technology shareweight xml
 file (either <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/industry_h2_high.xml">industry_h2_high.xml</a>
+href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/industry_h2_high.xml">industry_h2_high.xml</a>
 or <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/industry_h2_low.xml">industry_h2_low.xml</a>)
+href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/industry_h2_low.xml">industry_h2_low.xml</a>)
 to the folder.</li>
 <li>To adjust how quicly hydrogen technologies are phased into the
 market: within each <code>subsector</code> tag in the XML, change the
@@ -2183,7 +2261,7 @@ Constraints</h1>
 <img src="images/divider.png">
 </p>
 <p>This section describes how to explore and compare the final output
-data using GCAM-specific post-processing tools.</p>
+data using GCAM’s post-processing tools.</p>
 <div id="extract-gcam-data" class="section level2" number="6.1">
 <h2><span class="header-section-number">6.1</span> Extract GCAM
 Data</h2>
@@ -2223,7 +2301,9 @@ high &lt;- read.csv(&quot;../data/Thailand/gcamextractor/High/gcamDataTable_aggC
 low &lt;- read.csv(&quot;../data/Thailand/gcamextractor/Low/gcamDataTable_aggClass1.csv&quot;)
 
 thailand &lt;- dplyr::bind_rows(ref, high, low) %&gt;% 
-  filter(x &gt;= 2020, x &lt;= 2065)</code></pre>
+  filter(x &gt;= 2020, x &lt;= 2065,
+         !grepl(&quot;International&quot;, class))</code></pre>
+<p><br></p>
 </div>
 <div id="plot-figures" class="section level2 tabset" number="6.2">
 <h2 class="tabset"><span class="header-section-number">6.2</span> Plot
@@ -2231,14 +2311,16 @@ Figures</h2>
 <hr />
 <p><code>rchart</code> is a comprehensive charting package to plot and
 compare data across scenarios, regions, sectors and time periods in
-GCAM.</p>
+GCAM. The following tabs show initial diagnostics of the sectoral policy
+scenarios for all of Thailand as well as the MEA area.</p>
 <p><br></p>
 <div id="thailand" class="section level3 tabset" number="6.2.1">
 <h3 class="tabset"><span class="header-section-number">6.2.1</span>
 Thailand</h3>
-<div id="summary-figures" class="section level4" number="6.2.1.1">
-<h4><span class="header-section-number">6.2.1.1</span> Summary
-figures</h4>
+<div id="summary-figures" class="section level4 tabset tabset-pills"
+number="6.2.1.1">
+<h4 class="tabset tabset-pills"><span
+class="header-section-number">6.2.1.1</span> Summary figures</h4>
 <div id="socioeconomic-summary" class="section level5"
 number="6.2.1.1.1">
 <h5><span class="header-section-number">6.2.1.1.1</span> Socioeconomic
@@ -2256,7 +2338,14 @@ socioeconomic &lt;- thailand %&gt;%
                 chart_type = &quot;chart_param_absolute&quot;)
 
 socioeconomic$chart_param_Thailand</code></pre>
-<p><img src="modeling_thailand_files/figure-html/socio-th-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center">
+<img src="modeling_thailand_files/figure-html/socio-th-1.png" alt="GDP, per capita GDP, and population in Thailand from 2020 to 2065. Only the BAU scenario is shown since socioeconomic assumptions are consistent between scenarios." width="100%" />
+<p class="caption">
+GDP, per capita GDP, and population in Thailand from 2020 to 2065. Only
+the BAU scenario is shown since socioeconomic assumptions are consistent
+between scenarios.
+</p>
+</div>
 <p><br> <br></p>
 </div>
 <div id="emissions-by-sector-and-gas" class="section level5"
@@ -2275,7 +2364,13 @@ emissions_line &lt;- thailand %&gt;% filter(param %in% emissions_line_params,
                 size_text = 19)
 
 emissions_line$`chart_param_All of Thailand`</code></pre>
-<p><img src="modeling_thailand_files/figure-html/emiss-line-th-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center">
+<img src="modeling_thailand_files/figure-html/emiss-line-th-1.png" alt="Total national CO2 emissions (left) and GHG emissions (right) in the reference scenario and the low and high policies scenarios" width="100%" />
+<p class="caption">
+Total national CO2 emissions (left) and GHG emissions (right) in the
+reference scenario and the low and high policies scenarios
+</p>
+</div>
 <pre class="r"><code>emissions_params &lt;- c(&quot;emissCO2BySectorNoBio&quot;, &quot;emissGHGBySectorNoBioGWPAR5&quot;, &quot;emissGHGByGasNoBioGWPAR5&quot;)
 
 emissions_bar &lt;- thailand %&gt;% filter(param %in% emissions_params,
@@ -2289,7 +2384,21 @@ emissions_bar &lt;- thailand %&gt;% filter(param %in% emissions_params,
                 chart_type = &quot;class_absolute&quot;)
 
 emissions_bar$`chart_class_All of Thailand`</code></pre>
-<p><img src="modeling_thailand_files/figure-html/emiss-th-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center">
+<img src="modeling_thailand_files/figure-html/emiss-th-1.png" alt="National CO2 emissions by sector, GHG emissions by gas, and GHG emissions by sector in the reference scenario and the low and high policies scenarios" width="100%" />
+<p class="caption">
+National CO2 emissions by sector, GHG emissions by gas, and GHG
+emissions by sector in the reference scenario and the low and high
+policies scenarios
+</p>
+</div>
+<p>One of rchart’s chart types is <code>class_diff_absolute</code>,
+which shows the reference (BAU) scenario on the left and the difference
+between each policy scenario and the reference scenario on the right.
+For example, the <code>policies_high_diffAbs</code> panels in the chart
+below show the difference in CO2 and GHG emissions by sector and gas in
+the <code>policies_high scenario</code> compared to the <code>Ref</code>
+scenario.</p>
 <pre class="r"><code>emissions_diff &lt;- thailand %&gt;% filter(param %in% emissions_params,
                                       region %in% c(&quot;All of Thailand&quot;, &quot;MEA area&quot;)) %&gt;%
   mutate(param = units) %&gt;% 
@@ -2301,7 +2410,14 @@ emissions_bar$`chart_class_All of Thailand`</code></pre>
                 chart_type = &quot;class_diff_absolute&quot;)
 
 emissions_diff$`chart_class_diff_absolute_All of Thailand`</code></pre>
-<p><img src="modeling_thailand_files/figure-html/emiss-diff-th-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center">
+<img src="modeling_thailand_files/figure-html/emiss-diff-th-1.png" alt="Difference in national CO2 and GHG emissions by sector and gas between the reference scenario (left) and the low and high policy scenarios (right)" width="100%" />
+<p class="caption">
+Difference in national CO2 and GHG emissions by sector and gas between
+the reference scenario (left) and the low and high policy scenarios
+(right)
+</p>
+</div>
 <p><br></p>
 </div>
 <div id="final-energy-by-fuel-and-sector" class="section level5"
@@ -2321,21 +2437,36 @@ energy &lt;- thailand %&gt;%
                 scenRef = &quot;Ref&quot;)
 
 energy$`chart_class_All of Thailand`</code></pre>
-<p><img src="modeling_thailand_files/figure-html/energy-th-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center">
+<img src="modeling_thailand_files/figure-html/energy-th-1.png" alt="National final energy consumption by fuel and sector in the reference scenario and the low and high policies scenarios" width="100%" />
+<p class="caption">
+National final energy consumption by fuel and sector in the reference
+scenario and the low and high policies scenarios
+</p>
+</div>
 <p><br></p>
 <pre class="r"><code>energy$`chart_class_diff_absolute_All of Thailand`</code></pre>
-<p><img src="modeling_thailand_files/figure-html/energy-diff-th-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center">
+<img src="modeling_thailand_files/figure-html/energy-diff-th-1.png" alt="Difference in national final energy consumption by fuel and sector between the reference scenario (left) and the low and high policy scenarios (right)" width="100%" />
+<p class="caption">
+Difference in national final energy consumption by fuel and sector
+between the reference scenario (left) and the low and high policy
+scenarios (right)
+</p>
+</div>
 </div>
 <div id="electricity-generation-and-consumption" class="section level5"
 number="6.2.1.1.4">
 <h5><span class="header-section-number">6.2.1.1.4</span> Electricity
 Generation and Consumption</h5>
 <hr />
-<pre class="r"><code>elec_parameters &lt;- c(&quot;elecByTechTWh&quot;, &quot;elecConsumByDemandSectorTWh&quot;)
+<pre class="r"><code>elec_parameters &lt;- c(&quot;elecByTechTWh&quot;, &quot;elecConsumByDemandSectorTWh&quot;,
+                     &quot;emissGHGBySectorPowerGWPAR5&quot;)
 
 electricity &lt;- thailand %&gt;% 
   filter(param %in% elec_parameters,
-         region %in% c(&quot;All of Thailand&quot;, &quot;MEA area&quot;)) %&gt;%
+         region %in% c(&quot;All of Thailand&quot;, &quot;MEA area&quot;),
+         !grepl(&quot;backup|biomass&quot;, class)) %&gt;%
   mutate(param = units) %&gt;%
   rchart::chart(save = F, 
                 show = F,
@@ -2343,24 +2474,41 @@ electricity &lt;- thailand %&gt;%
                 scenRef = &quot;Ref&quot;)
 
 electricity$`chart_class_All of Thailand`</code></pre>
-<p><img src="modeling_thailand_files/figure-html/elec-th-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center">
+<img src="modeling_thailand_files/figure-html/elec-th-1.png" alt="National electricity generation by fuel, electricity consumption by sector, and power sector GHG emissions by gas and fuel in the reference scenario and the low and high policies scenarios" width="100%" />
+<p class="caption">
+National electricity generation by fuel, electricity consumption by
+sector, and power sector GHG emissions by gas and fuel in the reference
+scenario and the low and high policies scenarios
+</p>
+</div>
 <pre class="r"><code>electricity$`chart_class_diff_absolute_All of Thailand`</code></pre>
-<p><img src="modeling_thailand_files/figure-html/elec-diff-th-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center">
+<img src="modeling_thailand_files/figure-html/elec-diff-th-1.png" alt="Difference in national electricity generation by fuel, electricity consumption by sector, and power sector GHG emissions by gas and fuel between the reference scenario (left) and the low and high policy scenarios (right)" width="100%" />
+<p class="caption">
+Difference in national electricity generation by fuel, electricity
+consumption by sector, and power sector GHG emissions by gas and fuel
+between the reference scenario (left) and the low and high policy
+scenarios (right)
+</p>
+</div>
 <p><br></p>
 </div>
 </div>
-<div id="sectoral-details" class="section level4 tabset"
+<div id="sectoral-details" class="section level4 tabset tabset-pills"
 number="6.2.1.2">
-<h4 class="tabset"><span class="header-section-number">6.2.1.2</span>
-Sectoral details</h4>
+<h4 class="tabset tabset-pills"><span
+class="header-section-number">6.2.1.2</span> Sectoral details</h4>
 <div id="buildings" class="section level5" number="6.2.1.2.1">
 <h5><span class="header-section-number">6.2.1.2.1</span> Buildings</h5>
 <pre class="r"><code>buildings_params &lt;- c(&quot;energyFinalSubsecByFuelBuildEJ&quot;, 
-                      &quot;energyFinalSubsecBySectorBuildEJ&quot;)
+                      &quot;energyFinalSubsecBySectorBuildEJ&quot;,
+                      &quot;emissGHGBySectorBuildingsGWPAR5&quot;)
 
 buildings &lt;- thailand %&gt;% 
   filter(param %in% buildings_params,
-         region %in% c(&quot;All of Thailand&quot;, &quot;MEA area&quot;)) %&gt;%
+         region %in% c(&quot;All of Thailand&quot;, &quot;MEA area&quot;),
+         class != &quot;global solar resource&quot;) %&gt;%
   mutate(param = units) %&gt;%
   rchart::chart(save = F, 
                 show = F,
@@ -2368,19 +2516,44 @@ buildings &lt;- thailand %&gt;%
                 scenRef = &quot;Ref&quot;)
 
 buildings$`chart_class_All of Thailand`</code></pre>
-<p><img src="modeling_thailand_files/figure-html/building-th-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center">
+<img src="modeling_thailand_files/figure-html/building-th-1.png" alt="National buildings sector GHG emissions by service, final energy by fuel, and final energy by service in the reference scenario and the low and high policies scenarios" width="100%" />
+<p class="caption">
+National buildings sector GHG emissions by service, final energy by
+fuel, and final energy by service in the reference scenario and the low
+and high policies scenarios
+</p>
+</div>
+<p>We have found that the low-ambition buildings policies (increased AC
+efficiency, phase-out of non-LED lighting, and increased building
+envelope efficiency) result in an increase in energy consumption from
+lighting and cooking until 2050. We will need to investigate the cause
+of this. Additionally, we have found that the majority of GHG emissions
+in the buildings sector are from cooking, so since the buildings
+policies do not address cooking, building emissions do not change much
+in the policy scenarios. We should consider adding cooking-related
+policies to our scenarios.</p>
 <pre class="r"><code>buildings$`chart_class_diff_absolute_All of Thailand`</code></pre>
-<p><img src="modeling_thailand_files/figure-html/building-diff-th-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center">
+<img src="modeling_thailand_files/figure-html/building-diff-th-1.png" alt="Difference in national buildings sector GHG emissions by service, final energy by fuel, and final energy by service between the reference scenario (left) and the low and high policy scenarios (right)" width="100%" />
+<p class="caption">
+Difference in national buildings sector GHG emissions by service, final
+energy by fuel, and final energy by service between the reference
+scenario (left) and the low and high policy scenarios (right)
+</p>
+</div>
 </div>
 <div id="transportation" class="section level5" number="6.2.1.2.2">
 <h5><span class="header-section-number">6.2.1.2.2</span>
 Transportation</h5>
 <pre class="r"><code>transport_params &lt;- c(&quot;transportFreightVMTByFuel&quot;, &quot;transportPassengerVMTByFuel&quot;,
-                      &quot;transportPassengerVMTByTech&quot;, &quot;transportFreightVMTByTech&quot;)
+                      &quot;transportPassengerVMTByTech&quot;, &quot;transportFreightVMTByTech&quot;,
+                      &quot;emissGHGBySectorTransportGWPAR5&quot;)
 
 transport &lt;- thailand %&gt;% 
   filter(param %in% transport_params,
-         region %in% c(&quot;All of Thailand&quot;, &quot;MEA area&quot;)) %&gt;%
+         region %in% c(&quot;All of Thailand&quot;, &quot;MEA area&quot;),
+         !grepl(&quot;International&quot;, class)) %&gt;%
   mutate(param = units) %&gt;%
   rchart::chart(save = F, 
                 show = F,
@@ -2388,17 +2561,32 @@ transport &lt;- thailand %&gt;%
                 scenRef = &quot;Ref&quot;)
 
 transport$`chart_class_All of Thailand`</code></pre>
-<p><img src="modeling_thailand_files/figure-html/transport-th-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center">
+<img src="modeling_thailand_files/figure-html/transport-th-1.png" alt="National transportation GHG emissions by mode and service output by mode and fuel in the reference scenario and the low and high policies scenarios" width="100%" />
+<p class="caption">
+National transportation GHG emissions by mode and service output by mode
+and fuel in the reference scenario and the low and high policies
+scenarios
+</p>
+</div>
 <pre class="r"><code>transport$`chart_class_diff_absolute_All of Thailand`</code></pre>
-<p><img src="modeling_thailand_files/figure-html/transport-diff-th-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center">
+<img src="modeling_thailand_files/figure-html/transport-diff-th-1.png" alt="Difference in national transportation GHG emissions by mode and service output by mode and fuel between the reference scenario (left) and the low and high policy scenarios (right)" width="100%" />
+<p class="caption">
+Difference in national transportation GHG emissions by mode and service
+output by mode and fuel between the reference scenario (left) and the
+low and high policy scenarios (right)
+</p>
+</div>
 </div>
 <div id="industry" class="section level5" number="6.2.1.2.3">
 <h5><span class="header-section-number">6.2.1.2.3</span> Industry</h5>
-<pre class="r"><code>industry_params &lt;- c(&quot;energyFinalSubsecByFuelIndusEJ&quot;)
+<pre class="r"><code>industry_params &lt;- c(&quot;energyFinalSubsecByFuelIndusEJ&quot;, &quot;emissGHGBySectorIndustryGWPAR5&quot;)
 
 industry &lt;- thailand %&gt;% 
   filter(param %in% industry_params,
-         region %in% c(&quot;All of Thailand&quot;, &quot;MEA area&quot;)) %&gt;%
+         region %in% c(&quot;All of Thailand&quot;, &quot;MEA area&quot;),
+         !class %in% c(&quot;biomass&quot;, &quot;industrial feedstocks&quot;, &quot;industrial processes&quot;)) %&gt;%
   mutate(param = units) %&gt;%
   rchart::chart(save = F, 
                 show = F,
@@ -2406,9 +2594,22 @@ industry &lt;- thailand %&gt;%
                 scenRef = &quot;Ref&quot;)
 
 industry$`chart_class_All of Thailand`</code></pre>
-<p><img src="modeling_thailand_files/figure-html/industry-th-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center">
+<img src="modeling_thailand_files/figure-html/industry-th-1.png" alt=" National industrial GHG emissions and final energy consumption by fuel in the reference scenario and the low and high policies scenarios" width="100%" />
+<p class="caption">
+National industrial GHG emissions and final energy consumption by fuel
+in the reference scenario and the low and high policies scenarios
+</p>
+</div>
 <pre class="r"><code>industry$`chart_class_diff_absolute_All of Thailand`</code></pre>
-<p><img src="modeling_thailand_files/figure-html/industry-diff-th-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center">
+<img src="modeling_thailand_files/figure-html/industry-diff-th-1.png" alt="Difference in national industrial GHG emissions and final energy consumption by fuel between the reference scenario (left) and the low and high policy scenarios (right)" width="100%" />
+<p class="caption">
+Difference in national industrial GHG emissions and final energy
+consumption by fuel between the reference scenario (left) and the low
+and high policy scenarios (right)
+</p>
+</div>
 <p><br></p>
 </div>
 </div>
@@ -2416,25 +2617,22 @@ industry$`chart_class_All of Thailand`</code></pre>
 <div id="mea-area" class="section level3 tabset" number="6.2.2">
 <h3 class="tabset"><span class="header-section-number">6.2.2</span> MEA
 Area</h3>
-<div id="summary-figures-1" class="section level4" number="6.2.2.1">
-<h4><span class="header-section-number">6.2.2.1</span> Summary
-figures</h4>
+<div id="summary-figures-1" class="section level4 tabset tabset-pills"
+number="6.2.2.1">
+<h4 class="tabset tabset-pills"><span
+class="header-section-number">6.2.2.1</span> Summary figures</h4>
 <div id="socioeconomic-summary-1" class="section level5"
 number="6.2.2.1.1">
 <h5><span class="header-section-number">6.2.2.1.1</span> Socioeconomic
 summary</h5>
-<pre class="r"><code>socioeconomic_mea &lt;- thailand %&gt;%
-  filter(param %in% socioeconomic_parameters,
-         region %in% c(&quot;Bangkok&quot;, &quot;SamutPrakan&quot;, &quot;Nonthaburi&quot;),
-         scenario == &quot;Ref&quot;) %&gt;%
-  mutate(param = units) %&gt;% 
-  rchart::chart(chart_type = &quot;region_absolute&quot;,
-                save = F, 
-                show = F,
-                size_text = 19)
-
-socioeconomic_mea$chart_region_absolute</code></pre>
-<p><img src="modeling_thailand_files/figure-html/socio-mea-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center">
+<img src="modeling_thailand_files/figure-html/socio-mea-1.png" alt="GDP, per capita GDP, and population in the MEA area from 2020 to 2065. Only the BAU scenario is shown since socioeconomic assumptions are consistent between scenarios." width="100%" />
+<p class="caption">
+GDP, per capita GDP, and population in the MEA area from 2020 to 2065.
+Only the BAU scenario is shown since socioeconomic assumptions are
+consistent between scenarios.
+</p>
+</div>
 <p><br> <br></p>
 </div>
 <div id="emissions-by-sector-and-gas-1" class="section level5"
@@ -2442,10 +2640,29 @@ number="6.2.2.1.2">
 <h5><span class="header-section-number">6.2.2.1.2</span> Emissions by
 sector and gas</h5>
 <hr />
-<pre class="r"><code>emissions_line$`chart_param_MEA area`</code></pre>
-<p><img src="modeling_thailand_files/figure-html/emiss-line-mea-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>emissions$`chart_class_MEA area`</code></pre>
-<pre class="r"><code>emissions$`chart_class_diff_absolute_MEA area`</code></pre>
+<div class="figure" style="text-align: center">
+<img src="modeling_thailand_files/figure-html/emiss-line-mea-1.png" alt="Total MEA area CO2 emissions (left) and GHG emissions (right) in the reference scenario and the low and high policies scenarios" width="100%" />
+<p class="caption">
+Total MEA area CO2 emissions (left) and GHG emissions (right) in the
+reference scenario and the low and high policies scenarios
+</p>
+</div>
+<div class="figure" style="text-align: center">
+<img src="modeling_thailand_files/figure-html/emiss-mea-1.png" alt="MEA area CO2 emissions by sector, GHG emissions by gas, and GHG emissions by sector in the reference scenario and the low and high policies scenarios" width="100%" />
+<p class="caption">
+MEA area CO2 emissions by sector, GHG emissions by gas, and GHG
+emissions by sector in the reference scenario and the low and high
+policies scenarios
+</p>
+</div>
+<div class="figure" style="text-align: center">
+<img src="modeling_thailand_files/figure-html/emiss-diff-mea-1.png" alt="Difference in MEA area CO2 and GHG emissions by sector and gas between the reference scenario (left) and the low and high policy scenarios (right)" width="100%" />
+<p class="caption">
+Difference in MEA area CO2 and GHG emissions by sector and gas between
+the reference scenario (left) and the low and high policy scenarios
+(right)
+</p>
+</div>
 <p><br></p>
 </div>
 <div id="final-energy-by-fuel-and-sector-1" class="section level5"
@@ -2453,10 +2670,21 @@ number="6.2.2.1.3">
 <h5><span class="header-section-number">6.2.2.1.3</span> Final Energy by
 Fuel and Sector</h5>
 <hr />
-<pre class="r"><code>energy$`chart_class_MEA area`</code></pre>
-<p><img src="modeling_thailand_files/figure-html/energy-mea-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>energy$`chart_class_diff_absolute_MEA area`</code></pre>
-<p><img src="modeling_thailand_files/figure-html/energy-diff-mea-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center">
+<img src="modeling_thailand_files/figure-html/energy-mea-1.png" alt="MEA area final energy consumption by fuel and sector in the reference scenario and the low and high policies scenarios" width="100%" />
+<p class="caption">
+MEA area final energy consumption by fuel and sector in the reference
+scenario and the low and high policies scenarios
+</p>
+</div>
+<div class="figure" style="text-align: center">
+<img src="modeling_thailand_files/figure-html/energy-diff-mea-1.png" alt="Difference in MEA area final energy consumption by fuel and sector between the reference scenario (left) and the low and high policy scenarios (right)" width="100%" />
+<p class="caption">
+Difference in MEA area final energy consumption by fuel and sector
+between the reference scenario (left) and the low and high policy
+scenarios (right)
+</p>
+</div>
 <p><br></p>
 </div>
 <div id="electricity-consumption" class="section level5"
@@ -2464,37 +2692,86 @@ number="6.2.2.1.4">
 <h5><span class="header-section-number">6.2.2.1.4</span> Electricity
 Consumption</h5>
 <hr />
-<pre class="r"><code>electricity$`chart_class_MEA area`</code></pre>
-<p><img src="modeling_thailand_files/figure-html/elec-mea-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>electricity$`chart_class_diff_absolute_MEA area`</code></pre>
-<p><img src="modeling_thailand_files/figure-html/elec-diff-mea-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center">
+<img src="modeling_thailand_files/figure-html/elec-mea-1.png" alt="MEA area electricity generation by fuel, electricity consumption by sector, and power sector GHG emissions by gas and fuel in the reference scenario and the low and high policies scenarios" width="100%" />
+<p class="caption">
+MEA area electricity generation by fuel, electricity consumption by
+sector, and power sector GHG emissions by gas and fuel in the reference
+scenario and the low and high policies scenarios
+</p>
+</div>
+<div class="figure" style="text-align: center">
+<img src="modeling_thailand_files/figure-html/elec-diff-mea-1.png" alt="Difference in MEA area electricity generation by fuel, electricity consumption by sector, and power sector GHG emissions by gas and fuel between the reference scenario (left) and the low and high policy scenarios (right)" width="100%" />
+<p class="caption">
+Difference in MEA area electricity generation by fuel, electricity
+consumption by sector, and power sector GHG emissions by gas and fuel
+between the reference scenario (left) and the low and high policy
+scenarios (right)
+</p>
+</div>
 <p><br></p>
 </div>
 </div>
-<div id="sectoral-details-1" class="section level4" number="6.2.2.2">
-<h4><span class="header-section-number">6.2.2.2</span> Sectoral
-details</h4>
+<div id="sectoral-details-1" class="section level4 tabset tabset-pills"
+number="6.2.2.2">
+<h4 class="tabset tabset-pills"><span
+class="header-section-number">6.2.2.2</span> Sectoral details</h4>
 <div id="buildings-1" class="section level5" number="6.2.2.2.1">
 <h5><span class="header-section-number">6.2.2.2.1</span> Buildings</h5>
-<pre class="r"><code>buildings$`chart_class_MEA area`</code></pre>
-<p><img src="modeling_thailand_files/figure-html/building-mea-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>buildings$`chart_class_diff_absolute_MEA area`</code></pre>
-<p><img src="modeling_thailand_files/figure-html/building-diff-mea-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center">
+<img src="modeling_thailand_files/figure-html/building-mea-1.png" alt="MEA area buildings sector GHG emissions by service, final energy by fuel, and final energy by service in the reference scenario and the low and high policies scenarios" width="100%" />
+<p class="caption">
+MEA area buildings sector GHG emissions by service, final energy by
+fuel, and final energy by service in the reference scenario and the low
+and high policies scenarios
+</p>
+</div>
+<div class="figure" style="text-align: center">
+<img src="modeling_thailand_files/figure-html/building-diff-mea-1.png" alt="Difference in MEA area buildings sector GHG emissions by service, final energy by fuel, and final energy by service between the reference scenario (left) and the low and high policy scenarios (right)" width="100%" />
+<p class="caption">
+Difference in MEA area buildings sector GHG emissions by service, final
+energy by fuel, and final energy by service between the reference
+scenario (left) and the low and high policy scenarios (right)
+</p>
+</div>
 </div>
 <div id="transportation-1" class="section level5" number="6.2.2.2.2">
 <h5><span class="header-section-number">6.2.2.2.2</span>
 Transportation</h5>
-<pre class="r"><code>transport$`chart_class_MEA area`</code></pre>
-<p><img src="modeling_thailand_files/figure-html/transport-mea-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>transport$`chart_class_diff_absolute_MEA area`</code></pre>
-<p><img src="modeling_thailand_files/figure-html/transport-diff-mea-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center">
+<img src="modeling_thailand_files/figure-html/transport-mea-1.png" alt="MEA area transportation GHG emissions by mode and service output by mode and fuel in the reference scenario and the low and high policies scenarios" width="100%" />
+<p class="caption">
+MEA area transportation GHG emissions by mode and service output by mode
+and fuel in the reference scenario and the low and high policies
+scenarios
+</p>
+</div>
+<div class="figure" style="text-align: center">
+<img src="modeling_thailand_files/figure-html/transport-diff-mea-1.png" alt="Difference in MEA area transportation GHG emissions by mode and service output by mode and fuel between the reference scenario (left) and the low and high policy scenarios (right)" width="100%" />
+<p class="caption">
+Difference in MEA area transportation GHG emissions by mode and service
+output by mode and fuel between the reference scenario (left) and the
+low and high policy scenarios (right)
+</p>
+</div>
 </div>
 <div id="industry-1" class="section level5" number="6.2.2.2.3">
 <h5><span class="header-section-number">6.2.2.2.3</span> Industry</h5>
-<pre class="r"><code>industry$`chart_class_MEA area`</code></pre>
-<p><img src="modeling_thailand_files/figure-html/industry-mea-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>industry$`chart_class_diff_absolute_MEA area`</code></pre>
-<p><img src="modeling_thailand_files/figure-html/industry-diff-mea-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center">
+<img src="modeling_thailand_files/figure-html/industry-mea-1.png" alt="MEA area industrial GHG emissions and final energy consumption by fuel in the reference scenario and the low and high policies scenarios" width="100%" />
+<p class="caption">
+MEA area industrial GHG emissions and final energy consumption by fuel
+in the reference scenario and the low and high policies scenarios
+</p>
+</div>
+<div class="figure" style="text-align: center">
+<img src="modeling_thailand_files/figure-html/industry-diff-mea-1.png" alt="Difference in MEA area industrial GHG emissions and final energy consumption by fuel between the reference scenario (left) and the low and high policy scenarios (right)" width="100%" />
+<p class="caption">
+Difference in MEA area industrial GHG emissions and final energy
+consumption by fuel between the reference scenario (left) and the low
+and high policy scenarios (right)
+</p>
+</div>
 <p><br></p>
 <!-------------------------->
 <!-------------------------->
@@ -2781,9 +3058,12 @@ Transport</a></strong>
 </p>
 </div>
 <div class="figure" style="text-align: center">
-<img src="modeling_thailand_files/figure-html/national%20transport%20output%20by%20mode-1.png" alt="****" width="75%" />
+<img src="modeling_thailand_files/figure-html/national%20transport%20output%20by%20mode-1.png" alt="**National GHG emissions by transportation mode from local data (left) and GCAM output (right). Local data source: [Ministry of Transport](https://datagov.mot.go.th/dataset/transport-ghg)**" width="75%" />
 <p class="caption">
-****
+<strong>National GHG emissions by transportation mode from local data
+(left) and GCAM output (right). Local data source: <a
+href="https://datagov.mot.go.th/dataset/transport-ghg">Ministry of
+Transport</a></strong>
 </p>
 </div>
 </div>
@@ -2793,6 +3073,15 @@ Transport</a></strong>
 area</h3>
 <div id="electricity-1" class="section level4" number="7.2.2.1">
 <h4><span class="header-section-number">7.2.2.1</span> Electricity</h4>
+<p>We have only found local data in the MEA area for electricity
+consumption. The following plots compare this local data to the GCAM
+reference scenario for total electricity consumption and electricity
+consumption by sector. Note that industrial energy consumption is much
+higher in the GCAM output than the local data in both 2015 and 2020. We
+are currently allocating industrial shares to subregions based on GDP,
+but we plan to adjust this methodology to reflect the fact that the
+Bangkok metropolitan area has less industrial activities than
+non-metropolitan areas despite having a higher per capita GDP.</p>
 <br>
 <div class="figure" style="text-align: center">
 <img src="modeling_thailand_files/figure-html/mea%20consumption%20total%20charts-1.png" alt="**Electricity consumption in the MEA service area from 2005 to 2100 (left) and 2011 to 2020 (right) from GCAM output (blue) and MEA data (red). Local data source: [Energy Policy and Planning office](http://www.eppo.go.th/index.php/en/en-energystatistics/electricity-statistic)**" width="75%" />

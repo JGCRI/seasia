@@ -117,17 +117,18 @@ data.frame(
 ```{r scenarios links table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
 library(kableExtra); library(dplyr)
 
-dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/configuration_seasia_cities_bau.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/configuration_seasia_cities_thailand_low.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/configuration_seasia_cities_thailand_high.xml")
+dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/thailand/configuration_files/configuration_seasia_cities_bau.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/configuration_files/configuration_seasia_cities_low_mea_low_rot.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/configuration-files/configuration_seasia_cities_high_mea_high_rot.xml")
 
 data.frame(
   File = c("configuration_seasia_cities_bau.xml",
            "configuration_seasia_cities_thailand_low.xml",
            "configuration_seasia_cities_thailand_high.xml"),
+  "Scenario Name" = c("Ref", "policies_high", "policies_low"),
   Description = c("Business as Usual Scenario",
-                  "National Policies Scenario (low ambition)",
-                  "National Policies Scenario (high ambition)")) %>%
+                  "Low-ambition sectoral policies in both the MEA area and Rest of Thailand",
+                  "High-ambition sectoral policies in both the MEA area and Rest of Thailand")) %>%
   dplyr::mutate(Location = cell_spec(rep("Link",length(dt_url)),"html",link=dt_url)) %>%
   kable("html", escape = FALSE) %>%
   kable_styling(bootstrap_options = c("bordered","striped", "hover", "condensed", "responsive")) %>%
@@ -169,12 +170,32 @@ data.frame(
                   "Reduce costs of EVs and hybrid vehicles to reach cost parity with traditional liquids vehicles",
                   "Phase out combustion engine vehicles",
                   "Increase average energy efficiency across industrial processes",
-                  "Increase the use of hydrogen in industrial processes")) %>% 
+                  "Increase the use of hydrogen in industrial processes"),
+  "High Ambition" = c("Minimum wind and solar generation correspond with Thailand's LTS goals",
+                      "Coal is phased out by 2050",
+                      "Envelope efficiency increases at an annual rate of 4% (residential)/ 4.5% (commercial)",
+                      "Average AC efficiency is 6 W/W by 2030 and 8 W/W by 2050",
+                      "Non-LED lighting is phased out by 2030",
+                      "EVs reach cost-parity with CEVs by 2030 (passenger)/ 2040 (freight)",
+                      "CEVs are phased out by 2050",
+                      "Industrial energy efficiency increases 1% annually",
+                      "Hydrogen industrial technologies are phased in relatively quickly"),
+  "Low Ambition" = c("Minimum wind and solar generation correspond with 75% of Thailand's LTS goals",
+                     "Coal is phased out by 2065",
+                     "Envelope efficiency increases at an annual rate of 2% (residential)/ 2.5% (commercial)",
+                     "Average AC efficiency is 4.3 W/W by 2030 and 6 W/W by 2050",
+                     "Non-LED lighting is phased out by 2050",
+                     "EVs reach cost-parity with CEVs by 2050 (passenger)/ 2060 (freight)",
+                     "CEVs are phased out by 2065",
+                     "Industrial energy efficiency increases 0.5% annually",
+                     "Hydrogen industrial technologies are phased in relatively more slowly")) %>% 
   kable("html", escape = FALSE) %>% 
   kable_styling(bootstrap_options = c("bordered","striped", "hover", "condensed", "responsive")) %>%
   row_spec(0, background = "#2A2A2A", color = "white")
   
 ```
+
+For each of the above policies, we are modeling a low-ambition and high-ambition version. For details on the differences between these 
 
 ## RE Subsidies
 ***
@@ -182,9 +203,9 @@ data.frame(
 ```{r re subsidy files table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
 library(kableExtra); library(dplyr)
 
-dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/thailand/wind_solar_floors_high.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/wind_solar_floors_low.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/wind_solar_input_subsidies.xml")
+dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/wind_solar_floors_high.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/wind_solar_floors_low.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/wind_solar_input_subsidies.xml")
 
 data.frame(
   Scenario = c("High", "Low", "Both")) %>% 
@@ -261,7 +282,7 @@ One way to set a generation floor for each fuel type in GCAM is to use a subsidy
 
 <p style='margin-left:1em;'>
 1. Create a folder in the input directory eg. `./gcam-core/input/addons`.
-2. Download the desired constraint file (either [wind_solar_floors_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/wind_solar_floors_high.xml) or [wind_solar_floors_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/wind_solar_floors_low.xml)) as well as the subsidy link file [wind_solar_input_subsidies](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/wind_solar_input_subsidies.xml) to the folder.
+2. Download the desired constraint file (either [wind_solar_floors_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/wind_solar_floors_high.xml) or [wind_solar_floors_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/wind_solar_floors_low.xml)) as well as the subsidy link file [wind_solar_input_subsidies](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/wind_solar_input_subsidies.xml) to the folder.
 4. To make custom adjustments, optionally change the following within each `policy-portfolio-standard` tag in the XML:
 </p>
 
@@ -290,9 +311,9 @@ One way to set a generation floor for each fuel type in GCAM is to use a subsidy
 ```{r coal phaseout files table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
 library(kableExtra); library(dplyr)
 
-dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/thailand/no_new_coal.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/coal_shutdown_high.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/coal_shutdown_low.xml")
+dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/no_new_coal.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/coal_shutdown_high.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/coal_shutdown_low.xml")
 
 data.frame(
   Scenario = c("Both", "High", "Low")) %>% 
@@ -374,7 +395,7 @@ There are two steps to phase out coal generation. The first is to prevent any ne
 
 <p style='margin-left:1em;'>
 1. Create a folder in the input directory eg. `./gcam-core/input/addons`.
-2. Download the coal shareweight file [no_new_coal.xml](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/no_new_coal.xml) as well as the desired coal retirement file (either [coal_shutdown_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/coal_shutdown_high.xml) or [coal_shutdown_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/coal_shutdown_low.xml)) to the folder.
+2. Download the coal shareweight file [no_new_coal.xml](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/no_new_coal.xml) as well as the desired coal retirement file (either [coal_shutdown_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/coal_shutdown_high.xml) or [coal_shutdown_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/coal_shutdown_low.xml)) to the folder.
 4. To make custom adjustments to the coal retirement trajectory, optionally change the following within each `stub-technology` tag in the retirement XML:
 </p>
 
@@ -403,8 +424,8 @@ There are two steps to phase out coal generation. The first is to prevent any ne
 ```{r shell files table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
 library(kableExtra); library(dplyr)
 
-dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/thailand/shell_eff_high.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/shell_eff_low.xml")
+dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/shell_eff_high.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/shell_eff_low.xml")
 
 data.frame(
   Scenario = c("High", "Low")) %>% 
@@ -482,7 +503,7 @@ We can use GCAM's `shell-conductance` parameter to represent an increase in the 
 
 <p style='margin-left:1em;'>
 1. Create a folder in the input directory: `./gcam-core/input/addons`.
-2. Download the desired xml file (either [shell_eff_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/shell_eff_high.xml) or [shell_eff_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/shell_eff_low.xml)) to the folder.
+2. Download the desired xml file (either [shell_eff_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/shell_eff_high.xml) or [shell_eff_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/shell_eff_low.xml)) to the folder.
 4. To make custom adjustments: within each `gcam-consumer` tag in the XML, specify the desired `shell-conductance` values for each year.
 5. Save the xml and then point to it in your configuration file by adding the line (replace `high` with `low` as needed): 
 <p style='font-size:0.8em'>
@@ -500,8 +521,8 @@ We can use GCAM's `shell-conductance` parameter to represent an increase in the 
 ```{r ac eff files table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
 library(kableExtra); library(dplyr)
 
-dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/thailand/ac_eff_high.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/ac_eff_low.xml")
+dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/ac_eff_high.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/ac_eff_low.xml")
 
 data.frame(
   Scenario = c("High", "Low")) %>% 
@@ -581,7 +602,7 @@ We can use GCAM's `efficiency` parameter corresponding with the relevant AC tech
 
 <p style='margin-left:1em;'>
 1. Create a folder in the input directory: `./gcam-core/input/addons`.
-2. Download the desired xml file (either [ac_eff_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/ac_eff_high.xml) or [ac_eff_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/ac_eff_low.xml)) to the folder.
+2. Download the desired xml file (either [ac_eff_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/ac_eff_high.xml) or [ac_eff_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/ac_eff_low.xml)) to the folder.
 4. To make custom adjustments: within each period, adjust the efficiency value.
 5. Save the xml and then point to it in your configuration file by adding the line (replace `high` with `low` as needed): 
 <p style='font-size:0.8em'>
@@ -599,8 +620,8 @@ We can use GCAM's `efficiency` parameter corresponding with the relevant AC tech
 ```{r lighting files table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
 library(kableExtra); library(dplyr)
 
-dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/thailand/buildings_led_high.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/buildings_led_low.xml")
+dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/buildings_led_high.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/buildings_led_low.xml")
 
 data.frame(
   Scenario = c("High", "Low")) %>% 
@@ -678,7 +699,7 @@ We can gradually decrease the shareweights of all non-LED residential lighting t
 
 <p style='margin-left:1em;'>
 1. Create a folder in the input directory: `./gcam-core/input/addons`.
-2. Download the desired xml file (either [buildings_led_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/buildings_led_high.xml) or [buildings_led_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/buildings_led_low.xml)) to the folder.
+2. Download the desired xml file (either [buildings_led_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/buildings_led_high.xml) or [buildings_led_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/buildings_led_low.xml)) to the folder.
 4. To adjust the year in which 100% LED lighting is achieved: within each non-LED `stub-technology` tag in the XML, change the `to-year` in the first `interpolation-rule` and the `from-year` in the second. Also change the `year` of the `period` tag in which the `share-weight` is 0.
 5. Save the xml and then point to it in your configuration file by adding the line (replace `high` with `low` as needed): 
 <p style='font-size:0.8em'>
@@ -696,8 +717,8 @@ We can gradually decrease the shareweights of all non-LED residential lighting t
 ```{r EV cost parity files table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
 library(kableExtra); library(dplyr)
 
-dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/thailand/ev_cost_parity_high.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/ev_cost_parity_low.xml")
+dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/ev_cost_parity_high.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/ev_cost_parity_low.xml")
 
 data.frame(
   Scenario = c(rep("High",1), rep("Low",1))) %>% 
@@ -773,7 +794,7 @@ To represent EV promotion, we use an approach that decreases the cost of EVs rel
 
 <p style='margin-left:1em;'>
 1. Create a folder in the input directory: `./gcam-core/input/addons`.
-2. Download the desired cost parity xml file (either [ev_cost_parity_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/ev_cost_parity_high.xml) or [ev_cost_parity_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/ev_cost_parity_low.xml)) to the folder.
+2. Download the desired cost parity xml file (either [ev_cost_parity_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/ev_cost_parity_high.xml) or [ev_cost_parity_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/ev_cost_parity_low.xml)) to the folder.
 4. To make custom adjustments to the EV cost trajectory, set the desired `input-cost` for each year within each`stub-technology` tag in the cost parity xml file.
 5. Save the xml and then point to it in your configuration file by adding the line (replace `high` with `low` as needed): 
 </p>
@@ -793,8 +814,8 @@ To represent EV promotion, we use an approach that decreases the cost of EVs rel
 ```{r CEV phase-out files table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
 library(kableExtra); library(dplyr)
 
-dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/thailand/ldv_liquids_phaseout_high.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/ldv_liquids_phaseout_low.xml")
+dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/ldv_liquids_phaseout_high.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/ldv_liquids_phaseout_low.xml")
 
 data.frame(
   Scenario = c(rep("High",1), rep("Low",1))) %>% 
@@ -869,7 +890,7 @@ To represent a CEV phase-out, we decrease their shareweights over time. The year
 
 <p style='margin-left:1em;'>
 1. Create a folder in the input directory: `./gcam-core/input/addons`.
-2. Download the desired  CEV phase-out xml file (either [ldv_liquids_phaseout_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/ldv_liquids_phaseout_high.xml) or [ldv_liquids_phaseout_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/ldv_liquids_phaseout_low.xml)) to the folder.
+2. Download the desired  CEV phase-out xml file (either [ldv_liquids_phaseout_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/ldv_liquids_phaseout_high.xml) or [ldv_liquids_phaseout_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/ldv_liquids_phaseout_low.xml)) to the folder.
 4. To adjust the year in which CEVs are completely phased out: within each `stub-technology` tag in the XML, change the `to-year` in the first `interpolation-rule` and the `from-year` in the second. Also change the `year` of the `period` tag in which the `share-weight` is 0.
 5. Save the xml and then point to it in your configuration file by adding the line (replace `high` with `low` as needed): 
 </p>
@@ -1007,8 +1028,8 @@ To represent a CEV phase-out, we decrease their shareweights over time. The year
 ```{r industry aeei files table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
 library(kableExtra); library(dplyr)
 
-dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/thailand/industry_aeei_high.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/industry_aeei_low.xml")
+dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/industry_aeei_high.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/industry_aeei_low.xml")
 
 data.frame(
   Scenario = c(rep("High",1), rep("Low",1))) %>% 
@@ -1085,7 +1106,7 @@ To represent a gradual increase in industrial efficiency, we can use GCAM's `aee
 
 <p style='margin-left:1em;'>
 1. Create a folder in the input directory: `./gcam-core/input/addons`.
-2. Download the desired industrial aeei xml file (either [industry_aeei_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/industry_aeei_high.xml) or [industry_aeei_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/industry_aeei_low.xml)) to the folder.
+2. Download the desired industrial aeei xml file (either [industry_aeei_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/industry_aeei_high.xml) or [industry_aeei_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/industry_aeei_low.xml)) to the folder.
 4. To adjust the rate of industrial energy efficiency increase, change the value of the `aeei` tag for each desired year.
 5. Save the xml and then point to it in your configuration file by adding the line (replace `high` with `low` as needed): 
 </p>
@@ -1105,8 +1126,8 @@ To represent a gradual increase in industrial efficiency, we can use GCAM's `aee
 ```{r industry h2 files table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
 library(kableExtra); library(dplyr)
 
-dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/thailand/industry_h2_high.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/industry_h2_low.xml")
+dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/industry_h2_high.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/industry_h2_low.xml")
 
 data.frame(
   Scenario = c(rep("High",1), rep("Low",1))) %>% 
@@ -1181,7 +1202,7 @@ To represent a phase-in of hydrogen technologies, we can gradually increase thei
 
 <p style='margin-left:1em;'>
 1. Create a folder in the input directory: `./gcam-core/input/addons`.
-2. Download the desired industrial hydrogen technology shareweight xml file (either [industry_h2_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/industry_h2_high.xml) or [industry_h2_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/industry_h2_low.xml)) to the folder.
+2. Download the desired industrial hydrogen technology shareweight xml file (either [industry_h2_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/industry_h2_high.xml) or [industry_h2_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/sectoral_policies/industry_h2_low.xml)) to the folder.
 4. To adjust how quicly hydrogen technologies are phased into the market: within each `subsector` tag in the XML, change the `to-year` in the  `interpolation-rule`. Also change the `year` of the `period` tag in which the `share-weight` is 1. Be sure that these years match. An earlier year corresponds to a faster phase-in.
 5. Save the xml and then point to it in your configuration file by adding the line (replace `high` with `low` as needed): 
 </p>
@@ -1209,7 +1230,8 @@ To represent a phase-in of hydrogen technologies, we can gradually increase thei
 <!-------------------------->
 <p align="center"> <img src="images/divider.png"></p>
 
-This section describes how to explore and compare the final output data using GCAM-specific post-processing tools.
+This section describes how to explore and compare the final output data using GCAM's post-processing tools.
+
 
 ## Extract GCAM Data
 ***
@@ -1244,7 +1266,8 @@ high <- read.csv("../data/Thailand/gcamextractor/High/gcamDataTable_aggClass1.cs
 low <- read.csv("../data/Thailand/gcamextractor/Low/gcamDataTable_aggClass1.csv")
 
 thailand <- dplyr::bind_rows(ref, high, low) %>% 
-  filter(x >= 2020, x <= 2065)
+  filter(x >= 2020, x <= 2065,
+         !grepl("International", class))
 
 ```
 
@@ -1264,20 +1287,23 @@ thailand <- thailand %>%
 
 ```
 
+<br>
+
 ## Plot Figures {.tabset}
 ***
 
-`rchart` is a comprehensive charting package to plot and compare data across scenarios, regions, sectors and time periods in GCAM.
+`rchart` is a comprehensive charting package to plot and compare data across scenarios, regions, sectors and time periods in GCAM. The following tabs show initial diagnostics of the sectoral policy scenarios for all of Thailand as well as the MEA area.
 
 <br>
 
 ### Thailand {.tabset}
 
-#### Summary figures
+
+#### Summary figures {.tabset .tabset-pills}
 
 ##### Socioeconomic summary
 
-```{r socio-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 16, fig.height = 6, out.width = "100%"}
+```{r socio-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 16, fig.height = 6, out.width = "100%", fig.cap="GDP, per capita GDP, and population in Thailand from 2020 to 2065. Only the BAU scenario is shown since socioeconomic assumptions are consistent between scenarios."}
 socioeconomic_parameters <- c("pop", "gdp", "gdpPerCapita")
 
 socioeconomic <- thailand %>%
@@ -1300,7 +1326,7 @@ socioeconomic$chart_param_Thailand
 ##### Emissions by sector and gas
 ***
 
-``` {r emiss-line-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 12, fig.height = 6, out.width = "100%"}
+``` {r emiss-line-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 12, fig.height = 6, out.width = "100%", fig.cap="Total national CO2 emissions (left) and GHG emissions (right) in the reference scenario and the low and high policies scenarios"}
 
 emissions_line_params <- c("emissCO2BySector", "emissGHGBySectorGWPAR5")
 
@@ -1317,7 +1343,7 @@ emissions_line$`chart_param_All of Thailand`
 ```
 
 
-``` {r emiss-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 20, fig.height = 18, out.width = "100%"}
+``` {r emiss-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 20, fig.height = 18, out.width = "100%", fig.cap="National CO2 emissions by sector, GHG emissions by gas, and GHG emissions by sector in the reference scenario and the low and high policies scenarios"}
 
 emissions_params <- c("emissCO2BySectorNoBio", "emissGHGBySectorNoBioGWPAR5", "emissGHGByGasNoBioGWPAR5")
 
@@ -1335,7 +1361,9 @@ emissions_bar$`chart_class_All of Thailand`
 
 ```
 
-``` {r emiss-diff-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 32, fig.height = 17, out.width = "100%"}
+One of rchart's chart types is `class_diff_absolute`, which shows the reference (BAU) scenario on the left and the difference between each policy scenario and the reference scenario on the right. For example, the `policies_high_diffAbs` panels in the chart below show the difference in CO2 and GHG emissions by sector and gas in the `policies_high scenario` compared to the `Ref` scenario.
+
+``` {r emiss-diff-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 32, fig.height = 17, out.width = "100%", fig.cap="Difference in national CO2 and GHG emissions by sector and gas between the reference scenario (left) and the low and high policy scenarios (right)"}
 
 emissions_diff <- thailand %>% filter(param %in% emissions_params,
                                       region %in% c("All of Thailand", "MEA area")) %>%
@@ -1357,7 +1385,7 @@ emissions_diff$`chart_class_diff_absolute_All of Thailand`
 ##### Final Energy by Fuel and Sector
 ***
 
-```{r energy-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 20, fig.height = 12, out.width = "100%"}
+```{r energy-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 20, fig.height = 12, out.width = "100%", fig.cap="National final energy consumption by fuel and sector in the reference scenario and the low and high policies scenarios"}
 energy_parameters <- c("energyFinalConsumBySecEJ", "energyFinalByFuelEJ")
 
 energy <- thailand %>% 
@@ -1374,7 +1402,7 @@ energy$`chart_class_All of Thailand`
 
 <br>
 
-``` {r energy-diff-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 32, fig.height = 12, out.width = "100%"}
+``` {r energy-diff-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 32, fig.height = 12, out.width = "100%", fig.cap="Difference in national final energy consumption by fuel and sector between the reference scenario (left) and the low and high policy scenarios (right)"}
 
 
 energy$`chart_class_diff_absolute_All of Thailand`
@@ -1384,12 +1412,14 @@ energy$`chart_class_diff_absolute_All of Thailand`
 ##### Electricity Generation and Consumption
 ***
 
-```{r elec-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 20, fig.height = 12, out.width = "100%"}
-elec_parameters <- c("elecByTechTWh", "elecConsumByDemandSectorTWh")
+```{r elec-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 20, fig.height = 18, out.width = "100%", fig.cap="National electricity generation by fuel, electricity consumption by sector, and power sector GHG emissions by gas and fuel in the reference scenario and the low and high policies scenarios"}
+elec_parameters <- c("elecByTechTWh", "elecConsumByDemandSectorTWh",
+                     "emissGHGBySectorPowerGWPAR5")
 
 electricity <- thailand %>% 
   filter(param %in% elec_parameters,
-         region %in% c("All of Thailand", "MEA area")) %>%
+         region %in% c("All of Thailand", "MEA area"),
+         !grepl("backup|biomass", class)) %>%
   mutate(param = units) %>%
   rchart::chart(save = F, 
                 show = F,
@@ -1400,8 +1430,7 @@ electricity$`chart_class_All of Thailand`
 
 ```
 
-``` {r elec-diff-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 32, fig.height = 12, out.width = "100%"}
-
+``` {r elec-diff-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 32, fig.height = 12, out.width = "100%", fig.cap = "Difference in national electricity generation by fuel, electricity consumption by sector, and power sector GHG emissions by gas and fuel between the reference scenario (left) and the low and high policy scenarios (right)"}
 
 electricity$`chart_class_diff_absolute_All of Thailand`
 
@@ -1409,16 +1438,19 @@ electricity$`chart_class_diff_absolute_All of Thailand`
 
 <br>
 
-#### Sectoral details {.tabset}
+#### Sectoral details {.tabset .tabset-pills}
 
 ##### Buildings
-```{r building-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 21, fig.height = 12, out.width = "100%"}
+
+```{r building-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 21, fig.height = 18, out.width = "100%", fig.cap="National buildings sector GHG emissions by service, final energy by fuel, and final energy by service in the reference scenario and the low and high policies scenarios"}
 buildings_params <- c("energyFinalSubsecByFuelBuildEJ", 
-                      "energyFinalSubsecBySectorBuildEJ")
+                      "energyFinalSubsecBySectorBuildEJ",
+                      "emissGHGBySectorBuildingsGWPAR5")
 
 buildings <- thailand %>% 
   filter(param %in% buildings_params,
-         region %in% c("All of Thailand", "MEA area")) %>%
+         region %in% c("All of Thailand", "MEA area"),
+         class != "global solar resource") %>%
   mutate(param = units) %>%
   rchart::chart(save = F, 
                 show = F,
@@ -1428,20 +1460,24 @@ buildings <- thailand %>%
 buildings$`chart_class_All of Thailand`
 ```
 
-```{r building-diff-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 38, fig.height = 14, out.width = "100%"}
+We have found that the low-ambition buildings policies (increased AC efficiency, phase-out of non-LED lighting, and increased building envelope efficiency) result in an increase in energy consumption from lighting and cooking until 2050. We will need to investigate the cause of this. Additionally, we have found that the majority of GHG emissions in the buildings sector are from cooking, so since the buildings policies do not address cooking, building emissions do not change much in the policy scenarios. We should consider adding cooking-related policies to our scenarios.
+
+```{r building-diff-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 38, fig.height = 21, out.width = "100%", fig.cap="Difference in national buildings sector GHG emissions by service, final energy by fuel, and final energy by service between the reference scenario (left) and the low and high policy scenarios (right)"}
 
 buildings$`chart_class_diff_absolute_All of Thailand`
 ```
 
 
 ##### Transportation
-```{r transport-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 21, fig.height = 25, out.width = "100%"}
+```{r transport-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 21, fig.height = 31, out.width = "100%", fig.cap="National transportation GHG emissions by mode and service output by mode and fuel in the reference scenario and the low and high policies scenarios"}
 transport_params <- c("transportFreightVMTByFuel", "transportPassengerVMTByFuel",
-                      "transportPassengerVMTByTech", "transportFreightVMTByTech")
+                      "transportPassengerVMTByTech", "transportFreightVMTByTech",
+                      "emissGHGBySectorTransportGWPAR5")
 
 transport <- thailand %>% 
   filter(param %in% transport_params,
-         region %in% c("All of Thailand", "MEA area")) %>%
+         region %in% c("All of Thailand", "MEA area"),
+         !grepl("International", class)) %>%
   mutate(param = units) %>%
   rchart::chart(save = F, 
                 show = F,
@@ -1451,18 +1487,19 @@ transport <- thailand %>%
 transport$`chart_class_All of Thailand`
 ```
 
-```{r transport-diff-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 34, fig.height = 24, out.width = "100%"}
+```{r transport-diff-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 34, fig.height = 30, out.width = "100%", fig.cap="Difference in national transportation GHG emissions by mode and service output by mode and fuel between the reference scenario (left) and the low and high policy scenarios (right)"}
 
 transport$`chart_class_diff_absolute_All of Thailand`
 ```
 
 ##### Industry
-```{r industry-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 15, fig.height = 5, out.width = "100%"}
-industry_params <- c("energyFinalSubsecByFuelIndusEJ")
+```{r industry-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 20, fig.height = 12, out.width = "100%", fig.cap=" National industrial GHG emissions and final energy consumption by fuel in the reference scenario and the low and high policies scenarios"}
+industry_params <- c("energyFinalSubsecByFuelIndusEJ", "emissGHGBySectorIndustryGWPAR5")
 
 industry <- thailand %>% 
   filter(param %in% industry_params,
-         region %in% c("All of Thailand", "MEA area")) %>%
+         region %in% c("All of Thailand", "MEA area"),
+         !class %in% c("biomass", "industrial feedstocks", "industrial processes")) %>%
   mutate(param = units) %>%
   rchart::chart(save = F, 
                 show = F,
@@ -1472,7 +1509,7 @@ industry <- thailand %>%
 industry$`chart_class_All of Thailand`
 ```
 
-```{r industry-diff-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 32, fig.height = 6, out.width = "100%"}
+```{r industry-diff-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 32, fig.height = 12, out.width = "100%", fig.cap = "Difference in national industrial GHG emissions and final energy consumption by fuel between the reference scenario (left) and the low and high policy scenarios (right)"}
 
 industry$`chart_class_diff_absolute_All of Thailand`
 ```
@@ -1481,11 +1518,11 @@ industry$`chart_class_diff_absolute_All of Thailand`
 
 ### MEA Area {.tabset}
 
-#### Summary figures
+#### Summary figures {.tabset .tabset-pills}
 
 ##### Socioeconomic summary
 
-```{r socio-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 16, fig.height = 6, out.width = "100%"}
+```{r socio-mea, results = 'hide', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 16, fig.height = 6, out.width = "100%", fig.cap="GDP, per capita GDP, and population in the MEA area from 2020 to 2065. Only the BAU scenario is shown since socioeconomic assumptions are consistent between scenarios."}
 
 socioeconomic_mea <- thailand %>%
   filter(param %in% socioeconomic_parameters,
@@ -1507,22 +1544,22 @@ socioeconomic_mea$chart_region_absolute
 ##### Emissions by sector and gas
 ***
 
-``` {r emiss-line-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 12, fig.height = 6, out.width = "100%"}
+``` {r emiss-line-mea, results = 'hide', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 12, fig.height = 6, out.width = "100%", fig.cap="Total MEA area CO2 emissions (left) and GHG emissions (right) in the reference scenario and the low and high policies scenarios"}
 
 emissions_line$`chart_param_MEA area`
 
 ```
 
 
-``` {r emiss-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 20, fig.height = 18, out.width = "100%"}
+``` {r emiss-mea, results = 'hide', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 20, fig.height = 18, out.width = "100%",  fig.cap="MEA area CO2 emissions by sector, GHG emissions by gas, and GHG emissions by sector in the reference scenario and the low and high policies scenarios"}
 
-emissions$`chart_class_MEA area`
+emissions_bar$`chart_class_MEA area`
 
 ```
 
-``` {r emiss-diff-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 32, fig.height = 18, out.width = "100%"}
+``` {r emiss-diff-mea, results = 'hide', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 32, fig.height = 18, out.width = "100%", fig.cap="Difference in MEA area CO2 and GHG emissions by sector and gas between the reference scenario (left) and the low and high policy scenarios (right)"}
 
-emissions$`chart_class_diff_absolute_MEA area`
+emissions_diff$`chart_class_diff_absolute_MEA area`
 
 ```
 
@@ -1532,12 +1569,12 @@ emissions$`chart_class_diff_absolute_MEA area`
 ##### Final Energy by Fuel and Sector
 ***
 
-```{r energy-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 20, fig.height = 12, out.width = "100%"}
+```{r energy-mea, results = 'hide', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 20, fig.height = 12, out.width = "100%", fig.cap="MEA area final energy consumption by fuel and sector in the reference scenario and the low and high policies scenarios"}
 
 energy$`chart_class_MEA area`
 ```
 
-``` {r energy-diff-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 32, fig.height = 12, out.width = "100%"}
+``` {r energy-diff-mea, results = 'hide', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 32, fig.height = 12, out.width = "100%", fig.cap="Difference in MEA area final energy consumption by fuel and sector between the reference scenario (left) and the low and high policy scenarios (right)"}
 
 
 energy$`chart_class_diff_absolute_MEA area`
@@ -1549,13 +1586,13 @@ energy$`chart_class_diff_absolute_MEA area`
 ##### Electricity Consumption
 ***
 
-```{r elec-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 20, fig.height = 6, out.width = "100%"}
+```{r elec-mea, results = 'hide', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 20, fig.height = 6, out.width = "100%", fig.cap="MEA area electricity generation by fuel, electricity consumption by sector, and power sector GHG emissions by gas and fuel in the reference scenario and the low and high policies scenarios"}
 
 electricity$`chart_class_MEA area`
 
 ```
 
-``` {r elec-diff-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 32, fig.height = 6,out.width = "100%"}
+``` {r elec-diff-mea, results = 'hide', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 32, fig.height = 6,out.width = "100%",fig.cap = "Difference in MEA area electricity generation by fuel, electricity consumption by sector, and power sector GHG emissions by gas and fuel between the reference scenario (left) and the low and high policy scenarios (right)"}
 
 
 electricity$`chart_class_diff_absolute_MEA area`
@@ -1564,37 +1601,37 @@ electricity$`chart_class_diff_absolute_MEA area`
 
 <br>
 
-#### Sectoral details
+#### Sectoral details {.tabset .tabset-pills}
 
 ##### Buildings
-```{r building-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 21, fig.height = 12, out.width = "100%"}
+```{r building-mea, results = 'hide', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 21, fig.height = 12, out.width = "100%", fig.cap="MEA area buildings sector GHG emissions by service, final energy by fuel, and final energy by service in the reference scenario and the low and high policies scenarios"}
 
 buildings$`chart_class_MEA area`
 ```
 
-```{r building-diff-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 38, fig.height = 14, out.width = "100%"}
+```{r building-diff-mea, results = 'hide', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 38, fig.height = 14, out.width = "100%", fig.cap="Difference in MEA area buildings sector GHG emissions by service, final energy by fuel, and final energy by service between the reference scenario (left) and the low and high policy scenarios (right)"}
 
 buildings$`chart_class_diff_absolute_MEA area`
 ```
 
 ##### Transportation
-```{r transport-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 21, fig.height = 25, out.width = "100%"}
+```{r transport-mea, results = 'hide', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 21, fig.height = 25, out.width = "100%", fig.cap="MEA area transportation GHG emissions by mode and service output by mode and fuel in the reference scenario and the low and high policies scenarios"}
 
 transport$`chart_class_MEA area`
 ```
 
-```{r transport-diff-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 34, fig.height = 24, out.width = "100%"}
+```{r transport-diff-mea, results = 'hide', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 34, fig.height = 24, out.width = "100%", fig.cap="Difference in MEA area transportation GHG emissions by mode and service output by mode and fuel between the reference scenario (left) and the low and high policy scenarios (right)"}
 
 transport$`chart_class_diff_absolute_MEA area`
 ```
 
 ##### Industry
-```{r industry-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 15, fig.height = 5, out.width = "100%"}
+```{r industry-mea, results = 'hide', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 15, fig.height = 5, out.width = "100%", fig.cap="MEA area industrial GHG emissions and final energy consumption by fuel in the reference scenario and the low and high policies scenarios"}
 
 industry$`chart_class_MEA area`
 ```
 
-```{r industry-diff-mea, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 32, fig.height = 6, out.width = "100%"}
+```{r industry-diff-mea, results = 'hide', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 32, fig.height = 6, out.width = "100%", fig.cap = "Difference in MEA area industrial GHG emissions and final energy consumption by fuel between the reference scenario (left) and the low and high policy scenarios (right)"}
 
 industry$`chart_class_diff_absolute_MEA area`
 ```
@@ -1799,7 +1836,7 @@ all_national_co2_emissions_sector <- dplyr::bind_rows(
 
 <br>
 
-```{r national co2 emissions total, fig.dim=c(8,4), fig.cap="**National total CO2 emissions from 1986 to 2100 (left) and 1986 to 2015 (right) from GCAM output (blue) and local data (red). Local data source: [Energy Policy and Planning Office](http://www.eppo.go.th/index.php/en/en-energystatistics/co2-statistic)**"}
+```{r national co2 emissions total, fig.dim=c(8,3), fig.cap="**National total CO2 emissions from 1986 to 2100 (left) and 1986 to 2015 (right) from GCAM output (blue) and local data (red). Local data source: [Energy Policy and Planning Office](http://www.eppo.go.th/index.php/en/en-energystatistics/co2-statistic)**"}
 
 # 1986 to 2015
 national_co2_emissions_plot_local <- rchart::chart( dplyr::filter(
@@ -2152,7 +2189,7 @@ ggpubr::ggarrange(p1, p2, nrow = 1, common.legend = T, legend = "bottom") +
   ggplot2::theme(plot.margin = ggplot2::unit(c(0,0,0.5,0), "cm"))
 ```
 
-```{r national transport output by mode, fig.dim=c(9,4), fig.cap="****"}
+```{r national transport output by mode, fig.dim=c(9,4), fig.cap="**National GHG emissions by transportation mode from local data (left) and GCAM output (right). Local data source: [Ministry of Transport](https://datagov.mot.go.th/dataset/transport-ghg)**"}
 
 # 2005 to 2020 final energy by fuel (gcam and local)
 national_transport_ghg_chart <- rchart::chart(dplyr::filter(
@@ -2167,6 +2204,8 @@ national_transport_ghg_chart$chart_class +
 ### MEA area {.tabset}
 
 #### Electricity 
+
+We have only found local data in the MEA area for electricity consumption. The following plots compare this local data to the GCAM reference scenario for total electricity consumption and electricity consumption by sector. Note that industrial energy consumption is much higher in the GCAM output than the local data in both 2015 and 2020. We are currently allocating industrial shares to subregions based on GDP, but we plan to adjust this methodology to reflect the fact that the Bangkok metropolitan area has less industrial activities than non-metropolitan areas despite having a higher per capita GDP.
 
 ```{r elec consump mea data prep}
 # read in local data
