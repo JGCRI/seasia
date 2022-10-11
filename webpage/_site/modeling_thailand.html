@@ -13,7 +13,7 @@
 
 <title>Modeling - Thailand</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -64,6 +64,7 @@ if (window.hljs) {
 
 
 
+
 <link rel="stylesheet" href="style.css" type="text/css" />
 
 
@@ -88,6 +89,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -313,7 +317,7 @@ div.tocify {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -2195,24 +2199,46 @@ Description
 <tbody>
 <tr>
 <td style="text-align:left;">
-SCENARIO_NAME_1
+Net-Zero CO2
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/FILENAME_1" style="     ">FILENAME_1</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/NetZeroC_thailand_2050" style="     ">NetZeroC_thailand_2050</a>
 </td>
 <td style="text-align:left;">
-DESCRIPTION OF FILE 1
+CO2 emissions constraint
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-SCENARIO_NAME_2
+Net-Zero CO2
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/FILENAME_2" style="     ">FILENAME_2</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/Thailand_luc" style="     ">Thailand_luc</a>
 </td>
 <td style="text-align:left;">
-DESCRIPTION OF FILE 2
+GHG link file for land use change emissions
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Net-Zero CO2
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/NetZeroC_ROW_2050" style="     ">NetZeroC_ROW_2050</a>
+</td>
+<td style="text-align:left;">
+CO2 emissions constraint ROW
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Net-Zero CO2
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/ROW_luc" style="     ">ROW_luc</a>
+</td>
+<td style="text-align:left;">
+GHG link file for land use change emissions for ROW
 </td>
 </tr>
 </tbody>
@@ -2227,8 +2253,9 @@ style="background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 
 <b>Goal</b>
 </h3>
 <p style="margin-left:1em;">
-<!---description of the goal goes here--->
-DESCRIPTION OF GOAL
+The aim of this example is to demonstrate how to apply an economy-wide
+emissions constraint for Thailand in accord with its national goals:
+net-zero CO2 by 2050 and net-zero GHG emissions by 2065.
 </p>
 <p></span></p>
 </div>
@@ -2243,8 +2270,9 @@ style="background-color:#fffae0; border-left: solid #1f1f1f 4px; border-radius: 
 <b>Approach</b>
 </h3>
 <p style="margin-left:1em;">
-<!---description of the approach goes here--->
-DESCRIPTION OF APPROACH
+<p>In GCAM, an emissions constraint can be accomplished by using a
+<code>ghgpolicy</code>, which is a special case of
+policy-portfolio-standard that applies to emissions.</p>
 </p>
 <p></span></p>
 </div>
@@ -2256,12 +2284,29 @@ DESCRIPTION OF APPROACH
 style="background-color:#EFFFC9; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
 <p><span></p>
 <h3 style="text-align:center; font-size:24px">
-<b>Background - Transportation Cost</b>
+<b>Background</b>
 </h3>
-<!---background information goes here--->
 <p style="margin-left:1em;">
-BACKGROUND INFORMATION ABOUT EMISSIONS CONSTRAINTS, INCLUDING LINK(S) TO
-RELEVANT PARTS OF GCAM DOCUMENTATION
+To implement a <code>ghgpolicy</code> in GCAM, users specify the total
+amount of emissions (CO2 or GHG) in a time period. GCAM will then
+calculate the price needed to reach the constraint in each period. GCAM
+finds the least-cost pathway in terms of technology deployment to
+satisfy the emissions constraint. An economy-wide constraint can be used
+by itself, or in combination with additional sectoral policies described
+above. There are some important considerations: (1) what GHG’s are
+included in the constraint (only CO2?)?, (2) What is the time period for
+the constraint (e.g., 2050, 2065)?, and (3) What are the emissions in
+each period (e.g. will emissions decline linearly to zero?)?, (4) Will
+land use change emissions be included in the constraint?, and (4) what
+assumptions are made for emissions in the rest of the world? This latter
+point is important when considering “carbon leakage,” that is, how
+restrictions in emissions in one geography may lead to a shift in
+carbon-intensive activities to other locations. Below, we will describe
+how to implement a CO2 emissions constraint. See the GCAM Policies
+documentation <a
+href="http://jgcri.github.io/gcam-doc/policies.html#emissions-policies">GCAM
+Policies</a> documentation for more information on how to implement
+these options.
 </p>
 <p></span></p>
 </div>
@@ -2277,23 +2322,50 @@ style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 
 </h3>
 <p style="margin-left:1em;">
 <ol style="list-style-type: decimal">
-<li>Create a folder in the input directory:
+<li><p>Create a folder in the input directory:
 <code>./gcam-core/input/addons</code>.
-<!---include links to example XMLs here---></li>
-<li>Download the emissions constraint xml file(s) <a
-href="LINK_TO_FILE_1">FILENAME_1</a> and <a
-href="LINK_TO_FILE_2">FILENAME_2</a>) to the folder.
-<!---add description of customization---></li>
-<li>DESCRIBE HOW TO CHANGE RELEVANT PARAMETERS (I.E. NET-ZERO YEAR,
-etc.)</li>
-<li>Save the xml files and then point to them in your configuration file
-by adding the line:</li>
+<!---include links to example XMLs here---></p></li>
+<li><p>Download the emissions constraint xml file(s) for Thailand <a
+href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/thailand_carbonzero_2050">NetZeroC_thailand_2050</a>
+and <a
+href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/thailand_carbonzero_2050">Thailand_luc</a>),
+as well as those for the rest of the world (ROW), <a
+href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/CO2_net0_constraint_global_ROW_noThailand0">NetZeroC_ROW_2050</a>
+and <a
+href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/ROW_LUC_noThailand">ROW_luc</a>.</p></li>
+<li><p>The first file, NetZeroC_thailand_2050.xml, specifies emissions
+in units of tonnes of carbon (not CO2) each period. One way to determine
+the emissions constraint for each period is to examine the CO2 emissions
+in the reference case (See ModelInterface: “CO2 emissions by region”).
+Based on the reference emissions, one can create an emissions constraint
+accordingly. In this case, we want to reach net-zero CO2 emissions in
+2050. The example specifies a linear decrease from 2025 to 2050 (A
+negative number in 2050 is used instead of 0, because this is easier for
+GCAM to solve). Other emissions constraints can be adopted instead of
+net-zero CO2 emissions in 2050.</p></li>
+<li><p>One needs to decide whether and how land use change emissions are
+incorporated into the constraint. The Thailand_luc.xml specifies how
+land use change CO2 emissions (LUC-CO2) are linked to the ghgpolicy
+(“CO2”). There are two parameters: <code>price-adjust</code> and
+<code>demand-adjust</code>. Price-adjust is used to convert prices. A
+price-adjust of 1.0 for LUC-CO2 means the price on LUC-CO2 emissions is
+the same as the price applied to fossil fuel and industry CO2 emissions.
+A demand-adjust of 0 means that LUC-CO2 emissions are not counted in the
+emissions constraint.These two parameters can be adjusted. In the
+sample, files we have a price-adjust of 1, and a demand-adjust of 0. The
+same files for the rest of the world (ROW) make sure that the same
+constraint is applied outside of Thailand in order to prevent carbon
+leakage.</p></li>
+<li><p>Save the xml files and then point to them in your configuration
+file by adding the line:</p></li>
 </ol>
 </p>
 <p style="font-size:0.8em">
 <!---insert exmaple XML filenames--->
-<code>&lt;Value name = "scen"&gt;../input/addons/thailand/FILENAME_1&lt;/Value&gt;</code>
-<code>&lt;Value name = "scen"&gt;../input/addons/thailand/FILENAME_2&lt;/Value&gt;</code>
+<code>&lt;Value name = "scen"&gt;../input/addons/thailand/NetZeroC_thailand_2050.xml&lt;/Value&gt;</code>
+<code>&lt;Value name = "scen"&gt;../input/addons/thailand/Thailand_luc.xml&lt;/Value&gt;</code>
+<code>&lt;Value name = "scen"&gt;../input/addons/thailand/NetZeroC_ROW_2050.xml&lt;/Value&gt;</code>
+<code>&lt;Value name = "scen"&gt;../input/addons/thailand/ROW_luc.xml&lt;/Value&gt;</code>
 </p>
 </p>
 <p></span></p>
