@@ -701,7 +701,7 @@ data <- gcamextractor::readgcam(gcamdatabase = sample_path,
                                 regionsSelect = regions,
                                 regionsAggregate = list(regions),
                                 regionsAggregateNames = "All of Malaysia",
-                                folder = "..data/malaysia/gcamextractor")
+                                folder = "../data/malaysia/gcamextractor")
 
 ```
 
@@ -745,11 +745,16 @@ To enlarge a figure, please click directly on the image. Click on the image agai
 <br>
 
 <!-------------------------->
-### Socioeconomic Summary {.tabset}
+### Summary Figures {.tabset}
 <!-------------------------->
 ***
 
-#### Malaysia vs Kuala Lumpur
+<!-------------------------->
+#### Socioeconomic Summary {.tabset}
+<!-------------------------->
+***
+
+##### Malaysia vs Kuala Lumpur
 
 ```{r rchart-socio, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 16, fig.height = 8, out.width = "100%"}
 socioeconomic_parameters <- c("pop", "gdp", "gdpPerCapita")
@@ -769,7 +774,7 @@ socioeconomic$chart_region_absolute
 
 <br> 
 
-#### Malaysia
+##### Malaysia
 
 ```{r rchart-socio-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 16, fig.height = 8, out.width = "100%"}
 
@@ -791,7 +796,7 @@ socioeconomic_my$chart_param
 <br>
 
 
-#### Kuala Lumpur
+##### Kuala Lumpur
 
 
 ```{r rchart-socio-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 16, fig.height = 8, out.width = "100%"}
@@ -813,11 +818,11 @@ socioeconomic_kl$chart_param
 <br>
 
 <!-------------------------->
-### Emissions by Sector and Gas {.tabset}
+#### Emissions by Sector and Gas {.tabset}
 <!-------------------------->
 ***
 
-#### Malaysia vs Kuala Lumpur
+##### Malaysia vs Kuala Lumpur
 
 ``` {r rchart-emiss, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
 co2 <- malaysia %>% filter(param == "emissCO2BySectorNoBio",
@@ -832,11 +837,10 @@ malaysia_emissions <- bind_rows(co2, ghg)
 
 ```
 
-``` {r rchart-emiss-plot, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.height = 7}
+``` {r rchart-emiss-plot, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
 emissions <- malaysia_emissions %>%
   mutate(param = units) %>%
   rchart::chart(folder = "rchart/emissions_by_sector",
-                chart_type = "class_absolute",
                 save = F, 
                 show = F,
                 size_text = 10)
@@ -844,7 +848,7 @@ emissions <- malaysia_emissions %>%
 emissions$chart_class_Ref
 ```
 
-``` {r rchart-emiss-gas, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
+``` {r rchart-emiss-gas, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.height = 9, fig.width = 9, out.width = "100%"}
 co2_gas <- co2 %>%
   mutate(class = "CO2",
          param = "emissGHGByGasNoBioGWPAR5")
@@ -857,7 +861,7 @@ ghg_gas <- malaysia %>%
 malaysia_emissions_gas <- bind_rows(co2_gas, ghg_gas)
 ```
 
-``` {r rchart-emiss-gas-plot, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
+``` {r rchart-emiss-gas-plot, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 12, fig.height = 6, out.width = "100%"}
 gas <- malaysia_emissions_gas %>%
   mutate(param = units) %>%
   rchart::chart(folder = "rchart/emissions_by_gas",
@@ -871,7 +875,7 @@ gas$chart_class_Ref
 
 <br>
 
-#### Malaysia
+##### Malaysia
 
 ``` {r rchart-emiss-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
 co2_my <- malaysia %>% 
@@ -896,7 +900,6 @@ emissions_my_plot <- my_emissions %>%
   rchart::chart(folder = "rchart/emissions_by_sector",
                 save = F, 
                 show = F,
-                size_text = 12,
                 scenRef = "Ref")
 
 emissions_my_plot$chart_param
@@ -912,7 +915,7 @@ ghg_gas_my <- malaysia %>%
 my_emissions_gas <- bind_rows(ghg_gas_my, my_emissions)
 ```
 
-``` {r rchart-emiss-gas-plot-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 12, fig.height = 6, out.width = "100%"}
+``` {r rchart-emiss-gas-plot-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 24, fig.height = 12, out.width = "100%"}
 gas_my <- my_emissions_gas %>%
   rchart::chart(folder = "rchart/emissions_by_gas",
                 save = F, 
@@ -926,9 +929,9 @@ gas_my$chart_class_diff_absolute
 
 <br>
 
-#### Kuala Lumpur
+##### Kuala Lumpur
 
-``` {r rchart-emiss-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 12, fig.height = 6, out.width = "100%"}
+``` {r rchart-emiss-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
 co2_kl <- malaysia %>% filter(param == "emissCO2BySectorNoBio",
                            region == "KualaLumpur") %>%
   mutate(value = value * 3.67,
@@ -964,7 +967,7 @@ ghg_gas_kl <- malaysia %>%
 kl_emissions_gas <- bind_rows(ghg_gas_kl, kl_emissions)
 ```
 
-``` {r rchart-gas-plot-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 12, fig.height = 6, out.width = "100%"}
+``` {r rchart-gas-plot-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 10, fig.height = 6, out.width = "100%"}
 gas_kl <- kl_emissions_gas %>%
   rchart::chart(folder = "rchart/emissions_by_gas",
                 save = F, 
@@ -979,11 +982,11 @@ gas_kl$chart_class_diff_absolute
 <br>
 
 <!-------------------------->
-### Primary Energy by Fuel {.tabset}
+#### Primary Energy by Fuel {.tabset}
 <!-------------------------->
 ***
 
-#### Malaysia vs Kuala Lumpur
+##### Malaysia vs Kuala Lumpur
 
 ```{r rchart-primary-energy, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
 
@@ -992,10 +995,8 @@ p_energy <- malaysia %>%
          region != "Malaysia") %>%
   mutate(param = units) %>%
   rchart::chart(folder = "rchart/energy",
-                chart_type = "class_absolute",
                 save = F, 
                 show = F,
-                size_text = 12,
                 scenRef = "Ref")
 
 p_energy$chart_class_Ref
@@ -1004,7 +1005,7 @@ p_energy$chart_class_Ref
 
 <br>
 
-#### Malaysia 
+##### Malaysia 
 
 ```{r rchart-primary-energy-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 30, fig.height = 6, out.width = "100%"}
 
@@ -1015,7 +1016,8 @@ p_energy_my <- malaysia %>%
   rchart::chart(folder = "rchart/energy",
                 save = F, 
                 show = F,
-                scenRef = "Ref")
+                scenRef = "Ref",
+                size_text = 18)
 
 p_energy_my$chart_class_diff_absolute
 
@@ -1024,7 +1026,7 @@ p_energy_my$chart_class_diff_absolute
 
 <br>
 
-#### Kuala Lumpur
+##### Kuala Lumpur
 
 ```{r rchart-primary-energy-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 32, fig.height = 12, out.width = "100%"}
 
@@ -1035,8 +1037,8 @@ p_energy_kl <- malaysia %>%
   rchart::chart(folder = "rchart/energy",
                 save = F, 
                 show = F,
-                size_text = 18,
-                scenRef = "Ref")
+                scenRef = "Ref",
+                size_text = 24)
 
 p_energy_kl$chart_param_diff_absolute
 ```
@@ -1046,11 +1048,11 @@ p_energy_kl$chart_param_diff_absolute
 
 
 <!-------------------------->
-### Final Energy by Fuel and Sector {.tabset}
+#### Final Energy by Fuel and Sector {.tabset}
 <!-------------------------->
 ***
 
-#### Malaysia vs Kuala Lumpur
+##### Malaysia vs Kuala Lumpur
 
 ```{r rchart-energy, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
 energy_parameters <- c("energyFinalConsumBySecEJ", "energyFinalByFuelEJ")
@@ -1070,7 +1072,7 @@ energy$chart_class_Ref
 
 <br>
 
-#### Malaysia
+##### Malaysia
 
 ```{r rchart-energy-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 28, fig.height = 10, out.width = "100%"}
 energy_my <- malaysia %>% 
@@ -1080,7 +1082,8 @@ energy_my <- malaysia %>%
   rchart::chart(folder = "rchart/energy",
                 save = F, 
                 show = F,
-                scenRef = "Ref")
+                scenRef = "Ref",
+                size_text = 20)
 
 energy_my$chart_class_diff_absolute
 ```
@@ -1088,7 +1091,7 @@ energy_my$chart_class_diff_absolute
 
 <br>
 
-#### Kuala Lumpur
+##### Kuala Lumpur
 
 ```{r rchart-energy-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 28, fig.height = 10, out.width = "100%"}
 energy_kl <- malaysia %>% 
@@ -1098,7 +1101,8 @@ energy_kl <- malaysia %>%
   rchart::chart(folder = "rchart/energy",
                 save = F, 
                 show = F,
-                scenRef = "Ref")
+                scenRef = "Ref",
+                size_text = 20)
 
 energy_kl$chart_class_diff_absolute
 ```
@@ -1107,11 +1111,11 @@ energy_kl$chart_class_diff_absolute
 <br>
 
 <!-------------------------->
-### Electricity Generation by Fuel and Sector {.tabset}
+#### Electricity Generation by Fuel and Sector {.tabset}
 <!-------------------------->
 ***
 
-#### Malaysia vs Kuala Lumpur
+##### Malaysia vs Kuala Lumpur
 
 ```{r rchart-elec-gen, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.height = 6}
 electricity_parameters <- c("elecConsumByDemandSectorTWh", "elecByTechTWh")
@@ -1123,7 +1127,7 @@ electricity <- malaysia %>%
   rchart::chart(folder = "rchart/electricity",
                 save = F, 
                 show = F,
-                size_text = 8)
+                size_text = 10)
 
 electricity$chart_class_Ref
 ```
@@ -1131,7 +1135,7 @@ electricity$chart_class_Ref
 
 <br>
 
-#### Malaysia 
+##### Malaysia 
 
 ```{r rchart-elec-gen-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 18, fig.height = 6, out.width = "100%"}
 
@@ -1142,8 +1146,8 @@ electricity_my <- malaysia %>%
   rchart::chart(folder = "rchart/electricity",
                 save = F, 
                 show = F,
-                size_text = 10,
-                scenRef = "Ref")
+                scenRef = "Ref",
+                size_text = 10)
 
 
 electricity_my$chart_class_diff_absolute
@@ -1152,7 +1156,7 @@ electricity_my$chart_class_diff_absolute
 
 <br>
 
-#### Kuala Lumpur
+##### Kuala Lumpur
 
 ```{r rchart-elec-gen-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 30, fig.height = 6, out.width = "100%"}
 
@@ -1163,8 +1167,8 @@ electricity_kl <- malaysia %>%
   rchart::chart(folder = "rchart/electricity",
                 save = F, 
                 show = F,
-                size_text = 12,
-                scenRef = "Ref")
+                scenRef = "Ref",
+                size_text = 20)
 
 electricity_kl$chart_class_diff_absolute
 ```
@@ -1173,11 +1177,14 @@ electricity_kl$chart_class_diff_absolute
 <br>
 
 <!-------------------------->
-### Building Energy by Subsector {.tabset}
+### Sectoral Details {.tabset}
 <!-------------------------->
 ***
 
-#### Malaysia vs Kuala Lumpur
+#### Building Energy by Subsector {.tabset}
+***
+
+##### Malaysia vs Kuala Lumpur
 
 ```{r rchart-building, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
 building_energy <- malaysia %>% 
@@ -1189,14 +1196,13 @@ building_energy <- malaysia %>%
                 show = F,
                 size_text = 12)
 
-building_energy$`chart_class_All of Malaysia`
-building_energy$chart_class_KualaLumpur
+building_energy$chart_class_Ref
 ```
 
 
 <br>
 
-#### Malaysia 
+##### Malaysia 
 
 ```{r rchart-building-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 36, fig.height = 6, out.width = "100%"}
 building_energy_my <- malaysia %>% 
@@ -1214,7 +1220,7 @@ building_energy_my$chart_class_diff_absolute
 
 <br>
 
-#### Kuala Lumpur
+##### Kuala Lumpur
 
 ```{r rchart-building-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 36, fig.height = 6, out.width = "100%"}
 building_energy_kl <- malaysia %>% 
@@ -1231,14 +1237,15 @@ building_energy_kl$chart_class_diff_absolute
 
 <br>
 
+
 <!-------------------------->
-### Transportation by Mode {.tabset}
+#### Transportation by Mode {.tabset}
 <!-------------------------->
 ***
 
-#### Malaysia vs Kuala Lumpur
+##### Malaysia vs Kuala Lumpur
 
-```{r rchart-transport-mode, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
+```{r rchart-transport-mode, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.height = 6, fig.width = 8, out.width = "100%"}
 transport_mode_params <- c("transportFreightVMTByMode", "transportPassengerVMTByMode")
                 
 transport_m <- malaysia %>% 
@@ -1248,7 +1255,7 @@ transport_m <- malaysia %>%
   rchart::chart(folder = "rchart/transport/mode",
                 save = F, 
                 show = F,
-                size_text = 10)
+                size_text = 9)
 
 transport_m$chart_class_Ref
 ```
@@ -1256,7 +1263,7 @@ transport_m$chart_class_Ref
 
 <br>
 
-#### Malaysia 
+##### Malaysia 
 
 ```{r rchart-transport-my-mode, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 28, fig.height = 8, out.width = "100%"}
 transport_my_m <- malaysia %>% 
@@ -1266,7 +1273,8 @@ transport_my_m <- malaysia %>%
   rchart::chart(folder = "rchart/transport/mode",
                 save = F, 
                 show = F,
-                scenRef = "Ref")
+                scenRef = "Ref",
+                size_text = 16)
 
 transport_my_m$chart_class_diff_absolute
 ```
@@ -1274,7 +1282,7 @@ transport_my_m$chart_class_diff_absolute
 
 <br>
 
-#### Kuala Lumpur
+##### Kuala Lumpur
 
 ```{r rchart-transport-kl-mode, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 28, fig.height = 8, out.width = "100%"}
 transport_kl_m <- malaysia %>% 
@@ -1284,7 +1292,8 @@ transport_kl_m <- malaysia %>%
   rchart::chart(folder = "rchart/transport/mode",
                 save = F, 
                 show = F,
-                scenRef = "Ref")
+                scenRef = "Ref",
+                size_text = 16)
 
 transport_kl_m$chart_class_diff_absolute
 ```
@@ -1293,11 +1302,11 @@ transport_kl_m$chart_class_diff_absolute
 <br>
 
 <!-------------------------->
-### Transportation by Fuel {.tabset}
+#### Transportation by Fuel {.tabset}
 <!-------------------------->
 ***
 
-#### Malaysia vs Kuala Lumpur
+##### Malaysia vs Kuala Lumpur
 
 ```{r rchart-transport-fuel, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
 transport_fuel_params <- c("transportFreightVMTByFuel", "transportPassengerVMTByFuel")
@@ -1317,7 +1326,7 @@ transport_f$chart_class_Ref
 
 <br>
 
-#### Malaysia 
+##### Malaysia 
 
 ```{r rchart-transport-my-fuel, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 28, fig.height = 8, out.width = "100%"}
 transport_my_f <- malaysia %>% 
@@ -1327,7 +1336,8 @@ transport_my_f <- malaysia %>%
   rchart::chart(folder = "rchart/transport/fuel",
                 save = F, 
                 show = F,
-                scenRef = "Ref")
+                scenRef = "Ref",
+                size_text = 18)
 
 transport_my_f$chart_class_diff_absolute
 ```
@@ -1335,7 +1345,7 @@ transport_my_f$chart_class_diff_absolute
 
 <br>
 
-#### Kuala Lumpur
+##### Kuala Lumpur
 
 ```{r rchart-transport-kl-fuel, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 28, fig.height = 8, out.width = "100%"}
 transport_kl_f <- malaysia %>% 
@@ -1345,7 +1355,8 @@ transport_kl_f <- malaysia %>%
   rchart::chart(folder = "rchart/transport/fuel",
                 save = F, 
                 show = F,
-                scenRef = "Ref")
+                scenRef = "Ref",
+                size_text = 18)
 
 transport_kl_f$chart_class_diff_absolute
 ```
@@ -1354,11 +1365,11 @@ transport_kl_f$chart_class_diff_absolute
 <br>
 
 <!-------------------------->
-### Industry Energy by Subsector {.tabset}
+#### Industry Energy by Subsector {.tabset}
 <!-------------------------->
 ***
 
-#### Malaysia vs Kuala Lumpur
+##### Malaysia vs Kuala Lumpur
 
 ```{r rchart-industry, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
 industry_energy <- malaysia %>% 
@@ -1371,12 +1382,13 @@ industry_energy <- malaysia %>%
                 size_text = 12)
 
 
+industry_energy$chart_class_Ref
 ```
 
 
 <br>
 
-#### Malaysia 
+##### Malaysia 
 
 ```{r rchart-industry-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 32, fig.height = 6, out.width = "100%"}
 industry_energy_my <- malaysia %>% 
@@ -1386,7 +1398,6 @@ industry_energy_my <- malaysia %>%
   rchart::chart(folder = "rchart/industrial_energy",
                 save = F, 
                 show = F,
-                size_text = 12,
                 scenRef = "Ref")
 
 industry_energy_my$chart_class_diff_absolute
@@ -1395,7 +1406,7 @@ industry_energy_my$chart_class_diff_absolute
 
 <br>
 
-#### Kuala Lumpur
+##### Kuala Lumpur
 
 ```{r rchart-industry-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 32, fig.height = 6, out.width = "100%"}
 industry_energy_kl <- malaysia %>% 
@@ -1405,7 +1416,6 @@ industry_energy_kl <- malaysia %>%
   rchart::chart(folder = "rchart/industrial_energy",
                 save = F, 
                 show = F,
-                size_text = 12,
                 scenRef = "Ref")
 
 industry_energy_kl$chart_class_diff_absolute
@@ -1416,13 +1426,71 @@ industry_energy_kl$chart_class_diff_absolute
 
 <!-------------------------->
 <!-------------------------->
-# Validation
+# Assumptions and Validation
 <!-------------------------->
 <!-------------------------->
 <p align="center"> <img src="images/divider.png"></p>
 
+<!-------------------------->
+## Socioeconomic assumptions {.tabset}
+<!-------------------------->
+***
+
+This section details the socioeconomic inputs used to define Malaysia and its subregions, Kuala Lumpur and "Rest of Malaysia," in GCAM. These metrics include population, GDP, and GDP per capita. Historical and projection data were used when available, otherwise data was calculated using the assumptions described below.
+
+<table>
+
+<tr>
+<th>Variable</th>
+<th style="width:50%">Assumptions</th>
+<th style="width:40%">Data Sources</th>
+</tr>
+
+<tr>
+<td>Population</td>
+<td>
+<span>- Malaysia population used the medium variant projection and historical data from the UN</span><br/>
+<span>- KL census data gives a value for 2010. All other values were extrapolated and calculated using the growth rates for Malaysia in total</span><br/>
+<span>- "Rest of Malaysia" values found by subtracting KL numbers from Malaysia</span><br/>
+</td>
+<td>
+<span>- Malaysia: [United Nations](https://population.un.org/wpp/)</span><br/>
+<span>- Kuala Lumpur 2010: [United Nations](http://data.un.org/Data.aspx?q=kuala+lumpur&d=POP&f=tableCode%3a240%3bareaCode%3a0%3bsexCode%3a0%3bvarCode3%3a028690%3bvarCode4%3a000002)</span><br/>
+</td>
+</tr>
+
+
+<tr>
+<td rowspan="3">GDP</td>
+<td>
+<span>- Malaysia annual growth rates are applied to KL's 2020 GDP value to extrapolate historical and future values</span><br/>
+<span>- "Rest of Malaysia" values found by subtracting KL numbers from Malaysia</span>
+</td>
+<td rowspan="2"> 
+<span>- Malaysia, historical: [USDA ERS](https://www.ers.usda.gov/data-products/international-macroeconomic-data-set/)</span><br/>
+<span>- Malaysia, future: [SSP database](https://tntcat.iiasa.ac.at/SspDb/dsd?Action=htmlpage&page=welcome)</span><br/>
+<span>- Kuala Lumpur 2020: [Department of Statistics Malaysia](https://www.dosm.gov.my/v1/index.php?r=column/cthemeByCat&cat=102&bul_id=anVobldYUFZLNE5WVlRVRExkSWEyZz09&menu_id=TE5CRUZCblh4ZTZMODZIbmk2aWRRQT09)</span><br/>
+</td>
+</tr>
+
+</table>
+
+<br>
+<br>
+
+
+<!-------------------------->
+## Validation of GCAM outputs {.tabset}
+<!-------------------------->
+***
+
 This section will compare local data in sources from Malaysia and Kuala Lumpur to GCAM outputs.
 
-# {.unlisted .unnumbered}
+<br>
+
+
+## {.unlisted .unnumbered}
+
+
 ```{r child = 'footer.rmd'}
 ```
