@@ -1256,7 +1256,7 @@ data <- gcamextractor::readgcam(gcamdatabase = sample_path,
                                 regionsSelect = regions,
                                 regionsAggregate = aggregate_regions,
                                 regionsAggregateNames = aggregate_region_names,
-                                folder = "..data/thailand/gcamextractor")
+                                folder = "../data/thailand/gcamextractor")
 
 ```
 

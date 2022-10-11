@@ -1,0 +1,30 @@
+<?xml  version="1.0" encoding="UTF-8"?>
+<scenario>
+  <world>
+
+    <region name="KualaLumpur">
+      <supplysector name="industrial energy use">
+        <subsector name="hydrogen">
+          <share-weight fillout="1" year="1975">0</share-weight>
+	  <share-weight fillout="1" year="2070">1</share-weight>
+          <interpolation-rule apply-to="share-weight" from-year="2015" to-year="2070" delete="1">
+            <interpolation-function name="linear" />
+          </interpolation-rule>
+	</subsector>
+      </supplysector>
+    </region>
+
+    <region name="Rest of Malaysia">
+      <supplysector name="industrial energy use">
+        <subsector name="hydrogen">
+          <share-weight fillout="1" year="1975">0</share-weight>
+	  <share-weight fillout="1" year="2070">1</share-weight>
+          <interpolation-rule apply-to="share-weight" from-year="2015" to-year="2070" delete="1">
+            <interpolation-function name="linear" />
+          </interpolation-rule>
+	</subsector>
+      </supplysector>
+    </region>
+
+  </world>
+</scenario>

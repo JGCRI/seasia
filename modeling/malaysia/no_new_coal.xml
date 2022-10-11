@@ -1,0 +1,27 @@
+<?xml  version="1.0" encoding="UTF-8"?>
+<scenario>
+  <world>
+    <region name="Malaysia">
+      <supplysector name="electricity">
+        <subsector name="coal">
+	    <stub-technology name="coal (conv pul)">
+                <period year="2020">
+                    <share-weight>0</share-weight>
+                </period>
+                <interpolation-rule apply-to="share-weight" from-year="2020" to-year="2100" delete="1">
+                    <interpolation-function name="fixed" />
+                </interpolation-rule>
+	    </stub-technology>
+	    <stub-technology name="coal (IGCC)">
+                <period year="2020">
+                    <share-weight>0</share-weight>
+                </period>
+                <interpolation-rule apply-to="share-weight" from-year="2020" to-year="2100" delete="1">
+                    <interpolation-function name="fixed" />
+                </interpolation-rule>
+	    </stub-technology>
+        </subsector>
+      </supplysector>
+    </region>
+  </world>
+</scenario>
