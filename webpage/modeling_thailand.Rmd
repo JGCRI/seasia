@@ -119,7 +119,7 @@ library(kableExtra); library(dplyr)
 
 dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/thailand/configuration_files/configuration_seasia_cities_bau.xml",
             "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/configuration_files/configuration_seasia_cities_low_mea_low_rot.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/configuration-files/configuration_seasia_cities_high_mea_high_rot.xml")
+            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/configuration_files/configuration_seasia_cities_high_mea_high_rot.xml")
 
 data.frame(
   File = c("configuration_seasia_cities_bau.xml",
