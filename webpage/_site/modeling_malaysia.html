@@ -13,7 +13,7 @@
 
 <title>Modeling - Malaysia</title>
 
-<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -64,7 +64,6 @@ if (window.hljs) {
 
 
 
-
 <link rel="stylesheet" href="style.css" type="text/css" />
 
 
@@ -89,9 +88,6 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
-}
-details > summary > p:only-child {
-  display: inline;
 }
 pre code {
   padding: 0;
@@ -317,7 +313,7 @@ div.tocify {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -448,7 +444,7 @@ Location
 gcamv5p3_seasia
 </td>
 <td style="text-align:left;">
-<a href="https://drive.google.com/file/d/1AFhbaTf6K6UsLsIXpne4_ska3stYIHRa/view?usp=sharing" style="     ">Link</a>
+<a href="https://zenodo.org/record/7195805#.Y0hqCnbMJaQ" style="     ">Link</a>
 </td>
 </tr>
 </tbody>
@@ -1575,7 +1571,8 @@ malaysia_emissions &lt;- bind_rows(co2, ghg)</code></pre>
   mutate(param = units) %&gt;%
   rchart::chart(folder = &quot;rchart/emissions_by_sector&quot;,
                 save = F, 
-                show = F)
+                show = F,
+                size_text = 10)
 
 emissions$chart_class_Ref</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-emiss-plot-1.png" width="85%" style="display: block; margin: auto;" /></p>
