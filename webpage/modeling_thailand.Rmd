@@ -37,7 +37,7 @@ Please use the link below to download GCAM.
 ```{r key links table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
 library(kableExtra); library(dplyr)
 
-dt_url <- c("https://drive.google.com/file/d/1AFhbaTf6K6UsLsIXpne4_ska3stYIHRa/view?usp=sharing")
+dt_url <- c("https://zenodo.org/record/7198886/files/gcamv5p3_seasia.zip?download=1")
 
 data.frame(
   File = c("gcamv5p3_seasia")) %>% 
@@ -1232,6 +1232,22 @@ To represent a phase-in of hydrogen technologies, we can gradually increase thei
 
 This section describes how to explore and compare the final output data using GCAM's post-processing tools.
 
+## Download database
+
+Please use the link below to download the output database from GCAM. This database contains model results for the scenarios described above.
+
+```{r db download table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
+library(kableExtra); library(dplyr)
+
+dt_url <- c("https://zenodo.org/record/7199955/files/database_seasia_cities.zip?download=1")
+
+data.frame(
+  File = c("database_seasia_cities")) %>% 
+  dplyr::mutate(Location = cell_spec(rep("Link",length(dt_url)),"html",link=dt_url)) %>%
+  kable("html", escape = FALSE) %>%
+  kable_styling(bootstrap_options = c("bordered","striped", "hover", "condensed", "responsive")) %>%
+  row_spec(0, background = "#2A2A2A", color = "white")
+```
 
 ## Extract GCAM Data
 ***
@@ -1265,7 +1281,7 @@ ref <- read.csv("../data/Thailand/gcamextractor/Ref/gcamDataTable_aggClass1.csv"
 high <- read.csv("../data/Thailand/gcamextractor/High/gcamDataTable_aggClass1.csv")
 low <- read.csv("../data/Thailand/gcamextractor/Low/gcamDataTable_aggClass1.csv")
 
-thailand <- dplyr::bind_rows(ref, high, low) %>% 
+thailand <- dplyr::bind_rows(ref, high, low) %>%
   filter(x >= 2020, x <= 2065,
          !grepl("International", class))
 
@@ -1419,7 +1435,7 @@ elec_parameters <- c("elecByTechTWh", "elecConsumByDemandSectorTWh",
 electricity <- thailand %>% 
   filter(param %in% elec_parameters,
          region %in% c("All of Thailand", "MEA area"),
-         !grepl("backup|biomass", class)) %>%
+         !grepl("backup", class)) %>%
   mutate(param = units) %>%
   rchart::chart(save = F, 
                 show = F,
