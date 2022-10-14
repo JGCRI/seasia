@@ -444,7 +444,11 @@ Location
 gcamv5p3_seasia
 </td>
 <td style="text-align:left;">
+<<<<<<< HEAD
+<a href="https://zenodo.org/record/7198886/files/gcamv5p3_seasia.zip?download=1" style="     ">Link</a>
+=======
 <a href="https://zenodo.org/record/7195805#.Y0hqCnbMJaQ" style="     ">Link</a>
+>>>>>>> 965db15d320382014da0ddd80979a6f57a047478
 </td>
 </tr>
 </tbody>
@@ -620,7 +624,7 @@ High-ambition sectoral policies in both the MEA area and Rest of
 Thailand
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/configuration-files/configuration_seasia_cities_high_mea_high_rot.xml" style="     ">Link</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/configuration_files/configuration_seasia_cities_high_mea_high_rot.xml" style="     ">Link</a>
 </td>
 </tr>
 </tbody>
@@ -2262,8 +2266,37 @@ Constraints</h1>
 </p>
 <p>This section describes how to explore and compare the final output
 data using GCAM’s post-processing tools.</p>
-<div id="extract-gcam-data" class="section level2" number="6.1">
-<h2><span class="header-section-number">6.1</span> Extract GCAM
+<div id="download-database" class="section level2" number="6.1">
+<h2><span class="header-section-number">6.1</span> Download
+database</h2>
+<p>Please use the link below to download the output database from GCAM.
+This database contains model results for the scenarios described
+above.</p>
+<table class="table table-bordered table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+File
+</th>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+Location
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+database_seasia_cities
+</td>
+<td style="text-align:left;">
+<a href="https://zenodo.org/record/7199955/files/database_seasia_cities.zip?download=1" style="     ">Link</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="extract-gcam-data" class="section level2" number="6.2">
+<h2><span class="header-section-number">6.2</span> Extract GCAM
 Data</h2>
 <hr />
 <p><code>gcamextractor</code> is an R package used to extract and
@@ -2300,13 +2333,13 @@ data &lt;- gcamextractor::readgcam(gcamdatabase = sample_path,
 high &lt;- read.csv(&quot;../data/Thailand/gcamextractor/High/gcamDataTable_aggClass1.csv&quot;)
 low &lt;- read.csv(&quot;../data/Thailand/gcamextractor/Low/gcamDataTable_aggClass1.csv&quot;)
 
-thailand &lt;- dplyr::bind_rows(ref, high, low) %&gt;% 
+thailand &lt;- dplyr::bind_rows(ref, high, low) %&gt;%
   filter(x &gt;= 2020, x &lt;= 2065,
          !grepl(&quot;International&quot;, class))</code></pre>
 <p><br></p>
 </div>
-<div id="plot-figures" class="section level2 tabset" number="6.2">
-<h2 class="tabset"><span class="header-section-number">6.2</span> Plot
+<div id="plot-figures" class="section level2 tabset" number="6.3">
+<h2 class="tabset"><span class="header-section-number">6.3</span> Plot
 Figures</h2>
 <hr />
 <p><code>rchart</code> is a comprehensive charting package to plot and
@@ -2314,16 +2347,16 @@ compare data across scenarios, regions, sectors and time periods in
 GCAM. The following tabs show initial diagnostics of the sectoral policy
 scenarios for all of Thailand as well as the MEA area.</p>
 <p><br></p>
-<div id="thailand" class="section level3 tabset" number="6.2.1">
-<h3 class="tabset"><span class="header-section-number">6.2.1</span>
+<div id="thailand" class="section level3 tabset" number="6.3.1">
+<h3 class="tabset"><span class="header-section-number">6.3.1</span>
 Thailand</h3>
 <div id="summary-figures" class="section level4 tabset tabset-pills"
-number="6.2.1.1">
+number="6.3.1.1">
 <h4 class="tabset tabset-pills"><span
-class="header-section-number">6.2.1.1</span> Summary figures</h4>
+class="header-section-number">6.3.1.1</span> Summary figures</h4>
 <div id="socioeconomic-summary" class="section level5"
-number="6.2.1.1.1">
-<h5><span class="header-section-number">6.2.1.1.1</span> Socioeconomic
+number="6.3.1.1.1">
+<h5><span class="header-section-number">6.3.1.1.1</span> Socioeconomic
 summary</h5>
 <pre class="r"><code>socioeconomic_parameters &lt;- c(&quot;pop&quot;, &quot;gdp&quot;, &quot;gdpPerCapita&quot;)
 
@@ -2349,8 +2382,8 @@ between scenarios.
 <p><br> <br></p>
 </div>
 <div id="emissions-by-sector-and-gas" class="section level5"
-number="6.2.1.1.2">
-<h5><span class="header-section-number">6.2.1.1.2</span> Emissions by
+number="6.3.1.1.2">
+<h5><span class="header-section-number">6.3.1.1.2</span> Emissions by
 sector and gas</h5>
 <hr />
 <pre class="r"><code>emissions_line_params &lt;- c(&quot;emissCO2BySector&quot;, &quot;emissGHGBySectorGWPAR5&quot;)
@@ -2421,8 +2454,8 @@ the reference scenario (left) and the low and high policy scenarios
 <p><br></p>
 </div>
 <div id="final-energy-by-fuel-and-sector" class="section level5"
-number="6.2.1.1.3">
-<h5><span class="header-section-number">6.2.1.1.3</span> Final Energy by
+number="6.3.1.1.3">
+<h5><span class="header-section-number">6.3.1.1.3</span> Final Energy by
 Fuel and Sector</h5>
 <hr />
 <pre class="r"><code>energy_parameters &lt;- c(&quot;energyFinalConsumBySecEJ&quot;, &quot;energyFinalByFuelEJ&quot;)
@@ -2456,8 +2489,8 @@ scenarios (right)
 </div>
 </div>
 <div id="electricity-generation-and-consumption" class="section level5"
-number="6.2.1.1.4">
-<h5><span class="header-section-number">6.2.1.1.4</span> Electricity
+number="6.3.1.1.4">
+<h5><span class="header-section-number">6.3.1.1.4</span> Electricity
 Generation and Consumption</h5>
 <hr />
 <pre class="r"><code>elec_parameters &lt;- c(&quot;elecByTechTWh&quot;, &quot;elecConsumByDemandSectorTWh&quot;,
@@ -2466,7 +2499,7 @@ Generation and Consumption</h5>
 electricity &lt;- thailand %&gt;% 
   filter(param %in% elec_parameters,
          region %in% c(&quot;All of Thailand&quot;, &quot;MEA area&quot;),
-         !grepl(&quot;backup|biomass&quot;, class)) %&gt;%
+         !grepl(&quot;backup&quot;, class)) %&gt;%
   mutate(param = units) %&gt;%
   rchart::chart(save = F, 
                 show = F,
@@ -2496,11 +2529,11 @@ scenarios (right)
 </div>
 </div>
 <div id="sectoral-details" class="section level4 tabset tabset-pills"
-number="6.2.1.2">
+number="6.3.1.2">
 <h4 class="tabset tabset-pills"><span
-class="header-section-number">6.2.1.2</span> Sectoral details</h4>
-<div id="buildings" class="section level5" number="6.2.1.2.1">
-<h5><span class="header-section-number">6.2.1.2.1</span> Buildings</h5>
+class="header-section-number">6.3.1.2</span> Sectoral details</h4>
+<div id="buildings" class="section level5" number="6.3.1.2.1">
+<h5><span class="header-section-number">6.3.1.2.1</span> Buildings</h5>
 <pre class="r"><code>buildings_params &lt;- c(&quot;energyFinalSubsecByFuelBuildEJ&quot;, 
                       &quot;energyFinalSubsecBySectorBuildEJ&quot;,
                       &quot;emissGHGBySectorBuildingsGWPAR5&quot;)
@@ -2543,8 +2576,8 @@ scenario (left) and the low and high policy scenarios (right)
 </p>
 </div>
 </div>
-<div id="transportation" class="section level5" number="6.2.1.2.2">
-<h5><span class="header-section-number">6.2.1.2.2</span>
+<div id="transportation" class="section level5" number="6.3.1.2.2">
+<h5><span class="header-section-number">6.3.1.2.2</span>
 Transportation</h5>
 <pre class="r"><code>transport_params &lt;- c(&quot;transportFreightVMTByFuel&quot;, &quot;transportPassengerVMTByFuel&quot;,
                       &quot;transportPassengerVMTByTech&quot;, &quot;transportFreightVMTByTech&quot;,
@@ -2579,8 +2612,8 @@ low and high policy scenarios (right)
 </p>
 </div>
 </div>
-<div id="industry" class="section level5" number="6.2.1.2.3">
-<h5><span class="header-section-number">6.2.1.2.3</span> Industry</h5>
+<div id="industry" class="section level5" number="6.3.1.2.3">
+<h5><span class="header-section-number">6.3.1.2.3</span> Industry</h5>
 <pre class="r"><code>industry_params &lt;- c(&quot;energyFinalSubsecByFuelIndusEJ&quot;, &quot;emissGHGBySectorIndustryGWPAR5&quot;)
 
 industry &lt;- thailand %&gt;% 
@@ -2614,16 +2647,16 @@ and high policy scenarios (right)
 </div>
 </div>
 </div>
-<div id="mea-area" class="section level3 tabset" number="6.2.2">
-<h3 class="tabset"><span class="header-section-number">6.2.2</span> MEA
+<div id="mea-area" class="section level3 tabset" number="6.3.2">
+<h3 class="tabset"><span class="header-section-number">6.3.2</span> MEA
 Area</h3>
 <div id="summary-figures-1" class="section level4 tabset tabset-pills"
-number="6.2.2.1">
+number="6.3.2.1">
 <h4 class="tabset tabset-pills"><span
-class="header-section-number">6.2.2.1</span> Summary figures</h4>
+class="header-section-number">6.3.2.1</span> Summary figures</h4>
 <div id="socioeconomic-summary-1" class="section level5"
-number="6.2.2.1.1">
-<h5><span class="header-section-number">6.2.2.1.1</span> Socioeconomic
+number="6.3.2.1.1">
+<h5><span class="header-section-number">6.3.2.1.1</span> Socioeconomic
 summary</h5>
 <div class="figure" style="text-align: center">
 <img src="modeling_thailand_files/figure-html/socio-mea-1.png" alt="GDP, per capita GDP, and population in the MEA area from 2020 to 2065. Only the BAU scenario is shown since socioeconomic assumptions are consistent between scenarios." width="100%" />
@@ -2636,8 +2669,8 @@ consistent between scenarios.
 <p><br> <br></p>
 </div>
 <div id="emissions-by-sector-and-gas-1" class="section level5"
-number="6.2.2.1.2">
-<h5><span class="header-section-number">6.2.2.1.2</span> Emissions by
+number="6.3.2.1.2">
+<h5><span class="header-section-number">6.3.2.1.2</span> Emissions by
 sector and gas</h5>
 <hr />
 <div class="figure" style="text-align: center">
@@ -2666,8 +2699,8 @@ the reference scenario (left) and the low and high policy scenarios
 <p><br></p>
 </div>
 <div id="final-energy-by-fuel-and-sector-1" class="section level5"
-number="6.2.2.1.3">
-<h5><span class="header-section-number">6.2.2.1.3</span> Final Energy by
+number="6.3.2.1.3">
+<h5><span class="header-section-number">6.3.2.1.3</span> Final Energy by
 Fuel and Sector</h5>
 <hr />
 <div class="figure" style="text-align: center">
@@ -2688,8 +2721,8 @@ scenarios (right)
 <p><br></p>
 </div>
 <div id="electricity-consumption" class="section level5"
-number="6.2.2.1.4">
-<h5><span class="header-section-number">6.2.2.1.4</span> Electricity
+number="6.3.2.1.4">
+<h5><span class="header-section-number">6.3.2.1.4</span> Electricity
 Consumption</h5>
 <hr />
 <div class="figure" style="text-align: center">
@@ -2713,11 +2746,11 @@ scenarios (right)
 </div>
 </div>
 <div id="sectoral-details-1" class="section level4 tabset tabset-pills"
-number="6.2.2.2">
+number="6.3.2.2">
 <h4 class="tabset tabset-pills"><span
-class="header-section-number">6.2.2.2</span> Sectoral details</h4>
-<div id="buildings-1" class="section level5" number="6.2.2.2.1">
-<h5><span class="header-section-number">6.2.2.2.1</span> Buildings</h5>
+class="header-section-number">6.3.2.2</span> Sectoral details</h4>
+<div id="buildings-1" class="section level5" number="6.3.2.2.1">
+<h5><span class="header-section-number">6.3.2.2.1</span> Buildings</h5>
 <div class="figure" style="text-align: center">
 <img src="modeling_thailand_files/figure-html/building-mea-1.png" alt="MEA area buildings sector GHG emissions by service, final energy by fuel, and final energy by service in the reference scenario and the low and high policies scenarios" width="100%" />
 <p class="caption">
@@ -2735,8 +2768,8 @@ scenario (left) and the low and high policy scenarios (right)
 </p>
 </div>
 </div>
-<div id="transportation-1" class="section level5" number="6.2.2.2.2">
-<h5><span class="header-section-number">6.2.2.2.2</span>
+<div id="transportation-1" class="section level5" number="6.3.2.2.2">
+<h5><span class="header-section-number">6.3.2.2.2</span>
 Transportation</h5>
 <div class="figure" style="text-align: center">
 <img src="modeling_thailand_files/figure-html/transport-mea-1.png" alt="MEA area transportation GHG emissions by mode and service output by mode and fuel in the reference scenario and the low and high policies scenarios" width="100%" />
@@ -2755,8 +2788,8 @@ low and high policy scenarios (right)
 </p>
 </div>
 </div>
-<div id="industry-1" class="section level5" number="6.2.2.2.3">
-<h5><span class="header-section-number">6.2.2.2.3</span> Industry</h5>
+<div id="industry-1" class="section level5" number="6.3.2.2.3">
+<h5><span class="header-section-number">6.3.2.2.3</span> Industry</h5>
 <div class="figure" style="text-align: center">
 <img src="modeling_thailand_files/figure-html/industry-mea-1.png" alt="MEA area industrial GHG emissions and final energy consumption by fuel in the reference scenario and the low and high policies scenarios" width="100%" />
 <p class="caption">
