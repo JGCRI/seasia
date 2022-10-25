@@ -1276,7 +1276,7 @@ data <- gcamextractor::readgcam(gcamdatabase = sample_path,
 
 ```
 
-```{r gcamextractor, echo = TRUE}
+```{r gcamextractor, echo = FALSE, eval = FALSE}
 ref <- read.csv("../data/Thailand/gcamextractor/Ref/gcamDataTable_aggClass1.csv")
 high <- read.csv("../data/Thailand/gcamextractor/High/gcamDataTable_aggClass1.csv")
 low <- read.csv("../data/Thailand/gcamextractor/Low/gcamDataTable_aggClass1.csv")
@@ -1285,6 +1285,14 @@ thailand <- dplyr::bind_rows(ref, high, low) %>%
   filter(x >= 2020, x <= 2065,
          !grepl("International", class))
 
+```
+
+```{r gcamextractor single db, echo = TRUE}
+thailand <- read.csv("../data/Thailand/gcamextractor/All/gcamDataTable_aggClass1.csv") %>%
+  filter(x >= 2020, x <= 2065,
+         !grepl("International", class))
+
+scenRef_name <- "Ref_cities"
 ```
 
 ```{r fix param names, eval = TRUE, echo = FALSE, warning=FALSE, error=FALSE, message=FALSE}
@@ -1325,7 +1333,7 @@ socioeconomic_parameters <- c("pop", "gdp", "gdpPerCapita")
 socioeconomic <- thailand %>%
   filter(param %in% socioeconomic_parameters,
          region %in% c("MEA area", "Thailand"),
-         scenario == "Ref") %>%
+         scenario == scenRef_name) %>%
   mutate(param = units) %>% 
   rchart::chart(save = F, 
                 show = F,
@@ -1369,7 +1377,7 @@ emissions_bar <- thailand %>% filter(param %in% emissions_params,
   rchart::chart(save = F, 
                 show = F,
                 size_text = 19,
-                scenRef = "Ref",
+                scenRef = scenRef_name,
                 summary_line = T,
                 chart_type = "class_absolute")
 
@@ -1387,7 +1395,7 @@ emissions_diff <- thailand %>% filter(param %in% emissions_params,
   rchart::chart(save = F, 
                 show = F,
                 size_text = 19,
-                scenRef = "Ref",
+                scenRef = scenRef_name,
                 summary_line = T,
                 chart_type = "class_diff_absolute")
 
@@ -1411,7 +1419,7 @@ energy <- thailand %>%
   rchart::chart(save = F, 
                 show = F,
                 size_text = 20,
-                scenRef = "Ref")
+                scenRef = scenRef_name)
 
 energy$`chart_class_All of Thailand`
 ```
@@ -1440,7 +1448,7 @@ electricity <- thailand %>%
   rchart::chart(save = F, 
                 show = F,
                 size_text = 19,
-                scenRef = "Ref")
+                scenRef = scenRef_name)
 
 electricity$`chart_class_All of Thailand`
 
@@ -1463,6 +1471,28 @@ buildings_params <- c("energyFinalSubsecByFuelBuildEJ",
                       "energyFinalSubsecBySectorBuildEJ",
                       "emissGHGBySectorBuildingsGWPAR5")
 
+building_sector_colors <- c(
+  "comm cooking" = "#b2e2e2",
+  "comm hvac" = "#66c2a4",
+  "comm lighting" = "#2ca25f",
+  "Commercial Others" = "#006d2c",
+  "resid rural air conditioners" = "#fee8c8",
+  "resid rural cooking" = "#fdd49e",
+  "resid rural lighting" = "#fdbb84",
+  "resid rural other appliances" = "#fc8d59",
+  "resid rural refrigerators" = "#ef6548",
+  "resid rural televisions" = "#d7301f",
+  "resid rural ventilation" = "#b30000",
+  "resid rural water heaters" = "#7f0000",
+  "resid urban air conditioners" = "#ece7f2",
+  "resid urban cooking" = "#d0d1e6",
+  "resid urban lighting" = "#a6bddb",
+  "resid urban other appliances" = "#74a9cf",
+  "resid urban refrigerators" = "#3690c0",
+  "resid urban televisions" = "#0570b0",
+  "resid urban ventilation" = "#045a8d",
+  "resid urban water heaters" = "#023858" )
+
 buildings <- thailand %>% 
   filter(param %in% buildings_params,
          region %in% c("All of Thailand", "MEA area"),
@@ -1471,7 +1501,8 @@ buildings <- thailand %>%
   rchart::chart(save = F, 
                 show = F,
                 size_text = 19,
-                scenRef = "Ref")
+                scenRef = scenRef_name,
+                palette = building_sector_colors)
 
 buildings$`chart_class_All of Thailand`
 ```
@@ -1481,6 +1512,52 @@ We have found that the low-ambition buildings policies (increased AC efficiency,
 ```{r building-diff-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 38, fig.height = 21, out.width = "100%", fig.cap="Difference in national buildings sector GHG emissions by service, final energy by fuel, and final energy by service between the reference scenario (left) and the low and high policy scenarios (right)"}
 
 buildings$`chart_class_diff_absolute_All of Thailand`
+```
+
+
+```{r building-details, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 21, fig.height = 12, out.width = "100%"}
+building_cook_params <- c("serviceOutputByTechBuildings")
+
+building_tech_colors <- c(
+  "comm cooking (gas)" = "#2ca25f",
+  "comm cooking (refined liquids)" = "#006d2c",
+  "resid rural cooking (biomass)" = "#fdcc8a",
+  "resid rural cooking (traditional biomass)" = "#fc8d59",
+  "resid rural cooking (refined liquids)" = "#e34a33",
+  "resid rural cooking (electricity)" = "#b30000",
+  "resid urban cooking (biomass)" = "#bdc9e1",
+  "resid urban cooking (traditional biomass)" = "#74a9cf",
+  "resid urban cooking (refined liquids)" = "#2b8cbe",
+  "resid urban cooking (electricity)" = "#045a8d" )
+
+pop <- thailand %>% 
+  filter(param == "pop", region %in% c("Thailand", "MEA area"), scenario == scenRef_name) %>% 
+  mutate(region = case_when(region == "Thailand" ~ "All of Thailand",
+                            T ~ region)) %>%
+  rename(pop = value) %>% 
+  select(region, x, pop)
+
+thailand_cook <- thailand %>% 
+  filter(param %in% building_cook_params,
+         grepl("cook", class),
+         region %in% c("All of Thailand", "MEA area"))
+
+thailand_cook2 <- thailand_cook %>% 
+  full_join(pop) %>% 
+  mutate(serviceOutputByTechBuildingsPerCapita = value/pop) %>% 
+  select(-c(param, value, pop)) %>% 
+  tidyr::pivot_longer(c(serviceOutputByTechBuildingsPerCapita),
+               names_to = "param", values_to = "value") %>% 
+  full_join(thailand_cook)
+
+building_cook <- thailand_cook2  %>% 
+  mutate(param = case_when(param == "serviceOutputByTechBuildings" ~ "Cooking output (EJ)",
+                           T ~ "Per capita cooking output (EJ)")) %>% 
+  rchart::chart(save = F, show = F, size_text = 19, scenRef = scenRef_name,
+                palette = building_tech_colors)
+
+building_cook$`chart_class_All of Thailand`
+
 ```
 
 
@@ -1498,7 +1575,7 @@ transport <- thailand %>%
   rchart::chart(save = F, 
                 show = F,
                 size_text = 19,
-                scenRef = "Ref")
+                scenRef = scenRef_name)
 
 transport$`chart_class_All of Thailand`
 ```
@@ -1520,7 +1597,7 @@ industry <- thailand %>%
   rchart::chart(save = F, 
                 show = F,
                 size_text = 19,
-                scenRef = "Ref")
+                scenRef = scenRef_name)
 
 industry$`chart_class_All of Thailand`
 ```
@@ -1543,7 +1620,7 @@ industry$`chart_class_diff_absolute_All of Thailand`
 socioeconomic_mea <- thailand %>%
   filter(param %in% socioeconomic_parameters,
          region %in% c("Bangkok", "SamutPrakan", "Nonthaburi"),
-         scenario == "Ref") %>%
+         scenario == scenRef_name) %>%
   mutate(param = units) %>% 
   rchart::chart(chart_type = "region_absolute",
                 save = F, 
