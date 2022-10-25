@@ -764,8 +764,7 @@ socioeconomic <- malaysia %>%
          region != "All of Malaysia",
          scenario == "Ref") %>%
   mutate(param = units) %>% 
-  rchart::chart(folder = "rchart/socioeconomic",
-                save = F, 
+  rchart::chart(save = F, 
                 show = F,
                 size_text = 19)
 
@@ -783,8 +782,7 @@ socioeconomic_my <- malaysia %>%
          region == "Malaysia") %>%
   mutate(param = units,
          scenario = "Ref") %>% 
-  rchart::chart(folder = "rchart/socioeconomic",
-                save = F, 
+  rchart::chart(save = F, 
                 show = F,
                 size_text = 19)
 
@@ -806,8 +804,7 @@ socioeconomic_kl <- malaysia %>%
          region == "KualaLumpur") %>%
   mutate(param = units,
          scenario = "Ref") %>% 
-  rchart::chart(folder = "rchart/socioeconomic",
-                save = F, 
+  rchart::chart(save = F, 
                 show = F,
                 size_text = 19)
 
@@ -840,8 +837,7 @@ malaysia_emissions <- bind_rows(co2, ghg)
 ``` {r rchart-emiss-plot, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
 emissions <- malaysia_emissions %>%
   mutate(param = units) %>%
-  rchart::chart(folder = "rchart/emissions_by_sector",
-                save = F, 
+  rchart::chart(save = F, 
                 show = F,
                 size_text = 10)
 
@@ -864,8 +860,7 @@ malaysia_emissions_gas <- bind_rows(co2_gas, ghg_gas)
 ``` {r rchart-emiss-gas-plot, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 12, fig.height = 6, out.width = "100%"}
 gas <- malaysia_emissions_gas %>%
   mutate(param = units) %>%
-  rchart::chart(folder = "rchart/emissions_by_gas",
-                save = F, 
+  rchart::chart(save = F, 
                 show = F,
                 size_text = 10)
 
@@ -897,8 +892,7 @@ my_emissions <- bind_rows(co2_my, ghg_my)
 ``` {r rchart-emiss-plot-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 12, fig.height = 6, out.width = "100%"}
 emissions_my_plot <- my_emissions %>%
   mutate(param = units) %>%
-  rchart::chart(folder = "rchart/emissions_by_sector",
-                save = F, 
+  rchart::chart(save = F, 
                 show = F,
                 scenRef = "Ref")
 
@@ -915,10 +909,23 @@ ghg_gas_my <- malaysia %>%
 my_emissions_gas <- bind_rows(ghg_gas_my, my_emissions)
 ```
 
+``` {r rchart-emiss-gas-scenario-plot-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, out.width = "100%"}
+
+gas_sce_my <- my_emissions_gas %>%
+  rchart::chart(save = F, 
+                show = F,
+                scenRef = "Ref",
+                chart_type = "class_absolute",
+                summary_line = T,
+                size_text = 13)
+
+gas_sce_my$chart_class
+
+```
+
 ``` {r rchart-emiss-gas-plot-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 24, fig.height = 12, out.width = "100%"}
 gas_my <- my_emissions_gas %>%
-  rchart::chart(folder = "rchart/emissions_by_gas",
-                save = F, 
+  rchart::chart(save = F, 
                 show = F,
                 scenRef = "Ref")
 
@@ -949,8 +956,7 @@ kl_emissions <- bind_rows(co2_kl, ghg_kl)
 ``` {r rchart-emiss-plot-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 12, fig.height = 6, out.width = "100%"}
 emissions_kl_plot <- kl_emissions %>%
   mutate(param = units) %>%
-  rchart::chart(folder = "rchart/emissions_by_sector",
-                save = F, 
+  rchart::chart(save = F, 
                 show = F,
                 size_text = 12)
 
@@ -967,10 +973,23 @@ ghg_gas_kl <- malaysia %>%
 kl_emissions_gas <- bind_rows(ghg_gas_kl, kl_emissions)
 ```
 
+``` {r rchart-emiss-gas-scenario-plot-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
+
+gas_sce_kl <- kl_emissions_gas %>%
+  rchart::chart(save = F, 
+                show = F,
+                scenRef = "Ref",
+                summary_line = T,
+                chart_type = "class_absolute",
+                size_text = 13)
+
+gas_sce_my$chart_class
+
+```
+
 ``` {r rchart-gas-plot-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 10, fig.height = 6, out.width = "100%"}
 gas_kl <- kl_emissions_gas %>%
-  rchart::chart(folder = "rchart/emissions_by_gas",
-                save = F, 
+  rchart::chart(save = F, 
                 show = F,
                 size_text = 12,
                 scenRef = "Ref")
@@ -994,8 +1013,7 @@ p_energy <- malaysia %>%
   filter(param == "energyPrimaryByFuelEJ",
          region != "Malaysia") %>%
   mutate(param = units) %>%
-  rchart::chart(folder = "rchart/energy",
-                save = F, 
+  rchart::chart(save = F, 
                 show = F,
                 scenRef = "Ref")
 
@@ -1007,22 +1025,26 @@ p_energy$chart_class_Ref
 
 ##### Malaysia 
 
-```{r rchart-primary-energy-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 30, fig.height = 6, out.width = "100%"}
+```{r rchart-primary-energy-sce-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
 
 p_energy_my <- malaysia %>% 
   filter(param == "energyPrimaryByFuelEJ",
          region == "All of Malaysia") %>%
   mutate(param = units) %>%
-  rchart::chart(folder = "rchart/energy",
-                save = F, 
+  rchart::chart(save = F, 
                 show = F,
                 scenRef = "Ref",
                 size_text = 18)
 
-p_energy_my$chart_class_diff_absolute
+p_energy_my$chart_class
 
 ```
 
+``` {r rchart-primary-energy-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 30, fig.height = 6, out.width = "100%",}
+
+p_energy_my$chart_class_diff_absolute
+
+```
 
 <br>
 
@@ -1034,13 +1056,13 @@ p_energy_kl <- malaysia %>%
   filter(param == "energyPrimaryByFuelEJ",
          region == "KualaLumpur") %>%
   mutate(param = units) %>%
-  rchart::chart(folder = "rchart/energy",
-                save = F, 
+  rchart::chart(save = F, 
                 show = F,
                 scenRef = "Ref",
                 size_text = 24)
 
 p_energy_kl$chart_param_diff_absolute
+
 ```
 
 
@@ -1061,8 +1083,7 @@ energy <- malaysia %>%
   filter(param %in% energy_parameters,
          region != "Malaysia") %>%
   mutate(param = units) %>%
-  rchart::chart(folder = "rchart/energy",
-                save = F, 
+  rchart::chart(save = F, 
                 show = F,
                 size_text = 10)
 
@@ -1074,39 +1095,46 @@ energy$chart_class_Ref
 
 ##### Malaysia
 
-```{r rchart-energy-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 28, fig.height = 10, out.width = "100%"}
+```{r rchart-energy-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
 energy_my <- malaysia %>% 
   filter(param %in% energy_parameters,
          region == "All of Malaysia") %>%
   mutate(param = units) %>%
-  rchart::chart(folder = "rchart/energy",
-                save = F, 
+  rchart::chart(save = F, 
                 show = F,
                 scenRef = "Ref",
                 size_text = 20)
 
-energy_my$chart_class_diff_absolute
+energy_my$chart_class
 ```
+```{r rchart-energy-sce-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 28, fig.height = 10, out.width = "100%"}
 
+energy_my$chart_class_diff_absolute
+
+```
 
 <br>
 
 ##### Kuala Lumpur
 
-```{r rchart-energy-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 28, fig.height = 10, out.width = "100%"}
+```{r rchart-energy-sce-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
 energy_kl <- malaysia %>% 
   filter(param %in% energy_parameters,
          region == "KualaLumpur") %>%
   mutate(param = units) %>%
-  rchart::chart(folder = "rchart/energy",
-                save = F, 
+  rchart::chart(save = F, 
                 show = F,
                 scenRef = "Ref",
                 size_text = 20)
 
-energy_kl$chart_class_diff_absolute
+energy_kl$chart_class
 ```
 
+```{r rchart-energy-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 28, fig.height = 10, out.width = "100%"}
+
+energy_kl$chart_class_diff_absolute
+
+```
 
 <br>
 
@@ -1124,8 +1152,7 @@ electricity <- malaysia %>%
   filter(param %in% electricity_parameters,
          region != "Malaysia") %>%
   mutate(param = units) %>%
-  rchart::chart(folder = "rchart/electricity",
-                save = F, 
+  rchart::chart(save = F, 
                 show = F,
                 size_text = 10)
 
@@ -1137,20 +1164,23 @@ electricity$chart_class_Ref
 
 ##### Malaysia 
 
-```{r rchart-elec-gen-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 18, fig.height = 6, out.width = "100%"}
+```{r rchart-elec-gen-sce-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
 
 electricity_my <- malaysia %>% 
   filter(param %in% electricity_parameters,
          region == "All of Malaysia") %>%
   mutate(param = units) %>%
-  rchart::chart(folder = "rchart/electricity",
-                save = F, 
+  rchart::chart(save = F, 
                 show = F,
                 scenRef = "Ref",
                 size_text = 10)
 
+electricity_my$chart_class
+```
+```{r rchart-elec-gen-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 18, fig.height = 6, out.width = "100%"}
 
 electricity_my$chart_class_diff_absolute
+
 ```
 
 
@@ -1158,21 +1188,25 @@ electricity_my$chart_class_diff_absolute
 
 ##### Kuala Lumpur
 
-```{r rchart-elec-gen-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 30, fig.height = 6, out.width = "100%"}
+```{r rchart-elec-gen-sce-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE"}
 
 electricity_kl <- malaysia %>% 
   filter(param %in% electricity_parameters,
          region == "KualaLumpur") %>%
   mutate(param = units) %>%
-  rchart::chart(folder = "rchart/electricity",
-                save = F, 
+  rchart::chart(save = F, 
                 show = F,
                 scenRef = "Ref",
                 size_text = 20)
 
-electricity_kl$chart_class_diff_absolute
+electricity_kl$chart_class
 ```
 
+```{r rchart-elec-gen-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 30, fig.height = 6, out.width = "100%"}
+
+electricity_kl$chart_class_diff_absolute
+
+```
 
 <br>
 
@@ -1191,8 +1225,7 @@ building_energy <- malaysia %>%
   filter(param == "energyFinalSubsecBySectorBuildEJ",
          region != "Malaysia") %>%
   mutate(param = units) %>%
-  rchart::chart(folder = "rchart/building_energy",
-                save = F, 
+  rchart::chart(save = F, 
                 show = F,
                 size_text = 12)
 
@@ -1204,17 +1237,21 @@ building_energy$chart_class_Ref
 
 ##### Malaysia 
 
-```{r rchart-building-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 36, fig.height = 6, out.width = "100%"}
+```{r rchart-building-sce-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
 building_energy_my <- malaysia %>% 
   filter(param == "energyFinalSubsecBySectorBuildEJ",
          region == "All of Malaysia") %>%
   mutate(param = units) %>%
-  rchart::chart(folder = "rchart/building_energy",
-                save = F, 
+  rchart::chart(save = F, 
                 show = F,
                 scenRef = "Ref")
 
+building_energy_my$chart_class
+```
+```{r rchart-building-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 36, fig.height = 6, out.width = "100%"}
+
 building_energy_my$chart_class_diff_absolute
+
 ```
 
 
@@ -1222,17 +1259,22 @@ building_energy_my$chart_class_diff_absolute
 
 ##### Kuala Lumpur
 
-```{r rchart-building-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 36, fig.height = 6, out.width = "100%"}
+```{r rchart-building-sce-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
 building_energy_kl <- malaysia %>% 
   filter(param == "energyFinalSubsecBySectorBuildEJ",
          region == "KualaLumpur") %>%
   mutate(param = units) %>%
-  rchart::chart(folder = "rchart/building_energy",
-                save = F, 
+  rchart::chart(save = F, 
                 show = F,
                 scenRef = "Ref")
 
+building_energy_kl$chart_class
+```
+
+```{r rchart-building-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 36, fig.height = 6, out.width = "100%"}
+
 building_energy_kl$chart_class_diff_absolute
+
 ```
 
 <br>
@@ -1252,8 +1294,7 @@ transport_m <- malaysia %>%
   filter(param %in% transport_mode_params,
          region != "Malaysia") %>%
   mutate(param = units) %>%
-  rchart::chart(folder = "rchart/transport/mode",
-                save = F, 
+  rchart::chart(save = F, 
                 show = F,
                 size_text = 9)
 
@@ -1265,39 +1306,51 @@ transport_m$chart_class_Ref
 
 ##### Malaysia 
 
-```{r rchart-transport-my-mode, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 28, fig.height = 8, out.width = "100%"}
+```{r rchart-transport-my-sce-mode, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
+
 transport_my_m <- malaysia %>% 
   filter(param %in% transport_mode_params,
          region == "All of Malaysia") %>%
   mutate(param = units) %>%
-  rchart::chart(folder = "rchart/transport/mode",
-                save = F, 
+  rchart::chart(save = F, 
                 show = F,
                 scenRef = "Ref",
                 size_text = 16)
 
-transport_my_m$chart_class_diff_absolute
+transport_my_m$chart_class
+
 ```
 
+```{r rchart-transport-my-mode, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 28, fig.height = 8, out.width = "100%"}
+
+transport_my_m$chart_class_diff_absolute
+
+```
 
 <br>
 
 ##### Kuala Lumpur
 
-```{r rchart-transport-kl-mode, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 28, fig.height = 8, out.width = "100%"}
+```{r rchart-transport-kl-mode, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
+
 transport_kl_m <- malaysia %>% 
   filter(param %in% transport_mode_params,
          region == "KualaLumpur") %>%
   mutate(param = units) %>%
-  rchart::chart(folder = "rchart/transport/mode",
-                save = F, 
+  rchart::chart(save = F, 
                 show = F,
                 scenRef = "Ref",
                 size_text = 16)
 
-transport_kl_m$chart_class_diff_absolute
+transport_kl_m$chart_class
+
 ```
 
+```{r rchart-transport-kl-mode, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 28, fig.height = 8, out.width = "100%"}
+
+transport_kl_m$chart_class_diff_absolute
+
+```
 
 <br>
 
@@ -1315,12 +1368,12 @@ transport_f <- malaysia %>%
   filter(param %in% transport_fuel_params,
          region != "Malaysia") %>%
   mutate(param = units) %>%
-  rchart::chart(folder = "rchart/transport/fuel",
-                save = F, 
+  rchart::chart(save = F, 
                 show = F,
                 size_text = 10)
 
 transport_f$chart_class_Ref
+
 ```
 
 
@@ -1328,39 +1381,60 @@ transport_f$chart_class_Ref
 
 ##### Malaysia 
 
-```{r rchart-transport-my-fuel, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 28, fig.height = 8, out.width = "100%"}
+```{r rchart-transport-my-sce-fuel, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
+
 transport_my_f <- malaysia %>% 
   filter(param %in% transport_fuel_params,
          region == "All of Malaysia") %>%
   mutate(param = units) %>%
-  rchart::chart(folder = "rchart/transport/fuel",
-                save = F, 
+  rchart::chart(save = F, 
                 show = F,
                 scenRef = "Ref",
                 size_text = 18)
 
-transport_my_f$chart_class_diff_absolute
+transport_my_f$chart_class
+
 ```
 
+```{r rchart-transport-my-fuel, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 28, fig.height = 8, out.width = "100%"}
+
+transport_my_f$chart_class_diff_absolute
+
+```
 
 <br>
 
 ##### Kuala Lumpur
 
-```{r rchart-transport-kl-fuel, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 28, fig.height = 8, out.width = "100%"}
+```{r rchart-transport-kl-sce-fuel, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
+
 transport_kl_f <- malaysia %>% 
   filter(param %in% transport_fuel_params,
          region == "KualaLumpur") %>%
   mutate(param = units) %>%
-  rchart::chart(folder = "rchart/transport/fuel",
-                save = F, 
+  rchart::chart(save = F, 
+                show = F,
+                scenRef = "Ref",
+                size_text = 18)
+
+transport_kl_f$chart_class
+
+```
+
+```{r rchart-transport-kl-fuel, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 28, fig.height = 8, out.width = "100%"}
+
+transport_kl_f <- malaysia %>% 
+  filter(param %in% transport_fuel_params,
+         region == "KualaLumpur") %>%
+  mutate(param = units) %>%
+  rchart::chart(save = F, 
                 show = F,
                 scenRef = "Ref",
                 size_text = 18)
 
 transport_kl_f$chart_class_diff_absolute
-```
 
+```
 
 <br>
 
@@ -1376,8 +1450,7 @@ industry_energy <- malaysia %>%
   filter(param == "energyFinalSubsecByFuelIndusEJ",
          region != "Malaysia") %>%
   mutate(param = units) %>%
-  rchart::chart(folder = "rchart/industrial_energy",
-                save = F, 
+  rchart::chart(save = F, 
                 show = F,
                 size_text = 12)
 
@@ -1390,35 +1463,48 @@ industry_energy$chart_class_Ref
 
 ##### Malaysia 
 
-```{r rchart-industry-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 32, fig.height = 6, out.width = "100%"}
+```{r rchart-industry-sce-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
 industry_energy_my <- malaysia %>% 
   filter(param == "energyFinalSubsecByFuelIndusEJ",
          region == "All of Malaysia") %>%
   mutate(param = units) %>%
-  rchart::chart(folder = "rchart/industrial_energy",
-                save = F, 
+  rchart::chart(save = F, 
                 show = F,
                 scenRef = "Ref")
 
-industry_energy_my$chart_class_diff_absolute
+industry_energy_my$chart_class
 ```
 
+```{r rchart-industry-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 32, fig.height = 6, out.width = "100%"}
+
+
+industry_energy_my$chart_class_diff_absolute
+
+```
 
 <br>
 
 ##### Kuala Lumpur
 
-```{r rchart-industry-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 32, fig.height = 6, out.width = "100%"}
+```{r rchart-industry-sce-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
+
 industry_energy_kl <- malaysia %>% 
   filter(param == "energyFinalSubsecByFuelIndusEJ",
          region == "KualaLumpur") %>%
   mutate(param = units) %>%
-  rchart::chart(folder = "rchart/industrial_energy",
-                save = F, 
+  rchart::chart(save = F, 
                 show = F,
                 scenRef = "Ref")
 
+industry_energy_kl$chart_class
+
+```
+
+
+```{r rchart-industry-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 32, fig.height = 6, out.width = "100%"}
+
 industry_energy_kl$chart_class_diff_absolute
+
 ```
 
 <br>
