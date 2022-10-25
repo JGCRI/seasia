@@ -2325,13 +2325,11 @@ data &lt;- gcamextractor::readgcam(gcamdatabase = sample_path,
                                 regionsAggregate = aggregate_regions,
                                 regionsAggregateNames = aggregate_region_names,
                                 folder = &quot;../data/thailand/gcamextractor&quot;)</code></pre>
-<pre class="r"><code>ref &lt;- read.csv(&quot;../data/Thailand/gcamextractor/Ref/gcamDataTable_aggClass1.csv&quot;)
-high &lt;- read.csv(&quot;../data/Thailand/gcamextractor/High/gcamDataTable_aggClass1.csv&quot;)
-low &lt;- read.csv(&quot;../data/Thailand/gcamextractor/Low/gcamDataTable_aggClass1.csv&quot;)
-
-thailand &lt;- dplyr::bind_rows(ref, high, low) %&gt;%
+<pre class="r"><code>thailand &lt;- read.csv(&quot;../data/Thailand/gcamextractor/All/gcamDataTable_aggClass1.csv&quot;) %&gt;%
   filter(x &gt;= 2020, x &lt;= 2065,
-         !grepl(&quot;International&quot;, class))</code></pre>
+         !grepl(&quot;International&quot;, class))
+
+scenRef_name &lt;- &quot;Ref_cities&quot;</code></pre>
 <p><br></p>
 </div>
 <div id="plot-figures" class="section level2 tabset" number="6.3">
@@ -2359,7 +2357,7 @@ summary</h5>
 socioeconomic &lt;- thailand %&gt;%
   filter(param %in% socioeconomic_parameters,
          region %in% c(&quot;MEA area&quot;, &quot;Thailand&quot;),
-         scenario == &quot;Ref&quot;) %&gt;%
+         scenario == scenRef_name) %&gt;%
   mutate(param = units) %&gt;% 
   rchart::chart(save = F, 
                 show = F,
@@ -2408,7 +2406,7 @@ emissions_bar &lt;- thailand %&gt;% filter(param %in% emissions_params,
   rchart::chart(save = F, 
                 show = F,
                 size_text = 19,
-                scenRef = &quot;Ref&quot;,
+                scenRef = scenRef_name,
                 summary_line = T,
                 chart_type = &quot;class_absolute&quot;)
 
@@ -2434,7 +2432,7 @@ scenario.</p>
   rchart::chart(save = F, 
                 show = F,
                 size_text = 19,
-                scenRef = &quot;Ref&quot;,
+                scenRef = scenRef_name,
                 summary_line = T,
                 chart_type = &quot;class_diff_absolute&quot;)
 
@@ -2463,7 +2461,7 @@ energy &lt;- thailand %&gt;%
   rchart::chart(save = F, 
                 show = F,
                 size_text = 20,
-                scenRef = &quot;Ref&quot;)
+                scenRef = scenRef_name)
 
 energy$`chart_class_All of Thailand`</code></pre>
 <div class="figure" style="text-align: center">
@@ -2500,7 +2498,7 @@ electricity &lt;- thailand %&gt;%
   rchart::chart(save = F, 
                 show = F,
                 size_text = 19,
-                scenRef = &quot;Ref&quot;)
+                scenRef = scenRef_name)
 
 electricity$`chart_class_All of Thailand`</code></pre>
 <div class="figure" style="text-align: center">
@@ -2534,6 +2532,28 @@ class="header-section-number">6.3.1.2</span> Sectoral details</h4>
                       &quot;energyFinalSubsecBySectorBuildEJ&quot;,
                       &quot;emissGHGBySectorBuildingsGWPAR5&quot;)
 
+building_sector_colors &lt;- c(
+  &quot;comm cooking&quot; = &quot;#b2e2e2&quot;,
+  &quot;comm hvac&quot; = &quot;#66c2a4&quot;,
+  &quot;comm lighting&quot; = &quot;#2ca25f&quot;,
+  &quot;Commercial Others&quot; = &quot;#006d2c&quot;,
+  &quot;resid rural air conditioners&quot; = &quot;#fee8c8&quot;,
+  &quot;resid rural cooking&quot; = &quot;#fdd49e&quot;,
+  &quot;resid rural lighting&quot; = &quot;#fdbb84&quot;,
+  &quot;resid rural other appliances&quot; = &quot;#fc8d59&quot;,
+  &quot;resid rural refrigerators&quot; = &quot;#ef6548&quot;,
+  &quot;resid rural televisions&quot; = &quot;#d7301f&quot;,
+  &quot;resid rural ventilation&quot; = &quot;#b30000&quot;,
+  &quot;resid rural water heaters&quot; = &quot;#7f0000&quot;,
+  &quot;resid urban air conditioners&quot; = &quot;#ece7f2&quot;,
+  &quot;resid urban cooking&quot; = &quot;#d0d1e6&quot;,
+  &quot;resid urban lighting&quot; = &quot;#a6bddb&quot;,
+  &quot;resid urban other appliances&quot; = &quot;#74a9cf&quot;,
+  &quot;resid urban refrigerators&quot; = &quot;#3690c0&quot;,
+  &quot;resid urban televisions&quot; = &quot;#0570b0&quot;,
+  &quot;resid urban ventilation&quot; = &quot;#045a8d&quot;,
+  &quot;resid urban water heaters&quot; = &quot;#023858&quot; )
+
 buildings &lt;- thailand %&gt;% 
   filter(param %in% buildings_params,
          region %in% c(&quot;All of Thailand&quot;, &quot;MEA area&quot;),
@@ -2542,7 +2562,8 @@ buildings &lt;- thailand %&gt;%
   rchart::chart(save = F, 
                 show = F,
                 size_text = 19,
-                scenRef = &quot;Ref&quot;)
+                scenRef = scenRef_name,
+                palette = building_sector_colors)
 
 buildings$`chart_class_All of Thailand`</code></pre>
 <div class="figure" style="text-align: center">
@@ -2571,6 +2592,48 @@ energy by fuel, and final energy by service between the reference
 scenario (left) and the low and high policy scenarios (right)
 </p>
 </div>
+<pre class="r"><code>building_cook_params &lt;- c(&quot;serviceOutputByTechBuildings&quot;)
+
+building_tech_colors &lt;- c(
+  &quot;comm cooking (gas)&quot; = &quot;#2ca25f&quot;,
+  &quot;comm cooking (refined liquids)&quot; = &quot;#006d2c&quot;,
+  &quot;resid rural cooking (biomass)&quot; = &quot;#fdcc8a&quot;,
+  &quot;resid rural cooking (traditional biomass)&quot; = &quot;#fc8d59&quot;,
+  &quot;resid rural cooking (refined liquids)&quot; = &quot;#e34a33&quot;,
+  &quot;resid rural cooking (electricity)&quot; = &quot;#b30000&quot;,
+  &quot;resid urban cooking (biomass)&quot; = &quot;#bdc9e1&quot;,
+  &quot;resid urban cooking (traditional biomass)&quot; = &quot;#74a9cf&quot;,
+  &quot;resid urban cooking (refined liquids)&quot; = &quot;#2b8cbe&quot;,
+  &quot;resid urban cooking (electricity)&quot; = &quot;#045a8d&quot; )
+
+pop &lt;- thailand %&gt;% 
+  filter(param == &quot;pop&quot;, region %in% c(&quot;Thailand&quot;, &quot;MEA area&quot;), scenario == scenRef_name) %&gt;% 
+  mutate(region = case_when(region == &quot;Thailand&quot; ~ &quot;All of Thailand&quot;,
+                            T ~ region)) %&gt;%
+  rename(pop = value) %&gt;% 
+  select(region, x, pop)
+
+thailand_cook &lt;- thailand %&gt;% 
+  filter(param %in% building_cook_params,
+         grepl(&quot;cook&quot;, class),
+         region %in% c(&quot;All of Thailand&quot;, &quot;MEA area&quot;))
+
+thailand_cook2 &lt;- thailand_cook %&gt;% 
+  full_join(pop) %&gt;% 
+  mutate(serviceOutputByTechBuildingsPerCapita = value/pop) %&gt;% 
+  select(-c(param, value, pop)) %&gt;% 
+  tidyr::pivot_longer(c(serviceOutputByTechBuildingsPerCapita),
+               names_to = &quot;param&quot;, values_to = &quot;value&quot;) %&gt;% 
+  full_join(thailand_cook)
+
+building_cook &lt;- thailand_cook2  %&gt;% 
+  mutate(param = case_when(param == &quot;serviceOutputByTechBuildings&quot; ~ &quot;Cooking output (EJ)&quot;,
+                           T ~ &quot;Per capita cooking output (EJ)&quot;)) %&gt;% 
+  rchart::chart(save = F, show = F, size_text = 19, scenRef = scenRef_name,
+                palette = building_tech_colors)
+
+building_cook$`chart_class_All of Thailand`</code></pre>
+<p><img src="modeling_thailand_files/figure-html/building-details-1.png" width="100%" style="display: block; margin: auto;" /></p>
 </div>
 <div id="transportation" class="section level5" number="6.3.1.2.2">
 <h5><span class="header-section-number">6.3.1.2.2</span>
@@ -2587,7 +2650,7 @@ transport &lt;- thailand %&gt;%
   rchart::chart(save = F, 
                 show = F,
                 size_text = 19,
-                scenRef = &quot;Ref&quot;)
+                scenRef = scenRef_name)
 
 transport$`chart_class_All of Thailand`</code></pre>
 <div class="figure" style="text-align: center">
@@ -2620,7 +2683,7 @@ industry &lt;- thailand %&gt;%
   rchart::chart(save = F, 
                 show = F,
                 size_text = 19,
-                scenRef = &quot;Ref&quot;)
+                scenRef = scenRef_name)
 
 industry$`chart_class_All of Thailand`</code></pre>
 <div class="figure" style="text-align: center">
