@@ -909,25 +909,20 @@ ghg_gas_my <- malaysia %>%
 my_emissions_gas <- bind_rows(ghg_gas_my, my_emissions)
 ```
 
-``` {r rchart-emiss-gas-scenario-plot-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, out.width = "100%"}
+``` {r rchart-emiss-gas-scenario-plot-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 12, fig.height = 14, out.width = "100%"}
 
-gas_sce_my <- my_emissions_gas %>%
+gas_my <- my_emissions_gas %>%
   rchart::chart(save = F, 
                 show = F,
                 scenRef = "Ref",
-                chart_type = "class_absolute",
                 summary_line = T,
-                size_text = 13)
+                size_text = 10)
 
-gas_sce_my$chart_class
+gas_my$chart_class
 
 ```
 
 ``` {r rchart-emiss-gas-plot-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 24, fig.height = 12, out.width = "100%"}
-gas_my <- my_emissions_gas %>%
-  rchart::chart(save = F, 
-                show = F,
-                scenRef = "Ref")
 
 gas_my$chart_class_diff_absolute
 
@@ -973,26 +968,20 @@ ghg_gas_kl <- malaysia %>%
 kl_emissions_gas <- bind_rows(ghg_gas_kl, kl_emissions)
 ```
 
-``` {r rchart-emiss-gas-scenario-plot-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
+``` {r rchart-emiss-gas-scenario-plot-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 12, fig.height = 16}
 
-gas_sce_kl <- kl_emissions_gas %>%
+gas_kl <- kl_emissions_gas %>%
   rchart::chart(save = F, 
                 show = F,
                 scenRef = "Ref",
                 summary_line = T,
-                chart_type = "class_absolute",
-                size_text = 13)
+                size_text = 14)
 
-gas_sce_my$chart_class
+gas_kl$chart_class
 
 ```
 
-``` {r rchart-gas-plot-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 10, fig.height = 6, out.width = "100%"}
-gas_kl <- kl_emissions_gas %>%
-  rchart::chart(save = F, 
-                show = F,
-                size_text = 12,
-                scenRef = "Ref")
+``` {r rchart-gas-plot-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 10, fig.height = 8, out.width = "100%"}
 
 gas_kl$chart_class_diff_absolute
 
@@ -1015,9 +1004,11 @@ p_energy <- malaysia %>%
   mutate(param = units) %>%
   rchart::chart(save = F, 
                 show = F,
-                scenRef = "Ref")
+                scenRef = "Ref",
+                size_text = 12)
 
 p_energy$chart_class_Ref
+
 ```
 
 
@@ -1025,7 +1016,7 @@ p_energy$chart_class_Ref
 
 ##### Malaysia 
 
-```{r rchart-primary-energy-sce-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
+```{r rchart-primary-energy-sce-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, }
 
 p_energy_my <- malaysia %>% 
   filter(param == "energyPrimaryByFuelEJ",
@@ -1033,8 +1024,7 @@ p_energy_my <- malaysia %>%
   mutate(param = units) %>%
   rchart::chart(save = F, 
                 show = F,
-                scenRef = "Ref",
-                size_text = 18)
+                scenRef = "Ref")
 
 p_energy_my$chart_class
 
@@ -1059,7 +1049,7 @@ p_energy_kl <- malaysia %>%
   rchart::chart(save = F, 
                 show = F,
                 scenRef = "Ref",
-                size_text = 24)
+                size_text = 28)
 
 p_energy_kl$chart_param_diff_absolute
 
@@ -1103,10 +1093,11 @@ energy_my <- malaysia %>%
   rchart::chart(save = F, 
                 show = F,
                 scenRef = "Ref",
-                size_text = 20)
+                size_text = 12)
 
 energy_my$chart_class
 ```
+
 ```{r rchart-energy-sce-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 28, fig.height = 10, out.width = "100%"}
 
 energy_my$chart_class_diff_absolute
@@ -1125,7 +1116,7 @@ energy_kl <- malaysia %>%
   rchart::chart(save = F, 
                 show = F,
                 scenRef = "Ref",
-                size_text = 20)
+                size_text = 12)
 
 energy_kl$chart_class
 ```
@@ -1145,7 +1136,7 @@ energy_kl$chart_class_diff_absolute
 
 ##### Malaysia vs Kuala Lumpur
 
-```{r rchart-elec-gen, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.height = 6}
+```{r rchart-elec-gen, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.height = 8}
 electricity_parameters <- c("elecConsumByDemandSectorTWh", "elecByTechTWh")
 
 electricity <- malaysia %>% 
@@ -1164,7 +1155,7 @@ electricity$chart_class_Ref
 
 ##### Malaysia 
 
-```{r rchart-elec-gen-sce-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
+```{r rchart-elec-gen-sce-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.height = 12, fig.width = 10}
 
 electricity_my <- malaysia %>% 
   filter(param %in% electricity_parameters,
@@ -1173,10 +1164,12 @@ electricity_my <- malaysia %>%
   rchart::chart(save = F, 
                 show = F,
                 scenRef = "Ref",
-                size_text = 10)
+                size_text = 12)
 
 electricity_my$chart_class
+
 ```
+
 ```{r rchart-elec-gen-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 18, fig.height = 6, out.width = "100%"}
 
 electricity_my$chart_class_diff_absolute
@@ -1188,7 +1181,7 @@ electricity_my$chart_class_diff_absolute
 
 ##### Kuala Lumpur
 
-```{r rchart-elec-gen-sce-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE"}
+```{r rchart-elec-gen-sce-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
 
 electricity_kl <- malaysia %>% 
   filter(param %in% electricity_parameters,
@@ -1197,7 +1190,7 @@ electricity_kl <- malaysia %>%
   rchart::chart(save = F, 
                 show = F,
                 scenRef = "Ref",
-                size_text = 20)
+                size_text = 12)
 
 electricity_kl$chart_class
 ```
@@ -1220,7 +1213,7 @@ electricity_kl$chart_class_diff_absolute
 
 ##### Malaysia vs Kuala Lumpur
 
-```{r rchart-building, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
+```{r rchart-building, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.height = 8, fig.width = 6}
 building_energy <- malaysia %>% 
   filter(param == "energyFinalSubsecBySectorBuildEJ",
          region != "Malaysia") %>%
@@ -1237,7 +1230,8 @@ building_energy$chart_class_Ref
 
 ##### Malaysia 
 
-```{r rchart-building-sce-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
+```{r rchart-building-sce-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.height = 10, fig.width = 8}
+
 building_energy_my <- malaysia %>% 
   filter(param == "energyFinalSubsecBySectorBuildEJ",
          region == "All of Malaysia") %>%
@@ -1248,6 +1242,7 @@ building_energy_my <- malaysia %>%
 
 building_energy_my$chart_class
 ```
+
 ```{r rchart-building-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 36, fig.height = 6, out.width = "100%"}
 
 building_energy_my$chart_class_diff_absolute
@@ -1315,7 +1310,7 @@ transport_my_m <- malaysia %>%
   rchart::chart(save = F, 
                 show = F,
                 scenRef = "Ref",
-                size_text = 16)
+                size_text = 10)
 
 transport_my_m$chart_class
 
@@ -1331,7 +1326,7 @@ transport_my_m$chart_class_diff_absolute
 
 ##### Kuala Lumpur
 
-```{r rchart-transport-kl-mode, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
+```{r rchart-transport-kl-sce-mode, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
 
 transport_kl_m <- malaysia %>% 
   filter(param %in% transport_mode_params,
@@ -1340,7 +1335,7 @@ transport_kl_m <- malaysia %>%
   rchart::chart(save = F, 
                 show = F,
                 scenRef = "Ref",
-                size_text = 16)
+                size_text = 10)
 
 transport_kl_m$chart_class
 
@@ -1390,7 +1385,7 @@ transport_my_f <- malaysia %>%
   rchart::chart(save = F, 
                 show = F,
                 scenRef = "Ref",
-                size_text = 18)
+                size_text = 10)
 
 transport_my_f$chart_class
 
@@ -1415,7 +1410,7 @@ transport_kl_f <- malaysia %>%
   rchart::chart(save = F, 
                 show = F,
                 scenRef = "Ref",
-                size_text = 18)
+                size_text = 10)
 
 transport_kl_f$chart_class
 
@@ -1446,6 +1441,7 @@ transport_kl_f$chart_class_diff_absolute
 ##### Malaysia vs Kuala Lumpur
 
 ```{r rchart-industry, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
+
 industry_energy <- malaysia %>% 
   filter(param == "energyFinalSubsecByFuelIndusEJ",
          region != "Malaysia") %>%
@@ -1456,6 +1452,7 @@ industry_energy <- malaysia %>%
 
 
 industry_energy$chart_class_Ref
+
 ```
 
 
@@ -1464,6 +1461,7 @@ industry_energy$chart_class_Ref
 ##### Malaysia 
 
 ```{r rchart-industry-sce-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
+
 industry_energy_my <- malaysia %>% 
   filter(param == "energyFinalSubsecByFuelIndusEJ",
          region == "All of Malaysia") %>%
@@ -1473,10 +1471,10 @@ industry_energy_my <- malaysia %>%
                 scenRef = "Ref")
 
 industry_energy_my$chart_class
+
 ```
 
 ```{r rchart-industry-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 32, fig.height = 6, out.width = "100%"}
-
 
 industry_energy_my$chart_class_diff_absolute
 
