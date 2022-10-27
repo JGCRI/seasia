@@ -22,13 +22,13 @@
                             <share-weight>1</share-weight>
                         </period>
                         <period year = "2030">
-                            <share-weight>0.3</share-weight>
+                            <share-weight>0.75</share-weight>
                         </period>
                         <period year = "2040">
-                            <share-weight>0.2</share-weight>
+                            <share-weight>0.5</share-weight>
                         </period>
                         <period year = "2050">
-                            <share-weight>0.1</share-weight>
+                            <share-weight>0.25</share-weight>
                         </period>
                         <period year = "2060">
                             <share-weight>0</share-weight>
@@ -52,13 +52,13 @@
                             <share-weight>1</share-weight>
                         </period>
                         <period year = "2030">
-                            <share-weight>0.3</share-weight>
+                            <share-weight>0.75</share-weight>
                         </period>
                         <period year = "2040">
-                            <share-weight>0.2</share-weight>
+                            <share-weight>0.5</share-weight>
                         </period>
                         <period year = "2050">
-                            <share-weight>0.1</share-weight>
+                            <share-weight>0.25</share-weight>
                         </period>
                         <period year = "2060">
                             <share-weight>0</share-weight>
@@ -82,13 +82,13 @@
                             <share-weight>1</share-weight>
                         </period>
                         <period year = "2030">
-                            <share-weight>0.3</share-weight>
+                            <share-weight>0.75</share-weight>
                         </period>
                         <period year = "2040">
-                            <share-weight>0.2</share-weight>
+                            <share-weight>0.5</share-weight>
                         </period>
                         <period year = "2050">
-                            <share-weight>0.1</share-weight>
+                            <share-weight>0.25</share-weight>
                         </period>
                         <period year = "2060">
                             <share-weight>0</share-weight>
@@ -129,13 +129,13 @@
                             <share-weight>1</share-weight>
                         </period>
                         <period year = "2030">
-                            <share-weight>0.3</share-weight>
+                            <share-weight>0.75</share-weight>
                         </period>
                         <period year = "2040">
-                            <share-weight>0.2</share-weight>
+                            <share-weight>0.5</share-weight>
                         </period>
                         <period year = "2050">
-                            <share-weight>0.1</share-weight>
+                            <share-weight>0.25</share-weight>
                         </period>
                         <period year = "2060">
                             <share-weight>0</share-weight>
@@ -159,13 +159,13 @@
                             <share-weight>1</share-weight>
                         </period>
                         <period year = "2030">
-                            <share-weight>0.3</share-weight>
+                            <share-weight>0.75</share-weight>
                         </period>
                         <period year = "2040">
-                            <share-weight>0.2</share-weight>
+                            <share-weight>0.5</share-weight>
                         </period>
                         <period year = "2050">
-                            <share-weight>0.1</share-weight>
+                            <share-weight>0.25</share-weight>
                         </period>
                         <period year = "2060">
                             <share-weight>0</share-weight>
@@ -189,13 +189,13 @@
                             <share-weight>1</share-weight>
                         </period>
                         <period year = "2030">
-                            <share-weight>0.3</share-weight>
+                            <share-weight>0.75</share-weight>
                         </period>
                         <period year = "2040">
-                            <share-weight>0.2</share-weight>
+                            <share-weight>0.5</share-weight>
                         </period>
                         <period year = "2050">
-                            <share-weight>0.1</share-weight>
+                            <share-weight>0.25</share-weight>
                         </period>
                         <period year = "2060">
                             <share-weight>0</share-weight>
@@ -234,13 +234,13 @@
                             <share-weight>1</share-weight>
                         </period>
                         <period year = "2030">
-                            <share-weight>0.3</share-weight>
+                            <share-weight>0.75</share-weight>
                         </period>
                         <period year = "2040">
-                            <share-weight>0.2</share-weight>
+                            <share-weight>0.5</share-weight>
                         </period>
                         <period year = "2050">
-                            <share-weight>0.1</share-weight>
+                            <share-weight>0.25</share-weight>
                         </period>
                         <period year = "2060">
                             <share-weight>0</share-weight>
@@ -264,13 +264,13 @@
                             <share-weight>1</share-weight>
                         </period>
                         <period year = "2030">
-                            <share-weight>0.3</share-weight>
+                            <share-weight>0.75</share-weight>
                         </period>
                         <period year = "2040">
-                            <share-weight>0.2</share-weight>
+                            <share-weight>0.5</share-weight>
                         </period>
                         <period year = "2050">
-                            <share-weight>0.1</share-weight>
+                            <share-weight>0.25</share-weight>
                         </period>
                         <period year = "2060">
                             <share-weight>0</share-weight>
@@ -294,13 +294,13 @@
                             <share-weight>1</share-weight>
                         </period>
                         <period year = "2030">
-                            <share-weight>0.3</share-weight>
+                            <share-weight>0.75</share-weight>
                         </period>
                         <period year = "2040">
-                            <share-weight>0.2</share-weight>
+                            <share-weight>0.5</share-weight>
                         </period>
                         <period year = "2050">
-                            <share-weight>0.1</share-weight>
+                            <share-weight>0.25</share-weight>
                         </period>
                         <period year = "2060">
                             <share-weight>0</share-weight>

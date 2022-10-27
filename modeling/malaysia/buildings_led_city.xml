@@ -106,13 +106,13 @@
                         <interpolation-rule
                             apply-to = "share-weight"
                             from-year = "2015"
-                            to-year = "2050"
+                            to-year = "2070"
                             delete = "1">
                             <interpolation-function name = "linear"/>
                         </interpolation-rule>
                         <interpolation-rule
                             apply-to = "share-weight"
-                            from-year = "2050"
+                            from-year = "2070"
                             to-year = "2100">
                             <interpolation-function name = "fixed"/>
                         </interpolation-rule>
@@ -120,12 +120,18 @@
                             <share-weight>1</share-weight>
                         </period>
                         <period year = "2030">
-                            <share-weight>0.5</share-weight>
+                            <share-weight>0.8</share-weight>
                         </period>
                         <period year = "2040">
-                            <share-weight>0.25</share-weight>
+                            <share-weight>0.6</share-weight>
                         </period>
                         <period year = "2050">
+                            <share-weight>0.4</share-weight>
+                        </period>
+                        <period year = "2060">
+                            <share-weight>0.2</share-weight>
+                        </period>
+                        <period year = "2070">
                             <share-weight>0</share-weight>
                         </period>
                     </stub-technology>
@@ -133,13 +139,13 @@
                         <interpolation-rule
                             apply-to = "share-weight"
                             from-year = "2015"
-                            to-year = "2050"
+                            to-year = "2070"
                             delete = "1">
                             <interpolation-function name = "linear"/>
                         </interpolation-rule>
                         <interpolation-rule
                             apply-to = "share-weight"
-                            from-year = "2050"
+                            from-year = "2070"
                             to-year = "2100">
                             <interpolation-function name = "fixed"/>
                         </interpolation-rule>
@@ -147,12 +153,18 @@
                             <share-weight>1</share-weight>
                         </period>
                         <period year = "2030">
-                            <share-weight>0.5</share-weight>
+                            <share-weight>0.8</share-weight>
                         </period>
                         <period year = "2040">
-                            <share-weight>0.25</share-weight>
+                            <share-weight>0.6</share-weight>
                         </period>
                         <period year = "2050">
+                            <share-weight>0.4</share-weight>
+                        </period>
+                        <period year = "2060">
+                            <share-weight>0.2</share-weight>
+                        </period>
+                        <period year = "2070">
                             <share-weight>0</share-weight>
                         </period>
                     </stub-technology>
@@ -160,13 +172,13 @@
                         <interpolation-rule
                             apply-to = "share-weight"
                             from-year = "2015"
-                            to-year = "2050"
+                            to-year = "2070"
                             delete = "1">
                             <interpolation-function name = "linear"/>
                         </interpolation-rule>
                         <interpolation-rule
                             apply-to = "share-weight"
-                            from-year = "2050"
+                            from-year = "2070"
                             to-year = "2100">
                             <interpolation-function name = "fixed"/>
                         </interpolation-rule>
@@ -174,23 +186,29 @@
                             <share-weight>1</share-weight>
                         </period>
                         <period year = "2030">
-                            <share-weight>0.5</share-weight>
+                            <share-weight>0.8</share-weight>
                         </period>
                         <period year = "2040">
-                            <share-weight>0.25</share-weight>
+                            <share-weight>0.6</share-weight>
                         </period>
                         <period year = "2050">
+                            <share-weight>0.4</share-weight>
+                        </period>
+                        <period year = "2060">
+                            <share-weight>0.2</share-weight>
+                        </period>
+                        <period year = "2070">
                             <share-weight>0</share-weight>
                         </period>
                     </stub-technology>
                 </subsector>
                 <subsector name = "refined liquids">
                     <share-weight year = "2015">1</share-weight>
-                    <share-weight fillout = "1" year = "2050">0</share-weight>
+                    <share-weight fillout = "1" year = "2070">0</share-weight>
                     <interpolation-rule
                         apply-to = "share-weight"
                         from-year = "2015"
-                        to-year = "2050"
+                        to-year = "2070"
                         delete = "1">
                         <interpolation-function name = "linear"/>
                     </interpolation-rule>
@@ -202,13 +220,13 @@
                         <interpolation-rule
                             apply-to = "share-weight"
                             from-year = "2015"
-                            to-year = "2050"
+                            to-year = "2070"
                             delete = "1">
                             <interpolation-function name = "linear"/>
                         </interpolation-rule>
                         <interpolation-rule
                             apply-to = "share-weight"
-                            from-year = "2050"
+                            from-year = "2070"
                             to-year = "2100">
                             <interpolation-function name = "fixed"/>
                         </interpolation-rule>
@@ -216,12 +234,18 @@
                             <share-weight>1</share-weight>
                         </period>
                         <period year = "2030">
-                            <share-weight>0.5</share-weight>
+                            <share-weight>0.8</share-weight>
                         </period>
                         <period year = "2040">
-                            <share-weight>0.25</share-weight>
+                            <share-weight>0.6</share-weight>
                         </period>
                         <period year = "2050">
+                            <share-weight>0.4</share-weight>
+                        </period>
+                        <period year = "2060">
+                            <share-weight>0.2</share-weight>
+                        </period>
+                        <period year = "2070">
                             <share-weight>0</share-weight>
                         </period>
                     </stub-technology>
@@ -229,13 +253,13 @@
                         <interpolation-rule
                             apply-to = "share-weight"
                             from-year = "2015"
-                            to-year = "2050"
+                            to-year = "2070"
                             delete = "1">
                             <interpolation-function name = "linear"/>
                         </interpolation-rule>
                         <interpolation-rule
                             apply-to = "share-weight"
-                            from-year = "2050"
+                            from-year = "2070"
                             to-year = "2100">
                             <interpolation-function name = "fixed"/>
                         </interpolation-rule>
@@ -243,12 +267,18 @@
                             <share-weight>1</share-weight>
                         </period>
                         <period year = "2030">
-                            <share-weight>0.5</share-weight>
+                            <share-weight>0.8</share-weight>
                         </period>
                         <period year = "2040">
-                            <share-weight>0.25</share-weight>
+                            <share-weight>0.6</share-weight>
                         </period>
                         <period year = "2050">
+                            <share-weight>0.4</share-weight>
+                        </period>
+                        <period year = "2060">
+                            <share-weight>0.2</share-weight>
+                        </period>
+                        <period year = "2070">
                             <share-weight>0</share-weight>
                         </period>
                     </stub-technology>
@@ -256,13 +286,13 @@
                         <interpolation-rule
                             apply-to = "share-weight"
                             from-year = "2015"
-                            to-year = "2050"
+                            to-year = "2070"
                             delete = "1">
                             <interpolation-function name = "linear"/>
                         </interpolation-rule>
                         <interpolation-rule
                             apply-to = "share-weight"
-                            from-year = "2050"
+                            from-year = "2070"
                             to-year = "2100">
                             <interpolation-function name = "fixed"/>
                         </interpolation-rule>
@@ -270,23 +300,29 @@
                             <share-weight>1</share-weight>
                         </period>
                         <period year = "2030">
-                            <share-weight>0.5</share-weight>
+                            <share-weight>0.8</share-weight>
                         </period>
                         <period year = "2040">
-                            <share-weight>0.25</share-weight>
+                            <share-weight>0.6</share-weight>
                         </period>
                         <period year = "2050">
+                            <share-weight>0.4</share-weight>
+                        </period>
+                        <period year = "2060">
+                            <share-weight>0.2</share-weight>
+                        </period>
+                        <period year = "2070">
                             <share-weight>0</share-weight>
                         </period>
                     </stub-technology>
                 </subsector>
                 <subsector name = "refined liquids">
                     <share-weight year = "2015">1</share-weight>
-                    <share-weight fillout = "1" year = "2050">0</share-weight>
+                    <share-weight fillout = "1" year = "2070">0</share-weight>
                     <interpolation-rule
                         apply-to = "share-weight"
                         from-year = "2015"
-                        to-year = "2050"
+                        to-year = "2070"
                         delete = "1">
                         <interpolation-function name = "linear"/>
                     </interpolation-rule>
