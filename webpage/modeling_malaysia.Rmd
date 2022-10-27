@@ -154,27 +154,31 @@ Future policies that will be modeled are described in the table below. In genera
 The following subsections give additional details and explanations for the policies listed above.
 (In progress. Will be expanded with examples for each.)
 
-## Electricity Generation Mix - Subsidy
+## Private ICE Phase-out
 ***
 
-```{r electricity-generation-files-table, results = 'show', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE}
+## Public/Private Vehicle Modal Shift
+***
 
-dt_url <- c("https://github.com/JGCRI/seasia/blob/main/data/malaysia/inputs/malaysia_elec_fuel_mix_2030_pathway.xlsx",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_elec_fuel_mix_2030_KL.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_hydro_constraint_2030_KL.xml")
+## High Efficiency Appliances
+***
 
-files <- c("malaysia_elec_fuel_mix_2030_pathway.xlsx",
-           "malaysia_elec_fuel_mix_2030_KL.xml",
-           "malaysia_hydro_constraint_2030_KL.xml")
+```{r high-eff-appliances-files-table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
+
+dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/efficient_appliances_high.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/efficient_appliances_low.xml")
 
 data.frame(
-  "Relevant Files" = c("Excel spreadsheet showing initial calculations to build this policy",
-                   "XML file for GCAM with electricity generation percentages by fuel in 2030",
-                   "XML file for GCAM to set exogenous hydropower generation")) %>%
-  dplyr::mutate(Link = cell_spec(files,"html",link=dt_url)) %>%
-  kable("html", escape = FALSE, col.names = c("Relevant Files", "Link")) %>%
+  Scenario = c("High", "Low")) %>% 
+  dplyr:: mutate("Files Used" = cell_spec(c("efficient_appliances_high.xml",
+                                            "efficient_appliances_low.xml"),
+                                          "html", link=dt_url),
+         Description = c("Increase prevelance of high-efficiency technologies (commercial and residential) through 2050",
+                         "Increase prevelance of high-efficiency technologies (commercial and residential) through 2070")) %>% 
+  kable("html", escape = FALSE, col.names = c("Scenario", "Files Used", "Description")) %>%
   kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
   row_spec(0, background = "#2A2A2A", color = "white")
+
 ```
 
 
@@ -189,9 +193,7 @@ data.frame(
 </p>
 
 <p style='margin-left:1em;'>
-The goal of this example is to set a minimum value (floor) in GCAM for the amount of electricity generation from each fuel type (coal, natural gas, solar, etc.) corresponding with the planned percentages in the KLLCSBP2030 (below).
-
-<p align="center"> <img src="images/KL_2030_power.png"></p>
+The goal of this policy is to represent an increase in energy efficient technologies in the commercial and residential sectors. The difference between the low and high scenario versions of this policy is the year in which the desired mix of technologies is achieved.
 
 </p>
 </span>
@@ -212,11 +214,11 @@ The goal of this example is to set a minimum value (floor) in GCAM for the amoun
 </p>
 
 <p style='margin-left:1em;'>
-One way to set a generation floor for each fuel type in GCAM is to use a subsidy policy. This will lower the cost of the electricity generation technology until the floor is reached. If there is more demand for electricity than is supplied by the sum of the generation floors, then the remaining demand will be met by a mix of fuels determined by the market.
-
-Hydropower is exogenous in GCAM and has a fixed pathway. The power generation values for this technology are set explicitly using a fixed output add-on XML. 
-
+We can adjust the shareweights for technologies like air conditioners, water heaters, and other appliances to encourage the use of high efficiency technologies and discourage the use of low efficiency appliances. 
 </p>
+
+
+
 </span>
 </div>
 
@@ -227,7 +229,202 @@ Hydropower is exogenous in GCAM and has a fixed pathway. The power generation va
 <!--------Background-------->
 <!-------------------------->
 
-```{r background policy-portfolio-standards RE, child = 'background_policy-portfolio-standards.rmd'}
+```{r background-shareweights-high-eff-appliances, child = 'background_shareweights.rmd'}
+```
+
+
+<!-------------------------->
+<!---GCAM Implementation---->
+<!-------------------------->
+
+<div class="warning" style='background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+<p style='text-align:center; font-size:24px'>
+<b>GCAM Implementation</b>
+</p>
+
+<p style='margin-left:1em;'>
+1. Create a folder in the input directory: `./gcam-core/input/addons`.
+2. Download the desired xml file (either [efficient_appliances_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/efficient_appliances_high.xml) or [efficient_appliances_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/efficient_appliances_low.xml)) to the folder.
+4. To adjust the year in which the target mix of technologies is achieved: within each `stub-technology` tag in the XML, change the `to-year` in the first `interpolation-rule` and the `from-year` in the second. Also change the `year` of the `period` tag in which the `share-weight` is 0.
+5. Save the xml and then point to it in your configuration file by adding the line (replace `high` with `low` as needed): 
+<p style='font-size:0.8em'>
+`<Value name = "scen">../input/addons/malaysia/efficient_appliances__high.xml</Value>`
+</p>
+
+</span>
+</div>
+
+<br>   
+
+## Lighting Efficiency
+***
+
+```{r lighting-files-table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
+
+dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/buildings_led_high.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/buildings_led_low.xml")
+
+data.frame(
+  Scenario = c("High", "Low")) %>% 
+  dplyr:: mutate("Files Used" = cell_spec(c("buildings_led_high.xml",
+                                            "buildings_led_low.xml"),
+                                          "html", link=dt_url),
+         Description = c("Gradually phases non-LED residential lighting technology out of the market by 2050",
+                         "Gradually phases non-LED residential lighting technology out of the market by 2070")) %>% 
+  kable("html", escape = FALSE, col.names = c("Scenario", "Files Used", "Description")) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
+  row_spec(0, background = "#2A2A2A", color = "white")
+
+```
+
+
+<!-------------------------->
+<!----------Goal------------>
+<!-------------------------->
+
+<div class="warning" style='background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+<p style='text-align:center; font-size:24px'>
+<b>Goal</b>
+</p>
+
+<p style='margin-left:1em;'>
+The goal of this policy is to represent increasing use of LED lighting in residential buildings and the decreasing use of other, less energy efficient lighting technologies. The difference between the low and high scenario versions of this policy is the year in which 100% LED residential lighting is achieved.
+
+</p>
+</span>
+</div>
+
+<br>
+
+
+<!-------------------------->
+<!--------Approach---------->
+<!-------------------------->
+
+<div class="warning" style='background-color:#fffae0; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+
+<p style='text-align:center; font-size:24px'>
+<b>Approach</b>
+</p>
+
+<p style='margin-left:1em;'>
+We can gradually decrease the shareweights of all non-LED residential lighting technologies in order to phase them out of the market. The year in which the non-LED shareweights reach 0 corresponds with the year in which 100% LED residential lighting is achieved.
+</p>
+
+
+
+</span>
+</div>
+
+<br>
+
+
+<!-------------------------->
+<!--------Background-------->
+<!-------------------------->
+
+```{r background shareweights lighting, child = 'background_shareweights.rmd'}
+```
+
+
+<!-------------------------->
+<!---GCAM Implementation---->
+<!-------------------------->
+
+<div class="warning" style='background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+<p style='text-align:center; font-size:24px'>
+<b>GCAM Implementation</b>
+</p>
+
+<p style='margin-left:1em;'>
+1. Create a folder in the input directory: `./gcam-core/input/addons`.
+2. Download the desired xml file (either [buildings_led_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/buildings_led_high.xml) or [buildings_led_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/buildings_led_low.xml)) to the folder.
+4. To adjust the year in which 100% LED lighting is achieved: within each non-LED `stub-technology` tag in the XML, change the `to-year` in the first `interpolation-rule` and the `from-year` in the second. Also change the `year` of the `period` tag in which the `share-weight` is 0.
+5. Save the xml and then point to it in your configuration file by adding the line (replace `high` with `low` as needed): 
+<p style='font-size:0.8em'>
+`<Value name = "scen">../input/addons/malaysia/buildings_led_high.xml</Value>`
+</p>
+
+</span>
+</div>
+
+<br>   
+
+
+## Industry Energy Efficiency
+***
+
+```{r industry-aeei-files-table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
+
+dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/industry_aeei_high.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/industry_aeei_low.xml")
+
+data.frame(
+  Scenario = c(rep("High",1), rep("Low",1))) %>% 
+  mutate("Files Used" = cell_spec( c("industry_aeei_high.xml",
+                                     "industry_aeei_low.xml"),
+                                   "html", link = dt_url)) %>% 
+  mutate(Description = c("Increases overall efficiency of industrial processes by 1% annually through 2070",
+                         "Increases overall efficiency of industrial processes by 0.5% annually through 2070")) %>%
+  kable("html", escape = FALSE, col.names = c("Scenario", "Files Used", "Description")) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
+  row_spec(0, background = "#2A2A2A", color = "white")
+```
+
+
+<!-------------------------->
+<!----------Goal------------>
+<!-------------------------->
+
+<div class="warning" style='background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+<p style='text-align:center; font-size:24px'>
+<b>Goal</b>
+</p>
+
+<p style='margin-left:1em;'>
+The goal of this policy is to represent measures to increase average efficiency of industrial processes. The difference between the low and high scenarios is the rate at which average industrial energy intensity decreases annually.
+</p>
+
+</span>
+</div>
+
+<br>
+
+
+<!-------------------------->
+<!--------Approach---------->
+<!-------------------------->
+
+<div class="warning" style='background-color:#fffae0; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+
+<p style='text-align:center; font-size:24px'>
+<b>Approach</b>
+</p>
+
+<p style='margin-left:1em;'>
+To represent a gradual increase in industrial efficiency, we can use GCAM's `aeei` parameter, which controls the autonomous energy efficiency improvement (AEEI) of industrial processes.
+</p>
+
+
+</span>
+</div>
+
+<br>
+
+
+<!--------------------------->
+<!--------Background--------->
+<!--------------------------->
+
+<!-- TO DO: make background page for aeei -->
+
+```{r background aeei industry}
 ```
 
 <!-------------------------->
@@ -241,25 +438,13 @@ Hydropower is exogenous in GCAM and has a fixed pathway. The power generation va
 </p>
 
 <p style='margin-left:1em;'>
-1. Create a folder in the input directory eg. `./gcam-core/input/addons/malaysia`.
-2. Download the example XML file [malaysia_elec_fuel_mix_2030_KL.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_elec_fuel_mix_2030_KL.xml) to the folder. (Click on `Raw` and then `right-click` and select `save-as`.)
-3. To make adjustments: within each `policy-portfolio-standard` tag in the XML, adjust the following:
+1. Create a folder in the input directory: `./gcam-core/input/addons`.
+2. Download the desired industrial aeei xml file (either [industry_aeei_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/industry_aeei_high.xml) or [industry_aeei_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/industry_aeei_low.xml)) to the folder.
+4. To adjust the rate of industrial energy efficiency increase, change the value of the `aeei` tag for each desired year.
+5. Save the xml and then point to it in your configuration file by adding the line (replace `high` with `low` as needed): 
 </p>
-<ul style='margin-left:4em; text-align:left;'>
-  <li>`constraint` for each year in which a floor is desired</li>
-  <li>Set `min-price` to a large negative value for years in which an exact constraint, rather than a floor, is desired</li>
-</ul>
-<p style='margin-left:1em;'>
-4. Within each `supplysector` tag in the XML, make sure that the corresponding `input-subsidy` is added within each relevant `period` for each `stub-technology` you wish to constrain.
-5. Save the XML and then point to it in your configuration file by adding the line: 
-<p style='font-size:0.9em'>
-`<Value name = "scen">../input/addons/malaysia/malaysia_elec_fuel_mix_2030_KL.xml</Value>`
-6. To adjust the hydropower pathway, download the example XML file [malaysia_hydro_constraint_2030_KL.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_hydro_constraint_2030_KL.xml) to the folder. 
-7. Within each `fixedOutput` tag in the XML, adjust the value to reflect desired hydropower output in each period. The user can also add additional periods. 
-8. Save the XML and point to it in your configuration file by adding the line: 
-<p style='font-size:0.9em'>
-`<Value name = "scen">../input/addons/malaysia/malaysia_hydro_constraint_2030_KL.xml</Value>`
-
+<p style='font-size:0.8em'>
+`<Value name = "scen">../input/addons/malaysia/industry_aeei_high.xml</Value>`
 </p>
 </p>
 
@@ -268,7 +453,7 @@ Hydropower is exogenous in GCAM and has a fixed pathway. The power generation va
 
 <br>
 
-## Coal phase-out
+## Coal Phase-Out
 ***
 
 ```{r coal-phaseout-files-table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
@@ -380,25 +565,27 @@ There are two steps to phase out coal generation. The first is to prevent any ne
 
 <br>
 
-## Lighting Efficiency
+## Electricity Generation Mix
 ***
 
-```{r lighting-files-table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
+```{r electricity-generation-files-table, results = 'show', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE}
 
-dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/buildings_led_high.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/buildings_led_low.xml")
+dt_url <- c("https://github.com/JGCRI/seasia/blob/main/data/malaysia/inputs/malaysia_elec_fuel_mix_2030_pathway.xlsx",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_elec_fuel_mix_2030_KL.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_hydro_constraint_2030_KL.xml")
+
+files <- c("malaysia_elec_fuel_mix_2030_pathway.xlsx",
+           "malaysia_elec_fuel_mix_2030_KL.xml",
+           "malaysia_hydro_constraint_2030_KL.xml")
 
 data.frame(
-  Scenario = c("High", "Low")) %>% 
-  dplyr:: mutate("Files Used" = cell_spec(c("buildings_led_high.xml",
-                                            "buildings_led_low.xml"),
-                                          "html", link=dt_url),
-         Description = c("Gradually phases non-LED residential lighting technology out of the market by 2050",
-                         "Gradually phases non-LED residential lighting technology out of the market by 2070")) %>% 
-  kable("html", escape = FALSE, col.names = c("Scenario", "Files Used", "Description")) %>%
+  "Relevant Files" = c("Excel spreadsheet showing initial calculations to build this policy",
+                   "XML file for GCAM with electricity generation percentages by fuel in 2030",
+                   "XML file for GCAM to set exogenous hydropower generation")) %>%
+  dplyr::mutate(Link = cell_spec(files,"html",link=dt_url)) %>%
+  kable("html", escape = FALSE, col.names = c("Relevant Files", "Link")) %>%
   kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
   row_spec(0, background = "#2A2A2A", color = "white")
-
 ```
 
 
@@ -413,7 +600,9 @@ data.frame(
 </p>
 
 <p style='margin-left:1em;'>
-The goal of this policy is to represent increasing use of LED lighting in residential buildings and the decreasing use of other, less energy efficient lighting technologies. The difference between the low and high scenario versions of this policy is the year in which 100% LED residential lighting is achieved.
+The goal of this example is to set a minimum value (floor) in GCAM for the amount of electricity generation from each fuel type (coal, natural gas, solar, etc.) corresponding with the planned percentages in the KLLCSBP2030 (below).
+
+<p align="center"> <img src="images/KL_2030_power.png"></p>
 
 </p>
 </span>
@@ -434,11 +623,11 @@ The goal of this policy is to represent increasing use of LED lighting in reside
 </p>
 
 <p style='margin-left:1em;'>
-We can gradually decrease the shareweights of all non-LED residential lighting technologies in order to phase them out of the market. The year in which the non-LED shareweights reach 0 corresponds with the year in which 100% LED residential lighting is achieved.
+One way to set a generation floor for each fuel type in GCAM is to use a subsidy policy. This will lower the cost of the electricity generation technology until the floor is reached. If there is more demand for electricity than is supplied by the sum of the generation floors, then the remaining demand will be met by a mix of fuels determined by the market.
+
+Hydropower is exogenous in GCAM and has a fixed pathway. The power generation values for this technology are set explicitly using a fixed output add-on XML. 
+
 </p>
-
-
-
 </span>
 </div>
 
@@ -449,104 +638,7 @@ We can gradually decrease the shareweights of all non-LED residential lighting t
 <!--------Background-------->
 <!-------------------------->
 
-```{r background shareweights lighting, child = 'background_shareweights.rmd'}
-```
-
-
-<!-------------------------->
-<!---GCAM Implementation---->
-<!-------------------------->
-
-<div class="warning" style='background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
-<span>
-<p style='text-align:center; font-size:24px'>
-<b>GCAM Implementation</b>
-</p>
-
-<p style='margin-left:1em;'>
-1. Create a folder in the input directory: `./gcam-core/input/addons`.
-2. Download the desired xml file (either [buildings_led_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/buildings_led_high.xml) or [buildings_led_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/buildings_led_low.xml)) to the folder.
-4. To adjust the year in which 100% LED lighting is achieved: within each non-LED `stub-technology` tag in the XML, change the `to-year` in the first `interpolation-rule` and the `from-year` in the second. Also change the `year` of the `period` tag in which the `share-weight` is 0.
-5. Save the xml and then point to it in your configuration file by adding the line (replace `high` with `low` as needed): 
-<p style='font-size:0.8em'>
-`<Value name = "scen">../input/addons/malaysia/buildings_led_high.xml</Value>`
-</p>
-
-</span>
-</div>
-
-<br>   
-
-## Industry Energy Efficiency
-***
-
-```{r industry-aeei-files-table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
-
-dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/industry_aeei_high.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/industry_aeei_low.xml")
-
-data.frame(
-  Scenario = c(rep("High",1), rep("Low",1))) %>% 
-  mutate("Files Used" = cell_spec( c("industry_aeei_high.xml",
-                                     "industry_aeei_low.xml"),
-                                   "html", link = dt_url)) %>% 
-  mutate(Description = c("Increases overall efficiency of industrial processes by 1% annually through 2070",
-                         "Increases overall efficiency of industrial processes by 0.5% annually through 2070")) %>%
-  kable("html", escape = FALSE, col.names = c("Scenario", "Files Used", "Description")) %>%
-  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
-  row_spec(0, background = "#2A2A2A", color = "white")
-```
-
-
-<!-------------------------->
-<!----------Goal------------>
-<!-------------------------->
-
-<div class="warning" style='background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
-<span>
-<p style='text-align:center; font-size:24px'>
-<b>Goal</b>
-</p>
-
-<p style='margin-left:1em;'>
-The goal of this policy is to represent measures to increase average efficiency of industrial processes. The difference between the low and high scenarios is the rate at which average industrial energy intensity decreases annually.
-</p>
-
-</span>
-</div>
-
-<br>
-
-
-<!-------------------------->
-<!--------Approach---------->
-<!-------------------------->
-
-<div class="warning" style='background-color:#fffae0; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
-<span>
-
-<p style='text-align:center; font-size:24px'>
-<b>Approach</b>
-</p>
-
-<p style='margin-left:1em;'>
-To represent a gradual increase in industrial efficiency, we can use GCAM's `aeei` parameter, which controls the autonomous energy efficiency improvement (AEEI) of industrial processes.
-</p>
-
-
-</span>
-</div>
-
-<br>
-
-
-<!--------------------------->
-<!--------Background--------->
-<!--------------------------->
-
-<!-- TO DO: make background page for aeei -->
-
-```{r background aeei industry}
+```{r background policy-portfolio-standards RE, child = 'background_policy-portfolio-standards.rmd'}
 ```
 
 <!-------------------------->
@@ -560,13 +652,25 @@ To represent a gradual increase in industrial efficiency, we can use GCAM's `aee
 </p>
 
 <p style='margin-left:1em;'>
-1. Create a folder in the input directory: `./gcam-core/input/addons`.
-2. Download the desired industrial aeei xml file (either [industry_aeei_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/industry_aeei_high.xml) or [industry_aeei_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/industry_aeei_low.xml)) to the folder.
-4. To adjust the rate of industrial energy efficiency increase, change the value of the `aeei` tag for each desired year.
-5. Save the xml and then point to it in your configuration file by adding the line (replace `high` with `low` as needed): 
+1. Create a folder in the input directory eg. `./gcam-core/input/addons/malaysia`.
+2. Download the example XML file [malaysia_elec_fuel_mix_2030_KL.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_elec_fuel_mix_2030_KL.xml) to the folder. (Click on `Raw` and then `right-click` and select `save-as`.)
+3. To make adjustments: within each `policy-portfolio-standard` tag in the XML, adjust the following:
 </p>
-<p style='font-size:0.8em'>
-`<Value name = "scen">../input/addons/malaysia/industry_aeei_high.xml</Value>`
+<ul style='margin-left:4em; text-align:left;'>
+  <li>`constraint` for each year in which a floor is desired</li>
+  <li>Set `min-price` to a large negative value for years in which an exact constraint, rather than a floor, is desired</li>
+</ul>
+<p style='margin-left:1em;'>
+4. Within each `supplysector` tag in the XML, make sure that the corresponding `input-subsidy` is added within each relevant `period` for each `stub-technology` you wish to constrain.
+5. Save the XML and then point to it in your configuration file by adding the line: 
+<p style='font-size:0.9em'>
+`<Value name = "scen">../input/addons/malaysia/malaysia_elec_fuel_mix_2030_KL.xml</Value>`
+6. To adjust the hydropower pathway, download the example XML file [malaysia_hydro_constraint_2030_KL.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_hydro_constraint_2030_KL.xml) to the folder. 
+7. Within each `fixedOutput` tag in the XML, adjust the value to reflect desired hydropower output in each period. The user can also add additional periods. 
+8. Save the XML and point to it in your configuration file by adding the line: 
+<p style='font-size:0.9em'>
+`<Value name = "scen">../input/addons/malaysia/malaysia_hydro_constraint_2030_KL.xml</Value>`
+
 </p>
 </p>
 
