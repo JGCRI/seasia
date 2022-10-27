@@ -603,8 +603,10 @@ Example Policy Scenario
 <p>Future policies that will be modeled are described in the table
 below. In general, two policy scenarios will be presented: a “low
 ambition” and “high ambition” option.</p>
+<p style="margin-left:1em;">
 <p align="center">
-<img src="images/malaysia_initial_policy_assumptions.png">
+<img src="images/malaysia_policy_table.png">
+</p>
 </p>
 <p><br></p>
 <p>The following subsections give additional details and explanations
@@ -1575,7 +1577,7 @@ malaysia_emissions &lt;- bind_rows(co2, ghg)</code></pre>
                 size_text = 10)
 
 emissions$chart_class_Ref</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-emiss-plot-1.png" width="85%" style="display: block; margin: auto;" /></p>
+<p><img src="modeling_malaysia_files/figure-html/rchart-emiss-plot-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>co2_gas &lt;- co2 %&gt;%
   mutate(class = &quot;CO2&quot;,
          param = &quot;emissGHGByGasNoBioGWPAR5&quot;)
@@ -1615,8 +1617,7 @@ my_emissions &lt;- bind_rows(co2_my, ghg_my) </code></pre>
   mutate(param = units) %&gt;%
   rchart::chart(save = F, 
                 show = F,
-                scenRef = &quot;Ref&quot;,
-                chart_type = &quot;class_waterfall&quot;)
+                scenRef = &quot;Ref&quot;)
 
 emissions_my_plot$chart_param</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-emiss-plot-my-1.png" width="100%" style="display: block; margin: auto;" /></p>
@@ -1677,7 +1678,7 @@ kl_emissions_gas &lt;- bind_rows(ghg_gas_kl, kl_emissions)</code></pre>
                 size_text = 14)
 
 gas_kl$chart_class</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-emiss-gas-scenario-plot-kl-1.png" width="85%" style="display: block; margin: auto;" /></p>
+<p><img src="modeling_malaysia_files/figure-html/rchart-emiss-gas-scenario-plot-kl-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>gas_kl$chart_class_diff_absolute</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-gas-plot-kl-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
@@ -1704,7 +1705,7 @@ Kuala Lumpur</h5>
                 size_text = 12)
 
 p_energy$chart_class_Ref</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-primary-energy-1.png" width="85%" style="display: block; margin: auto;" /></p>
+<p><img src="modeling_malaysia_files/figure-html/rchart-primary-energy-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 </div>
 <div id="malaysia-2" class="section level5" number="5.2.1.3.2">
@@ -1718,7 +1719,7 @@ p_energy$chart_class_Ref</code></pre>
                 scenRef = &quot;Ref&quot;)
 
 p_energy_my$chart_class</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-primary-energy-sce-my-1.png" width="85%" style="display: block; margin: auto;" /></p>
+<p><img src="modeling_malaysia_files/figure-html/rchart-primary-energy-sce-my-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>p_energy_my$chart_class_diff_absolute</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-primary-energy-my-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
@@ -1762,7 +1763,7 @@ energy &lt;- malaysia %&gt;%
                 size_text = 10)
 
 energy$chart_class_Ref</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-energy-1.png" width="85%" style="display: block; margin: auto;" /></p>
+<p><img src="modeling_malaysia_files/figure-html/rchart-energy-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 </div>
 <div id="malaysia-3" class="section level5" number="5.2.1.4.2">
@@ -1777,7 +1778,7 @@ energy$chart_class_Ref</code></pre>
                 size_text = 12)
 
 energy_my$chart_class</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-energy-my-1.png" width="85%" style="display: block; margin: auto;" /></p>
+<p><img src="modeling_malaysia_files/figure-html/rchart-energy-my-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>energy_my$chart_class_diff_absolute</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-energy-sce-my-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
@@ -1795,7 +1796,7 @@ Lumpur</h5>
                 size_text = 12)
 
 energy_kl$chart_class</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-energy-sce-kl-1.png" width="85%" style="display: block; margin: auto;" /></p>
+<p><img src="modeling_malaysia_files/figure-html/rchart-energy-sce-kl-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>energy_kl$chart_class_diff_absolute</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-energy-kl-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
@@ -1823,7 +1824,7 @@ electricity &lt;- malaysia %&gt;%
                 size_text = 10)
 
 electricity$chart_class_Ref</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-elec-gen-1.png" width="85%" style="display: block; margin: auto;" /></p>
+<p><img src="modeling_malaysia_files/figure-html/rchart-elec-gen-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 </div>
 <div id="malaysia-4" class="section level5" number="5.2.1.5.2">
@@ -1838,7 +1839,7 @@ electricity$chart_class_Ref</code></pre>
                 size_text = 12)
 
 electricity_my$chart_class</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-elec-gen-sce-my-1.png" width="85%" style="display: block; margin: auto;" /></p>
+<p><img src="modeling_malaysia_files/figure-html/rchart-elec-gen-sce-my-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>electricity_my$chart_class_diff_absolute</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-elec-gen-my-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
@@ -1856,7 +1857,7 @@ Lumpur</h5>
                 size_text = 12)
 
 electricity_kl$chart_class</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-elec-gen-sce-kl-1.png" width="85%" style="display: block; margin: auto;" /></p>
+<p><img src="modeling_malaysia_files/figure-html/rchart-elec-gen-sce-kl-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>electricity_kl$chart_class_diff_absolute</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-elec-gen-kl-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
@@ -1887,7 +1888,7 @@ Kuala Lumpur</h5>
                 size_text = 12)
 
 building_energy$chart_class_Ref</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-building-1.png" width="85%" style="display: block; margin: auto;" /></p>
+<p><img src="modeling_malaysia_files/figure-html/rchart-building-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 </div>
 <div id="malaysia-5" class="section level5" number="5.2.2.1.2">
@@ -1901,7 +1902,7 @@ building_energy$chart_class_Ref</code></pre>
                 scenRef = &quot;Ref&quot;)
 
 building_energy_my$chart_class</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-building-sce-my-1.png" width="85%" style="display: block; margin: auto;" /></p>
+<p><img src="modeling_malaysia_files/figure-html/rchart-building-sce-my-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>building_energy_my$chart_class_diff_absolute</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-building-my-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
@@ -1918,7 +1919,7 @@ Lumpur</h5>
                 scenRef = &quot;Ref&quot;)
 
 building_energy_kl$chart_class</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-building-sce-kl-1.png" width="85%" style="display: block; margin: auto;" /></p>
+<p><img src="modeling_malaysia_files/figure-html/rchart-building-sce-kl-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>building_energy_kl$chart_class_diff_absolute</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-building-kl-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
@@ -1961,7 +1962,7 @@ transport_m$chart_class_Ref</code></pre>
                 size_text = 10)
 
 transport_my_m$chart_class</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-transport-my-sce-mode-1.png" width="85%" style="display: block; margin: auto;" /></p>
+<p><img src="modeling_malaysia_files/figure-html/rchart-transport-my-sce-mode-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>transport_my_m$chart_class_diff_absolute</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-transport-my-mode-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
@@ -1979,7 +1980,7 @@ Lumpur</h5>
                 size_text = 10)
 
 transport_kl_m$chart_class</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-transport-kl-sce-mode-1.png" width="85%" style="display: block; margin: auto;" /></p>
+<p><img src="modeling_malaysia_files/figure-html/rchart-transport-kl-sce-mode-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>transport_kl_m$chart_class_diff_absolute</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-transport-kl-mode-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
@@ -2007,7 +2008,7 @@ transport_f &lt;- malaysia %&gt;%
                 size_text = 10)
 
 transport_f$chart_class_Ref</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-transport-fuel-1.png" width="85%" style="display: block; margin: auto;" /></p>
+<p><img src="modeling_malaysia_files/figure-html/rchart-transport-fuel-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 </div>
 <div id="malaysia-7" class="section level5" number="5.2.2.3.2">
@@ -2022,7 +2023,7 @@ transport_f$chart_class_Ref</code></pre>
                 size_text = 10)
 
 transport_my_f$chart_class</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-transport-my-sce-fuel-1.png" width="85%" style="display: block; margin: auto;" /></p>
+<p><img src="modeling_malaysia_files/figure-html/rchart-transport-my-sce-fuel-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>transport_my_f$chart_class_diff_absolute</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-transport-my-fuel-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
@@ -2040,7 +2041,7 @@ Lumpur</h5>
                 size_text = 10)
 
 transport_kl_f$chart_class</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-transport-kl-sce-fuel-1.png" width="85%" style="display: block; margin: auto;" /></p>
+<p><img src="modeling_malaysia_files/figure-html/rchart-transport-kl-sce-fuel-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>transport_kl_f &lt;- malaysia %&gt;% 
   filter(param %in% transport_fuel_params,
          region == &quot;KualaLumpur&quot;) %&gt;%
@@ -2076,7 +2077,7 @@ Kuala Lumpur</h5>
 
 
 industry_energy$chart_class_Ref</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-industry-1.png" width="85%" style="display: block; margin: auto;" /></p>
+<p><img src="modeling_malaysia_files/figure-html/rchart-industry-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 </div>
 <div id="malaysia-8" class="section level5" number="5.2.2.4.2">
@@ -2090,7 +2091,7 @@ industry_energy$chart_class_Ref</code></pre>
                 scenRef = &quot;Ref&quot;)
 
 industry_energy_my$chart_class</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-industry-sce-my-1.png" width="85%" style="display: block; margin: auto;" /></p>
+<p><img src="modeling_malaysia_files/figure-html/rchart-industry-sce-my-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>industry_energy_my$chart_class_diff_absolute</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-industry-my-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
@@ -2107,7 +2108,7 @@ Lumpur</h5>
                 scenRef = &quot;Ref&quot;)
 
 industry_energy_kl$chart_class</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-industry-sce-kl-1.png" width="85%" style="display: block; margin: auto;" /></p>
+<p><img src="modeling_malaysia_files/figure-html/rchart-industry-sce-kl-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>industry_energy_kl$chart_class_diff_absolute</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-industry-kl-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>

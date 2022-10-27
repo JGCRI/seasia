@@ -12,7 +12,7 @@ output:
 ---
 
 ```{r setup, echo = FALSE, message = FALSE, warning = FALSE}
-knitr::opts_chunk$set(results = "hide", echo = FALSE, out.width = "85%", fig.align = 'center', message = F, warning = F, error = F, eval = T)
+knitr::opts_chunk$set(results = "hide", echo = FALSE, out.width = "100%", fig.align = 'center', message = F, warning = F, error = F, eval = T)
 
 library(kableExtra)
 library(dplyr)
@@ -145,7 +145,9 @@ data.frame(
 
 Future policies that will be modeled are described in the table below. In general, two policy scenarios will be presented: a "low ambition" and "high ambition" option. 
 
-<p align="center"> <img src="images/malaysia_initial_policy_assumptions.png"></p>
+<p style='margin-left:1em;'>
+<p align="center"> <img src="images/malaysia_policy_table.png"></p>
+</p>
 
 <br>
 
