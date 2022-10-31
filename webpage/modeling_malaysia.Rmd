@@ -143,7 +143,7 @@ data.frame(
 <!-------------------------->
 <p align="center"> <img src="images/divider.png"></p>
 
-Future policies that will be modeled are described in the table below. In general, two policy scenarios will be presented: a "low ambition" and "high ambition" option. 
+In general, three policy scenarios will be presented: a "low ambition" and "high ambition" option as well as "ambitious city." The high ambition scenario uses key targets from policies and plans from Kuala Lumpur and Malaysia. The low ambition scenario explores if these targets are not met until a later target year, usually 2060 or 2070 instead of 2050. The ambitious city scenario represents Kuala Lumpur hitting these high ambition targets, while the rest of Malaysia takes longer to achieve the same goals. For a 2050 snapshot of policies that will be modeled within each scenario, please reference the table below.  
 
 <p style='margin-left:1em;'>
 <p align="center"> <img src="images/malaysia_policy_table.png"></p>
@@ -722,8 +722,9 @@ data <- gcamextractor::readgcam(gcamdatabase = sample_path,
 ref <- read.csv("../data/malaysia/gcamextractor/reference/gcamDataTable_aggClass1.csv") 
 high <- read.csv("../data/malaysia/gcamextractor/high/gcamDataTable_aggClass1.csv")
 low <- read.csv("../data/malaysia/gcamextractor/low/gcamDataTable_aggClass1.csv")
+city <- read.csv("../data/malaysia/gcamextractor/city/gcamDataTable_aggClass1.csv")
 
-malaysia <- bind_rows(ref, high, low) %>%
+malaysia <- bind_rows(ref, high, low, city) %>%
   filter(region != ("Rest of Malaysia"),
          x > 2000)
 
