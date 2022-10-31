@@ -448,7 +448,7 @@ Location
 gcamv5p3_seasia
 </td>
 <td style="text-align:left;">
-<a href="https://zenodo.org/record/7198886/files/gcamv5p3_seasia.zip?download=1" style="     ">Link</a>
+<a href="https://zenodo.org/record/7259736/files/gcamv5p3_seasia.zip?download=1" style="     ">Link</a>
 </td>
 </tr>
 </tbody>
@@ -2332,6 +2332,9 @@ data &lt;- gcamextractor::readgcam(gcamdatabase = sample_path,
 <pre class="r"><code>thailand &lt;- read.csv(&quot;../data/Thailand/gcamextractor/All/gcamDataTable_aggClass1.csv&quot;) %&gt;%
   filter(x &gt;= 2020, x &lt;= 2065,
          !grepl(&quot;International&quot;, class))
+
+thailand_with_hist &lt;- read.csv(&quot;../data/Thailand/gcamextractor/All/gcamDataTable_aggClass1.csv&quot;) %&gt;%
+  filter(x &lt;= 2065)
 
 scenRef_name &lt;- &quot;Ref_cities&quot;</code></pre>
 <p><br></p>
