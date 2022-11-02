@@ -1266,7 +1266,7 @@ Link
 Excel spreadsheet showing initial calculations to build this policy
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/data/malaysia/inputs/malaysia_elec_fuel_mix_2030_pathway.xlsx" style="     ">malaysia_elec_fuel_mix_2030_pathway.xlsx</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/data/malaysia/malaysia_elec_fuel_mix_2030_pathway.xlsx" style="     ">malaysia_elec_fuel_mix_2030_pathway.xlsx</a>
 </td>
 </tr>
 <tr>
@@ -1466,6 +1466,8 @@ data &lt;- gcamextractor::readgcam(gcamdatabase = sample_path,
                                 regionsAggregate = list(regions),
                                 regionsAggregateNames = &quot;All of Malaysia&quot;,
                                 folder = &quot;../data/malaysia/gcamextractor&quot;)</code></pre>
+<p>Until the scenario modeling process is complete, use the processed
+csv files found in the data/malaysia/gcamextractor/ folder.</p>
 <pre class="r"><code>ref &lt;- read.csv(&quot;../data/malaysia/gcamextractor/reference/gcamDataTable_aggClass1.csv&quot;) 
 high &lt;- read.csv(&quot;../data/malaysia/gcamextractor/high/gcamDataTable_aggClass1.csv&quot;)
 low &lt;- read.csv(&quot;../data/malaysia/gcamextractor/low/gcamDataTable_aggClass1.csv&quot;)
@@ -2212,15 +2214,165 @@ of Statistics Malaysia</a></span><br/>
 <p><br> <br></p>
 <!-------------------------->
 </div>
-<div id="validation-of-gcam-outputs" class="section level2 tabset"
+<div id="validation-of-gcam-outputs" class="section level2"
 number="6.2">
-<h2 class="tabset"><span class="header-section-number">6.2</span>
-Validation of GCAM outputs</h2>
+<h2><span class="header-section-number">6.2</span> Validation of GCAM
+outputs</h2>
 <!-------------------------->
 <hr />
 <p>This section will compare local data in sources from Malaysia and
 Kuala Lumpur to GCAM outputs.</p>
 <p><br></p>
+<div id="population-and-gdp" class="section level3" number="6.2.1">
+<h3><span class="header-section-number">6.2.1</span> Population and
+GDP</h3>
+<pre class="r"><code>local_pop &lt;- read.csv(&quot;../data/malaysia/local_data_population.csv&quot;)
+local_gdp &lt;- read.csv(&quot;../data/malaysia/local_data_gdp.csv&quot;)
+
+local_bau &lt;- bind_rows(local_gdp, local_pop)
+
+gcam_bau &lt;- malaysia %&gt;%
+  filter(param == c(&quot;pop&quot;, &quot;gdp&quot;),
+         region != &quot;Rest of Malaysia&quot;,
+         scenario == &quot;Ref&quot;) %&gt;%
+  mutate(param = units,
+         scenario = &quot;GCAM Reference&quot;,
+         year = x)
+
+bau &lt;- bind_rows(local_bau, gcam_bau)
+
+# Plot for Malaysia
+bau %&gt;% 
+  filter(region == &quot;Malaysia&quot;) %&gt;%
+  ggplot(aes(x = year, y = value, color = scenario)) + 
+  geom_line() +
+  facet_wrap(~param, scales = &quot;free&quot;) +
+  ggtitle(&quot;Malaysia&quot;) +
+  theme_light()</code></pre>
+<p><img src="modeling_malaysia_files/figure-html/local-socioeconomics-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<pre class="r"><code># Plot for KL
+bau %&gt;% 
+  filter(region == &quot;KualaLumpur&quot;) %&gt;%
+  ggplot(aes(x = year, y = value, color = scenario)) + 
+  geom_line() +
+  facet_wrap(~param, scales = &quot;free&quot;) +
+  ggtitle(&quot;Kuala Lumpur&quot;) +
+  theme_light()</code></pre>
+<p><img src="modeling_malaysia_files/figure-html/local-socioeconomics-2.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><br></p>
+</div>
+<div id="co2-emissions-by-sector" class="section level3" number="6.2.2">
+<h3><span class="header-section-number">6.2.2</span> CO2 emissions by
+sector</h3>
+<pre class="r"><code>local_co2 &lt;- read.csv(&quot;../data/malaysia/local_data_emissions_by_sector.csv&quot;)
+
+gcam_co2 &lt;- co2_kl %&gt;%
+  filter(scenario == &quot;Ref&quot;, 
+         class %in% c(&quot;building&quot;, &quot;industry&quot;)) %&gt;%
+  mutate(param = units,
+         scenario = &quot;GCAM Reference&quot;,
+         year = x)
+
+# Aggregate GCAM classes into broad categories
+gcam_transport &lt;- co2_kl %&gt;%
+  filter(scenario == &quot;Ref&quot;,
+         class %in% c(&quot;International Aviation&quot;, &quot;International Shipping&quot;, &quot;transport&quot;)) %&gt;%
+  mutate(param = units,
+         scenario = &quot;GCAM Reference&quot;,
+         year = x,
+         class = case_when(class %in% c(&quot;International Aviation&quot;, &quot;International Shipping&quot;) ~ &quot;transport&quot;,
+                           T~class)) %&gt;%
+  group_by(year) %&gt;%
+  mutate(total = sum(value)) %&gt;%
+  distinct(year, .keep_all = TRUE)
+
+bau_co2 &lt;- bind_rows(local_co2, gcam_co2, gcam_transport)
+
+bau_co2 %&gt;% 
+  ggplot(aes(x = year, y = value, color = scenario)) + 
+  geom_line() +
+  facet_wrap(~class, scales = &quot;free&quot;) +
+  labs(title = &quot;Kuala Lumpur&quot;,
+       y = &quot;MTCO2eq&quot;) +
+  theme_light()</code></pre>
+<p><img src="modeling_malaysia_files/figure-html/local-emissions-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><br></p>
+</div>
+<div id="energy-by-fuel-and-sector" class="section level3"
+number="6.2.3">
+<h3><span class="header-section-number">6.2.3</span> Energy by fuel and
+sector</h3>
+<pre class="r"><code>final_energy_ref_my &lt;- malaysia %&gt;% 
+  filter(param %in% energy_parameters,
+         region == &quot;All of Malaysia&quot;,
+         scenario == &quot;Ref&quot;) %&gt;%
+  mutate(param = units) %&gt;%
+  rchart::chart(save = F,
+                show = F)
+
+final_energy_ref_my$chart_class</code></pre>
+<div class="figure" style="text-align: center">
+<img src="modeling_malaysia_files/figure-html/local-energy-my-1.png" alt="Final energy by fuel and sector in Malaysia." width="100%" />
+<p class="caption">
+Final energy by fuel and sector in Malaysia.
+</p>
+</div>
+<p><br></p>
+<pre class="r"><code>final_energy_ref_kl &lt;- malaysia %&gt;% 
+  filter(param %in% energy_parameters,
+         region == &quot;KualaLumpur&quot;,
+         scenario == &quot;Ref&quot;) %&gt;%
+  mutate(param = units) %&gt;%
+  rchart::chart(save = F,
+                show = F)
+
+final_energy_ref_kl$chart_class</code></pre>
+<div class="figure" style="text-align: center">
+<img src="modeling_malaysia_files/figure-html/local-energy-kl-1.png" alt="Final energy by fuel and sector in Kuala Lumpur." width="100%" />
+<p class="caption">
+Final energy by fuel and sector in Kuala Lumpur.
+</p>
+</div>
+<p><br></p>
+</div>
+<div id="electricity-by-fuel-and-sector" class="section level3"
+number="6.2.4">
+<h3><span class="header-section-number">6.2.4</span> Electricity by fuel
+and sector</h3>
+<pre class="r"><code>elec_ref_my &lt;- malaysia %&gt;% 
+  filter(param %in% electricity_parameters,
+         region == &quot;All of Malaysia&quot;,
+         scenario == &quot;Ref&quot;) %&gt;%
+  mutate(param = units) %&gt;%
+  rchart::chart(save = F,
+                show = F,
+                size_text = 10)
+
+elec_ref_my$chart_class</code></pre>
+<div class="figure" style="text-align: center">
+<img src="modeling_malaysia_files/figure-html/local-elec-my-1.png" alt="Electricity by fuel and sector in Malaysia." width="100%" />
+<p class="caption">
+Electricity by fuel and sector in Malaysia.
+</p>
+</div>
+<p><br></p>
+<pre class="r"><code>elec_ref_kl &lt;- malaysia %&gt;% 
+  filter(param %in% electricity_parameters,
+         region == &quot;KualaLumpur&quot;,
+         scenario == &quot;Ref&quot;) %&gt;%
+  mutate(param = units) %&gt;%
+  rchart::chart(save = F,
+                show = F)
+
+elec_ref_kl$chart_class</code></pre>
+<div class="figure" style="text-align: center">
+<img src="modeling_malaysia_files/figure-html/local-elec-kl-1.png" alt="Electricity by sector in Kuala Lumpur." width="85%" />
+<p class="caption">
+Electricity by sector in Kuala Lumpur.
+</p>
+</div>
+<p><br></p>
+</div>
 </div>
 <div id="section" class="section level2 unlisted unnumbered">
 <h2 class="unlisted unnumbered"></h2>

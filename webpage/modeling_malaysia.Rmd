@@ -570,7 +570,7 @@ There are two steps to phase out coal generation. The first is to prevent any ne
 
 ```{r electricity-generation-files-table, results = 'show', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE}
 
-dt_url <- c("https://github.com/JGCRI/seasia/blob/main/data/malaysia/inputs/malaysia_elec_fuel_mix_2030_pathway.xlsx",
+dt_url <- c("https://github.com/JGCRI/seasia/blob/main/data/malaysia/malaysia_elec_fuel_mix_2030_pathway.xlsx",
             "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_elec_fuel_mix_2030_KL.xml",
             "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_hydro_constraint_2030_KL.xml")
 
@@ -718,6 +718,8 @@ data <- gcamextractor::readgcam(gcamdatabase = sample_path,
 
 ```
 
+Until the scenario modeling process is complete, use the processed csv files found in the data/malaysia/gcamextractor/ folder.  
+ 
 ```{r gcamextractor, echo = TRUE}
 ref <- read.csv("../data/malaysia/gcamextractor/reference/gcamDataTable_aggClass1.csv") 
 high <- read.csv("../data/malaysia/gcamextractor/high/gcamDataTable_aggClass1.csv")
@@ -1578,7 +1580,7 @@ This section details the socioeconomic inputs used to define Malaysia and its su
 
 
 <!-------------------------->
-## Validation of GCAM outputs {.tabset}
+## Validation of GCAM outputs 
 <!-------------------------->
 ***
 
@@ -1586,6 +1588,144 @@ This section will compare local data in sources from Malaysia and Kuala Lumpur t
 
 <br>
 
+### Population and GDP
+
+``` {r local-socioeconomics, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
+local_pop <- read.csv("../data/malaysia/local_data_population.csv")
+local_gdp <- read.csv("../data/malaysia/local_data_gdp.csv")
+
+local_bau <- bind_rows(local_gdp, local_pop)
+
+gcam_bau <- malaysia %>%
+  filter(param == c("pop", "gdp"),
+         region != "Rest of Malaysia",
+         scenario == "Ref") %>%
+  mutate(param = units,
+         scenario = "GCAM Reference",
+         year = x)
+
+bau <- bind_rows(local_bau, gcam_bau)
+
+# Plot for Malaysia
+bau %>% 
+  filter(region == "Malaysia") %>%
+  ggplot(aes(x = year, y = value, color = scenario)) + 
+  geom_line() +
+  facet_wrap(~param, scales = "free") +
+  ggtitle("Malaysia") +
+  theme_light()
+
+# Plot for KL
+bau %>% 
+  filter(region == "KualaLumpur") %>%
+  ggplot(aes(x = year, y = value, color = scenario)) + 
+  geom_line() +
+  facet_wrap(~param, scales = "free") +
+  ggtitle("Kuala Lumpur") +
+  theme_light()
+
+```
+
+<br>
+
+### CO2 emissions by sector
+
+``` {r local-emissions, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
+local_co2 <- read.csv("../data/malaysia/local_data_emissions_by_sector.csv")
+
+gcam_co2 <- co2_kl %>%
+  filter(scenario == "Ref", 
+         class %in% c("building", "industry")) %>%
+  mutate(param = units,
+         scenario = "GCAM Reference",
+         year = x)
+
+# Aggregate GCAM classes into broad categories
+gcam_transport <- co2_kl %>%
+  filter(scenario == "Ref",
+         class %in% c("International Aviation", "International Shipping", "transport")) %>%
+  mutate(param = units,
+         scenario = "GCAM Reference",
+         year = x,
+         class = case_when(class %in% c("International Aviation", "International Shipping") ~ "transport",
+                           T~class)) %>%
+  group_by(year) %>%
+  mutate(total = sum(value)) %>%
+  distinct(year, .keep_all = TRUE)
+
+bau_co2 <- bind_rows(local_co2, gcam_co2, gcam_transport)
+
+bau_co2 %>% 
+  ggplot(aes(x = year, y = value, color = scenario)) + 
+  geom_line() +
+  facet_wrap(~class, scales = "free") +
+  labs(title = "Kuala Lumpur",
+       y = "MTCO2eq") +
+  theme_light()
+
+```
+
+<br>
+
+### Energy by fuel and sector
+
+```{r local-energy-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.cap = "Final energy by fuel and sector in Malaysia."}
+final_energy_ref_my <- malaysia %>% 
+  filter(param %in% energy_parameters,
+         region == "All of Malaysia",
+         scenario == "Ref") %>%
+  mutate(param = units) %>%
+  rchart::chart(save = F,
+                show = F)
+
+final_energy_ref_my$chart_class
+```
+<br>
+
+```{r local-energy-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.cap = "Final energy by fuel and sector in Kuala Lumpur."}
+final_energy_ref_kl <- malaysia %>% 
+  filter(param %in% energy_parameters,
+         region == "KualaLumpur",
+         scenario == "Ref") %>%
+  mutate(param = units) %>%
+  rchart::chart(save = F,
+                show = F)
+
+final_energy_ref_kl$chart_class
+```
+
+<br>
+
+### Electricity by fuel and sector
+
+```{r local-elec-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.cap = "Electricity by fuel and sector in Malaysia."}
+elec_ref_my <- malaysia %>% 
+  filter(param %in% electricity_parameters,
+         region == "All of Malaysia",
+         scenario == "Ref") %>%
+  mutate(param = units) %>%
+  rchart::chart(save = F,
+                show = F,
+                size_text = 10)
+
+elec_ref_my$chart_class
+```
+
+<br>
+
+```{r local-elec-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.cap = "Electricity by sector in Kuala Lumpur.", out.width = "85%"}
+elec_ref_kl <- malaysia %>% 
+  filter(param %in% electricity_parameters,
+         region == "KualaLumpur",
+         scenario == "Ref") %>%
+  mutate(param = units) %>%
+  rchart::chart(save = F,
+                show = F)
+
+elec_ref_kl$chart_class
+```
+
+<br>
 
 ## {.unlisted .unnumbered}
 

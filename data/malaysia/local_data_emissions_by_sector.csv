@@ -1,0 +1,13 @@
+scenario,region,param,class,year,value
+Local data BAU,KualaLumpur,CO2 Emissions (MTCO2eq),building,2017,3.149082402
+Local data BAU,KualaLumpur,CO2 Emissions (MTCO2eq),industry,2017,0.620711137
+Local data BAU,KualaLumpur,CO2 Emissions (MTCO2eq),transport,2017,5.124110518
+Local data BAU,KualaLumpur,CO2 Emissions (MTCO2eq),building,2030,4.709425162
+Local data BAU,KualaLumpur,CO2 Emissions (MTCO2eq),industry,2030,0.92826807
+Local data BAU,KualaLumpur,CO2 Emissions (MTCO2eq),transport,2030,7.663062415
+Local data BAU,KualaLumpur,CO2 Emissions (MTCO2eq),building,2040,6.080912412
+Local data BAU,KualaLumpur,CO2 Emissions (MTCO2eq),industry,2040,1.198599965
+Local data BAU,KualaLumpur,CO2 Emissions (MTCO2eq),transport,2040,9.894713211
+Local data BAU,KualaLumpur,CO2 Emissions (MTCO2eq),building,2050,7.620185588
+Local data BAU,KualaLumpur,CO2 Emissions (MTCO2eq),industry,2050,1.502003904
+Local data BAU,KualaLumpur,CO2 Emissions (MTCO2eq),transport,2050,12.3993812

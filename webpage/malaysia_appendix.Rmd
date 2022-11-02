@@ -78,7 +78,7 @@ To estimate population values, we begin with annual data from the UN for Malaysi
 
 The plot below shows historical and future projected populations in Malaysia and Kuala Lumpur from the GCAM reference scenario from 1975 to 2100.  
 
-``` {r pop-plot, echo = FALSE, fig.dim = c(8,4), fig.cap="Figure 9.1.1.1. **Historical and future projected population in Malaysia and Kuala Lumpur**"}
+``` {r pop-plot, echo = FALSE, fig.dim = c(8,4), eval = FALSE, fig.cap="Figure 9.1.1.1. **Historical and future projected population in Malaysia and Kuala Lumpur**"}
 # Population
 pop <- fread("../data/Malaysia/socioeconomic_inputs/gcam_query_pop.csv") %>% as_tibble()
 
@@ -105,7 +105,7 @@ To find GDP values, we begin with historical data of GDP MER in Malaysia from th
 
 The following graphs show GDP in billion 2005 USD for Malaysia and Kuala Lumpur.
 
-``` {r gdp, echo = FALSE, fig.dim = c(8,4), fig.cap="Figure 9.1.2.1. **Historical and future projected GDP in Malaysia and Kuala Lumpur**"}
+``` {r gdp, echo = FALSE, eval = FALSE, fig.dim = c(8,4), fig.cap="Figure 9.1.2.1. **Historical and future projected GDP in Malaysia and Kuala Lumpur**"}
 # GDP
 gdp <- fread("../data/Malaysia/socioeconomic_inputs/gcam_query_gdp.csv") %>% as_tibble()
 
@@ -131,7 +131,7 @@ To find GDP per capita, we divide the above GDP values by the above population v
 
 GDP per capita, in units of thousand 2005 USD, is shown below for Malaysia and Kuala Lumpur. 
 
-``` {r gdp_pc, echo = FALSE, fig.dim = c(8,4), fig.cap="Figure 9.1.3.1. **Historical and future projected GDP per capita in Malaysia and Kuala Lumpur**"}
+``` {r gdp_pc, echo = FALSE, eval = FALSE, fig.dim = c(8,4), fig.cap="Figure 9.1.3.1. **Historical and future projected GDP per capita in Malaysia and Kuala Lumpur**"}
 gdp_pc <- fread("../data/Malaysia/socioeconomic_inputs/gcam_query_pcgdp.csv") %>% as_tibble()
 
 ## PLOT
