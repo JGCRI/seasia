@@ -37,7 +37,7 @@ Please use the link below to download GCAM.
 ```{r key links table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
 library(kableExtra); library(dplyr)
 
-dt_url <- c("https://zenodo.org/record/7198886/files/gcamv5p3_seasia.zip?download=1")
+dt_url <- c("https://zenodo.org/record/7259736/files/gcamv5p3_seasia.zip?download=1")
 
 data.frame(
   File = c("gcamv5p3_seasia")) %>% 
@@ -1277,13 +1277,13 @@ data <- gcamextractor::readgcam(gcamdatabase = sample_path,
 ```
 
 ```{r gcamextractor, echo = FALSE, eval = FALSE}
-ref <- read.csv("../data/Thailand/gcamextractor/Ref/gcamDataTable_aggClass1.csv")
-high <- read.csv("../data/Thailand/gcamextractor/High/gcamDataTable_aggClass1.csv")
-low <- read.csv("../data/Thailand/gcamextractor/Low/gcamDataTable_aggClass1.csv")
-
-thailand <- dplyr::bind_rows(ref, high, low) %>%
-  filter(x >= 2020, x <= 2065,
-         !grepl("International", class))
+# ref <- read.csv("../data/Thailand/gcamextractor/Ref/gcamDataTable_aggClass1.csv")
+# high <- read.csv("../data/Thailand/gcamextractor/High/gcamDataTable_aggClass1.csv")
+# low <- read.csv("../data/Thailand/gcamextractor/Low/gcamDataTable_aggClass1.csv")
+# 
+# thailand <- dplyr::bind_rows(ref, high, low) %>%
+#   filter(x >= 2020, x <= 2065,
+#          !grepl("International", class))
 
 ```
 
@@ -1291,6 +1291,9 @@ thailand <- dplyr::bind_rows(ref, high, low) %>%
 thailand <- read.csv("../data/Thailand/gcamextractor/All/gcamDataTable_aggClass1.csv") %>%
   filter(x >= 2020, x <= 2065,
          !grepl("International", class))
+
+thailand_with_hist <- read.csv("../data/Thailand/gcamextractor/All/gcamDataTable_aggClass1.csv") %>%
+  filter(x <= 2065)
 
 scenRef_name <- "Ref_cities"
 ```
@@ -1894,8 +1897,9 @@ The following figures compare the GCAM output for Thailand's CO2 emissions (tota
 
 ```{r national co2 emissions data prep}
 # read in gcam data
-gcam_co2_emiss_th <- ref %>% 
-  filter(param == "emissCO2BySectorNoBio",
+gcam_co2_emiss_th <- thailand_with_hist %>%
+  filter(scenario == scenRef_name,
+         param == "emissCO2BySectorNoBio",
          region == "All of Thailand",
          x >= 1990, class != "LUC") %>% 
   select(x, units, region, scenario, value, class) %>% 
@@ -1904,8 +1908,9 @@ gcam_co2_emiss_th <- ref %>%
                            T~class))
 
 # no trn_intl version
-gcam_co2_emiss_th_noInt <- ref %>% 
-  filter(param == "emissCO2BySectorNoBio",
+gcam_co2_emiss_th_noInt <- thailand_with_hist %>% 
+  filter(scenario == scenRef_name,
+         param == "emissCO2BySectorNoBio",
          region == "All of Thailand",
          x >= 1990, class != "LUC",
          !class %in% c("International Aviation", "International Shipping")) %>% 
@@ -1993,8 +1998,9 @@ local_national_elec_consump_agg <- dplyr::bind_rows(
   rename(x = year, units = Units) %>% 
   mutate(units = "Electricity Consumption by Sector (TWh)")
 
-gcam_elec_consump_th <- ref %>% 
-  filter(param == "elecConsumByDemandSectorTWh",
+gcam_elec_consump_th <- thailand_with_hist %>% 
+  filter(scenario == scenRef_name,
+         param == "elecConsumByDemandSectorTWh",
          region == "All of Thailand",
          x >= 2000) %>% 
   select(x, units, region, scenario, value, class) %>% 
@@ -2067,8 +2073,9 @@ elec_consump_sector_national_chart_local$chart_class +
 ######## by fuel ########
 
 # read  gcam data
-gcam_final_energy_fuel <- ref %>% 
-  filter(region == "All of Thailand",
+gcam_final_energy_fuel <- thailand_with_hist %>% 
+  filter(scenario == scenRef_name,
+         region == "All of Thailand",
          param == "energyFinalByFuelEJ",
          x >= 1990) %>% 
   select(x, units, value, region, scenario, class) %>% 
@@ -2077,8 +2084,9 @@ gcam_final_energy_fuel <- ref %>%
          region = "Thailand")
 
 # version without industrial feedstocks
-gcam_final_energy_fuel_noFeed <- ref %>% 
-  filter(region == "All of Thailand",
+gcam_final_energy_fuel_noFeed <- thailand_with_hist %>% 
+  filter(scenario == scenRef_name,
+         region == "All of Thailand",
          param == "energyFinalByFuelEJNoFeedstock",
          x >= 1990) %>% 
   select(x, units, value, region, scenario, class) %>% 
@@ -2115,16 +2123,18 @@ all_national_final_energy_fuel <- dplyr::bind_rows(
 
 ######### by sector ##########
 # read in gcam data
-gcam_final_energy_sector <- ref %>% 
-  filter(region == "All of Thailand",
+gcam_final_energy_sector <- thailand_with_hist %>% 
+  filter(scenario == scenRef_name,
+         region == "All of Thailand",
          param == "energyFinalConsumBySecEJ",
          x >= 2000) %>% 
   select(x, units, value, region, scenario, class) %>% 
   mutate(region = "Thailand")
 
 # version without industrial feedstocks
-gcam_final_energy_sector_noFeed <- ref %>% 
-  filter(region == "All of Thailand",
+gcam_final_energy_sector_noFeed <- thailand_with_hist %>% 
+  filter(scenario == scenRef_name,
+         region == "All of Thailand",
          param == "energyFinalConsumBySecEJNoFeedstock",
          x >= 2000) %>% 
   select(x, units, value, region, scenario, class) %>% 
@@ -2206,7 +2216,7 @@ final_energy_sector_chart_local <- rchart::chart(dplyr::filter(
   save = F)
 
 final_energy_sector_chart_local$chart_class +
-  ggplot2::ggtitle("") + ggplot2::ylab("Energy (EJ)") + ylim(c(0,5))
+  ggplot2::ggtitle("") + ggplot2::ylab("Energy (EJ)") + ggplot2::ylim(c(0,5))
 ```
 
 <br>
@@ -2222,7 +2232,7 @@ final_energy_fuel_chart_local <- rchart::chart(dplyr::filter(
   save = F)
 
 final_energy_fuel_chart_local$chart_class +
-  ggplot2::ggtitle("") + ggplot2::ylab("Energy (EJ)") + ylim(c(0,5.5))
+  ggplot2::ggtitle("") + ggplot2::ylab("Energy (EJ)") + ggplot2::ylim(c(0,5.5))
 ```
 
 <br>
@@ -2238,12 +2248,13 @@ local_national_transport_ghg <- read.csv(
   check.names = F, skip = 1
 ) %>% 
   rename(units = Units, x = year) %>% 
-  mutate(class = str_to_title(class))
+  mutate(class = stringr::str_to_title(class))
   
 
 # read in gcam data
-gcam_ghg_mode <- ref %>% 
-  filter(region == "All of Thailand",
+gcam_ghg_mode <- thailand_with_hist %>% 
+  filter(scenario == scenRef_name,
+         region == "All of Thailand",
          param %in% c("transportFreightGHGByMode", "transportPassengerGHGByMode"),
          x >= 1990) %>% 
   select(x, units, value, region, scenario, class) %>% 
@@ -2314,8 +2325,9 @@ local_mea_elec_consump_agg <- dplyr::bind_rows(
   rename(x = year, units = Units) %>% 
   mutate(units = "Electricity Consumption by Sector (TWh)")
 
-gcam_elec_consump_mea <- ref %>% 
-  filter(param == "elecConsumByDemandSectorTWh",
+gcam_elec_consump_mea <- thailand_with_hist %>% 
+  filter(scenario == scenRef_name,
+         param == "elecConsumByDemandSectorTWh",
          region == "MEA area",
          x >= 2000) %>% 
   select(x, units, region, scenario, value, class) %>% 

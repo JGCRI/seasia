@@ -37,7 +37,7 @@ Please use the link below to download GCAM.
 
 ```{r key-links-table, results = 'show', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE}
 
-dt_url <- c("https://zenodo.org/record/7195805#.Y0hqCnbMJaQ")
+dt_url <- c("https://zenodo.org/record/7259736/files/gcamv5p3_seasia.zip?download=1")
 
 data.frame(
   File = c("gcamv5p3_seasia")) %>% 
