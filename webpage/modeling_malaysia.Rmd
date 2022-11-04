@@ -1628,45 +1628,6 @@ bau %>%
 
 <br>
 
-### CO2 emissions by sector
-
-``` {r local-emissions, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
-local_co2 <- read.csv("../data/malaysia/local_data_emissions_by_sector.csv")
-
-gcam_co2 <- co2_kl %>%
-  filter(scenario == "Ref", 
-         class %in% c("building", "industry")) %>%
-  mutate(param = units,
-         scenario = "GCAM Reference",
-         year = x)
-
-# Aggregate GCAM classes into broad categories
-gcam_transport <- co2_kl %>%
-  filter(scenario == "Ref",
-         class %in% c("International Aviation", "International Shipping", "transport")) %>%
-  mutate(param = units,
-         scenario = "GCAM Reference",
-         year = x,
-         class = case_when(class %in% c("International Aviation", "International Shipping") ~ "transport",
-                           T~class)) %>%
-  group_by(year) %>%
-  mutate(total = sum(value)) %>%
-  distinct(year, .keep_all = TRUE)
-
-bau_co2 <- bind_rows(local_co2, gcam_co2, gcam_transport)
-
-bau_co2 %>% 
-  ggplot(aes(x = year, y = value, color = scenario)) + 
-  geom_line() +
-  facet_wrap(~class, scales = "free") +
-  labs(title = "Kuala Lumpur",
-       y = "MTCO2eq") +
-  theme_light()
-
-```
-
-<br>
-
 ### Energy by fuel and sector
 
 ```{r local-energy-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.cap = "Final energy by fuel and sector in Malaysia."}
