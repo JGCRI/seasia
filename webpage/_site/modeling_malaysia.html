@@ -825,6 +825,18 @@ Increase prevelance of high-efficiency technologies (commercial and
 residential) through 2070
 </td>
 </tr>
+<tr>
+<td style="text-align:left;">
+Ambitious City
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/efficient_appliances_ambitious_city.xml" style="     ">efficient_appliances_ambitious_city.xml</a>
+</td>
+<td style="text-align:left;">
+Increase prevelance of high-efficiency technologies (commercial and
+residential) through 2050 in KL and 2070 in Rest of Malaysia
+</td>
+</tr>
 </tbody>
 </table>
 <!-------------------------->
@@ -905,9 +917,11 @@ style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 
 <li>Create a folder in the input directory:
 <code>./gcam-core/input/addons</code>.</li>
 <li>Download the desired xml file (either <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/efficient_appliances_high.xml">efficient_appliances_high.xml</a>
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/efficient_appliances_high.xml">efficient_appliances_high.xml</a>,
+<a
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/efficient_appliances_low.xml">efficient_appliances_low.xml</a>,
 or <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/efficient_appliances_low.xml">efficient_appliances_low.xml</a>)
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/efficient_appliances_ambitious_city.xml">efficient_appliances_ambitious_city.xml</a>
 to the folder.</li>
 <li>To adjust the year in which the target mix of technologies is
 achieved: within each <code>stub-technology</code> tag in the XML,
@@ -916,10 +930,10 @@ change the <code>to-year</code> in the first
 second. Also change the <code>year</code> of the <code>period</code> tag
 in which the <code>share-weight</code> is 0.</li>
 <li>Save the xml and then point to it in your configuration file by
-adding the line (replace <code>high</code> with <code>low</code> as
-needed):
+adding the line (replace <code>high</code> with <code>low</code> or
+<code>ambitious_city</code> as needed):
 <p style='font-size:0.8em'>
-<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/efficient_appliances__high.xml&lt;/Value&gt;</code></li>
+<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/efficient_appliances_high.xml&lt;/Value&gt;</code></li>
 </ol>
 </p>
 <p></span></p>
@@ -967,6 +981,18 @@ Low
 <td style="text-align:left;">
 Gradually phases non-LED residential lighting technology out of the
 market by 2070
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Ambitious City
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/buildings_led_ambitious_city.xml" style="     ">buildings_led_ambitious_city.xml</a>
+</td>
+<td style="text-align:left;">
+Gradually phases non-LED residential lighting technology out of the
+market by 2050 in KL and 2070 in Rest of Malaysia
 </td>
 </tr>
 </tbody>
@@ -1050,9 +1076,11 @@ style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 
 <li>Create a folder in the input directory:
 <code>./gcam-core/input/addons</code>.</li>
 <li>Download the desired xml file (either <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/buildings_led_high.xml">buildings_led_high.xml</a>
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/buildings_led_high.xml">buildings_led_high.xml</a>,
+<a
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/buildings_led_low.xml">buildings_led_low.xml</a>,
 or <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/buildings_led_low.xml">buildings_led_low.xml</a>)
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/buildings_led_ambitious_city.xml">buildings_led_ambitious_city.xml</a>)
 to the folder.</li>
 <li>To adjust the year in which 100% LED lighting is achieved: within
 each non-LED <code>stub-technology</code> tag in the XML, change the
@@ -1061,8 +1089,8 @@ the <code>from-year</code> in the second. Also change the
 <code>year</code> of the <code>period</code> tag in which the
 <code>share-weight</code> is 0.</li>
 <li>Save the xml and then point to it in your configuration file by
-adding the line (replace <code>high</code> with <code>low</code> as
-needed):
+adding the line (replace <code>high</code> with <code>low</code> or
+<code>ambitious_city</code> as needed):
 <p style='font-size:0.8em'>
 <code>&lt;Value name = "scen"&gt;../input/addons/malaysia/buildings_led_high.xml&lt;/Value&gt;</code></li>
 </ol>
@@ -1113,6 +1141,18 @@ Low
 <td style="text-align:left;">
 Increases overall efficiency of industrial processes by 0.5% annually
 through 2070
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Ambitious City
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/industry_aeei_ambitious_city.xml" style="     ">industry_aeei_ambitious_city</a>
+</td>
+<td style="text-align:left;">
+Increases overall efficiency of industrial processes by 1% annually
+through 2070 for KL and by 0.5% annually for Rest of Malaysia
 </td>
 </tr>
 </tbody>
@@ -1170,15 +1210,17 @@ style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 
 <li>Create a folder in the input directory:
 <code>./gcam-core/input/addons</code>.</li>
 <li>Download the desired industrial aeei xml file (either <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/industry_aeei_high.xml">industry_aeei_high.xml</a>
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/industry_aeei_high.xml">industry_aeei_high.xml</a>,
+<a
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/industry_aeei_low.xml">industry_aeei_low.xml</a>,
 or <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/industry_aeei_low.xml">industry_aeei_low.xml</a>)
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/industry_aeei_low.xml">industry_aeei_ambitious_city.xml</a>)
 to the folder.</li>
 <li>To adjust the rate of industrial energy efficiency increase, change
 the value of the <code>aeei</code> tag for each desired year.</li>
 <li>Save the xml and then point to it in your configuration file by
-adding the line (replace <code>high</code> with <code>low</code> as
-needed):</li>
+adding the line (replace <code>high</code> with <code>low</code> or
+<code>ambitious_city</code> as needed):</li>
 </ol>
 </p>
 <p style="font-size:0.8em">
