@@ -329,7 +329,7 @@ div.tocify {
         <li>
   <a href="index.html">
     <span class="fa fa-home"></span>
-
+     
   </a>
 </li>
 <li>
@@ -349,7 +349,7 @@ div.tocify {
 <li>
   <a href="https://github.com/JGCRI/seasia">
     <span class="fab fa-github"></span>
-
+     
   </a>
 </li>
       </ul>
@@ -401,7 +401,7 @@ script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
     });
     // onClick function for zoomImg
     $('img.zoomImg').click(function() {
-      $('.zoomDiv').css({opacity: '0', width: '0%'});
+      $('.zoomDiv').css({opacity: '0', width: '0%'}); 
     });
   });
 </script>
@@ -623,6 +623,157 @@ examples for each.)</p>
 <h2><span class="header-section-number">4.1</span> Private ICE
 Phase-out</h2>
 <hr />
+<table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+Scenario
+</th>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+Files Used
+</th>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+Description
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Low
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_trn_ICE_low.xml" style="     ">malaysia_trn_ICE_low.xml</a>
+</td>
+<td style="text-align:left;">
+Phases liquids passenger vehicles out of the market by 2050
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+High
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_trn_ICE_high.xml" style="     ">malaysia_trn_ICE_high.xml</a>
+</td>
+<td style="text-align:left;">
+Phases liquids passenger vehicles out of the market by 2030
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Ambitious City
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_trn_ICE_ambitious_city.xml" style="     ">malaysia_trn_ICE_ambitious_city.xml</a>
+</td>
+<td style="text-align:left;">
+Phases liquids passenger vehicles out of the market by 2030 in KL, and
+by 2050 in the rest of Malaysia
+</td>
+</tr>
+</tbody>
+</table>
+<!-------------------------->
+<!----------Goal------------>
+<!-------------------------->
+<div class="warning"
+style="background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
+<span>
+<p style="text-align:center; font-size:24px">
+<b>Goal</b>
+</p>
+<p style="margin-left:1em;">
+<p>The goal of this policy is to phase out internal combustion engine
+(ICE) passenger vehicles from the market. The difference between the low
+and high policies is the year in which ICE vehicles are completely
+phased out of the market.</p>
+</p>
+<p></span></p>
+</div>
+<p><br></p>
+<!-------------------------->
+<!--------Approach---------->
+<!-------------------------->
+<div class="warning"
+style="background-color:#fffae0; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
+<p><span></p>
+<p style="text-align:center; font-size:24px">
+<b>Approach</b>
+</p>
+<p style="margin-left:1em;">
+<p>To represent an ICE vehicle phase-out, we decrease their shareweights
+over time. The year in which the shareweights are 0 is the year in which
+ICE vehicles are completely phased out of the market.</p>
+</p>
+<p></span></p>
+</div>
+<p><br></p>
+<!-------------------------->
+<!--------Background-------->
+<!-------------------------->
+<!-------------------------------------->
+<!---Background - Share weights---------->
+<!-------------------------------------->
+<div class="warning"
+style="background-color:#EFFFC9; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
+<p><span></p>
+<p style="text-align:center; font-size:24px">
+<b>Background - Share weights</b>
+</p>
+<p style="margin-left:1em;">
+Share weights are assigned to different subsectors and technology
+choices in GCAM to represent non-cost factors of consumer choice. They
+are used primarily to calibrate market shares to historical data but can
+also be modified to reflect factors such as infrastructure development
+or shifting societal preferences. For more information on share weights
+and how they are used in GCAM’s economic choice functions, see the <a
+href="https://jgcri.github.io/gcam-doc/choice.html">GCAM economic
+choice</a> documentation. Share weights should not be used to represent
+cost-related policies. Additionally, shareweight interpolation rules
+(<code>fixed</code>, <code>linear</code>, or <code>s-curve</code>) can
+be used to automatically interpolate shareweights between given years.
+</p>
+<p></span></p>
+</div>
+<p><br></p>
+<!-------------------------->
+<!---GCAM Implementation---->
+<!-------------------------->
+<div class="warning"
+style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
+<span>
+<p style="text-align:center; font-size:24px">
+<b>GCAM Implementation</b>
+</p>
+<p style="margin-left:1em;">
+<ol style="list-style-type: decimal">
+<li>Create a folder in the input directory eg.
+<code>./gcam-core/input/addons/malaysia</code>.</li>
+<li>Download the desired ICE phase-out XML file (either <a
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_trn_ICE_low.xml">malaysia_trn_ICE_low.xml</a>,
+<a
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_trn_ICE_high.xml">malaysia_trn_ICE_high.xml</a>,
+or <a
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_trn_ICE_ambitious_city.xml">malayisa_trn_ICE_ambitious_city.xml</a>)
+to the folder.</li>
+<li>To adjust the year in which ICE vehicles are completely phased out:
+within each <code>stub-technology</code> tag in the XML, change the
+<code>to-year</code> in the first <code>interpolation-rule</code> and
+the <code>from-year</code> in the second. Also change the
+<code>year</code> of the <code>period</code> tag in which the
+<code>share-weight</code> is 0.</li>
+<li>Save the xml and then point to it in your configuration file by
+adding the line:</li>
+</ol>
+</p>
+<p style="font-size:0.8em">
+<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/malaysia_trn_ICE_low.xml&lt;/Value&gt;</code>
+</p>
+</p>
+<p></span></p>
+</div>
+<p><br></p>
 </div>
 <div id="publicprivate-vehicle-modal-shift" class="section level2"
 number="4.2">
@@ -1253,37 +1404,104 @@ Generation Mix</h2>
 <thead>
 <tr>
 <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
-Relevant Files
+Scenario
 </th>
 <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
-Link
+Files Used
+</th>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+Description
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align:left;">
-Excel spreadsheet showing initial calculations to build this policy
+All
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/data/malaysia/malaysia_elec_fuel_mix_2030_pathway.xlsx" style="     ">malaysia_elec_fuel_mix_2030_pathway.xlsx</a>
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-XML file for GCAM with electricity generation percentages by fuel in
-2030
+<a href="https://github.com/JGCRI/seasia/blob/main/data/malaysia/malaysia_elec_gen_pathway.xlsx" style="     ">malaysia_elec_gen_pathway.xlsx</a>
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_elec_fuel_mix_2030_KL.xml" style="     ">malaysia_elec_fuel_mix_2030_KL.xml</a>
+Excel spreadsheet that shows initial calculations to build this policy
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-XML file for GCAM to set exogenous hydropower generation
+All
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_hydro_constraint_2030_KL.xml" style="     ">malaysia_hydro_constraint_2030_KL.xml</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_elec_gen_link.xml" style="     ">malaysia_elec_gen_link.xml</a>
+</td>
+<td style="text-align:left;">
+Applies subsidies to relevant technologies in order to meet the
+specified floors
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Low
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_elec_gen_low.xml" style="     ">malaysia_elec_gen_low.xml</a>
+</td>
+<td style="text-align:left;">
+Sets floors for renewable electricity generation technologies
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Low
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_elec_hydro_low.xml" style="     ">malaysia_elec_hydro_low.xml</a>
+</td>
+<td style="text-align:left;">
+Sets exogenous hydropower generation
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+High
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_elec_gen_high.xml" style="     ">malaysia_elec_gen_high.xml</a>
+</td>
+<td style="text-align:left;">
+Sets floors for renewable electricity generation technologies
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+High
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_elec_hydro_high.xml" style="     ">malaysia_elec_hydro_high.xml</a>
+</td>
+<td style="text-align:left;">
+Sets exogenous hydropower generation
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Ambitious City
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_elec_gen_ambitious_city.xml" style="     ">malaysia_elec_gen_ambitious_city.xml</a>
+</td>
+<td style="text-align:left;">
+Sets floors for renewable electricity generation technologies
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Ambitious City
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_elec_hydro_ambitious_city.xml" style="     ">malaysia_elec_gen_ambitious_city.xmll</a>
+</td>
+<td style="text-align:left;">
+Sets exogenous hydropower generation
 </td>
 </tr>
 </tbody>
@@ -1299,9 +1517,9 @@ style="background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 
 </p>
 <p style="margin-left:1em;">
 <p>The goal of this example is to set a minimum value (floor) in GCAM
-for the amount of electricity generation from each fuel type (coal,
-natural gas, solar, etc.) corresponding with the planned percentages in
-the KLLCSBP2030 (below).</p>
+for the amount of electricity generation from three renewable energy
+technologies (solar, hydro, and biomass) corresponding with the planned
+percentages in the KLLCSBP2030 (below).</p>
 <p align="center">
 <img src="images/KL_2030_power.PNG">
 </p>
@@ -1373,8 +1591,12 @@ style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 
 <ol style="list-style-type: decimal">
 <li>Create a folder in the input directory eg.
 <code>./gcam-core/input/addons/malaysia</code>.</li>
-<li>Download the example XML file <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_elec_fuel_mix_2030_KL.xml">malaysia_elec_fuel_mix_2030_KL.xml</a>
+<li>Download the example XML files ( <a
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_elec_gen_low.xml">malaysia_elec_gen_low.xml</a>
+and <a
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_elec_hydro_low">malaysia_elec_hydro_low.xml</a>)
+as well as the subsidy link file <a
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_elec_gen_link.xml">malaysia_elec_gen_link.xml</a>
 to the folder. (Click on <code>Raw</code> and then
 <code>right-click</code> and select <code>save-as</code>.)</li>
 <li>To make adjustments: within each
@@ -1397,20 +1619,18 @@ an exact constraint, rather than a floor, is desired
 the corresponding <code>input-subsidy</code> is added within each
 relevant <code>period</code> for each <code>stub-technology</code> you
 wish to constrain.</li>
-<li>Save the XML and then point to it in your configuration file by
-adding the line:
-<p style='font-size:0.9em'>
-<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/malaysia_elec_fuel_mix_2030_KL.xml&lt;/Value&gt;</code></li>
 <li>To adjust the hydropower pathway, download the example XML file <a
 href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_hydro_constraint_2030_KL.xml">malaysia_hydro_constraint_2030_KL.xml</a>
 to the folder.</li>
 <li>Within each <code>fixedOutput</code> tag in the XML, adjust the
 value to reflect desired hydropower output in each period. The user can
 also add additional periods.</li>
-<li>Save the XML and point to it in your configuration file by adding
-the line:
+<li>Save the XMLs and then point to them in your configuration file by
+adding the lines:
 <p style='font-size:0.9em'>
-<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/malaysia_hydro_constraint_2030_KL.xml&lt;/Value&gt;</code></li>
+<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/malaysia_elec_gen_low.xml&lt;/Value&gt;</code>
+<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/malaysia_elec_hydro_low.xml&lt;/Value&gt;</code>
+<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/malaysia_elec_gen_link.xml&lt;/Value&gt;</code></li>
 </ol>
 </p>
 </p>
@@ -1468,7 +1688,7 @@ data &lt;- gcamextractor::readgcam(gcamdatabase = sample_path,
                                 folder = &quot;../data/malaysia/gcamextractor&quot;)</code></pre>
 <p>Until the scenario modeling process is complete, use the processed
 csv files found in the data/malaysia/gcamextractor/ folder.</p>
-<pre class="r"><code>ref &lt;- read.csv(&quot;../data/malaysia/gcamextractor/reference/gcamDataTable_aggClass1.csv&quot;)
+<pre class="r"><code>ref &lt;- read.csv(&quot;../data/malaysia/gcamextractor/reference/gcamDataTable_aggClass1.csv&quot;) 
 high &lt;- read.csv(&quot;../data/malaysia/gcamextractor/high/gcamDataTable_aggClass1.csv&quot;)
 low &lt;- read.csv(&quot;../data/malaysia/gcamextractor/low/gcamDataTable_aggClass1.csv&quot;)
 city &lt;- read.csv(&quot;../data/malaysia/gcamextractor/city/gcamDataTable_aggClass1.csv&quot;)
@@ -1525,13 +1745,13 @@ number="5.2.1.1.1">
 <h5><span class="header-section-number">5.2.1.1.1</span> Malaysia vs
 Kuala Lumpur</h5>
 <pre class="r"><code>socioeconomic_parameters &lt;- c(&quot;pop&quot;, &quot;gdp&quot;, &quot;gdpPerCapita&quot;)
-
+  
 socioeconomic &lt;- malaysia %&gt;%
   filter(param %in% socioeconomic_parameters,
          region != &quot;All of Malaysia&quot;,
          scenario == &quot;Ref&quot;) %&gt;%
-  mutate(param = units) %&gt;%
-  rchart::chart(save = F,
+  mutate(param = units) %&gt;% 
+  rchart::chart(save = F, 
                 show = F,
                 size_text = 19)
 
@@ -1545,8 +1765,8 @@ socioeconomic$chart_region_absolute</code></pre>
   filter(param %in% socioeconomic_parameters,
          region == &quot;Malaysia&quot;) %&gt;%
   mutate(param = units,
-         scenario = &quot;Ref&quot;) %&gt;%
-  rchart::chart(save = F,
+         scenario = &quot;Ref&quot;) %&gt;% 
+  rchart::chart(save = F, 
                 show = F,
                 size_text = 19)
 
@@ -1561,8 +1781,8 @@ Lumpur</h5>
   filter(param %in% socioeconomic_parameters,
          region == &quot;KualaLumpur&quot;) %&gt;%
   mutate(param = units,
-         scenario = &quot;Ref&quot;) %&gt;%
-  rchart::chart(save = F,
+         scenario = &quot;Ref&quot;) %&gt;% 
+  rchart::chart(save = F, 
                 show = F,
                 size_text = 19)
 
@@ -1593,7 +1813,7 @@ ghg &lt;- malaysia %&gt;% filter(param == &quot;emissGHGBySectorNoBioGWPAR5&quot
 malaysia_emissions &lt;- bind_rows(co2, ghg)</code></pre>
 <pre class="r"><code>emissions &lt;- malaysia_emissions %&gt;%
   mutate(param = units) %&gt;%
-  rchart::chart(save = F,
+  rchart::chart(save = F, 
                 show = F,
                 size_text = 10)
 
@@ -1603,7 +1823,7 @@ emissions$chart_class_Ref</code></pre>
   mutate(class = &quot;CO2&quot;,
          param = &quot;emissGHGByGasNoBioGWPAR5&quot;)
 
-ghg_gas &lt;- malaysia %&gt;%
+ghg_gas &lt;- malaysia %&gt;% 
   filter(param == &quot;emissGHGByGasNoBioGWPAR5&quot;,
          class != &quot;CO2&quot;,
          region != &quot;Malaysia&quot;)
@@ -1611,7 +1831,7 @@ ghg_gas &lt;- malaysia %&gt;%
 malaysia_emissions_gas &lt;- bind_rows(co2_gas, ghg_gas)</code></pre>
 <pre class="r"><code>gas &lt;- malaysia_emissions_gas %&gt;%
   mutate(param = units) %&gt;%
-  rchart::chart(save = F,
+  rchart::chart(save = F, 
                 show = F,
                 size_text = 10)
 
@@ -1621,28 +1841,28 @@ gas$chart_class_Ref</code></pre>
 </div>
 <div id="malaysia-1" class="section level5" number="5.2.1.2.2">
 <h5><span class="header-section-number">5.2.1.2.2</span> Malaysia</h5>
-<pre class="r"><code>co2_my &lt;- malaysia %&gt;%
-  filter(param == &quot;emissCO2BySectorNoBio&quot;,
+<pre class="r"><code>co2_my &lt;- malaysia %&gt;% 
+  filter(param == &quot;emissCO2BySectorNoBio&quot;, 
          region == &quot;All of Malaysia&quot;) %&gt;%
   mutate(value = value * 3.67,
          units = &quot;CO2 Emissions (MTCO2eq)&quot;,
          param = &quot;CO2 Emissions&quot;)
 
-ghg_my &lt;- malaysia %&gt;%
-  filter(param == &quot;emissGHGBySectorNoBioGWPAR5&quot;,
+ghg_my &lt;- malaysia %&gt;% 
+  filter(param == &quot;emissGHGBySectorNoBioGWPAR5&quot;, 
          region == &quot;All of Malaysia&quot;) %&gt;%
   mutate(param = &quot;GHG Emissions by Sector&quot;)
 
 my_emissions &lt;- bind_rows(co2_my, ghg_my) </code></pre>
 <pre class="r"><code>emissions_my_plot &lt;- my_emissions %&gt;%
   mutate(param = units) %&gt;%
-  rchart::chart(save = F,
+  rchart::chart(save = F, 
                 show = F,
                 scenRef = &quot;Ref&quot;)
 
 emissions_my_plot$chart_param</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-emiss-plot-my-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>ghg_gas_my &lt;- malaysia %&gt;%
+<pre class="r"><code>ghg_gas_my &lt;- malaysia %&gt;% 
   filter(param == &quot;emissGHGByGasNoBioGWPAR5&quot;,
          class != &quot;CO2&quot;,
          region == &quot;All of Malaysia&quot;) %&gt;%
@@ -1650,7 +1870,7 @@ emissions_my_plot$chart_param</code></pre>
 
 my_emissions_gas &lt;- bind_rows(ghg_gas_my, my_emissions)</code></pre>
 <pre class="r"><code>gas_my &lt;- my_emissions_gas %&gt;%
-  rchart::chart(save = F,
+  rchart::chart(save = F, 
                 show = F,
                 scenRef = &quot;Ref&quot;,
                 summary_line = T,
@@ -1678,13 +1898,13 @@ ghg_kl &lt;- malaysia %&gt;% filter(param == &quot;emissGHGBySectorNoBioGWPAR5&q
 kl_emissions &lt;- bind_rows(co2_kl, ghg_kl) </code></pre>
 <pre class="r"><code>emissions_kl_plot &lt;- kl_emissions %&gt;%
   mutate(param = units) %&gt;%
-  rchart::chart(save = F,
+  rchart::chart(save = F, 
                 show = F,
                 size_text = 12)
 
 emissions_kl_plot$chart_param</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-emiss-plot-kl-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>ghg_gas_kl &lt;- malaysia %&gt;%
+<pre class="r"><code>ghg_gas_kl &lt;- malaysia %&gt;% 
   filter(param == &quot;emissGHGByGasNoBioGWPAR5&quot;,
          class != &quot;CO2&quot;,
          region == &quot;KualaLumpur&quot;) %&gt;%
@@ -1692,7 +1912,7 @@ emissions_kl_plot$chart_param</code></pre>
 
 kl_emissions_gas &lt;- bind_rows(ghg_gas_kl, kl_emissions)</code></pre>
 <pre class="r"><code>gas_kl &lt;- kl_emissions_gas %&gt;%
-  rchart::chart(save = F,
+  rchart::chart(save = F, 
                 show = F,
                 scenRef = &quot;Ref&quot;,
                 summary_line = T,
@@ -1716,11 +1936,11 @@ Primary Energy by Fuel</h4>
 number="5.2.1.3.1">
 <h5><span class="header-section-number">5.2.1.3.1</span> Malaysia vs
 Kuala Lumpur</h5>
-<pre class="r"><code>p_energy &lt;- malaysia %&gt;%
+<pre class="r"><code>p_energy &lt;- malaysia %&gt;% 
   filter(param == &quot;energyPrimaryByFuelEJ&quot;,
          region != &quot;Malaysia&quot;) %&gt;%
   mutate(param = units) %&gt;%
-  rchart::chart(save = F,
+  rchart::chart(save = F, 
                 show = F,
                 scenRef = &quot;Ref&quot;,
                 size_text = 12)
@@ -1731,11 +1951,11 @@ p_energy$chart_class_Ref</code></pre>
 </div>
 <div id="malaysia-2" class="section level5" number="5.2.1.3.2">
 <h5><span class="header-section-number">5.2.1.3.2</span> Malaysia</h5>
-<pre class="r"><code>p_energy_my &lt;- malaysia %&gt;%
+<pre class="r"><code>p_energy_my &lt;- malaysia %&gt;% 
   filter(param == &quot;energyPrimaryByFuelEJ&quot;,
          region == &quot;All of Malaysia&quot;) %&gt;%
   mutate(param = units) %&gt;%
-  rchart::chart(save = F,
+  rchart::chart(save = F, 
                 show = F,
                 scenRef = &quot;Ref&quot;)
 
@@ -1748,11 +1968,11 @@ p_energy_my$chart_class</code></pre>
 <div id="kuala-lumpur-2" class="section level5" number="5.2.1.3.3">
 <h5><span class="header-section-number">5.2.1.3.3</span> Kuala
 Lumpur</h5>
-<pre class="r"><code>p_energy_kl &lt;- malaysia %&gt;%
+<pre class="r"><code>p_energy_kl &lt;- malaysia %&gt;% 
   filter(param == &quot;energyPrimaryByFuelEJ&quot;,
          region == &quot;KualaLumpur&quot;) %&gt;%
   mutate(param = units) %&gt;%
-  rchart::chart(save = F,
+  rchart::chart(save = F, 
                 show = F,
                 scenRef = &quot;Ref&quot;,
                 size_text = 28)
@@ -1775,11 +1995,11 @@ number="5.2.1.4.1">
 Kuala Lumpur</h5>
 <pre class="r"><code>energy_parameters &lt;- c(&quot;energyFinalConsumBySecEJ&quot;, &quot;energyFinalByFuelEJ&quot;)
 
-energy &lt;- malaysia %&gt;%
+energy &lt;- malaysia %&gt;% 
   filter(param %in% energy_parameters,
          region != &quot;Malaysia&quot;) %&gt;%
   mutate(param = units) %&gt;%
-  rchart::chart(save = F,
+  rchart::chart(save = F, 
                 show = F,
                 size_text = 10)
 
@@ -1789,11 +2009,11 @@ energy$chart_class_Ref</code></pre>
 </div>
 <div id="malaysia-3" class="section level5" number="5.2.1.4.2">
 <h5><span class="header-section-number">5.2.1.4.2</span> Malaysia</h5>
-<pre class="r"><code>energy_my &lt;- malaysia %&gt;%
+<pre class="r"><code>energy_my &lt;- malaysia %&gt;% 
   filter(param %in% energy_parameters,
          region == &quot;All of Malaysia&quot;) %&gt;%
   mutate(param = units) %&gt;%
-  rchart::chart(save = F,
+  rchart::chart(save = F, 
                 show = F,
                 scenRef = &quot;Ref&quot;,
                 size_text = 12)
@@ -1807,11 +2027,11 @@ energy_my$chart_class</code></pre>
 <div id="kuala-lumpur-3" class="section level5" number="5.2.1.4.3">
 <h5><span class="header-section-number">5.2.1.4.3</span> Kuala
 Lumpur</h5>
-<pre class="r"><code>energy_kl &lt;- malaysia %&gt;%
+<pre class="r"><code>energy_kl &lt;- malaysia %&gt;% 
   filter(param %in% energy_parameters,
          region == &quot;KualaLumpur&quot;) %&gt;%
   mutate(param = units) %&gt;%
-  rchart::chart(save = F,
+  rchart::chart(save = F, 
                 show = F,
                 scenRef = &quot;Ref&quot;,
                 size_text = 12)
@@ -1836,11 +2056,11 @@ number="5.2.1.5.1">
 Kuala Lumpur</h5>
 <pre class="r"><code>electricity_parameters &lt;- c(&quot;elecConsumByDemandSectorTWh&quot;, &quot;elecByTechTWh&quot;)
 
-electricity &lt;- malaysia %&gt;%
+electricity &lt;- malaysia %&gt;% 
   filter(param %in% electricity_parameters,
          region != &quot;Malaysia&quot;) %&gt;%
   mutate(param = units) %&gt;%
-  rchart::chart(save = F,
+  rchart::chart(save = F, 
                 show = F,
                 size_text = 10)
 
@@ -1850,11 +2070,11 @@ electricity$chart_class_Ref</code></pre>
 </div>
 <div id="malaysia-4" class="section level5" number="5.2.1.5.2">
 <h5><span class="header-section-number">5.2.1.5.2</span> Malaysia</h5>
-<pre class="r"><code>electricity_my &lt;- malaysia %&gt;%
+<pre class="r"><code>electricity_my &lt;- malaysia %&gt;% 
   filter(param %in% electricity_parameters,
          region == &quot;All of Malaysia&quot;) %&gt;%
   mutate(param = units) %&gt;%
-  rchart::chart(save = F,
+  rchart::chart(save = F, 
                 show = F,
                 scenRef = &quot;Ref&quot;,
                 size_text = 12)
@@ -1868,11 +2088,11 @@ electricity_my$chart_class</code></pre>
 <div id="kuala-lumpur-4" class="section level5" number="5.2.1.5.3">
 <h5><span class="header-section-number">5.2.1.5.3</span> Kuala
 Lumpur</h5>
-<pre class="r"><code>electricity_kl &lt;- malaysia %&gt;%
+<pre class="r"><code>electricity_kl &lt;- malaysia %&gt;% 
   filter(param %in% electricity_parameters,
          region == &quot;KualaLumpur&quot;) %&gt;%
   mutate(param = units) %&gt;%
-  rchart::chart(save = F,
+  rchart::chart(save = F, 
                 show = F,
                 scenRef = &quot;Ref&quot;,
                 size_text = 12)
@@ -1900,11 +2120,11 @@ Building Energy by Subsector</h4>
 number="5.2.2.1.1">
 <h5><span class="header-section-number">5.2.2.1.1</span> Malaysia vs
 Kuala Lumpur</h5>
-<pre class="r"><code>building_energy &lt;- malaysia %&gt;%
+<pre class="r"><code>building_energy &lt;- malaysia %&gt;% 
   filter(param == &quot;energyFinalSubsecBySectorBuildEJ&quot;,
          region != &quot;Malaysia&quot;) %&gt;%
   mutate(param = units) %&gt;%
-  rchart::chart(save = F,
+  rchart::chart(save = F, 
                 show = F,
                 size_text = 12)
 
@@ -1914,11 +2134,11 @@ building_energy$chart_class_Ref</code></pre>
 </div>
 <div id="malaysia-5" class="section level5" number="5.2.2.1.2">
 <h5><span class="header-section-number">5.2.2.1.2</span> Malaysia</h5>
-<pre class="r"><code>building_energy_my &lt;- malaysia %&gt;%
+<pre class="r"><code>building_energy_my &lt;- malaysia %&gt;% 
   filter(param == &quot;energyFinalSubsecBySectorBuildEJ&quot;,
          region == &quot;All of Malaysia&quot;) %&gt;%
   mutate(param = units) %&gt;%
-  rchart::chart(save = F,
+  rchart::chart(save = F, 
                 show = F,
                 scenRef = &quot;Ref&quot;)
 
@@ -1931,11 +2151,11 @@ building_energy_my$chart_class</code></pre>
 <div id="kuala-lumpur-5" class="section level5" number="5.2.2.1.3">
 <h5><span class="header-section-number">5.2.2.1.3</span> Kuala
 Lumpur</h5>
-<pre class="r"><code>building_energy_kl &lt;- malaysia %&gt;%
+<pre class="r"><code>building_energy_kl &lt;- malaysia %&gt;% 
   filter(param == &quot;energyFinalSubsecBySectorBuildEJ&quot;,
          region == &quot;KualaLumpur&quot;) %&gt;%
   mutate(param = units) %&gt;%
-  rchart::chart(save = F,
+  rchart::chart(save = F, 
                 show = F,
                 scenRef = &quot;Ref&quot;)
 
@@ -1958,12 +2178,12 @@ number="5.2.2.2.1">
 <h5><span class="header-section-number">5.2.2.2.1</span> Malaysia vs
 Kuala Lumpur</h5>
 <pre class="r"><code>transport_mode_params &lt;- c(&quot;transportFreightVMTByMode&quot;, &quot;transportPassengerVMTByMode&quot;)
-
-transport_m &lt;- malaysia %&gt;%
+                
+transport_m &lt;- malaysia %&gt;% 
   filter(param %in% transport_mode_params,
          region != &quot;Malaysia&quot;) %&gt;%
   mutate(param = units) %&gt;%
-  rchart::chart(save = F,
+  rchart::chart(save = F, 
                 show = F,
                 size_text = 9)
 
@@ -1973,11 +2193,11 @@ transport_m$chart_class_Ref</code></pre>
 </div>
 <div id="malaysia-6" class="section level5" number="5.2.2.2.2">
 <h5><span class="header-section-number">5.2.2.2.2</span> Malaysia</h5>
-<pre class="r"><code>transport_my_m &lt;- malaysia %&gt;%
+<pre class="r"><code>transport_my_m &lt;- malaysia %&gt;% 
   filter(param %in% transport_mode_params,
          region == &quot;All of Malaysia&quot;) %&gt;%
   mutate(param = units) %&gt;%
-  rchart::chart(save = F,
+  rchart::chart(save = F, 
                 show = F,
                 scenRef = &quot;Ref&quot;,
                 size_text = 10)
@@ -1991,11 +2211,11 @@ transport_my_m$chart_class</code></pre>
 <div id="kuala-lumpur-6" class="section level5" number="5.2.2.2.3">
 <h5><span class="header-section-number">5.2.2.2.3</span> Kuala
 Lumpur</h5>
-<pre class="r"><code>transport_kl_m &lt;- malaysia %&gt;%
+<pre class="r"><code>transport_kl_m &lt;- malaysia %&gt;% 
   filter(param %in% transport_mode_params,
          region == &quot;KualaLumpur&quot;) %&gt;%
   mutate(param = units) %&gt;%
-  rchart::chart(save = F,
+  rchart::chart(save = F, 
                 show = F,
                 scenRef = &quot;Ref&quot;,
                 size_text = 10)
@@ -2019,12 +2239,12 @@ number="5.2.2.3.1">
 <h5><span class="header-section-number">5.2.2.3.1</span> Malaysia vs
 Kuala Lumpur</h5>
 <pre class="r"><code>transport_fuel_params &lt;- c(&quot;transportFreightVMTByFuel&quot;, &quot;transportPassengerVMTByFuel&quot;)
-
-transport_f &lt;- malaysia %&gt;%
+                
+transport_f &lt;- malaysia %&gt;% 
   filter(param %in% transport_fuel_params,
          region != &quot;Malaysia&quot;) %&gt;%
   mutate(param = units) %&gt;%
-  rchart::chart(save = F,
+  rchart::chart(save = F, 
                 show = F,
                 size_text = 10)
 
@@ -2034,11 +2254,11 @@ transport_f$chart_class_Ref</code></pre>
 </div>
 <div id="malaysia-7" class="section level5" number="5.2.2.3.2">
 <h5><span class="header-section-number">5.2.2.3.2</span> Malaysia</h5>
-<pre class="r"><code>transport_my_f &lt;- malaysia %&gt;%
+<pre class="r"><code>transport_my_f &lt;- malaysia %&gt;% 
   filter(param %in% transport_fuel_params,
          region == &quot;All of Malaysia&quot;) %&gt;%
   mutate(param = units) %&gt;%
-  rchart::chart(save = F,
+  rchart::chart(save = F, 
                 show = F,
                 scenRef = &quot;Ref&quot;,
                 size_text = 10)
@@ -2052,22 +2272,22 @@ transport_my_f$chart_class</code></pre>
 <div id="kuala-lumpur-7" class="section level5" number="5.2.2.3.3">
 <h5><span class="header-section-number">5.2.2.3.3</span> Kuala
 Lumpur</h5>
-<pre class="r"><code>transport_kl_f &lt;- malaysia %&gt;%
+<pre class="r"><code>transport_kl_f &lt;- malaysia %&gt;% 
   filter(param %in% transport_fuel_params,
          region == &quot;KualaLumpur&quot;) %&gt;%
   mutate(param = units) %&gt;%
-  rchart::chart(save = F,
+  rchart::chart(save = F, 
                 show = F,
                 scenRef = &quot;Ref&quot;,
                 size_text = 10)
 
 transport_kl_f$chart_class</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-transport-kl-sce-fuel-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>transport_kl_f &lt;- malaysia %&gt;%
+<pre class="r"><code>transport_kl_f &lt;- malaysia %&gt;% 
   filter(param %in% transport_fuel_params,
          region == &quot;KualaLumpur&quot;) %&gt;%
   mutate(param = units) %&gt;%
-  rchart::chart(save = F,
+  rchart::chart(save = F, 
                 show = F,
                 scenRef = &quot;Ref&quot;,
                 size_text = 18)
@@ -2088,11 +2308,11 @@ Industry Energy by Subsector</h4>
 number="5.2.2.4.1">
 <h5><span class="header-section-number">5.2.2.4.1</span> Malaysia vs
 Kuala Lumpur</h5>
-<pre class="r"><code>industry_energy &lt;- malaysia %&gt;%
+<pre class="r"><code>industry_energy &lt;- malaysia %&gt;% 
   filter(param == &quot;energyFinalSubsecByFuelIndusEJ&quot;,
          region != &quot;Malaysia&quot;) %&gt;%
   mutate(param = units) %&gt;%
-  rchart::chart(save = F,
+  rchart::chart(save = F, 
                 show = F,
                 size_text = 12)
 
@@ -2103,11 +2323,11 @@ industry_energy$chart_class_Ref</code></pre>
 </div>
 <div id="malaysia-8" class="section level5" number="5.2.2.4.2">
 <h5><span class="header-section-number">5.2.2.4.2</span> Malaysia</h5>
-<pre class="r"><code>industry_energy_my &lt;- malaysia %&gt;%
+<pre class="r"><code>industry_energy_my &lt;- malaysia %&gt;% 
   filter(param == &quot;energyFinalSubsecByFuelIndusEJ&quot;,
          region == &quot;All of Malaysia&quot;) %&gt;%
   mutate(param = units) %&gt;%
-  rchart::chart(save = F,
+  rchart::chart(save = F, 
                 show = F,
                 scenRef = &quot;Ref&quot;)
 
@@ -2120,11 +2340,11 @@ industry_energy_my$chart_class</code></pre>
 <div id="kuala-lumpur-8" class="section level5" number="5.2.2.4.3">
 <h5><span class="header-section-number">5.2.2.4.3</span> Kuala
 Lumpur</h5>
-<pre class="r"><code>industry_energy_kl &lt;- malaysia %&gt;%
+<pre class="r"><code>industry_energy_kl &lt;- malaysia %&gt;% 
   filter(param == &quot;energyFinalSubsecByFuelIndusEJ&quot;,
          region == &quot;KualaLumpur&quot;) %&gt;%
   mutate(param = units) %&gt;%
-  rchart::chart(save = F,
+  rchart::chart(save = F, 
                 show = F,
                 scenRef = &quot;Ref&quot;)
 
@@ -2242,18 +2462,18 @@ gcam_bau &lt;- malaysia %&gt;%
 bau &lt;- bind_rows(local_bau, gcam_bau)
 
 # Plot for Malaysia
-bau %&gt;%
+bau %&gt;% 
   filter(region == &quot;Malaysia&quot;) %&gt;%
-  ggplot(aes(x = year, y = value, color = scenario)) +
+  ggplot(aes(x = year, y = value, color = scenario)) + 
   geom_line() +
   facet_wrap(~param, scales = &quot;free&quot;) +
   ggtitle(&quot;Malaysia&quot;) +
   theme_light()</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/local-socioeconomics-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <pre class="r"><code># Plot for KL
-bau %&gt;%
+bau %&gt;% 
   filter(region == &quot;KualaLumpur&quot;) %&gt;%
-  ggplot(aes(x = year, y = value, color = scenario)) +
+  ggplot(aes(x = year, y = value, color = scenario)) + 
   geom_line() +
   facet_wrap(~param, scales = &quot;free&quot;) +
   ggtitle(&quot;Kuala Lumpur&quot;) +
@@ -2264,10 +2484,40 @@ bau %&gt;%
 <div id="co2-emissions-by-sector" class="section level3" number="6.2.2">
 <h3><span class="header-section-number">6.2.2</span> CO2 emissions by
 sector</h3>
+<pre class="r"><code>malaysia_build_ind &lt;-  co2_my %&gt;%
+  filter(scenario == &quot;Ref&quot;, 
+         class %in% c(&quot;building&quot;, &quot;industry&quot;)) %&gt;%
+  mutate(param = units,
+         scenario = &quot;GCAM Reference&quot;,
+         year = x)
+
+malaysia_transport &lt;- co2_my %&gt;%
+  filter(scenario == &quot;Ref&quot;,
+         class %in% c(&quot;International Aviation&quot;, &quot;International Shipping&quot;, &quot;transport&quot;)) %&gt;%
+  mutate(param = units,
+         scenario = &quot;GCAM Reference&quot;,
+         year = x,
+         class = case_when(class %in% c(&quot;International Aviation&quot;, &quot;International Shipping&quot;) ~ &quot;transport&quot;,
+                           T~class)) %&gt;%
+  group_by(year) %&gt;%
+  mutate(total = sum(value)) %&gt;%
+  distinct(year, .keep_all = TRUE)
+ 
+malaysia_co2 &lt;- bind_rows(malaysia_build_ind, malaysia_transport) 
+
+malaysia_co2 %&gt;%
+ ggplot(aes(x = year, y = value, fill = class)) + 
+  geom_col() +
+  labs(title = &quot;Malaysia, GCAM reference&quot;,
+       y = &quot;MTCO2eq&quot;) +
+  scale_fill_manual(breaks = c(&quot;building&quot;, &quot;industry&quot;, &quot;transport&quot;),
+                    values = c(&quot;#facda4&quot;, &quot;#cef4d1&quot;, &quot;#d0f6f7&quot;)) +
+  theme_light()</code></pre>
+<p><img src="modeling_malaysia_files/figure-html/local-emissions-my-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>local_co2 &lt;- read.csv(&quot;../data/malaysia/local_data_emissions_by_sector.csv&quot;)
 
 gcam_co2 &lt;- co2_kl %&gt;%
-  filter(scenario == &quot;Ref&quot;,
+  filter(scenario == &quot;Ref&quot;, 
          class %in% c(&quot;building&quot;, &quot;industry&quot;)) %&gt;%
   mutate(param = units,
          scenario = &quot;GCAM Reference&quot;,
@@ -2288,21 +2538,23 @@ gcam_transport &lt;- co2_kl %&gt;%
 
 bau_co2 &lt;- bind_rows(local_co2, gcam_co2, gcam_transport)
 
-bau_co2 %&gt;%
-  ggplot(aes(x = year, y = value, color = scenario)) +
-  geom_line() +
-  facet_wrap(~class, scales = &quot;free&quot;) +
+bau_co2 %&gt;% 
+  ggplot(aes(x = year, y = value, fill = class)) + 
+  geom_col() +
+  facet_wrap(~scenario) +
   labs(title = &quot;Kuala Lumpur&quot;,
        y = &quot;MTCO2eq&quot;) +
+  scale_fill_manual(breaks = c(&quot;building&quot;, &quot;industry&quot;, &quot;transport&quot;),
+                    values = c(&quot;#facda4&quot;, &quot;#cef4d1&quot;, &quot;#d0f6f7&quot;)) +
   theme_light()</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/local-emissions-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="modeling_malaysia_files/figure-html/local-emissions-kl-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 </div>
 <div id="energy-by-fuel-and-sector" class="section level3"
 number="6.2.3">
 <h3><span class="header-section-number">6.2.3</span> Energy by fuel and
 sector</h3>
-<pre class="r"><code>final_energy_ref_my &lt;- malaysia %&gt;%
+<pre class="r"><code>final_energy_ref_my &lt;- malaysia %&gt;% 
   filter(param %in% energy_parameters,
          region == &quot;All of Malaysia&quot;,
          scenario == &quot;Ref&quot;) %&gt;%
@@ -2318,7 +2570,7 @@ Final energy by fuel and sector in Malaysia.
 </p>
 </div>
 <p><br></p>
-<pre class="r"><code>final_energy_ref_kl &lt;- malaysia %&gt;%
+<pre class="r"><code>final_energy_ref_kl &lt;- malaysia %&gt;% 
   filter(param %in% energy_parameters,
          region == &quot;KualaLumpur&quot;,
          scenario == &quot;Ref&quot;) %&gt;%
@@ -2339,7 +2591,7 @@ Final energy by fuel and sector in Kuala Lumpur.
 number="6.2.4">
 <h3><span class="header-section-number">6.2.4</span> Electricity by fuel
 and sector</h3>
-<pre class="r"><code>elec_ref_my &lt;- malaysia %&gt;%
+<pre class="r"><code>elec_ref_my &lt;- malaysia %&gt;% 
   filter(param %in% electricity_parameters,
          region == &quot;All of Malaysia&quot;,
          scenario == &quot;Ref&quot;) %&gt;%
@@ -2356,7 +2608,7 @@ Electricity by fuel and sector in Malaysia.
 </p>
 </div>
 <p><br></p>
-<pre class="r"><code>elec_ref_kl &lt;- malaysia %&gt;%
+<pre class="r"><code>elec_ref_kl &lt;- malaysia %&gt;% 
   filter(param %in% electricity_parameters,
          region == &quot;KualaLumpur&quot;,
          scenario == &quot;Ref&quot;) %&gt;%

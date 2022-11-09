@@ -18,6 +18,7 @@ library(kableExtra)
 library(dplyr)
 library(gcamextractor)
 library(rchart)
+library(ggplot2)
 ```
 
 
@@ -263,15 +264,18 @@ To represent an ICE vehicle phase-out, we decrease their shareweights over time.
 ```{r high-eff-appliances-files-table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
 
 dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/efficient_appliances_high.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/efficient_appliances_low.xml")
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/efficient_appliances_low.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/efficient_appliances_ambitious_city.xml")
 
 data.frame(
-  Scenario = c("High", "Low")) %>% 
+  Scenario = c("High", "Low", "Ambitious City")) %>% 
   dplyr:: mutate("Files Used" = cell_spec(c("efficient_appliances_high.xml",
-                                            "efficient_appliances_low.xml"),
+                                            "efficient_appliances_low.xml",
+                                            "efficient_appliances_ambitious_city.xml"),
                                           "html", link=dt_url),
          Description = c("Increase prevelance of high-efficiency technologies (commercial and residential) through 2050",
-                         "Increase prevelance of high-efficiency technologies (commercial and residential) through 2070")) %>% 
+                         "Increase prevelance of high-efficiency technologies (commercial and residential) through 2070",
+                         "Increase prevelance of high-efficiency technologies (commercial and residential) through 2050 in KL and 2070 in Rest of Malaysia")) %>% 
   kable("html", escape = FALSE, col.names = c("Scenario", "Files Used", "Description")) %>%
   kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
   row_spec(0, background = "#2A2A2A", color = "white")
@@ -342,11 +346,11 @@ We can adjust the shareweights for technologies like air conditioners, water hea
 
 <p style='margin-left:1em;'>
 1. Create a folder in the input directory: `./gcam-core/input/addons`.
-2. Download the desired xml file (either [efficient_appliances_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/efficient_appliances_high.xml) or [efficient_appliances_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/efficient_appliances_low.xml)) to the folder.
+2. Download the desired xml file (either [efficient_appliances_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/efficient_appliances_high.xml), [efficient_appliances_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/efficient_appliances_low.xml), or [efficient_appliances_ambitious_city.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/efficient_appliances_ambitious_city.xml) to the folder.
 4. To adjust the year in which the target mix of technologies is achieved: within each `stub-technology` tag in the XML, change the `to-year` in the first `interpolation-rule` and the `from-year` in the second. Also change the `year` of the `period` tag in which the `share-weight` is 0.
-5. Save the xml and then point to it in your configuration file by adding the line (replace `high` with `low` as needed): 
+5. Save the xml and then point to it in your configuration file by adding the line (replace `high` with `low` or `ambitious_city` as needed): 
 <p style='font-size:0.8em'>
-`<Value name = "scen">../input/addons/malaysia/efficient_appliances__high.xml</Value>`
+`<Value name = "scen">../input/addons/malaysia/efficient_appliances_high.xml</Value>`
 </p>
 
 </span>
@@ -360,15 +364,18 @@ We can adjust the shareweights for technologies like air conditioners, water hea
 ```{r lighting-files-table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
 
 dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/buildings_led_high.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/buildings_led_low.xml")
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/buildings_led_low.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/buildings_led_ambitious_city.xml")
 
 data.frame(
-  Scenario = c("High", "Low")) %>% 
+  Scenario = c("High", "Low", "Ambitious City")) %>% 
   dplyr:: mutate("Files Used" = cell_spec(c("buildings_led_high.xml",
-                                            "buildings_led_low.xml"),
+                                            "buildings_led_low.xml",
+                                            "buildings_led_ambitious_city.xml"),
                                           "html", link=dt_url),
          Description = c("Gradually phases non-LED residential lighting technology out of the market by 2050",
-                         "Gradually phases non-LED residential lighting technology out of the market by 2070")) %>% 
+                         "Gradually phases non-LED residential lighting technology out of the market by 2070",
+                         "Gradually phases non-LED residential lighting technology out of the market by 2050 in KL and 2070 in Rest of Malaysia")) %>% 
   kable("html", escape = FALSE, col.names = c("Scenario", "Files Used", "Description")) %>%
   kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
   row_spec(0, background = "#2A2A2A", color = "white")
@@ -439,9 +446,9 @@ We can gradually decrease the shareweights of all non-LED residential lighting t
 
 <p style='margin-left:1em;'>
 1. Create a folder in the input directory: `./gcam-core/input/addons`.
-2. Download the desired xml file (either [buildings_led_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/buildings_led_high.xml) or [buildings_led_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/buildings_led_low.xml)) to the folder.
+2. Download the desired xml file (either [buildings_led_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/buildings_led_high.xml), [buildings_led_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/buildings_led_low.xml), or [buildings_led_ambitious_city.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/buildings_led_ambitious_city.xml)) to the folder.
 4. To adjust the year in which 100% LED lighting is achieved: within each non-LED `stub-technology` tag in the XML, change the `to-year` in the first `interpolation-rule` and the `from-year` in the second. Also change the `year` of the `period` tag in which the `share-weight` is 0.
-5. Save the xml and then point to it in your configuration file by adding the line (replace `high` with `low` as needed): 
+5. Save the xml and then point to it in your configuration file by adding the line (replace `high` with `low` or `ambitious_city` as needed): 
 <p style='font-size:0.8em'>
 `<Value name = "scen">../input/addons/malaysia/buildings_led_high.xml</Value>`
 </p>
@@ -458,15 +465,18 @@ We can gradually decrease the shareweights of all non-LED residential lighting t
 ```{r industry-aeei-files-table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
 
 dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/industry_aeei_high.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/industry_aeei_low.xml")
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/industry_aeei_low.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/industry_aeei_ambitious_city.xml")
 
 data.frame(
-  Scenario = c(rep("High",1), rep("Low",1))) %>% 
+  Scenario = c(rep("High",1), rep("Low",1), rep("Ambitious City",1))) %>% 
   mutate("Files Used" = cell_spec( c("industry_aeei_high.xml",
-                                     "industry_aeei_low.xml"),
+                                     "industry_aeei_low.xml",
+                                     "industry_aeei_ambitious_city"),
                                    "html", link = dt_url)) %>% 
   mutate(Description = c("Increases overall efficiency of industrial processes by 1% annually through 2070",
-                         "Increases overall efficiency of industrial processes by 0.5% annually through 2070")) %>%
+                         "Increases overall efficiency of industrial processes by 0.5% annually through 2070",
+                         "Increases overall efficiency of industrial processes by 1% annually through 2070 for KL and by 0.5% annually for Rest of Malaysia")) %>%
   kable("html", escape = FALSE, col.names = c("Scenario", "Files Used", "Description")) %>%
   kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
   row_spec(0, background = "#2A2A2A", color = "white")
@@ -536,9 +546,9 @@ To represent a gradual increase in industrial efficiency, we can use GCAM's `aee
 
 <p style='margin-left:1em;'>
 1. Create a folder in the input directory: `./gcam-core/input/addons`.
-2. Download the desired industrial aeei xml file (either [industry_aeei_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/industry_aeei_high.xml) or [industry_aeei_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/industry_aeei_low.xml)) to the folder.
+2. Download the desired industrial aeei xml file (either [industry_aeei_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/industry_aeei_high.xml), [industry_aeei_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/industry_aeei_low.xml), or [industry_aeei_ambitious_city.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/industry_aeei_low.xml)) to the folder.
 4. To adjust the rate of industrial energy efficiency increase, change the value of the `aeei` tag for each desired year.
-5. Save the xml and then point to it in your configuration file by adding the line (replace `high` with `low` as needed): 
+5. Save the xml and then point to it in your configuration file by adding the line (replace `high` with `low` or `ambitious_city` as needed): 
 </p>
 <p style='font-size:0.8em'>
 `<Value name = "scen">../input/addons/malaysia/industry_aeei_high.xml</Value>`
@@ -1733,6 +1743,81 @@ bau %>%
   geom_line() +
   facet_wrap(~param, scales = "free") +
   ggtitle("Kuala Lumpur") +
+  theme_light()
+
+```
+
+<br>
+
+### CO2 emissions by sector
+
+``` {r local-emissions-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
+malaysia_build_ind <-  co2_my %>%
+  filter(scenario == "Ref", 
+         class %in% c("building", "industry")) %>%
+  mutate(param = units,
+         scenario = "GCAM Reference",
+         year = x)
+
+malaysia_transport <- co2_my %>%
+  filter(scenario == "Ref",
+         class %in% c("International Aviation", "International Shipping", "transport")) %>%
+  mutate(param = units,
+         scenario = "GCAM Reference",
+         year = x,
+         class = case_when(class %in% c("International Aviation", "International Shipping") ~ "transport",
+                           T~class)) %>%
+  group_by(year) %>%
+  mutate(total = sum(value)) %>%
+  distinct(year, .keep_all = TRUE)
+ 
+malaysia_co2 <- bind_rows(malaysia_build_ind, malaysia_transport) 
+
+malaysia_co2 %>%
+ ggplot(aes(x = year, y = value, fill = class)) + 
+  geom_col() +
+  labs(title = "Malaysia, GCAM reference",
+       y = "MTCO2eq") +
+  scale_fill_manual(breaks = c("building", "industry", "transport"),
+                    values = c("#facda4", "#cef4d1", "#d0f6f7")) +
+  theme_light()
+
+
+```
+
+``` {r local-emissions-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
+local_co2 <- read.csv("../data/malaysia/local_data_emissions_by_sector.csv")
+
+gcam_co2 <- co2_kl %>%
+  filter(scenario == "Ref", 
+         class %in% c("building", "industry")) %>%
+  mutate(param = units,
+         scenario = "GCAM Reference",
+         year = x)
+
+# Aggregate GCAM classes into broad categories
+gcam_transport <- co2_kl %>%
+  filter(scenario == "Ref",
+         class %in% c("International Aviation", "International Shipping", "transport")) %>%
+  mutate(param = units,
+         scenario = "GCAM Reference",
+         year = x,
+         class = case_when(class %in% c("International Aviation", "International Shipping") ~ "transport",
+                           T~class)) %>%
+  group_by(year) %>%
+  mutate(total = sum(value)) %>%
+  distinct(year, .keep_all = TRUE)
+
+bau_co2 <- bind_rows(local_co2, gcam_co2, gcam_transport)
+
+bau_co2 %>% 
+  ggplot(aes(x = year, y = value, fill = class)) + 
+  geom_col() +
+  facet_wrap(~scenario) +
+  labs(title = "Kuala Lumpur",
+       y = "MTCO2eq") +
+  scale_fill_manual(breaks = c("building", "industry", "transport"),
+                    values = c("#facda4", "#cef4d1", "#d0f6f7")) +
   theme_light()
 
 ```
