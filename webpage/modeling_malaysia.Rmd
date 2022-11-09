@@ -157,6 +157,103 @@ The following subsections give additional details and explanations for the polic
 ## Private ICE Phase-out
 ***
 
+```{r ice-phaseout-files-table, results = 'show', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE}
+
+dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_trn_ICE_low.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_trn_ICE_high.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_trn_ICE_ambitious_city.xml")
+
+data.frame(
+  Scenario = c("Low", "High", "Ambitious City")) %>% 
+  dplyr:: mutate("Files Used" = cell_spec(c("malaysia_trn_ICE_low.xml",
+                                            "malaysia_trn_ICE_high.xml",
+                                            "malaysia_trn_ICE_ambitious_city.xml"),
+                                          "html", link=dt_url),
+         Description = c("Phases liquids passenger vehicles out of the market by 2050",
+                         "Phases liquids passenger vehicles out of the market by 2030",
+                         "Phases liquids passenger vehicles out of the market by 2030 in KL, and by 2050 in the rest of Malaysia")) %>% 
+  kable("html", escape = FALSE, col.names = c("Scenario", "Files Used", "Description")) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
+  row_spec(0, background = "#2A2A2A", color = "white")
+```
+
+
+<!-------------------------->
+<!----------Goal------------>
+<!-------------------------->
+
+<div class="warning" style='background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+<p style='text-align:center; font-size:24px'>
+<b>Goal</b>
+</p>
+
+<p style='margin-left:1em;'>
+The goal of this policy is to phase out internal combustion engine (ICE) passenger vehicles from the market. The difference between the low and high policies is the year in which ICE vehicles are completely phased out of the market.
+
+</p>
+</span>
+</div>
+
+<br>
+
+
+<!-------------------------->
+<!--------Approach---------->
+<!-------------------------->
+
+<div class="warning" style='background-color:#fffae0; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+
+<p style='text-align:center; font-size:24px'>
+<b>Approach</b>
+</p>
+
+<p style='margin-left:1em;'>
+To represent an ICE vehicle phase-out, we decrease their shareweights over time. The year in which the shareweights are 0 is the year in which ICE vehicles are completely phased out of the market.
+
+</p>
+</span>
+</div>
+
+<br>
+
+
+<!-------------------------->
+<!--------Background-------->
+<!-------------------------->
+
+```{r background shareweights ICE, child = 'background_shareweights.rmd'}
+```
+
+<!-------------------------->
+<!---GCAM Implementation---->
+<!-------------------------->
+
+<div class="warning" style='background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+<p style='text-align:center; font-size:24px'>
+<b>GCAM Implementation</b>
+</p>
+
+<p style='margin-left:1em;'>
+1. Create a folder in the input directory eg. `./gcam-core/input/addons/malaysia`.
+2. Download the desired ICE phase-out XML file (either [malaysia_trn_ICE_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_trn_ICE_low.xml), [malaysia_trn_ICE_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_trn_ICE_high.xml), or [malayisa_trn_ICE_ambitious_city.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_trn_ICE_ambitious_city.xml)) to the folder.
+4. To adjust the year in which ICE vehicles are completely phased out: within each `stub-technology` tag in the XML, change the `to-year` in the first `interpolation-rule` and the `from-year` in the second. Also change the `year` of the `period` tag in which the `share-weight` is 0.
+5. Save the xml and then point to it in your configuration file by adding the line: 
+</p>
+<p style='font-size:0.8em'>
+`<Value name = "scen">../input/addons/malaysia/malaysia_trn_ICE_low.xml</Value>`
+</p>
+</p>
+
+</span>
+</div>
+
+<br>
+
+
+
 ## Public/Private Vehicle Modal Shift
 ***
 
@@ -570,20 +667,35 @@ There are two steps to phase out coal generation. The first is to prevent any ne
 
 ```{r electricity-generation-files-table, results = 'show', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE}
 
-dt_url <- c("https://github.com/JGCRI/seasia/blob/main/data/malaysia/malaysia_elec_fuel_mix_2030_pathway.xlsx",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_elec_fuel_mix_2030_KL.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_hydro_constraint_2030_KL.xml")
-
-files <- c("malaysia_elec_fuel_mix_2030_pathway.xlsx",
-           "malaysia_elec_fuel_mix_2030_KL.xml",
-           "malaysia_hydro_constraint_2030_KL.xml")
+dt_url <- c("https://github.com/JGCRI/seasia/blob/main/data/malaysia/malaysia_elec_gen_pathway.xlsx",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_elec_gen_link.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_elec_gen_low.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_elec_hydro_low.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_elec_gen_high.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_elec_hydro_high.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_elec_gen_ambitious_city.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_elec_hydro_ambitious_city.xml")
 
 data.frame(
-  "Relevant Files" = c("Excel spreadsheet showing initial calculations to build this policy",
-                   "XML file for GCAM with electricity generation percentages by fuel in 2030",
-                   "XML file for GCAM to set exogenous hydropower generation")) %>%
-  dplyr::mutate(Link = cell_spec(files,"html",link=dt_url)) %>%
-  kable("html", escape = FALSE, col.names = c("Relevant Files", "Link")) %>%
+  Scenario = c("All", "All", "Low", "Low", "High", "High", "Ambitious City", "Ambitious City")) %>% 
+  dplyr:: mutate("Files Used" = cell_spec(c("malaysia_elec_gen_pathway.xlsx",
+                                            "malaysia_elec_gen_link.xml",
+                                            "malaysia_elec_gen_low.xml",
+                                            "malaysia_elec_hydro_low.xml",
+                                            "malaysia_elec_gen_high.xml",
+                                            "malaysia_elec_hydro_high.xml",
+                                            "malaysia_elec_gen_ambitious_city.xml",
+                                            "malaysia_elec_gen_ambitious_city.xmll"),
+                                          "html", link=dt_url),
+         Description = c("Excel spreadsheet that shows initial calculations to build this policy",
+                   "Applies subsidies to relevant technologies in order to meet the specified floors",
+                   "Sets floors for renewable electricity generation technologies",
+                   "Sets exogenous hydropower generation",
+                   "Sets floors for renewable electricity generation technologies",
+                   "Sets exogenous hydropower generation",
+                   "Sets floors for renewable electricity generation technologies",
+                   "Sets exogenous hydropower generation")) %>% 
+  kable("html", escape = FALSE, col.names = c("Scenario", "Files Used", "Description")) %>%
   kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
   row_spec(0, background = "#2A2A2A", color = "white")
 ```
@@ -600,7 +712,7 @@ data.frame(
 </p>
 
 <p style='margin-left:1em;'>
-The goal of this example is to set a minimum value (floor) in GCAM for the amount of electricity generation from each fuel type (coal, natural gas, solar, etc.) corresponding with the planned percentages in the KLLCSBP2030 (below).
+The goal of this example is to set a minimum value (floor) in GCAM for the amount of electricity generation from three renewable energy technologies (solar, hydro, and biomass) corresponding with the planned percentages in the KLLCSBP2030 (below).
 
 <p align="center"> <img src="images/KL_2030_power.png"></p>
 
@@ -653,7 +765,7 @@ Hydropower is exogenous in GCAM and has a fixed pathway. The power generation va
 
 <p style='margin-left:1em;'>
 1. Create a folder in the input directory eg. `./gcam-core/input/addons/malaysia`.
-2. Download the example XML file [malaysia_elec_fuel_mix_2030_KL.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_elec_fuel_mix_2030_KL.xml) to the folder. (Click on `Raw` and then `right-click` and select `save-as`.)
+2. Download the example XML files ( [malaysia_elec_gen_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_elec_gen_low.xml) and [malaysia_elec_hydro_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_elec_hydro_low)) as well as the subsidy link file [malaysia_elec_gen_link.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_elec_gen_link.xml) to the folder. (Click on `Raw` and then `right-click` and select `save-as`.)
 3. To make adjustments: within each `policy-portfolio-standard` tag in the XML, adjust the following:
 </p>
 <ul style='margin-left:4em; text-align:left;'>
@@ -662,14 +774,13 @@ Hydropower is exogenous in GCAM and has a fixed pathway. The power generation va
 </ul>
 <p style='margin-left:1em;'>
 4. Within each `supplysector` tag in the XML, make sure that the corresponding `input-subsidy` is added within each relevant `period` for each `stub-technology` you wish to constrain.
-5. Save the XML and then point to it in your configuration file by adding the line: 
+5. To adjust the hydropower pathway, download the example XML file [malaysia_hydro_constraint_2030_KL.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_hydro_constraint_2030_KL.xml) to the folder. 
+6. Within each `fixedOutput` tag in the XML, adjust the value to reflect desired hydropower output in each period. The user can also add additional periods. 
+7. Save the XMLs and then point to them in your configuration file by adding the lines: 
 <p style='font-size:0.9em'>
-`<Value name = "scen">../input/addons/malaysia/malaysia_elec_fuel_mix_2030_KL.xml</Value>`
-6. To adjust the hydropower pathway, download the example XML file [malaysia_hydro_constraint_2030_KL.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_hydro_constraint_2030_KL.xml) to the folder. 
-7. Within each `fixedOutput` tag in the XML, adjust the value to reflect desired hydropower output in each period. The user can also add additional periods. 
-8. Save the XML and point to it in your configuration file by adding the line: 
-<p style='font-size:0.9em'>
-`<Value name = "scen">../input/addons/malaysia/malaysia_hydro_constraint_2030_KL.xml</Value>`
+`<Value name = "scen">../input/addons/malaysia/malaysia_elec_gen_low.xml</Value>`
+`<Value name = "scen">../input/addons/malaysia/malaysia_elec_hydro_low.xml</Value>`
+`<Value name = "scen">../input/addons/malaysia/malaysia_elec_gen_link.xml</Value>`
 
 </p>
 </p>
