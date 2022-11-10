@@ -695,7 +695,7 @@ data.frame(
                                             "malaysia_elec_gen_high.xml",
                                             "malaysia_elec_hydro_high.xml",
                                             "malaysia_elec_gen_ambitious_city.xml",
-                                            "malaysia_elec_gen_ambitious_city.xmll"),
+                                            "malaysia_elec_hydro_ambitious_city.xmll"),
                                           "html", link=dt_url),
          Description = c("Excel spreadsheet that shows initial calculations to build this policy",
                    "Applies subsidies to relevant technologies in order to meet the specified floors",
@@ -775,7 +775,7 @@ Hydropower is exogenous in GCAM and has a fixed pathway. The power generation va
 
 <p style='margin-left:1em;'>
 1. Create a folder in the input directory eg. `./gcam-core/input/addons/malaysia`.
-2. Download the example XML files ( [malaysia_elec_gen_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_elec_gen_low.xml) and [malaysia_elec_hydro_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_elec_hydro_low)) as well as the subsidy link file [malaysia_elec_gen_link.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_elec_gen_link.xml) to the folder. (Click on `Raw` and then `right-click` and select `save-as`.)
+2. Download the example XML file ( [malaysia_elec_gen_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_elec_gen_low.xml) and the subsidy link file [malaysia_elec_gen_link.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_elec_gen_link.xml) to the folder. (Click on `Raw` and then `right-click` and select `save-as`.)
 3. To make adjustments: within each `policy-portfolio-standard` tag in the XML, adjust the following:
 </p>
 <ul style='margin-left:4em; text-align:left;'>
@@ -784,7 +784,8 @@ Hydropower is exogenous in GCAM and has a fixed pathway. The power generation va
 </ul>
 <p style='margin-left:1em;'>
 4. Within each `supplysector` tag in the XML, make sure that the corresponding `input-subsidy` is added within each relevant `period` for each `stub-technology` you wish to constrain.
-5. To adjust the hydropower pathway, download the example XML file [malaysia_hydro_constraint_2030_KL.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_hydro_constraint_2030_KL.xml) to the folder. 
+5. To adjust the hydropower pathway, download the example XML file
+[malaysia_elec_hydro_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_elec_hydro_low) to the folder. 
 6. Within each `fixedOutput` tag in the XML, adjust the value to reflect desired hydropower output in each period. The user can also add additional periods. 
 7. Save the XMLs and then point to them in your configuration file by adding the lines: 
 <p style='font-size:0.9em'>
