@@ -852,6 +852,9 @@ malaysia <- bind_rows(ref, high, low, city) %>%
   filter(region != ("Rest of Malaysia"),
          x > 2000)
 
+# Define reference scenario
+REF_SCENARIO <- unique(ref$scenario)
+
 ```
 
 <br>
@@ -900,7 +903,7 @@ socioeconomic_parameters <- c("pop", "gdp", "gdpPerCapita")
 socioeconomic <- malaysia %>%
   filter(param %in% socioeconomic_parameters,
          region != "All of Malaysia",
-         scenario == "Ref") %>%
+         scenario == REF_SCENARIO) %>%
   mutate(param = units) %>% 
   rchart::chart(save = F, 
                 show = F,
@@ -919,7 +922,7 @@ socioeconomic_my <- malaysia %>%
   filter(param %in% socioeconomic_parameters,
          region == "Malaysia") %>%
   mutate(param = units,
-         scenario = "Ref") %>% 
+         scenario = REF_SCENARIO) %>% 
   rchart::chart(save = F, 
                 show = F,
                 size_text = 19)
@@ -941,7 +944,7 @@ socioeconomic_kl <- malaysia %>%
   filter(param %in% socioeconomic_parameters,
          region == "KualaLumpur") %>%
   mutate(param = units,
-         scenario = "Ref") %>% 
+         scenario = REF_SCENARIO) %>% 
   rchart::chart(save = F, 
                 show = F,
                 size_text = 19)
@@ -979,7 +982,8 @@ emissions <- malaysia_emissions %>%
                 show = F,
                 size_text = 10)
 
-emissions$chart_class_Ref
+c <- paste0("chart_class_", REF_SCENARIO)
+emissions[[c]]
 ```
 
 ``` {r rchart-emiss-gas, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.height = 9, fig.width = 9, out.width = "100%"}
@@ -1002,7 +1006,7 @@ gas <- malaysia_emissions_gas %>%
                 show = F,
                 size_text = 10)
 
-gas$chart_class_Ref
+gas[[c]]
 
 ```
 
@@ -1032,7 +1036,7 @@ emissions_my_plot <- my_emissions %>%
   mutate(param = units) %>%
   rchart::chart(save = F, 
                 show = F,
-                scenRef = "Ref")
+                scenRef = REF_SCENARIO)
 
 emissions_my_plot$chart_param
 ```
@@ -1052,7 +1056,7 @@ my_emissions_gas <- bind_rows(ghg_gas_my, my_emissions)
 gas_my <- my_emissions_gas %>%
   rchart::chart(save = F, 
                 show = F,
-                scenRef = "Ref",
+                scenRef = REF_SCENARIO,
                 summary_line = T,
                 size_text = 10)
 
@@ -1111,7 +1115,7 @@ kl_emissions_gas <- bind_rows(ghg_gas_kl, kl_emissions)
 gas_kl <- kl_emissions_gas %>%
   rchart::chart(save = F, 
                 show = F,
-                scenRef = "Ref",
+                scenRef = REF_SCENARIO,
                 summary_line = T,
                 size_text = 14)
 
@@ -1142,10 +1146,10 @@ p_energy <- malaysia %>%
   mutate(param = units) %>%
   rchart::chart(save = F, 
                 show = F,
-                scenRef = "Ref",
+                scenRef = REF_SCENARIO,
                 size_text = 12)
 
-p_energy$chart_class_Ref
+p_energy[[c]]
 
 ```
 
@@ -1162,7 +1166,7 @@ p_energy_my <- malaysia %>%
   mutate(param = units) %>%
   rchart::chart(save = F, 
                 show = F,
-                scenRef = "Ref")
+                scenRef = REF_SCENARIO)
 
 p_energy_my$chart_class
 
@@ -1186,7 +1190,7 @@ p_energy_kl <- malaysia %>%
   mutate(param = units) %>%
   rchart::chart(save = F, 
                 show = F,
-                scenRef = "Ref",
+                scenRef = REF_SCENARIO,
                 size_text = 28)
 
 p_energy_kl$chart_param_diff_absolute
@@ -1215,7 +1219,7 @@ energy <- malaysia %>%
                 show = F,
                 size_text = 10)
 
-energy$chart_class_Ref
+energy[[c]]
 
 ```
 
@@ -1230,7 +1234,7 @@ energy_my <- malaysia %>%
   mutate(param = units) %>%
   rchart::chart(save = F, 
                 show = F,
-                scenRef = "Ref",
+                scenRef = REF_SCENARIO,
                 size_text = 12)
 
 energy_my$chart_class
@@ -1253,7 +1257,7 @@ energy_kl <- malaysia %>%
   mutate(param = units) %>%
   rchart::chart(save = F, 
                 show = F,
-                scenRef = "Ref",
+                scenRef = REF_SCENARIO,
                 size_text = 12)
 
 energy_kl$chart_class
@@ -1285,7 +1289,7 @@ electricity <- malaysia %>%
                 show = F,
                 size_text = 10)
 
-electricity$chart_class_Ref
+electricity[[c]]
 ```
 
 
@@ -1301,7 +1305,7 @@ electricity_my <- malaysia %>%
   mutate(param = units) %>%
   rchart::chart(save = F, 
                 show = F,
-                scenRef = "Ref",
+                scenRef = REF_SCENARIO,
                 size_text = 12)
 
 electricity_my$chart_class
@@ -1327,7 +1331,7 @@ electricity_kl <- malaysia %>%
   mutate(param = units) %>%
   rchart::chart(save = F, 
                 show = F,
-                scenRef = "Ref",
+                scenRef = REF_SCENARIO,
                 size_text = 12)
 
 electricity_kl$chart_class
@@ -1360,7 +1364,7 @@ building_energy <- malaysia %>%
                 show = F,
                 size_text = 12)
 
-building_energy$chart_class_Ref
+building_energy[[c]]
 ```
 
 
@@ -1376,7 +1380,7 @@ building_energy_my <- malaysia %>%
   mutate(param = units) %>%
   rchart::chart(save = F, 
                 show = F,
-                scenRef = "Ref")
+                scenRef = REF_SCENARIO)
 
 building_energy_my$chart_class
 ```
@@ -1399,7 +1403,7 @@ building_energy_kl <- malaysia %>%
   mutate(param = units) %>%
   rchart::chart(save = F, 
                 show = F,
-                scenRef = "Ref")
+                scenRef = REF_SCENARIO)
 
 building_energy_kl$chart_class
 ```
@@ -1431,7 +1435,7 @@ transport_m <- malaysia %>%
                 show = F,
                 size_text = 9)
 
-transport_m$chart_class_Ref
+transport_m[[c]]
 ```
 
 
@@ -1447,7 +1451,7 @@ transport_my_m <- malaysia %>%
   mutate(param = units) %>%
   rchart::chart(save = F, 
                 show = F,
-                scenRef = "Ref",
+                scenRef = REF_SCENARIO,
                 size_text = 10)
 
 transport_my_m$chart_class
@@ -1472,7 +1476,7 @@ transport_kl_m <- malaysia %>%
   mutate(param = units) %>%
   rchart::chart(save = F, 
                 show = F,
-                scenRef = "Ref",
+                scenRef = REF_SCENARIO,
                 size_text = 10)
 
 transport_kl_m$chart_class
@@ -1505,7 +1509,7 @@ transport_f <- malaysia %>%
                 show = F,
                 size_text = 10)
 
-transport_f$chart_class_Ref
+transport_f[[c]]
 
 ```
 
@@ -1522,7 +1526,7 @@ transport_my_f <- malaysia %>%
   mutate(param = units) %>%
   rchart::chart(save = F, 
                 show = F,
-                scenRef = "Ref",
+                scenRef = REF_SCENARIO,
                 size_text = 10)
 
 transport_my_f$chart_class
@@ -1547,7 +1551,7 @@ transport_kl_f <- malaysia %>%
   mutate(param = units) %>%
   rchart::chart(save = F, 
                 show = F,
-                scenRef = "Ref",
+                scenRef = REF_SCENARIO,
                 size_text = 10)
 
 transport_kl_f$chart_class
@@ -1562,7 +1566,7 @@ transport_kl_f <- malaysia %>%
   mutate(param = units) %>%
   rchart::chart(save = F, 
                 show = F,
-                scenRef = "Ref",
+                scenRef = REF_SCENARIO,
                 size_text = 18)
 
 transport_kl_f$chart_class_diff_absolute
@@ -1589,7 +1593,7 @@ industry_energy <- malaysia %>%
                 size_text = 12)
 
 
-industry_energy$chart_class_Ref
+industry_energy[[c]]
 
 ```
 
@@ -1606,7 +1610,7 @@ industry_energy_my <- malaysia %>%
   mutate(param = units) %>%
   rchart::chart(save = F, 
                 show = F,
-                scenRef = "Ref")
+                scenRef = REF_SCENARIO)
 
 industry_energy_my$chart_class
 
@@ -1630,7 +1634,7 @@ industry_energy_kl <- malaysia %>%
   mutate(param = units) %>%
   rchart::chart(save = F, 
                 show = F,
-                scenRef = "Ref")
+                scenRef = REF_SCENARIO)
 
 industry_energy_kl$chart_class
 
@@ -1721,7 +1725,7 @@ local_bau <- bind_rows(local_gdp, local_pop)
 gcam_bau <- malaysia %>%
   filter(param == c("pop", "gdp"),
          region != "Rest of Malaysia",
-         scenario == "Ref") %>%
+         scenario == REF_SCENARIO) %>%
   mutate(param = units,
          scenario = "GCAM Reference",
          year = x)
@@ -1754,14 +1758,14 @@ bau %>%
 
 ``` {r local-emissions-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
 malaysia_build_ind <-  co2_my %>%
-  filter(scenario == "Ref", 
+  filter(scenario == REF_SCENARIO, 
          class %in% c("building", "industry")) %>%
   mutate(param = units,
          scenario = "GCAM Reference",
          year = x)
 
 malaysia_transport <- co2_my %>%
-  filter(scenario == "Ref",
+  filter(scenario == REF_SCENARIO,
          class %in% c("International Aviation", "International Shipping", "transport")) %>%
   mutate(param = units,
          scenario = "GCAM Reference",
@@ -1790,7 +1794,7 @@ malaysia_co2 %>%
 local_co2 <- read.csv("../data/malaysia/local_data_emissions_by_sector.csv")
 
 gcam_co2 <- co2_kl %>%
-  filter(scenario == "Ref", 
+  filter(scenario == REF_SCENARIO, 
          class %in% c("building", "industry")) %>%
   mutate(param = units,
          scenario = "GCAM Reference",
@@ -1798,7 +1802,7 @@ gcam_co2 <- co2_kl %>%
 
 # Aggregate GCAM classes into broad categories
 gcam_transport <- co2_kl %>%
-  filter(scenario == "Ref",
+  filter(scenario == REF_SCENARIO,
          class %in% c("International Aviation", "International Shipping", "transport")) %>%
   mutate(param = units,
          scenario = "GCAM Reference",
@@ -1831,7 +1835,7 @@ bau_co2 %>%
 final_energy_ref_my <- malaysia %>% 
   filter(param %in% energy_parameters,
          region == "All of Malaysia",
-         scenario == "Ref") %>%
+         scenario == REF_SCENARIO) %>%
   mutate(param = units) %>%
   rchart::chart(save = F,
                 show = F)
@@ -1844,7 +1848,7 @@ final_energy_ref_my$chart_class
 final_energy_ref_kl <- malaysia %>% 
   filter(param %in% energy_parameters,
          region == "KualaLumpur",
-         scenario == "Ref") %>%
+         scenario == REF_SCENARIO) %>%
   mutate(param = units) %>%
   rchart::chart(save = F,
                 show = F)
@@ -1860,7 +1864,7 @@ final_energy_ref_kl$chart_class
 elec_ref_my <- malaysia %>% 
   filter(param %in% electricity_parameters,
          region == "All of Malaysia",
-         scenario == "Ref") %>%
+         scenario == REF_SCENARIO) %>%
   mutate(param = units) %>%
   rchart::chart(save = F,
                 show = F,
@@ -1875,7 +1879,7 @@ elec_ref_my$chart_class
 elec_ref_kl <- malaysia %>% 
   filter(param %in% electricity_parameters,
          region == "KualaLumpur",
-         scenario == "Ref") %>%
+         scenario == REF_SCENARIO) %>%
   mutate(param = units) %>%
   rchart::chart(save = F,
                 show = F)
