@@ -160,15 +160,15 @@ The following subsections give additional details and explanations for the polic
 
 ```{r ice-phaseout-files-table, results = 'show', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE}
 
-dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_trn_ICE_low.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_trn_ICE_high.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_trn_ICE_ambitious_city.xml")
+dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/trn_ICE_low.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/trn_ICE_high.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/trn_ICE_ambitious_city.xml")
 
 data.frame(
   Scenario = c("Low", "High", "Ambitious City")) %>% 
-  dplyr:: mutate("Files Used" = cell_spec(c("malaysia_trn_ICE_low.xml",
-                                            "malaysia_trn_ICE_high.xml",
-                                            "malaysia_trn_ICE_ambitious_city.xml"),
+  dplyr:: mutate("Files Used" = cell_spec(c("trn_ICE_low.xml",
+                                            "trn_ICE_high.xml",
+                                            "trn_ICE_ambitious_city.xml"),
                                           "html", link=dt_url),
          Description = c("Phases liquids passenger vehicles out of the market by 2050",
                          "Phases liquids passenger vehicles out of the market by 2030",
@@ -239,12 +239,12 @@ To represent an ICE vehicle phase-out, we decrease their shareweights over time.
 
 <p style='margin-left:1em;'>
 1. Create a folder in the input directory eg. `./gcam-core/input/addons/malaysia`.
-2. Download the desired ICE phase-out XML file (either [malaysia_trn_ICE_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_trn_ICE_low.xml), [malaysia_trn_ICE_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_trn_ICE_high.xml), or [malayisa_trn_ICE_ambitious_city.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_trn_ICE_ambitious_city.xml)) to the folder.
+2. Download the desired ICE phase-out XML file (either [trn_ICE_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/trn_ICE_low.xml), [trn_ICE_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/trn_ICE_high.xml), or [trn_ICE_ambitious_city.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/trn_ICE_ambitious_city.xml)) to the folder.
 4. To adjust the year in which ICE vehicles are completely phased out: within each `stub-technology` tag in the XML, change the `to-year` in the first `interpolation-rule` and the `from-year` in the second. Also change the `year` of the `period` tag in which the `share-weight` is 0.
 5. Save the xml and then point to it in your configuration file by adding the line: 
 </p>
 <p style='font-size:0.8em'>
-`<Value name = "scen">../input/addons/malaysia/malaysia_trn_ICE_low.xml</Value>`
+`<Value name = "scen">../input/addons/malaysia/trn_ICE_low.xml</Value>`
 </p>
 </p>
 
@@ -677,25 +677,25 @@ There are two steps to phase out coal generation. The first is to prevent any ne
 
 ```{r electricity-generation-files-table, results = 'show', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE}
 
-dt_url <- c("https://github.com/JGCRI/seasia/blob/main/data/malaysia/malaysia_elec_gen_pathway.xlsx",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_elec_gen_link.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_elec_gen_low.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_elec_hydro_low.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_elec_gen_high.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_elec_hydro_high.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_elec_gen_ambitious_city.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_elec_hydro_ambitious_city.xml")
+dt_url <- c("https://github.com/JGCRI/seasia/blob/main/data/malaysia/elec_gen_pathway.xlsx",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/elec_gen_link.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/elec_gen_low.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/elec_hydro_low.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/elec_gen_high.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/elec_hydro_high.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/elec_gen_ambitious_city.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/elec_hydro_ambitious_city.xml")
 
 data.frame(
   Scenario = c("All", "All", "Low", "Low", "High", "High", "Ambitious City", "Ambitious City")) %>% 
-  dplyr:: mutate("Files Used" = cell_spec(c("malaysia_elec_gen_pathway.xlsx",
-                                            "malaysia_elec_gen_link.xml",
-                                            "malaysia_elec_gen_low.xml",
-                                            "malaysia_elec_hydro_low.xml",
-                                            "malaysia_elec_gen_high.xml",
-                                            "malaysia_elec_hydro_high.xml",
-                                            "malaysia_elec_gen_ambitious_city.xml",
-                                            "malaysia_elec_hydro_ambitious_city.xmll"),
+  dplyr:: mutate("Files Used" = cell_spec(c("elec_gen_pathway.xlsx",
+                                            "elec_gen_link.xml",
+                                            "elec_gen_low.xml",
+                                            "elec_hydro_low.xml",
+                                            "elec_gen_high.xml",
+                                            "elec_hydro_high.xml",
+                                            "elec_gen_ambitious_city.xml",
+                                            "elec_hydro_ambitious_city.xmll"),
                                           "html", link=dt_url),
          Description = c("Excel spreadsheet that shows initial calculations to build this policy",
                    "Applies subsidies to relevant technologies in order to meet the specified floors",
@@ -775,7 +775,7 @@ Hydropower is exogenous in GCAM and has a fixed pathway. The power generation va
 
 <p style='margin-left:1em;'>
 1. Create a folder in the input directory eg. `./gcam-core/input/addons/malaysia`.
-2. Download the example XML file ( [malaysia_elec_gen_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_elec_gen_low.xml) and the subsidy link file [malaysia_elec_gen_link.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_elec_gen_link.xml) to the folder. (Click on `Raw` and then `right-click` and select `save-as`.)
+2. Download the example XML file ( [elec_gen_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/elec_gen_low.xml) and the subsidy link file [elec_gen_link.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/elec_gen_link.xml) to the folder. (Click on `Raw` and then `right-click` and select `save-as`.)
 3. To make adjustments: within each `policy-portfolio-standard` tag in the XML, adjust the following:
 </p>
 <ul style='margin-left:4em; text-align:left;'>
@@ -785,13 +785,13 @@ Hydropower is exogenous in GCAM and has a fixed pathway. The power generation va
 <p style='margin-left:1em;'>
 4. Within each `supplysector` tag in the XML, make sure that the corresponding `input-subsidy` is added within each relevant `period` for each `stub-technology` you wish to constrain.
 5. To adjust the hydropower pathway, download the example XML file
-[malaysia_elec_hydro_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/malaysia_elec_hydro_low) to the folder. 
+[elec_hydro_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/elec_hydro_low) to the folder. 
 6. Within each `fixedOutput` tag in the XML, adjust the value to reflect desired hydropower output in each period. The user can also add additional periods. 
 7. Save the XMLs and then point to them in your configuration file by adding the lines: 
 <p style='font-size:0.9em'>
-`<Value name = "scen">../input/addons/malaysia/malaysia_elec_gen_low.xml</Value>`
-`<Value name = "scen">../input/addons/malaysia/malaysia_elec_hydro_low.xml</Value>`
-`<Value name = "scen">../input/addons/malaysia/malaysia_elec_gen_link.xml</Value>`
+`<Value name = "scen">../input/addons/malaysia/elec_gen_low.xml</Value>`
+`<Value name = "scen">../input/addons/malaysia/elec_hydro_low.xml</Value>`
+`<Value name = "scen">../input/addons/malaysia/elec_gen_link.xml</Value>`
 
 </p>
 </p>
