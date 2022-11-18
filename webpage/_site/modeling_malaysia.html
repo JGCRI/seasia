@@ -912,14 +912,15 @@ constraint can be used by itself, or in combination with additional
 sectoral policies described above.</p>
 There are some important considerations: (1) What GHG’s are included in
 the constraint (only CO2?)?, (2) What is the time period for the
-constraint (e.g., 2050, 2065)?,(3) What are the emissions in each
-period, (4) Will emissions decline linearly to zero?, (5) Will land use
-change emissions be included in the constraint?, and (5) What
-assumptions are made for emissions in the rest of the world? This latter
-point is important when considering “carbon leakage,” that is, how
-restrictions in emissions in one geography may lead to a shift in
-carbon-intensive activities to other locations. Below, we will describe
-how to implement a CO2 emissions constraint. See the <a
+constraint (e.g., 2050, 2065)?, (3) What are the emissions in each
+period, (4) Will emissions decline linearly to zero or will another rate
+be specified?, (5) Will land use change emissions be included in the
+constraint?, and (5) What assumptions are made for emissions in the rest
+of the world? This latter point is important when considering “carbon
+leakage,” that is, how restrictions in emissions in one geography may
+lead to a shift in carbon-intensive activities to other locations.
+Below, we will describe how to implement a CO2 emissions constraint. See
+the <a
 href="http://jgcri.github.io/gcam-doc/policies.html#emissions-policies">GCAM
 Policies</a> documentation for more information.
 </p>
@@ -956,9 +957,8 @@ region”). Based on the reference emissions, one can create an emissions
 constraint accordingly, depending on the start date of the emissions
 constraint, end goal, and steepness of the decrease in
 emissions.</p></li>
-</ol>
-<p>You will notice that the constraint starts in 2035. We want to first
-incorporate the pathway for Malaysia’s Nationally Determined
+<li><p>You will notice that the constraint starts in 2035. We want to
+first incorporate the pathway for Malaysia’s Nationally Determined
 Contribution (NDC) from 2020 to 2030. Malaysia’s NDC includes a target
 to reduce its greenhouse gas (GHG) emissions intensity of GDP by 45% by
 2030 relative to the emissions intensity of GDP in 2005. When we examine
@@ -966,14 +966,13 @@ GHG emissions (See ModelInterface: “nonCO2 emissions by region”) and GDP
 ((See ModelInterface: “GDP MER by region”), we see that this target is
 met without any additional policy in the reference scenario. Thus, we
 only need to start our constraint in 2035. We specify a linear decrease
-to 0 tonnes of C in 2050.</p>
-<p>We adopt a similar approach for the ROW, using the total emissions
-(tC) in 2020 for all countries as a starting point. (We did not subtract
-our Malaysia’s emissions, as they are quite small globally). It is not
-absolutely necessary to adopt the very same emissions constraint for the
-ROW, but the constraint should be strong enough to avoid carbon leakage
-from Malaysia’ net-zero policy.</p>
-<ol start="4" style="list-style-type: decimal">
+to 0 tonnes of C in 2050.</p></li>
+<li><p>We adopt a similar approach for the ROW, using the total
+emissions (tC) in 2020 for all countries as a starting point. (We did
+not subtract our Malaysia’s emissions, as they are quite small
+globally). It is not absolutely necessary to adopt the very same
+emissions constraint for the ROW, but the constraint should be strong
+enough to avoid carbon leakage from Malaysia’ net-zero policy.</p></li>
 <li><p>One needs to decide whether and how land use change emissions are
 incorporated into the constraint. GCAM accounts for fossil fuel and
 industry CO2 emissions separately from land use change CO2 emissions.
@@ -986,10 +985,9 @@ emissions is the same as the price applied to fossil fuel and industry
 CO2 emissions. A demand-adjust of 1 means that LUC-CO2 emissions are
 counted in the emissions constraint. These two parameters can be
 adjusted. In the sample files we have a price-adjust of 0, and a
-demand-adjust of 1. The same files for the rest of the world (ROW) are
-included to make sure that the same constraint is applied outside of
-Thailand in order to prevent carbon leakage. Note that Malaysia is
-removed from the ROW_LUC_noMalaysia.xml</p></li>
+demand-adjust of 1. This can be modified depending on the goal and
+importance of LUC emissions. Note that Malaysia is removed from the
+ROW_LUC_noMalaysia.xml</p></li>
 <li><p>Save the xml files and then point to them in your configuration
 file by adding the line:</p></li>
 </ol>
