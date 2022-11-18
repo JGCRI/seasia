@@ -268,6 +268,137 @@ Hydropower is exogenous in GCAM and has a fixed pathway. The power generation va
 
 <!-------------------------->
 <!-------------------------->
+# Emissions Constraints
+<!-------------------------->
+<!-------------------------->
+
+```{r emissions constraints files table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
+library(kableExtra); library(dplyr)
+
+# in the dt_url vector, add link(s) to the relevant XML file(s) used to run the policy. 
+# also add the files to their corresponding directories in the repo.
+dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/NetZeroC_Malaysia_2035_2050",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/Malaysia_LUC", "https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/NetZeroC_global_noMalaysia", "https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/ROW_LUC_noMalaysia")
+
+# add scenario names, filenames, and descriptions of files to this table.
+# make sure info in this table matches the links provided above (in the same order).
+data.frame(
+  Scenario = c("Net-Zero CO2 2050", "Net-Zero CO2 2050", "Net-Zero CO2 2050", "Net-Zero CO2 2050")) %>% 
+  mutate("Files Used" = cell_spec( c("NetZeroC_thailand_2050",
+                                     "Thailand_luc", "NetZeroC_ROW_2050", "ROW_luc"),
+                                   "html", link = dt_url)) %>% 
+  mutate(Description = c("CO2 emissions constraint for Malaysia (2035 - 2050)",
+                         "GHG link file for Malaysia for land use change emissions", "CO2 emissions constraint rest of the World (2050)",
+                         "GHG link file for land use change emissions for rest of the world")) %>%
+  kable("html", escape = FALSE, col.names = c("Scenario", "Files Used", "Description")) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
+  row_spec(0, background = "#2A2A2A", color = "white")
+```
+
+<!-------------------------->
+<!----------Goal------------>
+<!-------------------------->
+
+<div class="warning" style='background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+<h3 style='text-align:center; font-size:24px'>
+<b>Goal</b>
+</h3>
+<p style='margin-left:1em;'>
+The aim of this example is to demonstrate how to apply an economy-wide emissions constraint for Malaysia in accord with its national goals:  net-zero  CO2 by 2050.
+</p>
+</span>
+</div>
+
+<br>
+
+
+<!-------------------------->
+<!--------Approach---------->
+<!-------------------------->
+
+<div class="warning" style='background-color:#fffae0; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+
+<h3 style='text-align:center; font-size:24px'>
+<b>Approach</b></h3>
+
+<p style='margin-left:1em;'>
+In GCAM, an emissions constraint can be accomplished by using a `ghgpolicy`, which is a special case of policy-portfolio-standard that applies to emissions.
+
+
+</p>
+
+</span>
+</div>
+
+<br>
+
+
+<!--------------------------->
+<!--------Background--------->
+<!--------------------------->
+
+<div class="warning" style='background-color:#EFFFC9; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+
+<h3 style='text-align:center; font-size:24px'>
+<b>Background</b></h3>
+
+<p style='margin-left:1em;'>
+To implement a `ghgpolicy` in GCAM, users specify the total amount of emissions (CO2 or GHG) in a time period. GCAM will then calculate the price on carbon needed to reach the constraint in each period.  GCAM finds the least-cost pathway in terms of technology deployment to satisfy the emissions constraint. An economy-wide constraint can be used by itself, or in combination with additional sectoral policies described above.  
+
+
+There are some important considerations:  (1) What GHG's are included in the constraint (only CO2?)?, (2) What is the time period for the constraint (e.g., 2050, 2065)?, (3) What are the emissions in each period, (4) Will emissions decline linearly to zero or will another rate be specified?, (5) Will land use change emissions be included in the constraint?, and (5) What assumptions are made for emissions in the rest of the world?  This latter point is important when considering "carbon leakage," that is, how restrictions in emissions in one geography may lead to a shift in carbon-intensive activities to other locations. Below, we will describe how to implement a CO2 emissions constraint. See the [GCAM Policies](http://jgcri.github.io/gcam-doc/policies.html#emissions-policies) documentation for more information.
+</p>
+</span>
+</div>
+
+<br>
+
+<!-------------------------->
+<!---GCAM Implementation---->
+<!-------------------------->
+
+<div class="warning" style='background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+<h3 style='text-align:center; font-size:24px'>
+<b>GCAM Implementation</b>
+</h3>
+
+<p style='margin-left:1em;'>
+1. Create a folder in the input directory: `./gcam-core/input/addons`.
+<!---include links to example XMLs here--->
+2. Download the emissions constraint xml file(s) for Thailand [NetZeroC_Malaysia_2035_2050](https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/NetZeroC_Malaysia_2035_2050) and [Malaysia_LUC](https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/Malaysia_LUC)), as well as those for the rest of the world (ROW), [NetZeroC_global_noMalaysia_2050](https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/NetZeroC_global_noMalaysia_2050) and [ROW_LUC_noMalaysia](https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/ROW_LUC_noMalaysia).
+
+3. The first file, NetZeroC_Malaysia_2035_2050, specifies emissions in units of tonnes of carbon (NOT CO2) in each period.    One way to determine the emissions constraint for each period is to examine the CO2 emissions in the reference case (See ModelInterface: "CO2 emissions by region").  Based on the reference emissions, one can create an emissions constraint accordingly, depending on the start date of the emissions constraint, end goal, and steepness of the decrease in emissions. 
+
+4. You will notice that the constraint starts in 2035.  We want to first incorporate the pathway for Malaysia's      Nationally Determined Contribution (NDC) from 2020 to 2030.  Malaysia's NDC includes a target to reduce its          greenhouse gas (GHG) emissions intensity of GDP by 45% by 2030 relative to the emissions intensity of GDP in 2005. When we examine GHG emissions (See ModelInterface: "nonCO2 emissions by region") and GDP ((See ModelInterface: "GDP MER by region"), we see that this target is met without any additional policy in the reference scenario.  Thus, we only need to start our constraint in 2035.  We specify a linear decrease to 0 tonnes of C in 2050. 
+
+5. We adopt a similar approach for the ROW, using the total emissions (tC) in 2020 for all countries as a starting point.  (We did not subtract our Malaysia's emissions, as they are quite small globally).  It is not absolutely necessary to adopt the very same emissions constraint for the ROW,  but the constraint should be strong enough to avoid carbon leakage from Malaysia' net-zero policy.
+
+6. One needs to decide whether and how land use change emissions are incorporated into the constraint.  GCAM accounts for fossil fuel and industry CO2 emissions separately from land use change CO2 emissions. The Malaysia_luc.xml specifies how land use change CO2 emissions (LUC-CO2) in Malaysia are linked to the ghgpolicy ("CO2").  There are two parameters:  `price-adjust` and `demand-adjust`.  Price-adjust is used to convert prices for different GHG's.  A price-adjust of 1.0 for LUC-CO2 means the market price on LUC-CO2 emissions is the same as the price applied to fossil fuel and industry CO2 emissions.  A demand-adjust of 1 means that LUC-CO2 emissions are counted in the emissions constraint. These two parameters can be adjusted. In the sample files we have a price-adjust of 0, and a demand-adjust of 1. This can be modified depending on the goal and importance of LUC emissions. Note that Malaysia is removed from the ROW_LUC_noMalaysia.xml
+
+7. Save the xml files and then point to them in your configuration file by adding the line: 
+</p>
+<p style='font-size:0.8em'>
+<!---insert exmaple XML filenames--->
+`<Value name = "scen">../input/addons/Malaysia/NetZeroC_Malaysia_2035_2050.xml</Value>`
+`<Value name = "scen">../input/addons/Malaysia/Malaysia_luc.xml</Value>`
+`<Value name = "scen">../input/addons/Malaysia/NetZeroC_global_noMalaysia_2050.xml</Value>`
+`<Value name = "scen">../input/addons/Malaysia/ROW_LUC_noMalaysia.xml</Value>`
+</p>
+</p>
+
+</span>
+</div>
+
+<br>
+
+<br>
+
+<!-------------------------->
+<!-------------------------->
 # Diagnostics
 <!-------------------------->
 <!-------------------------->

@@ -2,12 +2,12 @@
 <scenario>
     <world>
         <!-- WARNING: Linked policies must be read in after the policy to which it links. -->
-        <region name="Thailand">
+        <region name="Malaysia">
             <linked-ghg-policy name="CO2_LUC">
                 <market>Thailand</market>
                 <linked-policy>CO2</linked-policy>
-                <price-adjust year="1975" fillout="1">1</price-adjust>
-                <demand-adjust year="1975" fillout="1">0.0</demand-adjust>
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">1.0</demand-adjust>
                 <price-unit>1990$/tC</price-unit>
                 <output-unit>MTC</output-unit>
             </linked-ghg-policy>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><scenario>
+    <world>
+        <region name="Malaysia">
+            <ghgpolicy name="CO2">
+                <market>Malaysia</market>
+
+             
+                <constraint year="2035">72</constraint>
+                <constraint year="2040">48</constraint>
+                <constraint year="2045">24</constraint>
+                <constraint year="2050">0</constraint>
+                
+            </ghgpolicy>
+        </region>
+ </world>
+</scenario>

@@ -11,13 +11,70 @@ output:
     #inverse: true
 ---
 
-```{r setup, echo = FALSE, message=FALSE, warning=FALSE}
-knitr::opts_chunk$set(results = "hide", echo=FALSE, out.width = "75%", fig.align='center', message = F, warning = F, error = F, eval = T)
-```
 
 
-```{r child = 'header.rmd'}
-```
+
+
+<!-- Allow href to tabsets --> 
+
+<script type="text/javascript">
+window.onload = function() {
+  document.querySelector('a[href="' + window.location.href.match("#.*$") + '"]').click();
+}
+
+function goToTab() {
+  var hash = String(window.location.href.match("#.*$"));
+  var target = document.querySelector("a[role = 'tab'][href='" + hash + "']");
+  if (target !== null) {
+    var greatgrandparent = target.parentElement.parentElement.parentElement;
+    if (greatgrandparent.getAttribute("role") == "tabpanel") {
+      document.querySelector("a[role = 'tab'][href='#" + greatgrandparent.getAttribute("id") + "']").click();
+    }
+    target.click();
+    target.scrollIntoView();
+  }
+}
+window.onload = function() {
+  setTimeout(goToTab, 100);
+}
+window.onhashchange = goToTab;
+</script>
+
+
+<style type="text/css">
+script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+</style>
+
+<script type="text/javascript">
+ $(document).ready(function() {
+    $('body').prepend('<div class=\"zoomDiv\"><img src=\"\" class=\"zoomImg\"></div>');
+    // onClick function for all plots (img's)
+    $('img:not(.zoomImg)').click(function() {
+      $('.zoomImg').attr('src', $(this).attr('src')).css({width: '100%'});
+      $('.zoomDiv').css({opacity: '1', width: 'auto', border: '1px solid white', borderRadius: '5px', position: 'fixed', top: '50%', left: '50%', marginRight: '-50%', transform: 'translate(-50%, -50%)', boxShadow: '0px 0px 50px #888888', zIndex: '50', overflow: 'auto', maxHeight: '100%'});
+    });
+    // onClick function for zoomImg
+    $('img.zoomImg').click(function() {
+      $('.zoomDiv').css({opacity: '0', width: '0%'}); 
+    });
+  });
+</script>
+
+<!-- Set table styles -->
+
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+</style>
 
 <!-------------------------->
 <!-------------------------->
@@ -30,46 +87,51 @@ knitr::opts_chunk$set(results = "hide", echo=FALSE, out.width = "75%", fig.align
 
 Please use the link below to download GCAM.
 
-```{r key links table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
-library(kableExtra); library(dplyr)
-
-dt_url <- c("https://drive.google.com/file/d/1AFhbaTf6K6UsLsIXpne4_ska3stYIHRa/view?usp=sharing")
-
-data.frame(
-  File = c("gcamv5p3_seasia")) %>% 
-  dplyr::mutate(Location = cell_spec(rep("Link",length(dt_url)),"html",link=dt_url)) %>%
-  kable("html", escape = FALSE) %>%
-  kable_styling(bootstrap_options = c("bordered","striped", "hover", "condensed", "responsive")) %>%
-  row_spec(0, background = "#2A2A2A", color = "white")
-```
+<table class="table table-bordered table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;"> File </th>
+   <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;"> Location </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> gcamv5p3_seasia </td>
+   <td style="text-align:left;"> <a href="https://drive.google.com/file/d/1AFhbaTf6K6UsLsIXpne4_ska3stYIHRa/view?usp=sharing" style="     ">Link</a> </td>
+  </tr>
+</tbody>
+</table>
 
 <br>
 
 You will need the following prerequisites in order to run GCAM. You will also need at least 8 GB of RAM.
 
-```{r prereq-table, results = 'show', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE}
-
-dt_url <- c("https://www.java.com/en/download/",
-            "https://cran.r-project.org/",
-            "https://www.rstudio.com/",
-            "http://symbolclick.com/xmlmarker_1_1_setup.exe")
-
-links <- c("Install Java 64",
-           "Install R",
-           "Install RStudio",
-           "Install Windows XML Maker")
-
-data.frame(
-  Prerequisite = c("Java 64",
-           "R",
-           "RStudio",
-           "Windows XML Maker")) %>%
-  dplyr::mutate(Link = cell_spec(links,"html",link=dt_url)) %>%
-  kable("html", escape = FALSE) %>%
-  kable_styling(bootstrap_options = c("bordered", "striped", "hover", "condensed", "responsive")) %>%
-  row_spec(0, background = "#2A2A2A", color = "white")
-
-```
+<table class="table table-bordered table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;"> Prerequisite </th>
+   <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;"> Link </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Java 64 </td>
+   <td style="text-align:left;"> <a href="https://www.java.com/en/download/" style="     ">Install Java 64</a> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> R </td>
+   <td style="text-align:left;"> <a href="https://cran.r-project.org/" style="     ">Install R</a> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> RStudio </td>
+   <td style="text-align:left;"> <a href="https://www.rstudio.com/" style="     ">Install RStudio</a> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Windows XML Maker </td>
+   <td style="text-align:left;"> <a href="http://symbolclick.com/xmlmarker_1_1_setup.exe" style="     ">Install Windows XML Maker</a> </td>
+  </tr>
+</tbody>
+</table>
 
 <br>
 
@@ -82,22 +144,27 @@ data.frame(
 
 <br>
 
-```{r presentation links table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
-library(kableExtra); library(dplyr)
-
-dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/gcam_overview.pdf",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/gcam_walkthrough.pdf")
-
-data.frame(
-  File = c("gcam_overview.pdf",
-           "gcam_walkthrough.pdf"),
-  Description = c("GCAM overview presentation",
-                  "GCAM walkthrough presentation")) %>%
-  dplyr::mutate(Location = cell_spec(rep("Link",length(dt_url)),"html",link=dt_url)) %>%
-  kable("html", escape = FALSE) %>%
-  kable_styling(bootstrap_options = c("bordered","striped", "hover", "condensed", "responsive")) %>%
-  row_spec(0, background = "#2A2A2A", color = "white")
-```
+<table class="table table-bordered table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;"> File </th>
+   <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;"> Description </th>
+   <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;"> Location </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> gcam_overview.pdf </td>
+   <td style="text-align:left;"> GCAM overview presentation </td>
+   <td style="text-align:left;"> <a href="https://github.com/JGCRI/seasia/blob/main/modeling/gcam_overview.pdf" style="     ">Link</a> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> gcam_walkthrough.pdf </td>
+   <td style="text-align:left;"> GCAM walkthrough presentation </td>
+   <td style="text-align:left;"> <a href="https://github.com/JGCRI/seasia/blob/main/modeling/gcam_walkthrough.pdf" style="     ">Link</a> </td>
+  </tr>
+</tbody>
+</table>
 
 
 <br>
@@ -110,25 +177,32 @@ data.frame(
 <p align="center"> <img src="images/divider.png"></p>
 
 
-```{r scenarios links table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
-library(kableExtra); library(dplyr)
-
-dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/configuration_seasia_cities_bau.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/configuration_seasia_cities_thailand_low.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/configuration_seasia_cities_thailand_high.xml")
-
-data.frame(
-  File = c("configuration_seasia_cities_bau.xml",
-           "configuration_seasia_cities_thailand_low.xml",
-           "configuration_seasia_cities_thailand_high.xml"),
-  Description = c("Business as Usual Scenario",
-                  "National Policies Scenario (low ambition)",
-                  "National Policies Scenario (high ambition)")) %>%
-  dplyr::mutate(Location = cell_spec(rep("Link",length(dt_url)),"html",link=dt_url)) %>%
-  kable("html", escape = FALSE) %>%
-  kable_styling(bootstrap_options = c("bordered","striped", "hover", "condensed", "responsive")) %>%
-  row_spec(0, background = "#2A2A2A", color = "white")
-```
+<table class="table table-bordered table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;"> File </th>
+   <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;"> Description </th>
+   <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;"> Location </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> configuration_seasia_cities_bau.xml </td>
+   <td style="text-align:left;"> Business as Usual Scenario </td>
+   <td style="text-align:left;"> <a href="https://github.com/JGCRI/seasia/blob/main/modeling/configuration_seasia_cities_bau.xml" style="     ">Link</a> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> configuration_seasia_cities_thailand_low.xml </td>
+   <td style="text-align:left;"> National Policies Scenario (low ambition) </td>
+   <td style="text-align:left;"> <a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/configuration_seasia_cities_thailand_low.xml" style="     ">Link</a> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> configuration_seasia_cities_thailand_high.xml </td>
+   <td style="text-align:left;"> National Policies Scenario (high ambition) </td>
+   <td style="text-align:left;"> <a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/configuration_seasia_cities_thailand_high.xml" style="     ">Link</a> </td>
+  </tr>
+</tbody>
+</table>
 
 
 
@@ -141,60 +215,92 @@ data.frame(
 
 The following table lists the policies included in the high and low ambition national policies scenarios. The subsequent sections explain what each of these policies represent and how to adjust them. Each of these policies is implemented using XML add-on file(s) which can be included in the `configuration_seasia_cities_thailand_policy.xml` file in order to include the policy in the GCAM scenario.
 
-```{r policy links table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
-library(kableExtra); library(dplyr)
-
-# dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/thailand/thailand_policy_national_electricity_generation_floor_pdp2018.xml",
-#             "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/thailand_policy_subnational_buildings_shell_eff_015_018.xml",
-#             "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/thailand_policy_subnational_transport_cost_ev_2050p_2060f.xml",
-#             "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/thailand_policy_subnational_transport_freight_rail_0034_2040_lin.xml",
-#             "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/thailand_policy_subnational_transport_freight_road_55_2040_lin.xml")
-
-data.frame(
-  Sector = c(rep("Power", 2), rep("Buildings", 3), rep("Transportation", 2),
-             rep("Industry", 2)),
-  Policy = c("RE subsidies", "Coal retirement", "Building envelope efficiency", 
-             "AC efficiency", "Lighting efficiency", "EV cost parity",
-             "Liquids phaseout", "Industrial energy efficiency",
-             "Industrial hydrogen use"),
-  Description = c("Modify the electricity generation mix by setting generation floors for wind and solar using a subsidy policy",
-                  "Prevent new coal development starting in 2020 and phase out existing coal",
-                  "Modify the average envelope efficiency of residential and commercial buildings by setting the shell-conductance parameter for each year",
-                  "Modify the average energy efficiency of air conditioners in buildings",
-                  "Phase out non-LED lighting technologies in buildings",
-                  "Reduce costs of EVs and hybrid vehicles to reach cost parity with traditional liquids vehicles",
-                  "Phase out combustion engine vehicles",
-                  "Increase average energy efficiency across industrial processes",
-                  "Increase the use of hydrogen in industrial processes")) %>% 
-  kable("html", escape = FALSE) %>% 
-  kable_styling(bootstrap_options = c("bordered","striped", "hover", "condensed", "responsive")) %>%
-  row_spec(0, background = "#2A2A2A", color = "white")
-  
-```
+<table class="table table-bordered table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;"> Sector </th>
+   <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;"> Policy </th>
+   <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;"> Description </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Power </td>
+   <td style="text-align:left;"> RE subsidies </td>
+   <td style="text-align:left;"> Modify the electricity generation mix by setting generation floors for wind and solar using a subsidy policy </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Power </td>
+   <td style="text-align:left;"> Coal retirement </td>
+   <td style="text-align:left;"> Prevent new coal development starting in 2020 and phase out existing coal </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Buildings </td>
+   <td style="text-align:left;"> Building envelope efficiency </td>
+   <td style="text-align:left;"> Modify the average envelope efficiency of residential and commercial buildings by setting the shell-conductance parameter for each year </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Buildings </td>
+   <td style="text-align:left;"> AC efficiency </td>
+   <td style="text-align:left;"> Modify the average energy efficiency of air conditioners in buildings </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Buildings </td>
+   <td style="text-align:left;"> Lighting efficiency </td>
+   <td style="text-align:left;"> Phase out non-LED lighting technologies in buildings </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Transportation </td>
+   <td style="text-align:left;"> EV cost parity </td>
+   <td style="text-align:left;"> Reduce costs of EVs and hybrid vehicles to reach cost parity with traditional liquids vehicles </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Transportation </td>
+   <td style="text-align:left;"> Liquids phaseout </td>
+   <td style="text-align:left;"> Phase out combustion engine vehicles </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Industry </td>
+   <td style="text-align:left;"> Industrial energy efficiency </td>
+   <td style="text-align:left;"> Increase average energy efficiency across industrial processes </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Industry </td>
+   <td style="text-align:left;"> Industrial hydrogen use </td>
+   <td style="text-align:left;"> Increase the use of hydrogen in industrial processes </td>
+  </tr>
+</tbody>
+</table>
 
 ## RE Subsidies
 ***
 
-```{r re subsidy files table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
-library(kableExtra); library(dplyr)
-
-dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/thailand/wind_solar_floors_high.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/wind_solar_floors_low.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/wind_solar_input_subsidies.xml")
-
-data.frame(
-  Scenario = c("High", "Low", "Both")) %>% 
-  dplyr:: mutate("Files Used" = cell_spec(c("wind_solar_floors_high.xml",
-                                            "wind_solar_floors_low.xml",
-                                            "wind_solar_input_subsidies.xml"),
-                                          "html", link=dt_url),
-         Description = c("Sets floors for wind and solar generation corresponding with Thailand's updated LTS generation goals",
-                         "Sets floors for wind and solar generation corresponding with 75% Thailand's updated LTS generation goals",
-                         "Applies subsidies to relevant wind and solar technologies in order to meet the specified floors")) %>% 
-  kable("html", escape = FALSE, col.names = c("Scenario", "Files Used", "Description")) %>%
-  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
-  row_spec(0, background = "#2A2A2A", color = "white")
-```
+<table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;"> Scenario </th>
+   <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;"> Files Used </th>
+   <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;"> Description </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> High </td>
+   <td style="text-align:left;"> <a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/wind_solar_floors_high.xml" style="     ">wind_solar_floors_high.xml</a> </td>
+   <td style="text-align:left;"> Sets floors for wind and solar generation corresponding with Thailand's updated LTS generation goals </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Low </td>
+   <td style="text-align:left;"> <a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/wind_solar_floors_low.xml" style="     ">wind_solar_floors_low.xml</a> </td>
+   <td style="text-align:left;"> Sets floors for wind and solar generation corresponding with 75% Thailand's updated LTS generation goals </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Both </td>
+   <td style="text-align:left;"> <a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/wind_solar_input_subsidies.xml" style="     ">wind_solar_input_subsidies.xml</a> </td>
+   <td style="text-align:left;"> Applies subsidies to relevant wind and solar technologies in order to meet the specified floors </td>
+  </tr>
+</tbody>
+</table>
 
 
 <!-------------------------->
@@ -241,8 +347,24 @@ One way to set a generation floor for each fuel type in GCAM is to use a subsidy
 <!--------Background-------->
 <!-------------------------->
 
-```{r background policy-portfolio-standards RE, child = 'background_policy-portfolio-standards.rmd'}
-```
+
+<!--------------------------------------------->
+<!---Background - Policy portfolio standards--->
+<!--------------------------------------------->
+
+<div class="warning" style='background-color:#EFFFC9; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+
+<h3 style='text-align:center; font-size:24px'>
+<b>Background - Policy portfolio standards</b></h3>
+
+<p style='margin-left:1em;'>
+A `policy-portfolio-standard` in GCAM is a policy that can be used to implement taxes, subsidies, floors, ceilings, and constraints. Taxes and subsidies can be specified when the exact amount to be added or subtracted to the price is known. However, a `policy-portfolio-standard` can also contain a `constraint`, which acts as either a floor or ceiling for the technology or technologies included. Exact constraints can also be implemented. See the [GCAM Policy Examples](https://jgcri.github.io/gcam-doc/policies_examples.html) documentation for more information on how to implement these options.
+</p>
+</span>
+</div>
+
+<br>
 
 
 <!-------------------------->
@@ -283,26 +405,32 @@ One way to set a generation floor for each fuel type in GCAM is to use a subsidy
 ## Coal Phaseout
 ***
 
-```{r coal phaseout files table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
-library(kableExtra); library(dplyr)
-
-dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/thailand/no_new_coal.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/coal_shutdown_high.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/coal_shutdown_low.xml")
-
-data.frame(
-  Scenario = c("Both", "High", "Low")) %>% 
-  dplyr:: mutate("Files Used" = cell_spec(c("no_new_coal.xml",
-                                            "coal_shutdown_high.xml",
-                                            "coal_shutdown_low.xml"),
-                                          "html", link=dt_url),
-         Description = c("Prevents additional coal capacity from being built starting in 2020",
-                         "Retires existing coal capacity quickly; all coal is retired by 2050",
-                         "Retires existing coal capacity more slowly; all coal is retired by 2065")) %>% 
-  kable("html", escape = FALSE, col.names = c("Scenario", "Files Used", "Description")) %>%
-  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
-  row_spec(0, background = "#2A2A2A", color = "white")
-```
+<table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;"> Scenario </th>
+   <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;"> Files Used </th>
+   <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;"> Description </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Both </td>
+   <td style="text-align:left;"> <a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/no_new_coal.xml" style="     ">no_new_coal.xml</a> </td>
+   <td style="text-align:left;"> Prevents additional coal capacity from being built starting in 2020 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> High </td>
+   <td style="text-align:left;"> <a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/coal_shutdown_high.xml" style="     ">coal_shutdown_high.xml</a> </td>
+   <td style="text-align:left;"> Retires existing coal capacity quickly; all coal is retired by 2050 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Low </td>
+   <td style="text-align:left;"> <a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/coal_shutdown_low.xml" style="     ">coal_shutdown_low.xml</a> </td>
+   <td style="text-align:left;"> Retires existing coal capacity more slowly; all coal is retired by 2065 </td>
+  </tr>
+</tbody>
+</table>
 
 
 <!-------------------------->
@@ -351,11 +479,43 @@ There are two steps to phase out coal generation. The first is to prevent any ne
 
 <!--- TO DO: make background page for lifetime and s-curve-shutdown-decider --->
 
-```{r background shareweights coal, child = 'background_shareweights.rmd'}
-```
 
-```{r background retirement coal, child = 'background_retirement.rmd'}
-```
+<!-------------------------------------->
+<!---Background - Share weights---------->
+<!-------------------------------------->
+
+<div class="warning" style='background-color:#EFFFC9; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+
+<h3 style='text-align:center; font-size:24px'>
+<b>Background - Share weights</b></h3>
+
+<p style='margin-left:1em;'>
+Share weights are assigned to different subsectors and technology choices in GCAM to represent non-cost factors of consumer choice. They are used primarily to calibrate market shares to historical data but can also be modified to reflect factors such as infrastructure development or shifting societal preferences. For more information on share weights and how they are used in GCAM's economic choice functions, see the [GCAM economic choice](https://jgcri.github.io/gcam-doc/choice.html) documentation. Share weights should not be used to represent cost-related policies. Additionally, shareweight interpolation rules (`fixed`, `linear`, or `s-curve`) can be used to automatically interpolate shareweights between given years.
+</p>
+</span>
+</div>
+
+<br>
+
+
+<!------------------------------------------------------>
+<!---Background - Energy Technology Retirement---------->
+<!------------------------------------------------------>
+
+<div class="warning" style='background-color:#EFFFC9; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+
+<h3 style='text-align:center; font-size:24px'>
+<b>Background - Energy Technology Retirement </b></h3>
+
+<p style='margin-left:1em;'>
+For some energy technologies, such as coal, the "cohort" installed in each period is modeled as a separate technology. Therefore, even if no new capacity is installed in future years, output from the capacity installed in previous years will still be modeled. There are several GCAM parameters that determine the trajectory of output from previously installed technology cohorts. The `lifetime` is the maximum number of years for which the technology cohort can continue producing output; i.e., a technology cohort installed in year `t` will no longer produce any output in the year `t + lifetime`. The `s-curve-shutdown-decider` is a function that controls the speed at which the technology cohort retires, or reduces its output, within its lifetime. This function depends on a `steepness` parameter that determines the shape of the function as well as a `half-life` parameter that sets the number of years after which half of the technology cohort is retired. For more information on retirement parameters, see the GCAM [Energy Technologies](https://jgcri.github.io/gcam-doc/en_technologies.html) documentation.
+</p>
+</span>
+</div>
+
+<br>
 
 
 <!-------------------------->
@@ -396,24 +556,27 @@ There are two steps to phase out coal generation. The first is to prevent any ne
 ## Building Envelope Efficiency
 ***
 
-```{r shell files table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
-library(kableExtra); library(dplyr)
-
-dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/thailand/shell_eff_high.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/shell_eff_low.xml")
-
-data.frame(
-  Scenario = c("High", "Low")) %>% 
-  dplyr:: mutate("Files Used" = cell_spec(c("shell_eff_high.xml",
-                                            "shell_eff_low.xml"),
-                                          "html", link=dt_url),
-         Description = c("Decreases shell conductance from 3.75 in 2020 to 0.487 (residential)/ 0.375 (commercial) in 2070 at an annual rate of 4% (residential)/ 4.5% (commercial)",
-                         "Decreases shell conductance from 3.75 in 2020 to 1.366 (residential)/ 1.057 (commercial) in 2070 at an annual rate of 2% (residential)/ 2.5% (commercial)")) %>% 
-  kable("html", escape = FALSE, col.names = c("Scenario", "Files Used", "Description")) %>%
-  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
-  row_spec(0, background = "#2A2A2A", color = "white")
-
-```
+<table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;"> Scenario </th>
+   <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;"> Files Used </th>
+   <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;"> Description </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> High </td>
+   <td style="text-align:left;"> <a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/shell_eff_high.xml" style="     ">shell_eff_high.xml</a> </td>
+   <td style="text-align:left;"> Decreases shell conductance from 3.75 in 2020 to 0.487 (residential)/ 0.375 (commercial) in 2070 at an annual rate of 4% (residential)/ 4.5% (commercial) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Low </td>
+   <td style="text-align:left;"> <a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/shell_eff_low.xml" style="     ">shell_eff_low.xml</a> </td>
+   <td style="text-align:left;"> Decreases shell conductance from 3.75 in 2020 to 1.366 (residential)/ 1.057 (commercial) in 2070 at an annual rate of 2% (residential)/ 2.5% (commercial) </td>
+  </tr>
+</tbody>
+</table>
 
 
 <!-------------------------->
@@ -462,8 +625,25 @@ We can use GCAM's `shell-conductance` parameter to represent an increase in the 
 <!--------Background-------->
 <!-------------------------->
 
-```{r background cooling demand, child = 'background_coolingDemand.rmd'}
-```
+
+<!------------------------------------------------->
+<!---Background - Building Cooling Demand---------->
+<!------------------------------------------------->
+
+<div class="warning" style='background-color:#EFFFC9; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+
+<h3 style='text-align:center; font-size:24px'>
+<b>Background - Cooling Demand</b></h3>
+
+<p style='margin-left:1em;'>
+Cooling demand in GCAM depends on the indoor-outdoor temperature difference (measured using cooling degree days or CDD), the building's shell conductance, and the building's external heat gains along with GDP and price factors. For more details and to view the equation used to calculate cooling demand, see the **Building service demand** section of the [GCAM energy demand documentation](https://jgcri.github.io/gcam-doc/demand_energy.html#equations). GCAM's `shell-conductance` parameter is the inverse of building envelope efficiency. Its units are watts per square meter per degree Kelvin and it represents the amount of heat transferred through the building's exterior when there is a difference between the indoor and outdoor temperature. 
+</p>
+</span>
+</div>
+
+<br>
+
 
 
 <!-------------------------->
@@ -493,24 +673,27 @@ We can use GCAM's `shell-conductance` parameter to represent an increase in the 
 ## AC Efficiency
 ***
 
-```{r ac eff files table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
-library(kableExtra); library(dplyr)
-
-dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/thailand/ac_eff_high.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/ac_eff_low.xml")
-
-data.frame(
-  Scenario = c("High", "Low")) %>% 
-  dplyr:: mutate("Files Used" = cell_spec(c("ac_eff_high.xml",
-                                            "ac_eff_low.xml"),
-                                          "html", link=dt_url),
-         Description = c("Increases acerage efficiency of high-efficiency ACs from 3.1 W/W in 2020 to 6 W/W in 2030 and 8 W/W in 2050",
-                         "Increases acerage efficiency of high-efficiency ACs from 3.1 W/W in 2020 to 4.3 W/W in 2030 and 6 W/W in 2050")) %>% 
-  kable("html", escape = FALSE, col.names = c("Scenario", "Files Used", "Description")) %>%
-  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
-  row_spec(0, background = "#2A2A2A", color = "white")
-
-```
+<table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;"> Scenario </th>
+   <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;"> Files Used </th>
+   <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;"> Description </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> High </td>
+   <td style="text-align:left;"> <a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/ac_eff_high.xml" style="     ">ac_eff_high.xml</a> </td>
+   <td style="text-align:left;"> Increases acerage efficiency of high-efficiency ACs from 3.1 W/W in 2020 to 6 W/W in 2030 and 8 W/W in 2050 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Low </td>
+   <td style="text-align:left;"> <a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/ac_eff_low.xml" style="     ">ac_eff_low.xml</a> </td>
+   <td style="text-align:left;"> Increases acerage efficiency of high-efficiency ACs from 3.1 W/W in 2020 to 4.3 W/W in 2030 and 6 W/W in 2050 </td>
+  </tr>
+</tbody>
+</table>
 
 
 <!-------------------------->
@@ -561,8 +744,7 @@ We can use GCAM's `efficiency` parameter corresponding with the relevant AC tech
 
 <!--TODO: make a background page for technology efficiency-->
 
-```{r background efficiency ac}
-```
+
 
 
 <!-------------------------->
@@ -592,24 +774,27 @@ We can use GCAM's `efficiency` parameter corresponding with the relevant AC tech
 ## Lighting Efficiency
 ***
 
-```{r lighting files table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
-library(kableExtra); library(dplyr)
-
-dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/thailand/buildings_led_high.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/buildings_led_low.xml")
-
-data.frame(
-  Scenario = c("High", "Low")) %>% 
-  dplyr:: mutate("Files Used" = cell_spec(c("buildings_led_high.xml",
-                                            "buildings_led_low.xml"),
-                                          "html", link=dt_url),
-         Description = c("Gradually phases non-LED residential lighting technology out of the market by 2030",
-                         "Gradually phases non-LED residential lighting technology out of the market by 2050")) %>% 
-  kable("html", escape = FALSE, col.names = c("Scenario", "Files Used", "Description")) %>%
-  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
-  row_spec(0, background = "#2A2A2A", color = "white")
-
-```
+<table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;"> Scenario </th>
+   <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;"> Files Used </th>
+   <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;"> Description </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> High </td>
+   <td style="text-align:left;"> <a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/buildings_led_high.xml" style="     ">buildings_led_high.xml</a> </td>
+   <td style="text-align:left;"> Gradually phases non-LED residential lighting technology out of the market by 2030 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Low </td>
+   <td style="text-align:left;"> <a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/buildings_led_low.xml" style="     ">buildings_led_low.xml</a> </td>
+   <td style="text-align:left;"> Gradually phases non-LED residential lighting technology out of the market by 2050 </td>
+  </tr>
+</tbody>
+</table>
 
 
 <!-------------------------->
@@ -658,8 +843,24 @@ We can gradually decrease the shareweights of all non-LED residential lighting t
 <!--------Background-------->
 <!-------------------------->
 
-```{r background shareweights lighting, child = 'background_shareweights.rmd'}
-```
+
+<!-------------------------------------->
+<!---Background - Share weights---------->
+<!-------------------------------------->
+
+<div class="warning" style='background-color:#EFFFC9; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+
+<h3 style='text-align:center; font-size:24px'>
+<b>Background - Share weights</b></h3>
+
+<p style='margin-left:1em;'>
+Share weights are assigned to different subsectors and technology choices in GCAM to represent non-cost factors of consumer choice. They are used primarily to calibrate market shares to historical data but can also be modified to reflect factors such as infrastructure development or shifting societal preferences. For more information on share weights and how they are used in GCAM's economic choice functions, see the [GCAM economic choice](https://jgcri.github.io/gcam-doc/choice.html) documentation. Share weights should not be used to represent cost-related policies. Additionally, shareweight interpolation rules (`fixed`, `linear`, or `s-curve`) can be used to automatically interpolate shareweights between given years.
+</p>
+</span>
+</div>
+
+<br>
 
 
 <!-------------------------->
@@ -689,23 +890,27 @@ We can gradually decrease the shareweights of all non-LED residential lighting t
 ## EV Cost Parity
 ***
 
-```{r EV cost parity files table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
-library(kableExtra); library(dplyr)
-
-dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/thailand/ev_cost_parity_high.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/ev_cost_parity_low.xml")
-
-data.frame(
-  Scenario = c(rep("High",1), rep("Low",1))) %>% 
-  mutate("Files Used" = cell_spec( c("ev_cost_parity_high.xml",
-                                     "ev_cost_parity_low.xml"),
-                                   "html", link = dt_url)) %>% 
-  mutate(Description = c("Reduces EV costs to reach cost parity with liquids vehicles by 2030 (passenger)/ 2040 (freight)",
-                         "Reduces EV costs to reach cost parity with liquids vehicles by 2050 (passenger)/ 2060 (freight)")) %>%
-  kable("html", escape = FALSE, col.names = c("Scenario", "Files Used", "Description")) %>%
-  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
-  row_spec(0, background = "#2A2A2A", color = "white")
-```
+<table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;"> Scenario </th>
+   <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;"> Files Used </th>
+   <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;"> Description </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> High </td>
+   <td style="text-align:left;"> <a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/ev_cost_parity_high.xml" style="     ">ev_cost_parity_high.xml</a> </td>
+   <td style="text-align:left;"> Reduces EV costs to reach cost parity with liquids vehicles by 2030 (passenger)/ 2040 (freight) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Low </td>
+   <td style="text-align:left;"> <a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/ev_cost_parity_low.xml" style="     ">ev_cost_parity_low.xml</a> </td>
+   <td style="text-align:left;"> Reduces EV costs to reach cost parity with liquids vehicles by 2050 (passenger)/ 2060 (freight) </td>
+  </tr>
+</tbody>
+</table>
 
 
 <!-------------------------->
@@ -753,8 +958,24 @@ To represent EV promotion, we use an approach that decreases the cost of EVs rel
 <!--------Background--------->
 <!--------------------------->
 
-```{r background transport input cost, child = 'background_transportCost.rmd'}
-```
+
+<!--------------------------------------------------->
+<!---Background - Transportation technology cost----->
+<!--------------------------------------------------->
+
+<div class="warning" style='background-color:#EFFFC9; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+
+<h3 style='text-align:center; font-size:24px'>
+<b>Background - Transportation Cost</b></h3>
+
+<p style='margin-left:1em;'>
+In GCAM, the costs of different transportation technologies are comprised of two components: fuel costs and non-fuel costs. A transportation technology's fuel cost is determined by its vehicle fuel intensity as well as fuel price. The non-fuel costs encompass factors such as capital costs, operation and maintenance, and service costs. These non-fuel costs can be adjusted using the `input-cost` parameter. For more information on how transportation demand is modeled in GCAM, including cost calculations, see the transportation sections of the GCAM [Demand for Energy](https://jgcri.github.io/gcam-doc/demand_energy.html) documentation.
+</p>
+</span>
+</div>
+
+<br>
 
 
 <!-------------------------->
@@ -786,23 +1007,27 @@ To represent EV promotion, we use an approach that decreases the cost of EVs rel
 ## CEV phase-out
 ***
 
-```{r CEV phase-out files table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
-library(kableExtra); library(dplyr)
-
-dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/thailand/ldv_liquids_phaseout_high.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/ldv_liquids_phaseout_low.xml")
-
-data.frame(
-  Scenario = c(rep("High",1), rep("Low",1))) %>% 
-  mutate("Files Used" = cell_spec( c("ldv_liquids_phaseout_high.xml",
-                                     "ldv_liquids_phaseout_low.xml"),
-                                   "html", link = dt_url)) %>% 
-  mutate(Description = c("Phases liquids passenger vehicles out of the market by 2050",
-                         "Phases liquids passenger vehicles out of the market by 2065")) %>%
-  kable("html", escape = FALSE, col.names = c("Scenario", "Files Used", "Description")) %>%
-  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
-  row_spec(0, background = "#2A2A2A", color = "white")
-```
+<table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;"> Scenario </th>
+   <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;"> Files Used </th>
+   <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;"> Description </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> High </td>
+   <td style="text-align:left;"> <a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/ldv_liquids_phaseout_high.xml" style="     ">ldv_liquids_phaseout_high.xml</a> </td>
+   <td style="text-align:left;"> Phases liquids passenger vehicles out of the market by 2050 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Low </td>
+   <td style="text-align:left;"> <a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/ldv_liquids_phaseout_low.xml" style="     ">ldv_liquids_phaseout_low.xml</a> </td>
+   <td style="text-align:left;"> Phases liquids passenger vehicles out of the market by 2065 </td>
+  </tr>
+</tbody>
+</table>
 
 
 <!-------------------------->
@@ -850,8 +1075,24 @@ To represent a CEV phase-out, we decrease their shareweights over time. The year
 <!--------Background--------->
 <!--------------------------->
 
-```{r background shareweights CEV, child = 'background_shareweights.rmd'}
-```
+
+<!-------------------------------------->
+<!---Background - Share weights---------->
+<!-------------------------------------->
+
+<div class="warning" style='background-color:#EFFFC9; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+
+<h3 style='text-align:center; font-size:24px'>
+<b>Background - Share weights</b></h3>
+
+<p style='margin-left:1em;'>
+Share weights are assigned to different subsectors and technology choices in GCAM to represent non-cost factors of consumer choice. They are used primarily to calibrate market shares to historical data but can also be modified to reflect factors such as infrastructure development or shifting societal preferences. For more information on share weights and how they are used in GCAM's economic choice functions, see the [GCAM economic choice](https://jgcri.github.io/gcam-doc/choice.html) documentation. Share weights should not be used to represent cost-related policies. Additionally, shareweight interpolation rules (`fixed`, `linear`, or `s-curve`) can be used to automatically interpolate shareweights between given years.
+</p>
+</span>
+</div>
+
+<br>
 
 <!-------------------------->
 <!---GCAM Implementation---->
@@ -1000,23 +1241,27 @@ To represent a CEV phase-out, we decrease their shareweights over time. The year
 ## Industry Energy Efficiency
 ***
 
-```{r industry aeei files table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
-library(kableExtra); library(dplyr)
-
-dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/thailand/industry_aeei_high.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/industry_aeei_low.xml")
-
-data.frame(
-  Scenario = c(rep("High",1), rep("Low",1))) %>% 
-  mutate("Files Used" = cell_spec( c("industry_aeei_high.xml",
-                                     "industry_aeei_low.xml"),
-                                   "html", link = dt_url)) %>% 
-  mutate(Description = c("Increases overall efficiency of industrial processes by 1% annually through 2070",
-                         "Increases overall efficiency of industrial processes by 0.5% annually through 2070")) %>%
-  kable("html", escape = FALSE, col.names = c("Scenario", "Files Used", "Description")) %>%
-  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
-  row_spec(0, background = "#2A2A2A", color = "white")
-```
+<table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;"> Scenario </th>
+   <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;"> Files Used </th>
+   <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;"> Description </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> High </td>
+   <td style="text-align:left;"> <a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/industry_aeei_high.xml" style="     ">industry_aeei_high.xml</a> </td>
+   <td style="text-align:left;"> Increases overall efficiency of industrial processes by 1% annually through 2070 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Low </td>
+   <td style="text-align:left;"> <a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/industry_aeei_low.xml" style="     ">industry_aeei_low.xml</a> </td>
+   <td style="text-align:left;"> Increases overall efficiency of industrial processes by 0.5% annually through 2070 </td>
+  </tr>
+</tbody>
+</table>
 
 
 <!-------------------------->
@@ -1066,8 +1311,7 @@ To represent a gradual increase in industrial efficiency, we can use GCAM's `aee
 
 <!-- TO DO: make background page for aeei -->
 
-```{r background aeei industry}
-```
+
 
 <!-------------------------->
 <!---GCAM Implementation---->
@@ -1098,23 +1342,27 @@ To represent a gradual increase in industrial efficiency, we can use GCAM's `aee
 ## Industry Hydrogen
 ***
 
-```{r industry h2 files table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
-library(kableExtra); library(dplyr)
-
-dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/thailand/industry_h2_high.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/industry_h2_low.xml")
-
-data.frame(
-  Scenario = c(rep("High",1), rep("Low",1))) %>% 
-  mutate("Files Used" = cell_spec( c("industry_h2_high.xml",
-                                     "industry_h2_low.xml"),
-                                   "html", link = dt_url)) %>% 
-  mutate(Description = c("Phases hydrogen industrial technologies into the market relatively quickly",
-                         "Phases hydrogen industrial technologies into the market relatively more slowly")) %>%
-  kable("html", escape = FALSE, col.names = c("Scenario", "Files Used", "Description")) %>%
-  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
-  row_spec(0, background = "#2A2A2A", color = "white")
-```
+<table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;"> Scenario </th>
+   <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;"> Files Used </th>
+   <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;"> Description </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> High </td>
+   <td style="text-align:left;"> <a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/industry_h2_high.xml" style="     ">industry_h2_high.xml</a> </td>
+   <td style="text-align:left;"> Phases hydrogen industrial technologies into the market relatively quickly </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Low </td>
+   <td style="text-align:left;"> <a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/industry_h2_low.xml" style="     ">industry_h2_low.xml</a> </td>
+   <td style="text-align:left;"> Phases hydrogen industrial technologies into the market relatively more slowly </td>
+  </tr>
+</tbody>
+</table>
 
 
 <!-------------------------->
@@ -1162,8 +1410,24 @@ To represent a phase-in of hydrogen technologies, we can gradually increase thei
 <!--------Background--------->
 <!--------------------------->
 
-```{r backgroud shareweights industry h2, child = 'background_shareweights.rmd'}
-```
+
+<!-------------------------------------->
+<!---Background - Share weights---------->
+<!-------------------------------------->
+
+<div class="warning" style='background-color:#EFFFC9; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+
+<h3 style='text-align:center; font-size:24px'>
+<b>Background - Share weights</b></h3>
+
+<p style='margin-left:1em;'>
+Share weights are assigned to different subsectors and technology choices in GCAM to represent non-cost factors of consumer choice. They are used primarily to calibrate market shares to historical data but can also be modified to reflect factors such as infrastructure development or shifting societal preferences. For more information on share weights and how they are used in GCAM's economic choice functions, see the [GCAM economic choice](https://jgcri.github.io/gcam-doc/choice.html) documentation. Share weights should not be used to represent cost-related policies. Additionally, shareweight interpolation rules (`fixed`, `linear`, or `s-curve`) can be used to automatically interpolate shareweights between given years.
+</p>
+</span>
+</div>
+
+<br>
 
 <!-------------------------->
 <!---GCAM Implementation---->
@@ -1197,28 +1461,37 @@ To represent a phase-in of hydrogen technologies, we can gradually increase thei
 <!-------------------------->
 <!-------------------------->
 
-```{r emissions constraints files table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
-library(kableExtra); library(dplyr)
-
-# in the dt_url vector, add link(s) to the relevant XML file(s) used to run the policy. 
-# also add the files to their corresponding directories in the repo.
-dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/thailand/NetZeroC_thailand_2050",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/Thailand_luc", "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/NetZeroC_ROW_2050", "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/ROW_luc")
-
-# add scenario names, filenames, and descriptions of files to this table.
-# make sure info in this table matches the links provided above (in the same order).
-data.frame(
-  Scenario = c("Net-Zero CO2", "Net-Zero CO2", "Net-Zero CO2", "Net-Zero CO2")) %>% 
-  mutate("Files Used" = cell_spec( c("NetZeroC_thailand_2050",
-                                     "Thailand_luc", "NetZeroC_ROW_2050", "ROW_luc"),
-                                   "html", link = dt_url)) %>% 
-  mutate(Description = c("CO2 emissions constraint",
-                         "GHG link file for land use change emissions", "CO2 emissions constraint ROW",
-                         "GHG link file for land use change emissions for ROW")) %>%
-  kable("html", escape = FALSE, col.names = c("Scenario", "Files Used", "Description")) %>%
-  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
-  row_spec(0, background = "#2A2A2A", color = "white")
-```
+<table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;"> Scenario </th>
+   <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;"> Files Used </th>
+   <th style="text-align:left;color: white !important;background-color: #2A2A2A !important;"> Description </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Net-Zero CO2 </td>
+   <td style="text-align:left;"> <a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/NetZeroC_thailand_2050" style="     ">NetZeroC_thailand_2050</a> </td>
+   <td style="text-align:left;"> CO2 emissions constraint </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Net-Zero CO2 </td>
+   <td style="text-align:left;"> <a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/Thailand_luc" style="     ">Thailand_luc</a> </td>
+   <td style="text-align:left;"> GHG link file for land use change emissions </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Net-Zero CO2 </td>
+   <td style="text-align:left;"> <a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/NetZeroC_ROW_2050" style="     ">NetZeroC_ROW_2050</a> </td>
+   <td style="text-align:left;"> CO2 emissions constraint ROW </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Net-Zero CO2 </td>
+   <td style="text-align:left;"> <a href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/ROW_luc" style="     ">ROW_luc</a> </td>
+   <td style="text-align:left;"> GHG link file for land use change emissions for ROW </td>
+  </tr>
+</tbody>
+</table>
 
 <!-------------------------->
 <!----------Goal------------>
@@ -1333,5 +1606,9 @@ This section describes how to explore and compare the final output data using va
 
 
 # {.unlisted .unnumbered}
-```{r child = 'footer.rmd'}
-```
+
+
+[WORK IN PROGRESS - DO NOT CITE
+<img src="images/logo_us_state_department_color.png" style="padding-left:20px; height:40px;">
+<img src="images/logo_pnnl_white.png" style="padding-left:20px; height:40px;">
+]{.navbar-fixed-bottom .text-muted .bg-info}

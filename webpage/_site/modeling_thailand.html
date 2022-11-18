@@ -2255,7 +2255,7 @@ style="background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 
 <p style="margin-left:1em;">
 The aim of this example is to demonstrate how to apply an economy-wide
 emissions constraint for Thailand in accord with its national goals:
-net-zero CO2 by 2050 and net-zero GHG emissions by 2065.
+net-zero CO2 by 2050.
 </p>
 <p></span></p>
 </div>
@@ -2289,24 +2289,23 @@ style="background-color:#EFFFC9; border-left: solid #1f1f1f 4px; border-radius: 
 <p style="margin-left:1em;">
 To implement a <code>ghgpolicy</code> in GCAM, users specify the total
 amount of emissions (CO2 or GHG) in a time period. GCAM will then
-calculate the price needed to reach the constraint in each period. GCAM
-finds the least-cost pathway in terms of technology deployment to
-satisfy the emissions constraint. An economy-wide constraint can be used
-by itself, or in combination with additional sectoral policies described
-above. There are some important considerations: (1) what GHG’s are
-included in the constraint (only CO2?)?, (2) What is the time period for
-the constraint (e.g., 2050, 2065)?, and (3) What are the emissions in
-each period (e.g. will emissions decline linearly to zero?)?, (4) Will
-land use change emissions be included in the constraint?, and (4) what
-assumptions are made for emissions in the rest of the world? This latter
-point is important when considering “carbon leakage,” that is, how
-restrictions in emissions in one geography may lead to a shift in
-carbon-intensive activities to other locations. Below, we will describe
-how to implement a CO2 emissions constraint. See the GCAM Policies
-documentation <a
+calculate the price on carbon needed to reach the constraint in each
+period. GCAM finds the least-cost pathway in terms of technology
+deployment to satisfy the emissions constraint. An economy-wide
+constraint can be used by itself, or in combination with additional
+sectoral policies described above. There are some important
+considerations: (1) what GHG’s are included in the constraint (only
+CO2?)?, (2) What is the time period for the constraint (e.g., 2050,
+2065)?, and (3) What are the emissions in each period (e.g. will
+emissions decline linearly to zero?)?, (4) Will land use change
+emissions be included in the constraint?, and (4) what assumptions are
+made for emissions in the rest of the world? This latter point is
+important when considering “carbon leakage,” that is, how restrictions
+in emissions in one geography may lead to a shift in carbon-intensive
+activities to other locations. Below, we will describe how to implement
+a CO2 emissions constraint. See the <a
 href="http://jgcri.github.io/gcam-doc/policies.html#emissions-policies">GCAM
-Policies</a> documentation for more information on how to implement
-these options.
+Policies</a> documentation for more information.
 </p>
 <p></span></p>
 </div>
@@ -2334,28 +2333,32 @@ href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/CO2_net0_const
 and <a
 href="https://github.com/JGCRI/seasia/blob/main/modeling/thailand/ROW_LUC_noThailand">ROW_luc</a>.</p></li>
 <li><p>The first file, NetZeroC_thailand_2050.xml, specifies emissions
-in units of tonnes of carbon (not CO2) each period. One way to determine
-the emissions constraint for each period is to examine the CO2 emissions
-in the reference case (See ModelInterface: “CO2 emissions by region”).
-Based on the reference emissions, one can create an emissions constraint
-accordingly. In this case, we want to reach net-zero CO2 emissions in
-2050. The example specifies a linear decrease from 2025 to 2050 (A
-negative number in 2050 is used instead of 0, because this is easier for
-GCAM to solve). Other emissions constraints can be adopted instead of
-net-zero CO2 emissions in 2050.</p></li>
+in units of tonnes of carbon (not CO2) in each period. One way to
+determine the emissions constraint for each period is to examine the CO2
+emissions in the reference case (See ModelInterface: “CO2 emissions by
+region”). Based on the reference emissions, one can create an emissions
+constraint accordingly, depending on the start date of the emissions
+constraint, end goal, and steepness of the decrease in emissions. In
+this case, we want to reach net-zero CO2 emissions in 2050. The example
+specifies a linear decrease from 2025 to 2050. (A negative number in
+2050 is used instead of 0, because this is easier for GCAM to solve).
+Other emissions constraints can be adopted instead of net-zero CO2
+emissions in 2050.</p></li>
 <li><p>One needs to decide whether and how land use change emissions are
-incorporated into the constraint. The Thailand_luc.xml specifies how
-land use change CO2 emissions (LUC-CO2) are linked to the ghgpolicy
-(“CO2”). There are two parameters: <code>price-adjust</code> and
-<code>demand-adjust</code>. Price-adjust is used to convert prices. A
-price-adjust of 1.0 for LUC-CO2 means the price on LUC-CO2 emissions is
-the same as the price applied to fossil fuel and industry CO2 emissions.
-A demand-adjust of 0 means that LUC-CO2 emissions are not counted in the
-emissions constraint.These two parameters can be adjusted. In the
-sample, files we have a price-adjust of 1, and a demand-adjust of 0. The
-same files for the rest of the world (ROW) make sure that the same
-constraint is applied outside of Thailand in order to prevent carbon
-leakage.</p></li>
+incorporated into the constraint. GCAM accounts for fossil fuel and
+industry CO2 emissions separately from land use change CO2 emissions.
+The Thailand_luc.xml specifies how land use change CO2 emissions
+(LUC-CO2) in Thailand are linked to the ghgpolicy (“CO2”). There are two
+parameters: <code>price-adjust</code> and <code>demand-adjust</code>.
+Price-adjust is used to convert prices for different GHG’s. A
+price-adjust of 1.0 for LUC-CO2 means the market price on LUC-CO2
+emissions is the same as the price applied to fossil fuel and industry
+CO2 emissions. A demand-adjust of 1 means that LUC-CO2 emissions are
+counted in the emissions constraint. These two parameters can be
+adjusted. In the sample files we have a price-adjust of 1, and a
+demand-adjust of 1. The same files for the rest of the world (ROW) are
+included to make sure that the same constraint is applied outside of
+Thailand in order to prevent carbon leakage.</p></li>
 <li><p>Save the xml files and then point to them in your configuration
 file by adding the line:</p></li>
 </ol>
