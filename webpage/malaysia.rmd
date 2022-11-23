@@ -5,7 +5,7 @@ output:
     toc: true
     toc_float: true
     toc_collapsed: true
-    toc_depth: 3
+    toc_depth: 4
     number_sections: true
     theme: cosmo
     #inverse: true
@@ -108,14 +108,16 @@ PNNL, with input from KLCH, will develop a set of GCAM scenarios based on the KL
 <br>
 
 <!-------------------------->
+<!-------------------------->
 ## Council-Led
+<!-------------------------->
 <!-------------------------->
 
 **Council-Led Scenario:** In this scenario, KLCH has the authority to implement measures to achieve carbon emissions reductions. The scenario will largely be achieved through existing actions outlined in the KLLCSBP2030, Federal policies and plans, and publicly declared renewable energy targets. 
 
 Note that this scenario _does not_ meet Kuala Lumpur's benchmark targets for 2030 or 2050; this is due to the lack of power and capacity for KLCH to implement more ambitious actions. Key remaining emissions will come from the following sectors: residential, commercial and institutional buildings, industrial energy, and on-road transportation.
 
-The table below summarizes some of the policies encompassed by the Council-Led scenario. For additional policies, please reference the <a href = "malaysia_appendix.html"> Appendix </a>.
+The table below summarizes some of the policies encompassed by the Council-Led scenario. For additional policies, please reference the <a href = "modeling_malaysia.html"> Modeling page </a>.
 <br>
 
 ```{r council-led, results = 'show', echo = FALSE, warning = FALSE, error = FALSE, message = FALSE}

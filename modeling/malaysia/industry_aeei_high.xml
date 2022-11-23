@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario>
+    <world>
+        <region name = "KualaLumpur">
+            <energy-final-demand name = "industry">
+                <final-energy-consumer>
+                    <aeei year = "2020">0.01</aeei>
+                    <aeei year = "2025">0.01</aeei>
+                    <aeei year = "2030">0.01</aeei>
+                    <aeei year = "2035">0.01</aeei>
+                    <aeei year = "2040">0.01</aeei>
+                    <aeei year = "2045">0.01</aeei>
+                    <aeei year = "2050">0.01</aeei>
+                    <aeei year = "2055">0.01</aeei>
+                    <aeei year = "2060">0.01</aeei>
+                    <aeei year = "2065">0.01</aeei>
+                    <aeei year = "2070">0.01</aeei>
+                </final-energy-consumer>
+            </energy-final-demand>
+        </region>
+        <region name = "Rest of Malaysia">
+            <energy-final-demand name = "industry">
+                <final-energy-consumer>
+                    <aeei year = "2020">0.01</aeei>
+                    <aeei year = "2025">0.01</aeei>
+                    <aeei year = "2030">0.01</aeei>
+                    <aeei year = "2035">0.01</aeei>
+                    <aeei year = "2040">0.01</aeei>
+                    <aeei year = "2045">0.01</aeei>
+                    <aeei year = "2050">0.01</aeei>
+                    <aeei year = "2055">0.01</aeei>
+                    <aeei year = "2060">0.01</aeei>
+                    <aeei year = "2065">0.01</aeei>
+                    <aeei year = "2070">0.01</aeei>
+                </final-energy-consumer>
+            </energy-final-demand>
+        </region>
+    </world>
+</scenario>

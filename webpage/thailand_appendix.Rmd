@@ -35,8 +35,6 @@ library(tidyverse)
 ## Socioeconomics  {.tabset .tabset-pills}
 <!-------------------------->
 
-This section describes the socioeconomic (population and GDP) inputs used to define Thailand's subregions (Bangkok, Nonthaburi, Samut Prakan, and Rest of Thailand) in GCAM. Historical data were available from 1990 to 2020 for all regions, and  projections published by local agencies were available for some future periods. See the <a href = "thailand_appendix.html#122_Revised_Data"> Appendix </a> for a full list of data sources and assumptions used to infer socioeconomic trends for the remaining future periods.
-
 
 ### Population
 
@@ -56,6 +54,7 @@ pop_recent_chart_national <- rchart::chart(
                   year >= 1990, year <= 2020,
                   region == "Thailand"),
       value = value/1000000),
+  chart_type = "param_absolute",
   save = F, aspect_ratio = 0.5)
 
 pop_recent_chart_national$chart_param +
@@ -76,6 +75,7 @@ pop_recent_chart_mea <- rchart::chart(
                   year >= 1990, year <= 2020,
                   !(region %in% c("Thailand", "Rest of Thailand"))), 
       value = value/1000000),
+  chart_type = "region_absolute",
   save = F, aspect_ratio = 0.4)
 
 pop_recent_chart_mea$chart_region_absolute +
@@ -91,33 +91,6 @@ Of the three provinces in MEA's service area (Bangkok, Nonthaburi, and Samut Pra
 
 ```{r, fig.cap="**Figure 9.1.1.2. Population from 1990 to 2020 in the MEA service area. Source: [DOPA](https://stat.bora.dopa.go.th/new_stat/webPage/statByYear.php)**", fig.align="right", results="show"}
 knitr::include_graphics("images/half_blank_space.jpg")
-```
-
-<br>
-<br>
-
-#### Future Projections {-}
-
-NESDB publishes populations projections for the whole country as well as by province for the period from 2021 to 2040. At the national level, the United Nations (UN) provides population projections through 2100; provincial populations after 2040 were estimated by applying the provinces' shares of national population in 2040 to the UN projected national population through 2100. The charts below show estimated population in Thailand and the three MEA provinces from 1990 to 2100. The shaded regions represent future population projections reported by NESDB. 
-
-```{r historical & future trends pop, fig.dim=c(8,4), fig.cap="**Figure 9.1.1.3. Historical and projected future population in Thailand and MEA area. Sources: [NESDB](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fwww.nesdc.go.th%2Fewt_dl_link.php%3Fnid%3D3507%26filename%3Dsocial&wdOrigin=BROWSELINK) and [DOPA](https://stat.bora.dopa.go.th/new_stat/webPage/statByYear.php) (1990-2020), [NESDB](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fwww.nesdc.go.th%2Fewt_dl_link.php%3Fnid%3D3507%26filename%3Dsocial&wdOrigin=BROWSELINK) (2021-2040) and [United Nations](https://population.un.org/wpp/Download/Standard/Population/) (Post-2040)**"}
-pop_all <- rchart::chart(
-  dplyr::mutate(
-    dplyr::filter(pop_inputs, region != "Rest of Thailand",
-                  year >= 1990),
-    value = value/1000000),
-  save = F, aspect_ratio = 0.4
-)
-
-
-pop_all$chart_region_absolute +
-    ggplot2::annotate("rect", xmin=2021, xmax=2040, ymin=-Inf, ymax=Inf,
-                       alpha = 0.2, color = NA) +
-    ggplot2::facet_wrap(~region, nrow = 2, 
-                        scales = "free_y") +
-    ggplot2::ylab("Population (millions)") +
-    ggplot2::theme(legend.position = "none",
-                   plot.margin = ggplot2::unit(c(0,0,0.5,0), "cm"))
 ```
 
 <br>
@@ -150,6 +123,7 @@ gdp_recent_chart_national_baht <- rchart::chart(
                   year <= 2020,
                   region == "Thailand"),
       value = value/1000000),
+  chart_type = "param_absolute",
   save = F, aspect_ratio = 0.5)
 
 gdp_recent_chart_national_baht$chart_param +
@@ -173,6 +147,7 @@ gdp_recent_chart_mea_baht <- rchart::chart(
                   year <= 2020,
                   !(region %in% c("Thailand", "Rest of Thailand"))), 
       value = value/1000000),
+  chart_type = "region_absolute",
   save = F, aspect_ratio = 0.4)
 
 gdp_recent_chart_mea_baht$chart_region_absolute +
@@ -203,6 +178,7 @@ gdp_all_baht <- rchart::chart(
     dplyr::filter(gdp_baht, region != "Rest of Thailand",
                   year > 2020),
     value = value/1000000),
+  chart_type = "region_absolute",
   save = F, aspect_ratio = 0.4
 )
 
@@ -231,6 +207,7 @@ gdp_growth_charts <- rchart::chart(
   dplyr::mutate(
     dplyr::filter(gdp_growth_baht, region != "Rest of Thailand",
                   year > 2021)),
+  chart_type = "region_absolute",
   save = F, aspect_ratio = 0.4
 )
 
@@ -265,6 +242,7 @@ pcgdp_historical_chart_national_baht <- rchart::chart(
                   year <= 2020,
                   region == "Thailand"),
       value = value*1000),
+  chart_type = "param_absolute",
   save = F, aspect_ratio = 0.5)
 
 pcgdp_historical_chart_national_baht$chart_param +
@@ -287,6 +265,7 @@ pcgdp_historical_chart_mea_baht <- rchart::chart(
                   year <= 2020,
                   !(region %in% c("Thailand", "Rest of Thailand"))), 
       value = value*1000),
+  chart_type = "region_absolute",
   save = F, aspect_ratio = 0.4)
 
 pcgdp_historical_chart_mea_baht$chart_region_absolute +
@@ -317,6 +296,7 @@ pcgdp_all_baht <- rchart::chart(
     dplyr::filter(pcgdp_baht, region != "Rest of Thailand",
                   year > 2020),
     value = value),
+  chart_type = "region_absolute",
   save = F, aspect_ratio = 0.4
 )
 
@@ -345,6 +325,7 @@ pcgdp_growth_charts <- rchart::chart(
   dplyr::mutate(
     dplyr::filter(pcgdp_growth_baht, region != "Rest of Thailand",
                   year > 2021)),
+  chart_type = "region_absolute",
   save = F, aspect_ratio = 0.4
 )
 
@@ -357,1046 +338,7 @@ pcgdp_growth_charts$chart_region_absolute +
 ```
 
 
-<!-------------------------->
-<!-------------------------->
-# GCAM Initial Diagnostics {.tabset}
-<!-------------------------->
-<!-------------------------->
 
-
-<!-------------------------->
-## Electricity {.tabset .tabset-pills}
-<!-------------------------->
-
-
-### National
-
-```{r national electricity consumption data prep}
-# read in local data
-local_national_elec_consump <- read.csv(
-  "../data/thailand/outputs/local_national_elec_consump.csv"
-)
-
-# read in and process gcam data
-gcam_elec_consump_sector <- process_gcam_data(
-  read.csv("../data/thailand/outputs/queryoutall_elec_consump_sector.csv", 
-           skip = 1, check.names = F),
-  processed = F, sector, input)
-
-# aggregate gcam sectors
-gcam_elec_consump_agg_sector <- dplyr::bind_rows(
-  aggregate_rows(gcam_elec_consump_sector, class, "industry", industry_group),
-  aggregate_rows(gcam_elec_consump_sector, class, "buildings", building_group),
-  aggregate_rows(gcam_elec_consump_sector, class, "transport", transport_group)  
-)
-
-# aggregate local sectors
-local_national_elec_consump_agg <- dplyr::bind_rows(
-  aggregate_rows(local_national_elec_consump, class, "industry", industry_group_local),
-  aggregate_rows(local_national_elec_consump, class, "buildings", building_group_local),
-  aggregate_rows(local_national_elec_consump, class, "other", other_group_local)
-)
-
-# combine local and national data
-all_elec_consump_sector_national <- dplyr::full_join(
-  dplyr::ungroup(local_national_elec_consump_agg),
-  dplyr::ungroup(gcam_elec_consump_agg_sector))
-
-```
-
-The figures below compare GCAM output with local data for national electricity consumption (total and by sector).
-
-```{r national consumption total charts, fig.dim=c(8,4), fig.cap="**Figure 10.1.1.1. National electricity consumption from 2005 to 2100 (left) and 2011 to 2020 (right) from GCAM output (blue) and local utilities data (red). Local data source: [Energy Policy and Planning office](http://www.eppo.go.th/index.php/en/en-energystatistics/electricity-statistic)**"}
-
-# 2010 to 2020 total elec consump
-elec_consump_national_chart_local <- rchart::chart(
-  dplyr::filter(all_elec_consump_sector_national, year <= 2020, year >= 2010),
-  save = F)
-
-p1 <- elec_consump_national_chart_local$chart_param_Thailand +
-        ggplot2::theme(strip.text = ggplot2::element_blank(),
-                       plot.margin = ggplot2::unit(c(0,0,1,0), "cm")) +
-        ggplot2::ylab("") + ggplot2::ggtitle("") 
-
-
-# 2000 to 2100 total elec consump
-elec_consump_national_chart_gcam <- rchart::chart(
-  dplyr::filter(all_elec_consump_sector_national, year >= 2000),
-  save = F
-)
-
-p2 <- elec_consump_national_chart_gcam$chart_param_Thailand +
-        ggplot2::ylab("Electricity Consumption (EJ)") +
-        ggplot2::theme(strip.text = ggplot2::element_blank(),
-                       plot.margin = ggplot2::unit(c(0,0,1,0), "cm"),
-                       axis.title.y = ggplot2::element_text(size = 12)) +
-        ggplot2::ggtitle("")
-
-
-ggpubr::ggarrange(p2, p1, nrow = 1, common.legend = T, legend = "bottom") +
-  ggplot2::theme(plot.margin = ggplot2::unit(c(0,0,0.5,0), "cm"))
-
-```
-
-<br> 
-<br>
-
-
-```{r national consumption by sector 1, fig.dim=c(9,4), fig.cap="**Figure 10.1.1.2. National electricity consumption by sector in 2015 and 2020 from local utilities data (left) and GCAM output (right). Local data source: [Energy Policy and Planning office](http://www.eppo.go.th/index.php/en/en-energystatistics/electricity-statistic)**"}
-# 2015, 2020 chart elec consump by sector
-elec_consump_sector_national_chart_local <- rchart::chart(
-  dplyr::filter(all_elec_consump_sector_national, year %in% c(2015,2020)),
-  save = F)
-
-elec_consump_sector_national_chart_local$chart_class_Thailand +
-  ggplot2::ylab("Electricity Consumption (EJ)") +
-  ggplot2::ggtitle("") +
-  ggplot2::theme(plot.margin = ggplot2::unit(c(0,0,0.5,0), "cm"),
-                 axis.title.y = ggplot2::element_text(size = 12))
-```
-
-<br>
-<br>
-
-The figure below shows the long-term GCAM output for national electricity consumption.
-
-```{r national consumption by sector 2, fig.dim=c(9,4), fig.cap="**Figure 10.1.1.3. GCAM output national electricity consumption by sector from 2010 to 2100**"}
-#2000 to 2100 chart for elec consump by sector, just gcam
-elec_consump_sector_national_chart_gcam <- rchart::chart(
-  dplyr::filter(all_elec_consump_sector_national,
-                year >= 2010, year <= 2100,
-                scenario == "Ref"), save = F, aspect_ratio = 0.5)
-
-elec_consump_sector_national_chart_gcam$chart_class_Thailand + 
-  ggplot2::ylab("Electricity Consumption (EJ)") +
-  ggplot2::ggtitle("") + 
-  ggplot2::theme(strip.text = ggplot2::element_blank(),
-                 plot.margin = ggplot2::unit(c(0,0,0.5,0), "cm"))
-
-```
-
-<br>
-<br>
-
-<p align="center"> <img src="images/divider.png"></p>
-
-### MEA service area
-
-```{r total consumption MEA area data prep}
-# read in local data
-local_mea_elec_consump <- tidyr::drop_na(read.csv(
-  "../data/thailand/outputs/local_mea_area_elec_consump.csv"
-))
-
-# aggregate local sectors
-local_mea_elec_consump_agg <- dplyr::bind_rows(
-  aggregate_rows(local_mea_elec_consump, class, "industry", industry_group_local),
-  aggregate_rows(local_mea_elec_consump, class, "buildings", building_group_local),
-  aggregate_rows(local_mea_elec_consump, class, "other", other_group_local)
-)
-
-# combine local and national data
-all_elec_consump_sector_mea <- dplyr::full_join(
-  local_mea_elec_consump_agg, gcam_elec_consump_agg_sector)
-
-```
-
-The figures below compare GCAM output with local data for electricity consumption in the MEA service area (total and by sector).
-
-```{r consumption MEA area total charts, fig.dim=c(8,4), fig.cap="Figure 10.1.2.1. **Electricity consumption in the MEA service area from 2005 to 2100 (left) and 2011 to 2020 (right) from GCAM output (blue) and MEA data (red). Local data source: [Energy Policy and Planning office](http://www.eppo.go.th/index.php/en/en-energystatistics/electricity-statistic)**"}
-
-# 2010 to 2020 total elec consump
-elec_consump_mea_chart_local <- rchart::chart(
-  dplyr::filter(all_elec_consump_sector_mea, year <= 2020, year >= 2010),
-  save = F)
-
-p1 <- elec_consump_mea_chart_local$`chart_param_MEA area` +
-        ggplot2::theme(strip.text = ggplot2::element_blank(),
-                       plot.margin = ggplot2::unit(c(0,0,1,0), "cm")) +
-        ggplot2::ylab("") +
-        ggplot2::ggtitle("") 
-
-
-# 2000 to 2100 total elec consump
-elec_consump_mea_chart_gcam <- rchart::chart(
-  dplyr::filter(all_elec_consump_sector_mea, year >= 2000),
-  save = F
-)
-
-p2 <- elec_consump_mea_chart_gcam$`chart_param_MEA area` +
-        ggplot2::ylab("Electricity Consumption (EJ)") +
-        ggplot2::theme(strip.text = ggplot2::element_blank(),
-                       plot.margin = ggplot2::unit(c(0,0,1,0), "cm"),
-                       axis.title.y = ggplot2::element_text(size = 12)) +
-        ggplot2::ggtitle("")
-
-
-ggpubr::ggarrange(p2, p1, nrow = 1, common.legend = T, legend = "bottom") +
-  ggplot2::theme(plot.margin = ggplot2::unit(c(0,0,0.5,0), "cm"))
-
-```
-
-<br>
-<br>
-
-
-```{r consumption by sector MEA area chart 1, fig.dim=c(9,4), fig.cap="**Figure 10.1.2.2. Electricity consumption by sector in the MEA service area from MEA data (left) and GCAM output (right) in 2015 and 2020. Local data source: [Energy Policy and Planning office](http://www.eppo.go.th/index.php/en/en-energystatistics/electricity-statistic)**"}
-
-# chart of electricity consumption by sector (2010 to 2020)
-elec_consump_sector_mea_chart_local <- rchart::chart(
-  dplyr::filter(all_elec_consump_sector_mea, year %in% c(2015, 2020)),
-  save = F)
-
-elec_consump_sector_mea_chart_local$`chart_class_MEA area` +
-  ggplot2::ylab("Electricity Consumption (EJ)") +
-  ggplot2::ggtitle("")
-
-```
-
-<br>
-<br>
-
-The figure below shows the long-term GCAM output for electricity consumption by sector in the MEA service area.
-
-``` {r consumption by sector MEA area chart 2, fig.dim=c(9,4), fig.cap="**Figure 10.1.2.3. GCAM output electricity consumption by sector in the MEA service area from 2010 to 2100**"}
-# chart of electricity consumption by sector (gcam, 2000 to 2100)
-elec_consump_sector_gcam_chart <- rchart::chart(dplyr::filter(
-  all_elec_consump_sector_mea, scenario == "Ref", year >= 2010),
-  save = F, aspect_ratio = 0.5)
-
-elec_consump_sector_gcam_chart$`chart_class_MEA area` +
-  ggplot2::ylab("Electricity Consumption (EJ)") +
-  ggplot2::theme(strip.text = ggplot2::element_blank(),
-                 plot.margin = ggplot2::unit(c(0,0,0.5,0), "cm")) +
-  ggplot2::ggtitle("")
-
-
-```
-
-<br>
-<br>
-
-<p align="center"> <img src="images/divider.png"></p>
-
-<!-------------------------->
-## Energy {.tabset .tabset-pills}
-<!-------------------------->
-
-
-### National
-
-```{r national final energy data prep}
-
-######## by fuel ########
-
-# read in and process gcam data
-gcam_final_energy_fuel <- process_gcam_data(
-  read.csv("../data/thailand/outputs/queryoutall_final_energy_consump_fuel_sector.csv", skip = 1, check.names = F),
-  processed = F, input, sector
-)
-
-
-
-# read in local data
-local_national_final_energy_fuel <- read.csv(
-  "../data/thailand/outputs/local_national_final_energy_fuel.csv",
-  check.names = F
-)
-
-
-# aggregate fuel types for local data
-local_national_final_energy_fuel_agg <- dplyr::bind_rows(
-  aggregate_rows(local_national_final_energy_fuel, class,
-                 "electricity", electricity_group_local),
-  aggregate_rows(local_national_final_energy_fuel, class,
-                 "refined liquids", liquids_group_local),
-  aggregate_rows(local_national_final_energy_fuel, class,
-                 "gas", gas_group_local),
-  aggregate_rows(local_national_final_energy_fuel, class,
-                 "coal", coal_group_local)
-)
-
-
-# combine local and gcam data
-all_national_final_energy_fuel <- dplyr::bind_rows(
-  local_national_final_energy_fuel_agg, gcam_final_energy_fuel
-)
-
-
-
-######### by sector ##########
-# read in and process gcam data
-gcam_final_energy_sector <- process_gcam_data(
-   read.csv("../data/thailand/outputs/queryoutall_final_energy_consump_fuel_sector.csv", skip = 1, check.names = F),
-  processed = F, sector, input
-)
-
-# aggregate gcam sectors
-gcam_final_energy_agg_sector <- dplyr::bind_rows(
-  aggregate_rows(gcam_final_energy_sector, class, "industry", industry_group),
-  aggregate_rows(gcam_final_energy_sector, class, "buildings", building_group),
-  aggregate_rows(gcam_final_energy_sector, class, "transport", transport_group),
-)
-
-# read in local data
-local_national_final_energy_sector <- dplyr::mutate(read.csv(
-  "../data/thailand/outputs/local_national_final_energy_sector.csv",
-  check.names = F
-),value = value/23884.58966)
-
-# aggregate fuel types for local data
-local_national_final_energy_sector_agg <- dplyr::bind_rows(
-  aggregate_rows(local_national_final_energy_sector, class,
-                 "industry", industry_group_local),
-  aggregate_rows(local_national_final_energy_sector, class,
-                 "buildings", building_group_local),
-  aggregate_rows(local_national_final_energy_sector, class,
-                 "transport", transport_group_local)
-)
-
-# combine gcam and local data
-all_national_final_energy_sector <- dplyr::bind_rows(
-  local_national_final_energy_sector_agg, gcam_final_energy_agg_sector
-)
-
-
-
-```
-
-The figures below compare GCAM output with local data for national final energy consumption (total, by fuel type, and by sector).
-
-```{r national final energy total charts, fig.dim=c(8,4), fig.cap="Figure 10.2.1.1. **National total final energy from 1986 to 2100 (left) and 1986 to 2020 (right) from GCAM output (blue) and local data (red). Local data source: [Energy Policy and Planning Office](http://www.eppo.go.th/index.php/en/en-energystatistics/summary-statistic?orders[publishUp]=publishUp&issearch=1)**"}
-
-# total final energy, 1986 to 2020
-national_final_energy_chart_local <- rchart::chart(
-  dplyr::filter(all_national_final_energy_fuel, year <= 2020),
-  save = F
-)
-
-p1 <- national_final_energy_chart_local$chart_param_Thailand +
-        ggplot2::ylab("") +
-        ggplot2::theme(strip.text = ggplot2::element_blank(),
-                       plot.margin = ggplot2::unit(c(0,0,0.5,0), "cm")) +
-        ggplot2::ggtitle("") 
-
-
-# total final energy, 1986 to 2100
-national_final_energy_chart_gcam <- rchart::chart(
-  all_national_final_energy_fuel,
-  save = F
-)
-
-p2 <- national_final_energy_chart_gcam$chart_param_Thailand +
-      ggplot2::ylab("Energy (EJ)") +
-      ggplot2::theme(strip.text = ggplot2::element_blank()) +
-      ggplot2::ggtitle("") +
-      ggplot2::scale_y_continuous(breaks = scales::pretty_breaks())
-
-ggpubr::ggarrange(p2, p1, nrow = 1, common.legend = T, legend = "bottom", 
-                  widths = c(1,0.975)) +
-  ggplot2::theme(plot.margin = ggplot2::unit(c(0,0,0.5,0), "cm"))
-
-```
-
-<br>
-<br>
-
-```{r national final energy consumption by fuel 1, fig.dim=c(9,4), fig.cap="**Figure 10.2.1.2. National total final energy by fuel from local data (left) and GCAM output (right) from 2005 to 2020. Local data source: [Energy Policy and Planning Office](http://www.eppo.go.th/index.php/en/en-energystatistics/summary-statistic?orders[publishUp]=publishUp&issearch=1)**"}
-
-# 2005 to 2020 final energy by fuel (gcam and local)
-final_energy_fuel_chart_local <- rchart::chart(dplyr::filter(
-  all_national_final_energy_fuel, year >= 2005, year <= 2020, year %% 5 == 0),
-  save = F)
-
-final_energy_fuel_chart_local$chart_class_Thailand +
-  ggplot2::ggtitle("") + ggplot2::ylab("Energy (EJ)")
-```
-
-<br>
-<br>
-
-```{r national final energy consumption by sector 1, fig.dim=c(9,4), fig.cap="**Figure 10.2.1.3. National total final energy by sector from local data (left) and GCAM output (right) in 2015. Local data source: [Energy Efficiency Plan 2018](https://www.dede.go.th/ewt_w3c/ewt_dl_link.php?filename=index&nid=54495)**"}
-
-# 2005 to 2020 final energy by fuel (gcam and local)
-final_energy_sector_chart_local <- rchart::chart(dplyr::filter(
-  all_national_final_energy_sector, year == 2015),
-  save = F)
-
-final_energy_sector_chart_local$chart_class_Thailand +
-  ggplot2::ggtitle("") + ggplot2::ylab("Energy (EJ)")
-```
-
-<br>
-<br>
-
-The figures below show the long-term GCAM output for national final energy consumption by fuel and by sector.
-
-``` {r national final energy consumption by fuel 2, fig.dim=c(9,4), fig.cap="**Figure 10.2.1.4. GCAM output national total final energy consumption by fuel from 2010 to 2100**"}
-# 2005 to 2100 final energy by fuel (just gcam)
-final_energy_fuel_chart_gcam <- rchart::chart(dplyr::filter(
-  all_national_final_energy_fuel, year >= 2010, scenario == "Ref"),
-  save = F, break_interval = 3, aspect_ratio = 0.5)
-
-final_energy_fuel_chart_gcam$chart_class_Thailand +
-  ggplot2::ggtitle("") + ggplot2::ylab("Energy (EJ)") +
-  ggplot2::theme(plot.margin = ggplot2::unit(c(0,0,0.5,0), "cm"))
-
-```
-
-<br>
-<br>
-
-
-```{r national final energy consumption by sector charts, fig.dim=c(9,4), fig.cap="**Figure 10.2.1.5. GCAM output national total final energy consumption by sector from 2010 to 2100**"}
-
-
-# 2000 to 2100, gcam only (no local data available)
-gcam_final_energy_agg_sector_chart <- rchart::chart(
-  dplyr::filter(gcam_final_energy_agg_sector, year > 2010),
-  save = F, aspect_ratio = 0.5
-)
-
-gcam_final_energy_agg_sector_chart$chart_class_Thailand +
-  ggplot2::ggtitle("") + ggplot2::ylab("Energy (EJ)") +
-  ggplot2::theme(plot.margin = ggplot2::unit(c(0,0,0.5,0), "cm"))
-
-```
-
-<br>
-<br>
-
-<p align="center"> <img src="images/divider.png"></p>
-
-### MEA service area
-
-We have not identified any local data regarding energy consumption in the MEA service area. Below are some initial energy results from GCAM for the region.
-
-```{r MEA energy consumption total, fig.dim = c(9,4), fig.cap="**Figure 10.2.2.1. GCAM output of total final energy consumption in the MEA service area**"}
-gcam_final_energy_agg_sector_chart$`chart_param_MEA area` +
-  ggplot2::ggtitle("") + ggplot2::ylab("Energy Consumption (EJ)")
-  ggplot2::theme(legend.position = "none",
-                 plot.margin = ggplot2::unit(c(0,0,0.5,0), "cm"))
-
-```
-
-<br>
-<br>
-
-```{r MEA energy consumption by sector, fig.dim = c(9,4), fig.cap="**Figure 10.2.2.2. GCAM output of total final energy consumption by sector in the MEA service area**"}
-gcam_final_energy_agg_sector_chart$`chart_class_MEA area`+
-  ggplot2::ggtitle("") + ggplot2::ylab("Energy Consumption (EJ)") +
-  ggplot2::theme(plot.margin = ggplot2::unit(c(0,0,0.5,0), "cm"))
-```
-
-<br>
-<br>
-
-```{r MEA energy consumption by fuel, fig.dim = c(9,4), fig.cap="**Figure 10.2.2.3. GCAM output of total final energy consumption by fuel in the MEA service area**"}
-final_energy_fuel_chart_gcam$`chart_class_MEA area`+
-  ggplot2::ggtitle("") + ggplot2::ylab("Energy Consumption (EJ)") +
-  ggplot2::theme(plot.margin = ggplot2::unit(c(0,0,0.5,0), "cm"))
-```
-
-<br>
-<br>
-
-<p align="center"> <img src="images/divider.png"></p>
-
-<!-------------------------->
-## Emissions {.tabset .tabset-pills}
-<!-------------------------->
-
-
-### National
-
-```{r national co2 emissions data prep}
-C_to_CO2 <- 44/12
-
-# read in and process gcam data
-gcam_co2_emissions_sector <- dplyr::mutate(
-  process_gcam_data(
-  read.csv("../data/thailand/outputs/queryoutall_co2_emissions_sector.csv", skip = 1, check.names = F),
-  processed = F, sector), value = value * C_to_CO2, Units = "MTCO2"
-)
-
-# aggregate gcam sectors
-gcam_co2_emissions_agg_sector <- dplyr::bind_rows(
-  aggregate_rows(gcam_co2_emissions_sector, class, "industry", industry_group),
-  aggregate_rows(gcam_co2_emissions_sector, class, "buildings", building_group),
-  aggregate_rows(gcam_co2_emissions_sector, class, "transportation", transport_group),
-  aggregate_rows(gcam_co2_emissions_sector, class, "electricity", elec_group),
-  aggregate_rows(gcam_co2_emissions_sector, class, "other", other_group)
-)
-
-# read in local data 
-local_national_co2_emissions_sector <- dplyr::mutate(
-  read.csv(
-  "../data/thailand/outputs/local_national_co2_emissions_sector.csv",
-  check.names = F)
-)
-
-# combine local and gcam data
-all_national_co2_emissions_sector <- dplyr::bind_rows(
-  gcam_co2_emissions_agg_sector, local_national_co2_emissions_sector
-)
-```
-
-The figures below compare GCAM output with local data for national CO2 emissions (total and by sector).
-
-```{r national co2 emissions total, fig.dim=c(8,4), fig.cap="**Figure 10.3.1.1. National total CO2 emissions from 1986 to 2100 (left) and 1986 to 2015 (right) from GCAM output (blue) and local data (red). Local data source: [Energy Policy and Planning Office](http://www.eppo.go.th/index.php/en/en-energystatistics/co2-statistic)**"}
-
-# 1986 to 2015
-national_co2_emissions_plot_local <- rchart::chart( dplyr::filter(
-  all_national_co2_emissions_sector, year >= 1986, year <= 2015),
-  save = F
-)
-
-p1 <- national_co2_emissions_plot_local$chart_param_Thailand +
-  ggplot2::ylab("") + ggplot2::ggtitle("") +
-  ggplot2::theme(strip.text = ggplot2::element_blank())
-
-
-# 2000 to 2100
-national_co2_emissions_plot_gcam <- rchart::chart(dplyr::filter(
-  all_national_co2_emissions_sector, year >= 1986),
-  save = F)
-
-p2 <- national_co2_emissions_plot_gcam$chart_param_Thailand +
-  ggplot2::ylab("CO2 emissions (MT)") + ggplot2::ggtitle("") +
-  ggplot2::theme(strip.text = ggplot2::element_blank())
-
-ggpubr::ggarrange(p2, p1, align = "h", common.legend = T, legend = "bottom") +
-  ggplot2::theme(plot.margin = ggplot2::unit(c(0,0,0.5,0), "cm"))
-
-
-```
-
-<br>
-<br>
-
-```{r national co2 emissions by sector plots, fig.dim=c(9,4), fig.cap="**Figure 10.3.1.2. National total CO2 emissions by sector from local data (left) and GCAM output (right) from 2005 to 2015. Local data source: [Energy Policy and Planning Office](http://www.eppo.go.th/index.php/en/en-energystatistics/co2-statistic)**"}
-
-# 2005 to 2015
-national_co2_emissions_sector_plot_local <- rchart::chart( dplyr::filter(
-  all_national_co2_emissions_sector, year >= 2005, year <= 2015, year %% 5 == 0),
-  save = F
-)
-
-national_co2_emissions_sector_plot_local$chart_class_Thailand +
-  ggplot2::ggtitle("") + ggplot2::ylab("CO2 Emissions (MT)") +
-  ggplot2::theme(plot.margin = ggplot2::unit(c(0,0,0.5,0), "cm"))
-```
-
-<br>
-<br>
-
-The figure below shows the long-term GCAM output for national CO2 emissions by sector.
-
-```{r national co2 emissions by sector gcam, fig.dim = c(9,4), fig.cap="**Figure 10.3.1.3. GCAM output of national total CO2 emissions by sector through 2100**"}
-# 2000 to 2100 (just gcam)
-national_co2_emissions_sector_plot_gcam <- rchart::chart(dplyr::filter(
-  all_national_co2_emissions_sector, year >= 2000, scenario == "Ref"),
-  save = F)
-
-national_co2_emissions_sector_plot_gcam$chart_class_Thailand +
-  ggplot2::ggtitle("") + ggplot2::ylab("CO2 Emissions (MT)") +
-  ggplot2::theme(strip.background = ggplot2::element_blank(),
-                 plot.margin = ggplot2::unit(c(0,0,0.5,0), "cm"))
-
-
-```
-
-<br>
-<br>
-
-<p align="center"> <img src="images/divider.png"></p>
-
-### MEA service area
-
-We have not identified any local data concerning emissions in the MEA service area. Below are some initial emissions results from GCAM for the region.
-
-```{r MEA co2 emissions total gcam, fig.dim = c(9,4), fig.cap="**Figure 10.3.2.1 GCAM output of total CO2 emissions in the MEA service area**"}
-mea_co2_emissions_sector_plot_gcam <- rchart::chart(dplyr::filter(
-  all_national_co2_emissions_sector, year >= 2000, scenario == "Ref"),
-  save = F, aspect_ratio = 0.5)
-
-mea_co2_emissions_sector_plot_gcam$`chart_param_MEA area` +
-  ggplot2::ggtitle("") + ggplot2::ylab("CO2 Emissions (MT)") +
-  ggplot2::theme(legend.position = "none",
-                 plot.margin = ggplot2::unit(c(0,0,0.5,0), "cm"))
-```
-
-<br>
-<br>
-
-```{r MEA co2 emissions sector gcam, fig.dim = c(9,4), fig.cap="**Figure 10.3.2.2. GCAM output of total CO2 emissions in the MEA service area**"}
-
-mea_co2_emissions_sector_plot_gcam$`chart_class_MEA area` +
-  ggplot2::ggtitle("") + ggplot2::ylab("CO2 Emissions (MT)") +
-  ggplot2::theme(plot.margin = ggplot2::unit(c(0,0,0.5,0), "cm"))
-```
-
-
-<br>
-<br>
-
-<p align="center"> <img src="images/divider.png"></p>
-
-<!-------------------------->
-## Transportation {.tabset .tabset-pills}
-<!-------------------------->
-
-### National
-
-```{r transportation data prep}
-# read in local data
-local_national_transport_output <- read.csv(
-  "../data/thailand/outputs/local_national_transport_output.csv",
-  check.names = F
-)
-
-local_national_transport_ghg <- read.csv(
-  "../data/thailand/outputs/local_transport_ghg_emissions_mode.csv",
-  check.names = F, skip = 1
-)
-
-# read in and process gcam data
-gcam_transport_output_subsector <- process_gcam_data(
-  read.csv("../data/thailand/outputs/queryoutall_transport_output_tech.csv", skip = 1, check.names = F),
-  processed = F, subsector, sector, technology
-)
-
-gcam_ghg_subsector <- process_gcam_data(conv_ghg_co2e(process_gcam_data(
-  read.csv("../data/thailand/outputs/queryoutall_non_co2_emissions_subsector.csv", skip = 1, check.names = F))),
-  processed = T, subsector, sector, GHG)
-
-# gcam_ghg_subsector_raw <- process_gcam_data(
-#   read.csv("data/thailand/outputs/queryoutall_non_co2_emissions_subsector.csv", skip = 1, check.names = F),
-#   processed = F, subsector, sector, GHG)
-
-# aggregate GCAM data
-gcam_transport_output_agg_subsector <- dplyr::bind_rows(
-  aggregate_rows(gcam_transport_output_subsector, class, "road", road_group),
-  aggregate_rows(gcam_transport_output_subsector, class, "rail", rail_group),
-  aggregate_rows(gcam_transport_output_subsector, class, "ship", ship_group),
-  aggregate_rows(gcam_transport_output_subsector, class, "air", air_group)
-)
-
-gcam_transport_ghg <- dplyr::bind_rows(
-  aggregate_rows(gcam_ghg_subsector, class, "road", road_group),
-  aggregate_rows(gcam_ghg_subsector, class, "rail", rail_group),
-  aggregate_rows(gcam_ghg_subsector, class, "ship", ship_group),
-  aggregate_rows(gcam_ghg_subsector, class, "air", air_group)
-)
-
-# gcam_transport_ghg_raw <- dplyr::bind_rows(
-#   aggregate_rows(gcam_ghg_subsector_raw, class, "road", road_group),
-#   aggregate_rows(gcam_ghg_subsector_raw, class, "rail", rail_group),
-#   aggregate_rows(gcam_ghg_subsector_raw, class, "ship", ship_group),
-#   aggregate_rows(gcam_ghg_subsector_raw, class, "air", air_group)
-# )
-
-# combine GCAM and local data
-all_national_transport_sector <- dplyr::ungroup(    dplyr::bind_rows(gcam_transport_output_agg_subsector, local_national_transport_output))
-
-all_transport_ghg <- dplyr::ungroup(dplyr::bind_rows(gcam_transport_ghg, local_national_transport_ghg))
-
-```
-
-The figures below compare GCAM output with local data for national greenhouse gas emissions in the transportation sector (total and by mode of transport).
-
-```{r national transport ghg total, fig.dim = c(9,4), fig.cap="**Figure 10.4.1.1. National GHG emissions in transportation from GCAM output (blue) and local data (red). Local data source: [Ministry of Transport](https://datagov.mot.go.th/dataset/transport-ghg)**"}
-transport_ghg_chart1 <- rchart::chart(dplyr::filter(
-  all_transport_ghg, year >= 2000),
-  save = F
-  )
-
-p1 <- transport_ghg_chart1$chart_param_Thailand +
-  ggplot2::ylim(c(0, 350)) +
-  ggplot2::ylab("GHG Emissions (MT CO2eq)") + ggplot2::ggtitle("") +
-  ggplot2::theme(axis.title.y = ggplot2::element_text(size = 12))
-
-transport_ghg_chart2 <- rchart::chart(dplyr::filter(
-  all_transport_ghg, year >= 2000, year <= 2020),
-  save = F
-  )
-
-p2 <- transport_ghg_chart2$chart_param_Thailand +
-  ggplot2::ylim(c(0, 100)) +
-  ggplot2::ylab("") + ggplot2::ggtitle("")
-
-ggpubr::ggarrange(p1, p2, nrow = 1, common.legend = T, legend = "bottom") +
-  ggplot2::theme(plot.margin = ggplot2::unit(c(0,0,0.5,0), "cm"))
-
-
-```
-
-<br>
-<br>
-
-```{r transport ghg by mode, fig.dim=c(9,4), fig.cap="**Figure 10.4.1.2. National GHG emissions by mode of transportation from local data (left) and GCAM output (right). Local data source: [Ministry of Transport](https://datagov.mot.go.th/dataset/)**"}
-transport_ghg_sector_chart <- rchart::chart(dplyr::filter(
-  all_transport_ghg, year %in% c(2005, 2010, 2015)),
-  save = F)
-
-transport_ghg_sector_chart$chart_class_Thailand +
-  ggplot2::ggtitle("") + ggplot2::ylab("GHG Emissions (MT CO2eq)") +
-  ggplot2::theme(axis.title.y = ggplot2::element_text(size = 12),
-                 plot.margin = ggplot2::unit(c(0,0,0.5,0), "cm"))
-```
-
-<br>
-<br>
-
-The figure below shows the long-term GCAM output for national greenhouse gas emissions by mode of transport.
-
-```{r transport ghg by mode gcam, fig.dim=c(9,4), fig.cap="**Figure 10.4.1.3. GCAM output of national GHG emissions by mode of transportation through 2100**"}
-transport_ghg_sector_chart2 <- rchart::chart(dplyr::filter(
-  all_transport_ghg, year >= 2010, scenario == "Ref"), 
-  save = F, aspect_ratio = 0.5)
-
-transport_ghg_sector_chart2$chart_class_Thailand +
-  ggplot2::ggtitle("") + ggplot2::ylab("GHG Emissions (MT CO2eq)") +
-  ggplot2::theme(axis.title.y = ggplot2::element_text(size = 12),
-                 plot.margin = ggplot2::unit(c(0,0,0.5,0), "cm"))
-
-```
-
-<br>
-<br>
-
-<p align="center"> <img src="images/divider.png"></p>
-
-### MEA service area
-
-We have not identified any local transportation data in the MEA service area. Below are some initial transportation results from GCAM for the region.
-
-```{r total transportation ghg mea, fig.dim=c(9,4), fig.cap="**Figure 10.4.2.1. GCAM output of total GHG emissions from transportation in the MEA service area**"}
-transport_ghg_sector_chart2$`chart_param_MEA area` +
-  ggplot2::ggtitle("") + ggplot2::ylab("GHG Emissions (MT CO2eq)") +
-  ggplot2::theme(plot.margin = ggplot2::unit(c(0,0,0.5,0),"cm")) +
-  ggplot2::ylim(c(0,35))
-
-```
-
-<br>
-<br>
-
-```{r total transportation ghg mea mode, fig.dim=c(9,4), fig.cap="**Figure 10.4.2.2 GCAM output of GHG emissions by transportation mode in the MEA service area**"}
-transport_ghg_sector_chart2$`chart_class_MEA area` +
-  ggplot2::ggtitle("") + ggplot2::ylab("GHG Emissions (MT CO2eq)") +
-  ggplot2::theme(plot.margin = ggplot2::unit(c(0,0,0.5,0),"cm")) 
-
-```
-
-<br>
-<br>
-
-<p align="center"> <img src="images/divider.png"></p>
-
-<!-------------------------->
-## Buildings {.tabset .tabset-pills}
-<!-------------------------->
-
-We have not identified local data regarding buildings energy consumption. Below are some initial GCAM outputs for the national and MEA service area regions.
-
-```{r national buildings energy data prep}
-
-# read in and process gcam data
-gcam_buildings_final_energy_fuel <- process_gcam_data(
-  read.csv("../data/thailand/outputs/queryoutall_building_final_energy_service_fuel.csv", skip = 1, check.names = F),
-  processed = F, input, sector
-)
-
-gcam_buildings_final_energy_sector <- process_gcam_data(
-  read.csv("../data/thailand/outputs/queryoutall_building_final_energy_service_fuel.csv", skip = 1, check.names = F),
-  processed = F, sector, input
-)
-
-# aggregate gcam classes
-gcam_buildings_final_energy_agg_sector <- dplyr::bind_rows(
-  aggregate_rows(gcam_buildings_final_energy_sector, class, "commercial", comm_group),
-  aggregate_rows(gcam_buildings_final_energy_sector, class, "residential", resid_group)
-)
-
-gcam_buildings_final_energy_agg_fuel <- dplyr::bind_rows(
-  aggregate_rows(gcam_buildings_final_energy_fuel, class, "biomass", biomass_group),
-  aggregate_rows(gcam_buildings_final_energy_fuel, class, "electricity", electricity_group),
-  aggregate_rows(gcam_buildings_final_energy_fuel, class, "refined liquids", liquids_group),
-  aggregate_rows(gcam_buildings_final_energy_fuel, class, "gas", gas_group)
-)
-
-
-```
-
-```{r GCAM buildings energy total all regions, fig.dim=c(9,4), fig.cap="**Figure 10.5.1. GCAM output for buildings final energy consumption in all regions from 2005 to 2100**"}
-gcam_buildings_energy_sector_chart <- rchart::chart(dplyr::filter(
-  gcam_buildings_final_energy_sector, 
-    region %in% c("MEA area", "Rest of Thailand", "Thailand"),
-    year > 2000),
-  save = F, aspect_ratio = 0.5)
-
-gcam_buildings_energy_sector_chart$chart_region_absolute +
-  ggplot2::ylab("Buildings Energy Consumption (EJ)") +
-  ggplot2::theme(axis.title.y = ggplot2::element_text(size = 12),
-                 plot.margin = ggplot2::unit(c(0,0,0.5,0), "cm"))
-```
-
-<br>
-<br>
-
-```{r GCAM buildings energy consumption by sector, fig.dim=c(9,4), fig.cap="**Figure 10.5.2. GCAM output for buildings energy consumption by sector in the MEA service area (top) and the rest of Thailand (bottom)**"}
-
-
-p1 <- gcam_buildings_energy_sector_chart$`chart_class_MEA area` +
-  ggplot2::ylab("Buildings Energy Consumption (EJ)") +
-  ggplot2::theme(axis.title.y = ggplot2::element_text(size = 12))
-
-p2 <- gcam_buildings_energy_sector_chart$`chart_class_Rest of Thailand` +
-  ggplot2::ylab("") 
-
-ggpubr::ggarrange(p1, p2, common.legend = T, nrow = 1, legend = "bottom") +
-  ggplot2::theme(plot.margin = ggplot2::unit(c(0,0,0.5,0), "cm"))
-```
-
-
-<br>
-<br>
-
-<p align="center"> <img src="images/divider.png"></p>
-
-<!-------------------------->
-<!-------------------------->
-# Summary Figures {.tabset}
-<!-------------------------->
-<!-------------------------->
-
-
-<!-------------------------->
-## Overall Indicators {.tabset}
-<!-------------------------->
-
-```{r summary 1 data}
-# ghg emissions by sector
-ghg_sector <- filter(
-  process_gcam_data(
-    read.csv("../data/thailand/outputs/summary/queryoutall_non_co2_emissions_sector.csv",
-            skip = 1, check.names = F),
-    processed = F, class_name = sector, GHG), 
-  region %in% c("Thailand", "MEA area"),
-  year >= 2015, year <= 2070) 
-
-# ghg emissions by aggregate sector
-ghg_agg_sector <-  dplyr::bind_rows(
-  aggregate_rows(ghg_sector, class, "buildings", building_group),
-  aggregate_rows(ghg_sector, class, "industry", industry_group),
-  aggregate_rows(ghg_sector, class, "transport", transport_group)) %>% 
-  mutate(param = "GHG emissions by sector")
-
-# ghg emissions by gas
-ghg_gas <- filter(process_gcam_data(
-  read.csv("../data/thailand/outputs/summary/queryoutall_non_co2_emissions_sector.csv",
-           skip = 1, check.names = F),
-  processed = F, class_name = GHG, sector) %>% 
-  mutate(param = "GHG emissions by gas"),
-  region %in% c("Thailand", "MEA area"),
-  year >= 2015, year <= 2070)
-
-# energy consumption by sector
-energy_agg_sector <- filter(
-  process_gcam_data(
-    read.csv("../data/thailand/outputs/summary/queryoutall_tf_energy_agg_sector.csv",
-             skip = 1, check.names = F),
-    processed = F, class_name = sector),
-  region %in% c("Thailand", "MEA area"),
-  year >= 2015, year <= 2070) %>% 
-  mutate(param = "Energy consumption by sector")
-
-# electricity generation by fuel
-elec_gen_fuel <- filter(
-  process_gcam_data(
-    read.csv("../data/thailand/outputs/summary/queryoutall_elec_gen_subsector.csv",
-             skip = 1, check.names = F),
-    processed = F, class_name = subsector, output),
-  region %in% c("Thailand", "MEA area"),
-  year >= 2015, year <= 2070) %>% 
-  mutate(param = "Electricity generation by fuel")
-
-# electricity consumption by sector
-elec_sector <- filter(
-  process_gcam_data(
-    read.csv("../data/thailand/outputs/summary/queryoutall_elec_consumption_sector.csv",
-            skip = 1, check.names = F),
-    processed = F, class_name = sector, input), 
-  region %in% c("Thailand", "MEA area"),
-  year >= 2015, year <= 2070)
-
-# electricity consumption by aggregate sector
-elec_agg_sector <-  dplyr::bind_rows(
-  aggregate_rows(elec_sector, class, "buildings", building_group),
-  aggregate_rows(elec_sector, class, "industry", industry_group),
-  aggregate_rows(elec_sector, class, "transport", transport_group)) %>% 
-  mutate(param = "Electricity consumption by sector")
-
-# combine all params
-set1_data <- ghg_agg_sector %>% 
-  full_join(ghg_gas) %>% 
-  full_join(energy_agg_sector) %>%
-  full_join(elec_gen_fuel) %>% 
-  full_join(elec_agg_sector)
-
-```
-
-### National
-
-```{r summary national 1  plots, fig.dim = c(3,12)}
-# ghg_sector_charts <- rchart::chart(filter(set1_data, region == "Thailand"),
-#                                    save = F, chart_type = "class_absolute", aspect_ratio = 0.5)
-# ghg_sector_charts$chart_class +
-#   guides(fill = guide_legend(ncol = 2, bycol = TRUE))
-```
-
-### MEA area
-
-```{r summary MEA 1  plots}
-# ghg_sector_charts <- rchart::chart(filter(set1_data, region == "MEA area"),
-#                                    save = F, chart_type = "class_absolute")
-```
-
-<!-------------------------->
-## Sectoral Indicators {.tabset}
-<!-------------------------->
-
-### National
-
-### MEA area
-
-<!-------------------------->
-<!-------------------------->
-# References {.tabset}
-<!-------------------------->
-<!-------------------------->
-
-<!-------------------------->
-## Local Data
-<!-------------------------->
-
-### Socioeconomics {-}
-* Historical national population (1990-2020): [National Economic and Social Development Board (NESDB)](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fwww.nesdc.go.th%2Fewt_dl_link.php%3Fnid%3D3507%26filename%3Dsocial&wdOrigin=BROWSELINK)
-* Historical provincial population (1990-2020): [Department of Provincial Administration](https://stat.bora.dopa.go.th/new_stat/webPage/statByYear.php)
-* National and provincial population projection (2021-2040) [NESDB](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fwww.nesdc.go.th%2Fewt_dl_link.php%3Fnid%3D3507%26filename%3Dsocial&wdOrigin=BROWSELINK)
-* National population Projection (2041-2100): [United Nations](https://population.un.org/wpp/Download/Standard/Population/)
-* Historical GDP and GPP (1990-2019): [NESDB](https://www.nesdc.go.th/main.php?filename=gross_regional)
-
-### Electricity {-}
-* Electricity consumption: [Energy Policy and Planning Office](http://www.eppo.go.th/index.php/en/en-energystatistics/electricity-statistic)
-
-### Energy {-}
-* Energy consumption: [Energy Policy and Planning Office](http://www.eppo.go.th/index.php/en/en-energystatistics/summary-statistic?orders[publishUp]=publishUp&issearch=1)
-
-### Emissions {-}
-* CO2 emissions: [Energy Policy and Planning Office](http://www.eppo.go.th/index.php/en/en-energystatistics/co2-statistic)
-
-### Transportation {-}
-* GHG emissions: [Ministry of Transport](https://datagov.mot.go.th/dataset/transport-ghg)
-
-<br>
-
-<!-------------------------->
-<!-------------------------->
-# Inputs 
-<!-------------------------->
-<!-------------------------->
-
-<!-------------------------->
-## GCAM GDP Units {.tabset}
-<!-------------------------->
-
-The plots below show GDP and per capita GDP in terms of constant 2005 $USD. This is the format used as input to GCAM, allowing for consistency between countries in the global model.
-
-
-
-### GDP {-}
-
-#### Recent trends {-}
-```{r recent national trends gdp usd2005, fig.dim=c(8,4),fig.cap="**Figure A1.1.1. Thailand national GDP from 2010 to 2019 in constant units of 2005 $USD.**"}
-
-gdp_usd2005 <- read.csv("../data/thailand/inputs/thailand_socioecon_gdp_usd2005_thammasat_v2.csv")
-gdp_usd2005$region <- factor(gdp_usd2005$region, 
-                            levels = c("Thailand", "Bangkok", "Samut Prakan",
-                                       "Nonthaburi", "Rest of Thailand"))
-
-# plot gdp
-gdp_historical_chart_national_usd2005 <- rchart::chart(
-  dplyr::mutate(
-    dplyr::filter(gdp_usd2005, 
-                  year >= 2010, year <= 2019,
-                  region == "Thailand"),
-      value = value/1000000000),
-  save = F, aspect_ratio = 0.5)
-
-gdp_historical_chart_national_usd2005$chart_param +
-    ggplot2::ylab("GDP (billions $USD)") +
-    ggplot2::theme(legend.position = "none",
-                   strip.text = ggplot2::element_blank())
-```
-
-
-<br>
-<br>
-
-
-```{r recent MEA province trends gdp usd2005, fig.dim=c(10,3), fig.cap="**Figure A1.1.2. GDP from 2010 to 2019 in the MEA service area in constant units of 2005 $USD.**"}
-
-# plot gdp
-gdp_historical_chart_mea <- rchart::chart(
-  dplyr::mutate(
-    dplyr::filter(gdp_usd2005, 
-                  year >= 2010, year <= 2019,
-                  !(region %in% c("Thailand", "Rest of Thailand"))), 
-      value = value/1000000000),
-  save = F)
-
-gdp_historical_chart_mea$chart_region_absolute +
-    ggplot2::facet_wrap(~region, nrow = 1,
-                        scales = "free_y") +
-    ggplot2::ylab("GDP (billions $USD)") +
-    ggplot2::theme(legend.position = "none",
-                   axis.title.y = ggplot2::element_text(size = 12))
-```
-
-
-
-<p align="center"> <img src="images/blank_space.jpg"></p>
-
-<br>
-<br>
-
-#### Future Projections {-}
-
-```{r historical & future trends gdp usd2005, fig.dim=c(8,4), fig.cap="**Figure A1.1.3. Historical and projected future GDP in Thailand and GPP in MEA provinces in constant units of 2005 $USD.**"}
-
-# plot gdp
-gdp_all <- rchart::chart(
-  dplyr::mutate(
-    dplyr::filter(gdp_usd2005, region != "Rest of Thailand"),
-    value = value/1000000000),
-  save = F, aspect_ratio = 0.4
-)
-
-gdp_all$chart_region_absolute +
-  # 41 to 51 for non-numeric
-  # 2010 to 2019 for numeric
-    ggplot2::annotate("rect", xmin=2010, xmax=2019, ymin=-Inf, ymax=Inf,
-                       alpha = 0.2, color = NA) +
-    ggplot2::facet_wrap(~region, nrow = 2, 
-                        scales = "free_y") +
-    ggplot2::ylab("GDP (billions $USD)") +
-    ggplot2::theme(legend.position = "none")
-```
-
-<br>
-<br>
 
 
 ### Per Capita GDP {-}
@@ -1416,6 +358,7 @@ pcgdp_recent_chart_national_usd2005 <- rchart::chart(
                   year <= 2020,
                   region == "Thailand"),
       value = value/1000),
+  chart_type = "param_absolute",
   save = F, aspect_ratio = 0.5)
 
 pcgdp_recent_chart_national_usd2005$chart_param +
@@ -1438,6 +381,7 @@ pcgdp_historical_chart_mea_usd2005 <- rchart::chart(
                   year >= 2011, year <= 2019,
                   !(region %in% c("Thailand", "Rest of Thailand"))), 
       value = value/1000),
+  chart_type = "region_absolute",
   save = F)
 
 pcgdp_historical_chart_mea_usd2005$chart_region_absolute +
@@ -1451,27 +395,6 @@ pcgdp_historical_chart_mea_usd2005$chart_region_absolute +
 
 <br>
 <br>
-
-#### Future Projections {-}
-
-The plot below shows per capita GDP from 1995 to 2100 for each region.
-
-```{r historical & future trends pcgdp usd2005, fig.dim=c(8,4), fig.cap="**Figure A1.1.6. Per capita GDP/GPP through 2100 in each region in units of constant 2005 $USD**"}
-
-# plot gdp
-pcgdp_all_usd2005 <- rchart::chart(
-  dplyr::mutate(
-    dplyr::filter(pcgdp_usd2005, region != "Rest of Thailand"),
-    value = value/1000),
-  save = F, aspect_ratio = 0.4
-)
-
-pcgdp_all_usd2005$chart_region_absolute +
-    ggplot2::facet_wrap(~region, nrow = 2, 
-                        scales = "free_y") +
-    ggplot2::ylab("Per Capita GDP (Thousands $USD)") +
-    ggplot2::theme(legend.position = "none")
-```
 
 
 <!-------------------------->
@@ -1537,6 +460,7 @@ pop_all <- rchart::chart(
   dplyr::mutate(
     dplyr::filter(pop_inputs, region != "Rest of Thailand"),
     value = value/1000000),
+  chart_type = "region_absolute",
   save = F, aspect_ratio = 0.4
 )
 
@@ -1572,6 +496,7 @@ gdp_all_baht <- rchart::chart(
   dplyr::mutate(
     dplyr::filter(gdp_inputs_baht, region != "Rest of Thailand"),
     value = value/1000000),
+  chart_type = "region_absolute",
   save = F, aspect_ratio = 0.4
 )
 
@@ -1604,6 +529,7 @@ pcgdp_all_baht <- rchart::chart(
   dplyr::mutate(
     dplyr::filter(pcgdp_inputs_baht, region != "Rest of Thailand"),
     value = value),
+  chart_type = "region_absolute",
   save = F, aspect_ratio = 0.4
 )
 
@@ -1798,403 +724,36 @@ pcgdp_all %>%
 
 <!-------------------------->
 <!-------------------------->
-# Scenarios {.tabset}
+# References {.tabset}
 <!-------------------------->
 <!-------------------------->
 
 <!-------------------------->
-## National Policies 
+## Local Data
 <!-------------------------->
 
-The National Policies scenario integrates all of Thailand's national power development plans, as well as standards, regulations, and measures to promote energy efficiency, renewable energy expansion, and reduction of greenhouse gas emissions. These include stated plans and policies in the power, transportation, buildings, and industry sectors. The table below describes the policies included in the National Policies scenario, along with a description of their implementation in GCAM. 
+### Socioeconomics {-}
+* Historical national population (1990-2020): [National Economic and Social Development Board (NESDB)](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fwww.nesdc.go.th%2Fewt_dl_link.php%3Fnid%3D3507%26filename%3Dsocial&wdOrigin=BROWSELINK)
+* Historical provincial population (1990-2020): [Department of Provincial Administration](https://stat.bora.dopa.go.th/new_stat/webPage/statByYear.php)
+* National and provincial population projection (2021-2040) [NESDB](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fwww.nesdc.go.th%2Fewt_dl_link.php%3Fnid%3D3507%26filename%3Dsocial&wdOrigin=BROWSELINK)
+* National population Projection (2041-2100): [United Nations](https://population.un.org/wpp/Download/Standard/Population/)
+* Historical GDP and GPP (1990-2019): [NESDB](https://www.nesdc.go.th/main.php?filename=gross_regional)
 
-<table>
-  <tr>
-    <th>Sector</th>
-    <th style="width:35%">Policy</th>
-    <th style="width:45%">GCAM implementation</th>
-    <th style="width:10%">Figure(s)</th>
-  </tr>
-  <tr>
-    <td rowspan="2">Power</td>
-    <td>PDP2018 (Figure A2.1.1)</td>
-    <td rowspan="2">Assign yearly planned power capacity technology shares through 2037</td>
-    <td rowspan="2">A2.1.1</td>
-  </tr>
-  <tr>
-    <td>AEDP2018</td>
-  </tr>
-  <tr>
-  	<td rowspan="5">Transportation</td>
-    <td>Vehicle emissions standards</td>
-    <td> </td>
-    <td> </td>
-  </tr>
-  <tr>
-  	<td>Emissions-based excise tax structure</td>
-    <td> </td>
-    <td> </td>
-  </tr>
-  <tr>
-  	<td>Transportation System Development Plan</td>
-    <td> Adjust transportation mode shareweights to reflect expansion of public transit and freight ship and rail </td>
-    <td>A2.1.2-3</td>
-  </tr>
-  <tr>
-  	<td>EV promotion</td>
-    <td> Simulate cost parity for EVs by 2050 (?) for passenger and 2060 (?) for freight </td>
-    <td>A2.1.4-5</td>
-  </tr>
-   <tr>
-  	<td>Voluntary Minimum and High Efficiency Performance Standards</td>
-    <td> </td>
-    <td> </td>
-  </tr>
-  <tr>
-    <td rowspan="3">Buildings</td>
-    <td>Building energy code enforcement</td>
-    <td>Decrease building shell conductance parameter over time to reflect increasing compliance with BECs</td>
-    <td> </td>
-  </tr>
-  <tr>
-    <td>Energy management systems</td>
-    <td> </td>
-    <td> </td>
-  </tr>
-  <tr>
-    <td>Energy efficiency labeling</td>
-    <td> </td>
-    <td> </td>
-  </tr>
-  <tr>
-  <td rowspan="2">Industry</td>
-  <td>Energy conservation standards & energy efficiency labeling</td>
-  <td> Use Autonomous Energy Efficiency Index (aeei) to reflect decrease in industrial energy consumption </td>
-  <td>A2.1.6</td>
-  </tr>
-  
+### Electricity {-}
+* Electricity consumption: [Energy Policy and Planning Office](http://www.eppo.go.th/index.php/en/en-energystatistics/electricity-statistic)
 
-  
-</table>
+### Energy {-}
+* Energy consumption: [Energy Policy and Planning Office](http://www.eppo.go.th/index.php/en/en-energystatistics/summary-statistic?orders[publishUp]=publishUp&issearch=1)
+
+### Emissions {-}
+* CO2 emissions: [Energy Policy and Planning Office](http://www.eppo.go.th/index.php/en/en-energystatistics/co2-statistic)
+
+### Transportation {-}
+* GHG emissions: [Ministry of Transport](https://datagov.mot.go.th/dataset/transport-ghg)
 
 <br>
-<br>
 
-The figure below shows Thailand's planned power generation capacity by technology through 2037 according to PDP2018. These capacity shares, along with average capacity factors from the literature, were used to calculate the floors for electricity generation by technology used in GCAM. 
 
-```{r PDP elec capacity plot, fig.dim=c(8,4), fig.cap="Figure A2.1.1. Thailand's planned power generation capacity mix through 2037 according to the [2018 Power Development Plan](https://www.thaienergy.org/assets/files/pdp2018-pdf.pdf)"}
-
-capacity <- read.csv("../data/thailand/inputs/thailand_bau_power_gen_capacity_2018_to_2037.csv") %>% dplyr::rename(value = capacity, class=fuel_type) %>% 
-  mutate(region = "Thailand")
-
-capacity_plot <- rchart::chart(capacity, save = F, aspect_ratio = 0.6) 
-
-capacity_plot$chart_class +
-  ylab("Generation capacity (MW)")
-
-```
-
-<!-- # ```{r PDP elec gen plot, fig.dim=c(8,4), fig.cap="Figure A2.1.2. Thailand's electricity generation mix through 2037 according to the capacity mix from [PDP2018](https://www.thaienergy.org/assets/files/pdp2018-pdf.pdf)(Figure A2.1.1) and capacity factors estimated by [IRENA](https://www.irena.org/-/media/files/irena/agency/publication/2017/nov/irena_outlook_thailand_2017.pdf)"} -->
-<!-- #  -->
-<!-- # elec_gen <- read.csv("../data/thailand/inputs/thailand_bau_electricity_generation_2018_to_2037.csv") -->
-<!-- #  -->
-<!-- # elec_gen_plot <- rchart::chart(elec_gen, save = F, aspect_ratio = 0.6) -->
-<!-- #  -->
-<!-- # elec_gen_plot$chart_class + -->
-<!-- #   ylab("Electricity Generation (EJ)") -->
-<!-- #  -->
-<!-- # ``` -->
-
-<br>
-<br>
-
-The plot below shows freight service output by mode in the reference scenario and with shareweights adjusted so that the proportion of freight transport by rail and ship in 2040 matches the Transportation System Development Plan's goals (10% and 19%, respectively.)
-
-```{r freight shareweights plot, fig.dim=c(9,4), fig.cap="Figure A2.1.3. Freight service output by mode in the adjusted shareweights scenario (left) and reference scenario (right)."}
-gcam_freight_shares <- read.csv("../data/thailand/outputs/1_National_Policies/trn_freight_shareweights/queryoutall_transport_output_tech.csv",
-                                skip = 1, check.names = F)
-
-freight_shares <- process_gcam_data(
-  process_gcam_data(gcam_freight_shares) %>% 
-    filter(sector %in% c("trn_freight", "trn_freight_road"),
-           year >= 2015, year <= 2070),
-  processed = T, class_name = subsector, sector, technology) %>% 
-  filter(region == "Thailand", !class %in% c("Heavy truck", "Light truck", "Medium truck"),
-         scenario %in% c("Ref", "road_55_rail_0034"))
-
-freight_shares$scenario <- factor(freight_shares$scenario,
-                                  levels = c("Ref", "road_55_rail_0034"),
-                                  labels = c("Ref", "Adjusted Shareweights"))
-
-freight_shares_charts <- rchart::chart(freight_shares, save = F)
-
-freight_shares_charts$chart_class +
-  ylab("Freight output (tonne-km)")
-
-```
-
-
-<br>
-<br>
-
-The figures below show an example of the GCAM output of passenger (top) and freight (bottom) road service output by technology using EV cost parity policies. In this example, input costs of electric vehicles (BEV) and hybrid vehicles (Hybrid Liquids) were assumed to be equal to input costs of non-electric (Liquids) vehicles by 2050 for passenger transport and 2060 for freight transport. These cost parity years can be adjusted as needed to best reflect realistic EV penetration through 2075.
-
-```{r EV pass cost parity plot, fig.dim=c(9,4), fig.cap="Figure A2.1.4. Passenger road service output by technology in the 2050 cost parity scenario (left) and reference scenario (right)" }
-
-gcam_ev_parity <- read.csv("../data/thailand/outputs/1_National_Policies/trn_ev_cost_parity/queryoutall_transport_output_tech.csv",
-                           skip = 1, check.names = F)
-
-
-ev_parity_pass <- process_gcam_data(
-  process_gcam_data(gcam_ev_parity) %>% 
-    filter(sector %in% c("trn_pass_road_LDV", "trn_pass_road_LDV_4W"),
-           year >= 2020, year <= 2070),
-  processed = T, class_name = technology, sector, subsector) %>% 
-  filter(region == "Thailand", class != "4W")
-
-ev_parity_pass$scenario <- factor(ev_parity_pass$scenario,
-                               levels = c("Ref", "ev_cost_parity"),
-                               labels = c("Ref", "EV Cost Parity (2050)"))
-
-ev_parity_pass_charts <- rchart::chart(ev_parity_pass, save = F)
-
-ev_parity_pass_charts$chart_class +
-  ylab("Passenger ouput (pass-km)") 
-
-
-
-```
-
-<br>
-<br>
-
-```{r EV freight cost parity plot, fig.dim=c(9,4), fig.cap="Figure A2.1.5. Freight road service output by technology in the 2060 cost parity scenario (left) and the reference scenario (right)" }
-
-ev_parity_freight <- process_gcam_data(
-  process_gcam_data(gcam_ev_parity) %>% 
-    filter(subsector %in% c("Heavy truck", "Light truck", "Medium truck"),
-           year >= 2020, year <= 2070),
-  processed = T, class_name = technology, sector, subsector) %>% 
-  filter(region == "Thailand")
-
-ev_parity_freight$scenario <- factor(ev_parity_freight$scenario,
-                               levels = c("Ref", "ev_cost_parity"),
-                               labels = c("Ref", "EV Cost Parity (2060)"))
-
-ev_parity_freight_charts <- rchart::chart(ev_parity_freight, save = F)
-
-ev_parity_freight_charts$chart_class +
-  ylab("Freight ouput (million tonne-km)") 
-```
-
-<br>
-<br>
-
-The following plot shows industrial energy consumption in the reference case and with an Autonomous Energy Efficiency Increase (AEEI) value of 0.0013. AEEI is used to simulate energy efficiency increases in industry, decreasing the total final industrial energy consumption. The AEEI value has been adjusted so that the total industrial energy savings from 2020 to 2040 approximately matches the goal stated in the Energy Efficiency Plan (0.885 EJ).
-
-```{r AEEI total final energy plot, fig.dim=c(6,4), fig.cap="Figure A2.1.6. Total final industrial energy consumption in the reference scenario and with an AEEI value of 0.013"}
-
-aeei_tf_energy_sector <- read.csv( "../data/thailand/outputs/1_National_Policies/industry_aeei/queryoutall_tf_energy_sector.csv",
-                                  skip = 1, check.names = F)
-
-aeei_tf_energy_industry <- filter(process_gcam_data(aeei_tf_energy_sector,
-                                           class_name = sector),
-                                class == "industrial energy use",
-                                region == "Thailand", year <= 2070,
-                                scenario %in% c("Ref", "aeei_0013"))
-
-aeei_tf_energy_industry$scenario <- 
-  factor(aeei_tf_energy_industry$scenario, levels = c("Ref", "aeei_0013"),
-         labels = c("0 (Ref)", "0.0013"))
-
-aeei_plots <- rchart::chart(aeei_tf_energy_industry, save = F, aspect_ratio = 0.7)
-
-aeei_plots$chart_param +
-  ylab("Industrial Energy Consumption (EJ)") +
-  labs(color = "AEEI") +
-  theme(legend.title = element_text(),
-        legend.position = "right") +
-  ylim(c(0, 2.75))
-
-```
-
-
-<!-------------------------->
-## Extended National Policies 
-<!-------------------------->
-
-The Extended National Policies scenario includes all of the stated plans and policies included in the National Policies scenario, and also integrates additional sustainable development measures that have been implemented in other countries and regions. The table below lists these additional measures and describes their implementation in GCAM.
-
-<table>
-  <tr>
-    <th>Sector</th>
-    <th style="width:45%">Policy</th>
-    <th style="width:45%">GCAM implementation</th>
-  </tr>
-  
-  <tr>
-    <td rowspan="2">Power</td>
-    <td>Increase RE and CCS penetration</td>
-    <td> </td>
-  </tr>
-  <tr>
-    <td>Coal and gas development constraints</td>
-    <td> </td>
-  </tr>
-  
-  <tr>
-  	<td rowspan="3">Transportation</td>
-    <td>Enhanced vehicle emissions standards</td>
-    <td> </td>
-  </tr>
-  <tr>
-  	<td>Electric vehicle subsidies</td>
-    <td> </td>
-  </tr>
-  <tr>
-  	<td>Fuel Economy Standards</td>
-    <td> </td>
-  </tr>
-  
-  <tr>
-    <td rowspan="2">Buildings</td>
-    <td>Enhanced building energy codes</td>
-    <td> </td>
-  </tr>
-  <tr>
-    <td>Enhanced Minimum energy performance standards</td>
-    <td> </td>
-  </tr>
-  
-  <tr>
-  <td rowspan="2">Industry</td>
-  <td> </td>
-  <td> </td>
-  </tr>
-  <tr>
-  <td> </td>
-  <td> </td>
-  </tr>
-  
-</table>
-
-
-<br>
-<br>
-
-
-<!-------------------------->
-## Bangkok Smart Energy
-<!-------------------------->
-
-The Bangkok Smart Energy scenario includes the plans and policies in the National Policies scenario, and also integrates MEA's plans for grid modernization and digitalization in the Bangkok metropolitan area. The table below lists these plans and describes how they will be implemented in GCAM.
-
-<table>
-  <tr>
-    <th>Sector</th>
-    <th style="width:45%">Policy</th>
-    <th style="width:45%">GCAM implementation</th>
-  </tr>
-  <tr>
-    <td rowspan="4">Power</td>
-    <td>Microgrid</td>
-    <td> </td>
-  </tr>
-  <tr>
-    <td>Energy storage system</td>
-    <td> </td>
-  </tr>
-  <tr>
-    <td>Smart grid distribution technology</td>
-    <td> </td>
-  </tr>
-  <tr>
-    <td>Smart Energy Data Analytics Center to manage smart meter data from customers with solar PV</td>
-    <td> </td>
-  </tr>
-  <tr>
-  	<td>Transportation</td>
-    <td>EV charging system improvements</td>
-    <td> </td>
-  </tr>
-  <tr>
-    <td rowspan="3">Buildings</td>
-    <td>Building energy codes</td>
-    <td> </td>
-  </tr>
-  <tr>
-    <td>Building energy management systems</td>
-    <td> </td>
-  </tr>
-  <tr>
-    <td>Smart Meters</td>
-    <td> </td>
-  </tr>
-  <tr>
-  <td>Industry</td>
-  <td>Smart Meters</td>
-  <td> </td>
-  </tr>
-  
-</table>
-
-<br>
-<br>
-
-<!-------------------------->
-## Carbon Neutral and Net Zero Thailand 
-<!-------------------------->
-
-Carbon Neutral and Net Zero Thailand are scenarios providing trajectories to national carbon neutrality by 2050 and net-zero national CO2 emissions by 2065, respectively. These scenarios will include the policies and plans in both the National Policies scenario and the Bangkok Smart Energy scenario, and will use GCAM's solving abilities to find and describe the most economically efficient pathways to reach the carbon neural and net-zero goals.
-
-<br>
-<br>
-
-<!-- <!--------------------------> 
-<!-- # Initial Diagnostics {.tabset} -->
-<!-- <!--------------------------> 
-
-<!-- ## Transportation -->
-
-<!-- The plots below compare GCAM output with local data for the transportation output of roads and railways in Thailand. More information is needed to determine which subsectors are included in the local data. -->
-
-<!-- ```{r national transport output by sector plots, fig.dim=c(9,4), fig.cap="**National road (left) and rail (right) output from GCAM (blue) and local data (red) from 20017 to 2020. Local data source: [Ministry of Transport](https://datagov.mot.go.th/dataset/)**"} -->
-
-<!-- national_transport_sector_plot_local_rail <- rchart::chart( dplyr::filter( -->
-<!--   all_national_transport_sector, year >= 2007, year <= 2020,  -->
-<!--   class == "rail"), -->
-<!--   save = F, include_points = T -->
-<!-- ) -->
-
-<!-- p1 <- national_transport_sector_plot_local_rail$chart_param_Thailand + -->
-<!--   ggplot2::ggtitle("Rail") + ggplot2::ylab("")  -->
-
-<!-- national_transport_sector_plot_local_road <- rchart::chart( dplyr::filter( -->
-<!--   all_national_transport_sector, year >= 2007, year <= 2020, -->
-<!--   class == "road"), -->
-<!--   save = F, include_points = T -->
-<!-- ) -->
-
-<!-- p2 <- national_transport_sector_plot_local_road$chart_param_Thailand + -->
-<!--   ggplot2::ggtitle("Road") + ggplot2::ylab("Output (million pass-km)")  + -->
-<!--   ggplot2::theme(axis.title.y = ggplot2::element_text(size = 12)) -->
-
-
-<!-- ggpubr::ggarrange(p2, p1, common.legend = T, legend = "bottom") + -->
-<!--   ggplot2::theme(plot.margin = ggplot2::unit(c(0,0,0.5,0), "cm")) -->
-
-<!-- ``` -->
-
-<!-- ```{r transportation output plots} -->
-<!-- # 2007 to 2020 -->
-<!-- national_transport_sector_plot_local <- rchart::chart( dplyr::filter( -->
-<!--   all_national_transport_sector, year >= 2007, year <= 2020, year %% 5 == 0), -->
-<!--   save = F -->
-<!-- ) -->
-
-<!-- national_transport_sector_plot_local$chart_class_Thailand + -->
-<!--   ggplot2::ggtitle("") + ggplot2::ylab("Output (million pass-km)")  -->
-<!-- ``` -->
 
 # {.unlisted .unnumbered}
 ```{r child = 'footer.rmd'}
