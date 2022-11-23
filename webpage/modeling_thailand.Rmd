@@ -8,6 +8,7 @@ output:
     toc_depth: 2
     number_sections: true
     theme: cosmo
+    code_folding: hide
     #inverse: true
 ---
 
@@ -1222,6 +1223,123 @@ To represent a phase-in of hydrogen technologies, we can gradually increase thei
 <!-------------------------->
 <!-------------------------->
 
+```{r emissions constraints files table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
+library(kableExtra); library(dplyr)
+
+# in the dt_url vector, add link(s) to the relevant XML file(s) used to run the policy. 
+# also add the files to their corresponding directories in the repo.
+dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/thailand/NetZeroC_thailand_2050",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/Thailand_luc", "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/NetZeroC_ROW_2050", "https://github.com/JGCRI/seasia/blob/main/modeling/thailand/ROW_luc")
+
+# add scenario names, filenames, and descriptions of files to this table.
+# make sure info in this table matches the links provided above (in the same order).
+data.frame(
+  Scenario = c("Net-Zero CO2", "Net-Zero CO2", "Net-Zero CO2", "Net-Zero CO2")) %>% 
+  mutate("Files Used" = cell_spec( c("NetZeroC_thailand_2050",
+                                     "Thailand_luc", "NetZeroC_ROW_2050", "ROW_luc"),
+                                   "html", link = dt_url)) %>% 
+  mutate(Description = c("CO2 emissions constraint",
+                         "GHG link file for land use change emissions", "CO2 emissions constraint ROW",
+                         "GHG link file for land use change emissions for ROW")) %>%
+  kable("html", escape = FALSE, col.names = c("Scenario", "Files Used", "Description")) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
+  row_spec(0, background = "#2A2A2A", color = "white")
+```
+
+<!-------------------------->
+<!----------Goal------------>
+<!-------------------------->
+
+<div class="warning" style='background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+<h3 style='text-align:center; font-size:24px'>
+<b>Goal</b>
+</h3>
+<p style='margin-left:1em;'>
+The aim of this example is to demonstrate how to apply an economy-wide emissions constraint for Thailand in accord with its national goals:  net-zero  CO2 by 2050.
+</p>
+</span>
+</div>
+
+<br>
+
+
+<!-------------------------->
+<!--------Approach---------->
+<!-------------------------->
+
+<div class="warning" style='background-color:#fffae0; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+
+<h3 style='text-align:center; font-size:24px'>
+<b>Approach</b></h3>
+
+<p style='margin-left:1em;'>
+In GCAM, an emissions constraint can be accomplished by using a `ghgpolicy`, which is a special case of policy-portfolio-standard that applies to emissions.
+
+
+</p>
+
+</span>
+</div>
+
+<br>
+
+
+<!--------------------------->
+<!--------Background--------->
+<!--------------------------->
+
+<div class="warning" style='background-color:#EFFFC9; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+
+<h3 style='text-align:center; font-size:24px'>
+<b>Background</b></h3>
+
+<p style='margin-left:1em;'>
+To implement a `ghgpolicy` in GCAM, users specify the total amount of emissions (CO2 or GHG) in a time period. GCAM will then calculate the price on carbon needed to reach the constraint in each period.  GCAM finds the least-cost pathway in terms of technology deployment to satisfy the emissions constraint. An economy-wide constraint can be used by itself, or in combination with additional sectoral policies described above.  There are some important considerations:  (1) what GHG's are included in the constraint (only CO2?)?, (2) What is the time period for the constraint (e.g., 2050, 2065)?, and (3) What are the emissions in each period (e.g. will emissions decline linearly to zero?)?, (4) Will land use change emissions be included in the constraint?, and (4) what assumptions are made for emissions in the rest of the world?  This latter point is important when considering "carbon leakage," that is, how restrictions in emissions in one geography may lead to a shift in carbon-intensive activities to other locations. Below, we will describe how to implement a CO2 emissions constraint. See the [GCAM Policies](http://jgcri.github.io/gcam-doc/policies.html#emissions-policies) documentation for more information.
+</p>
+</span>
+</div>
+
+<br>
+
+<!-------------------------->
+<!---GCAM Implementation---->
+<!-------------------------->
+
+<div class="warning" style='background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+<h3 style='text-align:center; font-size:24px'>
+<b>GCAM Implementation</b>
+</h3>
+
+<p style='margin-left:1em;'>
+1. Create a folder in the input directory: `./gcam-core/input/addons`.
+<!---include links to example XMLs here--->
+2. Download the emissions constraint xml file(s) for Thailand [NetZeroC_thailand_2050](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/thailand_carbonzero_2050) and [Thailand_luc](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/thailand_carbonzero_2050)), as well as those for the rest of the world (ROW), [NetZeroC_ROW_2050](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/CO2_net0_constraint_global_ROW_noThailand0) and [ROW_luc](https://github.com/JGCRI/seasia/blob/main/modeling/thailand/ROW_LUC_noThailand).
+
+3. The first file, NetZeroC_thailand_2050.xml, specifies emissions in units of tonnes of carbon (not CO2) in each period.    One way to determine the emissions constraint for each period is to examine the CO2 emissions in the reference case (See ModelInterface: "CO2 emissions by region").  Based on the reference emissions, one can create an emissions constraint accordingly, depending on the start date of the emissions constraint, end goal, and steepness of the decrease in emissions. In this case, we want to reach net-zero CO2 emissions in 2050.  The example specifies a linear decrease from 2025 to 2050. (A negative number in 2050 is used instead of 0, because this is easier for GCAM to solve). Other emissions constraints can be adopted instead of net-zero CO2 emissions in 2050.
+
+4. One needs to decide whether and how land use change emissions are incorporated into the constraint.  GCAM accounts for fossil fuel and industry CO2 emissions separately from land use change CO2 emissions. The Thailand_luc.xml specifies how land use change CO2 emissions (LUC-CO2) in Thailand are linked to the ghgpolicy ("CO2").  There are two parameters:  `price-adjust` and `demand-adjust`.  Price-adjust is used to convert prices for different GHG's.  A price-adjust of 1.0 for LUC-CO2 means the market price on LUC-CO2 emissions is the same as the price applied to fossil fuel and industry CO2 emissions.  A demand-adjust of 1 means that LUC-CO2 emissions are counted in the emissions constraint. These two parameters can be adjusted. In the sample files we have a price-adjust of 1, and a demand-adjust of 1. The same files for the rest of the world (ROW) are included to make sure that the same constraint is applied outside of Thailand in order to prevent carbon leakage.
+
+5. Save the xml files and then point to them in your configuration file by adding the line: 
+</p>
+<p style='font-size:0.8em'>
+<!---insert exmaple XML filenames--->
+`<Value name = "scen">../input/addons/thailand/NetZeroC_thailand_2050.xml</Value>`
+`<Value name = "scen">../input/addons/thailand/Thailand_luc.xml</Value>`
+`<Value name = "scen">../input/addons/thailand/NetZeroC_ROW_2050.xml</Value>`
+`<Value name = "scen">../input/addons/thailand/ROW_luc.xml</Value>`
+</p>
+</p>
+
+</span>
+</div>
+
+<br>
+
+<br>
 
 <!-------------------------->
 <!-------------------------->
@@ -1256,7 +1374,7 @@ data.frame(
 
 The first step is to create a path to the GCAM database, found in the output folder of your GCAM folder, and a list of desired parameters. The `readgcam()` function also requires region names and a specific output folder. Because reading in many parameters can take several minutes, we will be using existing outputs, found in your working directory's "gcamextractor" folder, generated by the code below.
 
-```{r gcamextractor-setup, echo = TRUE, eval = FALSE}
+```{r gcamextractor-setup, echo = TRUE, eval = FALSE, class.source = 'fold-show'}
 sample_path <- "./output/database"
 
 sample_params <- "summary"
@@ -1276,7 +1394,7 @@ data <- gcamextractor::readgcam(gcamdatabase = sample_path,
 
 ```
 
-```{r gcamextractor, echo = FALSE, eval = FALSE}
+```{r gcamextractor, echo = FALSE, eval = FALSE, class.source = 'fold-show'}
 # ref <- read.csv("../data/Thailand/gcamextractor/Ref/gcamDataTable_aggClass1.csv")
 # high <- read.csv("../data/Thailand/gcamextractor/High/gcamDataTable_aggClass1.csv")
 # low <- read.csv("../data/Thailand/gcamextractor/Low/gcamDataTable_aggClass1.csv")
