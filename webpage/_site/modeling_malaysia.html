@@ -1962,7 +1962,7 @@ city &lt;- read.csv(&quot;../data/malaysia/gcamextractor/city/gcamDataTable_aggC
 
 malaysia &lt;- bind_rows(ref, high, low, city) %&gt;%
   filter(region != (&quot;Rest of Malaysia&quot;),
-         x &gt; 2000, x &lt; 2050)
+         x &gt; 2000, x &lt;= 2050)
 
 # Define reference scenario
 REF_SCENARIO &lt;- unique(ref$scenario)</code></pre>
