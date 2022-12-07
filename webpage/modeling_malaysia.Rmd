@@ -850,7 +850,7 @@ city <- read.csv("../data/malaysia/gcamextractor/city/gcamDataTable_aggClass1.cs
 
 malaysia <- bind_rows(ref, high, low, city) %>%
   filter(region != ("Rest of Malaysia"),
-         x > 2000)
+         x > 2000, x < 2050)
 
 # Define reference scenario
 REF_SCENARIO <- unique(ref$scenario)
