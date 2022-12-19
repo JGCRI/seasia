@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><scenario>
+    <world>
+        <region name="Malaysia">
+            <supplysector name="electricity">
+                <subsector name="hydro">
+                    <stub-technology name="hydro">
+                        <period year="2020">
+                            <fixedOutput>0.0548</fixedOutput>
+                        </period>
+                        <period year="2025">
+                            <fixedOutput>0.0551</fixedOutput>
+                        </period>
+                        <period year="2030">
+                            <fixedOutput>0.0554</fixedOutput>
+                        </period>
+                        <period year="2035">
+                            <fixedOutput>0.0797</fixedOutput>
+                        </period>
+                        <period year="2040">
+                            <fixedOutput>0.1040</fixedOutput>
+                        </period>
+                        <period year="2045">
+                            <fixedOutput>0.1303</fixedOutput>
+                        </period>
+                        <period year="2050">
+                            <fixedOutput>0.1567</fixedOutput>
+                        </period>
+                    </stub-technology>
+                 </subsector>
+            </supplysector>
+        </region>
+    </world>
+</scenario>
