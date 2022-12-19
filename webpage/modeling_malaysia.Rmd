@@ -987,6 +987,9 @@ malaysia <- bind_rows(ref, high, low, city) %>%
 # Define reference scenario
 REF_SCENARIO <- unique(ref$scenario)
 
+# Use this to access reference scenario plot
+c <- paste0("chart_class_", REF_SCENARIO)
+
 ```
 
 <br>
@@ -1114,7 +1117,6 @@ emissions <- malaysia_emissions %>%
                 show = F,
                 size_text = 10)
 
-c <- paste0("chart_class_", REF_SCENARIO)
 emissions[[c]]
 ```
 
