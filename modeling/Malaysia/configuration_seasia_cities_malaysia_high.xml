@@ -102,6 +102,8 @@
 		<!--Power Generation-->
         <Value name = "scen">../input/addons/malaysia/elec_gen_shares_high.xml</Value>
         <Value name = "scen">../input/addons/malaysia/elec_hydro_high.xml</Value>
+        <Value name = "scen">../input/addons/malaysia/coal_shutdown_high.xml</Value>
+        <Value name = "scen">../input/addons/malaysia/no_new_coal.xml</Value>
 		<!--Transportation-->
         <Value name = "scen">../input/addons/malaysia/trn_ICE_high.xml</Value>
 		<!--Industry-->
