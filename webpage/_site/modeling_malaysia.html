@@ -1965,7 +1965,10 @@ malaysia &lt;- bind_rows(ref, high, low, city) %&gt;%
          x &gt; 2000, x &lt;= 2050)
 
 # Define reference scenario
-REF_SCENARIO &lt;- unique(ref$scenario)</code></pre>
+REF_SCENARIO &lt;- unique(ref$scenario)
+
+# Use this to access reference scenario plot
+c &lt;- paste0(&quot;chart_class_&quot;, REF_SCENARIO)</code></pre>
 <p><br></p>
 <!-------------------------->
 <!-------------------------->
@@ -2087,7 +2090,6 @@ malaysia_emissions &lt;- bind_rows(co2, ghg)</code></pre>
                 show = F,
                 size_text = 10)
 
-c &lt;- paste0(&quot;chart_class_&quot;, REF_SCENARIO)
 emissions[[c]]</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-emiss-plot-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>co2_gas &lt;- co2 %&gt;%
