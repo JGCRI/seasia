@@ -6,7 +6,7 @@
 		<Value name="BatchFileName">batch_ag.xml</Value>
 		<Value name="policy-target-file">../input/policy/forcing_target_4p5.xml</Value>
 		<Value name="GHGInputFileName">../input/magicc/inputs/input_gases.emk</Value>
-		<Value write-output="1" append-scenario-name="0" name="xmldb-location">../output/database_seasia_cities_malaysia_policy</Value>
+		<Value write-output="1" append-scenario-name="0" name="xmldb-location">../output/database_seasia_cities_malaysia_ambitious_city</Value>
 		<Value write-output="1" append-scenario-name="0" name="restart">./restart/restart</Value>
 		<Value write-output="1" append-scenario-name="1" name="xmlDebugFileName">debug.xml</Value>
 		<Value write-output="1" append-scenario-name="0" name="climatFileName">gas.emk</Value>
@@ -94,15 +94,24 @@
 		<Value name = "cities">../input/gcamdata/xml/transportation_Subregions_Thailand.xml</Value>
 		<Value name = "cities">../input/gcamdata/xml/liquids_limits_Subregions_Thailand.xml</Value>
 
-		<!-- Scenarios Malaysia-->
-        <Value name = "scen">../input/addons/malaysia/malaysia_elec_fuel_mix_2030_KL.xml</Value>
-        <Value name = "scen">../input/addons/malaysia/malaysia_hydro_constraint_2030_KL.xml</Value>
+		<!--Malaysia Policy Add Ons-->
+		<!--Buildings-->
+        <Value name = "scen">../input/addons/malaysia/buildings_led_ambitious_city.xml</Value>
+        <Value name = "scen">../input/addons/malaysia/exogenous_floorspace.xml</Value>
+        <Value name = "scen">../input/addons/malaysia/efficient_appliances_ambitious_city.xml</Value>
+		<!--Power Generation-->
+        <Value name = "scen">../input/addons/malaysia/elec_gen_shares_ambitious_city.xml</Value>
+        <Value name = "scen">../input/addons/malaysia/elec_hydro_ambitious_city.xml</Value>
+		<!--Transportation-->
+        <Value name = "scen">../input/addons/malaysia/trn_ICE_ambitious_city.xml</Value>
+		<!--Industry-->
+        <Value name = "scen">../input/addons/malaysia/industry_aeei_ambitious_city.xml</Value>
 
 		<Value name = "solver">../input/solution/cal_broyden_config.xml</Value>
 
 	</ScenarioComponents>
 	<Strings>
-		<Value name="scenarioName">Malaysia_policies</Value>
+		<Value name="scenarioName">Malaysia_Ambitious_City</Value>
 		<Value name="debug-region">Kuala Lumpur</Value>
 		<Value name="MAGICC-input-dir">../input/magicc/inputs</Value>
 		<Value name="MAGICC-output-dir">../output</Value>
