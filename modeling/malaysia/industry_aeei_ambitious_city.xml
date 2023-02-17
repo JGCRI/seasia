@@ -2,7 +2,7 @@
 <scenario>
     <world>
         <region name = "KualaLumpur">
-            <energy-final-demand name = "industry">
+            <energy-final-demand name = "other industry">
                 <final-energy-consumer>
                     <aeei year = "2020">0.01</aeei>
                     <aeei year = "2025">0.01</aeei>
@@ -19,7 +19,7 @@
             </energy-final-demand>
         </region>
         <region name = "Rest of Malaysia">
-            <energy-final-demand name = "industry">
+            <energy-final-demand name = "other industry">
                 <final-energy-consumer>
                     <aeei year = "2020">0.005</aeei>
                     <aeei year = "2025">0.005</aeei>
