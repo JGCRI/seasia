@@ -161,9 +161,9 @@ The following subsections give additional details and explanations for the polic
 
 ```{r ice-phaseout-files-table, results = 'show', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE}
 
-dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/trn_ICE_low.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/trn_ICE_high.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/trn_ICE_ambitious_city.xml")
+dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/trn_ICE_low.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/trn_ICE_high.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/trn_ICE_ambitious_city.xml")
 
 data.frame(
   Scenario = c("Low", "High", "Ambitious City")) %>% 
@@ -240,7 +240,7 @@ To represent an ICE vehicle phase-out, we decrease their shareweights over time.
 
 <p style='margin-left:1em;'>
 1. Create a folder in the input directory eg. `./gcam-core/input/addons/malaysia`.
-2. Download the desired ICE phase-out XML file (either [trn_ICE_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/trn_ICE_low.xml), [trn_ICE_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/trn_ICE_high.xml), or [trn_ICE_ambitious_city.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/trn_ICE_ambitious_city.xml)) to the folder.
+2. Download the desired ICE phase-out XML file (either [trn_ICE_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/trn_ICE_low.xml), [trn_ICE_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/trn_ICE_high.xml), or [trn_ICE_ambitious_city.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/trn_ICE_ambitious_city.xml)) to the folder.
 4. To adjust the year in which ICE vehicles are completely phased out: within each `stub-technology` tag in the XML, change the `to-year` in the first `interpolation-rule` and the `from-year` in the second. Also change the `year` of the `period` tag in which the `share-weight` is 0.
 5. Save the xml and then point to it in your configuration file by adding the line: 
 </p>
@@ -264,9 +264,9 @@ To represent an ICE vehicle phase-out, we decrease their shareweights over time.
 
 ```{r high-eff-appliances-files-table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
 
-dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/efficient_appliances_high.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/efficient_appliances_low.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/efficient_appliances_ambitious_city.xml")
+dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/efficient_appliances_high.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/efficient_appliances_low.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/efficient_appliances_ambitious_city.xml")
 
 data.frame(
   Scenario = c("High", "Low", "Ambitious City")) %>% 
@@ -348,7 +348,7 @@ We can adjust the shareweights for technologies like air conditioners, water hea
 
 <p style='margin-left:1em;'>
 1. Create a folder in the input directory: `./gcam-core/input/addons`.
-2. Download the desired xml file (either [efficient_appliances_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/efficient_appliances_high.xml), [efficient_appliances_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/efficient_appliances_low.xml), or [efficient_appliances_ambitious_city.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/efficient_appliances_ambitious_city.xml) to the folder.
+2. Download the desired xml file (either [efficient_appliances_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/efficient_appliances_high.xml), [efficient_appliances_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/efficient_appliances_low.xml), or [efficient_appliances_ambitious_city.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/efficient_appliances_ambitious_city.xml) to the folder.
 4. To adjust the year in which the target mix of technologies is achieved: within each `stub-technology` tag in the XML, change the `to-year` in the first `interpolation-rule` and the `from-year` in the second. Also change the `year` of the `period` tag in which the `share-weight` is 0.
 5. Save the xml and then point to it in your configuration file by adding the line (replace `high` with `low` or `ambitious_city` as needed): 
 <p style='font-size:0.8em'>
@@ -365,9 +365,9 @@ We can adjust the shareweights for technologies like air conditioners, water hea
 
 ```{r lighting-files-table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
 
-dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/buildings_led_high.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/buildings_led_low.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/buildings_led_ambitious_city.xml")
+dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/buildings_led_high.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/buildings_led_low.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/buildings_led_ambitious_city.xml")
 
 data.frame(
   Scenario = c("High", "Low", "Ambitious City")) %>% 
@@ -420,8 +420,6 @@ The goal of this policy is to represent increasing use of LED lighting in reside
 We can gradually decrease the shareweights of all non-LED residential lighting technologies in order to phase them out of the market. The year in which the non-LED shareweights reach 0 corresponds with the year in which 100% LED residential lighting is achieved.
 </p>
 
-
-
 </span>
 </div>
 
@@ -448,7 +446,7 @@ We can gradually decrease the shareweights of all non-LED residential lighting t
 
 <p style='margin-left:1em;'>
 1. Create a folder in the input directory: `./gcam-core/input/addons`.
-2. Download the desired xml file (either [buildings_led_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/buildings_led_high.xml), [buildings_led_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/buildings_led_low.xml), or [buildings_led_ambitious_city.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/buildings_led_ambitious_city.xml)) to the folder.
+2. Download the desired xml file (either [buildings_led_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/buildings_led_high.xml), [buildings_led_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/buildings_led_low.xml), or [buildings_led_ambitious_city.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/buildings_led_ambitious_city.xml)) to the folder.
 4. To adjust the year in which 100% LED lighting is achieved: within each non-LED `stub-technology` tag in the XML, change the `to-year` in the first `interpolation-rule` and the `from-year` in the second. Also change the `year` of the `period` tag in which the `share-weight` is 0.
 5. Save the xml and then point to it in your configuration file by adding the line (replace `high` with `low` or `ambitious_city` as needed): 
 <p style='font-size:0.8em'>
@@ -460,15 +458,114 @@ We can gradually decrease the shareweights of all non-LED residential lighting t
 
 <br>   
 
+## Building Envelope Efficiency
+***
+
+```{r shell files table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
+
+dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/shell_eff_high.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/shell_eff_low.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/shell_eff_ambitious_city.xml")
+
+data.frame(
+  Scenario = c(rep("High",1), rep("Low",1), rep("Ambitious City",1))) %>% 
+  mutate("Files Used" = cell_spec( c("shell_eff_high.xml",
+                                     "shell_eff_low.xml",
+                                     "shell_eff_ambitious_city"),
+                                   "html", link = dt_url)) %>% 
+  mutate(Description = c("Decreases shell conductance from 3.75 in 2020 to 0.487 (residential)/ 0.375 (commercial) in 2070 at an annual rate of 4% (residential)/ 4.5% (commercial)",
+                         "Decreases shell conductance from 3.75 in 2020 to 1.366 (residential)/ 1.057 (commercial) in 2070 at an annual rate of 2% (residential)/ 2.5% (commercial)",
+                         "Follows the 'high' scenario trajectory in KL and the 'low' scenario trajectory in the rest of Malaysia")) %>%
+  kable("html", escape = FALSE, col.names = c("Scenario", "Files Used", "Description")) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
+  row_spec(0, background = "#2A2A2A", color = "white")
+
+```
+
+
+<!-------------------------->
+<!----------Goal------------>
+<!-------------------------->
+
+<div class="warning" style='background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+<p style='text-align:center; font-size:24px'>
+<b>Goal</b>
+</p>
+
+<p style='margin-left:1em;'>
+The goal of this example is to represent increasing compliance with the envelope efficiency component of building energy codes. The difference between the low, high, and ambitious city scenario versions of this policy is the rate of increase.
+
+</p>
+</span>
+</div>
+
+<br>
+
+
+<!-------------------------->
+<!--------Approach---------->
+<!-------------------------->
+
+<div class="warning" style='background-color:#fffae0; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+
+<p style='text-align:center; font-size:24px'>
+<b>Approach</b>
+</p>
+We can use GCAM's `shell-conductance` parameter to represent an increase in the average building envelope efficiency according to building energy codes.
+<p style='margin-left:1em;'>
+
+</p>
+
+
+
+</span>
+</div>
+
+<br>
+
+
+<!-------------------------->
+<!--------Background-------->
+<!-------------------------->
+
+```{r background cooling demand, child = 'background_coolingDemand.rmd'}
+```
+
+
+<!-------------------------->
+<!---GCAM Implementation---->
+<!-------------------------->
+
+<div class="warning" style='background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+<p style='text-align:center; font-size:24px'>
+<b>GCAM Implementation</b>
+</p>
+
+<p style='margin-left:1em;'>
+1. Create a folder in the input directory: `./gcam-core/input/addons`.
+2. Download the desired xml file (either [shell_eff_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/shell_eff_high.xml) or [shell_eff_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/shell_eff_low.xml)) to the folder.
+4. To make custom adjustments: within each `gcam-consumer` tag in the XML, specify the desired `shell-conductance` values for each year.
+5. Save the xml and then point to it in your configuration file by adding the line (replace `high` with `low` as needed): 
+<p style='font-size:0.8em'>
+`<Value name = "scen">../input/addons/malaysia/shell_eff_high.xml</Value>`
+</p>
+
+</span>
+</div>
+
+<br>
 
 ## Industry Energy Efficiency
 ***
 
 ```{r industry-aeei-files-table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
 
-dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/industry_aeei_high.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/industry_aeei_low.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/industry_aeei_ambitious_city.xml")
+dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/industry_aeei_high.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/industry_aeei_low.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/industry_aeei_ambitious_city.xml")
 
 data.frame(
   Scenario = c(rep("High",1), rep("Low",1), rep("Ambitious City",1))) %>% 
@@ -548,7 +645,7 @@ To represent a gradual increase in industrial efficiency, we can use GCAM's `aee
 
 <p style='margin-left:1em;'>
 1. Create a folder in the input directory: `./gcam-core/input/addons`.
-2. Download the desired industrial aeei xml file (either [industry_aeei_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/industry_aeei_high.xml), [industry_aeei_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/industry_aeei_low.xml), or [industry_aeei_ambitious_city.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/industry_aeei_low.xml)) to the folder.
+2. Download the desired industrial aeei xml file (either [industry_aeei_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/industry_aeei_high.xml), [industry_aeei_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/industry_aeei_low.xml), or [industry_aeei_ambitious_city.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/industry_aeei_low.xml)) to the folder.
 4. To adjust the rate of industrial energy efficiency increase, change the value of the `aeei` tag for each desired year.
 5. Save the xml and then point to it in your configuration file by adding the line (replace `high` with `low` or `ambitious_city` as needed): 
 </p>
@@ -567,9 +664,9 @@ To represent a gradual increase in industrial efficiency, we can use GCAM's `aee
 
 ```{r coal-phaseout-files-table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
 
-dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/no_new_coal.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/coal_shutdown_high.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/coal_shutdown_low.xml")
+dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/no_new_coal.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/coal_shutdown_high.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/coal_shutdown_low.xml")
 
 data.frame(
   Scenario = c("Both", "High", "Low")) %>% 
@@ -652,7 +749,7 @@ There are two steps to phase out coal generation. The first is to prevent any ne
 
 <p style='margin-left:1em;'>
 1. Create a folder in the input directory eg. `./gcam-core/input/addons`.
-2. Download the coal shareweight file [no_new_coal.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/no_new_coal.xml) as well as the desired coal retirement file (either [coal_shutdown_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/coal_shutdown_high.xml) or [coal_shutdown_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/coal_shutdown_low.xml)) to the folder.
+2. Download the coal shareweight file [no_new_coal.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/no_new_coal.xml) as well as the desired coal retirement file (either [coal_shutdown_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/coal_shutdown_high.xml) or [coal_shutdown_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/coal_shutdown_low.xml)) to the folder.
 4. To make custom adjustments to the coal retirement trajectory, optionally change the following within each `stub-technology` tag in the retirement XML:
 </p>
 
@@ -679,14 +776,14 @@ There are two steps to phase out coal generation. The first is to prevent any ne
 
 ```{r electricity-generation-files-table, results = 'show', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE}
 
-dt_url <- c("https://github.com/JGCRI/seasia/blob/main/data/malaysia/elec_gen_pathway.xlsx",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/elec_gen_link.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/elec_gen_low.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/elec_hydro_low.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/elec_gen_high.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/elec_hydro_high.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/elec_gen_ambitious_city.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/elec_hydro_ambitious_city.xml")
+dt_url <- c("https://github.com/JGCRI/seasia/blob/main/data/malaysia/sectoral_policies/elec_gen_pathway.xlsx",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_gen_link.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_gen_low.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_hydro_low.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_gen_high.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_hydro_high.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_gen_ambitious_city.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_hydro_ambitious_city.xml")
 
 data.frame(
   Scenario = c("All", "All", "Low", "Low", "High", "High", "Ambitious City", "Ambitious City")) %>% 
@@ -777,7 +874,7 @@ Hydropower is exogenous in GCAM and has a fixed pathway. The power generation va
 
 <p style='margin-left:1em;'>
 1. Create a folder in the input directory eg. `./gcam-core/input/addons/malaysia`.
-2. Download the example XML file ( [elec_gen_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/elec_gen_low.xml) and the subsidy link file [elec_gen_link.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/elec_gen_link.xml) to the folder. (Click on `Raw` and then `right-click` and select `save-as`.)
+2. Download the example XML file ( [elec_gen_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_gen_low.xml) and the subsidy link file [elec_gen_link.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_gen_link.xml) to the folder. (Click on `Raw` and then `right-click` and select `save-as`.)
 3. To make adjustments: within each `policy-portfolio-standard` tag in the XML, adjust the following:
 </p>
 <ul style='margin-left:4em; text-align:left;'>
@@ -787,7 +884,7 @@ Hydropower is exogenous in GCAM and has a fixed pathway. The power generation va
 <p style='margin-left:1em;'>
 4. Within each `supplysector` tag in the XML, make sure that the corresponding `input-subsidy` is added within each relevant `period` for each `stub-technology` you wish to constrain.
 5. To adjust the hydropower pathway, download the example XML file
-[elec_hydro_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/elec_hydro_low) to the folder. 
+[elec_hydro_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_hydro_low) to the folder. 
 6. Within each `fixedOutput` tag in the XML, adjust the value to reflect desired hydropower output in each period. The user can also add additional periods. 
 7. Save the XMLs and then point to them in your configuration file by adding the lines: 
 <p style='font-size:0.9em'>
@@ -815,18 +912,19 @@ library(kableExtra); library(dplyr)
 
 # in the dt_url vector, add link(s) to the relevant XML file(s) used to run the policy. 
 # also add the files to their corresponding directories in the repo.
-dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/NetZeroC_Malaysia_2035_2050",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/Malaysia_LUC", "https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/NetZeroC_global_noMalaysia", "https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/ROW_LUC_noMalaysia")
+dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/NetZeroC_Malaysia_2035_2050",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/Malaysia_LUC", "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/NetZeroC_global_noMalaysia", "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/ROW_LUC_noMalaysia")
 
 # add scenario names, filenames, and descriptions of files to this table.
 # make sure info in this table matches the links provided above (in the same order).
 data.frame(
   Scenario = c("Net-Zero CO2 2050", "Net-Zero CO2 2050", "Net-Zero CO2 2050", "Net-Zero CO2 2050")) %>% 
-  mutate("Files Used" = cell_spec( c("NetZeroC_thailand_2050",
-                                     "Thailand_luc", "NetZeroC_ROW_2050", "ROW_luc"),
+  mutate("Files Used" = cell_spec( c("NetZeroC_Malaysia_2035_2050", "Malaysia_LUC", 
+                                     "NetZeroC_global_noMalaysia_2050", "ROW_LUC_noMalaysia"),
                                    "html", link = dt_url)) %>% 
   mutate(Description = c("CO2 emissions constraint for Malaysia (2035 - 2050)",
-                         "GHG link file for Malaysia for land use change emissions", "CO2 emissions constraint rest of the World (2050)",
+                         "GHG link file for Malaysia for land use change emissions", 
+                         "CO2 emissions constraint rest of the World (2050)",
                          "GHG link file for land use change emissions for rest of the world")) %>%
   kable("html", escape = FALSE, col.names = c("Scenario", "Files Used", "Description")) %>%
   kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
@@ -843,7 +941,7 @@ data.frame(
 <b>Goal</b>
 </h3>
 <p style='margin-left:1em;'>
-The aim of this example is to demonstrate how to apply an economy-wide emissions constraint for Malaysia in accord with its national goals:  net-zero  CO2 by 2050.
+The aim of this example is to demonstrate how to apply an economy-wide emissions constraint for Malaysia in accord with its national goals: net-zero CO~2~ by 2050.
 </p>
 </span>
 </div>
@@ -884,10 +982,10 @@ In GCAM, an emissions constraint can be accomplished by using a `ghgpolicy`, whi
 <b>Background</b></h3>
 
 <p style='margin-left:1em;'>
-To implement a `ghgpolicy` in GCAM, users specify the total amount of emissions (CO2 or GHG) in a time period. GCAM will then calculate the price on carbon needed to reach the constraint in each period.  GCAM finds the least-cost pathway in terms of technology deployment to satisfy the emissions constraint. An economy-wide constraint can be used by itself, or in combination with additional sectoral policies described above.  
+To implement a `ghgpolicy` in GCAM, users specify the total amount of emissions (CO~2~ or GHG) in a time period. GCAM will then calculate the price on carbon needed to reach the constraint in each period.  GCAM finds the least-cost pathway in terms of technology deployment to satisfy the emissions constraint. An economy-wide constraint can be used by itself, or in combination with additional sectoral policies described above.  
 
 
-There are some important considerations:  (1) What GHG's are included in the constraint (only CO2?)?, (2) What is the time period for the constraint (e.g., 2050, 2065)?, (3) What are the emissions in each period, (4) Will emissions decline linearly to zero or will another rate be specified?, (5) Will land use change emissions be included in the constraint?, and (5) What assumptions are made for emissions in the rest of the world?  This latter point is important when considering "carbon leakage," that is, how restrictions in emissions in one geography may lead to a shift in carbon-intensive activities to other locations. Below, we will describe how to implement a CO2 emissions constraint. See the [GCAM Policies](http://jgcri.github.io/gcam-doc/policies.html#emissions-policies) documentation for more information.
+There are some important considerations:  (1) What GHG's are included in the constraint (only CO~2~?)?, (2) What is the time period for the constraint (e.g., 2050, 2065)?, (3) What are the emissions in each period, (4) Will emissions decline linearly to zero or will another rate be specified?, (5) Will land use change emissions be included in the constraint?, and (5) What assumptions are made for emissions in the rest of the world?  This latter point is important when considering "carbon leakage," that is, how restrictions in emissions in one geography may lead to a shift in carbon-intensive activities to other locations. Below, we will describe how to implement a CO~2~ emissions constraint. See the [GCAM Policies](http://jgcri.github.io/gcam-doc/policies.html#emissions-policies) documentation for more information.
 </p>
 </span>
 </div>
@@ -907,24 +1005,24 @@ There are some important considerations:  (1) What GHG's are included in the con
 <p style='margin-left:1em;'>
 1. Create a folder in the input directory: `./gcam-core/input/addons`.
 <!---include links to example XMLs here--->
-2. Download the emissions constraint xml file(s) for Thailand [NetZeroC_Malaysia_2035_2050](https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/NetZeroC_Malaysia_2035_2050) and [Malaysia_LUC](https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/Malaysia_LUC)), as well as those for the rest of the world (ROW), [NetZeroC_global_noMalaysia_2050](https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/NetZeroC_global_noMalaysia_2050) and [ROW_LUC_noMalaysia](https://github.com/JGCRI/seasia/blob/main/modeling/Malaysia/ROW_LUC_noMalaysia).
+2. Download the emissions constraint xml file(s) for Thailand [NetZeroC_Malaysia_2035_2050](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/NetZeroC_Malaysia_2035_2050) and [Malaysia_LUC](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/malaysia_LUC)), as well as those for the rest of the world (ROW), [NetZeroC_global_noMalaysia_2050](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/NetZeroC_global_noMalaysia_2050) and [ROW_LUC_noMalaysia](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/ROW_LUC_noMalaysia).
 
-3. The first file, NetZeroC_Malaysia_2035_2050, specifies emissions in units of tonnes of carbon (NOT CO2) in each period.    One way to determine the emissions constraint for each period is to examine the CO2 emissions in the reference case (See ModelInterface: "CO2 emissions by region").  Based on the reference emissions, one can create an emissions constraint accordingly, depending on the start date of the emissions constraint, end goal, and steepness of the decrease in emissions. 
+3. The first file, NetZeroC_Malaysia_2035_2050, specifies emissions in units of tonnes of carbon (NOT CO~2~) in each period. One way to determine the emissions constraint for each period is to examine the CO~2~ emissions in the reference case (See ModelInterface: "CO~2~ emissions by region"). Based on the reference emissions, one can create an emissions constraint accordingly, depending on the start date of the emissions constraint, end goal, and steepness of the decrease in emissions. 
 
-4. You will notice that the constraint starts in 2035.  We want to first incorporate the pathway for Malaysia's      Nationally Determined Contribution (NDC) from 2020 to 2030.  Malaysia's NDC includes a target to reduce its          greenhouse gas (GHG) emissions intensity of GDP by 45% by 2030 relative to the emissions intensity of GDP in 2005. When we examine GHG emissions (See ModelInterface: "nonCO2 emissions by region") and GDP ((See ModelInterface: "GDP MER by region"), we see that this target is met without any additional policy in the reference scenario.  Thus, we only need to start our constraint in 2035.  We specify a linear decrease to 0 tonnes of C in 2050. 
+4. You will notice that the constraint starts in 2035.  We want to first incorporate the pathway for Malaysia's      Nationally Determined Contribution (NDC) from 2020 to 2030.  Malaysia's NDC includes a target to reduce its          greenhouse gas (GHG) emissions intensity of GDP by 45% by 2030 relative to the emissions intensity of GDP in 2005. When we examine GHG emissions (See ModelInterface: "nonCO~2~ emissions by region") and GDP ((See ModelInterface: "GDP MER by region"), we see that this target is met without any additional policy in the reference scenario.  Thus, we only need to start our constraint in 2035.  We specify a linear decrease to 0 tonnes of C in 2050. 
 
 5. We adopt a similar approach for the ROW, using the total emissions (tC) in 2020 for all countries as a starting point.  (We did not subtract our Malaysia's emissions, as they are quite small globally).  It is not absolutely necessary to adopt the very same emissions constraint for the ROW,  but the constraint should be strong enough to avoid carbon leakage from Malaysia' net-zero policy.
 
-6. One needs to decide whether and how land use change emissions are incorporated into the constraint.  GCAM accounts for fossil fuel and industry CO2 emissions separately from land use change CO2 emissions. The Malaysia_luc.xml specifies how land use change CO2 emissions (LUC-CO2) in Malaysia are linked to the ghgpolicy ("CO2").  There are two parameters:  `price-adjust` and `demand-adjust`.  Price-adjust is used to convert prices for different GHG's.  A price-adjust of 1.0 for LUC-CO2 means the market price on LUC-CO2 emissions is the same as the price applied to fossil fuel and industry CO2 emissions.  A demand-adjust of 1 means that LUC-CO2 emissions are counted in the emissions constraint. These two parameters can be adjusted. In the sample files we have a price-adjust of 0, and a demand-adjust of 1. This can be modified depending on the goal and importance of LUC emissions. Note that Malaysia is removed from the ROW_LUC_noMalaysia.xml
+6. One needs to decide whether and how land use change emissions are incorporated into the constraint.  GCAM accounts for fossil fuel and industry CO~2~ emissions separately from land use change CO~2~ emissions. The Malaysia_luc.xml specifies how land use change CO~2~ emissions (LUC-CO~2~) in Malaysia are linked to the ghgpolicy ("CO~2~").  There are two parameters:  `price-adjust` and `demand-adjust`.  Price-adjust is used to convert prices for different GHG's.  A price-adjust of 1.0 for LUC-CO~2~ means the market price on LUC-CO~2~ emissions is the same as the price applied to fossil fuel and industry CO~2~ emissions.  A demand-adjust of 1 means that LUC-CO~2~ emissions are counted in the emissions constraint. These two parameters can be adjusted. In the sample files we have a price-adjust of 0, and a demand-adjust of 1. This can be modified depending on the goal and importance of LUC emissions. Note that Malaysia is removed from the ROW_LUC_noMalaysia.xml
 
 7. Save the xml files and then point to them in your configuration file by adding the line: 
 </p>
 <p style='font-size:0.8em'>
 <!---insert exmaple XML filenames--->
-`<Value name = "scen">../input/addons/Malaysia/NetZeroC_Malaysia_2035_2050.xml</Value>`
-`<Value name = "scen">../input/addons/Malaysia/Malaysia_luc.xml</Value>`
-`<Value name = "scen">../input/addons/Malaysia/NetZeroC_global_noMalaysia_2050.xml</Value>`
-`<Value name = "scen">../input/addons/Malaysia/ROW_LUC_noMalaysia.xml</Value>`
+`<Value name = "scen">../input/addons/malaysia/NetZeroC_Malaysia_2035_2050.xml</Value>`
+`<Value name = "scen">../input/addons/malaysia/Malaysia_luc.xml</Value>`
+`<Value name = "scen">../input/addons/malaysia/NetZeroC_global_noMalaysia_2050.xml</Value>`
+`<Value name = "scen">../input/addons/malaysia/ROW_LUC_noMalaysia.xml</Value>`
 </p>
 </p>
 
@@ -1106,7 +1204,11 @@ co2 <- malaysia %>% filter(param == "emissCO2BySectorNoBio",
 ghg <- malaysia %>% filter(param == "emissGHGBySectorNoBioGWPAR5",
                            region != "Malaysia")
 
-malaysia_emissions <- bind_rows(co2, ghg)
+malaysia_emissions <- bind_rows(co2, ghg) %>%
+  mutate(class = case_when(grepl("alumin",class)~"industry",
+                           grepl("International",class)~"transport",
+                           grepl("desalinated|refining|urban|coal|gas|oil|hydrogen|agricultural|crops",class)~"other",
+                           TRUE~class))
 
 ```
 
@@ -1161,7 +1263,7 @@ ghg_my <- malaysia %>%
          region == "All of Malaysia") %>%
   mutate(param = "GHG Emissions by Sector")
 
-my_emissions <- bind_rows(co2_my, ghg_my) 
+my_emissions <- bind_rows(co2_my, ghg_my)  
 
 ```
 
@@ -1229,7 +1331,7 @@ emissions_kl_plot <- kl_emissions %>%
   mutate(param = units) %>%
   rchart::chart(save = F, 
                 show = F,
-                size_text = 12)
+                size_text = 12) 
 
 emissions_kl_plot$chart_param
 ```
@@ -1241,7 +1343,7 @@ ghg_gas_kl <- malaysia %>%
          region == "KualaLumpur") %>%
   mutate(param = "GHG Emissions by Gas")
 
-kl_emissions_gas <- bind_rows(ghg_gas_kl, kl_emissions)
+kl_emissions_gas <- bind_rows(ghg_gas_kl, kl_emissions) 
 ```
 
 ``` {r rchart-emiss-gas-scenario-plot-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 12, fig.height = 16}
