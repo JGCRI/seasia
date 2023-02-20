@@ -597,7 +597,7 @@ Business as Usual Scenario
 Example Policy Scenario
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/configuration_seasia_cities_malaysia_policy.xml" style="     ">configuration_seasia_cities_policy.xml</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/configuration_files/configuration_seasia_cities_malaysia_policy.xml" style="     ">configuration_seasia_cities_policy.xml</a>
 </td>
 </tr>
 </tbody>
@@ -697,9 +697,9 @@ style="background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 
 </p>
 <p style="margin-left:1em;">
 <p>The goal of this policy is to phase out internal combustion engine
-(ICE) passenger vehicles from the market. The difference between the low
-and high policies is the year in which ICE vehicles are completely
-phased out of the market.</p>
+(ICE) passenger vehicles from the market. The difference between the
+low, high, and ambitious city policies is the year in which ICE vehicles
+are completely phased out of the market.</p>
 </p>
 <p></span></p>
 </div>
@@ -776,11 +776,12 @@ the <code>from-year</code> in the second. Also change the
 <code>year</code> of the <code>period</code> tag in which the
 <code>share-weight</code> is 0.</li>
 <li>Save the xml and then point to it in your configuration file by
-adding the line:</li>
+adding the line (replace <code>high</code> with <code>low</code> or
+<code>ambitious_city</code> as needed):</li>
 </ol>
 </p>
 <p style="font-size:0.8em">
-<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/trn_ICE_low.xml&lt;/Value&gt;</code>
+<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/trn_ICE_high.xml&lt;/Value&gt;</code>
 </p>
 </p>
 <p></span></p>
@@ -863,8 +864,9 @@ style="background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 
 <p style="margin-left:1em;">
 <p>The goal of this policy is to represent an increase in energy
 efficient technologies in the commercial and residential sectors. The
-difference between the low and high scenario versions of this policy is
-the year in which the desired mix of technologies is achieved.</p>
+difference between the low, high, and ambitious city scenario versions
+of this policy is the year in which the desired mix of technologies is
+achieved.</p>
 </p>
 <p></span></p>
 </div>
@@ -1022,9 +1024,9 @@ style="background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 
 <p style="margin-left:1em;">
 <p>The goal of this policy is to represent increasing use of LED
 lighting in residential buildings and the decreasing use of other, less
-energy efficient lighting technologies. The difference between the low
-and high scenario versions of this policy is the year in which 100% LED
-residential lighting is achieved.</p>
+energy efficient lighting technologies. The difference between the low,
+high, and ambitious city scenario versions of this policy is the year in
+which 100% LED residential lighting is achieved.</p>
 </p>
 <p></span></p>
 </div>
@@ -1167,7 +1169,7 @@ Ambitious City
 </td>
 <td style="text-align:left;">
 Follows the ‘high’ scenario trajectory in KL and the ‘low’ scenario
-trajectory in the rest of Malaysia
+trajectory for Rest of Malaysia
 </td>
 </tr>
 </tbody>
@@ -1258,8 +1260,8 @@ to the folder.</li>
 tag in the XML, specify the desired <code>shell-conductance</code>
 values for each year.</li>
 <li>Save the xml and then point to it in your configuration file by
-adding the line (replace <code>high</code> with <code>low</code> as
-needed):
+adding the line (replace <code>high</code> with <code>low</code> or
+<code>ambitious city</code> as needed):
 <p style='font-size:0.8em'>
 <code>&lt;Value name = "scen"&gt;../input/addons/malaysia/shell_eff_high.xml&lt;/Value&gt;</code></li>
 </ol>
@@ -1337,9 +1339,9 @@ style="background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 
 </p>
 <p style="margin-left:1em;">
 The goal of this policy is to represent measures to increase average
-efficiency of industrial processes. The difference between the low and
-high scenarios is the rate at which average industrial energy intensity
-decreases annually.
+efficiency of industrial processes. The difference between the low,
+high, and ambitious city scenarios is the rate at which average
+industrial energy intensity decreases annually.
 </p>
 <p></span></p>
 </div>
@@ -1465,9 +1467,9 @@ style="background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 
 </p>
 <p style="margin-left:1em;">
 <p>The goal of this example is to phase out coal from Malaysia’s
-electricity generation capacity. The difference between the high and low
-scenarios is how quickly coal is phased out and the year in which the
-phase-out is completed.</p>
+electricity generation capacity. The difference between the high, low,
+and ambitious city scenarios is how quickly coal is phased out and the
+year in which the phase-out is completed.</p>
 </p>
 <p></span></p>
 </div>
@@ -1597,8 +1599,8 @@ result in a faster phase-out.
 adding the lines (replace <code>high</code> with <code>low</code> as
 needed):
 <p style='font-size:0.8em'>
-<code>&lt;Value name = "scen"&gt;../input/addons/no_new_coal.xml&lt;/Value&gt;</code>
-<code>&lt;Value name = "scen"&gt;../input/addons/coal_shutdown_high.xml&lt;/Value&gt;</code></li>
+<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/no_new_coal.xml&lt;/Value&gt;</code>
+<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/coal_shutdown_high.xml&lt;/Value&gt;</code></li>
 </ol>
 </p>
 </p>
@@ -1803,7 +1805,7 @@ style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 
 <li>Create a folder in the input directory eg.
 <code>./gcam-core/input/addons/malaysia</code>.</li>
 <li>Download the example XML file ( <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_gen_low.xml">elec_gen_low.xml</a>
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_gen_high.xml">elec_gen_high.xml</a>
 and the subsidy link file <a
 href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_gen_link.xml">elec_gen_link.xml</a>
 to the folder. (Click on <code>Raw</code> and then
@@ -1829,16 +1831,17 @@ the corresponding <code>input-subsidy</code> is added within each
 relevant <code>period</code> for each <code>stub-technology</code> you
 wish to constrain.</li>
 <li>To adjust the hydropower pathway, download the example XML file <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_hydro_low">elec_hydro_low.xml</a>
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_hydro_high">elec_hydro_high.xml</a>
 to the folder.</li>
 <li>Within each <code>fixedOutput</code> tag in the XML, adjust the
 value to reflect desired hydropower output in each period. The user can
 also add additional periods.</li>
 <li>Save the XMLs and then point to them in your configuration file by
-adding the lines:
+adding the lines (replacing <code>high</code> with <code>low</code> or
+<code>ambitious_city</code> as needed):
 <p style='font-size:0.9em'>
-<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/elec_gen_low.xml&lt;/Value&gt;</code>
-<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/elec_hydro_low.xml&lt;/Value&gt;</code>
+<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/elec_gen_high.xml&lt;/Value&gt;</code>
+<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/elec_hydro_high.xml&lt;/Value&gt;</code>
 <code>&lt;Value name = "scen"&gt;../input/addons/malaysia/elec_gen_link.xml&lt;/Value&gt;</code></li>
 </ol>
 </p>
@@ -1923,9 +1926,9 @@ GHG link file for land use change emissions for rest of the world
 <div class="warning"
 style="background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
 <span>
-<h3 style="text-align:center; font-size:24px">
+<p style="text-align:center; font-size:24px">
 <b>Goal</b>
-</h3>
+</p>
 <p style="margin-left:1em;">
 The aim of this example is to demonstrate how to apply an economy-wide
 emissions constraint for Malaysia in accord with its national goals:
@@ -1940,9 +1943,9 @@ net-zero CO<sub>2</sub> by 2050.
 <div class="warning"
 style="background-color:#fffae0; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
 <p><span></p>
-<h3 style="text-align:center; font-size:24px">
+<p style="text-align:center; font-size:24px">
 <b>Approach</b>
-</h3>
+</p>
 <p style="margin-left:1em;">
 <p>In GCAM, an emissions constraint can be accomplished by using a
 <code>ghgpolicy</code>, which is a special case of
@@ -1957,9 +1960,9 @@ policy-portfolio-standard that applies to emissions.</p>
 <div class="warning"
 style="background-color:#EFFFC9; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
 <p><span></p>
-<h3 style="text-align:center; font-size:24px">
+<p style="text-align:center; font-size:24px">
 <b>Background</b>
-</h3>
+</p>
 <p style="margin-left:1em;">
 <p>To implement a <code>ghgpolicy</code> in GCAM, users specify the
 total amount of emissions (CO<sub>2</sub> or GHG) in a time period. GCAM
@@ -1991,9 +1994,9 @@ Policies</a> documentation for more information.
 <div class="warning"
 style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
 <span>
-<h3 style="text-align:center; font-size:24px">
+<p style="text-align:center; font-size:24px">
 <b>GCAM Implementation</b>
-</h3>
+</p>
 <p style="margin-left:1em;">
 <ol style="list-style-type: decimal">
 <li><p>Create a folder in the input directory:
@@ -2287,7 +2290,7 @@ ghg_my &lt;- malaysia %&gt;%
          region == &quot;All of Malaysia&quot;) %&gt;%
   mutate(param = &quot;GHG Emissions by Sector&quot;)
 
-my_emissions &lt;- bind_rows(co2_my, ghg_my) </code></pre>
+my_emissions &lt;- bind_rows(co2_my, ghg_my)  </code></pre>
 <pre class="r"><code>emissions_my_plot &lt;- my_emissions %&gt;%
   mutate(param = units) %&gt;%
   rchart::chart(save = F, 
@@ -2334,7 +2337,7 @@ kl_emissions &lt;- bind_rows(co2_kl, ghg_kl) </code></pre>
   mutate(param = units) %&gt;%
   rchart::chart(save = F, 
                 show = F,
-                size_text = 12)
+                size_text = 12) 
 
 emissions_kl_plot$chart_param</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-emiss-plot-kl-1.png" width="100%" style="display: block; margin: auto;" /></p>
@@ -2344,7 +2347,7 @@ emissions_kl_plot$chart_param</code></pre>
          region == &quot;KualaLumpur&quot;) %&gt;%
   mutate(param = &quot;GHG Emissions by Gas&quot;)
 
-kl_emissions_gas &lt;- bind_rows(ghg_gas_kl, kl_emissions)</code></pre>
+kl_emissions_gas &lt;- bind_rows(ghg_gas_kl, kl_emissions) </code></pre>
 <pre class="r"><code>gas_kl &lt;- kl_emissions_gas %&gt;%
   rchart::chart(save = F, 
                 show = F,
