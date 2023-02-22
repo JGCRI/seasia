@@ -51,7 +51,7 @@ data.frame(
 
 <br> 
 
-You will need the following prerequisites in order to run GCAM. You will also need at least 8 GB of RAM.
+You will need the following prerequisites in order to run GCAM. You will also need at least 8 GB of RAM on your computer.
 
 ```{r prereq-table, results = 'show', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE}
 
@@ -67,9 +67,9 @@ links <- c("Install Java 64",
 
 data.frame(
   Prerequisite = c("Java 64",
-           "R",
-           "RStudio",
-           "Windows XML Maker")) %>%
+                   "R",
+                   "RStudio",
+                   "Windows XML Maker")) %>%
   dplyr::mutate(Link = cell_spec(links,"html",link=dt_url)) %>%
   kable("html", escape = FALSE) %>%
   kable_styling(bootstrap_options = c("bordered", "striped", "hover", "condensed", "responsive")) %>%
@@ -153,27 +153,27 @@ In general, three policy scenarios will be presented: a "low ambition" and "high
 
 <br>
 
-The following subsections give additional details and explanations for the policies listed above.
-(In progress. Will be expanded with examples for each.)
+The following subsections give additional details and explanations for the policies listed above 
+(In progress. Will be expanded with examples for each).
 
 ## Private ICE Phase-out
 ***
 
 ```{r ice-phaseout-files-table, results = 'show', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE}
 
-dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/trn_ICE_low.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/trn_ICE_high.xml",
+dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/trn_ICE_high.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/trn_ICE_low.xml",
             "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/trn_ICE_ambitious_city.xml")
 
 data.frame(
-  Scenario = c("Low", "High", "Ambitious City")) %>% 
-  dplyr:: mutate("Files Used" = cell_spec(c("trn_ICE_low.xml",
-                                            "trn_ICE_high.xml",
+  Scenario = c("High", "Low", "Ambitious City")) %>% 
+  dplyr:: mutate("Files Used" = cell_spec(c("trn_ICE_high.xml",
+                                            "trn_ICE_low.xml",
                                             "trn_ICE_ambitious_city.xml"),
                                           "html", link=dt_url),
-         Description = c("Phases liquids passenger vehicles out of the market by 2050",
-                         "Phases liquids passenger vehicles out of the market by 2030",
-                         "Phases liquids passenger vehicles out of the market by 2030 in KL, and by 2050 in the rest of Malaysia")) %>% 
+                 Description = c("Phases liquids passenger vehicles out of the market by 2030",
+                                 "Phases liquids passenger vehicles out of the market by 2050",
+                                 "Phases liquids passenger vehicles out of the market by 2030 in KL, and by 2050 in the rest of Malaysia")) %>% 
   kable("html", escape = FALSE, col.names = c("Scenario", "Files Used", "Description")) %>%
   kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
   row_spec(0, background = "#2A2A2A", color = "white")
@@ -259,6 +259,12 @@ To represent an ICE vehicle phase-out, we decrease their shareweights over time.
 ## Public/Private Vehicle Modal Shift
 ***
 
+```{r modal-shift-files-table, results = 'show', eval=TRUE, echo=FALSE, warning=FALSE, error = FALSE, message = FALSE}
+
+cat("Under development.")
+
+```
+
 ## High Efficiency Appliances
 ***
 
@@ -274,9 +280,9 @@ data.frame(
                                             "efficient_appliances_low.xml",
                                             "efficient_appliances_ambitious_city.xml"),
                                           "html", link=dt_url),
-         Description = c("Increase prevelance of high-efficiency technologies (commercial and residential) through 2050",
-                         "Increase prevelance of high-efficiency technologies (commercial and residential) through 2070",
-                         "Increase prevelance of high-efficiency technologies (commercial and residential) through 2050 in KL and 2070 in Rest of Malaysia")) %>% 
+                 Description = c("Increase prevelance of high-efficiency technologies (commercial and residential) through 2050",
+                                 "Increase prevelance of high-efficiency technologies (commercial and residential) through 2070",
+                                 "Increase prevelance of high-efficiency technologies (commercial and residential) through 2050 in KL and 2070 in the rest of Malaysia")) %>% 
   kable("html", escape = FALSE, col.names = c("Scenario", "Files Used", "Description")) %>%
   kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
   row_spec(0, background = "#2A2A2A", color = "white")
@@ -375,9 +381,9 @@ data.frame(
                                             "buildings_led_low.xml",
                                             "buildings_led_ambitious_city.xml"),
                                           "html", link=dt_url),
-         Description = c("Gradually phases non-LED residential lighting technology out of the market by 2050",
-                         "Gradually phases non-LED residential lighting technology out of the market by 2070",
-                         "Gradually phases non-LED residential lighting technology out of the market by 2050 in KL and 2070 in Rest of Malaysia")) %>% 
+                 Description = c("Gradually phases non-LED residential lighting technology out of the market by 2050",
+                                 "Gradually phases non-LED residential lighting technology out of the market by 2070",
+                                 "Gradually phases non-LED residential lighting technology out of the market by 2050 in KL and 2070 in the rest of Malaysia")) %>% 
   kable("html", escape = FALSE, col.names = c("Scenario", "Files Used", "Description")) %>%
   kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
   row_spec(0, background = "#2A2A2A", color = "white")
@@ -473,9 +479,9 @@ data.frame(
                                      "shell_eff_low.xml",
                                      "shell_eff_ambitious_city"),
                                    "html", link = dt_url)) %>% 
-  mutate(Description = c("Decreases shell conductance from 3.75 in 2020 to 0.487 (residential)/ 0.375 (commercial) in 2070 at an annual rate of 4% (residential)/ 4.5% (commercial)",
-                         "Decreases shell conductance from 3.75 in 2020 to 1.366 (residential)/ 1.057 (commercial) in 2070 at an annual rate of 2% (residential)/ 2.5% (commercial)",
-                         "Follows the 'high' scenario trajectory in KL and the 'low' scenario trajectory for Rest of Malaysia")) %>%
+  mutate(Description = c("Decreases shell conductance from 3.75 in 2020 to 0.487 (residential) / 0.375 (commercial) in 2070 at an annual rate of 4% (residential) / 4.5% (commercial)",
+                         "Decreases shell conductance from 3.75 in 2020 to 1.366 (residential) / 1.057 (commercial) in 2070 at an annual rate of 2% (residential) / 2.5% (commercial)",
+                         "Follows the 'high' scenario trajectory in KL and the 'low' scenario trajectory for the rest of Malaysia")) %>%
   kable("html", escape = FALSE, col.names = c("Scenario", "Files Used", "Description")) %>%
   kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
   row_spec(0, background = "#2A2A2A", color = "white")
@@ -546,7 +552,7 @@ We can use GCAM's `shell-conductance` parameter to represent an increase in the 
 
 <p style='margin-left:1em;'>
 1. Create a folder in the input directory: `./gcam-core/input/addons`.
-2. Download the desired xml file (either [shell_eff_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/shell_eff_high.xml) or [shell_eff_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/shell_eff_low.xml)) to the folder.
+2. Download the desired xml file (either [shell_eff_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/shell_eff_high.xml), [shell_eff_low.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/shell_eff_low.xml), or [shell_eff_ambitious_city.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/shell_eff_ambitious_city.xml)) to the folder.
 4. To make custom adjustments: within each `gcam-consumer` tag in the XML, specify the desired `shell-conductance` values for each year.
 5. Save the xml and then point to it in your configuration file by adding the line (replace `high` with `low` or `ambitious city` as needed): 
 <p style='font-size:0.8em'>
@@ -575,7 +581,7 @@ data.frame(
                                    "html", link = dt_url)) %>% 
   mutate(Description = c("Increases overall efficiency of industrial processes by 1% annually through 2070",
                          "Increases overall efficiency of industrial processes by 0.5% annually through 2070",
-                         "Increases overall efficiency of industrial processes by 1% annually through 2070 for KL and by 0.5% annually for Rest of Malaysia")) %>%
+                         "Increases overall efficiency of industrial processes by 1% annually through 2070 for KL and by 0.5% annually for the rest of Malaysia")) %>%
   kable("html", escape = FALSE, col.names = c("Scenario", "Files Used", "Description")) %>%
   kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
   row_spec(0, background = "#2A2A2A", color = "white")
@@ -674,9 +680,9 @@ data.frame(
                                             "coal_shutdown_high.xml",
                                             "coal_shutdown_low.xml"),
                                           "html", link=dt_url),
-         Description = c("Prevents additional coal capacity from being built starting in 2020",
-                         "Retires existing coal capacity quickly; all coal is retired by 2050",
-                         "Retires existing coal capacity more slowly; 95% of coal is retired by 2075")) %>% 
+                 Description = c("Prevents additional coal capacity from being built starting in 2020",
+                                 "Retires existing coal capacity quickly; all coal is retired by 2050",
+                                 "Retires existing coal capacity more slowly; 95% of coal is retired by 2075")) %>% 
   kable("html", escape = FALSE, col.names = c("Scenario", "Files Used", "Description")) %>%
   kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
   row_spec(0, background = "#2A2A2A", color = "white")
@@ -694,7 +700,9 @@ data.frame(
 </p>
 
 <p style='margin-left:1em;'>
-The goal of this example is to phase out coal from Malaysia's electricity generation capacity. The difference between the high, low, and ambitious city scenarios is how quickly coal is phased out and the year in which the phase-out is completed. 
+The goal of this example is to phase out coal from Malaysia's electricity generation capacity. The difference between the high, low, and ambitious city scenarios is how quickly coal is phased out and the year in which the phase-out is completed.  
+
+Note that this policy only applies at the national level. Therefore, there is no ambitious city-specific xml file; rather, the scenario uses the low configuration to reflect low ambition in the rest of Malaysia.
 
 </p>
 </span>
@@ -754,8 +762,8 @@ There are two steps to phase out coal generation. The first is to prevent any ne
 </p>
 
 <ul style='margin-left:4em; text-align:left;'>
-  <li>Use `lifetime` to adjust the year in which the coal phase-out is complete; the phase-out will be complete `x` years after 2015, where `x` is the `lifetime`. </li>
-  <li>Use the `steepness` and `half-life` within the `s-curve-shutdown-decider` to adjust the phaseout trajectory; a smaller `half-life` and larger `steepness` will result in a faster phase-out.</li>
+<li>Use `lifetime` to adjust the year in which the coal phase-out is complete; the phase-out will be complete `x` years after 2015, where `x` is the `lifetime`. </li>
+<li>Use the `steepness` and `half-life` within the `s-curve-shutdown-decider` to adjust the phaseout trajectory; a smaller `half-life` and larger `steepness` will result in a faster phase-out.</li>
 </ul>
 <p style='margin-left:1em;'>
 5. Save the xmls and then point to them in your configuration file by adding the lines (replace `high` with `low` as needed): 
@@ -778,32 +786,32 @@ There are two steps to phase out coal generation. The first is to prevent any ne
 
 dt_url <- c("https://github.com/JGCRI/seasia/blob/main/data/malaysia/sectoral_policies/elec_gen_pathway.xlsx",
             "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_gen_link.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_gen_low.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_hydro_low.xml",
             "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_gen_high.xml",
             "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_hydro_high.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_gen_low.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_hydro_low.xml",
             "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_gen_ambitious_city.xml",
             "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_hydro_ambitious_city.xml")
 
 data.frame(
-  Scenario = c("All", "All", "Low", "Low", "High", "High", "Ambitious City", "Ambitious City")) %>% 
+  Scenario = c("All", "All", "High", "High", "Low", "Low", "Ambitious City", "Ambitious City")) %>% 
   dplyr:: mutate("Files Used" = cell_spec(c("elec_gen_pathway.xlsx",
                                             "elec_gen_link.xml",
-                                            "elec_gen_low.xml",
-                                            "elec_hydro_low.xml",
                                             "elec_gen_high.xml",
                                             "elec_hydro_high.xml",
+                                            "elec_gen_low.xml",
+                                            "elec_hydro_low.xml",
                                             "elec_gen_ambitious_city.xml",
-                                            "elec_hydro_ambitious_city.xmll"),
+                                            "elec_hydro_ambitious_city.xml"),
                                           "html", link=dt_url),
-         Description = c("Excel spreadsheet that shows initial calculations to build this policy",
-                   "Applies subsidies to relevant technologies in order to meet the specified floors",
-                   "Sets floors for renewable electricity generation technologies",
-                   "Sets exogenous hydropower generation",
-                   "Sets floors for renewable electricity generation technologies",
-                   "Sets exogenous hydropower generation",
-                   "Sets floors for renewable electricity generation technologies",
-                   "Sets exogenous hydropower generation")) %>% 
+                 Description = c("Excel spreadsheet that shows initial calculations to build this policy",
+                                 "Applies subsidies to relevant technologies in order to meet the specified floors",
+                                 "Sets high-ambition floors for renewable electricity generation technologies",
+                                 "Sets high-ambition exogenous hydropower generation",
+                                 "Sets low-ambition floors for renewable electricity generation technologies",
+                                 "Sets low-ambition exogenous hydropower generation",
+                                 "Sets high-ambition floors for renewable electricity generation technologies in KL and low-ambition floors in the rest of Malaysia",
+                                 "Sets high-ambition exogenous hydropower generation in KL and low-ambition generation in the rest of Malaysia")) %>% 
   kable("html", escape = FALSE, col.names = c("Scenario", "Files Used", "Description")) %>%
   kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
   row_spec(0, background = "#2A2A2A", color = "white")
@@ -874,12 +882,12 @@ Hydropower is exogenous in GCAM and has a fixed pathway. The power generation va
 
 <p style='margin-left:1em;'>
 1. Create a folder in the input directory eg. `./gcam-core/input/addons/malaysia`.
-2. Download the example XML file ( [elec_gen_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_gen_high.xml) and the subsidy link file [elec_gen_link.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_gen_link.xml) to the folder. (Click on `Raw` and then `right-click` and select `save-as`.)
+2. Download the example XML file ([elec_gen_high.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_gen_high.xml) and the subsidy link file [elec_gen_link.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_gen_link.xml) to the folder (click on `Raw` and then `right-click` and select `save-as`).
 3. To make adjustments: within each `policy-portfolio-standard` tag in the XML, adjust the following:
 </p>
 <ul style='margin-left:4em; text-align:left;'>
-  <li>`constraint` for each year in which a floor is desired</li>
-  <li>Set `min-price` to a large negative value for years in which an exact constraint, rather than a floor, is desired</li>
+<li>`constraint` for each year in which a floor is desired</li>
+<li>Set `min-price` to a large negative value for years in which an exact constraint, rather than a floor, is desired</li>
 </ul>
 <p style='margin-left:1em;'>
 4. Within each `supplysector` tag in the XML, make sure that the corresponding `input-subsidy` is added within each relevant `period` for each `stub-technology` you wish to constrain.
@@ -923,8 +931,8 @@ data.frame(
                                    "html", link = dt_url)) %>% 
   mutate(Description = c("CO2 emissions constraint for Malaysia (2035 - 2050)",
                          "GHG link file for Malaysia for land use change emissions", 
-                         "CO2 emissions constraint rest of the World (2050)",
-                         "GHG link file for land use change emissions for rest of the world")) %>%
+                         "CO2 emissions constraint for the rest of the World (2050)",
+                         "GHG link file for land use change emissions for the rest of the world")) %>%
   kable("html", escape = FALSE, col.names = c("Scenario", "Files Used", "Description")) %>%
   kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
   row_spec(0, background = "#2A2A2A", color = "white")
@@ -1005,24 +1013,24 @@ There are some important considerations: (1) What GHGs are included in the const
 1. Create a folder in the input directory: `./gcam-core/input/addons`.
 <!---include links to example XMLs here--->
 2. Download the emissions constraint xml file(s) for Malaysia:
-[NetZeroC_Malaysia_2035_2050](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/NetZeroC_Malaysia_2035_2050) and [Malaysia_LUC](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/malaysia_LUC)), as well as those for the rest of the world (ROW), [NetZeroC_global_noMalaysia_2050](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/NetZeroC_global_noMalaysia_2050) and [ROW_LUC_noMalaysia](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/ROW_LUC_noMalaysia).
+[NetZeroC_Malaysia_2035_2050](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/NetZeroC_Malaysia_2035_2050) and [Malaysia_LUC](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/malaysia_LUC), as well as those for the rest of the world (ROW), [NetZeroC_global_noMalaysia_2050](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/NetZeroC_global_noMalaysia_2050) and [ROW_LUC_noMalaysia](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/ROW_LUC_noMalaysia).
 
-3. The first file, `NetZeroC_Malaysia_2035_2050`, specifies emissions in units of tonnes of carbon (_NOT CO~2~_) in each period. One way to determine the emissions constraint for each period is to examine the CO~2~ emissions in the reference case (See ModelInterface: "CO~2~ emissions by region"). Based on the reference emissions, one can create an emissions constraint accordingly, depending on the start date of the emissions constraint, end goal, and steepness of the decrease in emissions. 
+3. The first file, `NetZeroC_Malaysia_2035_2050`, specifies emissions in units of tonnes of carbon (_not CO~2~_) in each period. One way to determine the emissions constraint for each period is to examine the CO~2~ emissions in the reference case (See ModelInterface: "CO~2~ emissions by region"). Based on the reference emissions, one can create an emissions constraint accordingly, depending on the start date of the emissions constraint, end goal, and steepness of the decrease in emissions. 
 
-4. You will notice that the constraint starts in 2035. We want to first incorporate the pathway for Malaysia's Nationally Determined Contribution (NDC) from 2020 to 2030. Malaysia's NDC includes a target to reduce its greenhouse gas (GHG) emissions intensity of GDP by 45% by 2030 relative to the emissions intensity of GDP in 2005. When we examine GHG emissions (See ModelInterface: "nonCO~2~ emissions by region") and GDP ((See ModelInterface: "GDP MER by region"), we see that this target is met without any additional policy in the reference scenario. Thus, we only need to start our constraint in 2035.  We specify a linear decrease to 0 tonnes of C in 2050. 
+4. You will notice that the constraint starts in 2035. We want to first incorporate the pathway for Malaysia's Nationally Determined Contribution (NDC) from 2020 to 2030. Malaysia's NDC includes a target to reduce its greenhouse gas (GHG) emissions intensity of GDP by 45% by 2030 relative to the emissions intensity of GDP in 2005. When we examine GHG emissions (See ModelInterface: "nonCO~2~ emissions by region") and GDP (See ModelInterface: "GDP MER by region"), we see that this target is met without any additional policy in the reference scenario. Thus, we only need to start our constraint in 2035.  We specify a linear decrease to 0 tonnes of C in 2050. 
 
 5. We adopt a similar approach for the ROW, using the total emissions (tC) in 2020 for all countries as a starting point. (We did not subtract our Malaysia's emissions, as they are quite small globally). It is not absolutely necessary to adopt the very same emissions constraint for the ROW, but the constraint should be strong enough to avoid carbon leakage from Malaysia' net-zero policy.
 
 6. One needs to decide whether and how land use change emissions are incorporated into the constraint. GCAM accounts for fossil fuel and industry CO~2~ emissions separately from land use change CO~2~ emissions. The `Malaysia_luc.xml` specifies how land use change CO~2~ emissions (LUC-CO~2~) in Malaysia are linked to the ghgpolicy ("CO~2~"). There are two parameters: `price-adjust` and `demand-adjust`. Price-adjust is used to convert prices for different GHG's. A price-adjust of 1.0 for LUC-CO~2~ means the market price on LUC-CO~2~ emissions is the same as the price applied to fossil fuel and industry CO~2~ emissions. A demand-adjust of 1 means that LUC-CO~2~ emissions are counted in the emissions constraint. These two parameters can be adjusted. In the sample files we have a price-adjust of 0, and a demand-adjust of 1. This can be modified depending on the goal and importance of LUC emissions. Note that Malaysia is removed from the `ROW_LUC_noMalaysia.xml`.
 
 7. Save the xml files and then point to them in your configuration file by adding the line: 
-</p>
-<p style='font-size:0.8em'>
+<p style='font-size:0.9em'>
 <!---insert exmaple XML filenames--->
 `<Value name = "scen">../input/addons/malaysia/NetZeroC_Malaysia_2035_2050.xml</Value>`
 `<Value name = "scen">../input/addons/malaysia/Malaysia_LUC.xml</Value>`
 `<Value name = "scen">../input/addons/malaysia/NetZeroC_global_noMalaysia_2050.xml</Value>`
 `<Value name = "scen">../input/addons/malaysia/ROW_LUC_noMalaysia.xml</Value>`
+</p>
 </p>
 </p>
 
@@ -1052,7 +1060,7 @@ This section describes how to explore and compare the final output data using GC
 
 `gcamextractor` is an R package used to extract and process GCAM data and manipulate into standardized tables. `gcamextractor` converts GCAM outputs into commonly used units as well as aggregates across different classes and sectors for easy use in plots, maps and tables. For more information, please reference the documentation page found [here](https://jgcri.github.io/gcamextractor/index.html).
 
-The first step is to create a path to the GCAM database, found in the output folder of your GCAM folder, and a list of desired parameters. The `readgcam()` function also requires region names and a specific output folder. Because reading in many parameters can take several minutes, we will be using existing outputs, found in your working directory's "gcamextractor" folder, generated by the code below.
+The first step is to create a path to the GCAM database, found in the output folder of your GCAM folder, and a list of desired parameters. The `readgcam()` function also requires region names and a specific output folder. Until the scenario modeling process is complete, use the processed csv files found in the `data/malaysia/gcamextractor/` folder, sorted by scenario and read in below.
 
 ```{r gcamextractor-setup, echo = TRUE, eval = FALSE, class.source = 'fold-show'}
 sample_path <- "./output/database"
@@ -1070,15 +1078,18 @@ data <- gcamextractor::readgcam(gcamdatabase = sample_path,
 
 ```
 
-Until the scenario modeling process is complete, use the processed csv files found in the data/malaysia/gcamextractor/ folder.  
- 
+
 ```{r gcamextractor, echo = TRUE, class.source = 'fold-show'}
-ref <- read.csv("../data/malaysia/gcamextractor/reference/gcamDataTable_aggClass1.csv") 
+ref <- read.csv("../data/malaysia/gcamextractor/ref/gcamDataTable_aggClass1.csv") 
 high <- read.csv("../data/malaysia/gcamextractor/high/gcamDataTable_aggClass1.csv")
 low <- read.csv("../data/malaysia/gcamextractor/low/gcamDataTable_aggClass1.csv")
 city <- read.csv("../data/malaysia/gcamextractor/city/gcamDataTable_aggClass1.csv")
+ref_cn <- read.csv("../data/malaysia/gcamextractor/ref_carbon_neutral/gcamDataTable_aggClass1.csv") 
+high_cn <- read.csv("../data/malaysia/gcamextractor/high_carbon_neutral/gcamDataTable_aggClass1.csv")
+low_cn <- read.csv("../data/malaysia/gcamextractor/low_carbon_neutral/gcamDataTable_aggClass1.csv")
+city_cn <- read.csv("../data/malaysia/gcamextractor/city_carbon_neutral/gcamDataTable_aggClass1.csv")
 
-malaysia <- bind_rows(ref, high, low, city) %>%
+malaysia <- bind_rows(ref, high, low, city, ref_cn, high_cn, low_cn, city_cn) %>%
   filter(region != ("Rest of Malaysia"),
          x > 2000, x <= 2050)
 
@@ -1132,7 +1143,7 @@ To enlarge a figure, please click directly on the image. Click on the image agai
 
 ```{r rchart-socio, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 16, fig.height = 8, out.width = "100%"}
 socioeconomic_parameters <- c("pop", "gdp", "gdpPerCapita")
-  
+
 socioeconomic <- malaysia %>%
   filter(param %in% socioeconomic_parameters,
          region != "All of Malaysia",
@@ -1222,7 +1233,7 @@ emissions <- malaysia_emissions %>%
 emissions[[c]]
 ```
 
-``` {r rchart-emiss-gas, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.height = 9, fig.width = 9, out.width = "100%"}
+``` {r rchart-emiss-gas, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
 co2_gas <- co2 %>%
   mutate(class = "CO2",
          param = "emissGHGByGasNoBioGWPAR5")
@@ -1235,7 +1246,7 @@ ghg_gas <- malaysia %>%
 malaysia_emissions_gas <- bind_rows(co2_gas, ghg_gas)
 ```
 
-``` {r rchart-emiss-gas-plot, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 12, fig.height = 6, out.width = "100%"}
+``` {r rchart-emiss-gas-plot, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 9, fig.height = 9, out.width = "100%"}
 gas <- malaysia_emissions_gas %>%
   mutate(param = units) %>%
   rchart::chart(save = F, 
@@ -1256,12 +1267,25 @@ co2_my <- malaysia %>%
          region == "All of Malaysia") %>%
   mutate(value = value * 3.67,
          units = "CO2 Emissions (MTCO2eq)",
-         param = "CO2 Emissions")
+         param = "CO2 Emissions",
+         class = case_when(grepl("International",class)~"transport",
+                           grepl("refin|hydrogen",class)~"other",
+                           TRUE~class)) %>% 
+  group_by(scenario, region, class, units, param, x, xLabel, classLabel, subRegion, vintage) %>% 
+  summarize(value = sum(value)) %>% 
+  ungroup()
 
 ghg_my <- malaysia %>% 
   filter(param == "emissGHGBySectorNoBioGWPAR5", 
          region == "All of Malaysia") %>%
-  mutate(param = "GHG Emissions by Sector")
+  mutate(param = "GHG Emissions by Sector",
+         class = case_when(grepl("alumin",class)~"industry",
+                           grepl("International",class)~"transport",
+                           grepl("desalinated|refin|urban|coal|gas|oil|biomass|hydrogen|agricultural|crops|livestock", class)~"other",
+                           TRUE~class)) %>% 
+  group_by(scenario, region, class, units, param, x, xLabel, classLabel, subRegion, vintage) %>% 
+  summarize(value = sum(value)) %>% 
+  ungroup()
 
 my_emissions <- bind_rows(co2_my, ghg_my)  
 
@@ -1294,7 +1318,8 @@ gas_my <- my_emissions_gas %>%
                 show = F,
                 scenRef = REF_SCENARIO,
                 summary_line = T,
-                size_text = 10)
+                size_text = 10) +
+  facet_wrap(~scenario)
 
 gas_my$chart_class
 
@@ -1312,15 +1337,25 @@ gas_my$chart_class_diff_absolute
 ##### Kuala Lumpur
 
 ``` {r rchart-emiss-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
-co2_kl <- malaysia %>% filter(param == "emissCO2BySectorNoBio",
-                           region == "KualaLumpur") %>%
+co2_kl <- malaysia %>% 
+  filter(param == "emissCO2BySectorNoBio",
+         region == "KualaLumpur") %>%
   mutate(value = value * 3.67,
          units = "CO2 Emissions (MTCO2eq)",
-         param = "CO2 Emissions")
+         param = "CO2 Emissions",
+         class = case_when(grepl("International",class)~"transport", TRUE~class))  %>% 
+  group_by(scenario, region, class, units, param, x, xLabel, classLabel, subRegion, vintage) %>% 
+  summarize(value = sum(value)) %>% 
+  ungroup()
 
-ghg_kl <- malaysia %>% filter(param == "emissGHGBySectorNoBioGWPAR5",
-                           region == "KualaLumpur") %>%
-  mutate(param = "GHG Emissions by Sector")
+ghg_kl <- malaysia %>% 
+  filter(param == "emissGHGBySectorNoBioGWPAR5",
+         region == "KualaLumpur") %>%
+  mutate(param = "GHG Emissions by Sector",
+         class = case_when(grepl("International",class)~"transport", TRUE~class)) %>% 
+  group_by(scenario, region, class, units, param, x, xLabel, classLabel, subRegion, vintage) %>% 
+  summarize(value = sum(value)) %>% 
+  ungroup()
 
 kl_emissions <- bind_rows(co2_kl, ghg_kl) 
 
@@ -1662,7 +1697,7 @@ building_energy_kl$chart_class_diff_absolute
 
 ```{r rchart-transport-mode, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.height = 6, fig.width = 8, out.width = "100%"}
 transport_mode_params <- c("transportFreightVMTByMode", "transportPassengerVMTByMode")
-                
+
 transport_m <- malaysia %>% 
   filter(param %in% transport_mode_params,
          region != "Malaysia") %>%
@@ -1736,7 +1771,7 @@ transport_kl_m$chart_class_diff_absolute
 
 ```{r rchart-transport-fuel, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
 transport_fuel_params <- c("transportFreightVMTByFuel", "transportPassengerVMTByFuel")
-                
+
 transport_f <- malaysia %>% 
   filter(param %in% transport_fuel_params,
          region != "Malaysia") %>%
@@ -2011,11 +2046,11 @@ malaysia_transport <- co2_my %>%
   group_by(year) %>%
   mutate(total = sum(value)) %>%
   distinct(year, .keep_all = TRUE)
- 
+
 malaysia_co2 <- bind_rows(malaysia_build_ind, malaysia_transport) 
 
 malaysia_co2 %>%
- ggplot(aes(x = year, y = value, fill = class)) + 
+  ggplot(aes(x = year, y = value, fill = class)) + 
   geom_col() +
   labs(title = "Malaysia, GCAM reference",
        y = "MTCO2eq") +
