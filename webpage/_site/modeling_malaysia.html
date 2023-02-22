@@ -467,7 +467,7 @@ gcamv5p3_seasia
 </table>
 <p><br></p>
 <p>You will need the following prerequisites in order to run GCAM. You
-will also need at least 8 GB of RAM.</p>
+will also need at least 8 GB of RAM on your computer.</p>
 <table class="table table-bordered table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -629,8 +629,8 @@ below.</p>
 </p>
 <p><br></p>
 <p>The following subsections give additional details and explanations
-for the policies listed above. (In progress. Will be expanded with
-examples for each.)</p>
+for the policies listed above (In progress. Will be expanded with
+examples for each).</p>
 <div id="private-ice-phase-out" class="section level2" number="4.1">
 <h2><span class="header-section-number">4.1</span> Private ICE
 Phase-out</h2>
@@ -652,17 +652,6 @@ Description
 <tbody>
 <tr>
 <td style="text-align:left;">
-Low
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/trn_ICE_low.xml" style="     ">trn_ICE_low.xml</a>
-</td>
-<td style="text-align:left;">
-Phases liquids passenger vehicles out of the market by 2050
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
 High
 </td>
 <td style="text-align:left;">
@@ -670,6 +659,17 @@ High
 </td>
 <td style="text-align:left;">
 Phases liquids passenger vehicles out of the market by 2030
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Low
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/trn_ICE_low.xml" style="     ">trn_ICE_low.xml</a>
+</td>
+<td style="text-align:left;">
+Phases liquids passenger vehicles out of the market by 2050
 </td>
 </tr>
 <tr>
@@ -793,6 +793,7 @@ number="4.2">
 <h2><span class="header-section-number">4.2</span> Public/Private
 Vehicle Modal Shift</h2>
 <hr />
+<pre><code>## Under development.</code></pre>
 </div>
 <div id="high-efficiency-appliances" class="section level2"
 number="4.3">
@@ -847,7 +848,7 @@ Ambitious City
 </td>
 <td style="text-align:left;">
 Increase prevelance of high-efficiency technologies (commercial and
-residential) through 2050 in KL and 2070 in Rest of Malaysia
+residential) through 2050 in KL and 2070 in the rest of Malaysia
 </td>
 </tr>
 </tbody>
@@ -1007,7 +1008,7 @@ Ambitious City
 </td>
 <td style="text-align:left;">
 Gradually phases non-LED residential lighting technology out of the
-market by 2050 in KL and 2070 in Rest of Malaysia
+market by 2050 in KL and 2070 in the rest of Malaysia
 </td>
 </tr>
 </tbody>
@@ -1142,8 +1143,8 @@ High
 <a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/shell_eff_high.xml" style="     ">shell_eff_high.xml</a>
 </td>
 <td style="text-align:left;">
-Decreases shell conductance from 3.75 in 2020 to 0.487 (residential)/
-0.375 (commercial) in 2070 at an annual rate of 4% (residential)/ 4.5%
+Decreases shell conductance from 3.75 in 2020 to 0.487 (residential) /
+0.375 (commercial) in 2070 at an annual rate of 4% (residential) / 4.5%
 (commercial)
 </td>
 </tr>
@@ -1155,8 +1156,8 @@ Low
 <a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/shell_eff_low.xml" style="     ">shell_eff_low.xml</a>
 </td>
 <td style="text-align:left;">
-Decreases shell conductance from 3.75 in 2020 to 1.366 (residential)/
-1.057 (commercial) in 2070 at an annual rate of 2% (residential)/ 2.5%
+Decreases shell conductance from 3.75 in 2020 to 1.366 (residential) /
+1.057 (commercial) in 2070 at an annual rate of 2% (residential) / 2.5%
 (commercial)
 </td>
 </tr>
@@ -1169,7 +1170,7 @@ Ambitious City
 </td>
 <td style="text-align:left;">
 Follows the ‘high’ scenario trajectory in KL and the ‘low’ scenario
-trajectory for Rest of Malaysia
+trajectory for the rest of Malaysia
 </td>
 </tr>
 </tbody>
@@ -1252,9 +1253,11 @@ style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 
 <li>Create a folder in the input directory:
 <code>./gcam-core/input/addons</code>.</li>
 <li>Download the desired xml file (either <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/shell_eff_high.xml">shell_eff_high.xml</a>
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/shell_eff_high.xml">shell_eff_high.xml</a>,
+<a
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/shell_eff_low.xml">shell_eff_low.xml</a>,
 or <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/shell_eff_low.xml">shell_eff_low.xml</a>)
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/shell_eff_ambitious_city.xml">shell_eff_ambitious_city.xml</a>)
 to the folder.</li>
 <li>To make custom adjustments: within each <code>gcam-consumer</code>
 tag in the XML, specify the desired <code>shell-conductance</code>
@@ -1323,7 +1326,7 @@ Ambitious City
 </td>
 <td style="text-align:left;">
 Increases overall efficiency of industrial processes by 1% annually
-through 2070 for KL and by 0.5% annually for Rest of Malaysia
+through 2070 for KL and by 0.5% annually for the rest of Malaysia
 </td>
 </tr>
 </tbody>
@@ -1470,6 +1473,10 @@ style="background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 
 electricity generation capacity. The difference between the high, low,
 and ambitious city scenarios is how quickly coal is phased out and the
 year in which the phase-out is completed.</p>
+<p>Note that this policy only applies at the national level. Therefore,
+there is no ambitious city-specific xml file; rather, the scenario uses
+the low configuration to reflect low ambition in the rest of
+Malaysia.</p>
 </p>
 <p></span></p>
 </div>
@@ -1653,35 +1660,14 @@ specified floors
 </tr>
 <tr>
 <td style="text-align:left;">
-Low
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_gen_low.xml" style="     ">elec_gen_low.xml</a>
-</td>
-<td style="text-align:left;">
-Sets floors for renewable electricity generation technologies
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Low
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_hydro_low.xml" style="     ">elec_hydro_low.xml</a>
-</td>
-<td style="text-align:left;">
-Sets exogenous hydropower generation
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
 High
 </td>
 <td style="text-align:left;">
 <a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_gen_high.xml" style="     ">elec_gen_high.xml</a>
 </td>
 <td style="text-align:left;">
-Sets floors for renewable electricity generation technologies
+Sets high-ambition floors for renewable electricity generation
+technologies
 </td>
 </tr>
 <tr>
@@ -1692,7 +1678,30 @@ High
 <a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_hydro_high.xml" style="     ">elec_hydro_high.xml</a>
 </td>
 <td style="text-align:left;">
-Sets exogenous hydropower generation
+Sets high-ambition exogenous hydropower generation
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Low
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_gen_low.xml" style="     ">elec_gen_low.xml</a>
+</td>
+<td style="text-align:left;">
+Sets low-ambition floors for renewable electricity generation
+technologies
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Low
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_hydro_low.xml" style="     ">elec_hydro_low.xml</a>
+</td>
+<td style="text-align:left;">
+Sets low-ambition exogenous hydropower generation
 </td>
 </tr>
 <tr>
@@ -1703,7 +1712,8 @@ Ambitious City
 <a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_gen_ambitious_city.xml" style="     ">elec_gen_ambitious_city.xml</a>
 </td>
 <td style="text-align:left;">
-Sets floors for renewable electricity generation technologies
+Sets high-ambition floors for renewable electricity generation
+technologies in KL and low-ambition floors in the rest of Malaysia
 </td>
 </tr>
 <tr>
@@ -1711,10 +1721,11 @@ Sets floors for renewable electricity generation technologies
 Ambitious City
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_hydro_ambitious_city.xml" style="     ">elec_hydro_ambitious_city.xmll</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_hydro_ambitious_city.xml" style="     ">elec_hydro_ambitious_city.xml</a>
 </td>
 <td style="text-align:left;">
-Sets exogenous hydropower generation
+Sets high-ambition exogenous hydropower generation in KL and
+low-ambition generation in the rest of Malaysia
 </td>
 </tr>
 </tbody>
@@ -1804,12 +1815,12 @@ style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 
 <ol style="list-style-type: decimal">
 <li>Create a folder in the input directory eg.
 <code>./gcam-core/input/addons/malaysia</code>.</li>
-<li>Download the example XML file ( <a
+<li>Download the example XML file (<a
 href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_gen_high.xml">elec_gen_high.xml</a>
 and the subsidy link file <a
 href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_gen_link.xml">elec_gen_link.xml</a>
-to the folder. (Click on <code>Raw</code> and then
-<code>right-click</code> and select <code>save-as</code>.)</li>
+to the folder (click on <code>Raw</code> and then
+<code>right-click</code> and select <code>save-as</code>).</li>
 <li>To make adjustments: within each
 <code>policy-portfolio-standard</code> tag in the XML, adjust the
 following:</li>
@@ -1876,7 +1887,7 @@ Description
 <tbody>
 <tr>
 <td style="text-align:left;">
-Net-Zero CO2 2050
+Carbon neutral
 </td>
 <td style="text-align:left;">
 <a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/NetZeroC_Malaysia_2035_2050" style="     ">NetZeroC_Malaysia_2035_2050</a>
@@ -1887,7 +1898,7 @@ CO2 emissions constraint for Malaysia (2035 - 2050)
 </tr>
 <tr>
 <td style="text-align:left;">
-Net-Zero CO2 2050
+Carbon neutral
 </td>
 <td style="text-align:left;">
 <a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/Malaysia_LUC" style="     ">Malaysia_LUC</a>
@@ -1898,24 +1909,24 @@ GHG link file for Malaysia for land use change emissions
 </tr>
 <tr>
 <td style="text-align:left;">
-Net-Zero CO2 2050
+Carbon neutral
 </td>
 <td style="text-align:left;">
 <a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/NetZeroC_global_noMalaysia" style="     ">NetZeroC_global_noMalaysia_2050</a>
 </td>
 <td style="text-align:left;">
-CO2 emissions constraint rest of the World (2050)
+CO2 emissions constraint for the rest of the World (2050)
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Net-Zero CO2 2050
+Carbon neutral
 </td>
 <td style="text-align:left;">
 <a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/ROW_LUC_noMalaysia" style="     ">ROW_LUC_noMalaysia</a>
 </td>
 <td style="text-align:left;">
-GHG link file for land use change emissions for rest of the world
+GHG link file for land use change emissions for the rest of the world
 </td>
 </tr>
 </tbody>
@@ -1971,12 +1982,12 @@ in each period. GCAM finds the least-cost pathway in terms of technology
 deployment to satisfy the emissions constraint. An economy-wide
 constraint can be used by itself, or in combination with additional
 sectoral policies described above.</p>
-There are some important considerations: (1) What GHG’s are included in
+There are some important considerations: (1) What GHGs are included in
 the constraint (only CO<sub>2</sub>?)?, (2) What is the time period for
 the constraint (e.g., 2050, 2065)?, (3) What are the emissions in each
 period, (4) Will emissions decline linearly to zero or will another rate
 be specified?, (5) Will land use change emissions be included in the
-constraint?, and (5) What assumptions are made for emissions in the rest
+constraint?, and (6) What assumptions are made for emissions in the rest
 of the world? This latter point is important when considering “carbon
 leakage,” that is, how restrictions in emissions in one geography may
 lead to a shift in carbon-intensive activities to other locations.
@@ -2002,29 +2013,30 @@ style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 
 <li><p>Create a folder in the input directory:
 <code>./gcam-core/input/addons</code>.
 <!---include links to example XMLs here---></p></li>
-<li><p>Download the emissions constraint xml file(s) for Thailand <a
+<li><p>Download the emissions constraint xml file(s) for Malaysia: <a
 href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/NetZeroC_Malaysia_2035_2050">NetZeroC_Malaysia_2035_2050</a>
 and <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/malaysia_LUC">Malaysia_LUC</a>),
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/malaysia_LUC">Malaysia_LUC</a>,
 as well as those for the rest of the world (ROW), <a
 href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/NetZeroC_global_noMalaysia_2050">NetZeroC_global_noMalaysia_2050</a>
 and <a
 href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/ROW_LUC_noMalaysia">ROW_LUC_noMalaysia</a>.</p></li>
-<li><p>The first file, NetZeroC_Malaysia_2035_2050, specifies emissions
-in units of tonnes of carbon (NOT CO<sub>2</sub>) in each period. One
-way to determine the emissions constraint for each period is to examine
-the CO<sub>2</sub> emissions in the reference case (See ModelInterface:
-“CO<sub>2</sub> emissions by region”). Based on the reference emissions,
-one can create an emissions constraint accordingly, depending on the
-start date of the emissions constraint, end goal, and steepness of the
-decrease in emissions.</p></li>
+<li><p>The first file, <code>NetZeroC_Malaysia_2035_2050</code>,
+specifies emissions in units of tonnes of carbon (<em>not
+CO<sub>2</sub></em>) in each period. One way to determine the emissions
+constraint for each period is to examine the CO<sub>2</sub> emissions in
+the reference case (See ModelInterface: “CO<sub>2</sub> emissions by
+region”). Based on the reference emissions, one can create an emissions
+constraint accordingly, depending on the start date of the emissions
+constraint, end goal, and steepness of the decrease in
+emissions.</p></li>
 <li><p>You will notice that the constraint starts in 2035. We want to
 first incorporate the pathway for Malaysia’s Nationally Determined
 Contribution (NDC) from 2020 to 2030. Malaysia’s NDC includes a target
 to reduce its greenhouse gas (GHG) emissions intensity of GDP by 45% by
 2030 relative to the emissions intensity of GDP in 2005. When we examine
 GHG emissions (See ModelInterface: “nonCO<sub>2</sub> emissions by
-region”) and GDP ((See ModelInterface: “GDP MER by region”), we see that
+region”) and GDP (See ModelInterface: “GDP MER by region”), we see that
 this target is met without any additional policy in the reference
 scenario. Thus, we only need to start our constraint in 2035. We specify
 a linear decrease to 0 tonnes of C in 2050.</p></li>
@@ -2037,29 +2049,30 @@ enough to avoid carbon leakage from Malaysia’ net-zero policy.</p></li>
 <li><p>One needs to decide whether and how land use change emissions are
 incorporated into the constraint. GCAM accounts for fossil fuel and
 industry CO<sub>2</sub> emissions separately from land use change
-CO<sub>2</sub> emissions. The Malaysia_luc.xml specifies how land use
-change CO<sub>2</sub> emissions (LUC-CO<sub>2</sub>) in Malaysia are
-linked to the ghgpolicy (“CO<sub>2</sub>”). There are two parameters:
-<code>price-adjust</code> and <code>demand-adjust</code>. Price-adjust
-is used to convert prices for different GHG’s. A price-adjust of 1.0 for
-LUC-CO<sub>2</sub> means the market price on LUC-CO<sub>2</sub>
-emissions is the same as the price applied to fossil fuel and industry
-CO<sub>2</sub> emissions. A demand-adjust of 1 means that
-LUC-CO<sub>2</sub> emissions are counted in the emissions constraint.
-These two parameters can be adjusted. In the sample files we have a
-price-adjust of 0, and a demand-adjust of 1. This can be modified
+CO<sub>2</sub> emissions. The <code>Malaysia_luc.xml</code> specifies
+how land use change CO<sub>2</sub> emissions (LUC-CO<sub>2</sub>) in
+Malaysia are linked to the ghgpolicy (“CO<sub>2</sub>”). There are two
+parameters: <code>price-adjust</code> and <code>demand-adjust</code>.
+Price-adjust is used to convert prices for different GHG’s. A
+price-adjust of 1.0 for LUC-CO<sub>2</sub> means the market price on
+LUC-CO<sub>2</sub> emissions is the same as the price applied to fossil
+fuel and industry CO<sub>2</sub> emissions. A demand-adjust of 1 means
+that LUC-CO<sub>2</sub> emissions are counted in the emissions
+constraint. These two parameters can be adjusted. In the sample files we
+have a price-adjust of 0, and a demand-adjust of 1. This can be modified
 depending on the goal and importance of LUC emissions. Note that
-Malaysia is removed from the ROW_LUC_noMalaysia.xml</p></li>
+Malaysia is removed from the
+<code>ROW_LUC_noMalaysia.xml</code>.</p></li>
 <li><p>Save the xml files and then point to them in your configuration
-file by adding the line:</p></li>
+file by adding the line:</p>
+<p style='font-size:0.9em'>
+<!---insert exmaple XML filenames--->
+<p><code>&lt;Value name = "scen"&gt;../input/addons/malaysia/NetZeroC_Malaysia_2035_2050.xml&lt;/Value&gt;</code>
+<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/Malaysia_LUC.xml&lt;/Value&gt;</code>
+<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/NetZeroC_global_noMalaysia_2050.xml&lt;/Value&gt;</code>
+<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/ROW_LUC_noMalaysia.xml&lt;/Value&gt;</code></p></li>
 </ol>
 </p>
-<p style="font-size:0.8em">
-<!---insert exmaple XML filenames--->
-<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/NetZeroC_Malaysia_2035_2050.xml&lt;/Value&gt;</code>
-<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/Malaysia_luc.xml&lt;/Value&gt;</code>
-<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/NetZeroC_global_noMalaysia_2050.xml&lt;/Value&gt;</code>
-<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/ROW_LUC_noMalaysia.xml&lt;/Value&gt;</code>
 </p>
 </p>
 <p></span></p>
@@ -2097,10 +2110,10 @@ href="https://jgcri.github.io/gcamextractor/index.html">here</a>.</p>
 <p>The first step is to create a path to the GCAM database, found in the
 output folder of your GCAM folder, and a list of desired parameters. The
 <code>readgcam()</code> function also requires region names and a
-specific output folder. Because reading in many parameters can take
-several minutes, we will be using existing outputs, found in your
-working directory’s “gcamextractor” folder, generated by the code
-below.</p>
+specific output folder. Until the scenario modeling process is complete,
+use the processed csv files found in the
+<code>data/malaysia/gcamextractor/</code> folder, sorted by scenario and
+read in below.</p>
 <pre class="r fold-show"><code>sample_path &lt;- &quot;./output/database&quot;
 
 sample_params &lt;- &quot;summary&quot;
@@ -2113,14 +2126,16 @@ data &lt;- gcamextractor::readgcam(gcamdatabase = sample_path,
                                 regionsAggregate = list(regions),
                                 regionsAggregateNames = &quot;All of Malaysia&quot;,
                                 folder = &quot;../data/malaysia/gcamextractor&quot;)</code></pre>
-<p>Until the scenario modeling process is complete, use the processed
-csv files found in the data/malaysia/gcamextractor/ folder.</p>
-<pre class="r fold-show"><code>ref &lt;- read.csv(&quot;../data/malaysia/gcamextractor/reference/gcamDataTable_aggClass1.csv&quot;) 
+<pre class="r fold-show"><code>ref &lt;- read.csv(&quot;../data/malaysia/gcamextractor/ref/gcamDataTable_aggClass1.csv&quot;) 
 high &lt;- read.csv(&quot;../data/malaysia/gcamextractor/high/gcamDataTable_aggClass1.csv&quot;)
 low &lt;- read.csv(&quot;../data/malaysia/gcamextractor/low/gcamDataTable_aggClass1.csv&quot;)
 city &lt;- read.csv(&quot;../data/malaysia/gcamextractor/city/gcamDataTable_aggClass1.csv&quot;)
+ref_cn &lt;- read.csv(&quot;../data/malaysia/gcamextractor/ref_carbon_neutral/gcamDataTable_aggClass1.csv&quot;) 
+high_cn &lt;- read.csv(&quot;../data/malaysia/gcamextractor/high_carbon_neutral/gcamDataTable_aggClass1.csv&quot;)
+low_cn &lt;- read.csv(&quot;../data/malaysia/gcamextractor/low_carbon_neutral/gcamDataTable_aggClass1.csv&quot;)
+city_cn &lt;- read.csv(&quot;../data/malaysia/gcamextractor/city_carbon_neutral/gcamDataTable_aggClass1.csv&quot;)
 
-malaysia &lt;- bind_rows(ref, high, low, city) %&gt;%
+malaysia &lt;- bind_rows(ref, high, low, city, ref_cn, high_cn, low_cn, city_cn) %&gt;%
   filter(region != (&quot;Rest of Malaysia&quot;),
          x &gt; 2000, x &lt;= 2050)
 
@@ -2178,7 +2193,7 @@ number="6.2.1.1.1">
 <h5><span class="header-section-number">6.2.1.1.1</span> Malaysia vs
 Kuala Lumpur</h5>
 <pre class="r"><code>socioeconomic_parameters &lt;- c(&quot;pop&quot;, &quot;gdp&quot;, &quot;gdpPerCapita&quot;)
-  
+
 socioeconomic &lt;- malaysia %&gt;%
   filter(param %in% socioeconomic_parameters,
          region != &quot;All of Malaysia&quot;,
@@ -2283,12 +2298,25 @@ gas[[c]]</code></pre>
          region == &quot;All of Malaysia&quot;) %&gt;%
   mutate(value = value * 3.67,
          units = &quot;CO2 Emissions (MTCO2eq)&quot;,
-         param = &quot;CO2 Emissions&quot;)
+         param = &quot;CO2 Emissions&quot;,
+         class = case_when(grepl(&quot;International&quot;,class)~&quot;transport&quot;,
+                           grepl(&quot;refin|hydrogen&quot;,class)~&quot;other&quot;,
+                           TRUE~class)) %&gt;% 
+  group_by(scenario, region, class, units, param, x, xLabel, classLabel, subRegion, vintage) %&gt;% 
+  summarize(value = sum(value)) %&gt;% 
+  ungroup()
 
 ghg_my &lt;- malaysia %&gt;% 
   filter(param == &quot;emissGHGBySectorNoBioGWPAR5&quot;, 
          region == &quot;All of Malaysia&quot;) %&gt;%
-  mutate(param = &quot;GHG Emissions by Sector&quot;)
+  mutate(param = &quot;GHG Emissions by Sector&quot;,
+         class = case_when(grepl(&quot;alumin&quot;,class)~&quot;industry&quot;,
+                           grepl(&quot;International&quot;,class)~&quot;transport&quot;,
+                           grepl(&quot;desalinated|refin|urban|coal|gas|oil|biomass|hydrogen|agricultural|crops|livestock&quot;, class)~&quot;other&quot;,
+                           TRUE~class)) %&gt;% 
+  group_by(scenario, region, class, units, param, x, xLabel, classLabel, subRegion, vintage) %&gt;% 
+  summarize(value = sum(value)) %&gt;% 
+  ungroup()
 
 my_emissions &lt;- bind_rows(co2_my, ghg_my)  </code></pre>
 <pre class="r"><code>emissions_my_plot &lt;- my_emissions %&gt;%
@@ -2322,15 +2350,25 @@ gas_my$chart_class</code></pre>
 <div id="kuala-lumpur-1" class="section level5" number="6.2.1.2.3">
 <h5><span class="header-section-number">6.2.1.2.3</span> Kuala
 Lumpur</h5>
-<pre class="r"><code>co2_kl &lt;- malaysia %&gt;% filter(param == &quot;emissCO2BySectorNoBio&quot;,
-                           region == &quot;KualaLumpur&quot;) %&gt;%
+<pre class="r"><code>co2_kl &lt;- malaysia %&gt;% 
+  filter(param == &quot;emissCO2BySectorNoBio&quot;,
+         region == &quot;KualaLumpur&quot;) %&gt;%
   mutate(value = value * 3.67,
          units = &quot;CO2 Emissions (MTCO2eq)&quot;,
-         param = &quot;CO2 Emissions&quot;)
+         param = &quot;CO2 Emissions&quot;,
+         class = case_when(grepl(&quot;International&quot;,class)~&quot;transport&quot;, TRUE~class))  %&gt;% 
+  group_by(scenario, region, class, units, param, x, xLabel, classLabel, subRegion, vintage) %&gt;% 
+  summarize(value = sum(value)) %&gt;% 
+  ungroup()
 
-ghg_kl &lt;- malaysia %&gt;% filter(param == &quot;emissGHGBySectorNoBioGWPAR5&quot;,
-                           region == &quot;KualaLumpur&quot;) %&gt;%
-  mutate(param = &quot;GHG Emissions by Sector&quot;)
+ghg_kl &lt;- malaysia %&gt;% 
+  filter(param == &quot;emissGHGBySectorNoBioGWPAR5&quot;,
+         region == &quot;KualaLumpur&quot;) %&gt;%
+  mutate(param = &quot;GHG Emissions by Sector&quot;,
+         class = case_when(grepl(&quot;International&quot;,class)~&quot;transport&quot;, TRUE~class)) %&gt;% 
+  group_by(scenario, region, class, units, param, x, xLabel, classLabel, subRegion, vintage) %&gt;% 
+  summarize(value = sum(value)) %&gt;% 
+  ungroup()
 
 kl_emissions &lt;- bind_rows(co2_kl, ghg_kl) </code></pre>
 <pre class="r"><code>emissions_kl_plot &lt;- kl_emissions %&gt;%
@@ -2615,7 +2653,7 @@ number="6.2.2.2.1">
 <h5><span class="header-section-number">6.2.2.2.1</span> Malaysia vs
 Kuala Lumpur</h5>
 <pre class="r"><code>transport_mode_params &lt;- c(&quot;transportFreightVMTByMode&quot;, &quot;transportPassengerVMTByMode&quot;)
-                
+
 transport_m &lt;- malaysia %&gt;% 
   filter(param %in% transport_mode_params,
          region != &quot;Malaysia&quot;) %&gt;%
@@ -2676,7 +2714,7 @@ number="6.2.2.3.1">
 <h5><span class="header-section-number">6.2.2.3.1</span> Malaysia vs
 Kuala Lumpur</h5>
 <pre class="r"><code>transport_fuel_params &lt;- c(&quot;transportFreightVMTByFuel&quot;, &quot;transportPassengerVMTByFuel&quot;)
-                
+
 transport_f &lt;- malaysia %&gt;% 
   filter(param %in% transport_fuel_params,
          region != &quot;Malaysia&quot;) %&gt;%
@@ -2939,11 +2977,11 @@ malaysia_transport &lt;- co2_my %&gt;%
   group_by(year) %&gt;%
   mutate(total = sum(value)) %&gt;%
   distinct(year, .keep_all = TRUE)
- 
+
 malaysia_co2 &lt;- bind_rows(malaysia_build_ind, malaysia_transport) 
 
 malaysia_co2 %&gt;%
- ggplot(aes(x = year, y = value, fill = class)) + 
+  ggplot(aes(x = year, y = value, fill = class)) + 
   geom_col() +
   labs(title = &quot;Malaysia, GCAM reference&quot;,
        y = &quot;MTCO2eq&quot;) +
