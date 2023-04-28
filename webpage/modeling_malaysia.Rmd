@@ -1060,21 +1060,40 @@ This section describes how to explore and compare the final output data using GC
 
 `gcamextractor` is an R package used to extract and process GCAM data and manipulate into standardized tables. `gcamextractor` converts GCAM outputs into commonly used units as well as aggregates across different classes and sectors for easy use in plots, maps and tables. For more information, please reference the documentation page found [here](https://jgcri.github.io/gcamextractor/index.html).
 
-The first step is to create a path to the GCAM database, found in the output folder of your GCAM folder, and a list of desired parameters. The `readgcam()` function also requires region names and a specific output folder. Until the scenario modeling process is complete, use the processed csv files found in the `data/malaysia/gcamextractor/` folder, sorted by scenario and read in below.
+The first step is to create a path to the GCAM database, found in the output folder of your GCAM folder, and a list of desired parameters. The `readgcam()` function also requires region names and a specific output folder. 
 
 ```{r gcamextractor-setup, echo = TRUE, eval = FALSE, class.source = 'fold-show'}
-sample_path <- "./output/database"
+# Get desired database paths
+ref_db <- "../data/malaysia/output/ref_db"
+high_db <- "../data/malaysia/output/high_db"
+high_cn_db <- "../data/malaysia/output/high_cn_db"
 
-sample_params <- "summary"
+paths <- c(ref_db, high_db, high_cn_db)
+names(paths) <- c("ref", "high", "high_carbon_neutral")
 
+# Choose parameters of interest
+params <- c("elecByTechTWh", "elecConsumByDemandSectorTWh", "emissCO2BySectorNoBio",
+            "emissGHGBySectorGWPAR5", "emissGHGByGasGWPAR5", "energyFinalByFuelEJ", 
+            "energyFinalConsumBySecEJ", "gdp", "gdpPerCapita", "pop", 
+            "energyPrimaryByFuelEJ", "energyFinalSubsecBySectorBuildEJ", 
+            "energyFinalSubsecByFuelBuildEJ", "energyFinalSubsecByFuelIndusEJ", 
+            "transportFreightVMTByMode", "transportPassengerVMTByMode", 
+            "transportFreightVMTByFuel", "transportPassengerVMTByFuel",
+            "transportPassengerVMTByTech", "transportFreightVMTByTech",
+            "buildingFloorspace")
+
+# Identify regions
 regions <- c("Malaysia", "KualaLumpur", "Rest of Malaysia")
 
-data <- gcamextractor::readgcam(gcamdatabase = sample_path,
-                                paramsSelect = sample_params,
-                                regionsSelect = regions,
-                                regionsAggregate = list(regions),
-                                regionsAggregateNames = "All of Malaysia",
-                                folder = "../data/malaysia/gcamextractor")
+# Loop through each database to get gcamextractor output
+for(p in paths){
+  gcamextractor::readgcam(gcamdatabase = p,
+                          regionsSelect = regions,
+                          regionsAggregate = list(regions),
+                          regionsAggregateNames = "All of Malaysia",
+                          paramsSelect = params,
+                          folder = paste0("./gcamextractor/", names(paths)[]))
+}
 
 ```
 
@@ -1082,14 +1101,9 @@ data <- gcamextractor::readgcam(gcamdatabase = sample_path,
 ```{r gcamextractor, echo = TRUE, class.source = 'fold-show'}
 ref <- read.csv("../data/malaysia/gcamextractor/ref/gcamDataTable_aggClass1.csv") 
 high <- read.csv("../data/malaysia/gcamextractor/high/gcamDataTable_aggClass1.csv")
-low <- read.csv("../data/malaysia/gcamextractor/low/gcamDataTable_aggClass1.csv")
-city <- read.csv("../data/malaysia/gcamextractor/city/gcamDataTable_aggClass1.csv")
-ref_cn <- read.csv("../data/malaysia/gcamextractor/ref_carbon_neutral/gcamDataTable_aggClass1.csv") 
 high_cn <- read.csv("../data/malaysia/gcamextractor/high_carbon_neutral/gcamDataTable_aggClass1.csv")
-low_cn <- read.csv("../data/malaysia/gcamextractor/low_carbon_neutral/gcamDataTable_aggClass1.csv")
-city_cn <- read.csv("../data/malaysia/gcamextractor/city_carbon_neutral/gcamDataTable_aggClass1.csv")
 
-malaysia <- bind_rows(ref, high, low, city, ref_cn, high_cn, low_cn, city_cn) %>%
+malaysia <- bind_rows(ref, high, high_cn) %>%
   filter(region != ("Rest of Malaysia"),
          x > 2000, x <= 2050)
 
@@ -1098,6 +1112,57 @@ REF_SCENARIO <- unique(ref$scenario)
 
 # Use this to access reference scenario plot
 c <- paste0("chart_class_", REF_SCENARIO)
+
+```
+
+
+```{r extra-figures-processing, echo = FALSE}
+# Create/aggregate new buildings parameter
+all_data_buildings_aggregate <- malaysia %>%
+  dplyr::filter(param == "energyFinalSubsecBySectorBuildEJ") %>%
+  dplyr::mutate(class = dplyr::case_when(
+    # Urban
+    param == "energyFinalSubsecBySectorBuildEJ" & grepl("resid urban air conditioners", class) ~ "residential ACMV",
+    param == "energyFinalSubsecBySectorBuildEJ" & grepl("resid urban ventilation", class) ~ "residential ACMV",
+    param == "energyFinalSubsecBySectorBuildEJ" & grepl("resid urban refrigerators", class) ~ "residential other appliances",
+    param == "energyFinalSubsecBySectorBuildEJ" & grepl("resid urban televisions", class) ~ "residential other appliances",
+    param == "energyFinalSubsecBySectorBuildEJ" & grepl("resid urban water heaters", class) ~ "residential water heaters",
+    param == "energyFinalSubsecBySectorBuildEJ" & grepl("resid urban other appliances", class) ~ "residential other appliances",
+    param == "energyFinalSubsecBySectorBuildEJ" & grepl("resid urban cooking", class) ~ "residential cooking",
+    param == "energyFinalSubsecBySectorBuildEJ" & grepl("resid urban lighting", class) ~ "residential lighting",
+    # Rural
+    param == "energyFinalSubsecBySectorBuildEJ" & grepl("resid rural air conditioners", class) ~ "residential ACMV",
+    param == "energyFinalSubsecBySectorBuildEJ" & grepl("resid rural ventilation", class) ~ "residential ACMV",
+    param == "energyFinalSubsecBySectorBuildEJ" & grepl("resid rural refrigerators", class) ~ "residential other appliances",
+    param == "energyFinalSubsecBySectorBuildEJ" & grepl("resid rural televisions", class) ~ "residential other appliances",
+    param == "energyFinalSubsecBySectorBuildEJ" & grepl("resid rural water heaters", class) ~ "residential water heaters",
+    param == "energyFinalSubsecBySectorBuildEJ" & grepl("resid rural other appliances", class) ~ "residential other appliances",
+    param == "energyFinalSubsecBySectorBuildEJ" & grepl("resid rural cooking", class) ~ "residential cooking",
+    param == "energyFinalSubsecBySectorBuildEJ" & grepl("resid rural lighting", class) ~ "residential lighting",
+    # Rename commerical sectors for consistency
+    param == "energyFinalSubsecBySectorBuildEJ" & grepl("comm cooking", class) ~ "commercial cooking",
+    param == "energyFinalSubsecBySectorBuildEJ" & grepl("comm hvac", class) ~ "commercial ACMV",
+    param == "energyFinalSubsecBySectorBuildEJ" & grepl("comm lighting", class) ~ "commercial lighting",
+    param == "energyFinalSubsecBySectorBuildEJ" & grepl("Commercial Others", class) ~ "commercial other appliances",
+    T ~ class)) %>%
+  dplyr::group_by(scenario, region, param, class, x) %>%
+  dplyr::summarise(value = sum(value)) %>% dplyr::ungroup() %>%
+  dplyr::mutate(param = "energyFinalSubsecByAggSectorBuildEJ")
+
+malaysia <- malaysia %>%
+  dplyr::bind_rows(all_data_buildings_aggregate)
+
+# Separate commercial and residential buildings
+all_data_buildings_commercial <- all_data_buildings_aggregate %>%
+  dplyr::filter(grepl("commercial", class)) %>%
+  dplyr::mutate(param = "energyFinalSubsecByCommSectorBuildEJ")
+
+all_data_buildings_residential <- all_data_buildings_aggregate %>%
+  dplyr::filter(grepl("residential", class)) %>%
+  dplyr::mutate(param = "energyFinalSubsecByResidSectorBuildEJ")
+
+malaysia <- malaysia %>%
+  dplyr::bind_rows(all_data_buildings_commercial, all_data_buildings_residential)
 
 ```
 
@@ -1216,9 +1281,8 @@ ghg <- malaysia %>% filter(param == "emissGHGBySectorNoBioGWPAR5",
                            region != "Malaysia")
 
 malaysia_emissions <- bind_rows(co2, ghg) %>%
-  mutate(class = case_when(grepl("alumin",class)~"industry",
-                           grepl("International",class)~"transport",
-                           grepl("desalinated|refining|urban|coal|gas|oil|hydrogen|agricultural|crops",class)~"other",
+  mutate(class = case_when(grepl("International",class)~"transport",
+                           grepl("alumin|desalinated|refining|urban|coal|gas|oil|hydrogen|agricultural|crops",class)~"industry",
                            TRUE~class))
 
 ```
@@ -1408,25 +1472,6 @@ gas_kl$chart_class_diff_absolute
 <!-------------------------->
 ***
 
-##### Malaysia vs Kuala Lumpur
-
-```{r rchart-primary-energy, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
-
-p_energy <- malaysia %>% 
-  filter(param == "energyPrimaryByFuelEJ",
-         region != "Malaysia") %>%
-  mutate(param = units) %>%
-  rchart::chart(save = F, 
-                show = F,
-                scenRef = REF_SCENARIO,
-                size_text = 12)
-
-p_energy[[c]]
-
-```
-
-
-<br>
 
 ##### Malaysia 
 
@@ -1451,17 +1496,6 @@ p_energy_my$chart_class
 p_energy_my$chart_class_diff_absolute
 
 ```
-
-<br>
-
-##### Kuala Lumpur
-
-```{r rchart-primary-energy-kl, eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = T}
-
-cat("Primary energy outputs are not available at the city level.")
-
-```
-
 
 <br>
 
@@ -1625,15 +1659,25 @@ electricity_kl$chart_class_diff_absolute
 ##### Malaysia vs Kuala Lumpur
 
 ```{r rchart-building, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.height = 8, fig.width = 6, out.width = "100%"}
-building_energy <- malaysia %>% 
-  filter(param == "energyFinalSubsecBySectorBuildEJ",
+building_energy_resid <- malaysia %>% 
+  filter(param == "energyFinalSubsecByResidSectorBuildEJ",
          region != "Malaysia") %>%
   mutate(param = units) %>%
   rchart::chart(save = F, 
                 show = F,
                 size_text = 12)
 
-building_energy[[c]]
+building_energy_resid[[c]]
+
+building_energy_comm <- malaysia %>% 
+  filter(param == "energyFinalSubsecByCommSectorBuildEJ",
+         region != "Malaysia") %>%
+  mutate(param = units) %>%
+  rchart::chart(save = F, 
+                show = F,
+                size_text = 12)
+
+building_energy_comm[[c]]
 ```
 
 
@@ -1641,24 +1685,36 @@ building_energy[[c]]
 
 ##### Malaysia 
 
-```{r rchart-building-sce-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.height = 12, fig.width = 14, out.width ="100%"}
+```{r rchart-building-sce-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.height = 6, fig.width = 8, out.width ="100%"}
 
-building_energy_my <- malaysia %>% 
-  filter(param == "energyFinalSubsecBySectorBuildEJ",
+building_energy_resid_my <- malaysia %>% 
+  filter(param == "energyFinalSubsecByResidSectorBuildEJ",
          region == "All of Malaysia") %>%
   mutate(param = units) %>%
   rchart::chart(save = F, 
                 show = F,
                 scenRef = REF_SCENARIO,
-                size_text = 10,
-                ncol = 4)
+                size_text = 12)
 
-building_energy_my$chart_class
+building_energy_resid_my$chart_class
+
+building_energy_comm_my <- malaysia %>% 
+  filter(param == "energyFinalSubsecByCommSectorBuildEJ",
+         region == "All of Malaysia") %>%
+  mutate(param = units) %>%
+  rchart::chart(save = F, 
+                show = F,
+                scenRef = REF_SCENARIO,
+                size_text = 12)
+
+building_energy_comm_my$chart_class
 ```
 
-```{r rchart-building-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 12, fig.height = 12, out.width = "100%"}
+```{r rchart-building-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 8, fig.height = 6, out.width = "100%"}
 
-building_energy_my$chart_class_diff_absolute
+building_energy_resid_my$chart_class_diff_absolute
+
+building_energy_comm_my$chart_class_diff_absolute
 
 ```
 
@@ -1667,23 +1723,35 @@ building_energy_my$chart_class_diff_absolute
 
 ##### Kuala Lumpur
 
-```{r rchart-building-sce-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.height = 12, fig.width = 14, out.width = "100%"}
-building_energy_kl <- malaysia %>% 
-  filter(param == "energyFinalSubsecBySectorBuildEJ",
+```{r rchart-building-sce-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.height = 6, fig.width = 8, out.width = "100%"}
+building_energy_resid_kl <- malaysia %>% 
+  filter(param == "energyFinalSubsecByResidSectorBuildEJ",
          region == "KualaLumpur") %>%
   mutate(param = units) %>%
   rchart::chart(save = F, 
                 show = F,
                 scenRef = REF_SCENARIO,
-                size_text = 10,
-                ncol = 4)
+                size_text = 12)
 
-building_energy_kl$chart_class
+building_energy_resid_kl$chart_class
+
+building_energy_comm_kl <- malaysia %>% 
+  filter(param == "energyFinalSubsecByCommSectorBuildEJ",
+         region == "KualaLumpur") %>%
+  mutate(param = units) %>%
+  rchart::chart(save = F, 
+                show = F,
+                scenRef = REF_SCENARIO,
+                size_text = 12)
+
+building_energy_comm_kl$chart_class
 ```
 
-```{r rchart-building-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 12, fig.height = 12, out.width = "100%"}
+```{r rchart-building-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 8, fig.height = 6, out.width = "100%"}
 
-building_energy_kl$chart_class_diff_absolute
+building_energy_resid_kl$chart_class_diff_absolute
+
+building_energy_comm_kl$chart_class_diff_absolute
 
 ```
 
@@ -1725,8 +1793,7 @@ transport_my_m <- malaysia %>%
   rchart::chart(save = F, 
                 show = F,
                 scenRef = REF_SCENARIO,
-                size_text = 10,
-                ncol = 4)
+                size_text = 12)
 
 transport_my_m$chart_class
 
@@ -1751,8 +1818,7 @@ transport_kl_m <- malaysia %>%
   rchart::chart(save = F, 
                 show = F,
                 scenRef = REF_SCENARIO,
-                size_text = 10,
-                ncol = 4)
+                size_text = 12)
 
 transport_kl_m$chart_class
 
@@ -1782,7 +1848,7 @@ transport_f <- malaysia %>%
   mutate(param = units) %>%
   rchart::chart(save = F, 
                 show = F,
-                size_text = 10)
+                size_text = 12)
 
 transport_f[[c]]
 
@@ -1802,8 +1868,7 @@ transport_my_f <- malaysia %>%
   rchart::chart(save = F, 
                 show = F,
                 scenRef = REF_SCENARIO,
-                size_text = 10,
-                ncol = 4)
+                size_text = 12)
 
 transport_my_f$chart_class
 
@@ -1828,8 +1893,7 @@ transport_kl_f <- malaysia %>%
   rchart::chart(save = F, 
                 show = F,
                 scenRef = REF_SCENARIO,
-                size_text = 10,
-                ncol = 4)
+                size_text = 12)
 
 transport_kl_f$chart_class
 

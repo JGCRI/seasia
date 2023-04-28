@@ -2110,32 +2110,43 @@ href="https://jgcri.github.io/gcamextractor/index.html">here</a>.</p>
 <p>The first step is to create a path to the GCAM database, found in the
 output folder of your GCAM folder, and a list of desired parameters. The
 <code>readgcam()</code> function also requires region names and a
-specific output folder. Until the scenario modeling process is complete,
-use the processed csv files found in the
-<code>data/malaysia/gcamextractor/</code> folder, sorted by scenario and
-read in below.</p>
-<pre class="r fold-show"><code>sample_path &lt;- &quot;./output/database&quot;
+specific output folder.</p>
+<pre class="r fold-show"><code># Get desired database paths
+ref_db &lt;- &quot;../data/malaysia/output/ref_db&quot;
+high_db &lt;- &quot;../data/malaysia/output/high_db&quot;
+high_cn_db &lt;- &quot;../data/malaysia/output/high_cn_db&quot;
 
-sample_params &lt;- &quot;summary&quot;
+paths &lt;- c(ref_db, high_db, high_cn_db)
+names(paths) &lt;- c(&quot;ref&quot;, &quot;high&quot;, &quot;high_carbon_neutral&quot;)
 
+# Choose parameters of interest
+params &lt;- c(&quot;elecByTechTWh&quot;, &quot;elecConsumByDemandSectorTWh&quot;, &quot;emissCO2BySectorNoBio&quot;,
+            &quot;emissGHGBySectorGWPAR5&quot;, &quot;emissGHGByGasGWPAR5&quot;, &quot;energyFinalByFuelEJ&quot;, 
+            &quot;energyFinalConsumBySecEJ&quot;, &quot;gdp&quot;, &quot;gdpPerCapita&quot;, &quot;pop&quot;, 
+            &quot;energyPrimaryByFuelEJ&quot;, &quot;energyFinalSubsecBySectorBuildEJ&quot;, 
+            &quot;energyFinalSubsecByFuelBuildEJ&quot;, &quot;energyFinalSubsecByFuelIndusEJ&quot;, 
+            &quot;transportFreightVMTByMode&quot;, &quot;transportPassengerVMTByMode&quot;, 
+            &quot;transportFreightVMTByFuel&quot;, &quot;transportPassengerVMTByFuel&quot;,
+            &quot;transportPassengerVMTByTech&quot;, &quot;transportFreightVMTByTech&quot;,
+            &quot;buildingFloorspace&quot;)
+
+# Identify regions
 regions &lt;- c(&quot;Malaysia&quot;, &quot;KualaLumpur&quot;, &quot;Rest of Malaysia&quot;)
 
-data &lt;- gcamextractor::readgcam(gcamdatabase = sample_path,
-                                paramsSelect = sample_params,
-                                regionsSelect = regions,
-                                regionsAggregate = list(regions),
-                                regionsAggregateNames = &quot;All of Malaysia&quot;,
-                                folder = &quot;../data/malaysia/gcamextractor&quot;)</code></pre>
+# Loop through each database to get gcamextractor output
+for(p in paths){
+  gcamextractor::readgcam(gcamdatabase = p,
+                          regionsSelect = regions,
+                          regionsAggregate = list(regions),
+                          regionsAggregateNames = &quot;All of Malaysia&quot;,
+                          paramsSelect = params,
+                          folder = paste0(&quot;./gcamextractor/&quot;, names(paths)[]))
+}</code></pre>
 <pre class="r fold-show"><code>ref &lt;- read.csv(&quot;../data/malaysia/gcamextractor/ref/gcamDataTable_aggClass1.csv&quot;) 
 high &lt;- read.csv(&quot;../data/malaysia/gcamextractor/high/gcamDataTable_aggClass1.csv&quot;)
-low &lt;- read.csv(&quot;../data/malaysia/gcamextractor/low/gcamDataTable_aggClass1.csv&quot;)
-city &lt;- read.csv(&quot;../data/malaysia/gcamextractor/city/gcamDataTable_aggClass1.csv&quot;)
-ref_cn &lt;- read.csv(&quot;../data/malaysia/gcamextractor/ref_carbon_neutral/gcamDataTable_aggClass1.csv&quot;) 
 high_cn &lt;- read.csv(&quot;../data/malaysia/gcamextractor/high_carbon_neutral/gcamDataTable_aggClass1.csv&quot;)
-low_cn &lt;- read.csv(&quot;../data/malaysia/gcamextractor/low_carbon_neutral/gcamDataTable_aggClass1.csv&quot;)
-city_cn &lt;- read.csv(&quot;../data/malaysia/gcamextractor/city_carbon_neutral/gcamDataTable_aggClass1.csv&quot;)
 
-malaysia &lt;- bind_rows(ref, high, low, city, ref_cn, high_cn, low_cn, city_cn) %&gt;%
+malaysia &lt;- bind_rows(ref, high, high_cn) %&gt;%
   filter(region != (&quot;Rest of Malaysia&quot;),
          x &gt; 2000, x &lt;= 2050)
 
@@ -2259,9 +2270,8 @@ ghg &lt;- malaysia %&gt;% filter(param == &quot;emissGHGBySectorNoBioGWPAR5&quot
                            region != &quot;Malaysia&quot;)
 
 malaysia_emissions &lt;- bind_rows(co2, ghg) %&gt;%
-  mutate(class = case_when(grepl(&quot;alumin&quot;,class)~&quot;industry&quot;,
-                           grepl(&quot;International&quot;,class)~&quot;transport&quot;,
-                           grepl(&quot;desalinated|refining|urban|coal|gas|oil|hydrogen|agricultural|crops&quot;,class)~&quot;other&quot;,
+  mutate(class = case_when(grepl(&quot;International&quot;,class)~&quot;transport&quot;,
+                           grepl(&quot;alumin|desalinated|refining|urban|coal|gas|oil|hydrogen|agricultural|crops&quot;,class)~&quot;industry&quot;,
                            TRUE~class))</code></pre>
 <pre class="r"><code>emissions &lt;- malaysia_emissions %&gt;%
   mutate(param = units) %&gt;%
@@ -2409,25 +2419,8 @@ number="6.2.1.3">
 Primary Energy by Fuel</h4>
 <!-------------------------->
 <hr />
-<div id="malaysia-vs-kuala-lumpur-2" class="section level5"
-number="6.2.1.3.1">
-<h5><span class="header-section-number">6.2.1.3.1</span> Malaysia vs
-Kuala Lumpur</h5>
-<pre class="r"><code>p_energy &lt;- malaysia %&gt;% 
-  filter(param == &quot;energyPrimaryByFuelEJ&quot;,
-         region != &quot;Malaysia&quot;) %&gt;%
-  mutate(param = units) %&gt;%
-  rchart::chart(save = F, 
-                show = F,
-                scenRef = REF_SCENARIO,
-                size_text = 12)
-
-p_energy[[c]]</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-primary-energy-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<p><br></p>
-</div>
-<div id="malaysia-2" class="section level5" number="6.2.1.3.2">
-<h5><span class="header-section-number">6.2.1.3.2</span> Malaysia</h5>
+<div id="malaysia-2" class="section level5" number="6.2.1.3.1">
+<h5><span class="header-section-number">6.2.1.3.1</span> Malaysia</h5>
 <pre class="r"><code>p_energy_my &lt;- malaysia %&gt;% 
   filter(param == &quot;energyPrimaryByFuelEJ&quot;,
          region == &quot;All of Malaysia&quot;) %&gt;%
@@ -2444,10 +2437,10 @@ p_energy_my$chart_class</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-primary-energy-my-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 </div>
-<div id="kuala-lumpur-2" class="section level5" number="6.2.1.3.3">
-<h5><span class="header-section-number">6.2.1.3.3</span> Kuala
+<div id="kuala-lumpur-2" class="section level5" number="6.2.1.3.2">
+<h5><span class="header-section-number">6.2.1.3.2</span> Kuala
 Lumpur</h5>
-<pre class="r"><code>cat(&quot;Primary energy outputs are not available at the city level.&quot;)</code></pre>
+<pre class="r"><code>print(&quot;Primary energy outputs are not available at the city level.&quot;)</code></pre>
 <p><br></p>
 <!-------------------------->
 </div>
@@ -2458,7 +2451,7 @@ number="6.2.1.4">
 Final Energy by Fuel and Sector</h4>
 <!-------------------------->
 <hr />
-<div id="malaysia-vs-kuala-lumpur-3" class="section level5"
+<div id="malaysia-vs-kuala-lumpur-2" class="section level5"
 number="6.2.1.4.1">
 <h5><span class="header-section-number">6.2.1.4.1</span> Malaysia vs
 Kuala Lumpur</h5>
@@ -2521,7 +2514,7 @@ class="section level4 tabset" number="6.2.1.5">
 Electricity Generation by Fuel and Sector</h4>
 <!-------------------------->
 <hr />
-<div id="malaysia-vs-kuala-lumpur-4" class="section level5"
+<div id="malaysia-vs-kuala-lumpur-3" class="section level5"
 number="6.2.1.5.1">
 <h5><span class="header-section-number">6.2.1.5.1</span> Malaysia vs
 Kuala Lumpur</h5>
@@ -2567,7 +2560,7 @@ Lumpur</h5>
   rchart::chart(save = F, 
                 show = F,
                 scenRef = REF_SCENARIO,
-                size_text = 10,
+                size_text = 8,
                 ncol = 4)
 
 electricity_kl$chart_class</code></pre>
@@ -2589,57 +2582,91 @@ number="6.2.2.1">
 <h4 class="tabset"><span class="header-section-number">6.2.2.1</span>
 Building Energy by Subsector</h4>
 <hr />
-<div id="malaysia-vs-kuala-lumpur-5" class="section level5"
+<div id="malaysia-vs-kuala-lumpur-4" class="section level5"
 number="6.2.2.1.1">
 <h5><span class="header-section-number">6.2.2.1.1</span> Malaysia vs
 Kuala Lumpur</h5>
-<pre class="r"><code>building_energy &lt;- malaysia %&gt;% 
-  filter(param == &quot;energyFinalSubsecBySectorBuildEJ&quot;,
+<pre class="r"><code>building_energy_resid &lt;- malaysia %&gt;% 
+  filter(param == &quot;energyFinalSubsecByResidSectorBuildEJ&quot;,
          region != &quot;Malaysia&quot;) %&gt;%
   mutate(param = units) %&gt;%
   rchart::chart(save = F, 
                 show = F,
                 size_text = 12)
 
-building_energy[[c]]</code></pre>
+building_energy_resid[[c]]</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-building-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>building_energy_comm &lt;- malaysia %&gt;% 
+  filter(param == &quot;energyFinalSubsecByCommSectorBuildEJ&quot;,
+         region != &quot;Malaysia&quot;) %&gt;%
+  mutate(param = units) %&gt;%
+  rchart::chart(save = F, 
+                show = F,
+                size_text = 12)
+
+building_energy_comm[[c]]</code></pre>
+<p><img src="modeling_malaysia_files/figure-html/rchart-building-2.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 </div>
 <div id="malaysia-5" class="section level5" number="6.2.2.1.2">
 <h5><span class="header-section-number">6.2.2.1.2</span> Malaysia</h5>
-<pre class="r"><code>building_energy_my &lt;- malaysia %&gt;% 
-  filter(param == &quot;energyFinalSubsecBySectorBuildEJ&quot;,
+<pre class="r"><code>building_energy_resid_my &lt;- malaysia %&gt;% 
+  filter(param == &quot;energyFinalSubsecByResidSectorBuildEJ&quot;,
          region == &quot;All of Malaysia&quot;) %&gt;%
   mutate(param = units) %&gt;%
   rchart::chart(save = F, 
                 show = F,
                 scenRef = REF_SCENARIO,
-                size_text = 10,
-                ncol = 4)
+                size_text = 12)
 
-building_energy_my$chart_class</code></pre>
+building_energy_resid_my$chart_class</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-building-sce-my-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>building_energy_my$chart_class_diff_absolute</code></pre>
+<pre class="r"><code>building_energy_comm_my &lt;- malaysia %&gt;% 
+  filter(param == &quot;energyFinalSubsecByCommSectorBuildEJ&quot;,
+         region == &quot;All of Malaysia&quot;) %&gt;%
+  mutate(param = units) %&gt;%
+  rchart::chart(save = F, 
+                show = F,
+                scenRef = REF_SCENARIO,
+                size_text = 12)
+
+building_energy_comm_my$chart_class</code></pre>
+<p><img src="modeling_malaysia_files/figure-html/rchart-building-sce-my-2.png" width="100%" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>building_energy_resid_my$chart_class_diff_absolute</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-building-my-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>building_energy_comm_my$chart_class_diff_absolute</code></pre>
+<p><img src="modeling_malaysia_files/figure-html/rchart-building-my-2.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 </div>
 <div id="kuala-lumpur-5" class="section level5" number="6.2.2.1.3">
 <h5><span class="header-section-number">6.2.2.1.3</span> Kuala
 Lumpur</h5>
-<pre class="r"><code>building_energy_kl &lt;- malaysia %&gt;% 
-  filter(param == &quot;energyFinalSubsecBySectorBuildEJ&quot;,
+<pre class="r"><code>building_energy_resid_kl &lt;- malaysia %&gt;% 
+  filter(param == &quot;energyFinalSubsecByResidSectorBuildEJ&quot;,
          region == &quot;KualaLumpur&quot;) %&gt;%
   mutate(param = units) %&gt;%
   rchart::chart(save = F, 
                 show = F,
                 scenRef = REF_SCENARIO,
-                size_text = 10,
-                ncol = 4)
+                size_text = 12)
 
-building_energy_kl$chart_class</code></pre>
+building_energy_resid_kl$chart_class</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-building-sce-kl-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>building_energy_kl$chart_class_diff_absolute</code></pre>
+<pre class="r"><code>building_energy_comm_kl &lt;- malaysia %&gt;% 
+  filter(param == &quot;energyFinalSubsecByCommSectorBuildEJ&quot;,
+         region == &quot;KualaLumpur&quot;) %&gt;%
+  mutate(param = units) %&gt;%
+  rchart::chart(save = F, 
+                show = F,
+                scenRef = REF_SCENARIO,
+                size_text = 12)
+
+building_energy_comm_kl$chart_class</code></pre>
+<p><img src="modeling_malaysia_files/figure-html/rchart-building-sce-kl-2.png" width="100%" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>building_energy_resid_kl$chart_class_diff_absolute</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-building-kl-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>building_energy_comm_kl$chart_class_diff_absolute</code></pre>
+<p><img src="modeling_malaysia_files/figure-html/rchart-building-kl-2.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 <!-------------------------->
 </div>
@@ -2650,7 +2677,7 @@ number="6.2.2.2">
 Transportation by Mode</h4>
 <!-------------------------->
 <hr />
-<div id="malaysia-vs-kuala-lumpur-6" class="section level5"
+<div id="malaysia-vs-kuala-lumpur-5" class="section level5"
 number="6.2.2.2.1">
 <h5><span class="header-section-number">6.2.2.2.1</span> Malaysia vs
 Kuala Lumpur</h5>
@@ -2677,8 +2704,7 @@ transport_m[[c]]</code></pre>
   rchart::chart(save = F, 
                 show = F,
                 scenRef = REF_SCENARIO,
-                size_text = 10,
-                ncol = 4)
+                size_text = 12)
 
 transport_my_m$chart_class</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-transport-my-sce-mode-1.png" width="100%" style="display: block; margin: auto;" /></p>
@@ -2696,8 +2722,7 @@ Lumpur</h5>
   rchart::chart(save = F, 
                 show = F,
                 scenRef = REF_SCENARIO,
-                size_text = 10,
-                ncol = 4)
+                size_text = 12)
 
 transport_kl_m$chart_class</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-transport-kl-sce-mode-1.png" width="100%" style="display: block; margin: auto;" /></p>
@@ -2713,7 +2738,7 @@ number="6.2.2.3">
 Transportation by Fuel</h4>
 <!-------------------------->
 <hr />
-<div id="malaysia-vs-kuala-lumpur-7" class="section level5"
+<div id="malaysia-vs-kuala-lumpur-6" class="section level5"
 number="6.2.2.3.1">
 <h5><span class="header-section-number">6.2.2.3.1</span> Malaysia vs
 Kuala Lumpur</h5>
@@ -2725,7 +2750,7 @@ transport_f &lt;- malaysia %&gt;%
   mutate(param = units) %&gt;%
   rchart::chart(save = F, 
                 show = F,
-                size_text = 10)
+                size_text = 12)
 
 transport_f[[c]]</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-transport-fuel-1.png" width="100%" style="display: block; margin: auto;" /></p>
@@ -2740,8 +2765,7 @@ transport_f[[c]]</code></pre>
   rchart::chart(save = F, 
                 show = F,
                 scenRef = REF_SCENARIO,
-                size_text = 10,
-                ncol = 4)
+                size_text = 12)
 
 transport_my_f$chart_class</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-transport-my-sce-fuel-1.png" width="100%" style="display: block; margin: auto;" /></p>
@@ -2759,8 +2783,7 @@ Lumpur</h5>
   rchart::chart(save = F, 
                 show = F,
                 scenRef = REF_SCENARIO,
-                size_text = 10,
-                ncol = 4)
+                size_text = 12)
 
 transport_kl_f$chart_class</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-transport-kl-sce-fuel-1.png" width="100%" style="display: block; margin: auto;" /></p>
@@ -2776,7 +2799,7 @@ number="6.2.2.4">
 Industry Energy by Subsector</h4>
 <!-------------------------->
 <hr />
-<div id="malaysia-vs-kuala-lumpur-8" class="section level5"
+<div id="malaysia-vs-kuala-lumpur-7" class="section level5"
 number="6.2.2.4.1">
 <h5><span class="header-section-number">6.2.2.4.1</span> Malaysia vs
 Kuala Lumpur</h5>
