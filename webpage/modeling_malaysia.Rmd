@@ -1091,7 +1091,7 @@ for(p in paths){
                           regionsAggregate = list(regions),
                           regionsAggregateNames = "All of Malaysia",
                           paramsSelect = params,
-                          folder = paste0("../data/malaysia/gcamextractor/", strsplit(p, "/")[[1]][5]))
+                          folder = paste0("../data/malaysia/gcamextractor/", tail(strsplit(p, "/")[[1]],1)))
 }
 
 ```
