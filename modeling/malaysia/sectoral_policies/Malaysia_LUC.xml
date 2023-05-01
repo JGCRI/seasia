@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario>
+    <world>
+        <!-- WARNING: Linked policies must be read in after the policy to which it links. -->
+        <region name="Malaysia">
+            <linked-ghg-policy name="CO2_LUC">
+                <market>Malaysia</market>
+                <linked-policy>CO2</linked-policy>
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">1.0</demand-adjust>
+                <price-unit>1990$/tC</price-unit>
+                <output-unit>MTC</output-unit>
+            </linked-ghg-policy>
+        </region>  
+</world>
+</scenario>
