@@ -1062,7 +1062,7 @@ This section describes how to explore and compare the final output data using GC
 
 The first step is to create a path to the GCAM database, found in the output folder of your GCAM folder, and a list of desired parameters. The `readgcam()` function also requires region names and a specific output folder. 
 
-```{r gcamextractor-setup, echo = TRUE, eval = FALSE, class.source = 'fold-show'}
+```{r gcamextractor-setup, echo = TRUE, eval = TRUE, class.source = 'fold-show'}
 # Get desired database paths
 ref_db <- "../data/malaysia/output/malaysia_ref"
 high_db <- "../data/malaysia/output/malaysia_high"
@@ -1072,7 +1072,7 @@ paths <- c(ref_db, high_db, high_cn_db)
 
 # Choose parameters of interest
 params <- c("elecByTechTWh", "elecConsumByDemandSectorTWh", 
-            # "emissCO2BySectorNoBio", "emissGHGBySectorGWPAR5", "emissGHGByGasGWPAR5",
+            "emissCO2BySectorNoBio", "emissGHGBySectorGWPAR5", "emissGHGByGasGWPAR5",
             "energyFinalByFuelEJ", "energyFinalConsumBySecEJ", "energyPrimaryByFuelEJ",
             "energyFinalSubsecBySectorBuildEJ", "energyFinalSubsecByFuelBuildEJ", 
             "energyFinalSubsecByFuelIndusEJ", 
