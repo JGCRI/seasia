@@ -1058,29 +1058,28 @@ This section describes how to explore and compare the final output data using GC
 <!-------------------------->
 ***
 
-`gcamextractor` is an R package used to extract and process GCAM data and manipulate into standardized tables. `gcamextractor` converts GCAM outputs into commonly used units as well as aggregates across different classes and sectors for easy use in plots, maps and tables. For more information, please reference the documentation page found [here](https://jgcri.github.io/gcamextractor/index.html).
+`gcamextractor` is an R package used to extract and process GCAM data and manipulate into standardized tables. `gcamextractor` converts GCAM outputs into commonly used units as well as aggregates across different classes and sectors for easy use in plots, maps, and tables. For more information, please reference the documentation page found [here](https://jgcri.github.io/gcamextractor/index.html).
 
 The first step is to create a path to the GCAM database, found in the output folder of your GCAM folder, and a list of desired parameters. The `readgcam()` function also requires region names and a specific output folder. 
 
 ```{r gcamextractor-setup, echo = TRUE, eval = FALSE, class.source = 'fold-show'}
 # Get desired database paths
-ref_db <- "../data/malaysia/output/ref_db"
-high_db <- "../data/malaysia/output/high_db"
-high_cn_db <- "../data/malaysia/output/high_cn_db"
+ref_db <- "../data/malaysia/output/malaysia_ref"
+high_db <- "../data/malaysia/output/malaysia_high"
+high_cn_db <- "../data/malaysia/output/malaysia_carbon_neutral_high"
 
 paths <- c(ref_db, high_db, high_cn_db)
-names(paths) <- c("ref", "high", "high_carbon_neutral")
 
 # Choose parameters of interest
-params <- c("elecByTechTWh", "elecConsumByDemandSectorTWh", "emissCO2BySectorNoBio",
-            "emissGHGBySectorGWPAR5", "emissGHGByGasGWPAR5", "energyFinalByFuelEJ", 
-            "energyFinalConsumBySecEJ", "gdp", "gdpPerCapita", "pop", 
-            "energyPrimaryByFuelEJ", "energyFinalSubsecBySectorBuildEJ", 
-            "energyFinalSubsecByFuelBuildEJ", "energyFinalSubsecByFuelIndusEJ", 
+params <- c("elecByTechTWh", "elecConsumByDemandSectorTWh", 
+            "emissCO2BySectorNoBio", "emissGHGBySectorGWPAR5", "emissGHGByGasGWPAR5", 
+            "energyFinalByFuelEJ", "energyFinalConsumBySecEJ", "energyPrimaryByFuelEJ",
+            "energyFinalSubsecBySectorBuildEJ", "energyFinalSubsecByFuelBuildEJ", 
+            "energyFinalSubsecByFuelIndusEJ", 
             "transportFreightVMTByMode", "transportPassengerVMTByMode", 
             "transportFreightVMTByFuel", "transportPassengerVMTByFuel",
             "transportPassengerVMTByTech", "transportFreightVMTByTech",
-            "buildingFloorspace")
+            "buildingFloorspace", "gdp", "gdpPerCapita", "pop")
 
 # Identify regions
 regions <- c("Malaysia", "KualaLumpur", "Rest of Malaysia")
@@ -1092,7 +1091,7 @@ for(p in paths){
                           regionsAggregate = list(regions),
                           regionsAggregateNames = "All of Malaysia",
                           paramsSelect = params,
-                          folder = paste0("./gcamextractor/", names(paths)[]))
+                          folder = paste0("../data/malaysia/gcamextractor/", strsplit(p, "/")[[1]][5]))
 }
 
 ```
