@@ -1072,7 +1072,7 @@ paths <- c(ref_db, high_db, high_cn_db)
 
 # Choose parameters of interest
 params <- c("elecByTechTWh", "elecConsumByDemandSectorTWh", 
-            "emissCO2BySectorNoBio", "emissGHGBySectorGWPAR5", "emissGHGByGasGWPAR5", 
+            # "emissCO2BySectorNoBio", "emissGHGBySectorGWPAR5", "emissGHGByGasGWPAR5",
             "energyFinalByFuelEJ", "energyFinalConsumBySecEJ", "energyPrimaryByFuelEJ",
             "energyFinalSubsecBySectorBuildEJ", "energyFinalSubsecByFuelBuildEJ", 
             "energyFinalSubsecByFuelIndusEJ", 
@@ -1098,9 +1098,9 @@ for(p in paths){
 
 
 ```{r gcamextractor, echo = TRUE, class.source = 'fold-show'}
-ref <- read.csv("../data/malaysia/gcamextractor/ref/gcamDataTable_aggClass1.csv") 
-high <- read.csv("../data/malaysia/gcamextractor/high/gcamDataTable_aggClass1.csv")
-high_cn <- read.csv("../data/malaysia/gcamextractor/high_carbon_neutral/gcamDataTable_aggClass1.csv")
+ref <- read.csv("../data/malaysia/gcamextractor/malaysia_ref/gcamDataTable_aggClass1.csv") 
+high <- read.csv("../data/malaysia/gcamextractor/malasysia_high/gcamDataTable_aggClass1.csv")
+high_cn <- read.csv("../data/malaysia/gcamextractor/malaysia_carbon_neutral_high/gcamDataTable_aggClass1.csv")
 
 malaysia <- bind_rows(ref, high, high_cn) %>%
   filter(region != ("Rest of Malaysia"),
