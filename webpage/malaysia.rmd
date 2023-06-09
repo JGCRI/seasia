@@ -34,13 +34,13 @@ theme_set(theme_light())
 
 
 ```{r, results = "show", out.width = "90%", fig.align = 'left', }
-knitr::include_graphics("images/exec_summary_malaysia_01_insights.jpg")
+knitr::include_graphics("images/exec_summary_malaysia_01_insights.JPG")
 ```
 
 <br>
 
 ```{r, results = "show", out.width = "100%", fig.align = 'center', fig.topcaption=TRUE, fig.cap = "Pathways to Carbon-Neutrality in 2050"}
-knitr::include_graphics("images/exec_summary_malaysia_02_waterfall.jpg")
+knitr::include_graphics("images/exec_summary_malaysia_02_waterfall.JPG")
 ```
 
 <br>
@@ -141,25 +141,25 @@ The following figures show results from the analysis to support each of the key 
 <br>
 
 ```{r, results = "show", out.width = "100%", fig.align = 'center'}
-knitr::include_graphics("images/exec_summary_malaysia_03_result1.jpg")
+knitr::include_graphics("images/exec_summary_malaysia_03_result1.JPG")
 ```
 
 <br>
 
 ```{r, results = "show", out.width = "100%", fig.align = 'center'}
-knitr::include_graphics("images/exec_summary_malaysia_03_result2.jpg")
+knitr::include_graphics("images/exec_summary_malaysia_03_result2.JPG")
 ```
 
 <br>
 
 ```{r, results = "show", out.width = "100%", fig.align = 'center'}
-knitr::include_graphics("images/exec_summary_malaysia_03_result3.jpg")
+knitr::include_graphics("images/exec_summary_malaysia_03_result3.JPG")
 ```
 
 <br>
 
 ```{r, results = "show", out.width = "100%", fig.align = 'center'}
-knitr::include_graphics("images/exec_summary_malaysia_03_result4.jpg")
+knitr::include_graphics("images/exec_summary_malaysia_03_result4.JPG")
 ```
 
 
