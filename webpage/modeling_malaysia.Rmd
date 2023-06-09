@@ -1072,12 +1072,12 @@ high_cn_db <- "../data/malaysia/output/malaysia_carbon_neutral_high"
 paths <- c(ref_db, high_db, high_cn_db)
 
 # Choose parameters of interest
-params <- c("elecByTechTWh", "elecConsumByDemandSectorTWh", 
+params <- c("elecByTechTWh", "elecConsumByDemandSectorTWh",
             "emissCO2BySectorNoBio", "emissGHGBySectorGWPAR5", "emissGHGByGasGWPAR5",
             "energyFinalByFuelEJ", "energyFinalConsumBySecEJ", "energyPrimaryByFuelEJ",
-            "energyFinalSubsecBySectorBuildEJ", "energyFinalSubsecByFuelBuildEJ", 
-            "energyFinalSubsecByFuelIndusEJ", 
-            "transportFreightVMTByMode", "transportPassengerVMTByMode", 
+            "energyFinalSubsecBySectorBuildEJ", "energyFinalSubsecByFuelBuildEJ",
+            "energyFinalSubsecByFuelIndusEJ",
+            "transportFreightVMTByMode", "transportPassengerVMTByMode",
             "transportFreightVMTByFuel", "transportPassengerVMTByFuel",
             "transportPassengerVMTByTech", "transportFreightVMTByTech",
             "buildingFloorspace", "gdp", "gdpPerCapita", "pop")
@@ -1100,15 +1100,19 @@ for(p in paths){
 
 ```{r gcamextractor, echo = TRUE, class.source = 'fold-show'}
 ref <- read.csv("../data/malaysia/gcamextractor/malaysia_ref/gcamDataTable_aggClass1.csv") 
-high <- read.csv("../data/malaysia/gcamextractor/malasysia_high/gcamDataTable_aggClass1.csv")
+high <- read.csv("../data/malaysia/gcamextractor/malaysia_high/gcamDataTable_aggClass1.csv")
 high_cn <- read.csv("../data/malaysia/gcamextractor/malaysia_carbon_neutral_high/gcamDataTable_aggClass1.csv")
 
 malaysia <- bind_rows(ref, high, high_cn) %>%
   filter(region != ("Rest of Malaysia"),
          x > 2000, x <= 2050)
 
+malaysia$scenario <- factor(malaysia$scenario, 
+                            levels = c("Ref", "High", "High_CarbonNeutral"),
+                            labels = c("Business as Usual", "Policies", "Net Zero"))
+
 # Define reference scenario
-REF_SCENARIO <- unique(ref$scenario)
+REF_SCENARIO <- "Business as Usual"
 
 # Use this to access reference scenario plot
 c <- paste0("chart_class_", REF_SCENARIO)
@@ -1180,7 +1184,6 @@ malaysia <- malaysia %>%
 * Socioeconomics: population, GDP, GDP per capita
 * CO~2~ emissions by sector
 * GHG emissions by sector and gas
-* Primary energy by fuel
 * Final energy by fuel
 * Final energy by sector
 * Electricity generation by fuel
@@ -1281,9 +1284,10 @@ ghg <- malaysia %>% filter(param == "emissGHGBySectorNoBioGWPAR5",
                            region != "Malaysia")
 
 malaysia_emissions <- bind_rows(co2, ghg) %>%
-  mutate(class = case_when(grepl("International",class)~"transport",
-                           grepl("alumin|desalinated|refining|urban|coal|gas|oil|hydrogen|agricultural|crops",class)~"industry",
-                           TRUE~class))
+  mutate(class = case_when(grepl("International",class)~"Transportation",
+                           grepl("alumin|desalinated|refining|urban|coal|gas|oil|hydrogen|agricultural|crops",class)~"Industry",
+                           TRUE~class)) %>%
+  filter(class != "LUC")
 
 ```
 
@@ -1351,8 +1355,7 @@ ghg_my <- malaysia %>%
   summarize(value = sum(value)) %>% 
   ungroup()
 
-my_emissions <- bind_rows(co2_my, ghg_my)  
-
+my_emissions <- bind_rows(co2_my, ghg_my) 
 ```
 
 ``` {r rchart-emiss-plot-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 12, fig.height = 6, out.width = "100%"}
@@ -1372,7 +1375,8 @@ ghg_gas_my <- malaysia %>%
          region == "All of Malaysia") %>%
   mutate(param = "GHG Emissions by Gas")
 
-my_emissions_gas <- bind_rows(ghg_gas_my, my_emissions)
+my_emissions_gas <- bind_rows(ghg_gas_my, my_emissions) %>%
+  filter(class != "LUC")
 ```
 
 ``` {r rchart-emiss-gas-scenario-plot-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 14, fig.height = 12, out.width = "100%"}
@@ -1466,39 +1470,6 @@ gas_kl$chart_class_diff_absolute
 ```
 
 <br>
-
-<!-------------------------->
-#### Primary Energy by Fuel {.tabset}
-<!-------------------------->
-***
-
-
-##### Malaysia 
-
-```{r rchart-primary-energy-sce-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 9, fig.height = 9, out.width = "100%"}
-
-p_energy_my <- malaysia %>% 
-  filter(param == "energyPrimaryByFuelEJ",
-         region == "All of Malaysia") %>%
-  mutate(param = units) %>%
-  rchart::chart(save = F, 
-                show = F,
-                scenRef = REF_SCENARIO,
-                size_text = 10,
-                ncol = 4)
-
-p_energy_my$chart_class
-
-```
-
-``` {r rchart-primary-energy-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 9, fig.height = 9, out.width = "100%",}
-
-p_energy_my$chart_class_diff_absolute
-
-```
-
-<br>
-
 
 <!-------------------------->
 #### Final Energy by Fuel and Sector {.tabset}
