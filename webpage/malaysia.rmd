@@ -25,6 +25,8 @@ theme_set(theme_light())
 ```{r child = 'header.rmd'}
 ```
 
+<br>
+
 <!-------------------------->
 <!-------------------------->
 # Executive Summary - Malaysia
@@ -86,13 +88,21 @@ PNNL and UTM will continue to support Kuala Lumpur on its journey to carbon neut
 
 Integrated Assessment Models (IAMs) are computational models that use links and feedbacks between socioeconomic and environmental systems to assess the implications of technology and policy choices in the context of global climate change. IAMs can provide a holistic approach to energy sector planning by considering multi-sector dynamics and global processes. GCAM, an IAM developed at PNNL, incorporates socioeconomics, energy, land use, water, and climate system (Figure 1). The model is global but can also be used to assess specific regions and fine scale processes; PNNL has developed both Malaysia and Kuala Lumpur regions within the model for national and city level analyses. GCAM utilizes the most up to date data on population, GDP, technology characteristics, policies, resource availability, and other inputs. It has the detailed representation of energy technologies in different sectors, including electricity, buildings, transportation, industry, hydrogen production, and other energy supply sectors. The model produces both historical and projected future outputs based on this information. These outputs include greenhouse gas emissions, electricity prices, energy supply and demand, and other indicators at five-year time steps from a historical baseline year to the desired end year. PNNL will use GCAM to assess the implications of Kuala Lumpur's various climate-focused plans.
 
-```{r gcam-diagram, echo = FALSE, out.width = "70%", fig.align = 'center', fig.cap = "**Figure 1: Conceptual diagram of GCAM.**"}
+<br>
+
+```{r GCAM_diagram, results = "show", fig.topcaption=TRUE, fig.cap="Conceptual diagram of GCAM"}
 knitr::include_graphics("images/GCAM_diagram.png")
 ```
 
-
 <br>
 
+Analysis will be performed at both the national and city-levl in Malaysia in Kuala Lumpur. The map to the right shows Kuala Lumpur's location within Malaysia.Scenarios will be assessed up from the year 2015 to the year 2100, with the GCAM analysis conducted at five-year intervals within this range.
+
+```{r KL-map, echo = FALSE, results="show", fig.topcaption=TRUE, fig.cap="Map of analysis regions in Malaysia"}
+knitr::include_graphics("./images/MY_KL_map.png")
+```
+
+<br>
 
 <!-------------------------->
 <!-------------------------->
@@ -107,24 +117,6 @@ Three unique scenarios are developed to provide a comprehensive set of future pa
 * **Policies:** Policies representing existing city and national targets 
 * **Carbon Neutral:** Scenario using most efficient pathway to national carbon neutrality by 2050.
 
-<!-------------------------->
-<!-------------------------->
-# Scope
-<!-------------------------->
-<!-------------------------->
-<p align="center"> <img src="images/divider.png"></p>
-
-<br>
-
-```{r KL-map, echo = FALSE, results="show", out.width = "50%", out.extra='style="float:right; padding:10px"'}
-knitr::include_graphics("./images/MY_KL_map.png")
-```
-
-Analysis will be performed at both the national and city-levl in Malaysia in Kuala Lumpur. The map to the right shows Kuala Lumpur's location within Malaysia.
-
-Scenarios will be assessed up from the year 2015 to the year 2100, with the GCAM analysis conducted at five-year intervals within this range.
-
-<br>
 <br>
 
 <!-------------------------->
@@ -161,9 +153,6 @@ knitr::include_graphics("images/exec_summary_malaysia_03_result3.JPG")
 ```{r, results = "show", out.width = "100%", fig.align = 'center'}
 knitr::include_graphics("images/exec_summary_malaysia_03_result4.JPG")
 ```
-
-
-
 
 
 # {.unlisted .unnumbered}

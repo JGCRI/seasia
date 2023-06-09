@@ -25,12 +25,15 @@ library(tidyverse)
 ```{r child = 'header.rmd'}
 ```
 
+<br>
+
 <!-------------------------->
 <!-------------------------->
 # Executive Summary - Thailand
 <!-------------------------->
 <!-------------------------->
 <p align="center"> <img src="images/divider.png"></p>
+
 
 ```{r, results = "show", out.width = "90%", fig.align = 'left', }
 knitr::include_graphics("images/exec_summary_thailand_01_insights.JPG")
@@ -53,9 +56,13 @@ knitr::include_graphics("images/exec_summary_thailand_02_waterfall.JPG")
 
 Urbanization is driving rapid socioeconomic growth in Thailand, posing challenges for power grids as energy demand increases. Maintaining stability, reliability, and affordability of electricity will be especially challenging as Thailand works toward increasing their renewable energy (RE) shares and decreasing their environmental impact in line with international agreements. These goals and challenges were highlighted in Thailand’s 2018 Power Development Plan, which emphasized three priorities: energy security, economy, and environment. Energy security encompasses the need for stability of power generation, transmission, and distribution to support socioeconomic development and resilience to energy crises. Economic priorities are to promote low cost, high efficiency electricity generation, keeping prices low for consumers to further facilitate socioeconomic growth. Lastly, the plan emphasizes reducing environmental impact by supporting RE development and increasing efficiency in production and consumption.
 
+<br>
+
 ```{r logos_diagram, results = "show", fig.topcaption=TRUE, fig.cap="Project Partners"}
 knitr::include_graphics("images/logo_diagram.png")
 ```
+
+<br>
 
 The U.S. Department of Energy’s Pacific Northwest National Laboratory (PNNL) is partnering with Thammasat University and the Metropolitan Electricity Authority (MEA) of Thailand to supplement Bangkok’s existing Smart City roadmap plans by providing integrated modeling and assessment capabilities. PNNL’s Global Change Analysis Model (GCAM) is a global model integrating socioeconomics, energy, land use, water, and climate systems. PNNL, in collaboration with the Thammasat University modeling team, will use GCAM to assess the trajectories and outcomes of Smart City pathways for Bangkok and focus on the implications for the energy system in this analysis. 
 
@@ -71,6 +78,8 @@ The collaboration between PNNL, Thammasat University, EPPO, EGAT, and MEA will s
 <p align="center"> <img src="images/divider.png"></p>
 
 Integrated Assessment Models (IAMs) are computational models that use links and feedbacks between socioeconomic and environmental systems to assess the implications of technology and policy choices in the context of global climate change. IAMs can provide a holistic approach to energy sector planning by considering multi-sector dynamics and global processes. GCAM, an IAM developed at PNNL, incorporates socioeconomics, energy, land use, water, and climate system. The model is global but can also be used to assess specific regions and fine scale processes; PNNL has developed both Thailand and Bangkok regions within the model for national and city level analyses. GCAM utilizes the most up to date data on population, GDP, technology characteristics, policies, resource availabilities, and other inputs. It has the detailed representation of energy technologies in different sectors, including electricity, buildings, transportation, industry, hydrogen production, and other energy supply sectors. The model produces both historical and projected future outputs based on this information. These outputs include greenhouse gas emissions, electricity prices, energy supply and demand, and other indicators at five-year time steps from a historical baseline year to the desired end year. PNNL and Thammasat University's modeling team will use GCAM to assess the implications of MEA’s Smart Grid plans for Bangkok through the year 2100.
+
+<br>
 
 ```{r GCAM_diagram, results = "show", fig.topcaption=TRUE, fig.cap="Conceptual diagram of GCAM"}
 knitr::include_graphics("images/GCAM_diagram.png")
