@@ -1061,8 +1061,9 @@ This section describes how to explore and compare the final output data using GC
 `gcamextractor` is an R package used to extract and process GCAM data and manipulate into standardized tables. `gcamextractor` converts GCAM outputs into commonly used units as well as aggregates across different classes and sectors for easy use in plots, maps, and tables. For more information, please reference the documentation page found [here](https://jgcri.github.io/gcamextractor/index.html).
 
 The first step is to create a path to the GCAM database, found in the output folder of your GCAM folder, and a list of desired parameters. The `readgcam()` function also requires region names and a specific output folder. 
+Note that due to size limiations on GitHub, the data used here has already been processed, but we include the steps to run it on your own in the following chunk if desired.
 
-```{r gcamextractor-setup, echo = TRUE, eval = TRUE, class.source = 'fold-show'}
+```{r gcamextractor-setup, echo = TRUE, eval = FALSE, class.source = 'fold-show'}
 # Get desired database paths
 ref_db <- "../data/malaysia/output/malaysia_ref"
 high_db <- "../data/malaysia/output/malaysia_high"
