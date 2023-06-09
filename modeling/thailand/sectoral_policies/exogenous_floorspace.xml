@@ -1,0 +1,188 @@
+<scenario>
+	<world>
+		<region name="Rest of Thailand">
+			<gcam-consumer name="comm">
+				<nodeInput name="comm">
+					<building-node-input name="comm_building">
+						<base-building-size year = "2020">0.3327</base-building-size>
+						<base-building-size year = "2025">0.3673</base-building-size>
+						<base-building-size year = "2030">0.3987</base-building-size>
+						<base-building-size year = "2035">0.4292</base-building-size>
+						<base-building-size year = "2040">0.4605</base-building-size>
+						<base-building-size year = "2045">0.4927</base-building-size>
+						<base-building-size year = "2050">0.5256</base-building-size>
+						<base-building-size year = "2055">0.5593</base-building-size>
+						<base-building-size year = "2060">0.5935</base-building-size>
+						<base-building-size year = "2065">0.6276</base-building-size>
+					</building-node-input>
+				</nodeInput>
+			</gcam-consumer>
+			<gcam-consumer name="resid rural">
+				<nodeInput name="resid rural">
+					<building-node-input name="resid_rural_building">
+						<base-building-size year = "2020">0.3610</base-building-size>
+						<base-building-size year = "2025">0.3979</base-building-size>
+						<base-building-size year = "2030">0.4312</base-building-size>
+						<base-building-size year = "2035">0.4635</base-building-size>
+						<base-building-size year = "2040">0.4967</base-building-size>
+						<base-building-size year = "2045">0.5308</base-building-size>
+						<base-building-size year = "2050">0.5654</base-building-size>
+						<base-building-size year = "2055">0.6009</base-building-size>
+						<base-building-size year = "2060">0.6368</base-building-size>
+						<base-building-size year = "2065">0.6726</base-building-size>
+					</building-node-input>
+				</nodeInput>
+			</gcam-consumer>
+			<gcam-consumer name="resid urban">
+				<nodeInput name="resid urban">
+					<building-node-input name="resid_urban_building">
+						<base-building-size year = "2020">0.2039</base-building-size>
+						<base-building-size year = "2025">0.2248</base-building-size>
+						<base-building-size year = "2030">0.2436</base-building-size>
+						<base-building-size year = "2035">0.2619</base-building-size>
+						<base-building-size year = "2040">0.2806</base-building-size>
+						<base-building-size year = "2045">0.2999</base-building-size>
+						<base-building-size year = "2050">0.3194</base-building-size>
+						<base-building-size year = "2055">0.3395</base-building-size>
+						<base-building-size year = "2060">0.3598</base-building-size>
+						<base-building-size year = "2065">0.3800</base-building-size>
+					</building-node-input>
+				</nodeInput>
+			</gcam-consumer>
+		</region>
+		<region name="Bangkok">
+			<gcam-consumer name="comm">
+				<nodeInput name="comm">
+					<building-node-input name="comm_building">
+						<base-building-size year = "2020">0.0332</base-building-size>
+						<base-building-size year = "2025">0.0366</base-building-size>
+						<base-building-size year = "2030">0.0397</base-building-size>
+						<base-building-size year = "2035">0.0428</base-building-size>
+						<base-building-size year = "2040">0.0459</base-building-size>
+						<base-building-size year = "2045">0.0491</base-building-size>
+						<base-building-size year = "2050">0.0524</base-building-size>
+						<base-building-size year = "2055">0.0557</base-building-size>
+						<base-building-size year = "2060">0.0592</base-building-size>
+						<base-building-size year = "2065">0.0625</base-building-size>
+					</building-node-input>
+				</nodeInput>
+			</gcam-consumer>
+			<gcam-consumer name="resid urban">
+				<nodeInput name="resid urban">
+					<building-node-input name="resid_urban_building">
+						<base-building-size year = "2020">0.0203</base-building-size>
+						<base-building-size year = "2025">0.0224</base-building-size>
+						<base-building-size year = "2030">0.0243</base-building-size>
+						<base-building-size year = "2035">0.0261</base-building-size>
+						<base-building-size year = "2040">0.0280</base-building-size>
+						<base-building-size year = "2045">0.0299</base-building-size>
+						<base-building-size year = "2050">0.0318</base-building-size>
+						<base-building-size year = "2055">0.0338</base-building-size>
+						<base-building-size year = "2060">0.0358</base-building-size>
+						<base-building-size year = "2065">0.0379</base-building-size>
+					</building-node-input>
+				</nodeInput>
+			</gcam-consumer>
+		</region>
+		<region name="Nonthaburi">
+			<gcam-consumer name="comm">
+				<nodeInput name="comm">
+					<building-node-input name="comm_building">
+						<base-building-size year = "2020">0.0066</base-building-size>
+						<base-building-size year = "2025">0.0073</base-building-size>
+						<base-building-size year = "2030">0.0079</base-building-size>
+						<base-building-size year = "2035">0.0086</base-building-size>
+						<base-building-size year = "2040">0.0092</base-building-size>
+						<base-building-size year = "2045">0.0098</base-building-size>
+						<base-building-size year = "2050">0.0105</base-building-size>
+						<base-building-size year = "2055">0.0111</base-building-size>
+						<base-building-size year = "2060">0.0118</base-building-size>
+						<base-building-size year = "2065">0.0125</base-building-size>
+					</building-node-input>
+				</nodeInput>
+			</gcam-consumer>
+			<gcam-consumer name="resid rural">
+				<nodeInput name="resid rural">
+					<building-node-input name="resid_rural_building">
+						<base-building-size year = "2020">0.0078</base-building-size>
+						<base-building-size year = "2025">0.0085</base-building-size>
+						<base-building-size year = "2030">0.0093</base-building-size>
+						<base-building-size year = "2035">0.0100</base-building-size>
+						<base-building-size year = "2040">0.0107</base-building-size>
+						<base-building-size year = "2045">0.0114</base-building-size>
+						<base-building-size year = "2050">0.0121</base-building-size>
+						<base-building-size year = "2055">0.0129</base-building-size>
+						<base-building-size year = "2060">0.0137</base-building-size>
+						<base-building-size year = "2065">0.0145</base-building-size>
+					</building-node-input>
+				</nodeInput>
+			</gcam-consumer>
+			<gcam-consumer name="resid urban">
+				<nodeInput name="resid urban">
+					<building-node-input name="resid_urban_building">
+						<base-building-size year = "2020">0.0044</base-building-size>
+						<base-building-size year = "2025">0.0048</base-building-size>
+						<base-building-size year = "2030">0.0052</base-building-size>
+						<base-building-size year = "2035">0.0056</base-building-size>
+						<base-building-size year = "2040">0.0060</base-building-size>
+						<base-building-size year = "2045">0.0064</base-building-size>
+						<base-building-size year = "2050">0.0069</base-building-size>
+						<base-building-size year = "2055">0.0073</base-building-size>
+						<base-building-size year = "2060">0.0077</base-building-size>
+						<base-building-size year = "2065">0.0082</base-building-size>
+					</building-node-input>
+				</nodeInput>
+			</gcam-consumer>
+		</region>
+		<region name="SamutPrakan">
+			<gcam-consumer name="comm">
+				<nodeInput name="comm">
+					<building-node-input name="comm_building">
+						<base-building-size year = "2020">0.0077</base-building-size>
+						<base-building-size year = "2025">0.0085</base-building-size>
+						<base-building-size year = "2030">0.0093</base-building-size>
+						<base-building-size year = "2035">0.0100</base-building-size>
+						<base-building-size year = "2040">0.0107</base-building-size>
+						<base-building-size year = "2045">0.0115</base-building-size>
+						<base-building-size year = "2050">0.0122</base-building-size>
+						<base-building-size year = "2055">0.0130</base-building-size>
+						<base-building-size year = "2060">0.0138</base-building-size>
+						<base-building-size year = "2065">0.0146</base-building-size>
+					</building-node-input>
+				</nodeInput>
+			</gcam-consumer>
+			<gcam-consumer name="resid rural">
+				<nodeInput name="resid rural">
+					<building-node-input name="resid_rural_building">
+						<base-building-size year = "2020">0.0078</base-building-size>
+						<base-building-size year = "2025">0.0085</base-building-size>
+						<base-building-size year = "2030">0.0093</base-building-size>
+						<base-building-size year = "2035">0.0100</base-building-size>
+						<base-building-size year = "2040">0.0107</base-building-size>
+						<base-building-size year = "2045">0.0114</base-building-size>
+						<base-building-size year = "2050">0.0121</base-building-size>
+						<base-building-size year = "2055">0.0129</base-building-size>
+						<base-building-size year = "2060">0.0137</base-building-size>
+						<base-building-size year = "2065">0.0145</base-building-size>
+					</building-node-input>
+				</nodeInput>
+			</gcam-consumer>
+			<gcam-consumer name="resid urban">
+				<nodeInput name="resid urban">
+					<building-node-input name="resid_urban_building">
+						<base-building-size year = "2020">0.0044</base-building-size>
+						<base-building-size year = "2025">0.0048</base-building-size>
+						<base-building-size year = "2030">0.0052</base-building-size>
+						<base-building-size year = "2035">0.0056</base-building-size>
+						<base-building-size year = "2040">0.0060</base-building-size>
+						<base-building-size year = "2045">0.0064</base-building-size>
+						<base-building-size year = "2050">0.0069</base-building-size>
+						<base-building-size year = "2055">0.0073</base-building-size>
+						<base-building-size year = "2060">0.0077</base-building-size>
+						<base-building-size year = "2065">0.0082</base-building-size>
+					</building-node-input>
+				</nodeInput>
+			</gcam-consumer>
+		</region>
+	</world>
+</scenario>

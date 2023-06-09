@@ -29,6 +29,7 @@
 .container_map {
   display: inline-block;
   width: 25%;
+  min-width: 200px;
   padding: 20px;
 }
 
@@ -61,4 +62,26 @@ fixed-bottom {
     color: yellow;
 }
 
+.figure:hover{
+  opacity: 0.5 !important;
+  cursor: pointer !important;
+}
 
+
+.caption {
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px; /* Adjust the value to your desired font size */
+}
+
+.image-with-result {
+  display: flex;
+  align-items: center;
+}
+
+.result{
+  text-align: left;
+  font-weight: bold;
+  font-size: 16px; /* Adjust the value to your desired font size */
+  margin-left: 10px;
+}

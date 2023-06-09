@@ -13,7 +13,7 @@
 
 <title>SEAsia</title>
 
-<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.22/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -29,14 +29,14 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.0/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.0/css/v4-shims.min.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -147,11 +147,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -180,8 +184,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -189,16 +193,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -364,7 +361,7 @@ div.tocify {
 
 
 <!-- Allow href to tabsets -->
-<script type="text/javascript">
+<script>
 window.onload = function() {
   document.querySelector('a[href="' + window.location.href.match("#.*$") + '"]').click();
 }
@@ -389,13 +386,13 @@ window.onhashchange = goToTab;
 <style type="text/css">
 script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
 </style>
-<script type="text/javascript">
+<script>
  $(document).ready(function() {
     $('body').prepend('<div class=\"zoomDiv\"><img src=\"\" class=\"zoomImg\"></div>');
     // onClick function for all plots (img's)
     $('img:not(.zoomImg)').click(function() {
       $('.zoomImg').attr('src', $(this).attr('src')).css({width: '100%'});
-      $('.zoomDiv').css({opacity: '1', width: 'auto', border: '1px solid white', borderRadius: '5px', position: 'fixed', top: '50%', left: '50%', marginRight: '-50%', transform: 'translate(-50%, -50%)', boxShadow: '0px 0px 50px #888888', zIndex: '50', overflow: 'auto', maxHeight: '100%'});
+      $('.zoomDiv').css({opacity: '1', width: 'auto', border: '1px solid white', borderRadius: '5px', position: 'fixed', top: '50%', left: '50%', marginRight: '-50%', transform: 'translate(-50%, -50%)', boxShadow: '0px 0px 500px 200px rgba(0, 0, 0, 0.8)', zIndex: '10000', overflow: 'auto', maxHeight: '100%'});
     });
     // onClick function for zoomImg
     $('img.zoomImg').click(function() {
@@ -417,59 +414,30 @@ td, th {
   padding: 8px;
 }
 </style>
+<p><br></p>
 <!-------------------------->
 <!-------------------------->
-<div id="executive-summary" class="section level1" number="1">
-<h1><span class="header-section-number">1</span> Executive Summary</h1>
+<div id="executive-summary---malaysia" class="section level1">
+<h1>Executive Summary - Malaysia</h1>
 <!-------------------------->
 <!-------------------------->
 <p align="center">
 <img src="images/divider.png">
 </p>
-<ul>
-<li><p><strong>Motivation:</strong> Growth across the Association of
-Southeast Asian Nations (ASEAN) in the past few decades has been driven
-by urban centers. Rapid urbanization can bring about negative societal
-impacts, although technological and digital solutions can be used to
-resolve these issues and enhance quality and accessibility of services.
-Smart city development projects, including carbon neutrality plans, are
-one such example. Furthermore, the region is at a high risk for climate
-hazards, and moving towards carbon neutrality allows for increased
-mitigation and adaptation efforts to combat these risks.</p></li>
-<li><p><strong>Objectives:</strong> The Pacific Northwest National
-Laboratory (PNNL) will collaborate with stakeholders in Kuala Lumpur on
-implementing low-carbon strategies to achieve carbon neutrality by 2050
-and will support smart city development through capacity building. Using
-the Global Change Analysis Model (GCAM), PNNL will analyze possible
-policy pathways and trajectories for Kuala Lumpur by applying
-quantitative modeling techniques.</p></li>
-<li><p><strong>Approach:</strong> The integrated assessment model GCAM
-is a modeling tool that represents the behavior of and interactions
-between five systems: energy, water, agriculture and land use, the
-climate, and the economy. GCAM will be used to analyze Kuala Lumpur’s
-existing carbon neutrality plans in a comprehensive manner by modeling
-inter-sectoral dynamics across several driving sectors, namely energy,
-buildings, transportation, and industry. PNNL will model different
-policy scenarios encompassing various socioeconomic, technical, and
-political factors to better understand the pathways to carbon neutrality
-in Kuala Lumpur.</p></li>
-<li><p><strong>Expected Outcomes:</strong> GCAM outputs will be used to
-guide a report detailing pathways and trajectories for Kuala Lumpur
-Carbon Neutrality by 2050 that will supplement existing city policies
-and plans. The report will include potential economic, environmental,
-and societal impacts of Kuala Lumpur’s carbon neutrality pathway,
-including abatement/investments costs and possible financing prospects,
-energy transitions, and air quality and health outcomes. Additionally,
-PNNL will lead workshops to train local experts on using GCAM and
-independently conducting analyses, who will then be able to continue
-further analysis of Kuala Lumpur’s pathways beyond 2050.</p></li>
-</ul>
+<p><img src="images/exec_summary_malaysia_01_insights.JPG" width="90%" style="display: block; margin: auto auto auto 0;" /></p>
+<p><br></p>
+<div class="figure" style="text-align: center">
+<p class="caption">
+Pathways to Carbon-Neutrality in 2050
+</p>
+<img src="images/exec_summary_malaysia_02_waterfall.JPG" alt="Pathways to Carbon-Neutrality in 2050" width="100%" />
+</div>
 <p><br></p>
 <!-------------------------->
 <!-------------------------->
 </div>
-<div id="introduction" class="section level1" number="2">
-<h1><span class="header-section-number">2</span> Introduction</h1>
+<div id="background" class="section level1">
+<h1>Background</h1>
 <!-------------------------->
 <!-------------------------->
 <p align="center">
@@ -545,8 +513,8 @@ policies. These include:</p>
 <!-------------------------->
 <!-------------------------->
 </div>
-<div id="methodology" class="section level1" number="3">
-<h1><span class="header-section-number">3</span> Methodology</h1>
+<div id="methodology" class="section level1">
+<h1>Methodology</h1>
 <!-------------------------->
 <!-------------------------->
 <p align="center">
@@ -573,211 +541,80 @@ demand, and other indicators at five-year time steps from a historical
 baseline year to the desired end year. PNNL will use GCAM to assess the
 implications of Kuala Lumpur’s various climate-focused plans.</p>
 <p><br></p>
+<div class="figure" style="text-align: center">
+<p class="caption">
+Conceptual diagram of GCAM
+</p>
+<img src="images/GCAM_diagram.png" alt="Conceptual diagram of GCAM" width="75%" />
+</div>
+<p><br></p>
+<p>Analysis will be performed at both the national and city-levl in
+Malaysia in Kuala Lumpur. The map to the right shows Kuala Lumpur’s
+location within Malaysia.Scenarios will be assessed up from the year
+2015 to the year 2100, with the GCAM analysis conducted at five-year
+intervals within this range.</p>
+<div class="figure" style="text-align: center">
+<p class="caption">
+Map of analysis regions in Malaysia
+</p>
+<img src="images/MY_KL_map.png" alt="Map of analysis regions in Malaysia" width="75%" />
+</div>
+<p><br></p>
 <!-------------------------->
 <!-------------------------->
 </div>
-<div id="scenarios" class="section level1 tabset" number="4">
-<h1 class="tabset"><span class="header-section-number">4</span>
-Scenarios</h1>
+<div id="scenarios" class="section level1">
+<h1>Scenarios</h1>
 <!-------------------------->
 <!-------------------------->
 <p align="center">
 <img src="images/divider.png">
 </p>
-<p>PNNL, with input from KLCH, will develop a set of GCAM scenarios
-based on the KLCAP2050 and other relevant policies and plans. These
-scenarios will outline possible outcomes of various policies. Key
-indicators may include greenhouse gas emissions, energy demand, and
-final energy consumption; for more details, please reference 7.1
-below.</p>
+<p>Three unique scenarios are developed to provide a comprehensive set
+of future pathways. The Business as Usual scenario uses historical
+energy and emissions, combined with expected future socioeconomic
+trajectories and baseline technology assumptions, to project future
+conditions in the absence of additional policies or constraints. The
+Policies scenario assumes that Malaysia implements a set of policies in
+the power, buildings, industry, and transportation sectors consistent
+with current plans, priorities, and targets. The Carbon Neutral scenario
+combines these policies with an emissions constraint to determine the
+additional measures needed to reach carbon neutrality by 2050. The
+policies considered include Malaysia’s national power development plans,
+as well as standards, regulations, and measures to promote energy
+efficiency, renewable energy expansion, and reduction of greenhouse gas
+emissions.</p>
 <ul>
-<li><strong>BAU:</strong> Baseline scenario based on existing policies
-only, with no additional actions. This will serve as a comparison for
-the remaining scenarios to assess the magnitude of outcomes.</li>
-<li><strong>Council-Led:</strong> Scenario driven by strategies and
-actions that are ambitious and achievable within the authority of KLCH,
-including the implementation of all National policies.</li>
-<li><strong>Integrated Approach:</strong> Scenario relying on an
-integrated approach with KLCH, the Federal government, and other
-agencies, highlighting the potential emissions reductions that could
-occur should all parties align.</li>
-<li><strong>Carbon Neutral Malaysia and Kuala Lumpur:</strong> Scenario
-using the most efficient pathway to net zero CO<sub>2</sub> emissions by
-2050 at the national and city levels.</li>
+<li><strong>Business as Usual:</strong> This scenario uses a reference
+projection without imposing any policies or constraints.</li>
+<li><strong>Policies:</strong> Policies representing existing city and
+national targets</li>
+<li><strong>Carbon Neutral:</strong> Scenario using most efficient
+pathway to national carbon neutrality by 2050.</li>
 </ul>
 <p><br></p>
 <!-------------------------->
 <!-------------------------->
-<div id="council-led" class="section level2" number="4.1">
-<h2><span class="header-section-number">4.1</span> Council-Led</h2>
-<!-------------------------->
-<!-------------------------->
-<p><strong>Council-Led Scenario:</strong> In this scenario, KLCH has the
-authority to implement measures to achieve carbon emissions reductions.
-The scenario will largely be achieved through existing actions outlined
-in the KLLCSBP2030, Federal policies and plans, and publicly declared
-renewable energy targets.</p>
-<p>Note that this scenario <em>does not</em> meet Kuala Lumpur’s
-benchmark targets for 2030 or 2050; this is due to the lack of power and
-capacity for KLCH to implement more ambitious actions. Key remaining
-emissions will come from the following sectors: residential, commercial
-and institutional buildings, industrial energy, and on-road
-transportation.</p>
-<p>The table below summarizes some of the policies encompassed by the
-Council-Led scenario. For additional policies, please reference the
-<a href = "modeling_malaysia.html"> Modeling page </a>. <br></p>
-<table style="width:88%;">
-<colgroup>
-<col width="23%" />
-<col width="44%" />
-<col width="19%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Sector</th>
-<th>Policies</th>
-<th>Source</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Energy supply</td>
-<td>Electricity tariff</td>
-<td>KLLCSBP2030</td>
-</tr>
-<tr class="even">
-<td>Transportation</td>
-<td>Introduce electric vehicles</td>
-<td>KLLCSBP2030</td>
-</tr>
-<tr class="odd">
-<td>Buildings</td>
-<td><ul>
-<li>Install solar PV systems</li>
-<li>Institute energy efficiency standards and requirements in
-buildings</li>
-<li>Decrease energy consumption</li>
-<li>Increase use of renewable energy</li>
-</ul></td>
-<td>KLLCSBP2030</td>
-</tr>
-</tbody>
-</table>
-<p><br></p>
-<!-------------------------->
-<!-------------------------->
 </div>
-<div id="integrated-approach" class="section level2" number="4.2">
-<h2><span class="header-section-number">4.2</span> Integrated
-Approach</h2>
-<!-------------------------->
-<!-------------------------->
-<p><strong>Integrated Approach Scenario:</strong> This scenario explores
-the potential carbon emissions reductions that could occur with strong
-collaboration between different stakeholders. Kuala Lumpur could be an
-advocate for such solutions, but the measures outlined in this scenario
-involve policy shifts at the Federal level.</p>
-<p>Even if all scenario targets are met, Kuala Lumpur would still have
-residual emissions in situations where no mitigation technology exists
-or where a low-emissions alternative is technically or economically
-non-viable in the near-term. Top sources include solid waste, commercial
-and institutional buildings, and on-road transportation.</p>
-<p><br></p>
-<!-------------------------->
-<!-------------------------->
-</div>
-<div id="carbon-neutral-malaysia-and-kuala-lumpur"
-class="section level2" number="4.3">
-<h2><span class="header-section-number">4.3</span> Carbon Neutral
-Malaysia and Kuala Lumpur</h2>
-<!-------------------------->
-<!-------------------------->
-<p><strong>Carbon Neutral Malaysia and Kuala Lumpur:</strong> Prior to
-COP26, Malaysia pledged to achieve carbon neutrality as early as 2050.
-Later in 2021, Kuala Lumpur committed to becoming a carbon-neutral city
-by 2050. The Carbon Neutral Malaysia and Kuala Lumpur scenario
-represents the most economically efficient pathway to reach carbon
-neutrality by 2050 given the policies outlined in the scenarios
-described above. This pathway will be found using GCAM’s solving
-capabilities. The outcomes of this scenario will provide insight into
-the role that that KLCH can play in achieving carbon neutrality and
-additional measures that may need to be taken.</p>
-<p><br></p>
-<!-------------------------->
-<!-------------------------->
-</div>
-</div>
-<div id="scope" class="section level1 tabset" number="5">
-<h1 class="tabset"><span class="header-section-number">5</span>
-Scope</h1>
+<div id="results" class="section level1">
+<h1>Results</h1>
 <!-------------------------->
 <!-------------------------->
 <p align="center">
 <img src="images/divider.png">
 </p>
-<!-------------------------->
-<!-------------------------->
-<div id="spatial" class="section level2" number="5.1">
-<h2><span class="header-section-number">5.1</span> Spatial</h2>
-<!-------------------------->
-<!-------------------------->
-<p>PNNL will assess outcomes at both the national and city level. The
-Council-Led scenario encompasses only policies that can be implemented
-by KLCH, although the Integrated Approach scenario requires additional
-action at the national level. Therefore, PNNL will perform some country
-level analysis, with the primary focus remaining on Kuala Lumpur.</p>
-<p>The map to the right shows Kuala Lumpur’s location within
-Malaysia.</p>
-<p><br> <br></p>
-<!-------------------------->
-<!-------------------------->
-</div>
-<div id="temporal" class="section level2" number="5.2">
-<h2><span class="header-section-number">5.2</span> Temporal</h2>
-<!-------------------------->
-<!-------------------------->
-<p>Scenarios will be assessed up from the year 2015 to the year 2100,
-with the GCAM analysis conducted at five-year intervals within this
-range.</p>
 <p><br></p>
-<!-------------------------->
-<!-------------------------->
-</div>
-</div>
-<div id="results" class="section level1" number="6">
-<h1><span class="header-section-number">6</span> Results</h1>
-<!-------------------------->
-<!-------------------------->
-<p align="center">
-<img src="images/divider.png">
-</p>
-<p>PNNL will present GCAM results showing relevant outcomes of the
-modeled scenarios up to the year 2100. These results could include
-greenhouse gas emissions, energy supply and demand, electricity prices,
-and employment impacts, among other indicators. PNNL will work with UTM
-to determine which indicators are the most important to consider when
-assessing the impact of city policies.</p>
+<p>The following figures show results from the analysis to support each
+of the key insights. Further details and additional results can be found
+on <a href="modeling_malaysia.html">Modeling-Malaysia page</a>.</p>
 <p><br></p>
-<!-------------------------->
-<!-------------------------->
-</div>
-<div id="discussion" class="section level1" number="7">
-<h1><span class="header-section-number">7</span> Discussion</h1>
-<!-------------------------->
-<!-------------------------->
-<p align="center">
-<img src="images/divider.png">
-</p>
-<p>PNNL, in collaboration with UTM, will summarize and interpret the
-GCAM results for each policy pathway and impact indicator. Based on the
-GCAM results, PNNL and UTM will provide recommendations for policy
-pathways that best support Kuala Lumpur’s development goals while
-meeting desired targets outlined in city policies and plans. Engagement
-with and feedback from stakeholders in Kuala Lumpur will be crucial in
-guiding the discussions to better focus in on Kuala Lumpur’s needs. The
-final results will be summarized in both a report and a peer-reviewed
-paper.</p>
-<!-- example alternative table style -->
+<p><img src="images/exec_summary_malaysia_03_result1.JPG" width="100%" style="display: block; margin: auto;" /></p>
+<p><br></p>
+<p><img src="images/exec_summary_malaysia_03_result2.JPG" width="100%" style="display: block; margin: auto;" /></p>
+<p><br></p>
+<p><img src="images/exec_summary_malaysia_03_result3.JPG" width="100%" style="display: block; margin: auto;" /></p>
+<p><br></p>
+<p><img src="images/exec_summary_malaysia_03_result4.JPG" width="100%" style="display: block; margin: auto;" /></p>
 </div>
 <div id="section" class="section level1 unlisted unnumbered">
 <h1 class="unlisted unnumbered"></h1>
