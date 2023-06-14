@@ -91,6 +91,7 @@ knitr::include_graphics("./images/MY_KL_map.png")
 <br>
 
 Policies modeled include:
+
 * High efficiency lighting and appliances in buildings
 * Building envelope efficiency improvements
 * Hydrogen in industry

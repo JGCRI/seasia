@@ -1884,7 +1884,7 @@ style="background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 
 <p style="margin-left:1em;">
 The aim of this example is to demonstrate how to apply an economy-wide
 emissions constraint for Malaysia in accord with its national goals:
-net-zero CO<sub>2</sub> by 2050.
+net-zero CO<sub>2</sub> as early as 2050.
 </p>
 <p></span></p>
 </div>
@@ -1924,16 +1924,16 @@ deployment to satisfy the emissions constraint. An economy-wide
 constraint can be used by itself, or in combination with additional
 sectoral policies described above.</p>
 There are some important considerations: (1) What GHGs are included in
-the constraint (only CO<sub>2</sub>?)?, (2) What is the time period for
-the constraint (e.g., 2050, 2065)?, (3) What are the emissions in each
-period, (4) Will emissions decline linearly to zero or will another rate
-be specified?, (5) Will land use change emissions be included in the
-constraint?, and (6) What assumptions are made for emissions in the rest
-of the world? This latter point is important when considering “carbon
-leakage,” that is, how restrictions in emissions in one geography may
-lead to a shift in carbon-intensive activities to other locations.
-Below, we will describe how to implement a CO<sub>2</sub> emissions
-constraint. See the <a
+the constraint (e.g., only CO<sub>2</sub>)?, (2) What is the time period
+for the constraint (e.g., 2050, 2065)?, (3) What are the emissions in
+each period?, (4) Will emissions decline linearly to zero or will
+another rate be specified?, (5) Will land use change emissions be
+included in the constraint?, and (6) What assumptions are made for
+emissions in the rest of the world? This latter point is important when
+considering “carbon leakage,” that is, how restrictions in emissions in
+one geography may lead to a shift in carbon-intensive activities to
+other locations. Below, we will describe how to implement a
+CO<sub>2</sub> emissions constraint. See the <a
 href="http://jgcri.github.io/gcam-doc/policies.html#emissions-policies">GCAM
 Policies</a> documentation for more information.
 </p>
@@ -1954,14 +1954,14 @@ style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 
 <li><p>Create a folder in the input directory:
 <code>./gcam-core/input/addons</code>.
 <!---include links to example XMLs here---></p></li>
-<li><p>Download the emissions constraint xml file(s) for Malaysia: <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/NetZeroC_Malaysia_2035_2050">NetZeroC_Malaysia_2035_2050</a>
-and <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/malaysia_LUC">Malaysia_LUC</a>,
-as well as those for the rest of the world (ROW), <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/NetZeroC_global_noMalaysia_2050">NetZeroC_global_noMalaysia_2050</a>
-and <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/ROW_LUC_noMalaysia">ROW_LUC_noMalaysia</a>.</p></li>
+<li><p>Download the emissions constraint xml file(s) for Malaysia: “<a
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/NetZeroC_Malaysia_2035_2050">NetZeroC_Malaysia_2035_2050</a>”
+and “<a
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/malaysia_LUC">Malaysia_LUC</a>”,
+as well as those for the rest of the world (ROW), “<a
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/NetZeroC_global_noMalaysia_2050">NetZeroC_global_noMalaysia_2050</a>”
+and “<a
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/ROW_LUC_noMalaysia">ROW_LUC_noMalaysia</a>.”</p></li>
 <li><p>The first file, <code>NetZeroC_Malaysia_2035_2050</code>,
 specifies emissions in units of tonnes of carbon (<em>not
 CO<sub>2</sub></em>) in each period. One way to determine the emissions
@@ -1983,14 +1983,14 @@ scenario. Thus, we only need to start our constraint in 2035. We specify
 a linear decrease to 0 tonnes of C in 2050.</p></li>
 <li><p>We adopt a similar approach for the ROW, using the total
 emissions (tC) in 2020 for all countries as a starting point. (We did
-not subtract our Malaysia’s emissions, as they are quite small
+not subtract out Malaysia’s emissions, as they are quite small
 globally). It is not absolutely necessary to adopt the very same
 emissions constraint for the ROW, but the constraint should be strong
 enough to avoid carbon leakage from Malaysia’ net-zero policy.</p></li>
 <li><p>One needs to decide whether and how land use change emissions are
 incorporated into the constraint. GCAM accounts for fossil fuel and
 industry CO<sub>2</sub> emissions separately from land use change
-CO<sub>2</sub> emissions. The <code>Malaysia_luc.xml</code> specifies
+CO<sub>2</sub> emissions. The <code>Malaysia_LUC.xml</code> specifies
 how land use change CO<sub>2</sub> emissions (LUC-CO<sub>2</sub>) in
 Malaysia are linked to the ghgpolicy (“CO<sub>2</sub>”). There are two
 parameters: <code>price-adjust</code> and <code>demand-adjust</code>.
@@ -2005,15 +2005,12 @@ depending on the goal and importance of LUC emissions. Note that
 Malaysia is removed from the
 <code>ROW_LUC_noMalaysia.xml</code>.</p></li>
 <li><p>Save the xml files and then point to them in your configuration
-file by adding the line:</p>
-<p style='font-size:0.9em'>
-<!---insert exmaple XML filenames--->
-<p><code>&lt;Value name = "scen"&gt;../input/addons/malaysia/NetZeroC_Malaysia_2035_2050.xml&lt;/Value&gt;</code>
+file by adding the lines: <!---insert exmaple XML filenames--->
+<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/NetZeroC_Malaysia_2035_2050.xml&lt;/Value&gt;</code>
 <code>&lt;Value name = "scen"&gt;../input/addons/malaysia/Malaysia_LUC.xml&lt;/Value&gt;</code>
 <code>&lt;Value name = "scen"&gt;../input/addons/malaysia/NetZeroC_global_noMalaysia_2050.xml&lt;/Value&gt;</code>
 <code>&lt;Value name = "scen"&gt;../input/addons/malaysia/ROW_LUC_noMalaysia.xml&lt;/Value&gt;</code></p></li>
 </ol>
-</p>
 </p>
 </p>
 <p></span></p>
@@ -2044,9 +2041,9 @@ Data</h2>
 <p><code>gcamextractor</code> is an R package used to extract and
 process GCAM data and manipulate into standardized tables.
 <code>gcamextractor</code> converts GCAM outputs into commonly used
-units as well as aggregates across different classes and sectors for
-easy use in plots, maps, and tables. For more information, please
-reference the documentation page found <a
+units and aggregates across different classes and sectors for easy use
+in plots, maps, and tables. For more information, please reference the
+documentation page found <a
 href="https://jgcri.github.io/gcamextractor/index.html">here</a>.</p>
 <p>The first step is to create a path to the GCAM database, found in the
 output folder of your GCAM folder, and a list of desired parameters. The
@@ -2055,11 +2052,11 @@ specific output folder. Note that due to size limiations on GitHub, the
 data used here has already been processed, but we include the steps to
 run it on your own in the following chunk if desired.</p>
 <pre class="r fold-show"><code># Get desired database paths
-ref_db &lt;- &quot;../data/malaysia/output/malaysia_ref&quot;
-high_db &lt;- &quot;../data/malaysia/output/malaysia_high&quot;
-high_cn_db &lt;- &quot;../data/malaysia/output/malaysia_carbon_neutral_high&quot;
+bau_db &lt;- &quot;../data/malaysia/output/malaysia_bau&quot;
+policies_db &lt;- &quot;../data/malaysia/output/malaysia_policies&quot;
+carbon_neutral_db &lt;- &quot;../data/malaysia/output/malaysia_carbon_neutral&quot;
 
-paths &lt;- c(ref_db, high_db, high_cn_db)
+paths &lt;- c(bau_db, policies_db, carbon_neutral_db)
 
 # Choose parameters of interest
 params &lt;- c(&quot;elecByTechTWh&quot;, &quot;elecConsumByDemandSectorTWh&quot;,
@@ -2084,11 +2081,11 @@ for(p in paths){
                           paramsSelect = params,
                           folder = paste0(&quot;../data/malaysia/gcamextractor/&quot;, tail(strsplit(p, &quot;/&quot;)[[1]],1)))
 }</code></pre>
-<pre class="r fold-show"><code>ref &lt;- read.csv(&quot;../data/malaysia/gcamextractor/malaysia_ref/gcamDataTable_aggClass1.csv&quot;) 
-high &lt;- read.csv(&quot;../data/malaysia/gcamextractor/malaysia_high/gcamDataTable_aggClass1.csv&quot;)
-high_cn &lt;- read.csv(&quot;../data/malaysia/gcamextractor/malaysia_carbon_neutral_high/gcamDataTable_aggClass1.csv&quot;)
+<pre class="r fold-show"><code>bau &lt;- read.csv(&quot;../data/malaysia/gcamextractor/malaysia_bau/gcamDataTable_aggClass1.csv&quot;) 
+policies &lt;- read.csv(&quot;../data/malaysia/gcamextractor/malaysia_policies/gcamDataTable_aggClass1.csv&quot;)
+carbon_neutral &lt;- read.csv(&quot;../data/malaysia/gcamextractor/malaysia_carbon_neutral/gcamDataTable_aggClass1.csv&quot;)
 
-malaysia &lt;- bind_rows(ref, high, high_cn) %&gt;%
+malaysia &lt;- bind_rows(bau, policies, carbon_neutral) %&gt;%
   filter(region != (&quot;Rest of Malaysia&quot;),
          x &gt; 2000, x &lt;= 2050)
 
@@ -2118,7 +2115,6 @@ following parameters:</p>
 <ul>
 <li>Socioeconomics: population, GDP, GDP per capita</li>
 <li>CO<sub>2</sub> emissions by sector</li>
-<li>GHG emissions by sector and gas</li>
 <li>Final energy by fuel</li>
 <li>Final energy by sector</li>
 <li>Electricity generation by fuel</li>
@@ -2144,57 +2140,27 @@ number="6.2.1.1">
 Socioeconomic Summary</h4>
 <!-------------------------->
 <hr />
-<div id="malaysia-vs-kuala-lumpur" class="section level5"
-number="6.2.1.1.1">
-<h5><span class="header-section-number">6.2.1.1.1</span> Malaysia vs
-Kuala Lumpur</h5>
-<pre class="r"><code>socioeconomic_parameters &lt;- c(&quot;pop&quot;, &quot;gdp&quot;, &quot;gdpPerCapita&quot;)
+<pre class="r"><code>figure_path &lt;- &quot;./markdown_figs&quot;
+
+socioeconomic_parameters &lt;- c(&quot;pop&quot;, &quot;gdp&quot;, &quot;gdpPerCapita&quot;)
 
 socioeconomic &lt;- malaysia %&gt;%
   filter(param %in% socioeconomic_parameters,
          region != &quot;All of Malaysia&quot;,
          scenario == REF_SCENARIO) %&gt;%
-  mutate(param = units) %&gt;% 
+  mutate(param = units,
+         param = case_when(classLabel == &quot;GDP Per Capita&quot; ~ &quot;GDP per Capita (Thous. 1990 USD/per)&quot;, T~param)) %&gt;% 
   rchart::chart(save = F, 
                 show = F,
-                size_text = 19)
+                chart_type = &quot;region_absolute&quot;,
+                folder = figure_path,
+                append = &quot;_socioeconomics&quot;,
+                size_text = 10)
 
 socioeconomic$chart_region_absolute</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-socio-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
-</div>
-<div id="malaysia" class="section level5" number="6.2.1.1.2">
-<h5><span class="header-section-number">6.2.1.1.2</span> Malaysia</h5>
-<pre class="r"><code>socioeconomic_my &lt;- malaysia %&gt;%
-  filter(param %in% socioeconomic_parameters,
-         region == &quot;Malaysia&quot;) %&gt;%
-  mutate(param = units,
-         scenario = REF_SCENARIO) %&gt;% 
-  rchart::chart(save = F, 
-                show = F,
-                size_text = 19)
-
-socioeconomic_my$chart_param</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-socio-my-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<p><br></p>
-</div>
-<div id="kuala-lumpur" class="section level5" number="6.2.1.1.3">
-<h5><span class="header-section-number">6.2.1.1.3</span> Kuala
-Lumpur</h5>
-<pre class="r"><code>socioeconomic_kl &lt;- malaysia %&gt;%
-  filter(param %in% socioeconomic_parameters,
-         region == &quot;KualaLumpur&quot;) %&gt;%
-  mutate(param = units,
-         scenario = REF_SCENARIO) %&gt;% 
-  rchart::chart(save = F, 
-                show = F,
-                size_text = 19)
-
-socioeconomic_kl$chart_param</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-socio-kl-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<p><br></p>
 <!-------------------------->
-</div>
 </div>
 <div id="emissions-by-sector-and-gas" class="section level4 tabset"
 number="6.2.1.2">
@@ -2202,19 +2168,16 @@ number="6.2.1.2">
 Emissions by Sector and Gas</h4>
 <!-------------------------->
 <hr />
-<div id="malaysia-vs-kuala-lumpur-1" class="section level5"
+<div id="malaysia-and-kuala-lumpur" class="section level5"
 number="6.2.1.2.1">
-<h5><span class="header-section-number">6.2.1.2.1</span> Malaysia vs
+<h5><span class="header-section-number">6.2.1.2.1</span> Malaysia and
 Kuala Lumpur</h5>
 <pre class="r"><code>co2 &lt;- malaysia %&gt;% filter(param == &quot;emissCO2BySectorNoBio&quot;,
                            region != &quot;Malaysia&quot;) %&gt;%
-  mutate(value = value * 3.67,
+  mutate(#value = value * 3.67,
          units = &quot;CO2 Emissions (MTCO2eq)&quot;)
 
-ghg &lt;- malaysia %&gt;% filter(param == &quot;emissGHGBySectorNoBioGWPAR5&quot;,
-                           region != &quot;Malaysia&quot;)
-
-malaysia_emissions &lt;- bind_rows(co2, ghg) %&gt;%
+malaysia_emissions &lt;- co2 %&gt;%
   mutate(class = case_when(grepl(&quot;International&quot;,class)~&quot;Transportation&quot;,
                            grepl(&quot;alumin|desalinated|refining|urban|coal|gas|oil|hydrogen|agricultural|crops&quot;,class)~&quot;Industry&quot;,
                            TRUE~class)) %&gt;%
@@ -2227,135 +2190,83 @@ malaysia_emissions &lt;- bind_rows(co2, ghg) %&gt;%
 
 emissions[[c]]</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/rchart-emiss-plot-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>co2_gas &lt;- co2 %&gt;%
-  mutate(class = &quot;CO2&quot;,
-         param = &quot;emissGHGByGasNoBioGWPAR5&quot;)
-
-ghg_gas &lt;- malaysia %&gt;% 
-  filter(param == &quot;emissGHGByGasNoBioGWPAR5&quot;,
-         class != &quot;CO2&quot;,
-         region != &quot;Malaysia&quot;)
-
-malaysia_emissions_gas &lt;- bind_rows(co2_gas, ghg_gas)</code></pre>
-<pre class="r"><code>gas &lt;- malaysia_emissions_gas %&gt;%
-  mutate(param = units) %&gt;%
-  rchart::chart(save = F, 
-                show = F,
-                size_text = 10)
-
-gas[[c]]</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-emiss-gas-plot-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<p><br></p>
 </div>
-<div id="malaysia-1" class="section level5" number="6.2.1.2.2">
+<div id="malaysia" class="section level5" number="6.2.1.2.2">
 <h5><span class="header-section-number">6.2.1.2.2</span> Malaysia</h5>
 <pre class="r"><code>co2_my &lt;- malaysia %&gt;% 
   filter(param == &quot;emissCO2BySectorNoBio&quot;, 
-         region == &quot;All of Malaysia&quot;) %&gt;%
-  mutate(value = value * 3.67,
-         units = &quot;CO2 Emissions (MTCO2eq)&quot;,
+         region == &quot;All of Malaysia&quot;,
+         class != &quot;LUC&quot;) %&gt;%
+  mutate(# value = value * 3.67,
+         units = &quot;CO2 Emissions (MTCO2e)&quot;,
          param = &quot;CO2 Emissions&quot;,
          class = case_when(grepl(&quot;International&quot;,class)~&quot;transport&quot;,
-                           grepl(&quot;refin|hydrogen&quot;,class)~&quot;other&quot;,
+                           grepl(&quot;refin|hydrogen&quot;,class)~&quot;Industry&quot;,
                            TRUE~class)) %&gt;% 
   group_by(scenario, region, class, units, param, x, xLabel, classLabel, subRegion, vintage) %&gt;% 
   summarize(value = sum(value)) %&gt;% 
-  ungroup()
-
-ghg_my &lt;- malaysia %&gt;% 
-  filter(param == &quot;emissGHGBySectorNoBioGWPAR5&quot;, 
-         region == &quot;All of Malaysia&quot;) %&gt;%
-  mutate(param = &quot;GHG Emissions by Sector&quot;,
-         class = case_when(grepl(&quot;alumin&quot;,class)~&quot;industry&quot;,
-                           grepl(&quot;International&quot;,class)~&quot;transport&quot;,
-                           grepl(&quot;desalinated|refin|urban|coal|gas|oil|biomass|hydrogen|agricultural|crops|livestock&quot;, class)~&quot;other&quot;,
-                           TRUE~class)) %&gt;% 
-  group_by(scenario, region, class, units, param, x, xLabel, classLabel, subRegion, vintage) %&gt;% 
-  summarize(value = sum(value)) %&gt;% 
-  ungroup()
-
-my_emissions &lt;- bind_rows(co2_my, ghg_my) </code></pre>
-<pre class="r"><code>emissions_my_plot &lt;- my_emissions %&gt;%
+  ungroup()</code></pre>
+<pre class="r"><code>emissions_my_plot &lt;- co2_my %&gt;%
   mutate(param = units) %&gt;%
-  rchart::chart(save = F, 
-                show = F,
-                scenRef = REF_SCENARIO)
-
-emissions_my_plot$chart_param</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-emiss-plot-my-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>ghg_gas_my &lt;- malaysia %&gt;% 
-  filter(param == &quot;emissGHGByGasNoBioGWPAR5&quot;,
-         class != &quot;CO2&quot;,
-         region == &quot;All of Malaysia&quot;) %&gt;%
-  mutate(param = &quot;GHG Emissions by Gas&quot;)
-
-my_emissions_gas &lt;- bind_rows(ghg_gas_my, my_emissions) %&gt;%
-  filter(class != &quot;LUC&quot;)</code></pre>
-<pre class="r"><code>gas_my &lt;- my_emissions_gas %&gt;%
-  rchart::chart(save = F, 
+  rchart::chart(save = T, 
                 show = F,
                 scenRef = REF_SCENARIO,
-                summary_line = T,
-                size_text = 12,
-                ncol = 4)
-
-gas_my$chart_class</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-emiss-gas-scenario-plot-my-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>gas_my$chart_class_diff_absolute</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-emiss-gas-plot-my-1.png" width="100%" style="display: block; margin: auto;" /></p>
+                chart_type = &quot;param_absolute&quot;,
+                folder = figure_path,
+                append = &quot;_co2_lines&quot;)</code></pre>
+<pre class="r"><code>gas_my &lt;- co2_my %&gt;%
+  rchart::chart(save = T, 
+                show = F,
+                chart_type = c(&quot;class_absolute&quot;, &quot;class_diff_absolute&quot;),
+                scenRef = REF_SCENARIO,
+                ncol = 4,
+                folder = figure_path,
+                append = &quot;_co2_emiss&quot;,
+                size_text = 28)</code></pre>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_param_co2_lines.png&quot;)</code></pre>
+<p><img src="markdown_figs/chart_param_co2_lines.png" width="100%" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_co2_emiss.png&quot;)</code></pre>
+<p><img src="markdown_figs/chart_class_co2_emiss.png" width="100%" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_diff_absolute_co2_emiss.png&quot;)</code></pre>
+<p><img src="markdown_figs/chart_class_diff_absolute_co2_emiss.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 </div>
-<div id="kuala-lumpur-1" class="section level5" number="6.2.1.2.3">
+<div id="kuala-lumpur" class="section level5" number="6.2.1.2.3">
 <h5><span class="header-section-number">6.2.1.2.3</span> Kuala
 Lumpur</h5>
 <pre class="r"><code>co2_kl &lt;- malaysia %&gt;% 
   filter(param == &quot;emissCO2BySectorNoBio&quot;,
          region == &quot;KualaLumpur&quot;) %&gt;%
-  mutate(value = value * 3.67,
+  mutate(#value = value * 3.67,
          units = &quot;CO2 Emissions (MTCO2eq)&quot;,
          param = &quot;CO2 Emissions&quot;,
          class = case_when(grepl(&quot;International&quot;,class)~&quot;transport&quot;, TRUE~class))  %&gt;% 
   group_by(scenario, region, class, units, param, x, xLabel, classLabel, subRegion, vintage) %&gt;% 
   summarize(value = sum(value)) %&gt;% 
-  ungroup()
-
-ghg_kl &lt;- malaysia %&gt;% 
-  filter(param == &quot;emissGHGBySectorNoBioGWPAR5&quot;,
-         region == &quot;KualaLumpur&quot;) %&gt;%
-  mutate(param = &quot;GHG Emissions by Sector&quot;,
-         class = case_when(grepl(&quot;International&quot;,class)~&quot;transport&quot;, TRUE~class)) %&gt;% 
-  group_by(scenario, region, class, units, param, x, xLabel, classLabel, subRegion, vintage) %&gt;% 
-  summarize(value = sum(value)) %&gt;% 
-  ungroup()
-
-kl_emissions &lt;- bind_rows(co2_kl, ghg_kl) </code></pre>
-<pre class="r"><code>emissions_kl_plot &lt;- kl_emissions %&gt;%
+  ungroup()</code></pre>
+<pre class="r"><code>emissions_kl_plot &lt;- co2_kl %&gt;%
   mutate(param = units) %&gt;%
-  rchart::chart(save = F, 
-                show = F,
-                size_text = 12) 
-
-emissions_kl_plot$chart_param</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-emiss-plot-kl-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>ghg_gas_kl &lt;- malaysia %&gt;% 
-  filter(param == &quot;emissGHGByGasNoBioGWPAR5&quot;,
-         class != &quot;CO2&quot;,
-         region == &quot;KualaLumpur&quot;) %&gt;%
-  mutate(param = &quot;GHG Emissions by Gas&quot;)
-
-kl_emissions_gas &lt;- bind_rows(ghg_gas_kl, kl_emissions) </code></pre>
-<pre class="r"><code>gas_kl &lt;- kl_emissions_gas %&gt;%
-  rchart::chart(save = F, 
+  rchart::chart(save = T, 
                 show = F,
                 scenRef = REF_SCENARIO,
-                summary_line = T,
-                size_text = 10,
-                ncol = 4)
-
-gas_kl$chart_class</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-emiss-gas-scenario-plot-kl-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>gas_kl$chart_class_diff_absolute</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-gas-plot-kl-1.png" width="100%" style="display: block; margin: auto;" /></p>
+                chart_type = &quot;param_absolute&quot;,
+                folder = figure_path,
+                append = &quot;_co2_lines_kl&quot;) </code></pre>
+<pre class="r"><code>gas_kl &lt;- co2_kl %&gt;%
+  rchart::chart(save = T, 
+                show = F,
+                chart_type = c(&quot;class_absolute&quot;, &quot;class_diff_absolute&quot;),
+                scenRef = REF_SCENARIO,
+                ncol = 4,
+                folder = figure_path,
+                append = &quot;_co2_emiss_kl&quot;,
+                size_text = 28)</code></pre>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_param_co2_lines_kl.png&quot;)</code></pre>
+<p><img src="markdown_figs/chart_param_co2_lines_kl.png" width="100%" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_co2_emiss_kl.png&quot;)</code></pre>
+<p><img src="markdown_figs/chart_class_co2_emiss_kl.png" width="100%" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_diff_absolute_co2_emiss_kl.png&quot;)</code></pre>
+<p><img src="markdown_figs/chart_class_diff_absolute_co2_emiss_kl.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 <!-------------------------->
 </div>
@@ -2366,125 +2277,108 @@ number="6.2.1.3">
 Final Energy by Fuel and Sector</h4>
 <!-------------------------->
 <hr />
-<div id="malaysia-vs-kuala-lumpur-2" class="section level5"
-number="6.2.1.3.1">
-<h5><span class="header-section-number">6.2.1.3.1</span> Malaysia vs
-Kuala Lumpur</h5>
+<div id="malaysia-1" class="section level5" number="6.2.1.3.1">
+<h5><span class="header-section-number">6.2.1.3.1</span> Malaysia</h5>
 <pre class="r"><code>energy_parameters &lt;- c(&quot;energyFinalConsumBySecEJ&quot;, &quot;energyFinalByFuelEJ&quot;)
 
-energy &lt;- malaysia %&gt;% 
-  filter(param %in% energy_parameters,
-         region != &quot;Malaysia&quot;) %&gt;%
-  mutate(param = units) %&gt;%
-  rchart::chart(save = F, 
-                show = F,
-                size_text = 10)
-
-energy[[c]]</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-energy-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<p><br></p>
-</div>
-<div id="malaysia-2" class="section level5" number="6.2.1.3.2">
-<h5><span class="header-section-number">6.2.1.3.2</span> Malaysia</h5>
-<pre class="r"><code>energy_my &lt;- malaysia %&gt;% 
-  filter(param %in% energy_parameters,
+energy_consum_my &lt;- malaysia %&gt;% 
+  filter(param == &quot;energyFinalConsumBySecEJ&quot;,
          region == &quot;All of Malaysia&quot;) %&gt;%
   mutate(param = units) %&gt;%
-  rchart::chart(save = F, 
+  rchart::chart(save = T, 
                 show = F,
+                chart_type = c(&quot;class_absolute&quot;, &quot;class_diff_absolute&quot;),
                 scenRef = REF_SCENARIO,
-                size_text = 10,
-                ncol = 4)
+                ncol = 4,
+                folder = figure_path,
+                append = &quot;_energy_consum&quot;,
+                size_text = 28)
 
-energy_my$chart_class</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-energy-my-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>energy_my$chart_class_diff_absolute</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-energy-sce-my-1.png" width="100%" style="display: block; margin: auto;" /></p>
+energy_fuel_my &lt;- malaysia %&gt;% 
+  filter(param == &quot;energyFinalByFuelEJ&quot;,
+         region == &quot;All of Malaysia&quot;) %&gt;%
+  mutate(param = units) %&gt;%
+  rchart::chart(save = T, 
+                show = F,
+                chart_type = c(&quot;class_absolute&quot;, &quot;class_diff_absolute&quot;),
+                scenRef = REF_SCENARIO,
+                ncol = 4,
+                folder = figure_path,
+                append = &quot;_energy_fuel&quot;,
+                size_text = 30)</code></pre>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_energy_consum.png&quot;)</code></pre>
+<p><img src="markdown_figs/chart_class_energy_consum.png" width="100%" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_diff_absolute_energy_consum.png&quot;)</code></pre>
+<p><img src="markdown_figs/chart_class_diff_absolute_energy_consum.png" width="100%" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_energy_fuel.png&quot;)</code></pre>
+<p><img src="markdown_figs/chart_class_energy_fuel.png" width="100%" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_diff_absolute_energy_fuel.png&quot;)</code></pre>
+<p><img src="markdown_figs/chart_class_diff_absolute_energy_fuel.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 </div>
-<div id="kuala-lumpur-2" class="section level5" number="6.2.1.3.3">
-<h5><span class="header-section-number">6.2.1.3.3</span> Kuala
+<div id="kuala-lumpur-1" class="section level5" number="6.2.1.3.2">
+<h5><span class="header-section-number">6.2.1.3.2</span> Kuala
 Lumpur</h5>
 <pre class="r"><code>energy_kl &lt;- malaysia %&gt;% 
-  filter(param %in% energy_parameters,
+  filter(param == &quot;energyFinalConsumBySecEJ&quot;,
          region == &quot;KualaLumpur&quot;) %&gt;%
   mutate(param = units) %&gt;%
-  rchart::chart(save = F, 
+  rchart::chart(save = T, 
                 show = F,
+                chart_type = c(&quot;class_absolute&quot;, &quot;class_diff_absolute&quot;),
                 scenRef = REF_SCENARIO,
-                size_text = 10,
-                ncol = 4)
+                ncol = 4,
+                folder = figure_path,
+                append = &quot;_energy_consum_kl&quot;,
+                size_text = 28)
 
-energy_kl$chart_class</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-energy-sce-kl-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>energy_kl$chart_class_diff_absolute</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-energy-kl-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<p><br></p>
+energy_kl &lt;- malaysia %&gt;% 
+  filter(param == &quot;energyFinalByFuelEJ&quot;,
+         region == &quot;KualaLumpur&quot;) %&gt;%
+  mutate(param = units) %&gt;%
+  rchart::chart(save = T, 
+                show = F,
+                chart_type = c(&quot;class_absolute&quot;, &quot;class_diff_absolute&quot;),
+                scenRef = REF_SCENARIO,
+                ncol = 4,
+                folder = figure_path,
+                append = &quot;_energy_fuel_kl&quot;,
+                size_text = 28)</code></pre>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_energy_consum_kl.png&quot;)</code></pre>
+<p><img src="markdown_figs/chart_class_energy_consum_kl.png" width="100%" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_diff_absolute_energy_consum_kl.png&quot;)</code></pre>
+<p><img src="markdown_figs/chart_class_diff_absolute_energy_consum_kl.png" width="100%" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_energy_fuel_kl.png&quot;)</code></pre>
+<p><img src="markdown_figs/chart_class_energy_fuel_kl.png" width="100%" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_diff_absolute_energy_fuel_kl.png&quot;)</code></pre>
+<p><img src="markdown_figs/chart_class_diff_absolute_energy_fuel_kl.png" width="100%" style="display: block; margin: auto;" />
+<br></p>
 <!-------------------------->
 </div>
 </div>
-<div id="electricity-generation-by-fuel-and-sector"
-class="section level4 tabset" number="6.2.1.4">
+<div id="electricity-generation-by-fuel" class="section level4 tabset"
+number="6.2.1.4">
 <h4 class="tabset"><span class="header-section-number">6.2.1.4</span>
-Electricity Generation by Fuel and Sector</h4>
+Electricity Generation by Fuel</h4>
 <!-------------------------->
 <hr />
-<div id="malaysia-vs-kuala-lumpur-3" class="section level5"
-number="6.2.1.4.1">
-<h5><span class="header-section-number">6.2.1.4.1</span> Malaysia vs
-Kuala Lumpur</h5>
-<pre class="r"><code>electricity_parameters &lt;- c(&quot;elecConsumByDemandSectorTWh&quot;, &quot;elecByTechTWh&quot;)
-
-electricity &lt;- malaysia %&gt;% 
-  filter(param %in% electricity_parameters,
-         region != &quot;Malaysia&quot;) %&gt;%
-  mutate(param = units) %&gt;%
-  rchart::chart(save = F, 
-                show = F,
-                size_text = 10)
-
-electricity[[c]]</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-elec-gen-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<p><br></p>
-</div>
-<div id="malaysia-3" class="section level5" number="6.2.1.4.2">
-<h5><span class="header-section-number">6.2.1.4.2</span> Malaysia</h5>
 <pre class="r"><code>electricity_my &lt;- malaysia %&gt;% 
-  filter(param %in% electricity_parameters,
+  filter(param == &quot;elecByTechTWh&quot;,
          region == &quot;All of Malaysia&quot;) %&gt;%
-  mutate(param = units) %&gt;%
-  rchart::chart(save = F, 
+  mutate(param = &quot;Electricity Generation\nby Fuel (TWh)&quot;) %&gt;%
+  rchart::chart(save = T, 
                 show = F,
+                chart_type = c(&quot;class_absolute&quot;, &quot;class_diff_absolute&quot;),
                 scenRef = REF_SCENARIO,
-                size_text = 10,
-                ncol = 4)
-
-electricity_my$chart_class</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-elec-gen-sce-my-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>electricity_my$chart_class_diff_absolute</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-elec-gen-my-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<p><br></p>
-</div>
-<div id="kuala-lumpur-3" class="section level5" number="6.2.1.4.3">
-<h5><span class="header-section-number">6.2.1.4.3</span> Kuala
-Lumpur</h5>
-<pre class="r"><code>electricity_kl &lt;- malaysia %&gt;% 
-  filter(param %in% electricity_parameters,
-         region == &quot;KualaLumpur&quot;) %&gt;%
-  mutate(param = units) %&gt;%
-  rchart::chart(save = F, 
-                show = F,
-                scenRef = REF_SCENARIO,
-                size_text = 8,
-                ncol = 4)
-
-electricity_kl$chart_class</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-elec-gen-sce-kl-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>electricity_kl$chart_class_diff_absolute</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-elec-gen-kl-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<p><br></p>
+                ncol = 4,
+                folder = figure_path,
+                append = &quot;_elec_gen&quot;,
+                size_text = 24)</code></pre>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_elec_gen.png&quot;)</code></pre>
+<p><img src="markdown_figs/chart_class_elec_gen.png" width="100%" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_diff_absolute_elec_gen.png&quot;)</code></pre>
+<p><img src="markdown_figs/chart_class_diff_absolute_elec_gen.png" width="100%" style="display: block; margin: auto;" /></p>
 <!-------------------------->
-</div>
 </div>
 </div>
 <div id="sectoral-details" class="section level3 tabset" number="6.2.2">
@@ -2497,91 +2391,79 @@ number="6.2.2.1">
 <h4 class="tabset"><span class="header-section-number">6.2.2.1</span>
 Building Energy by Subsector</h4>
 <hr />
-<div id="malaysia-vs-kuala-lumpur-4" class="section level5"
-number="6.2.2.1.1">
-<h5><span class="header-section-number">6.2.2.1.1</span> Malaysia vs
-Kuala Lumpur</h5>
-<pre class="r"><code>building_energy_resid &lt;- malaysia %&gt;% 
-  filter(param == &quot;energyFinalSubsecByResidSectorBuildEJ&quot;,
-         region != &quot;Malaysia&quot;) %&gt;%
-  mutate(param = units) %&gt;%
-  rchart::chart(save = F, 
-                show = F,
-                size_text = 12)
-
-building_energy_resid[[c]]</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-building-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>building_energy_comm &lt;- malaysia %&gt;% 
-  filter(param == &quot;energyFinalSubsecByCommSectorBuildEJ&quot;,
-         region != &quot;Malaysia&quot;) %&gt;%
-  mutate(param = units) %&gt;%
-  rchart::chart(save = F, 
-                show = F,
-                size_text = 12)
-
-building_energy_comm[[c]]</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-building-2.png" width="100%" style="display: block; margin: auto;" /></p>
-<p><br></p>
-</div>
-<div id="malaysia-4" class="section level5" number="6.2.2.1.2">
-<h5><span class="header-section-number">6.2.2.1.2</span> Malaysia</h5>
+<div id="malaysia-2" class="section level5" number="6.2.2.1.1">
+<h5><span class="header-section-number">6.2.2.1.1</span> Malaysia</h5>
 <pre class="r"><code>building_energy_resid_my &lt;- malaysia %&gt;% 
   filter(param == &quot;energyFinalSubsecByResidSectorBuildEJ&quot;,
          region == &quot;All of Malaysia&quot;) %&gt;%
-  mutate(param = units) %&gt;%
-  rchart::chart(save = F, 
+  mutate(param = &quot;Final Energy (EJ)&quot;) %&gt;%
+  rchart::chart(save = T, 
                 show = F,
+                chart_type = c(&quot;class_absolute&quot;, &quot;class_diff_absolute&quot;),
                 scenRef = REF_SCENARIO,
-                size_text = 12)
+                ncol = 4,
+                folder = figure_path,
+                append = &quot;_resid_bld&quot;,
+                size_text = 24)
 
-building_energy_resid_my$chart_class</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-building-sce-my-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>building_energy_comm_my &lt;- malaysia %&gt;% 
+building_energy_comm_my &lt;- malaysia %&gt;% 
   filter(param == &quot;energyFinalSubsecByCommSectorBuildEJ&quot;,
          region == &quot;All of Malaysia&quot;) %&gt;%
-  mutate(param = units) %&gt;%
-  rchart::chart(save = F, 
+  mutate(param = &quot;Final Energy (EJ)&quot;) %&gt;%
+  rchart::chart(save = T, 
                 show = F,
+                chart_type = c(&quot;class_absolute&quot;, &quot;class_diff_absolute&quot;),
                 scenRef = REF_SCENARIO,
-                size_text = 12)
-
-building_energy_comm_my$chart_class</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-building-sce-my-2.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>building_energy_resid_my$chart_class_diff_absolute</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-building-my-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>building_energy_comm_my$chart_class_diff_absolute</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-building-my-2.png" width="100%" style="display: block; margin: auto;" /></p>
+                ncol = 4,
+                folder = figure_path,
+                append = &quot;_comm_bld&quot;,
+                size_text = 24)</code></pre>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_resid_bld.png&quot;)</code></pre>
+<p><img src="markdown_figs/chart_class_resid_bld.png" width="100%" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_diff_absolute_resid_bld.png&quot;)</code></pre>
+<p><img src="markdown_figs/chart_class_diff_absolute_resid_bld.png" width="100%" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_comm_bld.png&quot;)</code></pre>
+<p><img src="markdown_figs/chart_class_comm_bld.png" width="100%" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_diff_absolute_comm_bld.png&quot;)</code></pre>
+<p><img src="markdown_figs/chart_class_diff_absolute_comm_bld.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 </div>
-<div id="kuala-lumpur-4" class="section level5" number="6.2.2.1.3">
-<h5><span class="header-section-number">6.2.2.1.3</span> Kuala
+<div id="kuala-lumpur-2" class="section level5" number="6.2.2.1.2">
+<h5><span class="header-section-number">6.2.2.1.2</span> Kuala
 Lumpur</h5>
 <pre class="r"><code>building_energy_resid_kl &lt;- malaysia %&gt;% 
   filter(param == &quot;energyFinalSubsecByResidSectorBuildEJ&quot;,
          region == &quot;KualaLumpur&quot;) %&gt;%
-  mutate(param = units) %&gt;%
-  rchart::chart(save = F, 
+  mutate(param = &quot;Final Energy (EJ)&quot;) %&gt;%
+  rchart::chart(save = T, 
                 show = F,
+                chart_type = c(&quot;class_absolute&quot;, &quot;class_diff_absolute&quot;),
                 scenRef = REF_SCENARIO,
-                size_text = 12)
+                ncol = 4,
+                folder = figure_path,
+                append = &quot;_resid_bld_kl&quot;,
+                size_text = 24)
 
-building_energy_resid_kl$chart_class</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-building-sce-kl-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>building_energy_comm_kl &lt;- malaysia %&gt;% 
+building_energy_comm_kl &lt;- malaysia %&gt;% 
   filter(param == &quot;energyFinalSubsecByCommSectorBuildEJ&quot;,
          region == &quot;KualaLumpur&quot;) %&gt;%
-  mutate(param = units) %&gt;%
-  rchart::chart(save = F, 
+  mutate(param = &quot;Final Energy (EJ)&quot;) %&gt;%
+  rchart::chart(save = T, 
                 show = F,
+                chart_type = c(&quot;class_absolute&quot;, &quot;class_diff_absolute&quot;),
                 scenRef = REF_SCENARIO,
-                size_text = 12)
-
-building_energy_comm_kl$chart_class</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-building-sce-kl-2.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>building_energy_resid_kl$chart_class_diff_absolute</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-building-kl-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>building_energy_comm_kl$chart_class_diff_absolute</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-building-kl-2.png" width="100%" style="display: block; margin: auto;" /></p>
+                ncol = 4,
+                folder = figure_path,
+                append = &quot;_comm_bld_kl&quot;,
+                size_text = 24)</code></pre>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_resid_bld_kl.png&quot;)</code></pre>
+<p><img src="markdown_figs/chart_class_resid_bld_kl.png" width="100%" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_diff_absolute_resid_bld_kl.png&quot;)</code></pre>
+<p><img src="markdown_figs/chart_class_diff_absolute_resid_bld_kl.png" width="100%" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_comm_bld_kl.png&quot;)</code></pre>
+<p><img src="markdown_figs/chart_class_comm_bld_kl.png" width="100%" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_diff_absolute_comm_bld_kl.png&quot;)</code></pre>
+<p><img src="markdown_figs/chart_class_diff_absolute_comm_bld_kl.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 <!-------------------------->
 </div>
@@ -2592,57 +2474,79 @@ number="6.2.2.2">
 Transportation by Mode</h4>
 <!-------------------------->
 <hr />
-<div id="malaysia-vs-kuala-lumpur-5" class="section level5"
-number="6.2.2.2.1">
-<h5><span class="header-section-number">6.2.2.2.1</span> Malaysia vs
-Kuala Lumpur</h5>
-<pre class="r"><code>transport_mode_params &lt;- c(&quot;transportFreightVMTByMode&quot;, &quot;transportPassengerVMTByMode&quot;)
-
-transport_m &lt;- malaysia %&gt;% 
-  filter(param %in% transport_mode_params,
-         region != &quot;Malaysia&quot;) %&gt;%
-  mutate(param = units) %&gt;%
-  rchart::chart(save = F, 
-                show = F,
-                size_text = 12)
-
-transport_m[[c]]</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-transport-mode-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<p><br></p>
-</div>
-<div id="malaysia-5" class="section level5" number="6.2.2.2.2">
-<h5><span class="header-section-number">6.2.2.2.2</span> Malaysia</h5>
+<div id="malaysia-3" class="section level5" number="6.2.2.2.1">
+<h5><span class="header-section-number">6.2.2.2.1</span> Malaysia</h5>
 <pre class="r"><code>transport_my_m &lt;- malaysia %&gt;% 
-  filter(param %in% transport_mode_params,
+  filter(param == &quot;transportFreightVMTByMode&quot;,
          region == &quot;All of Malaysia&quot;) %&gt;%
   mutate(param = units) %&gt;%
-  rchart::chart(save = F, 
+  rchart::chart(save = T, 
                 show = F,
+                chart_type = c(&quot;class_absolute&quot;, &quot;class_diff_absolute&quot;),
                 scenRef = REF_SCENARIO,
-                size_text = 12)
+                ncol = 4,
+                folder = figure_path,
+                append = &quot;_freight_mode&quot;,
+                size_text = 24)
 
-transport_my_m$chart_class</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-transport-my-sce-mode-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>transport_my_m$chart_class_diff_absolute</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-transport-my-mode-1.png" width="100%" style="display: block; margin: auto;" /></p>
+transport_my_m &lt;- malaysia %&gt;% 
+  filter(param == &quot;transportPassengerVMTByMode&quot;,
+         region == &quot;All of Malaysia&quot;) %&gt;%
+  mutate(param = units) %&gt;%
+  rchart::chart(save = T, 
+                show = F,
+                chart_type = c(&quot;class_absolute&quot;, &quot;class_diff_absolute&quot;),
+                scenRef = REF_SCENARIO,
+                ncol = 4,
+                folder = figure_path,
+                append = &quot;_pass_mode&quot;,
+                size_text = 24)</code></pre>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_freight_mode.png&quot;)</code></pre>
+<p><img src="markdown_figs/chart_class_freight_mode.png" width="100%" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_diff_absolute_freight_mode.png&quot;)</code></pre>
+<p><img src="markdown_figs/chart_class_diff_absolute_freight_mode.png" width="100%" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_pass_mode.png&quot;)</code></pre>
+<p><img src="markdown_figs/chart_class_pass_mode.png" width="100%" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_diff_absolute_pass_mode.png&quot;)</code></pre>
+<p><img src="markdown_figs/chart_class_diff_absolute_pass_mode.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 </div>
-<div id="kuala-lumpur-5" class="section level5" number="6.2.2.2.3">
-<h5><span class="header-section-number">6.2.2.2.3</span> Kuala
+<div id="kuala-lumpur-3" class="section level5" number="6.2.2.2.2">
+<h5><span class="header-section-number">6.2.2.2.2</span> Kuala
 Lumpur</h5>
 <pre class="r"><code>transport_kl_m &lt;- malaysia %&gt;% 
-  filter(param %in% transport_mode_params,
+  filter(param == &quot;transportFreightVMTByMode&quot;,
          region == &quot;KualaLumpur&quot;) %&gt;%
   mutate(param = units) %&gt;%
-  rchart::chart(save = F, 
+  rchart::chart(save = T, 
                 show = F,
+                chart_type = c(&quot;class_absolute&quot;, &quot;class_diff_absolute&quot;),
                 scenRef = REF_SCENARIO,
-                size_text = 12)
+                ncol = 4,
+                folder = figure_path,
+                append = &quot;_freight_mode_kl&quot;,
+                size_text = 24)
 
-transport_kl_m$chart_class</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-transport-kl-sce-mode-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>transport_kl_m$chart_class_diff_absolute</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-transport-kl-mode-1.png" width="100%" style="display: block; margin: auto;" /></p>
+transport_kl_m &lt;- malaysia %&gt;% 
+  filter(param == &quot;transportPassengerVMTByMode&quot;,
+         region == &quot;KualaLumpur&quot;) %&gt;%
+  mutate(param = units) %&gt;%
+  rchart::chart(save = T, 
+                show = F,
+                chart_type = c(&quot;class_absolute&quot;, &quot;class_diff_absolute&quot;),
+                scenRef = REF_SCENARIO,
+                ncol = 4,
+                folder = figure_path,
+                append = &quot;_pass_mode_kl&quot;,
+                size_text = 24)</code></pre>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_freight_mode_kl.png&quot;)</code></pre>
+<p><img src="markdown_figs/chart_class_freight_mode_kl.png" width="100%" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_diff_absolute_freight_mode_kl.png&quot;)</code></pre>
+<p><img src="markdown_figs/chart_class_diff_absolute_freight_mode_kl.png" width="100%" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_pass_mode_kl.png&quot;)</code></pre>
+<p><img src="markdown_figs/chart_class_pass_mode_kl.png" width="100%" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_diff_absolute_pass_mode_kl.png&quot;)</code></pre>
+<p><img src="markdown_figs/chart_class_diff_absolute_pass_mode_kl.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 <!-------------------------->
 </div>
@@ -2653,57 +2557,79 @@ number="6.2.2.3">
 Transportation by Fuel</h4>
 <!-------------------------->
 <hr />
-<div id="malaysia-vs-kuala-lumpur-6" class="section level5"
-number="6.2.2.3.1">
-<h5><span class="header-section-number">6.2.2.3.1</span> Malaysia vs
-Kuala Lumpur</h5>
-<pre class="r"><code>transport_fuel_params &lt;- c(&quot;transportFreightVMTByFuel&quot;, &quot;transportPassengerVMTByFuel&quot;)
-
-transport_f &lt;- malaysia %&gt;% 
-  filter(param %in% transport_fuel_params,
-         region != &quot;Malaysia&quot;) %&gt;%
-  mutate(param = units) %&gt;%
-  rchart::chart(save = F, 
-                show = F,
-                size_text = 12)
-
-transport_f[[c]]</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-transport-fuel-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<p><br></p>
-</div>
-<div id="malaysia-6" class="section level5" number="6.2.2.3.2">
-<h5><span class="header-section-number">6.2.2.3.2</span> Malaysia</h5>
+<div id="malaysia-4" class="section level5" number="6.2.2.3.1">
+<h5><span class="header-section-number">6.2.2.3.1</span> Malaysia</h5>
 <pre class="r"><code>transport_my_f &lt;- malaysia %&gt;% 
-  filter(param %in% transport_fuel_params,
+  filter(param == &quot;transportFreightVMTByFuel&quot;,
          region == &quot;All of Malaysia&quot;) %&gt;%
   mutate(param = units) %&gt;%
-  rchart::chart(save = F, 
+  rchart::chart(save = T, 
                 show = F,
+                chart_type = c(&quot;class_absolute&quot;, &quot;class_diff_absolute&quot;),
                 scenRef = REF_SCENARIO,
-                size_text = 12)
+                ncol = 4,
+                folder = figure_path,
+                append = &quot;_freight_fuel&quot;,
+                size_text = 24)
 
-transport_my_f$chart_class</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-transport-my-sce-fuel-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>transport_my_f$chart_class_diff_absolute</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-transport-my-fuel-1.png" width="100%" style="display: block; margin: auto;" /></p>
+transport_my_f &lt;- malaysia %&gt;% 
+  filter(param == &quot;transportPassengerVMTByFuel&quot;,
+         region == &quot;All of Malaysia&quot;) %&gt;%
+  mutate(param = units) %&gt;%
+  rchart::chart(save = T, 
+                show = F,
+                chart_type = c(&quot;class_absolute&quot;, &quot;class_diff_absolute&quot;),
+                scenRef = REF_SCENARIO,
+                ncol = 4,
+                folder = figure_path,
+                append = &quot;_pass_fuel&quot;,
+                size_text = 24)</code></pre>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_freight_fuel.png&quot;)</code></pre>
+<p><img src="markdown_figs/chart_class_freight_fuel.png" width="100%" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_diff_absolute_freight_fuel.png&quot;)</code></pre>
+<p><img src="markdown_figs/chart_class_diff_absolute_freight_fuel.png" width="100%" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_pass_fuel.png&quot;)</code></pre>
+<p><img src="markdown_figs/chart_class_pass_fuel.png" width="100%" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_diff_absolute_pass_fuel.png&quot;)</code></pre>
+<p><img src="markdown_figs/chart_class_diff_absolute_pass_fuel.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 </div>
-<div id="kuala-lumpur-6" class="section level5" number="6.2.2.3.3">
-<h5><span class="header-section-number">6.2.2.3.3</span> Kuala
+<div id="kuala-lumpur-4" class="section level5" number="6.2.2.3.2">
+<h5><span class="header-section-number">6.2.2.3.2</span> Kuala
 Lumpur</h5>
 <pre class="r"><code>transport_kl_f &lt;- malaysia %&gt;% 
-  filter(param %in% transport_fuel_params,
+  filter(param == &quot;transportFreightVMTByFuel&quot;,
          region == &quot;KualaLumpur&quot;) %&gt;%
   mutate(param = units) %&gt;%
-  rchart::chart(save = F, 
+  rchart::chart(save = T, 
                 show = F,
+                chart_type = c(&quot;class_absolute&quot;, &quot;class_diff_absolute&quot;),
                 scenRef = REF_SCENARIO,
-                size_text = 12)
+                ncol = 4,
+                folder = figure_path,
+                append = &quot;_freight_fuel_kl&quot;,
+                size_text = 24)
 
-transport_kl_f$chart_class</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-transport-kl-sce-fuel-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>transport_kl_f$chart_class_diff_absolute</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-transport-kl-fuel-1.png" width="100%" style="display: block; margin: auto;" /></p>
+transport_kl_f &lt;- malaysia %&gt;% 
+  filter(param == &quot;transportPassengerVMTByFuel&quot;,
+         region == &quot;KualaLumpur&quot;) %&gt;%
+  mutate(param = units) %&gt;%
+  rchart::chart(save = T, 
+                show = F,
+                chart_type = c(&quot;class_absolute&quot;, &quot;class_diff_absolute&quot;),
+                scenRef = REF_SCENARIO,
+                ncol = 4,
+                folder = figure_path,
+                append = &quot;_pass_fuel_kl&quot;,
+                size_text = 24)</code></pre>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_freight_fuel_kl.png&quot;)</code></pre>
+<p><img src="markdown_figs/chart_class_freight_fuel_kl.png" width="100%" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_diff_absolute_freight_fuel_kl.png&quot;)</code></pre>
+<p><img src="markdown_figs/chart_class_diff_absolute_freight_fuel_kl.png" width="100%" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_pass_fuel_kl.png&quot;)</code></pre>
+<p><img src="markdown_figs/chart_class_pass_fuel_kl.png" width="100%" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_diff_absolute_pass_fuel_kl.png&quot;)</code></pre>
+<p><img src="markdown_figs/chart_class_diff_absolute_pass_fuel_kl.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 <!-------------------------->
 </div>
@@ -2714,58 +2640,45 @@ number="6.2.2.4">
 Industry Energy by Subsector</h4>
 <!-------------------------->
 <hr />
-<div id="malaysia-vs-kuala-lumpur-7" class="section level5"
-number="6.2.2.4.1">
-<h5><span class="header-section-number">6.2.2.4.1</span> Malaysia vs
-Kuala Lumpur</h5>
-<pre class="r"><code>industry_energy &lt;- malaysia %&gt;% 
-  filter(param == &quot;energyFinalSubsecByFuelIndusEJ&quot;,
-         region != &quot;Malaysia&quot;) %&gt;%
-  mutate(param = units) %&gt;%
-  rchart::chart(save = F, 
-                show = F,
-                size_text = 12)
-
-
-industry_energy[[c]]</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-industry-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<p><br></p>
-</div>
-<div id="malaysia-7" class="section level5" number="6.2.2.4.2">
-<h5><span class="header-section-number">6.2.2.4.2</span> Malaysia</h5>
+<div id="malaysia-5" class="section level5" number="6.2.2.4.1">
+<h5><span class="header-section-number">6.2.2.4.1</span> Malaysia</h5>
 <pre class="r"><code>industry_energy_my &lt;- malaysia %&gt;% 
   filter(param == &quot;energyFinalSubsecByFuelIndusEJ&quot;,
          region == &quot;All of Malaysia&quot;) %&gt;%
   mutate(param = units) %&gt;%
-  rchart::chart(save = F, 
+  rchart::chart(save = T, 
                 show = F,
+                chart_type = c(&quot;class_absolute&quot;, &quot;class_diff_absolute&quot;),
                 scenRef = REF_SCENARIO,
-                size_text = 10,
-                ncol = 4)
-
-industry_energy_my$chart_class</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-industry-sce-my-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>industry_energy_my$chart_class_diff_absolute</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-industry-my-1.png" width="100%" style="display: block; margin: auto;" /></p>
+                ncol = 4,
+                folder = figure_path,
+                append = &quot;_indus_fuel&quot;,
+                size_text = 24)</code></pre>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_indus_fuel.png&quot;)</code></pre>
+<p><img src="markdown_figs/chart_class_indus_fuel.png" width="100%" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_diff_absolute_indus_fuel.png&quot;)</code></pre>
+<p><img src="markdown_figs/chart_class_diff_absolute_indus_fuel.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 </div>
-<div id="kuala-lumpur-7" class="section level5" number="6.2.2.4.3">
-<h5><span class="header-section-number">6.2.2.4.3</span> Kuala
+<div id="kuala-lumpur-5" class="section level5" number="6.2.2.4.2">
+<h5><span class="header-section-number">6.2.2.4.2</span> Kuala
 Lumpur</h5>
 <pre class="r"><code>industry_energy_kl &lt;- malaysia %&gt;% 
   filter(param == &quot;energyFinalSubsecByFuelIndusEJ&quot;,
          region == &quot;KualaLumpur&quot;) %&gt;%
   mutate(param = units) %&gt;%
-  rchart::chart(save = F, 
+  rchart::chart(save = T, 
                 show = F,
+                chart_type = c(&quot;class_absolute&quot;, &quot;class_diff_absolute&quot;),
                 scenRef = REF_SCENARIO,
-                size_text = 10,
-                ncol = 4)
-
-industry_energy_kl$chart_class</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-industry-sce-kl-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>industry_energy_kl$chart_class_diff_absolute</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-industry-kl-1.png" width="100%" style="display: block; margin: auto;" /></p>
+                ncol = 4,
+                folder = figure_path,
+                append = &quot;_indus_fuel_kl&quot;,
+                size_text = 24)</code></pre>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_indus_fuel_kl.png&quot;)</code></pre>
+<p><img src="markdown_figs/chart_class_indus_fuel_kl.png" width="100%" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_diff_absolute_indus_fuel_kl.png&quot;)</code></pre>
+<p><img src="markdown_figs/chart_class_diff_absolute_indus_fuel_kl.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 <!-------------------------->
 <!-------------------------->
@@ -2854,8 +2767,8 @@ number="7.2">
 outputs</h2>
 <!-------------------------->
 <hr />
-<p>This section will compare local data in sources from Malaysia and
-Kuala Lumpur to GCAM outputs.</p>
+<p>This section will compare local Malaysia and KL data (where
+available) to selected GCAM outputs.</p>
 <p><br></p>
 <div id="population-and-gdp" class="section level3" number="7.2.1">
 <h3><span class="header-section-number">7.2.1</span> Population and
@@ -2865,32 +2778,34 @@ local_gdp &lt;- read.csv(&quot;../data/malaysia/local_data_gdp.csv&quot;)
 
 local_bau &lt;- bind_rows(local_gdp, local_pop)
 
-gcam_bau &lt;- malaysia %&gt;%
+gcam_bau &lt;- bind_rows(bau, policies, carbon_neutral) %&gt;%
   filter(param == c(&quot;pop&quot;, &quot;gdp&quot;),
-         region != &quot;Rest of Malaysia&quot;,
-         scenario == REF_SCENARIO) %&gt;%
+         region %in% c(&quot;Malaysia&quot;, &quot;KualaLumpur&quot;),
+         scenario == &quot;Ref&quot;) %&gt;%
   mutate(param = units,
          scenario = &quot;GCAM Reference&quot;,
          year = x)
 
-bau &lt;- bind_rows(local_bau, gcam_bau)
+bau_valid &lt;- bind_rows(local_bau, gcam_bau)
 
 # Plot for Malaysia
-bau %&gt;% 
+bau_valid %&gt;% 
   filter(region == &quot;Malaysia&quot;) %&gt;%
   ggplot(aes(x = year, y = value, color = scenario)) + 
-  geom_line() +
+  geom_line(size = 1) +
   facet_wrap(~param, scales = &quot;free&quot;) +
   ggtitle(&quot;Malaysia&quot;) +
+  scale_color_manual(values = c(&quot;darkred&quot;, &quot;darkblue&quot;)) +
   theme_light()</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/local-socioeconomics-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <pre class="r"><code># Plot for KL
-bau %&gt;% 
+bau_valid %&gt;% 
   filter(region == &quot;KualaLumpur&quot;) %&gt;%
   ggplot(aes(x = year, y = value, color = scenario)) + 
-  geom_line() +
+  geom_line(size = 1) +
   facet_wrap(~param, scales = &quot;free&quot;) +
   ggtitle(&quot;Kuala Lumpur&quot;) +
+  scale_color_manual(values = c(&quot;darkred&quot;, &quot;darkblue&quot;)) +
   theme_light()</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/local-socioeconomics-2.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
@@ -2898,59 +2813,19 @@ bau %&gt;%
 <div id="co2-emissions-by-sector" class="section level3" number="7.2.2">
 <h3><span class="header-section-number">7.2.2</span> CO2 emissions by
 sector</h3>
-<pre class="r"><code>malaysia_build_ind &lt;-  co2_my %&gt;%
-  filter(scenario == REF_SCENARIO, 
-         class %in% c(&quot;building&quot;, &quot;industry&quot;)) %&gt;%
-  mutate(param = units,
-         scenario = &quot;GCAM Reference&quot;,
-         year = x)
-
-malaysia_transport &lt;- co2_my %&gt;%
-  filter(scenario == REF_SCENARIO,
-         class %in% c(&quot;International Aviation&quot;, &quot;International Shipping&quot;, &quot;transport&quot;)) %&gt;%
-  mutate(param = units,
-         scenario = &quot;GCAM Reference&quot;,
-         year = x,
-         class = case_when(class %in% c(&quot;International Aviation&quot;, &quot;International Shipping&quot;) ~ &quot;transport&quot;,
-                           T~class)) %&gt;%
-  group_by(year) %&gt;%
-  mutate(total = sum(value)) %&gt;%
-  distinct(year, .keep_all = TRUE)
-
-malaysia_co2 &lt;- bind_rows(malaysia_build_ind, malaysia_transport) 
-
-malaysia_co2 %&gt;%
-  ggplot(aes(x = year, y = value, fill = class)) + 
-  geom_col() +
-  labs(title = &quot;Malaysia, GCAM reference&quot;,
-       y = &quot;MTCO2eq&quot;) +
-  scale_fill_manual(breaks = c(&quot;building&quot;, &quot;industry&quot;, &quot;transport&quot;),
-                    values = c(&quot;#facda4&quot;, &quot;#cef4d1&quot;, &quot;#d0f6f7&quot;)) +
-  theme_light()</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/local-emissions-my-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>local_co2 &lt;- read.csv(&quot;../data/malaysia/local_data_emissions_by_sector.csv&quot;)
+<pre class="r"><code>local_co2 &lt;- read.csv(&quot;../data/malaysia/local_data_emissions_by_sector.csv&quot;) %&gt;%
+  mutate(class = case_when(class == &quot;building&quot; ~ &quot;Buildings&quot;,
+                           class == &quot;industry&quot; ~ &quot;Industry&quot;,
+                           class == &quot;transport&quot; ~ &quot;Transportation&quot;))
 
 gcam_co2 &lt;- co2_kl %&gt;%
-  filter(scenario == REF_SCENARIO, 
-         class %in% c(&quot;building&quot;, &quot;industry&quot;)) %&gt;%
+  filter(scenario == REF_SCENARIO) %&gt;%
   mutate(param = units,
          scenario = &quot;GCAM Reference&quot;,
          year = x)
 
-# Aggregate GCAM classes into broad categories
-gcam_transport &lt;- co2_kl %&gt;%
-  filter(scenario == REF_SCENARIO,
-         class %in% c(&quot;International Aviation&quot;, &quot;International Shipping&quot;, &quot;transport&quot;)) %&gt;%
-  mutate(param = units,
-         scenario = &quot;GCAM Reference&quot;,
-         year = x,
-         class = case_when(class %in% c(&quot;International Aviation&quot;, &quot;International Shipping&quot;) ~ &quot;transport&quot;,
-                           T~class)) %&gt;%
-  group_by(year) %&gt;%
-  mutate(total = sum(value)) %&gt;%
-  distinct(year, .keep_all = TRUE)
 
-bau_co2 &lt;- bind_rows(local_co2, gcam_co2, gcam_transport)
+bau_co2 &lt;- bind_rows(local_co2, gcam_co2)
 
 bau_co2 %&gt;% 
   ggplot(aes(x = year, y = value, fill = class)) + 
@@ -2958,85 +2833,10 @@ bau_co2 %&gt;%
   facet_wrap(~scenario) +
   labs(title = &quot;Kuala Lumpur&quot;,
        y = &quot;MTCO2eq&quot;) +
-  scale_fill_manual(breaks = c(&quot;building&quot;, &quot;industry&quot;, &quot;transport&quot;),
+  scale_fill_manual(breaks = c(&quot;Buildings&quot;, &quot;Industry&quot;, &quot;Transportation&quot;),
                     values = c(&quot;#facda4&quot;, &quot;#cef4d1&quot;, &quot;#d0f6f7&quot;)) +
   theme_light()</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/local-emissions-kl-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<p><br></p>
-</div>
-<div id="energy-by-fuel-and-sector" class="section level3"
-number="7.2.3">
-<h3><span class="header-section-number">7.2.3</span> Energy by fuel and
-sector</h3>
-<pre class="r"><code>final_energy_ref_my &lt;- malaysia %&gt;% 
-  filter(param %in% energy_parameters,
-         region == &quot;All of Malaysia&quot;,
-         scenario == REF_SCENARIO) %&gt;%
-  mutate(param = units) %&gt;%
-  rchart::chart(save = F,
-                show = F)
-
-final_energy_ref_my$chart_class</code></pre>
-<div class="figure" style="text-align: center">
-<img src="modeling_malaysia_files/figure-html/local-energy-my-1.png" alt="Final energy by fuel and sector in Malaysia." width="100%" />
-<p class="caption">
-Final energy by fuel and sector in Malaysia.
-</p>
-</div>
-<p><br></p>
-<pre class="r"><code>final_energy_ref_kl &lt;- malaysia %&gt;% 
-  filter(param %in% energy_parameters,
-         region == &quot;KualaLumpur&quot;,
-         scenario == REF_SCENARIO) %&gt;%
-  mutate(param = units) %&gt;%
-  rchart::chart(save = F,
-                show = F)
-
-final_energy_ref_kl$chart_class</code></pre>
-<div class="figure" style="text-align: center">
-<img src="modeling_malaysia_files/figure-html/local-energy-kl-1.png" alt="Final energy by fuel and sector in Kuala Lumpur." width="100%" />
-<p class="caption">
-Final energy by fuel and sector in Kuala Lumpur.
-</p>
-</div>
-<p><br></p>
-</div>
-<div id="electricity-by-fuel-and-sector" class="section level3"
-number="7.2.4">
-<h3><span class="header-section-number">7.2.4</span> Electricity by fuel
-and sector</h3>
-<pre class="r"><code>elec_ref_my &lt;- malaysia %&gt;% 
-  filter(param %in% electricity_parameters,
-         region == &quot;All of Malaysia&quot;,
-         scenario == REF_SCENARIO) %&gt;%
-  mutate(param = units) %&gt;%
-  rchart::chart(save = F,
-                show = F,
-                size_text = 10)
-
-elec_ref_my$chart_class</code></pre>
-<div class="figure" style="text-align: center">
-<img src="modeling_malaysia_files/figure-html/local-elec-my-1.png" alt="Electricity by fuel and sector in Malaysia." width="100%" />
-<p class="caption">
-Electricity by fuel and sector in Malaysia.
-</p>
-</div>
-<p><br></p>
-<pre class="r"><code>elec_ref_kl &lt;- malaysia %&gt;% 
-  filter(param %in% electricity_parameters,
-         region == &quot;KualaLumpur&quot;,
-         scenario == REF_SCENARIO) %&gt;%
-  mutate(param = units) %&gt;%
-  rchart::chart(save = F,
-                show = F)
-
-elec_ref_kl$chart_class</code></pre>
-<div class="figure" style="text-align: center">
-<img src="modeling_malaysia_files/figure-html/local-elec-kl-1.png" alt="Electricity by sector in Kuala Lumpur." width="85%" />
-<p class="caption">
-Electricity by sector in Kuala Lumpur.
-</p>
-</div>
 <p><br></p>
 </div>
 </div>
