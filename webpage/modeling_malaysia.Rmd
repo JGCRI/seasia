@@ -117,19 +117,22 @@ data.frame(
 <!-------------------------->
 <p align="center"> <img src="images/divider.png"></p>
 
-Below are links to the reference and policy scenarios that we will be using. 
+Below are links to configuration files for the three scenarios that we will be using. The Business as Usual scenario models a reference case with no policies imposed, or the result of no additional action now. The Policies scenario includes targets for power generation, buildings, industry, and transportation sourced from Malaysia and Kuala Lumpur policies and plans. The Carbon Neutral scenario uses the same policies, but with an additional emissions constraint specifying that Malaysia must reach carbon neutrality by 2050.
 
 ```{r scenarios-links-table, results = 'show', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE}
 
-dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/configuration_seasia_cities_bau.xml",
-            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/configuration_files/configuration_seasia_cities_malaysia_policy.xml")
+dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/configuration_files/configuration_malaysia_bau.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/configuration_files/configuration_malaysia_policies.xml",
+            "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/configuration_files/configuration_malaysia_carbon_neutral.xml")
 
 xml = c("configuration_seasia_cities_bau.xml",
-        "configuration_seasia_cities_policy.xml")
+        "configuration_seasia_cities_policies.xml",
+        "configuration_seasia_cities_carbon_neutral")
 
 data.frame(
   Description = c("Business as Usual Scenario",
-                  "Example Policy Scenario")) %>%
+                  "Policies Scenario",
+                  "Carbon Neutral Scenario")) %>%
   dplyr::mutate(File = cell_spec(xml,"html",link=dt_url)) %>%
   kable("html", escape = FALSE) %>%
   kable_styling(bootstrap_options = c("bordered","striped", "hover", "condensed", "responsive")) %>%
