@@ -567,8 +567,14 @@ GCAM walkthrough presentation
 <p align="center">
 <img src="images/divider.png">
 </p>
-<p>Below are links to the reference and policy scenarios that we will be
-using.</p>
+<p>Below are links to configuration files for the three scenarios that
+we will be using. The Business as Usual scenario models a reference case
+with no policies imposed, or the result of no additional action now. The
+Policies scenario includes targets for power generation, buildings,
+industry, and transportation sourced from Malaysia and Kuala Lumpur
+policies and plans. The Carbon Neutral scenario uses the same policies,
+but with an additional emissions constraint specifying that Malaysia
+must reach carbon neutrality by 2050.</p>
 <table class="table table-bordered table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -586,15 +592,23 @@ File
 Business as Usual Scenario
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/configuration_seasia_cities_bau.xml" style="     ">configuration_seasia_cities_bau.xml</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/configuration_files/configuration_malaysia_bau.xml" style="     ">configuration_seasia_cities_bau.xml</a>
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Example Policy Scenario
+Policies Scenario
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/configuration_files/configuration_seasia_cities_malaysia_policy.xml" style="     ">configuration_seasia_cities_policy.xml</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/configuration_files/configuration_malaysia_policies.xml" style="     ">configuration_seasia_cities_policies.xml</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Carbon Neutral Scenario
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/configuration_files/configuration_malaysia_carbon_neutral.xml" style="     ">configuration_seasia_cities_carbon_neutral</a>
 </td>
 </tr>
 </tbody>
@@ -609,192 +623,24 @@ Example Policy Scenario
 <p align="center">
 <img src="images/divider.png">
 </p>
-<p>In general, three policy scenarios will be presented: a “low
-ambition” and “high ambition” option as well as “ambitious city.” The
-high ambition scenario uses key targets from policies and plans from
-Kuala Lumpur and Malaysia. The low ambition scenario explores if these
-targets are not met until a later target year, usually 2060 or 2070
-instead of 2050. The ambitious city scenario represents Kuala Lumpur
-hitting these high ambition targets, while the rest of Malaysia takes
-longer to achieve the same goals. For a 2050 snapshot of policies that
-will be modeled within each scenario, please reference the table
-below.</p>
-<p style="margin-left:1em;">
-<p align="center">
-<img src="images/malaysia_policy_table.png">
-</p>
-</p>
+<p>The policies modeled in the Policies and Carbon Neutral scenarios
+were sourced from Malaysia and Kuala Lumpur policies and plans. The
+table below details policies by sector with key values and targets as
+well as the source document/s (click to enlarge, click again to return
+to the main page).</p>
 <p><br></p>
-<p>The following subsections give additional details and explanations
-for the policies listed above (In progress. Will be expanded with
-examples for each).</p>
-<div id="private-ice-phase-out" class="section level2" number="4.1">
-<h2><span class="header-section-number">4.1</span> Private ICE
-Phase-out</h2>
-<hr />
-<table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
-<thead>
-<tr>
-<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
-Scenario
-</th>
-<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
-Files Used
-</th>
-<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
-Description
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left;">
-High
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/trn_ICE_high.xml" style="     ">trn_ICE_high.xml</a>
-</td>
-<td style="text-align:left;">
-Phases liquids passenger vehicles out of the market by 2030
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Low
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/trn_ICE_low.xml" style="     ">trn_ICE_low.xml</a>
-</td>
-<td style="text-align:left;">
-Phases liquids passenger vehicles out of the market by 2050
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Ambitious City
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/trn_ICE_ambitious_city.xml" style="     ">trn_ICE_ambitious_city.xml</a>
-</td>
-<td style="text-align:left;">
-Phases liquids passenger vehicles out of the market by 2030 in KL, and
-by 2050 in the rest of Malaysia
-</td>
-</tr>
-</tbody>
-</table>
-<!-------------------------->
-<!----------Goal------------>
-<!-------------------------->
-<div class="warning"
-style="background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
-<span>
-<p style="text-align:center; font-size:24px">
-<b>Goal</b>
+<div class="figure" style="text-align: center">
+<p class="caption">
+Sets of policies modeled
 </p>
-<p style="margin-left:1em;">
-<p>The goal of this policy is to phase out internal combustion engine
-(ICE) passenger vehicles from the market. The difference between the
-low, high, and ambitious city policies is the year in which ICE vehicles
-are completely phased out of the market.</p>
-</p>
-<p></span></p>
+<img src="images/policy_table_report.png" alt="Sets of policies modeled" width="85%" />
 </div>
 <p><br></p>
-<!-------------------------->
-<!--------Approach---------->
-<!-------------------------->
-<div class="warning"
-style="background-color:#fffae0; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
-<p><span></p>
-<p style="text-align:center; font-size:24px">
-<b>Approach</b>
-</p>
-<p style="margin-left:1em;">
-<p>To represent an ICE vehicle phase-out, we decrease their shareweights
-over time. The year in which the shareweights are 0 is the year in which
-ICE vehicles are completely phased out of the market.</p>
-</p>
-<p></span></p>
-</div>
-<p><br></p>
-<!-------------------------->
-<!--------Background-------->
-<!-------------------------->
-<!-------------------------------------->
-<!---Background - Share weights---------->
-<!-------------------------------------->
-<div class="warning"
-style="background-color:#EFFFC9; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
-<p><span></p>
-<p style="text-align:center; font-size:24px">
-<b>Background - Share weights</b>
-</p>
-<p style="margin-left:1em;">
-Share weights are assigned to different subsectors and technology
-choices in GCAM to represent non-cost factors of consumer choice. They
-are used primarily to calibrate market shares to historical data but can
-also be modified to reflect factors such as infrastructure development
-or shifting societal preferences. For more information on share weights
-and how they are used in GCAM’s economic choice functions, see the <a
-href="https://jgcri.github.io/gcam-doc/choice.html">GCAM economic
-choice</a> documentation. Share weights should not be used to represent
-cost-related policies. Additionally, shareweight interpolation rules
-(<code>fixed</code>, <code>linear</code>, or <code>s-curve</code>) can
-be used to automatically interpolate shareweights between given years.
-</p>
-<p></span></p>
-</div>
-<p><br></p>
-<!-------------------------->
-<!---GCAM Implementation---->
-<!-------------------------->
-<div class="warning"
-style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
-<span>
-<p style="text-align:center; font-size:24px">
-<b>GCAM Implementation</b>
-</p>
-<p style="margin-left:1em;">
-<ol style="list-style-type: decimal">
-<li>Create a folder in the input directory eg.
-<code>./gcam-core/input/addons/malaysia</code>.</li>
-<li>Download the desired ICE phase-out XML file (either <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/trn_ICE_low.xml">trn_ICE_low.xml</a>,
-<a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/trn_ICE_high.xml">trn_ICE_high.xml</a>,
-or <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/trn_ICE_ambitious_city.xml">trn_ICE_ambitious_city.xml</a>)
-to the folder.</li>
-<li>To adjust the year in which ICE vehicles are completely phased out:
-within each <code>stub-technology</code> tag in the XML, change the
-<code>to-year</code> in the first <code>interpolation-rule</code> and
-the <code>from-year</code> in the second. Also change the
-<code>year</code> of the <code>period</code> tag in which the
-<code>share-weight</code> is 0.</li>
-<li>Save the xml and then point to it in your configuration file by
-adding the line (replace <code>high</code> with <code>low</code> or
-<code>ambitious_city</code> as needed):</li>
-</ol>
-</p>
-<p style="font-size:0.8em">
-<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/trn_ICE_high.xml&lt;/Value&gt;</code>
-</p>
-</p>
-<p></span></p>
-</div>
-<p><br></p>
-</div>
-<div id="publicprivate-vehicle-modal-shift" class="section level2"
-number="4.2">
-<h2><span class="header-section-number">4.2</span> Public/Private
-Vehicle Modal Shift</h2>
-<hr />
-<pre><code>## Under development.</code></pre>
-</div>
+<p>The following subsections give additional technical details and
+explanations for the policies listed above.</p>
 <div id="high-efficiency-appliances" class="section level2"
-number="4.3">
-<h2><span class="header-section-number">4.3</span> High Efficiency
+number="4.1">
+<h2><span class="header-section-number">4.1</span> High Efficiency
 Appliances</h2>
 <hr />
 <table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
@@ -814,38 +660,13 @@ Description
 <tbody>
 <tr>
 <td style="text-align:left;">
-High
+Policies, Carbon Neutral
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/efficient_appliances_high.xml" style="     ">efficient_appliances_high.xml</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/buildings_efficient_appliances.xml" style="     ">buildings_efficient_appliances.xml</a>
 </td>
 <td style="text-align:left;">
-Increase prevelance of high-efficiency technologies (commercial and
-residential) through 2050
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Low
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/efficient_appliances_low.xml" style="     ">efficient_appliances_low.xml</a>
-</td>
-<td style="text-align:left;">
-Increase prevelance of high-efficiency technologies (commercial and
-residential) through 2070
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Ambitious City
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/efficient_appliances_ambitious_city.xml" style="     ">efficient_appliances_ambitious_city.xml</a>
-</td>
-<td style="text-align:left;">
-Increase prevelance of high-efficiency technologies (commercial and
-residential) through 2050 in KL and 2070 in the rest of Malaysia
+Increase prevelance of high-efficiency technologies through 2050
 </td>
 </tr>
 </tbody>
@@ -861,10 +682,7 @@ style="background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 
 </p>
 <p style="margin-left:1em;">
 <p>The goal of this policy is to represent an increase in energy
-efficient technologies in the commercial and residential sectors. The
-difference between the low, high, and ambitious city scenario versions
-of this policy is the year in which the desired mix of technologies is
-achieved.</p>
+efficient technologies in the building sector.</p>
 </p>
 <p></span></p>
 </div>
@@ -919,23 +737,18 @@ be used to automatically interpolate shareweights between given years.
 <!-------------------------->
 <!---GCAM Implementation---->
 <!-------------------------->
-<div class="warning"
-style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
+<div class="warning" style='background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
 <span>
 <p style="text-align:center; font-size:24px">
 <b>GCAM Implementation</b>
 </p>
-<p style="margin-left:1em;">
+<p style='margin-left:1em;'>
 <ol style="list-style-type: decimal">
 <li>Create a folder in the input directory:
 <code>./gcam-core/input/addons</code>.</li>
-<li>Download the desired xml file (either <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/efficient_appliances_high.xml">efficient_appliances_high.xml</a>,
-<a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/efficient_appliances_low.xml">efficient_appliances_low.xml</a>,
-or <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/efficient_appliances_ambitious_city.xml">efficient_appliances_ambitious_city.xml</a>
-to the folder.</li>
+<li>Download the “<a
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/buildings_efficient_appliances.xml">buildings_efficient_appliances.xml</a>”
+file to the folder.</li>
 <li>To adjust the year in which the target mix of technologies is
 achieved: within each <code>stub-technology</code> tag in the XML,
 change the <code>to-year</code> in the first
@@ -943,18 +756,15 @@ change the <code>to-year</code> in the first
 second. Also change the <code>year</code> of the <code>period</code> tag
 in which the <code>share-weight</code> is 0.</li>
 <li>Save the xml and then point to it in your configuration file by
-adding the line (replace <code>high</code> with <code>low</code> or
-<code>ambitious_city</code> as needed):
-<p style='font-size:0.8em'>
-<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/efficient_appliances_high.xml&lt;/Value&gt;</code></li>
+adding the line:
+<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/buildings_efficient_appliances.xml&lt;/Value&gt;</code></li>
 </ol>
-</p>
-<p></span></p>
+</span>
 </div>
 <p><br></p>
 </div>
-<div id="lighting-efficiency" class="section level2" number="4.4">
-<h2><span class="header-section-number">4.4</span> Lighting
+<div id="lighting-efficiency" class="section level2" number="4.2">
+<h2><span class="header-section-number">4.2</span> Lighting
 Efficiency</h2>
 <hr />
 <table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
@@ -974,38 +784,14 @@ Description
 <tbody>
 <tr>
 <td style="text-align:left;">
-High
+Policies, Carbon Neutral
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/buildings_led_high.xml" style="     ">buildings_led_high.xml</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/buildings_led.xml" style="     ">buildings_led.xml</a>
 </td>
 <td style="text-align:left;">
 Gradually phases non-LED residential lighting technology out of the
 market by 2050
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Low
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/buildings_led_low.xml" style="     ">buildings_led_low.xml</a>
-</td>
-<td style="text-align:left;">
-Gradually phases non-LED residential lighting technology out of the
-market by 2070
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Ambitious City
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/buildings_led_ambitious_city.xml" style="     ">buildings_led_ambitious_city.xml</a>
-</td>
-<td style="text-align:left;">
-Gradually phases non-LED residential lighting technology out of the
-market by 2050 in KL and 2070 in the rest of Malaysia
 </td>
 </tr>
 </tbody>
@@ -1021,10 +807,8 @@ style="background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 
 </p>
 <p style="margin-left:1em;">
 <p>The goal of this policy is to represent increasing use of LED
-lighting in residential buildings and the decreasing use of other, less
-energy efficient lighting technologies. The difference between the low,
-high, and ambitious city scenario versions of this policy is the year in
-which 100% LED residential lighting is achieved.</p>
+lighting in residential buildings and the decreasing use of other less
+energy efficient lighting technologies.</p>
 </p>
 <p></span></p>
 </div>
@@ -1078,23 +862,18 @@ be used to automatically interpolate shareweights between given years.
 <!-------------------------->
 <!---GCAM Implementation---->
 <!-------------------------->
-<div class="warning"
-style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
+<div class="warning" style='background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
 <span>
 <p style="text-align:center; font-size:24px">
 <b>GCAM Implementation</b>
 </p>
-<p style="margin-left:1em;">
+<p style='margin-left:1em;'>
 <ol style="list-style-type: decimal">
 <li>Create a folder in the input directory:
 <code>./gcam-core/input/addons</code>.</li>
-<li>Download the desired xml file (either <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/buildings_led_high.xml">buildings_led_high.xml</a>,
-<a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/buildings_led_low.xml">buildings_led_low.xml</a>,
-or <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/buildings_led_ambitious_city.xml">buildings_led_ambitious_city.xml</a>)
-to the folder.</li>
+<li>Download the “<a
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/buildings_led.xml">buildings_led.xml</a>”
+file to the folder.</li>
 <li>To adjust the year in which 100% LED lighting is achieved: within
 each non-LED <code>stub-technology</code> tag in the XML, change the
 <code>to-year</code> in the first <code>interpolation-rule</code> and
@@ -1102,19 +881,16 @@ the <code>from-year</code> in the second. Also change the
 <code>year</code> of the <code>period</code> tag in which the
 <code>share-weight</code> is 0.</li>
 <li>Save the xml and then point to it in your configuration file by
-adding the line (replace <code>high</code> with <code>low</code> or
-<code>ambitious_city</code> as needed):
-<p style='font-size:0.8em'>
-<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/buildings_led_high.xml&lt;/Value&gt;</code></li>
+adding the line:
+<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/buildings_led.xml&lt;/Value&gt;</code></li>
 </ol>
-</p>
-<p></span></p>
+</span>
 </div>
 <p><br></p>
 </div>
 <div id="building-envelope-efficiency" class="section level2"
-number="4.5">
-<h2><span class="header-section-number">4.5</span> Building Envelope
+number="4.3">
+<h2><span class="header-section-number">4.3</span> Building Envelope
 Efficiency</h2>
 <hr />
 <table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
@@ -1134,40 +910,15 @@ Description
 <tbody>
 <tr>
 <td style="text-align:left;">
-High
+Policies, Carbon Neutral
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/shell_eff_high.xml" style="     ">shell_eff_high.xml</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/buildings_shell_eff.xml" style="     ">buildings_shell_eff.xml</a>
 </td>
 <td style="text-align:left;">
 Decreases shell conductance from 3.75 in 2020 to 0.487 (residential) /
 0.375 (commercial) in 2070 at an annual rate of 4% (residential) / 4.5%
 (commercial)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Low
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/shell_eff_low.xml" style="     ">shell_eff_low.xml</a>
-</td>
-<td style="text-align:left;">
-Decreases shell conductance from 3.75 in 2020 to 1.366 (residential) /
-1.057 (commercial) in 2070 at an annual rate of 2% (residential) / 2.5%
-(commercial)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Ambitious City
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/shell_eff_ambitious_city.xml" style="     ">shell_eff_ambitious_city</a>
-</td>
-<td style="text-align:left;">
-Follows the ‘high’ scenario trajectory in KL and the ‘low’ scenario
-trajectory for the rest of Malaysia
 </td>
 </tr>
 </tbody>
@@ -1183,9 +934,7 @@ style="background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 
 </p>
 <p style="margin-left:1em;">
 <p>The goal of this example is to represent increasing compliance with
-the envelope efficiency component of building energy codes. The
-difference between the low, high, and ambitious city scenario versions
-of this policy is the rate of increase.</p>
+the envelope efficiency component of building energy codes.</p>
 </p>
 <p></span></p>
 </div>
@@ -1239,6 +988,124 @@ difference between the indoor and outdoor temperature.
 <!-------------------------->
 <!---GCAM Implementation---->
 <!-------------------------->
+<div class="warning" style='background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+<p style="text-align:center; font-size:24px">
+<b>GCAM Implementation</b>
+</p>
+<p style='margin-left:1em;'>
+<ol style="list-style-type: decimal">
+<li>Create a folder in the input directory:
+<code>./gcam-core/input/addons</code>.</li>
+<li>Download the “<a
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/buildings_shell_eff.xml">buildings_shell_eff.xml</a>”
+file to the folder.</li>
+<li>To make custom adjustments: within each <code>gcam-consumer</code>
+tag in the XML, specify the desired <code>shell-conductance</code>
+values for each year.</li>
+<li>Save the xml and then point to it in your configuration file by
+adding the line:
+<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/buildings_shell_eff.xml&lt;/Value&gt;</code></li>
+</ol>
+</span>
+</div>
+<p><br></p>
+</div>
+<div id="hydrogen-in-industry" class="section level2" number="4.4">
+<h2><span class="header-section-number">4.4</span> Hydrogen in
+Industry</h2>
+<hr />
+<table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+Scenario
+</th>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+Files Used
+</th>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+Description
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Policies, Carbon Neutral
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/industry_h2.xml" style="     ">industry_h2.xml</a>
+</td>
+<td style="text-align:left;">
+Phases hydrogen industrial technologies into the market in 2030
+</td>
+</tr>
+</tbody>
+</table>
+<!-------------------------->
+<!----------Goal------------>
+<!-------------------------->
+<div class="warning"
+style="background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
+<span>
+<p style="text-align:center; font-size:24px">
+<b>Goal</b>
+</p>
+<p style="margin-left:1em;">
+<p>The goal of this policy is to represent a phase-in of industrial
+technologies that use hydrogen as a fuel source.</p>
+</p>
+<p></span></p>
+</div>
+<p><br></p>
+<!-------------------------->
+<!--------Approach---------->
+<!-------------------------->
+<div class="warning"
+style="background-color:#fffae0; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
+<p><span></p>
+<p style="text-align:center; font-size:24px">
+<b>Approach</b>
+</p>
+<p style="margin-left:1em;">
+To represent a phase-in of hydrogen technologies, we can gradually
+increase their shareweights.
+</p>
+<p></span></p>
+</div>
+<p><br></p>
+<!--------------------------->
+<!--------Background--------->
+<!--------------------------->
+<!-------------------------------------->
+<!---Background - Share weights---------->
+<!-------------------------------------->
+<div class="warning"
+style="background-color:#EFFFC9; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
+<p><span></p>
+<p style="text-align:center; font-size:24px">
+<b>Background - Share weights</b>
+</p>
+<p style="margin-left:1em;">
+Share weights are assigned to different subsectors and technology
+choices in GCAM to represent non-cost factors of consumer choice. They
+are used primarily to calibrate market shares to historical data but can
+also be modified to reflect factors such as infrastructure development
+or shifting societal preferences. For more information on share weights
+and how they are used in GCAM’s economic choice functions, see the <a
+href="https://jgcri.github.io/gcam-doc/choice.html">GCAM economic
+choice</a> documentation. Share weights should not be used to represent
+cost-related policies. Additionally, shareweight interpolation rules
+(<code>fixed</code>, <code>linear</code>, or <code>s-curve</code>) can
+be used to automatically interpolate shareweights between given years.
+</p>
+<p></span></p>
+</div>
+<p><br></p>
+<!-------------------------->
+<!---GCAM Implementation---->
+<!-------------------------->
 <div class="warning"
 style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
 <span>
@@ -1249,21 +1116,18 @@ style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 
 <ol style="list-style-type: decimal">
 <li>Create a folder in the input directory:
 <code>./gcam-core/input/addons</code>.</li>
-<li>Download the desired xml file (either <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/shell_eff_high.xml">shell_eff_high.xml</a>,
-<a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/shell_eff_low.xml">shell_eff_low.xml</a>,
-or <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/shell_eff_ambitious_city.xml">shell_eff_ambitious_city.xml</a>)
-to the folder.</li>
-<li>To make custom adjustments: within each <code>gcam-consumer</code>
-tag in the XML, specify the desired <code>shell-conductance</code>
-values for each year.</li>
+<li>Download the “<a
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/industry_h2.xml">industry_h2.xml</a>”
+file to the folder.</li>
+<li>To adjust how quickly hydrogen technologies are phased into the
+market: within each <code>subsector</code> tag in the XML, change the
+<code>to-year</code> in the <code>interpolation-rule</code>. Also change
+the <code>year</code> of the <code>period</code> tag in which the
+<code>share-weight</code> is 1. Be sure that these years match. An
+earlier year corresponds to a faster phase-in.</li>
 <li>Save the xml and then point to it in your configuration file by
-adding the line (replace <code>high</code> with <code>low</code> or
-<code>ambitious city</code> as needed):
-<p style='font-size:0.8em'>
-<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/shell_eff_high.xml&lt;/Value&gt;</code></li>
+adding the line:
+<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/industry_h2.xml&lt;/Value&gt;</code></li>
 </ol>
 </p>
 <p></span></p>
@@ -1271,8 +1135,8 @@ adding the line (replace <code>high</code> with <code>low</code> or
 <p><br></p>
 </div>
 <div id="industry-energy-efficiency" class="section level2"
-number="4.6">
-<h2><span class="header-section-number">4.6</span> Industry Energy
+number="4.5">
+<h2><span class="header-section-number">4.5</span> Industry Energy
 Efficiency</h2>
 <hr />
 <table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
@@ -1292,38 +1156,14 @@ Description
 <tbody>
 <tr>
 <td style="text-align:left;">
-High
+Policies, Carbon Neutral
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/industry_aeei_high.xml" style="     ">industry_aeei_high.xml</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/industry_aeei.xml" style="     ">industry_aeei.xml</a>
 </td>
 <td style="text-align:left;">
-Increases overall efficiency of industrial processes by 1% annually
+Increases overall efficiency of industrial processes by 2.5% annually
 through 2070
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Low
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/industry_aeei_low.xml" style="     ">industry_aeei_low.xml</a>
-</td>
-<td style="text-align:left;">
-Increases overall efficiency of industrial processes by 0.5% annually
-through 2070
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Ambitious City
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/industry_aeei_ambitious_city.xml" style="     ">industry_aeei_ambitious_city</a>
-</td>
-<td style="text-align:left;">
-Increases overall efficiency of industrial processes by 1% annually
-through 2070 for KL and by 0.5% annually for the rest of Malaysia
 </td>
 </tr>
 </tbody>
@@ -1339,9 +1179,7 @@ style="background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 
 </p>
 <p style="margin-left:1em;">
 The goal of this policy is to represent measures to increase average
-efficiency of industrial processes. The difference between the low,
-high, and ambitious city scenarios is the rate at which average
-industrial energy intensity decreases annually.
+efficiency of industrial processes.
 </p>
 <p></span></p>
 </div>
@@ -1380,30 +1218,24 @@ style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 
 <ol style="list-style-type: decimal">
 <li>Create a folder in the input directory:
 <code>./gcam-core/input/addons</code>.</li>
-<li>Download the desired industrial aeei xml file (either <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/industry_aeei_high.xml">industry_aeei_high.xml</a>,
-<a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/industry_aeei_low.xml">industry_aeei_low.xml</a>,
-or <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/industry_aeei_low.xml">industry_aeei_ambitious_city.xml</a>)
-to the folder.</li>
+<li>Download the “<a
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/industry_aeei.xml">industry_aeei.xml</a>”
+file to the folder.</li>
 <li>To adjust the rate of industrial energy efficiency increase, change
 the value of the <code>aeei</code> tag for each desired year.</li>
 <li>Save the xml and then point to it in your configuration file by
-adding the line (replace <code>high</code> with <code>low</code> or
-<code>ambitious_city</code> as needed):</li>
+adding the line:
+<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/industry_aeei.xml&lt;/Value&gt;</code></li>
 </ol>
-</p>
-<p style="font-size:0.8em">
-<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/industry_aeei_high.xml&lt;/Value&gt;</code>
-</p>
 </p>
 <p></span></p>
 </div>
 <p><br></p>
 </div>
-<div id="coal-phase-out" class="section level2" number="4.7">
-<h2><span class="header-section-number">4.7</span> Coal Phase-Out</h2>
+<div id="publicprivate-vehicle-modal-shift" class="section level2"
+number="4.6">
+<h2><span class="header-section-number">4.6</span> Public/Private
+Vehicle Modal Shift</h2>
 <hr />
 <table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
 <thead>
@@ -1422,10 +1254,393 @@ Description
 <tbody>
 <tr>
 <td style="text-align:left;">
-Both
+Policies, Carbon Neutral
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/no_new_coal.xml" style="     ">no_new_coal.xml</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/trn_modal_shift.xml" style="     ">trn_modal_shift.xml</a>
+</td>
+<td style="text-align:left;">
+Increases ratio of public to private transportation to 50-50 in Kuala
+Lumpur and 42-58 in the rest of the country in 2050
+</td>
+</tr>
+</tbody>
+</table>
+<!-------------------------->
+<!----------Goal------------>
+<!-------------------------->
+<div class="warning"
+style="background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
+<span>
+<p style="text-align:center; font-size:24px">
+<b>Goal</b>
+</p>
+<p style="margin-left:1em;">
+<p>The goal of this policy is to increase the shares of public
+transportation methods relative to private transportation.</p>
+</p>
+<p></span></p>
+</div>
+<p><br></p>
+<!-------------------------->
+<!--------Approach---------->
+<!-------------------------->
+<div class="warning"
+style="background-color:#fffae0; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
+<p><span></p>
+<p style="text-align:center; font-size:24px">
+<b>Approach</b>
+</p>
+<p style="margin-left:1em;">
+FILL IN HERE
+</p>
+<p></span></p>
+</div>
+<p><br></p>
+<!--------------------------->
+<!--------Background--------->
+<!--------------------------->
+<!-------------------------->
+<!---GCAM Implementation---->
+<!-------------------------->
+<div class="warning"
+style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
+<span>
+<p style="text-align:center; font-size:24px">
+<b>GCAM Implementation</b>
+</p>
+<p style="margin-left:1em;">
+<ol style="list-style-type: decimal">
+<li>Create a folder in the input directory:
+<code>./gcam-core/input/addons</code>.</li>
+<li>Download the “<a
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/trn_modal_shift.xml">trn_modal_shift.xml</a>”
+file to the folder.</li>
+<li>To make custom adjustments _______________.</li>
+<li>Save the xml and then point to it in your configuration file by
+adding the line:
+<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/trn_modal_shift.xml&lt;/Value&gt;</code></li>
+</ol>
+</p>
+<p></span></p>
+</div>
+<p><br></p>
+</div>
+<div id="ev-cost-parity" class="section level2" number="4.7">
+<h2><span class="header-section-number">4.7</span> EV Cost Parity</h2>
+<hr />
+<table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+Scenario
+</th>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+Files Used
+</th>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+Description
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Policies, Carbon Neutral
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/trn_ev_cost_parity.xml" style="     ">trn_ev_cost_parity.xml</a>
+</td>
+<td style="text-align:left;">
+Reduces EV costs to reach cost parity with liquids vehicles by 2030
+(passenger) and 2040 (freight)
+</td>
+</tr>
+</tbody>
+</table>
+<!-------------------------->
+<!----------Goal------------>
+<!-------------------------->
+<div class="warning"
+style="background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
+<span>
+<p style="text-align:center; font-size:24px">
+<b>Goal</b>
+</p>
+<p style="margin-left:1em;">
+<p>The goal of this policy is represent measures to make EVs more
+competitive with combustion engine vehicles (CEV).</p>
+</p>
+<p></span></p>
+</div>
+<p><br></p>
+<!-------------------------->
+<!--------Approach---------->
+<!-------------------------->
+<div class="warning"
+style="background-color:#fffae0; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
+<p><span></p>
+<p style="text-align:center; font-size:24px">
+<b>Approach</b>
+</p>
+<p style="margin-left:1em;">
+To represent EV promotion, we use an approach that decreases the cost of
+EVs relative to CEVs, until the two technologies reach cost parity in
+some future year. We can do this using GCAM’s <code>input-cost</code>
+parameter, which represents the non-energy costs of a given technology.
+</p>
+<p></span></p>
+</div>
+<p><br></p>
+<!--------------------------->
+<!--------Background--------->
+<!--------------------------->
+<!--------------------------------------------------->
+<!---Background - Transportation technology cost----->
+<!--------------------------------------------------->
+<div class="warning"
+style="background-color:#EFFFC9; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
+<p><span></p>
+<p style="text-align:center; font-size:24px">
+<b>Background - Transportation Cost</b>
+</p>
+<p style="margin-left:1em;">
+In GCAM, the costs of different transportation technologies are
+comprised of two components: fuel costs and non-fuel costs. A
+transportation technology’s fuel cost is determined by its vehicle fuel
+intensity as well as fuel price. The non-fuel costs encompass factors
+such as capital costs, operation and maintenance, and service costs.
+These non-fuel costs can be adjusted using the <code>input-cost</code>
+parameter. For more information on how transportation demand is modeled
+in GCAM, including cost calculations, see the transportation sections of
+the GCAM <a
+href="https://jgcri.github.io/gcam-doc/demand_energy.html">Demand for
+Energy</a> documentation.
+</p>
+<p></span></p>
+</div>
+<p><br></p>
+<!-------------------------->
+<!---GCAM Implementation---->
+<!-------------------------->
+<div class="warning"
+style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
+<span>
+<p style="text-align:center; font-size:24px">
+<b>GCAM Implementation</b>
+</p>
+<p style="margin-left:1em;">
+<ol style="list-style-type: decimal">
+<li>Create a folder in the input directory:
+<code>./gcam-core/input/addons</code>.</li>
+<li>Download the “[trn_ev_cost_parity.xml](<a
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/trn_ev_cost_parity.xml"
+class="uri">https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/trn_ev_cost_parity.xml</a>”
+file to the folder.</li>
+<li>To make custom adjustments to the EV cost trajectory, set the
+desired <code>input-cost</code> for each year within
+each<code>stub-technology</code> tag in the cost parity xml file.</li>
+<li>Save the xml and then point to it in your configuration file by
+adding the line:
+<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/trn_ev_cost_parity.xml&lt;/Value&gt;</code></li>
+</ol>
+</p>
+<p></span></p>
+</div>
+<p><br></p>
+</div>
+<div id="electricity-generation-mix" class="section level2"
+number="4.8">
+<h2><span class="header-section-number">4.8</span> Electricity
+Generation Mix</h2>
+<hr />
+<table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+Scenario
+</th>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+Files Used
+</th>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+Description
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Policies, Carbon Neutral
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_gen_shares.xml" style="     ">elec_gen_shares.xml</a>
+</td>
+<td style="text-align:left;">
+Sets floors for renewable electricity generation technologies
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Policies, Carbon Neutral
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_hydro.xml" style="     ">elec_hydro.xml</a>
+</td>
+<td style="text-align:left;">
+Sets exogenous hydropower generation
+</td>
+</tr>
+</tbody>
+</table>
+<!-------------------------->
+<!----------Goal------------>
+<!-------------------------->
+<div class="warning"
+style="background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
+<span>
+<p style="text-align:center; font-size:24px">
+<b>Goal</b>
+</p>
+<p style="margin-left:1em;">
+<p>The goal of this example is to set a minimum value (floor) in GCAM
+for the amount of electricity generation from three renewable energy
+technologies (solar, hydro, and biomass) corresponding with the planned
+percentages in the KLLCSBP2030 (below).</p>
+<p align="center">
+<img src="images/KL_2030_power.png">
+</p>
+</p>
+<p></span></p>
+</div>
+<p><br></p>
+<!-------------------------->
+<!--------Approach---------->
+<!-------------------------->
+<div class="warning"
+style="background-color:#fffae0; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
+<p><span></p>
+<p style="text-align:center; font-size:24px">
+<b>Approach</b>
+</p>
+<p style="margin-left:1em;">
+<p>One way to set a generation floor for each fuel type in GCAM is to
+use a subsidy policy. This will lower the cost of the electricity
+generation technology until the floor is reached. If there is more
+demand for electricity than is supplied by the sum of the generation
+floors, then the remaining demand will be met by a mix of fuels
+determined by the market.</p>
+<p>Hydropower is exogenous in GCAM and has a fixed pathway. The power
+generation values for this technology are set explicitly using a fixed
+output add-on XML.</p>
+</p>
+<p></span></p>
+</div>
+<p><br></p>
+<!-------------------------->
+<!--------Background-------->
+<!-------------------------->
+<!--------------------------------------------->
+<!---Background - Policy portfolio standards--->
+<!--------------------------------------------->
+<div class="warning"
+style="background-color:#EFFFC9; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
+<p><span></p>
+<p style="text-align:center; font-size:24px">
+<b>Background - Policy portfolio standards</b>
+</p>
+<p style="margin-left:1em;">
+A <code>policy-portfolio-standard</code> in GCAM is a policy that can be
+used to implement taxes, subsidies, floors, ceilings, and constraints.
+Taxes and subsidies can be specified when the exact amount to be added
+or subtracted to the price is known. However, a
+<code>policy-portfolio-standard</code> can also contain a
+<code>constraint</code>, which acts as either a floor or ceiling for the
+technology or technologies included. Exact constraints can also be
+implemented. See the <a
+href="https://jgcri.github.io/gcam-doc/policies_examples.html">GCAM
+Policy Examples</a> documentation for more information on how to
+implement these options.
+</p>
+<p></span></p>
+</div>
+<p><br></p>
+<!-------------------------->
+<!---GCAM Implementation---->
+<!-------------------------->
+<div class="warning"
+style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
+<span>
+<p style="text-align:center; font-size:24px">
+<b>GCAM Implementation</b>
+</p>
+<p style="margin-left:1em;">
+<ol style="list-style-type: decimal">
+<li>Create a folder in the input directory eg.
+<code>./gcam-core/input/addons/malaysia</code>.</li>
+<li>Download the “<a
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_gen_shares.xml">elec_gen_shares.xml</a>”
+file to the folder.</li>
+<li>To make adjustments: within each
+<code>policy-portfolio-standard</code> tag in the XML, adjust the
+following:</li>
+</ol>
+</p>
+<ul style="margin-left:4em; text-align:left;">
+<li>
+<code>constraint</code> for each year in which a floor is desired
+</li>
+<li>
+Set <code>min-price</code> to a large negative value for years in which
+an exact constraint, rather than a floor, is desired
+</li>
+</ul>
+<p style="margin-left:1em;">
+<ol start="4" style="list-style-type: decimal">
+<li>Within each <code>supplysector</code> tag in the XML, make sure that
+the corresponding <code>input-subsidy</code> is added within each
+relevant <code>period</code> for each <code>stub-technology</code> you
+wish to constrain.</li>
+<li>To adjust the hydropower pathway, download the “<a
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_hydro">elec_hydro.xml</a>”
+file to the folder.</li>
+<li>Within each <code>fixedOutput</code> tag in the XML, adjust the
+value to reflect desired hydropower output in each period. The user can
+also add additional periods.</li>
+<li>Save the XMLs and then point to them in your configuration file by
+adding the lines:
+<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/elec_gen_shares.xml&lt;/Value&gt;</code>
+<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/elec_hydro.xml&lt;/Value&gt;</code></li>
+</ol>
+</p>
+<p></span></p>
+</div>
+<p><br></p>
+</div>
+<div id="coal-phase-out" class="section level2" number="4.9">
+<h2><span class="header-section-number">4.9</span> Coal Phase-Out</h2>
+<hr />
+<table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+Scenario
+</th>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+Files Used
+</th>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+Description
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Policies, Carbon Neutral
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_no_new_coal.xml" style="     ">elec_no_new_coal.xml</a>
 </td>
 <td style="text-align:left;">
 Prevents additional coal capacity from being built starting in 2020
@@ -1433,25 +1648,13 @@ Prevents additional coal capacity from being built starting in 2020
 </tr>
 <tr>
 <td style="text-align:left;">
-High
+Policies, Carbon Neutral
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/coal_shutdown_high.xml" style="     ">coal_shutdown_high.xml</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_coal_shutdown.xml" style="     ">elec_coal_shutdown.xml</a>
 </td>
 <td style="text-align:left;">
-Retires existing coal capacity quickly; all coal is retired by 2050
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Low
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/coal_shutdown_low.xml" style="     ">coal_shutdown_low.xml</a>
-</td>
-<td style="text-align:left;">
-Retires existing coal capacity more slowly; 95% of coal is retired by
-2075
+Retires existing coal capacity; all coal is retired by 2050
 </td>
 </tr>
 </tbody>
@@ -1467,13 +1670,8 @@ style="background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 
 </p>
 <p style="margin-left:1em;">
 <p>The goal of this example is to phase out coal from Malaysia’s
-electricity generation capacity. The difference between the high, low,
-and ambitious city scenarios is how quickly coal is phased out and the
-year in which the phase-out is completed.</p>
-<p>Note that this policy only applies at the national level. Therefore,
-there is no ambitious city-specific xml file; rather, the scenario uses
-the low configuration to reflect low ambition in the rest of
-Malaysia.</p>
+electricity generation capacity. Note that this policy only applies at
+the national level.</p>
 </p>
 <p></span></p>
 </div>
@@ -1572,13 +1770,11 @@ style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 
 <ol style="list-style-type: decimal">
 <li>Create a folder in the input directory eg.
 <code>./gcam-core/input/addons</code>.</li>
-<li>Download the coal shareweight file <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/no_new_coal.xml">no_new_coal.xml</a>
-as well as the desired coal retirement file (either <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/coal_shutdown_high.xml">coal_shutdown_high.xml</a>
-or <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/coal_shutdown_low.xml">coal_shutdown_low.xml</a>)
-to the folder.</li>
+<li>Download the “<a
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_no_new_coal.xml">elec_no_new_coal.xml</a>”
+and “<a
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_coal_shutdown.xml">elec_coal_shutdown.xml</a>”
+files to the folder.</li>
 <li>To make custom adjustments to the coal retirement trajectory,
 optionally change the following within each <code>stub-technology</code>
 tag in the retirement XML:</li>
@@ -1600,266 +1796,14 @@ result in a faster phase-out.
 <p style="margin-left:1em;">
 <ol start="5" style="list-style-type: decimal">
 <li>Save the xmls and then point to them in your configuration file by
-adding the lines (replace <code>high</code> with <code>low</code> as
-needed):
-<p style='font-size:0.8em'>
-<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/no_new_coal.xml&lt;/Value&gt;</code>
-<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/coal_shutdown_high.xml&lt;/Value&gt;</code></li>
+adding the lines:
+<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/elec_no_new_coal.xml&lt;/Value&gt;</code>
+<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/elec_coal_shutdown.xml&lt;/Value&gt;</code></li>
 </ol>
 </p>
-</p>
 <p></span></p>
 </div>
 <p><br></p>
-</div>
-<div id="electricity-generation-mix" class="section level2"
-number="4.8">
-<h2><span class="header-section-number">4.8</span> Electricity
-Generation Mix</h2>
-<hr />
-<table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
-<thead>
-<tr>
-<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
-Scenario
-</th>
-<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
-Files Used
-</th>
-<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
-Description
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left;">
-All
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/data/malaysia/sectoral_policies/elec_gen_pathway.xlsx" style="     ">elec_gen_pathway.xlsx</a>
-</td>
-<td style="text-align:left;">
-Excel spreadsheet that shows initial calculations to build this policy
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-All
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_gen_link.xml" style="     ">elec_gen_link.xml</a>
-</td>
-<td style="text-align:left;">
-Applies subsidies to relevant technologies in order to meet the
-specified floors
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-High
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_gen_high.xml" style="     ">elec_gen_high.xml</a>
-</td>
-<td style="text-align:left;">
-Sets high-ambition floors for renewable electricity generation
-technologies
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-High
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_hydro_high.xml" style="     ">elec_hydro_high.xml</a>
-</td>
-<td style="text-align:left;">
-Sets high-ambition exogenous hydropower generation
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Low
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_gen_low.xml" style="     ">elec_gen_low.xml</a>
-</td>
-<td style="text-align:left;">
-Sets low-ambition floors for renewable electricity generation
-technologies
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Low
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_hydro_low.xml" style="     ">elec_hydro_low.xml</a>
-</td>
-<td style="text-align:left;">
-Sets low-ambition exogenous hydropower generation
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Ambitious City
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_gen_ambitious_city.xml" style="     ">elec_gen_ambitious_city.xml</a>
-</td>
-<td style="text-align:left;">
-Sets high-ambition floors for renewable electricity generation
-technologies in KL and low-ambition floors in the rest of Malaysia
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Ambitious City
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_hydro_ambitious_city.xml" style="     ">elec_hydro_ambitious_city.xml</a>
-</td>
-<td style="text-align:left;">
-Sets high-ambition exogenous hydropower generation in KL and
-low-ambition generation in the rest of Malaysia
-</td>
-</tr>
-</tbody>
-</table>
-<!-------------------------->
-<!----------Goal------------>
-<!-------------------------->
-<div class="warning"
-style="background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
-<span>
-<p style="text-align:center; font-size:24px">
-<b>Goal</b>
-</p>
-<p style="margin-left:1em;">
-<p>The goal of this example is to set a minimum value (floor) in GCAM
-for the amount of electricity generation from three renewable energy
-technologies (solar, hydro, and biomass) corresponding with the planned
-percentages in the KLLCSBP2030 (below).</p>
-<p align="center">
-<img src="images/KL_2030_power.png">
-</p>
-</p>
-<p></span></p>
-</div>
-<p><br></p>
-<!-------------------------->
-<!--------Approach---------->
-<!-------------------------->
-<div class="warning"
-style="background-color:#fffae0; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
-<p><span></p>
-<p style="text-align:center; font-size:24px">
-<b>Approach</b>
-</p>
-<p style="margin-left:1em;">
-<p>One way to set a generation floor for each fuel type in GCAM is to
-use a subsidy policy. This will lower the cost of the electricity
-generation technology until the floor is reached. If there is more
-demand for electricity than is supplied by the sum of the generation
-floors, then the remaining demand will be met by a mix of fuels
-determined by the market.</p>
-<p>Hydropower is exogenous in GCAM and has a fixed pathway. The power
-generation values for this technology are set explicitly using a fixed
-output add-on XML.</p>
-</p>
-<p></span></p>
-</div>
-<p><br></p>
-<!-------------------------->
-<!--------Background-------->
-<!-------------------------->
-<!--------------------------------------------->
-<!---Background - Policy portfolio standards--->
-<!--------------------------------------------->
-<div class="warning"
-style="background-color:#EFFFC9; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
-<p><span></p>
-<p style="text-align:center; font-size:24px">
-<b>Background - Policy portfolio standards</b>
-</p>
-<p style="margin-left:1em;">
-A <code>policy-portfolio-standard</code> in GCAM is a policy that can be
-used to implement taxes, subsidies, floors, ceilings, and constraints.
-Taxes and subsidies can be specified when the exact amount to be added
-or subtracted to the price is known. However, a
-<code>policy-portfolio-standard</code> can also contain a
-<code>constraint</code>, which acts as either a floor or ceiling for the
-technology or technologies included. Exact constraints can also be
-implemented. See the <a
-href="https://jgcri.github.io/gcam-doc/policies_examples.html">GCAM
-Policy Examples</a> documentation for more information on how to
-implement these options.
-</p>
-<p></span></p>
-</div>
-<p><br></p>
-<!-------------------------->
-<!---GCAM Implementation---->
-<!-------------------------->
-<div class="warning"
-style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
-<span>
-<p style="text-align:center; font-size:24px">
-<b>GCAM Implementation</b>
-</p>
-<p style="margin-left:1em;">
-<ol style="list-style-type: decimal">
-<li>Create a folder in the input directory eg.
-<code>./gcam-core/input/addons/malaysia</code>.</li>
-<li>Download the example XML file (<a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_gen_high.xml">elec_gen_high.xml</a>
-and the subsidy link file <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_gen_link.xml">elec_gen_link.xml</a>
-to the folder (click on <code>Raw</code> and then
-<code>right-click</code> and select <code>save-as</code>).</li>
-<li>To make adjustments: within each
-<code>policy-portfolio-standard</code> tag in the XML, adjust the
-following:</li>
-</ol>
-</p>
-<ul style="margin-left:4em; text-align:left;">
-<li>
-<code>constraint</code> for each year in which a floor is desired
-</li>
-<li>
-Set <code>min-price</code> to a large negative value for years in which
-an exact constraint, rather than a floor, is desired
-</li>
-</ul>
-<p style="margin-left:1em;">
-<ol start="4" style="list-style-type: decimal">
-<li>Within each <code>supplysector</code> tag in the XML, make sure that
-the corresponding <code>input-subsidy</code> is added within each
-relevant <code>period</code> for each <code>stub-technology</code> you
-wish to constrain.</li>
-<li>To adjust the hydropower pathway, download the example XML file <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_hydro_high">elec_hydro_high.xml</a>
-to the folder.</li>
-<li>Within each <code>fixedOutput</code> tag in the XML, adjust the
-value to reflect desired hydropower output in each period. The user can
-also add additional periods.</li>
-<li>Save the XMLs and then point to them in your configuration file by
-adding the lines (replacing <code>high</code> with <code>low</code> or
-<code>ambitious_city</code> as needed):
-<p style='font-size:0.9em'>
-<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/elec_gen_high.xml&lt;/Value&gt;</code>
-<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/elec_hydro_high.xml&lt;/Value&gt;</code>
-<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/elec_gen_link.xml&lt;/Value&gt;</code></li>
-</ol>
-</p>
-</p>
-<p></span></p>
-</div>
-<p><br></p>
-<!-------------------------->
-<!--------Emissions -------->
-<!-------------------------->
 </div>
 </div>
 <div id="net-zero-carbon-netural" class="section level1" number="5">
@@ -1884,7 +1828,7 @@ Description
 <tbody>
 <tr>
 <td style="text-align:left;">
-Carbon neutral
+Carbon Neutral
 </td>
 <td style="text-align:left;">
 <a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/NetZeroC_Malaysia_2035_2050" style="     ">NetZeroC_Malaysia_2035_2050</a>
@@ -1895,7 +1839,7 @@ CO2 emissions constraint for Malaysia (2035 - 2050)
 </tr>
 <tr>
 <td style="text-align:left;">
-Carbon neutral
+Carbon Neutral
 </td>
 <td style="text-align:left;">
 <a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/Malaysia_LUC" style="     ">Malaysia_LUC</a>
@@ -1906,7 +1850,7 @@ GHG link file for Malaysia for land use change emissions
 </tr>
 <tr>
 <td style="text-align:left;">
-Carbon neutral
+Carbon Neutral
 </td>
 <td style="text-align:left;">
 <a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/NetZeroC_global_noMalaysia" style="     ">NetZeroC_global_noMalaysia_2050</a>
@@ -1917,7 +1861,7 @@ CO2 emissions constraint for the rest of the World (2050)
 </tr>
 <tr>
 <td style="text-align:left;">
-Carbon neutral
+Carbon Neutral
 </td>
 <td style="text-align:left;">
 <a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/ROW_LUC_noMalaysia" style="     ">ROW_LUC_noMalaysia</a>

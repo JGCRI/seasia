@@ -90,13 +90,17 @@ knitr::include_graphics("./images/MY_KL_map.png")
 
 <br>
 
-See the table below for a brief overview of policies modeled. For greater details on implementation, please reference the [Modeling - Malaysia page](modeling_malaysia.html).
+Policies modeled include:
+* High efficiency lighting and appliances in buildings
+* Building envelope efficiency improvements
+* Hydrogen in industry
+* Industrial energy efficiency
+* Transportation public-private modal shift
+* Greater use of electric vehicles
+* Renewable energy
+* Coal phase-out
 
-<br>
-
-```{r policy_table, results = "show", fig.topcaption=TRUE, fig.cap="Set of policies modeled"}
-knitr::include_graphics("./images/policy_table_report.jpg")
-```
+For greater details on implementation, please reference the [Modeling - Malaysia page](modeling_malaysia.html#4_Policies).
 
 <br>
 
