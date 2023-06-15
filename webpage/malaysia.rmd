@@ -5,7 +5,7 @@ output:
     toc: true
     toc_float: true
     toc_collapsed: true
-    toc_depth: 4
+    toc_depth: 2
     number_sections: false
     theme: cosmo
     #inverse: true
@@ -25,11 +25,13 @@ theme_set(theme_light())
 ```{r child = 'header.rmd'}
 ```
 
+# <b>Pathways to Carbon Neutrality for Malaysia and Kuala Lumpur</b>
+
 <br>
 
 <!-------------------------->
 <!-------------------------->
-# Executive Summary - Malaysia
+## Executive Summary
 <!-------------------------->
 <!-------------------------->
 <p align="center"> <img src="images/divider.png"></p>
@@ -49,7 +51,7 @@ knitr::include_graphics("images/exec_summary_malaysia_02_waterfall.JPG")
 
 <!-------------------------->
 <!-------------------------->
-# Background
+## Background
 <!-------------------------->
 <!-------------------------->
 <p align="center"> <img src="images/divider.png"></p>
@@ -81,7 +83,7 @@ PNNL and UTM will continue to support Kuala Lumpur on its journey to carbon neut
 
 <!-------------------------->
 <!-------------------------->
-# Methodology
+## Methodology
 <!-------------------------->
 <!-------------------------->
 <p align="center"> <img src="images/divider.png"></p>
@@ -106,7 +108,7 @@ knitr::include_graphics("./images/MY_KL_map.png")
 
 <!-------------------------->
 <!-------------------------->
-# Scenarios
+## Scenarios
 <!-------------------------->
 <!-------------------------->
 <p align="center"> <img src="images/divider.png"></p>
@@ -121,7 +123,7 @@ Three unique scenarios are developed to provide a comprehensive set of future pa
 
 <!-------------------------->
 <!-------------------------->
-# Results
+## Results
 <!-------------------------->
 <!-------------------------->
 <p align="center"> <img src="images/divider.png"></p>
