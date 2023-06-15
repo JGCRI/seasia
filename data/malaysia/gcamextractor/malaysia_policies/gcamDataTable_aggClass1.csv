@@ -644,6 +644,72 @@
 "High","All of Malaysia","All of Malaysia","energyFinalByFuelEJ","Fuel","traditional biomass","Year",1990,"Vint_1990","Final Energy by Fuel (EJ)",0.00920911
 "High","All of Malaysia","All of Malaysia","energyFinalByFuelEJ","Fuel","traditional biomass","Year",2005,"Vint_2005","Final Energy by Fuel (EJ)",0.00146511
 "High","All of Malaysia","All of Malaysia","energyFinalByFuelEJ","Fuel","traditional biomass","Year",2010,"Vint_2010","Final Energy by Fuel (EJ)",0.000962801
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","electricity","Year",2005,"Vint_2005","Passenger Transport Final Energy by Fuel (EJ)",0.0001463
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","electricity","Year",2010,"Vint_2010","Passenger Transport Final Energy by Fuel (EJ)",0.0005880967
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","electricity","Year",2015,"Vint_2015","Passenger Transport Final Energy by Fuel (EJ)",0.0007627839
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","electricity","Year",2020,"Vint_2020","Passenger Transport Final Energy by Fuel (EJ)",0.0010428055
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","electricity","Year",2025,"Vint_2025","Passenger Transport Final Energy by Fuel (EJ)",0.001464501831571
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","electricity","Year",2030,"Vint_2030","Passenger Transport Final Energy by Fuel (EJ)",0.00380322303889
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","electricity","Year",2035,"Vint_2035","Passenger Transport Final Energy by Fuel (EJ)",0.012669761609931
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","electricity","Year",2040,"Vint_2040","Passenger Transport Final Energy by Fuel (EJ)",0.028568150829855
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","electricity","Year",2045,"Vint_2045","Passenger Transport Final Energy by Fuel (EJ)",0.049431016763644
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","electricity","Year",2050,"Vint_2050","Passenger Transport Final Energy by Fuel (EJ)",0.0722395436043
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","hydrogen","Year",2025,"Vint_2025","Passenger Transport Final Energy by Fuel (EJ)",0.000466523846
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","hydrogen","Year",2030,"Vint_2030","Passenger Transport Final Energy by Fuel (EJ)",0.002822492671957
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","hydrogen","Year",2035,"Vint_2035","Passenger Transport Final Energy by Fuel (EJ)",0.009313262851843
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","hydrogen","Year",2040,"Vint_2040","Passenger Transport Final Energy by Fuel (EJ)",0.016272212033688
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","hydrogen","Year",2045,"Vint_2045","Passenger Transport Final Energy by Fuel (EJ)",0.02097445133934
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","hydrogen","Year",2050,"Vint_2050","Passenger Transport Final Energy by Fuel (EJ)",0.0233211226437
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","liquids","Year",1975,"Vint_1975","Passenger Transport Final Energy by Fuel (EJ)",0.0189691869
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","liquids","Year",1990,"Vint_1990","Passenger Transport Final Energy by Fuel (EJ)",0.0533845156
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","liquids","Year",2005,"Vint_2005","Passenger Transport Final Energy by Fuel (EJ)",0.144588894
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","liquids","Year",2010,"Vint_2010","Passenger Transport Final Energy by Fuel (EJ)",0.1558276808
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","liquids","Year",2015,"Vint_2015","Passenger Transport Final Energy by Fuel (EJ)",0.226517066
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","liquids","Year",2020,"Vint_2020","Passenger Transport Final Energy by Fuel (EJ)",0.3043037948
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","liquids","Year",2025,"Vint_2025","Passenger Transport Final Energy by Fuel (EJ)",0.333561259
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","liquids","Year",2030,"Vint_2030","Passenger Transport Final Energy by Fuel (EJ)",0.36154749616
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","liquids","Year",2035,"Vint_2035","Passenger Transport Final Energy by Fuel (EJ)",0.37006044015
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","liquids","Year",2040,"Vint_2040","Passenger Transport Final Energy by Fuel (EJ)",0.371196677
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","liquids","Year",2045,"Vint_2045","Passenger Transport Final Energy by Fuel (EJ)",0.3724424037
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","liquids","Year",2050,"Vint_2050","Passenger Transport Final Energy by Fuel (EJ)",0.374401853
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","electricity","Year",2005,"Vint_2005","Passenger Transport Final Energy by Fuel (EJ)",4.15e-05
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","electricity","Year",2010,"Vint_2010","Passenger Transport Final Energy by Fuel (EJ)",0.0001666
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","electricity","Year",2015,"Vint_2015","Passenger Transport Final Energy by Fuel (EJ)",0.0002161
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","electricity","Year",2020,"Vint_2020","Passenger Transport Final Energy by Fuel (EJ)",0.0004340953
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","electricity","Year",2025,"Vint_2025","Passenger Transport Final Energy by Fuel (EJ)",0.01981699113
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","electricity","Year",2030,"Vint_2030","Passenger Transport Final Energy by Fuel (EJ)",0.05360843666
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","electricity","Year",2035,"Vint_2035","Passenger Transport Final Energy by Fuel (EJ)",0.0893905946131
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","electricity","Year",2040,"Vint_2040","Passenger Transport Final Energy by Fuel (EJ)",0.1380536884325
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","electricity","Year",2045,"Vint_2045","Passenger Transport Final Energy by Fuel (EJ)",0.199015543448
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","electricity","Year",2050,"Vint_2050","Passenger Transport Final Energy by Fuel (EJ)",0.269085043157
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","gas","Year",2005,"Vint_2005","Passenger Transport Final Energy by Fuel (EJ)",0.00397611
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","gas","Year",2010,"Vint_2010","Passenger Transport Final Energy by Fuel (EJ)",0.010337863
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","gas","Year",2015,"Vint_2015","Passenger Transport Final Energy by Fuel (EJ)",0.0110493501
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","gas","Year",2020,"Vint_2020","Passenger Transport Final Energy by Fuel (EJ)",0.0124312424
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","gas","Year",2025,"Vint_2025","Passenger Transport Final Energy by Fuel (EJ)",0.0111885901
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","gas","Year",2030,"Vint_2030","Passenger Transport Final Energy by Fuel (EJ)",0.00959215153
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","gas","Year",2035,"Vint_2035","Passenger Transport Final Energy by Fuel (EJ)",0.00794550172
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","gas","Year",2040,"Vint_2040","Passenger Transport Final Energy by Fuel (EJ)",0.00618702483
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","gas","Year",2045,"Vint_2045","Passenger Transport Final Energy by Fuel (EJ)",0.00495858816
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","gas","Year",2050,"Vint_2050","Passenger Transport Final Energy by Fuel (EJ)",0.0039697514
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","hydrogen","Year",2025,"Vint_2025","Passenger Transport Final Energy by Fuel (EJ)",0.0002484400615
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","hydrogen","Year",2030,"Vint_2030","Passenger Transport Final Energy by Fuel (EJ)",0.0019976736124
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","hydrogen","Year",2035,"Vint_2035","Passenger Transport Final Energy by Fuel (EJ)",0.0041758482816
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","hydrogen","Year",2040,"Vint_2040","Passenger Transport Final Energy by Fuel (EJ)",0.0058473468707
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","hydrogen","Year",2045,"Vint_2045","Passenger Transport Final Energy by Fuel (EJ)",0.0066103058607
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","hydrogen","Year",2050,"Vint_2050","Passenger Transport Final Energy by Fuel (EJ)",0.007104013556
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","liquids","Year",1975,"Vint_1975","Passenger Transport Final Energy by Fuel (EJ)",0.054093119
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","liquids","Year",1990,"Vint_1990","Passenger Transport Final Energy by Fuel (EJ)",0.147217499
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","liquids","Year",2005,"Vint_2005","Passenger Transport Final Energy by Fuel (EJ)",0.41209702
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","liquids","Year",2010,"Vint_2010","Passenger Transport Final Energy by Fuel (EJ)",0.44374385
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","liquids","Year",2015,"Vint_2015","Passenger Transport Final Energy by Fuel (EJ)",0.62589948
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","liquids","Year",2020,"Vint_2020","Passenger Transport Final Energy by Fuel (EJ)",0.64786667253
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","liquids","Year",2025,"Vint_2025","Passenger Transport Final Energy by Fuel (EJ)",0.6088309845
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","liquids","Year",2030,"Vint_2030","Passenger Transport Final Energy by Fuel (EJ)",0.53847124781
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","liquids","Year",2035,"Vint_2035","Passenger Transport Final Energy by Fuel (EJ)",0.48447774252
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","liquids","Year",2040,"Vint_2040","Passenger Transport Final Energy by Fuel (EJ)",0.42708211668
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","liquids","Year",2045,"Vint_2045","Passenger Transport Final Energy by Fuel (EJ)",0.37665677574
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","liquids","Year",2050,"Vint_2050","Passenger Transport Final Energy by Fuel (EJ)",0.3314436445
 "High","All of Malaysia","All of Malaysia","energyFinalConsumBySecEJ","Sector","building","Year",1990,"Vint_1990","Final Energy by Sector (EJ)",0.0861299223
 "High","All of Malaysia","All of Malaysia","energyFinalConsumBySecEJ","Sector","building","Year",2005,"Vint_2005","Final Energy by Sector (EJ)",0.2049757536
 "High","All of Malaysia","All of Malaysia","energyFinalConsumBySecEJ","Sector","building","Year",2010,"Vint_2010","Final Energy by Sector (EJ)",0.2925658602
@@ -1616,6 +1682,72 @@
 "High","KualaLumpur","KualaLumpur","energyFinalByFuelEJ","Fuel","solar","Year",2040,"Vint_2040","Final Energy by Fuel (EJ)",1.935076e-06
 "High","KualaLumpur","KualaLumpur","energyFinalByFuelEJ","Fuel","solar","Year",2045,"Vint_2045","Final Energy by Fuel (EJ)",2.4933045e-06
 "High","KualaLumpur","KualaLumpur","energyFinalByFuelEJ","Fuel","solar","Year",2050,"Vint_2050","Final Energy by Fuel (EJ)",2.343049e-06
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","Fuel","electricity","Year",2005,"Vint_2005","Passenger Transport Final Energy by Fuel (EJ)",1.14e-05
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","Fuel","electricity","Year",2010,"Vint_2010","Passenger Transport Final Energy by Fuel (EJ)",4.21997e-05
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","Fuel","electricity","Year",2015,"Vint_2015","Passenger Transport Final Energy by Fuel (EJ)",5.08989e-05
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","Fuel","electricity","Year",2020,"Vint_2020","Passenger Transport Final Energy by Fuel (EJ)",5.91435e-05
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","Fuel","electricity","Year",2025,"Vint_2025","Passenger Transport Final Energy by Fuel (EJ)",7.7578361e-05
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","Fuel","electricity","Year",2030,"Vint_2030","Passenger Transport Final Energy by Fuel (EJ)",0.00018899403069
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","Fuel","electricity","Year",2035,"Vint_2035","Passenger Transport Final Energy by Fuel (EJ)",0.000593805262331
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","Fuel","electricity","Year",2040,"Vint_2040","Passenger Transport Final Energy by Fuel (EJ)",0.001262338781855
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","Fuel","electricity","Year",2045,"Vint_2045","Passenger Transport Final Energy by Fuel (EJ)",0.002075848861724
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","Fuel","electricity","Year",2050,"Vint_2050","Passenger Transport Final Energy by Fuel (EJ)",0.0029001730093
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","Fuel","hydrogen","Year",2025,"Vint_2025","Passenger Transport Final Energy by Fuel (EJ)",2.3777245e-05
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","Fuel","hydrogen","Year",2030,"Vint_2030","Passenger Transport Final Energy by Fuel (EJ)",0.000138618281047
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","Fuel","hydrogen","Year",2035,"Vint_2035","Passenger Transport Final Energy by Fuel (EJ)",0.000434876648563
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","Fuel","hydrogen","Year",2040,"Vint_2040","Passenger Transport Final Energy by Fuel (EJ)",0.000713228578368
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","Fuel","hydrogen","Year",2045,"Vint_2045","Passenger Transport Final Energy by Fuel (EJ)",0.00087199080294
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","Fuel","hydrogen","Year",2050,"Vint_2050","Passenger Transport Final Energy by Fuel (EJ)",0.0009253034225
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","Fuel","liquids","Year",1975,"Vint_1975","Passenger Transport Final Energy by Fuel (EJ)",0.0022365869
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","Fuel","liquids","Year",1990,"Vint_1990","Passenger Transport Final Energy by Fuel (EJ)",0.0056759676
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","Fuel","liquids","Year",2005,"Vint_2005","Passenger Transport Final Energy by Fuel (EJ)",0.011295905
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","Fuel","liquids","Year",2010,"Vint_2010","Passenger Transport Final Energy by Fuel (EJ)",0.0111699938
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","Fuel","liquids","Year",2015,"Vint_2015","Passenger Transport Final Energy by Fuel (EJ)",0.015116166
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","Fuel","liquids","Year",2020,"Vint_2020","Passenger Transport Final Energy by Fuel (EJ)",0.0173590348
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","Fuel","liquids","Year",2025,"Vint_2025","Passenger Transport Final Energy by Fuel (EJ)",0.018015784
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","Fuel","liquids","Year",2030,"Vint_2030","Passenger Transport Final Energy by Fuel (EJ)",0.01858480716
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","Fuel","liquids","Year",2035,"Vint_2035","Passenger Transport Final Energy by Fuel (EJ)",0.01781454515
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","Fuel","liquids","Year",2040,"Vint_2040","Passenger Transport Final Energy by Fuel (EJ)",0.016829015
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","Fuel","liquids","Year",2045,"Vint_2045","Passenger Transport Final Energy by Fuel (EJ)",0.0159193087
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","Fuel","liquids","Year",2050,"Vint_2050","Passenger Transport Final Energy by Fuel (EJ)",0.015146513
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","Fuel","electricity","Year",2005,"Vint_2005","Passenger Transport Final Energy by Fuel (EJ)",3.2e-06
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","Fuel","electricity","Year",2010,"Vint_2010","Passenger Transport Final Energy by Fuel (EJ)",1.19e-05
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","Fuel","electricity","Year",2015,"Vint_2015","Passenger Transport Final Energy by Fuel (EJ)",1.44e-05
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","Fuel","electricity","Year",2020,"Vint_2020","Passenger Transport Final Energy by Fuel (EJ)",2.86703e-05
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","Fuel","electricity","Year",2025,"Vint_2025","Passenger Transport Final Energy by Fuel (EJ)",0.00265949613
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","Fuel","electricity","Year",2030,"Vint_2030","Passenger Transport Final Energy by Fuel (EJ)",0.00615236066
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","Fuel","electricity","Year",2035,"Vint_2035","Passenger Transport Final Energy by Fuel (EJ)",0.0094008184131
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","Fuel","electricity","Year",2040,"Vint_2040","Passenger Transport Final Energy by Fuel (EJ)",0.0132905687325
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","Fuel","electricity","Year",2045,"Vint_2045","Passenger Transport Final Energy by Fuel (EJ)",0.017567511048
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","Fuel","electricity","Year",2050,"Vint_2050","Passenger Transport Final Energy by Fuel (EJ)",0.021850375157
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","Fuel","gas","Year",2005,"Vint_2005","Passenger Transport Final Energy by Fuel (EJ)",0.000310654
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","Fuel","gas","Year",2010,"Vint_2010","Passenger Transport Final Energy by Fuel (EJ)",0.000740989
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","Fuel","gas","Year",2015,"Vint_2015","Passenger Transport Final Energy by Fuel (EJ)",0.0007373911
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","Fuel","gas","Year",2020,"Vint_2020","Passenger Transport Final Energy by Fuel (EJ)",0.0007311454
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","Fuel","gas","Year",2025,"Vint_2025","Passenger Transport Final Energy by Fuel (EJ)",0.0005982701
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","Fuel","gas","Year",2030,"Vint_2030","Passenger Transport Final Energy by Fuel (EJ)",0.00046100453
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","Fuel","gas","Year",2035,"Vint_2035","Passenger Transport Final Energy by Fuel (EJ)",0.00033628072
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","Fuel","gas","Year",2040,"Vint_2040","Passenger Transport Final Energy by Fuel (EJ)",0.00022383583
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","Fuel","gas","Year",2045,"Vint_2045","Passenger Transport Final Energy by Fuel (EJ)",0.00016317706
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","Fuel","gas","Year",2050,"Vint_2050","Passenger Transport Final Energy by Fuel (EJ)",0.0001218658
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","Fuel","hydrogen","Year",2025,"Vint_2025","Passenger Transport Final Energy by Fuel (EJ)",1.05161715e-05
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","Fuel","hydrogen","Year",2030,"Vint_2030","Passenger Transport Final Energy by Fuel (EJ)",8.10516524e-05
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","Fuel","hydrogen","Year",2035,"Vint_2035","Passenger Transport Final Energy by Fuel (EJ)",0.0001634990516
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","Fuel","hydrogen","Year",2040,"Vint_2040","Passenger Transport Final Energy by Fuel (EJ)",0.0002155138397
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","Fuel","hydrogen","Year",2045,"Vint_2045","Passenger Transport Final Energy by Fuel (EJ)",0.0002192522447
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","Fuel","hydrogen","Year",2050,"Vint_2050","Passenger Transport Final Energy by Fuel (EJ)",0.000204161256
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","Fuel","liquids","Year",1975,"Vint_1975","Passenger Transport Final Energy by Fuel (EJ)",0.006306519
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","Fuel","liquids","Year",1990,"Vint_1990","Passenger Transport Final Energy by Fuel (EJ)",0.015490289
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","Fuel","liquids","Year",2005,"Vint_2005","Passenger Transport Final Energy by Fuel (EJ)",0.03181592
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","Fuel","liquids","Year",2010,"Vint_2010","Passenger Transport Final Energy by Fuel (EJ)",0.03139745
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","Fuel","liquids","Year",2015,"Vint_2015","Passenger Transport Final Energy by Fuel (EJ)",0.04126458
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","Fuel","liquids","Year",2020,"Vint_2020","Passenger Transport Final Energy by Fuel (EJ)",0.04010773353
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","Fuel","liquids","Year",2025,"Vint_2025","Passenger Transport Final Energy by Fuel (EJ)",0.0339990915
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","Fuel","liquids","Year",2030,"Vint_2030","Passenger Transport Final Energy by Fuel (EJ)",0.02749243881
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","Fuel","liquids","Year",2035,"Vint_2035","Passenger Transport Final Energy by Fuel (EJ)",0.02274849452
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","Fuel","liquids","Year",2040,"Vint_2040","Passenger Transport Final Energy by Fuel (EJ)",0.01856757938
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","Fuel","liquids","Year",2045,"Vint_2045","Passenger Transport Final Energy by Fuel (EJ)",0.01575461574
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","Fuel","liquids","Year",2050,"Vint_2050","Passenger Transport Final Energy by Fuel (EJ)",0.0137342625
 "High","KualaLumpur","KualaLumpur","energyFinalConsumBySecEJ","Sector","building","Year",1990,"Vint_1990","Final Energy by Sector (EJ)",0.0102391715
 "High","KualaLumpur","KualaLumpur","energyFinalConsumBySecEJ","Sector","building","Year",2005,"Vint_2005","Final Energy by Sector (EJ)",0.0226073866
 "High","KualaLumpur","KualaLumpur","energyFinalConsumBySecEJ","Sector","building","Year",2010,"Vint_2010","Final Energy by Sector (EJ)",0.0355673252
@@ -3211,6 +3343,72 @@
 "High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelEJ","Fuel","traditional biomass","Year",1990,"Vint_1990","Final Energy by Fuel (EJ)",0.00920911
 "High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelEJ","Fuel","traditional biomass","Year",2005,"Vint_2005","Final Energy by Fuel (EJ)",0.00146511
 "High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelEJ","Fuel","traditional biomass","Year",2010,"Vint_2010","Final Energy by Fuel (EJ)",0.000962801
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","electricity","Year",2005,"Vint_2005","Passenger Transport Final Energy by Fuel (EJ)",0.0001349
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","electricity","Year",2010,"Vint_2010","Passenger Transport Final Energy by Fuel (EJ)",0.000545897
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","electricity","Year",2015,"Vint_2015","Passenger Transport Final Energy by Fuel (EJ)",0.000711885
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","electricity","Year",2020,"Vint_2020","Passenger Transport Final Energy by Fuel (EJ)",0.000983662
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","electricity","Year",2025,"Vint_2025","Passenger Transport Final Energy by Fuel (EJ)",0.001386923470571
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","electricity","Year",2030,"Vint_2030","Passenger Transport Final Energy by Fuel (EJ)",0.0036142290082
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","electricity","Year",2035,"Vint_2035","Passenger Transport Final Energy by Fuel (EJ)",0.0120759563476
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","electricity","Year",2040,"Vint_2040","Passenger Transport Final Energy by Fuel (EJ)",0.027305812048
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","electricity","Year",2045,"Vint_2045","Passenger Transport Final Energy by Fuel (EJ)",0.04735516790192
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","electricity","Year",2050,"Vint_2050","Passenger Transport Final Energy by Fuel (EJ)",0.069339370595
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","hydrogen","Year",2025,"Vint_2025","Passenger Transport Final Energy by Fuel (EJ)",0.000442746601
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","hydrogen","Year",2030,"Vint_2030","Passenger Transport Final Energy by Fuel (EJ)",0.00268387439091
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","hydrogen","Year",2035,"Vint_2035","Passenger Transport Final Energy by Fuel (EJ)",0.00887838620328
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","hydrogen","Year",2040,"Vint_2040","Passenger Transport Final Energy by Fuel (EJ)",0.01555898345532
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","hydrogen","Year",2045,"Vint_2045","Passenger Transport Final Energy by Fuel (EJ)",0.0201024605364
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","hydrogen","Year",2050,"Vint_2050","Passenger Transport Final Energy by Fuel (EJ)",0.0223958192212
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","liquids","Year",1975,"Vint_1975","Passenger Transport Final Energy by Fuel (EJ)",0.0167326
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","liquids","Year",1990,"Vint_1990","Passenger Transport Final Energy by Fuel (EJ)",0.047708548
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","liquids","Year",2005,"Vint_2005","Passenger Transport Final Energy by Fuel (EJ)",0.133292989
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","liquids","Year",2010,"Vint_2010","Passenger Transport Final Energy by Fuel (EJ)",0.144657687
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","liquids","Year",2015,"Vint_2015","Passenger Transport Final Energy by Fuel (EJ)",0.2114009
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","liquids","Year",2020,"Vint_2020","Passenger Transport Final Energy by Fuel (EJ)",0.28694476
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","liquids","Year",2025,"Vint_2025","Passenger Transport Final Energy by Fuel (EJ)",0.315545475
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","liquids","Year",2030,"Vint_2030","Passenger Transport Final Energy by Fuel (EJ)",0.342962689
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","liquids","Year",2035,"Vint_2035","Passenger Transport Final Energy by Fuel (EJ)",0.352245895
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","liquids","Year",2040,"Vint_2040","Passenger Transport Final Energy by Fuel (EJ)",0.354367662
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","liquids","Year",2045,"Vint_2045","Passenger Transport Final Energy by Fuel (EJ)",0.356523095
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","Fuel","liquids","Year",2050,"Vint_2050","Passenger Transport Final Energy by Fuel (EJ)",0.35925534
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","electricity","Year",2005,"Vint_2005","Passenger Transport Final Energy by Fuel (EJ)",3.83e-05
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","electricity","Year",2010,"Vint_2010","Passenger Transport Final Energy by Fuel (EJ)",0.0001547
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","electricity","Year",2015,"Vint_2015","Passenger Transport Final Energy by Fuel (EJ)",0.0002017
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","electricity","Year",2020,"Vint_2020","Passenger Transport Final Energy by Fuel (EJ)",0.000405425
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","electricity","Year",2025,"Vint_2025","Passenger Transport Final Energy by Fuel (EJ)",0.017157495
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","electricity","Year",2030,"Vint_2030","Passenger Transport Final Energy by Fuel (EJ)",0.047456076
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","electricity","Year",2035,"Vint_2035","Passenger Transport Final Energy by Fuel (EJ)",0.0799897762
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","electricity","Year",2040,"Vint_2040","Passenger Transport Final Energy by Fuel (EJ)",0.1247631197
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","electricity","Year",2045,"Vint_2045","Passenger Transport Final Energy by Fuel (EJ)",0.1814480324
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","electricity","Year",2050,"Vint_2050","Passenger Transport Final Energy by Fuel (EJ)",0.247234668
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","gas","Year",2005,"Vint_2005","Passenger Transport Final Energy by Fuel (EJ)",0.003665456
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","gas","Year",2010,"Vint_2010","Passenger Transport Final Energy by Fuel (EJ)",0.009596874
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","gas","Year",2015,"Vint_2015","Passenger Transport Final Energy by Fuel (EJ)",0.010311959
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","gas","Year",2020,"Vint_2020","Passenger Transport Final Energy by Fuel (EJ)",0.011700097
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","gas","Year",2025,"Vint_2025","Passenger Transport Final Energy by Fuel (EJ)",0.01059032
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","gas","Year",2030,"Vint_2030","Passenger Transport Final Energy by Fuel (EJ)",0.009131147
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","gas","Year",2035,"Vint_2035","Passenger Transport Final Energy by Fuel (EJ)",0.007609221
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","gas","Year",2040,"Vint_2040","Passenger Transport Final Energy by Fuel (EJ)",0.005963189
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","gas","Year",2045,"Vint_2045","Passenger Transport Final Energy by Fuel (EJ)",0.0047954111
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","gas","Year",2050,"Vint_2050","Passenger Transport Final Energy by Fuel (EJ)",0.0038478856
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","hydrogen","Year",2025,"Vint_2025","Passenger Transport Final Energy by Fuel (EJ)",0.00023792389
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","hydrogen","Year",2030,"Vint_2030","Passenger Transport Final Energy by Fuel (EJ)",0.00191662196
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","hydrogen","Year",2035,"Vint_2035","Passenger Transport Final Energy by Fuel (EJ)",0.00401234923
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","hydrogen","Year",2040,"Vint_2040","Passenger Transport Final Energy by Fuel (EJ)",0.005631833031
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","hydrogen","Year",2045,"Vint_2045","Passenger Transport Final Energy by Fuel (EJ)",0.006391053616
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","hydrogen","Year",2050,"Vint_2050","Passenger Transport Final Energy by Fuel (EJ)",0.0068998523
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","liquids","Year",1975,"Vint_1975","Passenger Transport Final Energy by Fuel (EJ)",0.0477866
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","liquids","Year",1990,"Vint_1990","Passenger Transport Final Energy by Fuel (EJ)",0.13172721
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","liquids","Year",2005,"Vint_2005","Passenger Transport Final Energy by Fuel (EJ)",0.3802811
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","liquids","Year",2010,"Vint_2010","Passenger Transport Final Energy by Fuel (EJ)",0.4123464
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","liquids","Year",2015,"Vint_2015","Passenger Transport Final Energy by Fuel (EJ)",0.5846349
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","liquids","Year",2020,"Vint_2020","Passenger Transport Final Energy by Fuel (EJ)",0.607758939
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","liquids","Year",2025,"Vint_2025","Passenger Transport Final Energy by Fuel (EJ)",0.574831893
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","liquids","Year",2030,"Vint_2030","Passenger Transport Final Energy by Fuel (EJ)",0.510978809
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","liquids","Year",2035,"Vint_2035","Passenger Transport Final Energy by Fuel (EJ)",0.461729248
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","liquids","Year",2040,"Vint_2040","Passenger Transport Final Energy by Fuel (EJ)",0.4085145373
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","liquids","Year",2045,"Vint_2045","Passenger Transport Final Energy by Fuel (EJ)",0.36090216
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","Fuel","liquids","Year",2050,"Vint_2050","Passenger Transport Final Energy by Fuel (EJ)",0.317709382
 "High","Rest of Malaysia","Rest of Malaysia","energyFinalConsumBySecEJ","Sector","building","Year",1990,"Vint_1990","Final Energy by Sector (EJ)",0.0758907508
 "High","Rest of Malaysia","Rest of Malaysia","energyFinalConsumBySecEJ","Sector","building","Year",2005,"Vint_2005","Final Energy by Sector (EJ)",0.182368367
 "High","Rest of Malaysia","Rest of Malaysia","energyFinalConsumBySecEJ","Sector","building","Year",2010,"Vint_2010","Final Energy by Sector (EJ)",0.256998535

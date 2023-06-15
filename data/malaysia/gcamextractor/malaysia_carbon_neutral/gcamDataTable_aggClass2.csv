@@ -1389,6 +1389,72 @@
 "High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelEJ","Sector","transportation","Year",2040,"Vint_2040","Final Energy by Fuel (EJ)",1.27728483346646
 "High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelEJ","Sector","transportation","Year",2045,"Vint_2045","Final Energy by Fuel (EJ)",1.06728596973123
 "High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelEJ","Sector","transportation","Year",2050,"Vint_2050","Final Energy by Fuel (EJ)",0.931541701431801
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","electricity","Year",2005,"Vint_2005","Passenger Transport Final Energy by Fuel (EJ)",0.0001463
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","electricity","Year",2010,"Vint_2010","Passenger Transport Final Energy by Fuel (EJ)",0.0005880967
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","electricity","Year",2015,"Vint_2015","Passenger Transport Final Energy by Fuel (EJ)",0.0007627839
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","electricity","Year",2020,"Vint_2020","Passenger Transport Final Energy by Fuel (EJ)",0.0010428055
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","electricity","Year",2025,"Vint_2025","Passenger Transport Final Energy by Fuel (EJ)",0.001474716420531
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","electricity","Year",2030,"Vint_2030","Passenger Transport Final Energy by Fuel (EJ)",0.00377099472375
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","electricity","Year",2035,"Vint_2035","Passenger Transport Final Energy by Fuel (EJ)",0.012369160065411
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","electricity","Year",2040,"Vint_2040","Passenger Transport Final Energy by Fuel (EJ)",0.038624293691128
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","electricity","Year",2045,"Vint_2045","Passenger Transport Final Energy by Fuel (EJ)",0.122346834407007
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","electricity","Year",2050,"Vint_2050","Passenger Transport Final Energy by Fuel (EJ)",0.20586828208913
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","hydrogen","Year",2025,"Vint_2025","Passenger Transport Final Energy by Fuel (EJ)",0.0004674016692
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","hydrogen","Year",2030,"Vint_2030","Passenger Transport Final Energy by Fuel (EJ)",0.002805912594494
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","hydrogen","Year",2035,"Vint_2035","Passenger Transport Final Energy by Fuel (EJ)",0.009302032598149
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","hydrogen","Year",2040,"Vint_2040","Passenger Transport Final Energy by Fuel (EJ)",0.022536895181248
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","hydrogen","Year",2045,"Vint_2045","Passenger Transport Final Energy by Fuel (EJ)",0.05774984875892
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","hydrogen","Year",2050,"Vint_2050","Passenger Transport Final Energy by Fuel (EJ)",0.04756103853234
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","liquids","Year",1975,"Vint_1975","Passenger Transport Final Energy by Fuel (EJ)",0.0189691869
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","liquids","Year",1990,"Vint_1990","Passenger Transport Final Energy by Fuel (EJ)",0.0533845156
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","liquids","Year",2005,"Vint_2005","Passenger Transport Final Energy by Fuel (EJ)",0.144588894
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","liquids","Year",2010,"Vint_2010","Passenger Transport Final Energy by Fuel (EJ)",0.1558276808
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","liquids","Year",2015,"Vint_2015","Passenger Transport Final Energy by Fuel (EJ)",0.226517066
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","liquids","Year",2020,"Vint_2020","Passenger Transport Final Energy by Fuel (EJ)",0.3043037948
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","liquids","Year",2025,"Vint_2025","Passenger Transport Final Energy by Fuel (EJ)",0.33409665996
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","liquids","Year",2030,"Vint_2030","Passenger Transport Final Energy by Fuel (EJ)",0.36253171083
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","liquids","Year",2035,"Vint_2035","Passenger Transport Final Energy by Fuel (EJ)",0.37029651762
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","liquids","Year",2040,"Vint_2040","Passenger Transport Final Energy by Fuel (EJ)",0.30945320122
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","liquids","Year",2045,"Vint_2045","Passenger Transport Final Energy by Fuel (EJ)",0.094457641802
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","liquids","Year",2050,"Vint_2050","Passenger Transport Final Energy by Fuel (EJ)",0.001343447267181
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","electricity","Year",2005,"Vint_2005","Passenger Transport Final Energy by Fuel (EJ)",4.15e-05
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","electricity","Year",2010,"Vint_2010","Passenger Transport Final Energy by Fuel (EJ)",0.0001666
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","electricity","Year",2015,"Vint_2015","Passenger Transport Final Energy by Fuel (EJ)",0.0002161
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","electricity","Year",2020,"Vint_2020","Passenger Transport Final Energy by Fuel (EJ)",0.0004340953
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","electricity","Year",2025,"Vint_2025","Passenger Transport Final Energy by Fuel (EJ)",0.01988508234
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","electricity","Year",2030,"Vint_2030","Passenger Transport Final Energy by Fuel (EJ)",0.05354690795
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","electricity","Year",2035,"Vint_2035","Passenger Transport Final Energy by Fuel (EJ)",0.0882647690749
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","electricity","Year",2040,"Vint_2040","Passenger Transport Final Energy by Fuel (EJ)",0.1367437264625
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","electricity","Year",2045,"Vint_2045","Passenger Transport Final Energy by Fuel (EJ)",0.216881965279
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","electricity","Year",2050,"Vint_2050","Passenger Transport Final Energy by Fuel (EJ)",0.32492786511
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","gas","Year",2005,"Vint_2005","Passenger Transport Final Energy by Fuel (EJ)",0.00397611
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","gas","Year",2010,"Vint_2010","Passenger Transport Final Energy by Fuel (EJ)",0.010337863
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","gas","Year",2015,"Vint_2015","Passenger Transport Final Energy by Fuel (EJ)",0.0110493501
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","gas","Year",2020,"Vint_2020","Passenger Transport Final Energy by Fuel (EJ)",0.0124312424
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","gas","Year",2025,"Vint_2025","Passenger Transport Final Energy by Fuel (EJ)",0.0112113416
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","gas","Year",2030,"Vint_2030","Passenger Transport Final Energy by Fuel (EJ)",0.0096108989
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","gas","Year",2035,"Vint_2035","Passenger Transport Final Energy by Fuel (EJ)",0.00798646258
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","gas","Year",2040,"Vint_2040","Passenger Transport Final Energy by Fuel (EJ)",0.00605802544
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","gas","Year",2045,"Vint_2045","Passenger Transport Final Energy by Fuel (EJ)",0.00421312959
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","gas","Year",2050,"Vint_2050","Passenger Transport Final Energy by Fuel (EJ)",0.00181614934335
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","hydrogen","Year",2025,"Vint_2025","Passenger Transport Final Energy by Fuel (EJ)",0.0002487693891
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","hydrogen","Year",2030,"Vint_2030","Passenger Transport Final Energy by Fuel (EJ)",0.0019982007058
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","hydrogen","Year",2035,"Vint_2035","Passenger Transport Final Energy by Fuel (EJ)",0.0041717981498
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","hydrogen","Year",2040,"Vint_2040","Passenger Transport Final Energy by Fuel (EJ)",0.0060013428789
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","hydrogen","Year",2045,"Vint_2045","Passenger Transport Final Energy by Fuel (EJ)",0.0083445561669
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","hydrogen","Year",2050,"Vint_2050","Passenger Transport Final Energy by Fuel (EJ)",0.013281020828
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","liquids","Year",1975,"Vint_1975","Passenger Transport Final Energy by Fuel (EJ)",0.054093119
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","liquids","Year",1990,"Vint_1990","Passenger Transport Final Energy by Fuel (EJ)",0.147217499
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","liquids","Year",2005,"Vint_2005","Passenger Transport Final Energy by Fuel (EJ)",0.41209702
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","liquids","Year",2010,"Vint_2010","Passenger Transport Final Energy by Fuel (EJ)",0.44374385
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","liquids","Year",2015,"Vint_2015","Passenger Transport Final Energy by Fuel (EJ)",0.62589948
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","liquids","Year",2020,"Vint_2020","Passenger Transport Final Energy by Fuel (EJ)",0.64786667253
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","liquids","Year",2025,"Vint_2025","Passenger Transport Final Energy by Fuel (EJ)",0.6093168126
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","liquids","Year",2030,"Vint_2030","Passenger Transport Final Energy by Fuel (EJ)",0.53969029558
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","liquids","Year",2035,"Vint_2035","Passenger Transport Final Energy by Fuel (EJ)",0.48580411923
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","liquids","Year",2040,"Vint_2040","Passenger Transport Final Energy by Fuel (EJ)",0.38971123844
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","liquids","Year",2045,"Vint_2045","Passenger Transport Final Energy by Fuel (EJ)",0.24311730262
+"High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","liquids","Year",2050,"Vint_2050","Passenger Transport Final Energy by Fuel (EJ)",0.081027195419
 "High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalConsumBySecEJ","Subsector","agricultural energy use","Year",2005,"Vint_2005","Final Energy by Sector (EJ)",8.37067e-05
 "High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalConsumBySecEJ","Subsector","agricultural energy use","Year",2010,"Vint_2010","Final Energy by Sector (EJ)",0.0014232999
 "High_CarbonNeutral","All of Malaysia","All of Malaysia","energyFinalConsumBySecEJ","Subsector","agricultural energy use","Year",2015,"Vint_2015","Final Energy by Sector (EJ)",0.01029748
@@ -2809,6 +2875,72 @@
 "High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelEJ","Sector","transportation","Year",2040,"Vint_2040","Final Energy by Fuel (EJ)",0.047247742269382
 "High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelEJ","Sector","transportation","Year",2045,"Vint_2045","Final Energy by Fuel (EJ)",0.040313338633207
 "High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelEJ","Sector","transportation","Year",2050,"Vint_2050","Final Energy by Fuel (EJ)",0.037993940283921
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","classLabel2","electricity","Year",2005,"Vint_2005","Passenger Transport Final Energy by Fuel (EJ)",1.14e-05
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","classLabel2","electricity","Year",2010,"Vint_2010","Passenger Transport Final Energy by Fuel (EJ)",4.21997e-05
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","classLabel2","electricity","Year",2015,"Vint_2015","Passenger Transport Final Energy by Fuel (EJ)",5.08989e-05
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","classLabel2","electricity","Year",2020,"Vint_2020","Passenger Transport Final Energy by Fuel (EJ)",5.91435e-05
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","classLabel2","electricity","Year",2025,"Vint_2025","Passenger Transport Final Energy by Fuel (EJ)",7.8109148e-05
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","classLabel2","electricity","Year",2030,"Vint_2030","Passenger Transport Final Energy by Fuel (EJ)",0.00018732567525
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","classLabel2","electricity","Year",2035,"Vint_2035","Passenger Transport Final Energy by Fuel (EJ)",0.000580186471611
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","classLabel2","electricity","Year",2040,"Vint_2040","Passenger Transport Final Energy by Fuel (EJ)",0.001722736852058
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","classLabel2","electricity","Year",2045,"Vint_2045","Passenger Transport Final Energy by Fuel (EJ)",0.005196478638387
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","classLabel2","electricity","Year",2050,"Vint_2050","Passenger Transport Final Energy by Fuel (EJ)",0.00830702523843
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","classLabel2","hydrogen","Year",2025,"Vint_2025","Passenger Transport Final Energy by Fuel (EJ)",2.37978272e-05
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","classLabel2","hydrogen","Year",2030,"Vint_2030","Passenger Transport Final Energy by Fuel (EJ)",0.000137703166094
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","classLabel2","hydrogen","Year",2035,"Vint_2035","Passenger Transport Final Energy by Fuel (EJ)",0.000434686051149
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","classLabel2","hydrogen","Year",2040,"Vint_2040","Passenger Transport Final Energy by Fuel (EJ)",0.001000062388238
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","classLabel2","hydrogen","Year",2045,"Vint_2045","Passenger Transport Final Energy by Fuel (EJ)",0.00244049876452
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","classLabel2","hydrogen","Year",2050,"Vint_2050","Passenger Transport Final Energy by Fuel (EJ)",0.00189428976984
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","classLabel2","liquids","Year",1975,"Vint_1975","Passenger Transport Final Energy by Fuel (EJ)",0.0022365869
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","classLabel2","liquids","Year",1990,"Vint_1990","Passenger Transport Final Energy by Fuel (EJ)",0.0056759676
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","classLabel2","liquids","Year",2005,"Vint_2005","Passenger Transport Final Energy by Fuel (EJ)",0.011295905
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","classLabel2","liquids","Year",2010,"Vint_2010","Passenger Transport Final Energy by Fuel (EJ)",0.0111699938
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","classLabel2","liquids","Year",2015,"Vint_2015","Passenger Transport Final Energy by Fuel (EJ)",0.015116166
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","classLabel2","liquids","Year",2020,"Vint_2020","Passenger Transport Final Energy by Fuel (EJ)",0.0173590348
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","classLabel2","liquids","Year",2025,"Vint_2025","Passenger Transport Final Energy by Fuel (EJ)",0.01804526896
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","classLabel2","liquids","Year",2030,"Vint_2030","Passenger Transport Final Energy by Fuel (EJ)",0.01863591983
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","classLabel2","liquids","Year",2035,"Vint_2035","Passenger Transport Final Energy by Fuel (EJ)",0.01782270372
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","classLabel2","liquids","Year",2040,"Vint_2040","Passenger Transport Final Energy by Fuel (EJ)",0.01402132922
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","classLabel2","liquids","Year",2045,"Vint_2045","Passenger Transport Final Energy by Fuel (EJ)",0.004040565322
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","classLabel2","liquids","Year",2050,"Vint_2050","Passenger Transport Final Energy by Fuel (EJ)",5.5693806201e-05
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","classLabel2","electricity","Year",2005,"Vint_2005","Passenger Transport Final Energy by Fuel (EJ)",3.2e-06
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","classLabel2","electricity","Year",2010,"Vint_2010","Passenger Transport Final Energy by Fuel (EJ)",1.19e-05
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","classLabel2","electricity","Year",2015,"Vint_2015","Passenger Transport Final Energy by Fuel (EJ)",1.44e-05
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","classLabel2","electricity","Year",2020,"Vint_2020","Passenger Transport Final Energy by Fuel (EJ)",2.86703e-05
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","classLabel2","electricity","Year",2025,"Vint_2025","Passenger Transport Final Energy by Fuel (EJ)",0.00266944934
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","classLabel2","electricity","Year",2030,"Vint_2030","Passenger Transport Final Energy by Fuel (EJ)",0.00615736695
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","classLabel2","electricity","Year",2035,"Vint_2035","Passenger Transport Final Energy by Fuel (EJ)",0.0093009960749
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","classLabel2","electricity","Year",2040,"Vint_2040","Passenger Transport Final Energy by Fuel (EJ)",0.0127007764625
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","classLabel2","electricity","Year",2045,"Vint_2045","Passenger Transport Final Energy by Fuel (EJ)",0.017103311779
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","classLabel2","electricity","Year",2050,"Vint_2050","Passenger Transport Final Energy by Fuel (EJ)",0.02219125011
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","classLabel2","gas","Year",2005,"Vint_2005","Passenger Transport Final Energy by Fuel (EJ)",0.000310654
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","classLabel2","gas","Year",2010,"Vint_2010","Passenger Transport Final Energy by Fuel (EJ)",0.000740989
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","classLabel2","gas","Year",2015,"Vint_2015","Passenger Transport Final Energy by Fuel (EJ)",0.0007373911
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","classLabel2","gas","Year",2020,"Vint_2020","Passenger Transport Final Energy by Fuel (EJ)",0.0007311454
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","classLabel2","gas","Year",2025,"Vint_2025","Passenger Transport Final Energy by Fuel (EJ)",0.0005993576
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","classLabel2","gas","Year",2030,"Vint_2030","Passenger Transport Final Energy by Fuel (EJ)",0.0004617779
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","classLabel2","gas","Year",2035,"Vint_2035","Passenger Transport Final Energy by Fuel (EJ)",0.00033792858
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","classLabel2","gas","Year",2040,"Vint_2040","Passenger Transport Final Energy by Fuel (EJ)",0.00021862544
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","classLabel2","gas","Year",2045,"Vint_2045","Passenger Transport Final Energy by Fuel (EJ)",0.00013950519
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","classLabel2","gas","Year",2050,"Vint_2050","Passenger Transport Final Energy by Fuel (EJ)",5.963556965e-05
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","classLabel2","hydrogen","Year",2025,"Vint_2025","Passenger Transport Final Energy by Fuel (EJ)",1.05267391e-05
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","classLabel2","hydrogen","Year",2030,"Vint_2030","Passenger Transport Final Energy by Fuel (EJ)",8.10545658e-05
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","classLabel2","hydrogen","Year",2035,"Vint_2035","Passenger Transport Final Energy by Fuel (EJ)",0.0001633835598
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","classLabel2","hydrogen","Year",2040,"Vint_2040","Passenger Transport Final Energy by Fuel (EJ)",0.0002216265389
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","classLabel2","hydrogen","Year",2045,"Vint_2045","Passenger Transport Final Energy by Fuel (EJ)",0.0002626463119
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","classLabel2","hydrogen","Year",2050,"Vint_2050","Passenger Transport Final Energy by Fuel (EJ)",0.000312703328
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","classLabel2","liquids","Year",1975,"Vint_1975","Passenger Transport Final Energy by Fuel (EJ)",0.006306519
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","classLabel2","liquids","Year",1990,"Vint_1990","Passenger Transport Final Energy by Fuel (EJ)",0.015490289
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","classLabel2","liquids","Year",2005,"Vint_2005","Passenger Transport Final Energy by Fuel (EJ)",0.03181592
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","classLabel2","liquids","Year",2010,"Vint_2010","Passenger Transport Final Energy by Fuel (EJ)",0.03139745
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","classLabel2","liquids","Year",2015,"Vint_2015","Passenger Transport Final Energy by Fuel (EJ)",0.04126458
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","classLabel2","liquids","Year",2020,"Vint_2020","Passenger Transport Final Energy by Fuel (EJ)",0.04010773353
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","classLabel2","liquids","Year",2025,"Vint_2025","Passenger Transport Final Energy by Fuel (EJ)",0.0340163816
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","classLabel2","liquids","Year",2030,"Vint_2030","Passenger Transport Final Energy by Fuel (EJ)",0.02754536058
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","classLabel2","liquids","Year",2035,"Vint_2035","Passenger Transport Final Energy by Fuel (EJ)",0.02281925423
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","classLabel2","liquids","Year",2040,"Vint_2040","Passenger Transport Final Energy by Fuel (EJ)",0.01712217514
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","classLabel2","liquids","Year",2045,"Vint_2045","Passenger Transport Final Energy by Fuel (EJ)",0.01093454662
+"High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","classLabel2","liquids","Year",2050,"Vint_2050","Passenger Transport Final Energy by Fuel (EJ)",0.005023571319
 "High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalConsumBySecEJ","Subsector","building","Year",1990,"Vint_1990","Final Energy by Sector (EJ)",0.0005802
 "High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalConsumBySecEJ","Subsector","building","Year",2005,"Vint_2005","Final Energy by Sector (EJ)",0.0012843
 "High_CarbonNeutral","KualaLumpur","KualaLumpur","energyFinalConsumBySecEJ","Subsector","building","Year",2010,"Vint_2010","Final Energy by Sector (EJ)",0.0023004
@@ -5321,6 +5453,72 @@
 "High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelEJ","Sector","transportation","Year",2040,"Vint_2040","Final Energy by Fuel (EJ)",1.23003709119708
 "High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelEJ","Sector","transportation","Year",2045,"Vint_2045","Final Energy by Fuel (EJ)",1.02697263109802
 "High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelEJ","Sector","transportation","Year",2050,"Vint_2050","Final Energy by Fuel (EJ)",0.89354776114788
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","electricity","Year",2005,"Vint_2005","Passenger Transport Final Energy by Fuel (EJ)",0.0001349
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","electricity","Year",2010,"Vint_2010","Passenger Transport Final Energy by Fuel (EJ)",0.000545897
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","electricity","Year",2015,"Vint_2015","Passenger Transport Final Energy by Fuel (EJ)",0.000711885
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","electricity","Year",2020,"Vint_2020","Passenger Transport Final Energy by Fuel (EJ)",0.000983662
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","electricity","Year",2025,"Vint_2025","Passenger Transport Final Energy by Fuel (EJ)",0.001396607272531
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","electricity","Year",2030,"Vint_2030","Passenger Transport Final Energy by Fuel (EJ)",0.0035836690485
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","electricity","Year",2035,"Vint_2035","Passenger Transport Final Energy by Fuel (EJ)",0.0117889735938
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","electricity","Year",2040,"Vint_2040","Passenger Transport Final Energy by Fuel (EJ)",0.03690155683907
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","electricity","Year",2045,"Vint_2045","Passenger Transport Final Energy by Fuel (EJ)",0.11715035576862
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","electricity","Year",2050,"Vint_2050","Passenger Transport Final Energy by Fuel (EJ)",0.1975612568507
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","hydrogen","Year",2025,"Vint_2025","Passenger Transport Final Energy by Fuel (EJ)",0.000443603842
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","hydrogen","Year",2030,"Vint_2030","Passenger Transport Final Energy by Fuel (EJ)",0.0026682094284
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","hydrogen","Year",2035,"Vint_2035","Passenger Transport Final Energy by Fuel (EJ)",0.008867346547
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","hydrogen","Year",2040,"Vint_2040","Passenger Transport Final Energy by Fuel (EJ)",0.02153683279301
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","hydrogen","Year",2045,"Vint_2045","Passenger Transport Final Energy by Fuel (EJ)",0.0553093499944
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","hydrogen","Year",2050,"Vint_2050","Passenger Transport Final Energy by Fuel (EJ)",0.0456667487625
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","liquids","Year",1975,"Vint_1975","Passenger Transport Final Energy by Fuel (EJ)",0.0167326
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","liquids","Year",1990,"Vint_1990","Passenger Transport Final Energy by Fuel (EJ)",0.047708548
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","liquids","Year",2005,"Vint_2005","Passenger Transport Final Energy by Fuel (EJ)",0.133292989
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","liquids","Year",2010,"Vint_2010","Passenger Transport Final Energy by Fuel (EJ)",0.144657687
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","liquids","Year",2015,"Vint_2015","Passenger Transport Final Energy by Fuel (EJ)",0.2114009
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","liquids","Year",2020,"Vint_2020","Passenger Transport Final Energy by Fuel (EJ)",0.28694476
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","liquids","Year",2025,"Vint_2025","Passenger Transport Final Energy by Fuel (EJ)",0.316051391
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","liquids","Year",2030,"Vint_2030","Passenger Transport Final Energy by Fuel (EJ)",0.343895791
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","liquids","Year",2035,"Vint_2035","Passenger Transport Final Energy by Fuel (EJ)",0.3524738139
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","liquids","Year",2040,"Vint_2040","Passenger Transport Final Energy by Fuel (EJ)",0.295431872
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","liquids","Year",2045,"Vint_2045","Passenger Transport Final Energy by Fuel (EJ)",0.09041707648
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","classLabel2","liquids","Year",2050,"Vint_2050","Passenger Transport Final Energy by Fuel (EJ)",0.00128775346098
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","electricity","Year",2005,"Vint_2005","Passenger Transport Final Energy by Fuel (EJ)",3.83e-05
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","electricity","Year",2010,"Vint_2010","Passenger Transport Final Energy by Fuel (EJ)",0.0001547
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","electricity","Year",2015,"Vint_2015","Passenger Transport Final Energy by Fuel (EJ)",0.0002017
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","electricity","Year",2020,"Vint_2020","Passenger Transport Final Energy by Fuel (EJ)",0.000405425
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","electricity","Year",2025,"Vint_2025","Passenger Transport Final Energy by Fuel (EJ)",0.017215633
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","electricity","Year",2030,"Vint_2030","Passenger Transport Final Energy by Fuel (EJ)",0.047389541
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","electricity","Year",2035,"Vint_2035","Passenger Transport Final Energy by Fuel (EJ)",0.078963773
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","electricity","Year",2040,"Vint_2040","Passenger Transport Final Energy by Fuel (EJ)",0.12404295
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","electricity","Year",2045,"Vint_2045","Passenger Transport Final Energy by Fuel (EJ)",0.1997786535
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","electricity","Year",2050,"Vint_2050","Passenger Transport Final Energy by Fuel (EJ)",0.302736615
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","gas","Year",2005,"Vint_2005","Passenger Transport Final Energy by Fuel (EJ)",0.003665456
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","gas","Year",2010,"Vint_2010","Passenger Transport Final Energy by Fuel (EJ)",0.009596874
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","gas","Year",2015,"Vint_2015","Passenger Transport Final Energy by Fuel (EJ)",0.010311959
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","gas","Year",2020,"Vint_2020","Passenger Transport Final Energy by Fuel (EJ)",0.011700097
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","gas","Year",2025,"Vint_2025","Passenger Transport Final Energy by Fuel (EJ)",0.010611984
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","gas","Year",2030,"Vint_2030","Passenger Transport Final Energy by Fuel (EJ)",0.009149121
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","gas","Year",2035,"Vint_2035","Passenger Transport Final Energy by Fuel (EJ)",0.007648534
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","gas","Year",2040,"Vint_2040","Passenger Transport Final Energy by Fuel (EJ)",0.0058394
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","gas","Year",2045,"Vint_2045","Passenger Transport Final Energy by Fuel (EJ)",0.0040736244
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","gas","Year",2050,"Vint_2050","Passenger Transport Final Energy by Fuel (EJ)",0.0017565137737
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","hydrogen","Year",2025,"Vint_2025","Passenger Transport Final Energy by Fuel (EJ)",0.00023824265
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","hydrogen","Year",2030,"Vint_2030","Passenger Transport Final Energy by Fuel (EJ)",0.00191714614
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","hydrogen","Year",2035,"Vint_2035","Passenger Transport Final Energy by Fuel (EJ)",0.00400841459
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","hydrogen","Year",2040,"Vint_2040","Passenger Transport Final Energy by Fuel (EJ)",0.00577971634
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","hydrogen","Year",2045,"Vint_2045","Passenger Transport Final Energy by Fuel (EJ)",0.008081909855
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","hydrogen","Year",2050,"Vint_2050","Passenger Transport Final Energy by Fuel (EJ)",0.0129683175
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","liquids","Year",1975,"Vint_1975","Passenger Transport Final Energy by Fuel (EJ)",0.0477866
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","liquids","Year",1990,"Vint_1990","Passenger Transport Final Energy by Fuel (EJ)",0.13172721
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","liquids","Year",2005,"Vint_2005","Passenger Transport Final Energy by Fuel (EJ)",0.3802811
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","liquids","Year",2010,"Vint_2010","Passenger Transport Final Energy by Fuel (EJ)",0.4123464
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","liquids","Year",2015,"Vint_2015","Passenger Transport Final Energy by Fuel (EJ)",0.5846349
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","liquids","Year",2020,"Vint_2020","Passenger Transport Final Energy by Fuel (EJ)",0.607758939
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","liquids","Year",2025,"Vint_2025","Passenger Transport Final Energy by Fuel (EJ)",0.575300431
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","liquids","Year",2030,"Vint_2030","Passenger Transport Final Energy by Fuel (EJ)",0.512144935
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","liquids","Year",2035,"Vint_2035","Passenger Transport Final Energy by Fuel (EJ)",0.462984865
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","liquids","Year",2040,"Vint_2040","Passenger Transport Final Energy by Fuel (EJ)",0.3725890633
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","liquids","Year",2045,"Vint_2045","Passenger Transport Final Energy by Fuel (EJ)",0.232182756
+"High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","classLabel2","liquids","Year",2050,"Vint_2050","Passenger Transport Final Energy by Fuel (EJ)",0.0760036241
 "High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalConsumBySecEJ","Subsector","building","Year",1990,"Vint_1990","Final Energy by Sector (EJ)",0.0023799
 "High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalConsumBySecEJ","Subsector","building","Year",2005,"Vint_2005","Final Energy by Sector (EJ)",0.0101965
 "High_CarbonNeutral","Rest of Malaysia","Rest of Malaysia","energyFinalConsumBySecEJ","Subsector","building","Year",2010,"Vint_2010","Final Energy by Sector (EJ)",0.0158299

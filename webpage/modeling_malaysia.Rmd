@@ -28,6 +28,17 @@ library(ggplot2)
 
 <!-------------------------->
 <!-------------------------->
+# Introduction
+<!-------------------------->
+<!-------------------------->
+<p align="center"> <img src="images/divider.png"></p>
+
+This page explores the modeling process in depth. First, we walk through how to install GCAM for Southeast Asia, and how to set up our scenarios. Then, we describe the policies modeled and their technical implementation in the model. Finally, we include several sets of figures and the code to replicate them.
+
+<br>
+
+<!-------------------------->
+<!-------------------------->
 # Download GCAM SE Asia
 <!-------------------------->
 <!-------------------------->
@@ -88,7 +99,7 @@ data.frame(
 
 <br>
 
-Below are links to an overview and walkthrough of GCAM.
+Below are links to an overview and walk-through of GCAM.
 
 ```{r presentation-links-table, results = 'show', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE}
 
@@ -125,9 +136,9 @@ dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/configu
             "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/configuration_files/configuration_malaysia_policies.xml",
             "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/configuration_files/configuration_malaysia_carbon_neutral.xml")
 
-xml = c("configuration_seasia_cities_bau.xml",
-        "configuration_seasia_cities_policies.xml",
-        "configuration_seasia_cities_carbon_neutral")
+xml = c("configuration_malaysia_bau.xml",
+        "configuration_malaysia_policies.xml",
+        "configuration_malaysia_carbon_neutral.xml")
 
 data.frame(
   Description = c("Business as Usual Scenario",
@@ -139,7 +150,7 @@ data.frame(
   row_spec(0, background = "#2A2A2A", color = "white")
 ```
 
-
+<br>
 
 <!-------------------------->
 <!-------------------------->
@@ -160,6 +171,8 @@ knitr::include_graphics("./images/policy_table_report.png")
 <br>
 
 The following subsections give additional technical details and explanations for the policies listed above. 
+
+<br>
 
 ## High Efficiency Appliances
 ***
@@ -878,7 +891,7 @@ Hydropower is exogenous in GCAM and has a fixed pathway. The power generation va
 </p>
 
 <p style='margin-left:1em;'>
-1. Create a folder in the input directory eg. `./gcam-core/input/addons/malaysia`.
+1. Create a folder in the input directory e.g.. `./gcam-core/input/addons/malaysia`.
 2. Download the "[elec_gen_shares.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_gen_shares.xml)" file to the folder.
 3. To make adjustments: within each `policy-portfolio-standard` tag in the XML, adjust the following:
 </p>
@@ -987,7 +1000,7 @@ There are two steps to phase out coal generation. The first is to prevent any ne
 </p>
 
 <p style='margin-left:1em;'>
-1. Create a folder in the input directory eg. `./gcam-core/input/addons`.
+1. Create a folder in the input directory e.g.. `./gcam-core/input/addons`.
 2. Download the "[elec_no_new_coal.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_no_new_coal.xml)" and  "[elec_coal_shutdown.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_coal_shutdown.xml)" files to the folder.
 4. To make custom adjustments to the coal retirement trajectory, optionally change the following within each `stub-technology` tag in the retirement XML:
 </p>
@@ -1019,7 +1032,7 @@ There are two steps to phase out coal generation. The first is to prevent any ne
 dt_url <- c("https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/NetZeroC_Malaysia_2035_2050",
             "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/Malaysia_LUC", "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/NetZeroC_global_noMalaysia", "https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/ROW_LUC_noMalaysia")
 
-# add scenario names, filenames, and descriptions of files to this table.
+# add scenario names, file names, and descriptions of files to this table.
 # make sure info in this table matches the links provided above (in the same order).
 data.frame(
   Scenario = c(rep("Carbon Neutral", 4))) %>% 
@@ -1118,10 +1131,10 @@ There are some important considerations: (1) What GHGs are included in the const
 
 5. We adopt a similar approach for the ROW, using the total emissions (tC) in 2020 for all countries as a starting point. (We did not subtract out Malaysia's emissions, as they are quite small globally). It is not absolutely necessary to adopt the very same emissions constraint for the ROW, but the constraint should be strong enough to avoid carbon leakage from Malaysia' net-zero policy.
 
-6. One needs to decide whether and how land use change emissions are incorporated into the constraint. GCAM accounts for fossil fuel and industry CO~2~ emissions separately from land use change CO~2~ emissions. The `Malaysia_LUC.xml` specifies how land use change CO~2~ emissions (LUC-CO~2~) in Malaysia are linked to the ghgpolicy ("CO~2~"). There are two parameters: `price-adjust` and `demand-adjust`. Price-adjust is used to convert prices for different GHG's. A price-adjust of 1.0 for LUC-CO~2~ means the market price on LUC-CO~2~ emissions is the same as the price applied to fossil fuel and industry CO~2~ emissions. A demand-adjust of 1 means that LUC-CO~2~ emissions are counted in the emissions constraint. These two parameters can be adjusted. In the sample files we have a price-adjust of 0, and a demand-adjust of 1. This can be modified depending on the goal and importance of LUC emissions. Note that Malaysia is removed from the `ROW_LUC_noMalaysia.xml`.
+6. One needs to decide whether and how land use change emissions are incorporated into the constraint. GCAM accounts for fossil fuel and industry CO~2~ emissions separately from land use change CO~2~ emissions. The `Malaysia_LUC.xml` specifies how land use change CO~2~ emissions (LUC-CO~2~) in Malaysia are linked to the ghgpolicy ("CO~2~"). There are two parameters: `price-adjust` and `demand-adjust`. Price-adjust is used to convert prices for different GHGs. A price-adjust of 1.0 for LUC-CO~2~ means the market price on LUC-CO~2~ emissions is the same as the price applied to fossil fuel and industry CO~2~ emissions. A demand-adjust of 1 means that LUC-CO~2~ emissions are counted in the emissions constraint. These two parameters can be adjusted. In the sample files we have a price-adjust of 0, and a demand-adjust of 1. This can be modified depending on the goal and importance of LUC emissions. Note that Malaysia is removed from the `ROW_LUC_noMalaysia.xml`.
 
 7. Save the xml files and then point to them in your configuration file by adding the lines: 
-<!---insert exmaple XML filenames--->
+<!---insert example XML file names--->
 `<Value name = "scen">../input/addons/malaysia/NetZeroC_Malaysia_2035_2050.xml</Value>`
 `<Value name = "scen">../input/addons/malaysia/Malaysia_LUC.xml</Value>`
 `<Value name = "scen">../input/addons/malaysia/NetZeroC_global_noMalaysia_2050.xml</Value>`
@@ -1156,7 +1169,7 @@ This section describes how to explore and compare the final output data using GC
 `gcamextractor` is an R package used to extract and process GCAM data and manipulate into standardized tables. `gcamextractor` converts GCAM outputs into commonly used units and aggregates across different classes and sectors for easy use in plots, maps, and tables. For more information, please reference the documentation page found [here](https://jgcri.github.io/gcamextractor/index.html).
 
 The first step is to create a path to the GCAM database, found in the output folder of your GCAM folder, and a list of desired parameters. The `readgcam()` function also requires region names and a specific output folder. 
-Note that due to size limiations on GitHub, the data used here has already been processed, but we include the steps to run it on your own in the following chunk if desired.
+Note that due to size limitations on GitHub, the data used here has already been processed, but we include the steps to run it on your own in the following chunk if desired.
 
 ```{r gcamextractor-setup, echo = TRUE, eval = FALSE, class.source = 'fold-show'}
 # Get desired database paths
@@ -1167,15 +1180,18 @@ carbon_neutral_db <- "../data/malaysia/output/malaysia_carbon_neutral"
 paths <- c(bau_db, policies_db, carbon_neutral_db)
 
 # Choose parameters of interest
-params <- c("elecByTechTWh", "elecConsumByDemandSectorTWh",
-            "emissCO2BySectorNoBio", "emissGHGBySectorGWPAR5", "emissGHGByGasGWPAR5",
-            "energyFinalByFuelEJ", "energyFinalConsumBySecEJ", "energyPrimaryByFuelEJ",
-            "energyFinalSubsecBySectorBuildEJ", "energyFinalSubsecByFuelBuildEJ",
+params <- c("elecByTechTWh", 
+            "emissCO2BySectorNoBio", 
+            "energyFinalByFuelEJ", 
+            "energyFinalConsumBySecEJ", 
+            "energyFinalSubsecBySectorBuildEJ", 
+            "energyFinalSubsecByFuelBuildEJ",
             "energyFinalSubsecByFuelIndusEJ",
-            "transportFreightVMTByMode", "transportPassengerVMTByMode",
-            "transportFreightVMTByFuel", "transportPassengerVMTByFuel",
-            "transportPassengerVMTByTech", "transportFreightVMTByTech",
-            "buildingFloorspace", "gdp", "gdpPerCapita", "pop")
+            "energyFinalByFuelTransportPassEJ",
+            "energyFinalByFuelTransportFreightEJ"
+            "transportFreightVMTByMode", 
+            "transportPassengerVMTByMode",
+            "gdp", "gdpPerCapita", "pop")
 
 # Identify regions
 regions <- c("Malaysia", "KualaLumpur", "Rest of Malaysia")
@@ -1194,20 +1210,23 @@ for(p in paths){
 
 
 ```{r gcamextractor, echo = TRUE, class.source = 'fold-show'}
+# Read in data
 bau <- read.csv("../data/malaysia/gcamextractor/malaysia_bau/gcamDataTable_aggClass1.csv") 
 policies <- read.csv("../data/malaysia/gcamextractor/malaysia_policies/gcamDataTable_aggClass1.csv")
 carbon_neutral <- read.csv("../data/malaysia/gcamextractor/malaysia_carbon_neutral/gcamDataTable_aggClass1.csv")
 
+# Combine data into one data frame
 malaysia <- bind_rows(bau, policies, carbon_neutral) %>%
   filter(region != ("Rest of Malaysia"),
          x > 2000, x <= 2050)
 
+# Reorder scenarios
 malaysia$scenario <- factor(malaysia$scenario, 
                             levels = c("Ref", "High", "High_CarbonNeutral"),
-                            labels = c("Business as Usual", "Policies", "Net Zero"))
+                            labels = c("1. Business as Usual", "2. Policies", "3. Carbon Neutral"))
 
 # Define reference scenario
-REF_SCENARIO <- "Business as Usual"
+REF_SCENARIO <- "1. Business as Usual"
 
 # Use this to access reference scenario plot
 c <- paste0("chart_class_", REF_SCENARIO)
@@ -1238,7 +1257,7 @@ all_data_buildings_aggregate <- malaysia %>%
     param == "energyFinalSubsecBySectorBuildEJ" & grepl("resid rural other appliances", class) ~ "residential other appliances",
     param == "energyFinalSubsecBySectorBuildEJ" & grepl("resid rural cooking", class) ~ "residential cooking",
     param == "energyFinalSubsecBySectorBuildEJ" & grepl("resid rural lighting", class) ~ "residential lighting",
-    # Rename commerical sectors for consistency
+    # Rename commercial sectors for consistency
     param == "energyFinalSubsecBySectorBuildEJ" & grepl("comm cooking", class) ~ "commercial cooking",
     param == "energyFinalSubsecBySectorBuildEJ" & grepl("comm hvac", class) ~ "commercial ACMV",
     param == "energyFinalSubsecBySectorBuildEJ" & grepl("comm lighting", class) ~ "commercial lighting",
@@ -1281,7 +1300,6 @@ malaysia <- malaysia %>%
 * Final energy by fuel
 * Final energy by sector
 * Electricity generation by fuel
-* Electricity generation by sector
 * Building energy by subsector
 * Transportation by mode
 * Transportation by fuel
@@ -1301,7 +1319,7 @@ To enlarge a figure, please click directly on the image. Click on the image agai
 <!-------------------------->
 ***
 
-```{r rchart-socio, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
+```{r rchart-socio, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.topcaption=TRUE, fig.cap="BAU GDP, GDP per capita, and population in Malaysia and Kuala Lumpur"}
 figure_path <- "./markdown_figs"
 
 socioeconomic_parameters <- c("pop", "gdp", "gdpPerCapita")
@@ -1322,7 +1340,6 @@ socioeconomic <- malaysia %>%
 socioeconomic$chart_region_absolute
 
 ```
-
 
 <br> 
 
@@ -1347,7 +1364,7 @@ malaysia_emissions <- co2 %>%
 
 ```
 
-``` {r rchart-emiss-plot, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
+``` {r rchart-emiss-plot, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.topcaption=TRUE, fig.cap="Direct BAU CO~2~ emissions by sector in Malaysia and Kuala Lumpur"}
 emissions <- malaysia_emissions %>%
   mutate(param = units) %>%
   rchart::chart(save = F, 
@@ -1373,13 +1390,13 @@ co2_my <- malaysia %>%
                            TRUE~class)) %>% 
   group_by(scenario, region, class, units, param, x, xLabel, classLabel, subRegion, vintage) %>% 
   summarize(value = sum(value)) %>% 
-  ungroup()
+  ungroup() %>%
+  mutate(param = units)
 
 ```
 
 ``` {r rchart-emiss-plot-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
 emissions_my_plot <- co2_my %>%
-  mutate(param = units) %>%
   rchart::chart(save = T, 
                 show = F,
                 scenRef = REF_SCENARIO,
@@ -1404,12 +1421,20 @@ gas_my <- co2_my %>%
 ```
 
 
-```{r co2-figs, eval = 'TRUE', echo = 'TRUE', results = "show"}
+```{r co2-figs-1, eval = 'TRUE', echo = 'TRUE', results = "show", fig.topcaption=TRUE, fig.cap="Total CO~2~ emissions by scenario in Malaysia"}
 knitr::include_graphics("./markdown_figs/chart_param_co2_lines.png")
-knitr::include_graphics("./markdown_figs/chart_class_co2_emiss.png")
-knitr::include_graphics("./markdown_figs/chart_class_diff_absolute_co2_emiss.png")
+
 ```
 
+```{r co2-figs-2, eval = 'TRUE', echo = 'TRUE', results = "show", fig.topcaption=TRUE, fig.cap="CO~2~ emissions by sector in Malaysia"}
+knitr::include_graphics("./markdown_figs/chart_class_co2_emiss.png")
+
+```
+
+```{r co2-figs-3, eval = 'TRUE', echo = 'TRUE', results = "show", fig.topcaption=TRUE, fig.cap="BAU CO~2~ emissions (left) and the difference between BAU and the Policies and Carbon Neutral scenarios"}
+knitr::include_graphics("./markdown_figs/chart_class_diff_absolute_co2_emiss.png")
+
+```
 
 <br>
 
@@ -1456,10 +1481,19 @@ gas_kl <- co2_kl %>%
 ```
 
 
-```{r co2-figs-kl, eval = 'TRUE', echo = 'TRUE', results = "show"}
+```{r co2-figs-kl-1, eval = 'TRUE', echo = 'TRUE', results = "show", fig.topcaption=TRUE, fig.cap="Total CO~2~ emissions by scenario in Kuala Lumpur"}
 knitr::include_graphics("./markdown_figs/chart_param_co2_lines_kl.png")
+
+```
+
+```{r co2-figs-kl-2, eval = 'TRUE', echo = 'TRUE', results = "show", fig.topcaption=TRUE, fig.cap="CO~2~ emissions by sector in Kuala Lumpur" }
 knitr::include_graphics("./markdown_figs/chart_class_co2_emiss_kl.png")
+
+```
+
+```{r co2-figs-kl-3, eval = 'TRUE', echo = 'TRUE', results = "show", fig.topcaption=TRUE, fig.cap="BAU CO~2~ emissions (left) and the difference between BAU and the Policies and Carbon Neutral scenarios"}
 knitr::include_graphics("./markdown_figs/chart_class_diff_absolute_co2_emiss_kl.png")
+
 ```
 
 <br>
@@ -1502,11 +1536,24 @@ energy_fuel_my <- malaysia %>%
 
 ```
 
-```{r energy-figs, eval = 'TRUE', echo = 'TRUE', results = "show"}
+```{r energy-figs-1, eval = 'TRUE', echo = 'TRUE', results = "show", fig.topcaption=TRUE, fig.cap="Energy consumption by sector in Malaysia"}
 knitr::include_graphics("./markdown_figs/chart_class_energy_consum.png")
+
+```
+
+```{r energy-figs-2, eval = 'TRUE', echo = 'TRUE', results = "show", fig.topcaption=TRUE, fig.cap="BAU energy consumption (left) and the difference between BAU and the Policies and Carbon Neutral scenarios"}
 knitr::include_graphics("./markdown_figs/chart_class_diff_absolute_energy_consum.png")
+
+```
+
+```{r energy-figs-3, eval = 'TRUE', echo = 'TRUE', results = "show", fig.topcaption=TRUE, fig.cap="Energy consumption by fuel in Malaysia"}
 knitr::include_graphics("./markdown_figs/chart_class_energy_fuel.png")
+
+```
+
+```{r energy-figs-4, eval = 'TRUE', echo = 'TRUE', results = "show", fig.topcaption=TRUE, fig.cap="BAU energy consumption (left) and the difference between BAU and the Policies and Carbon Neutral scenarios"}
 knitr::include_graphics("./markdown_figs/chart_class_diff_absolute_energy_fuel.png")
+
 ```
 
 <br>
@@ -1542,12 +1589,25 @@ energy_kl <- malaysia %>%
 
 ```
 
-```{r energy-figs-kl, eval = 'TRUE', echo = 'TRUE', results = "show"}
+```{r energy-figs-kl-1, eval = 'TRUE', echo = 'TRUE', results = "show", fig.topcaption=TRUE, fig.cap="Energy consumption by sector in Kuala Lumpur"}
 knitr::include_graphics("./markdown_figs/chart_class_energy_consum_kl.png")
+
+```
+
+```{r energy-figs-kl-2, eval = 'TRUE', echo = 'TRUE', results = "show", fig.topcaption=TRUE, fig.cap="BAU energy consumption (left) and the difference between BAU and the Policies and Carbon Neutral scenarios"}
 knitr::include_graphics("./markdown_figs/chart_class_diff_absolute_energy_consum_kl.png")
+
+```
+
+```{r energy-figs-kl-3, eval = 'TRUE', echo = 'TRUE', results = "show", fig.topcaption=TRUE, fig.cap="Energy consumption by fuel in Kuala Lumpur"}
 knitr::include_graphics("./markdown_figs/chart_class_energy_fuel_kl.png")
+
+```
+
+```{r energy-figs-kl-4, eval = 'TRUE', echo = 'TRUE', results = "show", fig.topcaption=TRUE, fig.cap="BAU energy consumption (left) and the difference between BAU and the Policies and Carbon Neutral scenarios"}
 knitr::include_graphics("./markdown_figs/chart_class_diff_absolute_energy_fuel_kl.png")
 ```
+
 <br>
 
 <!-------------------------->
@@ -1573,8 +1633,12 @@ electricity_my <- malaysia %>%
 
 ```
 
-```{r elec-figs, eval = 'TRUE', echo = 'TRUE', results = "show"}
+```{r elec-figs-1, eval = 'TRUE', echo = 'TRUE', results = "show", fig.topcaption=TRUE, fig.cap="Electricity generation by fuel in Malaysia"}
 knitr::include_graphics("./markdown_figs/chart_class_elec_gen.png")
+
+```
+
+```{r elec-figs-2, eval = 'TRUE', echo = 'TRUE', results = "show", fig.topcaption=TRUE, fig.cap="BAU electricity generation (left) and the difference between BAU and the Policies and Carbon Neutral scenarios"}
 knitr::include_graphics("./markdown_figs/chart_class_diff_absolute_elec_gen.png")
 ```
 
@@ -1619,13 +1683,25 @@ building_energy_comm_my <- malaysia %>%
 
 ```
 
-```{r bld-figs, eval = 'TRUE', echo = 'TRUE', results = "show"}
+```{r bld-figs-1, eval = 'TRUE', echo = 'TRUE', results = "show", fig.topcaption=TRUE, fig.cap="Residential building energy consumption by sector in Malaysia"}
 knitr::include_graphics("./markdown_figs/chart_class_resid_bld.png")
-knitr::include_graphics("./markdown_figs/chart_class_diff_absolute_resid_bld.png")
-knitr::include_graphics("./markdown_figs/chart_class_comm_bld.png")
-knitr::include_graphics("./markdown_figs/chart_class_diff_absolute_comm_bld.png")
+
 ```
 
+```{r bld-figs-2, eval = 'TRUE', echo = 'TRUE', results = "show", fig.topcaption=TRUE, fig.cap="BAU energy consumption (left) and the difference between BAU and the Policies and Carbon Neutral scenarios"}
+knitr::include_graphics("./markdown_figs/chart_class_diff_absolute_resid_bld.png")
+
+```
+
+```{r bld-figs-3, eval = 'TRUE', echo = 'TRUE', results = "show", fig.topcaption=TRUE, fig.cap="Commercial building energy consumption by sector in Malaysia"}
+knitr::include_graphics("./markdown_figs/chart_class_comm_bld.png")
+
+```
+
+```{r bld-figs-4, eval = 'TRUE', echo = 'TRUE', results = "show", fig.topcaption=TRUE, fig.cap="BAU energy consumption (left) and the difference between BAU and the Policies and Carbon Neutral scenarios"}
+knitr::include_graphics("./markdown_figs/chart_class_diff_absolute_comm_bld.png")
+
+```
 
 <br>
 
@@ -1660,11 +1736,24 @@ building_energy_comm_kl <- malaysia %>%
 
 ```
 
-```{r bld-figs-kl, eval = 'TRUE', echo = 'TRUE', results = "show"}
+```{r bld-figs-kl-1, eval = 'TRUE', echo = 'TRUE', results = "show", fig.topcaption=TRUE, fig.cap="Residential building energy consumption by sector in Kuala Lumpur"}
 knitr::include_graphics("./markdown_figs/chart_class_resid_bld_kl.png")
+
+```
+
+```{r bld-figs-kl-2, eval = 'TRUE', echo = 'TRUE', results = "show", fig.topcaption=TRUE, fig.cap="BAU energy consumption (left) and the difference between BAU and the Policies and Carbon Neutral scenarios"}
 knitr::include_graphics("./markdown_figs/chart_class_diff_absolute_resid_bld_kl.png")
+
+```
+
+```{r bld-figs-kl-3, eval = 'TRUE', echo = 'TRUE', results = "show", fig.topcaption=TRUE, fig.cap="Commercial building energy consumption by sector in Kuala Lumpur"}
 knitr::include_graphics("./markdown_figs/chart_class_comm_bld_kl.png")
+
+```
+
+```{r bld-figs-kl-4, eval = 'TRUE', echo = 'TRUE', results = "show", fig.topcaption=TRUE, fig.cap="BAU energy consumption (left) and the difference between BAU and the Policies and Carbon Neutral scenarios"}
 knitr::include_graphics("./markdown_figs/chart_class_diff_absolute_comm_bld_kl.png")
+
 ```
 
 <br>
@@ -1677,7 +1766,7 @@ knitr::include_graphics("./markdown_figs/chart_class_diff_absolute_comm_bld_kl.p
 
 ##### Malaysia 
 
-```{r rchart-transport-my-sce-mode, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 12, fig.height = 12, out.width = "100%"}
+```{r rchart-transport-my-sce-mode, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
 transport_my_m <- malaysia %>% 
   filter(param == "transportFreightVMTByMode",
          region == "All of Malaysia") %>%
@@ -1706,18 +1795,31 @@ transport_my_m <- malaysia %>%
 
 ```
 
-```{r mode-figs, eval = 'TRUE', echo = 'TRUE', results = "show"}
+```{r mode-figs-1, eval = 'TRUE', echo = 'TRUE', results = "show", fig.topcaption=TRUE, fig.cap="Freight vehicle kilometers traveled by mode in Malaysia"}
 knitr::include_graphics("./markdown_figs/chart_class_freight_mode.png")
+
+```
+
+```{r mode-figs-2, eval = 'TRUE', echo = 'TRUE', results = "show", fig.topcaption=TRUE, fig.cap="BAU freight vehicle kilometers traveled (left) and the difference between BAU and the Policies and Carbon Neutral scenarios"}
 knitr::include_graphics("./markdown_figs/chart_class_diff_absolute_freight_mode.png")
+
+```
+
+```{r mode-figs-3, eval = 'TRUE', echo = 'TRUE', results = "show", fig.topcaption=TRUE, fig.cap="Passenger vehicle kilometers traveled by mode in Malaysia"}
 knitr::include_graphics("./markdown_figs/chart_class_pass_mode.png")
+
+```
+
+```{r mode-figs-4, eval = 'TRUE', echo = 'TRUE', results = "show", fig.topcaption=TRUE, fig.cap="BAU passenger vehicle kilometers traveled (left) and the difference between BAU and the Policies and Carbon Neutral scenarios"}
 knitr::include_graphics("./markdown_figs/chart_class_diff_absolute_pass_mode.png")
+
 ```
 
 <br>
 
 ##### Kuala Lumpur
 
-```{r rchart-transport-kl-sce-mode, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 12, fig.height = 12, out.width = "100%"}
+```{r rchart-transport-kl-sce-mode, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
 transport_kl_m <- malaysia %>% 
   filter(param == "transportFreightVMTByMode",
          region == "KualaLumpur") %>%
@@ -1746,11 +1848,24 @@ transport_kl_m <- malaysia %>%
 
 ```
 
-```{r mode-figs-kl, eval = 'TRUE', echo = 'TRUE', results = "show"}
+```{r mode-figs-kl-1, eval = 'TRUE', echo = 'TRUE', results = "show", fig.topcaption=TRUE, fig.cap="Freight vehicle kilometers traveled in Kuala Lumpur"}
 knitr::include_graphics("./markdown_figs/chart_class_freight_mode_kl.png")
+
+```
+
+```{r mode-figs-kl-2, eval = 'TRUE', echo = 'TRUE', results = "show", fig.topcaption=TRUE, fig.cap="BAU freight vehicle kilometers traveled (left) and the difference between BAU and the Policies and Carbon Neutral scenarios"}
 knitr::include_graphics("./markdown_figs/chart_class_diff_absolute_freight_mode_kl.png")
+
+```
+
+```{r mode-figs-kl-3, eval = 'TRUE', echo = 'TRUE', results = "show", fig.topcaption=TRUE, fig.cap="Passenger vehicle kilometers traveled in Kuala Lumpur"}
 knitr::include_graphics("./markdown_figs/chart_class_pass_mode_kl.png")
+
+```
+
+```{r mode-figs-kl-4, eval = 'TRUE', echo = 'TRUE', results = "show", fig.topcaption=TRUE, fig.cap="BAU passenger vehicle kilometers traveled (left) and the difference between BAU and the Policies and Carbon Neutral scenarios"}
 knitr::include_graphics("./markdown_figs/chart_class_diff_absolute_pass_mode_kl.png")
+
 ```
 
 <br>
@@ -1762,9 +1877,9 @@ knitr::include_graphics("./markdown_figs/chart_class_diff_absolute_pass_mode_kl.
 
 ##### Malaysia 
 
-```{r rchart-transport-my-sce-fuel, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 12, fig.height = 12, out.width = "100%"}
+```{r rchart-transport-my-sce-fuel, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
 transport_my_f <- malaysia %>% 
-  filter(param == "transportFreightVMTByFuel",
+  filter(param == "energyFinalByFuelTransportFreightEJ",
          region == "All of Malaysia") %>%
   mutate(param = units) %>%
   rchart::chart(save = T, 
@@ -1777,7 +1892,7 @@ transport_my_f <- malaysia %>%
                 size_text = 24)
 
 transport_my_f <- malaysia %>% 
-  filter(param == "transportPassengerVMTByFuel",
+  filter(param == "energyFinalByFuelTransportPassEJ",
          region == "All of Malaysia") %>%
   mutate(param = units) %>%
   rchart::chart(save = T, 
@@ -1791,18 +1906,31 @@ transport_my_f <- malaysia %>%
 
 ```
 
-```{r trn-figs, eval = 'TRUE', echo = 'TRUE', results = "show"}
+```{r trn-figs-1, eval = 'TRUE', echo = 'TRUE', results = "show", fig.topcaption=TRUE, fig.cap="Freight energy consumption by fuel in Malaysia"}
 knitr::include_graphics("./markdown_figs/chart_class_freight_fuel.png")
+
+```
+
+```{r trn-figs-2, eval = 'TRUE', echo = 'TRUE', results = "show", fig.topcaption=TRUE, fig.cap="BAU energy consumption (left) and the difference between BAU and the Policies and Carbon Neutral scenarios"}
 knitr::include_graphics("./markdown_figs/chart_class_diff_absolute_freight_fuel.png")
+
+```
+
+```{r trn-figs-3, eval = 'TRUE', echo = 'TRUE', results = "show", fig.topcaption=TRUE, fig.cap="Passenger energy consumption by fuel in Malaysia"}
 knitr::include_graphics("./markdown_figs/chart_class_pass_fuel.png")
+
+```
+
+```{r trn-figs-4, eval = 'TRUE', echo = 'TRUE', results = "show", fig.topcaption=TRUE, fig.cap="BAU energy consumption (left) and the difference between BAU and the Policies and Carbon Neutral scenarios"}
 knitr::include_graphics("./markdown_figs/chart_class_diff_absolute_pass_fuel.png")
+
 ```
 
 <br>
 
 ##### Kuala Lumpur
 
-```{r rchart-transport-kl-sce-fuel, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 12, fig.height = 12, out.width = "100%"}
+```{r rchart-transport-kl-sce-fuel, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
 transport_kl_f <- malaysia %>% 
   filter(param == "transportFreightVMTByFuel",
          region == "KualaLumpur") %>%
@@ -1831,23 +1959,36 @@ transport_kl_f <- malaysia %>%
 
 ```
 
-```{r trn-figs-kl, eval = 'TRUE', echo = 'TRUE', results = "show"}
+```{r trn-figs-kl-1, eval = 'TRUE', echo = 'TRUE', results = "show", fig.topcaption=TRUE, fig.cap="Freight energy consumption by fuel in Kuala Lumpur"}
 knitr::include_graphics("./markdown_figs/chart_class_freight_fuel_kl.png")
+
+```
+
+```{r trn-figs-kl-2, eval = 'TRUE', echo = 'TRUE', results = "show", fig.topcaption=TRUE, fig.cap="BAU energy consumption (left) and the difference between BAU and the Policies and Carbon Neutral scenarios"}
 knitr::include_graphics("./markdown_figs/chart_class_diff_absolute_freight_fuel_kl.png")
+
+```
+
+```{r trn-figs-kl-3, eval = 'TRUE', echo = 'TRUE', results = "show", fig.topcaption=TRUE, fig.cap="Passenger energy consumption by fuel in Kuala Lumpur"}
 knitr::include_graphics("./markdown_figs/chart_class_pass_fuel_kl.png")
+
+```
+
+```{r trn-figs-kl-4, eval = 'TRUE', echo = 'TRUE', results = "show", fig.topcaption=TRUE, fig.cap="BAU energy consumption (left) and the difference between BAU and the Policies and Carbon Neutral scenarios"}
 knitr::include_graphics("./markdown_figs/chart_class_diff_absolute_pass_fuel_kl.png")
+
 ```
 
 <br>
 
 <!-------------------------->
-#### Industry Energy by Subsector {.tabset}
+#### Industry Energy by Fuel {.tabset}
 <!-------------------------->
 ***
 
 ##### Malaysia 
 
-```{r rchart-industry-sce-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 12, fig.height = 12, out.width = "100%"}
+```{r rchart-industry-sce-my, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
 
 industry_energy_my <- malaysia %>% 
   filter(param == "energyFinalSubsecByFuelIndusEJ",
@@ -1864,9 +2005,14 @@ industry_energy_my <- malaysia %>%
 
 ```
 
-```{r indus-figs, eval = 'TRUE', echo = 'TRUE', results = "show"}
+```{r indus-figs-1, eval = 'TRUE', echo = 'TRUE', results = "show", fig.topcaption=TRUE, fig.cap="Industry energy consumption by fuel in Malaysia"}
 knitr::include_graphics("./markdown_figs/chart_class_indus_fuel.png")
+
+```
+
+```{r indus-figs-2, eval = 'TRUE', echo = 'TRUE', results = "show", fig.topcaption=TRUE, fig.cap="BAU energy consumption (left) and the difference between BAU and the Policies and Carbon Neutral scenarios"}
 knitr::include_graphics("./markdown_figs/chart_class_diff_absolute_indus_fuel.png")
+
 ```
 
 <br>
@@ -1891,9 +2037,14 @@ industry_energy_kl <- malaysia %>%
 ```
 
 
-```{r indus-figs-kl, eval = 'TRUE', echo = 'TRUE', results = "show"}
+```{r indus-figs-kl-1, eval = 'TRUE', echo = 'TRUE', results = "show", fig.topcaption=TRUE, fig.cap="Industry energy consumption by fuel in Kuala Lumpur"}
 knitr::include_graphics("./markdown_figs/chart_class_indus_fuel_kl.png")
+
+```
+
+```{r indus-figs-kl-2, eval = 'TRUE', echo = 'TRUE', results = "show", fig.topcaption=TRUE, fig.cap="BAU energy consumption (left) and the difference between BAU and the Policies and Carbon Neutral scenarios"}
 knitr::include_graphics("./markdown_figs/chart_class_diff_absolute_indus_fuel_kl.png")
+
 ```
 
 <br>
@@ -2005,9 +2156,10 @@ bau_valid %>%
 
 <br>
 
-### CO2 emissions by sector
 
-```{r local-emissions-kl, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE}
+```{r local-emissions-kl, results = 'hide', eval = FALSE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE}
+# TODO figure out why this doesn't line up
+
 local_co2 <- read.csv("../data/malaysia/local_data_emissions_by_sector.csv") %>%
   mutate(class = case_when(class == "building" ~ "Buildings",
                            class == "industry" ~ "Industry",
