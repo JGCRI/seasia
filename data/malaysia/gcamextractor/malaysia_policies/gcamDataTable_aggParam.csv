@@ -1,0 +1,1413 @@
+"scenario","region","subRegion","param","xLabel","x","vintage","units","value"
+"High","All of Malaysia","All of Malaysia","buildingFloorspace","Year",1975,"Vint_1975","billion m^2",0.12021474
+"High","All of Malaysia","All of Malaysia","buildingFloorspace","Year",1990,"Vint_1990","billion m^2",0.20329439
+"High","All of Malaysia","All of Malaysia","buildingFloorspace","Year",2005,"Vint_2005","billion m^2",0.36880886
+"High","All of Malaysia","All of Malaysia","buildingFloorspace","Year",2010,"Vint_2010","billion m^2",0.579401
+"High","All of Malaysia","All of Malaysia","buildingFloorspace","Year",2015,"Vint_2015","billion m^2",0.7887459
+"High","All of Malaysia","All of Malaysia","buildingFloorspace","Year",2020,"Vint_2020","billion m^2",0.8836
+"High","All of Malaysia","All of Malaysia","buildingFloorspace","Year",2025,"Vint_2025","billion m^2",0.9828
+"High","All of Malaysia","All of Malaysia","buildingFloorspace","Year",2030,"Vint_2030","billion m^2",1.0689
+"High","All of Malaysia","All of Malaysia","buildingFloorspace","Year",2035,"Vint_2035","billion m^2",1.1479
+"High","All of Malaysia","All of Malaysia","buildingFloorspace","Year",2040,"Vint_2040","billion m^2",1.2244
+"High","All of Malaysia","All of Malaysia","buildingFloorspace","Year",2045,"Vint_2045","billion m^2",1.2973
+"High","All of Malaysia","All of Malaysia","buildingFloorspace","Year",2050,"Vint_2050","billion m^2",1.3642
+"High","All of Malaysia","All of Malaysia","buildingFloorspace","Year",2055,"Vint_2055","billion m^2",1.3642
+"High","All of Malaysia","All of Malaysia","buildingFloorspace","Year",2060,"Vint_2060","billion m^2",1.3642
+"High","All of Malaysia","All of Malaysia","buildingFloorspace","Year",2065,"Vint_2065","billion m^2",1.3642
+"High","All of Malaysia","All of Malaysia","buildingFloorspace","Year",2070,"Vint_2070","billion m^2",1.3642
+"High","All of Malaysia","All of Malaysia","buildingFloorspace","Year",2075,"Vint_2075","billion m^2",1.3642
+"High","All of Malaysia","All of Malaysia","buildingFloorspace","Year",2080,"Vint_2080","billion m^2",1.3642
+"High","All of Malaysia","All of Malaysia","buildingFloorspace","Year",2085,"Vint_2085","billion m^2",1.3642
+"High","All of Malaysia","All of Malaysia","buildingFloorspace","Year",2090,"Vint_2090","billion m^2",1.3642
+"High","All of Malaysia","All of Malaysia","buildingFloorspace","Year",2095,"Vint_2095","billion m^2",1.3642
+"High","All of Malaysia","All of Malaysia","buildingFloorspace","Year",2100,"Vint_2100","billion m^2",1.3642
+"High","All of Malaysia","All of Malaysia","elecByTechTWh","Year",1990,"Vint_1990","Electricity Generation by Fuel (TWh)",23.0145038888891
+"High","All of Malaysia","All of Malaysia","elecByTechTWh","Year",2005,"Vint_2005","Electricity Generation by Fuel (TWh)",82.6713869222229
+"High","All of Malaysia","All of Malaysia","elecByTechTWh","Year",2010,"Vint_2010","Electricity Generation by Fuel (TWh)",124.783825555557
+"High","All of Malaysia","All of Malaysia","elecByTechTWh","Year",2015,"Vint_2015","Electricity Generation by Fuel (TWh)",150.045726194446
+"High","All of Malaysia","All of Malaysia","elecByTechTWh","Year",2020,"Vint_2020","Electricity Generation by Fuel (TWh)",171.350610369065
+"High","All of Malaysia","All of Malaysia","elecByTechTWh","Year",2025,"Vint_2025","Electricity Generation by Fuel (TWh)",176.206481805999
+"High","All of Malaysia","All of Malaysia","elecByTechTWh","Year",2030,"Vint_2030","Electricity Generation by Fuel (TWh)",189.90539655211
+"High","All of Malaysia","All of Malaysia","elecByTechTWh","Year",2035,"Vint_2035","Electricity Generation by Fuel (TWh)",208.153286541832
+"High","All of Malaysia","All of Malaysia","elecByTechTWh","Year",2040,"Vint_2040","Electricity Generation by Fuel (TWh)",228.99491735711
+"High","All of Malaysia","All of Malaysia","elecByTechTWh","Year",2045,"Vint_2045","Electricity Generation by Fuel (TWh)",252.371859269888
+"High","All of Malaysia","All of Malaysia","elecByTechTWh","Year",2050,"Vint_2050","Electricity Generation by Fuel (TWh)",275.126804031102
+"High","All of Malaysia","All of Malaysia","elecConsumByDemandSectorTWh","Year",1975,"Vint_1975","Electricity Consumption by Sector (TWh)",3.35936888888892
+"High","All of Malaysia","All of Malaysia","elecConsumByDemandSectorTWh","Year",1990,"Vint_1990","Electricity Consumption by Sector (TWh)",20.0031014444446
+"High","All of Malaysia","All of Malaysia","elecConsumByDemandSectorTWh","Year",2005,"Vint_2005","Electricity Consumption by Sector (TWh)",72.7529771388895
+"High","All of Malaysia","All of Malaysia","elecConsumByDemandSectorTWh","Year",2010,"Vint_2010","Electricity Consumption by Sector (TWh)",111.005186972223
+"High","All of Malaysia","All of Malaysia","elecConsumByDemandSectorTWh","Year",2015,"Vint_2015","Electricity Consumption by Sector (TWh)",134.600310583334
+"High","All of Malaysia","All of Malaysia","elecConsumByDemandSectorTWh","Year",2020,"Vint_2020","Electricity Consumption by Sector (TWh)",153.935605444446
+"High","All of Malaysia","All of Malaysia","elecConsumByDemandSectorTWh","Year",2025,"Vint_2025","Electricity Consumption by Sector (TWh)",158.652386192104
+"High","All of Malaysia","All of Malaysia","elecConsumByDemandSectorTWh","Year",2030,"Vint_2030","Electricity Consumption by Sector (TWh)",171.844727247693
+"High","All of Malaysia","All of Malaysia","elecConsumByDemandSectorTWh","Year",2035,"Vint_2035","Electricity Consumption by Sector (TWh)",189.353477329191
+"High","All of Malaysia","All of Malaysia","elecConsumByDemandSectorTWh","Year",2040,"Vint_2040","Electricity Consumption by Sector (TWh)",209.500853559248
+"High","All of Malaysia","All of Malaysia","elecConsumByDemandSectorTWh","Year",2045,"Vint_2045","Electricity Consumption by Sector (TWh)",231.197173545722
+"High","All of Malaysia","All of Malaysia","elecConsumByDemandSectorTWh","Year",2050,"Vint_2050","Electricity Consumption by Sector (TWh)",251.995398893669
+"High","All of Malaysia","All of Malaysia","emissCO2BySectorNoBio","Year",1975,"Vint_1975","CO2 emissions - (MTCO2)",12.5621518938667
+"High","All of Malaysia","All of Malaysia","emissCO2BySectorNoBio","Year",1980,"Vint_1980","CO2 emissions - (MTCO2)",161.705851637422
+"High","All of Malaysia","All of Malaysia","emissCO2BySectorNoBio","Year",1985,"Vint_1985","CO2 emissions - (MTCO2)",162.764003925032
+"High","All of Malaysia","All of Malaysia","emissCO2BySectorNoBio","Year",1990,"Vint_1990","CO2 emissions - (MTCO2)",60.8944362029667
+"High","All of Malaysia","All of Malaysia","emissCO2BySectorNoBio","Year",1990,"Vint_1990","CO2 emissions - (MTCO2)",163.021887718837
+"High","All of Malaysia","All of Malaysia","emissCO2BySectorNoBio","Year",1995,"Vint_1995","CO2 emissions - (MTCO2)",12.920814560951
+"High","All of Malaysia","All of Malaysia","emissCO2BySectorNoBio","Year",2000,"Vint_2000","CO2 emissions - (MTCO2)",-1.74179061296057
+"High","All of Malaysia","All of Malaysia","emissCO2BySectorNoBio","Year",2005,"Vint_2005","CO2 emissions - (MTCO2)",186.298425902967
+"High","All of Malaysia","All of Malaysia","emissCO2BySectorNoBio","Year",2005,"Vint_2005","CO2 emissions - (MTCO2)",-9.52513518521619
+"High","All of Malaysia","All of Malaysia","emissCO2BySectorNoBio","Year",2010,"Vint_2010","CO2 emissions - (MTCO2)",226.125235081628
+"High","All of Malaysia","All of Malaysia","emissCO2BySectorNoBio","Year",2010,"Vint_2010","CO2 emissions - (MTCO2)",-52.1850760184978
+"High","All of Malaysia","All of Malaysia","emissCO2BySectorNoBio","Year",2015,"Vint_2015","CO2 emissions - (MTCO2)",262.359968693349
+"High","All of Malaysia","All of Malaysia","emissCO2BySectorNoBio","Year",2015,"Vint_2015","CO2 emissions - (MTCO2)",-35.2900829247203
+"High","All of Malaysia","All of Malaysia","emissCO2BySectorNoBio","Year",2020,"Vint_2020","CO2 emissions - (MTCO2)",283.725469349251
+"High","All of Malaysia","All of Malaysia","emissCO2BySectorNoBio","Year",2020,"Vint_2020","CO2 emissions - (MTCO2)",19.7957254993344
+"High","All of Malaysia","All of Malaysia","emissCO2BySectorNoBio","Year",2025,"Vint_2025","CO2 emissions - (MTCO2)",282.070724461285
+"High","All of Malaysia","All of Malaysia","emissCO2BySectorNoBio","Year",2025,"Vint_2025","CO2 emissions - (MTCO2)",12.2821043452454
+"High","All of Malaysia","All of Malaysia","emissCO2BySectorNoBio","Year",2030,"Vint_2030","CO2 emissions - (MTCO2)",271.157738375483
+"High","All of Malaysia","All of Malaysia","emissCO2BySectorNoBio","Year",2030,"Vint_2030","CO2 emissions - (MTCO2)",13.2840420034584
+"High","All of Malaysia","All of Malaysia","emissCO2BySectorNoBio","Year",2035,"Vint_2035","CO2 emissions - (MTCO2)",261.377931187607
+"High","All of Malaysia","All of Malaysia","emissCO2BySectorNoBio","Year",2035,"Vint_2035","CO2 emissions - (MTCO2)",-2.74898640991719
+"High","All of Malaysia","All of Malaysia","emissCO2BySectorNoBio","Year",2040,"Vint_2040","CO2 emissions - (MTCO2)",248.936297920302
+"High","All of Malaysia","All of Malaysia","emissCO2BySectorNoBio","Year",2040,"Vint_2040","CO2 emissions - (MTCO2)",7.0103472631334
+"High","All of Malaysia","All of Malaysia","emissCO2BySectorNoBio","Year",2045,"Vint_2045","CO2 emissions - (MTCO2)",220.347724331171
+"High","All of Malaysia","All of Malaysia","emissCO2BySectorNoBio","Year",2045,"Vint_2045","CO2 emissions - (MTCO2)",28.8606914480423
+"High","All of Malaysia","All of Malaysia","emissCO2BySectorNoBio","Year",2050,"Vint_2050","CO2 emissions - (MTCO2)",191.559130223217
+"High","All of Malaysia","All of Malaysia","emissCO2BySectorNoBio","Year",2050,"Vint_2050","CO2 emissions - (MTCO2)",30.7449458198654
+"High","All of Malaysia","All of Malaysia","emissCO2BySectorNoBio","Year",2055,"Vint_2055","CO2 emissions - (MTCO2)",-3.17875081337191
+"High","All of Malaysia","All of Malaysia","emissCO2BySectorNoBio","Year",2060,"Vint_2060","CO2 emissions - (MTCO2)",-2.29559267431461
+"High","All of Malaysia","All of Malaysia","emissCO2BySectorNoBio","Year",2065,"Vint_2065","CO2 emissions - (MTCO2)",-1.60896307127158
+"High","All of Malaysia","All of Malaysia","emissCO2BySectorNoBio","Year",2070,"Vint_2070","CO2 emissions - (MTCO2)",-1.1214932439621
+"High","All of Malaysia","All of Malaysia","emissCO2BySectorNoBio","Year",2075,"Vint_2075","CO2 emissions - (MTCO2)",-0.777697707167663
+"High","All of Malaysia","All of Malaysia","emissCO2BySectorNoBio","Year",2080,"Vint_2080","CO2 emissions - (MTCO2)",-0.537378358910934
+"High","All of Malaysia","All of Malaysia","emissCO2BySectorNoBio","Year",2085,"Vint_2085","CO2 emissions - (MTCO2)",-0.370530132289354
+"High","All of Malaysia","All of Malaysia","emissCO2BySectorNoBio","Year",2090,"Vint_2090","CO2 emissions - (MTCO2)",-0.255170311134773
+"High","All of Malaysia","All of Malaysia","emissCO2BySectorNoBio","Year",2095,"Vint_2095","CO2 emissions - (MTCO2)",-0.175599226559233
+"High","All of Malaysia","All of Malaysia","emissCO2BySectorNoBio","Year",2100,"Vint_2100","CO2 emissions - (MTCO2)",-0.120787720100839
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",12.5621526272
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",4.435836457021
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",4.22369574471
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",1980,"Vint_1980","GHG emissions (MTCO2eq)",161.705851637422
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",1985,"Vint_1985","GHG emissions (MTCO2eq)",162.764003925032
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",60.8944384029667
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",163.021887718837
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",18.1836115819725
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",0.164654478
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",7.41608578335
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",1995,"Vint_1995","GHG emissions (MTCO2eq)",12.920814560951
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2000,"Vint_2000","GHG emissions (MTCO2eq)",-1.74179061296057
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",186.298425902967
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",-9.52513518521619
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",34.36597266873
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",1.412443188385
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",16.87000372274
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",226.125215627667
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",-52.1850760184978
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",32.09435628808
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",3.338268331605
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",18.0977231760875
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",262.359652642633
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",-35.2900829247203
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",36.55723122012
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",4.835826446305
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",19.8670512914228
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",283.724909792043
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",19.7957254993344
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",37.773245905321
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",3.846442257538
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",22.1939883684558
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",282.070641863582
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",12.2821043452454
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",36.0586358176675
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",3.724036827505
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",21.8671031717215
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",271.157667908757
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",13.2840420034584
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",35.89345904185
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",3.5881669276575
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",21.5514108928843
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",261.377858134172
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",-2.74898640991719
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",35.6507353041933
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",3.5140319224625
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",20.6970814668897
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",248.936172057357
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",7.0103472631334
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",35.2402886323292
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",3.4033119315945
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",20.5839236019685
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",220.347520636045
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",28.8606914480423
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",34.2980657458827
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",3.416236347577
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",20.8743041960104
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",191.558786505992
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",30.7449458198654
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",32.1373115356052
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",3.4153081764975
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",20.8547332030568
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2055,"Vint_2055","GHG emissions (MTCO2eq)",-3.17875081337191
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2060,"Vint_2060","GHG emissions (MTCO2eq)",-2.29559267431461
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2065,"Vint_2065","GHG emissions (MTCO2eq)",-1.60896307127158
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2070,"Vint_2070","GHG emissions (MTCO2eq)",-1.1214932439621
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2075,"Vint_2075","GHG emissions (MTCO2eq)",-0.777697707167663
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2080,"Vint_2080","GHG emissions (MTCO2eq)",-0.537378358910934
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2085,"Vint_2085","GHG emissions (MTCO2eq)",-0.370530132289354
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2090,"Vint_2090","GHG emissions (MTCO2eq)",-0.255170311134773
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2095,"Vint_2095","GHG emissions (MTCO2eq)",-0.175599226559233
+"High","All of Malaysia","All of Malaysia","emissGHGByGasGWPAR5","Year",2100,"Vint_2100","GHG emissions (MTCO2eq)",-0.120787720100839
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",12.5621526272
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",4.435836457021
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",4.22369574471
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",1980,"Vint_1980","GHG emissions (MTCO2eq)",161.705851637422
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",1985,"Vint_1985","GHG emissions (MTCO2eq)",162.764003925032
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",60.8944384029667
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",163.021887718837
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",18.1836115819725
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",0.164654478
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",7.41608578335
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",1995,"Vint_1995","GHG emissions (MTCO2eq)",12.920814560951
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2000,"Vint_2000","GHG emissions (MTCO2eq)",-1.74179061296057
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",186.298425902967
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",-9.52513518521619
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",34.36597266873
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",1.412443188385
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",16.87000372274
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",226.125215627667
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",-52.1850760184978
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",32.09435628808
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",3.338268331605
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",18.0977231760875
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",262.359652642633
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",-35.2900829247203
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",36.55723122012
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",4.835826446305
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",19.8670512914228
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",283.724909792043
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",19.7957254993344
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",37.773245905321
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",3.846442257538
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",22.1939883684558
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",282.070641863582
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",12.2821043452454
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",36.0586358176675
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",3.724036827505
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",21.8671031717215
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",271.157667908757
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",13.2840420034584
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",35.89345904185
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",3.5881669276575
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",21.5514108928843
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",261.377858134172
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",-2.74898640991719
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",35.6507353041933
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",3.5140319224625
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",20.6970814668897
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",248.936172057357
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",7.0103472631334
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",35.2402886323292
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",3.4033119315945
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",20.5839236019685
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",220.347520636045
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",28.8606914480423
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",34.2980657458827
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",3.416236347577
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",20.8743041960104
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",191.558786505992
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",30.7449458198654
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",32.1373115356052
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",3.4153081764975
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",20.8547332030568
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2055,"Vint_2055","GHG emissions (MTCO2eq)",-3.17875081337191
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2060,"Vint_2060","GHG emissions (MTCO2eq)",-2.29559267431461
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2065,"Vint_2065","GHG emissions (MTCO2eq)",-1.60896307127158
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2070,"Vint_2070","GHG emissions (MTCO2eq)",-1.1214932439621
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2075,"Vint_2075","GHG emissions (MTCO2eq)",-0.777697707167663
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2080,"Vint_2080","GHG emissions (MTCO2eq)",-0.537378358910934
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2085,"Vint_2085","GHG emissions (MTCO2eq)",-0.370530132289354
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2090,"Vint_2090","GHG emissions (MTCO2eq)",-0.255170311134773
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2095,"Vint_2095","GHG emissions (MTCO2eq)",-0.175599226559233
+"High","All of Malaysia","All of Malaysia","emissGHGBySectorGWPAR5","Year",2100,"Vint_2100","GHG emissions (MTCO2eq)",-0.120787720100839
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelEJ","Year",1975,"Vint_1975","Final Energy by Fuel (EJ)",0.20368709269
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelEJ","Year",1990,"Vint_1990","Final Energy by Fuel (EJ)",0.65113152454
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelEJ","Year",2005,"Vint_2005","Final Energy by Fuel (EJ)",2.00478828424
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelEJ","Year",2010,"Vint_2010","Final Energy by Fuel (EJ)",2.1225852613
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelEJ","Year",2015,"Vint_2015","Final Energy by Fuel (EJ)",2.69038530725
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelEJ","Year",2020,"Vint_2020","Final Energy by Fuel (EJ)",2.99227155976992
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelEJ","Year",2025,"Vint_2025","Final Energy by Fuel (EJ)",2.99385176663356
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelEJ","Year",2030,"Vint_2030","Final Energy by Fuel (EJ)",2.97979286232485
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelEJ","Year",2035,"Vint_2035","Final Energy by Fuel (EJ)",2.96505281375094
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelEJ","Year",2040,"Vint_2040","Final Energy by Fuel (EJ)",2.9607471442655
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelEJ","Year",2045,"Vint_2045","Final Energy by Fuel (EJ)",2.9710138804538
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelEJ","Year",2050,"Vint_2050","Final Energy by Fuel (EJ)",2.99026156302061
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","Year",1975,"Vint_1975","Passenger Transport Final Energy by Fuel (EJ)",0.0189691869
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","Year",1990,"Vint_1990","Passenger Transport Final Energy by Fuel (EJ)",0.0533845156
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","Year",2005,"Vint_2005","Passenger Transport Final Energy by Fuel (EJ)",0.144735194
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","Year",2010,"Vint_2010","Passenger Transport Final Energy by Fuel (EJ)",0.1564157775
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","Year",2015,"Vint_2015","Passenger Transport Final Energy by Fuel (EJ)",0.2272798499
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","Year",2020,"Vint_2020","Passenger Transport Final Energy by Fuel (EJ)",0.3053466003
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","Year",2025,"Vint_2025","Passenger Transport Final Energy by Fuel (EJ)",0.335492284677571
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","Year",2030,"Vint_2030","Passenger Transport Final Energy by Fuel (EJ)",0.368173211870847
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","Year",2035,"Vint_2035","Passenger Transport Final Energy by Fuel (EJ)",0.392043464611774
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","Year",2040,"Vint_2040","Passenger Transport Final Energy by Fuel (EJ)",0.416037039863543
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","Year",2045,"Vint_2045","Passenger Transport Final Energy by Fuel (EJ)",0.442847871802984
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportFreightEJ","Year",2050,"Vint_2050","Passenger Transport Final Energy by Fuel (EJ)",0.469962519248
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","Year",1975,"Vint_1975","Passenger Transport Final Energy by Fuel (EJ)",0.054093119
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","Year",1990,"Vint_1990","Passenger Transport Final Energy by Fuel (EJ)",0.147217499
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","Year",2005,"Vint_2005","Passenger Transport Final Energy by Fuel (EJ)",0.41611463
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","Year",2010,"Vint_2010","Passenger Transport Final Energy by Fuel (EJ)",0.454248313
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","Year",2015,"Vint_2015","Passenger Transport Final Energy by Fuel (EJ)",0.6371649301
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","Year",2020,"Vint_2020","Passenger Transport Final Energy by Fuel (EJ)",0.66073201023
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","Year",2025,"Vint_2025","Passenger Transport Final Energy by Fuel (EJ)",0.6400850057915
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","Year",2030,"Vint_2030","Passenger Transport Final Energy by Fuel (EJ)",0.6036695096124
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","Year",2035,"Vint_2035","Passenger Transport Final Energy by Fuel (EJ)",0.5859896871347
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","Year",2040,"Vint_2040","Passenger Transport Final Energy by Fuel (EJ)",0.5771701768132
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","Year",2045,"Vint_2045","Passenger Transport Final Energy by Fuel (EJ)",0.5872412132087
+"High","All of Malaysia","All of Malaysia","energyFinalByFuelTransportPassEJ","Year",2050,"Vint_2050","Passenger Transport Final Energy by Fuel (EJ)",0.611602452613
+"High","All of Malaysia","All of Malaysia","energyFinalConsumBySecEJ","Year",1975,"Vint_1975","Final Energy by Sector (EJ)",0.20368709269
+"High","All of Malaysia","All of Malaysia","energyFinalConsumBySecEJ","Year",1990,"Vint_1990","Final Energy by Sector (EJ)",0.65113152454
+"High","All of Malaysia","All of Malaysia","energyFinalConsumBySecEJ","Year",2005,"Vint_2005","Final Energy by Sector (EJ)",2.00460048424
+"High","All of Malaysia","All of Malaysia","energyFinalConsumBySecEJ","Year",2010,"Vint_2010","Final Energy by Sector (EJ)",2.1218305646
+"High","All of Malaysia","All of Malaysia","energyFinalConsumBySecEJ","Year",2015,"Vint_2015","Final Energy by Sector (EJ)",2.68940642335
+"High","All of Malaysia","All of Malaysia","energyFinalConsumBySecEJ","Year",2020,"Vint_2020","Final Energy by Sector (EJ)",2.99079465896992
+"High","All of Malaysia","All of Malaysia","energyFinalConsumBySecEJ","Year",2025,"Vint_2025","Final Energy by Sector (EJ)",2.97257027367199
+"High","All of Malaysia","All of Malaysia","energyFinalConsumBySecEJ","Year",2030,"Vint_2030","Final Energy by Sector (EJ)",2.92238120262596
+"High","All of Malaysia","All of Malaysia","energyFinalConsumBySecEJ","Year",2035,"Vint_2035","Final Energy by Sector (EJ)",2.86299006763346
+"High","All of Malaysia","All of Malaysia","energyFinalConsumBySecEJ","Year",2040,"Vint_2040","Final Energy by Sector (EJ)",2.79411883580451
+"High","All of Malaysia","All of Malaysia","energyFinalConsumBySecEJ","Year",2045,"Vint_2045","Final Energy by Sector (EJ)",2.72254480453341
+"High","All of Malaysia","All of Malaysia","energyFinalConsumBySecEJ","Year",2050,"Vint_2050","Final Energy by Sector (EJ)",2.64886321371681
+"High","All of Malaysia","All of Malaysia","energyFinalSubsecByFuelBuildEJ","Year",1990,"Vint_1990","Building Final Energy by Fuel (EJ)",0.0861299223
+"High","All of Malaysia","All of Malaysia","energyFinalSubsecByFuelBuildEJ","Year",2005,"Vint_2005","Building Final Energy by Fuel (EJ)",0.2049757536
+"High","All of Malaysia","All of Malaysia","energyFinalSubsecByFuelBuildEJ","Year",2010,"Vint_2010","Building Final Energy by Fuel (EJ)",0.2925658602
+"High","All of Malaysia","All of Malaysia","energyFinalSubsecByFuelBuildEJ","Year",2015,"Vint_2015","Building Final Energy by Fuel (EJ)",0.31676603295
+"High","All of Malaysia","All of Malaysia","energyFinalSubsecByFuelBuildEJ","Year",2020,"Vint_2020","Building Final Energy by Fuel (EJ)",0.356428634237
+"High","All of Malaysia","All of Malaysia","energyFinalSubsecByFuelBuildEJ","Year",2025,"Vint_2025","Building Final Energy by Fuel (EJ)",0.358010900564
+"High","All of Malaysia","All of Malaysia","energyFinalSubsecByFuelBuildEJ","Year",2030,"Vint_2030","Building Final Energy by Fuel (EJ)",0.353614415454
+"High","All of Malaysia","All of Malaysia","energyFinalSubsecByFuelBuildEJ","Year",2035,"Vint_2035","Building Final Energy by Fuel (EJ)",0.350108773674
+"High","All of Malaysia","All of Malaysia","energyFinalSubsecByFuelBuildEJ","Year",2040,"Vint_2040","Building Final Energy by Fuel (EJ)",0.348134167924
+"High","All of Malaysia","All of Malaysia","energyFinalSubsecByFuelBuildEJ","Year",2045,"Vint_2045","Building Final Energy by Fuel (EJ)",0.3444444717563
+"High","All of Malaysia","All of Malaysia","energyFinalSubsecByFuelBuildEJ","Year",2050,"Vint_2050","Building Final Energy by Fuel (EJ)",0.3456235099205
+"High","All of Malaysia","All of Malaysia","energyFinalSubsecByFuelIndusEJ","Year",1975,"Vint_1975","Industry Final Energy by Fuel (EJ)",0.014739206
+"High","All of Malaysia","All of Malaysia","energyFinalSubsecByFuelIndusEJ","Year",1990,"Vint_1990","Industry Final Energy by Fuel (EJ)",0.052714361
+"High","All of Malaysia","All of Malaysia","energyFinalSubsecByFuelIndusEJ","Year",2005,"Vint_2005","Industry Final Energy by Fuel (EJ)",0.1515802778
+"High","All of Malaysia","All of Malaysia","energyFinalSubsecByFuelIndusEJ","Year",2010,"Vint_2010","Industry Final Energy by Fuel (EJ)",0.1559692929
+"High","All of Malaysia","All of Malaysia","energyFinalSubsecByFuelIndusEJ","Year",2015,"Vint_2015","Industry Final Energy by Fuel (EJ)",0.1880706709
+"High","All of Malaysia","All of Malaysia","energyFinalSubsecByFuelIndusEJ","Year",2020,"Vint_2020","Industry Final Energy by Fuel (EJ)",0.21750282059292
+"High","All of Malaysia","All of Malaysia","energyFinalSubsecByFuelIndusEJ","Year",2025,"Vint_2025","Industry Final Energy by Fuel (EJ)",0.22663765608049
+"High","All of Malaysia","All of Malaysia","energyFinalSubsecByFuelIndusEJ","Year",2030,"Vint_2030","Industry Final Energy by Fuel (EJ)",0.2383588646576
+"High","All of Malaysia","All of Malaysia","energyFinalSubsecByFuelIndusEJ","Year",2035,"Vint_2035","Industry Final Energy by Fuel (EJ)",0.248460810759813
+"High","All of Malaysia","All of Malaysia","energyFinalSubsecByFuelIndusEJ","Year",2040,"Vint_2040","Industry Final Energy by Fuel (EJ)",0.255252883464487
+"High","All of Malaysia","All of Malaysia","energyFinalSubsecByFuelIndusEJ","Year",2045,"Vint_2045","Industry Final Energy by Fuel (EJ)",0.260105668635867
+"High","All of Malaysia","All of Malaysia","energyFinalSubsecByFuelIndusEJ","Year",2050,"Vint_2050","Industry Final Energy by Fuel (EJ)",0.262084881518607
+"High","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","Year",1990,"Vint_1990","Building Final Energy By Subsector (EJ)",0.0861299223
+"High","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","Year",2005,"Vint_2005","Building Final Energy By Subsector (EJ)",0.2049757536
+"High","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","Year",2010,"Vint_2010","Building Final Energy By Subsector (EJ)",0.2925658602
+"High","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","Year",2015,"Vint_2015","Building Final Energy By Subsector (EJ)",0.31676603295
+"High","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","Year",2020,"Vint_2020","Building Final Energy By Subsector (EJ)",0.356428634237
+"High","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","Year",2025,"Vint_2025","Building Final Energy By Subsector (EJ)",0.358010900564
+"High","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","Year",2030,"Vint_2030","Building Final Energy By Subsector (EJ)",0.353614415454
+"High","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","Year",2035,"Vint_2035","Building Final Energy By Subsector (EJ)",0.350108773674
+"High","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","Year",2040,"Vint_2040","Building Final Energy By Subsector (EJ)",0.348134167924
+"High","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","Year",2045,"Vint_2045","Building Final Energy By Subsector (EJ)",0.3444444717563
+"High","All of Malaysia","All of Malaysia","energyFinalSubsecBySectorBuildEJ","Year",2050,"Vint_2050","Building Final Energy By Subsector (EJ)",0.3456235099205
+"High","All of Malaysia","All of Malaysia","gdp","Year",1975,"Vint_1975","GDP (Billion 1990 USD)",38.912
+"High","All of Malaysia","All of Malaysia","gdp","Year",1990,"Vint_1990","GDP (Billion 1990 USD)",107.92
+"High","All of Malaysia","All of Malaysia","gdp","Year",2005,"Vint_2005","GDP (Billion 1990 USD)",270.2601
+"High","All of Malaysia","All of Malaysia","gdp","Year",2010,"Vint_2010","GDP (Billion 1990 USD)",336.4232
+"High","All of Malaysia","All of Malaysia","gdp","Year",2015,"Vint_2015","GDP (Billion 1990 USD)",435.4873
+"High","All of Malaysia","All of Malaysia","gdp","Year",2020,"Vint_2020","GDP (Billion 1990 USD)",636.0702
+"High","All of Malaysia","All of Malaysia","gdp","Year",2025,"Vint_2025","GDP (Billion 1990 USD)",743.53
+"High","All of Malaysia","All of Malaysia","gdp","Year",2030,"Vint_2030","GDP (Billion 1990 USD)",876.0255
+"High","All of Malaysia","All of Malaysia","gdp","Year",2035,"Vint_2035","GDP (Billion 1990 USD)",1030.174
+"High","All of Malaysia","All of Malaysia","gdp","Year",2040,"Vint_2040","GDP (Billion 1990 USD)",1196.1819
+"High","All of Malaysia","All of Malaysia","gdp","Year",2045,"Vint_2045","GDP (Billion 1990 USD)",1361.9375
+"High","All of Malaysia","All of Malaysia","gdp","Year",2050,"Vint_2050","GDP (Billion 1990 USD)",1519.6076
+"High","All of Malaysia","All of Malaysia","gdp","Year",2055,"Vint_2055","GDP (Billion 1990 USD)",1664.843
+"High","All of Malaysia","All of Malaysia","gdp","Year",2060,"Vint_2060","GDP (Billion 1990 USD)",1797.5937
+"High","All of Malaysia","All of Malaysia","gdp","Year",2065,"Vint_2065","GDP (Billion 1990 USD)",1919.1188
+"High","All of Malaysia","All of Malaysia","gdp","Year",2070,"Vint_2070","GDP (Billion 1990 USD)",2031.0645
+"High","All of Malaysia","All of Malaysia","gdp","Year",2075,"Vint_2075","GDP (Billion 1990 USD)",2137.6309
+"High","All of Malaysia","All of Malaysia","gdp","Year",2080,"Vint_2080","GDP (Billion 1990 USD)",2247.751
+"High","All of Malaysia","All of Malaysia","gdp","Year",2085,"Vint_2085","GDP (Billion 1990 USD)",2366.9657
+"High","All of Malaysia","All of Malaysia","gdp","Year",2090,"Vint_2090","GDP (Billion 1990 USD)",2495.2481
+"High","All of Malaysia","All of Malaysia","gdp","Year",2095,"Vint_2095","GDP (Billion 1990 USD)",2630.2324
+"High","All of Malaysia","All of Malaysia","gdp","Year",2100,"Vint_2100","GDP (Billion 1990 USD)",2770.3867
+"High","All of Malaysia","All of Malaysia","gdpPerCapita","Year",1975,"Vint_1975","GDP per Capita (Thousand 1990 USD per Person)",5.78575
+"High","All of Malaysia","All of Malaysia","gdpPerCapita","Year",1990,"Vint_1990","GDP per Capita (Thousand 1990 USD per Person)",11.20351
+"High","All of Malaysia","All of Malaysia","gdpPerCapita","Year",2005,"Vint_2005","GDP per Capita (Thousand 1990 USD per Person)",17.86082
+"High","All of Malaysia","All of Malaysia","gdpPerCapita","Year",2010,"Vint_2010","GDP per Capita (Thousand 1990 USD per Person)",22.13017
+"High","All of Malaysia","All of Malaysia","gdpPerCapita","Year",2015,"Vint_2015","GDP per Capita (Thousand 1990 USD per Person)",26.91173
+"High","All of Malaysia","All of Malaysia","gdpPerCapita","Year",2020,"Vint_2020","GDP per Capita (Thousand 1990 USD per Person)",34.94365
+"High","All of Malaysia","All of Malaysia","gdpPerCapita","Year",2025,"Vint_2025","GDP per Capita (Thousand 1990 USD per Person)",38.3338
+"High","All of Malaysia","All of Malaysia","gdpPerCapita","Year",2030,"Vint_2030","GDP per Capita (Thousand 1990 USD per Person)",42.7988
+"High","All of Malaysia","All of Malaysia","gdpPerCapita","Year",2035,"Vint_2035","GDP per Capita (Thousand 1990 USD per Person)",47.8231
+"High","All of Malaysia","All of Malaysia","gdpPerCapita","Year",2040,"Vint_2040","GDP per Capita (Thousand 1990 USD per Person)",53.2936
+"High","All of Malaysia","All of Malaysia","gdpPerCapita","Year",2045,"Vint_2045","GDP per Capita (Thousand 1990 USD per Person)",58.5064
+"High","All of Malaysia","All of Malaysia","gdpPerCapita","Year",2050,"Vint_2050","GDP per Capita (Thousand 1990 USD per Person)",63.4158
+"High","All of Malaysia","All of Malaysia","gdpPerCapita","Year",2055,"Vint_2055","GDP per Capita (Thousand 1990 USD per Person)",68.2436
+"High","All of Malaysia","All of Malaysia","gdpPerCapita","Year",2060,"Vint_2060","GDP per Capita (Thousand 1990 USD per Person)",72.7959
+"High","All of Malaysia","All of Malaysia","gdpPerCapita","Year",2065,"Vint_2065","GDP per Capita (Thousand 1990 USD per Person)",77.5458
+"High","All of Malaysia","All of Malaysia","gdpPerCapita","Year",2070,"Vint_2070","GDP per Capita (Thousand 1990 USD per Person)",82.2809
+"High","All of Malaysia","All of Malaysia","gdpPerCapita","Year",2075,"Vint_2075","GDP per Capita (Thousand 1990 USD per Person)",87.0597
+"High","All of Malaysia","All of Malaysia","gdpPerCapita","Year",2080,"Vint_2080","GDP per Capita (Thousand 1990 USD per Person)",92.2102
+"High","All of Malaysia","All of Malaysia","gdpPerCapita","Year",2085,"Vint_2085","GDP per Capita (Thousand 1990 USD per Person)",97.6768
+"High","All of Malaysia","All of Malaysia","gdpPerCapita","Year",2090,"Vint_2090","GDP per Capita (Thousand 1990 USD per Person)",103.5829
+"High","All of Malaysia","All of Malaysia","gdpPerCapita","Year",2095,"Vint_2095","GDP per Capita (Thousand 1990 USD per Person)",109.6744
+"High","All of Malaysia","All of Malaysia","gdpPerCapita","Year",2100,"Vint_2100","GDP per Capita (Thousand 1990 USD per Person)",116.0426
+"High","All of Malaysia","All of Malaysia","pop","Year",1975,"Vint_1975","Population (Millions)",24.324
+"High","All of Malaysia","All of Malaysia","pop","Year",1990,"Vint_1990","Population (Millions)",36.06
+"High","All of Malaysia","All of Malaysia","pop","Year",2005,"Vint_2005","Population (Millions)",51.381
+"High","All of Malaysia","All of Malaysia","pop","Year",2010,"Vint_2010","Population (Millions)",56.416
+"High","All of Malaysia","All of Malaysia","pop","Year",2015,"Vint_2015","Population (Millions)",60.541
+"High","All of Malaysia","All of Malaysia","pop","Year",2020,"Vint_2020","Population (Millions)",64.732
+"High","All of Malaysia","All of Malaysia","pop","Year",2025,"Vint_2025","Population (Millions)",68.7
+"High","All of Malaysia","All of Malaysia","pop","Year",2030,"Vint_2030","Population (Millions)",72.19
+"High","All of Malaysia","All of Malaysia","pop","Year",2035,"Vint_2035","Population (Millions)",75.132
+"High","All of Malaysia","All of Malaysia","pop","Year",2040,"Vint_2040","Population (Millions)",77.51
+"High","All of Malaysia","All of Malaysia","pop","Year",2045,"Vint_2045","Population (Millions)",79.459
+"High","All of Malaysia","All of Malaysia","pop","Year",2050,"Vint_2050","Population (Millions)",81.101
+"High","All of Malaysia","All of Malaysia","pop","Year",2055,"Vint_2055","Population (Millions)",82.462
+"High","All of Malaysia","All of Malaysia","pop","Year",2060,"Vint_2060","Population (Millions)",83.464
+"High","All of Malaysia","All of Malaysia","pop","Year",2065,"Vint_2065","Population (Millions)",84.026
+"High","All of Malaysia","All of Malaysia","pop","Year",2070,"Vint_2070","Population (Millions)",84.124
+"High","All of Malaysia","All of Malaysia","pop","Year",2075,"Vint_2075","Population (Millions)",83.825
+"High","All of Malaysia","All of Malaysia","pop","Year",2080,"Vint_2080","Population (Millions)",83.25
+"High","All of Malaysia","All of Malaysia","pop","Year",2085,"Vint_2085","Population (Millions)",82.536
+"High","All of Malaysia","All of Malaysia","pop","Year",2090,"Vint_2090","Population (Millions)",81.774
+"High","All of Malaysia","All of Malaysia","pop","Year",2095,"Vint_2095","Population (Millions)",80.986
+"High","All of Malaysia","All of Malaysia","pop","Year",2100,"Vint_2100","Population (Millions)",80.157
+"High","All of Malaysia","All of Malaysia","transportFreightVMTByFuel","Year",1975,"Vint_1975","Freight (million ton-km)",7804.4173
+"High","All of Malaysia","All of Malaysia","transportFreightVMTByFuel","Year",1990,"Vint_1990","Freight (million ton-km)",26281.7666
+"High","All of Malaysia","All of Malaysia","transportFreightVMTByFuel","Year",2005,"Vint_2005","Freight (million ton-km)",60249.7158
+"High","All of Malaysia","All of Malaysia","transportFreightVMTByFuel","Year",2010,"Vint_2010","Freight (million ton-km)",67159.4306
+"High","All of Malaysia","All of Malaysia","transportFreightVMTByFuel","Year",2015,"Vint_2015","Freight (million ton-km)",114559.419
+"High","All of Malaysia","All of Malaysia","transportFreightVMTByFuel","Year",2020,"Vint_2020","Freight (million ton-km)",153645.55792
+"High","All of Malaysia","All of Malaysia","transportFreightVMTByFuel","Year",2025,"Vint_2025","Freight (million ton-km)",175055.456298957
+"High","All of Malaysia","All of Malaysia","transportFreightVMTByFuel","Year",2030,"Vint_2030","Freight (million ton-km)",201479.218198783
+"High","All of Malaysia","All of Malaysia","transportFreightVMTByFuel","Year",2035,"Vint_2035","Freight (million ton-km)",233146.244051958
+"High","All of Malaysia","All of Malaysia","transportFreightVMTByFuel","Year",2040,"Vint_2040","Freight (million ton-km)",265812.810933051
+"High","All of Malaysia","All of Malaysia","transportFreightVMTByFuel","Year",2045,"Vint_2045","Freight (million ton-km)",299240.383136009
+"High","All of Malaysia","All of Malaysia","transportFreightVMTByFuel","Year",2050,"Vint_2050","Freight (million ton-km)",331083.85123292
+"High","All of Malaysia","All of Malaysia","transportFreightVMTByMode","Year",1975,"Vint_1975","Freight (million ton-km)",7804.4173
+"High","All of Malaysia","All of Malaysia","transportFreightVMTByMode","Year",1990,"Vint_1990","Freight (million ton-km)",26281.7666
+"High","All of Malaysia","All of Malaysia","transportFreightVMTByMode","Year",2005,"Vint_2005","Freight (million ton-km)",60249.7158
+"High","All of Malaysia","All of Malaysia","transportFreightVMTByMode","Year",2010,"Vint_2010","Freight (million ton-km)",67159.4306
+"High","All of Malaysia","All of Malaysia","transportFreightVMTByMode","Year",2015,"Vint_2015","Freight (million ton-km)",114559.419
+"High","All of Malaysia","All of Malaysia","transportFreightVMTByMode","Year",2020,"Vint_2020","Freight (million ton-km)",153645.55792
+"High","All of Malaysia","All of Malaysia","transportFreightVMTByMode","Year",2025,"Vint_2025","Freight (million ton-km)",175055.456298957
+"High","All of Malaysia","All of Malaysia","transportFreightVMTByMode","Year",2030,"Vint_2030","Freight (million ton-km)",201479.218198783
+"High","All of Malaysia","All of Malaysia","transportFreightVMTByMode","Year",2035,"Vint_2035","Freight (million ton-km)",233146.244051959
+"High","All of Malaysia","All of Malaysia","transportFreightVMTByMode","Year",2040,"Vint_2040","Freight (million ton-km)",265812.810933051
+"High","All of Malaysia","All of Malaysia","transportFreightVMTByMode","Year",2045,"Vint_2045","Freight (million ton-km)",299240.383136009
+"High","All of Malaysia","All of Malaysia","transportFreightVMTByMode","Year",2050,"Vint_2050","Freight (million ton-km)",331083.85123292
+"High","All of Malaysia","All of Malaysia","transportFreightVMTByTech","Year",1975,"Vint_1975","Freight (million ton-km)",7804.4173
+"High","All of Malaysia","All of Malaysia","transportFreightVMTByTech","Year",1990,"Vint_1990","Freight (million ton-km)",26281.7666
+"High","All of Malaysia","All of Malaysia","transportFreightVMTByTech","Year",2005,"Vint_2005","Freight (million ton-km)",60249.7158
+"High","All of Malaysia","All of Malaysia","transportFreightVMTByTech","Year",2010,"Vint_2010","Freight (million ton-km)",67159.4306
+"High","All of Malaysia","All of Malaysia","transportFreightVMTByTech","Year",2015,"Vint_2015","Freight (million ton-km)",114559.419
+"High","All of Malaysia","All of Malaysia","transportFreightVMTByTech","Year",2020,"Vint_2020","Freight (million ton-km)",153645.55792
+"High","All of Malaysia","All of Malaysia","transportFreightVMTByTech","Year",2025,"Vint_2025","Freight (million ton-km)",175055.456298957
+"High","All of Malaysia","All of Malaysia","transportFreightVMTByTech","Year",2030,"Vint_2030","Freight (million ton-km)",201479.218198783
+"High","All of Malaysia","All of Malaysia","transportFreightVMTByTech","Year",2035,"Vint_2035","Freight (million ton-km)",233146.244051959
+"High","All of Malaysia","All of Malaysia","transportFreightVMTByTech","Year",2040,"Vint_2040","Freight (million ton-km)",265812.810933051
+"High","All of Malaysia","All of Malaysia","transportFreightVMTByTech","Year",2045,"Vint_2045","Freight (million ton-km)",299240.383136009
+"High","All of Malaysia","All of Malaysia","transportFreightVMTByTech","Year",2050,"Vint_2050","Freight (million ton-km)",331083.85123292
+"High","All of Malaysia","All of Malaysia","transportPassengerVMTByFuel","Year",1975,"Vint_1975","Passenger (million pass-km)",85759.056305
+"High","All of Malaysia","All of Malaysia","transportPassengerVMTByFuel","Year",1990,"Vint_1990","Passenger (million pass-km)",233557.635562
+"High","All of Malaysia","All of Malaysia","transportPassengerVMTByFuel","Year",2005,"Vint_2005","Passenger (million pass-km)",660976.97049
+"High","All of Malaysia","All of Malaysia","transportPassengerVMTByFuel","Year",2010,"Vint_2010","Passenger (million pass-km)",741062.61691
+"High","All of Malaysia","All of Malaysia","transportPassengerVMTByFuel","Year",2015,"Vint_2015","Passenger (million pass-km)",1066558.88328
+"High","All of Malaysia","All of Malaysia","transportPassengerVMTByFuel","Year",2020,"Vint_2020","Passenger (million pass-km)",1147093.23288
+"High","All of Malaysia","All of Malaysia","transportPassengerVMTByFuel","Year",2025,"Vint_2025","Passenger (million pass-km)",1219412.703596
+"High","All of Malaysia","All of Malaysia","transportPassengerVMTByFuel","Year",2030,"Vint_2030","Passenger (million pass-km)",1291762.037546
+"High","All of Malaysia","All of Malaysia","transportPassengerVMTByFuel","Year",2035,"Vint_2035","Passenger (million pass-km)",1362145.30956783
+"High","All of Malaysia","All of Malaysia","transportPassengerVMTByFuel","Year",2040,"Vint_2040","Passenger (million pass-km)",1430656.6014032
+"High","All of Malaysia","All of Malaysia","transportPassengerVMTByFuel","Year",2045,"Vint_2045","Passenger (million pass-km)",1504980.7251425
+"High","All of Malaysia","All of Malaysia","transportPassengerVMTByFuel","Year",2050,"Vint_2050","Passenger (million pass-km)",1578938.132503
+"High","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","Year",1975,"Vint_1975","Passenger (million pass-km)",85759.056305
+"High","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","Year",1990,"Vint_1990","Passenger (million pass-km)",233557.635562
+"High","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","Year",2005,"Vint_2005","Passenger (million pass-km)",660976.97049
+"High","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","Year",2010,"Vint_2010","Passenger (million pass-km)",741062.61691
+"High","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","Year",2015,"Vint_2015","Passenger (million pass-km)",1066558.88328
+"High","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","Year",2020,"Vint_2020","Passenger (million pass-km)",1147093.23288
+"High","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","Year",2025,"Vint_2025","Passenger (million pass-km)",1219412.703596
+"High","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","Year",2030,"Vint_2030","Passenger (million pass-km)",1291762.037546
+"High","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","Year",2035,"Vint_2035","Passenger (million pass-km)",1362145.30956783
+"High","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","Year",2040,"Vint_2040","Passenger (million pass-km)",1430656.6014032
+"High","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","Year",2045,"Vint_2045","Passenger (million pass-km)",1504980.7251425
+"High","All of Malaysia","All of Malaysia","transportPassengerVMTByMode","Year",2050,"Vint_2050","Passenger (million pass-km)",1578938.132503
+"High","All of Malaysia","All of Malaysia","transportPassengerVMTByTech","Year",1975,"Vint_1975","Passenger (million pass-km)",85759.056305
+"High","All of Malaysia","All of Malaysia","transportPassengerVMTByTech","Year",1990,"Vint_1990","Passenger (million pass-km)",233557.635562
+"High","All of Malaysia","All of Malaysia","transportPassengerVMTByTech","Year",2005,"Vint_2005","Passenger (million pass-km)",660976.97049
+"High","All of Malaysia","All of Malaysia","transportPassengerVMTByTech","Year",2010,"Vint_2010","Passenger (million pass-km)",741062.61691
+"High","All of Malaysia","All of Malaysia","transportPassengerVMTByTech","Year",2015,"Vint_2015","Passenger (million pass-km)",1066558.88328
+"High","All of Malaysia","All of Malaysia","transportPassengerVMTByTech","Year",2020,"Vint_2020","Passenger (million pass-km)",1147093.23288
+"High","All of Malaysia","All of Malaysia","transportPassengerVMTByTech","Year",2025,"Vint_2025","Passenger (million pass-km)",1219412.703596
+"High","All of Malaysia","All of Malaysia","transportPassengerVMTByTech","Year",2030,"Vint_2030","Passenger (million pass-km)",1291762.037546
+"High","All of Malaysia","All of Malaysia","transportPassengerVMTByTech","Year",2035,"Vint_2035","Passenger (million pass-km)",1362145.30956783
+"High","All of Malaysia","All of Malaysia","transportPassengerVMTByTech","Year",2040,"Vint_2040","Passenger (million pass-km)",1430656.6014032
+"High","All of Malaysia","All of Malaysia","transportPassengerVMTByTech","Year",2045,"Vint_2045","Passenger (million pass-km)",1504980.7251425
+"High","All of Malaysia","All of Malaysia","transportPassengerVMTByTech","Year",2050,"Vint_2050","Passenger (million pass-km)",1578938.132503
+"High","KualaLumpur","KualaLumpur","buildingFloorspace","Year",1975,"Vint_1975","billion m^2",0.00839374
+"High","KualaLumpur","KualaLumpur","buildingFloorspace","Year",1990,"Vint_1990","billion m^2",0.01244939
+"High","KualaLumpur","KualaLumpur","buildingFloorspace","Year",2005,"Vint_2005","billion m^2",0.01648306
+"High","KualaLumpur","KualaLumpur","buildingFloorspace","Year",2010,"Vint_2010","billion m^2",0.021671
+"High","KualaLumpur","KualaLumpur","buildingFloorspace","Year",2015,"Vint_2015","billion m^2",0.0261389
+"High","KualaLumpur","KualaLumpur","buildingFloorspace","Year",2020,"Vint_2020","billion m^2",0.029
+"High","KualaLumpur","KualaLumpur","buildingFloorspace","Year",2025,"Vint_2025","billion m^2",0.032
+"High","KualaLumpur","KualaLumpur","buildingFloorspace","Year",2030,"Vint_2030","billion m^2",0.0348
+"High","KualaLumpur","KualaLumpur","buildingFloorspace","Year",2035,"Vint_2035","billion m^2",0.0373
+"High","KualaLumpur","KualaLumpur","buildingFloorspace","Year",2040,"Vint_2040","billion m^2",0.0397
+"High","KualaLumpur","KualaLumpur","buildingFloorspace","Year",2045,"Vint_2045","billion m^2",0.042
+"High","KualaLumpur","KualaLumpur","buildingFloorspace","Year",2050,"Vint_2050","billion m^2",0.0442
+"High","KualaLumpur","KualaLumpur","buildingFloorspace","Year",2055,"Vint_2055","billion m^2",0.0442
+"High","KualaLumpur","KualaLumpur","buildingFloorspace","Year",2060,"Vint_2060","billion m^2",0.0442
+"High","KualaLumpur","KualaLumpur","buildingFloorspace","Year",2065,"Vint_2065","billion m^2",0.0442
+"High","KualaLumpur","KualaLumpur","buildingFloorspace","Year",2070,"Vint_2070","billion m^2",0.0442
+"High","KualaLumpur","KualaLumpur","buildingFloorspace","Year",2075,"Vint_2075","billion m^2",0.0442
+"High","KualaLumpur","KualaLumpur","buildingFloorspace","Year",2080,"Vint_2080","billion m^2",0.0442
+"High","KualaLumpur","KualaLumpur","buildingFloorspace","Year",2085,"Vint_2085","billion m^2",0.0442
+"High","KualaLumpur","KualaLumpur","buildingFloorspace","Year",2090,"Vint_2090","billion m^2",0.0442
+"High","KualaLumpur","KualaLumpur","buildingFloorspace","Year",2095,"Vint_2095","billion m^2",0.0442
+"High","KualaLumpur","KualaLumpur","buildingFloorspace","Year",2100,"Vint_2100","billion m^2",0.0442
+"High","KualaLumpur","KualaLumpur","elecConsumByDemandSectorTWh","Year",1975,"Vint_1975","Electricity Consumption by Sector (TWh)",0.123696666666668
+"High","KualaLumpur","KualaLumpur","elecConsumByDemandSectorTWh","Year",1990,"Vint_1990","Electricity Consumption by Sector (TWh)",1.9755703888889
+"High","KualaLumpur","KualaLumpur","elecConsumByDemandSectorTWh","Year",2005,"Vint_2005","Electricity Consumption by Sector (TWh)",5.68119097222227
+"High","KualaLumpur","KualaLumpur","elecConsumByDemandSectorTWh","Year",2010,"Vint_2010","Electricity Consumption by Sector (TWh)",9.35949919444452
+"High","KualaLumpur","KualaLumpur","elecConsumByDemandSectorTWh","Year",2015,"Vint_2015","Electricity Consumption by Sector (TWh)",10.8127559166668
+"High","KualaLumpur","KualaLumpur","elecConsumByDemandSectorTWh","Year",2020,"Vint_2020","Electricity Consumption by Sector (TWh)",11.6033152777779
+"High","KualaLumpur","KualaLumpur","elecConsumByDemandSectorTWh","Year",2025,"Vint_2025","Electricity Consumption by Sector (TWh)",11.9446267752779
+"High","KualaLumpur","KualaLumpur","elecConsumByDemandSectorTWh","Year",2030,"Vint_2030","Electricity Consumption by Sector (TWh)",12.7057199418584
+"High","KualaLumpur","KualaLumpur","elecConsumByDemandSectorTWh","Year",2035,"Vint_2035","Electricity Consumption by Sector (TWh)",13.3640580260226
+"High","KualaLumpur","KualaLumpur","elecConsumByDemandSectorTWh","Year",2040,"Vint_2040","Electricity Consumption by Sector (TWh)",14.2217000580523
+"High","KualaLumpur","KualaLumpur","elecConsumByDemandSectorTWh","Year",2045,"Vint_2045","Electricity Consumption by Sector (TWh)",15.1998772912429
+"High","KualaLumpur","KualaLumpur","elecConsumByDemandSectorTWh","Year",2050,"Vint_2050","Electricity Consumption by Sector (TWh)",16.1272101830001
+"High","KualaLumpur","KualaLumpur","emissCO2BySectorNoBio","Year",1975,"Vint_1975","CO2 emissions - (MTCO2)",0.9769210572
+"High","KualaLumpur","KualaLumpur","emissCO2BySectorNoBio","Year",1990,"Vint_1990","CO2 emissions - (MTCO2)",2.71281523296667
+"High","KualaLumpur","KualaLumpur","emissCO2BySectorNoBio","Year",2005,"Vint_2005","CO2 emissions - (MTCO2)",6.32151864263333
+"High","KualaLumpur","KualaLumpur","emissCO2BySectorNoBio","Year",2010,"Vint_2010","CO2 emissions - (MTCO2)",5.811655542
+"High","KualaLumpur","KualaLumpur","emissCO2BySectorNoBio","Year",2015,"Vint_2015","CO2 emissions - (MTCO2)",7.09155932063333
+"High","KualaLumpur","KualaLumpur","emissCO2BySectorNoBio","Year",2020,"Vint_2020","CO2 emissions - (MTCO2)",7.00945098626667
+"High","KualaLumpur","KualaLumpur","emissCO2BySectorNoBio","Year",2025,"Vint_2025","CO2 emissions - (MTCO2)",6.4219526712
+"High","KualaLumpur","KualaLumpur","emissCO2BySectorNoBio","Year",2030,"Vint_2030","CO2 emissions - (MTCO2)",5.79191728316667
+"High","KualaLumpur","KualaLumpur","emissCO2BySectorNoBio","Year",2035,"Vint_2035","CO2 emissions - (MTCO2)",5.17282059789
+"High","KualaLumpur","KualaLumpur","emissCO2BySectorNoBio","Year",2040,"Vint_2040","CO2 emissions - (MTCO2)",4.59897429211
+"High","KualaLumpur","KualaLumpur","emissCO2BySectorNoBio","Year",2045,"Vint_2045","CO2 emissions - (MTCO2)",4.17442947089667
+"High","KualaLumpur","KualaLumpur","emissCO2BySectorNoBio","Year",2050,"Vint_2050","CO2 emissions - (MTCO2)",3.89935596054877
+"High","KualaLumpur","KualaLumpur","emissGHGByGasGWPAR5","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",0.9769210572
+"High","KualaLumpur","KualaLumpur","emissGHGByGasGWPAR5","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",0.0503603
+"High","KualaLumpur","KualaLumpur","emissGHGByGasGWPAR5","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",2.71281523296667
+"High","KualaLumpur","KualaLumpur","emissGHGByGasGWPAR5","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",0.000406244
+"High","KualaLumpur","KualaLumpur","emissGHGByGasGWPAR5","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",0.063696
+"High","KualaLumpur","KualaLumpur","emissGHGByGasGWPAR5","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",6.32151864263333
+"High","KualaLumpur","KualaLumpur","emissGHGByGasGWPAR5","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",0.014136884
+"High","KualaLumpur","KualaLumpur","emissGHGByGasGWPAR5","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",0.1639098
+"High","KualaLumpur","KualaLumpur","emissGHGByGasGWPAR5","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",5.811655542
+"High","KualaLumpur","KualaLumpur","emissGHGByGasGWPAR5","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",0.028550012
+"High","KualaLumpur","KualaLumpur","emissGHGByGasGWPAR5","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",0.1602316
+"High","KualaLumpur","KualaLumpur","emissGHGByGasGWPAR5","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",7.09155932063333
+"High","KualaLumpur","KualaLumpur","emissGHGByGasGWPAR5","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",0.075378851
+"High","KualaLumpur","KualaLumpur","emissGHGByGasGWPAR5","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",0.1686693
+"High","KualaLumpur","KualaLumpur","emissGHGByGasGWPAR5","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",7.00945098626667
+"High","KualaLumpur","KualaLumpur","emissGHGByGasGWPAR5","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",0.068676224228
+"High","KualaLumpur","KualaLumpur","emissGHGByGasGWPAR5","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",0.1644365692018
+"High","KualaLumpur","KualaLumpur","emissGHGByGasGWPAR5","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",6.4219526712
+"High","KualaLumpur","KualaLumpur","emissGHGByGasGWPAR5","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",0.061315477805
+"High","KualaLumpur","KualaLumpur","emissGHGByGasGWPAR5","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",0.13811858227264
+"High","KualaLumpur","KualaLumpur","emissGHGByGasGWPAR5","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",5.79191728316667
+"High","KualaLumpur","KualaLumpur","emissGHGByGasGWPAR5","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",0.0553294194375
+"High","KualaLumpur","KualaLumpur","emissGHGByGasGWPAR5","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",0.11375645996472
+"High","KualaLumpur","KualaLumpur","emissGHGByGasGWPAR5","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",5.17282059789
+"High","KualaLumpur","KualaLumpur","emissGHGByGasGWPAR5","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",0.0490063779625
+"High","KualaLumpur","KualaLumpur","emissGHGByGasGWPAR5","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",0.09174540681982
+"High","KualaLumpur","KualaLumpur","emissGHGByGasGWPAR5","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",4.59897429211
+"High","KualaLumpur","KualaLumpur","emissGHGByGasGWPAR5","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",0.0428071687595
+"High","KualaLumpur","KualaLumpur","emissGHGByGasGWPAR5","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",0.07327341348012
+"High","KualaLumpur","KualaLumpur","emissGHGByGasGWPAR5","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",4.17442947089667
+"High","KualaLumpur","KualaLumpur","emissGHGByGasGWPAR5","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",0.037716781297
+"High","KualaLumpur","KualaLumpur","emissGHGByGasGWPAR5","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",0.06111383209572
+"High","KualaLumpur","KualaLumpur","emissGHGByGasGWPAR5","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",3.89935596054877
+"High","KualaLumpur","KualaLumpur","emissGHGByGasGWPAR5","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",0.0329346716425
+"High","KualaLumpur","KualaLumpur","emissGHGByGasGWPAR5","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",0.05168659539401
+"High","KualaLumpur","KualaLumpur","emissGHGBySectorGWPAR5","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",0.9769210572
+"High","KualaLumpur","KualaLumpur","emissGHGBySectorGWPAR5","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",0.0503603
+"High","KualaLumpur","KualaLumpur","emissGHGBySectorGWPAR5","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",2.71281523296667
+"High","KualaLumpur","KualaLumpur","emissGHGBySectorGWPAR5","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",0.000406244
+"High","KualaLumpur","KualaLumpur","emissGHGBySectorGWPAR5","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",0.063696
+"High","KualaLumpur","KualaLumpur","emissGHGBySectorGWPAR5","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",6.32151864263333
+"High","KualaLumpur","KualaLumpur","emissGHGBySectorGWPAR5","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",0.014136884
+"High","KualaLumpur","KualaLumpur","emissGHGBySectorGWPAR5","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",0.1639098
+"High","KualaLumpur","KualaLumpur","emissGHGBySectorGWPAR5","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",5.811655542
+"High","KualaLumpur","KualaLumpur","emissGHGBySectorGWPAR5","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",0.028550012
+"High","KualaLumpur","KualaLumpur","emissGHGBySectorGWPAR5","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",0.1602316
+"High","KualaLumpur","KualaLumpur","emissGHGBySectorGWPAR5","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",7.09155932063333
+"High","KualaLumpur","KualaLumpur","emissGHGBySectorGWPAR5","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",0.075378851
+"High","KualaLumpur","KualaLumpur","emissGHGBySectorGWPAR5","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",0.1686693
+"High","KualaLumpur","KualaLumpur","emissGHGBySectorGWPAR5","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",7.00945098626667
+"High","KualaLumpur","KualaLumpur","emissGHGBySectorGWPAR5","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",0.068676224228
+"High","KualaLumpur","KualaLumpur","emissGHGBySectorGWPAR5","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",0.1644365692018
+"High","KualaLumpur","KualaLumpur","emissGHGBySectorGWPAR5","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",6.4219526712
+"High","KualaLumpur","KualaLumpur","emissGHGBySectorGWPAR5","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",0.061315477805
+"High","KualaLumpur","KualaLumpur","emissGHGBySectorGWPAR5","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",0.13811858227264
+"High","KualaLumpur","KualaLumpur","emissGHGBySectorGWPAR5","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",5.79191728316667
+"High","KualaLumpur","KualaLumpur","emissGHGBySectorGWPAR5","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",0.0553294194375
+"High","KualaLumpur","KualaLumpur","emissGHGBySectorGWPAR5","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",0.11375645996472
+"High","KualaLumpur","KualaLumpur","emissGHGBySectorGWPAR5","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",5.17282059789
+"High","KualaLumpur","KualaLumpur","emissGHGBySectorGWPAR5","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",0.0490063779625
+"High","KualaLumpur","KualaLumpur","emissGHGBySectorGWPAR5","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",0.09174540681982
+"High","KualaLumpur","KualaLumpur","emissGHGBySectorGWPAR5","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",4.59897429211
+"High","KualaLumpur","KualaLumpur","emissGHGBySectorGWPAR5","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",0.0428071687595
+"High","KualaLumpur","KualaLumpur","emissGHGBySectorGWPAR5","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",0.07327341348012
+"High","KualaLumpur","KualaLumpur","emissGHGBySectorGWPAR5","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",4.17442947089667
+"High","KualaLumpur","KualaLumpur","emissGHGBySectorGWPAR5","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",0.037716781297
+"High","KualaLumpur","KualaLumpur","emissGHGBySectorGWPAR5","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",0.06111383209572
+"High","KualaLumpur","KualaLumpur","emissGHGBySectorGWPAR5","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",3.89935596054877
+"High","KualaLumpur","KualaLumpur","emissGHGBySectorGWPAR5","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",0.0329346716425
+"High","KualaLumpur","KualaLumpur","emissGHGBySectorGWPAR5","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",0.05168659539401
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelEJ","Year",1975,"Vint_1975","Final Energy by Fuel (EJ)",0.01385350269
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelEJ","Year",1990,"Vint_1990","Final Energy by Fuel (EJ)",0.04608202434
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelEJ","Year",2005,"Vint_2005","Final Energy by Fuel (EJ)",0.11833050774
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelEJ","Year",2010,"Vint_2010","Final Energy by Fuel (EJ)",0.1240502708
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelEJ","Year",2015,"Vint_2015","Final Energy by Fuel (EJ)",0.15023943475
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelEJ","Year",2020,"Vint_2020","Final Energy by Fuel (EJ)",0.151014071346
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelEJ","Year",2025,"Vint_2025","Final Energy by Fuel (EJ)",0.1429757961475
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelEJ","Year",2030,"Vint_2030","Final Energy by Fuel (EJ)",0.136123344723137
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelEJ","Year",2035,"Vint_2035","Final Energy by Fuel (EJ)",0.129339688577744
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelEJ","Year",2040,"Vint_2040","Final Energy by Fuel (EJ)",0.123890158626694
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelEJ","Year",2045,"Vint_2045","Final Energy by Fuel (EJ)",0.120772266415814
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelEJ","Year",2050,"Vint_2050","Final Energy by Fuel (EJ)",0.11949781459915
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","Year",1975,"Vint_1975","Passenger Transport Final Energy by Fuel (EJ)",0.0022365869
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","Year",1990,"Vint_1990","Passenger Transport Final Energy by Fuel (EJ)",0.0056759676
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","Year",2005,"Vint_2005","Passenger Transport Final Energy by Fuel (EJ)",0.011307305
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","Year",2010,"Vint_2010","Passenger Transport Final Energy by Fuel (EJ)",0.0112121935
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","Year",2015,"Vint_2015","Passenger Transport Final Energy by Fuel (EJ)",0.0151670649
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","Year",2020,"Vint_2020","Passenger Transport Final Energy by Fuel (EJ)",0.0174181783
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","Year",2025,"Vint_2025","Passenger Transport Final Energy by Fuel (EJ)",0.018117139606
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","Year",2030,"Vint_2030","Passenger Transport Final Energy by Fuel (EJ)",0.018912419471737
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","Year",2035,"Vint_2035","Passenger Transport Final Energy by Fuel (EJ)",0.018843227060894
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","Year",2040,"Vint_2040","Passenger Transport Final Energy by Fuel (EJ)",0.018804582360223
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","Year",2045,"Vint_2045","Passenger Transport Final Energy by Fuel (EJ)",0.018867148364664
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportFreightEJ","Year",2050,"Vint_2050","Passenger Transport Final Energy by Fuel (EJ)",0.0189719894318
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","Year",1975,"Vint_1975","Passenger Transport Final Energy by Fuel (EJ)",0.006306519
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","Year",1990,"Vint_1990","Passenger Transport Final Energy by Fuel (EJ)",0.015490289
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","Year",2005,"Vint_2005","Passenger Transport Final Energy by Fuel (EJ)",0.032129774
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","Year",2010,"Vint_2010","Passenger Transport Final Energy by Fuel (EJ)",0.032150339
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","Year",2015,"Vint_2015","Passenger Transport Final Energy by Fuel (EJ)",0.0420163711
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","Year",2020,"Vint_2020","Passenger Transport Final Energy by Fuel (EJ)",0.04086754923
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","Year",2025,"Vint_2025","Passenger Transport Final Energy by Fuel (EJ)",0.0372673739015
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","Year",2030,"Vint_2030","Passenger Transport Final Energy by Fuel (EJ)",0.0341868556524
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","Year",2035,"Vint_2035","Passenger Transport Final Energy by Fuel (EJ)",0.0326490927047
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","Year",2040,"Vint_2040","Passenger Transport Final Energy by Fuel (EJ)",0.0322974977822
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","Year",2045,"Vint_2045","Passenger Transport Final Energy by Fuel (EJ)",0.0337045560927
+"High","KualaLumpur","KualaLumpur","energyFinalByFuelTransportPassEJ","Year",2050,"Vint_2050","Passenger Transport Final Energy by Fuel (EJ)",0.035910664713
+"High","KualaLumpur","KualaLumpur","energyFinalConsumBySecEJ","Year",1975,"Vint_1975","Final Energy by Sector (EJ)",0.01385350269
+"High","KualaLumpur","KualaLumpur","energyFinalConsumBySecEJ","Year",1990,"Vint_1990","Final Energy by Sector (EJ)",0.04608202434
+"High","KualaLumpur","KualaLumpur","energyFinalConsumBySecEJ","Year",2005,"Vint_2005","Final Energy by Sector (EJ)",0.11831590774
+"High","KualaLumpur","KualaLumpur","energyFinalConsumBySecEJ","Year",2010,"Vint_2010","Final Energy by Sector (EJ)",0.1239961711
+"High","KualaLumpur","KualaLumpur","energyFinalConsumBySecEJ","Year",2015,"Vint_2015","Final Energy by Sector (EJ)",0.15017413585
+"High","KualaLumpur","KualaLumpur","energyFinalConsumBySecEJ","Year",2020,"Vint_2020","Final Energy by Sector (EJ)",0.150926257546
+"High","KualaLumpur","KualaLumpur","energyFinalConsumBySecEJ","Year",2025,"Vint_2025","Final Energy by Sector (EJ)",0.1402387216565
+"High","KualaLumpur","KualaLumpur","energyFinalConsumBySecEJ","Year",2030,"Vint_2030","Final Energy by Sector (EJ)",0.129781990032447
+"High","KualaLumpur","KualaLumpur","energyFinalConsumBySecEJ","Year",2035,"Vint_2035","Final Energy by Sector (EJ)",0.119345062964063
+"High","KualaLumpur","KualaLumpur","energyFinalConsumBySecEJ","Year",2040,"Vint_2040","Final Energy by Sector (EJ)",0.109337246037706
+"High","KualaLumpur","KualaLumpur","energyFinalConsumBySecEJ","Year",2045,"Vint_2045","Final Energy by Sector (EJ)",0.10112889006734
+"High","KualaLumpur","KualaLumpur","energyFinalConsumBySecEJ","Year",2050,"Vint_2050","Final Energy by Sector (EJ)",0.09474721899035
+"High","KualaLumpur","KualaLumpur","energyFinalSubsecByFuelBuildEJ","Year",1990,"Vint_1990","Building Final Energy by Fuel (EJ)",0.0102391715
+"High","KualaLumpur","KualaLumpur","energyFinalSubsecByFuelBuildEJ","Year",2005,"Vint_2005","Building Final Energy by Fuel (EJ)",0.0226073866
+"High","KualaLumpur","KualaLumpur","energyFinalSubsecByFuelBuildEJ","Year",2010,"Vint_2010","Building Final Energy by Fuel (EJ)",0.0355673252
+"High","KualaLumpur","KualaLumpur","energyFinalSubsecByFuelBuildEJ","Year",2015,"Vint_2015","Building Final Energy by Fuel (EJ)",0.03664883375
+"High","KualaLumpur","KualaLumpur","energyFinalSubsecByFuelBuildEJ","Year",2020,"Vint_2020","Building Final Energy by Fuel (EJ)",0.040792842296
+"High","KualaLumpur","KualaLumpur","energyFinalSubsecByFuelBuildEJ","Year",2025,"Vint_2025","Building Final Energy by Fuel (EJ)",0.04076789243
+"High","KualaLumpur","KualaLumpur","energyFinalSubsecByFuelBuildEJ","Year",2030,"Vint_2030","Building Final Energy by Fuel (EJ)",0.040354376379
+"High","KualaLumpur","KualaLumpur","energyFinalSubsecByFuelBuildEJ","Year",2035,"Vint_2035","Building Final Energy by Fuel (EJ)",0.039823032982
+"High","KualaLumpur","KualaLumpur","energyFinalSubsecByFuelBuildEJ","Year",2040,"Vint_2040","Building Final Energy by Fuel (EJ)",0.039464118126
+"High","KualaLumpur","KualaLumpur","energyFinalSubsecByFuelBuildEJ","Year",2045,"Vint_2045","Building Final Energy by Fuel (EJ)",0.0389379440845
+"High","KualaLumpur","KualaLumpur","energyFinalSubsecByFuelBuildEJ","Year",2050,"Vint_2050","Building Final Energy by Fuel (EJ)",0.039057026429
+"High","KualaLumpur","KualaLumpur","energyFinalSubsecByFuelIndusEJ","Year",1975,"Vint_1975","Industry Final Energy by Fuel (EJ)",0.005297598
+"High","KualaLumpur","KualaLumpur","energyFinalSubsecByFuelIndusEJ","Year",1990,"Vint_1990","Industry Final Energy by Fuel (EJ)",0.014647999
+"High","KualaLumpur","KualaLumpur","energyFinalSubsecByFuelIndusEJ","Year",2005,"Vint_2005","Industry Final Energy by Fuel (EJ)",0.0522019501
+"High","KualaLumpur","KualaLumpur","energyFinalSubsecByFuelIndusEJ","Year",2010,"Vint_2010","Industry Final Energy by Fuel (EJ)",0.044924532
+"High","KualaLumpur","KualaLumpur","energyFinalSubsecByFuelIndusEJ","Year",2015,"Vint_2015","Industry Final Energy by Fuel (EJ)",0.056168588
+"High","KualaLumpur","KualaLumpur","energyFinalSubsecByFuelIndusEJ","Year",2020,"Vint_2020","Industry Final Energy by Fuel (EJ)",0.05167531293
+"High","KualaLumpur","KualaLumpur","energyFinalSubsecByFuelIndusEJ","Year",2025,"Vint_2025","Industry Final Energy by Fuel (EJ)",0.04656397651
+"High","KualaLumpur","KualaLumpur","energyFinalSubsecByFuelIndusEJ","Year",2030,"Vint_2030","Industry Final Energy by Fuel (EJ)",0.04241013502
+"High","KualaLumpur","KualaLumpur","energyFinalSubsecByFuelIndusEJ","Year",2035,"Vint_2035","Industry Final Energy by Fuel (EJ)",0.037765415285
+"High","KualaLumpur","KualaLumpur","energyFinalSubsecByFuelIndusEJ","Year",2040,"Vint_2040","Industry Final Energy by Fuel (EJ)",0.033056797122
+"High","KualaLumpur","KualaLumpur","energyFinalSubsecByFuelIndusEJ","Year",2045,"Vint_2045","Industry Final Energy by Fuel (EJ)",0.028988209512
+"High","KualaLumpur","KualaLumpur","energyFinalSubsecByFuelIndusEJ","Year",2050,"Vint_2050","Industry Final Energy by Fuel (EJ)",0.02527873998985
+"High","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","Year",1990,"Vint_1990","Building Final Energy By Subsector (EJ)",0.0102391715
+"High","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","Year",2005,"Vint_2005","Building Final Energy By Subsector (EJ)",0.0226073866
+"High","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","Year",2010,"Vint_2010","Building Final Energy By Subsector (EJ)",0.0355673252
+"High","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","Year",2015,"Vint_2015","Building Final Energy By Subsector (EJ)",0.03664883375
+"High","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","Year",2020,"Vint_2020","Building Final Energy By Subsector (EJ)",0.040792842296
+"High","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","Year",2025,"Vint_2025","Building Final Energy By Subsector (EJ)",0.04076789243
+"High","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","Year",2030,"Vint_2030","Building Final Energy By Subsector (EJ)",0.040354376379
+"High","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","Year",2035,"Vint_2035","Building Final Energy By Subsector (EJ)",0.039823032982
+"High","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","Year",2040,"Vint_2040","Building Final Energy By Subsector (EJ)",0.039464118126
+"High","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","Year",2045,"Vint_2045","Building Final Energy By Subsector (EJ)",0.0389379440845
+"High","KualaLumpur","KualaLumpur","energyFinalSubsecBySectorBuildEJ","Year",2050,"Vint_2050","Building Final Energy By Subsector (EJ)",0.039057026429
+"High","KualaLumpur","KualaLumpur","gdp","Year",1975,"Vint_1975","GDP (Billion 1990 USD)",3.927
+"High","KualaLumpur","KualaLumpur","gdp","Year",1990,"Vint_1990","GDP (Billion 1990 USD)",10.5787
+"High","KualaLumpur","KualaLumpur","gdp","Year",2005,"Vint_2005","GDP (Billion 1990 USD)",15.1201
+"High","KualaLumpur","KualaLumpur","gdp","Year",2010,"Vint_2010","GDP (Billion 1990 USD)",21.3492
+"High","KualaLumpur","KualaLumpur","gdp","Year",2015,"Vint_2015","GDP (Billion 1990 USD)",26.1303
+"High","KualaLumpur","KualaLumpur","gdp","Year",2020,"Vint_2020","GDP (Billion 1990 USD)",31.0632
+"High","KualaLumpur","KualaLumpur","gdp","Year",2025,"Vint_2025","GDP (Billion 1990 USD)",33.799
+"High","KualaLumpur","KualaLumpur","gdp","Year",2030,"Vint_2030","GDP (Billion 1990 USD)",37.3895
+"High","KualaLumpur","KualaLumpur","gdp","Year",2035,"Vint_2035","GDP (Billion 1990 USD)",40.493
+"High","KualaLumpur","KualaLumpur","gdp","Year",2040,"Vint_2040","GDP (Billion 1990 USD)",43.3829
+"High","KualaLumpur","KualaLumpur","gdp","Year",2045,"Vint_2045","GDP (Billion 1990 USD)",45.7665
+"High","KualaLumpur","KualaLumpur","gdp","Year",2050,"Vint_2050","GDP (Billion 1990 USD)",47.6996
+"High","KualaLumpur","KualaLumpur","gdp","Year",2055,"Vint_2055","GDP (Billion 1990 USD)",49.616
+"High","KualaLumpur","KualaLumpur","gdp","Year",2060,"Vint_2060","GDP (Billion 1990 USD)",51.0517
+"High","KualaLumpur","KualaLumpur","gdp","Year",2065,"Vint_2065","GDP (Billion 1990 USD)",52.7248
+"High","KualaLumpur","KualaLumpur","gdp","Year",2070,"Vint_2070","GDP (Billion 1990 USD)",54.1675
+"High","KualaLumpur","KualaLumpur","gdp","Year",2075,"Vint_2075","GDP (Billion 1990 USD)",55.3609
+"High","KualaLumpur","KualaLumpur","gdp","Year",2080,"Vint_2080","GDP (Billion 1990 USD)",56.561
+"High","KualaLumpur","KualaLumpur","gdp","Year",2085,"Vint_2085","GDP (Billion 1990 USD)",57.4957
+"High","KualaLumpur","KualaLumpur","gdp","Year",2090,"Vint_2090","GDP (Billion 1990 USD)",58.4581
+"High","KualaLumpur","KualaLumpur","gdp","Year",2095,"Vint_2095","GDP (Billion 1990 USD)",59.1824
+"High","KualaLumpur","KualaLumpur","gdp","Year",2100,"Vint_2100","GDP (Billion 1990 USD)",59.9267
+"High","KualaLumpur","KualaLumpur","gdpPerCapita","Year",1975,"Vint_1975","GDP per Capita (Thousand 1990 USD per Person)",2.73849
+"High","KualaLumpur","KualaLumpur","gdpPerCapita","Year",1990,"Vint_1990","GDP per Capita (Thousand 1990 USD per Person)",5.51839
+"High","KualaLumpur","KualaLumpur","gdpPerCapita","Year",2005,"Vint_2005","GDP per Capita (Thousand 1990 USD per Person)",7.53367
+"High","KualaLumpur","KualaLumpur","gdpPerCapita","Year",2010,"Vint_2010","GDP per Capita (Thousand 1990 USD per Person)",10.5585
+"High","KualaLumpur","KualaLumpur","gdpPerCapita","Year",2015,"Vint_2015","GDP per Capita (Thousand 1990 USD per Person)",12.9358
+"High","KualaLumpur","KualaLumpur","gdpPerCapita","Year",2020,"Vint_2020","GDP per Capita (Thousand 1990 USD per Person)",15.6726
+"High","KualaLumpur","KualaLumpur","gdpPerCapita","Year",2025,"Vint_2025","GDP per Capita (Thousand 1990 USD per Person)",17.0702
+"High","KualaLumpur","KualaLumpur","gdpPerCapita","Year",2030,"Vint_2030","GDP per Capita (Thousand 1990 USD per Person)",18.9218
+"High","KualaLumpur","KualaLumpur","gdpPerCapita","Year",2035,"Vint_2035","GDP per Capita (Thousand 1990 USD per Person)",20.787
+"High","KualaLumpur","KualaLumpur","gdpPerCapita","Year",2040,"Vint_2040","GDP per Capita (Thousand 1990 USD per Person)",22.8091
+"High","KualaLumpur","KualaLumpur","gdpPerCapita","Year",2045,"Vint_2045","GDP per Capita (Thousand 1990 USD per Person)",24.5924
+"High","KualaLumpur","KualaLumpur","gdpPerCapita","Year",2050,"Vint_2050","GDP per Capita (Thousand 1990 USD per Person)",26.2953
+"High","KualaLumpur","KualaLumpur","gdpPerCapita","Year",2055,"Vint_2055","GDP per Capita (Thousand 1990 USD per Person)",28.223
+"High","KualaLumpur","KualaLumpur","gdpPerCapita","Year",2060,"Vint_2060","GDP per Capita (Thousand 1990 USD per Person)",30.0835
+"High","KualaLumpur","KualaLumpur","gdpPerCapita","Year",2065,"Vint_2065","GDP per Capita (Thousand 1990 USD per Person)",32.2476
+"High","KualaLumpur","KualaLumpur","gdpPerCapita","Year",2070,"Vint_2070","GDP per Capita (Thousand 1990 USD per Person)",34.3921
+"High","KualaLumpur","KualaLumpur","gdpPerCapita","Year",2075,"Vint_2075","GDP per Capita (Thousand 1990 USD per Person)",36.4697
+"High","KualaLumpur","KualaLumpur","gdpPerCapita","Year",2080,"Vint_2080","GDP per Capita (Thousand 1990 USD per Person)",38.6345
+"High","KualaLumpur","KualaLumpur","gdpPerCapita","Year",2085,"Vint_2085","GDP per Capita (Thousand 1990 USD per Person)",40.7482
+"High","KualaLumpur","KualaLumpur","gdpPerCapita","Year",2090,"Vint_2090","GDP per Capita (Thousand 1990 USD per Person)",42.9839
+"High","KualaLumpur","KualaLumpur","gdpPerCapita","Year",2095,"Vint_2095","GDP per Capita (Thousand 1990 USD per Person)",45.143
+"High","KualaLumpur","KualaLumpur","gdpPerCapita","Year",2100,"Vint_2100","GDP per Capita (Thousand 1990 USD per Person)",47.3354
+"High","KualaLumpur","KualaLumpur","pop","Year",1975,"Vint_1975","Population (Millions)",1.434
+"High","KualaLumpur","KualaLumpur","pop","Year",1990,"Vint_1990","Population (Millions)",1.917
+"High","KualaLumpur","KualaLumpur","pop","Year",2005,"Vint_2005","Population (Millions)",2.007
+"High","KualaLumpur","KualaLumpur","pop","Year",2010,"Vint_2010","Population (Millions)",2.022
+"High","KualaLumpur","KualaLumpur","pop","Year",2015,"Vint_2015","Population (Millions)",2.02
+"High","KualaLumpur","KualaLumpur","pop","Year",2020,"Vint_2020","Population (Millions)",1.982
+"High","KualaLumpur","KualaLumpur","pop","Year",2025,"Vint_2025","Population (Millions)",1.98
+"High","KualaLumpur","KualaLumpur","pop","Year",2030,"Vint_2030","Population (Millions)",1.976
+"High","KualaLumpur","KualaLumpur","pop","Year",2035,"Vint_2035","Population (Millions)",1.948
+"High","KualaLumpur","KualaLumpur","pop","Year",2040,"Vint_2040","Population (Millions)",1.902
+"High","KualaLumpur","KualaLumpur","pop","Year",2045,"Vint_2045","Population (Millions)",1.861
+"High","KualaLumpur","KualaLumpur","pop","Year",2050,"Vint_2050","Population (Millions)",1.814
+"High","KualaLumpur","KualaLumpur","pop","Year",2055,"Vint_2055","Population (Millions)",1.758
+"High","KualaLumpur","KualaLumpur","pop","Year",2060,"Vint_2060","Population (Millions)",1.697
+"High","KualaLumpur","KualaLumpur","pop","Year",2065,"Vint_2065","Population (Millions)",1.635
+"High","KualaLumpur","KualaLumpur","pop","Year",2070,"Vint_2070","Population (Millions)",1.575
+"High","KualaLumpur","KualaLumpur","pop","Year",2075,"Vint_2075","Population (Millions)",1.518
+"High","KualaLumpur","KualaLumpur","pop","Year",2080,"Vint_2080","Population (Millions)",1.464
+"High","KualaLumpur","KualaLumpur","pop","Year",2085,"Vint_2085","Population (Millions)",1.411
+"High","KualaLumpur","KualaLumpur","pop","Year",2090,"Vint_2090","Population (Millions)",1.36
+"High","KualaLumpur","KualaLumpur","pop","Year",2095,"Vint_2095","Population (Millions)",1.311
+"High","KualaLumpur","KualaLumpur","pop","Year",2100,"Vint_2100","Population (Millions)",1.266
+"High","KualaLumpur","KualaLumpur","transportFreightVMTByFuel","Year",1975,"Vint_1975","Freight (million ton-km)",920.2033
+"High","KualaLumpur","KualaLumpur","transportFreightVMTByFuel","Year",1990,"Vint_1990","Freight (million ton-km)",2794.3816
+"High","KualaLumpur","KualaLumpur","transportFreightVMTByFuel","Year",2005,"Vint_2005","Freight (million ton-km)",4706.9448
+"High","KualaLumpur","KualaLumpur","transportFreightVMTByFuel","Year",2010,"Vint_2010","Freight (million ton-km)",4814.2006
+"High","KualaLumpur","KualaLumpur","transportFreightVMTByFuel","Year",2015,"Vint_2015","Freight (million ton-km)",7644.939
+"High","KualaLumpur","KualaLumpur","transportFreightVMTByFuel","Year",2020,"Vint_2020","Freight (million ton-km)",8714.85822
+"High","KualaLumpur","KualaLumpur","transportFreightVMTByFuel","Year",2025,"Vint_2025","Freight (million ton-km)",9387.67954612981
+"High","KualaLumpur","KualaLumpur","transportFreightVMTByFuel","Year",2030,"Vint_2030","Freight (million ton-km)",10286.7197665244
+"High","KualaLumpur","KualaLumpur","transportFreightVMTByFuel","Year",2035,"Vint_2035","Freight (million ton-km)",11166.1853491329
+"High","KualaLumpur","KualaLumpur","transportFreightVMTByFuel","Year",2040,"Vint_2040","Freight (million ton-km)",11962.2847247974
+"High","KualaLumpur","KualaLumpur","transportFreightVMTByFuel","Year",2045,"Vint_2045","Freight (million ton-km)",12697.464375929
+"High","KualaLumpur","KualaLumpur","transportFreightVMTByFuel","Year",2050,"Vint_2050","Freight (million ton-km)",13331.02707912
+"High","KualaLumpur","KualaLumpur","transportFreightVMTByMode","Year",1975,"Vint_1975","Freight (million ton-km)",920.2033
+"High","KualaLumpur","KualaLumpur","transportFreightVMTByMode","Year",1990,"Vint_1990","Freight (million ton-km)",2794.3816
+"High","KualaLumpur","KualaLumpur","transportFreightVMTByMode","Year",2005,"Vint_2005","Freight (million ton-km)",4706.9448
+"High","KualaLumpur","KualaLumpur","transportFreightVMTByMode","Year",2010,"Vint_2010","Freight (million ton-km)",4814.2006
+"High","KualaLumpur","KualaLumpur","transportFreightVMTByMode","Year",2015,"Vint_2015","Freight (million ton-km)",7644.939
+"High","KualaLumpur","KualaLumpur","transportFreightVMTByMode","Year",2020,"Vint_2020","Freight (million ton-km)",8714.85822
+"High","KualaLumpur","KualaLumpur","transportFreightVMTByMode","Year",2025,"Vint_2025","Freight (million ton-km)",9387.67954612981
+"High","KualaLumpur","KualaLumpur","transportFreightVMTByMode","Year",2030,"Vint_2030","Freight (million ton-km)",10286.7197665244
+"High","KualaLumpur","KualaLumpur","transportFreightVMTByMode","Year",2035,"Vint_2035","Freight (million ton-km)",11166.1853491329
+"High","KualaLumpur","KualaLumpur","transportFreightVMTByMode","Year",2040,"Vint_2040","Freight (million ton-km)",11962.2847247974
+"High","KualaLumpur","KualaLumpur","transportFreightVMTByMode","Year",2045,"Vint_2045","Freight (million ton-km)",12697.464375929
+"High","KualaLumpur","KualaLumpur","transportFreightVMTByMode","Year",2050,"Vint_2050","Freight (million ton-km)",13331.02707912
+"High","KualaLumpur","KualaLumpur","transportFreightVMTByTech","Year",1975,"Vint_1975","Freight (million ton-km)",920.2033
+"High","KualaLumpur","KualaLumpur","transportFreightVMTByTech","Year",1990,"Vint_1990","Freight (million ton-km)",2794.3816
+"High","KualaLumpur","KualaLumpur","transportFreightVMTByTech","Year",2005,"Vint_2005","Freight (million ton-km)",4706.9448
+"High","KualaLumpur","KualaLumpur","transportFreightVMTByTech","Year",2010,"Vint_2010","Freight (million ton-km)",4814.2006
+"High","KualaLumpur","KualaLumpur","transportFreightVMTByTech","Year",2015,"Vint_2015","Freight (million ton-km)",7644.939
+"High","KualaLumpur","KualaLumpur","transportFreightVMTByTech","Year",2020,"Vint_2020","Freight (million ton-km)",8714.85822
+"High","KualaLumpur","KualaLumpur","transportFreightVMTByTech","Year",2025,"Vint_2025","Freight (million ton-km)",9387.67954612981
+"High","KualaLumpur","KualaLumpur","transportFreightVMTByTech","Year",2030,"Vint_2030","Freight (million ton-km)",10286.7197665244
+"High","KualaLumpur","KualaLumpur","transportFreightVMTByTech","Year",2035,"Vint_2035","Freight (million ton-km)",11166.1853491329
+"High","KualaLumpur","KualaLumpur","transportFreightVMTByTech","Year",2040,"Vint_2040","Freight (million ton-km)",11962.2847247974
+"High","KualaLumpur","KualaLumpur","transportFreightVMTByTech","Year",2045,"Vint_2045","Freight (million ton-km)",12697.464375929
+"High","KualaLumpur","KualaLumpur","transportFreightVMTByTech","Year",2050,"Vint_2050","Freight (million ton-km)",13331.02707912
+"High","KualaLumpur","KualaLumpur","transportPassengerVMTByFuel","Year",1975,"Vint_1975","Passenger (million pass-km)",10090.051305
+"High","KualaLumpur","KualaLumpur","transportPassengerVMTByFuel","Year",1990,"Vint_1990","Passenger (million pass-km)",24784.623562
+"High","KualaLumpur","KualaLumpur","transportPassengerVMTByFuel","Year",2005,"Vint_2005","Passenger (million pass-km)",51525.63749
+"High","KualaLumpur","KualaLumpur","transportPassengerVMTByFuel","Year",2010,"Vint_2010","Passenger (million pass-km)",52995.70691
+"High","KualaLumpur","KualaLumpur","transportPassengerVMTByFuel","Year",2015,"Vint_2015","Passenger (million pass-km)",71016.83328
+"High","KualaLumpur","KualaLumpur","transportPassengerVMTByFuel","Year",2020,"Vint_2020","Passenger (million pass-km)",69410.72668
+"High","KualaLumpur","KualaLumpur","transportPassengerVMTByFuel","Year",2025,"Vint_2025","Passenger (million pass-km)",71468.882816
+"High","KualaLumpur","KualaLumpur","transportPassengerVMTByFuel","Year",2030,"Vint_2030","Passenger (million pass-km)",74057.620786
+"High","KualaLumpur","KualaLumpur","transportPassengerVMTByFuel","Year",2035,"Vint_2035","Passenger (million pass-km)",76044.90593783
+"High","KualaLumpur","KualaLumpur","transportPassengerVMTByFuel","Year",2040,"Vint_2040","Passenger (million pass-km)",77789.1732532
+"High","KualaLumpur","KualaLumpur","transportPassengerVMTByFuel","Year",2045,"Vint_2045","Passenger (million pass-km)",80253.5434125
+"High","KualaLumpur","KualaLumpur","transportPassengerVMTByFuel","Year",2050,"Vint_2050","Passenger (million pass-km)",82432.324503
+"High","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","Year",1975,"Vint_1975","Passenger (million pass-km)",10090.051305
+"High","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","Year",1990,"Vint_1990","Passenger (million pass-km)",24784.623562
+"High","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","Year",2005,"Vint_2005","Passenger (million pass-km)",51525.63749
+"High","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","Year",2010,"Vint_2010","Passenger (million pass-km)",52995.70691
+"High","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","Year",2015,"Vint_2015","Passenger (million pass-km)",71016.83328
+"High","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","Year",2020,"Vint_2020","Passenger (million pass-km)",69410.72668
+"High","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","Year",2025,"Vint_2025","Passenger (million pass-km)",71468.882816
+"High","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","Year",2030,"Vint_2030","Passenger (million pass-km)",74057.620786
+"High","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","Year",2035,"Vint_2035","Passenger (million pass-km)",76044.90593783
+"High","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","Year",2040,"Vint_2040","Passenger (million pass-km)",77789.1732532
+"High","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","Year",2045,"Vint_2045","Passenger (million pass-km)",80253.5434125
+"High","KualaLumpur","KualaLumpur","transportPassengerVMTByMode","Year",2050,"Vint_2050","Passenger (million pass-km)",82432.324503
+"High","KualaLumpur","KualaLumpur","transportPassengerVMTByTech","Year",1975,"Vint_1975","Passenger (million pass-km)",10090.051305
+"High","KualaLumpur","KualaLumpur","transportPassengerVMTByTech","Year",1990,"Vint_1990","Passenger (million pass-km)",24784.623562
+"High","KualaLumpur","KualaLumpur","transportPassengerVMTByTech","Year",2005,"Vint_2005","Passenger (million pass-km)",51525.63749
+"High","KualaLumpur","KualaLumpur","transportPassengerVMTByTech","Year",2010,"Vint_2010","Passenger (million pass-km)",52995.70691
+"High","KualaLumpur","KualaLumpur","transportPassengerVMTByTech","Year",2015,"Vint_2015","Passenger (million pass-km)",71016.83328
+"High","KualaLumpur","KualaLumpur","transportPassengerVMTByTech","Year",2020,"Vint_2020","Passenger (million pass-km)",69410.72668
+"High","KualaLumpur","KualaLumpur","transportPassengerVMTByTech","Year",2025,"Vint_2025","Passenger (million pass-km)",71468.882816
+"High","KualaLumpur","KualaLumpur","transportPassengerVMTByTech","Year",2030,"Vint_2030","Passenger (million pass-km)",74057.620786
+"High","KualaLumpur","KualaLumpur","transportPassengerVMTByTech","Year",2035,"Vint_2035","Passenger (million pass-km)",76044.90593783
+"High","KualaLumpur","KualaLumpur","transportPassengerVMTByTech","Year",2040,"Vint_2040","Passenger (million pass-km)",77789.1732532
+"High","KualaLumpur","KualaLumpur","transportPassengerVMTByTech","Year",2045,"Vint_2045","Passenger (million pass-km)",80253.5434125
+"High","KualaLumpur","KualaLumpur","transportPassengerVMTByTech","Year",2050,"Vint_2050","Passenger (million pass-km)",82432.324503
+"High","Malaysia","Malaysia","elecByTechTWh","Year",1990,"Vint_1990","Electricity Generation by Fuel (TWh)",23.0145038888891
+"High","Malaysia","Malaysia","elecByTechTWh","Year",2005,"Vint_2005","Electricity Generation by Fuel (TWh)",82.6713869222229
+"High","Malaysia","Malaysia","elecByTechTWh","Year",2010,"Vint_2010","Electricity Generation by Fuel (TWh)",124.783825555557
+"High","Malaysia","Malaysia","elecByTechTWh","Year",2015,"Vint_2015","Electricity Generation by Fuel (TWh)",150.045726194446
+"High","Malaysia","Malaysia","elecByTechTWh","Year",2020,"Vint_2020","Electricity Generation by Fuel (TWh)",171.350610369065
+"High","Malaysia","Malaysia","elecByTechTWh","Year",2025,"Vint_2025","Electricity Generation by Fuel (TWh)",176.206481805999
+"High","Malaysia","Malaysia","elecByTechTWh","Year",2030,"Vint_2030","Electricity Generation by Fuel (TWh)",189.90539655211
+"High","Malaysia","Malaysia","elecByTechTWh","Year",2035,"Vint_2035","Electricity Generation by Fuel (TWh)",208.153286541832
+"High","Malaysia","Malaysia","elecByTechTWh","Year",2040,"Vint_2040","Electricity Generation by Fuel (TWh)",228.99491735711
+"High","Malaysia","Malaysia","elecByTechTWh","Year",2045,"Vint_2045","Electricity Generation by Fuel (TWh)",252.371859269888
+"High","Malaysia","Malaysia","elecByTechTWh","Year",2050,"Vint_2050","Electricity Generation by Fuel (TWh)",275.126804031102
+"High","Malaysia","Malaysia","elecConsumByDemandSectorTWh","Year",1975,"Vint_1975","Electricity Consumption by Sector (TWh)",0.885397222222229
+"High","Malaysia","Malaysia","elecConsumByDemandSectorTWh","Year",1990,"Vint_1990","Electricity Consumption by Sector (TWh)",2.08518222222224
+"High","Malaysia","Malaysia","elecConsumByDemandSectorTWh","Year",2005,"Vint_2005","Electricity Consumption by Sector (TWh)",5.52789533333338
+"High","Malaysia","Malaysia","elecConsumByDemandSectorTWh","Year",2010,"Vint_2010","Electricity Consumption by Sector (TWh)",6.63395916666672
+"High","Malaysia","Malaysia","elecConsumByDemandSectorTWh","Year",2015,"Vint_2015","Electricity Consumption by Sector (TWh)",10.7710813333334
+"High","Malaysia","Malaysia","elecConsumByDemandSectorTWh","Year",2020,"Vint_2020","Electricity Consumption by Sector (TWh)",17.8470109444446
+"High","Malaysia","Malaysia","elecConsumByDemandSectorTWh","Year",2025,"Vint_2025","Electricity Consumption by Sector (TWh)",19.7326118694446
+"High","Malaysia","Malaysia","elecConsumByDemandSectorTWh","Year",2030,"Vint_2030","Electricity Consumption by Sector (TWh)",22.4274713868891
+"High","Malaysia","Malaysia","elecConsumByDemandSectorTWh","Year",2035,"Vint_2035","Electricity Consumption by Sector (TWh)",26.0467555243335
+"High","Malaysia","Malaysia","elecConsumByDemandSectorTWh","Year",2040,"Vint_2040","Electricity Consumption by Sector (TWh)",29.370832314528
+"High","Malaysia","Malaysia","elecConsumByDemandSectorTWh","Year",2045,"Vint_2045","Electricity Consumption by Sector (TWh)",31.9354051983891
+"High","Malaysia","Malaysia","elecConsumByDemandSectorTWh","Year",2050,"Vint_2050","Electricity Consumption by Sector (TWh)",33.4434128731669
+"High","Malaysia","Malaysia","emissCO2BySectorNoBio","Year",1975,"Vint_1975","CO2 emissions - (MTCO2)",-0.8459803
+"High","Malaysia","Malaysia","emissCO2BySectorNoBio","Year",1980,"Vint_1980","CO2 emissions - (MTCO2)",161.705851637422
+"High","Malaysia","Malaysia","emissCO2BySectorNoBio","Year",1985,"Vint_1985","CO2 emissions - (MTCO2)",162.764003925032
+"High","Malaysia","Malaysia","emissCO2BySectorNoBio","Year",1990,"Vint_1990","CO2 emissions - (MTCO2)",24.0658129066667
+"High","Malaysia","Malaysia","emissCO2BySectorNoBio","Year",1990,"Vint_1990","CO2 emissions - (MTCO2)",163.021887718837
+"High","Malaysia","Malaysia","emissCO2BySectorNoBio","Year",1995,"Vint_1995","CO2 emissions - (MTCO2)",12.920814560951
+"High","Malaysia","Malaysia","emissCO2BySectorNoBio","Year",2000,"Vint_2000","CO2 emissions - (MTCO2)",-1.74179061296057
+"High","Malaysia","Malaysia","emissCO2BySectorNoBio","Year",2005,"Vint_2005","CO2 emissions - (MTCO2)",81.7593087703333
+"High","Malaysia","Malaysia","emissCO2BySectorNoBio","Year",2005,"Vint_2005","CO2 emissions - (MTCO2)",-9.52513518521619
+"High","Malaysia","Malaysia","emissCO2BySectorNoBio","Year",2010,"Vint_2010","CO2 emissions - (MTCO2)",123.085465332961
+"High","Malaysia","Malaysia","emissCO2BySectorNoBio","Year",2010,"Vint_2010","CO2 emissions - (MTCO2)",-52.1850760184978
+"High","Malaysia","Malaysia","emissCO2BySectorNoBio","Year",2015,"Vint_2015","CO2 emissions - (MTCO2)",129.727697585382
+"High","Malaysia","Malaysia","emissCO2BySectorNoBio","Year",2015,"Vint_2015","CO2 emissions - (MTCO2)",-35.2900829247203
+"High","Malaysia","Malaysia","emissCO2BySectorNoBio","Year",2020,"Vint_2020","CO2 emissions - (MTCO2)",136.126362648051
+"High","Malaysia","Malaysia","emissCO2BySectorNoBio","Year",2020,"Vint_2020","CO2 emissions - (MTCO2)",19.7957254993344
+"High","Malaysia","Malaysia","emissCO2BySectorNoBio","Year",2025,"Vint_2025","CO2 emissions - (MTCO2)",135.575697466118
+"High","Malaysia","Malaysia","emissCO2BySectorNoBio","Year",2025,"Vint_2025","CO2 emissions - (MTCO2)",12.2821043452454
+"High","Malaysia","Malaysia","emissCO2BySectorNoBio","Year",2030,"Vint_2030","CO2 emissions - (MTCO2)",129.192026916117
+"High","Malaysia","Malaysia","emissCO2BySectorNoBio","Year",2030,"Vint_2030","CO2 emissions - (MTCO2)",13.2840420034584
+"High","Malaysia","Malaysia","emissCO2BySectorNoBio","Year",2035,"Vint_2035","CO2 emissions - (MTCO2)",125.183277418184
+"High","Malaysia","Malaysia","emissCO2BySectorNoBio","Year",2035,"Vint_2035","CO2 emissions - (MTCO2)",-2.74898640991719
+"High","Malaysia","Malaysia","emissCO2BySectorNoBio","Year",2040,"Vint_2040","CO2 emissions - (MTCO2)",118.116365177426
+"High","Malaysia","Malaysia","emissCO2BySectorNoBio","Year",2040,"Vint_2040","CO2 emissions - (MTCO2)",7.0103472631334
+"High","Malaysia","Malaysia","emissCO2BySectorNoBio","Year",2045,"Vint_2045","CO2 emissions - (MTCO2)",93.7241867130477
+"High","Malaysia","Malaysia","emissCO2BySectorNoBio","Year",2045,"Vint_2045","CO2 emissions - (MTCO2)",28.8606914480423
+"High","Malaysia","Malaysia","emissCO2BySectorNoBio","Year",2050,"Vint_2050","CO2 emissions - (MTCO2)",68.0224128694479
+"High","Malaysia","Malaysia","emissCO2BySectorNoBio","Year",2050,"Vint_2050","CO2 emissions - (MTCO2)",30.7449458198654
+"High","Malaysia","Malaysia","emissCO2BySectorNoBio","Year",2055,"Vint_2055","CO2 emissions - (MTCO2)",-3.17875081337191
+"High","Malaysia","Malaysia","emissCO2BySectorNoBio","Year",2060,"Vint_2060","CO2 emissions - (MTCO2)",-2.29559267431461
+"High","Malaysia","Malaysia","emissCO2BySectorNoBio","Year",2065,"Vint_2065","CO2 emissions - (MTCO2)",-1.60896307127158
+"High","Malaysia","Malaysia","emissCO2BySectorNoBio","Year",2070,"Vint_2070","CO2 emissions - (MTCO2)",-1.1214932439621
+"High","Malaysia","Malaysia","emissCO2BySectorNoBio","Year",2075,"Vint_2075","CO2 emissions - (MTCO2)",-0.777697707167663
+"High","Malaysia","Malaysia","emissCO2BySectorNoBio","Year",2080,"Vint_2080","CO2 emissions - (MTCO2)",-0.537378358910934
+"High","Malaysia","Malaysia","emissCO2BySectorNoBio","Year",2085,"Vint_2085","CO2 emissions - (MTCO2)",-0.370530132289354
+"High","Malaysia","Malaysia","emissCO2BySectorNoBio","Year",2090,"Vint_2090","CO2 emissions - (MTCO2)",-0.255170311134773
+"High","Malaysia","Malaysia","emissCO2BySectorNoBio","Year",2095,"Vint_2095","CO2 emissions - (MTCO2)",-0.175599226559233
+"High","Malaysia","Malaysia","emissCO2BySectorNoBio","Year",2100,"Vint_2100","CO2 emissions - (MTCO2)",-0.120787720100839
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",-0.845979566666666
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",4.435836457021
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",3.38076984471
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",1980,"Vint_1980","GHG emissions (MTCO2eq)",161.705851637422
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",1985,"Vint_1985","GHG emissions (MTCO2eq)",162.764003925032
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",24.0658151066667
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",163.021887718837
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",18.1836115819725
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",0.156547365
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",6.54436008335
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",1995,"Vint_1995","GHG emissions (MTCO2eq)",12.920814560951
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2000,"Vint_2000","GHG emissions (MTCO2eq)",-1.74179061296057
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",81.7593087703333
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",-9.52513518521619
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",34.36597266873
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",1.129692330885
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",14.36379552274
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",123.085445879
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",-52.1850760184978
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",32.09435628808
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",2.767249505105
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",15.4847557760875
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",129.727381534667
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",-35.2900829247203
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",36.55723122012
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",3.328245527805
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",16.9456802914228
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",136.125803090843
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",19.7957254993344
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",37.773245905321
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",2.278966776825
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",19.016697173382
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",135.575614868416
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",12.2821043452454
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",36.0586358176675
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",2.228935705285
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",18.9304016681129
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",129.191956449391
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",13.2840420034584
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",35.89345904185
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",2.16037303091
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",18.8928768100926
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",125.183204364749
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",-2.74898640991719
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",35.6507353041933
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",2.165721103145
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",18.3113245491957
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",118.11623931448
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",7.0103472631334
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",35.2402886323292
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",2.1482246745
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",18.4451274475172
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",93.7239830179213
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",28.8606914480423
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",34.2980657458827
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",2.247086932015
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",18.9193636917659
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",68.0220691522234
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",30.7449458198654
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",32.1373115356052
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",2.33891807247
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",19.063360200466
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2055,"Vint_2055","GHG emissions (MTCO2eq)",-3.17875081337191
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2060,"Vint_2060","GHG emissions (MTCO2eq)",-2.29559267431461
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2065,"Vint_2065","GHG emissions (MTCO2eq)",-1.60896307127158
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2070,"Vint_2070","GHG emissions (MTCO2eq)",-1.1214932439621
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2075,"Vint_2075","GHG emissions (MTCO2eq)",-0.777697707167663
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2080,"Vint_2080","GHG emissions (MTCO2eq)",-0.537378358910934
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2085,"Vint_2085","GHG emissions (MTCO2eq)",-0.370530132289354
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2090,"Vint_2090","GHG emissions (MTCO2eq)",-0.255170311134773
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2095,"Vint_2095","GHG emissions (MTCO2eq)",-0.175599226559233
+"High","Malaysia","Malaysia","emissGHGByGasGWPAR5","Year",2100,"Vint_2100","GHG emissions (MTCO2eq)",-0.120787720100839
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",-0.845979566666666
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",4.435836457021
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",3.38076984471
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",1980,"Vint_1980","GHG emissions (MTCO2eq)",161.705851637422
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",1985,"Vint_1985","GHG emissions (MTCO2eq)",162.764003925032
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",24.0658151066667
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",163.021887718837
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",18.1836115819725
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",0.156547365
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",6.54436008335
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",1995,"Vint_1995","GHG emissions (MTCO2eq)",12.920814560951
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2000,"Vint_2000","GHG emissions (MTCO2eq)",-1.74179061296057
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",81.7593087703333
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",-9.52513518521619
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",34.36597266873
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",1.129692330885
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",14.36379552274
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",123.085445879
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",-52.1850760184978
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",32.09435628808
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",2.767249505105
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",15.4847557760875
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",129.727381534667
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",-35.2900829247203
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",36.55723122012
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",3.328245527805
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",16.9456802914228
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",136.125803090843
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",19.7957254993344
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",37.773245905321
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",2.278966776825
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",19.016697173382
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",135.575614868416
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",12.2821043452454
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",36.0586358176675
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",2.228935705285
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",18.9304016681129
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",129.191956449391
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",13.2840420034584
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",35.89345904185
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",2.16037303091
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",18.8928768100926
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",125.183204364749
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",-2.74898640991719
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",35.6507353041933
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",2.165721103145
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",18.3113245491957
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",118.11623931448
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",7.0103472631334
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",35.2402886323292
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",2.1482246745
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",18.4451274475172
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",93.7239830179213
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",28.8606914480423
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",34.2980657458827
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",2.247086932015
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",18.9193636917659
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",68.0220691522234
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",30.7449458198654
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",32.1373115356052
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",2.33891807247
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",19.063360200466
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2055,"Vint_2055","GHG emissions (MTCO2eq)",-3.17875081337191
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2060,"Vint_2060","GHG emissions (MTCO2eq)",-2.29559267431461
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2065,"Vint_2065","GHG emissions (MTCO2eq)",-1.60896307127158
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2070,"Vint_2070","GHG emissions (MTCO2eq)",-1.1214932439621
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2075,"Vint_2075","GHG emissions (MTCO2eq)",-0.777697707167663
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2080,"Vint_2080","GHG emissions (MTCO2eq)",-0.537378358910934
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2085,"Vint_2085","GHG emissions (MTCO2eq)",-0.370530132289354
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2090,"Vint_2090","GHG emissions (MTCO2eq)",-0.255170311134773
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2095,"Vint_2095","GHG emissions (MTCO2eq)",-0.175599226559233
+"High","Malaysia","Malaysia","emissGHGBySectorGWPAR5","Year",2100,"Vint_2100","GHG emissions (MTCO2eq)",-0.120787720100839
+"High","Malaysia","Malaysia","energyFinalByFuelEJ","Year",1975,"Vint_1975","Final Energy by Fuel (EJ)",0.01191771
+"High","Malaysia","Malaysia","energyFinalByFuelEJ","Year",1990,"Vint_1990","Final Energy by Fuel (EJ)",0.0428286514
+"High","Malaysia","Malaysia","energyFinalByFuelEJ","Year",2005,"Vint_2005","Final Energy by Fuel (EJ)",0.1110240245
+"High","Malaysia","Malaysia","energyFinalByFuelEJ","Year",2010,"Vint_2010","Final Energy by Fuel (EJ)",0.1253667975
+"High","Malaysia","Malaysia","energyFinalByFuelEJ","Year",2015,"Vint_2015","Final Energy by Fuel (EJ)",0.1477736293
+"High","Malaysia","Malaysia","energyFinalByFuelEJ","Year",2020,"Vint_2020","Final Energy by Fuel (EJ)",0.18386009596292
+"High","Malaysia","Malaysia","energyFinalByFuelEJ","Year",2025,"Vint_2025","Final Energy by Fuel (EJ)",0.19883280357049
+"High","Malaysia","Malaysia","energyFinalByFuelEJ","Year",2030,"Vint_2030","Final Energy by Fuel (EJ)",0.2154170932376
+"High","Malaysia","Malaysia","energyFinalByFuelEJ","Year",2035,"Vint_2035","Final Energy by Fuel (EJ)",0.230671289474813
+"High","Malaysia","Malaysia","energyFinalByFuelEJ","Year",2040,"Vint_2040","Final Energy by Fuel (EJ)",0.242404054742487
+"High","Malaysia","Malaysia","energyFinalByFuelEJ","Year",2045,"Vint_2045","Final Energy by Fuel (EJ)",0.251360317823867
+"High","Malaysia","Malaysia","energyFinalByFuelEJ","Year",2050,"Vint_2050","Final Energy by Fuel (EJ)",0.256843423828757
+"High","Malaysia","Malaysia","energyFinalConsumBySecEJ","Year",1975,"Vint_1975","Final Energy by Sector (EJ)",0.01191771
+"High","Malaysia","Malaysia","energyFinalConsumBySecEJ","Year",1990,"Vint_1990","Final Energy by Sector (EJ)",0.0428286514
+"High","Malaysia","Malaysia","energyFinalConsumBySecEJ","Year",2005,"Vint_2005","Final Energy by Sector (EJ)",0.1110240245
+"High","Malaysia","Malaysia","energyFinalConsumBySecEJ","Year",2010,"Vint_2010","Final Energy by Sector (EJ)",0.1253667975
+"High","Malaysia","Malaysia","energyFinalConsumBySecEJ","Year",2015,"Vint_2015","Final Energy by Sector (EJ)",0.1477736293
+"High","Malaysia","Malaysia","energyFinalConsumBySecEJ","Year",2020,"Vint_2020","Final Energy by Sector (EJ)",0.18386009596292
+"High","Malaysia","Malaysia","energyFinalConsumBySecEJ","Year",2025,"Vint_2025","Final Energy by Sector (EJ)",0.19883280357049
+"High","Malaysia","Malaysia","energyFinalConsumBySecEJ","Year",2030,"Vint_2030","Final Energy by Sector (EJ)",0.2154170932376
+"High","Malaysia","Malaysia","energyFinalConsumBySecEJ","Year",2035,"Vint_2035","Final Energy by Sector (EJ)",0.230671289474813
+"High","Malaysia","Malaysia","energyFinalConsumBySecEJ","Year",2040,"Vint_2040","Final Energy by Sector (EJ)",0.242404054742487
+"High","Malaysia","Malaysia","energyFinalConsumBySecEJ","Year",2045,"Vint_2045","Final Energy by Sector (EJ)",0.251360317823867
+"High","Malaysia","Malaysia","energyFinalConsumBySecEJ","Year",2050,"Vint_2050","Final Energy by Sector (EJ)",0.256843423828757
+"High","Malaysia","Malaysia","energyFinalSubsecByFuelIndusEJ","Year",1975,"Vint_1975","Industry Final Energy by Fuel (EJ)",0.009441608
+"High","Malaysia","Malaysia","energyFinalSubsecByFuelIndusEJ","Year",1990,"Vint_1990","Industry Final Energy by Fuel (EJ)",0.038066362
+"High","Malaysia","Malaysia","energyFinalSubsecByFuelIndusEJ","Year",2005,"Vint_2005","Industry Final Energy by Fuel (EJ)",0.0993783277
+"High","Malaysia","Malaysia","energyFinalSubsecByFuelIndusEJ","Year",2010,"Vint_2010","Industry Final Energy by Fuel (EJ)",0.1110447609
+"High","Malaysia","Malaysia","energyFinalSubsecByFuelIndusEJ","Year",2015,"Vint_2015","Industry Final Energy by Fuel (EJ)",0.1319020829
+"High","Malaysia","Malaysia","energyFinalSubsecByFuelIndusEJ","Year",2020,"Vint_2020","Industry Final Energy by Fuel (EJ)",0.16582750766292
+"High","Malaysia","Malaysia","energyFinalSubsecByFuelIndusEJ","Year",2025,"Vint_2025","Industry Final Energy by Fuel (EJ)",0.18007367957049
+"High","Malaysia","Malaysia","energyFinalSubsecByFuelIndusEJ","Year",2030,"Vint_2030","Industry Final Energy by Fuel (EJ)",0.1959487296376
+"High","Malaysia","Malaysia","energyFinalSubsecByFuelIndusEJ","Year",2035,"Vint_2035","Industry Final Energy by Fuel (EJ)",0.210695395474813
+"High","Malaysia","Malaysia","energyFinalSubsecByFuelIndusEJ","Year",2040,"Vint_2040","Industry Final Energy by Fuel (EJ)",0.222196086342487
+"High","Malaysia","Malaysia","energyFinalSubsecByFuelIndusEJ","Year",2045,"Vint_2045","Industry Final Energy by Fuel (EJ)",0.231117459123867
+"High","Malaysia","Malaysia","energyFinalSubsecByFuelIndusEJ","Year",2050,"Vint_2050","Industry Final Energy by Fuel (EJ)",0.236806141528757
+"High","Malaysia","Malaysia","gdp","Year",1975,"Vint_1975","GDP (Billion 1990 USD)",19.456
+"High","Malaysia","Malaysia","gdp","Year",1990,"Vint_1990","GDP (Billion 1990 USD)",53.9585
+"High","Malaysia","Malaysia","gdp","Year",2005,"Vint_2005","GDP (Billion 1990 USD)",135.13
+"High","Malaysia","Malaysia","gdp","Year",2010,"Vint_2010","GDP (Billion 1990 USD)",168.21
+"High","Malaysia","Malaysia","gdp","Year",2015,"Vint_2015","GDP (Billion 1990 USD)",217.747
+"High","Malaysia","Malaysia","gdp","Year",2020,"Vint_2020","GDP (Billion 1990 USD)",318.037
+"High","Malaysia","Malaysia","gdp","Year",2025,"Vint_2025","GDP (Billion 1990 USD)",371.769
+"High","Malaysia","Malaysia","gdp","Year",2030,"Vint_2030","GDP (Billion 1990 USD)",438.016
+"High","Malaysia","Malaysia","gdp","Year",2035,"Vint_2035","GDP (Billion 1990 USD)",515.092
+"High","Malaysia","Malaysia","gdp","Year",2040,"Vint_2040","GDP (Billion 1990 USD)",598.094
+"High","Malaysia","Malaysia","gdp","Year",2045,"Vint_2045","GDP (Billion 1990 USD)",680.981
+"High","Malaysia","Malaysia","gdp","Year",2050,"Vint_2050","GDP (Billion 1990 USD)",759.808
+"High","Malaysia","Malaysia","gdp","Year",2055,"Vint_2055","GDP (Billion 1990 USD)",832.439
+"High","Malaysia","Malaysia","gdp","Year",2060,"Vint_2060","GDP (Billion 1990 USD)",898.807
+"High","Malaysia","Malaysia","gdp","Year",2065,"Vint_2065","GDP (Billion 1990 USD)",959.568
+"High","Malaysia","Malaysia","gdp","Year",2070,"Vint_2070","GDP (Billion 1990 USD)",1015.55
+"High","Malaysia","Malaysia","gdp","Year",2075,"Vint_2075","GDP (Billion 1990 USD)",1068.83
+"High","Malaysia","Malaysia","gdp","Year",2080,"Vint_2080","GDP (Billion 1990 USD)",1123.91
+"High","Malaysia","Malaysia","gdp","Year",2085,"Vint_2085","GDP (Billion 1990 USD)",1183.51
+"High","Malaysia","Malaysia","gdp","Year",2090,"Vint_2090","GDP (Billion 1990 USD)",1247.66
+"High","Malaysia","Malaysia","gdp","Year",2095,"Vint_2095","GDP (Billion 1990 USD)",1315.15
+"High","Malaysia","Malaysia","gdp","Year",2100,"Vint_2100","GDP (Billion 1990 USD)",1385.22
+"High","Malaysia","Malaysia","gdpPerCapita","Year",1975,"Vint_1975","GDP per Capita (Thousand 1990 USD per Person)",1.59974
+"High","Malaysia","Malaysia","gdpPerCapita","Year",1990,"Vint_1990","GDP per Capita (Thousand 1990 USD per Person)",2.99271
+"High","Malaysia","Malaysia","gdpPerCapita","Year",2005,"Vint_2005","GDP per Capita (Thousand 1990 USD per Person)",5.25981
+"High","Malaysia","Malaysia","gdpPerCapita","Year",2010,"Vint_2010","GDP per Capita (Thousand 1990 USD per Person)",5.96319
+"High","Malaysia","Malaysia","gdpPerCapita","Year",2015,"Vint_2015","GDP per Capita (Thousand 1990 USD per Person)",7.19326
+"High","Malaysia","Malaysia","gdpPerCapita","Year",2020,"Vint_2020","GDP per Capita (Thousand 1990 USD per Person)",9.82627
+"High","Malaysia","Malaysia","gdpPerCapita","Year",2025,"Vint_2025","GDP per Capita (Thousand 1990 USD per Person)",10.823
+"High","Malaysia","Malaysia","gdpPerCapita","Year",2030,"Vint_2030","GDP per Capita (Thousand 1990 USD per Person)",12.1351
+"High","Malaysia","Malaysia","gdpPerCapita","Year",2035,"Vint_2035","GDP per Capita (Thousand 1990 USD per Person)",13.7117
+"High","Malaysia","Malaysia","gdpPerCapita","Year",2040,"Vint_2040","GDP per Capita (Thousand 1990 USD per Person)",15.4327
+"High","Malaysia","Malaysia","gdpPerCapita","Year",2045,"Vint_2045","GDP per Capita (Thousand 1990 USD per Person)",17.1402
+"High","Malaysia","Malaysia","gdpPerCapita","Year",2050,"Vint_2050","GDP per Capita (Thousand 1990 USD per Person)",18.7376
+"High","Malaysia","Malaysia","gdpPerCapita","Year",2055,"Vint_2055","GDP per Capita (Thousand 1990 USD per Person)",20.1896
+"High","Malaysia","Malaysia","gdpPerCapita","Year",2060,"Vint_2060","GDP per Capita (Thousand 1990 USD per Person)",21.5376
+"High","Malaysia","Malaysia","gdpPerCapita","Year",2065,"Vint_2065","GDP per Capita (Thousand 1990 USD per Person)",22.8398
+"High","Malaysia","Malaysia","gdpPerCapita","Year",2070,"Vint_2070","GDP per Capita (Thousand 1990 USD per Person)",24.1442
+"High","Malaysia","Malaysia","gdpPerCapita","Year",2075,"Vint_2075","GDP per Capita (Thousand 1990 USD per Person)",25.5017
+"High","Malaysia","Malaysia","gdpPerCapita","Year",2080,"Vint_2080","GDP per Capita (Thousand 1990 USD per Person)",27.0008
+"High","Malaysia","Malaysia","gdpPerCapita","Year",2085,"Vint_2085","GDP per Capita (Thousand 1990 USD per Person)",28.6786
+"High","Malaysia","Malaysia","gdpPerCapita","Year",2090,"Vint_2090","GDP per Capita (Thousand 1990 USD per Person)",30.5149
+"High","Malaysia","Malaysia","gdpPerCapita","Year",2095,"Vint_2095","GDP per Capita (Thousand 1990 USD per Person)",32.4784
+"High","Malaysia","Malaysia","gdpPerCapita","Year",2100,"Vint_2100","GDP per Capita (Thousand 1990 USD per Person)",34.5631
+"High","Malaysia","Malaysia","pop","Year",1975,"Vint_1975","Population (Millions)",12.162
+"High","Malaysia","Malaysia","pop","Year",1990,"Vint_1990","Population (Millions)",18.03
+"High","Malaysia","Malaysia","pop","Year",2005,"Vint_2005","Population (Millions)",25.691
+"High","Malaysia","Malaysia","pop","Year",2010,"Vint_2010","Population (Millions)",28.208
+"High","Malaysia","Malaysia","pop","Year",2015,"Vint_2015","Population (Millions)",30.271
+"High","Malaysia","Malaysia","pop","Year",2020,"Vint_2020","Population (Millions)",32.366
+"High","Malaysia","Malaysia","pop","Year",2025,"Vint_2025","Population (Millions)",34.35
+"High","Malaysia","Malaysia","pop","Year",2030,"Vint_2030","Population (Millions)",36.095
+"High","Malaysia","Malaysia","pop","Year",2035,"Vint_2035","Population (Millions)",37.566
+"High","Malaysia","Malaysia","pop","Year",2040,"Vint_2040","Population (Millions)",38.755
+"High","Malaysia","Malaysia","pop","Year",2045,"Vint_2045","Population (Millions)",39.73
+"High","Malaysia","Malaysia","pop","Year",2050,"Vint_2050","Population (Millions)",40.55
+"High","Malaysia","Malaysia","pop","Year",2055,"Vint_2055","Population (Millions)",41.231
+"High","Malaysia","Malaysia","pop","Year",2060,"Vint_2060","Population (Millions)",41.732
+"High","Malaysia","Malaysia","pop","Year",2065,"Vint_2065","Population (Millions)",42.013
+"High","Malaysia","Malaysia","pop","Year",2070,"Vint_2070","Population (Millions)",42.062
+"High","Malaysia","Malaysia","pop","Year",2075,"Vint_2075","Population (Millions)",41.912
+"High","Malaysia","Malaysia","pop","Year",2080,"Vint_2080","Population (Millions)",41.625
+"High","Malaysia","Malaysia","pop","Year",2085,"Vint_2085","Population (Millions)",41.268
+"High","Malaysia","Malaysia","pop","Year",2090,"Vint_2090","Population (Millions)",40.887
+"High","Malaysia","Malaysia","pop","Year",2095,"Vint_2095","Population (Millions)",40.493
+"High","Malaysia","Malaysia","pop","Year",2100,"Vint_2100","Population (Millions)",40.078
+"High","Rest of Malaysia","Rest of Malaysia","buildingFloorspace","Year",1975,"Vint_1975","billion m^2",0.111821
+"High","Rest of Malaysia","Rest of Malaysia","buildingFloorspace","Year",1990,"Vint_1990","billion m^2",0.190845
+"High","Rest of Malaysia","Rest of Malaysia","buildingFloorspace","Year",2005,"Vint_2005","billion m^2",0.3523258
+"High","Rest of Malaysia","Rest of Malaysia","buildingFloorspace","Year",2010,"Vint_2010","billion m^2",0.55773
+"High","Rest of Malaysia","Rest of Malaysia","buildingFloorspace","Year",2015,"Vint_2015","billion m^2",0.762607
+"High","Rest of Malaysia","Rest of Malaysia","buildingFloorspace","Year",2020,"Vint_2020","billion m^2",0.8546
+"High","Rest of Malaysia","Rest of Malaysia","buildingFloorspace","Year",2025,"Vint_2025","billion m^2",0.9508
+"High","Rest of Malaysia","Rest of Malaysia","buildingFloorspace","Year",2030,"Vint_2030","billion m^2",1.0341
+"High","Rest of Malaysia","Rest of Malaysia","buildingFloorspace","Year",2035,"Vint_2035","billion m^2",1.1106
+"High","Rest of Malaysia","Rest of Malaysia","buildingFloorspace","Year",2040,"Vint_2040","billion m^2",1.1847
+"High","Rest of Malaysia","Rest of Malaysia","buildingFloorspace","Year",2045,"Vint_2045","billion m^2",1.2553
+"High","Rest of Malaysia","Rest of Malaysia","buildingFloorspace","Year",2050,"Vint_2050","billion m^2",1.32
+"High","Rest of Malaysia","Rest of Malaysia","buildingFloorspace","Year",2055,"Vint_2055","billion m^2",1.32
+"High","Rest of Malaysia","Rest of Malaysia","buildingFloorspace","Year",2060,"Vint_2060","billion m^2",1.32
+"High","Rest of Malaysia","Rest of Malaysia","buildingFloorspace","Year",2065,"Vint_2065","billion m^2",1.32
+"High","Rest of Malaysia","Rest of Malaysia","buildingFloorspace","Year",2070,"Vint_2070","billion m^2",1.32
+"High","Rest of Malaysia","Rest of Malaysia","buildingFloorspace","Year",2075,"Vint_2075","billion m^2",1.32
+"High","Rest of Malaysia","Rest of Malaysia","buildingFloorspace","Year",2080,"Vint_2080","billion m^2",1.32
+"High","Rest of Malaysia","Rest of Malaysia","buildingFloorspace","Year",2085,"Vint_2085","billion m^2",1.32
+"High","Rest of Malaysia","Rest of Malaysia","buildingFloorspace","Year",2090,"Vint_2090","billion m^2",1.32
+"High","Rest of Malaysia","Rest of Malaysia","buildingFloorspace","Year",2095,"Vint_2095","billion m^2",1.32
+"High","Rest of Malaysia","Rest of Malaysia","buildingFloorspace","Year",2100,"Vint_2100","billion m^2",1.32
+"High","Rest of Malaysia","Rest of Malaysia","elecConsumByDemandSectorTWh","Year",1975,"Vint_1975","Electricity Consumption by Sector (TWh)",2.35027500000002
+"High","Rest of Malaysia","Rest of Malaysia","elecConsumByDemandSectorTWh","Year",1990,"Vint_1990","Electricity Consumption by Sector (TWh)",15.9423488333335
+"High","Rest of Malaysia","Rest of Malaysia","elecConsumByDemandSectorTWh","Year",2005,"Vint_2005","Electricity Consumption by Sector (TWh)",61.5438908333338
+"High","Rest of Malaysia","Rest of Malaysia","elecConsumByDemandSectorTWh","Year",2010,"Vint_2010","Electricity Consumption by Sector (TWh)",95.0117286111119
+"High","Rest of Malaysia","Rest of Malaysia","elecConsumByDemandSectorTWh","Year",2015,"Vint_2015","Electricity Consumption by Sector (TWh)",113.016473333334
+"High","Rest of Malaysia","Rest of Malaysia","elecConsumByDemandSectorTWh","Year",2020,"Vint_2020","Electricity Consumption by Sector (TWh)",124.485279222223
+"High","Rest of Malaysia","Rest of Malaysia","elecConsumByDemandSectorTWh","Year",2025,"Vint_2025","Electricity Consumption by Sector (TWh)",126.975147547382
+"High","Rest of Malaysia","Rest of Malaysia","elecConsumByDemandSectorTWh","Year",2030,"Vint_2030","Electricity Consumption by Sector (TWh)",136.711535918946
+"High","Rest of Malaysia","Rest of Malaysia","elecConsumByDemandSectorTWh","Year",2035,"Vint_2035","Electricity Consumption by Sector (TWh)",149.942663778835
+"High","Rest of Malaysia","Rest of Malaysia","elecConsumByDemandSectorTWh","Year",2040,"Vint_2040","Electricity Consumption by Sector (TWh)",165.908321186668
+"High","Rest of Malaysia","Rest of Malaysia","elecConsumByDemandSectorTWh","Year",2045,"Vint_2045","Electricity Consumption by Sector (TWh)",184.06189105609
+"High","Rest of Malaysia","Rest of Malaysia","elecConsumByDemandSectorTWh","Year",2050,"Vint_2050","Electricity Consumption by Sector (TWh)",202.424775837502
+"High","Rest of Malaysia","Rest of Malaysia","emissCO2BySectorNoBio","Year",1975,"Vint_1975","CO2 emissions - (MTCO2)",12.4312111366667
+"High","Rest of Malaysia","Rest of Malaysia","emissCO2BySectorNoBio","Year",1990,"Vint_1990","CO2 emissions - (MTCO2)",34.1158080633333
+"High","Rest of Malaysia","Rest of Malaysia","emissCO2BySectorNoBio","Year",2005,"Vint_2005","CO2 emissions - (MTCO2)",98.21759849
+"High","Rest of Malaysia","Rest of Malaysia","emissCO2BySectorNoBio","Year",2010,"Vint_2010","CO2 emissions - (MTCO2)",97.2281142066667
+"High","Rest of Malaysia","Rest of Malaysia","emissCO2BySectorNoBio","Year",2015,"Vint_2015","CO2 emissions - (MTCO2)",125.540711787333
+"High","Rest of Malaysia","Rest of Malaysia","emissCO2BySectorNoBio","Year",2020,"Vint_2020","CO2 emissions - (MTCO2)",140.589655714933
+"High","Rest of Malaysia","Rest of Malaysia","emissCO2BySectorNoBio","Year",2025,"Vint_2025","CO2 emissions - (MTCO2)",140.073074323967
+"High","Rest of Malaysia","Rest of Malaysia","emissCO2BySectorNoBio","Year",2030,"Vint_2030","CO2 emissions - (MTCO2)",136.1737941762
+"High","Rest of Malaysia","Rest of Malaysia","emissCO2BySectorNoBio","Year",2035,"Vint_2035","CO2 emissions - (MTCO2)",131.021833171533
+"High","Rest of Malaysia","Rest of Malaysia","emissCO2BySectorNoBio","Year",2040,"Vint_2040","CO2 emissions - (MTCO2)",126.220958450767
+"High","Rest of Malaysia","Rest of Malaysia","emissCO2BySectorNoBio","Year",2045,"Vint_2045","CO2 emissions - (MTCO2)",122.449108147227
+"High","Rest of Malaysia","Rest of Malaysia","emissCO2BySectorNoBio","Year",2050,"Vint_2050","CO2 emissions - (MTCO2)",119.63736139322
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGByGasGWPAR5","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",12.4312111366667
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGByGasGWPAR5","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",0.7925656
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGByGasGWPAR5","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",34.1158080633333
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGByGasGWPAR5","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",0.007700869
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGByGasGWPAR5","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",0.8080297
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGByGasGWPAR5","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",98.21759849
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGByGasGWPAR5","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",0.2686139735
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGByGasGWPAR5","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",2.3422984
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGByGasGWPAR5","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",97.2281142066667
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGByGasGWPAR5","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",0.5424688145
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGByGasGWPAR5","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",2.4527358
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGByGasGWPAR5","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",125.540711787333
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGByGasGWPAR5","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",1.4322020675
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGByGasGWPAR5","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",2.7527017
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGByGasGWPAR5","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",140.589655714933
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGByGasGWPAR5","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",1.498799256485
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGByGasGWPAR5","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",3.012854625872
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGByGasGWPAR5","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",140.073074323967
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGByGasGWPAR5","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",1.433785644415
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGByGasGWPAR5","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",2.798582921336
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGByGasGWPAR5","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",136.1737941762
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGByGasGWPAR5","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",1.37246447731
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGByGasGWPAR5","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",2.544777622827
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGByGasGWPAR5","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",131.021833171533
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGByGasGWPAR5","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",1.299304441355
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGByGasGWPAR5","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",2.2940115108742
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGByGasGWPAR5","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",126.220958450767
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGByGasGWPAR5","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",1.212280088335
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGByGasGWPAR5","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",2.0655227409712
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGByGasGWPAR5","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",122.449108147227
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGByGasGWPAR5","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",1.131432634265
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGByGasGWPAR5","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",1.8938266721488
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGByGasGWPAR5","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",119.63736139322
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGByGasGWPAR5","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",1.043455432385
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGByGasGWPAR5","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",1.7396864071967
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGBySectorGWPAR5","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",12.4312111366667
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGBySectorGWPAR5","Year",1975,"Vint_1975","GHG emissions (MTCO2eq)",0.7925656
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGBySectorGWPAR5","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",34.1158080633333
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGBySectorGWPAR5","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",0.007700869
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGBySectorGWPAR5","Year",1990,"Vint_1990","GHG emissions (MTCO2eq)",0.8080297
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGBySectorGWPAR5","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",98.21759849
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGBySectorGWPAR5","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",0.2686139735
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGBySectorGWPAR5","Year",2005,"Vint_2005","GHG emissions (MTCO2eq)",2.3422984
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGBySectorGWPAR5","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",97.2281142066667
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGBySectorGWPAR5","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",0.5424688145
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGBySectorGWPAR5","Year",2010,"Vint_2010","GHG emissions (MTCO2eq)",2.4527358
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGBySectorGWPAR5","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",125.540711787333
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGBySectorGWPAR5","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",1.4322020675
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGBySectorGWPAR5","Year",2015,"Vint_2015","GHG emissions (MTCO2eq)",2.7527017
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGBySectorGWPAR5","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",140.589655714933
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGBySectorGWPAR5","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",1.498799256485
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGBySectorGWPAR5","Year",2020,"Vint_2020","GHG emissions (MTCO2eq)",3.012854625872
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGBySectorGWPAR5","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",140.073074323967
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGBySectorGWPAR5","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",1.433785644415
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGBySectorGWPAR5","Year",2025,"Vint_2025","GHG emissions (MTCO2eq)",2.798582921336
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGBySectorGWPAR5","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",136.1737941762
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGBySectorGWPAR5","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",1.37246447731
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGBySectorGWPAR5","Year",2030,"Vint_2030","GHG emissions (MTCO2eq)",2.544777622827
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGBySectorGWPAR5","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",131.021833171533
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGBySectorGWPAR5","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",1.299304441355
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGBySectorGWPAR5","Year",2035,"Vint_2035","GHG emissions (MTCO2eq)",2.2940115108742
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGBySectorGWPAR5","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",126.220958450767
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGBySectorGWPAR5","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",1.212280088335
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGBySectorGWPAR5","Year",2040,"Vint_2040","GHG emissions (MTCO2eq)",2.0655227409712
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGBySectorGWPAR5","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",122.449108147227
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGBySectorGWPAR5","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",1.131432634265
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGBySectorGWPAR5","Year",2045,"Vint_2045","GHG emissions (MTCO2eq)",1.8938266721488
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGBySectorGWPAR5","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",119.63736139322
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGBySectorGWPAR5","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",1.043455432385
+"High","Rest of Malaysia","Rest of Malaysia","emissGHGBySectorGWPAR5","Year",2050,"Vint_2050","GHG emissions (MTCO2eq)",1.7396864071967
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelEJ","Year",1975,"Vint_1975","Final Energy by Fuel (EJ)",0.17791588
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelEJ","Year",1990,"Vint_1990","Final Energy by Fuel (EJ)",0.5622208488
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelEJ","Year",2005,"Vint_2005","Final Energy by Fuel (EJ)",1.775433752
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelEJ","Year",2010,"Vint_2010","Final Energy by Fuel (EJ)",1.873168193
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelEJ","Year",2015,"Vint_2015","Final Energy by Fuel (EJ)",2.3923722432
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelEJ","Year",2020,"Vint_2020","Final Energy by Fuel (EJ)",2.657397392461
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelEJ","Year",2025,"Vint_2025","Final Energy by Fuel (EJ)",2.65204316691557
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelEJ","Year",2030,"Vint_2030","Final Energy by Fuel (EJ)",2.62825242436411
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelEJ","Year",2035,"Vint_2035","Final Energy by Fuel (EJ)",2.60504183569838
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelEJ","Year",2040,"Vint_2040","Final Energy by Fuel (EJ)",2.59445293089632
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelEJ","Year",2045,"Vint_2045","Final Energy by Fuel (EJ)",2.59888129621412
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelEJ","Year",2050,"Vint_2050","Final Energy by Fuel (EJ)",2.6139203245927
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","Year",1975,"Vint_1975","Passenger Transport Final Energy by Fuel (EJ)",0.0167326
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","Year",1990,"Vint_1990","Passenger Transport Final Energy by Fuel (EJ)",0.047708548
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","Year",2005,"Vint_2005","Passenger Transport Final Energy by Fuel (EJ)",0.133427889
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","Year",2010,"Vint_2010","Passenger Transport Final Energy by Fuel (EJ)",0.145203584
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","Year",2015,"Vint_2015","Passenger Transport Final Energy by Fuel (EJ)",0.212112785
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","Year",2020,"Vint_2020","Passenger Transport Final Energy by Fuel (EJ)",0.287928422
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","Year",2025,"Vint_2025","Passenger Transport Final Energy by Fuel (EJ)",0.317375145071571
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","Year",2030,"Vint_2030","Passenger Transport Final Energy by Fuel (EJ)",0.34926079239911
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","Year",2035,"Vint_2035","Passenger Transport Final Energy by Fuel (EJ)",0.37320023755088
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","Year",2040,"Vint_2040","Passenger Transport Final Energy by Fuel (EJ)",0.39723245750332
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","Year",2045,"Vint_2045","Passenger Transport Final Energy by Fuel (EJ)",0.42398072343832
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportFreightEJ","Year",2050,"Vint_2050","Passenger Transport Final Energy by Fuel (EJ)",0.4509905298162
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","Year",1975,"Vint_1975","Passenger Transport Final Energy by Fuel (EJ)",0.0477866
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","Year",1990,"Vint_1990","Passenger Transport Final Energy by Fuel (EJ)",0.13172721
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","Year",2005,"Vint_2005","Passenger Transport Final Energy by Fuel (EJ)",0.383984856
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","Year",2010,"Vint_2010","Passenger Transport Final Energy by Fuel (EJ)",0.422097974
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","Year",2015,"Vint_2015","Passenger Transport Final Energy by Fuel (EJ)",0.595148559
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","Year",2020,"Vint_2020","Passenger Transport Final Energy by Fuel (EJ)",0.619864461
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","Year",2025,"Vint_2025","Passenger Transport Final Energy by Fuel (EJ)",0.60281763189
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","Year",2030,"Vint_2030","Passenger Transport Final Energy by Fuel (EJ)",0.56948265396
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","Year",2035,"Vint_2035","Passenger Transport Final Energy by Fuel (EJ)",0.55334059443
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","Year",2040,"Vint_2040","Passenger Transport Final Energy by Fuel (EJ)",0.544872679031
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","Year",2045,"Vint_2045","Passenger Transport Final Energy by Fuel (EJ)",0.553536657116
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalByFuelTransportPassEJ","Year",2050,"Vint_2050","Passenger Transport Final Energy by Fuel (EJ)",0.5756917879
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalConsumBySecEJ","Year",1975,"Vint_1975","Final Energy by Sector (EJ)",0.17791588
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalConsumBySecEJ","Year",1990,"Vint_1990","Final Energy by Sector (EJ)",0.5622208488
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalConsumBySecEJ","Year",2005,"Vint_2005","Final Energy by Sector (EJ)",1.775260552
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalConsumBySecEJ","Year",2010,"Vint_2010","Final Energy by Sector (EJ)",1.872467596
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalConsumBySecEJ","Year",2015,"Vint_2015","Final Energy by Sector (EJ)",2.3914586582
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalConsumBySecEJ","Year",2020,"Vint_2020","Final Energy by Sector (EJ)",2.656008305461
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalConsumBySecEJ","Year",2025,"Vint_2025","Final Energy by Sector (EJ)",2.633498748445
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalConsumBySecEJ","Year",2030,"Vint_2030","Final Energy by Sector (EJ)",2.57718211935591
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalConsumBySecEJ","Year",2035,"Vint_2035","Final Energy by Sector (EJ)",2.51297371519458
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalConsumBySecEJ","Year",2040,"Vint_2040","Final Energy by Sector (EJ)",2.44237753502432
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalConsumBySecEJ","Year",2045,"Vint_2045","Final Energy by Sector (EJ)",2.3700555966422
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalConsumBySecEJ","Year",2050,"Vint_2050","Final Energy by Sector (EJ)",2.2972725708977
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecByFuelBuildEJ","Year",1990,"Vint_1990","Building Final Energy by Fuel (EJ)",0.0758907508
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecByFuelBuildEJ","Year",2005,"Vint_2005","Building Final Energy by Fuel (EJ)",0.182368367
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecByFuelBuildEJ","Year",2010,"Vint_2010","Building Final Energy by Fuel (EJ)",0.256998535
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecByFuelBuildEJ","Year",2015,"Vint_2015","Building Final Energy by Fuel (EJ)",0.2801171992
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecByFuelBuildEJ","Year",2020,"Vint_2020","Building Final Energy by Fuel (EJ)",0.315635791941
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecByFuelBuildEJ","Year",2025,"Vint_2025","Building Final Energy by Fuel (EJ)",0.317243008134
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecByFuelBuildEJ","Year",2030,"Vint_2030","Building Final Energy by Fuel (EJ)",0.313260039075
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecByFuelBuildEJ","Year",2035,"Vint_2035","Building Final Energy by Fuel (EJ)",0.310285740692
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecByFuelBuildEJ","Year",2040,"Vint_2040","Building Final Energy by Fuel (EJ)",0.308670049798
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecByFuelBuildEJ","Year",2045,"Vint_2045","Building Final Energy by Fuel (EJ)",0.3055065276718
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecByFuelBuildEJ","Year",2050,"Vint_2050","Building Final Energy by Fuel (EJ)",0.3065664834915
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","Year",1990,"Vint_1990","Building Final Energy By Subsector (EJ)",0.0758907508
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","Year",2005,"Vint_2005","Building Final Energy By Subsector (EJ)",0.182368367
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","Year",2010,"Vint_2010","Building Final Energy By Subsector (EJ)",0.256998535
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","Year",2015,"Vint_2015","Building Final Energy By Subsector (EJ)",0.2801171992
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","Year",2020,"Vint_2020","Building Final Energy By Subsector (EJ)",0.315635791941
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","Year",2025,"Vint_2025","Building Final Energy By Subsector (EJ)",0.317243008134
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","Year",2030,"Vint_2030","Building Final Energy By Subsector (EJ)",0.313260039075
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","Year",2035,"Vint_2035","Building Final Energy By Subsector (EJ)",0.310285740692
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","Year",2040,"Vint_2040","Building Final Energy By Subsector (EJ)",0.308670049798
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","Year",2045,"Vint_2045","Building Final Energy By Subsector (EJ)",0.3055065276718
+"High","Rest of Malaysia","Rest of Malaysia","energyFinalSubsecBySectorBuildEJ","Year",2050,"Vint_2050","Building Final Energy By Subsector (EJ)",0.3065664834915
+"High","Rest of Malaysia","Rest of Malaysia","gdp","Year",1975,"Vint_1975","GDP (Billion 1990 USD)",15.529
+"High","Rest of Malaysia","Rest of Malaysia","gdp","Year",1990,"Vint_1990","GDP (Billion 1990 USD)",43.3828
+"High","Rest of Malaysia","Rest of Malaysia","gdp","Year",2005,"Vint_2005","GDP (Billion 1990 USD)",120.01
+"High","Rest of Malaysia","Rest of Malaysia","gdp","Year",2010,"Vint_2010","GDP (Billion 1990 USD)",146.864
+"High","Rest of Malaysia","Rest of Malaysia","gdp","Year",2015,"Vint_2015","GDP (Billion 1990 USD)",191.61
+"High","Rest of Malaysia","Rest of Malaysia","gdp","Year",2020,"Vint_2020","GDP (Billion 1990 USD)",286.97
+"High","Rest of Malaysia","Rest of Malaysia","gdp","Year",2025,"Vint_2025","GDP (Billion 1990 USD)",337.962
+"High","Rest of Malaysia","Rest of Malaysia","gdp","Year",2030,"Vint_2030","GDP (Billion 1990 USD)",400.62
+"High","Rest of Malaysia","Rest of Malaysia","gdp","Year",2035,"Vint_2035","GDP (Billion 1990 USD)",474.589
+"High","Rest of Malaysia","Rest of Malaysia","gdp","Year",2040,"Vint_2040","GDP (Billion 1990 USD)",554.705
+"High","Rest of Malaysia","Rest of Malaysia","gdp","Year",2045,"Vint_2045","GDP (Billion 1990 USD)",635.19
+"High","Rest of Malaysia","Rest of Malaysia","gdp","Year",2050,"Vint_2050","GDP (Billion 1990 USD)",712.1
+"High","Rest of Malaysia","Rest of Malaysia","gdp","Year",2055,"Vint_2055","GDP (Billion 1990 USD)",782.788
+"High","Rest of Malaysia","Rest of Malaysia","gdp","Year",2060,"Vint_2060","GDP (Billion 1990 USD)",847.735
+"High","Rest of Malaysia","Rest of Malaysia","gdp","Year",2065,"Vint_2065","GDP (Billion 1990 USD)",906.826
+"High","Rest of Malaysia","Rest of Malaysia","gdp","Year",2070,"Vint_2070","GDP (Billion 1990 USD)",961.347
+"High","Rest of Malaysia","Rest of Malaysia","gdp","Year",2075,"Vint_2075","GDP (Billion 1990 USD)",1013.44
+"High","Rest of Malaysia","Rest of Malaysia","gdp","Year",2080,"Vint_2080","GDP (Billion 1990 USD)",1067.28
+"High","Rest of Malaysia","Rest of Malaysia","gdp","Year",2085,"Vint_2085","GDP (Billion 1990 USD)",1125.96
+"High","Rest of Malaysia","Rest of Malaysia","gdp","Year",2090,"Vint_2090","GDP (Billion 1990 USD)",1189.13
+"High","Rest of Malaysia","Rest of Malaysia","gdp","Year",2095,"Vint_2095","GDP (Billion 1990 USD)",1255.9
+"High","Rest of Malaysia","Rest of Malaysia","gdp","Year",2100,"Vint_2100","GDP (Billion 1990 USD)",1325.24
+"High","Rest of Malaysia","Rest of Malaysia","gdpPerCapita","Year",1975,"Vint_1975","GDP per Capita (Thousand 1990 USD per Person)",1.44752
+"High","Rest of Malaysia","Rest of Malaysia","gdpPerCapita","Year",1990,"Vint_1990","GDP per Capita (Thousand 1990 USD per Person)",2.69241
+"High","Rest of Malaysia","Rest of Malaysia","gdpPerCapita","Year",2005,"Vint_2005","GDP per Capita (Thousand 1990 USD per Person)",5.06734
+"High","Rest of Malaysia","Rest of Malaysia","gdpPerCapita","Year",2010,"Vint_2010","GDP per Capita (Thousand 1990 USD per Person)",5.60848
+"High","Rest of Malaysia","Rest of Malaysia","gdpPerCapita","Year",2015,"Vint_2015","GDP per Capita (Thousand 1990 USD per Person)",6.78267
+"High","Rest of Malaysia","Rest of Malaysia","gdpPerCapita","Year",2020,"Vint_2020","GDP per Capita (Thousand 1990 USD per Person)",9.44478
+"High","Rest of Malaysia","Rest of Malaysia","gdpPerCapita","Year",2025,"Vint_2025","GDP per Capita (Thousand 1990 USD per Person)",10.4406
+"High","Rest of Malaysia","Rest of Malaysia","gdpPerCapita","Year",2030,"Vint_2030","GDP per Capita (Thousand 1990 USD per Person)",11.7419
+"High","Rest of Malaysia","Rest of Malaysia","gdpPerCapita","Year",2035,"Vint_2035","GDP per Capita (Thousand 1990 USD per Person)",13.3244
+"High","Rest of Malaysia","Rest of Malaysia","gdpPerCapita","Year",2040,"Vint_2040","GDP per Capita (Thousand 1990 USD per Person)",15.0518
+"High","Rest of Malaysia","Rest of Malaysia","gdpPerCapita","Year",2045,"Vint_2045","GDP per Capita (Thousand 1990 USD per Person)",16.7738
+"High","Rest of Malaysia","Rest of Malaysia","gdpPerCapita","Year",2050,"Vint_2050","GDP per Capita (Thousand 1990 USD per Person)",18.3829
+"High","Rest of Malaysia","Rest of Malaysia","gdpPerCapita","Year",2055,"Vint_2055","GDP per Capita (Thousand 1990 USD per Person)",19.831
+"High","Rest of Malaysia","Rest of Malaysia","gdpPerCapita","Year",2060,"Vint_2060","GDP per Capita (Thousand 1990 USD per Person)",21.1748
+"High","Rest of Malaysia","Rest of Malaysia","gdpPerCapita","Year",2065,"Vint_2065","GDP per Capita (Thousand 1990 USD per Person)",22.4584
+"High","Rest of Malaysia","Rest of Malaysia","gdpPerCapita","Year",2070,"Vint_2070","GDP per Capita (Thousand 1990 USD per Person)",23.7446
+"High","Rest of Malaysia","Rest of Malaysia","gdpPerCapita","Year",2075,"Vint_2075","GDP per Capita (Thousand 1990 USD per Person)",25.0883
+"High","Rest of Malaysia","Rest of Malaysia","gdpPerCapita","Year",2080,"Vint_2080","GDP per Capita (Thousand 1990 USD per Person)",26.5749
+"High","Rest of Malaysia","Rest of Malaysia","gdpPerCapita","Year",2085,"Vint_2085","GDP per Capita (Thousand 1990 USD per Person)",28.25
+"High","Rest of Malaysia","Rest of Malaysia","gdpPerCapita","Year",2090,"Vint_2090","GDP per Capita (Thousand 1990 USD per Person)",30.0841
+"High","Rest of Malaysia","Rest of Malaysia","gdpPerCapita","Year",2095,"Vint_2095","GDP per Capita (Thousand 1990 USD per Person)",32.053
+"High","Rest of Malaysia","Rest of Malaysia","gdpPerCapita","Year",2100,"Vint_2100","GDP per Capita (Thousand 1990 USD per Person)",34.1441
+"High","Rest of Malaysia","Rest of Malaysia","pop","Year",1975,"Vint_1975","Population (Millions)",10.728
+"High","Rest of Malaysia","Rest of Malaysia","pop","Year",1990,"Vint_1990","Population (Millions)",16.113
+"High","Rest of Malaysia","Rest of Malaysia","pop","Year",2005,"Vint_2005","Population (Millions)",23.683
+"High","Rest of Malaysia","Rest of Malaysia","pop","Year",2010,"Vint_2010","Population (Millions)",26.186
+"High","Rest of Malaysia","Rest of Malaysia","pop","Year",2015,"Vint_2015","Population (Millions)",28.25
+"High","Rest of Malaysia","Rest of Malaysia","pop","Year",2020,"Vint_2020","Population (Millions)",30.384
+"High","Rest of Malaysia","Rest of Malaysia","pop","Year",2025,"Vint_2025","Population (Millions)",32.37
+"High","Rest of Malaysia","Rest of Malaysia","pop","Year",2030,"Vint_2030","Population (Millions)",34.119
+"High","Rest of Malaysia","Rest of Malaysia","pop","Year",2035,"Vint_2035","Population (Millions)",35.618
+"High","Rest of Malaysia","Rest of Malaysia","pop","Year",2040,"Vint_2040","Population (Millions)",36.853
+"High","Rest of Malaysia","Rest of Malaysia","pop","Year",2045,"Vint_2045","Population (Millions)",37.868
+"High","Rest of Malaysia","Rest of Malaysia","pop","Year",2050,"Vint_2050","Population (Millions)",38.737
+"High","Rest of Malaysia","Rest of Malaysia","pop","Year",2055,"Vint_2055","Population (Millions)",39.473
+"High","Rest of Malaysia","Rest of Malaysia","pop","Year",2060,"Vint_2060","Population (Millions)",40.035
+"High","Rest of Malaysia","Rest of Malaysia","pop","Year",2065,"Vint_2065","Population (Millions)",40.378
+"High","Rest of Malaysia","Rest of Malaysia","pop","Year",2070,"Vint_2070","Population (Millions)",40.487
+"High","Rest of Malaysia","Rest of Malaysia","pop","Year",2075,"Vint_2075","Population (Millions)",40.395
+"High","Rest of Malaysia","Rest of Malaysia","pop","Year",2080,"Vint_2080","Population (Millions)",40.161
+"High","Rest of Malaysia","Rest of Malaysia","pop","Year",2085,"Vint_2085","Population (Millions)",39.857
+"High","Rest of Malaysia","Rest of Malaysia","pop","Year",2090,"Vint_2090","Population (Millions)",39.527
+"High","Rest of Malaysia","Rest of Malaysia","pop","Year",2095,"Vint_2095","Population (Millions)",39.182
+"High","Rest of Malaysia","Rest of Malaysia","pop","Year",2100,"Vint_2100","Population (Millions)",38.813
+"High","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByFuel","Year",1975,"Vint_1975","Freight (million ton-km)",6884.214
+"High","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByFuel","Year",1990,"Vint_1990","Freight (million ton-km)",23487.385
+"High","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByFuel","Year",2005,"Vint_2005","Freight (million ton-km)",55542.771
+"High","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByFuel","Year",2010,"Vint_2010","Freight (million ton-km)",62345.23
+"High","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByFuel","Year",2015,"Vint_2015","Freight (million ton-km)",106914.48
+"High","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByFuel","Year",2020,"Vint_2020","Freight (million ton-km)",144930.6997
+"High","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByFuel","Year",2025,"Vint_2025","Freight (million ton-km)",165667.776752827
+"High","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByFuel","Year",2030,"Vint_2030","Freight (million ton-km)",191192.498432258
+"High","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByFuel","Year",2035,"Vint_2035","Freight (million ton-km)",221980.058702826
+"High","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByFuel","Year",2040,"Vint_2040","Freight (million ton-km)",253850.526208253
+"High","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByFuel","Year",2045,"Vint_2045","Freight (million ton-km)",286542.91876008
+"High","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByFuel","Year",2050,"Vint_2050","Freight (million ton-km)",317752.8241538
+"High","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","Year",1975,"Vint_1975","Freight (million ton-km)",6884.214
+"High","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","Year",1990,"Vint_1990","Freight (million ton-km)",23487.385
+"High","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","Year",2005,"Vint_2005","Freight (million ton-km)",55542.771
+"High","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","Year",2010,"Vint_2010","Freight (million ton-km)",62345.23
+"High","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","Year",2015,"Vint_2015","Freight (million ton-km)",106914.48
+"High","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","Year",2020,"Vint_2020","Freight (million ton-km)",144930.6997
+"High","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","Year",2025,"Vint_2025","Freight (million ton-km)",165667.776752827
+"High","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","Year",2030,"Vint_2030","Freight (million ton-km)",191192.498432258
+"High","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","Year",2035,"Vint_2035","Freight (million ton-km)",221980.058702826
+"High","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","Year",2040,"Vint_2040","Freight (million ton-km)",253850.526208253
+"High","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","Year",2045,"Vint_2045","Freight (million ton-km)",286542.91876008
+"High","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByMode","Year",2050,"Vint_2050","Freight (million ton-km)",317752.8241538
+"High","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByTech","Year",1975,"Vint_1975","Freight (million ton-km)",6884.214
+"High","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByTech","Year",1990,"Vint_1990","Freight (million ton-km)",23487.385
+"High","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByTech","Year",2005,"Vint_2005","Freight (million ton-km)",55542.771
+"High","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByTech","Year",2010,"Vint_2010","Freight (million ton-km)",62345.23
+"High","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByTech","Year",2015,"Vint_2015","Freight (million ton-km)",106914.48
+"High","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByTech","Year",2020,"Vint_2020","Freight (million ton-km)",144930.6997
+"High","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByTech","Year",2025,"Vint_2025","Freight (million ton-km)",165667.776752827
+"High","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByTech","Year",2030,"Vint_2030","Freight (million ton-km)",191192.498432258
+"High","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByTech","Year",2035,"Vint_2035","Freight (million ton-km)",221980.058702826
+"High","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByTech","Year",2040,"Vint_2040","Freight (million ton-km)",253850.526208253
+"High","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByTech","Year",2045,"Vint_2045","Freight (million ton-km)",286542.91876008
+"High","Rest of Malaysia","Rest of Malaysia","transportFreightVMTByTech","Year",2050,"Vint_2050","Freight (million ton-km)",317752.8241538
+"High","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByFuel","Year",1975,"Vint_1975","Passenger (million pass-km)",75669.005
+"High","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByFuel","Year",1990,"Vint_1990","Passenger (million pass-km)",208773.012
+"High","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByFuel","Year",2005,"Vint_2005","Passenger (million pass-km)",609451.333
+"High","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByFuel","Year",2010,"Vint_2010","Passenger (million pass-km)",688066.91
+"High","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByFuel","Year",2015,"Vint_2015","Passenger (million pass-km)",995542.05
+"High","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByFuel","Year",2020,"Vint_2020","Passenger (million pass-km)",1077682.5062
+"High","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByFuel","Year",2025,"Vint_2025","Passenger (million pass-km)",1147943.82078
+"High","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByFuel","Year",2030,"Vint_2030","Passenger (million pass-km)",1217704.41676
+"High","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByFuel","Year",2035,"Vint_2035","Passenger (million pass-km)",1286100.40363
+"High","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByFuel","Year",2040,"Vint_2040","Passenger (million pass-km)",1352867.42815
+"High","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByFuel","Year",2045,"Vint_2045","Passenger (million pass-km)",1424727.18173
+"High","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByFuel","Year",2050,"Vint_2050","Passenger (million pass-km)",1496505.808
+"High","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","Year",1975,"Vint_1975","Passenger (million pass-km)",75669.005
+"High","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","Year",1990,"Vint_1990","Passenger (million pass-km)",208773.012
+"High","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","Year",2005,"Vint_2005","Passenger (million pass-km)",609451.333
+"High","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","Year",2010,"Vint_2010","Passenger (million pass-km)",688066.91
+"High","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","Year",2015,"Vint_2015","Passenger (million pass-km)",995542.05
+"High","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","Year",2020,"Vint_2020","Passenger (million pass-km)",1077682.5062
+"High","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","Year",2025,"Vint_2025","Passenger (million pass-km)",1147943.82078
+"High","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","Year",2030,"Vint_2030","Passenger (million pass-km)",1217704.41676
+"High","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","Year",2035,"Vint_2035","Passenger (million pass-km)",1286100.40363
+"High","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","Year",2040,"Vint_2040","Passenger (million pass-km)",1352867.42815
+"High","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","Year",2045,"Vint_2045","Passenger (million pass-km)",1424727.18173
+"High","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByMode","Year",2050,"Vint_2050","Passenger (million pass-km)",1496505.808
+"High","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByTech","Year",1975,"Vint_1975","Passenger (million pass-km)",75669.005
+"High","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByTech","Year",1990,"Vint_1990","Passenger (million pass-km)",208773.012
+"High","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByTech","Year",2005,"Vint_2005","Passenger (million pass-km)",609451.333
+"High","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByTech","Year",2010,"Vint_2010","Passenger (million pass-km)",688066.91
+"High","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByTech","Year",2015,"Vint_2015","Passenger (million pass-km)",995542.05
+"High","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByTech","Year",2020,"Vint_2020","Passenger (million pass-km)",1077682.5062
+"High","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByTech","Year",2025,"Vint_2025","Passenger (million pass-km)",1147943.82078
+"High","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByTech","Year",2030,"Vint_2030","Passenger (million pass-km)",1217704.41676
+"High","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByTech","Year",2035,"Vint_2035","Passenger (million pass-km)",1286100.40363
+"High","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByTech","Year",2040,"Vint_2040","Passenger (million pass-km)",1352867.42815
+"High","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByTech","Year",2045,"Vint_2045","Passenger (million pass-km)",1424727.18173
+"High","Rest of Malaysia","Rest of Malaysia","transportPassengerVMTByTech","Year",2050,"Vint_2050","Passenger (million pass-km)",1496505.808
