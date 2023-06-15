@@ -13,7 +13,7 @@
 
 <title>Modeling - Thailand</title>
 
-<script src="site_libs/header-attrs-2.22/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -29,7 +29,7 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
-<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
@@ -38,8 +38,8 @@
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
 <link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-6.4.0/css/all.min.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-6.4.0/css/v4-shims.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -60,7 +60,6 @@ if (window.hljs) {
   }
 }
 </script>
-
 
 
 
@@ -90,9 +89,6 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
-}
-details > summary > p:only-child {
-  display: inline;
 }
 pre code {
   padding: 0;
@@ -150,15 +146,11 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark the anchor link active (and if it's in a dropdown, also mark that active)
-  var dropdown = menuAnchor.closest('li.dropdown');
-  if (window.bootstrap) { // Bootstrap 4+
-    menuAnchor.addClass('active');
-    dropdown.find('> .dropdown-toggle').addClass('active');
-  } else { // Bootstrap 3
-    menuAnchor.parent().addClass('active');
-    dropdown.addClass('active');
-  }
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -187,8 +179,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "\e259";
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -196,9 +188,16 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "\e258";
-  font-family: 'Glyphicons Halflings';
+  content: "&#xe258;";
   border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -318,7 +317,7 @@ div.tocify {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -361,7 +360,7 @@ div.tocify {
 <div id="header">
 
 <div class="btn-group pull-right float-right">
-<button type="button" class="btn btn-default btn-xs btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
+<button type="button" class="btn btn-default btn-xs btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
 <ul class="dropdown-menu dropdown-menu-right" style="min-width: 50px;">
 <li><a id="rmd-show-all-code" href="#">Show All Code</a></li>
 <li><a id="rmd-hide-all-code" href="#">Hide All Code</a></li>
@@ -375,7 +374,7 @@ div.tocify {
 
 
 <!-- Allow href to tabsets -->
-<script>
+<script type="text/javascript">
 window.onload = function() {
   document.querySelector('a[href="' + window.location.href.match("#.*$") + '"]').click();
 }
@@ -400,7 +399,7 @@ window.onhashchange = goToTab;
 <style type="text/css">
 script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
 </style>
-<script>
+<script type="text/javascript">
  $(document).ready(function() {
     $('body').prepend('<div class=\"zoomDiv\"><img src=\"\" class=\"zoomImg\"></div>');
     // onClick function for all plots (img's)
@@ -2531,14 +2530,9 @@ data &lt;- gcamextractor::readgcam(gcamdatabase = sample_path,
                                 regionsAggregate = aggregate_regions,
                                 regionsAggregateNames = aggregate_region_names,
                                 folder = &quot;../data/thailand/gcamextractor&quot;)</code></pre>
-<pre class="r"><code>thailand &lt;- read.csv(&quot;../data/Thailand/gcamextractor/All/gcamDataTable_aggClass1.csv&quot;) %&gt;%
-  filter(x &gt;= 2020, x &lt;= 2065,
-         !grepl(&quot;International&quot;, class))
+<pre class="r"><code>thailand &lt;- read.csv(&quot;../data/Thailand/all_data.csv&quot;)
 
-thailand_with_hist &lt;- read.csv(&quot;../data/Thailand/gcamextractor/All/gcamDataTable_aggClass1.csv&quot;) %&gt;%
-  filter(x &lt;= 2065)
-
-scenRef_name &lt;- &quot;Ref_cities&quot;</code></pre>
+thailand_with_hist &lt;- read.csv(&quot;../data/Thailand/all_data_with_hist.csv&quot;)</code></pre>
 <p><br></p>
 </div>
 <div id="plot-figures" class="section level2 tabset" number="6.3">
@@ -2584,12 +2578,12 @@ between scenarios.
 </div>
 <p><br> <br></p>
 </div>
-<div id="emissions-by-sector-and-gas" class="section level5"
+<div id="co2-emissions-by-sector" class="section level5"
 number="6.3.1.1.2">
-<h5><span class="header-section-number">6.3.1.1.2</span> Emissions by
-sector and gas</h5>
+<h5><span class="header-section-number">6.3.1.1.2</span> CO2 Emissions
+by Sector</h5>
 <hr />
-<pre class="r"><code>emissions_line_params &lt;- c(&quot;emissCO2BySector&quot;, &quot;emissGHGBySectorGWPAR5&quot;)
+<pre class="r"><code>emissions_line_params &lt;- c(&quot;emissCO2BySectorNoBio&quot;)
 
 emissions_line &lt;- thailand %&gt;% filter(param %in% emissions_line_params,
                            region %in% c(&quot;All of Thailand&quot;, &quot;MEA area&quot;)) %&gt;%
@@ -2607,17 +2601,25 @@ Total national CO2 emissions (left) and GHG emissions (right) in the
 reference scenario and the low and high policies scenarios
 </p>
 </div>
-<pre class="r"><code>emissions_params &lt;- c(&quot;emissCO2BySectorNoBio&quot;, &quot;emissGHGBySectorNoBioGWPAR5&quot;, &quot;emissGHGByGasNoBioGWPAR5&quot;)
+<pre class="r"><code>emissions_params &lt;- c(&quot;emissCO2BySectorNoBio&quot;)
 
 emissions_bar &lt;- thailand %&gt;% filter(param %in% emissions_params,
                                      region %in% c(&quot;All of Thailand&quot;, &quot;MEA area&quot;)) %&gt;%
+  filter(class != &quot;LUC&quot;) %&gt;% 
+  mutate(class = case_when(class %in% c(&quot;hydrogen&quot;, &quot;refining&quot;) ~ &quot;Industry&quot;,
+                           T ~ class)) %&gt;% 
+  group_by(scenario, region, x, class, param, units) %&gt;% 
+  summarize(value = sum(value)) %&gt;% 
+  ungroup() %&gt;% 
   mutate(param = units) %&gt;% 
   rchart::chart(save = F, 
                 show = F,
                 size_text = 19,
                 scenRef = scenRef_name,
                 summary_line = T,
-                chart_type = &quot;class_absolute&quot;)
+                chart_type = &quot;class_absolute&quot;,
+                palette = c(&quot;BECCS&quot; = &quot;forestgreen&quot;),
+                ncol = 4)
 
 emissions_bar$`chart_class_All of Thailand`</code></pre>
 <div class="figure" style="text-align: center">
@@ -2637,13 +2639,20 @@ the <code>policies_high scenario</code> compared to the <code>Ref</code>
 scenario.</p>
 <pre class="r"><code>emissions_diff &lt;- thailand %&gt;% filter(param %in% emissions_params,
                                       region %in% c(&quot;All of Thailand&quot;, &quot;MEA area&quot;)) %&gt;%
+  filter(class != &quot;LUC&quot;) %&gt;% 
+  mutate(class = case_when(class %in% c(&quot;hydrogen&quot;, &quot;refining&quot;) ~ &quot;Industry&quot;,
+                           T ~ class)) %&gt;% 
+  group_by(scenario, region, x, class, units) %&gt;% 
+  summarize(value = sum(value)) %&gt;% 
+  ungroup() %&gt;% 
   mutate(param = units) %&gt;% 
   rchart::chart(save = F, 
                 show = F,
                 size_text = 19,
                 scenRef = scenRef_name,
-                summary_line = T,
-                chart_type = &quot;class_diff_absolute&quot;)
+                summary_line = F,
+                chart_type = &quot;class_diff_absolute&quot;,
+                palette = c(&quot;BECCS&quot; = &quot;forestgreen&quot;))
 
 emissions_diff$`chart_class_diff_absolute_All of Thailand`</code></pre>
 <div class="figure" style="text-align: center">
@@ -2661,7 +2670,7 @@ number="6.3.1.1.3">
 <h5><span class="header-section-number">6.3.1.1.3</span> Final Energy by
 Fuel and Sector</h5>
 <hr />
-<pre class="r"><code>energy_parameters &lt;- c(&quot;energyFinalConsumBySecEJ&quot;, &quot;energyFinalByFuelEJ&quot;)
+<pre class="r"><code>energy_parameters &lt;- c(&quot;energyFinalConsumBySecEJNoFeedstock&quot;, &quot;energyFinalByFuelEJNoFeedstock&quot;)
 
 energy &lt;- thailand %&gt;% 
   filter(param %in% energy_parameters,
@@ -2670,7 +2679,10 @@ energy &lt;- thailand %&gt;%
   rchart::chart(save = F, 
                 show = F,
                 size_text = 20,
-                scenRef = scenRef_name)
+                scenRef = scenRef_name,
+                chart_type = c(&quot;class_absolute&quot;, &quot;class_diff_absolute&quot;),
+                scales = &quot;fixed&quot;,
+                ncol = 4)
 
 energy$`chart_class_All of Thailand`</code></pre>
 <div class="figure" style="text-align: center">
@@ -2696,8 +2708,7 @@ number="6.3.1.1.4">
 <h5><span class="header-section-number">6.3.1.1.4</span> Electricity
 Generation and Consumption</h5>
 <hr />
-<pre class="r"><code>elec_parameters &lt;- c(&quot;elecByTechTWh&quot;, &quot;elecConsumByDemandSectorTWh&quot;,
-                     &quot;emissGHGBySectorPowerGWPAR5&quot;)
+<pre class="r"><code>elec_parameters &lt;- c(&quot;elecByTechTWh&quot;, &quot;elecConsumByDemandSectorTWh&quot;)
 
 electricity &lt;- thailand %&gt;% 
   filter(param %in% elec_parameters,
@@ -2707,7 +2718,10 @@ electricity &lt;- thailand %&gt;%
   rchart::chart(save = F, 
                 show = F,
                 size_text = 19,
-                scenRef = scenRef_name)
+                scenRef = scenRef_name,
+                chart_type = c(&quot;class_absolute&quot;, &quot;class_diff_absolute&quot;),
+                scales = &quot;fixed&quot;,
+                ncol = 4)
 
 electricity$`chart_class_All of Thailand`</code></pre>
 <div class="figure" style="text-align: center">
@@ -2738,30 +2752,17 @@ class="header-section-number">6.3.1.2</span> Sectoral details</h4>
 <div id="buildings" class="section level5" number="6.3.1.2.1">
 <h5><span class="header-section-number">6.3.1.2.1</span> Buildings</h5>
 <pre class="r"><code>buildings_params &lt;- c(&quot;energyFinalSubsecByFuelBuildEJ&quot;, 
-                      &quot;energyFinalSubsecBySectorBuildEJ&quot;,
-                      &quot;emissGHGBySectorBuildingsGWPAR5&quot;)
+                      &quot;energyFinalSubsecBySectorBuildEJ&quot;)
 
 building_sector_colors &lt;- c(
-  &quot;comm cooking&quot; = &quot;#b2e2e2&quot;,
-  &quot;comm hvac&quot; = &quot;#66c2a4&quot;,
-  &quot;comm lighting&quot; = &quot;#2ca25f&quot;,
-  &quot;Commercial Others&quot; = &quot;#006d2c&quot;,
-  &quot;resid rural air conditioners&quot; = &quot;#fee8c8&quot;,
-  &quot;resid rural cooking&quot; = &quot;#fdd49e&quot;,
-  &quot;resid rural lighting&quot; = &quot;#fdbb84&quot;,
-  &quot;resid rural other appliances&quot; = &quot;#fc8d59&quot;,
-  &quot;resid rural refrigerators&quot; = &quot;#ef6548&quot;,
-  &quot;resid rural televisions&quot; = &quot;#d7301f&quot;,
-  &quot;resid rural ventilation&quot; = &quot;#b30000&quot;,
-  &quot;resid rural water heaters&quot; = &quot;#7f0000&quot;,
-  &quot;resid urban air conditioners&quot; = &quot;#ece7f2&quot;,
-  &quot;resid urban cooking&quot; = &quot;#d0d1e6&quot;,
-  &quot;resid urban lighting&quot; = &quot;#a6bddb&quot;,
-  &quot;resid urban other appliances&quot; = &quot;#74a9cf&quot;,
-  &quot;resid urban refrigerators&quot; = &quot;#3690c0&quot;,
-  &quot;resid urban televisions&quot; = &quot;#0570b0&quot;,
-  &quot;resid urban ventilation&quot; = &quot;#045a8d&quot;,
-  &quot;resid urban water heaters&quot; = &quot;#023858&quot; )
+  &quot;commercial ACMV&quot; = &quot;#b2e2e2&quot;,
+  &quot;commercial cooking&quot; = &quot;#66c2a4&quot;,
+  &quot;commercial lighting&quot; = &quot;#2ca25f&quot;,
+  &quot;commercial other&quot; = &quot;#006d2c&quot;,
+  &quot;residential ACMV&quot; = &quot;#fee8c8&quot;,
+  &quot;residential cooking&quot; = &quot;#fdd49e&quot;,
+  &quot;residential lighting&quot; = &quot;#fdbb84&quot;,
+  &quot;residential other&quot; = &quot;#fc8d59&quot;)
 
 buildings &lt;- thailand %&gt;% 
   filter(param %in% buildings_params,
@@ -2772,26 +2773,19 @@ buildings &lt;- thailand %&gt;%
                 show = F,
                 size_text = 19,
                 scenRef = scenRef_name,
-                palette = building_sector_colors)
+                palette = building_sector_colors,
+                chart_type = c(&quot;class_absolute&quot;, &quot;class_diff_absolute&quot;),
+                scales = &quot;fixed&quot;,
+                ncol = 4)
 
 buildings$`chart_class_All of Thailand`</code></pre>
 <div class="figure" style="text-align: center">
-<img src="modeling_thailand_files/figure-html/building-th-1.png" alt="National buildings sector GHG emissions by service, final energy by fuel, and final energy by service in the reference scenario and the low and high policies scenarios" width="100%" />
+<img src="modeling_thailand_files/figure-html/building-th-1.png" alt="National buildings sector final energy by fuel and  by service in the reference scenario and the low and high policies scenarios" width="100%" />
 <p class="caption">
-National buildings sector GHG emissions by service, final energy by
-fuel, and final energy by service in the reference scenario and the low
-and high policies scenarios
+National buildings sector final energy by fuel and by service in the
+reference scenario and the low and high policies scenarios
 </p>
 </div>
-<p>We have found that the low-ambition buildings policies (increased AC
-efficiency, phase-out of non-LED lighting, and increased building
-envelope efficiency) result in an increase in energy consumption from
-lighting and cooking until 2050. We will need to investigate the cause
-of this. Additionally, we have found that the majority of GHG emissions
-in the buildings sector are from cooking, so since the buildings
-policies do not address cooking, building emissions do not change much
-in the policy scenarios. We should consider adding cooking-related
-policies to our scenarios.</p>
 <pre class="r"><code>buildings$`chart_class_diff_absolute_All of Thailand`</code></pre>
 <div class="figure" style="text-align: center">
 <img src="modeling_thailand_files/figure-html/building-diff-th-1.png" alt="Difference in national buildings sector GHG emissions by service, final energy by fuel, and final energy by service between the reference scenario (left) and the low and high policy scenarios (right)" width="100%" />
@@ -2801,55 +2795,12 @@ energy by fuel, and final energy by service between the reference
 scenario (left) and the low and high policy scenarios (right)
 </p>
 </div>
-<pre class="r"><code>building_cook_params &lt;- c(&quot;serviceOutputByTechBuildings&quot;)
-
-building_tech_colors &lt;- c(
-  &quot;comm cooking (gas)&quot; = &quot;#2ca25f&quot;,
-  &quot;comm cooking (refined liquids)&quot; = &quot;#006d2c&quot;,
-  &quot;resid rural cooking (biomass)&quot; = &quot;#fdcc8a&quot;,
-  &quot;resid rural cooking (traditional biomass)&quot; = &quot;#fc8d59&quot;,
-  &quot;resid rural cooking (refined liquids)&quot; = &quot;#e34a33&quot;,
-  &quot;resid rural cooking (electricity)&quot; = &quot;#b30000&quot;,
-  &quot;resid urban cooking (biomass)&quot; = &quot;#bdc9e1&quot;,
-  &quot;resid urban cooking (traditional biomass)&quot; = &quot;#74a9cf&quot;,
-  &quot;resid urban cooking (refined liquids)&quot; = &quot;#2b8cbe&quot;,
-  &quot;resid urban cooking (electricity)&quot; = &quot;#045a8d&quot; )
-
-pop &lt;- thailand %&gt;% 
-  filter(param == &quot;pop&quot;, region %in% c(&quot;Thailand&quot;, &quot;MEA area&quot;), scenario == scenRef_name) %&gt;% 
-  mutate(region = case_when(region == &quot;Thailand&quot; ~ &quot;All of Thailand&quot;,
-                            T ~ region)) %&gt;%
-  rename(pop = value) %&gt;% 
-  select(region, x, pop)
-
-thailand_cook &lt;- thailand %&gt;% 
-  filter(param %in% building_cook_params,
-         grepl(&quot;cook&quot;, class),
-         region %in% c(&quot;All of Thailand&quot;, &quot;MEA area&quot;))
-
-thailand_cook2 &lt;- thailand_cook %&gt;% 
-  full_join(pop) %&gt;% 
-  mutate(serviceOutputByTechBuildingsPerCapita = value/pop) %&gt;% 
-  select(-c(param, value, pop)) %&gt;% 
-  tidyr::pivot_longer(c(serviceOutputByTechBuildingsPerCapita),
-               names_to = &quot;param&quot;, values_to = &quot;value&quot;) %&gt;% 
-  full_join(thailand_cook)
-
-building_cook &lt;- thailand_cook2  %&gt;% 
-  mutate(param = case_when(param == &quot;serviceOutputByTechBuildings&quot; ~ &quot;Cooking output (EJ)&quot;,
-                           T ~ &quot;Per capita cooking output (EJ)&quot;)) %&gt;% 
-  rchart::chart(save = F, show = F, size_text = 19, scenRef = scenRef_name,
-                palette = building_tech_colors)
-
-building_cook$`chart_class_All of Thailand`</code></pre>
-<p><img src="modeling_thailand_files/figure-html/building-details-1.png" width="100%" style="display: block; margin: auto;" /></p>
 </div>
 <div id="transportation" class="section level5" number="6.3.1.2.2">
 <h5><span class="header-section-number">6.3.1.2.2</span>
 Transportation</h5>
 <pre class="r"><code>transport_params &lt;- c(&quot;transportFreightVMTByFuel&quot;, &quot;transportPassengerVMTByFuel&quot;,
-                      &quot;transportPassengerVMTByTech&quot;, &quot;transportFreightVMTByTech&quot;,
-                      &quot;emissGHGBySectorTransportGWPAR5&quot;)
+                      &quot;transportPassengerVMTByTech&quot;, &quot;transportFreightVMTByTech&quot;)
 
 transport &lt;- thailand %&gt;% 
   filter(param %in% transport_params,
@@ -2859,7 +2810,9 @@ transport &lt;- thailand %&gt;%
   rchart::chart(save = F, 
                 show = F,
                 size_text = 19,
-                scenRef = scenRef_name)
+                scenRef = scenRef_name,
+                chart_type = c(&quot;class_absolute&quot;, &quot;class_diff_absolute&quot;),
+                ncol = 4)
 
 transport$`chart_class_All of Thailand`</code></pre>
 <div class="figure" style="text-align: center">
@@ -2882,7 +2835,7 @@ low and high policy scenarios (right)
 </div>
 <div id="industry" class="section level5" number="6.3.1.2.3">
 <h5><span class="header-section-number">6.3.1.2.3</span> Industry</h5>
-<pre class="r"><code>industry_params &lt;- c(&quot;energyFinalSubsecByFuelIndusEJ&quot;, &quot;emissGHGBySectorIndustryGWPAR5&quot;)
+<pre class="r"><code>industry_params &lt;- c(&quot;energyFinalSubsecByFuelIndusEJ&quot;)
 
 industry &lt;- thailand %&gt;% 
   filter(param %in% industry_params,
@@ -2892,7 +2845,9 @@ industry &lt;- thailand %&gt;%
   rchart::chart(save = F, 
                 show = F,
                 size_text = 19,
-                scenRef = scenRef_name)
+                scenRef = scenRef_name,
+                chart_type = c(&quot;class_absolute&quot;, &quot;class_diff_absolute&quot;),
+                ncol = 4)
 
 industry$`chart_class_All of Thailand`</code></pre>
 <div class="figure" style="text-align: center">
@@ -2936,7 +2891,7 @@ consistent between scenarios.
 </div>
 <p><br> <br></p>
 </div>
-<div id="emissions-by-sector-and-gas-1" class="section level5"
+<div id="emissions-by-sector-and-gas" class="section level5"
 number="6.3.2.1.2">
 <h5><span class="header-section-number">6.3.2.1.2</span> Emissions by
 sector and gas</h5>
@@ -3349,24 +3304,6 @@ Policy and Planning Office</a></strong>
 <div id="transportation-2" class="section level4" number="7.2.1.4">
 <h4><span class="header-section-number">7.2.1.4</span>
 Transportation</h4>
-<div class="figure" style="text-align: center">
-<img src="modeling_thailand_files/figure-html/national%20transport%20ghg%20total-1.png" alt="**National GHG emissions in transportation from GCAM output (blue) and local data (red). Local data source: [Ministry of Transport](https://datagov.mot.go.th/dataset/transport-ghg)**" width="75%" />
-<p class="caption">
-<strong>National GHG emissions in transportation from GCAM output (blue)
-and local data (red). Local data source: <a
-href="https://datagov.mot.go.th/dataset/transport-ghg">Ministry of
-Transport</a></strong>
-</p>
-</div>
-<div class="figure" style="text-align: center">
-<img src="modeling_thailand_files/figure-html/national%20transport%20output%20by%20mode-1.png" alt="**National GHG emissions by transportation mode from local data (left) and GCAM output (right). Local data source: [Ministry of Transport](https://datagov.mot.go.th/dataset/transport-ghg)**" width="75%" />
-<p class="caption">
-<strong>National GHG emissions by transportation mode from local data
-(left) and GCAM output (right). Local data source: <a
-href="https://datagov.mot.go.th/dataset/transport-ghg">Ministry of
-Transport</a></strong>
-</p>
-</div>
 </div>
 </div>
 <div id="mea-area-1" class="section level3 tabset" number="7.2.2">

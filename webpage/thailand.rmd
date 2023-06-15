@@ -11,7 +11,7 @@ output:
     #inverse: true
 ---
 
-```{r setup, echo = FALSE, message=FALSE}
+```{r setup, echo = FALSE, message=FALSE, warning = FALSE}
 source("thailand_data_functions.R")
 source("thailand_aggregate_groups.R")
 source("conversions.R")
@@ -25,11 +25,13 @@ library(tidyverse)
 ```{r child = 'header.rmd'}
 ```
 
+# Pathways to Carbon Neutrality for Thailand and Bangkok
+
 <br>
 
 <!-------------------------->
 <!-------------------------->
-# Executive Summary - Thailand
+## Executive Summary 
 <!-------------------------->
 <!-------------------------->
 <p align="center"> <img src="images/divider.png"></p>
@@ -49,35 +51,35 @@ knitr::include_graphics("images/exec_summary_thailand_02_waterfall.JPG")
 
 <!-------------------------->
 <!-------------------------->
-# Background
+## Background
 <!-------------------------->
 <!-------------------------->
 <p align="center"> <img src="images/divider.png"></p>
 
-Urbanization is driving rapid socioeconomic growth in Thailand, posing challenges for power grids as energy demand increases. Maintaining stability, reliability, and affordability of electricity will be especially challenging as Thailand works toward increasing their renewable energy (RE) shares and decreasing their environmental impact in line with international agreements. These goals and challenges were highlighted in Thailand’s 2018 Power Development Plan, which emphasized three priorities: energy security, economy, and environment. Energy security encompasses the need for stability of power generation, transmission, and distribution to support socioeconomic development and resilience to energy crises. Economic priorities are to promote low cost, high efficiency electricity generation, keeping prices low for consumers to further facilitate socioeconomic growth. Lastly, the plan emphasizes reducing environmental impact by supporting RE development and increasing efficiency in production and consumption.
+Urbanization is driving rapid socioeconomic growth in Thailand, posing challenges for managing increasing energy demand while working towards climate change mitigation goals. Thailand's Long-term Low Greenhouse Gas Emission Development Strategy establishes goals of carbon neutrality by 2050 and net zero greenhouse gas emissions by 2065. This and other key documents, including the Energy Efficiency Plan and the Power Development Plan, highlight measures needed to reach these goals including renewable energy expansion, transport electrification, and energy efficiency. Given the central role of cities in energy demand growth and Bangkok's existing Smart City initiatives, it is important to understand how multi-level governance, integrating city-scale and national-scale actions, will shape Thailand's pathway to its climate goals. 
 
 <br>
 
 ```{r logos_diagram, results = "show", fig.topcaption=TRUE, fig.cap="Project Partners"}
-knitr::include_graphics("images/logo_diagram.png")
+knitr::include_graphics("images/logo_diagram2.png")
 ```
 
 <br>
 
-The U.S. Department of Energy’s Pacific Northwest National Laboratory (PNNL) is partnering with Thammasat University and the Metropolitan Electricity Authority (MEA) of Thailand to supplement Bangkok’s existing Smart City roadmap plans by providing integrated modeling and assessment capabilities. PNNL’s Global Change Analysis Model (GCAM) is a global model integrating socioeconomics, energy, land use, water, and climate systems. PNNL, in collaboration with the Thammasat University modeling team, will use GCAM to assess the trajectories and outcomes of Smart City pathways for Bangkok and focus on the implications for the energy system in this analysis. 
+The U.S. Department of Energy’s Pacific Northwest National Laboratory (PNNL) is partnering with Thammasat University and multiple city- and national-level stakeholders to supplement Bangkok and Thailand's existing plans by providing integrated, multiscale modeling and assessment capabilities. PNNL’s Global Change Analysis Model (GCAM) is a global model integrating socioeconomics, energy, land use, water, and climate systems. PNNL, in collaboration with the Thammasat University modeling team, are using GCAM to support the long-term assessment of existing energy and emissions mitigation plans and to identify additional measures needed at the city and national levels to reach Thailand's carbon neutrality goal. 
 
-The collaboration between PNNL, Thammasat University, EPPO, EGAT, and MEA will support the long-term assessment of these plans and the analysis of their contribution to Thailand’s national socioeconomic growth, power development, and net-zero goals.
+Stakeholders engaged include the Metropolitan Electricity Authority (MEA), Bangkok Metropolitan Authority (BMA), the Energy Policy and Planning Office (EPPO), the Electricity Generating Authority of Thailand (EGAT), and the Office of Natural Resources and Environmental Policy and Planning (ONEP). 
 
 <br>
 
 <!-------------------------->
 <!-------------------------->
-# Methodology
+## Methodology
 <!-------------------------->
 <!-------------------------->
 <p align="center"> <img src="images/divider.png"></p>
 
-Integrated Assessment Models (IAMs) are computational models that use links and feedbacks between socioeconomic and environmental systems to assess the implications of technology and policy choices in the context of global climate change. IAMs can provide a holistic approach to energy sector planning by considering multi-sector dynamics and global processes. GCAM, an IAM developed at PNNL, incorporates socioeconomics, energy, land use, water, and climate system. The model is global but can also be used to assess specific regions and fine scale processes; PNNL has developed both Thailand and Bangkok regions within the model for national and city level analyses. GCAM utilizes the most up to date data on population, GDP, technology characteristics, policies, resource availabilities, and other inputs. It has the detailed representation of energy technologies in different sectors, including electricity, buildings, transportation, industry, hydrogen production, and other energy supply sectors. The model produces both historical and projected future outputs based on this information. These outputs include greenhouse gas emissions, electricity prices, energy supply and demand, and other indicators at five-year time steps from a historical baseline year to the desired end year. PNNL and Thammasat University's modeling team will use GCAM to assess the implications of MEA’s Smart Grid plans for Bangkok through the year 2100.
+The Global Change Analysis Model (GCAM) is a computational model that integrates socioeconomic and environmental systems to assess technology and policy choices in the context of global climate change. GCAM provides a holistic approach to energy sector planning by considering multi-sector dynamics and global processes, incorporating socioeconomic, energy, land use, water, and climate systems. We are using GCAM to conduct multi-scale analysis of carbon neutral pathways for Thailand and Bangkok. This includes assessing impacts of existing policies on greenhouse gas emissions, electricity prices, energy supply and demand, and other indicators as well as investigating additional measures needed to reach Thailand's target of carbon neutrality by 2050. Our analysis is an iterative process involving continuous feedback from the stakeholders listed above.
 
 <br>
 
@@ -88,7 +90,7 @@ knitr::include_graphics("images/GCAM_diagram.png")
 
 <br>
 
-PNNL’s assessment will encompass outcomes both on the national level and the city level, with the city level analysis including the three provinces served by MEA within the Bangkok metropolitan area. The map to the right shows these provinces: the green region includes Bangkok as well as the two other provinces served by MEA (Nonthaburi and Samut Prakan), while the shaded region includes only Bangkok itself, which is the area governed under the Bangkok Metropolitan Administration (BMA). For the city level analysis, results will be reported for each province individually as well as for the aggregated MEA service area.
+Given the importance of multi-level governance and contributions of cities to national climate targets, we are conducting both national and city scale analysis. Our city level analysis encompasses the three provinces served by MEA within the Bangkok metropolitan area. The map below shows these provinces: the green region includes Bangkok as well as the two other provinces served by MEA (Nonthaburi and Samut Prakan), while the shaded region includes only Bangkok itself, which is the area governed under the Bangkok Metropolitan Administration (BMA). 
 
 <br>
 
@@ -98,27 +100,81 @@ knitr::include_graphics("images/MEA_BMA_boundaries_map.png")
 
 <br>
 
-Scenarios will be assessed up from the year 2015 to the year 2100, with the GCAM analysis conducted at five-year intervals within this range.
+Scenarios are assessed up from the year 2015 to the year 2050, with the GCAM analysis conducted at five-year intervals within this range.
 
 <br>
 
 <!-------------------------->
 <!-------------------------->
-# Scenarios
+## Scenarios
 <!-------------------------->
 <!-------------------------->
 <p align="center"> <img src="images/divider.png"></p>
 
-Three unique scenarios are developed to provide a comprehensive set of future pathways. The Business as Usual scenario uses historical energy and emissions, combined with expected future socioeconomic trajectories and baseline technology assumptions, to project future conditions in the absence of additional policies or constraints. The Policies scenario assumes that Thailand implements a set of policies in the power, buildings, industry, and transportation sectors consistent with current plans, priorities, and targets. The Carbon Neutral scenario combines these policies with an emissions constraint to determine the additional measures needed to reach carbon neutrality by 2050. The policies considered include Thailand's national power development plans, as well as standards, regulations, and measures to promote energy efficiency, renewable energy expansion, and reduction of greenhouse gas emissions.
+Three unique scenarios are developed to provide a comprehensive set of future pathways. The Business as Usual scenario uses historical energy and emissions, combined with expected future socioeconomic trajectories and baseline technology assumptions, to project future conditions in the absence of additional policies or constraints. The Policies scenario assumes that Thailand implements a set of policies in the power, buildings, industry, and transportation sectors consistent with current plans, priorities, and targets. The Carbon Neutral scenario combines these policies with an emissions constraint to determine the additional measures needed to reach carbon neutrality by 2050. Finally, the Carbon Neutral + LUC scenario is a modified version of the Carbon Neutral scenario that assumes that Thailand reaches a target of 120 MtCO2 sequestration in the LUC sector by 2050. The policies considered include Thailand's national power development plans, as well as standards, regulations, and measures to promote energy efficiency, renewable energy expansion, and reduction of greenhouse gas emissions.
 
-* **Business as Usual:** This scenario uses a reference projection without imposing any policies or constraints.
-* **Policies:** Policies representing existing city and national targets 
-* **Carbon Neutral:** Scenario using most efficient pathway to national carbon neutrality by 2050.
+* **Business as Usual:** GCAM's baseline scenario, using a reference projection without imposing any policies or constraints.
+* **Policies:** Includes policies consistent with Thailand's current plans, priorities, and targets (see table below for more details). 
+* **Carbon Neutral:** Includes the policies in the Policies scenario and a constraint limiting CO2 emissions to reach net zero by 2050.
+* **Carbon Neutral + LUC:** Includes the policies in the Policies scenario and a modified net zero CO2 emissions constraint that assumes Thailand will reach a target of 120 MtCO2 sequestration from the land use sector by 2050.
+
+<br>
+
+The following table describes the policies included in all scenarios except Business as Usual.
+
+<table>
+
+<tr>
+<th>Sector</th>
+<th>Policies</th>
+</tr>
+
+<tr>
+<td rowspan="2">Electricity</td>
+<td>Phase-out of coal power plants by 2050</td>
+</tr>
+
+<tr>
+<td> 74% of electricity generation from renewable energy by 2050</td>
+</tr>
+
+<tr>
+<td rowspan="3">Buildings</td>
+<td>Gradual improvement of building envelope efficiencies</td>
+</tr>
+
+<tr>
+<td>Phase-out of non-LED lighting technologies</td>
+</tr>
+
+<tr>
+<td>Increasing use of high-efficiency air conditioners</td>
+</tr>
+
+<tr>
+<td rowspan="2">Industry</td>
+<td>Gradual increase in efficiency of industrial processes</td>
+</tr>
+
+<tr>
+<td>Increasing use of hydrogen fuels</td>
+</tr>
+
+<tr>
+<td rowspan="2">Transportation</td>
+<td>Decreasing costs of electric vehicles</td>
+</tr>
+
+<tr>
+<td>Phase-out of internal combustion engine cars</td>
+</tr>
+
+</table>
 
 <br>
 
 <!-------------------------->
-# Results
+## Results
 <!-------------------------->
 <p align="center"> <img src="images/divider.png"></p>
 
