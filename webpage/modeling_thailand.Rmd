@@ -1406,29 +1406,59 @@ data <- gcamextractor::readgcam(gcamdatabase = sample_path,
 ```
 
 ```{r gcamextractor single db, echo = TRUE}
-thailand <- read.csv("../data/Thailand/gcamextractor/All/gcamDataTable_aggClass1.csv") %>%
-  filter(x >= 2020, x <= 2065,
-         !grepl("International", class))
+thailand <- read.csv("../data/Thailand/all_data.csv")
 
-thailand_with_hist <- read.csv("../data/Thailand/gcamextractor/All/gcamDataTable_aggClass1.csv") %>%
-  filter(x <= 2065)
+thailand_with_hist <- read.csv("../data/Thailand/all_data_with_hist.csv")
 
-scenRef_name <- "Ref_cities"
+
+
 ```
 
 ```{r fix param names, eval = TRUE, echo = FALSE, warning=FALSE, error=FALSE, message=FALSE}
-# need to fix emisisons units names in gcamextractor so they aren't the same across params
-# doing it here for now until it's fixed in gcamextractor
+
 thailand <- thailand %>% 
-  mutate(units = case_when(param == "emissGHGBySectorGWPAR5" ~ "GHG Emissions by Sector (MTCO2eq)",
-                           param == "emissGHGByGasGWPAR5" ~ "GHG Emissions by Gas (MTCO2eq)",
-                           param == "emissGHGBySectorNoBioGWPAR5" ~ "GHG Emissions by Sector (MTCO2eq)",
-                           param == "emissGHGByGasNoBioGWPAR5" ~ "GHG Emissions by Gas (MTCO2eq)",
+  mutate(units = case_when(param == "pop" ~ "Population (millions)",
+                           param == "gdp" ~ "GDP (Billion 1990 USD)",
+                           param == "gdpPerCapita" ~ "GDP per Capita (Billion 1990 USD per person)",
                            param == "transportFreightVMTByFuel" ~ "Freight (million ton-km) by Fuel",
                            param == "transportPassengerVMTByFuel" ~ "Passenger (million pass-km) by Fuel",
                            param == "transportFreightVMTByTech" ~ "Freight (million ton-km) by Tech",
                            param == "transportPassengerVMTByTech" ~ "Passenger (million pass-km) by Tech",
-                           T ~ units))
+                           param == "emissCO2BySectorNoBio" ~ "CO2 Emissions (MtCO2)",
+                           grepl("energyFinalConsumBySec", param) ~ "Energy Consumption by Sector (EJ)",
+                           grepl("energyFinalByFuelEJNoFeedstock", param) ~ "Energy Consumption by Fuel (EJ)",
+                           param == "elecByTechTWh" ~ "Electricity Generation (TWh)",
+                           param == "elecConsumByDemandSectorTWh" ~ "Electricity Consumption (TWh)",
+                           param == "energyFinalSubsecByFuelBuildEJ" ~ "Building Energy Consumption by Fuel (EJ)",
+                           param == "energyFinalSubsecBySectorBuildEJ" ~ "Building Energy Consumption by Sector (EJ)",
+                           param == "energyFinalSubsecByFuelIndusEJ" ~ "Industry Energy Consumption by Fuel (EJ)",
+                           T ~ param))
+
+thailand_with_hist <- thailand_with_hist %>% 
+  mutate(units = case_when(param == "pop" ~ "Population (millions)",
+                           param == "gdp" ~ "GDP (Billion 1990 USD)",
+                           param == "gdpPerCapita" ~ "GDP per Capita (Billion 1990 USD per person)",
+                           param == "transportFreightVMTByFuel" ~ "Freight (million ton-km) by Fuel",
+                           param == "transportPassengerVMTByFuel" ~ "Passenger (million pass-km) by Fuel",
+                           param == "transportFreightVMTByTech" ~ "Freight (million ton-km) by Tech",
+                           param == "transportPassengerVMTByTech" ~ "Passenger (million pass-km) by Tech",
+                           param == "emissCO2BySectorNoBio" ~ "CO2 Emissions (MtCO2)",
+                           grepl("energyFinalConsumBySec", param) ~ "Energy Consumption by Sector (EJ)",
+                           grepl("energyFinalByFuelEJNoFeedstock", param) ~ "Energy Consumption by Fuel (EJ)",
+                           param == "elecByTechTWh" ~ "Electricity Generation (TWh)",
+                           param == "elecConsumByDemandSectorTWh" ~ "Electricity Consumption (TWh)",
+                           param == "energyFinalSubsecByFuelBuildEJ" ~ "Building Energy Consumption by Fuel (EJ)",
+                           param == "energyFinalSubsecBySectorBuildEJ" ~ "Building Energy Consumption by Sector (EJ)",
+                           param == "energyFinalSubsecByFuelIndusEJ" ~ "Industry Energy Consumption by Fuel (EJ)",
+                           T ~ param))
+
+thailand$scenario <- factor(thailand$scenario,
+                            levels = c("BAU", "POL", "CN2050", "CN2050+LUC"),
+                            labels = c("1. Business as Usual", "2. Policies",
+                                       "3. Carbon Neutral", "4. Carbon Neutral + LUC"))
+
+scenRef_name <- "1. Business as Usual"
+
 
 ```
 
@@ -1442,6 +1472,7 @@ thailand <- thailand %>%
 <br>
 
 ### Thailand {.tabset}
+
 
 
 #### Summary figures {.tabset .tabset-pills}
@@ -1468,12 +1499,12 @@ socioeconomic$chart_param_Thailand
 <br>
 
 
-##### Emissions by sector and gas
+##### CO2 Emissions by Sector
 ***
 
 ``` {r emiss-line-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 12, fig.height = 6, out.width = "100%", fig.cap="Total national CO2 emissions (left) and GHG emissions (right) in the reference scenario and the low and high policies scenarios"}
 
-emissions_line_params <- c("emissCO2BySector", "emissGHGBySectorGWPAR5")
+emissions_line_params <- c("emissCO2BySectorNoBio")
 
 emissions_line <- thailand %>% filter(param %in% emissions_line_params,
                            region %in% c("All of Thailand", "MEA area")) %>%
@@ -1488,19 +1519,27 @@ emissions_line$`chart_param_All of Thailand`
 ```
 
 
-``` {r emiss-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 20, fig.height = 18, out.width = "100%", fig.cap="National CO2 emissions by sector, GHG emissions by gas, and GHG emissions by sector in the reference scenario and the low and high policies scenarios"}
+``` {r emiss-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 20, fig.height = 5, out.width = "100%", fig.cap="National CO2 emissions by sector, GHG emissions by gas, and GHG emissions by sector in the reference scenario and the low and high policies scenarios"}
 
-emissions_params <- c("emissCO2BySectorNoBio", "emissGHGBySectorNoBioGWPAR5", "emissGHGByGasNoBioGWPAR5")
+emissions_params <- c("emissCO2BySectorNoBio")
 
 emissions_bar <- thailand %>% filter(param %in% emissions_params,
                                      region %in% c("All of Thailand", "MEA area")) %>%
+  filter(class != "LUC") %>% 
+  mutate(class = case_when(class %in% c("hydrogen", "refining") ~ "Industry",
+                           T ~ class)) %>% 
+  group_by(scenario, region, x, class, param, units) %>% 
+  summarize(value = sum(value)) %>% 
+  ungroup() %>% 
   mutate(param = units) %>% 
   rchart::chart(save = F, 
                 show = F,
                 size_text = 19,
                 scenRef = scenRef_name,
                 summary_line = T,
-                chart_type = "class_absolute")
+                chart_type = "class_absolute",
+                palette = c("BECCS" = "forestgreen"),
+                ncol = 4)
 
 emissions_bar$`chart_class_All of Thailand`
 
@@ -1508,17 +1547,24 @@ emissions_bar$`chart_class_All of Thailand`
 
 One of rchart's chart types is `class_diff_absolute`, which shows the reference (BAU) scenario on the left and the difference between each policy scenario and the reference scenario on the right. For example, the `policies_high_diffAbs` panels in the chart below show the difference in CO2 and GHG emissions by sector and gas in the `policies_high scenario` compared to the `Ref` scenario.
 
-``` {r emiss-diff-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 32, fig.height = 17, out.width = "100%", fig.cap="Difference in national CO2 and GHG emissions by sector and gas between the reference scenario (left) and the low and high policy scenarios (right)"}
+``` {r emiss-diff-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 32, fig.height = 8, out.width = "100%", fig.cap="Difference in national CO2 and GHG emissions by sector and gas between the reference scenario (left) and the low and high policy scenarios (right)"}
 
 emissions_diff <- thailand %>% filter(param %in% emissions_params,
                                       region %in% c("All of Thailand", "MEA area")) %>%
+  filter(class != "LUC") %>% 
+  mutate(class = case_when(class %in% c("hydrogen", "refining") ~ "Industry",
+                           T ~ class)) %>% 
+  group_by(scenario, region, x, class, units) %>% 
+  summarize(value = sum(value)) %>% 
+  ungroup() %>% 
   mutate(param = units) %>% 
   rchart::chart(save = F, 
                 show = F,
                 size_text = 19,
                 scenRef = scenRef_name,
-                summary_line = T,
-                chart_type = "class_diff_absolute")
+                summary_line = F,
+                chart_type = "class_diff_absolute",
+                palette = c("BECCS" = "forestgreen"))
 
 emissions_diff$`chart_class_diff_absolute_All of Thailand`
 
@@ -1530,8 +1576,8 @@ emissions_diff$`chart_class_diff_absolute_All of Thailand`
 ##### Final Energy by Fuel and Sector
 ***
 
-```{r energy-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 20, fig.height = 12, out.width = "100%", fig.cap="National final energy consumption by fuel and sector in the reference scenario and the low and high policies scenarios"}
-energy_parameters <- c("energyFinalConsumBySecEJ", "energyFinalByFuelEJ")
+```{r energy-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 20, fig.height = 10, out.width = "100%", fig.cap="National final energy consumption by fuel and sector in the reference scenario and the low and high policies scenarios"}
+energy_parameters <- c("energyFinalConsumBySecEJNoFeedstock", "energyFinalByFuelEJNoFeedstock")
 
 energy <- thailand %>% 
   filter(param %in% energy_parameters,
@@ -1540,7 +1586,10 @@ energy <- thailand %>%
   rchart::chart(save = F, 
                 show = F,
                 size_text = 20,
-                scenRef = scenRef_name)
+                scenRef = scenRef_name,
+                chart_type = c("class_absolute", "class_diff_absolute"),
+                scales = "fixed",
+                ncol = 4)
 
 energy$`chart_class_All of Thailand`
 ```
@@ -1557,9 +1606,8 @@ energy$`chart_class_diff_absolute_All of Thailand`
 ##### Electricity Generation and Consumption
 ***
 
-```{r elec-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 20, fig.height = 18, out.width = "100%", fig.cap="National electricity generation by fuel, electricity consumption by sector, and power sector GHG emissions by gas and fuel in the reference scenario and the low and high policies scenarios"}
-elec_parameters <- c("elecByTechTWh", "elecConsumByDemandSectorTWh",
-                     "emissGHGBySectorPowerGWPAR5")
+```{r elec-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 20, fig.height = 10, out.width = "100%", fig.cap="National electricity generation by fuel, electricity consumption by sector, and power sector GHG emissions by gas and fuel in the reference scenario and the low and high policies scenarios"}
+elec_parameters <- c("elecByTechTWh", "elecConsumByDemandSectorTWh")
 
 electricity <- thailand %>% 
   filter(param %in% elec_parameters,
@@ -1569,13 +1617,16 @@ electricity <- thailand %>%
   rchart::chart(save = F, 
                 show = F,
                 size_text = 19,
-                scenRef = scenRef_name)
+                scenRef = scenRef_name,
+                chart_type = c("class_absolute", "class_diff_absolute"),
+                scales = "fixed",
+                ncol = 4)
 
 electricity$`chart_class_All of Thailand`
 
 ```
 
-``` {r elec-diff-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 32, fig.height = 12, out.width = "100%", fig.cap = "Difference in national electricity generation by fuel, electricity consumption by sector, and power sector GHG emissions by gas and fuel between the reference scenario (left) and the low and high policy scenarios (right)"}
+``` {r elec-diff-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 24, fig.height = 8, out.width = "100%", fig.cap = "Difference in national electricity generation by fuel, electricity consumption by sector, and power sector GHG emissions by gas and fuel between the reference scenario (left) and the low and high policy scenarios (right)"}
 
 electricity$`chart_class_diff_absolute_All of Thailand`
 
@@ -1587,32 +1638,19 @@ electricity$`chart_class_diff_absolute_All of Thailand`
 
 ##### Buildings
 
-```{r building-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 21, fig.height = 18, out.width = "100%", fig.cap="National buildings sector GHG emissions by service, final energy by fuel, and final energy by service in the reference scenario and the low and high policies scenarios"}
+```{r building-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 26, fig.height = 12, out.width = "100%", fig.cap="National buildings sector final energy by fuel and  by service in the reference scenario and the low and high policies scenarios"}
 buildings_params <- c("energyFinalSubsecByFuelBuildEJ", 
-                      "energyFinalSubsecBySectorBuildEJ",
-                      "emissGHGBySectorBuildingsGWPAR5")
+                      "energyFinalSubsecBySectorBuildEJ")
 
 building_sector_colors <- c(
-  "comm cooking" = "#b2e2e2",
-  "comm hvac" = "#66c2a4",
-  "comm lighting" = "#2ca25f",
-  "Commercial Others" = "#006d2c",
-  "resid rural air conditioners" = "#fee8c8",
-  "resid rural cooking" = "#fdd49e",
-  "resid rural lighting" = "#fdbb84",
-  "resid rural other appliances" = "#fc8d59",
-  "resid rural refrigerators" = "#ef6548",
-  "resid rural televisions" = "#d7301f",
-  "resid rural ventilation" = "#b30000",
-  "resid rural water heaters" = "#7f0000",
-  "resid urban air conditioners" = "#ece7f2",
-  "resid urban cooking" = "#d0d1e6",
-  "resid urban lighting" = "#a6bddb",
-  "resid urban other appliances" = "#74a9cf",
-  "resid urban refrigerators" = "#3690c0",
-  "resid urban televisions" = "#0570b0",
-  "resid urban ventilation" = "#045a8d",
-  "resid urban water heaters" = "#023858" )
+  "commercial ACMV" = "#b2e2e2",
+  "commercial cooking" = "#66c2a4",
+  "commercial lighting" = "#2ca25f",
+  "commercial other" = "#006d2c",
+  "residential ACMV" = "#fee8c8",
+  "residential cooking" = "#fdd49e",
+  "residential lighting" = "#fdbb84",
+  "residential other" = "#fc8d59")
 
 buildings <- thailand %>% 
   filter(param %in% buildings_params,
@@ -1623,70 +1661,26 @@ buildings <- thailand %>%
                 show = F,
                 size_text = 19,
                 scenRef = scenRef_name,
-                palette = building_sector_colors)
+                palette = building_sector_colors,
+                chart_type = c("class_absolute", "class_diff_absolute"),
+                scales = "fixed",
+                ncol = 4)
 
 buildings$`chart_class_All of Thailand`
 ```
 
-We have found that the low-ambition buildings policies (increased AC efficiency, phase-out of non-LED lighting, and increased building envelope efficiency) result in an increase in energy consumption from lighting and cooking until 2050. We will need to investigate the cause of this. Additionally, we have found that the majority of GHG emissions in the buildings sector are from cooking, so since the buildings policies do not address cooking, building emissions do not change much in the policy scenarios. We should consider adding cooking-related policies to our scenarios.
 
-```{r building-diff-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 38, fig.height = 21, out.width = "100%", fig.cap="Difference in national buildings sector GHG emissions by service, final energy by fuel, and final energy by service between the reference scenario (left) and the low and high policy scenarios (right)"}
+```{r building-diff-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 36, fig.height = 12, out.width = "100%", fig.cap="Difference in national buildings sector GHG emissions by service, final energy by fuel, and final energy by service between the reference scenario (left) and the low and high policy scenarios (right)"}
 
 buildings$`chart_class_diff_absolute_All of Thailand`
 ```
 
 
-```{r building-details, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 21, fig.height = 12, out.width = "100%"}
-building_cook_params <- c("serviceOutputByTechBuildings")
-
-building_tech_colors <- c(
-  "comm cooking (gas)" = "#2ca25f",
-  "comm cooking (refined liquids)" = "#006d2c",
-  "resid rural cooking (biomass)" = "#fdcc8a",
-  "resid rural cooking (traditional biomass)" = "#fc8d59",
-  "resid rural cooking (refined liquids)" = "#e34a33",
-  "resid rural cooking (electricity)" = "#b30000",
-  "resid urban cooking (biomass)" = "#bdc9e1",
-  "resid urban cooking (traditional biomass)" = "#74a9cf",
-  "resid urban cooking (refined liquids)" = "#2b8cbe",
-  "resid urban cooking (electricity)" = "#045a8d" )
-
-pop <- thailand %>% 
-  filter(param == "pop", region %in% c("Thailand", "MEA area"), scenario == scenRef_name) %>% 
-  mutate(region = case_when(region == "Thailand" ~ "All of Thailand",
-                            T ~ region)) %>%
-  rename(pop = value) %>% 
-  select(region, x, pop)
-
-thailand_cook <- thailand %>% 
-  filter(param %in% building_cook_params,
-         grepl("cook", class),
-         region %in% c("All of Thailand", "MEA area"))
-
-thailand_cook2 <- thailand_cook %>% 
-  full_join(pop) %>% 
-  mutate(serviceOutputByTechBuildingsPerCapita = value/pop) %>% 
-  select(-c(param, value, pop)) %>% 
-  tidyr::pivot_longer(c(serviceOutputByTechBuildingsPerCapita),
-               names_to = "param", values_to = "value") %>% 
-  full_join(thailand_cook)
-
-building_cook <- thailand_cook2  %>% 
-  mutate(param = case_when(param == "serviceOutputByTechBuildings" ~ "Cooking output (EJ)",
-                           T ~ "Per capita cooking output (EJ)")) %>% 
-  rchart::chart(save = F, show = F, size_text = 19, scenRef = scenRef_name,
-                palette = building_tech_colors)
-
-building_cook$`chart_class_All of Thailand`
-
-```
-
 
 ##### Transportation
-```{r transport-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 21, fig.height = 31, out.width = "100%", fig.cap="National transportation GHG emissions by mode and service output by mode and fuel in the reference scenario and the low and high policies scenarios"}
+```{r transport-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 24, fig.height = 18, out.width = "100%", fig.cap="National transportation GHG emissions by mode and service output by mode and fuel in the reference scenario and the low and high policies scenarios"}
 transport_params <- c("transportFreightVMTByFuel", "transportPassengerVMTByFuel",
-                      "transportPassengerVMTByTech", "transportFreightVMTByTech",
-                      "emissGHGBySectorTransportGWPAR5")
+                      "transportPassengerVMTByTech", "transportFreightVMTByTech")
 
 transport <- thailand %>% 
   filter(param %in% transport_params,
@@ -1696,19 +1690,21 @@ transport <- thailand %>%
   rchart::chart(save = F, 
                 show = F,
                 size_text = 19,
-                scenRef = scenRef_name)
+                scenRef = scenRef_name,
+                chart_type = c("class_absolute", "class_diff_absolute"),
+                ncol = 4)
 
 transport$`chart_class_All of Thailand`
 ```
 
-```{r transport-diff-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 34, fig.height = 30, out.width = "100%", fig.cap="Difference in national transportation GHG emissions by mode and service output by mode and fuel between the reference scenario (left) and the low and high policy scenarios (right)"}
+```{r transport-diff-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 36, fig.height = 24, out.width = "100%", fig.cap="Difference in national transportation GHG emissions by mode and service output by mode and fuel between the reference scenario (left) and the low and high policy scenarios (right)"}
 
 transport$`chart_class_diff_absolute_All of Thailand`
 ```
 
 ##### Industry
-```{r industry-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 20, fig.height = 12, out.width = "100%", fig.cap=" National industrial GHG emissions and final energy consumption by fuel in the reference scenario and the low and high policies scenarios"}
-industry_params <- c("energyFinalSubsecByFuelIndusEJ", "emissGHGBySectorIndustryGWPAR5")
+```{r industry-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 24, fig.height = 7, out.width = "100%", fig.cap=" National industrial GHG emissions and final energy consumption by fuel in the reference scenario and the low and high policies scenarios"}
+industry_params <- c("energyFinalSubsecByFuelIndusEJ")
 
 industry <- thailand %>% 
   filter(param %in% industry_params,
@@ -1718,12 +1714,14 @@ industry <- thailand %>%
   rchart::chart(save = F, 
                 show = F,
                 size_text = 19,
-                scenRef = scenRef_name)
+                scenRef = scenRef_name,
+                chart_type = c("class_absolute", "class_diff_absolute"),
+                ncol = 4)
 
 industry$`chart_class_All of Thailand`
 ```
 
-```{r industry-diff-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 32, fig.height = 12, out.width = "100%", fig.cap = "Difference in national industrial GHG emissions and final energy consumption by fuel between the reference scenario (left) and the low and high policy scenarios (right)"}
+```{r industry-diff-th, results = 'hide', eval = TRUE, echo = TRUE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 36, fig.height = 6, out.width = "100%", fig.cap = "Difference in national industrial GHG emissions and final energy consumption by fuel between the reference scenario (left) and the low and high policy scenarios (right)"}
 
 industry$`chart_class_diff_absolute_All of Thailand`
 ```
@@ -1765,13 +1763,13 @@ emissions_line$`chart_param_MEA area`
 ```
 
 
-``` {r emiss-mea, results = 'hide', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 20, fig.height = 18, out.width = "100%",  fig.cap="MEA area CO2 emissions by sector, GHG emissions by gas, and GHG emissions by sector in the reference scenario and the low and high policies scenarios"}
+``` {r emiss-mea, results = 'hide', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 20, fig.height = 5, out.width = "100%",  fig.cap="MEA area CO2 emissions by sector, GHG emissions by gas, and GHG emissions by sector in the reference scenario and the low and high policies scenarios"}
 
 emissions_bar$`chart_class_MEA area`
 
 ```
 
-``` {r emiss-diff-mea, results = 'hide', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 32, fig.height = 18, out.width = "100%", fig.cap="Difference in MEA area CO2 and GHG emissions by sector and gas between the reference scenario (left) and the low and high policy scenarios (right)"}
+``` {r emiss-diff-mea, results = 'hide', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 32, fig.height = 9, out.width = "100%", fig.cap="Difference in MEA area CO2 and GHG emissions by sector and gas between the reference scenario (left) and the low and high policy scenarios (right)"}
 
 emissions_diff$`chart_class_diff_absolute_MEA area`
 
@@ -1783,12 +1781,12 @@ emissions_diff$`chart_class_diff_absolute_MEA area`
 ##### Final Energy by Fuel and Sector
 ***
 
-```{r energy-mea, results = 'hide', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 20, fig.height = 12, out.width = "100%", fig.cap="MEA area final energy consumption by fuel and sector in the reference scenario and the low and high policies scenarios"}
+```{r energy-mea, results = 'hide', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 24, fig.height = 12, out.width = "100%", fig.cap="MEA area final energy consumption by fuel and sector in the reference scenario and the low and high policies scenarios"}
 
 energy$`chart_class_MEA area`
 ```
 
-``` {r energy-diff-mea, results = 'hide', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 32, fig.height = 12, out.width = "100%", fig.cap="Difference in MEA area final energy consumption by fuel and sector between the reference scenario (left) and the low and high policy scenarios (right)"}
+``` {r energy-diff-mea, results = 'hide', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE,fig.width = 32, fig.height = 10, out.width = "100%", fig.cap="Difference in MEA area final energy consumption by fuel and sector between the reference scenario (left) and the low and high policy scenarios (right)"}
 
 
 energy$`chart_class_diff_absolute_MEA area`
@@ -1818,18 +1816,18 @@ electricity$`chart_class_diff_absolute_MEA area`
 #### Sectoral details {.tabset .tabset-pills}
 
 ##### Buildings
-```{r building-mea, results = 'hide', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 21, fig.height = 12, out.width = "100%", fig.cap="MEA area buildings sector GHG emissions by service, final energy by fuel, and final energy by service in the reference scenario and the low and high policies scenarios"}
+```{r building-mea, results = 'hide', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 21, fig.height = 8, out.width = "100%", fig.cap="MEA area buildings sector GHG emissions by service, final energy by fuel, and final energy by service in the reference scenario and the low and high policies scenarios"}
 
 buildings$`chart_class_MEA area`
 ```
 
-```{r building-diff-mea, results = 'hide', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 38, fig.height = 14, out.width = "100%", fig.cap="Difference in MEA area buildings sector GHG emissions by service, final energy by fuel, and final energy by service between the reference scenario (left) and the low and high policy scenarios (right)"}
+```{r building-diff-mea, results = 'hide', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 38, fig.height = 12, out.width = "100%", fig.cap="Difference in MEA area buildings sector GHG emissions by service, final energy by fuel, and final energy by service between the reference scenario (left) and the low and high policy scenarios (right)"}
 
 buildings$`chart_class_diff_absolute_MEA area`
 ```
 
 ##### Transportation
-```{r transport-mea, results = 'hide', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 21, fig.height = 25, out.width = "100%", fig.cap="MEA area transportation GHG emissions by mode and service output by mode and fuel in the reference scenario and the low and high policies scenarios"}
+```{r transport-mea, results = 'hide', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 24, fig.height = 18, out.width = "100%", fig.cap="MEA area transportation GHG emissions by mode and service output by mode and fuel in the reference scenario and the low and high policies scenarios"}
 
 transport$`chart_class_MEA area`
 ```
@@ -1840,12 +1838,12 @@ transport$`chart_class_diff_absolute_MEA area`
 ```
 
 ##### Industry
-```{r industry-mea, results = 'hide', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 15, fig.height = 5, out.width = "100%", fig.cap="MEA area industrial GHG emissions and final energy consumption by fuel in the reference scenario and the low and high policies scenarios"}
+```{r industry-mea, results = 'hide', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 24, fig.height = 8, out.width = "100%", fig.cap="MEA area industrial GHG emissions and final energy consumption by fuel in the reference scenario and the low and high policies scenarios"}
 
 industry$`chart_class_MEA area`
 ```
 
-```{r industry-diff-mea, results = 'hide', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 32, fig.height = 6, out.width = "100%", fig.cap = "Difference in MEA area industrial GHG emissions and final energy consumption by fuel between the reference scenario (left) and the low and high policy scenarios (right)"}
+```{r industry-diff-mea, results = 'hide', eval = TRUE, echo = FALSE, warning = FALSE, error = FALSE, message = FALSE, fig.width = 34, fig.height = 6, out.width = "100%", fig.cap = "Difference in MEA area industrial GHG emissions and final energy consumption by fuel between the reference scenario (left) and the low and high policy scenarios (right)"}
 
 industry$`chart_class_diff_absolute_MEA area`
 ```
@@ -2041,8 +2039,7 @@ local_national_co2_emissions_sector <- dplyr::mutate(
   read.csv(
   "../data/thailand/outputs/local_national_co2_emissions_sector.csv",
   check.names = F)
-) %>% rename(units = Units, x = year) %>% 
-  mutate(class = case_when(class == "transportation" ~ "transport", T~class))
+) %>% rename(units = Units, x = year) 
 
 # combine local and gcam data
 all_national_co2_emissions_sector <- dplyr::bind_rows(
@@ -2085,14 +2082,14 @@ ggpubr::ggarrange(p2, p1, align = "h", common.legend = T, legend = "bottom") +
 
 all_national_co2_emissions_sector_rename <-
   all_national_co2_emissions_sector %>% 
-  mutate(class = case_when(class %in% c("building", "refining", "refined liquids enduse") ~ paste0("other: ", class),
+  mutate(class = case_when(class %in% c("hydrogen", "refining") ~ "Industry",
                            T ~ class))
 
 # 2005 to 2015
 national_co2_emissions_sector_plot_local <- rchart::chart( dplyr::filter(
   all_national_co2_emissions_sector_rename, x >= 2005, x <= 2015, x %% 5 == 0),
   chart_type = "class_absolute",
-  save = F
+  save = F, scales = "fixed"
 )
 
 national_co2_emissions_sector_plot_local$chart_class +
@@ -2361,66 +2358,66 @@ final_energy_fuel_chart_local$chart_class +
 
 ```{r transportation-th data prep}
 # read in local data
-local_national_transport_ghg <- read.csv(
-  "../data/thailand/outputs/local_transport_ghg_emissions_mode.csv",
-  check.names = F, skip = 1
-) %>% 
-  rename(units = Units, x = year) %>% 
-  mutate(class = stringr::str_to_title(class))
-  
-
-# read in gcam data
-gcam_ghg_mode <- thailand_with_hist %>% 
-  filter(scenario == scenRef_name,
-         region == "All of Thailand",
-         param %in% c("transportFreightGHGByMode", "transportPassengerGHGByMode"),
-         x >= 1990) %>% 
-  select(x, units, value, region, scenario, class) %>% 
-  mutate(class = case_when(grepl("Bus|LDV|Road", class) ~ "Road",
-                           grepl("Rail", class) ~ "Rail",
-                           T ~ class),
-         region = "Thailand")
-
-# gcam_ghg_subsector <- process_gcam_data(conv_ghg_co2e(process_gcam_data(
-#   read.csv("../data/thailand/outputs/queryoutall_non_co2_emissions_subsector.csv", skip = 1, check.names = F))),
-#   processed = T, subsector, sector, GHG)
-
-
-# combine GCAM and local data
-all_national_transport_ghg <- dplyr::ungroup(dplyr::bind_rows(gcam_ghg_mode, local_national_transport_ghg))
+# local_national_transport_ghg <- read.csv(
+#   "../data/thailand/outputs/local_transport_ghg_emissions_mode.csv",
+#   check.names = F, skip = 1
+# ) %>% 
+#   rename(units = Units, x = year) %>% 
+#   mutate(class = stringr::str_to_title(class))
+#   
+# 
+# # read in gcam data
+# gcam_ghg_mode <- thailand_with_hist %>% 
+#   filter(scenario == scenRef_name,
+#          region == "All of Thailand",
+#          param %in% c("transportFreightGHGByMode", "transportPassengerGHGByMode"),
+#          x >= 1990) %>% 
+#   select(x, units, value, region, scenario, class) %>% 
+#   mutate(class = case_when(grepl("Bus|LDV|Road", class) ~ "Road",
+#                            grepl("Rail", class) ~ "Rail",
+#                            T ~ class),
+#          region = "Thailand")
+# 
+# # gcam_ghg_subsector <- process_gcam_data(conv_ghg_co2e(process_gcam_data(
+# #   read.csv("../data/thailand/outputs/queryoutall_non_co2_emissions_subsector.csv", skip = 1, check.names = F))),
+# #   processed = T, subsector, sector, GHG)
+# 
+# 
+# # combine GCAM and local data
+# all_national_transport_ghg <- dplyr::ungroup(dplyr::bind_rows(gcam_ghg_mode, local_national_transport_ghg))
 
 ```
 
 ```{r national transport ghg total, fig.dim = c(9,4), fig.cap="**National GHG emissions in transportation from GCAM output (blue) and local data (red). Local data source: [Ministry of Transport](https://datagov.mot.go.th/dataset/transport-ghg)**"}
-transport_ghg_chart1 <- rchart::chart(dplyr::filter(
-  all_national_transport_ghg, x >= 2000),
-  save = F)
-
-p1 <- transport_ghg_chart1$chart_param +
-  ggplot2::ylab("GHG Emissions (MT CO2eq)") + ggplot2::ggtitle("") +
-  ggplot2::theme(axis.title.y = ggplot2::element_text(size = 12))
-
-transport_ghg_chart2 <- rchart::chart(dplyr::filter(
-  all_national_transport_ghg, x >= 2000, x <= 2020),
-  save = F)
-
-p2 <- transport_ghg_chart2$chart_param +
-  ggplot2::ylim(c(0, 100)) +
-  ggplot2::ylab("") + ggplot2::ggtitle("")
-ggpubr::ggarrange(p1, p2, nrow = 1, common.legend = T, legend = "bottom") +
-  ggplot2::theme(plot.margin = ggplot2::unit(c(0,0,0.5,0), "cm"))
+# transport_ghg_chart1 <- rchart::chart(dplyr::filter(
+#   all_national_transport_ghg, x >= 2000),
+#   save = F)
+# 
+# p1 <- transport_ghg_chart1$chart_param +
+#   ggplot2::ylab("GHG Emissions (MT CO2eq)") + ggplot2::ggtitle("") +
+#   ggplot2::theme(axis.title.y = ggplot2::element_text(size = 12))
+# 
+# transport_ghg_chart2 <- rchart::chart(dplyr::filter(
+#   all_national_transport_ghg, x >= 2000, x <= 2020),
+#   save = F)
+# 
+# p2 <- transport_ghg_chart2$chart_param +
+#   ggplot2::ylim(c(0, 100)) +
+#   ggplot2::ylab("") + ggplot2::ggtitle("")
+# ggpubr::ggarrange(p1, p2, nrow = 1, common.legend = T, legend = "bottom") +
+#   ggplot2::theme(plot.margin = ggplot2::unit(c(0,0,0.5,0), "cm"))
 ```
 
 ```{r national transport output by mode, fig.dim=c(9,4), fig.cap="**National GHG emissions by transportation mode from local data (left) and GCAM output (right). Local data source: [Ministry of Transport](https://datagov.mot.go.th/dataset/transport-ghg)**"}
 
-# 2005 to 2020 final energy by fuel (gcam and local)
-national_transport_ghg_chart <- rchart::chart(dplyr::filter(
-  all_national_transport_ghg, x >= 2005, x < 2020, x %% 5 == 0),
-  chart_type = "class_absolute",
-  save = F)
-
-national_transport_ghg_chart$chart_class +
-  ggplot2::ggtitle("") + ggplot2::ylab("GHG Emissions (MTCO2eq)")
+# # 2005 to 2020 final energy by fuel (gcam and local)
+# national_transport_ghg_chart <- rchart::chart(dplyr::filter(
+#   all_national_transport_ghg, x >= 2005, x < 2020, x %% 5 == 0),
+#   chart_type = "class_absolute",
+#   save = F)
+# 
+# national_transport_ghg_chart$chart_class +
+#   ggplot2::ggtitle("") + ggplot2::ylab("GHG Emissions (MTCO2eq)")
 ```
 
 ### MEA area {.tabset}
@@ -2500,7 +2497,7 @@ ggpubr::ggarrange(p2, p1, nrow = 1, common.legend = T, legend = "bottom") +
 elec_consump_sector_mea_chart_local <- rchart::chart(
   dplyr::filter(all_elec_consump_sector_mea, x %in% c(2015,2020)),
   chart_type = "class_absolute",
-  save = F)
+  save = F, scales = "fixed")
 
 elec_consump_sector_mea_chart_local$chart_class +
   ggplot2::ylab("Electricity Consumption (EJ)") +
