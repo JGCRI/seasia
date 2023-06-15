@@ -58,8 +58,8 @@ The US-ASEAN Smart Cities Partnership (USASCP) uses innovative approaches across
 
 <br>
 
-```{r logos_diagram, results = "show", fig.topcaption=TRUE, fig.cap="Project Partners"}
-knitr::include_graphics("images/partner_logos_mys.jpg")
+```{r logos_diagram, results = "show", fig.topcaption=TRUE, fig.cap="Project Partners", out.width = "100%"}
+knitr::include_graphics("images/mys_logo_diagram.png")
 ```
 
 <br>
