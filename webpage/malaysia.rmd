@@ -23,7 +23,7 @@ theme_set(theme_light())
 ```{r child = 'header.rmd'}
 ```
 
-# <b>Pathways to Carbon Neutrality for Malaysia and Kuala Lumpur</b>
+# <b>Pathways to Carbon Neutrality for Malaysia and Kuala Lumpur</b> {.unlisted .unnumbered}
 
 <br>
 
