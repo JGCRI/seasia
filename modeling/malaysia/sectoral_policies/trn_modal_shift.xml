@@ -1,0 +1,59 @@
+<?xml  version="1.0" encoding="UTF-8"?>
+<scenario>
+  <world>
+    <region name="KualaLumpur">
+      <supplysector name="trn_pass">
+        <tranSubsector name="HSR">
+                    <interpolation-rule apply-to="share-weight" from-year="2020" to-year="2100">
+                        <interpolation-function name="linear"/>
+                    </interpolation-rule>
+          <share-weight year="2020">0.00006</share-weight>
+	      <share-weight year="2100">0.15</share-weight>
+        </tranSubsector>
+        <tranSubsector name="Passenger Rail">
+            <interpolation-rule apply-to="share-weight" from-year="2020" to-year="2100">
+              <interpolation-function name="linear"/>
+            </interpolation-rule>
+          <share-weight year="2020">0.002</share-weight>
+	      <share-weight year="2100">0.50</share-weight>
+        </tranSubsector>
+	  </supplysector>
+   <supplysector name="trn_pass_road">
+        <tranSubsector name="Bus">
+                    <interpolation-rule apply-to="share-weight" from-year="2020" to-year="2100">
+                        <interpolation-function name="linear"/>
+                    </interpolation-rule>
+          <share-weight year="2020">.671</share-weight>
+	      <share-weight year="2100">5.0</share-weight>
+        </tranSubsector>
+	  </supplysector>
+    </region>
+    <region name="Rest of Malaysia">
+      <supplysector name="trn_pass">
+        <tranSubsector name="HSR">
+                    <interpolation-rule apply-to="share-weight" from-year="2020" to-year="2100">
+                        <interpolation-function name="linear"/>
+                    </interpolation-rule>
+          <share-weight year="2020">0.00006</share-weight>
+	      <share-weight year="2100">0.075</share-weight>
+        </tranSubsector>
+        <tranSubsector name="Passenger Rail">
+            <interpolation-rule apply-to="share-weight" from-year="2020" to-year="2100">
+              <interpolation-function name="linear"/>
+            </interpolation-rule>
+          <share-weight year="2020">0.002</share-weight>
+	      <share-weight year="2100">0.05</share-weight>
+        </tranSubsector>
+	  </supplysector>
+   <supplysector name="trn_pass_road">
+        <tranSubsector name="Bus">
+                    <interpolation-rule apply-to="share-weight" from-year="2020" to-year="2100">
+                        <interpolation-function name="linear"/>
+                    </interpolation-rule>
+          <share-weight year="2020">.671</share-weight>
+	      <share-weight year="2100">3.0</share-weight>
+        </tranSubsector>
+	  </supplysector>
+    </region>
+  </world>
+</scenario>

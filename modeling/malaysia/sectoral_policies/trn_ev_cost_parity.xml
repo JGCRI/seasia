@@ -1,0 +1,4529 @@
+<?xml  version="1.0" encoding="UTF-8"?>
+<scenario>
+  <world>
+    <region name="KualaLumpur">
+      <supplysector name="trn_pass_road_LDV">
+        <tranSubsector name="2W and 3W">
+          <stub-technology name="BEV">
+            <period year="1975">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0719</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="1990">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0719</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2005">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0719</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2010">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0617</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2015">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0518</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2020">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0424</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2025">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0397299967884659</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2030">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0372281284153658</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2035">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0348838071316764</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2040">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0326871119177115</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2045">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.030628746497993</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2050">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0287</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2055">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0287</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2060">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0287</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2065">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0287</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2070">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0287</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2075">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0287</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2080">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0287</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2085">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0287</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2090">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0287</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2095">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0287</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2100">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0287</input-cost>
+              </minicam-non-energy-input>
+            </period>
+          </stub-technology>
+          <stub-technology name="Liquids">
+            <period year="1975">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0226</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="1990">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0226</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2005">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0226</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2010">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0232</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2015">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0238</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2020">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0243</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2025">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.025</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2030">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0257</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2035">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0264</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2040">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0271</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2045">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0279</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2050">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0287</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2055">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0287</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2060">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0287</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2065">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0287</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2070">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0287</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2075">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0287</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2080">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0287</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2085">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0287</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2090">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0287</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2095">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0287</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2100">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0287</input-cost>
+              </minicam-non-energy-input>
+            </period>
+          </stub-technology>
+        </tranSubsector>
+      </supplysector>
+      <supplysector name="trn_pass_road_LDV_4W">
+        <tranSubsector name="Car">
+          <stub-technology name="BEV">
+            <period year="1975">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2916</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="1990">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2916</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2005">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2916</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2010">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2945</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2015">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2975</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2020">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.3004</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2025">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.290601564710037</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2030">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.28112273439388</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2035">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.271953084189167</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2040">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.263082529271279</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2045">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.25450131376201</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2050">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2055">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2060">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2065">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2070">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2075">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2080">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2085">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2090">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2095">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2100">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+          </stub-technology>
+          <stub-technology name="Hybrid Liquids">
+            <period year="1975">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2224</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="1990">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2224</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2005">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2224</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2010">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2255</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2015">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2286</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2020">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2317</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2025">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.234055959163055</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2030">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.236435874060154</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2035">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.238839988276671</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2040">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.24126854787479</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2045">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.243721801418694</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2050">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.246200000000001</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2055">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2060">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2065">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2070">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2075">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2080">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2085">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2090">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2095">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2100">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+          </stub-technology>
+          <stub-technology name="Liquids">
+            <period year="1975">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1872</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="1990">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1872</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2005">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1872</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2010">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1928</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2015">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1984</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2020">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.204</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2025">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2105</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2030">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.217</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2035">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2234</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2040">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.231</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2045">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2386</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2050">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2055">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2060">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2065">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2070">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2075">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2080">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2085">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2090">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2095">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2100">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+          </stub-technology>
+        </tranSubsector>
+        <tranSubsector name="Large Car and Truck">
+          <stub-technology name="BEV">
+            <period year="1975">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.5113</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="1990">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.5113</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2005">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.5113</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2010">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.5163</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2015">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.5212</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2020">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.5262</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2025">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.507956644898483</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2030">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.490345786956524</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2035">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.473345497496279</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2040">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.456934608107209</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2045">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.441092684287611</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2050">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2055">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2060">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2065">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2070">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2075">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2080">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2085">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2090">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2095">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2100">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+          </stub-technology>
+          <stub-technology name="Hybrid Liquids">
+            <period year="1975">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4728</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="1990">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4728</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2005">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4728</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2010">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.478</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2015">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4832</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2020">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4884</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2025">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.477361426064145</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2030">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.466572340487294</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2035">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.456027104457619</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2040">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.44572020660891</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2045">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.435646260140121</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2050">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2055">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2060">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2065">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2070">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2075">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2080">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2085">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2090">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2095">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2100">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+          </stub-technology>
+          <stub-technology name="Liquids">
+            <period year="1975">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.3249</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="1990">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.3249</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2005">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.3249</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2010">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.3345</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2015">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.3441</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2020">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.3536</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2025">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.3647</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2030">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.3758</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2035">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.3869</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2040">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.3999</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2045">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4128</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2050">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2055">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2060">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2065">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2070">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2075">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2080">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2085">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2090">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2095">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2100">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+          </stub-technology>
+        </tranSubsector>
+        <tranSubsector name="Mini Car">
+          <stub-technology name="BEV">
+            <period year="1975">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1366</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="1990">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1366</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2005">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1366</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2010">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1379</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2015">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1391</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2020">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1403</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2025">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.133299342954401</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2030">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.126648003079651</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2035">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.120328550228115</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2040">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.114324423977644</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2045">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.108619890234214</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2050">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2055">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2060">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2065">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2070">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2075">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2080">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2085">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2090">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2095">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2100">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+          </stub-technology>
+          <stub-technology name="Hybrid Liquids">
+            <period year="1975">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.101</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="1990">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.101</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2005">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.101</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2010">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1023</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2015">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1036</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2020">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1049</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2025">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.104614734301103</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2030">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.104330244355486</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2035">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.104046528053559</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2040">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.103763583291471</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2045">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.103481407971093</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2050">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2055">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2060">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2065">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2070">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2075">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2080">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2085">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2090">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2095">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2100">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+          </stub-technology>
+          <stub-technology name="Liquids">
+            <period year="1975">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0784</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="1990">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0784</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2005">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0784</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2010">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0808</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2015">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0831</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2020">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0855</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2025">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0882</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2030">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0909</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2035">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0937</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2040">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0969</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2045">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2050">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2055">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2060">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2065">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2070">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2075">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2080">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2085">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2090">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2095">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2100">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+          </stub-technology>
+        </tranSubsector>
+      </supplysector>
+      <supplysector name="trn_freight_road">
+        <tranSubsector name="Heavy truck">
+          <stub-technology name="BEV">
+            <period year="1975">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>1.3368</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="1990">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>1.3368</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2005">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>1.3368</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2010">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>1.307</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2015">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>1.2773</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2020">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>1.2476</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2025">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.99445037909632</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2030">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.792667166146854</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2035">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.631827640166676</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2040">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.503623947008083</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2045">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.401433973247974</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2050">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.319979293746866</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2055">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.255052524823296</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2060">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2033</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2065">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.201</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2070">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1987</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2075">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1964</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2080">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1941</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2085">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1918</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2090">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1895</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2095">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1871</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2100">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1871</input-cost>
+              </minicam-non-energy-input>
+            </period>
+          </stub-technology>
+          <stub-technology name="Hybrid Liquids">
+            <period year="1975">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.3701</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="1990">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.3701</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2005">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.3701</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2010">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.3619</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2015">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.3536</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2020">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.3454</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2025">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.323257949599398</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2030">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.30253532709672</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2035">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.28314113931288</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2040">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.264990226234856</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2045">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.248002887077476</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2050">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.232104530316722</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2055">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.217225346157831</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2060">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2033</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2065">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.201</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2070">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1987</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2075">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1964</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2080">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1941</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2085">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1918</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2090">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1895</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2095">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1871</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2100">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1871</input-cost>
+              </minicam-non-energy-input>
+            </period>
+          </stub-technology>
+          <stub-technology name="Liquids">
+            <period year="1975">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2599</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="1990">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2599</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2005">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2599</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2010">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2542</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2015">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2484</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2020">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2426</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2025">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2368</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2030">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2311</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2035">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2253</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2040">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2195</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2045">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2137</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2050">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.208</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2055">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2056</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2060">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2033</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2065">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.201</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2070">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1987</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2075">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1964</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2080">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1941</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2085">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1918</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2090">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1895</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2095">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1871</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2100">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1871</input-cost>
+              </minicam-non-energy-input>
+            </period>
+          </stub-technology>
+        </tranSubsector>
+        <tranSubsector name="Light truck">
+          <stub-technology name="BEV">
+            <period year="1975">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2791</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="1990">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2791</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2005">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2791</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2010">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2729</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2015">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2668</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2020">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2606</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2025">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.237591094123914</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2030">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.216613691508052</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2035">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.197488426583338</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2040">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.180051770332868</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2045">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.164154632050398</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2050">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.149661084552427</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2055">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.136447201943909</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2060">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1244</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2065">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.123</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2070">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1216</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2075">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1202</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2080">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1188</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2085">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1174</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2090">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1159</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2095">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1145</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2100">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1145</input-cost>
+              </minicam-non-energy-input>
+            </period>
+          </stub-technology>
+          <stub-technology name="Hybrid Liquids">
+            <period year="1975">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2168</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="1990">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2168</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2005">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2168</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2010">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.212</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2015">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2072</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2020">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2024</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2025">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.190452528211995</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2030">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.179210303865321</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2035">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.168631696901137</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2040">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.158677534641801</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2045">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.149310956734078</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2050">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.140497278654926</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2055">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.132203863274387</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2060">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1244</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2065">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.123</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2070">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1216</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2075">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1202</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2080">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1188</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2085">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1174</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2090">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1159</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2095">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1145</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2100">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1145</input-cost>
+              </minicam-non-energy-input>
+            </period>
+          </stub-technology>
+          <stub-technology name="Liquids">
+            <period year="1975">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.159</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="1990">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.159</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2005">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.159</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2010">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1555</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2015">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.152</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2020">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1485</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2025">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.145</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2030">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1414</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2035">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1379</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2040">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1343</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2045">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1308</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2050">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1272</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2055">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2060">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1244</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2065">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.123</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2070">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1216</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2075">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1202</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2080">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1188</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2085">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1174</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2090">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1159</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2095">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1145</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2100">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1145</input-cost>
+              </minicam-non-energy-input>
+            </period>
+          </stub-technology>
+        </tranSubsector>
+        <tranSubsector name="Medium truck">
+          <stub-technology name="BEV">
+            <period year="1975">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.3814</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="1990">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.3814</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2005">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.3814</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2010">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.3729</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2015">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.3644</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2020">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.3559</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2025">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.32998866485783</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2030">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.305963807065617</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2035">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.283688081450974</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2040">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.263034142270543</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2045">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.243883915200564</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2050">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.226127922330245</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2055">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.209664656299052</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2060">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1944</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2065">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1922</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2070">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.19</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2075">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1878</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2080">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1856</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2085">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1834</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2090">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1812</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2095">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.179</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2100">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.179</input-cost>
+              </minicam-non-energy-input>
+            </period>
+          </stub-technology>
+          <stub-technology name="Hybrid Liquids">
+            <period year="1975">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2729</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="1990">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2729</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2005">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2729</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2010">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2668</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2015">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2607</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2020">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2546</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2025">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.246157533697751</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2030">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.237995017266926</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2035">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.230103167646426</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2040">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.222473009598918</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2045">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.215095865503478</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2050">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.207963345486722</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2055">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.201067337881166</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2060">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1944</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2065">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1922</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2070">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.19</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2075">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1878</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2080">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1856</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2085">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1834</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2090">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1812</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2095">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.179</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2100">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.179</input-cost>
+              </minicam-non-energy-input>
+            </period>
+          </stub-technology>
+          <stub-technology name="Liquids">
+            <period year="1975">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2486</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="1990">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2486</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2005">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2486</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2010">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2431</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2015">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2375</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2020">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.232</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2025">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2265</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2030">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.221</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2035">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2154</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2040">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2099</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2045">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2044</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2050">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1989</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2055">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1967</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2060">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1944</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2065">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1922</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2070">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.19</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2075">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1878</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2080">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1856</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2085">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1834</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2090">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1812</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2095">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.179</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2100">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.179</input-cost>
+              </minicam-non-energy-input>
+            </period>
+          </stub-technology>
+        </tranSubsector>
+      </supplysector>
+    </region>
+    <region name="Rest of Malaysia">
+      <supplysector name="trn_pass_road_LDV">
+        <tranSubsector name="2W and 3W">
+          <stub-technology name="BEV">
+            <period year="1975">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0719</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="1990">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0719</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2005">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0719</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2010">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0617</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2015">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0518</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2020">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0424</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2025">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0397299967884659</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2030">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0372281284153658</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2035">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0348838071316764</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2040">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0326871119177115</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2045">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.030628746497993</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2050">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0287</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2055">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0287</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2060">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0287</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2065">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0287</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2070">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0287</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2075">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0287</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2080">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0287</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2085">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0287</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2090">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0287</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2095">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0287</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2100">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0287</input-cost>
+              </minicam-non-energy-input>
+            </period>
+          </stub-technology>
+          <stub-technology name="Liquids">
+            <period year="1975">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0226</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="1990">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0226</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2005">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0226</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2010">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0232</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2015">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0238</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2020">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0243</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2025">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.025</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2030">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0257</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2035">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0264</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2040">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0271</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2045">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0279</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2050">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0287</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2055">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0287</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2060">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0287</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2065">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0287</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2070">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0287</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2075">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0287</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2080">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0287</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2085">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0287</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2090">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0287</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2095">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0287</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2100">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0287</input-cost>
+              </minicam-non-energy-input>
+            </period>
+          </stub-technology>
+        </tranSubsector>
+      </supplysector>
+      <supplysector name="trn_pass_road_LDV_4W">
+        <tranSubsector name="Car">
+          <stub-technology name="BEV">
+            <period year="1975">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2916</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="1990">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2916</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2005">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2916</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2010">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2945</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2015">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2975</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2020">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.3004</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2025">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.290601564710037</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2030">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.28112273439388</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2035">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.271953084189167</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2040">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.263082529271279</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2045">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.25450131376201</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2050">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2055">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2060">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2065">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2070">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2075">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2080">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2085">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2090">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2095">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2100">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+          </stub-technology>
+          <stub-technology name="Hybrid Liquids">
+            <period year="1975">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2224</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="1990">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2224</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2005">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2224</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2010">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2255</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2015">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2286</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2020">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2317</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2025">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.234055959163055</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2030">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.236435874060154</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2035">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.238839988276671</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2040">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.24126854787479</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2045">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.243721801418694</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2050">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.246200000000001</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2055">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2060">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2065">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2070">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2075">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2080">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2085">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2090">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2095">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2100">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+          </stub-technology>
+          <stub-technology name="Liquids">
+            <period year="1975">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1872</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="1990">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1872</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2005">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1872</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2010">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1928</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2015">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1984</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2020">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.204</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2025">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2105</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2030">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.217</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2035">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2234</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2040">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.231</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2045">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2386</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2050">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2055">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2060">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2065">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2070">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2075">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2080">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2085">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2090">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2095">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2100">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2462</input-cost>
+              </minicam-non-energy-input>
+            </period>
+          </stub-technology>
+        </tranSubsector>
+        <tranSubsector name="Large Car and Truck">
+          <stub-technology name="BEV">
+            <period year="1975">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.5113</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="1990">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.5113</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2005">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.5113</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2010">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.5163</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2015">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.5212</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2020">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.5262</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2025">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.507956644898483</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2030">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.490345786956524</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2035">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.473345497496279</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2040">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.456934608107209</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2045">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.441092684287611</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2050">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2055">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2060">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2065">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2070">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2075">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2080">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2085">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2090">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2095">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2100">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+          </stub-technology>
+          <stub-technology name="Hybrid Liquids">
+            <period year="1975">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4728</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="1990">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4728</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2005">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4728</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2010">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.478</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2015">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4832</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2020">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4884</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2025">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.477361426064145</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2030">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.466572340487294</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2035">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.456027104457619</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2040">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.44572020660891</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2045">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.435646260140121</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2050">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2055">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2060">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2065">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2070">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2075">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2080">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2085">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2090">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2095">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2100">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+          </stub-technology>
+          <stub-technology name="Liquids">
+            <period year="1975">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.3249</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="1990">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.3249</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2005">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.3249</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2010">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.3345</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2015">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.3441</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2020">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.3536</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2025">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.3647</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2030">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.3758</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2035">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.3869</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2040">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.3999</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2045">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4128</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2050">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2055">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2060">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2065">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2070">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2075">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2080">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2085">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2090">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2095">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2100">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.4258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+          </stub-technology>
+        </tranSubsector>
+        <tranSubsector name="Mini Car">
+          <stub-technology name="BEV">
+            <period year="1975">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1366</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="1990">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1366</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2005">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1366</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2010">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1379</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2015">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1391</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2020">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1403</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2025">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.133299342954401</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2030">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.126648003079651</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2035">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.120328550228115</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2040">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.114324423977644</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2045">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.108619890234214</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2050">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2055">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2060">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2065">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2070">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2075">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2080">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2085">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2090">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2095">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2100">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+          </stub-technology>
+          <stub-technology name="Hybrid Liquids">
+            <period year="1975">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.101</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="1990">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.101</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2005">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.101</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2010">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1023</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2015">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1036</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2020">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1049</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2025">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.104614734301103</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2030">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.104330244355486</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2035">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.104046528053559</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2040">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.103763583291471</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2045">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.103481407971093</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2050">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2055">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2060">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2065">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2070">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2075">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2080">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2085">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2090">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2095">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2100">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+          </stub-technology>
+          <stub-technology name="Liquids">
+            <period year="1975">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0784</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="1990">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0784</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2005">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0784</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2010">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0808</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2015">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0831</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2020">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0855</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2025">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0882</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2030">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0909</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2035">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0937</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2040">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.0969</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2045">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2050">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2055">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2060">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2065">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2070">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2075">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2080">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2085">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2090">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2095">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2100">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1032</input-cost>
+              </minicam-non-energy-input>
+            </period>
+          </stub-technology>
+        </tranSubsector>
+      </supplysector>
+      <supplysector name="trn_freight_road">
+        <tranSubsector name="Heavy truck">
+          <stub-technology name="BEV">
+            <period year="1975">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>1.3368</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="1990">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>1.3368</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2005">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>1.3368</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2010">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>1.307</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2015">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>1.2773</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2020">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>1.2476</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2025">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.99445037909632</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2030">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.792667166146854</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2035">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.631827640166676</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2040">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.503623947008083</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2045">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.401433973247974</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2050">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.319979293746866</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2055">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.255052524823296</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2060">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2033</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2065">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.201</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2070">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1987</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2075">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1964</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2080">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1941</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2085">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1918</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2090">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1895</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2095">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1871</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2100">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1871</input-cost>
+              </minicam-non-energy-input>
+            </period>
+          </stub-technology>
+          <stub-technology name="Hybrid Liquids">
+            <period year="1975">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.3701</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="1990">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.3701</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2005">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.3701</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2010">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.3619</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2015">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.3536</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2020">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.3454</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2025">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.323257949599398</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2030">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.30253532709672</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2035">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.28314113931288</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2040">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.264990226234856</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2045">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.248002887077476</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2050">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.232104530316722</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2055">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.217225346157831</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2060">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2033</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2065">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.201</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2070">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1987</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2075">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1964</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2080">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1941</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2085">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1918</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2090">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1895</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2095">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1871</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2100">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1871</input-cost>
+              </minicam-non-energy-input>
+            </period>
+          </stub-technology>
+          <stub-technology name="Liquids">
+            <period year="1975">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2599</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="1990">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2599</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2005">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2599</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2010">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2542</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2015">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2484</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2020">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2426</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2025">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2368</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2030">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2311</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2035">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2253</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2040">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2195</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2045">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2137</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2050">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.208</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2055">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2056</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2060">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2033</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2065">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.201</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2070">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1987</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2075">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1964</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2080">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1941</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2085">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1918</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2090">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1895</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2095">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1871</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2100">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1871</input-cost>
+              </minicam-non-energy-input>
+            </period>
+          </stub-technology>
+        </tranSubsector>
+        <tranSubsector name="Light truck">
+          <stub-technology name="BEV">
+            <period year="1975">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2791</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="1990">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2791</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2005">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2791</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2010">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2729</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2015">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2668</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2020">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2606</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2025">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.237591094123914</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2030">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.216613691508052</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2035">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.197488426583338</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2040">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.180051770332868</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2045">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.164154632050398</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2050">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.149661084552427</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2055">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.136447201943909</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2060">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1244</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2065">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.123</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2070">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1216</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2075">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1202</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2080">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1188</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2085">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1174</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2090">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1159</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2095">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1145</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2100">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1145</input-cost>
+              </minicam-non-energy-input>
+            </period>
+          </stub-technology>
+          <stub-technology name="Hybrid Liquids">
+            <period year="1975">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2168</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="1990">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2168</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2005">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2168</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2010">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.212</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2015">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2072</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2020">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2024</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2025">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.190452528211995</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2030">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.179210303865321</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2035">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.168631696901137</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2040">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.158677534641801</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2045">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.149310956734078</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2050">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.140497278654926</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2055">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.132203863274387</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2060">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1244</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2065">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.123</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2070">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1216</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2075">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1202</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2080">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1188</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2085">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1174</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2090">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1159</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2095">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1145</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2100">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1145</input-cost>
+              </minicam-non-energy-input>
+            </period>
+          </stub-technology>
+          <stub-technology name="Liquids">
+            <period year="1975">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.159</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="1990">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.159</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2005">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.159</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2010">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1555</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2015">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.152</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2020">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1485</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2025">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.145</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2030">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1414</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2035">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1379</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2040">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1343</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2045">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1308</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2050">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1272</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2055">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1258</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2060">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1244</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2065">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.123</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2070">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1216</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2075">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1202</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2080">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1188</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2085">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1174</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2090">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1159</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2095">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1145</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2100">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1145</input-cost>
+              </minicam-non-energy-input>
+            </period>
+          </stub-technology>
+        </tranSubsector>
+        <tranSubsector name="Medium truck">
+          <stub-technology name="BEV">
+            <period year="1975">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.3814</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="1990">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.3814</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2005">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.3814</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2010">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.3729</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2015">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.3644</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2020">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.3559</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2025">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.32998866485783</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2030">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.305963807065617</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2035">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.283688081450974</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2040">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.263034142270543</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2045">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.243883915200564</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2050">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.226127922330245</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2055">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.209664656299052</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2060">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1944</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2065">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1922</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2070">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.19</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2075">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1878</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2080">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1856</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2085">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1834</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2090">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1812</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2095">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.179</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2100">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.179</input-cost>
+              </minicam-non-energy-input>
+            </period>
+          </stub-technology>
+          <stub-technology name="Hybrid Liquids">
+            <period year="1975">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2729</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="1990">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2729</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2005">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2729</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2010">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2668</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2015">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2607</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2020">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2546</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2025">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.246157533697751</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2030">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.237995017266926</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2035">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.230103167646426</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2040">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.222473009598918</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2045">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.215095865503478</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2050">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.207963345486722</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2055">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.201067337881166</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2060">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1944</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2065">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1922</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2070">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.19</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2075">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1878</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2080">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1856</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2085">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1834</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2090">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1812</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2095">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.179</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2100">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.179</input-cost>
+              </minicam-non-energy-input>
+            </period>
+          </stub-technology>
+          <stub-technology name="Liquids">
+            <period year="1975">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2486</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="1990">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2486</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2005">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2486</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2010">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2431</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2015">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2375</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2020">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.232</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2025">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2265</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2030">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.221</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2035">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2154</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2040">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2099</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2045">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.2044</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2050">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1989</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2055">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1967</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2060">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1944</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2065">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1922</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2070">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.19</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2075">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1878</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2080">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1856</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2085">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1834</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2090">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.1812</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2095">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.179</input-cost>
+              </minicam-non-energy-input>
+            </period>
+            <period year="2100">
+              <minicam-non-energy-input name="non-energy">
+                <input-cost>0.179</input-cost>
+              </minicam-non-energy-input>
+            </period>
+          </stub-technology>
+        </tranSubsector>
+      </supplysector>
+    </region>
+  </world>
+</scenario>
