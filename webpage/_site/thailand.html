@@ -13,7 +13,7 @@
 
 <title>SEAsia</title>
 
-<script src="site_libs/header-attrs-2.22/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -29,14 +29,14 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
-<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-6.4.0/css/all.min.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-6.4.0/css/v4-shims.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -57,7 +57,6 @@ if (window.hljs) {
   }
 }
 </script>
-
 
 
 
@@ -87,9 +86,6 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
-}
-details > summary > p:only-child {
-  display: inline;
 }
 pre code {
   padding: 0;
@@ -147,15 +143,11 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark the anchor link active (and if it's in a dropdown, also mark that active)
-  var dropdown = menuAnchor.closest('li.dropdown');
-  if (window.bootstrap) { // Bootstrap 4+
-    menuAnchor.addClass('active');
-    dropdown.find('> .dropdown-toggle').addClass('active');
-  } else { // Bootstrap 3
-    menuAnchor.parent().addClass('active');
-    dropdown.addClass('active');
-  }
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -184,8 +176,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "\e259";
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -193,9 +185,16 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "\e258";
-  font-family: 'Glyphicons Halflings';
+  content: "&#xe258;";
   border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -312,7 +311,7 @@ div.tocify {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -361,7 +360,7 @@ div.tocify {
 
 
 <!-- Allow href to tabsets -->
-<script>
+<script type="text/javascript">
 window.onload = function() {
   document.querySelector('a[href="' + window.location.href.match("#.*$") + '"]').click();
 }
@@ -386,7 +385,7 @@ window.onhashchange = goToTab;
 <style type="text/css">
 script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
 </style>
-<script>
+<script type="text/javascript">
  $(document).ready(function() {
     $('body').prepend('<div class=\"zoomDiv\"><img src=\"\" class=\"zoomImg\"></div>');
     // onClick function for all plots (img's)
@@ -414,11 +413,14 @@ td, th {
   padding: 8px;
 }
 </style>
+<div id="pathways-to-carbon-neutrality-for-thailand-and-bangkok"
+class="section level1">
+<h1>Pathways to Carbon Neutrality for Thailand and Bangkok</h1>
 <p><br></p>
 <!-------------------------->
 <!-------------------------->
-<div id="executive-summary---thailand" class="section level1">
-<h1>Executive Summary - Thailand</h1>
+<div id="executive-summary" class="section level2">
+<h2>Executive Summary</h2>
 <!-------------------------->
 <!-------------------------->
 <p align="center">
@@ -436,82 +438,74 @@ Pathways to Carbon-Neutrality in 2050
 <!-------------------------->
 <!-------------------------->
 </div>
-<div id="background" class="section level1">
-<h1>Background</h1>
+<div id="background" class="section level2">
+<h2>Background</h2>
 <!-------------------------->
 <!-------------------------->
 <p align="center">
 <img src="images/divider.png">
 </p>
 <p>Urbanization is driving rapid socioeconomic growth in Thailand,
-posing challenges for power grids as energy demand increases.
-Maintaining stability, reliability, and affordability of electricity
-will be especially challenging as Thailand works toward increasing their
-renewable energy (RE) shares and decreasing their environmental impact
-in line with international agreements. These goals and challenges were
-highlighted in Thailand’s 2018 Power Development Plan, which emphasized
-three priorities: energy security, economy, and environment. Energy
-security encompasses the need for stability of power generation,
-transmission, and distribution to support socioeconomic development and
-resilience to energy crises. Economic priorities are to promote low
-cost, high efficiency electricity generation, keeping prices low for
-consumers to further facilitate socioeconomic growth. Lastly, the plan
-emphasizes reducing environmental impact by supporting RE development
-and increasing efficiency in production and consumption.</p>
+posing challenges for managing increasing energy demand while working
+towards climate change mitigation goals. Thailand’s Long-term Low
+Greenhouse Gas Emission Development Strategy establishes goals of carbon
+neutrality by 2050 and net zero greenhouse gas emissions by 2065. This
+and other key documents, including the Energy Efficiency Plan and the
+Power Development Plan, highlight measures needed to reach these goals
+including renewable energy expansion, transport electrification, and
+energy efficiency. Given the central role of cities in energy demand
+growth and Bangkok’s existing Smart City initiatives, it is important to
+understand how multi-level governance, integrating city-scale and
+national-scale actions, will shape Thailand’s pathway to its climate
+goals.</p>
 <p><br></p>
 <div class="figure" style="text-align: center">
 <p class="caption">
 Project Partners
 </p>
-<img src="images/logo_diagram.png" alt="Project Partners" width="75%" />
+<img src="images/logo_diagram2.png" alt="Project Partners" width="75%" />
 </div>
 <p><br></p>
 <p>The U.S. Department of Energy’s Pacific Northwest National Laboratory
-(PNNL) is partnering with Thammasat University and the Metropolitan
-Electricity Authority (MEA) of Thailand to supplement Bangkok’s existing
-Smart City roadmap plans by providing integrated modeling and assessment
-capabilities. PNNL’s Global Change Analysis Model (GCAM) is a global
-model integrating socioeconomics, energy, land use, water, and climate
-systems. PNNL, in collaboration with the Thammasat University modeling
-team, will use GCAM to assess the trajectories and outcomes of Smart
-City pathways for Bangkok and focus on the implications for the energy
-system in this analysis.</p>
-<p>The collaboration between PNNL, Thammasat University, EPPO, EGAT, and
-MEA will support the long-term assessment of these plans and the
-analysis of their contribution to Thailand’s national socioeconomic
-growth, power development, and net-zero goals.</p>
+(PNNL) is partnering with Thammasat University and multiple city- and
+national-level stakeholders to supplement Bangkok and Thailand’s
+existing plans by providing integrated, multiscale modeling and
+assessment capabilities. PNNL’s Global Change Analysis Model (GCAM) is a
+global model integrating socioeconomics, energy, land use, water, and
+climate systems. PNNL, in collaboration with the Thammasat University
+modeling team, are using GCAM to support the long-term assessment of
+existing energy and emissions mitigation plans and to identify
+additional measures needed at the city and national levels to reach
+Thailand’s carbon neutrality goal.</p>
+<p>Stakeholders engaged include the Metropolitan Electricity Authority
+(MEA), Bangkok Metropolitan Authority (BMA), the Energy Policy and
+Planning Office (EPPO), the Electricity Generating Authority of Thailand
+(EGAT), and the Office of Natural Resources and Environmental Policy and
+Planning (ONEP).</p>
 <p><br></p>
 <!-------------------------->
 <!-------------------------->
 </div>
-<div id="methodology" class="section level1">
-<h1>Methodology</h1>
+<div id="methodology" class="section level2">
+<h2>Methodology</h2>
 <!-------------------------->
 <!-------------------------->
 <p align="center">
 <img src="images/divider.png">
 </p>
-<p>Integrated Assessment Models (IAMs) are computational models that use
-links and feedbacks between socioeconomic and environmental systems to
-assess the implications of technology and policy choices in the context
-of global climate change. IAMs can provide a holistic approach to energy
-sector planning by considering multi-sector dynamics and global
-processes. GCAM, an IAM developed at PNNL, incorporates socioeconomics,
-energy, land use, water, and climate system. The model is global but can
-also be used to assess specific regions and fine scale processes; PNNL
-has developed both Thailand and Bangkok regions within the model for
-national and city level analyses. GCAM utilizes the most up to date data
-on population, GDP, technology characteristics, policies, resource
-availabilities, and other inputs. It has the detailed representation of
-energy technologies in different sectors, including electricity,
-buildings, transportation, industry, hydrogen production, and other
-energy supply sectors. The model produces both historical and projected
-future outputs based on this information. These outputs include
+<p>The Global Change Analysis Model (GCAM) is a computational model that
+integrates socioeconomic and environmental systems to assess technology
+and policy choices in the context of global climate change. GCAM
+provides a holistic approach to energy sector planning by considering
+multi-sector dynamics and global processes, incorporating socioeconomic,
+energy, land use, water, and climate systems. We are using GCAM to
+conduct multi-scale analysis of carbon neutral pathways for Thailand and
+Bangkok. This includes assessing impacts of existing policies on
 greenhouse gas emissions, electricity prices, energy supply and demand,
-and other indicators at five-year time steps from a historical baseline
-year to the desired end year. PNNL and Thammasat University’s modeling
-team will use GCAM to assess the implications of MEA’s Smart Grid plans
-for Bangkok through the year 2100.</p>
+and other indicators as well as investigating additional measures needed
+to reach Thailand’s target of carbon neutrality by 2050. Our analysis is
+an iterative process involving continuous feedback from the stakeholders
+listed above.</p>
 <p><br></p>
 <div class="figure" style="text-align: center">
 <p class="caption">
@@ -520,15 +514,14 @@ Conceptual diagram of GCAM
 <img src="images/GCAM_diagram.png" alt="Conceptual diagram of GCAM" width="75%" />
 </div>
 <p><br></p>
-<p>PNNL’s assessment will encompass outcomes both on the national level
-and the city level, with the city level analysis including the three
-provinces served by MEA within the Bangkok metropolitan area. The map to
-the right shows these provinces: the green region includes Bangkok as
-well as the two other provinces served by MEA (Nonthaburi and Samut
-Prakan), while the shaded region includes only Bangkok itself, which is
-the area governed under the Bangkok Metropolitan Administration (BMA).
-For the city level analysis, results will be reported for each province
-individually as well as for the aggregated MEA service area.</p>
+<p>Given the importance of multi-level governance and contributions of
+cities to national climate targets, we are conducting both national and
+city scale analysis. Our city level analysis encompasses the three
+provinces served by MEA within the Bangkok metropolitan area. The map
+below shows these provinces: the green region includes Bangkok as well
+as the two other provinces served by MEA (Nonthaburi and Samut Prakan),
+while the shaded region includes only Bangkok itself, which is the area
+governed under the Bangkok Metropolitan Administration (BMA).</p>
 <p><br></p>
 <div class="figure" style="text-align: center">
 <p class="caption">
@@ -537,15 +530,15 @@ Map of analysis regions in Thailand
 <img src="images/MEA_BMA_boundaries_map.png" alt="Map of analysis regions in Thailand" width="75%" />
 </div>
 <p><br></p>
-<p>Scenarios will be assessed up from the year 2015 to the year 2100,
-with the GCAM analysis conducted at five-year intervals within this
+<p>Scenarios are assessed up from the year 2015 to the year 2050, with
+the GCAM analysis conducted at five-year intervals within this
 range.</p>
 <p><br></p>
 <!-------------------------->
 <!-------------------------->
 </div>
-<div id="scenarios" class="section level1">
-<h1>Scenarios</h1>
+<div id="scenarios" class="section level2">
+<h2>Scenarios</h2>
 <!-------------------------->
 <!-------------------------->
 <p align="center">
@@ -560,24 +553,104 @@ Policies scenario assumes that Thailand implements a set of policies in
 the power, buildings, industry, and transportation sectors consistent
 with current plans, priorities, and targets. The Carbon Neutral scenario
 combines these policies with an emissions constraint to determine the
-additional measures needed to reach carbon neutrality by 2050. The
-policies considered include Thailand’s national power development plans,
-as well as standards, regulations, and measures to promote energy
-efficiency, renewable energy expansion, and reduction of greenhouse gas
+additional measures needed to reach carbon neutrality by 2050. Finally,
+the Carbon Neutral + LUC scenario is a modified version of the Carbon
+Neutral scenario that assumes that Thailand reaches a target of 120
+MtCO2 sequestration in the LUC sector by 2050. The policies considered
+include Thailand’s national power development plans, as well as
+standards, regulations, and measures to promote energy efficiency,
+renewable energy expansion, and reduction of greenhouse gas
 emissions.</p>
 <ul>
-<li><strong>Business as Usual:</strong> This scenario uses a reference
-projection without imposing any policies or constraints.</li>
-<li><strong>Policies:</strong> Policies representing existing city and
-national targets</li>
-<li><strong>Carbon Neutral:</strong> Scenario using most efficient
-pathway to national carbon neutrality by 2050.</li>
+<li><strong>Business as Usual:</strong> GCAM’s baseline scenario, using
+a reference projection without imposing any policies or
+constraints.</li>
+<li><strong>Policies:</strong> Includes policies consistent with
+Thailand’s current plans, priorities, and targets (see table below for
+more details).</li>
+<li><strong>Carbon Neutral:</strong> Includes the policies in the
+Policies scenario and a constraint limiting CO2 emissions to reach net
+zero by 2050.</li>
+<li><strong>Carbon Neutral + LUC:</strong> Includes the policies in the
+Policies scenario and a modified net zero CO2 emissions constraint that
+assumes Thailand will reach a target of 120 MtCO2 sequestration from the
+land use sector by 2050.</li>
 </ul>
+<p><br></p>
+<p>The following table describes the policies included in all scenarios
+except Business as Usual.</p>
+<table>
+<tr>
+<th>
+Sector
+</th>
+<th>
+Policies
+</th>
+</tr>
+<tr>
+<td rowspan="2">
+Electricity
+</td>
+<td>
+Phase-out of coal power plants by 2050
+</td>
+</tr>
+<tr>
+<td>
+74% of electricity generation from renewable energy by 2050
+</td>
+</tr>
+<tr>
+<td rowspan="3">
+Buildings
+</td>
+<td>
+Gradual improvement of building envelope efficiencies
+</td>
+</tr>
+<tr>
+<td>
+Phase-out of non-LED lighting technologies
+</td>
+</tr>
+<tr>
+<td>
+Increasing use of high-efficiency air conditioners
+</td>
+</tr>
+<tr>
+<td rowspan="2">
+Industry
+</td>
+<td>
+Gradual increase in efficiency of industrial processes
+</td>
+</tr>
+<tr>
+<td>
+Increasing use of hydrogen fuels
+</td>
+</tr>
+<tr>
+<td rowspan="2">
+Transportation
+</td>
+<td>
+Decreasing costs of electric vehicles
+</td>
+</tr>
+<tr>
+<td>
+Phase-out of internal combustion engine cars
+</td>
+</tr>
+</table>
 <p><br></p>
 <!-------------------------->
 </div>
-<div id="results" class="section level1">
-<h1>Results</h1>
+<div id="results" class="section level2">
+<h2>Results</h2>
 <!-------------------------->
 <p align="center">
 <img src="images/divider.png">
@@ -595,6 +668,7 @@ on <a href="modeling_thailand.html">Modeling-Thailand page</a>.</p>
 <p><img src="images/exec_summary_thailand_03_result4.JPG" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 <p><img src="images/exec_summary_thailand_03_result5.JPG" width="100%" style="display: block; margin: auto;" /></p>
+</div>
 </div>
 <div id="section" class="section level1 unlisted unnumbered">
 <h1 class="unlisted unnumbered"></h1>
