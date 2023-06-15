@@ -25,7 +25,7 @@ library(tidyverse)
 ```{r child = 'header.rmd'}
 ```
 
-# Pathways to Carbon Neutrality for Thailand and Bangkok
+# **Pathways to Carbon Neutrality for Thailand and Bangkok** {.unlisted .unnumbered}
 
 <br>
 
