@@ -13,7 +13,7 @@
 
 <title>Modeling - Malaysia</title>
 
-<script src="site_libs/header-attrs-2.22/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -29,7 +29,7 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
-<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
@@ -375,7 +375,7 @@ div.tocify {
 
 
 <!-- Allow href to tabsets -->
-<script>
+<script type="text/javascript">
 window.onload = function() {
   document.querySelector('a[href="' + window.location.href.match("#.*$") + '"]').click();
 }
@@ -400,7 +400,7 @@ window.onhashchange = goToTab;
 <style type="text/css">
 script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
 </style>
-<script>
+<script type="text/javascript">
  $(document).ready(function() {
     $('body').prepend('<div class=\"zoomDiv\"><img src=\"\" class=\"zoomImg\"></div>');
     // onClick function for all plots (img's)
@@ -430,8 +430,24 @@ td, th {
 </style>
 <!-------------------------->
 <!-------------------------->
-<div id="download-gcam-se-asia" class="section level1" number="1">
-<h1><span class="header-section-number">1</span> Download GCAM SE
+<div id="introduction" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> Introduction</h1>
+<!-------------------------->
+<!-------------------------->
+<p align="center">
+<img src="images/divider.png">
+</p>
+<p>This page explores the modeling process in depth. First, we walk
+through how to install GCAM for Southeast Asia, and how to set up our
+scenarios. Then, we describe the policies modeled and their technical
+implementation in the model. Finally, we include several sets of figures
+and the code to replicate them.</p>
+<p><br></p>
+<!-------------------------->
+<!-------------------------->
+</div>
+<div id="download-gcam-se-asia" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> Download GCAM SE
 Asia</h1>
 <!-------------------------->
 <!-------------------------->
@@ -517,15 +533,15 @@ Windows XML Maker</a>
 <!-------------------------->
 <!-------------------------->
 </div>
-<div id="guides" class="section level1" number="2">
-<h1><span class="header-section-number">2</span> Guides</h1>
+<div id="guides" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> Guides</h1>
 <!-------------------------->
 <!-------------------------->
 <p align="center">
 <img src="images/divider.png">
 </p>
 <p><br></p>
-<p>Below are links to an overview and walkthrough of GCAM.</p>
+<p>Below are links to an overview and walk-through of GCAM.</p>
 <table class="table table-bordered table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -560,15 +576,21 @@ GCAM walkthrough presentation
 <!-------------------------->
 <!-------------------------->
 </div>
-<div id="scenarios" class="section level1" number="3">
-<h1><span class="header-section-number">3</span> Scenarios</h1>
+<div id="scenarios" class="section level1" number="4">
+<h1><span class="header-section-number">4</span> Scenarios</h1>
 <!-------------------------->
 <!-------------------------->
 <p align="center">
 <img src="images/divider.png">
 </p>
-<p>Below are links to the reference and policy scenarios that we will be
-using.</p>
+<p>Below are links to configuration files for the three scenarios that
+we will be using. The Business as Usual scenario models a reference case
+with no policies imposed, or the result of no additional action now. The
+Policies scenario includes targets for power generation, buildings,
+industry, and transportation sourced from Malaysia and Kuala Lumpur
+policies and plans. The Carbon Neutral scenario uses the same policies,
+but with an additional emissions constraint specifying that Malaysia
+must reach carbon neutrality by 2050.</p>
 <table class="table table-bordered table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -586,15 +608,23 @@ File
 Business as Usual Scenario
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/configuration_seasia_cities_bau.xml" style="     ">configuration_seasia_cities_bau.xml</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/configuration_files/configuration_malaysia_bau.xml" style="     ">configuration_malaysia_bau.xml</a>
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Example Policy Scenario
+Policies Scenario
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/configuration_files/configuration_seasia_cities_malaysia_policy.xml" style="     ">configuration_seasia_cities_policy.xml</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/configuration_files/configuration_malaysia_policies.xml" style="     ">configuration_malaysia_policies.xml</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Carbon Neutral Scenario
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/configuration_files/configuration_malaysia_carbon_neutral.xml" style="     ">configuration_malaysia_carbon_neutral.xml</a>
 </td>
 </tr>
 </tbody>
@@ -602,199 +632,31 @@ Example Policy Scenario
 <!-------------------------->
 <!-------------------------->
 </div>
-<div id="policies" class="section level1" number="4">
-<h1><span class="header-section-number">4</span> Policies</h1>
+<div id="policies" class="section level1" number="5">
+<h1><span class="header-section-number">5</span> Policies</h1>
 <!-------------------------->
 <!-------------------------->
 <p align="center">
 <img src="images/divider.png">
 </p>
-<p>In general, three policy scenarios will be presented: a “low
-ambition” and “high ambition” option as well as “ambitious city.” The
-high ambition scenario uses key targets from policies and plans from
-Kuala Lumpur and Malaysia. The low ambition scenario explores if these
-targets are not met until a later target year, usually 2060 or 2070
-instead of 2050. The ambitious city scenario represents Kuala Lumpur
-hitting these high ambition targets, while the rest of Malaysia takes
-longer to achieve the same goals. For a 2050 snapshot of policies that
-will be modeled within each scenario, please reference the table
-below.</p>
-<p style="margin-left:1em;">
-<p align="center">
-<img src="images/malaysia_policy_table.png">
-</p>
-</p>
+<p>The policies modeled in the Policies and Carbon Neutral scenarios
+were sourced from Malaysia and Kuala Lumpur policies and plans. The
+table below details policies by sector with key values and targets as
+well as the source document/s (click to enlarge, click again to return
+to the main page).</p>
 <p><br></p>
-<p>The following subsections give additional details and explanations
-for the policies listed above (In progress. Will be expanded with
-examples for each).</p>
-<div id="private-ice-phase-out" class="section level2" number="4.1">
-<h2><span class="header-section-number">4.1</span> Private ICE
-Phase-out</h2>
-<hr />
-<table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
-<thead>
-<tr>
-<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
-Scenario
-</th>
-<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
-Files Used
-</th>
-<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
-Description
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left;">
-High
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/trn_ICE_high.xml" style="     ">trn_ICE_high.xml</a>
-</td>
-<td style="text-align:left;">
-Phases liquids passenger vehicles out of the market by 2030
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Low
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/trn_ICE_low.xml" style="     ">trn_ICE_low.xml</a>
-</td>
-<td style="text-align:left;">
-Phases liquids passenger vehicles out of the market by 2050
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Ambitious City
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/trn_ICE_ambitious_city.xml" style="     ">trn_ICE_ambitious_city.xml</a>
-</td>
-<td style="text-align:left;">
-Phases liquids passenger vehicles out of the market by 2030 in KL, and
-by 2050 in the rest of Malaysia
-</td>
-</tr>
-</tbody>
-</table>
-<!-------------------------->
-<!----------Goal------------>
-<!-------------------------->
-<div class="warning"
-style="background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
-<span>
-<p style="text-align:center; font-size:24px">
-<b>Goal</b>
+<div class="figure" style="text-align: center">
+<p class="caption">
+Sets of policies modeled
 </p>
-<p style="margin-left:1em;">
-<p>The goal of this policy is to phase out internal combustion engine
-(ICE) passenger vehicles from the market. The difference between the
-low, high, and ambitious city policies is the year in which ICE vehicles
-are completely phased out of the market.</p>
-</p>
-<p></span></p>
+<img src="images/policy_table_report.png" alt="Sets of policies modeled" width="85%" />
 </div>
 <p><br></p>
-<!-------------------------->
-<!--------Approach---------->
-<!-------------------------->
-<div class="warning"
-style="background-color:#fffae0; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
-<p><span></p>
-<p style="text-align:center; font-size:24px">
-<b>Approach</b>
-</p>
-<p style="margin-left:1em;">
-<p>To represent an ICE vehicle phase-out, we decrease their shareweights
-over time. The year in which the shareweights are 0 is the year in which
-ICE vehicles are completely phased out of the market.</p>
-</p>
-<p></span></p>
-</div>
-<p><br></p>
-<!-------------------------->
-<!--------Background-------->
-<!-------------------------->
-<!-------------------------------------->
-<!---Background - Share weights---------->
-<!-------------------------------------->
-<div class="warning"
-style="background-color:#EFFFC9; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
-<p><span></p>
-<p style="text-align:center; font-size:24px">
-<b>Background - Share weights</b>
-</p>
-<p style="margin-left:1em;">
-Share weights are assigned to different subsectors and technology
-choices in GCAM to represent non-cost factors of consumer choice. They
-are used primarily to calibrate market shares to historical data but can
-also be modified to reflect factors such as infrastructure development
-or shifting societal preferences. For more information on share weights
-and how they are used in GCAM’s economic choice functions, see the <a
-href="https://jgcri.github.io/gcam-doc/choice.html">GCAM economic
-choice</a> documentation. Share weights should not be used to represent
-cost-related policies. Additionally, shareweight interpolation rules
-(<code>fixed</code>, <code>linear</code>, or <code>s-curve</code>) can
-be used to automatically interpolate shareweights between given years.
-</p>
-<p></span></p>
-</div>
-<p><br></p>
-<!-------------------------->
-<!---GCAM Implementation---->
-<!-------------------------->
-<div class="warning"
-style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
-<span>
-<p style="text-align:center; font-size:24px">
-<b>GCAM Implementation</b>
-</p>
-<p style="margin-left:1em;">
-<ol style="list-style-type: decimal">
-<li>Create a folder in the input directory eg.
-<code>./gcam-core/input/addons/malaysia</code>.</li>
-<li>Download the desired ICE phase-out XML file (either <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/trn_ICE_low.xml">trn_ICE_low.xml</a>,
-<a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/trn_ICE_high.xml">trn_ICE_high.xml</a>,
-or <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/trn_ICE_ambitious_city.xml">trn_ICE_ambitious_city.xml</a>)
-to the folder.</li>
-<li>To adjust the year in which ICE vehicles are completely phased out:
-within each <code>stub-technology</code> tag in the XML, change the
-<code>to-year</code> in the first <code>interpolation-rule</code> and
-the <code>from-year</code> in the second. Also change the
-<code>year</code> of the <code>period</code> tag in which the
-<code>share-weight</code> is 0.</li>
-<li>Save the xml and then point to it in your configuration file by
-adding the line (replace <code>high</code> with <code>low</code> or
-<code>ambitious_city</code> as needed):</li>
-</ol>
-</p>
-<p style="font-size:0.8em">
-<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/trn_ICE_high.xml&lt;/Value&gt;</code>
-</p>
-</p>
-<p></span></p>
-</div>
-<p><br></p>
-</div>
-<div id="publicprivate-vehicle-modal-shift" class="section level2"
-number="4.2">
-<h2><span class="header-section-number">4.2</span> Public/Private
-Vehicle Modal Shift</h2>
-<hr />
-<pre><code>## Under development.</code></pre>
-</div>
+<p>The following subsections give additional technical details and
+explanations for the policies listed above.</p>
 <div id="high-efficiency-appliances" class="section level2"
-number="4.3">
-<h2><span class="header-section-number">4.3</span> High Efficiency
+number="5.1">
+<h2><span class="header-section-number">5.1</span> High Efficiency
 Appliances</h2>
 <hr />
 <table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
@@ -814,38 +676,13 @@ Description
 <tbody>
 <tr>
 <td style="text-align:left;">
-High
+Policies, Carbon Neutral
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/efficient_appliances_high.xml" style="     ">efficient_appliances_high.xml</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/buildings_efficient_appliances.xml" style="     ">buildings_efficient_appliances.xml</a>
 </td>
 <td style="text-align:left;">
-Increase prevelance of high-efficiency technologies (commercial and
-residential) through 2050
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Low
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/efficient_appliances_low.xml" style="     ">efficient_appliances_low.xml</a>
-</td>
-<td style="text-align:left;">
-Increase prevelance of high-efficiency technologies (commercial and
-residential) through 2070
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Ambitious City
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/efficient_appliances_ambitious_city.xml" style="     ">efficient_appliances_ambitious_city.xml</a>
-</td>
-<td style="text-align:left;">
-Increase prevelance of high-efficiency technologies (commercial and
-residential) through 2050 in KL and 2070 in the rest of Malaysia
+Increase prevelance of high-efficiency technologies through 2050
 </td>
 </tr>
 </tbody>
@@ -861,10 +698,7 @@ style="background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 
 </p>
 <p style="margin-left:1em;">
 <p>The goal of this policy is to represent an increase in energy
-efficient technologies in the commercial and residential sectors. The
-difference between the low, high, and ambitious city scenario versions
-of this policy is the year in which the desired mix of technologies is
-achieved.</p>
+efficient technologies in the building sector.</p>
 </p>
 <p></span></p>
 </div>
@@ -919,23 +753,18 @@ be used to automatically interpolate shareweights between given years.
 <!-------------------------->
 <!---GCAM Implementation---->
 <!-------------------------->
-<div class="warning"
-style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
+<div class="warning" style='background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
 <span>
 <p style="text-align:center; font-size:24px">
 <b>GCAM Implementation</b>
 </p>
-<p style="margin-left:1em;">
+<p style='margin-left:1em;'>
 <ol style="list-style-type: decimal">
 <li>Create a folder in the input directory:
 <code>./gcam-core/input/addons</code>.</li>
-<li>Download the desired xml file (either <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/efficient_appliances_high.xml">efficient_appliances_high.xml</a>,
-<a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/efficient_appliances_low.xml">efficient_appliances_low.xml</a>,
-or <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/efficient_appliances_ambitious_city.xml">efficient_appliances_ambitious_city.xml</a>
-to the folder.</li>
+<li>Download the “<a
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/buildings_efficient_appliances.xml">buildings_efficient_appliances.xml</a>”
+file to the folder.</li>
 <li>To adjust the year in which the target mix of technologies is
 achieved: within each <code>stub-technology</code> tag in the XML,
 change the <code>to-year</code> in the first
@@ -943,18 +772,15 @@ change the <code>to-year</code> in the first
 second. Also change the <code>year</code> of the <code>period</code> tag
 in which the <code>share-weight</code> is 0.</li>
 <li>Save the xml and then point to it in your configuration file by
-adding the line (replace <code>high</code> with <code>low</code> or
-<code>ambitious_city</code> as needed):
-<p style='font-size:0.8em'>
-<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/efficient_appliances_high.xml&lt;/Value&gt;</code></li>
+adding the line:
+<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/buildings_efficient_appliances.xml&lt;/Value&gt;</code></li>
 </ol>
-</p>
-<p></span></p>
+</span>
 </div>
 <p><br></p>
 </div>
-<div id="lighting-efficiency" class="section level2" number="4.4">
-<h2><span class="header-section-number">4.4</span> Lighting
+<div id="lighting-efficiency" class="section level2" number="5.2">
+<h2><span class="header-section-number">5.2</span> Lighting
 Efficiency</h2>
 <hr />
 <table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
@@ -974,38 +800,14 @@ Description
 <tbody>
 <tr>
 <td style="text-align:left;">
-High
+Policies, Carbon Neutral
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/buildings_led_high.xml" style="     ">buildings_led_high.xml</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/buildings_led.xml" style="     ">buildings_led.xml</a>
 </td>
 <td style="text-align:left;">
 Gradually phases non-LED residential lighting technology out of the
 market by 2050
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Low
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/buildings_led_low.xml" style="     ">buildings_led_low.xml</a>
-</td>
-<td style="text-align:left;">
-Gradually phases non-LED residential lighting technology out of the
-market by 2070
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Ambitious City
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/buildings_led_ambitious_city.xml" style="     ">buildings_led_ambitious_city.xml</a>
-</td>
-<td style="text-align:left;">
-Gradually phases non-LED residential lighting technology out of the
-market by 2050 in KL and 2070 in the rest of Malaysia
 </td>
 </tr>
 </tbody>
@@ -1021,10 +823,8 @@ style="background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 
 </p>
 <p style="margin-left:1em;">
 <p>The goal of this policy is to represent increasing use of LED
-lighting in residential buildings and the decreasing use of other, less
-energy efficient lighting technologies. The difference between the low,
-high, and ambitious city scenario versions of this policy is the year in
-which 100% LED residential lighting is achieved.</p>
+lighting in residential buildings and the decreasing use of other less
+energy efficient lighting technologies.</p>
 </p>
 <p></span></p>
 </div>
@@ -1078,23 +878,18 @@ be used to automatically interpolate shareweights between given years.
 <!-------------------------->
 <!---GCAM Implementation---->
 <!-------------------------->
-<div class="warning"
-style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
+<div class="warning" style='background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
 <span>
 <p style="text-align:center; font-size:24px">
 <b>GCAM Implementation</b>
 </p>
-<p style="margin-left:1em;">
+<p style='margin-left:1em;'>
 <ol style="list-style-type: decimal">
 <li>Create a folder in the input directory:
 <code>./gcam-core/input/addons</code>.</li>
-<li>Download the desired xml file (either <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/buildings_led_high.xml">buildings_led_high.xml</a>,
-<a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/buildings_led_low.xml">buildings_led_low.xml</a>,
-or <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/buildings_led_ambitious_city.xml">buildings_led_ambitious_city.xml</a>)
-to the folder.</li>
+<li>Download the “<a
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/buildings_led.xml">buildings_led.xml</a>”
+file to the folder.</li>
 <li>To adjust the year in which 100% LED lighting is achieved: within
 each non-LED <code>stub-technology</code> tag in the XML, change the
 <code>to-year</code> in the first <code>interpolation-rule</code> and
@@ -1102,19 +897,16 @@ the <code>from-year</code> in the second. Also change the
 <code>year</code> of the <code>period</code> tag in which the
 <code>share-weight</code> is 0.</li>
 <li>Save the xml and then point to it in your configuration file by
-adding the line (replace <code>high</code> with <code>low</code> or
-<code>ambitious_city</code> as needed):
-<p style='font-size:0.8em'>
-<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/buildings_led_high.xml&lt;/Value&gt;</code></li>
+adding the line:
+<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/buildings_led.xml&lt;/Value&gt;</code></li>
 </ol>
-</p>
-<p></span></p>
+</span>
 </div>
 <p><br></p>
 </div>
 <div id="building-envelope-efficiency" class="section level2"
-number="4.5">
-<h2><span class="header-section-number">4.5</span> Building Envelope
+number="5.3">
+<h2><span class="header-section-number">5.3</span> Building Envelope
 Efficiency</h2>
 <hr />
 <table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
@@ -1134,40 +926,15 @@ Description
 <tbody>
 <tr>
 <td style="text-align:left;">
-High
+Policies, Carbon Neutral
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/shell_eff_high.xml" style="     ">shell_eff_high.xml</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/buildings_shell_eff.xml" style="     ">buildings_shell_eff.xml</a>
 </td>
 <td style="text-align:left;">
 Decreases shell conductance from 3.75 in 2020 to 0.487 (residential) /
 0.375 (commercial) in 2070 at an annual rate of 4% (residential) / 4.5%
 (commercial)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Low
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/shell_eff_low.xml" style="     ">shell_eff_low.xml</a>
-</td>
-<td style="text-align:left;">
-Decreases shell conductance from 3.75 in 2020 to 1.366 (residential) /
-1.057 (commercial) in 2070 at an annual rate of 2% (residential) / 2.5%
-(commercial)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Ambitious City
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/shell_eff_ambitious_city.xml" style="     ">shell_eff_ambitious_city</a>
-</td>
-<td style="text-align:left;">
-Follows the ‘high’ scenario trajectory in KL and the ‘low’ scenario
-trajectory for the rest of Malaysia
 </td>
 </tr>
 </tbody>
@@ -1183,9 +950,7 @@ style="background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 
 </p>
 <p style="margin-left:1em;">
 <p>The goal of this example is to represent increasing compliance with
-the envelope efficiency component of building energy codes. The
-difference between the low, high, and ambitious city scenario versions
-of this policy is the rate of increase.</p>
+the envelope efficiency component of building energy codes.</p>
 </p>
 <p></span></p>
 </div>
@@ -1239,6 +1004,124 @@ difference between the indoor and outdoor temperature.
 <!-------------------------->
 <!---GCAM Implementation---->
 <!-------------------------->
+<div class="warning" style='background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
+<span>
+<p style="text-align:center; font-size:24px">
+<b>GCAM Implementation</b>
+</p>
+<p style='margin-left:1em;'>
+<ol style="list-style-type: decimal">
+<li>Create a folder in the input directory:
+<code>./gcam-core/input/addons</code>.</li>
+<li>Download the “<a
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/buildings_shell_eff.xml">buildings_shell_eff.xml</a>”
+file to the folder.</li>
+<li>To make custom adjustments: within each <code>gcam-consumer</code>
+tag in the XML, specify the desired <code>shell-conductance</code>
+values for each year.</li>
+<li>Save the xml and then point to it in your configuration file by
+adding the line:
+<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/buildings_shell_eff.xml&lt;/Value&gt;</code></li>
+</ol>
+</span>
+</div>
+<p><br></p>
+</div>
+<div id="hydrogen-in-industry" class="section level2" number="5.4">
+<h2><span class="header-section-number">5.4</span> Hydrogen in
+Industry</h2>
+<hr />
+<table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+Scenario
+</th>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+Files Used
+</th>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+Description
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Policies, Carbon Neutral
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/industry_h2.xml" style="     ">industry_h2.xml</a>
+</td>
+<td style="text-align:left;">
+Phases hydrogen industrial technologies into the market in 2030
+</td>
+</tr>
+</tbody>
+</table>
+<!-------------------------->
+<!----------Goal------------>
+<!-------------------------->
+<div class="warning"
+style="background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
+<span>
+<p style="text-align:center; font-size:24px">
+<b>Goal</b>
+</p>
+<p style="margin-left:1em;">
+<p>The goal of this policy is to represent a phase-in of industrial
+technologies that use hydrogen as a fuel source.</p>
+</p>
+<p></span></p>
+</div>
+<p><br></p>
+<!-------------------------->
+<!--------Approach---------->
+<!-------------------------->
+<div class="warning"
+style="background-color:#fffae0; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
+<p><span></p>
+<p style="text-align:center; font-size:24px">
+<b>Approach</b>
+</p>
+<p style="margin-left:1em;">
+To represent a phase-in of hydrogen technologies, we can gradually
+increase their shareweights.
+</p>
+<p></span></p>
+</div>
+<p><br></p>
+<!--------------------------->
+<!--------Background--------->
+<!--------------------------->
+<!-------------------------------------->
+<!---Background - Share weights---------->
+<!-------------------------------------->
+<div class="warning"
+style="background-color:#EFFFC9; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
+<p><span></p>
+<p style="text-align:center; font-size:24px">
+<b>Background - Share weights</b>
+</p>
+<p style="margin-left:1em;">
+Share weights are assigned to different subsectors and technology
+choices in GCAM to represent non-cost factors of consumer choice. They
+are used primarily to calibrate market shares to historical data but can
+also be modified to reflect factors such as infrastructure development
+or shifting societal preferences. For more information on share weights
+and how they are used in GCAM’s economic choice functions, see the <a
+href="https://jgcri.github.io/gcam-doc/choice.html">GCAM economic
+choice</a> documentation. Share weights should not be used to represent
+cost-related policies. Additionally, shareweight interpolation rules
+(<code>fixed</code>, <code>linear</code>, or <code>s-curve</code>) can
+be used to automatically interpolate shareweights between given years.
+</p>
+<p></span></p>
+</div>
+<p><br></p>
+<!-------------------------->
+<!---GCAM Implementation---->
+<!-------------------------->
 <div class="warning"
 style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
 <span>
@@ -1249,21 +1132,18 @@ style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 
 <ol style="list-style-type: decimal">
 <li>Create a folder in the input directory:
 <code>./gcam-core/input/addons</code>.</li>
-<li>Download the desired xml file (either <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/shell_eff_high.xml">shell_eff_high.xml</a>,
-<a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/shell_eff_low.xml">shell_eff_low.xml</a>,
-or <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/shell_eff_ambitious_city.xml">shell_eff_ambitious_city.xml</a>)
-to the folder.</li>
-<li>To make custom adjustments: within each <code>gcam-consumer</code>
-tag in the XML, specify the desired <code>shell-conductance</code>
-values for each year.</li>
+<li>Download the “<a
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/industry_h2.xml">industry_h2.xml</a>”
+file to the folder.</li>
+<li>To adjust how quickly hydrogen technologies are phased into the
+market: within each <code>subsector</code> tag in the XML, change the
+<code>to-year</code> in the <code>interpolation-rule</code>. Also change
+the <code>year</code> of the <code>period</code> tag in which the
+<code>share-weight</code> is 1. Be sure that these years match. An
+earlier year corresponds to a faster phase-in.</li>
 <li>Save the xml and then point to it in your configuration file by
-adding the line (replace <code>high</code> with <code>low</code> or
-<code>ambitious city</code> as needed):
-<p style='font-size:0.8em'>
-<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/shell_eff_high.xml&lt;/Value&gt;</code></li>
+adding the line:
+<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/industry_h2.xml&lt;/Value&gt;</code></li>
 </ol>
 </p>
 <p></span></p>
@@ -1271,8 +1151,8 @@ adding the line (replace <code>high</code> with <code>low</code> or
 <p><br></p>
 </div>
 <div id="industry-energy-efficiency" class="section level2"
-number="4.6">
-<h2><span class="header-section-number">4.6</span> Industry Energy
+number="5.5">
+<h2><span class="header-section-number">5.5</span> Industry Energy
 Efficiency</h2>
 <hr />
 <table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
@@ -1292,38 +1172,14 @@ Description
 <tbody>
 <tr>
 <td style="text-align:left;">
-High
+Policies, Carbon Neutral
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/industry_aeei_high.xml" style="     ">industry_aeei_high.xml</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/industry_aeei.xml" style="     ">industry_aeei.xml</a>
 </td>
 <td style="text-align:left;">
-Increases overall efficiency of industrial processes by 1% annually
+Increases overall efficiency of industrial processes by 2.5% annually
 through 2070
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Low
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/industry_aeei_low.xml" style="     ">industry_aeei_low.xml</a>
-</td>
-<td style="text-align:left;">
-Increases overall efficiency of industrial processes by 0.5% annually
-through 2070
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Ambitious City
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/industry_aeei_ambitious_city.xml" style="     ">industry_aeei_ambitious_city</a>
-</td>
-<td style="text-align:left;">
-Increases overall efficiency of industrial processes by 1% annually
-through 2070 for KL and by 0.5% annually for the rest of Malaysia
 </td>
 </tr>
 </tbody>
@@ -1339,9 +1195,7 @@ style="background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 
 </p>
 <p style="margin-left:1em;">
 The goal of this policy is to represent measures to increase average
-efficiency of industrial processes. The difference between the low,
-high, and ambitious city scenarios is the rate at which average
-industrial energy intensity decreases annually.
+efficiency of industrial processes.
 </p>
 <p></span></p>
 </div>
@@ -1380,30 +1234,24 @@ style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 
 <ol style="list-style-type: decimal">
 <li>Create a folder in the input directory:
 <code>./gcam-core/input/addons</code>.</li>
-<li>Download the desired industrial aeei xml file (either <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/industry_aeei_high.xml">industry_aeei_high.xml</a>,
-<a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/industry_aeei_low.xml">industry_aeei_low.xml</a>,
-or <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/industry_aeei_low.xml">industry_aeei_ambitious_city.xml</a>)
-to the folder.</li>
+<li>Download the “<a
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/industry_aeei.xml">industry_aeei.xml</a>”
+file to the folder.</li>
 <li>To adjust the rate of industrial energy efficiency increase, change
 the value of the <code>aeei</code> tag for each desired year.</li>
 <li>Save the xml and then point to it in your configuration file by
-adding the line (replace <code>high</code> with <code>low</code> or
-<code>ambitious_city</code> as needed):</li>
+adding the line:
+<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/industry_aeei.xml&lt;/Value&gt;</code></li>
 </ol>
-</p>
-<p style="font-size:0.8em">
-<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/industry_aeei_high.xml&lt;/Value&gt;</code>
-</p>
 </p>
 <p></span></p>
 </div>
 <p><br></p>
 </div>
-<div id="coal-phase-out" class="section level2" number="4.7">
-<h2><span class="header-section-number">4.7</span> Coal Phase-Out</h2>
+<div id="publicprivate-vehicle-modal-shift" class="section level2"
+number="5.6">
+<h2><span class="header-section-number">5.6</span> Public/Private
+Vehicle Modal Shift</h2>
 <hr />
 <table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
 <thead>
@@ -1422,10 +1270,393 @@ Description
 <tbody>
 <tr>
 <td style="text-align:left;">
-Both
+Policies, Carbon Neutral
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/no_new_coal.xml" style="     ">no_new_coal.xml</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/trn_modal_shift.xml" style="     ">trn_modal_shift.xml</a>
+</td>
+<td style="text-align:left;">
+Increases ratio of public to private transportation to 50-50 in Kuala
+Lumpur and 42-58 in the rest of the country in 2050
+</td>
+</tr>
+</tbody>
+</table>
+<!-------------------------->
+<!----------Goal------------>
+<!-------------------------->
+<div class="warning"
+style="background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
+<span>
+<p style="text-align:center; font-size:24px">
+<b>Goal</b>
+</p>
+<p style="margin-left:1em;">
+<p>The goal of this policy is to increase the shares of public
+transportation methods relative to private transportation.</p>
+</p>
+<p></span></p>
+</div>
+<p><br></p>
+<!-------------------------->
+<!--------Approach---------->
+<!-------------------------->
+<div class="warning"
+style="background-color:#fffae0; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
+<p><span></p>
+<p style="text-align:center; font-size:24px">
+<b>Approach</b>
+</p>
+<p style="margin-left:1em;">
+FILL IN HERE
+</p>
+<p></span></p>
+</div>
+<p><br></p>
+<!--------------------------->
+<!--------Background--------->
+<!--------------------------->
+<!-------------------------->
+<!---GCAM Implementation---->
+<!-------------------------->
+<div class="warning"
+style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
+<span>
+<p style="text-align:center; font-size:24px">
+<b>GCAM Implementation</b>
+</p>
+<p style="margin-left:1em;">
+<ol style="list-style-type: decimal">
+<li>Create a folder in the input directory:
+<code>./gcam-core/input/addons</code>.</li>
+<li>Download the “<a
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/trn_modal_shift.xml">trn_modal_shift.xml</a>”
+file to the folder.</li>
+<li>To make custom adjustments _______________.</li>
+<li>Save the xml and then point to it in your configuration file by
+adding the line:
+<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/trn_modal_shift.xml&lt;/Value&gt;</code></li>
+</ol>
+</p>
+<p></span></p>
+</div>
+<p><br></p>
+</div>
+<div id="ev-cost-parity" class="section level2" number="5.7">
+<h2><span class="header-section-number">5.7</span> EV Cost Parity</h2>
+<hr />
+<table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+Scenario
+</th>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+Files Used
+</th>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+Description
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Policies, Carbon Neutral
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/trn_ev_cost_parity.xml" style="     ">trn_ev_cost_parity.xml</a>
+</td>
+<td style="text-align:left;">
+Reduces EV costs to reach cost parity with liquids vehicles by 2030
+(passenger) and 2040 (freight)
+</td>
+</tr>
+</tbody>
+</table>
+<!-------------------------->
+<!----------Goal------------>
+<!-------------------------->
+<div class="warning"
+style="background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
+<span>
+<p style="text-align:center; font-size:24px">
+<b>Goal</b>
+</p>
+<p style="margin-left:1em;">
+<p>The goal of this policy is represent measures to make EVs more
+competitive with combustion engine vehicles (CEV).</p>
+</p>
+<p></span></p>
+</div>
+<p><br></p>
+<!-------------------------->
+<!--------Approach---------->
+<!-------------------------->
+<div class="warning"
+style="background-color:#fffae0; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
+<p><span></p>
+<p style="text-align:center; font-size:24px">
+<b>Approach</b>
+</p>
+<p style="margin-left:1em;">
+To represent EV promotion, we use an approach that decreases the cost of
+EVs relative to CEVs, until the two technologies reach cost parity in
+some future year. We can do this using GCAM’s <code>input-cost</code>
+parameter, which represents the non-energy costs of a given technology.
+</p>
+<p></span></p>
+</div>
+<p><br></p>
+<!--------------------------->
+<!--------Background--------->
+<!--------------------------->
+<!--------------------------------------------------->
+<!---Background - Transportation technology cost----->
+<!--------------------------------------------------->
+<div class="warning"
+style="background-color:#EFFFC9; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
+<p><span></p>
+<p style="text-align:center; font-size:24px">
+<b>Background - Transportation Cost</b>
+</p>
+<p style="margin-left:1em;">
+In GCAM, the costs of different transportation technologies are
+comprised of two components: fuel costs and non-fuel costs. A
+transportation technology’s fuel cost is determined by its vehicle fuel
+intensity as well as fuel price. The non-fuel costs encompass factors
+such as capital costs, operation and maintenance, and service costs.
+These non-fuel costs can be adjusted using the <code>input-cost</code>
+parameter. For more information on how transportation demand is modeled
+in GCAM, including cost calculations, see the transportation sections of
+the GCAM <a
+href="https://jgcri.github.io/gcam-doc/demand_energy.html">Demand for
+Energy</a> documentation.
+</p>
+<p></span></p>
+</div>
+<p><br></p>
+<!-------------------------->
+<!---GCAM Implementation---->
+<!-------------------------->
+<div class="warning"
+style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
+<span>
+<p style="text-align:center; font-size:24px">
+<b>GCAM Implementation</b>
+</p>
+<p style="margin-left:1em;">
+<ol style="list-style-type: decimal">
+<li>Create a folder in the input directory:
+<code>./gcam-core/input/addons</code>.</li>
+<li>Download the “[trn_ev_cost_parity.xml](<a
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/trn_ev_cost_parity.xml"
+class="uri">https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/trn_ev_cost_parity.xml</a>”
+file to the folder.</li>
+<li>To make custom adjustments to the EV cost trajectory, set the
+desired <code>input-cost</code> for each year within
+each<code>stub-technology</code> tag in the cost parity xml file.</li>
+<li>Save the xml and then point to it in your configuration file by
+adding the line:
+<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/trn_ev_cost_parity.xml&lt;/Value&gt;</code></li>
+</ol>
+</p>
+<p></span></p>
+</div>
+<p><br></p>
+</div>
+<div id="electricity-generation-mix" class="section level2"
+number="5.8">
+<h2><span class="header-section-number">5.8</span> Electricity
+Generation Mix</h2>
+<hr />
+<table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+Scenario
+</th>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+Files Used
+</th>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+Description
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Policies, Carbon Neutral
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_gen_shares.xml" style="     ">elec_gen_shares.xml</a>
+</td>
+<td style="text-align:left;">
+Sets floors for renewable electricity generation technologies
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Policies, Carbon Neutral
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_hydro.xml" style="     ">elec_hydro.xml</a>
+</td>
+<td style="text-align:left;">
+Sets exogenous hydropower generation
+</td>
+</tr>
+</tbody>
+</table>
+<!-------------------------->
+<!----------Goal------------>
+<!-------------------------->
+<div class="warning"
+style="background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
+<span>
+<p style="text-align:center; font-size:24px">
+<b>Goal</b>
+</p>
+<p style="margin-left:1em;">
+<p>The goal of this example is to set a minimum value (floor) in GCAM
+for the amount of electricity generation from three renewable energy
+technologies (solar, hydro, and biomass) corresponding with the planned
+percentages in the KLLCSBP2030 (below).</p>
+<p align="center">
+<img src="images/KL_2030_power.png">
+</p>
+</p>
+<p></span></p>
+</div>
+<p><br></p>
+<!-------------------------->
+<!--------Approach---------->
+<!-------------------------->
+<div class="warning"
+style="background-color:#fffae0; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
+<p><span></p>
+<p style="text-align:center; font-size:24px">
+<b>Approach</b>
+</p>
+<p style="margin-left:1em;">
+<p>One way to set a generation floor for each fuel type in GCAM is to
+use a subsidy policy. This will lower the cost of the electricity
+generation technology until the floor is reached. If there is more
+demand for electricity than is supplied by the sum of the generation
+floors, then the remaining demand will be met by a mix of fuels
+determined by the market.</p>
+<p>Hydropower is exogenous in GCAM and has a fixed pathway. The power
+generation values for this technology are set explicitly using a fixed
+output add-on XML.</p>
+</p>
+<p></span></p>
+</div>
+<p><br></p>
+<!-------------------------->
+<!--------Background-------->
+<!-------------------------->
+<!--------------------------------------------->
+<!---Background - Policy portfolio standards--->
+<!--------------------------------------------->
+<div class="warning"
+style="background-color:#EFFFC9; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
+<p><span></p>
+<p style="text-align:center; font-size:24px">
+<b>Background - Policy portfolio standards</b>
+</p>
+<p style="margin-left:1em;">
+A <code>policy-portfolio-standard</code> in GCAM is a policy that can be
+used to implement taxes, subsidies, floors, ceilings, and constraints.
+Taxes and subsidies can be specified when the exact amount to be added
+or subtracted to the price is known. However, a
+<code>policy-portfolio-standard</code> can also contain a
+<code>constraint</code>, which acts as either a floor or ceiling for the
+technology or technologies included. Exact constraints can also be
+implemented. See the <a
+href="https://jgcri.github.io/gcam-doc/policies_examples.html">GCAM
+Policy Examples</a> documentation for more information on how to
+implement these options.
+</p>
+<p></span></p>
+</div>
+<p><br></p>
+<!-------------------------->
+<!---GCAM Implementation---->
+<!-------------------------->
+<div class="warning"
+style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
+<span>
+<p style="text-align:center; font-size:24px">
+<b>GCAM Implementation</b>
+</p>
+<p style="margin-left:1em;">
+<ol style="list-style-type: decimal">
+<li>Create a folder in the input directory e.g..
+<code>./gcam-core/input/addons/malaysia</code>.</li>
+<li>Download the “<a
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_gen_shares.xml">elec_gen_shares.xml</a>”
+file to the folder.</li>
+<li>To make adjustments: within each
+<code>policy-portfolio-standard</code> tag in the XML, adjust the
+following:</li>
+</ol>
+</p>
+<ul style="margin-left:4em; text-align:left;">
+<li>
+<code>constraint</code> for each year in which a floor is desired
+</li>
+<li>
+Set <code>min-price</code> to a large negative value for years in which
+an exact constraint, rather than a floor, is desired
+</li>
+</ul>
+<p style="margin-left:1em;">
+<ol start="4" style="list-style-type: decimal">
+<li>Within each <code>supplysector</code> tag in the XML, make sure that
+the corresponding <code>input-subsidy</code> is added within each
+relevant <code>period</code> for each <code>stub-technology</code> you
+wish to constrain.</li>
+<li>To adjust the hydropower pathway, download the “<a
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_hydro">elec_hydro.xml</a>”
+file to the folder.</li>
+<li>Within each <code>fixedOutput</code> tag in the XML, adjust the
+value to reflect desired hydropower output in each period. The user can
+also add additional periods.</li>
+<li>Save the XMLs and then point to them in your configuration file by
+adding the lines:
+<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/elec_gen_shares.xml&lt;/Value&gt;</code>
+<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/elec_hydro.xml&lt;/Value&gt;</code></li>
+</ol>
+</p>
+<p></span></p>
+</div>
+<p><br></p>
+</div>
+<div id="coal-phase-out" class="section level2" number="5.9">
+<h2><span class="header-section-number">5.9</span> Coal Phase-Out</h2>
+<hr />
+<table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+Scenario
+</th>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+Files Used
+</th>
+<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
+Description
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Policies, Carbon Neutral
+</td>
+<td style="text-align:left;">
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_no_new_coal.xml" style="     ">elec_no_new_coal.xml</a>
 </td>
 <td style="text-align:left;">
 Prevents additional coal capacity from being built starting in 2020
@@ -1433,25 +1664,13 @@ Prevents additional coal capacity from being built starting in 2020
 </tr>
 <tr>
 <td style="text-align:left;">
-High
+Policies, Carbon Neutral
 </td>
 <td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/coal_shutdown_high.xml" style="     ">coal_shutdown_high.xml</a>
+<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_coal_shutdown.xml" style="     ">elec_coal_shutdown.xml</a>
 </td>
 <td style="text-align:left;">
-Retires existing coal capacity quickly; all coal is retired by 2050
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Low
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/coal_shutdown_low.xml" style="     ">coal_shutdown_low.xml</a>
-</td>
-<td style="text-align:left;">
-Retires existing coal capacity more slowly; 95% of coal is retired by
-2075
+Retires existing coal capacity; all coal is retired by 2050
 </td>
 </tr>
 </tbody>
@@ -1467,13 +1686,8 @@ style="background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 
 </p>
 <p style="margin-left:1em;">
 <p>The goal of this example is to phase out coal from Malaysia’s
-electricity generation capacity. The difference between the high, low,
-and ambitious city scenarios is how quickly coal is phased out and the
-year in which the phase-out is completed.</p>
-<p>Note that this policy only applies at the national level. Therefore,
-there is no ambitious city-specific xml file; rather, the scenario uses
-the low configuration to reflect low ambition in the rest of
-Malaysia.</p>
+electricity generation capacity. Note that this policy only applies at
+the national level.</p>
 </p>
 <p></span></p>
 </div>
@@ -1570,15 +1784,13 @@ style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 
 </p>
 <p style="margin-left:1em;">
 <ol style="list-style-type: decimal">
-<li>Create a folder in the input directory eg.
+<li>Create a folder in the input directory e.g..
 <code>./gcam-core/input/addons</code>.</li>
-<li>Download the coal shareweight file <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/no_new_coal.xml">no_new_coal.xml</a>
-as well as the desired coal retirement file (either <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/coal_shutdown_high.xml">coal_shutdown_high.xml</a>
-or <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/coal_shutdown_low.xml">coal_shutdown_low.xml</a>)
-to the folder.</li>
+<li>Download the “<a
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_no_new_coal.xml">elec_no_new_coal.xml</a>”
+and “<a
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_coal_shutdown.xml">elec_coal_shutdown.xml</a>”
+files to the folder.</li>
 <li>To make custom adjustments to the coal retirement trajectory,
 optionally change the following within each <code>stub-technology</code>
 tag in the retirement XML:</li>
@@ -1600,270 +1812,18 @@ result in a faster phase-out.
 <p style="margin-left:1em;">
 <ol start="5" style="list-style-type: decimal">
 <li>Save the xmls and then point to them in your configuration file by
-adding the lines (replace <code>high</code> with <code>low</code> as
-needed):
-<p style='font-size:0.8em'>
-<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/no_new_coal.xml&lt;/Value&gt;</code>
-<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/coal_shutdown_high.xml&lt;/Value&gt;</code></li>
+adding the lines:
+<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/elec_no_new_coal.xml&lt;/Value&gt;</code>
+<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/elec_coal_shutdown.xml&lt;/Value&gt;</code></li>
 </ol>
 </p>
-</p>
 <p></span></p>
 </div>
 <p><br></p>
 </div>
-<div id="electricity-generation-mix" class="section level2"
-number="4.8">
-<h2><span class="header-section-number">4.8</span> Electricity
-Generation Mix</h2>
-<hr />
-<table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
-<thead>
-<tr>
-<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
-Scenario
-</th>
-<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
-Files Used
-</th>
-<th style="text-align:left;color: white !important;background-color: #2A2A2A !important;">
-Description
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left;">
-All
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/data/malaysia/sectoral_policies/elec_gen_pathway.xlsx" style="     ">elec_gen_pathway.xlsx</a>
-</td>
-<td style="text-align:left;">
-Excel spreadsheet that shows initial calculations to build this policy
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-All
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_gen_link.xml" style="     ">elec_gen_link.xml</a>
-</td>
-<td style="text-align:left;">
-Applies subsidies to relevant technologies in order to meet the
-specified floors
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-High
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_gen_high.xml" style="     ">elec_gen_high.xml</a>
-</td>
-<td style="text-align:left;">
-Sets high-ambition floors for renewable electricity generation
-technologies
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-High
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_hydro_high.xml" style="     ">elec_hydro_high.xml</a>
-</td>
-<td style="text-align:left;">
-Sets high-ambition exogenous hydropower generation
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Low
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_gen_low.xml" style="     ">elec_gen_low.xml</a>
-</td>
-<td style="text-align:left;">
-Sets low-ambition floors for renewable electricity generation
-technologies
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Low
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_hydro_low.xml" style="     ">elec_hydro_low.xml</a>
-</td>
-<td style="text-align:left;">
-Sets low-ambition exogenous hydropower generation
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Ambitious City
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_gen_ambitious_city.xml" style="     ">elec_gen_ambitious_city.xml</a>
-</td>
-<td style="text-align:left;">
-Sets high-ambition floors for renewable electricity generation
-technologies in KL and low-ambition floors in the rest of Malaysia
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Ambitious City
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_hydro_ambitious_city.xml" style="     ">elec_hydro_ambitious_city.xml</a>
-</td>
-<td style="text-align:left;">
-Sets high-ambition exogenous hydropower generation in KL and
-low-ambition generation in the rest of Malaysia
-</td>
-</tr>
-</tbody>
-</table>
-<!-------------------------->
-<!----------Goal------------>
-<!-------------------------->
-<div class="warning"
-style="background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
-<span>
-<p style="text-align:center; font-size:24px">
-<b>Goal</b>
-</p>
-<p style="margin-left:1em;">
-<p>The goal of this example is to set a minimum value (floor) in GCAM
-for the amount of electricity generation from three renewable energy
-technologies (solar, hydro, and biomass) corresponding with the planned
-percentages in the KLLCSBP2030 (below).</p>
-<p align="center">
-<img src="images/KL_2030_power.png">
-</p>
-</p>
-<p></span></p>
 </div>
-<p><br></p>
-<!-------------------------->
-<!--------Approach---------->
-<!-------------------------->
-<div class="warning"
-style="background-color:#fffae0; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
-<p><span></p>
-<p style="text-align:center; font-size:24px">
-<b>Approach</b>
-</p>
-<p style="margin-left:1em;">
-<p>One way to set a generation floor for each fuel type in GCAM is to
-use a subsidy policy. This will lower the cost of the electricity
-generation technology until the floor is reached. If there is more
-demand for electricity than is supplied by the sum of the generation
-floors, then the remaining demand will be met by a mix of fuels
-determined by the market.</p>
-<p>Hydropower is exogenous in GCAM and has a fixed pathway. The power
-generation values for this technology are set explicitly using a fixed
-output add-on XML.</p>
-</p>
-<p></span></p>
-</div>
-<p><br></p>
-<!-------------------------->
-<!--------Background-------->
-<!-------------------------->
-<!--------------------------------------------->
-<!---Background - Policy portfolio standards--->
-<!--------------------------------------------->
-<div class="warning"
-style="background-color:#EFFFC9; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
-<p><span></p>
-<p style="text-align:center; font-size:24px">
-<b>Background - Policy portfolio standards</b>
-</p>
-<p style="margin-left:1em;">
-A <code>policy-portfolio-standard</code> in GCAM is a policy that can be
-used to implement taxes, subsidies, floors, ceilings, and constraints.
-Taxes and subsidies can be specified when the exact amount to be added
-or subtracted to the price is known. However, a
-<code>policy-portfolio-standard</code> can also contain a
-<code>constraint</code>, which acts as either a floor or ceiling for the
-technology or technologies included. Exact constraints can also be
-implemented. See the <a
-href="https://jgcri.github.io/gcam-doc/policies_examples.html">GCAM
-Policy Examples</a> documentation for more information on how to
-implement these options.
-</p>
-<p></span></p>
-</div>
-<p><br></p>
-<!-------------------------->
-<!---GCAM Implementation---->
-<!-------------------------->
-<div class="warning"
-style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
-<span>
-<p style="text-align:center; font-size:24px">
-<b>GCAM Implementation</b>
-</p>
-<p style="margin-left:1em;">
-<ol style="list-style-type: decimal">
-<li>Create a folder in the input directory eg.
-<code>./gcam-core/input/addons/malaysia</code>.</li>
-<li>Download the example XML file (<a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_gen_high.xml">elec_gen_high.xml</a>
-and the subsidy link file <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_gen_link.xml">elec_gen_link.xml</a>
-to the folder (click on <code>Raw</code> and then
-<code>right-click</code> and select <code>save-as</code>).</li>
-<li>To make adjustments: within each
-<code>policy-portfolio-standard</code> tag in the XML, adjust the
-following:</li>
-</ol>
-</p>
-<ul style="margin-left:4em; text-align:left;">
-<li>
-<code>constraint</code> for each year in which a floor is desired
-</li>
-<li>
-Set <code>min-price</code> to a large negative value for years in which
-an exact constraint, rather than a floor, is desired
-</li>
-</ul>
-<p style="margin-left:1em;">
-<ol start="4" style="list-style-type: decimal">
-<li>Within each <code>supplysector</code> tag in the XML, make sure that
-the corresponding <code>input-subsidy</code> is added within each
-relevant <code>period</code> for each <code>stub-technology</code> you
-wish to constrain.</li>
-<li>To adjust the hydropower pathway, download the example XML file <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_hydro_high">elec_hydro_high.xml</a>
-to the folder.</li>
-<li>Within each <code>fixedOutput</code> tag in the XML, adjust the
-value to reflect desired hydropower output in each period. The user can
-also add additional periods.</li>
-<li>Save the XMLs and then point to them in your configuration file by
-adding the lines (replacing <code>high</code> with <code>low</code> or
-<code>ambitious_city</code> as needed):
-<p style='font-size:0.9em'>
-<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/elec_gen_high.xml&lt;/Value&gt;</code>
-<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/elec_hydro_high.xml&lt;/Value&gt;</code>
-<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/elec_gen_link.xml&lt;/Value&gt;</code></li>
-</ol>
-</p>
-</p>
-<p></span></p>
-</div>
-<p><br></p>
-<!-------------------------->
-<!--------Emissions -------->
-<!-------------------------->
-</div>
-</div>
-<div id="net-zero-carbon-netural" class="section level1" number="5">
-<h1><span class="header-section-number">5</span> Net-Zero &amp; Carbon
+<div id="net-zero-carbon-netural" class="section level1" number="6">
+<h1><span class="header-section-number">6</span> Net-Zero &amp; Carbon
 Netural</h1>
 <!-------------------------->
 <!-------------------------->
@@ -1884,7 +1844,7 @@ Description
 <tbody>
 <tr>
 <td style="text-align:left;">
-Carbon neutral
+Carbon Neutral
 </td>
 <td style="text-align:left;">
 <a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/NetZeroC_Malaysia_2035_2050" style="     ">NetZeroC_Malaysia_2035_2050</a>
@@ -1895,7 +1855,7 @@ CO2 emissions constraint for Malaysia (2035 - 2050)
 </tr>
 <tr>
 <td style="text-align:left;">
-Carbon neutral
+Carbon Neutral
 </td>
 <td style="text-align:left;">
 <a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/Malaysia_LUC" style="     ">Malaysia_LUC</a>
@@ -1906,7 +1866,7 @@ GHG link file for Malaysia for land use change emissions
 </tr>
 <tr>
 <td style="text-align:left;">
-Carbon neutral
+Carbon Neutral
 </td>
 <td style="text-align:left;">
 <a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/NetZeroC_global_noMalaysia" style="     ">NetZeroC_global_noMalaysia_2050</a>
@@ -1917,7 +1877,7 @@ CO2 emissions constraint for the rest of the World (2050)
 </tr>
 <tr>
 <td style="text-align:left;">
-Carbon neutral
+Carbon Neutral
 </td>
 <td style="text-align:left;">
 <a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/ROW_LUC_noMalaysia" style="     ">ROW_LUC_noMalaysia</a>
@@ -1940,7 +1900,7 @@ style="background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 
 <p style="margin-left:1em;">
 The aim of this example is to demonstrate how to apply an economy-wide
 emissions constraint for Malaysia in accord with its national goals:
-net-zero CO<sub>2</sub> by 2050.
+net-zero CO<sub>2</sub> as early as 2050.
 </p>
 <p></span></p>
 </div>
@@ -1980,16 +1940,16 @@ deployment to satisfy the emissions constraint. An economy-wide
 constraint can be used by itself, or in combination with additional
 sectoral policies described above.</p>
 There are some important considerations: (1) What GHGs are included in
-the constraint (only CO<sub>2</sub>?)?, (2) What is the time period for
-the constraint (e.g., 2050, 2065)?, (3) What are the emissions in each
-period, (4) Will emissions decline linearly to zero or will another rate
-be specified?, (5) Will land use change emissions be included in the
-constraint?, and (6) What assumptions are made for emissions in the rest
-of the world? This latter point is important when considering “carbon
-leakage,” that is, how restrictions in emissions in one geography may
-lead to a shift in carbon-intensive activities to other locations.
-Below, we will describe how to implement a CO<sub>2</sub> emissions
-constraint. See the <a
+the constraint (e.g., only CO<sub>2</sub>)?, (2) What is the time period
+for the constraint (e.g., 2050, 2065)?, (3) What are the emissions in
+each period?, (4) Will emissions decline linearly to zero or will
+another rate be specified?, (5) Will land use change emissions be
+included in the constraint?, and (6) What assumptions are made for
+emissions in the rest of the world? This latter point is important when
+considering “carbon leakage,” that is, how restrictions in emissions in
+one geography may lead to a shift in carbon-intensive activities to
+other locations. Below, we will describe how to implement a
+CO<sub>2</sub> emissions constraint. See the <a
 href="http://jgcri.github.io/gcam-doc/policies.html#emissions-policies">GCAM
 Policies</a> documentation for more information.
 </p>
@@ -2010,14 +1970,14 @@ style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 
 <li><p>Create a folder in the input directory:
 <code>./gcam-core/input/addons</code>.
 <!---include links to example XMLs here---></p></li>
-<li><p>Download the emissions constraint xml file(s) for Malaysia: <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/NetZeroC_Malaysia_2035_2050">NetZeroC_Malaysia_2035_2050</a>
-and <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/malaysia_LUC">Malaysia_LUC</a>,
-as well as those for the rest of the world (ROW), <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/NetZeroC_global_noMalaysia_2050">NetZeroC_global_noMalaysia_2050</a>
-and <a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/ROW_LUC_noMalaysia">ROW_LUC_noMalaysia</a>.</p></li>
+<li><p>Download the emissions constraint xml file(s) for Malaysia: “<a
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/NetZeroC_Malaysia_2035_2050">NetZeroC_Malaysia_2035_2050</a>”
+and “<a
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/malaysia_LUC">Malaysia_LUC</a>”,
+as well as those for the rest of the world (ROW), “<a
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/NetZeroC_global_noMalaysia_2050">NetZeroC_global_noMalaysia_2050</a>”
+and “<a
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/ROW_LUC_noMalaysia">ROW_LUC_noMalaysia</a>.”</p></li>
 <li><p>The first file, <code>NetZeroC_Malaysia_2035_2050</code>,
 specifies emissions in units of tonnes of carbon (<em>not
 CO<sub>2</sub></em>) in each period. One way to determine the emissions
@@ -2039,18 +1999,18 @@ scenario. Thus, we only need to start our constraint in 2035. We specify
 a linear decrease to 0 tonnes of C in 2050.</p></li>
 <li><p>We adopt a similar approach for the ROW, using the total
 emissions (tC) in 2020 for all countries as a starting point. (We did
-not subtract our Malaysia’s emissions, as they are quite small
+not subtract out Malaysia’s emissions, as they are quite small
 globally). It is not absolutely necessary to adopt the very same
 emissions constraint for the ROW, but the constraint should be strong
 enough to avoid carbon leakage from Malaysia’ net-zero policy.</p></li>
 <li><p>One needs to decide whether and how land use change emissions are
 incorporated into the constraint. GCAM accounts for fossil fuel and
 industry CO<sub>2</sub> emissions separately from land use change
-CO<sub>2</sub> emissions. The <code>Malaysia_luc.xml</code> specifies
+CO<sub>2</sub> emissions. The <code>Malaysia_LUC.xml</code> specifies
 how land use change CO<sub>2</sub> emissions (LUC-CO<sub>2</sub>) in
 Malaysia are linked to the ghgpolicy (“CO<sub>2</sub>”). There are two
 parameters: <code>price-adjust</code> and <code>demand-adjust</code>.
-Price-adjust is used to convert prices for different GHG’s. A
+Price-adjust is used to convert prices for different GHGs. A
 price-adjust of 1.0 for LUC-CO<sub>2</sub> means the market price on
 LUC-CO<sub>2</sub> emissions is the same as the price applied to fossil
 fuel and industry CO<sub>2</sub> emissions. A demand-adjust of 1 means
@@ -2061,15 +2021,12 @@ depending on the goal and importance of LUC emissions. Note that
 Malaysia is removed from the
 <code>ROW_LUC_noMalaysia.xml</code>.</p></li>
 <li><p>Save the xml files and then point to them in your configuration
-file by adding the line:</p>
-<p style='font-size:0.9em'>
-<!---insert exmaple XML filenames--->
-<p><code>&lt;Value name = "scen"&gt;../input/addons/malaysia/NetZeroC_Malaysia_2035_2050.xml&lt;/Value&gt;</code>
+file by adding the lines: <!---insert example XML file names--->
+<code>&lt;Value name = "scen"&gt;../input/addons/malaysia/NetZeroC_Malaysia_2035_2050.xml&lt;/Value&gt;</code>
 <code>&lt;Value name = "scen"&gt;../input/addons/malaysia/Malaysia_LUC.xml&lt;/Value&gt;</code>
 <code>&lt;Value name = "scen"&gt;../input/addons/malaysia/NetZeroC_global_noMalaysia_2050.xml&lt;/Value&gt;</code>
 <code>&lt;Value name = "scen"&gt;../input/addons/malaysia/ROW_LUC_noMalaysia.xml&lt;/Value&gt;</code></p></li>
 </ol>
-</p>
 </p>
 </p>
 <p></span></p>
@@ -2079,8 +2036,8 @@ file by adding the line:</p>
 <!-------------------------->
 <!-------------------------->
 </div>
-<div id="diagnostics" class="section level1" number="6">
-<h1><span class="header-section-number">6</span> Diagnostics</h1>
+<div id="diagnostics" class="section level1" number="7">
+<h1><span class="header-section-number">7</span> Diagnostics</h1>
 <!-------------------------->
 <!-------------------------->
 <!-------------------------->
@@ -2091,8 +2048,8 @@ file by adding the line:</p>
 data using GCAM-specific post-processing tools.</p>
 <!-------------------------->
 <!-------------------------->
-<div id="extract-gcam-data" class="section level2" number="6.1">
-<h2><span class="header-section-number">6.1</span> Extract GCAM
+<div id="extract-gcam-data" class="section level2" number="7.1">
+<h2><span class="header-section-number">7.1</span> Extract GCAM
 Data</h2>
 <!-------------------------->
 <!-------------------------->
@@ -2100,33 +2057,36 @@ Data</h2>
 <p><code>gcamextractor</code> is an R package used to extract and
 process GCAM data and manipulate into standardized tables.
 <code>gcamextractor</code> converts GCAM outputs into commonly used
-units as well as aggregates across different classes and sectors for
-easy use in plots, maps, and tables. For more information, please
-reference the documentation page found <a
+units and aggregates across different classes and sectors for easy use
+in plots, maps, and tables. For more information, please reference the
+documentation page found <a
 href="https://jgcri.github.io/gcamextractor/index.html">here</a>.</p>
 <p>The first step is to create a path to the GCAM database, found in the
 output folder of your GCAM folder, and a list of desired parameters. The
 <code>readgcam()</code> function also requires region names and a
-specific output folder. Note that due to size limiations on GitHub, the
+specific output folder. Note that due to size limitations on GitHub, the
 data used here has already been processed, but we include the steps to
 run it on your own in the following chunk if desired.</p>
 <pre class="r fold-show"><code># Get desired database paths
-ref_db &lt;- &quot;../data/malaysia/output/malaysia_ref&quot;
-high_db &lt;- &quot;../data/malaysia/output/malaysia_high&quot;
-high_cn_db &lt;- &quot;../data/malaysia/output/malaysia_carbon_neutral_high&quot;
+bau_db &lt;- &quot;../data/malaysia/output/malaysia_bau&quot;
+policies_db &lt;- &quot;../data/malaysia/output/malaysia_policies&quot;
+carbon_neutral_db &lt;- &quot;../data/malaysia/output/malaysia_carbon_neutral&quot;
 
-paths &lt;- c(ref_db, high_db, high_cn_db)
+paths &lt;- c(bau_db, policies_db, carbon_neutral_db)
 
 # Choose parameters of interest
-params &lt;- c(&quot;elecByTechTWh&quot;, &quot;elecConsumByDemandSectorTWh&quot;,
-            &quot;emissCO2BySectorNoBio&quot;, &quot;emissGHGBySectorGWPAR5&quot;, &quot;emissGHGByGasGWPAR5&quot;,
-            &quot;energyFinalByFuelEJ&quot;, &quot;energyFinalConsumBySecEJ&quot;, &quot;energyPrimaryByFuelEJ&quot;,
-            &quot;energyFinalSubsecBySectorBuildEJ&quot;, &quot;energyFinalSubsecByFuelBuildEJ&quot;,
+params &lt;- c(&quot;elecByTechTWh&quot;, 
+            &quot;emissCO2BySectorNoBio&quot;, 
+            &quot;energyFinalByFuelEJ&quot;, 
+            &quot;energyFinalConsumBySecEJ&quot;, 
+            &quot;energyFinalSubsecBySectorBuildEJ&quot;, 
+            &quot;energyFinalSubsecByFuelBuildEJ&quot;,
             &quot;energyFinalSubsecByFuelIndusEJ&quot;,
-            &quot;transportFreightVMTByMode&quot;, &quot;transportPassengerVMTByMode&quot;,
-            &quot;transportFreightVMTByFuel&quot;, &quot;transportPassengerVMTByFuel&quot;,
-            &quot;transportPassengerVMTByTech&quot;, &quot;transportFreightVMTByTech&quot;,
-            &quot;buildingFloorspace&quot;, &quot;gdp&quot;, &quot;gdpPerCapita&quot;, &quot;pop&quot;)
+            &quot;energyFinalByFuelTransportPassEJ&quot;,
+            &quot;energyFinalByFuelTransportFreightEJ&quot;
+            &quot;transportFreightVMTByMode&quot;, 
+            &quot;transportPassengerVMTByMode&quot;,
+            &quot;gdp&quot;, &quot;gdpPerCapita&quot;, &quot;pop&quot;)
 
 # Identify regions
 regions &lt;- c(&quot;Malaysia&quot;, &quot;KualaLumpur&quot;, &quot;Rest of Malaysia&quot;)
@@ -2140,20 +2100,23 @@ for(p in paths){
                           paramsSelect = params,
                           folder = paste0(&quot;../data/malaysia/gcamextractor/&quot;, tail(strsplit(p, &quot;/&quot;)[[1]],1)))
 }</code></pre>
-<pre class="r fold-show"><code>ref &lt;- read.csv(&quot;../data/malaysia/gcamextractor/malaysia_ref/gcamDataTable_aggClass1.csv&quot;) 
-high &lt;- read.csv(&quot;../data/malaysia/gcamextractor/malaysia_high/gcamDataTable_aggClass1.csv&quot;)
-high_cn &lt;- read.csv(&quot;../data/malaysia/gcamextractor/malaysia_carbon_neutral_high/gcamDataTable_aggClass1.csv&quot;)
+<pre class="r fold-show"><code># Read in data
+bau &lt;- read.csv(&quot;../data/malaysia/gcamextractor/malaysia_bau/gcamDataTable_aggClass1.csv&quot;) 
+policies &lt;- read.csv(&quot;../data/malaysia/gcamextractor/malaysia_policies/gcamDataTable_aggClass1.csv&quot;)
+carbon_neutral &lt;- read.csv(&quot;../data/malaysia/gcamextractor/malaysia_carbon_neutral/gcamDataTable_aggClass1.csv&quot;)
 
-malaysia &lt;- bind_rows(ref, high, high_cn) %&gt;%
+# Combine data into one data frame
+malaysia &lt;- bind_rows(bau, policies, carbon_neutral) %&gt;%
   filter(region != (&quot;Rest of Malaysia&quot;),
          x &gt; 2000, x &lt;= 2050)
 
+# Reorder scenarios
 malaysia$scenario &lt;- factor(malaysia$scenario, 
                             levels = c(&quot;Ref&quot;, &quot;High&quot;, &quot;High_CarbonNeutral&quot;),
-                            labels = c(&quot;Business as Usual&quot;, &quot;Policies&quot;, &quot;Net Zero&quot;))
+                            labels = c(&quot;1. Business as Usual&quot;, &quot;2. Policies&quot;, &quot;3. Carbon Neutral&quot;))
 
 # Define reference scenario
-REF_SCENARIO &lt;- &quot;Business as Usual&quot;
+REF_SCENARIO &lt;- &quot;1. Business as Usual&quot;
 
 # Use this to access reference scenario plot
 c &lt;- paste0(&quot;chart_class_&quot;, REF_SCENARIO)</code></pre>
@@ -2161,8 +2124,8 @@ c &lt;- paste0(&quot;chart_class_&quot;, REF_SCENARIO)</code></pre>
 <!-------------------------->
 <!-------------------------->
 </div>
-<div id="plot-figures" class="section level2" number="6.2">
-<h2><span class="header-section-number">6.2</span> Plot Figures</h2>
+<div id="plot-figures" class="section level2" number="7.2">
+<h2><span class="header-section-number">7.2</span> Plot Figures</h2>
 <!-------------------------->
 <!-------------------------->
 <hr />
@@ -2174,11 +2137,9 @@ following parameters:</p>
 <ul>
 <li>Socioeconomics: population, GDP, GDP per capita</li>
 <li>CO<sub>2</sub> emissions by sector</li>
-<li>GHG emissions by sector and gas</li>
 <li>Final energy by fuel</li>
 <li>Final energy by sector</li>
 <li>Electricity generation by fuel</li>
-<li>Electricity generation by sector</li>
 <li>Building energy by subsector</li>
 <li>Transportation by mode</li>
 <li>Transportation by fuel</li>
@@ -2188,89 +2149,61 @@ following parameters:</p>
 image again to close out.</p>
 <p><br></p>
 <!-------------------------->
-<div id="summary-figures" class="section level3 tabset" number="6.2.1">
-<h3 class="tabset"><span class="header-section-number">6.2.1</span>
+<div id="summary-figures" class="section level3 tabset" number="7.2.1">
+<h3 class="tabset"><span class="header-section-number">7.2.1</span>
 Summary Figures</h3>
 <!-------------------------->
 <hr />
 <!-------------------------->
 <div id="socioeconomic-summary" class="section level4 tabset"
-number="6.2.1.1">
-<h4 class="tabset"><span class="header-section-number">6.2.1.1</span>
+number="7.2.1.1">
+<h4 class="tabset"><span class="header-section-number">7.2.1.1</span>
 Socioeconomic Summary</h4>
 <!-------------------------->
 <hr />
-<div id="malaysia-vs-kuala-lumpur" class="section level5"
-number="6.2.1.1.1">
-<h5><span class="header-section-number">6.2.1.1.1</span> Malaysia vs
-Kuala Lumpur</h5>
-<pre class="r"><code>socioeconomic_parameters &lt;- c(&quot;pop&quot;, &quot;gdp&quot;, &quot;gdpPerCapita&quot;)
+<pre class="r"><code>figure_path &lt;- &quot;./markdown_figs&quot;
+
+socioeconomic_parameters &lt;- c(&quot;pop&quot;, &quot;gdp&quot;, &quot;gdpPerCapita&quot;)
 
 socioeconomic &lt;- malaysia %&gt;%
   filter(param %in% socioeconomic_parameters,
          region != &quot;All of Malaysia&quot;,
          scenario == REF_SCENARIO) %&gt;%
-  mutate(param = units) %&gt;% 
+  mutate(param = units,
+         param = case_when(classLabel == &quot;GDP Per Capita&quot; ~ &quot;GDP per Capita (Thous. 1990 USD/per)&quot;, T~param)) %&gt;% 
   rchart::chart(save = F, 
                 show = F,
-                size_text = 19)
+                chart_type = &quot;region_absolute&quot;,
+                folder = figure_path,
+                append = &quot;_socioeconomics&quot;,
+                size_text = 10)
 
 socioeconomic$chart_region_absolute</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-socio-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<p><br></p>
+<div class="figure" style="text-align: center">
+<p class="caption">
+BAU GDP, GDP per capita, and population in Malaysia and Kuala Lumpur
+</p>
+<img src="modeling_malaysia_files/figure-html/rchart-socio-1.png" alt="BAU GDP, GDP per capita, and population in Malaysia and Kuala Lumpur" width="100%" />
 </div>
-<div id="malaysia" class="section level5" number="6.2.1.1.2">
-<h5><span class="header-section-number">6.2.1.1.2</span> Malaysia</h5>
-<pre class="r"><code>socioeconomic_my &lt;- malaysia %&gt;%
-  filter(param %in% socioeconomic_parameters,
-         region == &quot;Malaysia&quot;) %&gt;%
-  mutate(param = units,
-         scenario = REF_SCENARIO) %&gt;% 
-  rchart::chart(save = F, 
-                show = F,
-                size_text = 19)
-
-socioeconomic_my$chart_param</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-socio-my-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<p><br></p>
-</div>
-<div id="kuala-lumpur" class="section level5" number="6.2.1.1.3">
-<h5><span class="header-section-number">6.2.1.1.3</span> Kuala
-Lumpur</h5>
-<pre class="r"><code>socioeconomic_kl &lt;- malaysia %&gt;%
-  filter(param %in% socioeconomic_parameters,
-         region == &quot;KualaLumpur&quot;) %&gt;%
-  mutate(param = units,
-         scenario = REF_SCENARIO) %&gt;% 
-  rchart::chart(save = F, 
-                show = F,
-                size_text = 19)
-
-socioeconomic_kl$chart_param</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-socio-kl-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 <!-------------------------->
 </div>
-</div>
 <div id="emissions-by-sector-and-gas" class="section level4 tabset"
-number="6.2.1.2">
-<h4 class="tabset"><span class="header-section-number">6.2.1.2</span>
+number="7.2.1.2">
+<h4 class="tabset"><span class="header-section-number">7.2.1.2</span>
 Emissions by Sector and Gas</h4>
 <!-------------------------->
 <hr />
-<div id="malaysia-vs-kuala-lumpur-1" class="section level5"
-number="6.2.1.2.1">
-<h5><span class="header-section-number">6.2.1.2.1</span> Malaysia vs
+<div id="malaysia-and-kuala-lumpur" class="section level5"
+number="7.2.1.2.1">
+<h5><span class="header-section-number">7.2.1.2.1</span> Malaysia and
 Kuala Lumpur</h5>
 <pre class="r"><code>co2 &lt;- malaysia %&gt;% filter(param == &quot;emissCO2BySectorNoBio&quot;,
                            region != &quot;Malaysia&quot;) %&gt;%
-  mutate(value = value * 3.67,
+  mutate(#value = value * 3.67,
          units = &quot;CO2 Emissions (MTCO2eq)&quot;)
 
-ghg &lt;- malaysia %&gt;% filter(param == &quot;emissGHGBySectorNoBioGWPAR5&quot;,
-                           region != &quot;Malaysia&quot;)
-
-malaysia_emissions &lt;- bind_rows(co2, ghg) %&gt;%
+malaysia_emissions &lt;- co2 %&gt;%
   mutate(class = case_when(grepl(&quot;International&quot;,class)~&quot;Transportation&quot;,
                            grepl(&quot;alumin|desalinated|refining|urban|coal|gas|oil|hydrogen|agricultural|crops&quot;,class)~&quot;Industry&quot;,
                            TRUE~class)) %&gt;%
@@ -2282,546 +2215,743 @@ malaysia_emissions &lt;- bind_rows(co2, ghg) %&gt;%
                 size_text = 10)
 
 emissions[[c]]</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-emiss-plot-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>co2_gas &lt;- co2 %&gt;%
-  mutate(class = &quot;CO2&quot;,
-         param = &quot;emissGHGByGasNoBioGWPAR5&quot;)
-
-ghg_gas &lt;- malaysia %&gt;% 
-  filter(param == &quot;emissGHGByGasNoBioGWPAR5&quot;,
-         class != &quot;CO2&quot;,
-         region != &quot;Malaysia&quot;)
-
-malaysia_emissions_gas &lt;- bind_rows(co2_gas, ghg_gas)</code></pre>
-<pre class="r"><code>gas &lt;- malaysia_emissions_gas %&gt;%
-  mutate(param = units) %&gt;%
-  rchart::chart(save = F, 
-                show = F,
-                size_text = 10)
-
-gas[[c]]</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-emiss-gas-plot-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<p><br></p>
+<div class="figure" style="text-align: center">
+<p class="caption">
+Direct BAU CO<sub>2</sub> emissions by sector in Malaysia and Kuala
+Lumpur
+</p>
+<img src="modeling_malaysia_files/figure-html/rchart-emiss-plot-1.png" alt="Direct BAU CO~2~ emissions by sector in Malaysia and Kuala Lumpur" width="100%" />
 </div>
-<div id="malaysia-1" class="section level5" number="6.2.1.2.2">
-<h5><span class="header-section-number">6.2.1.2.2</span> Malaysia</h5>
+</div>
+<div id="malaysia" class="section level5" number="7.2.1.2.2">
+<h5><span class="header-section-number">7.2.1.2.2</span> Malaysia</h5>
 <pre class="r"><code>co2_my &lt;- malaysia %&gt;% 
   filter(param == &quot;emissCO2BySectorNoBio&quot;, 
-         region == &quot;All of Malaysia&quot;) %&gt;%
-  mutate(value = value * 3.67,
-         units = &quot;CO2 Emissions (MTCO2eq)&quot;,
+         region == &quot;All of Malaysia&quot;,
+         class != &quot;LUC&quot;) %&gt;%
+  mutate(# value = value * 3.67,
+         units = &quot;CO2 Emissions (MTCO2e)&quot;,
          param = &quot;CO2 Emissions&quot;,
          class = case_when(grepl(&quot;International&quot;,class)~&quot;transport&quot;,
-                           grepl(&quot;refin|hydrogen&quot;,class)~&quot;other&quot;,
+                           grepl(&quot;refin|hydrogen&quot;,class)~&quot;Industry&quot;,
                            TRUE~class)) %&gt;% 
   group_by(scenario, region, class, units, param, x, xLabel, classLabel, subRegion, vintage) %&gt;% 
   summarize(value = sum(value)) %&gt;% 
-  ungroup()
-
-ghg_my &lt;- malaysia %&gt;% 
-  filter(param == &quot;emissGHGBySectorNoBioGWPAR5&quot;, 
-         region == &quot;All of Malaysia&quot;) %&gt;%
-  mutate(param = &quot;GHG Emissions by Sector&quot;,
-         class = case_when(grepl(&quot;alumin&quot;,class)~&quot;industry&quot;,
-                           grepl(&quot;International&quot;,class)~&quot;transport&quot;,
-                           grepl(&quot;desalinated|refin|urban|coal|gas|oil|biomass|hydrogen|agricultural|crops|livestock&quot;, class)~&quot;other&quot;,
-                           TRUE~class)) %&gt;% 
-  group_by(scenario, region, class, units, param, x, xLabel, classLabel, subRegion, vintage) %&gt;% 
-  summarize(value = sum(value)) %&gt;% 
-  ungroup()
-
-my_emissions &lt;- bind_rows(co2_my, ghg_my) </code></pre>
-<pre class="r"><code>emissions_my_plot &lt;- my_emissions %&gt;%
-  mutate(param = units) %&gt;%
-  rchart::chart(save = F, 
-                show = F,
-                scenRef = REF_SCENARIO)
-
-emissions_my_plot$chart_param</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-emiss-plot-my-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>ghg_gas_my &lt;- malaysia %&gt;% 
-  filter(param == &quot;emissGHGByGasNoBioGWPAR5&quot;,
-         class != &quot;CO2&quot;,
-         region == &quot;All of Malaysia&quot;) %&gt;%
-  mutate(param = &quot;GHG Emissions by Gas&quot;)
-
-my_emissions_gas &lt;- bind_rows(ghg_gas_my, my_emissions) %&gt;%
-  filter(class != &quot;LUC&quot;)</code></pre>
-<pre class="r"><code>gas_my &lt;- my_emissions_gas %&gt;%
-  rchart::chart(save = F, 
+  ungroup() %&gt;%
+  mutate(param = units)</code></pre>
+<pre class="r"><code>emissions_my_plot &lt;- co2_my %&gt;%
+  rchart::chart(save = T, 
                 show = F,
                 scenRef = REF_SCENARIO,
-                summary_line = T,
-                size_text = 12,
-                ncol = 4)
-
-gas_my$chart_class</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-emiss-gas-scenario-plot-my-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>gas_my$chart_class_diff_absolute</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-emiss-gas-plot-my-1.png" width="100%" style="display: block; margin: auto;" /></p>
+                chart_type = &quot;param_absolute&quot;,
+                folder = figure_path,
+                append = &quot;_co2_lines&quot;)</code></pre>
+<pre class="r"><code>gas_my &lt;- co2_my %&gt;%
+  rchart::chart(save = T, 
+                show = F,
+                chart_type = c(&quot;class_absolute&quot;, &quot;class_diff_absolute&quot;),
+                scenRef = REF_SCENARIO,
+                ncol = 4,
+                folder = figure_path,
+                append = &quot;_co2_emiss&quot;,
+                size_text = 28)</code></pre>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_param_co2_lines.png&quot;)</code></pre>
+<div class="figure" style="text-align: center">
+<p class="caption">
+Total CO<sub>2</sub> emissions by scenario in Malaysia
+</p>
+<img src="markdown_figs/chart_param_co2_lines.png" alt="Total CO~2~ emissions by scenario in Malaysia" width="100%" />
+</div>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_co2_emiss.png&quot;)</code></pre>
+<div class="figure" style="text-align: center">
+<p class="caption">
+CO<sub>2</sub> emissions by sector in Malaysia
+</p>
+<img src="markdown_figs/chart_class_co2_emiss.png" alt="CO~2~ emissions by sector in Malaysia" width="100%" />
+</div>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_diff_absolute_co2_emiss.png&quot;)</code></pre>
+<div class="figure" style="text-align: center">
+<p class="caption">
+BAU CO<sub>2</sub> emissions (left) and the difference between BAU and
+the Policies and Carbon Neutral scenarios
+</p>
+<img src="markdown_figs/chart_class_diff_absolute_co2_emiss.png" alt="BAU CO~2~ emissions (left) and the difference between BAU and the Policies and Carbon Neutral scenarios" width="100%" />
+</div>
 <p><br></p>
 </div>
-<div id="kuala-lumpur-1" class="section level5" number="6.2.1.2.3">
-<h5><span class="header-section-number">6.2.1.2.3</span> Kuala
+<div id="kuala-lumpur" class="section level5" number="7.2.1.2.3">
+<h5><span class="header-section-number">7.2.1.2.3</span> Kuala
 Lumpur</h5>
 <pre class="r"><code>co2_kl &lt;- malaysia %&gt;% 
   filter(param == &quot;emissCO2BySectorNoBio&quot;,
          region == &quot;KualaLumpur&quot;) %&gt;%
-  mutate(value = value * 3.67,
+  mutate(#value = value * 3.67,
          units = &quot;CO2 Emissions (MTCO2eq)&quot;,
          param = &quot;CO2 Emissions&quot;,
          class = case_when(grepl(&quot;International&quot;,class)~&quot;transport&quot;, TRUE~class))  %&gt;% 
   group_by(scenario, region, class, units, param, x, xLabel, classLabel, subRegion, vintage) %&gt;% 
   summarize(value = sum(value)) %&gt;% 
-  ungroup()
-
-ghg_kl &lt;- malaysia %&gt;% 
-  filter(param == &quot;emissGHGBySectorNoBioGWPAR5&quot;,
-         region == &quot;KualaLumpur&quot;) %&gt;%
-  mutate(param = &quot;GHG Emissions by Sector&quot;,
-         class = case_when(grepl(&quot;International&quot;,class)~&quot;transport&quot;, TRUE~class)) %&gt;% 
-  group_by(scenario, region, class, units, param, x, xLabel, classLabel, subRegion, vintage) %&gt;% 
-  summarize(value = sum(value)) %&gt;% 
-  ungroup()
-
-kl_emissions &lt;- bind_rows(co2_kl, ghg_kl) </code></pre>
-<pre class="r"><code>emissions_kl_plot &lt;- kl_emissions %&gt;%
+  ungroup()</code></pre>
+<pre class="r"><code>emissions_kl_plot &lt;- co2_kl %&gt;%
   mutate(param = units) %&gt;%
-  rchart::chart(save = F, 
-                show = F,
-                size_text = 12) 
-
-emissions_kl_plot$chart_param</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-emiss-plot-kl-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>ghg_gas_kl &lt;- malaysia %&gt;% 
-  filter(param == &quot;emissGHGByGasNoBioGWPAR5&quot;,
-         class != &quot;CO2&quot;,
-         region == &quot;KualaLumpur&quot;) %&gt;%
-  mutate(param = &quot;GHG Emissions by Gas&quot;)
-
-kl_emissions_gas &lt;- bind_rows(ghg_gas_kl, kl_emissions) </code></pre>
-<pre class="r"><code>gas_kl &lt;- kl_emissions_gas %&gt;%
-  rchart::chart(save = F, 
+  rchart::chart(save = T, 
                 show = F,
                 scenRef = REF_SCENARIO,
-                summary_line = T,
-                size_text = 10,
-                ncol = 4)
-
-gas_kl$chart_class</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-emiss-gas-scenario-plot-kl-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>gas_kl$chart_class_diff_absolute</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-gas-plot-kl-1.png" width="100%" style="display: block; margin: auto;" /></p>
+                chart_type = &quot;param_absolute&quot;,
+                folder = figure_path,
+                append = &quot;_co2_lines_kl&quot;) </code></pre>
+<pre class="r"><code>gas_kl &lt;- co2_kl %&gt;%
+  rchart::chart(save = T, 
+                show = F,
+                chart_type = c(&quot;class_absolute&quot;, &quot;class_diff_absolute&quot;),
+                scenRef = REF_SCENARIO,
+                ncol = 4,
+                folder = figure_path,
+                append = &quot;_co2_emiss_kl&quot;,
+                size_text = 28)</code></pre>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_param_co2_lines_kl.png&quot;)</code></pre>
+<div class="figure" style="text-align: center">
+<p class="caption">
+Total CO<sub>2</sub> emissions by scenario in Kuala Lumpur
+</p>
+<img src="markdown_figs/chart_param_co2_lines_kl.png" alt="Total CO~2~ emissions by scenario in Kuala Lumpur" width="100%" />
+</div>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_co2_emiss_kl.png&quot;)</code></pre>
+<div class="figure" style="text-align: center">
+<p class="caption">
+CO<sub>2</sub> emissions by sector in Kuala Lumpur
+</p>
+<img src="markdown_figs/chart_class_co2_emiss_kl.png" alt="CO~2~ emissions by sector in Kuala Lumpur" width="100%" />
+</div>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_diff_absolute_co2_emiss_kl.png&quot;)</code></pre>
+<div class="figure" style="text-align: center">
+<p class="caption">
+BAU CO<sub>2</sub> emissions (left) and the difference between BAU and
+the Policies and Carbon Neutral scenarios
+</p>
+<img src="markdown_figs/chart_class_diff_absolute_co2_emiss_kl.png" alt="BAU CO~2~ emissions (left) and the difference between BAU and the Policies and Carbon Neutral scenarios" width="100%" />
+</div>
 <p><br></p>
 <!-------------------------->
 </div>
 </div>
 <div id="final-energy-by-fuel-and-sector" class="section level4 tabset"
-number="6.2.1.3">
-<h4 class="tabset"><span class="header-section-number">6.2.1.3</span>
+number="7.2.1.3">
+<h4 class="tabset"><span class="header-section-number">7.2.1.3</span>
 Final Energy by Fuel and Sector</h4>
 <!-------------------------->
 <hr />
-<div id="malaysia-vs-kuala-lumpur-2" class="section level5"
-number="6.2.1.3.1">
-<h5><span class="header-section-number">6.2.1.3.1</span> Malaysia vs
-Kuala Lumpur</h5>
+<div id="malaysia-1" class="section level5" number="7.2.1.3.1">
+<h5><span class="header-section-number">7.2.1.3.1</span> Malaysia</h5>
 <pre class="r"><code>energy_parameters &lt;- c(&quot;energyFinalConsumBySecEJ&quot;, &quot;energyFinalByFuelEJ&quot;)
 
-energy &lt;- malaysia %&gt;% 
-  filter(param %in% energy_parameters,
-         region != &quot;Malaysia&quot;) %&gt;%
-  mutate(param = units) %&gt;%
-  rchart::chart(save = F, 
-                show = F,
-                size_text = 10)
-
-energy[[c]]</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-energy-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<p><br></p>
-</div>
-<div id="malaysia-2" class="section level5" number="6.2.1.3.2">
-<h5><span class="header-section-number">6.2.1.3.2</span> Malaysia</h5>
-<pre class="r"><code>energy_my &lt;- malaysia %&gt;% 
-  filter(param %in% energy_parameters,
+energy_consum_my &lt;- malaysia %&gt;% 
+  filter(param == &quot;energyFinalConsumBySecEJ&quot;,
          region == &quot;All of Malaysia&quot;) %&gt;%
   mutate(param = units) %&gt;%
-  rchart::chart(save = F, 
+  rchart::chart(save = T, 
                 show = F,
+                chart_type = c(&quot;class_absolute&quot;, &quot;class_diff_absolute&quot;),
                 scenRef = REF_SCENARIO,
-                size_text = 10,
-                ncol = 4)
+                ncol = 4,
+                folder = figure_path,
+                append = &quot;_energy_consum&quot;,
+                size_text = 28)
 
-energy_my$chart_class</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-energy-my-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>energy_my$chart_class_diff_absolute</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-energy-sce-my-1.png" width="100%" style="display: block; margin: auto;" /></p>
+energy_fuel_my &lt;- malaysia %&gt;% 
+  filter(param == &quot;energyFinalByFuelEJ&quot;,
+         region == &quot;All of Malaysia&quot;) %&gt;%
+  mutate(param = units) %&gt;%
+  rchart::chart(save = T, 
+                show = F,
+                chart_type = c(&quot;class_absolute&quot;, &quot;class_diff_absolute&quot;),
+                scenRef = REF_SCENARIO,
+                ncol = 4,
+                folder = figure_path,
+                append = &quot;_energy_fuel&quot;,
+                size_text = 30)</code></pre>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_energy_consum.png&quot;)</code></pre>
+<div class="figure" style="text-align: center">
+<p class="caption">
+Energy consumption by sector in Malaysia
+</p>
+<img src="markdown_figs/chart_class_energy_consum.png" alt="Energy consumption by sector in Malaysia" width="100%" />
+</div>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_diff_absolute_energy_consum.png&quot;)</code></pre>
+<div class="figure" style="text-align: center">
+<p class="caption">
+BAU energy consumption (left) and the difference between BAU and the
+Policies and Carbon Neutral scenarios
+</p>
+<img src="markdown_figs/chart_class_diff_absolute_energy_consum.png" alt="BAU energy consumption (left) and the difference between BAU and the Policies and Carbon Neutral scenarios" width="100%" />
+</div>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_energy_fuel.png&quot;)</code></pre>
+<div class="figure" style="text-align: center">
+<p class="caption">
+Energy consumption by fuel in Malaysia
+</p>
+<img src="markdown_figs/chart_class_energy_fuel.png" alt="Energy consumption by fuel in Malaysia" width="100%" />
+</div>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_diff_absolute_energy_fuel.png&quot;)</code></pre>
+<div class="figure" style="text-align: center">
+<p class="caption">
+BAU energy consumption (left) and the difference between BAU and the
+Policies and Carbon Neutral scenarios
+</p>
+<img src="markdown_figs/chart_class_diff_absolute_energy_fuel.png" alt="BAU energy consumption (left) and the difference between BAU and the Policies and Carbon Neutral scenarios" width="100%" />
+</div>
 <p><br></p>
 </div>
-<div id="kuala-lumpur-2" class="section level5" number="6.2.1.3.3">
-<h5><span class="header-section-number">6.2.1.3.3</span> Kuala
+<div id="kuala-lumpur-1" class="section level5" number="7.2.1.3.2">
+<h5><span class="header-section-number">7.2.1.3.2</span> Kuala
 Lumpur</h5>
 <pre class="r"><code>energy_kl &lt;- malaysia %&gt;% 
-  filter(param %in% energy_parameters,
+  filter(param == &quot;energyFinalConsumBySecEJ&quot;,
          region == &quot;KualaLumpur&quot;) %&gt;%
   mutate(param = units) %&gt;%
-  rchart::chart(save = F, 
+  rchart::chart(save = T, 
                 show = F,
+                chart_type = c(&quot;class_absolute&quot;, &quot;class_diff_absolute&quot;),
                 scenRef = REF_SCENARIO,
-                size_text = 10,
-                ncol = 4)
+                ncol = 4,
+                folder = figure_path,
+                append = &quot;_energy_consum_kl&quot;,
+                size_text = 28)
 
-energy_kl$chart_class</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-energy-sce-kl-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>energy_kl$chart_class_diff_absolute</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-energy-kl-1.png" width="100%" style="display: block; margin: auto;" /></p>
+energy_kl &lt;- malaysia %&gt;% 
+  filter(param == &quot;energyFinalByFuelEJ&quot;,
+         region == &quot;KualaLumpur&quot;) %&gt;%
+  mutate(param = units) %&gt;%
+  rchart::chart(save = T, 
+                show = F,
+                chart_type = c(&quot;class_absolute&quot;, &quot;class_diff_absolute&quot;),
+                scenRef = REF_SCENARIO,
+                ncol = 4,
+                folder = figure_path,
+                append = &quot;_energy_fuel_kl&quot;,
+                size_text = 28)</code></pre>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_energy_consum_kl.png&quot;)</code></pre>
+<div class="figure" style="text-align: center">
+<p class="caption">
+Energy consumption by sector in Kuala Lumpur
+</p>
+<img src="markdown_figs/chart_class_energy_consum_kl.png" alt="Energy consumption by sector in Kuala Lumpur" width="100%" />
+</div>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_diff_absolute_energy_consum_kl.png&quot;)</code></pre>
+<div class="figure" style="text-align: center">
+<p class="caption">
+BAU energy consumption (left) and the difference between BAU and the
+Policies and Carbon Neutral scenarios
+</p>
+<img src="markdown_figs/chart_class_diff_absolute_energy_consum_kl.png" alt="BAU energy consumption (left) and the difference between BAU and the Policies and Carbon Neutral scenarios" width="100%" />
+</div>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_energy_fuel_kl.png&quot;)</code></pre>
+<div class="figure" style="text-align: center">
+<p class="caption">
+Energy consumption by fuel in Kuala Lumpur
+</p>
+<img src="markdown_figs/chart_class_energy_fuel_kl.png" alt="Energy consumption by fuel in Kuala Lumpur" width="100%" />
+</div>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_diff_absolute_energy_fuel_kl.png&quot;)</code></pre>
+<div class="figure" style="text-align: center">
+<p class="caption">
+BAU energy consumption (left) and the difference between BAU and the
+Policies and Carbon Neutral scenarios
+</p>
+<img src="markdown_figs/chart_class_diff_absolute_energy_fuel_kl.png" alt="BAU energy consumption (left) and the difference between BAU and the Policies and Carbon Neutral scenarios" width="100%" />
+</div>
 <p><br></p>
 <!-------------------------->
 </div>
 </div>
-<div id="electricity-generation-by-fuel-and-sector"
-class="section level4 tabset" number="6.2.1.4">
-<h4 class="tabset"><span class="header-section-number">6.2.1.4</span>
-Electricity Generation by Fuel and Sector</h4>
+<div id="electricity-generation-by-fuel" class="section level4 tabset"
+number="7.2.1.4">
+<h4 class="tabset"><span class="header-section-number">7.2.1.4</span>
+Electricity Generation by Fuel</h4>
 <!-------------------------->
 <hr />
-<div id="malaysia-vs-kuala-lumpur-3" class="section level5"
-number="6.2.1.4.1">
-<h5><span class="header-section-number">6.2.1.4.1</span> Malaysia vs
-Kuala Lumpur</h5>
-<pre class="r"><code>electricity_parameters &lt;- c(&quot;elecConsumByDemandSectorTWh&quot;, &quot;elecByTechTWh&quot;)
-
-electricity &lt;- malaysia %&gt;% 
-  filter(param %in% electricity_parameters,
-         region != &quot;Malaysia&quot;) %&gt;%
-  mutate(param = units) %&gt;%
-  rchart::chart(save = F, 
-                show = F,
-                size_text = 10)
-
-electricity[[c]]</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-elec-gen-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<p><br></p>
-</div>
-<div id="malaysia-3" class="section level5" number="6.2.1.4.2">
-<h5><span class="header-section-number">6.2.1.4.2</span> Malaysia</h5>
 <pre class="r"><code>electricity_my &lt;- malaysia %&gt;% 
-  filter(param %in% electricity_parameters,
+  filter(param == &quot;elecByTechTWh&quot;,
          region == &quot;All of Malaysia&quot;) %&gt;%
-  mutate(param = units) %&gt;%
-  rchart::chart(save = F, 
+  mutate(param = &quot;Electricity Generation\nby Fuel (TWh)&quot;) %&gt;%
+  rchart::chart(save = T, 
                 show = F,
+                chart_type = c(&quot;class_absolute&quot;, &quot;class_diff_absolute&quot;),
                 scenRef = REF_SCENARIO,
-                size_text = 10,
-                ncol = 4)
-
-electricity_my$chart_class</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-elec-gen-sce-my-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>electricity_my$chart_class_diff_absolute</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-elec-gen-my-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<p><br></p>
+                ncol = 4,
+                folder = figure_path,
+                append = &quot;_elec_gen&quot;,
+                size_text = 24)</code></pre>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_elec_gen.png&quot;)</code></pre>
+<div class="figure" style="text-align: center">
+<p class="caption">
+Electricity generation by fuel in Malaysia
+</p>
+<img src="markdown_figs/chart_class_elec_gen.png" alt="Electricity generation by fuel in Malaysia" width="100%" />
 </div>
-<div id="kuala-lumpur-3" class="section level5" number="6.2.1.4.3">
-<h5><span class="header-section-number">6.2.1.4.3</span> Kuala
-Lumpur</h5>
-<pre class="r"><code>electricity_kl &lt;- malaysia %&gt;% 
-  filter(param %in% electricity_parameters,
-         region == &quot;KualaLumpur&quot;) %&gt;%
-  mutate(param = units) %&gt;%
-  rchart::chart(save = F, 
-                show = F,
-                scenRef = REF_SCENARIO,
-                size_text = 8,
-                ncol = 4)
-
-electricity_kl$chart_class</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-elec-gen-sce-kl-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>electricity_kl$chart_class_diff_absolute</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-elec-gen-kl-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<p><br></p>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_diff_absolute_elec_gen.png&quot;)</code></pre>
+<div class="figure" style="text-align: center">
+<p class="caption">
+BAU electricity generation (left) and the difference between BAU and the
+Policies and Carbon Neutral scenarios
+</p>
+<img src="markdown_figs/chart_class_diff_absolute_elec_gen.png" alt="BAU electricity generation (left) and the difference between BAU and the Policies and Carbon Neutral scenarios" width="100%" />
+</div>
 <!-------------------------->
 </div>
 </div>
-</div>
-<div id="sectoral-details" class="section level3 tabset" number="6.2.2">
-<h3 class="tabset"><span class="header-section-number">6.2.2</span>
+<div id="sectoral-details" class="section level3 tabset" number="7.2.2">
+<h3 class="tabset"><span class="header-section-number">7.2.2</span>
 Sectoral Details</h3>
 <!-------------------------->
 <hr />
 <div id="building-energy-by-subsector" class="section level4 tabset"
-number="6.2.2.1">
-<h4 class="tabset"><span class="header-section-number">6.2.2.1</span>
+number="7.2.2.1">
+<h4 class="tabset"><span class="header-section-number">7.2.2.1</span>
 Building Energy by Subsector</h4>
 <hr />
-<div id="malaysia-vs-kuala-lumpur-4" class="section level5"
-number="6.2.2.1.1">
-<h5><span class="header-section-number">6.2.2.1.1</span> Malaysia vs
-Kuala Lumpur</h5>
-<pre class="r"><code>building_energy_resid &lt;- malaysia %&gt;% 
-  filter(param == &quot;energyFinalSubsecByResidSectorBuildEJ&quot;,
-         region != &quot;Malaysia&quot;) %&gt;%
-  mutate(param = units) %&gt;%
-  rchart::chart(save = F, 
-                show = F,
-                size_text = 12)
-
-building_energy_resid[[c]]</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-building-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>building_energy_comm &lt;- malaysia %&gt;% 
-  filter(param == &quot;energyFinalSubsecByCommSectorBuildEJ&quot;,
-         region != &quot;Malaysia&quot;) %&gt;%
-  mutate(param = units) %&gt;%
-  rchart::chart(save = F, 
-                show = F,
-                size_text = 12)
-
-building_energy_comm[[c]]</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-building-2.png" width="100%" style="display: block; margin: auto;" /></p>
-<p><br></p>
-</div>
-<div id="malaysia-4" class="section level5" number="6.2.2.1.2">
-<h5><span class="header-section-number">6.2.2.1.2</span> Malaysia</h5>
+<div id="malaysia-2" class="section level5" number="7.2.2.1.1">
+<h5><span class="header-section-number">7.2.2.1.1</span> Malaysia</h5>
 <pre class="r"><code>building_energy_resid_my &lt;- malaysia %&gt;% 
   filter(param == &quot;energyFinalSubsecByResidSectorBuildEJ&quot;,
          region == &quot;All of Malaysia&quot;) %&gt;%
-  mutate(param = units) %&gt;%
-  rchart::chart(save = F, 
+  mutate(param = &quot;Final Energy (EJ)&quot;) %&gt;%
+  rchart::chart(save = T, 
                 show = F,
+                chart_type = c(&quot;class_absolute&quot;, &quot;class_diff_absolute&quot;),
                 scenRef = REF_SCENARIO,
-                size_text = 12)
+                ncol = 4,
+                folder = figure_path,
+                append = &quot;_resid_bld&quot;,
+                size_text = 24)
 
-building_energy_resid_my$chart_class</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-building-sce-my-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>building_energy_comm_my &lt;- malaysia %&gt;% 
+building_energy_comm_my &lt;- malaysia %&gt;% 
   filter(param == &quot;energyFinalSubsecByCommSectorBuildEJ&quot;,
          region == &quot;All of Malaysia&quot;) %&gt;%
-  mutate(param = units) %&gt;%
-  rchart::chart(save = F, 
+  mutate(param = &quot;Final Energy (EJ)&quot;) %&gt;%
+  rchart::chart(save = T, 
                 show = F,
+                chart_type = c(&quot;class_absolute&quot;, &quot;class_diff_absolute&quot;),
                 scenRef = REF_SCENARIO,
-                size_text = 12)
-
-building_energy_comm_my$chart_class</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-building-sce-my-2.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>building_energy_resid_my$chart_class_diff_absolute</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-building-my-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>building_energy_comm_my$chart_class_diff_absolute</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-building-my-2.png" width="100%" style="display: block; margin: auto;" /></p>
+                ncol = 4,
+                folder = figure_path,
+                append = &quot;_comm_bld&quot;,
+                size_text = 24)</code></pre>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_resid_bld.png&quot;)</code></pre>
+<div class="figure" style="text-align: center">
+<p class="caption">
+Residential building energy consumption by sector in Malaysia
+</p>
+<img src="markdown_figs/chart_class_resid_bld.png" alt="Residential building energy consumption by sector in Malaysia" width="100%" />
+</div>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_diff_absolute_resid_bld.png&quot;)</code></pre>
+<div class="figure" style="text-align: center">
+<p class="caption">
+BAU energy consumption (left) and the difference between BAU and the
+Policies and Carbon Neutral scenarios
+</p>
+<img src="markdown_figs/chart_class_diff_absolute_resid_bld.png" alt="BAU energy consumption (left) and the difference between BAU and the Policies and Carbon Neutral scenarios" width="100%" />
+</div>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_comm_bld.png&quot;)</code></pre>
+<div class="figure" style="text-align: center">
+<p class="caption">
+Commercial building energy consumption by sector in Malaysia
+</p>
+<img src="markdown_figs/chart_class_comm_bld.png" alt="Commercial building energy consumption by sector in Malaysia" width="100%" />
+</div>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_diff_absolute_comm_bld.png&quot;)</code></pre>
+<div class="figure" style="text-align: center">
+<p class="caption">
+BAU energy consumption (left) and the difference between BAU and the
+Policies and Carbon Neutral scenarios
+</p>
+<img src="markdown_figs/chart_class_diff_absolute_comm_bld.png" alt="BAU energy consumption (left) and the difference between BAU and the Policies and Carbon Neutral scenarios" width="100%" />
+</div>
 <p><br></p>
 </div>
-<div id="kuala-lumpur-4" class="section level5" number="6.2.2.1.3">
-<h5><span class="header-section-number">6.2.2.1.3</span> Kuala
+<div id="kuala-lumpur-2" class="section level5" number="7.2.2.1.2">
+<h5><span class="header-section-number">7.2.2.1.2</span> Kuala
 Lumpur</h5>
 <pre class="r"><code>building_energy_resid_kl &lt;- malaysia %&gt;% 
   filter(param == &quot;energyFinalSubsecByResidSectorBuildEJ&quot;,
          region == &quot;KualaLumpur&quot;) %&gt;%
-  mutate(param = units) %&gt;%
-  rchart::chart(save = F, 
+  mutate(param = &quot;Final Energy (EJ)&quot;) %&gt;%
+  rchart::chart(save = T, 
                 show = F,
+                chart_type = c(&quot;class_absolute&quot;, &quot;class_diff_absolute&quot;),
                 scenRef = REF_SCENARIO,
-                size_text = 12)
+                ncol = 4,
+                folder = figure_path,
+                append = &quot;_resid_bld_kl&quot;,
+                size_text = 24)
 
-building_energy_resid_kl$chart_class</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-building-sce-kl-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>building_energy_comm_kl &lt;- malaysia %&gt;% 
+building_energy_comm_kl &lt;- malaysia %&gt;% 
   filter(param == &quot;energyFinalSubsecByCommSectorBuildEJ&quot;,
          region == &quot;KualaLumpur&quot;) %&gt;%
-  mutate(param = units) %&gt;%
-  rchart::chart(save = F, 
+  mutate(param = &quot;Final Energy (EJ)&quot;) %&gt;%
+  rchart::chart(save = T, 
                 show = F,
+                chart_type = c(&quot;class_absolute&quot;, &quot;class_diff_absolute&quot;),
                 scenRef = REF_SCENARIO,
-                size_text = 12)
-
-building_energy_comm_kl$chart_class</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-building-sce-kl-2.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>building_energy_resid_kl$chart_class_diff_absolute</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-building-kl-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>building_energy_comm_kl$chart_class_diff_absolute</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-building-kl-2.png" width="100%" style="display: block; margin: auto;" /></p>
+                ncol = 4,
+                folder = figure_path,
+                append = &quot;_comm_bld_kl&quot;,
+                size_text = 24)</code></pre>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_resid_bld_kl.png&quot;)</code></pre>
+<div class="figure" style="text-align: center">
+<p class="caption">
+Residential building energy consumption by sector in Kuala Lumpur
+</p>
+<img src="markdown_figs/chart_class_resid_bld_kl.png" alt="Residential building energy consumption by sector in Kuala Lumpur" width="100%" />
+</div>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_diff_absolute_resid_bld_kl.png&quot;)</code></pre>
+<div class="figure" style="text-align: center">
+<p class="caption">
+BAU energy consumption (left) and the difference between BAU and the
+Policies and Carbon Neutral scenarios
+</p>
+<img src="markdown_figs/chart_class_diff_absolute_resid_bld_kl.png" alt="BAU energy consumption (left) and the difference between BAU and the Policies and Carbon Neutral scenarios" width="100%" />
+</div>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_comm_bld_kl.png&quot;)</code></pre>
+<div class="figure" style="text-align: center">
+<p class="caption">
+Commercial building energy consumption by sector in Kuala Lumpur
+</p>
+<img src="markdown_figs/chart_class_comm_bld_kl.png" alt="Commercial building energy consumption by sector in Kuala Lumpur" width="100%" />
+</div>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_diff_absolute_comm_bld_kl.png&quot;)</code></pre>
+<div class="figure" style="text-align: center">
+<p class="caption">
+BAU energy consumption (left) and the difference between BAU and the
+Policies and Carbon Neutral scenarios
+</p>
+<img src="markdown_figs/chart_class_diff_absolute_comm_bld_kl.png" alt="BAU energy consumption (left) and the difference between BAU and the Policies and Carbon Neutral scenarios" width="100%" />
+</div>
 <p><br></p>
 <!-------------------------->
 </div>
 </div>
 <div id="transportation-by-mode" class="section level4 tabset"
-number="6.2.2.2">
-<h4 class="tabset"><span class="header-section-number">6.2.2.2</span>
+number="7.2.2.2">
+<h4 class="tabset"><span class="header-section-number">7.2.2.2</span>
 Transportation by Mode</h4>
 <!-------------------------->
 <hr />
-<div id="malaysia-vs-kuala-lumpur-5" class="section level5"
-number="6.2.2.2.1">
-<h5><span class="header-section-number">6.2.2.2.1</span> Malaysia vs
-Kuala Lumpur</h5>
-<pre class="r"><code>transport_mode_params &lt;- c(&quot;transportFreightVMTByMode&quot;, &quot;transportPassengerVMTByMode&quot;)
-
-transport_m &lt;- malaysia %&gt;% 
-  filter(param %in% transport_mode_params,
-         region != &quot;Malaysia&quot;) %&gt;%
-  mutate(param = units) %&gt;%
-  rchart::chart(save = F, 
-                show = F,
-                size_text = 12)
-
-transport_m[[c]]</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-transport-mode-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<p><br></p>
-</div>
-<div id="malaysia-5" class="section level5" number="6.2.2.2.2">
-<h5><span class="header-section-number">6.2.2.2.2</span> Malaysia</h5>
+<div id="malaysia-3" class="section level5" number="7.2.2.2.1">
+<h5><span class="header-section-number">7.2.2.2.1</span> Malaysia</h5>
 <pre class="r"><code>transport_my_m &lt;- malaysia %&gt;% 
-  filter(param %in% transport_mode_params,
+  filter(param == &quot;transportFreightVMTByMode&quot;,
          region == &quot;All of Malaysia&quot;) %&gt;%
   mutate(param = units) %&gt;%
-  rchart::chart(save = F, 
+  rchart::chart(save = T, 
                 show = F,
+                chart_type = c(&quot;class_absolute&quot;, &quot;class_diff_absolute&quot;),
                 scenRef = REF_SCENARIO,
-                size_text = 12)
+                ncol = 4,
+                folder = figure_path,
+                append = &quot;_freight_mode&quot;,
+                size_text = 24)
 
-transport_my_m$chart_class</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-transport-my-sce-mode-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>transport_my_m$chart_class_diff_absolute</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-transport-my-mode-1.png" width="100%" style="display: block; margin: auto;" /></p>
+transport_my_m &lt;- malaysia %&gt;% 
+  filter(param == &quot;transportPassengerVMTByMode&quot;,
+         region == &quot;All of Malaysia&quot;) %&gt;%
+  mutate(param = units) %&gt;%
+  rchart::chart(save = T, 
+                show = F,
+                chart_type = c(&quot;class_absolute&quot;, &quot;class_diff_absolute&quot;),
+                scenRef = REF_SCENARIO,
+                ncol = 4,
+                folder = figure_path,
+                append = &quot;_pass_mode&quot;,
+                size_text = 24)</code></pre>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_freight_mode.png&quot;)</code></pre>
+<div class="figure" style="text-align: center">
+<p class="caption">
+Freight vehicle kilometers traveled by mode in Malaysia
+</p>
+<img src="markdown_figs/chart_class_freight_mode.png" alt="Freight vehicle kilometers traveled by mode in Malaysia" width="100%" />
+</div>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_diff_absolute_freight_mode.png&quot;)</code></pre>
+<div class="figure" style="text-align: center">
+<p class="caption">
+BAU freight vehicle kilometers traveled (left) and the difference
+between BAU and the Policies and Carbon Neutral scenarios
+</p>
+<img src="markdown_figs/chart_class_diff_absolute_freight_mode.png" alt="BAU freight vehicle kilometers traveled (left) and the difference between BAU and the Policies and Carbon Neutral scenarios" width="100%" />
+</div>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_pass_mode.png&quot;)</code></pre>
+<div class="figure" style="text-align: center">
+<p class="caption">
+Passenger vehicle kilometers traveled by mode in Malaysia
+</p>
+<img src="markdown_figs/chart_class_pass_mode.png" alt="Passenger vehicle kilometers traveled by mode in Malaysia" width="100%" />
+</div>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_diff_absolute_pass_mode.png&quot;)</code></pre>
+<div class="figure" style="text-align: center">
+<p class="caption">
+BAU passenger vehicle kilometers traveled (left) and the difference
+between BAU and the Policies and Carbon Neutral scenarios
+</p>
+<img src="markdown_figs/chart_class_diff_absolute_pass_mode.png" alt="BAU passenger vehicle kilometers traveled (left) and the difference between BAU and the Policies and Carbon Neutral scenarios" width="100%" />
+</div>
 <p><br></p>
 </div>
-<div id="kuala-lumpur-5" class="section level5" number="6.2.2.2.3">
-<h5><span class="header-section-number">6.2.2.2.3</span> Kuala
+<div id="kuala-lumpur-3" class="section level5" number="7.2.2.2.2">
+<h5><span class="header-section-number">7.2.2.2.2</span> Kuala
 Lumpur</h5>
 <pre class="r"><code>transport_kl_m &lt;- malaysia %&gt;% 
-  filter(param %in% transport_mode_params,
+  filter(param == &quot;transportFreightVMTByMode&quot;,
          region == &quot;KualaLumpur&quot;) %&gt;%
   mutate(param = units) %&gt;%
-  rchart::chart(save = F, 
+  rchart::chart(save = T, 
                 show = F,
+                chart_type = c(&quot;class_absolute&quot;, &quot;class_diff_absolute&quot;),
                 scenRef = REF_SCENARIO,
-                size_text = 12)
+                ncol = 4,
+                folder = figure_path,
+                append = &quot;_freight_mode_kl&quot;,
+                size_text = 24)
 
-transport_kl_m$chart_class</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-transport-kl-sce-mode-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>transport_kl_m$chart_class_diff_absolute</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-transport-kl-mode-1.png" width="100%" style="display: block; margin: auto;" /></p>
+transport_kl_m &lt;- malaysia %&gt;% 
+  filter(param == &quot;transportPassengerVMTByMode&quot;,
+         region == &quot;KualaLumpur&quot;) %&gt;%
+  mutate(param = units) %&gt;%
+  rchart::chart(save = T, 
+                show = F,
+                chart_type = c(&quot;class_absolute&quot;, &quot;class_diff_absolute&quot;),
+                scenRef = REF_SCENARIO,
+                ncol = 4,
+                folder = figure_path,
+                append = &quot;_pass_mode_kl&quot;,
+                size_text = 24)</code></pre>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_freight_mode_kl.png&quot;)</code></pre>
+<div class="figure" style="text-align: center">
+<p class="caption">
+Freight vehicle kilometers traveled in Kuala Lumpur
+</p>
+<img src="markdown_figs/chart_class_freight_mode_kl.png" alt="Freight vehicle kilometers traveled in Kuala Lumpur" width="100%" />
+</div>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_diff_absolute_freight_mode_kl.png&quot;)</code></pre>
+<div class="figure" style="text-align: center">
+<p class="caption">
+BAU freight vehicle kilometers traveled (left) and the difference
+between BAU and the Policies and Carbon Neutral scenarios
+</p>
+<img src="markdown_figs/chart_class_diff_absolute_freight_mode_kl.png" alt="BAU freight vehicle kilometers traveled (left) and the difference between BAU and the Policies and Carbon Neutral scenarios" width="100%" />
+</div>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_pass_mode_kl.png&quot;)</code></pre>
+<div class="figure" style="text-align: center">
+<p class="caption">
+Passenger vehicle kilometers traveled in Kuala Lumpur
+</p>
+<img src="markdown_figs/chart_class_pass_mode_kl.png" alt="Passenger vehicle kilometers traveled in Kuala Lumpur" width="100%" />
+</div>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_diff_absolute_pass_mode_kl.png&quot;)</code></pre>
+<div class="figure" style="text-align: center">
+<p class="caption">
+BAU passenger vehicle kilometers traveled (left) and the difference
+between BAU and the Policies and Carbon Neutral scenarios
+</p>
+<img src="markdown_figs/chart_class_diff_absolute_pass_mode_kl.png" alt="BAU passenger vehicle kilometers traveled (left) and the difference between BAU and the Policies and Carbon Neutral scenarios" width="100%" />
+</div>
 <p><br></p>
 <!-------------------------->
 </div>
 </div>
 <div id="transportation-by-fuel" class="section level4 tabset"
-number="6.2.2.3">
-<h4 class="tabset"><span class="header-section-number">6.2.2.3</span>
+number="7.2.2.3">
+<h4 class="tabset"><span class="header-section-number">7.2.2.3</span>
 Transportation by Fuel</h4>
 <!-------------------------->
 <hr />
-<div id="malaysia-vs-kuala-lumpur-6" class="section level5"
-number="6.2.2.3.1">
-<h5><span class="header-section-number">6.2.2.3.1</span> Malaysia vs
-Kuala Lumpur</h5>
-<pre class="r"><code>transport_fuel_params &lt;- c(&quot;transportFreightVMTByFuel&quot;, &quot;transportPassengerVMTByFuel&quot;)
-
-transport_f &lt;- malaysia %&gt;% 
-  filter(param %in% transport_fuel_params,
-         region != &quot;Malaysia&quot;) %&gt;%
-  mutate(param = units) %&gt;%
-  rchart::chart(save = F, 
-                show = F,
-                size_text = 12)
-
-transport_f[[c]]</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-transport-fuel-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<p><br></p>
-</div>
-<div id="malaysia-6" class="section level5" number="6.2.2.3.2">
-<h5><span class="header-section-number">6.2.2.3.2</span> Malaysia</h5>
+<div id="malaysia-4" class="section level5" number="7.2.2.3.1">
+<h5><span class="header-section-number">7.2.2.3.1</span> Malaysia</h5>
 <pre class="r"><code>transport_my_f &lt;- malaysia %&gt;% 
-  filter(param %in% transport_fuel_params,
+  filter(param == &quot;energyFinalByFuelTransportFreightEJ&quot;,
          region == &quot;All of Malaysia&quot;) %&gt;%
   mutate(param = units) %&gt;%
-  rchart::chart(save = F, 
+  rchart::chart(save = T, 
                 show = F,
+                chart_type = c(&quot;class_absolute&quot;, &quot;class_diff_absolute&quot;),
                 scenRef = REF_SCENARIO,
-                size_text = 12)
+                ncol = 4,
+                folder = figure_path,
+                append = &quot;_freight_fuel&quot;,
+                size_text = 24)
 
-transport_my_f$chart_class</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-transport-my-sce-fuel-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>transport_my_f$chart_class_diff_absolute</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-transport-my-fuel-1.png" width="100%" style="display: block; margin: auto;" /></p>
+transport_my_f &lt;- malaysia %&gt;% 
+  filter(param == &quot;energyFinalByFuelTransportPassEJ&quot;,
+         region == &quot;All of Malaysia&quot;) %&gt;%
+  mutate(param = units) %&gt;%
+  rchart::chart(save = T, 
+                show = F,
+                chart_type = c(&quot;class_absolute&quot;, &quot;class_diff_absolute&quot;),
+                scenRef = REF_SCENARIO,
+                ncol = 4,
+                folder = figure_path,
+                append = &quot;_pass_fuel&quot;,
+                size_text = 24)</code></pre>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_freight_fuel.png&quot;)</code></pre>
+<div class="figure" style="text-align: center">
+<p class="caption">
+Freight energy consumption by fuel in Malaysia
+</p>
+<img src="markdown_figs/chart_class_freight_fuel.png" alt="Freight energy consumption by fuel in Malaysia" width="100%" />
+</div>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_diff_absolute_freight_fuel.png&quot;)</code></pre>
+<div class="figure" style="text-align: center">
+<p class="caption">
+BAU energy consumption (left) and the difference between BAU and the
+Policies and Carbon Neutral scenarios
+</p>
+<img src="markdown_figs/chart_class_diff_absolute_freight_fuel.png" alt="BAU energy consumption (left) and the difference between BAU and the Policies and Carbon Neutral scenarios" width="100%" />
+</div>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_pass_fuel.png&quot;)</code></pre>
+<div class="figure" style="text-align: center">
+<p class="caption">
+Passenger energy consumption by fuel in Malaysia
+</p>
+<img src="markdown_figs/chart_class_pass_fuel.png" alt="Passenger energy consumption by fuel in Malaysia" width="100%" />
+</div>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_diff_absolute_pass_fuel.png&quot;)</code></pre>
+<div class="figure" style="text-align: center">
+<p class="caption">
+BAU energy consumption (left) and the difference between BAU and the
+Policies and Carbon Neutral scenarios
+</p>
+<img src="markdown_figs/chart_class_diff_absolute_pass_fuel.png" alt="BAU energy consumption (left) and the difference between BAU and the Policies and Carbon Neutral scenarios" width="100%" />
+</div>
 <p><br></p>
 </div>
-<div id="kuala-lumpur-6" class="section level5" number="6.2.2.3.3">
-<h5><span class="header-section-number">6.2.2.3.3</span> Kuala
+<div id="kuala-lumpur-4" class="section level5" number="7.2.2.3.2">
+<h5><span class="header-section-number">7.2.2.3.2</span> Kuala
 Lumpur</h5>
 <pre class="r"><code>transport_kl_f &lt;- malaysia %&gt;% 
-  filter(param %in% transport_fuel_params,
+  filter(param == &quot;transportFreightVMTByFuel&quot;,
          region == &quot;KualaLumpur&quot;) %&gt;%
   mutate(param = units) %&gt;%
-  rchart::chart(save = F, 
+  rchart::chart(save = T, 
                 show = F,
+                chart_type = c(&quot;class_absolute&quot;, &quot;class_diff_absolute&quot;),
                 scenRef = REF_SCENARIO,
-                size_text = 12)
+                ncol = 4,
+                folder = figure_path,
+                append = &quot;_freight_fuel_kl&quot;,
+                size_text = 24)
 
-transport_kl_f$chart_class</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-transport-kl-sce-fuel-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>transport_kl_f$chart_class_diff_absolute</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-transport-kl-fuel-1.png" width="100%" style="display: block; margin: auto;" /></p>
+transport_kl_f &lt;- malaysia %&gt;% 
+  filter(param == &quot;transportPassengerVMTByFuel&quot;,
+         region == &quot;KualaLumpur&quot;) %&gt;%
+  mutate(param = units) %&gt;%
+  rchart::chart(save = T, 
+                show = F,
+                chart_type = c(&quot;class_absolute&quot;, &quot;class_diff_absolute&quot;),
+                scenRef = REF_SCENARIO,
+                ncol = 4,
+                folder = figure_path,
+                append = &quot;_pass_fuel_kl&quot;,
+                size_text = 24)</code></pre>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_freight_fuel_kl.png&quot;)</code></pre>
+<div class="figure" style="text-align: center">
+<p class="caption">
+Freight energy consumption by fuel in Kuala Lumpur
+</p>
+<img src="markdown_figs/chart_class_freight_fuel_kl.png" alt="Freight energy consumption by fuel in Kuala Lumpur" width="100%" />
+</div>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_diff_absolute_freight_fuel_kl.png&quot;)</code></pre>
+<div class="figure" style="text-align: center">
+<p class="caption">
+BAU energy consumption (left) and the difference between BAU and the
+Policies and Carbon Neutral scenarios
+</p>
+<img src="markdown_figs/chart_class_diff_absolute_freight_fuel_kl.png" alt="BAU energy consumption (left) and the difference between BAU and the Policies and Carbon Neutral scenarios" width="100%" />
+</div>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_pass_fuel_kl.png&quot;)</code></pre>
+<div class="figure" style="text-align: center">
+<p class="caption">
+Passenger energy consumption by fuel in Kuala Lumpur
+</p>
+<img src="markdown_figs/chart_class_pass_fuel_kl.png" alt="Passenger energy consumption by fuel in Kuala Lumpur" width="100%" />
+</div>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_diff_absolute_pass_fuel_kl.png&quot;)</code></pre>
+<div class="figure" style="text-align: center">
+<p class="caption">
+BAU energy consumption (left) and the difference between BAU and the
+Policies and Carbon Neutral scenarios
+</p>
+<img src="markdown_figs/chart_class_diff_absolute_pass_fuel_kl.png" alt="BAU energy consumption (left) and the difference between BAU and the Policies and Carbon Neutral scenarios" width="100%" />
+</div>
 <p><br></p>
 <!-------------------------->
 </div>
 </div>
-<div id="industry-energy-by-subsector" class="section level4 tabset"
-number="6.2.2.4">
-<h4 class="tabset"><span class="header-section-number">6.2.2.4</span>
-Industry Energy by Subsector</h4>
+<div id="industry-energy-by-fuel" class="section level4 tabset"
+number="7.2.2.4">
+<h4 class="tabset"><span class="header-section-number">7.2.2.4</span>
+Industry Energy by Fuel</h4>
 <!-------------------------->
 <hr />
-<div id="malaysia-vs-kuala-lumpur-7" class="section level5"
-number="6.2.2.4.1">
-<h5><span class="header-section-number">6.2.2.4.1</span> Malaysia vs
-Kuala Lumpur</h5>
-<pre class="r"><code>industry_energy &lt;- malaysia %&gt;% 
-  filter(param == &quot;energyFinalSubsecByFuelIndusEJ&quot;,
-         region != &quot;Malaysia&quot;) %&gt;%
-  mutate(param = units) %&gt;%
-  rchart::chart(save = F, 
-                show = F,
-                size_text = 12)
-
-
-industry_energy[[c]]</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-industry-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<p><br></p>
-</div>
-<div id="malaysia-7" class="section level5" number="6.2.2.4.2">
-<h5><span class="header-section-number">6.2.2.4.2</span> Malaysia</h5>
+<div id="malaysia-5" class="section level5" number="7.2.2.4.1">
+<h5><span class="header-section-number">7.2.2.4.1</span> Malaysia</h5>
 <pre class="r"><code>industry_energy_my &lt;- malaysia %&gt;% 
   filter(param == &quot;energyFinalSubsecByFuelIndusEJ&quot;,
          region == &quot;All of Malaysia&quot;) %&gt;%
   mutate(param = units) %&gt;%
-  rchart::chart(save = F, 
+  rchart::chart(save = T, 
                 show = F,
+                chart_type = c(&quot;class_absolute&quot;, &quot;class_diff_absolute&quot;),
                 scenRef = REF_SCENARIO,
-                size_text = 10,
-                ncol = 4)
-
-industry_energy_my$chart_class</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-industry-sce-my-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>industry_energy_my$chart_class_diff_absolute</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-industry-my-1.png" width="100%" style="display: block; margin: auto;" /></p>
+                ncol = 4,
+                folder = figure_path,
+                append = &quot;_indus_fuel&quot;,
+                size_text = 24)</code></pre>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_indus_fuel.png&quot;)</code></pre>
+<div class="figure" style="text-align: center">
+<p class="caption">
+Industry energy consumption by fuel in Malaysia
+</p>
+<img src="markdown_figs/chart_class_indus_fuel.png" alt="Industry energy consumption by fuel in Malaysia" width="100%" />
+</div>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_diff_absolute_indus_fuel.png&quot;)</code></pre>
+<div class="figure" style="text-align: center">
+<p class="caption">
+BAU energy consumption (left) and the difference between BAU and the
+Policies and Carbon Neutral scenarios
+</p>
+<img src="markdown_figs/chart_class_diff_absolute_indus_fuel.png" alt="BAU energy consumption (left) and the difference between BAU and the Policies and Carbon Neutral scenarios" width="100%" />
+</div>
 <p><br></p>
 </div>
-<div id="kuala-lumpur-7" class="section level5" number="6.2.2.4.3">
-<h5><span class="header-section-number">6.2.2.4.3</span> Kuala
+<div id="kuala-lumpur-5" class="section level5" number="7.2.2.4.2">
+<h5><span class="header-section-number">7.2.2.4.2</span> Kuala
 Lumpur</h5>
 <pre class="r"><code>industry_energy_kl &lt;- malaysia %&gt;% 
   filter(param == &quot;energyFinalSubsecByFuelIndusEJ&quot;,
          region == &quot;KualaLumpur&quot;) %&gt;%
   mutate(param = units) %&gt;%
-  rchart::chart(save = F, 
+  rchart::chart(save = T, 
                 show = F,
+                chart_type = c(&quot;class_absolute&quot;, &quot;class_diff_absolute&quot;),
                 scenRef = REF_SCENARIO,
-                size_text = 10,
-                ncol = 4)
-
-industry_energy_kl$chart_class</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-industry-sce-kl-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>industry_energy_kl$chart_class_diff_absolute</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/rchart-industry-kl-1.png" width="100%" style="display: block; margin: auto;" /></p>
+                ncol = 4,
+                folder = figure_path,
+                append = &quot;_indus_fuel_kl&quot;,
+                size_text = 24)</code></pre>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_indus_fuel_kl.png&quot;)</code></pre>
+<div class="figure" style="text-align: center">
+<p class="caption">
+Industry energy consumption by fuel in Kuala Lumpur
+</p>
+<img src="markdown_figs/chart_class_indus_fuel_kl.png" alt="Industry energy consumption by fuel in Kuala Lumpur" width="100%" />
+</div>
+<pre class="r"><code>knitr::include_graphics(&quot;./markdown_figs/chart_class_diff_absolute_indus_fuel_kl.png&quot;)</code></pre>
+<div class="figure" style="text-align: center">
+<p class="caption">
+BAU energy consumption (left) and the difference between BAU and the
+Policies and Carbon Neutral scenarios
+</p>
+<img src="markdown_figs/chart_class_diff_absolute_indus_fuel_kl.png" alt="BAU energy consumption (left) and the difference between BAU and the Policies and Carbon Neutral scenarios" width="100%" />
+</div>
 <p><br></p>
 <!-------------------------->
 <!-------------------------->
@@ -2830,8 +2960,8 @@ industry_energy_kl$chart_class</code></pre>
 </div>
 </div>
 </div>
-<div id="assumptions-and-validation" class="section level1" number="7">
-<h1><span class="header-section-number">7</span> Assumptions and
+<div id="assumptions-and-validation" class="section level1" number="8">
+<h1><span class="header-section-number">8</span> Assumptions and
 Validation</h1>
 <!-------------------------->
 <!-------------------------->
@@ -2840,8 +2970,8 @@ Validation</h1>
 </p>
 <!-------------------------->
 <div id="socioeconomic-assumptions" class="section level2 tabset"
-number="7.1">
-<h2 class="tabset"><span class="header-section-number">7.1</span>
+number="8.1">
+<h2 class="tabset"><span class="header-section-number">8.1</span>
 Socioeconomic assumptions</h2>
 <!-------------------------->
 <hr />
@@ -2905,194 +3035,53 @@ of Statistics Malaysia</a></span><br/>
 <!-------------------------->
 </div>
 <div id="validation-of-gcam-outputs" class="section level2"
-number="7.2">
-<h2><span class="header-section-number">7.2</span> Validation of GCAM
+number="8.2">
+<h2><span class="header-section-number">8.2</span> Validation of GCAM
 outputs</h2>
 <!-------------------------->
 <hr />
-<p>This section will compare local data in sources from Malaysia and
-Kuala Lumpur to GCAM outputs.</p>
+<p>This section will compare local Malaysia and KL data (where
+available) to selected GCAM outputs.</p>
 <p><br></p>
-<div id="population-and-gdp" class="section level3" number="7.2.1">
-<h3><span class="header-section-number">7.2.1</span> Population and
+<div id="population-and-gdp" class="section level3" number="8.2.1">
+<h3><span class="header-section-number">8.2.1</span> Population and
 GDP</h3>
 <pre class="r"><code>local_pop &lt;- read.csv(&quot;../data/malaysia/local_data_population.csv&quot;)
 local_gdp &lt;- read.csv(&quot;../data/malaysia/local_data_gdp.csv&quot;)
 
 local_bau &lt;- bind_rows(local_gdp, local_pop)
 
-gcam_bau &lt;- malaysia %&gt;%
+gcam_bau &lt;- bind_rows(bau, policies, carbon_neutral) %&gt;%
   filter(param == c(&quot;pop&quot;, &quot;gdp&quot;),
-         region != &quot;Rest of Malaysia&quot;,
-         scenario == REF_SCENARIO) %&gt;%
+         region %in% c(&quot;Malaysia&quot;, &quot;KualaLumpur&quot;),
+         scenario == &quot;Ref&quot;) %&gt;%
   mutate(param = units,
          scenario = &quot;GCAM Reference&quot;,
          year = x)
 
-bau &lt;- bind_rows(local_bau, gcam_bau)
+bau_valid &lt;- bind_rows(local_bau, gcam_bau)
 
 # Plot for Malaysia
-bau %&gt;% 
+bau_valid %&gt;% 
   filter(region == &quot;Malaysia&quot;) %&gt;%
   ggplot(aes(x = year, y = value, color = scenario)) + 
-  geom_line() +
+  geom_line(size = 1) +
   facet_wrap(~param, scales = &quot;free&quot;) +
   ggtitle(&quot;Malaysia&quot;) +
+  scale_color_manual(values = c(&quot;darkred&quot;, &quot;darkblue&quot;)) +
   theme_light()</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/local-socioeconomics-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <pre class="r"><code># Plot for KL
-bau %&gt;% 
+bau_valid %&gt;% 
   filter(region == &quot;KualaLumpur&quot;) %&gt;%
   ggplot(aes(x = year, y = value, color = scenario)) + 
-  geom_line() +
+  geom_line(size = 1) +
   facet_wrap(~param, scales = &quot;free&quot;) +
   ggtitle(&quot;Kuala Lumpur&quot;) +
+  scale_color_manual(values = c(&quot;darkred&quot;, &quot;darkblue&quot;)) +
   theme_light()</code></pre>
 <p><img src="modeling_malaysia_files/figure-html/local-socioeconomics-2.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br></p>
-</div>
-<div id="co2-emissions-by-sector" class="section level3" number="7.2.2">
-<h3><span class="header-section-number">7.2.2</span> CO2 emissions by
-sector</h3>
-<pre class="r"><code>malaysia_build_ind &lt;-  co2_my %&gt;%
-  filter(scenario == REF_SCENARIO, 
-         class %in% c(&quot;building&quot;, &quot;industry&quot;)) %&gt;%
-  mutate(param = units,
-         scenario = &quot;GCAM Reference&quot;,
-         year = x)
-
-malaysia_transport &lt;- co2_my %&gt;%
-  filter(scenario == REF_SCENARIO,
-         class %in% c(&quot;International Aviation&quot;, &quot;International Shipping&quot;, &quot;transport&quot;)) %&gt;%
-  mutate(param = units,
-         scenario = &quot;GCAM Reference&quot;,
-         year = x,
-         class = case_when(class %in% c(&quot;International Aviation&quot;, &quot;International Shipping&quot;) ~ &quot;transport&quot;,
-                           T~class)) %&gt;%
-  group_by(year) %&gt;%
-  mutate(total = sum(value)) %&gt;%
-  distinct(year, .keep_all = TRUE)
-
-malaysia_co2 &lt;- bind_rows(malaysia_build_ind, malaysia_transport) 
-
-malaysia_co2 %&gt;%
-  ggplot(aes(x = year, y = value, fill = class)) + 
-  geom_col() +
-  labs(title = &quot;Malaysia, GCAM reference&quot;,
-       y = &quot;MTCO2eq&quot;) +
-  scale_fill_manual(breaks = c(&quot;building&quot;, &quot;industry&quot;, &quot;transport&quot;),
-                    values = c(&quot;#facda4&quot;, &quot;#cef4d1&quot;, &quot;#d0f6f7&quot;)) +
-  theme_light()</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/local-emissions-my-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>local_co2 &lt;- read.csv(&quot;../data/malaysia/local_data_emissions_by_sector.csv&quot;)
-
-gcam_co2 &lt;- co2_kl %&gt;%
-  filter(scenario == REF_SCENARIO, 
-         class %in% c(&quot;building&quot;, &quot;industry&quot;)) %&gt;%
-  mutate(param = units,
-         scenario = &quot;GCAM Reference&quot;,
-         year = x)
-
-# Aggregate GCAM classes into broad categories
-gcam_transport &lt;- co2_kl %&gt;%
-  filter(scenario == REF_SCENARIO,
-         class %in% c(&quot;International Aviation&quot;, &quot;International Shipping&quot;, &quot;transport&quot;)) %&gt;%
-  mutate(param = units,
-         scenario = &quot;GCAM Reference&quot;,
-         year = x,
-         class = case_when(class %in% c(&quot;International Aviation&quot;, &quot;International Shipping&quot;) ~ &quot;transport&quot;,
-                           T~class)) %&gt;%
-  group_by(year) %&gt;%
-  mutate(total = sum(value)) %&gt;%
-  distinct(year, .keep_all = TRUE)
-
-bau_co2 &lt;- bind_rows(local_co2, gcam_co2, gcam_transport)
-
-bau_co2 %&gt;% 
-  ggplot(aes(x = year, y = value, fill = class)) + 
-  geom_col() +
-  facet_wrap(~scenario) +
-  labs(title = &quot;Kuala Lumpur&quot;,
-       y = &quot;MTCO2eq&quot;) +
-  scale_fill_manual(breaks = c(&quot;building&quot;, &quot;industry&quot;, &quot;transport&quot;),
-                    values = c(&quot;#facda4&quot;, &quot;#cef4d1&quot;, &quot;#d0f6f7&quot;)) +
-  theme_light()</code></pre>
-<p><img src="modeling_malaysia_files/figure-html/local-emissions-kl-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<p><br></p>
-</div>
-<div id="energy-by-fuel-and-sector" class="section level3"
-number="7.2.3">
-<h3><span class="header-section-number">7.2.3</span> Energy by fuel and
-sector</h3>
-<pre class="r"><code>final_energy_ref_my &lt;- malaysia %&gt;% 
-  filter(param %in% energy_parameters,
-         region == &quot;All of Malaysia&quot;,
-         scenario == REF_SCENARIO) %&gt;%
-  mutate(param = units) %&gt;%
-  rchart::chart(save = F,
-                show = F)
-
-final_energy_ref_my$chart_class</code></pre>
-<div class="figure" style="text-align: center">
-<img src="modeling_malaysia_files/figure-html/local-energy-my-1.png" alt="Final energy by fuel and sector in Malaysia." width="100%" />
-<p class="caption">
-Final energy by fuel and sector in Malaysia.
-</p>
-</div>
-<p><br></p>
-<pre class="r"><code>final_energy_ref_kl &lt;- malaysia %&gt;% 
-  filter(param %in% energy_parameters,
-         region == &quot;KualaLumpur&quot;,
-         scenario == REF_SCENARIO) %&gt;%
-  mutate(param = units) %&gt;%
-  rchart::chart(save = F,
-                show = F)
-
-final_energy_ref_kl$chart_class</code></pre>
-<div class="figure" style="text-align: center">
-<img src="modeling_malaysia_files/figure-html/local-energy-kl-1.png" alt="Final energy by fuel and sector in Kuala Lumpur." width="100%" />
-<p class="caption">
-Final energy by fuel and sector in Kuala Lumpur.
-</p>
-</div>
-<p><br></p>
-</div>
-<div id="electricity-by-fuel-and-sector" class="section level3"
-number="7.2.4">
-<h3><span class="header-section-number">7.2.4</span> Electricity by fuel
-and sector</h3>
-<pre class="r"><code>elec_ref_my &lt;- malaysia %&gt;% 
-  filter(param %in% electricity_parameters,
-         region == &quot;All of Malaysia&quot;,
-         scenario == REF_SCENARIO) %&gt;%
-  mutate(param = units) %&gt;%
-  rchart::chart(save = F,
-                show = F,
-                size_text = 10)
-
-elec_ref_my$chart_class</code></pre>
-<div class="figure" style="text-align: center">
-<img src="modeling_malaysia_files/figure-html/local-elec-my-1.png" alt="Electricity by fuel and sector in Malaysia." width="100%" />
-<p class="caption">
-Electricity by fuel and sector in Malaysia.
-</p>
-</div>
-<p><br></p>
-<pre class="r"><code>elec_ref_kl &lt;- malaysia %&gt;% 
-  filter(param %in% electricity_parameters,
-         region == &quot;KualaLumpur&quot;,
-         scenario == REF_SCENARIO) %&gt;%
-  mutate(param = units) %&gt;%
-  rchart::chart(save = F,
-                show = F)
-
-elec_ref_kl$chart_class</code></pre>
-<div class="figure" style="text-align: center">
-<img src="modeling_malaysia_files/figure-html/local-elec-kl-1.png" alt="Electricity by sector in Kuala Lumpur." width="85%" />
-<p class="caption">
-Electricity by sector in Kuala Lumpur.
-</p>
-</div>
 <p><br></p>
 </div>
 </div>
