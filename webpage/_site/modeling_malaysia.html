@@ -629,6 +629,7 @@ Carbon Neutral Scenario
 </tr>
 </tbody>
 </table>
+<p><br></p>
 <!-------------------------->
 <!-------------------------->
 </div>
@@ -654,6 +655,7 @@ Sets of policies modeled
 <p><br></p>
 <p>The following subsections give additional technical details and
 explanations for the policies listed above.</p>
+<p><br></p>
 <div id="high-efficiency-appliances" class="section level2"
 number="5.1">
 <h2><span class="header-section-number">5.1</span> High Efficiency
@@ -1276,8 +1278,8 @@ Policies, Carbon Neutral
 <a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/trn_modal_shift.xml" style="     ">trn_modal_shift.xml</a>
 </td>
 <td style="text-align:left;">
-Increases ratio of public to private transportation to 50-50 in Kuala
-Lumpur and 42-58 in the rest of the country in 2050
+Increases ratio of public to private transportation to 80-20 in Kuala
+Lumpur and 55-45 in the rest of the country in 2050
 </td>
 </tr>
 </tbody>
@@ -1308,7 +1310,12 @@ style="background-color:#fffae0; border-left: solid #1f1f1f 4px; border-radius: 
 <b>Approach</b>
 </p>
 <p style="margin-left:1em;">
-FILL IN HERE
+To represent a transition to public transportation, we adjust the
+shareweights of public transportation modes (Bus, Rail, Walk, and Cycle)
+in Kuala Lumpur and the Rest of Malaysia in order to increase their
+share in the market. Representing a modal shift in GCAM involves
+guessing and checking- that is, changing the shareweights, running the
+model, checking the output, and fine-tuning from there.
 </p>
 <p></span></p>
 </div>
@@ -1332,7 +1339,11 @@ style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 
 <li>Download the “<a
 href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/trn_modal_shift.xml">trn_modal_shift.xml</a>”
 file to the folder.</li>
-<li>To make custom adjustments _______________.</li>
+<li>To make custom adjustments, change the <code>share-weight</code> for
+<code>year="2100"</code> in a given <code>tranSubsector</code>.
+Increasing the <code>share-weight</code> will result in a greater share
+of the mode that was adjusted, while decreasing it will result in
+less.</li>
 <li>Save the xml and then point to it in your configuration file by
 adding the line:
 <code>&lt;Value name = "scen"&gt;../input/addons/malaysia/trn_modal_shift.xml&lt;/Value&gt;</code></li>
@@ -1449,9 +1460,8 @@ style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 
 <ol style="list-style-type: decimal">
 <li>Create a folder in the input directory:
 <code>./gcam-core/input/addons</code>.</li>
-<li>Download the “[trn_ev_cost_parity.xml](<a
-href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/trn_ev_cost_parity.xml"
-class="uri">https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/trn_ev_cost_parity.xml</a>”
+<li>Download the “<a
+href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/trn_ev_cost_parity.xml">trn_ev_cost_parity.xml</a>”
 file to the folder.</li>
 <li>To make custom adjustments to the EV cost trajectory, set the
 desired <code>input-cost</code> for each year within
@@ -1493,7 +1503,7 @@ Policies, Carbon Neutral
 <a href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_gen_shares.xml" style="     ">elec_gen_shares.xml</a>
 </td>
 <td style="text-align:left;">
-Sets floors for renewable electricity generation technologies
+Sets shares for renewable electricity generation technologies
 </td>
 </tr>
 <tr>
@@ -1519,10 +1529,11 @@ style="background-color:#E1F4F5; border-left: solid #1f1f1f 4px; border-radius: 
 <b>Goal</b>
 </p>
 <p style="margin-left:1em;">
-<p>The goal of this example is to set a minimum value (floor) in GCAM
-for the amount of electricity generation from three renewable energy
-technologies (solar, hydro, and biomass) corresponding with the planned
-percentages in the KLLCSBP2030 (below).</p>
+<p>The goal of this example is to set a share for the amount of
+electricity generation from two renewable energy technologies (solar and
+biomass) corresponding with the planned percentages in the KLLCSBP2030
+(below). Because hydropower is exogenous in GCAM, we set a generation
+value (in EJ) rather than a share.</p>
 <p align="center">
 <img src="images/KL_2030_power.png">
 </p>
@@ -1584,8 +1595,7 @@ implement these options.
 <!-------------------------->
 <!---GCAM Implementation---->
 <!-------------------------->
-<div class="warning"
-style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;">
+<div class="warning" style='background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 4px; padding:0.7em;'>
 <span>
 <p style="text-align:center; font-size:24px">
 <b>GCAM Implementation</b>
@@ -1597,26 +1607,43 @@ style="background-color:#F5E5E1; border-left: solid #1f1f1f 4px; border-radius: 
 <li>Download the “<a
 href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_gen_shares.xml">elec_gen_shares.xml</a>”
 file to the folder.</li>
-<li>To make adjustments: within each
-<code>policy-portfolio-standard</code> tag in the XML, adjust the
-following:</li>
+<li>To make adjustments for generation sources currently included
+(solar, biomass): within each <code>minicam-energy-input</code> tag in
+the XML, adjust the <code>current-coef</code> for each year in which a
+floor is desired. The find + replace function is useful here due to the
+size of the XML.</li>
+<li>To add a new generation source to set a share for</li>
 </ol>
 </p>
-<ul style="margin-left:4em; text-align:left;">
+<ul style='margin-left:4em; text-align:left;'>
 <li>
-<code>constraint</code> for each year in which a floor is desired
+Create a <code>policy-portfolio-standard</code> for the technology (use
+current XML as an example).
 </li>
 <li>
-Set <code>min-price</code> to a large negative value for years in which
-an exact constraint, rather than a floor, is desired
+Add this technology as a <code>minicam-energy-input</code> within each
+<code>supplysector</code> or
+<code>pass-through-sector</code>/<code>subsector</code>/<code>stub-technology</code>
+for every <code>period</code>, and adjust the <code>current-coef</code>.
 </li>
+<li>
+Create a <code>res-secondary-output</code> for this technology, where
+applicable. For example, a <code>res-secondary-output</code> is created
+for solar in
+<code>supplysector</code>:electricity/<code>subsector</code>:solar/<code>stub-technology</code>:PV,
+<code>supplysector</code>:electricity/<code>subsector</code>:solar/<code>stub-technology</code>:PV_storage,
+<code>supplysector</code>:elect_td_bld/<code>subsector</code>:rooftop_pv/<code>stub-technology</code>:rooftop_pv,
+<code>pass-through-sector</code>:elec_CSP/<code>subsector</code>:CSP/<code>stub-technology</code>:CSP
+(recirculating),
+<code>pass-through-sector</code>:elec_CSP/<code>subsector</code>:CSP/<code>stub-technology</code>:CSP
+(dry_hybrid),
+<code>pass-through-sector</code>:elec_CSP_storage/<code>subsector</code>:CSP_storage/<code>stub-technology</code>:CSP_storage
+(recirculating), and
+<code>pass-through-sector</code>:elec_CSP_storage/<code>subsector</code>:CSP_storage/<code>stub-technology</code>:CSP_storage
+(dry_hybrid), because these are all solar-related technologies.
 </ul>
 <p style="margin-left:1em;">
-<ol start="4" style="list-style-type: decimal">
-<li>Within each <code>supplysector</code> tag in the XML, make sure that
-the corresponding <code>input-subsidy</code> is added within each
-relevant <code>period</code> for each <code>stub-technology</code> you
-wish to constrain.</li>
+<ol start="5" style="list-style-type: decimal">
 <li>To adjust the hydropower pathway, download the “<a
 href="https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/elec_hydro">elec_hydro.xml</a>”
 file to the folder.</li>
@@ -1629,7 +1656,7 @@ adding the lines:
 <code>&lt;Value name = "scen"&gt;../input/addons/malaysia/elec_hydro.xml&lt;/Value&gt;</code></li>
 </ol>
 </p>
-<p></span></p>
+</span>
 </div>
 <p><br></p>
 </div>
