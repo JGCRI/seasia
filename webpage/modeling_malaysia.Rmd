@@ -679,7 +679,7 @@ The goal of this policy is to increase the shares of public transportation metho
 <b>Approach</b></p>
 
 <p style='margin-left:1em;'>
-To represent a transition to public transportation, we adjust the shareweights of public transportation modes (Bus, Rail, Walk, and Cycle) in Kuala Lumpur and the Rest of Malaysia in order to increase their share in the market. Representing a modal shift in GCAM involves guessing and checking- that is, changing the shareweights, running the model, checking the output, and fine-tuning from there.
+To represent a transition to public transportation, we adjust the shareweights of public transportation modes (Bus, Rail, Walk, and Cycle) in Kuala Lumpur and the Rest of Malaysia in order to increase their share in the market. 
 </p>
 
 
@@ -796,7 +796,7 @@ To represent EV promotion, we use an approach that decreases the cost of EVs rel
 
 <p style='margin-left:1em;'>
 1. Create a folder in the input directory: `./gcam-core/input/addons`.
-2. Download the "[trn_ev_cost_parity.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/trn_ev_cost_parity.xml" file to the folder.
+2. Download the "[trn_ev_cost_parity.xml](https://github.com/JGCRI/seasia/blob/main/modeling/malaysia/sectoral_policies/trn_ev_cost_parity.xml)" file to the folder.
 4. To make custom adjustments to the EV cost trajectory, set the desired `input-cost` for each year within each`stub-technology` tag in the cost parity xml file.
 5. Save the xml and then point to it in your configuration file by adding the line: 
 `<Value name = "scen">../input/addons/malaysia/trn_ev_cost_parity.xml</Value>`
