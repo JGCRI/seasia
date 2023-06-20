@@ -10,13 +10,15 @@ knitr::opts_chunk$set(echo=FALSE, out.width="100%", results = "show")
 
 <!-------------------------->
 <!-------------------------->
-<h1 style="float:left;font-size:50px;vertical-align:middle"> Carbon Neutral SE Asia </h1>
-<img src="images/logo_us_state_department_color.png" style="float:right;height:100px;"> <img src="images/logo_pnnl.png" style="float:right;height:100px;">
+<h1 style="float:left;font-size:50px;vertical-align:middle"> Net-Zero SE Asia </h1>
+<img src="images/logo_tu.png" style="float:right;height:100px;padding-left:10px"> <img src="images/logo_utm.png" style="float:right;height:100px;padding-left:10px">
+<img src="images/logo_pnnl.png" style="float:right;height:100px;">
+<img src="images/logo_us_state_department_color.png" style="float:right;height:100px;"> 
 <!-------------------------->
 <!-------------------------->
 <p align="center"> <img src="images/divider.png"></p>
 
-The State Department's Bureau of Energy Resources (ENR) together with The U.S. Department of Energy’s Pacific Northwest National Laboratory (PNNL) is collaborating with local partners in selected ASEAN countries to supplement existing net-zero, carbon neutral, digitalization, and Smart City roadmap plans by providing integrated modeling and assessment capabilities. PNNL’s Global Change Analysis Model (GCAM) is a global model integrating socio-economics, energy, land use, water, and climate systems. PNNL will use GCAM to explore multi-level governance strategies at both the national and city scales to evaluate a decarbonization pathways.
+Welcome to our collaborative initiative led by the State Department's Bureau of Energy Resources (ENR), the U.S. Department of Energy's Pacific Northwest National Laboratory (PNNL), Thammasat University (TU), and the University of Technology Malaysia (UTM). Together, we forge partnerships with local decision-makers across national and city levels, encompassing ministries of environment, climate, energy, and electricity authorities. Leveraging PNNL's advanced Global Change Analysis Model (GCAM), we evaluate decarbonization pathways, considering socio-economic factors, energy systems, land use, water resources, and climate considerations. Our project bolsters effective multi-level governance strategies and supplements existing net-zero, carbon-neutral, digitalization, and Smart City roadmap plans.
 
 <p align="center"> <img src="images/divider.png"></p>
 
