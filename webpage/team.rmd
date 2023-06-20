@@ -145,7 +145,7 @@ output:
 </div>
 
 <div class="team-member">
-  <img src="images/team/team_daranee.jpg" alt="Dr. Daranee Jareemit">
+  <img src="images/team/team_daranee.JPG" alt="Dr. Daranee Jareemit">
   <h3>Dr. Daranee Jareemit</h3>
   <p>Associate Professor</p>
    <p class="affiliation">Thammasat University</p>
