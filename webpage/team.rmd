@@ -2,7 +2,11 @@
 pagetitle: SEAsia
 output: 
   html_document:
-    toc: false
+    toc: true
+    toc_float:
+      collapsed: false
+    toc_depth: 2
+    number_sections: false
     theme: cosmo
     #inverse: true
 ---
@@ -54,7 +58,7 @@ output:
 
 <!-------------------------->
 <!-------------------------->
-## Our Team
+# U.S. Department of State
 <!-------------------------->
 <!-------------------------->
 <p align="center"> <img src="images/divider.png"></p>
@@ -70,6 +74,16 @@ output:
   <p><a href="mailto:shiozakia@state.gov">shiozakia@state.gov</a></p>
 </div>
 
+<br>
+
+<!-------------------------->
+<!-------------------------->
+# PNNL
+<!-------------------------->
+<!-------------------------->
+<p align="center"> <img src="images/divider.png"></p>
+
+<br>
 
 <div class="team-member">
   <img src="images/team/team_placeholder.png" alt="Meredydd Evans">
@@ -118,6 +132,16 @@ output:
    <p class="affiliation">PNNL</p>
   <p><a href="mailto:siddarth.durga@pnnl.gov">siddarth.durga@pnnl.gov</a></p>
 </div>
+
+<!-------------------------->
+<!-------------------------->
+# Thammasat University
+<!-------------------------->
+<!-------------------------->
+<p align="center"> <img src="images/divider.png"></p>
+
+<br>
+
 
 <div class="team-member">
   <img src="images/team/team_bundit.jpg" alt="Dr. Bundit Lim">
@@ -180,6 +204,55 @@ output:
    <p class="affiliation">Thammasat University</p>
   <br>
 </div>
+
+<div class="team-member">
+  <img src="images/team/team_placeholder.png" alt="Abdullah Jonvisait">
+  <h3>Abdullah Jonvisait</h3>
+  <p>Research Assistant</p>
+   <p class="affiliation">Thammasat University</p>
+  <br>
+</div>
+
+<!-------------------------->
+<!-------------------------->
+# Universiti Teknologi Malaysia
+<!-------------------------->
+<!-------------------------->
+<p align="center"> <img src="images/divider.png"></p>
+
+<br>
+
+<div class="team-member">
+  <img src="images/team/team_placeholder.png" alt="Prof. Ho Chin Siong">
+  <h3>Prof. Ho Chin Siong</h3>
+  <p>Professor</p>
+   <p class="affiliation">UTM</p>
+  <br>
+</div>
+
+<div class="team-member">
+  <img src="images/team/team_placeholder.png" alt="Loon Wai Chau">
+  <h3>Loon Wai Chau</h3>
+  <p>Senior Lecturer</p>
+   <p class="affiliation">UTM</p>
+  <br>
+</div>
+
+<div class="team-member">
+  <img src="images/team/team_placeholder.png" alt="Gabriel Ling Hoh Teck">
+  <h3>Gabriel Ling Hoh Teck</h3>
+  <p>Faculty</p>
+   <p class="affiliation">UTM</p>
+</div>
+
+
+<div class="team-member">
+  <img src="images/team/team_placeholder.png" alt="Dr. Siti Hajar Othman">
+  <h3>Dr. Siti Hajar Othman</h3>
+  <p>Senior Lecturer</p>
+   <p class="affiliation">UTM</p>
+</div>
+
 
 ```{r child = 'footer.rmd'}
 ```
