@@ -1,0 +1,43 @@
+---
+pagetitle: SEAsia
+output: 
+  html_document:
+    toc: false
+    theme: cosmo
+    #inverse: true
+---
+
+```{r setup, echo = FALSE, message=FALSE, warning = FALSE, error = FALSE}
+knitr::opts_chunk$set(results = "hide", echo=FALSE, out.width = "75%", fig.align='center', message = F, warning = F, error = F, eval = T)
+```
+
+```{r child = 'header.rmd'}
+```
+
+<style>
+  .fa-icon {
+    font-size: 24px;
+    margin-right: 5px;
+  }
+</style>
+
+<br>
+
+<!-------------------------->
+<!-------------------------->
+## Contact us
+<!-------------------------->
+<!-------------------------->
+<p align="center"> <img src="images/divider.png"></p>
+
+
+
+- Email <i class="fa-icon fas fa-envelope"></i> zarrar.khan@pnnl.gov
+
+- Post an issue <i class="fa-icon fas fa-exclamation-circle"></i> on our [GitHub Issues Page](https://github.com/JGCRI/seasia/issues)
+
+- Start a discussion <i class="fa-icon fas fa-comments"></i> on our [Github Discussions Page](https://github.com/JGCRI/seasia/discussions/)
+
+
+```{r child = 'footer.rmd'}
+```
