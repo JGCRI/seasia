@@ -297,40 +297,91 @@ $(document).ready(function () {
 </div>
 
 
+<!-- Allow href to tabsets -->
+<script>
+window.onload = function() {
+  document.querySelector('a[href="' + window.location.href.match("#.*$") + '"]').click();
+}
+
+function goToTab() {
+  var hash = String(window.location.href.match("#.*$"));
+  var target = document.querySelector("a[role = 'tab'][href='" + hash + "']");
+  if (target !== null) {
+    var greatgrandparent = target.parentElement.parentElement.parentElement;
+    if (greatgrandparent.getAttribute("role") == "tabpanel") {
+      document.querySelector("a[role = 'tab'][href='#" + greatgrandparent.getAttribute("id") + "']").click();
+    }
+    target.click();
+    target.scrollIntoView();
+  }
+}
+window.onload = function() {
+  setTimeout(goToTab, 100);
+}
+window.onhashchange = goToTab;
+</script>
+<style type="text/css">
+script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+</style>
+<script>
+ $(document).ready(function() {
+    $('body').prepend('<div class=\"zoomDiv\"><img src=\"\" class=\"zoomImg\"></div>');
+    // onClick function for all plots (img's)
+    $('img:not(.zoomImg)').click(function() {
+      $('.zoomImg').attr('src', $(this).attr('src')).css({width: '100%'});
+      $('.zoomDiv').css({opacity: '1', width: 'auto', border: '1px solid white', borderRadius: '5px', position: 'fixed', top: '50%', left: '50%', marginRight: '-50%', transform: 'translate(-50%, -50%)', boxShadow: '0px 0px 500px 200px rgba(0, 0, 0, 0.8)', zIndex: '10000', overflow: 'auto', maxHeight: '100%'});
+    });
+    // onClick function for zoomImg
+    $('img.zoomImg').click(function() {
+      $('.zoomDiv').css({opacity: '0', width: '0%'}); 
+    });
+  });
+</script>
+<!-- Set table styles -->
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+</style>
+<style>
+  .fa-icon {
+    font-size: 24px;
+    margin-right: 5px;
+  }
+</style>
 <p><br></p>
 <!-------------------------->
 <!-------------------------->
-<h1 style="float:left;font-size:50px;vertical-align:middle">
-Carbon Neutral SE Asia
-</h1>
-<img src="images/logo_us_state_department_color.png" style="float:right;height:100px;">
-<img src="images/logo_pnnl.png" style="float:right;height:100px;">
-<!--------------------------> <!-------------------------->
+<div id="contact-us" class="section level2">
+<h2>Contact us</h2>
+<!-------------------------->
+<!-------------------------->
 <p align="center">
 <img src="images/divider.png">
 </p>
-<p>The State Department’s Bureau of Energy Resources (ENR) together with
-The U.S. Department of Energy’s Pacific Northwest National Laboratory
-(PNNL) is collaborating with local partners in selected ASEAN countries
-to supplement existing net-zero, carbon neutral, digitalization, and
-Smart City roadmap plans by providing integrated modeling and assessment
-capabilities. PNNL’s Global Change Analysis Model (GCAM) is a global
-model integrating socio-economics, energy, land use, water, and climate
-systems. PNNL will use GCAM to explore multi-level governance strategies
-at both the national and city scales to evaluate a decarbonization
-pathways.</p>
-<p align="center">
-<img src="images/divider.png">
-</p>
-<div class="container_map_outer">
-<div class="container_map">
-<p><a href = "thailand.html">
-<img src="images/thailand.jpg" width="100%" /> </a></p>
-</div>
-<div class="container_map">
-<p><a href = "malaysia.html">
-<img src="images/malaysia.jpg" width="100%" /> </a></p>
-</div>
+<ul>
+<li><p>Email <i class="fa-icon fas fa-envelope"></i> <a
+href="mailto:zarrar.khan@pnnl.gov"
+class="email">zarrar.khan@pnnl.gov</a></p></li>
+<li><p>Post an issue <i class="fa-icon fas fa-exclamation-circle"></i>
+on our <a href="https://github.com/JGCRI/seasia/issues">GitHub Issues
+Page</a></p></li>
+<li><p>Start a discussion <i class="fa-icon fas fa-comments"></i> on our
+<a href="https://github.com/JGCRI/seasia/discussions/">Github
+Discussions Page</a></p></li>
+</ul>
+<p><span class="navbar-fixed-bottom text-muted bg-info">WORK IN PROGRESS
+- DO NOT CITE
+<img src="images/logo_us_state_department_color.png" style="padding-left:20px; height:40px;">
+<img src="images/logo_pnnl_white.png" style="padding-left:20px; height:40px;"></span></p>
 </div>
 
 
