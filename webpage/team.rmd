@@ -90,7 +90,6 @@ output:
   <h3>Meredydd Evans</h3>
   <p>Earth Scientist</p>
   <p class="affiliation">PNNL</p>
-  <p><a href="mailto:m.evans@pnnl.gov">m.evans@pnnl.gov</a></p>
 </div>
 
 <div class="team-member">
@@ -98,7 +97,6 @@ output:
   <h3>Zarrar Khan</h3>
   <p>Computational Scientist</p>
    <p class="affiliation">PNNL</p>
-  <p><a href="mailto:zarrar.khan@pnnl.gov">zarrar.khan@pnnl.gov</a></p>
 </div>
 
 <div class="team-member">
@@ -106,7 +104,6 @@ output:
   <h3>Taryn Waite</h3>
   <p>Earth Scientist</p>
    <p class="affiliation">PNNL</p>
-  <p><a href="mailto:tayrn.waite@pnnl.gov">tayrn.waite@pnnl.gov</a></p>
 </div>
 
 <div class="team-member">
@@ -114,7 +111,6 @@ output:
   <h3>Maridee Weber</h3>
   <p>Earth Scientist</p>
    <p class="affiliation">PNNL</p>
-  <p><a href="mailto:maridee.weber@pnnl.gov">maridee.weber@pnnl.gov</a></p>
 </div>
 
 <div class="team-member">
@@ -122,7 +118,6 @@ output:
   <h3>Leeya Pressburger</h3>
   <p>Post Bachelors RA</p>
    <p class="affiliation">PNNL</p>
-  <p><a href="mailto:leeya.pressburger@pnnl.gov">leeya.pressburger@pnnl.gov</a></p>
 </div>
 
 <div class="team-member">
@@ -130,7 +125,6 @@ output:
   <h3>Siddarth Durga</h3>
   <p>Earth Scientist</p>
    <p class="affiliation">PNNL</p>
-  <p><a href="mailto:siddarth.durga@pnnl.gov">siddarth.durga@pnnl.gov</a></p>
 </div>
 
 <!-------------------------->
@@ -144,11 +138,10 @@ output:
 
 
 <div class="team-member">
-  <img src="images/team/team_bundit.jpg" alt="Dr. Bundit Lim">
-  <h3>Dr. Bundit Lim</h3>
+  <img src="images/team/team_bundit.jpg" alt="Dr. Bundit Limmeechokchai">
+  <h3>Dr. Bundit Limmeechokchai</h3>
   <p>Associate Professor</p>
    <p class="affiliation">Thammasat University</p>
-  <p><a href="mailto:bunditsiit.tu.ac.th">bunditsiit.tu.ac.th</a></p>
 </div>
 
 <div class="team-member">
@@ -164,7 +157,6 @@ output:
   <h3>Bijay Bahadur Pradhan</h3>
   <p>Post Doctoral Researcher Associate</p>
    <p class="affiliation">Thammasat University</p>
-  <br>
 </div>
 
 <div class="team-member">
