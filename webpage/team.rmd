@@ -86,9 +86,9 @@ output:
 <br>
 
 <div class="team-member">
-  <img src="images/team/team_placeholder.png" alt="Meredydd Evans">
+  <img src="images/team/team_meredydd.jpg" alt="Meredydd Evans">
   <h3>Meredydd Evans</h3>
-  <p>Earth Scientist</p>
+  <p>Team Lead</p>
   <p class="affiliation">PNNL</p>
 </div>
 
@@ -153,16 +153,16 @@ output:
 </div>
 
 <div class="team-member">
-  <img src="images/team/team_placeholder.png" alt="Bijay Bahadur Pradhan">
+  <img src="images/team/team_bijay.jpg" alt="Bijay Bahadur Pradhan">
   <h3>Bijay Bahadur Pradhan</h3>
-  <p>Post Doctoral Researcher Associate</p>
+  <p>Postdoctoral Fellow</p>
    <p class="affiliation">Thammasat University</p>
 </div>
 
 <div class="team-member">
   <img src="images/team/team_placeholder.png" alt="Salony Rajbhandari">
   <h3>Salony Rajbhandari</h3>
-  <p>Post Doctoral Researcher Associate</p>
+  <p>Postdoctoral Researcher Associate</p>
    <p class="affiliation">Thammasat University</p>
   <br>
 </div>
