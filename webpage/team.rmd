@@ -71,7 +71,6 @@ output:
   <h3>Aine Shiozaki</h3>
   <p>Foreign Affairs Officer</p>
   <p class="affiliation">U.S. Department of State</p>
-  <p><a href="mailto:shiozakia@state.gov">shiozakia@state.gov</a></p>
 </div>
 
 <br>
