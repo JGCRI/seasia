@@ -159,37 +159,30 @@ output:
 </div>
 
 <div class="team-member">
-  <img src="images/team/team_placeholder.png" alt="Salony Rajbhandari">
+  <img src="images/team/team_salony.jpg" alt="Salony Rajbhandari">
   <h3>Salony Rajbhandari</h3>
-  <p>Postdoctoral Researcher Associate</p>
+  <p>Researcher</p>
    <p class="affiliation">Thammasat University</p>
   <br>
 </div>
 
 <div class="team-member">
-  <img src="images/team/team_placeholder.png" alt="Achiraya Chaichaloempreecha">
+  <img src="images/team/team_achiraya.jpg" alt="Achiraya Chaichaloempreecha">
   <h3>Achiraya Chaichaloempreecha</h3>
-  <p>Doctoral Student</p>
+  <p>Researcher</p>
    <p class="affiliation">Thammasat University</p>
 </div>
 
-<div class="team-member">
-  <img src="images/team/team_placeholder.png" alt="Lorm Rathana">
-  <h3>Lorm Rathana</h3>
-  <p>Master's Student</p>
-   <p class="affiliation">Thammasat University</p>
-  <br>
-</div>
 
 <div class="team-member">
-  <img src="images/team/team_placeholder.png" alt="Pornphimol Winyuchakrit">
+  <img src="images/team/team_pornphimol.jpg" alt="Pornphimol Winyuchakrit">
   <h3>Pornphimol Winyuchakrit</h3>
   <p>Senior Research Assistant</p>
    <p class="affiliation">Thammasat University</p>
 </div>
 
 <div class="team-member">
-  <img src="images/team/team_placeholder.png" alt="Piti Pita">
+  <img src="images/team/team_piti.jpg" alt="Piti Pita">
   <h3>Piti Pita</h3>
   <p>Research Assistant</p>
    <p class="affiliation">Thammasat University</p>
@@ -197,7 +190,7 @@ output:
 </div>
 
 <div class="team-member">
-  <img src="images/team/team_placeholder.png" alt="Abdullah Jonvisait">
+  <img src="images/team/team_abdullah.jpg" alt="Abdullah Jonvisait">
   <h3>Abdullah Jonvisait</h3>
   <p>Research Assistant</p>
    <p class="affiliation">Thammasat University</p>
