@@ -207,7 +207,7 @@ output:
 <br>
 
 <div class="team-member">
-  <img src="images/team/team_placeholder.png" alt="Prof. Ho Chin Siong">
+  <img src="images/team/team_ho.jpeg" alt="Prof. Ho Chin Siong">
   <h3>Prof. Ho Chin Siong</h3>
   <p>Professor</p>
    <p class="affiliation">UTM</p>
