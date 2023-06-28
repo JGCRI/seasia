@@ -207,35 +207,35 @@ output:
 <br>
 
 <div class="team-member">
-  <img src="images/team/team_ho.jpeg" alt="Prof. Ho Chin Siong">
-  <h3>Prof. Ho Chin Siong</h3>
+  <img src="images/team/team_ho.jpeg" alt="Dr. Chin Siong Ho">
+  <h3>Dr. Chin Siong Ho</h3>
   <p>Professor</p>
    <p class="affiliation">UTM</p>
-  <br>
 </div>
 
 <div class="team-member">
-  <img src="images/team/team_placeholder.png" alt="Loon Wai Chau">
+  <img src="images/team/team_loon.jpg" alt="Loon Wai Chau">
   <h3>Loon Wai Chau</h3>
   <p>Senior Lecturer</p>
    <p class="affiliation">UTM</p>
-  <br>
 </div>
 
+
 <div class="team-member">
-  <img src="images/team/team_placeholder.png" alt="Gabriel Ling Hoh Teck">
-  <h3>Gabriel Ling Hoh Teck</h3>
-  <p>Faculty</p>
+  <img src="images/team/team_siti.jpg" alt="Dr. Siti Hajar Misnan">
+  <h3>Dr. Siti Hajar Misnan</h3>
+  <p>Associate Professor</p>
    <p class="affiliation">UTM</p>
 </div>
 
-
 <div class="team-member">
-  <img src="images/team/team_placeholder.png" alt="Dr. Siti Hajar Othman">
-  <h3>Dr. Siti Hajar Othman</h3>
+  <img src="images/team/team_gabriel.jpg" alt="Dr. Gabriel Hoh Teck Ling">
+  <h3>Dr. Gabriel Hoh Teck Ling</h3>
   <p>Senior Lecturer</p>
    <p class="affiliation">UTM</p>
 </div>
+
+
 
 
 ```{r child = 'footer.rmd'}
