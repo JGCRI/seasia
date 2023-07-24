@@ -2080,7 +2080,7 @@ This section details the socioeconomic inputs used to define Malaysia and its su
 <td>Population</td>
 <td>
 <span>- Malaysia population used the medium variant projection and historical data from the UN</span><br/>
-<span>- KL census data gives a value for 2010. All other values were extrapolated and calculated using the growth rates for Malaysia in total</span><br/>
+<span>- KL census data gives a value for 2010. 2030 and 2050 values came from the Kuala Lumpur Climate Action Plan 2050. Values for 2011-2049 were interpoalted, all other values were extrapolated and calculated using the growth rates for Malaysia in total</span><br/>
 <span>- "Rest of Malaysia" values found by subtracting KL numbers from Malaysia</span><br/>
 </td>
 <td>
@@ -2093,7 +2093,7 @@ This section details the socioeconomic inputs used to define Malaysia and its su
 <tr>
 <td rowspan="3">GDP</td>
 <td>
-<span>- Malaysia annual growth rates are applied to KL's 2020 GDP value to extrapolate historical and future values</span><br/>
+<span>- Malaysia annual growth rates are applied to KL's 2020 GDP value to extrapolate historical values. Future values calculated using growth rates from the Kuala Lumpur Climate Action Plan 2050, with 2050 growth rates being applied out to 2100</span><br/>
 <span>- "Rest of Malaysia" values found by subtracting KL numbers from Malaysia</span>
 </td>
 <td rowspan="2"> 
